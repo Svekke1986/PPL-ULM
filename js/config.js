@@ -22,19 +22,19 @@ window.LICENCES = {
     passMark: 75,                 // Part-FCL FCL.025: 75% per vak
     passSource: 'fcl',
     passRef: 'Part-FCL, FCL.025 – Theoretical knowledge examinations',
-    // Aantal vragen en tijd per vak.
-    // LET OP: nog te bevestigen aan de hand van BCAA/AltMoC/FCL/2022-01 (zie bron 'bcaa_ppl').
-    examVerified: false,
+    // Aantal vragen en tijd per vak volgens BCAA/AltMoC/FCL/2022-01 (geldig vanaf 01/02/2022), 132 vragen in totaal.
+    examVerified: true,
+    examRef: 'BCAA/AltMoC/FCL/2022-01 – AltMoC for AMC1 FCL.215; FCL.235',
     exams: {
-      air_law:                { questions: 24, minutes: 30 },
-      human_performance:      { questions: 12, minutes: 15 },
-      meteorology:            { questions: 16, minutes: 20 },
-      communications:         { questions: 12, minutes: 15 },
-      principles_of_flight:   { questions: 16, minutes: 20 },
-      operational_procedures: { questions: 12, minutes: 15 },
-      flight_performance:     { questions: 16, minutes: 25 },
-      aircraft_general:       { questions: 16, minutes: 20 },
-      navigation:             { questions: 20, minutes: 30 }
+      air_law:                { questions: 20, minutes: 40 },
+      human_performance:      { questions: 12, minutes: 24 },
+      meteorology:            { questions: 20, minutes: 40 },
+      communications:         { questions: 12, minutes: 24 },
+      principles_of_flight:   { questions: 12, minutes: 24 },
+      operational_procedures: { questions: 12, minutes: 24 },
+      flight_performance:     { questions: 12, minutes: 24 },
+      aircraft_general:       { questions: 12, minutes: 24 },
+      navigation:             { questions: 20, minutes: 60 }
     },
     examSource: 'bcaa_ppl'
   },
@@ -53,6 +53,7 @@ window.LICENCES = {
       meteorology:       { questions: 20, minutes: 40 },
       communications:    { questions: 10, minutes: 20 }
     },
+    examRef: 'DGLV – ULM-theorie-examen',
     examSource: 'bcaa_ulm'
   }
 };

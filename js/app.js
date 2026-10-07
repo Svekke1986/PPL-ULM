@@ -151,7 +151,7 @@
       <h1>${esc(L.name)}</h1>
       <p class="lead">${esc(L.full)}. ${passTxt}
         <span class="small">(<a href="${esc(pass.url)}" target="_blank" rel="noopener">${esc(L.passRef)}</a>)</span></p>
-      ${L.examVerified ? '' : `<div class="notice">ℹ️ Het aantal vragen en de examentijd per vak voor de PPL zijn een richtwaarde. Controleer de actuele waarden bij de <a href="${esc(exSrc.url)}" target="_blank" rel="noopener">BCAA</a> (BCAA/AltMoC/FCL/2022-01).</div>`}
+      <p class="small muted">Aantal vragen en examentijd per vak: <a href="${esc(exSrc.url)}" target="_blank" rel="noopener">${esc(L.examRef)}</a>.</p>
       <div class="grid grid-3">${cards}</div>`;
   }
 
@@ -261,7 +261,7 @@
       <div class="crumbs"><a href="#/">Home</a> › <a href="#/${licence.toLowerCase()}">${esc(L.name)}</a> › ${esc(S.name)} › Proefexamen</div>
       <div class="card">
         <h1>${S.icon} Proefexamen ${esc(S.name)}</h1>
-        <p class="lead">${esc(L.name)} · ${ex.questions} vragen · ${ex.minutes} minuten · geslaagd vanaf ${L.passMark}%${L.passRule === 'total' ? ' (op het echte ULM-examen geldt dit over de 4 vakken samen)' : ''}</p>
+        <p class="lead">${esc(L.name)} · ${ex.questions} vragen · ${ex.minutes} minuten · geslaagd vanaf ${L.passMark}% (${Math.ceil(ex.questions * L.passMark / 100)} juist)${L.passRule === 'total' ? ' (op het echte ULM-examen geldt dit over de 4 vakken samen)' : ''}</p>
         ${short ? `<div class="notice">De databank bevat voor dit vak nog maar ${pool.length} vragen. Dit proefexamen telt daarom ${n} vragen en ${minutes} minuten (in verhouding).</div>` : ''}
         <ul class="muted">
           <li>Tijdens het examen zie je nog niet of je antwoord juist is, net zoals op het echte examen.</li>

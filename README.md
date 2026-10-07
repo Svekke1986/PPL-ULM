@@ -38,6 +38,10 @@ Mogelijke vak-sleutels: `air_law`, `human_performance`, `meteorology`, `communic
 Open `index.html` in de browser, of start `python3 -m http.server` en ga naar http://localhost:8000.
 De site werkt ook op GitHub Pages.
 
-## Nog te controleren
-- Het aantal vragen en de examentijd per PPL-vak in `js/config.js` (`LICENCES.PPL.exams`). Te bevestigen met BCAA/AltMoC/FCL/2022-01.
-  De ULM-waarden (20/40, 10/20, 20/40, 10/20 min, 70% totaal) komen van de DGLV-pagina.
+## Examenparameters
+- **PPL(A)**: 132 vragen volgens BCAA/AltMoC/FCL/2022-01 (geldig vanaf 01/02/2022), 75% per vak.
+  Air Law 20/40 min, Human Performance 12/24, Meteorology 20/40, Communications 12/24, Navigation 20/60,
+  Principles of Flight 12/24, Operational Procedures 12/24, Flight Performance & Planning 12/24, Aircraft General Knowledge 12/24.
+- **ULM** (DGLV): Luchtvaartwetgeving 20/40, Menselijke prestaties 10/20, Meteorologie 20/40, Communicatie 10/20; minimaal 70% over de vier vakken samen.
+
+Aan te passen in `js/config.js` (`LICENCES`).
