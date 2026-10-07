@@ -1,0 +1,474 @@
+[
+ {
+  "id": "666045",
+  "topic": "61.2.3.2.1 Describe how noise abatement can be performed during flight at low altitude (e.g. when entering / joining / exiting",
+  "question": "Wanneer moeten bochten op lage hoogte boven dorpen worden vermeden met betrekking tot procedures voor geluidsbeperking?",
+  "options": [
+   "tijdens de nadering",
+   "in de klim",
+   "in rechtlijnige vlucht",
+   "in de daling"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666046",
+  "topic": "61.2.3.2.1 Describe how noise abatement can be performed during flight at low altitude (e.g. when entering / joining / exiting",
+  "question": "Hoe moeten vertrekken in de buurt van dorpen worden uitgevoerd?",
+  "options": [
+   "Klimmen en richtingsveranderingen moeten zo langzaam mogelijk gebeuren",
+   "Laag en snel tussen de dorpen",
+   "Dorpen moeten worden omzeild en op voldoende hoogte doorkruist",
+   "Langzaam met een lage rotatiesnelheid van de propeller"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666044",
+  "topic": "61.2.3.2.1 Describe how noise abatement can be performed during flight at low altitude (e.g. when entering / joining / exiting",
+  "question": "Hoe kan de piloot van een door een motor aangedreven vliegtuig de geluidsemissie tijdens het dalen en naderen minimaliseren?",
+  "options": [
+   "Lage nadering met minimale vermogensinstelling, late configuratie en steile nadering, naleving van vastgestelde aankomstroutes",
+   "Hoge nadering met minimale vermogensinstelling, late daling, late configuratie, naleving van vastgestelde aankomstroutes",
+   "Normale nadering met normale vermogensinstelling, configuratie voorafgaand aan het starten van de daling, kortst mogelijke aankomstroute.",
+   "Daling en nadering in landingsconfiguratie met behoud van een daalhoek van 3°, directe nadering waar mogelijk."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666048",
+  "topic": "61.2.5.1.1 Explain what a 'carburetor fire' is and how to handle such a situation",
+  "question": "Welk gevaar bestaat er tijdens het starten van de motor?",
+  "options": [
+   "Rookuitstoot",
+   "Carburateur brand",
+   "Vonken",
+   "Kabel brand"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666047",
+  "topic": "61.2.5.1.1 Explain what a 'carburetor fire' is and how to handle such a situation",
+  "question": "Waarom is het gevaarlijk om bij koud weer een pompende beweging te maken met de gashendel om de motor te starten?",
+  "options": [
+   "De motor zou kunnen starten met onvoldoende vermogen",
+   "Er kan ijsvorming in de carburateur optreden",
+   "Het kan een carburateurbrand veroorzaken",
+   "De olie wordt verdund"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666049",
+  "topic": "61.2.5.2.1 Describe actions in case of engine fire during flight with regard to emergency checklist and engine restart",
+  "question": "Mag een motor, die voorheen in brand stond, opnieuw worden gestart?",
+  "options": [
+   "Ja, maar alleen als de oorzaak van de brand een carburateurbrand was tijdens het starten van de motor",
+   "Ja, als het vliegtuig op veilige hoogte vliegt",
+   "Nee, het risico van een heropflakkering van het vuur zou te groot zijn",
+   "Ja, maar alleen op de grond om te taxiën"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666053",
+  "topic": "61.2.5.4.2 List actions in case of smoke in the cockpit, e.g. open windows and turn off  heating system",
+  "question": "Tijdens de vlucht komt er wat rook achter het instrumentenpaneel vandaan. Een motorbrand wordt vermoed. Welke actie, met betrekking tot het bedieningshandboek van de piloot, moet worden ondernomen?",
+  "options": [
+   "Zet de verwarming uit",
+   "Zet de hoofdschakelaar uit",
+   "Gebruik de brandblusser",
+   "Shut down the engine"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666052",
+  "topic": "61.2.5.4.2 List actions in case of smoke in the cockpit, e.g. open windows and turn off  heating system",
+  "question": "Tijdens de vlucht komt er wat rook achter het instrumentenpaneel vandaan. Een elektrische brand wordt vermoed. Welke actie, met betrekking tot het bedieningshandboek van de piloot, moet worden ondernomen?",
+  "options": [
+   "Zet de hoofdschakelaar uit",
+   "Shut down the engine",
+   "Zet de verwarming uit",
+   "Gebruik de brandblusser"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666050",
+  "topic": "61.2.5.4.2 List actions in case of smoke in the cockpit, e.g. open windows and turn off  heating system",
+  "question": "Rook komt de cockpit binnen tijdens een motorbrand. Welke acties moeten direct worden ondernomen?",
+  "options": [
+   "Uitschakelen van de verwarming en het ventilatiesysteem",
+   "De avionica en de cabineverlichting uitschakelen",
+   "Pitot- en voorruitverwarming uitschakelen",
+   "Hoofdschakelaar en contact uitschakelen"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666051",
+  "topic": "61.2.5.4.2 List actions in case of smoke in the cockpit, e.g. open windows and turn off  heating system",
+  "question": "Wat moet de eerste actie zijn bij een kabelbrand tijdens een vlucht?",
+  "options": [
+   "Sluit de brandstofklep",
+   "Zet de hoofdschakelaar uit",
+   "Open de ramen",
+   "Open cabine ventilatie"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666054",
+  "topic": "61.2.6.1.1 Define 'wind shear' (horizontal or vertical)",
+  "question": "Een \"windschering\" (\"windshear\") is…",
+  "options": [
+   "een meteorologisch neerwaarts windfenomeen in de alpen.",
+   "een langzame toename van de windsnelheid op hoogten boven 13000 ft.",
+   "een verticale of horizontale verandering van windsnelheid en windrichting.",
+   "een windsnelheidsverandering van meer dan 15 kt."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666055",
+  "topic": "61.2.6.1.2 Describe typical meteorological situations in which 'wind shear' may occur",
+  "question": "Welk weerfenomeen wordt typisch geassocieerd met \"windschering\" (\"windshear\")?",
+  "options": [
+   "Stabiel hoog drukgebied",
+   "Mist",
+   "warmtefront tijdens de winter of winters warmtefront",
+   "Onweersbuien"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666056",
+  "topic": "61.2.6.1.2 Describe typical meteorological situations in which 'wind shear' may occur",
+  "question": "Wanneer kan je \"windschering\" (\"windshear\") verwachten?",
+  "options": [
+   "Tijdens een zomerse dag met rustige wind",
+   "Bij het passeren van een warmtefront",
+   "Bij kalme wind bij koud weer",
+   "Tijdens een inversie"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666061",
+  "topic": "61.2.6.1.4 Describe the variation in airspeed and climb performance when encountering a downburst / microburst close to the",
+  "question": "Welk fenomeen is te verwachten bij punt 2 van de microburst? Zie afbeelding (OPR-001)",
+  "options": [
+   "Verhoging van de luchtsnelheid",
+   "Daling van de klimsnelheid",
+   "Daling van de daalsnelheid",
+   "Constante daalsnelheid"
+  ],
+  "correct": 1,
+  "images": [
+   "img/operational_procedures/666061_0.jpeg"
+  ]
+ },
+ {
+  "id": "666062",
+  "topic": "61.2.6.1.4 Describe the variation in airspeed and climb performance when encountering a downburst / microburst close to the",
+  "question": "Welk fenomeen is te verwachten bij punt 3 van de miroburst? Zie afbeelding (OPR-001)",
+  "options": [
+   "Daling van de luchtsnelheid",
+   "Daling van de klimsnelheid",
+   "Verhoging van de luchtsnelheid",
+   "Constante daalsnelheid"
+  ],
+  "correct": 0,
+  "images": [
+   "img/operational_procedures/666062_0.jpeg"
+  ]
+ },
+ {
+  "id": "666057",
+  "topic": "61.2.6.1.5 Describe the effects of wind shear during final approach with regard to speed and variation from the intended glide",
+  "question": "Tijdens een nadering ervaart het vliegtuig een windschering met afnemende tegenwind. Als de piloot geen correcties aanbrengt, hoe veranderen dan het naderingspad en de aangegeven vliegsnelheid (IAS)?",
+  "options": [
+   "Pad is hoger, IAS neemt toe",
+   "Pad is hoger, IAS neemt af",
+   "Pad is lager, IAS neemt af",
+   "Pad is lager, IAS neemt toe"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666058",
+  "topic": "61.2.6.1.5 Describe the effects of wind shear during final approach with regard to speed and variation from the intended glide",
+  "question": "Tijdens een nadering ervaart het vliegtuig een windschering met toenemende tegenwind. Als de piloot geen correcties aanbrengt, hoe veranderen dan het naderingspad en de aangegeven vliegsnelheid (IAS)?",
+  "options": [
+   "Pad is hoger, IAS neemt toe",
+   "Pad is lager, IAS neemt toe",
+   "Pad is lager, IAS neemt af",
+   "Pad is hoger, IAS neemt af"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666060",
+  "topic": "61.2.6.1.5 Describe the effects of wind shear during final approach with regard to speed and variation from the intended glide",
+  "question": "Na het opstijgen komt een vliegtuig in een windschering terecht met afnemende tegenwind. Als resultaat…",
+  "options": [
+   "het vliegtuig vliegt boven het geschatte klimpad.",
+   "het vliegtuig vliegt onder het geschatte klimpad.",
+   "de grondsnelheid (GS) zal afnemen.",
+   "de werkelijke luchtsnelheid (TAS) zal toenemen."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666059",
+  "topic": "61.2.6.1.5 Describe the effects of wind shear during final approach with regard to speed and variation from the intended glide",
+  "question": "Tijdens een nadering ervaart het vliegtuig een windschering met afnemende rugwind. Als de piloot geen correcties aanbrengt, hoe veranderen dan het naderingspad en de aangegeven vliegsnelheid (IAS)?",
+  "options": [
+   "Pad is hoger, IAS neemt af",
+   "Pad is hoger, IAS neemt toe",
+   "Pad is lager, IAS neemt af",
+   "Pad is lager, IAS neemt toe"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666063",
+  "topic": "61.2.6.2.1 Describe flight procedures that can be applied when experiencing strong wind shear during approach and landing",
+  "question": "Hoe kan een windschering tijdens de vlucht worden vermeden?",
+  "options": [
+   "Vermijd neerslaggebieden, vooral in de winter, en kies lage vlieghoogten",
+   "Vermijd opstijgen en landen tijdens het passeren van zware regen- of onweersbuien",
+   "Vermijd opstijgen en landen in bergachtig terrein en blijf zoveel mogelijk in vlak land",
+   "Vermijd thermisch actieve gebieden, vooral in de zomer, of blijf onder deze gebieden"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666064",
+  "topic": "61.2.6.2.1 Describe flight procedures that can be applied when experiencing strong wind shear during approach and landing",
+  "question": "Meteen na het opstijgen wordt er onopzettelijk een microburst ingevlogen. Welke actie kan een onbedoelde daling voorkomen?",
+  "options": [
+   "Maximaal vermogen instellen, landingsgestel en kleppen intrekken, hellingshoek vergroten totdat optimale klimsnelheid is bereikt",
+   "Maximaal vermogen instellen, huidige vliegtuigconfiguratie behouden, klimmen met de beste klimsnelheid",
+   "Vermijd thermisch actieve gebieden, vooral in de zomer, of blijf onder deze gebieden",
+   "Maximaal vermogen instellen, landingsgestel en flaps intrekken, snelheid verhogen en een bocht naar links of naar rechts maken in een poging om het gebied van de microburst op de kortste manier te verlaten"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666065",
+  "topic": "61.2.7.1.2 State that significant wake turbulences exist from rotation to nosewheel touchdown",
+  "question": "Zogturbulenties ontwikkelen zich tijdens het opstijgen, net wanneer het vliegtuig…",
+  "options": [
+   "het hoofdonderstel loskomt van de grond",
+   "het neuswiel loskomt van de grond",
+   "bereikt een hoogte van 15 ft",
+   "versnelt"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666067",
+  "topic": "61.2.7.2.3 State the most critical situation for wake turbulence as 'heavy and slow'",
+  "question": "Wake-turbulentie is bijzonder sterk…",
+  "options": [
+   "bij het vliegen op lage hoogte.",
+   "bij het vliegen met hoge snelheden.",
+   "bij het vliegen met lage snelheden.",
+   "bij het vliegen op grote hoogte."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666068",
+  "topic": "61.2.7.3.3 Describe procedures to handle wake turbulence at takeoff and landing (e.g. higher approach, later touch down)",
+  "question": "Wat is het gevaar bij een lichte zijwind tijdens opstijgen net na het vertrek van een zwaar vliegtuig?",
+  "options": [
+   "Zogturbulentie\" (\"Wake turbulence\") die dwars op de landingsbaan draait",
+   "Zogturbulentie\" (\"Wake turbulence\") roteert sneller en hoger",
+   "Zogturbulentie\" (\"Wake turbulence\") op of nabij de landingsbaan",
+   "Zogturbulentie\" (\"Wake turbulence\") wordt versterkt en vervormd"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666069",
+  "topic": "61.2.7.3.4 Describe the pilot's responsibility for establishing an appropriate amount of separation during taxi and on uncontrolled",
+  "question": "Waarop moet u letten bij het taxiën achter een commercieel vliegtuig?",
+  "options": [
+   "Om zogturbulentie te voorkomen moet een minimale afstand van 700 m worden aangehouden",
+   "Om de drukgolf (jetblast) te vermijden, moet een minimale afstand van 600 m worden aangehouden",
+   "Om de drukgolf (jetblast) te vermijden, moet een minimale afstand van 200 m worden aangehouden",
+   "Om zogturbulentie te voorkomen, moet een minimale afstand van 300 m worden aangehouden"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666074",
+  "topic": "61.2.9.1.1 Define and explain the differences between 'precautionary landing' and 'emergency landing'",
+  "question": "Een voorzorgslanding is een landing…",
+  "options": [
+   "uitgevoerd in een poging de vliegveiligheid in stand te houden.",
+   "Uitgevoerd als reactie op omstandigheden waardoor het vliegtuig moest landen.",
+   "Uitgevoerd zonder vermogen van de motor.",
+   "Uitgevoerd met de vleugelkleppen (flaps) ingetrokken."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666072",
+  "topic": "61.2.9.1.1 Define and explain the differences between 'precautionary landing' and 'emergency landing'",
+  "question": "Een noodlanding is een landing…",
+  "options": [
+   "uitgevoerd als reactie op omstandigheden die het vliegtuig dwingen te landen.",
+   "uitgevoerd zonder motorvermogen.",
+   "uitgevoerd in een poging de veiligheid van een vliegtuig en zijn inzittenden op peil te houden.",
+   "uitgevoerd met de flappen ingetrokken."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666073",
+  "topic": "61.2.9.1.1 Define and explain the differences between 'precautionary landing' and 'emergency landing'",
+  "question": "Een landing uitgevoerd in reactie op omstandigheden die het vliegtuig dwingen te landen, is een / een …",
+  "options": [
+   "voorzorgslanding.",
+   "noodlanding.",
+   "veld of uit de landing.",
+   "dringende landing."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666076",
+  "topic": "61.2.9.1.4 State in which cases life wests for every passenger have to carried on board",
+  "question": "Hoe bereidt de piloot zich voor op een VFR-vlucht over een grote afstand over water, wanneer het onwaarschijnlijk is dat land kan worden bereikt bij een motorstoring?",
+  "options": [
+   "Onderhoud continu radiocontact met ATC.",
+   "Draag reddingsvesten of een reddingsvlot voor alle inzittenden.",
+   "Wees voorbereid om alleen met transponder te vliegen.",
+   "Dien een vluchtplan in inclusief de exacte routepunten."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666043",
+  "topic": "61.2.9.1.4 State in which cases life wests for every passenger have to carried on board",
+  "question": "Waar moet rekening mee worden gehouden bij een lijnvlucht over water, wanneer het land bij een noodlanding niet kan worden bereikt?",
+  "options": [
+   "Contact met de dichtstbijzijnde ATC zal gedurende de hele vlucht bestaan",
+   "Voor alle passagiers dienen reddingsvesten of reddingsboten aanwezig te zijn",
+   "Transpondercode 7600 moet tijdens de hele vlucht worden ingesteld",
+   "Het vluchtplan moet de exacte routepunten (waypoints) bevatten"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666070",
+  "topic": "61.2.9.3.1 Describe appropriate actions for conducting a offfield landing (unless stated other by AFM/POH)",
+  "question": "Een technische storing vereist een noodlanding buiten het veld. Welke stappen zijn nodig overeenkomstig het bedieningshandboek van de piloot (pilot operating handbook)?",
+  "options": [
+   "Zoek een geschikt landingsgebied, plan de nadering, voltooi de toepasselijke noodprocedure, meld een noodsituatie, start en concentreer u tijdig op de nadering.",
+   "Informeer de luchtverkeersleiding en vraag om technische ondersteuning, raadpleeg het bedieningshandboek van de piloot voor een referentie ter zake en voer een noodlanding uit.",
+   "Verlaag de snelheid en configureer het vliegtuig om te landen in een poging tijd te winnen, een noodsituatie af te kondigen, de toepasselijke noodprocedure te voltooien en een noodlanding uit te voeren.",
+   "Meld een noodgeval, voltooi de toepasselijke noodprocedure, overbrug een zo groot mogelijke afstand naar de luchthaven om dichter bij de reddingstroepen te zijn."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666077",
+  "topic": "61.2.9.5.2 Explain when to inflate life wests in case of emergency ditching",
+  "question": "In geval van nood op het water moeten de reddingsvesten worden opgeblazen…",
+  "options": [
+   "na het van boord gaan van het vliegtuig op een veilige afstand van ongeveer 10 m.",
+   "tijdens het van boord gaan van het vliegtuig.",
+   "voordat u het vliegtuig verlaat.",
+   "na het van boord gaan van het vliegtuig."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666079",
+  "topic": "61.2.10.1.1 Explain the term 'contaminated runway'",
+  "question": "Onder welke omstandigheden kan een baan als vervuild worden beschouwd?",
+  "options": [
+   "Wanneer meer dan 50 % van de vereiste baanlengte en -breedte bedekt is met verontreinigingen zoals sneeuw, rijp, ijs of zand",
+   "Wanneer meer dan 50 % van het baanoppervlak binnen de vereiste lengte en breedte bedekt is door water, smeltende sneeuw, sneeuw of ijs met een diepte van meer dan 3 mm",
+   "Wanneer meer dan 25 % van het baanoppervlak binnen de vereiste lengte en breedte bedekt is door water, smeltende sneeuw, sneeuw of ijs met een diepte van meer dan 3 mm",
+   "Wanneer 75 % van de vereiste baanlengte en -breedte bedekt is met verontreinigingen zoals sneeuw, rijp, ijs of zand"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666081",
+  "topic": "61.2.10.2.2 Explain the potential effects of contaminations (e.g. longer takeoff / landing roll, lower braking coefficient)",
+  "question": "Welk gevaar bestaat er na een hevige regenbui voor een landend vliegtuig?",
+  "options": [
+   "Langere remweg door aquaplaning",
+   "Verplaatsing van de bandslipmarkering",
+   "Verkorte remweg door aquaplaning",
+   "Moeilijke afgeronde landing door verblinding"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666078",
+  "topic": "61.2.10.2.2 Explain the potential effects of contaminations (e.g. longer takeoff / landing roll, lower braking coefficient)",
+  "question": "Wat zijn de effecten van nat gras op de start- en landingsafstand?",
+  "options": [
+   "Verkleining van de startafstand en afname van de landingsafstand",
+   "Verhoging van de startafstand en afname van de landingsafstand",
+   "Verkleining van de startafstand en toename van de landingsafstand",
+   "Verhoging van de startafstand en vergroting van de landingsafstand"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666080",
+  "topic": "61.2.10.2.2 Explain the potential effects of contaminations (e.g. longer takeoff / landing roll, lower braking coefficient)",
+  "question": "Natte sneeuw op een landingsbaan kan leiden tot…",
+  "options": [
+   "verhoogde rolweerstand tijdens het opstijgen.",
+   "een verhoging van de draagkracht.",
+   "een afname van de draagkracht.",
+   "verminderde rolweerstand tijdens het opstijgen."
+  ],
+  "correct": 0,
+  "images": []
+ }
+]

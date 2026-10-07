@@ -1,0 +1,1154 @@
+[
+ {
+  "id": "666139",
+  "topic": "81.1.1.2.3 Define the 'load factor (n)'",
+  "question": "De belastingsfactor \"n\" omvat de relatie tussen..",
+  "options": [
+   "Weerstand en draagkracht",
+   "Stuwkracht en weerstand",
+   "Draagkracht en gewicht",
+   "Gewicht en stuwkracht"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666147",
+  "topic": "81.1.1.2.5 State that excessive stress can be exerted on the structure when exceeding the manoeuvring speed in heavy gusts",
+  "question": "De structuur van de romp kan schade hebben door?",
+  "options": [
+   "Snelheid verminderen onder een bepaalde snelheid",
+   "Overtrekken na het overschreiden van de maximale aanvalshoek",
+   "Het overschreiden van de manoeuvre snelheid bij hevige windstoten",
+   "De stuurknuppelkrachten te neutraliseren aan de hand van de huidige conditie"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666132",
+  "topic": "81.2.1.1.1 Describe the following types of design and their advantages and disadvantages: highmounted wing, lowmounted",
+  "question": "De dikte van een vleugel is gedefinieerd als de afstand tussen de onderkant en de bovenkant van de vleugel ter hoogte van…",
+  "options": [
+   "Dikste deel van de vleugel",
+   "Uiteinde van de vleugel",
+   "Dunste deel van de vleugel",
+   "Het gedeelte zo dicht mogelijk bij de romp"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666133",
+  "topic": "81.2.1.1.2 Describe different types of constructions: grid, sandwich",
+  "question": "Hoe wordt een stalen buisconstructie met een niet-zelfdragende huid genoemd?",
+  "options": [
+   "Semi-monocoque constructie",
+   "Rasterconstructie",
+   "Honingraatstructuur",
+   "Monocoque constructie"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666137",
+  "topic": "81.2.1.1.2 Describe different types of constructions: grid, sandwich",
+  "question": "Een sandwichstructuur bestaat uit 2…",
+  "options": [
+   "Dikke lagen en een zwaar materiaal in de kern",
+   "Dikke lagen en een licht materiaal in de kern",
+   "Dunne lagen en licht materiaal in de kern",
+   "Dunne lagen en een zwaar materiaal in de kern"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666140",
+  "topic": "81.2.1.1.2 Describe different types of constructions: grid, sandwich",
+  "question": "Wat zijn de voordelen van een sandwichstructuur?",
+  "options": [
+   "Laag gewicht, hoge stijfheid, hoge stabiliteit en hoge sterkte",
+   "Hoge sterkte en goed vervombaar",
+   "Goede vormbaarheid en hoge temperatuurweerstand",
+   "Hoge weerstand tegen hoge temperaturen en laag gewicht"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666136",
+  "topic": "81.2.1.1.3 Name and identify typical parts of the wing and tail and control surfaces",
+  "question": "Wat zijn de voornaamste componenten van staart van een vliegtuig?",
+  "options": [
+   "Horzontale staartvlak en verticale staartvlak",
+   "Stuuwiel en pedalen",
+   "Richtingsroer en rolroeren",
+   "Hoogteroer en rolroeren"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666138",
+  "topic": "81.2.1.2.1 Eplain the general assembly of a wing: (main) spar, wing nose, spars, ribs, ailerons, flaps, skin or fabric cover",
+  "question": "Welk deel van de constructie geeft een vleugel zijn profiel?",
+  "options": [
+   "De tippen",
+   "Beplanking",
+   "Langsligger",
+   "Ribben"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666141",
+  "topic": "81.2.1.2.3 State different types of materials for the construction of wings (e.g. sheet metal, wood, or fabric cover)",
+  "question": "Welke van de volgende materialen heeft de hoogste stevigheid?",
+  "options": [
+   "Aluminium",
+   "Hout",
+   "Koolsofvezel verstekte plastiek",
+   "Magnesium"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666135",
+  "topic": "81.2.2.1.1 Describe different types of fuselage constructions: monocoque, semimonocoque, truss",
+  "question": "Een contructie gemaakt van dwarsspanten en langsspanten met een ondersteunende huid wordt genoemd..",
+  "options": [
+   "Semi-monocoque constructie",
+   "Honingraatstructuur",
+   "Hout- of gemengde constructie",
+   "Rasterconstructie"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666134",
+  "topic": "81.2.2.2.1 Describe the construction and the function of the following structural components of a fuselage: frames, bulkhead,",
+  "question": "Primaire stucturen van de vliegtuigromp in hout of metaal zijn meestal gemaakt met welke componenten?",
+  "options": [
+   "Omhulsels, langsspanten en gevormde delen",
+   "Langsdragers, ribben en langsspanten",
+   "Ribben, frames en omhulsels",
+   "Frames en langsspanten"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666144",
+  "topic": "81.2.2.3.1 Describe the structural danger of a hard or nosewheel landing with respect to: fuselage loads, nosewheel strut loads",
+  "question": "Aanleiding voor deuken in de structuur zijn..",
+  "options": [
+   "Harde landingen of te hoge stress",
+   "Materiaal defecten of verouderde verf",
+   "Interne erosie of hoge slijtage",
+   "Te hoog toerental en problemen met de cilinders"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666146",
+  "topic": "81.4.1.1.2 Name and identify the components of a landing gear, and describe their functions",
+  "question": "Nummer 1 op het landingsgestel wijst op… Zie figuur (AGK-005)",
+  "options": [
+   "Binnenste schokdemper",
+   "Kopstuk",
+   "Torsieschaar",
+   "Vork"
+  ],
+  "correct": 3,
+  "images": [
+   "img/aircraft_general/666146_0.jpeg"
+  ]
+ },
+ {
+  "id": "666148",
+  "topic": "81.4.1.1.3 State that ground stearing is usually actuated via rudder pedals",
+  "question": "Hoe wordt het neus- of staartwiel van kleine vliegtuigen en motorzwevers doorgaans bediend?",
+  "options": [
+   "Door gewicht te verplaatsen",
+   "Door het stuurwiel",
+   "Door de pedalen",
+   "Door de stuurknuppel"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666149",
+  "topic": "81.4.2.1.1 Explain the operating principle of nose wheel steering",
+  "question": "Welk soort stuurvlak is geconnecteerd met het neuswiel?",
+  "options": [
+   "De trim van het richtingsroer",
+   "Richtingsroer",
+   "Rolroer",
+   "Hoogteroer"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666154",
+  "topic": "81.5.1.2.2 State which control surfaces initiates rotation around which axis, and how these movements are called ('roll' / 'pitch' /",
+  "question": "Wat is het effect als je de stuurknuppel naar achter trekt?",
+  "options": [
+   "De staart van het vliegtuig zal een verhoogde neerwaartse kracht produceren, waardoor de neus naar beneden gaat",
+   "De staart van het vliegtuig zal een verhoogde neerwaartse kracht produceren, waardoor de neus naar boven gaat.",
+   "De staart van het vliegtuig zal een verhoogde opwaartse kracht produceren, waardoor de neus naar boven gaat.",
+   "De staart van het vliegtuig zal een verminderde opwaartse kracht produceren, waardoor de neus naar beneden gaat"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666150",
+  "topic": "81.5.1.2.2 State which control surfaces initiates rotation around which axis, and how these movements are called ('roll' / 'pitch' /",
+  "question": "Rond hoeveel assen kan een vliegtuig bewegen en hoe worden deze assen genoemd?",
+  "options": [
+   "3, verticale as, laterale as, lengteas",
+   "4, verticale as, laterale as, lengteas, snelheidsas",
+   "4, optische as, ingebeelde as, verzakte as, as van het kwaad",
+   "3, x-as, y-as, z-as"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666151",
+  "topic": "81.5.1.2.2 State which control surfaces initiates rotation around which axis, and how these movements are called ('roll' / 'pitch' /",
+  "question": "Een beweging rond de lengteas is hoofdzakelijk gedaan door…",
+  "options": [
+   "Richtingsroer",
+   "Rolroeren",
+   "Hoogteroer",
+   "Trimvlak"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666153",
+  "topic": "81.5.1.2.2 State which control surfaces initiates rotation around which axis, and how these movements are called ('roll' / 'pitch' /",
+  "question": "Wat zijn de primaire en secondaire effecten van linkervoet geven met het richtingsroer",
+  "options": [
+   "Primair: gieren naar links. Secundair: rollen naar rechts",
+   "Primair: gieren naar links. Secundair: rollen naar links",
+   "Primair: gieren naar rechts. Secundair: rollen naar rechts",
+   "Primair: gieren naar rechts. Secundair: rollen naar links"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666157",
+  "topic": "81.5.2.1.1 Define 'secondary flight controls' and describe their purpose",
+  "question": "Wat is het effect van de de secondaire vliegbesturing?",
+  "options": [
+   "Om een backup te zijn voor de primaire vliegbesturing",
+   "Om ervoor te zorgen dat de piloot het vliegtuig kan besturen rond zijn 3 assen",
+   "Om de prestaties van het vliegtuig te verbeteren of om te piloot te helpen bij hevige stuurkrachten",
+   "Om de karakteristieken van het vliegtuig op lage snelheid te verbeteren tijdens het opstijgen en landen"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666159",
+  "topic": "81.5.2.1.3 Describe the movement of trim tabs to achieve a required rudder deflection for trim",
+  "question": "Wanneer je een vliegtuig trimt met de neus naar boven, in welke richting beweegt het trimvlak dan?",
+  "options": [
+   "In de richting waarmee het richtingsroer beweegt",
+   "Het beweegt naar boven",
+   "Het beweegt naar beneden",
+   "Is afhankelijk van de positie van het zwaartepunt"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666158",
+  "topic": "81.5.2.1.3 Describe the movement of trim tabs to achieve a required rudder deflection for trim",
+  "question": "Het trimwiel/hendel in de cockpit wordt naar achter bewogen door de piloot. Welk effect heeft dit tot op het trimvlak en het hoogteroer?",
+  "options": [
+   "Het trimvlak gaat naar beneden, het hoogteroer naar boven",
+   "Het trimvlak gaat naar beneden, het hoogteroer naar beneden",
+   "Het trimvlak gaat naar boven, het hoogteroer naar beneden",
+   "Het trimvlak gaat naar boven, het hoogteroer naar boven"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666161",
+  "topic": "81.7.1.1.3 Name the main components of a fuel system, and state their function: lines, boost pump, pressure valves, filter,",
+  "question": "Wat is het doel van ventilatie in een tank?",
+  "options": [
+   "Om brandstofverspilling te verhinderen tijdens het tanken langs de vulopening",
+   "Om onderdruk te voorkomen wanneer er brandstof verbruikt wordt",
+   "Om te vermijden dat er water in de tank komt wanneer je geparkeerd staat",
+   "Om brandstof te verdelen tussen verschillende tanks tijdens de vlucht"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666170",
+  "topic": "81.7.1.1.6 Explain the reasons and situations for 'draining' the fuel tanks",
+  "question": "Waar komt gecondenseerd water terecht in de tank?",
+  "options": [
+   "In de laagste positie",
+   "Het wordt gemixt met de brandstof",
+   "Bij de vulopening van de tank",
+   "Het blijft drijven op de brandstof"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666163",
+  "topic": "81.8.1.1.4 Define 'electrical power' and state the unit of measurement",
+  "question": "Wat is de eenheid voor elektrisch vermogen?",
+  "options": [
+   "Volt",
+   "Ohm",
+   "Watt",
+   "Ampere"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666160",
+  "topic": "81.8.3.1.2 Explain why an aircraft must first be grounded before refuelling",
+  "question": "Waar moet je rekening mee houden tijdens het tanken?",
+  "options": [
+   "Gebruik de grondaarding, zet de hoofdschakelaar en de magneto ontsteking aan",
+   "Tank met een natte doek en houd een brandblusser in de buurt",
+   "Bekijk de hoeveelheid brandstof in de tank met een zaklantaarn en verwijder alle brand bescherming",
+   "Geen open vlammen, niet roken en gebruik de grondaarding"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666164",
+  "topic": "81.8.3.2.1 Describe a static discharger and explain its purpose, typical locations and check during preflight inspection",
+  "question": "Wat is de functie van statische ontladers op een vliegtuig?",
+  "options": [
+   "Om elektrische interferentie tijdens radiocontact te vermijden",
+   "Om statische ladingen te ontladen tijdens de vlucht",
+   "Als grondaarding tijdens het tanken",
+   "Om de kwaliteit van de radiocommunicatie te verbeteren tijdens het vliegen op grote hoogtes"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666162",
+  "topic": "81.8.6.1.2 Explain that at the same time, the generator reloads the battery and powers the electrical loads of the airplane",
+  "question": "De stroomvoorziening van een vliegtuig is voorzien dankzij: 1. Batterij 2. Generator 3. Relay 4. Zekeringen",
+  "options": [
+   "1 en 4",
+   "2 en 3",
+   "1 en 2",
+   "3 en 4"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666165",
+  "topic": "81.8.6.1.6 List instruments that may be affected by loss of electrical power",
+  "question": "Welk instrument kan getroffen zijn door een probleem in het elektrisch systeem?",
+  "options": [
+   "Radio uitrusting, navigatieuitrusting, gyroscopen",
+   "Snelheidsmeter, hoogtemeter, artificiële horizon",
+   "Brandstofindicatie, radio uitrusting en de hoogtemeter",
+   "Radio uitrusting, navigatie uitrusting, magnetisch kompas"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666266",
+  "topic": "81.9.1.1.1 Name and identify the various types of engine design with regard to cylinder arrangement",
+  "question": "Welke motoren worden meestal gebruikt bij motorzwevers (Touring Motor Gliders, TMG)?",
+  "options": [
+   "2-plaat wankelmotor",
+   "4 Cilinders, 4-takt",
+   "2 cilinder Diesel",
+   "4 Cilinder 2-takt"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666166",
+  "topic": "81.9.1.2.1 Explain the general operating principle of a 4stroke piston engine, and explain the cycles intake, compression, power",
+  "question": "Welke deel van de cyclus van een 4-takt Otto motor kan je zien in bijlage? Zie figuur (AGK-007)",
+  "options": [
+   "Vierde slag - uitlaat",
+   "Eerste slag - inductie",
+   "Derde slag - kracht",
+   "Tweede slag - compressie"
+  ],
+  "correct": 1,
+  "images": [
+   "img/aircraft_general/666166_0.jpeg"
+  ]
+ },
+ {
+  "id": "666167",
+  "topic": "81.9.1.2.1 Explain the general operating principle of a 4stroke piston engine, and explain the cycles intake, compression, power",
+  "question": "Welke deel van de cyclus van een 4-takt Otto motor kan je zien in bijlage? Zie figuur (AGK-008)",
+  "options": [
+   "Vierde slag - uitlaat",
+   "Tweede slag - compressie",
+   "Eerste slag - inductie",
+   "Derde slag - kracht"
+  ],
+  "correct": 1,
+  "images": [
+   "img/aircraft_general/666167_0.jpeg"
+  ]
+ },
+ {
+  "id": "666171",
+  "topic": "81.9.2.1.1 Name the type of fuel used for petrol engines: AVGAS 100 (green), 100LL (blue)",
+  "question": "Welke kleur heeft Avgas 100 LL?",
+  "options": [
+   "Rood",
+   "Groen",
+   "Geel",
+   "Blauw"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666172",
+  "topic": "81.9.3.3.4 Describe the changes in RPM/power when switching on/off carburetter heating",
+  "question": "Wat is het secondaire effect wanneer je carburateurverwarming selecteerd tijdens het proefdraaien op vliegtuigen met een vaste schroef",
+  "options": [
+   "Toerental neemt toe",
+   "De aanvalshoek neemt toe",
+   "Toerental neemt af",
+   "De aanvalshoek neemt af"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666174",
+  "topic": "81.9.3.3.7 Describe situations when carburettor heat must be OFF",
+  "question": "In welke fase van de vlucht moet de carburateur verwarming uitgezet worden, ondanks dat er toch kans is op ijsafzetting in de carburateur",
+  "options": [
+   "Tijdens het klimmen",
+   "Tijdens het taxiën",
+   "Tijdens de kruisvlucht",
+   "Tijdens het opstijgen"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666175",
+  "topic": "81.9.4.1.1 Describe the design features to enhance cylinder air cooling for aeroplanes",
+  "question": "Wat is het doel van de koelvinnen op de cilinders van luchtgekoelde motoren",
+  "options": [
+   "De luchtstroom te verhogen en bijgevolg de koeling van de cilinders te verbeteren",
+   "Cilinders afkoelen door de luchtstroom en te begeleiden naar warmere delen van de motor",
+   "Snelle afzetting van de warmte in de luchtstroom door een vergroting van het oppervlak",
+   "De luchtstroom begeleiden naar plaatsen die moeten gekoeld worden"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666267",
+  "topic": "81.9.5.2.1 Describe the purpose and working principle of a lubrication system, and describe the functions of its components: oil",
+  "question": "Wat is het doel van de motorolie in een zuigermotor?",
+  "options": [
+   "Voor de neusreductie en lager van de aandrijfas van de propeller",
+   "Koeling, smering en het motorvermogen te verhogen",
+   "Koeling, smering van de motor en afvoeren van fijne deeltjes",
+   "Koeling van de motor en smering van de propeller aandrijfas"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666176",
+  "topic": "81.9.5.2.1 Describe the purpose and working principle of a lubrication system, and describe the functions of its components: oil",
+  "question": "Wat gebeurd er indien een oliefilter geblokkeerd is?",
+  "options": [
+   "De oliecirculatie stopt na 15 minuten waardoor een goede werking van de motor niet meer gegerandeerd kan wordenT",
+   "Een omloopklep opent waardoor de circulatie verder gaat, deeltjes zullen niet gefilterd worden",
+   "De oliecirculatie stopt na 30 minuten waardoor een goede werking van de motor niet meer gegerandeerd kan worden",
+   "Een omloopklep opent waardoor de circulatie verder gaat, deeltjes worden gefilterd via een alternatieve filter"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666168",
+  "topic": "81.9.6.1.3 Describe the purpose and function of the 'magneto check'",
+  "question": "Wat is de mogelijke oorzaak indien de motor slecht loopt wanneer je de magneto´s test?",
+  "options": [
+   "Ontstekingsschakelaar is defect",
+   "Een bougie is defect",
+   "Probleem met de starter",
+   "Kortsluiting in de grondaarding"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666178",
+  "topic": "81.9.7.1.1 Define the following terms: mixture, chemically correct ratio, best power, lean (weak) mixture, rich mixture",
+  "question": "Hoe noem je een brandstofmengeling met een hoge hoeveelheid brandstof",
+  "options": [
+   "Leeg",
+   "Vol",
+   "Arm",
+   "Rijk"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666179",
+  "topic": "81.9.7.1.3 Explain and use the procedure of 'leaning' the mixture in relation to the EGT gauge",
+  "question": "Met toenemende hoogte en onveranderde mengselverhouding, de lucht/brandstofverhouding…",
+  "options": [
+   "Vloeibaar worden",
+   "Armer worden",
+   "Rijker worden",
+   "Constant blijven"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666177",
+  "topic": "81.9.7.1.4 Explain how to shut down an petrol engine",
+  "question": "Hoe moet je een Otto motor uitschakelen?",
+  "options": [
+   "Door de propeller in de vaanstand te plaatsen",
+   "Door de generator uit te schakelen",
+   "Door het mengsel helemaal arm te zetten",
+   "Door de gashendel helemaal dicht te zetten"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666190",
+  "topic": "82.1.2.1.2 Identify temperature measurements that are applicable to general aviation aircrafts: gas temperature measurement",
+  "question": "Welke wijzers hebben een meting van de temperatuur nodig?",
+  "options": [
+   "Motorsmering, koelvloeistof, cilinderkop, uitlaatgas, buitenlucht, cabinelucht",
+   "Motorolie, cilinderkop, uitlaatgas, hoogtemeter, snelheidsmeter, stijg- en daalsnelheidsmeter",
+   "Motorsmering, uitlaatgas, buitenlucht, cabinelucht, directionele gyro",
+   "Motorsmering, cilinderkop, uitlaatgas, aanzuiging, buitenlucht, cabinelucht"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666191",
+  "topic": "82.1.3.1.5 Describe a typical postrefuelling procedure: recording the volume that was filled, converting to the appropriate unit",
+  "question": "De hoeveelheid brandstof is in kleine vliegtuigen meestal gemeten door een niveausensor. De Europese Certificatie Specificatie CS23 vereist dat…",
+  "options": [
+   "Tenminste 1 brandstofindicator moet beschibkaar zijn om de totale hoeveelheid brandstof aan boord aan te duiden. Deze indicator moet gecalibreerd zijn om de correcte hoeveelheid in alle fases van de vlucht aan te duiden",
+   "Een brandstofindicatie moet beschikbaar zijn voor iedere tank en de indicator moet gecalibreerd zijn om \"nul\" aan te duiden tijdens horizontale vlucht wanneer de resterende hoeveelheid in de tank gelijk is aan de onbruikbare hoeveelheid brandstof in de ta",
+   "Indien er geen brandstofindicator beschikbaar is in vlucht, moet de piloot de brandstofhoeveelheid nakijken voor de vlucht en tijdens de vlucht de resterende brandstofhoeveelheid op regelmatige intervallen berekenen",
+   "Indien de brandstofindicator niet meer werkt, moet de piloot landen op de eerstvolgende beschikbare luchthaven"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666217",
+  "topic": "82.2.1.1.1 Define the following pressure measurements and describe their relationship: 'static pressure', 'dynamic pressure',",
+  "question": "De term \"statische druk\" wordt gedefinieerd als druk …",
+  "options": [
+   "waargenomen door de pitotbuis (Pitot tube).",
+   "in de vliegtuigcabine.",
+   "van een onverstoorde luchtstroom.",
+   "als gevolg van een geordende stroom van luchtdeeltjes."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666219",
+  "topic": "82.2.1.1.1 Define the following pressure measurements and describe their relationship: 'static pressure', 'dynamic pressure',",
+  "question": "Waar is de dynamische druk direct afhankelijk van?",
+  "options": [
+   "Luchtdichtheid en de draagkrachtcoëfficient",
+   "Luchtdruk en de omgevingstemperatuur",
+   "Luchtdichtheid en de snelheid in het kwadraat",
+   "Draagkracht- en weerstandscoëfficient"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666193",
+  "topic": "82.2.1.2.1 Describe a typical pitot/static system and list the different instruments connected to the sources",
+  "question": "Het pitot / statisch systeem is vereist om…",
+  "options": [
+   "Ijsvorming te voorkomen op de pitotbuis",
+   "De totaal- en statische druk te meten",
+   "Mogelijke opbouw van statische ladingen voorkomen",
+   "De indicatie van de snelheidsmeter te corrigeren zodat deze ´nul´ aanduid wanneer het toestel op de grond staat"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666214",
+  "topic": "82.2.1.2.1 Describe a typical pitot/static system and list the different instruments connected to the sources",
+  "question": "Welke van de volgende instrumenten is verbonden met de pitotbuis?",
+  "options": [
+   "Hoogtemeter",
+   "Snelheidsmeter",
+   "Direct af te lezen kompas",
+   "Stijg- en daalsnelheidsmeter"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666215",
+  "topic": "82.2.1.2.1 Describe a typical pitot/static system and list the different instruments connected to the sources",
+  "question": "Welke cockpit instrumenten zijn verbonden met de statische poorten?",
+  "options": [
+   "Hoogtemeter, slip indicator, navigatiecomputer",
+   "Snelheidsmeter, direct af te lezen kompas, slip indicator",
+   "Snelheidsmeter, hoogtemeter, direct af te lezen kompas",
+   "Hoogtemeter, stijg- en daalsnelheidsmeter, snelheidsmeter"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666194",
+  "topic": "82.2.1.2.1 Describe a typical pitot/static system and list the different instruments connected to the sources",
+  "question": "Welke druk wordt gemeten met de pitotbuis",
+  "options": [
+   "Statische luchtdruk",
+   "Totale luchtdruk",
+   "Dynamische luchtdruk",
+   "Druk in de cabine"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666228",
+  "topic": "82.2.3.2.2 Define the terms 'height', 'altitude' and 'pressure altitude (flight level)'",
+  "question": "De referentieschaal op een hoogtemeter wordt ingesteld volgens de luchtdruk op de luchthaven (QFE). Welke indicatie zie je tijdens de vlucht?",
+  "options": [
+   "Hoogte boven zeeniveau",
+   "Luchtdrukhoogte",
+   "Hoogte boven de luchthaven",
+   "De hoogte van de luchthaven"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666200",
+  "topic": "82.2.3.2.3 Define the terms: 'indicated altitude', 'true altitude', 'pressure altitude', 'density altitude'",
+  "question": "De ware hoogte is…",
+  "options": [
+   "Een hoogte boven zeeniveau gecorrigeerd voor de non-standaard temperatuur",
+   "Een hoogte boven grondniveau gecorrigeerd voor de non-standaard temperatuur",
+   "Een drukhoogte gecorrigeerd voor de non-standaard temperatuu",
+   "Een hoogte boven grondniveau gecorrigeerd voor de non-standaard druk"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666197",
+  "topic": "82.2.3.3.1 Explain the operating principles of a barometric altimeter",
+  "question": "Wat is het doel van de hoogtemeter-subschaal?",
+  "options": [
+   "Om het referentieniveau voor de hoogtedecoder van de transponder in te stellen",
+   "De hoogtemeterwaarde aanpassen voor een niet-standaard temperatuur",
+   "Om de hoogtemeterwaarde te verwijzen naar een vooraf bepaald niveau, zoals gemiddeld zeeniveau, luchthavenniveau of drukniveau 1013,25 hPa",
+   "Om de hoogtemeter te corrigeren voor systeemfouten"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666201",
+  "topic": "82.2.3.3.1 Explain the operating principles of a barometric altimeter",
+  "question": "Welk instrument wordt beïnvloed door de hysterese fout (hysteresis error)",
+  "options": [
+   "Toerenteller",
+   "Daal- en stijgmeter",
+   "Hoogtemeter",
+   "Direct af te lezen kompas"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666202",
+  "topic": "82.2.3.3.1 Explain the operating principles of a barometric altimeter",
+  "question": "De meting van hoogte is gebaseerd op de verandering van..",
+  "options": [
+   "Totale druk",
+   "Dynamische druk",
+   "Statische druk",
+   "Differentieel druk"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666198",
+  "topic": "82.2.3.3.2 Explain the procedure for setting the correct pressure reference",
+  "question": "Op welke manier kan een foutief ingestelde QNH op een hoogtemeter leiden tot een foutieve hoogte aanduiding?",
+  "options": [
+   "Indien de instelling ingesteld is op een lagere druk dan de actuele druk, de indicatie is te hoog. Dit kan ervoor zorgen dat je lager vliegt dan verwacht.",
+   "Indien de instelling ingesteld is op een hogere druk dan de actuele druk, de indicatie is te laag. Dit kan ervoor zorgen dat je hoger vliegt dan verwacht.",
+   "Indien de instelling ingesteld is op een hogere druk dan de actuele druk, de indicatie is te hoog. Dit kan ervoor zorgen dat je lager vliegt dan verwacht.",
+   "Indien de instelling ingesteld is op een lager druk dan de actuele druk, de indicatie is te laag. Dit kan ervoor zorgen dat je lager vliegt dan verwacht."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666227",
+  "topic": "82.2.3.3.2 Explain the procedure for setting the correct pressure reference",
+  "question": "Wanneer is het nodig om de luchtdruk aan te passen in de referentieschaal van een hoogtemeter?",
+  "options": [
+   "Nadat het onderhoud gedaan is",
+   "Elke dag voor de eerste vlucht",
+   "Voor elke vlucht en tijdens een navigatievlucht",
+   "Een keer per maand voor een vlucht"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666199",
+  "topic": "82.2.3.3.3 Describe meteorological conditions that lead to a higher/lower indicated altitude, compared to the true altitude/FL,",
+  "question": "Een temperatuur lager dan standaard kan leiden tot…",
+  "options": [
+   "een geblokkeerde pitotbuis door ijsafzetting, welke ervoor zorgt dat de hoogtemer zijn huidige waarde zal blijven aanduiden",
+   "Een hoogte indicatie die te laag is",
+   "Een hoogte indicatie die te hoog is",
+   "Een correcte hoogteaanduiding, zolang de instelling van de hoogtemeter ingesteld is volgens de gecorrigeerde non-standaard temperatuur"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666226",
+  "topic": "82.2.3.4.1 Describe how the altimeter indication changes when setting higher/lower reference pressure",
+  "question": "Welk verschil in hoogte wordt weergegeven door een hoogtemeer, indien de referentiewaarde aangepast wordt van 1000 hPa naar 1010 hPa?",
+  "options": [
+   "80 m minder dan voordien",
+   "80 m meer dan voordien",
+   "0",
+   "De waarde hangt af van de QNH"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666230",
+  "topic": "82.2.4.1.2 Explain the operating principles of a VSI",
+  "question": "Een \"vario\" meet het verschil tussen…",
+  "options": [
+   "totale druk en statische druk.",
+   "onmiddellijke totale druk en voorafgaande totale druk.",
+   "onmiddellijke statische druk en voorafgaande statische druk.",
+   "dynamische druk en totale druk."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666229",
+  "topic": "82.2.4.1.2 Explain the operating principles of a VSI",
+  "question": "Een stijg- en daalsnelheidsmeter die verbonden is aan te grote vereffeningstank heeft tot gevolg…",
+  "options": [
+   "Indicatie dat je te laag bent",
+   "Geen indicatie",
+   "Indicatie dat je te hoog bent",
+   "Mechanische overbelasting"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666204",
+  "topic": "82.2.4.1.2 Explain the operating principles of a VSI",
+  "question": "De stijg- en daalsnelheidsmeter meet het verschil in druk tussen…",
+  "options": [
+   "De huidige dynamische druk en de dynamische druk van een vorig moment",
+   "De huidige statische druk en de statische druk van een vorig moment",
+   "De huidige totale druk en de totale druk van een vorig moment",
+   "De huidige dynamische druk en de statische druk van een vorig moment"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666203",
+  "topic": "82.2.4.1.2 Explain the operating principles of a VSI",
+  "question": "Welke van de volgende opties geeft het principe weer van een stijg- en daalsnelheidsmeter?",
+  "options": [
+   "Totale druk wordt gemeten en vergeleken met statische druk",
+   "Meten van de huidige statische druk en deze vergelijken met de statische druk in een reservoir",
+   "Meten van verticale versnelling door de verplaatsing van een gyroscopische massa",
+   "Statische druk wordt gemeten en vergeleken met een vacuüm"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666196",
+  "topic": "82.2.4.2.1 Describe and identify how vertical speed can be displayed on: analog instruments (pointer), integrated electronic",
+  "question": "QNE is de...",
+  "options": [
+   "Magnetische richting naar een baken",
+   "Barometrische druk aangepast aan het zeeniveaun, rekening houdende met ISA",
+   "De hoogte boven het referentie drukniveau 1013,25 hPa",
+   "Barometrische druk boven een referentiepunt, meestal de drempel van de landingsbaan van een luchthaven"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666195",
+  "topic": "82.2.4.2.1 Describe and identify how vertical speed can be displayed on: analog instruments (pointer), integrated electronic",
+  "question": "QFE is de...",
+  "options": [
+   "Magnetische richting naar een baken",
+   "De hoogte boven het referentie drukniveau 1013,25 hPa",
+   "Barometrische druk boven een referentiepunt, meestal de drempel van de landingsbaan van een luchthaven",
+   "Barometrische druk aangepast aan het zeeniveaun, rekening houdende met ISA"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666205",
+  "topic": "82.2.5.1.1 Define the terms: 'IAS', 'CAS', 'TAS'",
+  "question": "Gecalibreerde snelheid (CAS) komt overeen met…",
+  "options": [
+   "Grondsnelheid (GS) gecorrigeerd voor instrument- en positiefout",
+   "Equivalente snelheid (EAS) gecorrigeerd voor de hoogte",
+   "Ware snelheid (TAS) gecorrigeerd voor de wind",
+   "Aangeduide snelheid (IAS) gecorrigeerd voor instrument- en positiefout"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666207",
+  "topic": "82.2.5.1.2 Convert between IAS/CAS and TAS using the rule of thumb ('2% per 1000 ft')",
+  "question": "Een vliegtuig kruist in een richting (heading) van 180° met een ware snelheid van 110 knopen. De wind is 180° en 30 knopen, pressure altitude 5000 ft. Verwaarloos instrument- en positiefouten, wat is de geschatte aanduiding van de snelheidsmeter?",
+  "options": [
+   "110 kt",
+   "90 kt",
+   "100 kt",
+   "120 kt"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666206",
+  "topic": "82.2.5.1.2 Convert between IAS/CAS and TAS using the rule of thumb ('2% per 1000 ft')",
+  "question": "Op grotere hoogtes, de ware snelheid (TAS) heeft de aanleiding hoger te zijn dan de gecalibreerde snelheid (CAS). Een snelle berekening van de ware snelheid (TAS) kan je doen door...",
+  "options": [
+   "10 % van de CAS af te trekken voor elke 1000 voet hoogte",
+   "2 % van de CAS toe te voegen voor elke 1000 voet hoogte",
+   "10 % van de CAS toe te voegen voor elke 1000 voet hoogte",
+   "2 % van de CAS af te trekken voor elke 1000 voet hoogte"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666210",
+  "topic": "82.2.5.2.1 Explain the operating principles of an airspeed indicator (ASI)",
+  "question": "Wat is er nodig om de snelheid te bepalen (IAS) van een snelheidsmeter?",
+  "options": [
+   "Het verschil tussen totale druk en statische druk",
+   "Het verschil tussen totale druk en dynamische druk",
+   "Het verschil tussen de standaarddruk en de totaaldruk",
+   "Het verschil tussen dynamische druk en statische druk"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666208",
+  "topic": "82.2.5.2.1 Explain the operating principles of an airspeed indicator (ASI)",
+  "question": "Welke van volgende geeft de werking weer van een snelheidsmeter?",
+  "options": [
+   "Totale druk is gemeten door de statische poorten en geconverteerd in een snelheid door de snelheidsmeter",
+   "Dynamische druk is gemeten door de pitotbuis en geconverteerd in een snelheid door de hoogtemeter",
+   "Totale druk wordt gemeten en vergeleken met statische druk",
+   "Statische druk wordt gemeten en vergeleken met een vacuüm"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666224",
+  "topic": "82.2.5.3.2 Explain the following colour codes that can be used on an aeroplane ASI: white arc (flap operating speed range),",
+  "question": "Met welke kleur is de waarschuwingszone gemarkeerd op een luchtsnelheidsindicator?",
+  "options": [
+   "Rood",
+   "Geel",
+   "Wit",
+   "Groen"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666211",
+  "topic": "82.2.5.3.2 Explain the following colour codes that can be used on an aeroplane ASI: white arc (flap operating speed range),",
+  "question": "Wat is de betekenis van de witte zone op een snelheidsmeter?",
+  "options": [
+   "Snelheid die je kan gebruiken in kalme lucht",
+   "Snelheidszone waar je mag vliegen met de vleugelkleppen naar beneden",
+   "Snelheid die je kan gebruiken in turbulente condities",
+   "De nooit te overschreiden snelheidszone"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666272",
+  "topic": "82.2.5.3.2 Explain the following colour codes that can be used on an aeroplane ASI: white arc (flap operating speed range),",
+  "question": "De rode markering aan het einde van de gele boog (5) duidt welke snelheid aan? Zie figuur (PFP-008)",
+  "options": [
+   "VNE: Nooit te overschrijden snelheid",
+   "VFE: Maximum snelheid om de vleugelkleppen te bedienen",
+   "VS1: Overtrek snelheid met vleugelkleppen omhoog",
+   "VNO: Maximum snelheid voor normale operaties"
+  ],
+  "correct": 0,
+  "images": [
+   "img/aircraft_general/666272_0.jpeg"
+  ]
+ },
+ {
+  "id": "666270",
+  "topic": "82.3.1.1.1 Describe the magnetic field of the Earth with regard to: magnetic poles, orientation of the magnetic field lines",
+  "question": "Waar bereikt de inclinatie zijn laagste waarde?",
+  "options": [
+   "Op de geografische evenaar",
+   "Bij de magnetische polen",
+   "Bij de geografische polen",
+   "Op de magnetische evenaar"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666231",
+  "topic": "82.3.1.1.2 Define the following terms: 'magnetic variation (VAR)', 'magnetic dip (inclination)'",
+  "question": "De term ´inclinatie´ is gedefinieerd als…",
+  "options": [
+   "Hoek tussen de lengteas van het vliegtuig en het ware noorden",
+   "De hoek tussen de magnetische veldlijnen en het horizontale vlak",
+   "Deviatie als gevolg van electrische velden",
+   "Hoek tussen het magnetische en ware noorden"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666271",
+  "topic": "82.3.2.1.2 Explain the origin and effect of aircraft's magnetic field on the alignment of the magnetic compass",
+  "question": "Elektronica aan boord van een vliegtuig hebben invloed op de…",
+  "options": [
+   "turn coordinator.",
+   "kunstmatige horizon.",
+   "kompas (direct reading compass).",
+   "snelheidsmeter."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666212",
+  "topic": "82.3.2.1.3 Define 'deviation (DEV)' and 'compass north (CN)'",
+  "question": "De kompasfout veroorzaakt door het magnetisch veld van het vliegtuig noemt…",
+  "options": [
+   "Deviatie",
+   "Declinatie",
+   "Variatie",
+   "Inclinatie"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666213",
+  "topic": "82.3.2.2.1 State that the indication of a magnetic compass is affected by deviation, turning and acceleration errors",
+  "question": "De indicatie van een magnetisch kompas wijkt af van het magnetische noorden door welke fouten?",
+  "options": [
+   "Inclinatie en declinatie van het magnetisch veld van de aarde",
+   "Deviatie, bochtfout en acceleratiefoutDeviation, turning and acceleration errors",
+   "Zwaartekracht en magnetisme",
+   "Variatie, bochtfout en acceleratiefout"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666216",
+  "topic": "82.3.2.2.2 Describe the 'turning error' and determine required indication the roll out on a desired heading",
+  "question": "Een vliegtuig op het noordelijk halfrond wil op de kortste weg draaien van een koers van 360° naar een koers van 270°. Bij welke aanduiding van het magnetische kompas moet de bocht worden beëindigd?",
+  "options": [
+   "300°",
+   "270°",
+   "360°",
+   "240°"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666218",
+  "topic": "82.3.2.2.2 Describe the 'turning error' and determine required indication the roll out on a desired heading",
+  "question": "Een vliegtuig op het noordelijk halfrond wil op de kortste weg draaien van een koers van 030° naar een koers van 180°. Bij welke aanduiding van het magnetische richting moet de bocht worden beëindigd?",
+  "options": [
+   "180°",
+   "360°",
+   "210°",
+   "150°"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666220",
+  "topic": "82.4.1.2.1 Explain the fundamentals of the theory of gyroscopic forces",
+  "question": "Welk gedrag heeft draaiende gyroscoop in de ruimte?",
+  "options": [
+   "Het wil zijn positie aanhouden in de ruimte",
+   "Hij zal cirkels beginnen maken die steeds kleiner worden",
+   "Hij zal bewegen zoals de massa rondom beweegt",
+   "Hij zal pendelen van links naar rechts als een pendel"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666222",
+  "topic": "82.4.2.1.1 Explain the purpose of a rateofturn and balance (slip) indicator",
+  "question": "Een hellings- en bochtaanwijzer geeft informatie voor…",
+  "options": [
+   "Het tempo van de bocht en de coördinatie, m.a.w. slippen of schuiven (skidding) in de bocht",
+   "De coördinatie van de bocht en sliphoek",
+   "Het tempo van de bocht en de hellingshoek van het vliegtuig",
+   "De invals- (pitch) en hellingshoek van het vliegtuig"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666232",
+  "topic": "82.4.2.1.1 Explain the purpose of a rateofturn and balance (slip) indicator",
+  "question": "Wat geeft een slip indicator weer?",
+  "options": [
+   "Schijnbare verticaal",
+   "De helling van het vliegtuig",
+   "Verticale op de horizon",
+   "Het tempo van de bocht"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666221",
+  "topic": "82.4.2.1.2 Define 'rate1 turn', and describe the relation between bank and TAS for a rate1turn",
+  "question": "De hellingshoek van een cirkel van 2 minuten hangt af van de…",
+  "options": [
+   "CAS.",
+   "IAS.",
+   "TAS.",
+   "Grond snelheid."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666233",
+  "topic": "82.4.2.1.3 Explain the operating principle of a turnandbank indicator and a turn coordinator with regard to: orientation of axis,",
+  "question": "De bal van de slipindicator is verplaatst naar rechts tijdens een rechterbocht. Wat kan je doen om de bal terug neutraal te krijgen?",
+  "options": [
+   "Meer helling, verhoog het tempo van de bocht",
+   "Minder helling, verhoog het tempo van de bocht",
+   "Verminder het tempo van de bocht, reduceer de helling",
+   "Reduceer de snelheid, verhoog de helling"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666225",
+  "topic": "82.4.4.1.3 Describe the Horzintal Situation Indicator (HSI) with regard to: power supply, indication",
+  "question": "Een horizontale situatieaanwijzer (horizontal situation indicator, HSI) combineerd de informatie afkomstig van…",
+  "options": [
+   "De directionele gyroscoop en de vluchtbegeleider (flight director)",
+   "De gyrometer en de slip indicator",
+   "De kunstmatige horizon en de relatieve richtingsaanwijzer",
+   "De directionele gyroscoop en de VHF navigatie ontvanger"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666223",
+  "topic": "82.6.1.1.1 State the colors used for 'warning' and 'caution' indications (red, amber)",
+  "question": "Welk kleur adviseert de piloot de conditie ´correctieve actie kan nodig zijn in de toekomst´?",
+  "options": [
+   "Amber (oranje)",
+   "Rood",
+   "Groen",
+   "Blauw"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666209",
+  "topic": "82.6.1.1.2 State how operational limits are displayed",
+  "question": "Welke waarde is gebruikelijk gemarkeerd met een rode lijn op een instrumenten display?",
+  "options": [
+   "Aangewezen gebied",
+   "Operationele zone",
+   "Operationele limiet",
+   "Zone waar attentie nodig is"
+  ],
+  "correct": 2,
+  "images": []
+ }
+]

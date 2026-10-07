@@ -1,0 +1,860 @@
+[
+ {
+  "id": "665864",
+  "topic": "40.1.1.1.1 Define commonly used air traffic services (ATS) terms for stations",
+  "question": "Waar staat de afkorting \"FIS\" voor?",
+  "options": [
+   "Flashing Information Service",
+   "Flashing Information System",
+   "Flight Information System",
+   "Flight Information Service"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665865",
+  "topic": "40.1.1.1.1 Define commonly used air traffic services (ATS) terms for stations",
+  "question": "Wat is de betekenis van de afkorting FIR ?",
+  "options": [
+   "Verkeersintegriteit vereist (Flow Integrity Required)",
+   "Verkeersinformatie radar (Flow Information Radar)",
+   "Vluchtintegriteit ontvanger (Flight Integrity Receiver)",
+   "Vluchtinformatiegebied (Flight information region)"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665862",
+  "topic": "40.1.1.2.1 Define commonly used ATS abbreviations: flight conditions, airspace, services, time, VFRrelated terms",
+  "question": "Welke afkorting wordt gebruikt voor de term \"Visual Flight Rules\"?",
+  "options": [
+   "VFR",
+   "VMC",
+   "VRU",
+   "VFS"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665866",
+  "topic": "40.1.1.2.1 Define commonly used ATS abbreviations: flight conditions, airspace, services, time, VFRrelated terms",
+  "question": "Waar staat de afkorting \"H24\" voor?",
+  "options": [
+   "Geen specifieke openingstijden",
+   "Van zonsondergang tot zonsopgang",
+   "24-uurs service",
+   "zonsopgang tot zonsondergang"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665867",
+  "topic": "40.1.1.2.1 Define commonly used ATS abbreviations: flight conditions, airspace, services, time, VFRrelated terms",
+  "question": "Waar staat de afkorting \"HX\" voor?",
+  "options": [
+   "Geen specifieke openingstijden",
+   "zonsopgang tot zonsondergang",
+   "Van zonsondergang tot zonsopgang",
+   "24-uurs service"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665863",
+  "topic": "40.1.1.2.1 Define commonly used ATS abbreviations: flight conditions, airspace, services, time, VFRrelated terms",
+  "question": "Welke afkorting wordt gebruikt voor de term \"obstacle\"?",
+  "options": [
+   "OBST",
+   "OBS",
+   "OBTC",
+   "OST"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665868",
+  "topic": "40.1.1.3.1 Define Qcode groups commonly used in RT airground communications: pressure settings (QNH, QFE, Standard)",
+  "question": "Op welke waarde moet de hoogtemeter worden ingesteld om nul op de grond weer te geven?",
+  "options": [
+   "QTE",
+   "QNE",
+   "QFE",
+   "QNH"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665869",
+  "topic": "40.1.1.3.1 Define Qcode groups commonly used in RT airground communications: pressure settings (QNH, QFE, Standard)",
+  "question": "Welke hoogte wordt weergegeven met de hoogtemeter ingesteld op de term \"QFE\"?",
+  "options": [
+   "Hoogte in verhouding tot het hoogste terrein / obstakel binnen 10 km omtrek",
+   "Hoogte in verhouding met de luchtdruk op de referentie luchthaven",
+   "Hoogte in verhouding tot het 1013,25 hPa drukvlak",
+   "Hoogte in verhouding tot de luchtdruk op zeeniveau"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665870",
+  "topic": "40.1.1.3.2 Define Qcode groups commonly used in RT airground communications: directions (Magnetic) and bearings (QDM,",
+  "question": "Waar staat de afkorting \"QTE\" voor?",
+  "options": [
+   "Magnetische peiling naar het station",
+   "Ware koers naar het station",
+   "Ware koers vanaf het station",
+   "Magnetische peiling vanaf het station"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665872",
+  "topic": "40.1.1.3.2 Define Qcode groups commonly used in RT airground communications: directions (Magnetic) and bearings (QDM,",
+  "question": "Welke Q-code wordt gebruikt voor de ware peiling naar het station?",
+  "options": [
+   "QDM",
+   "QUJ",
+   "QDR",
+   "QTE"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665871",
+  "topic": "40.1.1.3.2 Define Qcode groups commonly used in RT airground communications: directions (Magnetic) and bearings (QDM,",
+  "question": "Welke Q-code wordt gebruikt voor de ware peiling vanaf het station?",
+  "options": [
+   "QDR",
+   "QDM",
+   "QUJ",
+   "QTE"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665873",
+  "topic": "40.1.1.4.1 Name different categories of radio messages",
+  "question": "Wat is de correcte term voor een bericht gebruikt door de verkeersleiding?",
+  "options": [
+   "Vluchtregelmatigheidsberichten",
+   "Bericht met betrekking tot de richtingzoeker (direction finding)",
+   "Vluchtveiligheidsberichten",
+   "Meteorologische berichten"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665876",
+  "topic": "40.1.1.4.3 Identify to which category of messages a type of message belongs and identify the associated priority indicator",
+  "question": "Welke van de volgende berichten heeft de hoogste prioriteit?",
+  "options": [
+   "Wind 300 degrees, 5 knots",
+   "Request QDM",
+   "QNH 1013",
+   "Turn left"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665879",
+  "topic": "40.1.2.2.3 State how to transmit altitudes, flight levels and heights correctly",
+  "question": "Een hoogte van 4500 ft wordt uitgezonden als…",
+  "options": [
+   "four tousand five zero zero.",
+   "four five zero zero.",
+   "four tousand five hundred.",
+   "four five tousand."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665880",
+  "topic": "40.1.2.2.4 State how to transmit headings and bearings correctly",
+  "question": "Een koers van 285 graden wordt correct doorgegeven als…",
+  "options": [
+   "two hundred eight five.",
+   "two eight five hundred.",
+   "two hundred eighty-five.",
+   "two eight five."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665881",
+  "topic": "40.1.2.2.5 State how to transmit frequencies correctly",
+  "question": "Een frequentie van 119.500 MHz wordt correct uitgezonden als…",
+  "options": [
+   "one one niner decimal five zero zero.",
+   "one one niner tousand decimal five zero.",
+   "one one niner decimal five zero.",
+   "one one niner decimal five."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665908",
+  "topic": "40.1.2.2.7 State how to transmit visibility correctly, and which units used",
+  "question": "In welke gevallen wordt het zicht in kilometers doorgegeven?",
+  "options": [
+   "Groter dan 10 km",
+   "Tot 10 km",
+   "Tot 5 km",
+   "Groter dan 5 km"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665907",
+  "topic": "40.1.2.2.7 State how to transmit visibility correctly, and which units used",
+  "question": "In welk geval wordt het zicht uitgezonden in meters?",
+  "options": [
+   "Groter dan 10 km",
+   "Groter dan 5 km",
+   "Tot 5 km",
+   "Tot 10 km"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665906",
+  "topic": "40.1.2.2.7 State how to transmit visibility correctly, and which units used",
+  "question": "Wat is, gegeven een zicht van 12 km, de juiste manier om dit zicht door te geven?",
+  "options": [
+   "One-zero kilometers",
+   "Twelve kilometers",
+   "One-zero kilometers or more",
+   "One-two kilometers"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665883",
+  "topic": "40.1.2.3.1 State that UTC is used as standard time reference in RT",
+  "question": "Tijden worden verstuurd als...",
+  "options": [
+   "UTC tijd",
+   "Lokale tijd",
+   "Tijdzone afhankelijke tijd",
+   "Standaard tijd"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665884",
+  "topic": "40.1.2.3.2 Describe the ways of transmitting time: using only minutes, or minutes and hours, when required",
+  "question": "Om ervoor te zorgen dat er geen kans op dubbelzinnigheid is, moet een tijd van 1620 worden verzonden als…",
+  "options": [
+   "one tousand six hundred two zero.",
+   "sixteen twenty.",
+   "one six two zero.",
+   "two zero."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665885",
+  "topic": "40.1.2.5.1 Define the meaning of standard words and phrases",
+  "question": "Wat is de betekenis van de uitdrukking \"Roger\"?",
+  "options": [
+   "Toestemming voor voorgenomen handeling wordt verleend.",
+   "Er is een fout gemaakt in deze verzending. De juiste versie is…",
+   "Ik heb al uw laatste verzendingen ontvangen.",
+   "Ik begrijp uw bericht en zal er gevolg aan geven."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665888",
+  "topic": "40.1.2.5.1 Define the meaning of standard words and phrases",
+  "question": "Welk woord gebruikt een piloot als hij door gecontroleerd luchtruim wil vliegen?",
+  "options": [
+   "Would like",
+   "Request",
+   "Want",
+   "Apply"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665886",
+  "topic": "40.1.2.5.1 Define the meaning of standard words and phrases",
+  "question": "Wat is de betekenis van de term goedgekeurd (approved)?",
+  "options": [
+   "Toestemming voor voorgenomen handeling wordt verleend",
+   "Ik begrijp uw bericht en zal er gevolg aan geven",
+   "Dit bericht is foutief, de correcte versie is …",
+   "Ik heb uw laatste bericht volledig ontvangen"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665882",
+  "topic": "40.1.2.5.2 Recognise, describe and use the correct standard phraseology for each phase of a VFR flight: before taxi,  taxi,",
+  "question": "Hoe wordt de richtingaanwijzing \"12 o'clock\" correct verzonden in radiocommunicatie?",
+  "options": [
+   "twelve o'clock.",
+   "one two.",
+   "one two o'clock.",
+   "one two hundred."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665891",
+  "topic": "40.1.2.5.2 Recognise, describe and use the correct standard phraseology for each phase of a VFR flight: before taxi,  taxi,",
+  "question": "Welke zin moet worden gebruikt als een piloot wil dat de toren weet dat ze klaar zijn om op te stijgen?",
+  "options": [
+   "Ready for departure",
+   "Ready for start-up",
+   "Ready",
+   "Request take-off"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665892",
+  "topic": "40.1.2.5.2 Recognise, describe and use the correct standard phraseology for each phase of a VFR flight: before taxi,  taxi,",
+  "question": "Which phrase is used by a pilot to inform the tower about a go-around?",
+  "options": [
+   "No landing",
+   "Pulling up",
+   "Approach canceled",
+   "Going around"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665889",
+  "topic": "40.1.2.5.3 State how to affirm or negate questions correctly",
+  "question": "Welk woord gebruikt een piloot als een uitzending met \"yes\" moet worden beantwoord?",
+  "options": [
+   "Affirm",
+   "Affirmative",
+   "Roger",
+   "Yes"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665890",
+  "topic": "40.1.2.5.3 State how to affirm or negate questions correctly",
+  "question": "Welk woord gebruikt een piloot als een uitzending met \"no\" moet worden beantwoord?",
+  "options": [
+   "Finish",
+   "No",
+   "Negative",
+   "Not"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665913",
+  "topic": "40.1.2.5.6 Describe the procedure for 'blind transmissions'",
+  "question": "Op welke frequentie moet een blinde uitzending plaatsvinden?",
+  "options": [
+   "Op de juiste FIS-frequentie",
+   "Op de huidige frequentie",
+   "Op een radarfrequentie van het lagere luchtruim",
+   "Op een torenfrequentie"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665860",
+  "topic": "40.1.2.5.6 Describe the procedure for 'blind transmissions'",
+  "question": "In welke situatie moet een piloot blind transmissions gebruiken?",
+  "options": [
+   "Wanneer een uitzending met belangrijke navigatie- of technische informatie naar meerdere stations tegelijk moet worden verzonden",
+   "Wanneer de verkeerssituatie op een luchthaven het mogelijk maakt om informatie te verzenden die niet door het grondstation hoeft te worden bevestigd",
+   "Wanneer een piloot onbedoeld in een wolk of mist is gevlogen en daarom navigatie-assistentie wil vragen aan een grondeenheid",
+   "Wanneer er geen radiocommunicatie tot stand kan worden gebracht met het juiste luchtvaartstation, maar wanneer er bewijs bestaat dat uitzendingen op die grondeenheid zijn ontvangen"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665914",
+  "topic": "40.1.2.5.6 Describe the procedure for 'blind transmissions'",
+  "question": "Hoe vaak moet een blinde transmissie worden gemaakt?",
+  "options": [
+   "Een keer",
+   "Tweemaal",
+   "Drie keer",
+   "Vier keer"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665912",
+  "topic": "40.1.2.5.6 Describe the procedure for 'blind transmissions'",
+  "question": "Wat is de juiste zin om een blinde uitzending (blind transmission) te beginnen?",
+  "options": [
+   "Blind",
+   "No reception",
+   "Transmitting blind",
+   "Listen"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665893",
+  "topic": "40.1.2.6.2 Identify the callsign suffixes for aeronautical stations",
+  "question": "Wat is de roepnaam van de vluchtinformatiedienst (flight information service)?",
+  "options": [
+   "Advice",
+   "Info",
+   "Information",
+   "Flight information"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665877",
+  "topic": "40.1.2.7.1 Describe the composition and transmission of an aircraft call sign",
+  "question": "Wat is de juiste manier om de roepnaam HB-YKM te verzenden?",
+  "options": [
+   "Hotel Bravo Yuliett Kilo Mikro",
+   "Home Bravo Yankee Kilo Mikro",
+   "Home Bravo Yuliett Kilo Mike",
+   "Hotel Bravo Yankee Kilo Mike"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665878",
+  "topic": "40.1.2.7.1 Describe the composition and transmission of an aircraft call sign",
+  "question": "Wat is de juiste manier om de roepnaam OE-JVK te verzenden?",
+  "options": [
+   "Omega Echo Jankee Victor Kilo",
+   "Oscar Echo Jankee Victor Kilogramm",
+   "Omega Echo Juliett Victor Kilogramm",
+   "Oscar Echo Juliett Victor Kilo"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665895",
+  "topic": "40.1.2.7.3 State that upon initial contact all characters of an aircraft have to be transmitted",
+  "question": "Wat is de juiste manier om de roepnaam van een vliegtuig te gebruiken bij het eerste contact?",
+  "options": [
+   "Alleen de eerste drie tekens gebruiken",
+   "Alle tekens gebruiken",
+   "Alleen de eerste twee tekens gebruiken",
+   "Alleen de laatste twee tekens gebruiken"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665894",
+  "topic": "40.1.2.7.4 State that an abbreviated call sign must only be used if it was already abbreviated by the ground station",
+  "question": "Wanneer is het als piloot toegelaten de roepnaam (call sign) af te korten?",
+  "options": [
+   "Nadat een grondstation de afkorting gebruikt heeft",
+   "Binnen gecontroleerd luchtruim",
+   "Als er weinig verkeer in het circuit is",
+   "Nadat je het eerste meldpunt gepasseerd bent"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665887",
+  "topic": "40.1.2.9.1 Explain how to test radio transmission and reception",
+  "question": "Welke zin gebruikt een piloot als hij de verstaanbaarheid van zijn uitzending wil controleren?",
+  "options": [
+   "Request readability",
+   "How do you read?",
+   "What is the communication like?",
+   "You read me five"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665898",
+  "topic": "40.1.2.9.2 State the readability scale and explain its meaning",
+  "question": "Wat geeft een verstaanbaarheid van 3 aan?",
+  "options": [
+   "De uitzending is perfect verstaanbaar.",
+   "De transmissie is verstaanbaar maar met moeite.",
+   "De uitzending is onverstaanbaar.",
+   "De uitzending is af en toe verstaanbaar."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665896",
+  "topic": "40.1.2.9.2 State the readability scale and explain its meaning",
+  "question": "Wat geeft een verstaanbaarheid van 1 aan?",
+  "options": [
+   "De uitzending is perfect verstaanbaar.",
+   "De uitzending is onverstaanbaar.",
+   "De transmissie is verstaanbaar maar met moeite.",
+   "De uitzending is af en toe verstaanbaar."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665899",
+  "topic": "40.1.2.9.2 State the readability scale and explain its meaning",
+  "question": "Wat geeft een verstaanbaarheid van 5 aan?",
+  "options": [
+   "De uitzending is perfect verstaanbaar.",
+   "De uitzending is af en toe verstaanbaar.",
+   "De uitzending is onverstaanbaar.",
+   "De transmissie is verstaanbaar maar met moeite."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665897",
+  "topic": "40.1.2.9.2 State the readability scale and explain its meaning",
+  "question": "Wat betekent een verstaanbaarheid 2 (readability two)?",
+  "options": [
+   "Het bericht is perfect verstaanbaar",
+   "Het bericht is verstaanbaar nu en dan",
+   "Het bericht is onverstaanbaar",
+   "maar met moeite"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665903",
+  "topic": "40.1.2.10.3 Give examples of how to correctly read back ATC instructions",
+  "question": "Wat is de juiste manier om \"You are now entering airspace Delta\" te erkennen?",
+  "options": [
+   "Roger",
+   "Entering",
+   "Wilco",
+   "Airspace Delta"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665902",
+  "topic": "40.1.2.10.3 Give examples of how to correctly read back ATC instructions",
+  "question": "Wat is de juiste manier om de instructie te erkennen: \"DZF after lift-off, climb straight-ahead until 2500 feet before turning right heading 220 degrees, wind 090 degrees, 5 knots, runway 12, cleared for take-off\"?",
+  "options": [
+   "DZF after lift-off, climb straight ahead 2500 feet, then turn right heading 220, 090 degrees, 5 knots, cleared for take-off",
+   "DZF after lift-off, climb straight ahead 2500 feet, then turn right heading 220, runway 12, cleared for take-off",
+   "DZF after lift-off, climb straight ahead 2500 feet, then turn right heading 220, 090 degrees, 5 knots",
+   "DZF after lift-off, climb straight ahead 2500 feet, wilco, heading 220 degrees, 090 degrees, 5 knots, cleared for take-off"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665900",
+  "topic": "40.1.2.10.4 Give examples of data that shall NOT be read back (e.g. wind, traffic information, etc.)",
+  "question": "Welke informatie van een grondstation hoeft niet te worden teruggelezen?",
+  "options": [
+   "Baan in gebruik",
+   "Wind",
+   "Hoogte",
+   "SSR-Code"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665901",
+  "topic": "40.1.2.10.4 Give examples of data that shall NOT be read back (e.g. wind, traffic information, etc.)",
+  "question": "Welke informatie van een grondstation vereist geen terugmelding?",
+  "options": [
+   "Koers",
+   "Hoogtemeter instelling",
+   "Verkeersinformatie",
+   "Taxi-instructies"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665861",
+  "topic": "40.1.2.10.5 State in which cases leaving frequency has to be approved or reported",
+  "question": "Een controlefrequentie verlaten (behalve bij het bereiken van de definitieve parkeerpositie)...",
+  "options": [
+   "moet worden gemeld.",
+   "moet worden goedgekeurd.",
+   "melden is niet verplicht.",
+   "moet twee keer worden goedgekeurd."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665905",
+  "topic": "40.1.3.1.2 Define meteorological terms used with aviation weather messages (e.g. 'ceiling', 'CAVOK', 'FEW', 'SCT', 'BKN',",
+  "question": "Wat betekent een bewolking van \"SCT\" in een METAR-weerbericht?",
+  "options": [
+   "8 achtsten",
+   "5 tot 7 achtsten",
+   "3 tot 4 achtsten",
+   "1 tot 2 achtsten"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665904",
+  "topic": "40.1.3.1.2 Define meteorological terms used with aviation weather messages (e.g. 'ceiling', 'CAVOK', 'FEW', 'SCT', 'BKN',",
+  "question": "Wat betekent een bewolking van \"FEW\" in een METAR-weerbericht?",
+  "options": [
+   "3 tot 4 achtsten",
+   "1 tot 2 achtsten",
+   "5 tot 7 achtsten",
+   "8 achtsten"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665910",
+  "topic": "40.1.3.2.2 Describe situations in which a pilot can obtain weather broadcasts",
+  "question": "Op welke manier kan je tijdens een navigatievlucht meteorologische informatie verkrijgen van luchthavens?",
+  "options": [
+   "VOLMET",
+   "METAR",
+   "AIRMET",
+   "GAMET"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665925",
+  "topic": "40.1.3.2.3 Explain the terms 'ATIS' and 'VOLMET' and their relevant content",
+  "question": "Een ATIS is geldig voor…",
+  "options": [
+   "60 minuten.",
+   "45 minuten.",
+   "30 minuten.",
+   "10 minuten."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665909",
+  "topic": "40.1.3.2.3 Explain the terms 'ATIS' and 'VOLMET' and their relevant content",
+  "question": "Welke informatie wordt uitgezonden op een VOLMET-frequentie?",
+  "options": [
+   "Meteorologische informatie",
+   "Huidige informatie",
+   "NOTAMS",
+   "Navigatie-informatie"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665917",
+  "topic": "40.1.4.1.2 Describe procedures in case of communication failure when approaching or in controlled airspace (e.g. CTR)",
+  "question": "Onder welke voorwaarden mag het luchtruim van klasse D worden betreden bij een radiostoring?",
+  "options": [
+   "Het is het vliegveld van vertrek.",
+   "Het is de luchthaven van bestemming.",
+   "De goedkeuring is vooraf verleend.",
+   "Er zijn andere vliegtuigen in het circuit van het vliegveld."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665916",
+  "topic": "40.1.4.1.2 Describe procedures in case of communication failure when approaching or in controlled airspace (e.g. CTR)",
+  "question": "Wat is de juiste handelwijze bij een radiostoring in het luchtruim van klasse D?",
+  "options": [
+   "De vlucht moet worden voortgezet volgens de laatste klaring, voldoen aan de VFR-vliegregels of het luchtruim moet worden verlaten via een standaardroute.",
+   "De vlucht moet worden voortgezet volgens de laatste klaring, voldoen aan de VFR-regels of het luchtruim moet worden verlaten via de kortste route.",
+   "De vlucht moet worden voortgezet boven 5000 ft, in overeenstemming met de VFR-vliegregels, of het luchtruim moet worden verlaten via een standaardroute.",
+   "De vlucht moet worden voortgezet boven 5000 ft, in overeenstemming met de VFR-vliegregels, of het luchtruim moet worden verlaten via de kortste route."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665915",
+  "topic": "40.1.4.1.4 State the SSR code that may be used to indicate communication failure",
+  "question": "In welke situatie is het gepast om de transpondercode 7600 in te stellen?",
+  "options": [
+   "Vlucht in de wolken",
+   "kaping",
+   "Noodgeval",
+   "Verlies van radio"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665911",
+  "topic": "40.1.4.1.4 State the SSR code that may be used to indicate communication failure",
+  "question": "Welke transpondercode geeft een radiostoring aan?",
+  "options": [
+   "7500",
+   "7000",
+   "7600",
+   "7700"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665874",
+  "topic": "40.1.5.1.1 Define 'DISTRESS'",
+  "question": "Noodberichten zijn berichten…",
+  "options": [
+   "betreffende de veiligheid van een luchtvaartuig, een vaartuig of een ander voertuig of persoon in zicht.",
+   "met betrekking tot vliegtuigen en hun passagiers die worden geconfronteerd met een ernstige en onmiddellijke dreiging en die onmiddellijke hulp nodig hebben.",
+   "verzonden door een piloot of een vliegtuigexploitant en die van onmiddellijk belang zijn.",
+   "concerning the operation or maintenance of facilities which are important for the safety and regularity of flight operations."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665919",
+  "topic": "40.1.5.1.3 State the frequencies that should be used by aircraft in DISTRESS",
+  "question": "Wat is de juiste frequentie voor een eerste noodbericht?",
+  "options": [
+   "Radarfrequentie",
+   "Huidige frequentie",
+   "Noodfrequentie",
+   "FIS-frequentie"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665921",
+  "topic": "40.1.5.1.4 State the SSR codes that may be used by aircraft in emergency",
+  "question": "Wat is de correcte transponder code voor noodgevallen (emergencies)?",
+  "options": [
+   "7500",
+   "7000",
+   "7600",
+   "7700"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665875",
+  "topic": "40.1.5.2.1 Define 'URGENCY'",
+  "question": "Urgentieberichten zijn berichten…",
+  "options": [
+   "betreffende de exploitatie of het onderhoud van voorzieningen die essentieel zijn voor de veiligheid of de regelmatigheid van de exploitatie van luchtvaartuigen.",
+   "verzonden door een piloot of een vliegtuigexploitant en zijn van onmiddellijk belang.",
+   "betreffende de veiligheid van een luchtvaartuig, een vaartuig of een ander voertuig of persoon in zicht.",
+   "met betrekking tot vliegtuigen en hun passagiers die worden geconfronteerd met een ernstige en onmiddellijke dreiging en die onmiddellijke hulp nodig hebben."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665918",
+  "topic": "40.1.5.2.2 State the wording used with urgency messages ('PAN PAN')",
+  "question": "Welke zin moet drie keer worden herhaald voordat een urgentiebericht wordt verzonden?",
+  "options": [
+   "Help",
+   "Urgent",
+   "Mayday",
+   "Pan Pan"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665920",
+  "topic": "40.1.5.2.7 List the correctly sequenced elements of an URGENCY signal/message and describe the message content",
+  "question": "Welke informatie moet er in een urgentiebericht staan?",
+  "options": [
+   "Beoogde route, belangrijke informatie voor ondersteuning, bedoelingen van de piloot, luchtvaartterrein van vertrek, luchtvaartterrein van bestemming, koers en hoogte",
+   "Beoogde route, belangrijke informatie voor ondersteuning, bedoelingen van de piloot, informatie over positie, vertrekluchthaven, koers en hoogte",
+   "Aard van het probleem of de waarneming, belangrijke informatie voor ondersteuning, bedoelingen van de piloot, informatie over positie, koers en hoogte",
+   "Aard van het probleem of de waarneming, belangrijke informatie voor ondersteuning, vertrekluchthaven, informatie over positie, koers en hoogte"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665924",
+  "topic": "40.1.6.1.1 State the properties of electromagnetic waves (e.g. frequency, wavelength, speed of propagation)",
+  "question": "Wat is de geschatte snelheid van de voortplanting van elektromagnetische golven?",
+  "options": [
+   "123,000 m/s",
+   "300,000 m/s",
+   "300,000 km/s",
+   "123,000 km/s"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665923",
+  "topic": "40.1.6.1.3 State the frequency range of the VHF band, and identify frequency used for VHF voice communication",
+  "question": "Wat is de juiste aanduiding van de frequentieband van 118.000 tot 136.975 MHz die wordt gebruikt voor spraakcommunicatie?",
+  "options": [
+   "MF",
+   "LF",
+   "HF",
+   "VHF"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665922",
+  "topic": "40.1.6.1.3 State the frequency range of the VHF band, and identify frequency used for VHF voice communication",
+  "question": "Welke van de volgende frequenties is bestemd voor VHF-spraakcommunicatie?",
+  "options": [
+   "118.75 MHz",
+   "327.25 MHz",
+   "118.75 kHz",
+   "327.25 kHz"
+  ],
+  "correct": 0,
+  "images": []
+ }
+]
