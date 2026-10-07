@@ -158,11 +158,23 @@
   // ---------- practice ----------
   let practice = null;
 
-  function viewPractice(licence, subject) {
-    const pool = questionsFor(licence, subject);
-    if (!pool.length && !window.AI.available()) { location.hash = '#/' + licence.toLowerCase(); return; }
-    const deckKey = `deck.${licence}.${subject}`;
-    practice = { licence, subject, pool, deckKey, q: null, chosen: null, session: { answered: 0, correct: 0 }, count: 0 };
+  function chaptersFor(licence, subject) {
+    const all = questionsFor(licence, subject);
+    return (window.CHAPTERS[subject] || []).map(ch => ({
+      ch, count: all.filter(q => window.chapterOf(subject, q.lo) === ch).length
+    }));
+  }
+
+  function viewPractice(licence, subject, chapterId) {
+    const all = questionsFor(licence, subject);
+    const chapter = (window.CHAPTERS[subject] || []).find(c => c.id === chapterId) || null;
+    const pool = chapter ? all.filter(q => window.chapterOf(subject, q.lo) === chapter) : all;
+    if (!pool.length && !window.AI.available()) {
+      location.hash = chapter ? `#/${licence.toLowerCase()}/${subject}/oefenen` : '#/' + licence.toLowerCase();
+      return;
+    }
+    const deckKey = `deck.${licence}.${subject}${chapter ? '.' + chapter.id : ''}`;
+    practice = { licence, subject, chapter, pool, deckKey, q: null, chosen: null, session: { answered: 0, correct: 0 }, count: 0 };
     nextPractice();
   }
 
@@ -186,7 +198,7 @@
       renderPracticeLoading();
       try {
         const examples = shuffle(P.pool.length ? P.pool : Object.values(BANK).flat()).slice(0, 3);
-        P.q = present(await window.AI.generate(P.licence, P.subject, examples));
+        P.q = present(await window.AI.generate(P.licence, P.subject, examples, P.chapter && P.chapter.name));
       } catch (err) {
         if (!P.pool.length) { renderPracticeError(err); return; }
         P.q = present(drawFromDeck());
@@ -202,20 +214,38 @@
     const P = practice;
     const S = SUBJECTS[P.subject];
     const ai = window.AI.available();
+    const total = questionsFor(P.licence, P.subject).length;
+    const chapterOpts = chaptersFor(P.licence, P.subject)
+      .filter(c => c.count > 0 || ai)
+      .map(c => `<option value="${esc(c.ch.id)}" ${P.chapter === c.ch ? 'selected' : ''}>${esc(c.ch.name)} (${c.count})</option>`).join('');
     return `<div class="crumbs"><a href="#/">Home</a> › <a href="#/${P.licence.toLowerCase()}">${esc(LICENCES[P.licence].name)}</a> › ${esc(S.name)}</div>
       <div class="quiz-head">
-        <div><h1>${S.icon} ${esc(S.name)}</h1><div class="muted small">Oefenmodus · ${P.pool.length} vragen in de databank${ai ? ' · AI-vragen aan' : ''}</div></div>
+        <div><h1>${S.icon} ${esc(S.name)}</h1><div class="muted small">Oefenmodus · ${P.pool.length} vragen${P.chapter ? ' in dit hoofdstuk' : ' in de databank'}${ai ? ' · AI-vragen aan' : ''}</div></div>
         <span class="score-pill">Sessie: ${P.session.correct}/${P.session.answered}</span>
-      </div>`;
+      </div>
+      ${chapterOpts ? `<div class="chapter-filter">
+        <label for="chapter">Hoofdstuk</label>
+        <select id="chapter"><option value="">Alle hoofdstukken (${total})</option>${chapterOpts}</select>
+      </div>` : ''}`;
+  }
+
+  function bindChapterSelect() {
+    const sel = document.getElementById('chapter');
+    if (sel) sel.onchange = () => {
+      const base = `#/${practice.licence.toLowerCase()}/${practice.subject}/oefenen`;
+      location.hash = sel.value ? `${base}/${sel.value}` : base;
+    };
   }
 
   function renderPracticeLoading() {
     app.innerHTML = practiceHeader() + `<div class="card"><span class="spinner"></span> Nieuwe vraag wordt gegenereerd…</div>`;
+    bindChapterSelect();
   }
   function renderPracticeError(err) {
     app.innerHTML = practiceHeader() + `<div class="card"><div class="feedback bad"><h3>Kon geen vraag genereren</h3><p>${esc(err.message)}</p></div>
       <div class="quiz-actions"><a class="btn" href="#/instellingen">Instellingen</a><button class="btn btn-primary" id="retry">Opnieuw proberen</button></div></div>`;
     document.getElementById('retry').onclick = () => nextPractice(true);
+    bindChapterSelect();
   }
 
   function renderPractice() {
@@ -243,6 +273,7 @@
       app.querySelector('.feedback')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
     document.getElementById('next').onclick = () => nextPractice();
+    bindChapterSelect();
     const ai = document.getElementById('ai-q');
     if (ai) ai.onclick = () => nextPractice(true);
     bindImages();
@@ -442,7 +473,7 @@
     const subject = parts[1];
     if (!LICENCES[licence].exams[subject]) return viewLicence(licence);
     if (parts[2] === 'examen') return viewExamIntro(licence, subject);
-    return viewPractice(licence, subject);
+    return viewPractice(licence, subject, parts[3]);
   }
 
   window.addEventListener('hashchange', route);

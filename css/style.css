@@ -205,3 +205,8 @@ input[type=text], input[type=password], select {
   h1 { font-size: 1.45rem; }
   .q-text { font-size: 1.02rem; }
 }
+
+/* Chapter filter */
+.chapter-filter { display: flex; align-items: center; gap: 10px; margin: -4px 0 16px; flex-wrap: wrap; }
+.chapter-filter label { font-weight: 600; }
+.chapter-filter select { width: auto; max-width: 100%; flex: 1 1 260px; }

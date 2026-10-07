@@ -17,7 +17,7 @@ window.AI = (function () {
     return s.enabled && !!s.apiKey;
   }
 
-  function buildPrompt(licence, subjectKey, examples) {
+  function buildPrompt(licence, subjectKey, examples, chapterName) {
     const subj = window.SUBJECTS[subjectKey];
     const lic = window.LICENCES[licence];
     const sourceList = Object.entries(window.SOURCES)
@@ -26,7 +26,7 @@ window.AI = (function () {
       question: q.q, options: q.o, correct: q.c, explanation: q.e, source: q.src, ref: q.ref
     })).join('\n');
     return `Je bent examinator voor het Belgische theorie-examen ${lic.name} (${lic.full}).
-Schrijf EEN nieuwe meerkeuzevraag in het Nederlands voor het vak "${subj.name}" (${subj.en}, ECQB-vak ${subj.code}).
+Schrijf EEN nieuwe meerkeuzevraag in het Nederlands voor het vak "${subj.name}" (${subj.en}, ECQB-vak ${subj.code})${chapterName ? `, hoofdstuk "${chapterName}"` : ''}.
 
 Eisen:
 - Stijl en moeilijkheid zoals het officiële ECQB/DGLV-examen (zie voorbeelden).
@@ -45,7 +45,7 @@ Antwoord UITSLUITEND met JSON in dit formaat:
 {"question": "...", "options": ["...","...","...","..."], "correct": 0, "explanation": "...", "source": "sera", "ref": "..."}`;
   }
 
-  async function generate(licence, subjectKey, examples) {
+  async function generate(licence, subjectKey, examples, chapterName) {
     const s = settings();
     if (!s.apiKey) throw new Error('Geen API-sleutel ingesteld (zie Instellingen).');
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(s.model)}:generateContent`;
@@ -53,7 +53,7 @@ Antwoord UITSLUITEND met JSON in dit formaat:
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'x-goog-api-key': s.apiKey },
       body: JSON.stringify({
-        contents: [{ parts: [{ text: buildPrompt(licence, subjectKey, examples) }] }],
+        contents: [{ parts: [{ text: buildPrompt(licence, subjectKey, examples, chapterName) }] }],
         generationConfig: { responseMimeType: 'application/json', temperature: 0.9 }
       })
     });

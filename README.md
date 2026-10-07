@@ -8,6 +8,7 @@ Onofficieel oefenplatform voor de theorie-examens **PPL(A)** (EASA Part-FCL, BCA
 - Keuze tussen **PPL** en **ULM**, daarna de vakken van die opleiding.
 - **Oefenmodus**: vragen uit de databank in willekeurige volgorde. Ook de volgorde van de antwoorden wordt geschud, zoals op het echte examen.
   Na het antwoorden krijg je een **groen** (juist) of **rood** (fout) vak met uitleg en een link naar de officiële bron (EASA, BCAA/DGLV, Belgische AIP).
+- **Per hoofdstuk oefenen**: in de oefenmodus kies je "Alle hoofdstukken" of één hoofdstuk van het vak (indeling via de ECQB-leerdoelcodes, zie `CHAPTERS` in `js/config.js`).
 - **Proefexamen** per vak met het aantal vragen en de tijd van het echte examen, met timer, markeren, overzicht en uitleg achteraf.
 - Optioneel: **AI-gegenereerde vragen** via je eigen Google Gemini API-sleutel (⚙️ Instellingen). Die vragen worden duidelijk gemarkeerd als niet gecontroleerd.
 - Je voortgang wordt lokaal in de browser bewaard.
