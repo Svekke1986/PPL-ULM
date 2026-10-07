@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PPL & ULM Examen Platform België</title>
+    <title>PPL & ULM Class of 2026-2027</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
@@ -290,14 +290,14 @@
     </div>
 
     <header>
-        <h1 id="app-title">✈️ AeroExam België</h1>
+        <h1 id="app-title">✈️ AeroExam</h1>
         <button id="btn-home" class="btn btn-secondary hidden" onclick="goHome()">Menu</button>
     </header>
 
     <div class="container">
         <!-- SCREEN 1: CATEGORY SELECTION -->
         <div id="screen-selection" class="card">
-            <h2 style="font-size: 1.6rem; color: var(--text-light);">Kies je Opleiding</h2>
+            <h2 style="font-size: 1.6rem; color: var(--text-light);">Kies je opleiding</h2>
             <p style="color: var(--text-muted); margin-top: 5px;">Selecteer de categorie waarvoor je wilt oefenen of examen afleggen.</p>
             
             <div class="license-grid">
@@ -322,14 +322,14 @@
         <div id="screen-subjects" class="card hidden">
             <button class="nav-back" onclick="goHome()">← Terug naar categorieën</button>
             <h2 id="subject-heading">Vakken</h2>
-            <p style="color: var(--text-muted); margin-top: 5px;">Kies een vak en kies tussen oefenen of een gesimuleerd proefexamen.</p>
+            <p style="color: var(--text-muted); margin-top: 5px;">Kies een vak en kies tussen "Oefenen" of "Proefexamen".</p>
 
             <div id="subject-list" class="subject-grid"></div>
         </div>
 
         <!-- SCREEN 3: QUIZ / EXAM SCREEN -->
         <div id="screen-quiz" class="card hidden">
-            <button class="nav-back" onclick="leaveQuiz()">← Stop en verlaat</button>
+            <button class="nav-back" onclick="leaveQuiz()">← Stoppen</button>
             
             <div class="question-header">
                 <div>
@@ -355,13 +355,13 @@
 
             <div style="margin-top: 20px; display: flex; justify-content: flex-end;">
                 <button id="btn-next" class="btn hidden" onclick="nextQuestion()">Volgende Vraag →</button>
-                <button id="btn-submit-exam" class="btn hidden" onclick="submitExam()">Examen Inleveren</button>
+                <button id="btn-submit-exam" class="btn hidden" onclick="submitExam()">Proefexamen Inleveren</button>
             </div>
         </div>
 
         <!-- SCREEN 4: EXAM RESULTS SCREEN -->
         <div id="screen-results" class="card hidden">
-            <h2>Examen Resultaat</h2>
+            <h2>Proefxamen Resultaat</h2>
             <div style="text-align: center; margin: 30px 0;">
                 <h1 id="result-score" style="font-size: 3rem; color: var(--highlight);">85%</h1>
                 <p id="result-status" style="font-size: 1.3rem; font-weight: bold; margin-top: 10px;">GESLAAGD</p>
