@@ -1,0 +1,197 @@
+{
+"665718": [
+"De maximaal toegelaten massa (MTOM) is een certificatielimiet. Je mag die nooit overschrijden: structuur, prestaties en overtreksnelheid zijn daarop berekend.",
+"nco",
+"Part-NCO, NCO.POL.105 / vlieghandboek (AFM), sectie Limitations"
+],
+"665728": [
+"Lading moet vastgemaakt zijn zodat ze niet kan verschuiven. Een plotse verschuiving van het zwaartepunt kan het toestel onbestuurbaar maken.",
+"nco",
+"Part-NCO, NCO.GEN.150 / NCO.POL – lading"
+],
+"665724": [
+"Basic empty mass = het vliegtuig met vaste uitrusting, vaste ballast, onbruikbare brandstof, niet-aftapbare olie en de volledige hoeveelheid koel- en hydraulische vloeistof. Bemanning en verkeerslading horen er niet bij."
+],
+"665736": [
+"Om de basic empty mass te bepalen weeg je het vliegtuig zonder bruikbare brandstof (die moet worden afgetapt). De onbruikbare brandstof blijft wel aan boord."
+],
+"665739": [
+"AVGAS heeft een dichtheid van ongeveer 0,72 kg/l. 102 l × 0,72 ≈ 73,4 kg, dus ongeveer 74 kg."
+],
+"665726": [
+"De standaarddichtheid van AVGAS 100LL bij 15 °C is ongeveer 0,72 kg/l."
+],
+"666095": [
+"Je moet de massa terugbrengen tot de maximale startmassa. Het verschil (hier ongeveer 5 kg) gedeeld door 0,72 kg/l is ongeveer 7 liter. (In de PDF is de vraagtekst afgebroken; de afgeleide MTOM is 1140 kg.)"
+],
+"665729": [
+"Het zwaartepunt is het punt waar je de volledige massa van het vliegtuig geconcentreerd mag denken."
+],
+"665730": [
+"Het zwaartepunt (CG) is het punt waar de zwaartekracht op de totale massa aangrijpt."
+],
+"665733": [
+"De arm (hefboomarm) is de afstand van het referentiepunt (datum) tot het zwaartepunt van een massa."
+],
+"665734": [
+"De arm is de horizontale afstand tussen de referentielijn (datum) en het zwaartepunt van een massa."
+],
+"665732": [
+"Moment = massa × arm. Zwaartepunt = som van de momenten / totale massa."
+],
+"665735": [
+"De massa's en armen voor de mass & balance-berekening staan in de sectie Mass and Balance van het vlieghandboek (POH/AFM) van dat specifieke vliegtuig, met het actuele weegrapport."
+],
+"665737": [
+"De basic empty mass en het bijbehorende zwaartepunt staan in de sectie Mass and Balance (Weight & Balance) van het vlieghandboek."
+],
+"665725": [
+"De lege massa en het zwaartepunt worden bepaald door het individuele vliegtuig te wegen. Elk toestel verschilt door uitrusting, verf en herstellingen."
+],
+"665738": [
+"Bereken per item het moment (massa × arm), tel de momenten op en deel door de totale massa: 598 824 lb·in / 4217,5 lb ≈ 142 in."
+],
+"665740": [
+"Zoek in de grafiek het punt met 725 kg op de massa-as en 650 mmkg op de moment-as. Het snijpunt valt op punt 3."
+],
+"665741": [
+"Volgens de figuur heeft vliegtuig A een kortere grondrol maar een vlakker klimpad. Dat past bij een grotere klepstand (meer lift bij lage snelheid, maar meer weerstand)."
+],
+"665742": [
+"Meer kleppen geeft een lagere startsnelheid en een kortere grondrol, maar ook meer weerstand. Daardoor wordt de klimprestatie slechter."
+],
+"665743": [
+"Een sterke tegenwind verlaagt de grondsnelheid bij de landing en verkort zo de landingsafstand. Hoge density altitude, regen en hoge drukhoogte verlengen ze."
+],
+"665745": [
+"De daalhoek is de hoek tussen het horizontale vlak en de vliegbaan, uitgedrukt in graden. De gradiënt (hoogte/afstand) wordt in procent uitgedrukt."
+],
+"666111": [
+"Bij een constante IAS neemt de TAS toe met de hoogte, omdat de luchtdichtheid afneemt (vuistregel: ongeveer +2% per 1000 ft)."
+],
+"665746": [
+"Het begin van de groene boog is VS1: de overtreksnelheid in schone configuratie (kleppen in). Het begin van de witte boog is VS0."
+],
+"665748": [
+"Ga in de grafiek PFP-009 uit van -20 °C, ga naar de drukhoogte 5000 ft, dan naar de massa 750 kg en corrigeer voor 10 kt tegenwind. Je leest ongeveer 380 m af."
+],
+"665747": [
+"De hoek tussen de wind (250°) en de baan (220°) is 30°. Tegenwindcomponent = 10 × cos 30° ≈ 8,7, dus ongeveer 9 kt tegenwind."
+],
+"666092": [
+"Lees in de klimtabel/grafiek (PFP-023) het verschil af tussen 'klimmen tot FL75' en 'klimmen tot 3000 ft', met de gegeven temperaturen. Dat geeft ongeveer 7 NM."
+],
+"665749": [
+"Ga in grafiek PFP-011 uit van -20 °C en ga naar de lijn voor 10 000 ft drukhoogte. Je leest ongeveer 390 ft/min af."
+],
+"665750": [
+"Met 6 °C, 6000 ft en 65% vermogen lees je in grafiek PFP-013 ongeveer 482 NM af."
+],
+"665751": [
+"In de kruistabel (PFP-012) voor ISA -20 °C op ongeveer FL60 en 70% vermogen lees je ongeveer 110 kt TAS en 23,9 l/h af."
+],
+"666127": [
+"Lees op de kaart (EC-70-004) bij positie 2 de grenzen en klassen van de TMA-sectoren af. Op 6500 ft vlieg je daar in TMA LNZ 3, klasse D."
+],
+"666126": [
+"Boven Eferding (LOLE) ligt op 5000 ft volgens de kaart luchtruim van klasse D (TMA Linz)."
+],
+"666130": [
+"Volgens de kaart (EC-70-006) kom je op 4500 ft bij punt 1 in luchtruim van klasse D."
+],
+"666117": [
+"Op een ICAO-kaart toont symbool C een groep obstakels zonder verlichting."
+],
+"666118": [
+"Op een ICAO-kaart toont symbool C een hoogtepunt (spot elevation)."
+],
+"666093": [
+"De MEF is de hoogste hoogte (terrein of obstakel) in een vak van 30' × 30', vermeerderd met een veiligheidsmarge en afgerond naar boven op 100 ft."
+],
+"666121": [
+"Om de CTR van Luqa te kruisen neem je contact op met de gepubliceerde naderingsfrequentie (Malta Approach): 128.150 MHz. 127.400 is de ATIS."
+],
+"666124": [
+"De verkeersfrequentie van EDHM staat op de kaart naast het vliegveldsymbool: 118.130 MHz."
+],
+"666120": [
+"De ATIS-frequentie van LMML op de kaart is 127.400 MHz."
+],
+"666125": [
+"KILO ligt ongeveer op radiaal 018 van LNZ VOR/DME (116.60 MHz). Je bevestigt de positie met die radiaal plus de DME-afstand."
+],
+"666128": [
+"De bocht boven punt 5 ligt ongeveer op radiaal 245 van DOL VOR/DME. 375 bestaat niet als radiaal."
+],
+"666129": [
+"Positie 2 ligt ongeveer op radiaal 330 van VLM VOR/DME (114.30 MHz), bevestigd met de DME."
+],
+"666123": [
+"De kaart toont DIK DVOR/DME op 114.40 MHz."
+],
+"666122": [
+"De kaart toont SPR VOR/DME op 113.90 MHz. 375 is geen VOR-frequentie (dat is een NDB in kHz)."
+],
+"666116": [
+"Totale tijd = 2:42 + 0:08 + 0:10 = 3:00 h. Op ongeveer 7500 ft in ISA geeft de tabel ongeveer 11,9 GPH, dus 35,7 USG. Met 30% reserve wordt dat 46,4 USG, plus 2 USG taxi = 48,4 USG."
+],
+"666097": [
+"Door de NOTAM (PFP-026) is de drempel van baan 17 207 m verschoven. De landingsafstand die nog beschikbaar is (LDA) voor baan 17 is 500 m. Dat is minder dan de vereiste 550 m, dus LOKH is niet veilig als uitwijkhaven."
+],
+"666096": [
+"In de NOTAM zijn B) en C) begin en einde in UTC: van 21 nov 2011 22:00 UTC tot 22 nov 2011 05:00 UTC. A) LEPA = Palma de Mallorca. 000/999 in de Q-lijn zijn de onder- en bovengrens (FL), niet de tijd.",
+"aip:GEN-3.1",
+"AIP België GEN 3.1 – NOTAM-formaat"
+],
+"666098": [
+"De NOTAM geeft de bovengrens als 9500 ft AMSL (altitude): 9500 ft MSL.",
+"aip:GEN-3.1",
+"AIP België GEN 3.1 – NOTAM-formaat"
+],
+"666094": [
+"TT 181° met 3° oostvariatie geeft MT 178°. Dat valt in 000-179°, dus oneven duizendtallen + 500 ft: FL35, FL55, ... Van de mogelijke antwoorden is FL055 het laagste.",
+"sera",
+"SERA Appendix 3 – Kruishoogtes (VFR)"
+],
+"665744": [
+"Een vliegtuig dat niet gecertificeerd is voor ijsvorming mag niet in voorspelde ijsvormingsomstandigheden vliegen. Kom je er onbedoeld in terecht, dan moet je die zone onmiddellijk verlaten.",
+"nco",
+"Part-NCO, NCO.OP.165 – Flight in expected or actual icing conditions"
+],
+"666103": [
+"Tijdens de vlucht kun je een vluchtplan indienen (AFIL) via de vluchtinformatiedienst (FIS).",
+"sera",
+"SERA.4001 – Submission of a flight plan"
+],
+"666099": [
+"Tijden in een ATS-vluchtplan, zoals de EOBT, worden altijd in UTC opgegeven.",
+"sera",
+"SERA.4005 – Contents of a flight plan"
+],
+"666101": [
+"Snelheid in een vluchtplan: N = knopen (N0100 = 100 kt), K = km/h, M = Mach. Op het formulier staat N0100, dus 100 kt.",
+"sera",
+"SERA.4005 / ICAO Doc 4444 Appendix 2"
+],
+"666100": [
+"Vluchtregels 'V' betekent VFR. De vertrektijd 2000 UTC valt na zonsondergang, dus het gaat om een VFR-nachtvlucht. Het is geen circuitvlucht (de bestemming is LOWW) en ook geen grensoverschrijdende vlucht (LOWK en LOWW liggen allebei in Oostenrijk)."
+],
+"666102": [
+"Voor een vlucht die een landsgrens kruist is een vluchtplan verplicht.",
+"sera",
+"SERA.4001(b) – grensoverschrijdende vluchten"
+],
+"665711": [
+"Bij vertrek van een ongecontroleerd vliegveld moet de werkelijke starttijd onmiddellijk na het opstijgen worden doorgegeven, zodat het vluchtplan wordt geactiveerd.",
+"sera",
+"SERA.4001 / AIP ENR 1.10 – Flight planning"
+],
+"665712": [
+"Volgens het ECQB-antwoord meld je een landing op een ander vliegveld meteen bij AIS (ARO), zodat het vluchtplan wordt afgesloten en er geen alarmering (SAR) start.",
+"sera",
+"SERA.4020 – Closing a flight plan"
+],
+"666115": [
+"Verbruik = (200 - 120) / 25 min = 3,2 lb/min. Bruikbaar voor de rest van de trip = 120 - 40 (alternate) - 30 (final reserve) = 50 lb. 50 / 3,2 ≈ 15,6 min."
+]
+}

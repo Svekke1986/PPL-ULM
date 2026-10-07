@@ -1,0 +1,840 @@
+[
+ {
+  "id": "665566",
+  "topic": "10.1.2.1.2 State that EU regulations are binding throughout all EU member states without prior national legal translation",
+  "question": "Welke status hebben de regels en procedures, gemaakt door EASA? (bijv. Part-SFCL, Part-MED)?",
+  "options": [
+   "Alleen na ratificatie door individuele EU lidstaten zijn ze legaal bindend",
+   "Ze hebben dezelfde status als de bijlagen van ICAO",
+   "Ze zijn deel van de EU wetgeving en zijn legaal bindend voor alle EU lidstaten",
+   "Ze zijn niet legaal bindend, maar dienen alleen als richtlijn"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665568",
+  "topic": "10.2.1.1.1 Define 'Certificate of Airworthiness' (CofA) and 'Airworthyness Review Certificate' (ARC)",
+  "question": "Wat is de betekenis van de afkorting \"ARC\"?",
+  "options": [
+   "Airspace Rulemaking Committee",
+   "Airworthiness Review Certificate",
+   "Airworthiness Recurring Control",
+   "Airspace Restriction Criteria"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665569",
+  "topic": "10.2.1.2.1 State the issuing authority of a CofA",
+  "question": "Het \"Bewijs van luchtwaardigheid\" wordt uitgegeven door de staat …",
+  "options": [
+   "Waar het luchtwaardigheidsonderzoek heeft plaatsgevonden.",
+   "Waar het vliegtuig gemaakt is.",
+   "Waar het vliegtuig geregistreerd is.",
+   "Waar de eigenaar woont."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665567",
+  "topic": "10.2.1.2.3 Describe how a CofA can be renewed or may remain valid",
+  "question": "Hoe lang is een \"Bewijs van luchtwaardigheid\" geldig?",
+  "options": [
+   "12 maanden.",
+   "12 jaar.",
+   "6 maanden.",
+   "Ongelimiteerd geldig."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665564",
+  "topic": "10.2.1.2.6 State which documents must be carried on board an aircraft during a local - and a X-country flight.",
+  "question": "Welke van de volgende documenten moeten aan boord zijn tijdens een internationale vlucht? a) Bewijs van inschrijving b) Bewijs van luchtwaardigheid c) Airworthiness review certificate (ARC) d) EASA Formulier-1 e) Vliegtuiglogboek f) Benodig",
+  "options": [
+   "b, c, d, e, f, g",
+   "a, b, c, e, f",
+   "d, f, g",
+   "a, b, e, g"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665570",
+  "topic": "10.3.1.2.1 State the location of nationality- and registration marks, and when they must be carried",
+  "question": "Wanneer dient een luchtvaartuig de nationale vlag te dragen?",
+  "options": [
+   "Dit is niet nodig.",
+   "Alleen voor internationale vluchten.",
+   "Alleen voor vluchten buiten EU landen.",
+   "Op elke vlucht."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665574",
+  "topic": "10.4.2.2.3 State the period of validity of a Medical class 2 for a pilot with given age",
+  "question": "Het medische klasse 2 certificaat van een 62-jarige piloot is geldig voor...",
+  "options": [
+   "60 maanden.",
+   "12 maanden.",
+   "48 maanden.",
+   "24 maanden."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665576",
+  "topic": "10.4.2.3.1 State the requirements for the issue of a PPL, SPL or BPL",
+  "question": "Wat is de minimumleeftijd voor een PPL(A/H) leerling-vlieger voor een eerste solovlucht?",
+  "options": [
+   "21 jaar",
+   "16 jaar",
+   "18 jaar",
+   "17 jaar"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665572",
+  "topic": "10.4.2.3.6 State the period of validity of a PPL, SPL or BPL",
+  "question": "Hoe lang is een vergunning als privépiloot (PPL) geldig?",
+  "options": [
+   "24 maanden",
+   "Ongelimiteerd geldig.",
+   "60 maanden",
+   "48 maanden"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665577",
+  "topic": "10.5.1.1.2 Define the term 'SERA'",
+  "question": "Wat is de betekenis van de afkorting \"SERA\"?",
+  "options": [
+   "Standard European Routes of the Air (Europese verkeersroutes)",
+   "Selective Radar Altimeter (Selectieve radarhoogtemeter)",
+   "Standardized European Rules of the Air (Europese luchtverkeersregels)",
+   "Specialized Radar Approach (Gespeciliseerde radarnaderingsprocedure)"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665582",
+  "topic": "10.5.1.1.4 Explain the terms 'VMC', 'IMC' and 'VFR' / 'IFR' flights",
+  "question": "Een vlucht is een \"zichtvlucht\" (visual flight) als …",
+  "options": [
+   "de vlucht wordt uitgevoerd onder de zichtvluchtregels.",
+   "het vliegzicht meer is dan 8 kilometer.",
+   "de vlucht wordt uitgevoerd in zichtvluchtomstandigheden.",
+   "het vliegzicht meer is dan 5 kilometer."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665593",
+  "topic": "10.5.1.1.5 Define the term 'ceiling'",
+  "question": "Het begrip \"ceiling\" wordt gedefinieerd als de …",
+  "options": [
+   "Hoogte boven de grond van de laagste wolkenbasis die meer dan de helft van de hemel bedekt onder de 20000ft",
+   "Hoogte boven gemiddeld zeeniveau van de laagste wolkenbasis die meer dan de halve hemel bedekt onder de 20000 ft.",
+   "Hoogte boven de grond van de hoogste laag wolken die meer dan de halve hemelt bedekt onder 20000ft",
+   "Hoogte boven de grond van de laagste wolkenbasis die meer dan de helft van de hemel bedekt onder 10000 ft."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665628",
+  "topic": "10.5.3.1.4 State the minimum flight altitude with regard to SERA, for flights over populated and unpopulated areas",
+  "question": "Wat moet in overweging genomen worden rond bruggen en soortgelijke gebouwen?",
+  "options": [
+   "Ik mag onder deze gebouwen vliegen als ze hiervoor zijn bestemd",
+   "Ik mag onder deze gebouwen vliegen als de laterale en verticale afstand ten minste 20 meter is.",
+   "Ik mag in geen geval onder deze gebouwen vliegen.",
+   "Ik mag onder deze gebouwen vliegen als de vlieghoogte ten minste 150 m AGL is."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665585",
+  "topic": "10.5.3.1.6 List example cases in which the minimum flight altitude does not apply",
+  "question": "Welke van de volgende redenen is NIET goed genoeg om lager dan de minimumhoogte te vliegen?",
+  "options": [
+   "Een nadering zonder landing op een vliegveld",
+   "Om gesleepte objecten af te zetten op een vliegveld",
+   "Start of landing op een vliegveld",
+   "Slechte weersomstandigheden in de nabijheid van het vliegveld"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665592",
+  "topic": "10.5.4.1.1 State the flight visibility to be maintained during VFR flight in a given airspace",
+  "question": "Wat is het minimum vliegzicht in luchtruim \"C\" beneden FL100 voor een luchtvaartuig dat vliegt onder zichtvluchtvoorschriften (VFR)?",
+  "options": [
+   "8 km",
+   "1.5 km",
+   "5 km",
+   "10 km"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665587",
+  "topic": "10.5.4.1.1 State the flight visibility to be maintained during VFR flight in a given airspace",
+  "question": "Het minimum vliegzicht op 5000 ft MSL in luchtruim \"B\" is voor VFR-vluchten …",
+  "options": [
+   "1500 m.",
+   "8000 m.",
+   "5000 m.",
+   "3000 m."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665586",
+  "topic": "10.5.4.1.1 State the flight visibility to be maintained during VFR flight in a given airspace",
+  "question": "Welke afstanden dienen gehouden te worden van wolken tijdens een zichtregelvlucht (VFR-flight) in luchtruimen C, D en E?",
+  "options": [
+   "1500 m horizontaal, 1000 m verticaal",
+   "1500 m horizontaal, 1000 ft verticaal",
+   "1000 m horizontaal, 300 m verticaal",
+   "1000 m horizontaal, 1500 ft verticaal"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665590",
+  "topic": "10.5.4.1.1 State the flight visibility to be maintained during VFR flight in a given airspace",
+  "question": "Wat is het minimum vliegzicht in luchtruim \"C\" voor een luchtvaartuig dat vliegt onder zichtvliegvoorschriften (VFR) op FL125?",
+  "options": [
+   "8000 m",
+   "3000 m",
+   "1500 m",
+   "5000 m"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665589",
+  "topic": "10.5.4.1.1 State the flight visibility to be maintained during VFR flight in a given airspace",
+  "question": "Wat is het minimum vliegzicht in luchtruim \"C\" voor een luchtvaartuig dat vliegt onder zichtvliegvoorschriften (VFR) op FL110?",
+  "options": [
+   "1500 m",
+   "5000 m",
+   "8000 m",
+   "3000 m"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665588",
+  "topic": "10.5.4.1.1 State the flight visibility to be maintained during VFR flight in a given airspace",
+  "question": "Wat is het minimum vliegzicht in luchtruim \"E\" voor een luchtvaartuig dat vliegt onder zichtvliegvoorschriften (VFR) op FL75?",
+  "options": [
+   "1500 m",
+   "3000 m",
+   "5000 m",
+   "8000 m"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665591",
+  "topic": "10.5.4.1.2 State the horizontal and vertical distance to clouds to be maintained during VFR flight in a given airspace",
+  "question": "Wat is de minimum afstand van wolken voor een VFR-vlucht in luchtruim B?",
+  "options": [
+   "Horizontaal 1.000 m, verticaal 1.500 ft",
+   "Horizontaal 1.500 m, verticaal 300 m",
+   "Horizontaal 1.000 m, verticaal 300 m",
+   "Horizontaal 1.500 m, verticaal 1.000 m"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665584",
+  "topic": "10.5.4.1.3 Apply the right-of-way- and collision aviodance rules to given examples",
+  "question": "Twee vliegtuigen vliegen op een kruisende koers. Welk vliegtuig moet uitwijken?",
+  "options": [
+   "Het vliegtuig dat van links naar rechts vliegt heeft voorrang",
+   "Het vliegtuig dat van rechts naar links vliegt heeft voorrang",
+   "Beide moeten naar rechts wijken",
+   "Beide moeten naar links wijken"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665583",
+  "topic": "10.5.4.1.3 Apply the right-of-way- and collision aviodance rules to given examples",
+  "question": "Twee motorgedreven luchtvaartuigen vliegen op tegengestelde koersen op dezelfde hoogte. Welk luchtvaartuig moet uitwijken?",
+  "options": [
+   "Het zwaardere luchtvaarttuig moet klimmen",
+   "Beiden moeten naar rechts uitwijken.",
+   "Het lichtere luchtvaartuig moet klimmen",
+   "Beiden moeten naar links uitwijken"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665580",
+  "topic": "10.5.4.2.2 State the restrictions and minimum weather conditions for Special VFR (SVFR) flights",
+  "question": "Aan welke voorwaarde moet worden voldaan tijdens een bijzondere VFR-vlucht (special VFR flight)?",
+  "options": [
+   "Aardoppervlak in zicht",
+   "Ten minste 500 m grondzicht",
+   "Snelheid niet boven 115 knopen IAS",
+   "Een minimumafstand van 2000 m van wolken"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665573",
+  "topic": "10.5.4.3.2 State the requirements to acquire a rating for VFR night flights",
+  "question": "Wat zijn onder andere de minimale vereisten voor het verkrijgen van een nachtbevoegdverklaring (night rating)?",
+  "options": [
+   "Ten minste 5 extra nachtvlieguren, hiervan 3 met een vlieginstructeur met ten minste 1 overlandvlieguur",
+   "Ten minste 10 extra nachtvlieguren, hiervan 3 met een vlieginstructeur met ten minste 1 overlandvlieguur",
+   "Ten minste 5 extra nachtvlieguren, hiervan 3 met een vlieginstructeur met ten minste 1 overlandvlieguur, plus 10 solo starts en volle stop landingen",
+   "Ten minste 5 extra nachtvlieguren, hiervan 4 met vlieginstructeur met ten minste 1 overlandvlieguur, plus 5 solo starts en volle stop landingen"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665594",
+  "topic": "10.5.5.1.1 State what primary action should be carried out by an intercepted aircraft",
+  "question": "U bent overdag onderschept door een militair luchtvaartuig. Wat betekent het volgende signaal: Wisselende bewegingen van de rolroeren, normaal links van het onderschepte vliegtuig, gevolgd door een flauwe bocht naar links?",
+  "options": [
+   "Volg mij",
+   "U betreedt een beperkt gebied, verlaat dit luchtruim onmiddellijk",
+   "Bereidt u voor op een voorzorgslanding, u heeft een verboden gebied betreden",
+   "U bent vrij van alle beperkte of bepaalde luchtruimen, u kan doorvliegen op deze koers"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665595",
+  "topic": "10.5.5.1.4 Recall the interception signals and phrases",
+  "question": "U bent overdag onderschept door een militair luchtvaartuig. Wat betekent het volgende signaal: Een plotselinge bocht van 90 graden of meer en een optrekkende klim van het luchtvaartuig, zonder hierbij door de koers van het onderschepte luchtvaartuig te",
+  "options": [
+   "ik breng u naar het dichtstbijzijnde vliegveld\"",
+   "Volg mij",
+   "Bereid u voor op een voorzorgslanding, u heeft een verboden gebied betreden",
+   "U betreedt een beperkt gebied, verlaat dit luchtruim onmiddellijk"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665596",
+  "topic": "10.6.1.2.2 Explain when a flight altitude should be selected in terms of ALT and when in terms of FLs, and when to switch",
+  "question": "Tijdens een vlucht op FL80, moet de hoogtemeter ingesteld staan op…",
+  "options": [
+   "1030.25 hPa.",
+   "de lokale QNH.",
+   "1013.25 hPa.",
+   "de lokale QFE."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665597",
+  "topic": "10.6.1.2.3 Explain the purpose of 'semi-circular rules'",
+  "question": "Wat is het doel van het semicirculaire systeem?",
+  "options": [
+   "Om zonder vliegplan te kunnen vliegen in vastgelegde zones, te vinden in de luchtvaartgids (AIP)",
+   "Om het veilig klimmen of dalen in een wachtpatroon toe te laten",
+   "Om botsingen te voorkomen, door de waarschijnlijkheid van tegengesteld vliegverkeer op dezelfde hoogte te verminderen",
+   "Om botsingen te voorkomen, door draaiende manoeuvres op te schorten"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665598",
+  "topic": "10.6.2.1.3 Explain the available modes (Mode A / C / S) and their use, and when the pilot shall operate the transponder",
+  "question": "Een transponder die de huidige vlieghoogte kan rapporteren is een …",
+  "options": [
+   "mode C of S-transponder.",
+   "Transponder die gebruikt mag worden in luchtruim B.",
+   "mode A-transponder.",
+   "pressure-decoder."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665599",
+  "topic": "10.6.2.1.5 Explain the use of the codes 7500, 7600, 7700",
+  "question": "Welke transpondercode wordt gebruikt om uitval van radioverbinding aan te geven?",
+  "options": [
+   "7600",
+   "2000",
+   "7000",
+   "7700"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666361",
+  "topic": "10.6.2.1.5 Explain the use of the codes 7500, 7600, 7700",
+  "question": "De transpondercode in het geval van een radiostoring is…",
+  "options": [
+   "7500.",
+   "7000.",
+   "7600.",
+   "7700."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665601",
+  "topic": "10.7.1.2.1 State the objectives of ATS",
+  "question": "Door welke verkeersdiensten wordt verkeersleiding gegeven?",
+  "options": [
+   "ALR (alarmering) SAR (Opsporing en redding) TWR (Plaatselijke luchtverkeersleiding)",
+   "FIS (Vluchtinformatie) AIS (Aeronautische informatie) AFS (aeronautische vaste telecommunicatiedienst)",
+   "APP (Naderingsluchtverkeersleiding) ACC (Algemene Luchtverkeersleiding) FIS (Vluchtinformatie)",
+   "TWR (Plaatselijke luchtverkeersleiding) APP (Naderingsluchtverkeersleiding) ACC (Algemene luchtverkeersleiding)"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665602",
+  "topic": "10.7.1.3.4 Describe specialities and associated dangers of airspace ECHO (collision avoidance, transponder mandatory, IFR",
+  "question": "Welk antwoord is correct als we het hebben over separatie in luchtruim \"E\"?",
+  "options": [
+   "VFR-verkeer wordt alleen gesepareerd van IFR-verkeer",
+   "VFR-verkeer wordt niet gesepareerd van ander VFR-verkeer",
+   "IFR-verkeer wordt alleen gesepareerd van VFR-verkeer",
+   "VFR-verkeer wordt gesepareerd van VFR- en IFR-verkeer"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665579",
+  "topic": "10.7.1.3.10 Describe the characteristics of a Transponder Mandatory Zone (TMZ) and the pilot's obigations before/at entering a",
+  "question": "Waar dient men rekening mee te houden bij het betreden van een RMZ?",
+  "options": [
+   "Krijg een klaring van de lokale luchtvaartautoriteit",
+   "Krijg een klaring om het dit gebied te betreden",
+   "Monitor constant op de radio en kom als dat mogelijk is in contact",
+   "De transponder moet omgezet worden naar mode C en de code 7000 moet geactiveerd worden"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665581",
+  "topic": "10.7.1.3.11 Describe the characteristics of a Radio Mandatory Zone (RMZ) and the pilot's obigations before/at entering a RMZ",
+  "question": "Wat moet gedaan worden voordat men een TMZ betreedt?",
+  "options": [
+   "Doe de transponder aan, activeer mode A, en \"squawk IDENT\"",
+   "Doe de transponder aan en activeer mode A en C of mode S.",
+   "Vraag een klaring voor het betreden van het gebied",
+   "Dien een vliegplan in voor de vlucht"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665578",
+  "topic": "10.7.1.3.12 Describe the characteristics of a Temporary Reserved Area (TRA), a Temporary Segregated Area (TSA) and the",
+  "question": "Wat is de betekenis van de afkorting \"TRA\"?",
+  "options": [
+   "Terminal Area (Eindgebied)",
+   "Temporary Radar Routing Area (Tijdelijke Radar routegebied",
+   "Temporary Reserved Airspace (tijdelijk gereserveerd luchtruim)",
+   "Transponder Area (transponder gebied)"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665604",
+  "topic": "10.7.1.7.1 State for which aircraft FIS shall be provided",
+  "question": "Een piloot kan de Vluchtinformatie (FIS) bereiken …",
+  "options": [
+   "via het internet.",
+   "via de telefoon.",
+   "via radio communicatie.",
+   "met een persoonlijk bezoek."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665603",
+  "topic": "10.7.1.7.1 State for which aircraft FIS shall be provided",
+  "question": "Welke luchtverkeersdiensten kan men verwachten in een vluchtinformatiegebied (FIR)?",
+  "options": [
+   "FIS (vluchtinformatie) ALR (alarmering)",
+   "ATC (verkeersleiding) FIS (vluchtinformatie)",
+   "ATC (verkeersleiding) AIS (aeronautical informatieverstrekking)",
+   "AIS (aeronautische informatieverstrekking) SAR (opsporing en redding)"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665600",
+  "topic": "10.7.1.8.3 State the mode and code of SSR equipment a pilot might operate in a state of emergency",
+  "question": "Welke transpondercode dient geactiveerd te worden in het geval van nood, zonder dat hierom gevraagd hoeft te worden?",
+  "options": [
+   "7600",
+   "7700",
+   "7000",
+   "7500"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665565",
+  "topic": "10.8.2.1.2 Name and explain the contents of the different parts of the AIP",
+  "question": "Waar kan het type restrictie van een beperkt gebied gevonden worden?",
+  "options": [
+   "NOTAM",
+   "AIC",
+   "Luchtvaartgids (AIP)",
+   "ICAO kaart 1:500000"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665607",
+  "topic": "10.8.2.1.2 Name and explain the contents of the different parts of the AIP",
+  "question": "Welke informatie is te vinden in het deel \"AD\" van de luchtvaartgids (AIP)?",
+  "options": [
+   "Toegangsbeperkingen voor vliegvelden, passagiers controles, vereisten voor piloten, voorbeelden vergunningen en geldigheidstermijnen",
+   "Waarschuwingen voor luchtvaart, ATS luchtruimen en routes, beperkte en gevaalijke gebieden",
+   "Kaartsymbolen, lijst van radio-navigatiebakens, tijden van zonsopkomst en zonsondergang, luchthavengelden, tarieven luchtverkeersleiding",
+   "Inhoudsopgave, classificatie van vliegvelden met bijbehorende kaarten, naderingskaarten, taxi kaarten"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665605",
+  "topic": "10.8.2.1.2 Name and explain the contents of the different parts of the AIP",
+  "question": "Welke informatie is te vinden in het deel GEN van de luchtvaartgids (AIP)?",
+  "options": [
+   "Toegangsbeperkingen voor vliegvelden, passagiers controles, vereisten voor piloten, voorbeelden vergunningen en geldigheidstermijnen",
+   "Inhoudsopgave, classificatie van vliegvelden met bijbehorende kaarten, naderingskaarten, taxi kaarten, beperkte en gevaarlijke gebieden",
+   "Waarschuwingen voor luchtvaart, ATS luchtruimen en routes, beperkte en gevaarlijke gebieden",
+   "Kaartsymbolen, lijst van radio-navigatiebakens, tijden van zonsopkomst en zonsondergang, luchthavengelden, tarieven luchtverkeersleiding"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665606",
+  "topic": "10.8.2.1.2 Name and explain the contents of the different parts of the AIP",
+  "question": "Wat zijn de verschillende delen van de Luchtvaartgids (AIP)?",
+  "options": [
+   "GEN ENR AD",
+   "GEN AGA COM",
+   "GEN MET RAC",
+   "GEN COM MET"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665608",
+  "topic": "10.8.2.2.3 Read and interpret information from NOTAMs goven by example",
+  "question": "De volgende NOTAM is geldig tot ... A1024/13 A) LOWW B) 1305211200 C) 1305211400 E) STOCKERAU VOR STO 113.00 UNSERVICEABLE.",
+  "options": [
+   "13/10/2013 00:00 UTC.",
+   "13/05/2013 12:00 UTC.",
+   "21/05/2013 14:00 UTC.",
+   "21/05/2014 13:00 UTC."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665609",
+  "topic": "10.9.1.1.1 Define the terms 'aerdrome traffic', 'aerodrome elevation', 'runway', 'taxi holding point'",
+  "question": "Het begrip \"landingsbaan\" is gedefinieerd als een …",
+  "options": [
+   "Een rechthoekig gebied op een luchthaven op het land, bestemd voor het starten en landen van helikopters.",
+   "Een rechthoekig gebied van land of water op een luchthaven bestemd voor het starten en landen van luchtvaartuigen.",
+   "Een rond gebied op een luchthaven bestemd voor het starten en landen van luchtvaartuigen.",
+   "Een rechthoekig gebied op een luchthaven op het land bestemd voor het starten en landen van luchtvaartuigen"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665611",
+  "topic": "10.9.2.1.1 Describe the different types of water deposit on RWYs (DAMP, WET, STANDING WATER)",
+  "question": "Wat betekend \"WATER PATCHES\" (waterplassen) als het gaat over de conditie van de landingsbaan?",
+  "options": [
+   "Een groot deel van het oppervlak is overstroomd",
+   "Het oppervlak is nat, er zijn geen plassen staand water zichtbaar",
+   "Plassen staand water zijn zichtbaar",
+   "De landingsbaan is vrij van water, ijs en sneeuw"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665610",
+  "topic": "10.9.2.1.1 Describe the different types of water deposit on RWYs (DAMP, WET, STANDING WATER)",
+  "question": "Wat betekent het als de landingsbaanconditie \"NAT\" (wet) is?",
+  "options": [
+   "Het oppervlak van de landingsbaan is doorweekt, maar er zijn geen significante plassen van staand water",
+   "Er zijn een paar plassen water zichtbaar",
+   "De landingsbaan is vrij van water, ijs en sneeuw",
+   "Een groot deel van het oppervlak is overstroomd"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665613",
+  "topic": "10.9.3.1.3 Explain the use and capabilities of a signalling lamp, and state the meaning of various light signals from TWR to",
+  "question": "Wat betekent een knipperend, groen licht op een gecontrolleerd veld richting een vliegend luchtvaartuig?",
+  "options": [
+   "Wijk voor andere luchtvaartuigen en blijf cirkelen",
+   "Keer terug om te landen, hierna volgt een groen ononderbroken licht op de juiste tijd",
+   "Landingsklaring",
+   "Vliegveld is onveilig, land niet"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665614",
+  "topic": "10.9.3.1.3 Explain the use and capabilities of a signalling lamp, and state the meaning of various light signals from TWR to",
+  "question": "Wat betekent een ononderbroken, groen licht op een gecontrolleerd veld richting een vliegend luchtvaartuig?",
+  "options": [
+   "Wijk voor andere luchtvaartuigen en blijf cirkelen",
+   "Keer terug om te landen, hierna volgt een groen ononderbroken licht op de juiste tijd",
+   "Vliegveld is onveilig, land niet",
+   "Landingsklaring"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665612",
+  "topic": "10.9.3.1.3 Explain the use and capabilities of a signalling lamp, and state the meaning of various light signals from TWR to",
+  "question": "Wat betekent een knipperend, rood licht op een gecontrolleerd veld richting een vliegend luchtvaartuig?",
+  "options": [
+   "Keer terug om te landen, hierna volgt een groen ononderbroken licht op de juiste tijd",
+   "Vliegveld is onveilig, land niet",
+   "Wijk voor andere luchtvaartuigen en blijf cirkelen",
+   "Landingsklaring"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665615",
+  "topic": "10.9.3.1.3 Explain the use and capabilities of a signalling lamp, and state the meaning of various light signals from TWR to",
+  "question": "Wat betekent een knipperend, rood licht op een gecontrolleerd veld richting een luchtvaartuig op de grond?",
+  "options": [
+   "Taxiklaring",
+   "Verlaat onmiddellijk de landingsbaan die in gebruik is",
+   "Keer terug naar het platform",
+   "Startklaring"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665616",
+  "topic": "10.9.3.1.5 Interpret indications and signals that may be used in a signal area",
+  "question": "Welke vorm heeft het grondteken dat de landingsrichting aangeeft?",
+  "options": [
+   "Een haakse pijl",
+   "L",
+   "T",
+   "Een rechte pijl"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665617",
+  "topic": "10.9.3.1.5 Interpret indications and signals that may be used in a signal area",
+  "question": "Wat is een seinenvierkant op een luchthaven?",
+  "options": [
+   "Luchtvaartuigen taxiën naar dit vierkant om lichtsignalen te krijgen om de taxi- en startklaring te krijgen",
+   "Het is een speciaal gemarkeerd gebied om gesleepte objecten op te pikken en te laten vallen",
+   "Het is een verlicht gebied waar de reddings- en brandweervoertuigen staan",
+   "Er liggen speciale symbolen om de omstandigheden van het vliegveld visueel aan te geven aan overvliegende luchtvaartuigen"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665624",
+  "topic": "10.9.3.1.5 Interpret indications and signals that may be used in a signal area",
+  "question": "Wat is de betekenis van dit bord op een vliegveld? Zie bijlage (ALW-011)",
+  "options": [
+   "Verboden te landen voor langere tijd",
+   "Opgepast, landingsterrein (manoeuvring area) is in slechte staat",
+   "Er vinden zweefvluchten plaats op dit veld",
+   "Na de start en voor de landing moeten alle bochten naar rechts gemaakt worden"
+  ],
+  "correct": 2,
+  "images": [
+   "img/air_law/665624_0.jpeg"
+  ]
+ },
+ {
+  "id": "665623",
+  "topic": "10.9.3.1.5 Interpret indications and signals that may be used in a signal area",
+  "question": "(Zie bijlage ALW-010) Wat is de betekenis van een geel kruis op een rode achtergrond op een vliegveld?",
+  "options": [
+   "Verboden te landen voor langere tijd.",
+   "Opgepast, landingsterrein (manoeuvring area) is in slechte staat",
+   "Na de start en voor de landing moeten alle bochten naar rechts gemaakt worden",
+   "Grondbewegingen mogen alleen op verharde banen plaatsvinden"
+  ],
+  "correct": 0,
+  "images": [
+   "img/air_law/665623_0.jpeg"
+  ]
+ },
+ {
+  "id": "665618",
+  "topic": "10.9.3.2.1 Name the colours used for the various markings (RWY, TWY, aircraft stands)",
+  "question": "Wat is de kleur van de baanrandmarkering van een landingsbaan, volgens ICAO Bijlage 14?",
+  "options": [
+   "Groen",
+   "Wit",
+   "Geel",
+   "Blauw"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665620",
+  "topic": "10.9.3.2.2 State where a RWY designation marking shall be provided and describe the different layouts (excluding dimensions)",
+  "question": "Welke baanmarkeringen zijn correct voor 2 parallelle landingsbanen?",
+  "options": [
+   "06L en \"06R\"",
+   "24 en \"25\"",
+   "26 en \"26R\"",
+   "18 en \"18-2\""
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665621",
+  "topic": "10.9.3.3.3 Describe the characteristics of an 'Aerodrome Beacon'",
+  "question": "Een aerodrome beacon (ABN) is een…",
+  "options": [
+   "vaste lichtbaken geïnstalleerd op een vliegveld of luchthaven om zijn positie aan te geven aan piloten in de lucht.",
+   "roterende lichtbaken geïnstalleerd op een vliegveld of een luchthaven om de locatie aan te geven aan piloten op de grond.",
+   "roterende lichtbaken geïnstalleerd op het beginpunt van het eindnaderingsbeen om de locatie aan te geven aan piloten in de lucht.",
+   "roterende lichtbaken geïnstalleerd op een vliegveld of een luchthaven om de locatie aan te geven aan piloten in de lucht."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665622",
+  "topic": "10.9.3.4.2 Describe and identify a intersection take-off sign at a TWY/RWY intersection, indicating the remaining runway length",
+  "question": "Wat is afgebeeld op het getekende bord? Zie bijlage (ALW-020)",
+  "options": [
+   "2500 m in de aangegeven riching tot het vertrekpunt van de landingsbaan",
+   "Vanaf deze intersectie is de beschikbare lengte van de landingsbaan 2500 m in de aangegeven richting",
+   "2500 m in de aangegeven richting tot het parkeergebied",
+   "De volledige lengte van de landingsbaan is 2500 m in de aangegeven richting"
+  ],
+  "correct": 1,
+  "images": [
+   "img/air_law/665622_0.jpeg"
+  ]
+ },
+ {
+  "id": "665619",
+  "topic": "10.9.5.1.2 Describe the pre-THR marking (including colours) when the surface before the THR should not be used",
+  "question": "Wat wordt aangegeven met een patroon van uniforme lengtestrepen symmetrisch rond de hartlijn (center line) van de landingsbaan?",
+  "options": [
+   "De startaanloop kan vanaf deze positie begonnen worden",
+   "Land niet na deze strepen",
+   "Land niet voor deze strepen",
+   "Op dit punt komt het glijpad van de ILS samen met de landingsbaan"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665625",
+  "topic": "10.10.1.1.2 Recall the definitions of the following terms: INCERFA, ALERFA, DETRESFA",
+  "question": "Wat is de betekenis van \"DETRESFA\"?",
+  "options": [
+   "Reddingsfase (Rescue phase)",
+   "Onzekerheidsfase (Uncertainty phase)",
+   "Alarmeringsfase (Alerting phase)",
+   "Nood fase (Distress phase)"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665626",
+  "topic": "10.10.3.1.3 Describe how an aircraft should confirm to have received the information from ground-air signals",
+  "question": "Hoe kan een piloot tijdens een vlucht, een grondsein van opsporing- en reddingsdiensten bevestigen?",
+  "options": [
+   "Vlieg meerdere keren een parabolische route",
+   "Door de vleugels te schommelen",
+   "Verander het richtingsroer meerdere keren naar beide kanten",
+   "Laat de flaps meerdere keren zakken en haal ze weer op"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665627",
+  "topic": "10.12.1.1.1 Recall the definitions of the following terms: accident, incident, investigation, serious incident, serious injury",
+  "question": "Wat zijn de drie categorieën van voorvallen, die worden erkent bij onderzoeken van ongevallen?",
+  "options": [
+   "Voorval, Crash, Ramp",
+   "Gebeurtenis, Voorval, Ernstig voorval",
+   "Incidenten, Ernstige incidenten, Ongevallen",
+   "Voorval, Ernstige voorval, Ongeval"
+  ],
+  "correct": 2,
+  "images": []
+ }
+]

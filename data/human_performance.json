@@ -1,0 +1,552 @@
+[
+ {
+  "id": "665632",
+  "topic": "20.2.1.1.2 State in terms of % the parts of Oxygen, Nitrogen and other gases present in the atmosphere",
+  "question": "Wat is het percentage zuurstof in de atmosfeer op 6000 voet?",
+  "options": [
+   "12%",
+   "78%",
+   "21%",
+   "18,90%"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665634",
+  "topic": "20.2.1.1.2 State in terms of % the parts of Oxygen, Nitrogen and other gases present in the atmosphere",
+  "question": "Lucht bestaat uit zuurstof, stikstof en andere gassen. Wat is bij benadering het percentage andere gassen?",
+  "options": [
+   "21%",
+   "0,10%",
+   "78%",
+   "1%"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665633",
+  "topic": "20.2.1.1.3 State the effects of increasing altitude on the overall pressure and partial pressures of the various gases in the",
+  "question": "Op welke hoogte is de atmosferische druk ongeveer de helft van de MSL-waarde (1013 hPa)?",
+  "options": [
+   "10.000 ft",
+   "5.000 voet",
+   "22.000 ft",
+   "18.000 ft"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665639",
+  "topic": "20.2.1.2.4 State that the body starts to react on decreasing atmospheric pressure at approx. 5000  7000 ft",
+  "question": "Vanaf welke hoogte reageert het lichaam gewoonlijk op de dalende atmosferische druk?",
+  "options": [
+   "12.000 voet",
+   "7.000 voet",
+   "2.000 voet",
+   "10.000 voet"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665640",
+  "topic": "20.2.1.2.8 Name the two major forms of hypoxia (hypoxic and anaemic), and the common causes of both",
+  "question": "Anemische hypoxie kan veroorzaakt worden door...",
+  "options": [
+   "Koolmonoxidevergiftiging",
+   "Alcohol gebruik",
+   "Lage atmosferische druk",
+   "Grote hoogtes"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665636",
+  "topic": "20.2.1.2.9 List possible sources of carbon monoxide in the cockpit",
+  "question": "Koolmonoxidevergiftiging kan veroorzaakt worden door...",
+  "options": [
+   "Scheuren in de warmtewisselaar.",
+   "Icing op de pitotbuis",
+   "Brandstof of hydraulische vloeistoffen.",
+   "Storing van de generator"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665635",
+  "topic": "20.2.1.2.10 List the sources and symptoms of carbonmonoxide poisoning",
+  "question": "Koolmonoxidevergiftiging kan veroorzaakt worden door... ?",
+  "options": [
+   "Weinig slaap",
+   "Ongezond voedsel",
+   "Alcohol",
+   "Roken"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665638",
+  "topic": "20.2.1.2.13 State the symptoms of hypoxia",
+  "question": "Welke van de volgende symptomen kan wijzen op hypoxie?",
+  "options": [
+   "Gewrichtspijn in knieën en voeten",
+   "Blauwe plekken over het hele lichaam",
+   "Blauwe verkleuring van lippen en vingernagels",
+   "Spierkrampen in het bovenlichaam"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665637",
+  "topic": "20.2.1.2.16 List the signs and symptoms of hyperventilation",
+  "question": "Welk van de volgende is GEEN symptoom van hyperventilatie?",
+  "options": [
+   "Verstoring van het bewustzijn",
+   "Spasme",
+   "Tinteling",
+   "Cyanose (blauwe of paarse verkleuring van de huid)"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665653",
+  "topic": "20.2.1.2.20 List the effects of positive and negative acceleration (Gload)",
+  "question": "Een \"Grey-out\" is het resultaat van...",
+  "options": [
+   "Positieve g-krachten.",
+   "Hyperventilatie.",
+   "Roken",
+   "Vermoeidheid."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665643",
+  "topic": "20.2.2.1.1 Describe the role of the autonomic nervous system",
+  "question": "Wat is de juiste term voor het systeem dat onder andere de ademhaling, de spijsvertering en de hartslag regelt?",
+  "options": [
+   "Perifeer zenuwstelsel",
+   "Autonoom zenuwstelsel",
+   "Centraal zenuwstelsel",
+   "Somatisch zenuwstelsel"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665646",
+  "topic": "20.2.2.2.2 Explain the functions of the rod and cone cells",
+  "question": "Welk deel van het visuele systeem is verantwoordelijk voor kleurenvisie?",
+  "options": [
+   "Blinde vlek",
+   "Staven",
+   "Lens",
+   "Kegels"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665644",
+  "topic": "20.2.2.2.5 Explain the 'parallax error'",
+  "question": "Wat is de parallax fout?",
+  "options": [
+   "Verkeerde interpretatie van instrumenten veroorzaakt door de gezichtshoek",
+   "Een decodeerfout in de communicatie tussen piloten",
+   "Misperceptie van snelheid tijdens taxiën",
+   "Verziendheid door ouderdom, vooral `s nachts"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665645",
+  "topic": "20.2.2.2.6 Describe the effect of UV ray protection of the retina by wearing sunglasses",
+  "question": "Welk kenmerk is belangrijk voor piloten bij het kiezen van een zonnebril?",
+  "options": [
+   "Geen UV-filter",
+   "Onbreekbaar",
+   "Niet gepolariseerd",
+   "Gebogen zijstuk"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665647",
+  "topic": "20.2.2.3.1 State the basic parts and functions of the outer, the middle and the inner ear",
+  "question": "Hoe heet de verbinding tussen het middenoor en de neus-keelholte?",
+  "options": [
+   "Binnenoor",
+   "Buis van Eustachius",
+   "Trommelvlies",
+   "Slakkenhuis"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665652",
+  "topic": "20.2.2.5.2 Describe the cause of 'vertigo' as a mismatch between the vestibular organ inputs and optical/visual inputs",
+  "question": "Wanneer is het optreden van duizeligheid bij het bewegen van het hoofd het meest waarschijnlijk?",
+  "options": [
+   "Tijdens een klim",
+   "Tijdens een rechte horizontale vlucht.",
+   "Tijdens een afdaling",
+   "Tijdens een draai"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665650",
+  "topic": "20.2.2.5.4 Describe the term 'illusion' and give examples",
+  "question": "Een versnelling tijdens een rechte horizontale vlucht kan de illusie wekken van...",
+  "options": [
+   "Een afdaling.",
+   "Een rol",
+   "Een omgekeerde vlucht",
+   "Een klim"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665654",
+  "topic": "20.2.2.5.5 Explain how optical illusions typically occur due to misinterpretation of visual inputs by the brain",
+  "question": "Visuele illusies worden meestal veroorzaakt door...",
+  "options": [
+   "Kleurenblindheid",
+   "Binoculair zicht.",
+   "Snelle oogbewegingen",
+   "Misinterpretatie van de hersenen"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665649",
+  "topic": "20.2.2.5.6 Explain that the vestibular organ accommodates to steady loads and accelerations  e.g. during banked turns  and that",
+  "question": "Vleugels die recht blijven na een lange draaiperiode kan de illusie wekken van...",
+  "options": [
+   "een klim beginnen.",
+   "Beginnen aan een afdaling",
+   "Gestaag door draaien in dezelfde richting als voorheen",
+   "Draaien in de tegenovergestelde richting."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665642",
+  "topic": "20.2.2.5.7 List the measures to prevent or overcome spatial disorientation",
+  "question": "Wat is een gepaste reactie wanneer een passagier zich tijdens een cruisevlucht plots ongemakkelijk voelt?",
+  "options": [
+   "Zet een verwarmingtoestel aan en zorg voor thermische dekens.",
+   "Regel de temperatuur in de cabine en voorkom overmatig rollen",
+   "Vermijd conversatie en kies een hogere luchtsnelheid.",
+   "Geef extra zuurstof"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665651",
+  "topic": "20.2.2.5.8 List approach and landing illusions for slope of the runway, blackhole approach and terrain around runway",
+  "question": "Welke indruk kan worden gewekt bij het naderen van een landingsbaan met een helling omhoog?",
+  "options": [
+   "Een onderschrijding",
+   "Een 'overshoot'",
+   "Een landing naast de middenlijn",
+   "Een harde landing"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665648",
+  "topic": "20.2.3.3.1 Explain the role of the 'Eustachian tube' in equalising pressure between the middle ear and the environment",
+  "question": "In welke situatie is het NIET mogelijk om een drukcompensatie tussen het middenoor en de omgeving te bereiken?",
+  "options": [
+   "Wanneer alle ramen volledig gesloten zijn",
+   "Tijdens een lichte en langzame klim",
+   "Ademhaling alleen door de mond",
+   "De buis van Eustachius is verstopt"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665656",
+  "topic": "20.2.3.3.9 State that harmful effects obesity can cause: developing coronary problems, developing diabetes, reduced ability to",
+  "question": "Welke aandoening kan aanleiding geven tot diabetes?",
+  "options": [
+   "Overgewicht",
+   "Zonnebaden",
+   "Roken",
+   "Slaapgebrek"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665655",
+  "topic": "20.2.3.4.3 State the ‘unit’ of alcohol and state the approximate elimination rate from the blood",
+  "question": "De gemiddelde daling van het bloedalcoholgehalte voor een volwassene in één uur is ongeveer...",
+  "options": [
+   "0,01 %.",
+   "0,3 %.",
+   "0,03 %.",
+   "0,1 %."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665658",
+  "topic": "20.3.1.3.1 Explain the link between the types of memory (sensory, working/shortterm and longterm memory)",
+  "question": "Hoe lang ongeveer kan het kortetermijngeheugen informatie opslaan?",
+  "options": [
+   "35 tot 50 seconden",
+   "10 tot 20 seconden",
+   "3 tot 7 seconden",
+   "30 tot 40 seconden"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665657",
+  "topic": "20.3.1.3.2 State the average maximum number of separate items that may be held in working memory: 7 plus/minus 2 (Miller's",
+  "question": "Welke verklaring is juist met betrekking tot het kortetermijngeheugen?",
+  "options": [
+   "Het kan 5 (+/- 2) items opslaan gedurende 10 tot 20 seconden.",
+   "Hij kan 10 (+/- 5) items opslaan gedurende 30 tot 60 seconden.",
+   "Het kan 5 (+/- 2) items opslaan voor 1 tot 2 minuten.",
+   "Het kan 3 (+/- 1) items opslaan gedurende 5 tot 10 seconden."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665630",
+  "topic": "20.3.2.1.1 Name and explain the factors that influence human reliability",
+  "question": "Waardoor worden de meeste luchtvaartongevallen veroorzaakt?",
+  "options": [
+   "Technische storing",
+   "Menselijke fouten",
+   "Meteorologische invloeden",
+   "Geografische invloeden"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665660",
+  "topic": "20.3.2.1.2 Explain the effect of 'confirmation bias'",
+  "question": "Wat betekent de term \"vooringenomenheid\"?",
+  "options": [
+   "De voorkeur om argumenten te vinden die je eigen mentale model bewijzen.",
+   "De feedback loop in een gesloten communicatie",
+   "De kritische controle van dubbelzinnige (ambigue) situaties tijdens de vlucht",
+   "Het vooroordeel om elke radio-oproep te bevestigen."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665666",
+  "topic": "20.3.2.1.2 Explain the effect of 'confirmation bias'",
+  "question": "Welke factor kan leiden tot menselijke fouten?",
+  "options": [
+   "Het vooroordeel om te zien wat we verwachten te zien",
+   "Dubbele controle van relevante acties",
+   "Twijfel wanneer iets onduidelijk of dubbelzinnig lijkt",
+   "Correct gebruik van checklists"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665631",
+  "topic": "20.3.2.2.1 Explain the concept of the 'error chain' ('swiss cheese' model)",
+  "question": "Het \"Zwitserse kaas model\" kan gebruikt worden om wat uit te leggen?",
+  "options": [
+   "Staat van paraatheid van een piloot.",
+   "De fout keten",
+   "Procedure voor een noodlanding",
+   "De optimale oplossing van een probleem"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665659",
+  "topic": "20.3.2.2.2 State the meaning and consequences of 'latent errors'",
+  "question": "Wat is een latente fout?",
+  "options": [
+   "Een fout die lange tijd onopgemerkt blijft in het systeem",
+   "Een fout die pas gevolgen heeft na de landing",
+   "Een fout die door de piloot actief en bewust wordt gemaakt",
+   "Een fout die een onmiddellijk effect heeft op de besturing"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665663",
+  "topic": "20.3.2.2.3 Describe social (group) effects on error generation",
+  "question": "Onder welke omstandigheden is een piloot eerder geneigd grotere risico`s te aanvaarden?",
+  "options": [
+   "Als gevolg van groepsdynamische effecten",
+   "Als er niet genoeg informatie beschikbaar is",
+   "Tijdens de vluchtplanning wanneer uitstekend weer wordt voorspeld",
+   "Tijdens controlevluchten als gevolg van een hoge mate van nervositeit"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665672",
+  "topic": "20.3.3.1.2 Describe the process of decisionmaking in the cockpit",
+  "question": "Tijdens de vlucht doet zich een probleem voor dat u moet oplossen, hoe gaat u te werk?",
+  "options": [
+   "In eerste instantie moet u het vliegtuig stabiel houden en blijven vliegen; vervolgens moet u het probleem oplossen terwijl u het vliegtuig blijft besturen",
+   "Neem via de radio contact op met een andere piloot voor hulp terwijl je blijft vliegen",
+   "Los het probleem onmiddellijk op, en raadpleeg anders de gebruiksaanwijzing",
+   "Er is geen tijd om tijdens de vlucht problemen op te lossen"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665661",
+  "topic": "20.3.4.1.2 Describe the term 'situation awareness'",
+  "question": "Het voortdurende proces om de huidige vluchtsituatie te controleren heet...",
+  "options": [
+   "Constante vlucht controle.",
+   "Situationeel bewustzijn.",
+   "Situationeel denken",
+   "Procedure voor vervroegde controle"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665662",
+  "topic": "20.3.4.2.3 Describe the advantages and possible problems of using 'social' and 'professional' language in high and lowworkload",
+  "question": "Hoe kan in het communicatiemodel het gebruik van dezelfde code tijdens radiocommunicatie worden gewaarborgd?",
+  "options": [
+   "Door een bepaalde frequentie toewijzing",
+   "Door het gebruik van de juiste headsets",
+   "Door het gebruik van fraseologie",
+   "Door radio`s te gebruiken die alleen gecertificeerd zijn voor gebruik in de luchtvaart"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665667",
+  "topic": "20.3.5.1.2 Describe the factors that determine an individual's behaviour",
+  "question": "Wat is de beste combinatie van eigenschappen voor de individuele houding en het gedrag van een piloot?",
+  "options": [
+   "Extrovert - onstabiel",
+   "Introvert - onstabiel",
+   "Introvert - stabiel",
+   "Extrovert - stabiel"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665664",
+  "topic": "20.3.5.2.1 Explain dangerous attitudes in aviation, e.g. impulsivity, invulnerability, complacency, resignation",
+  "question": "Welke gevaarlijke houdingen gaan vaak samen?",
+  "options": [
+   "Onkwetsbaarheid en zelfverloochening",
+   "Zelfverloochening en macho houding",
+   "Impulsiviteit en voorzichtigheid",
+   "Macho houding en onkwetsbaarheid"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665665",
+  "topic": "20.3.5.2.1 Explain dangerous attitudes in aviation, e.g. impulsivity, invulnerability, complacency, resignation",
+  "question": "Wat is een aanwijzing voor een macho houding?",
+  "options": [
+   "Uitgebreide risicobeoordeling bij onbekende situaties",
+   "Snelle berusting in complexe en kritieke situaties",
+   "Riskante vliegmanoeuvres om indruk te maken op toeschouwers op de grond",
+   "Zorgvuldige walkaround procedure"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665668",
+  "topic": "20.3.5.2.1 Explain dangerous attitudes in aviation, e.g. impulsivity, invulnerability, complacency, resignation",
+  "question": "Zelfgenoegzaamheid is een risico vanwege...",
+  "options": [
+   "Het hoge foutenpercentage van technische systemen.",
+   "Betere opleidingsmogelijkheden voor jonge piloten",
+   "Het grote aantal fouten dat normaliter door mensen wordt gemaakt.",
+   "Meer automatisering in de cockpit."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665669",
+  "topic": "20.3.6.1.3 Describe the relationship between stress and performance",
+  "question": "Het ideale niveau van arousal is op welk punt in het diagram? Zie figuur (HPL- 002) P = Prestatie A = Opwinding / Stress",
+  "options": [
+   "Punt D",
+   "Punt B",
+   "Punt A",
+   "Punt C"
+  ],
+  "correct": 1,
+  "images": [
+   "img/human_performance/665669_0.jpeg"
+  ]
+ },
+ {
+  "id": "665671",
+  "topic": "20.3.6.1.4 List human properties that are affectd by stress",
+  "question": "Welke van de volgende eigenschappen worden beïnvloed door stress? 1. Aandacht 2. Concentratie 3. Reactievermogen 4. Geheugen",
+  "options": [
+   "1, 2, 3",
+   "1",
+   "2, 4",
+   "1, 2, 3, 4"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665670",
+  "topic": "20.3.6.1.7 Describe the effect of human underload/overload on cockpit performance",
+  "question": "Op welk punt in het diagram zal een piloot zich overspannen voelen? Zie figuur (HPL-002) P = Prestatie A = Opwinding / Stress",
+  "options": [
+   "Punt A",
+   "Punt C",
+   "Punt D",
+   "Punt B"
+  ],
+  "correct": 2,
+  "images": [
+   "img/human_performance/665670_0.jpeg"
+  ]
+ }
+]

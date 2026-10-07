@@ -1,0 +1,1195 @@
+[
+ {
+  "id": "666274",
+  "topic": "91.1.1.1.1 Describe the rotation of the Earth around its own spin axis and the earth's orbit around the sun",
+  "question": "Welke uitspraak over de aardas (polar axis) is correct?",
+  "options": [
+   "De aardas kruist de geografische Zuidpool en de geografische Noordpool en staat recht op het vlak van de evenaar.",
+   "De aardas kruist de magnetische Zuidpool en de magnetische Noordpool en staat recht op het vlak van de evenaar.",
+   "De aardas kruist de magnetische Zuidpool en de magnetische Noordpool en staat onder een hoek van 66.5° op het vlak van de evenaar.",
+   "De aardas kruist de geografische Zuidpool en de geografische Noordpool en staat onder een hoek van 23.5° op het vlak van de evenaar."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666273",
+  "topic": "91.1.1.1.1 Describe the rotation of the Earth around its own spin axis and the earth's orbit around the sun",
+  "question": "De as waar de aarde rond draait, gaat door de…",
+  "options": [
+   "magnetische Noordpool en de geografische Zuidpool",
+   "geografische Noordpool en de geografische Zuidpool",
+   "magnetische Noordpool en magnetische Zuidpool",
+   "geografische Noordpool en de magnetische Zuidpool"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666275",
+  "topic": "91.1.2.1.1 State that a position in latitude and longitude is referred to a WGS84 ellipsoid",
+  "question": "Welke geometrische vorm omschrijft ongeveer de vorm van de aarde die het beste werkt voor navigatiesystemen?",
+  "options": [
+   "Platte plaat",
+   "Ellipsoïde",
+   "Bol van eclipticale vorm",
+   "Perfecte bol"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666278",
+  "topic": "91.1.2.1.2 State that the circumference of the Earth is approximately 40000 km or approximately 21600 NM",
+  "question": "De omtrek van de aarde rond de evenaar is ongeveer...",
+  "options": [
+   "12800 km.",
+   "21600 NM.",
+   "40000 NM.",
+   "10800 km."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666277",
+  "topic": "91.1.2.2.2 Explain the significance of a great circle in navigation",
+  "question": "De kortste afstand tussen twee punten op het aardoppervlak is deel van...",
+  "options": [
+   "een parallel.",
+   "een grootcirkel.",
+   "een kleincirkel.",
+   "een loxodroom."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666281",
+  "topic": "91.1.2.2.4 Explain that along any great circle, the angular difference of 1 degree corresponds to a distance of 60 NM on the",
+  "question": "Welke afstand komt overeen met één graad verschil in breedtegraad gemeten via een lengtegraad?",
+  "options": [
+   "1 NM",
+   "60 NM",
+   "60 km",
+   "30 NM"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666284",
+  "topic": "91.1.2.2.4 Explain that along any great circle, the angular difference of 1 degree corresponds to a distance of 60 NM on the",
+  "question": "Wat is de afstand van een grootcirkel tussen punten A en B gelegen op de evenaar, als het verschil tussen de twee meridianen gelijk is aan één hoogtegraad?",
+  "options": [
+   "120 NM",
+   "60 NM",
+   "216 NM",
+   "400 NM"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666283",
+  "topic": "91.1.2.2.4 Explain that along any great circle, the angular difference of 1 degree corresponds to a distance of 60 NM on the",
+  "question": "Wat is de afstand tussen de twee meridianen 150°E en 151°E op de evenaar?",
+  "options": [
+   "60 km",
+   "1 NM",
+   "111 NM",
+   "60 NM"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666276",
+  "topic": "91.1.2.2.5 Define the term 'rhumb line' and 'small circle'",
+  "question": "Welke uitspraak over loxodromen is correct?",
+  "options": [
+   "Het midden van een volledige cyclus van een loxodroom is altijd het middelpunt van de aarde.",
+   "Een loxodroom is een grootcirkel die de evenaar met een hoek van 45° snijdt.",
+   "De kortste route tussen twee punten op het aardoppervlak volgt een loxodroom.",
+   "Een loxodroom snijdt elke meridiaan met dezelfde hoek."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666280",
+  "topic": "91.1.2.3.3 Calculate the distance in NM any two given positions on the same meridian (using 60 NM per degree difference in",
+  "question": "Wat is de afstand tussen de parallellen 48°N en 49°N gemeten via de meridiaan?",
+  "options": [
+   "1 NM",
+   "111 NM",
+   "10 NM",
+   "60 NM"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666282",
+  "topic": "91.1.2.3.3 Calculate the distance in NM any two given positions on the same meridian (using 60 NM per degree difference in",
+  "question": "Punt A op het aardoppervlak ligt precies op de parallel 47°50´27´´N. Welk punt ligt precies 240 NM ten noorden van A?",
+  "options": [
+   "51°50´27´N´",
+   "43°50´27´´N",
+   "49°50´27´´N",
+   "53°50´27´´N"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666279",
+  "topic": "91.1.2.5.3 Describe the coordinate grid of the earth, and name and identify the Greenwich meridian, dateline, tropics and polar",
+  "question": "Waar zijn de twee poolcirkels?",
+  "options": [
+   "23.5° ten noorden en zuiden van de polen",
+   "23.5° ten noorden en zuiden van de evenaar",
+   "20.5° ten zuiden van de polen",
+   "Op een breedtegraad van 20.5°S en 20.5°N"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666285",
+  "topic": "91.1.3.1.3 Describe the daily movement of the apparent sun from east to west across the sky with approximately 15 degrees per",
+  "question": "Wat is het tijdsverschil als de zon 20° lengtegraden verplaatst?",
+  "options": [
+   "0:20 h",
+   "1:20 h",
+   "0:40 h",
+   "1:00 h"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666286",
+  "topic": "91.1.3.1.3 Describe the daily movement of the apparent sun from east to west across the sky with approximately 15 degrees per",
+  "question": "Wat is het tijdsverschil als de zon 10° lengtegraden verplaatst?",
+  "options": [
+   "0:30 h",
+   "0:40 h",
+   "0:04 h",
+   "1:00 h"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666288",
+  "topic": "91.1.3.3.3 State that in aviation, all times in documentation are UTC",
+  "question": "UTC is...",
+  "options": [
+   "een lokale gemiddelde tijd op een specifiek punt op aarde",
+   "een zonale tijd",
+   "een lokale tijd in centraal Europa",
+   "een verplichte tijd gebruikt in de luchtvaart"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666287",
+  "topic": "91.1.3.4.6 With given time difference to UTC, or almanac reference, convert between ST and UTC",
+  "question": "Met Midden-Europese Zomertijd (MEZT, Central European summer time/CEST) gegeven als UTC+2, welke UTC tijd komt overeen met 1600 MEZT?",
+  "options": [
+   "1400 UTC.",
+   "1600 UTC.",
+   "1500 UTC.",
+   "1700 UTC."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666289",
+  "topic": "91.1.3.4.6 With given time difference to UTC, or almanac reference, convert between ST and UTC",
+  "question": "Met Midden-Europese Tijd (MET, Central European time/CET) is gegeven als UTC+1, welke UTC tijd komt overeen met 1700 MET?",
+  "options": [
+   "1700 UTC.",
+   "1800 UTC.",
+   "1500 UTC.",
+   "1600 UTC."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666290",
+  "topic": "91.1.3.6.2 Define the beginning / end of 'civil twilight' (BCMT/ECET) as the time before sunrise / after sunset when the centre of",
+  "question": "Het begrip burgerlijke schemering (civil twilight) is gedefinieerd als...",
+  "options": [
+   "de tijdsperiode vóór zonsopkomst of na zonsondergang waar het centrum van de zonneschijf 6 graden of minder onder de ware horizon staat.",
+   "de tijdsperiode vóór zonsopkomst of na zonsondergang waar het centrum van de zonneschijf 12 graden of minder onder de ware horizon staat.",
+   "de tijdsperiode vóór zonsopkomst of na zonsondergang waar het centrum van de zonneschijf 12 graden of minder onder de schijnbare horizon staat.",
+   "de tijdsperiode vóór zonsopkomst of na zonsondergang waar het centrum van de zonneschijf 6 graden of minder onder de schijnbare horizon staat."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666295",
+  "topic": "91.1.4.1.1 Define 'true north' (TN)  and corresponding directions (TH, TC)",
+  "question": "Het begrip \"Ware Grondkoers\" (TT) is gedefinieerd als...",
+  "options": [
+   "de richting van een willekeurig punt op de aarde naar de geografische Noordpool.",
+   "de richting van een willekeurig punt op de aarde naar de magnetische noordpool.",
+   "de hoek tussen het magnetische noorden en de grondkoers.",
+   "de hoek tussen het ware noorden en de grondkoers."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666294",
+  "topic": "91.1.4.1.4 Define 'variation (VAR)' as the angle between TN and MN",
+  "question": "De hoek tussen de magnetische grondkoers (MT) en de ware grondkoers (TT) heet...",
+  "options": [
+   "inclinatie.",
+   "deviatie.",
+   "opstuurhoek.",
+   "variatie."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666301",
+  "topic": "91.1.4.1.5 Describe the change of variation with time and position",
+  "question": "Wat kan een reden zijn om de baanmarkeringen op een vliegveld te veranderen, bijv. van landingsbaan 06 naar landingsbaan 07?",
+  "options": [
+   "De magnetische deviatie van de baanlocatie is veranderd.",
+   "De magnetische variatie van de baan is veranderd.",
+   "De ware richting van de baan is veranderd",
+   "De richting van de naderingsprocedure is veranderd."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666296",
+  "topic": "91.1.4.2.1 Describe how local variation can be obtained from different charts: using isogonal lines (enroute charts) or MN arrows",
+  "question": "Het begrip \"isogonisch\" of \"isogoon\" is gedefinieerd als de lijn op een aeronautische kaart, die alle punten verbindt met dezelfde ...",
+  "options": [
+   "luchtkoers (heading).",
+   "variatie.",
+   "inclinatie.",
+   "deviatie."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666297",
+  "topic": "91.1.4.2.1 Describe how local variation can be obtained from different charts: using isogonal lines (enroute charts) or MN arrows",
+  "question": "Het begrip \"agoon\" is gedefinieerd als de lijn op aarde of een aeronautische kaart, die alle punten verbindt met een...",
+  "options": [
+   "luchtkoers van 0°.",
+   "deviatie van 0°.",
+   "variatie van 0°.",
+   "inclinatie van 0°."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666298",
+  "topic": "91.1.5.1.1 State the typical units and conversion factors for distance: nautical mile (NM), kilometre (km)",
+  "question": "Wat zijn de officiële basiseenheden en hun afkortingen voor horizontale afstanden gebruikt voor navigatie in de luchtvaart?",
+  "options": [
+   "voet (feet, ft), inches (in)",
+   "Yards (yd), meters (m)",
+   "Zeemijlen (Nautical miles, NM), kilometers (km)",
+   "Landmijlen (Land miles, SM), Zeemijlen (Sea miles, NM)"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666299",
+  "topic": "91.1.5.2.2 Convert between units of height or altitude: feet (ft), metres (m)",
+  "question": "1000 ft is gelijk aan...",
+  "options": [
+   "30 km.",
+   "30 m.",
+   "300 m.",
+   "3000 m."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666300",
+  "topic": "91.1.5.2.2 Convert between units of height or altitude: feet (ft), metres (m)",
+  "question": "5500 m is gelijk aan...",
+  "options": [
+   "7500 ft.",
+   "18000 ft.",
+   "30000 ft.",
+   "10000 ft."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666307",
+  "topic": "91.2.1.2.1 Describe the cylindrical type of projection, attached to the equator, used as basis for a 'direct Mercator' chart",
+  "question": "Een vliegtuig vliegt met een aangewezen luchtsnelheid (IAS) van 150 kt op 8000 ft MSL. Volgens de vuistregel is de ware luchtsnelheid...",
+  "options": [
+   "208 kt.",
+   "142 kt.",
+   "174 kt.",
+   "150 kt."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666303",
+  "topic": "91.2.2.1.3 Describe the appearance of great circles and rhumb lines on a direct Mercator chart",
+  "question": "Hoe worden loxodromen en grootcirkels weergegeven op een directe Mercatorkaart?",
+  "options": [
+   "Loxodromen : gebogen lijnen Grootcirkels : rechte lijnen",
+   "Loxodromen : rechte lijnen Grootcirkels : gebogen lijn",
+   "Loxodromen : rechte lijnen Grootcirkels : rechte lijnen",
+   "Loxodromen : gebogen lijnen Grootcirkels : gebogen lijnen"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666340",
+  "topic": "91.2.3.5.1 Explain the terms 'QTE', 'QUJ', 'QDM', 'QDR' and 'relative bearing (RB)' used for plotting positions",
+  "question": "Het begrip QTE is de...",
+  "options": [
+   "ware peiling van het luchtvaartuig naar het station.",
+   "magnetische peiling van het luchtvaartuig naar het station.",
+   "magnetische peiling van het station naar het luchtvaartuig.",
+   "ware peiling van het station naar het luchtvaartuig."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666335",
+  "topic": "91.2.3.5.2 With appropriate values given, convert between QTE/QUJ and QDM/QDR",
+  "question": "Gegeven is: QDR: 067° Variatie: 5° E De QDM is gelijk aan…",
+  "options": [
+   "257°.",
+   "247°.",
+   "252°.",
+   "072°."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666336",
+  "topic": "91.2.3.5.2 With appropriate values given, convert between QTE/QUJ and QDM/QDR",
+  "question": "Gegeven is: QDR: 152° Variatie: 5° W Deviatie: 5° E De QUJ is gelijk aan…",
+  "options": [
+   "317°.",
+   "147°.",
+   "327°.",
+   "332°."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666334",
+  "topic": "91.2.3.5.2 With appropriate values given, convert between QTE/QUJ and QDM/QDR",
+  "question": "Gegeven is: QTE: 229° Variatie: 10° W De QDM is gelijk aan…",
+  "options": [
+   "239°.",
+   "049°.",
+   "059°.",
+   "039°."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666338",
+  "topic": "91.2.3.5.2 With appropriate values given, convert between QTE/QUJ and QDM/QDR",
+  "question": "Gegeven is: QTE: 248° Variatie: 10° W De QDR is gelijk aan…",
+  "options": [
+   "258°",
+   "238°",
+   "068°",
+   "078°"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666337",
+  "topic": "91.2.3.5.2 With appropriate values given, convert between QTE/QUJ and QDM/QDR",
+  "question": "Gegeven is: QTE: 203° Variatie: 10° E De QDR is gelijk aan…",
+  "options": [
+   "213°.",
+   "193°.",
+   "023°.",
+   "013°."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666305",
+  "topic": "91.3.1.1.2 With appropriate values given, calculate between heading and track and different direction references (T), (M), (C)",
+  "question": "De afstand tussen twee vliegvelden is 220 NM. Op een aeronautische navigatiekaart meet de piloot een afstand van 40.7 cm voor deze afstand. De schaal van de kaart is...",
+  "options": [
+   "1 : 250000.",
+   "1 : 2000000.",
+   "1 : 500000.",
+   "1 : 1000000."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666302",
+  "topic": "91.3.1.2.2 Explain the relevance of the speeds (IAS/CAS, TAS) for different phases of flight preparation and flight conduction",
+  "question": "Wat zijn de eigenschappen van een Mercatorkaart?",
+  "options": [
+   "De schaal gaat omhoog met lengtegraad, grootcirkels worden weergegeven als gebogen lijnen, loxodromen worden weergegeven als rechte lijnen.",
+   "De schaal is constant, grootcirkels worden weergegeven als gebogen lijnen, loxodromen worden weergegeven als rechte lijnen.",
+   "De schaal gaat omhoog met lengtegraad, grootcirkels worden weergegeven als rechte lijnen, loxodromen worden weergegeven als gebogen lijnen.",
+   "De schaal is constant, grootcirkels worden weergegeven als rechte lijnen, loxodromen worden weergegeven als gebogen lijnen."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666304",
+  "topic": "91.3.1.3.2 Apply HWC and TWC to determine GS from TAS and vice versa",
+  "question": "Wat zijn de eigenschappen van een Lambertkaart?",
+  "options": [
+   "De kaart is conform en oppervlaktegetrouw",
+   "De kaart is conform en vrijwel afstandsgetrouw",
+   "Grootcirkels worden weergegeven als rechte lijnen en de kaart is oppervlaktegetrouw",
+   "Loxodromen worden weergegeven als rechte lijnen en de kaart is conform"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666312",
+  "topic": "91.3.1.3.3 Perform GS, distance and time calculations, e.g. calculate average GS based on observed fixes",
+  "question": "Een luchtvaartuig legt 110 NM af in 01:25. De grondsnelheid (GS) is gelijk aan...",
+  "options": [
+   "78 kt.",
+   "160 km/h.",
+   "86 kt.",
+   "120 km/h."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666311",
+  "topic": "91.3.1.3.3 Perform GS, distance and time calculations, e.g. calculate average GS based on observed fixes",
+  "question": "Een luchtvaartuig legt 100 km af in 56 minuten. De grondsnelheid (GS) is gelijk aan...",
+  "options": [
+   "93 kt.",
+   "58 km/h.",
+   "107 km/h.",
+   "198 kt."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666309",
+  "topic": "91.3.1.4.1 With remaining distance and observed ground speed given, calculate the remaining time and expected time of arrival",
+  "question": "Gegeven is: Ware grondkoers van A naar B: 283° Afstand over de grond: 75 NM TAS: 105 kt Tegenwindcomponent: 12 kt Geschatte vertrektijd (ETD): 1242 UTC De geschatte aankomsttijd (ETA) is...",
+  "options": [
+   "1430 UTC",
+   "1330 UTC",
+   "1320 UTC",
+   "1356 UTC"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666327",
+  "topic": "91.3.1.4.1 With remaining distance and observed ground speed given, calculate the remaining time and expected time of arrival",
+  "question": "Een vliegtuig vliegt van \"A\" naar \"B\" (afstand 220 NM) met een gemiddelde grondsnelheid (GS) van 120 kt. Het vertrekt vanuit \"A\" om 1200 UTC. Na 70 NM via de koers afgelegd te hebben vanaf \"A\", ligt het vliegtuig 5 minuten voor op het tijdschema. Gebruik makend van de werkelijke GS, wat is de herziene aankomsttijd (revised ETA) voor ´B´?",
+  "options": [
+   "1330 UTC",
+   "1340 UTC",
+   "1335 UTC",
+   "1345 UTC"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666313",
+  "topic": "91.3.1.4.1 With remaining distance and observed ground speed given, calculate the remaining time and expected time of arrival",
+  "question": "Wat is de benodigde vliegtijd voor een afstand van 236 NM met een grondsnelheid van 134 kt?",
+  "options": [
+   "1:34 uur",
+   "0:34 uur",
+   "0:46 uur",
+   "1:46 uur"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666308",
+  "topic": "91.3.1.4.1 With remaining distance and observed ground speed given, calculate the remaining time and expected time of arrival",
+  "question": "Gegeven is: Ware grondkoers van A naar B: 250° Afstand over de grond: 210 NM TAS: 130 kt Tegenwindcomponent: 15 kt Geschatte vertrektijd (ETD): 0915 UTC De geschatte aankomsttijd (ETA) is…",
+  "options": [
+   "1005 UTC.",
+   "1052 UTC.",
+   "1105 UTC.",
+   "1115 UTC."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666310",
+  "topic": "91.3.1.4.1 With remaining distance and observed ground speed given, calculate the remaining time and expected time of arrival",
+  "question": "Gegeven is: Ware grondkoers van A naar B: 352° Afstand over de grond: 100 NM GS: 107 kt Geschatte vertrektijd (ETD) is: 0933 UTC De geschatte aankomsttijd (ETA) is…",
+  "options": [
+   "1045 UTC.",
+   "1029 UTC.",
+   "1129 UTC.",
+   "1146 UTC."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666328",
+  "topic": "91.3.1.5.1 For a vertical interval (ft), GS and rate of climb/descent given, calculate the time required for climb/descent",
+  "question": "Ga uit van kalme wind en een vliegtuig dat daalt van 9000 ft naar 1500 ft. De daalsnelheid (ROD) is 1200 ft/min. De geschatte vliegtijd is...",
+  "options": [
+   "15 min.",
+   "8 min.",
+   "6 min.",
+   "12 min."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666315",
+  "topic": "91.3.2.7.4 With Pressure ALT, OAT (or temperature deviation from ISA) and QNH given, calculate the true altitude (TA) using:",
+  "question": "Een vliegtuig vliegt op FL 75 met een buitenluchttemperatuur (OAT) van -9°C. De hoogte met QNH ingesteld is 6500 ft. De ware hoogte is…",
+  "options": [
+   "7000 ft",
+   "6750 ft",
+   "6500 ft",
+   "6250 ft"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666316",
+  "topic": "91.3.2.7.4 With Pressure ALT, OAT (or temperature deviation from ISA) and QNH given, calculate the true altitude (TA) using:",
+  "question": "Een vliegtuig vliegt op een drukhoogte van 7000 voet met een buitenluchttemperatuur (OAT) van +21°C. De hoogte met QNH ingesteld is 6500 ft. De ware hoogte is...",
+  "options": [
+   "7000 ft.",
+   "6250 ft.",
+   "6750 ft.",
+   "6500 ft."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666364",
+  "topic": "91.3.3.1.1 Explain the terms 'air vector', 'wind vector' and 'ground vector'",
+  "question": "(Zie bijlage EC-90-001-v1) De GNSS geeft tijdens de vlucht 51.83°N, 12.19°E aan. Wat is de positie van het luchtvaartuig?",
+  "options": [
+   "Boven EDCK",
+   "Boven EDAD",
+   "Boven het dorp Streez",
+   "Boven het dorp Quellendorf"
+  ],
+  "correct": 1,
+  "images": [
+   "img/navigation/666364_0.jpeg"
+  ]
+ },
+ {
+  "id": "666317",
+  "topic": "91.3.3.2.1 With course or track, TAS and wind/velocity given, resolve the TOV for heading/WCA and GS using a mechanical",
+  "question": "Gegeven is: Ware grondkoers: 255° TAS: 100 kt Wind: 200°/10 kt. De ware luchtkoers is…",
+  "options": [
+   "275°.",
+   "250°.",
+   "245°.",
+   "265°."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666319",
+  "topic": "91.3.3.2.1 With course or track, TAS and wind/velocity given, resolve the TOV for heading/WCA and GS using a mechanical",
+  "question": "Een luchtvaartuig volgt een ware grondkoers (TT) van 220° met een constante TAS van 220 kt. De windvector is 270°/50 kt. De grondsnelheid (GS) is gelijk aan…",
+  "options": [
+   "135 kt.",
+   "255 kt.",
+   "185 kt.",
+   "170 kt."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666320",
+  "topic": "91.3.3.2.1 With course or track, TAS and wind/velocity given, resolve the TOV for heading/WCA and GS using a mechanical",
+  "question": "Een luchtvaartuig volgt een ware grondkoers (TT) van 040° met een constante ware luchtsnelheid (TAS) van 180 kt. De windvector is 350°/30 kt. De grondsnelheid (GS) is gelijk aan…",
+  "options": [
+   "159 kt.",
+   "172 kt.",
+   "155 kt.",
+   "168 kt."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666321",
+  "topic": "91.3.3.2.1 With course or track, TAS and wind/velocity given, resolve the TOV for heading/WCA and GS using a mechanical",
+  "question": "Een luchtvaartuig volgt een ware grondkoers (TT) van 040° met een constante ware luchtsnelheid (TAS) van 180 kt. De windvector is 350°/30 kt. De opstuurhoek (WCA) is…",
+  "options": [
+   "- 9°",
+   "- 7°",
+   "+ 5°",
+   "+ 11°"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666322",
+  "topic": "91.3.3.2.1 With course or track, TAS and wind/velocity given, resolve the TOV for heading/WCA and GS using a mechanical",
+  "question": "Gegeven is: Ware grondkoers: 270° TAS: 100 kt Wind: 090°/25 kt Afstand: 100 NM De grondsnelheid (GS) is gelijk aan…",
+  "options": [
+   "120 kt.",
+   "117 kt.",
+   "125 kt.",
+   "131 kt."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666318",
+  "topic": "91.3.3.2.1 With course or track, TAS and wind/velocity given, resolve the TOV for heading/WCA and GS using a mechanical",
+  "question": "Gegeven is: Ware grondkoers: 165° TAS: 90 kt Wind: 130°/20 kt Afstand: 153 NM De ware luchtkoers is…",
+  "options": [
+   "158°.",
+   "126°.",
+   "152°.",
+   "165°."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666324",
+  "topic": "91.3.3.2.1 With course or track, TAS and wind/velocity given, resolve the TOV for heading/WCA and GS using a mechanical",
+  "question": "Een luchtvaartuig volgt een ware grondkoers (TT) van 040° met een constante ware luchtsnelheid (TAS) van 180 kt. De windvector is 350°/30 kt. De opstuurhoek (WCA) is...",
+  "options": [
+   "7° rechts.",
+   "7° links.",
+   "3° links.",
+   "3° rechts."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666293",
+  "topic": "91.4.1.1.1 Explain the term 'terrestrial navigation'",
+  "question": "De hoek tussen de ware grondkoers (TT) en de ware luchtkoers (TH) heet de...",
+  "options": [
+   "Opstuurhoek.",
+   "deviatie.",
+   "variatie.",
+   "inclinatie."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666362",
+  "topic": "91.4.1.1.1 Explain the term 'terrestrial navigation'",
+  "question": "Wat wordt bedoeld met zichtnavigatie (terrestrial navigation)?",
+  "options": [
+   "Oriëntatie doormiddel van grondkenmerken tijdens een zichtvlucht",
+   "Oriëntatie doormiddel van instrumenten tijdens een zichtvlucht",
+   "Oriëntatie doormiddel van hemellichamen tijdens een zichtvlucht",
+   "Oriëntatie doormiddel van GPS tijdens een zichtvlucht"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666306",
+  "topic": "91.4.1.1.2 Explain the term 'map reading', and describe how to prepare and align a map for use in visual navigation",
+  "question": "Voor een korte vlucht van A naar B bepaalt de piloot de volgende informatie met een aeronautische kaart: Ware grondkoers: 245° Magnetische variatie: 7°W De magnetische grondkoers (MT) is gelijk aan...",
+  "options": [
+   "007°.",
+   "252°.",
+   "245°.",
+   "238°."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666292",
+  "topic": "91.4.1.1.2 Explain the term 'map reading', and describe how to prepare and align a map for use in visual navigation",
+  "question": "Gegeven is: TT: 179°, Opstuurhoek: -12°, Variatie: 004° E, Deviatie: +002° Wat zijn de MH en de MT?",
+  "options": [
+   "MH: 163°. MT: 175°.",
+   "MH: 167°. MT: 175°.",
+   "MH: 163°. MT: 161°.",
+   "MH: 167°. MT: 161°."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666291",
+  "topic": "91.4.1.1.2 Explain the term 'map reading', and describe how to prepare and align a map for use in visual navigation",
+  "question": "Gegeven is: Opstuurhoek: -012°, TH: 125°, MT: 139°, Deviatie: 002°E Wat zijn de: TT, MH en de CH?",
+  "options": [
+   "TT: 137°. MH: 127°. CH: 125°.",
+   "TT: 137°. MH: 139°. CH: 125°.",
+   "TT: 113°. MH: 127°. CH: 129°.",
+   "TT: 113°. MH: 139°. CH: 129°."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666363",
+  "topic": "91.4.1.2.1 Explain which elements would make a ground feature suitable for use for VFR navigation, and give examples",
+  "question": "Welke elementen op de grond kunnen het best gebruikt worden om je tijdens de vlucht op zicht te oriënteren?",
+  "options": [
+   "Boerderij weggetjes en beken",
+   "Rivieren, spoorwegen, snelwegen",
+   "Grenslijnen.",
+   "Hoogspanningskabels."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666325",
+  "topic": "91.4.2.1.3 Calculate the heading change at an offcourse fix to directly reach the next waypoint using the 1:60 rule",
+  "question": "De afstand van \"A\" naar \"B\" is 120 NM. Op een afstand van 55 NM van \"A\" merkt de piloot een afwijking van 7 NM naar rechts op. Welke verandering van koers is ongeveer nodig om direct naar \"B\" te vliegen?",
+  "options": [
+   "15° links",
+   "8° links",
+   "6° links",
+   "14° links"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666326",
+  "topic": "91.4.2.1.3 Calculate the heading change at an offcourse fix to directly reach the next waypoint using the 1:60 rule",
+  "question": "Een vliegtuig vliegt op een luchtkoers (heading) van 090°. De af te leggen afstand is 90 NM. Na 45 NM is het vliegtuig 4.5 NM noordelijk van de geplande route. Wat is de gecorrigeerde luchtkoers om direct naar het veld van aankomst te vliegen?",
+  "options": [
+   "12° naar rechts",
+   "6° naar rechts",
+   "18° naar rechts",
+   "9° naar rechts"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666323",
+  "topic": "91.4.2.2.1 With GS observed from visual features enroute, calculate revised time of arrival (ETA) at next waypoint",
+  "question": "Gegeven is: Ware grondkoers: 270° TAS: 100 kt Wind: 090°/25 kt Afstand: 100 NM De vliegtijd is...",
+  "options": [
+   "48 min.",
+   "62 min.",
+   "84 min.",
+   "37 min."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666329",
+  "topic": "91.4.2.3.1 Enter revised navigational enroute data, for the legs concerned, into the flight plan: e.g. updated wind and GS and",
+  "question": "Welk antwoord maakt het vliegplan af (gemarkeerde vakken)? Zie bijlage (NAV-014)",
+  "options": [
+   "TH: 173°. MH: 184°. MC: 178°.",
+   "TH: 173°. MH: 174°. MC: 178°.",
+   "TH: 185°. MH: 184°. MC: 178°.",
+   "TH: 185°. MH: 185°. MC: 180°."
+  ],
+  "correct": 2,
+  "images": [
+   "img/navigation/666329_0.jpeg"
+  ]
+ },
+ {
+  "id": "666314",
+  "topic": "91.4.2.3.1 Enter revised navigational enroute data, for the legs concerned, into the flight plan: e.g. updated wind and GS and",
+  "question": "Een vliegtuig vliegt met een ware luchtsnelheid (TAS) van 180 kt en een tegenwindcomponent van 25 kt voor 2 uur en 25 minuten. De afgelegde afstand is...",
+  "options": [
+   "693 NM.",
+   "375 NM.",
+   "202 NM.",
+   "435 NM."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666330",
+  "topic": "92.1.1.1.2 State that electromagnetic waves travel at the speed of light, being approximately 300 000 km/s",
+  "question": "De voortplantingssnelheid van elektromagnetische golven is ongeveer...",
+  "options": [
+   "300000 m/s.",
+   "300000 NM/s.",
+   "300000 ft/s.",
+   "300000 km/s."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666348",
+  "topic": "92.1.1.1.4 Describe the 'Doppler effect' an a phenomenon where the frequency of a wave will increase or decrease if there is",
+  "question": "Als de zender en de ontvanger naar elkaar bewegen dan…",
+  "options": [
+   "varieert de frequentie, maar de golflengte blijft constant.",
+   "gaat de waargenomen frequentie omlaag.",
+   "gaat de waargenomen frequenctie omhoog",
+   "is de waargenomen frequentie dezelfde als de uitgezonden frequentie."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666349",
+  "topic": "92.1.1.1.4 Describe the 'Doppler effect' an a phenomenon where the frequency of a wave will increase or decrease if there is",
+  "question": "Als de zender en ontvanger van elkaar af bewegen dan…",
+  "options": [
+   "varieert de frequentie, maar de golflengte blijft constant.",
+   "is de waargenomen frequentie dezelfde als de uitgezonden frequentie.",
+   "gaat de waargenomen frequentie omhoog",
+   "gaat de waargenomen frequentie omlaag."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666331",
+  "topic": "92.1.2.1.4 State that LF/MF waves can propagate as 'ground wave' and 'sky wave'",
+  "question": "Radiogolven in de LF en MF band (bijv. NDB) planten zich voort als...",
+  "options": [
+   "alleen ruimtegolf (direct wave, quasi-optical).",
+   "Hemelgolf (sky wave)",
+   "grondgolf (ground / surface wave).",
+   "hemelgolf (sky wave) en als grondgolf (ground / surface wave)."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666332",
+  "topic": "92.1.2.1.5 State that VHF waves (and higher frequencies) only propagate as 'direct wave'",
+  "question": "Radiogolven in de VHF band (bijv. VOR) planten zich voort als...",
+  "options": [
+   "hemelgolf (sky wave).",
+   "grondgolf (ground / surface wave).",
+   "ruimtegolf (direct wave, quasi-optical).",
+   "hemelgolf (sky wave) en grondgolf (ground / surface wave)."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666333",
+  "topic": "92.2.1.1.1 Describe the use of a ground DF",
+  "question": "Een grondpeiler (VHF direction finder, VDF) kan ___ bepalen.",
+  "options": [
+   "naderingssnelheden.",
+   "schuine afstanden",
+   "ware grondkoersen.",
+   "magnetische peilingen (bearings)."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666339",
+  "topic": "92.2.1.2.4 With example QDM/QDR information given, determine the aprroximate location of the aircraft in relation to the station",
+  "question": "Een piloot krijgt een QDR van 225° van een grondpeiler (VDF). Waar is het luchtvaartuig in relatie tot het grondstation?",
+  "options": [
+   "Zuidwesten",
+   "Noordoosten",
+   "Noordwesten",
+   "Zuidoosten"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666342",
+  "topic": "92.2.1.2.4 With example QDM/QDR information given, determine the aprroximate location of the aircraft in relation to the station",
+  "question": "Een piloot krijgt een QDR van 315° van een grondpeiler (VDF). Waar is het luchtvaartuig in relatie tot het grondstation?",
+  "options": [
+   "Noordwesten",
+   "Zuidoosten",
+   "Noordoosten",
+   "Zuidwesten"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666341",
+  "topic": "92.2.1.2.4 With example QDM/QDR information given, determine the aprroximate location of the aircraft in relation to the station",
+  "question": "Een piloot krijgt een QDR van 135° van een grondpeiler (VDF). Waar is het luchtvaartuig in relatie tot het grondstation?",
+  "options": [
+   "Noordoosten",
+   "Noordwesten",
+   "Zuidoosten",
+   "Zuidwesten"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666343",
+  "topic": "92.2.2.1.2 Explain the term 'ADF' (automatic directionfinding equipment) as the airborne part of the system",
+  "question": "Welke apparatuur moet aan boord zijn van een vliegtuig om signalen te ontvangen van een non-directional beacon (NDB)?",
+  "options": [
+   "Automatic direction finder (ADF)",
+   "Aanwijsnaald (Course deviation indicator, CDI)",
+   "Horizontal situation indicator (HSI)",
+   "Secundaire radar (Secondary surveillance radar, SSR)"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666344",
+  "topic": "92.2.2.2.2 Interpret the indications given on RMI, fixedcard and movingcard ADF display with regard to relative bearning (RB)",
+  "question": "Een piloot wil richting een NDB vliegen op een QDM van 090°. Het luchtvaartuig vliegt 5 minuten met een magnetische luchtkoers (MH) van 095° en de RBI indicatie van 355°. Na 6 minuten geeft de RBI 358° aan. Welke uitspraak is correct?",
+  "options": [
+   "De zijwindkomponent is afgenomen, de piloot moet de MH vergroten",
+   "De zijwindcomponent is toegenomen, de piloot moet de MH vergroten.",
+   "De zijwindkomponent is toegenomen, de piloot moet de MH verlagen",
+   "De zijwindkomponent is afgenomen, de piloot moet de MH verlagen"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666345",
+  "topic": "92.2.2.2.2 Interpret the indications given on RMI, fixedcard and movingcard ADF display with regard to relative bearning (RB)",
+  "question": "De piloot wil direct naar het baken vliegen. De wind is kalm. De piloot moet een QDM volgen van: Zie figuur (NAV-019)",
+  "options": [
+   "260",
+   "080",
+   "230",
+   "200"
+  ],
+  "correct": 0,
+  "images": [
+   "img/navigation/666345_0.jpeg"
+  ]
+ },
+ {
+  "id": "666346",
+  "topic": "92.2.2.3.2 State that the range of a NDB is the largest during night, due to reception of a sky wave",
+  "question": "Het bereik van NDB´s die uitzenden in de medium frequentie band is het grootst ...",
+  "options": [
+   "voor de middag.",
+   "overdag.",
+   "in de nacht.",
+   "om 12 uur."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666347",
+  "topic": "92.2.2.4.1 Describe the typical errors with NDB/ADF: 'fading' or 'twilight effect', 'coastal refraction'",
+  "question": "Het kusteffect is het grootst met radiogolven die zich voortplanten...",
+  "options": [
+   "op een rechte hoek op de kustlijn, vliegtuig vliegt boven 6000 ft",
+   "op een rechte hoek op de kustlijn, vliegtuig vliegt onder 6000 ft",
+   "op een scherpe hoek op de kustlijn, vliegtuig vliegt onder 6000 ft",
+   "op een scherpe hoek op de kustlijn, vliegtuig vliegt boven 6000 ft"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666350",
+  "topic": "92.2.3.1.1 Explain the term 'radial', and describe the working principle of a VOR with regard to shift between reference and",
+  "question": "VOR radialen worden gedefinieerd door het principe van...",
+  "options": [
+   "Vergelijking van de fase van twee signalen.",
+   "Vergelijking van de frequentie van twee signalen.",
+   "Vergelijking van de puls van twee signalen.",
+   "Vergelijking van de amplitude van twee signalen"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666351",
+  "topic": "92.2.3.1.2 State that radials are referenced to magnetic north (MN)",
+  "question": "Een VOR radiaal komt overeen met ...",
+  "options": [
+   "QDR.",
+   "QDM.",
+   "QTE.",
+   "QUJ."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666352",
+  "topic": "92.2.3.2.4 State maximum deflection corresponds to a deviation from selected course of 10 degrees or more",
+  "question": "Volle afwijking op een aanwijsnaald (course deviation indicator, CDI) betekent dat het vliegtuig ten minste ...",
+  "options": [
+   "10° naast de geselecteerde koers is.",
+   "10 NM naast de geselecteerde koers is.",
+   "2° naast de geselecteerde koers is.",
+   "2 NM naast de geselecteerde koers is."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666354",
+  "topic": "92.2.3.2.7 Read and interpret VOR information (selected course, deviation, flag) as displayed on CDI, HSI and RMI",
+  "question": "Het luchtvaartuig is op radiaal: Zie bijlage (NAV-024)",
+  "options": [
+   "246",
+   "234",
+   "060",
+   "066"
+  ],
+  "correct": 1,
+  "images": [
+   "img/navigation/666354_0.jpeg"
+  ]
+ },
+ {
+  "id": "666353",
+  "topic": "92.2.3.2.7 Read and interpret VOR information (selected course, deviation, flag) as displayed on CDI, HSI and RMI",
+  "question": "Waar is het luchtvaartuig in relatie tot de VOR? Zie bijlage (NAV-022)",
+  "options": [
+   "Zuidoosten",
+   "Noordoosten",
+   "Noordwesten",
+   "Zuidwesten"
+  ],
+  "correct": 1,
+  "images": [
+   "img/navigation/666353_0.jpeg"
+  ]
+ },
+ {
+  "id": "666355",
+  "topic": "92.2.3.3.1 Explain the limitation of range due to the path of the VHF signal (station elevation and aircraft altitude)",
+  "question": "Het bereik van een VOR wordt beïnvloed door…",
+  "options": [
+   "gereflecteerde hemelgolven (sky waves)",
+   "multi-path voortplanting van de grondgolf.",
+   "hoogte van zender en ontvanger",
+   "Daglicht interferentie"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666356",
+  "topic": "92.2.4.1.1 Explain the principle of determining distance via runtime measurement",
+  "question": "De Distance Measuring Equipment (DME) bepaalt de afstand gebaseerd op het principe van...",
+  "options": [
+   "tijdsmeting.",
+   "fasevergelijking.",
+   "Doppler.",
+   "laser meting."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666357",
+  "topic": "92.2.4.1.2 State that the measured distance corresponds to the direct, radial distance from the DME ('slant range')",
+  "question": "De DME geeft een ___ aan.",
+  "options": [
+   "radiaal afstand",
+   "schuine afstand (slant range)",
+   "afstand over de grond",
+   "GNSS afstand"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666358",
+  "topic": "92.2.4.4.1 Explain the difference between 'horzontal distance' and 'slant range'",
+  "question": "Het verschil tussen de schuine afstand die een DME aangeeft en de horizontale afstand vanaf de DME wordt groter als...",
+  "options": [
+   "je daalt.",
+   "je rond het DME-station cirkelt.",
+   "je het DME-station nadert.",
+   "je vertrekt van het DME-station."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "666359",
+  "topic": "92.3.1.2.1 State that primary radar only provides bearing and distance of targets",
+  "question": "Welke informatie kan direct gekregen worden van een grondradar?",
+  "options": [
+   "Richting en luchtsnelheid (TAS)",
+   "Afstand en richting",
+   "Luchtsnelheid (TAS) en afstand",
+   "Luchtsnelheid (TAS) en heading"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666360",
+  "topic": "92.3.2.1.2 Describe how pulses from primary radar triggers an active replay by the transponder of an aircraft which is received",
+  "question": "Wat is het verschil tussen een primaire en een secundaire radar?",
+  "options": [
+   "De pulsen van een primaire radar ondervinden een variabele amplitudemodulatie, de pulsen van een secudaire radar ondervinden en statische pulsmodulatie.",
+   "De radiopulsen van een primaire radar worden gereflecteerd door het vliegtuig, de radiopulsen van een secundair radarsysteem worden beantwoord door een transponder.",
+   "De primaire radar word weergegeven op een computerscherm, de secundaire radar op een radarstrook.",
+   "De pulsen van een primaire radar ondervinden een variabele pulsmodulatie, de pulsen van een secundaire radar ondervinden een statische amplitudemodulatie."
+  ],
+  "correct": 1,
+  "images": []
+ }
+]

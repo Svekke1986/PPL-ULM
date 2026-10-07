@@ -1,0 +1,797 @@
+[
+ {
+  "id": "665718",
+  "topic": "71.1.1.1.3 Explain why loads exceeding the loading limitations have to be reduced to limits",
+  "question": "Boven de maximum toegelaten massa van het vliegtuig gaan is toegelaten als...",
+  "options": [
+   "is nooit toegestaan en is gevaarlijk.",
+   "dit gecompenseerd wordt met de stuurorganen.",
+   "uitzonderlijk toegelaten om vertragingen te vermijden.",
+   "alleen relevant indien deze wordt overschreden met meer dan 10%."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665728",
+  "topic": "71.1.2.1.3 Explain the importance of securing or tying down pieces of baggage",
+  "question": "Ladingen moeten goed vastgemaakt zijn zodat:",
+  "options": [
+   "Je steile bochten kan maken",
+   "Om te vermijden dat er te hoge g-krachten zijn tijdens het afronden.",
+   "Er extra brandstof meegenomen kan worden",
+   "Om te vermijden dat het zwaartepunt zich plots verplaatst"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665724",
+  "topic": "71.2.1.1.1 Define the term 'basic empty mass'",
+  "question": "Het basis leeggewicht (basic empty mass) van een vliegtuig houdt in:",
+  "options": [
+   "De totale massa van het vliegtuig dat klaar is voor een specifieke operatie, exclusief de onbruikbare brandsof en verkeerslading. Het gewicht bevat wel zaken zoals de bemanning en hun bagage",
+   "De massa van het vliegtuig plus de massa van alle vaste ballast, onbruikbare brandstoftoevoer, de olie die niet aftapbaar is, de totale hoeveelheid koelvloeistof en de totale hoeveelheid hydraulische vloeistof",
+   "De totale massa van het vliegtuig dat klaar is voor een specifieke operatie, inclusief het gewicht van de vereiste brandstof en bemanning, maar exclusief de verkeerslading",
+   "De totale massa van het vliegtuig dat klaar is voor een specifieke operatie, inclusief de bemanning, navigatie instrumenten en motorkap"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665736",
+  "topic": "71.2.1.1.1 Define the term 'basic empty mass'",
+  "question": "Wat is de voorwaarde om het basis leeggewicht (Basic Empty Mass) van een vliegtuig te berekenen?",
+  "options": [
+   "Alle dienstapparatuur (service equipment) moet verwijderd zijn",
+   "Alle motorolie moet afgetapt worden",
+   "Alle batterijen moeten verwijderd worden",
+   "Alle bruikbare brandstof moet aftetapt worden"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665739",
+  "topic": "71.2.1.2.3 List the common units of measurement for fuel volume and and mass, and convert them (liters, US/Imp gallons)",
+  "question": "Welke massa staat gelijk aan 102 liter Avgas 100LL?",
+  "options": [
+   "74 lbs",
+   "142 lbs",
+   "142 kg",
+   "74 kg"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665726",
+  "topic": "71.2.1.2.3 List the common units of measurement for fuel volume and and mass, and convert them (liters, US/Imp gallons)",
+  "question": "De dichtheid van AVGAS 100LL op 15° C is:",
+  "options": [
+   "1.0 kg/l",
+   "0.72 kg/l",
+   "0.68 kg/l",
+   "0.82 kg/l"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666095",
+  "topic": "71.2.2.1.1 Explain the term 'maximum ramp mass'",
+  "question": "Hoeveel taxi brandstof (100LL, AVGAS) moet je verbruiken voor het opstijgen om het gewicht van het vliegtuig te reduceren tot het maximum opstijggewicht? Maximum taxigewicht (Maximum Ramp Mass): 1150 kg, Actueel taxigewicht: 1145 kg, Maximum opstijgg",
+  "options": [
+   "14 L",
+   "10 L",
+   "5 L",
+   "7 L"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665729",
+  "topic": "71.3.1.1.1 Define and explain the meaning of 'center of gravity (CG)'",
+  "question": "De term \"zwaartepunt\" wordt gedefinieerd als...",
+  "options": [
+   "halverwege de afstand tussen het neutrale punt en de referentielijn.",
+   "het punt van waaruit de totale massa van het vliegtuig wordt beschouwt op te treden.",
+   "het zwaarste punt van een vliegtuig.",
+   "een andere benaming voor het neutrale punt."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665730",
+  "topic": "71.3.1.1.1 Define and explain the meaning of 'center of gravity (CG)'",
+  "question": "Het zwaartepunt (CG) definieert:",
+  "options": [
+   "Het punt waardoor de zwaartekracht de massa aangrijpt",
+   "Het product van de massa en zwaartepunt armen (mass and balance arms).",
+   "De afstand van het referentiepunt tot de positie van een massa.",
+   "Als het punt op de lengteas of het verlengde ervan dat gebruikt wordt voor de berekeningen van het zwaartepunt."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665733",
+  "topic": "71.3.2.1.1 Define ‘datum’ (reference point), ‘moment arm’ and ‘moment’",
+  "question": "De term \"hefboomarm\" in context van het zwaartepunt wordt gedefinieerd als:",
+  "options": [
+   "Het punt op de lengteas of het verlengde ervan, van waaruit alle zwaartepunt berekeningen worden gemaakt",
+   "Afstand van het referentiepunt tot het zwaartepunt van een massa",
+   "Afstand van een massa vanaf het zwaartepunt",
+   "Het punt waardoor de zwaartekracht aangrijpt op een massa"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665734",
+  "topic": "71.3.2.1.1 Define ‘datum’ (reference point), ‘moment arm’ and ‘moment’",
+  "question": "De hefboomarm is het horizontale punt tussen:",
+  "options": [
+   "Het zwaartepunt van een massa en de achterste limiet van het zwaartepunt",
+   "De voorste limiet van het zwaartepunt en de achterste limiet",
+   "Het zwaartepunt van een massa en de referentielijn",
+   "De voorste zwaartepuntlimiet en de referentielijn"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665732",
+  "topic": "71.3.3.1.1 Describe how to calculate 'moment' by multiplying 'mass (force)' x 'moment arm'",
+  "question": "De term \"moment\" met betrekking tot berekeningen van het zwaartepunt wordt aanzien als:",
+  "options": [
+   "Product van een massa en een lastarm.",
+   "Het verschil tussen een massa en een lastarm.",
+   "De som van een massa en een lastarm.",
+   "De quotiënt van een massa en een lastarm."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665735",
+  "topic": "71.4.1.1.2 State where the datum and moment arms for aircraft can be found",
+  "question": "De vereiste gegevens voor een massa - en evenwicht (mass and balance) berekening, inclusief de massa en de hefboomarmen kunnen gevonden worden in:",
+  "options": [
+   "Documenten van de jaarlijkse keuring",
+   "Luchtwaardigheidsdocument",
+   "De sectie van prestaties in de handleiding (pilot's operating handbook) van het vliegtuigtype",
+   "De sectie massa - en evenwicht van het operationeel handboek voor de piloot van dit specifiek vliegtuig."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665737",
+  "topic": "71.4.2.1.3 State that actual weight & balance data / weighing report can be found in the aircraft documents or the AFM/POH",
+  "question": "Welke sectie van het vlieghandboek beschrijft het basis leeggewicht van een vliegtuig?",
+  "options": [
+   "Gewicht en evenwicht (mass and balance)",
+   "Normale procedures (normal procedures)",
+   "Prestaties",
+   "Limitaties (limitations)"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665725",
+  "topic": "71.4.2.1.3 State that actual weight & balance data / weighing report can be found in the aircraft documents or the AFM/POH",
+  "question": "Het leeggewicht (emtpy weight) en het corresponderende zwaartepunt (center of gravity) van een vliegtuig zijn initieel bepaald door:",
+  "options": [
+   "Eenmalig voor 1 vliegtuig van een volledig type, vermits alle vliegtuigen van hetzelfde type, hetzelfde gewicht en zwaartepunt hebben",
+   "Door data van de fabrikant",
+   "Berekeningen",
+   "Te wegen"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665738",
+  "topic": "71.5.1.1.1 Calculate the CG position of an aircraft by using the formula: CG position = sum of moments / total mass",
+  "question": "De positie van het zwaartepunt is gelijk aan: Zie figuur (PFP-052e)",
+  "options": [
+   "147.5 in",
+   "142 in",
+   "137.5 in",
+   "145.7 in"
+  ],
+  "correct": 1,
+  "images": [
+   "img/flight_performance/665738_0.jpeg"
+  ]
+ },
+ {
+  "id": "665740",
+  "topic": "71.5.1.2.1 Determine the CG position of an aircraft by using the loading graphs given in sample documents",
+  "question": "Bij de voorbereiding van een vlucht bereken je een totaal opstijggewicht van 725 kg en een moment van 650 mmkg. Welk punt op de grafiek komt overeen met het zwaartepunt? Zie bijlage (PFP-004)",
+  "options": [
+   "1",
+   "3",
+   "4",
+   "2"
+  ],
+  "correct": 1,
+  "images": [
+   "img/flight_performance/665740_0.jpeg"
+  ]
+ },
+ {
+  "id": "665741",
+  "topic": "72.1.2.2.1 Explain the effect of flap configuration with regard to takeoff ground roll, takeoff distance and clearance of closein and",
+  "question": "Hoe heeft de configuratie van het vliegtuig een invloed op de opstijgprestaties terwijl alle parameters constant blijven? Zie figuur (PFP-007)",
+  "options": [
+   "Vliegtuig B heeft een hogere positie van vleugelkleppen dan vliegtuig A",
+   "Vliegtuig A heeft een hogere positie van vleugelkleppen dan vliegtuig B",
+   "Vliegtuig A heeft een hogere bandendruk dan vliegtuig B",
+   "Vliegtuig B heeft een hogere bandendruk dan vliegtuig A"
+  ],
+  "correct": 1,
+  "images": [
+   "img/flight_performance/665741_0.jpeg"
+  ]
+ },
+ {
+  "id": "665742",
+  "topic": "72.1.2.2.1 Explain the effect of flap configuration with regard to takeoff ground roll, takeoff distance and clearance of closein and",
+  "question": "Hoe heeft de instelling van de vleugelklep een invloed op de opstijgprestaties?",
+  "options": [
+   "Een hogere vleugelklep hoek vermindert de opstijgafstand op de grond en de opstijgsnelheid, maar ook de klimprestaties zijn verminderd",
+   "Een hogere vleugelklep hoek vermindert de opstijgafstand op de grond en verhoogt de opstijgsnelheid en de klimprestaties",
+   "Een hogere vleugelklep hoek vermindert de opstijgafstand op de grond en de opstijgsnelheid, maar verbetert de klimprestaties.",
+   "Een hogere vleugelklep hoek zorgt voor een toename van de opstijgafstand op de grond, de opstijgsnelheid en de klimprestaties"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665743",
+  "topic": "72.1.3.1.2 Explain the influence of runway conditions on takeoff and landing performance",
+  "question": "Welke factor verkort de landingsafstand (landing distance) ?",
+  "options": [
+   "Hoge luchtdichtheid (high density altitude)",
+   "Sterke kopwind (head wind)",
+   "Hevige regen",
+   "Hoge luchtdruk (high pressure altitude)"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665745",
+  "topic": "72.1.4.1.1 Define the term 'climb/descent gradient' and 'climb/descent angle'",
+  "question": "De naderingshoek (angle of descent) wordt bepaald door...",
+  "options": [
+   "de hoek tussen het hoogteverschil en de afgelegde horizontale afstand binnen eenzelfde tijd, uitgedrukt in graden [°].",
+   "de hoek tussen een horizontale vlak en het actuele vliegtraject (flight path), uitgedrukt in percent [%].",
+   "de ratio tussen het hoogteverschil en de afgelegde horizontale afstand binnen eenzelfde tijd, uitgedrukt in percent [%].",
+   "de hoek tussen een horizontaal vlak en het actuele vliegtraject (flight path), uitgedrukt in [°]."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666111",
+  "topic": "72.2.1.1.1 Define and explain the following terms: Speed for best angle of climb (vX), Speed for best rate of climb (vY)",
+  "question": "Wat doet de werkelijke luchtsnelheid (TAS) als tijdens het klimmen de aangewezen luchtsnelheid (IAS) constant blijft?",
+  "options": [
+   "Ze daalt",
+   "Ze stijgt",
+   "Ze blijft constant boven de 5000 ft",
+   "Ze blijft constant onder de 5000 ft"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665746",
+  "topic": "72.2.1.2.1 Define the following speeds: stall speeds vS, vS0 and vS1, rotation speed vR",
+  "question": "Het begin van de groene boog (2) duidt welke snelheid aan? Zie figuur (PFP-008)",
+  "options": [
+   "VNO: Maximum snelheid voor normale operaties",
+   "VS0: Overtrek snelheid in de landingsconfiguratie",
+   "VFE: Maximum snelheid om de vleugelkleppen te bedienen",
+   "VS1: Overtrek snelheid met vleugelkleppen omhoog"
+  ],
+  "correct": 3,
+  "images": [
+   "img/flight_performance/665746_0.jpeg"
+  ]
+ },
+ {
+  "id": "665748",
+  "topic": "72.2.2.1.2 Determine takeoff and landing roll and distances from given AFM/POH graphs",
+  "question": "Gegeven zijn volgende condities, de afstand voor het opstijgen is: Omgevingstemperatuur: -20°c, drukhoogte 5000 ft, gewicht: 750kg, kopwind: 10 knopen. Zie bijlage (PFP-009)",
+  "options": [
+   "380 m",
+   "450 m",
+   "410 m",
+   "310 m"
+  ],
+  "correct": 0,
+  "images": [
+   "img/flight_performance/665748_0.jpeg"
+  ]
+ },
+ {
+  "id": "665747",
+  "topic": "72.2.2.1.3 Calculate head and crosswind components for use with performance graphs/tables from given MET report data",
+  "question": "Voor het opstijgen van baan 22 met een gerapporteerde wind van 250°/10 knopen, is de windcomponent langs de lengteas is:",
+  "options": [
+   "9 knopen rugwind",
+   "5 knopen rugwind",
+   "5 knopen kopwind",
+   "9 knopen kopwind"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666092",
+  "topic": "72.2.3.1.1 Determine the time, distance or fuel needed to reach a certain flight altitude, with given data from AFM/POH",
+  "question": "Wat is de nodige afstand om te klimmen van vliegniveau 75 vanaf een luchthaven gesitueerd op een drukhoogte van 3000 ft met een initieel gewicht van 3000 pond? Omgevingstemperatuur op het vliegveld is 25°C, Omgevingstemperatuur op vliegniveau 75: 0°C. Zie bijlage (PFP-023)",
+  "options": [
+   "12 NM",
+   "7 NM",
+   "5 NM",
+   "17 NM"
+  ],
+  "correct": 1,
+  "images": [
+   "img/flight_performance/666092_0.jpeg"
+  ]
+ },
+ {
+  "id": "665749",
+  "topic": "72.2.3.1.2 Determine the climb rate of an aircraft depending on temperature and pressure altitude, with given data from",
+  "question": "Gegeven zijn volgende omstandigheden, de klimverhouding is: Omgevingstemperatuur: -20°C, Drukhoogte: 10000 ft. Zie bijlage (PFP-011)",
+  "options": [
+   "450 ft/min",
+   "350 ft/min",
+   "200 ft/min",
+   "390 ft/min"
+  ],
+  "correct": 3,
+  "images": [
+   "img/flight_performance/665749_0.jpeg"
+  ]
+ },
+ {
+  "id": "665750",
+  "topic": "72.2.3.1.3 Determine the maximum achievable climb rate of an aircraft depending on parameters like temperature, load, engine",
+  "question": "Welke actieradius heb je in volgende condities? Omgevingstemperatuur: 6°C, Drukhoogte: 6000 ft, Vermogen: 65%. Zie bijlage (PFP-013)",
+  "options": [
+   "503 NM",
+   "482 NM",
+   "444 NM",
+   "457 NM"
+  ],
+  "correct": 1,
+  "images": [
+   "img/flight_performance/665750_0.jpeg"
+  ]
+ },
+ {
+  "id": "665751",
+  "topic": "72.2.3.1.4 Determine the cruising speed (TAS) and fuel flow at a certain engine power and flight altitude, with given data from",
+  "question": "Wat is de ware snelheid (TAS) in knopen [kt] en brandstofverbruik [l/h] voor een kruisvlucht met 70 % vermogen geselecteerd op vliegniveau 60 onder volgende omstandigheden? Temperatuur: ISA - 20°C, QNH: 980 hPa Zie bijlage (PFP-012)",
+  "options": [
+   "100 kt, 19.3 l/h",
+   "95 kt, 19.6 l/h",
+   "105 kt, 21.5 l/h",
+   "110 kt, 23.9 l/h"
+  ],
+  "correct": 3,
+  "images": [
+   "img/flight_performance/665751_0.jpeg"
+  ]
+ },
+ {
+  "id": "666127",
+  "topic": "74.1.1.1.2 Extract and interpret information about routings and airspace structure from VFR charts",
+  "question": "(Zie bijlage EC-70-004-v1) Je vliegt op route A (geel) op een hoogte van 6500 voet. Welk luchtruim vlieg je door op positie 2?",
+  "options": [
+   "TMA LNZ 3 \"C\"",
+   "TMA LNZ 1 \"C\"",
+   "TMA LNZ 3 \"D\"",
+   "TMA LNZ 1 \"D\""
+  ],
+  "correct": 2,
+  "images": [
+   "img/flight_performance/666127_0.jpeg"
+  ]
+ },
+ {
+  "id": "666126",
+  "topic": "74.1.1.1.2 Extract and interpret information about routings and airspace structure from VFR charts",
+  "question": "(Zie bijlage EC-70-004-v1) Na het opstijgen vanaf LOWL (Linz) op route A (geel), klim je naar een hoogte van 5000 voet. In welk soort luchtruim vlieg je boven de luchthaven LOLE (Eferding) (punt 2)?",
+  "options": [
+   "G",
+   "D",
+   "E",
+   "C"
+  ],
+  "correct": 1,
+  "images": [
+   "img/flight_performance/666126_0.jpeg"
+  ]
+ },
+ {
+  "id": "666130",
+  "topic": "74.1.1.1.2 Extract and interpret information about routings and airspace structure from VFR charts",
+  "question": "(Zie bijlage EC-70-006-v1) Na het opstijgen vanaf ELNT (Noertrange) op route A, bereik je een hoogte van 4500 ft op punt 1. Welk soort luchtruim betreed je op dit moment?",
+  "options": [
+   "D",
+   "E",
+   "G",
+   "C"
+  ],
+  "correct": 0,
+  "images": [
+   "img/flight_performance/666130_0.jpeg"
+  ]
+ },
+ {
+  "id": "666117",
+  "topic": "74.1.1.1.4 Extract and interpret information about heights and altitudes from VFR charts",
+  "question": "(Voor deze vraag, gebruik bijlage PFP-061) Volgens ICAO, welk symbool wijst op een groep onverlichte obstakels?",
+  "options": [
+   "D",
+   "B",
+   "A",
+   "C"
+  ],
+  "correct": 3,
+  "images": [
+   "img/flight_performance/666117_0.jpeg"
+  ]
+ },
+ {
+  "id": "666118",
+  "topic": "74.1.1.1.4 Extract and interpret information about heights and altitudes from VFR charts",
+  "question": "(Voor deze vraag, gebruik bijlage PFP-063) Volgens ICAO, welk symbool wijst op een algemene hoogtemarkering?",
+  "options": [
+   "D",
+   "C",
+   "A",
+   "B"
+  ],
+  "correct": 1,
+  "images": [
+   "img/flight_performance/666118_0.jpeg"
+  ]
+ },
+ {
+  "id": "666093",
+  "topic": "74.1.1.1.4 Extract and interpret information about heights and altitudes from VFR charts",
+  "question": "De markering op een vliegkaart voor de maximale terrein hoogte (maximum elevation figure, MEF) wordt gedefinieerd als:",
+  "options": [
+   "De hoogste hoogte boven zeeniveau in een gebied van 30 minuten breedtegraad en 30 minuten hoogtegraad plus een veiligheidsmarge van 1000 voet (305 meter), afgerond tot de volgende 100 voet",
+   "De hoogste hoogte boven zeeniveau in een gebied van 30 minuten breedtegraad en 30 minuten hoogtegraad plus een veiligheidsmarge, afgerond tot de volgende 100 voet",
+   "De hoogste hoogte boven zeeniveau in een gebied van 1° breedtegraad en 1° hoogtegraad plus een veiligheidsmarge, afgerond tot de volgende 100 voet",
+   "De hoogste hoogte boven zeeniveau in een gebied van 30 minuten breedtegraad en 30 minuten hoogtegraad"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666121",
+  "topic": "74.1.1.4.1 Extract frequencies for radio communication from a given VFR chart (e.g. TWR, INFORMATION, INFO etc.)",
+  "question": "(Zie bijlage EC-70-007-v1) Je plant om de luchthaven van LMML (Luqa) te overvliegen van west naar oost op een hoogte van 6500 voet. Welke frequentie moet je contacteren om toestemming te krijgen?",
+  "options": [
+   "135.100 MHz",
+   "128.150 MHz",
+   "121.600 MHz",
+   "127.400 MHz"
+  ],
+  "correct": 1,
+  "images": [
+   "img/flight_performance/666121_0.jpeg"
+  ]
+ },
+ {
+  "id": "666124",
+  "topic": "74.1.1.4.1 Extract frequencies for radio communication from a given VFR chart (e.g. TWR, INFORMATION, INFO etc.)",
+  "question": "(Zie bijlage EC-70-002-v1) Tijdens je vlucht langs route A (geel), luister je de frequentie van het luchthavenverkeer van EDHM uit (punt 2). Welke frequentie selecteer je?",
+  "options": [
+   "130.705 MHz",
+   "118.130 MHz",
+   "128.910 MHz",
+   "136.675 MHz"
+  ],
+  "correct": 1,
+  "images": [
+   "img/flight_performance/666124_0.jpeg"
+  ]
+ },
+ {
+  "id": "666120",
+  "topic": "74.1.1.4.1 Extract frequencies for radio communication from a given VFR chart (e.g. TWR, INFORMATION, INFO etc.)",
+  "question": "(Zie bijlage EC-70-007-v1) Je nadert LMML (Luqa) en wil de ATIS uitluisteren. Welke frequentie selecteer je?",
+  "options": [
+   "127.400 MHz",
+   "121.600 MHz",
+   "135.100 MHz",
+   "128.150 MHz"
+  ],
+  "correct": 0,
+  "images": [
+   "img/flight_performance/666120_0.jpeg"
+  ]
+ },
+ {
+  "id": "666125",
+  "topic": "74.1.1.4.2 Extract frequencies for radio navigation from a given VFR chart (e.g. NDB, VOR etc.)",
+  "question": "(Zie bijlage EC-70-004-v1) Na het opstijgen van LOWL (Linz) op route 1 (geel), vlieg je naar KILO (punt 1). Hoe kan je verifiëren dat je aangkomen bent op KILO door gebruik van radiobakens? Opmerking radialenen peilingen zijn bij benadering",
+  "options": [
+   "Ik vlieg naar LNZ NDB (327 kHz) relatieve peiling (bearing) 214 samen met een VDF peiling van LOLE",
+   "Ik selecteer LNZ VOR/DME (116.60 MHz) radiaal 346 samen met de bijbehorende DME",
+   "Ik vlieg naar LNZ NDB (327 kHz) relatieve peiling (bearing) 352 samen met een VDF peiling an LOLE",
+   "Ik selecteer LNZ VOR/DME (116.60 MHz) radiaal 018 samen met de bijbehorde DME"
+  ],
+  "correct": 3,
+  "images": [
+   "img/flight_performance/666125_0.jpeg"
+  ]
+ },
+ {
+  "id": "666128",
+  "topic": "74.1.1.4.2 Extract frequencies for radio navigation from a given VFR chart (e.g. NDB, VOR etc.)",
+  "question": "(Zie bijlage EC-70-005-v1) Wat is de geschatte radiaal van DOL VOR/DME, welke overeenkomt met de bocht boven punt 5 op route B (paars)? Opmerking: radialen en peilingen zijn bij benadering",
+  "options": [
+   "375",
+   "095",
+   "245",
+   "195"
+  ],
+  "correct": 2,
+  "images": [
+   "img/flight_performance/666128_0.jpeg"
+  ]
+ },
+ {
+  "id": "666129",
+  "topic": "74.1.1.4.2 Extract frequencies for radio navigation from a given VFR chart (e.g. NDB, VOR etc.)",
+  "question": "(Zie bijlage EC-70-003-v1) Je vliegt volgens route A, hoe kan je verifiëren dat je op positie 2 bent met het gebruik van radiobakens? Opmerking: Radialen en richtingen (bearings) zijn bij benadering.",
+  "options": [
+   "Ik selecteer VOZ VOR/DME (116.95 MHz) mat radiaal 330 met de bijbehorende DME",
+   "Ik selecteer VLM VOR/DME (114.30 MHz) met radiaal 280 met de bijbehorende DME",
+   "Ik selecteer VLM VOR/DME (114.30 MHz) met radiaal 330 met de bijbehorende DME",
+   "Ik selecteer VOZ VOR/DME (116.95 MHz) met radiaal 280 met de bijbehorende DME"
+  ],
+  "correct": 2,
+  "images": [
+   "img/flight_performance/666129_0.jpeg"
+  ]
+ },
+ {
+  "id": "666123",
+  "topic": "74.1.1.4.2 Extract frequencies for radio navigation from a given VFR chart (e.g. NDB, VOR etc.)",
+  "question": "(Zie bijlage EC-70-006-v1) Wat is de frequentie van DIK DVOR/DME in de buurt van de stad Diekirch?",
+  "options": [
+   "112.25 MHz",
+   "114.40 MHz",
+   "307 MHz",
+   "115.30 MHz"
+  ],
+  "correct": 1,
+  "images": [
+   "img/flight_performance/666123_0.jpeg"
+  ]
+ },
+ {
+  "id": "666122",
+  "topic": "74.1.1.4.2 Extract frequencies for radio navigation from a given VFR chart (e.g. NDB, VOR etc.)",
+  "question": "(Zie bijlage EC-70-001-v1) Wat is de frequentie van VOR/DME SPR ten zuidwesten van Lausanne?",
+  "options": [
+   "113.90 MHz",
+   "112.15 MHz",
+   "115.75 MHz",
+   "375 MHz"
+  ],
+  "correct": 0,
+  "images": [
+   "img/flight_performance/666122_0.jpeg"
+  ]
+ },
+ {
+  "id": "666116",
+  "topic": "74.2.2.1.10 Calculate the fuel required for a flight (block fuel, trip fuel) from fuel amounts required for enginestart, taxiing, climb,",
+  "question": "(Voor deze vraag zie bijlage ofwel CAP697 SEP1 Fig. 2.2 Tabel 2.2.3) Voor het plannen van een VFR vlucht, de volgende data zijn gegeven: Vliegtijd van punt naar punt: 2u 42min, Drukhoogte: 7.500 ft, Temperatuur: ISA, Toerental = 2300 TPM, Taxi brandstof: 2 USG, Extra tijd voor het klimmen: 8 min, Extra tijd voor de nadering en landing: 10 min, De reserve brandstof moet minimum 30% van de brandstof voor de vlucht zijn. Bepaal de minimumhoeveelheid brandstof die nodig is voor de vlucht:",
+  "options": [
+   "46.4 USG",
+   "48.4 USG",
+   "51.8 USG",
+   "37.7 USG"
+  ],
+  "correct": 1,
+  "images": [
+   "img/flight_performance/666116_0.jpeg"
+  ]
+ },
+ {
+  "id": "666097",
+  "topic": "74.3.1.3.3 Using AIP and/or NOTAM information given, determine if an aerodrome is suitable as departure, destination or",
+  "question": "Volgens de vliegkaart beschikt Friesach/Hirt (LOKH) over een graspiste van 707 m. De landingsbaan in gebruik is 17 met een wind van 180/10 knopen. De vereiste landingsafstand voor jouw vliegtuig onder de huidige condities is 550 m. Is het volgens onderstaande NOTAM, veilig om LOKH als alternatieve bestemming te gebruiken? Zie figuur (PFP-026)",
+  "options": [
+   "Weet ik niet",
+   "Ja",
+   "Nee",
+   "Misschien"
+  ],
+  "correct": 2,
+  "images": [
+   "img/flight_performance/666097_0.jpeg"
+  ]
+ },
+ {
+  "id": "666096",
+  "topic": "74.3.1.3.4 Extract and interpret airport information from NOTAMs given, e.g. opening hours, work in progress (WIP), restrictions,",
+  "question": "Wat is het bericht van de NOTAM hieronder? B7938/11 NOTAMN Q) LECB/QMRLC/IV/NBO/A /000/999/3933N00244E005 A) LEPA B) 1111212200 C) 1111220500 E) RWY 24L/06R CLOSED",
+  "options": [
+   "Baan 24L/06R in Palma de Mallorca (LEPA) is gesloten vanaf nu (000) tot oneindig (999)",
+   "Baan 24L/06R in Palma de Mallorca (LEPA) is gesloten van 21 November 2011 2200 UTC tot 22 November 2011 0500 UTC",
+   "Baan 24L/06R in Cataluña/Barcelona (LECB) is gesloten van 21 November 2011 2200 UTC tot November 2011 0500 UTC",
+   "Baan 24L/06R in Palma de Mallorca (LEPA) is gesloten van 21 November 2011 2200 lokale tijd tot 22 November 2011 0500 lokale tijd"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666098",
+  "topic": "74.3.1.3.4 Extract and interpret airport information from NOTAMs given, e.g. opening hours, work in progress (WIP), restrictions,",
+  "question": "Tot op welke hoogte is het verboden over te vliegen volgens de NOTAM? Zie figuur (PFP-024)",
+  "options": [
+   "Height 9500 ft",
+   "Altitude 9500 m MSL",
+   "Altitude 9500 ft MSL",
+   "Flight Level 95"
+  ],
+  "correct": 2,
+  "images": [
+   "img/flight_performance/666098_0.jpeg"
+  ]
+ },
+ {
+  "id": "666094",
+  "topic": "74.3.1.4.1 Select an appropriate altitude/FL with respect to semicircular rules and rulesoftheair requirements",
+  "question": "Wat is het laagste mogelijke vliegniveau mogelijk onder VFR met een ware grondkoers van 181° en een variatie van 3° oost?",
+  "options": [
+   "FL 050",
+   "FL 055",
+   "FL 065",
+   "FL 060"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665744",
+  "topic": "74.3.2.1.1 State under which conditions an aircaft may be operated into known icing conditions",
+  "question": "Tenzij het vliegtuig hiervoor uitgerust en gecertificeerd is:",
+  "options": [
+   "Vliegen in voorspelde ijsafzettingsomstandigheden is alleen toegestaan indien zeker is dat het vliegtuig kan vliegen zonder dat de prestaties beïnvloed worden",
+   "is vliegen in voorspelde ijsafzettingsomstandigheden verboden. Indien het vliegtuig een zone van ijsafzettingsomstandigheden onvrijwillig betreedt, moet dit onmiddelijk verlaten",
+   "Vliegen in gebieden met neerslag is verboden",
+   "Vliegen in voorspelde ijsafzettingsomstandigheden is verboden. Indien het vliegtuig een zone van ijsafzettingsomstandigheden onvrijwillig betreed, mag de vlucht toch doorgaan zolang de visuele meteorologische condities (VMC) behouden blijven"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666103",
+  "topic": "74.4.1.1.1 State where to find information about requirements and the format of an ATS flight plan",
+  "question": "Tijdens een vlucht kan je een vluchtplan sturen via de:",
+  "options": [
+   "Aeronautische informatie dienst (Aeronautical Information Service, AIS)",
+   "Vlucht informatie dienst (Flight Information Service, FIS)",
+   "De volgende luchthaven operator langs de vlucht",
+   "Opsporings- en reddingsdienst (Search and Rescue Service, SAR)"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "666099",
+  "topic": "74.4.1.2.1 Define and explain the terms 'Estimated off block time (EOBT)' and 'Estimated time of arrival (ETA)'",
+  "question": "De geschatte starttijd (estimated off-block time) is vastgelegd in een ATS vluchtplan als:",
+  "options": [
+   "Standaard tijd (ST)",
+   "Lokale tijd (LMT)",
+   "Centraal Europese tijd (CET)",
+   "Gecoördineerde wereldtijd (UTC)"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "666101",
+  "topic": "74.4.1.2.2 From example data given, enter or extract the required/possible entries into/from the fields of the ATS flight plan",
+  "question": "De gegeven snelheid in het ATS vluchtplan is: Zie bijlage (PFP-051)",
+  "options": [
+   "100 km/h",
+   "100 m/h",
+   "100 kt",
+   "1000 kt"
+  ],
+  "correct": 2,
+  "images": [
+   "img/flight_performance/666101_0.jpeg"
+  ]
+ },
+ {
+  "id": "666100",
+  "topic": "74.4.1.2.2 From example data given, enter or extract the required/possible entries into/from the fields of the ATS flight plan",
+  "question": "Welke soort vlucht is de vlucht die getoond wordt in het ATC vluchtplan? Zie bijlage (PFP-051a)",
+  "options": [
+   "Nachtvlucht onder zichtvliegvoorschriften (VFR)",
+   "Circuit vlucht onder zichtvliegvoorschriften (VFR)",
+   "Grensoverschreidende vlucht",
+   "Vlucht onder instrumentvliegvoorschriften (IFR)"
+  ],
+  "correct": 0,
+  "images": [
+   "img/flight_performance/666100_0.jpeg"
+  ]
+ },
+ {
+  "id": "666102",
+  "topic": "74.4.1.3.2 State from given examples, in which cases the submission of a flight plan is required (e.g. flight at night, IFR, crossing",
+  "question": "Waar moet rekening mee gehouden worden voor een vlucht naar het buitenland?",
+  "options": [
+   "Met toegestane uitzonderingen",
+   "Met het verplicht indienen van een vluchtplan",
+   "Met het versturen van gevaren rapporten",
+   "Met regelmatig terugkerende locatieberichten"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665711",
+  "topic": "74.4.1.3.5 State the timeframe in which (after filing an ATS flight plan) ATC should be contacted",
+  "question": "Een vluchtplan is verstuurd voor een vlucht vertrekkende vanaf een ongecontroleerde luchthaven. Wanneer werd de actuele tijd van het opstijgen doorgestuurd naar de verkeerleiding?",
+  "options": [
+   "Bij een afwijking van de verwachte starttijd met meer dan 15 minuten",
+   "Onmiddellijk na het opstijgen",
+   "Bij verzoek van de verkeersleiding",
+   "Wanneer de landing gegarandeerd is"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665712",
+  "topic": "74.4.1.3.6 Describe the actions to be taken in case an aircraft landed on an aerodrome other than stated in the ATS flight plan",
+  "question": "Tijdens een vlucht met een actief vluchtplan, voer je een landing uit op een luchthaven anders dan de voorziene bestemming volgens het vluchtplan. Wie moet je onmiddelijk contacteren?",
+  "options": [
+   "Vluchtvoorlichtingsdienst (Aeronatical Information Service, AIS)",
+   "De luchthaven manager van dienst",
+   "De politie",
+   "Het lokale kantoor voor toezicht op de luchtvaart."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "666115",
+  "topic": "74.5.1.2.2 Using excerpts from an operational flight plan (flight log) and actual fuel amounts given, calculate the remaining fuel",
+  "question": "Gegeven volgende data: Take-off fuel = 200 lbs Alternate fuel = 40 lbs Final reserve fuel = 30 lbs Na 25 minuten is de overblijvende brandstof nog 120 lbs. Ervan uitgaande dat het verbruik (fuel flow) constant gebleven is, mag de overgebleven vliegtijd naar de bestemming niet langer zijn dan:",
+  "options": [
+   "20.0 min",
+   "59.4 min",
+   "37.5 min",
+   "15.6 min"
+  ],
+  "correct": 3,
+  "images": []
+ }
+]
