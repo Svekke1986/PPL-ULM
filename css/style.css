@@ -198,3 +198,12 @@ h2 { font-size: 1.3rem; margin: 0 0 12px; }
 .chapter-filter { display: flex; align-items: center; gap: 10px; margin: -4px 0 16px; flex-wrap: wrap; }
 .chapter-filter label { font-weight: 600; }
 .chapter-filter select { width: auto; max-width: 100%; flex: 1 1 260px; }
+.feedback .explain { white-space: pre-line; }
+select {
+  padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--surface); color: var(--text); font: inherit;
+}
+@media (max-width: 560px) {
+  .brand span:last-child { display: none; }
+  .topnav a { padding: 6px 8px; }
+}

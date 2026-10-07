@@ -69,7 +69,7 @@
     return `<div class="feedback ${ok ? 'ok' : 'bad'}">
       <h3>${head}</h3>
       ${whyWrong}
-      <p>${esc(q.e || 'Geen uitleg beschikbaar.')}</p>
+      <p class="explain">${esc(q.e || 'Geen uitleg beschikbaar.')}</p>
       ${review}
       ${sourceHtml(q)}
     </div>`;
@@ -97,7 +97,7 @@
     const count = l => Object.keys(LICENCES[l].exams).reduce((n, s) => n + questionsFor(l, s).length, 0);
     app.innerHTML = `
       <h1>Oefen je PPL- of ULM-theorie</h1>
-      <p class="lead">Kies je opleiding, daarna het vak. Je kunt onbeperkt oefenen met directe feedback, of een proefexamen afleggen met hetzelfde aantal vragen en dezelfde tijd als op het examen.</p>
+      <p class="lead">Kies je opleiding, daarna het vak. Je kunt onbeperkt oefenen met directe feedback, of een proefexamen afleggen met hetzelfde aantal vragen en dezelfde tijd als op het examen. Bij <strong>Rekenvragen</strong> maakt de site telkens een nieuwe rekenoefening.</p>
       <div class="notice"><strong>Dit is geen officieel platform.</strong> Het is niet verbonden aan EASA, de BCAA of het DGLV.
         Slagen op deze website geeft <strong>geen garantie</strong> dat je slaagt voor het echte theorie-examen.</div>
       <div class="grid grid-2">
@@ -110,6 +110,11 @@
           <div class="big">🪂</div>
           <h2>ULM</h2>
           <p class="muted">${esc(LICENCES.ULM.full)}<br>4 vakken · ${count('ULM')} vragen in de databank</p>
+        </a>
+        <a class="card licence-card" href="#/rekenvragen">
+          <div class="big">🧮</div>
+          <h2>Rekenvragen</h2>
+          <p class="muted">Telkens nieuwe rekenoefeningen met stap-voor-stap uitleg<br>${Object.keys(window.CALC.GENERATORS).length} vakken · ${Object.values(window.CALC.GENERATORS).reduce((n, l) => n + l.length, 0)} soorten oefeningen</p>
         </a>
       </div>`;
   }
@@ -365,6 +370,86 @@
     window.scrollTo(0, 0);
   }
 
+  // ---------- rekenvragen ----------
+  const CALC_ORDER = ['navigation', 'flight_performance', 'meteorology', 'principles_of_flight', 'aircraft_general', 'human_performance', 'air_law'];
+  let calc = null;
+
+  function viewCalcHome() {
+    const cards = CALC_ORDER.filter(k => window.CALC.GENERATORS[k]).map(key => {
+      const S = SUBJECTS[key], gens = window.CALC.GENERATORS[key];
+      const st = store.get(`calcstats.${key}`, { answered: 0, correct: 0 });
+      const pct = st.answered ? Math.round(100 * st.correct / st.answered) : 0;
+      const tags = window.CALC.LICENCE_TAGS[key].map(t => `<span class="badge">${t}</span>`).join(' ');
+      return `<a class="card subject-card licence-card" href="#/rekenvragen/${key}">
+        <div class="subject-head">
+          <div class="subject-icon">${S.icon}</div>
+          <div><h3>${esc(S.code)} · ${esc(S.name)}</h3><div class="subject-meta">${tags}</div></div>
+        </div>
+        <div class="subject-meta">${gens.map(g => esc(g.name)).join(' · ')}</div>
+        ${st.answered ? `<div class="subject-meta">Jouw score: ${st.correct}/${st.answered} (${pct}%)</div><div class="progress"><span style="width:${pct}%"></span></div>` : ''}
+      </a>`;
+    }).join('');
+    app.innerHTML = `
+      <div class="crumbs"><a href="#/">Home</a> › Rekenvragen</div>
+      <h1>🧮 Rekenvragen</h1>
+      <p class="lead">Kies een vak. De site maakt telkens een nieuwe oefening met andere getallen. Het juiste antwoord wordt berekend, de foute antwoorden zijn typische denkfouten. Na je antwoord zie je de berekening stap voor stap.</p>
+      <div class="grid grid-3">${cards}</div>`;
+  }
+
+  function viewCalc(subject, typeId) {
+    const gens = window.CALC.GENERATORS[subject];
+    const type = gens.find(g => g.id === typeId) || null;
+    calc = { subject, type, q: null, chosen: null, count: 0, session: { answered: 0, correct: 0 } };
+    nextCalc();
+  }
+
+  function nextCalc() {
+    const C = calc;
+    C.chosen = null;
+    C.count++;
+    C.q = present(window.CALC.generate(C.subject, C.type && C.type.id));
+    renderCalc();
+  }
+
+  function renderCalc() {
+    const C = calc, S = SUBJECTS[C.subject], gens = window.CALC.GENERATORS[C.subject];
+    const answered = C.chosen !== null;
+    const opts = gens.map(g => `<option value="${esc(g.id)}" ${C.type === g ? 'selected' : ''}>${esc(g.name)}</option>`).join('');
+    app.innerHTML = `
+      <div class="crumbs"><a href="#/">Home</a> › <a href="#/rekenvragen">Rekenvragen</a> › ${esc(S.name)}</div>
+      <div class="quiz-head">
+        <div><h1>🧮 ${esc(S.name)}</h1><div class="muted small">Rekenvragen · telkens nieuwe getallen</div></div>
+        <span class="score-pill">Sessie: ${C.session.correct}/${C.session.answered}</span>
+      </div>
+      <div class="chapter-filter">
+        <label for="calctype">Soort oefening</label>
+        <select id="calctype"><option value="">Alle soorten (willekeurig)</option>${opts}</select>
+      </div>
+      <div class="card">
+        ${questionHtml(C.q, { chosen: C.chosen, reveal: answered, locked: answered, counter: `Oefening ${C.count} · ${esc(C.q.typeName)}` })}
+        ${answered ? feedbackHtml(C.q, C.chosen) : ''}
+        <div class="quiz-actions">
+          <a class="btn" href="#/rekenvragen">← Vakken</a>
+          <button class="btn btn-primary" id="next">${answered ? 'Nieuwe oefening →' : 'Andere oefening →'}</button>
+        </div>
+      </div>`;
+    app.querySelectorAll('.option').forEach(b => b.onclick = () => {
+      if (C.chosen !== null) return;
+      C.chosen = +b.dataset.i;
+      const ok = C.chosen === C.q.c;
+      C.session.answered++; if (ok) C.session.correct++;
+      const st = store.get(`calcstats.${C.subject}`, { answered: 0, correct: 0 });
+      st.answered++; if (ok) st.correct++;
+      store.set(`calcstats.${C.subject}`, st);
+      renderCalc();
+      app.querySelector('.feedback')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+    document.getElementById('next').onclick = () => nextCalc();
+    document.getElementById('calctype').onchange = e => {
+      location.hash = `#/rekenvragen/${C.subject}${e.target.value ? '/' + e.target.value : ''}`;
+    };
+  }
+
   // ---------- settings ----------
   function viewSettings() {
     app.innerHTML = `
@@ -402,6 +487,7 @@
     window.scrollTo(0, 0);
     if (!parts.length) return viewHome();
     if (parts[0] === 'instellingen') return viewSettings();
+    if (parts[0] === 'rekenvragen') return parts[1] && window.CALC.GENERATORS[parts[1]] ? viewCalc(parts[1], parts[2]) : viewCalcHome();
     if (!LICENCES[licence]) return viewHome();
     if (parts.length === 1) return viewLicence(licence);
     const subject = parts[1];

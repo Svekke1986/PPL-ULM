@@ -10,12 +10,14 @@ Onofficieel oefenplatform voor de theorie-examens **PPL(A)** (EASA Part-FCL, BCA
   Na het antwoorden krijg je een **groen** (juist) of **rood** (fout) vak met uitleg en een link naar de officiële bron (EASA, BCAA/DGLV, Belgische AIP).
 - **Per hoofdstuk oefenen**: in de oefenmodus kies je "Alle hoofdstukken" of één hoofdstuk van het vak (indeling via de ECQB-leerdoelcodes, zie `CHAPTERS` in `js/config.js`).
 - **Proefexamen** per vak met het aantal vragen en de tijd van het echte examen, met timer, markeren, overzicht en uitleg achteraf.
+- **Rekenvragen**: aparte categorie waar de site zelf telkens nieuwe rekenoefeningen maakt (navigatie, vluchtplanning, meteo, aerodynamica, instrumenten …), met stap-voor-stap uitleg. Zie `js/calc.js`.
 - Je voortgang wordt lokaal in de browser bewaard.
 
 ## Structuur
 | Pad | Inhoud |
 |---|---|
 | `index.html`, `css/`, `js/app.js` | De website (statisch, geen server nodig) |
+| `js/calc.js` | Generatoren voor de rekenvragen (per vak een lijst oefeningstypes) |
 | `js/config.js` | Vakken, examenparameters (aantal vragen/tijd/slaagdrempel) en bronnen |
 | `data/<vak>.json` | Vragen uit de PDF's (het juiste antwoord is het groene vakje in de PDF) |
 | `img/<vak>/` | Afbeeldingen/bijlagen bij de vragen |
