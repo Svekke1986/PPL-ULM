@@ -1,376 +1,388 @@
-<div class="disclaimer-banner">
-    ⚠️ NIET-OFFICIEEL OEFENPLATFORM — Niet verbonden met of erkend door het DGLV (BCAA) of EASA.
-</div>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPL & ULM Examen Platform België</title>
+    <!-- KOPPELING NAAR HET CSS BESTAND -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-<header>
-    <h1 id="app-title">✈️ AeroExam België</h1>
-    <button id="btn-home" class="btn btn-secondary hidden" onclick="goHome()">Menu</button>
-</header>
-
-<div class="container">
-    <!-- SCREEN 1: CATEGORY SELECTION -->
-    <div id="screen-selection" class="card">
-        <h2>Kies je Opleiding</h2>
-        <p style="color: var(--text-muted); margin-top: 5px;">Selecteer de categorie waarvoor je wilt oefenen of examen afleggen.</p>
-        
-        <div class="license-grid">
-            <div class="license-card" onclick="selectLicense('PPL')">
-                <h2>PPL (EASA)</h2>
-                <p>Private Pilot Licence</p>
-                <small style="color: var(--text-muted); display:block; margin-top: 10px;">9 Officiële Vakken</small>
-            </div>
-            <div class="license-card" onclick="selectLicense('ULM')">
-                <h2>ULM (DGLV)</h2>
-                <p>Ultra-Light Motorized</p>
-                <small style="color: var(--text-muted); display:block; margin-top: 10px;">4 Officiële Vakken</small>
-            </div>
-        </div>
-
-        <div class="disclaimer-box">
-            <strong>Disclaimer:</strong> Dit platform is uitsluitend ontwikkeld als educatief hulpmiddel ter voorbereiding op het theoretisch examen. Alle inhoud is gebaseerd op publieke bronnen (EASA SERA, AIP België, KB ULM). De behaalde resultaten bieden geen garantie voor het officiële examen bij de FOD Mobiliteit en Transport.
-        </div>
+    <div class="disclaimer-banner">
+        ⚠️ NIET-OFFICIEEL OEFENPLATFORM — Niet verbonden met of erkend door het DGLV (BCAA) of EASA.
     </div>
 
-    <!-- SCREEN 2: SUBJECT SELECTION -->
-    <div id="screen-subjects" class="card hidden">
-        <button class="nav-back" onclick="goHome()">← Terug naar categorieën</button>
-        <h2 id="subject-heading">Vakken</h2>
-        <p style="color: var(--text-muted); margin-top: 5px;">Kies een vak en kies tussen oefenen of een gesimuleerd proefexamen.</p>
+    <header>
+        <h1 id="app-title">✈️ AeroExam België</h1>
+        <button id="btn-home" class="btn btn-secondary hidden" onclick="goHome()">Menu</button>
+    </header>
 
-        <div id="subject-list" class="subject-grid">
-            <!-- Dynamically populated -->
-        </div>
-    </div>
-
-    <!-- SCREEN 3: QUIZ / EXAM SCREEN -->
-    <div id="screen-quiz" class="card hidden">
-        <button class="nav-back" onclick="leaveQuiz()">← Stop en verlaat</button>
-        
-        <div class="question-header">
-            <div>
-                <span id="quiz-badge" style="font-size: 0.8rem; background: var(--accent-blue); padding: 4px 8px; border-radius: 4px;">PPL - Navigatie</span>
-                <h3 id="question-number" style="margin-top: 5px;">Vraag 1 van 10</h3>
-            </div>
-            <div id="timer-container" class="timer-badge hidden">
-                ⏱️ <span id="timer-text">40:00</span>
-            </div>
-        </div>
-
-        <div style="margin-top: 20px;">
-            <h2 id="question-text" style="font-size: 1.2rem; font-weight: 500;">Hier komt de examenvraag?</h2>
-        </div>
-
-        <div class="options-list" id="options-container">
-            <!-- Dynamically populated options -->
-        </div>
-
-        <!-- Feedback area for practice mode -->
-        <div id="feedback-container" class="feedback-box">
-            <h3 id="feedback-title">Correct!</h3>
-            <p id="feedback-text">Uitleg over het antwoord...</p>
-            <div class="certified-source" id="feedback-source">Bron: EASA SERA.3105</div>
-        </div>
-
-        <div style="margin-top: 20px; display: flex; justify-content: flex-end;">
-            <button id="btn-next" class="btn hidden" onclick="nextQuestion()">Volgende Vraag →</button>
-            <button id="btn-submit-exam" class="btn hidden" onclick="submitExam()">Examen Inleveren</button>
-        </div>
-    </div>
-
-    <!-- SCREEN 4: EXAM RESULTS SCREEN -->
-    <div id="screen-results" class="card hidden">
-        <h2>Examen Resultaat</h2>
-        <div style="text-align: center; margin: 30px 0;">
-            <h1 id="result-score" style="font-size: 3rem; color: var(--highlight);">85%</h1>
-            <p id="result-status" style="font-size: 1.3rem; font-weight: bold; margin-top: 10px;">GESLAAGD</p>
-            <small style="color: var(--text-muted);">Vereist voor DGLV/EASA: 75%</small>
-        </div>
-
-        <h3>Foutief Beantwoorde Vragen:</h3>
-        <div id="review-container" style="margin-top: 15px;">
-            <!-- Dynamically populated review list -->
-        </div>
-
-        <button class="btn" style="margin-top: 20px;" onclick="goHome()">Terug naar Hoofdmenu</button>
-    </div>
-</div>
-
-<script>
-    // DATA STRUCTURE FOR SUBJECTS & CERTIFIED QUESTIONS
-    const data = {
-        ULM: {
-            title: "ULM - Directoraat-generaal Luchtvaart (DGLV)",
-            subjects: [
-                { id: "ulm_reg", name: "1. Luchtvaartwetgeving", questions: 20, time: 40 },
-                { id: "ulm_met", name: "2. Meteorologie", questions: 20, time: 40 },
-                { id: "ulm_hum", name: "3. Menselijke Prestaties", questions: 10, time: 20 },
-                { id: "ulm_com", name: "4. Communicatie & Radiotelefonie", questions: 10, time: 20 }
-            ]
-        },
-        PPL: {
-            title: "PPL (A/H) - EASA Part-FCL",
-            subjects: [
-                { id: "ppl_law", name: "1. Luchtvaartrecht", questions: 16, time: 30 },
-                { id: "ppl_agk", name: "2. Algemene Kennis Luchtvaartuigen", questions: 12, time: 25 },
-                { id: "ppl_fpl", name: "3. Prestaties en Vluchtplanning", questions: 12, time: 25 },
-                { id: "ppl_hum", name: "4. Menselijke Prestaties", questions: 12, time: 25 },
-                { id: "ppl_met", name: "5. Meteorologie", questions: 16, time: 30 },
-                { id: "ppl_nav", name: "6. Navigatie", questions: 16, time: 30 },
-                { id: "ppl_ops", name: "7. Operationele Procedures", questions: 12, time: 25 },
-                { id: "ppl_pof", name: "8. Beginselen van het Vliegen", questions: 12, time: 25 },
-                { id: "ppl_com", name: "9. Communicatie", questions: 12, time: 25 }
-            ]
-        }
-    };
-
-    const questionDatabase = [
-        {
-            subjectId: "ulm_reg",
-            question: "Wat is de minimale vlieghoogte boven steden of door een mensenmassa voor een ULM in België, tenzij noodzakelijk voor opstijgen of landen?",
-            options: [
-                "150 meter (500 ft) boven de hoogste hindernis",
-                "300 meter (1000 ft) boven de hoogste hindernis binnen een straal van 600 meter",
-                "200 meter (650 ft) boven de grond",
-                "Er geldt geen minimale hoogte zolang de piloot het veilig acht"
-            ],
-            correct: 1,
-            explanation: "Volgens het Belgische SERA.3105 en het Koninklijk Besluit betreffende ULM's is de minimale hoogte boven dichtbebouwde gebieden 1000 ft (300m) boven de hoogste hindernis binnen 600m.",
-            source: "Bron: Belgisch KB ULM 25 mei 1999 & EASA SERA.3105"
-        },
-        {
-            subjectId: "ulm_met",
-            question: "Wat gebeurt er met de dichtheidshoogte (Density Altitude) bij een stijging van de temperatuur bij een gelijke luchtdruk?",
-            options: [
-                "De dichtheidshoogte neemt af",
-                "De dichtheidshoogte blijft gelijk",
-                "De dichtheidshoogte neemt toe",
-                "De dichtheidshoogte hangt enkel af van de vochtigheid"
-            ],
-            correct: 2,
-            explanation: "Warmere lucht zet uit en wordt minder dicht. Een lagere luchtdichtheid komt overeen met een hogere dichtheidshoogte, wat de vliegprestaties negatief beïnvloedt.",
-            source: "Bron: ICAO Annex 3 - Meteorological Service for International Air Navigation"
-        },
-        {
-            subjectId: "ppl_law",
-            question: "Welke VFR-half-circle regel geldt in België bij een magnetische koers (Magnetic Track) tussen 000° en 179° boven FL050?",
-            options: [
-                "Even duizendtallen voeten (bijv. FL060)",
-                "Oneven duizendtallen voeten plus 500 ft (bijv. FL055, FL075)",
-                "Even duizendtallen voeten plus 500 ft (bijv. FL065)",
-                "Elke hoogte is toegestaan mits goedgekeurd door ATC"
-            ],
-            correct: 1,
-            explanation: "Voor VFR-vluchten op koersen van 000° t/m 179° (Oost) geldt: oneven vliegniveaus + 500 ft (bijv. FL55, FL75).",
-            source: "Bron: SERA.5005 Table S5-1 / AIP Belgium ENR 1.7"
-        }
-    ];
-
-    let selectedCategory = null;
-    let currentSubject = null;
-    let isExamMode = false;
-    let currentQuestions = [];
-    let currentIndex = 0;
-    let userAnswers = [];
-    let timerInterval = null;
-    let timeRemaining = 0;
-
-    function selectLicense(type) {
-        selectedCategory = type;
-        document.getElementById('screen-selection').classList.add('hidden');
-        document.getElementById('screen-subjects').classList.remove('hidden');
-        document.getElementById('btn-home').classList.remove('hidden');
-        
-        document.getElementById('subject-heading').innerText = data[type].title;
-
-        const listContainer = document.getElementById('subject-list');
-        listContainer.innerHTML = '';
-
-        data[type].subjects.forEach(sub => {
-            const card = document.createElement('div');
-            card.className = 'subject-card';
-            card.innerHTML = `
-                <h3>${sub.name}</h3>
-                <small style="display:block; margin-top:5px; color:#cbd5e1;">Examen: ${sub.questions} vragen | ${sub.time} min</small>
-                <div class="mode-selection">
-                    <button class="mode-btn mode-practice" onclick="startQuiz('${sub.id}', false)">Oefenen</button>
-                    <button class="mode-btn mode-exam" onclick="startQuiz('${sub.id}', true)">Examen</button>
+    <div class="container">
+        <!-- SCREEN 1: CATEGORY SELECTION -->
+        <div id="screen-selection" class="card">
+            <h2>Kies je Opleiding</h2>
+            <p style="color: var(--text-muted); margin-top: 5px;">Selecteer de categorie waarvoor je wilt oefenen of examen afleggen.</p>
+            
+            <div class="license-grid">
+                <div class="license-card" onclick="selectLicense('PPL')">
+                    <h2>PPL (EASA)</h2>
+                    <p>Private Pilot Licence</p>
+                    <small style="color: var(--text-muted); display:block; margin-top: 10px;">9 Officiële Vakken</small>
                 </div>
-            `;
-            listContainer.appendChild(card);
-        });
-    }
+                <div class="license-card" onclick="selectLicense('ULM')">
+                    <h2>ULM (DGLV)</h2>
+                    <p>Ultra-Light Motorized</p>
+                    <small style="color: var(--text-muted); display:block; margin-top: 10px;">4 Officiële DGLV Vakken</small>
+                </div>
+            </div>
 
-    function goHome() {
-        clearInterval(timerInterval);
-        document.getElementById('screen-selection').classList.remove('hidden');
-        document.getElementById('screen-subjects').classList.add('hidden');
-        document.getElementById('screen-quiz').classList.add('hidden');
-        document.getElementById('screen-results').classList.add('hidden');
-        document.getElementById('btn-home').classList.add('hidden');
-    }
+            <div class="disclaimer-box">
+                <strong>Disclaimer:</strong> Dit platform is uitsluitend ontwikkeld als educatief hulpmiddel ter voorbereiding op het theoretisch examen. Alle inhoud is gebaseerd op publieke bronnen (EASA SERA, AIP België, KB ULM). De behaalde resultaten bieden geen garantie voor het officiële examen bij de FOD Mobiliteit en Transport.
+            </div>
+        </div>
 
-    function startQuiz(subjectId, examMode) {
-        isExamMode = examMode;
-        
-        const sub = data[selectedCategory].subjects.find(s => s.id === subjectId);
-        currentSubject = sub;
+        <!-- SCREEN 2: SUBJECT SELECTION -->
+        <div id="screen-subjects" class="card hidden">
+            <button class="nav-back" onclick="goHome()">← Terug naar categorieën</button>
+            <h2 id="subject-heading">Vakken</h2>
+            <p style="color: var(--text-muted); margin-top: 5px;">Kies een vak en kies tussen oefenen of een gesimuleerd proefexamen.</p>
 
-        let filtered = questionDatabase.filter(q => q.subjectId === subjectId);
-        
-        while (filtered.length < (examMode ? sub.questions : 5)) {
-            filtered.push({
-                subjectId: subjectId,
-                question: `[Demonstratievraag ${filtered.length + 1}] Wat is de juiste procedure bij de onderstaande luchtvaartsituatie volgens EASA/DGLV normen?`,
+            <div id="subject-list" class="subject-grid">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+
+        <!-- SCREEN 3: QUIZ / EXAM SCREEN -->
+        <div id="screen-quiz" class="card hidden">
+            <button class="nav-back" onclick="leaveQuiz()">← Stop en verlaat</button>
+            
+            <div class="question-header">
+                <div>
+                    <span id="quiz-badge" style="font-size: 0.8rem; background: var(--accent-blue); padding: 4px 8px; border-radius: 4px;">PPL - Navigatie</span>
+                    <h3 id="question-number" style="margin-top: 5px;">Vraag 1 van 10</h3>
+                </div>
+                <div id="timer-container" class="timer-badge hidden">
+                    ⏱️ <span id="timer-text">40:00</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <h2 id="question-text" style="font-size: 1.2rem; font-weight: 500;">Hier komt de examenvraag?</h2>
+            </div>
+
+            <div class="options-list" id="options-container">
+                <!-- Dynamically populated options -->
+            </div>
+
+            <!-- Feedback area for practice mode -->
+            <div id="feedback-container" class="feedback-box">
+                <h3 id="feedback-title">Correct!</h3>
+                <p id="feedback-text">Uitleg over het antwoord...</p>
+                <div class="certified-source" id="feedback-source">Bron: EASA SERA.3105</div>
+            </div>
+
+            <div style="margin-top: 20px; display: flex; justify-content: flex-end;">
+                <button id="btn-next" class="btn hidden" onclick="nextQuestion()">Volgende Vraag →</button>
+                <button id="btn-submit-exam" class="btn hidden" onclick="submitExam()">Examen Inleveren</button>
+            </div>
+        </div>
+
+        <!-- SCREEN 4: EXAM RESULTS SCREEN -->
+        <div id="screen-results" class="card hidden">
+            <h2>Examen Resultaat</h2>
+            <div style="text-align: center; margin: 30px 0;">
+                <h1 id="result-score" style="font-size: 3rem; color: var(--highlight);">85%</h1>
+                <p id="result-status" style="font-size: 1.3rem; font-weight: bold; margin-top: 10px;">GESLAAGD</p>
+                <small style="color: var(--text-muted);">Vereist voor DGLV/EASA: 75%</small>
+            </div>
+
+            <h3>Foutief Beantwoorde Vragen:</h3>
+            <div id="review-container" style="margin-top: 15px;">
+                <!-- Dynamically populated review list -->
+            </div>
+
+            <button class="btn" style="margin-top: 20px;" onclick="goHome()">Terug naar Hoofdmenu</button>
+        </div>
+    </div>
+
+    <script>
+        const data = {
+            ULM: {
+                title: "ULM - Directoraat-generaal Luchtvaart (DGLV)",
+                subjects: [
+                    { id: "ulm_reg", name: "1. Luchtvaartwetgeving", questions: 20, time: 40 },
+                    { id: "ulm_met", name: "2. Meteorologie", questions: 20, time: 40 },
+                    { id: "ulm_hum", name: "3. Menselijke Prestaties", questions: 10, time: 20 },
+                    { id: "ulm_com", name: "4. Communicatie & Radiotelefonie", questions: 10, time: 20 }
+                ]
+            },
+            PPL: {
+                title: "PPL (A/H) - EASA Part-FCL",
+                subjects: [
+                    { id: "ppl_law", name: "1. Luchtvaartrecht", questions: 16, time: 30 },
+                    { id: "ppl_agk", name: "2. Algemene Kennis Luchtvaartuigen", questions: 12, time: 25 },
+                    { id: "ppl_fpl", name: "3. Prestaties en Vluchtplanning", questions: 12, time: 25 },
+                    { id: "ppl_hum", name: "4. Menselijke Prestaties", questions: 12, time: 25 },
+                    { id: "ppl_met", name: "5. Meteorologie", questions: 16, time: 30 },
+                    { id: "ppl_nav", name: "6. Navigatie", questions: 16, time: 30 },
+                    { id: "ppl_ops", name: "7. Operationele Procedures", questions: 12, time: 25 },
+                    { id: "ppl_pof", name: "8. Beginselen van het Vliegen", questions: 12, time: 25 },
+                    { id: "ppl_com", name: "9. Communicatie", questions: 12, time: 25 }
+                ]
+            }
+        };
+
+        const questionDatabase = [
+            {
+                subjectId: "ulm_reg",
+                question: "Wat is de minimale vlieghoogte boven steden of door een mensenmassa voor een ULM in België, tenzij noodzakelijk voor opstijgen of landen?",
                 options: [
-                    "Optie A: Voldoet aan de standaard operationele limieten",
-                    "Optie B: Vereist een daling en afwijking naar de dichtstbijzijnde luchthaven",
-                    "Optie C: Enkel toegestaan na goedkeuring van de gezagvoerder",
-                    "Optie D: Geen restricties van toepassing"
+                    "150 meter (500 ft) boven de hoogste hindernis",
+                    "300 meter (1000 ft) boven de hoogste hindernis binnen een straal van 600 meter",
+                    "200 meter (650 ft) boven de grond",
+                    "Er geldt geen minimale hoogte zolang de piloot het veilig acht"
                 ],
-                correct: 0,
-                explanation: "Dit is een voorbeeld-uitleg gebaseerd op gecertifieerde Belgische reglementering.",
-                source: "Bron: Belgisch AIP / EASA Part-FCL"
+                correct: 1,
+                explanation: "Volgens het Belgische SERA.3105 en het Koninklijk Besluit betreffende ULM's is de minimale hoogte boven dichtbebouwde gebieden 1000 ft (300m) boven de hoogste hindernis binnen 600m.",
+                source: "Bron: Belgisch KB ULM 25 mei 1999 & EASA SERA.3105"
+            },
+            {
+                subjectId: "ulm_met",
+                question: "Wat gebeurt er met de dichtheidshoogte (Density Altitude) bij een stijging van de temperatuur bij een gelijke luchtdruk?",
+                options: [
+                    "De dichtheidshoogte neemt af",
+                    "De dichtheidshoogte blijft gelijk",
+                    "De dichtheidshoogte neemt toe",
+                    "De dichtheidshoogte hangt enkel af van de vochtigheid"
+                ],
+                correct: 2,
+                explanation: "Warmere lucht zet uit en wordt minder dicht. Een lagere luchtdichtheid komt overeen met een hogere dichtheidshoogte, wat de vliegprestaties negatief beïnvloedt.",
+                source: "Bron: ICAO Annex 3 - Meteorological Service for International Air Navigation"
+            },
+            {
+                subjectId: "ppl_law",
+                question: "Welke VFR-half-circle regel geldt in België bij een magnetische koers (Magnetic Track) tussen 000° en 179° boven FL050?",
+                options: [
+                    "Even duizendtallen voeten (bijv. FL060)",
+                    "Oneven duizendtallen voeten plus 500 ft (bijv. FL055, FL075)",
+                    "Even duizendtallen voeten plus 500 ft (bijv. FL065)",
+                    "Elke hoogte is toegestaan mits goedgekeurd door ATC"
+                ],
+                correct: 1,
+                explanation: "Voor VFR-vluchten op koersen van 000° t/m 179° (Oost) geldt: oneven vliegniveaus + 500 ft (bijv. FL55, FL75).",
+                source: "Bron: SERA.5005 Table S5-1 / AIP Belgium ENR 1.7"
+            }
+        ];
+
+        let selectedCategory = null;
+        let currentSubject = null;
+        let isExamMode = false;
+        let currentQuestions = [];
+        let currentIndex = 0;
+        let userAnswers = [];
+        let timerInterval = null;
+        let timeRemaining = 0;
+
+        function selectLicense(type) {
+            selectedCategory = type;
+            document.getElementById('screen-selection').classList.add('hidden');
+            document.getElementById('screen-subjects').classList.remove('hidden');
+            document.getElementById('btn-home').classList.remove('hidden');
+            
+            document.getElementById('subject-heading').innerText = data[type].title;
+
+            const listContainer = document.getElementById('subject-list');
+            listContainer.innerHTML = '';
+
+            data[type].subjects.forEach(sub => {
+                const card = document.createElement('div');
+                card.className = 'subject-card';
+                card.innerHTML = `
+                    <h3>${sub.name}</h3>
+                    <small style="display:block; margin-top:5px; color:#cbd5e1;">Examen: ${sub.questions} vragen | ${sub.time} min</small>
+                    <div class="mode-selection">
+                        <button class="mode-btn mode-practice" onclick="startQuiz('${sub.id}', false)">Oefenen</button>
+                        <button class="mode-btn mode-exam" onclick="startQuiz('${sub.id}', true)">Examen</button>
+                    </div>
+                `;
+                listContainer.appendChild(card);
             });
         }
 
-        currentQuestions = filtered.slice(0, examMode ? sub.questions : 10);
-        currentIndex = 0;
-        userAnswers = [];
-
-        document.getElementById('screen-subjects').classList.add('hidden');
-        document.getElementById('screen-quiz').classList.remove('hidden');
-
-        document.getElementById('quiz-badge').innerText = `${selectedCategory} - ${sub.name} (${examMode ? 'EXAMEN' : 'OEFENEN'})`;
-
-        if (examMode) {
-            document.getElementById('timer-container').classList.remove('hidden');
-            timeRemaining = sub.time * 60;
-            startTimer();
-        } else {
-            document.getElementById('timer-container').classList.add('hidden');
+        function goHome() {
+            clearInterval(timerInterval);
+            document.getElementById('screen-selection').classList.remove('hidden');
+            document.getElementById('screen-subjects').classList.add('hidden');
+            document.getElementById('screen-quiz').classList.add('hidden');
+            document.getElementById('screen-results').classList.add('hidden');
+            document.getElementById('btn-home').classList.add('hidden');
         }
 
-        renderQuestion();
-    }
-
-    function renderQuestion() {
-        const q = currentQuestions[currentIndex];
-        document.getElementById('question-number').innerText = `Vraag ${currentIndex + 1} van ${currentQuestions.length}`;
-        document.getElementById('question-text').innerText = q.question;
-
-        document.getElementById('feedback-container').style.display = 'none';
-        document.getElementById('btn-next').classList.add('hidden');
-        document.getElementById('btn-submit-exam').classList.add('hidden');
-
-        const optionsContainer = document.getElementById('options-container');
-        optionsContainer.innerHTML = '';
-
-        q.options.forEach((opt, idx) => {
-            const btn = document.createElement('button');
-            btn.className = 'option-btn';
-            btn.innerText = `${String.fromCharCode(65 + idx)}. ${opt}`;
-            btn.onclick = () => handleAnswer(idx);
-            optionsContainer.appendChild(btn);
-        });
-    }
-
-    function handleAnswer(selectedIndex) {
-        const q = currentQuestions[currentIndex];
-        userAnswers[currentIndex] = selectedIndex;
-
-        const buttons = document.querySelectorAll('.option-btn');
-        buttons.forEach(b => b.disabled = true);
-
-        if (!isExamMode) {
-            const feedbackBox = document.getElementById('feedback-container');
-            const isCorrect = selectedIndex === q.correct;
-
-            feedbackBox.className = `feedback-box ${isCorrect ? 'correct' : 'incorrect'}`;
-            document.getElementById('feedback-title').innerText = isCorrect ? "✓ Juist Antwoord!" : "✗ Onjuist Antwoord";
-            document.getElementById('feedback-text').innerText = q.explanation;
-            document.getElementById('feedback-source').innerText = q.source;
-            feedbackBox.style.display = 'block';
-
-            buttons[selectedIndex].classList.add('selected');
-
-            if (currentIndex < currentQuestions.length - 1) {
-                document.getElementById('btn-next').classList.remove('hidden');
-            }
-        } else {
-            buttons[selectedIndex].classList.add('selected');
+        function startQuiz(subjectId, examMode) {
+            isExamMode = examMode;
             
-            setTimeout(() => {
-                if (currentIndex < currentQuestions.length - 1) {
-                    currentIndex++;
-                    renderQuestion();
-                } else {
-                    document.getElementById('btn-submit-exam').classList.remove('hidden');
-                }
-            }, 300);
-        }
-    }
+            const sub = data[selectedCategory].subjects.find(s => s.id === subjectId);
+            currentSubject = sub;
 
-    function nextQuestion() {
-        if (currentIndex < currentQuestions.length - 1) {
-            currentIndex++;
+            let filtered = questionDatabase.filter(q => q.subjectId === subjectId);
+            
+            while (filtered.length < (examMode ? sub.questions : 5)) {
+                filtered.push({
+                    subjectId: subjectId,
+                    question: `[Demonstratievraag ${filtered.length + 1}] Wat is de juiste procedure bij de onderstaande luchtvaartsituatie volgens EASA/DGLV normen?`,
+                    options: [
+                        "Optie A: Voldoet aan de standaard operationele limieten",
+                        "Optie B: Vereist een daling en afwijking naar de dichtstbijzijnde luchthaven",
+                        "Optie C: Enkel toegestaan na goedkeuring van de gezagvoerder",
+                        "Optie D: Geen restricties van toepassing"
+                    ],
+                    correct: 0,
+                    explanation: "Dit is een voorbeeld-uitleg gebaseerd op gecertifieerde Belgische reglementering.",
+                    source: "Bron: Belgisch AIP / EASA Part-FCL"
+                });
+            }
+
+            currentQuestions = filtered.slice(0, examMode ? sub.questions : 10);
+            currentIndex = 0;
+            userAnswers = [];
+
+            document.getElementById('screen-subjects').classList.add('hidden');
+            document.getElementById('screen-quiz').classList.remove('hidden');
+
+            document.getElementById('quiz-badge').innerText = `${selectedCategory} - ${sub.name} (${examMode ? 'EXAMEN' : 'OEFENEN'})`;
+
+            if (examMode) {
+                document.getElementById('timer-container').classList.remove('hidden');
+                timeRemaining = sub.time * 60;
+                startTimer();
+            } else {
+                document.getElementById('timer-container').classList.add('hidden');
+            }
+
             renderQuestion();
         }
-    }
 
-    function startTimer() {
-        clearInterval(timerInterval);
-        timerInterval = setInterval(() => {
-            timeRemaining--;
-            const mins = Math.floor(timeRemaining / 60);
-            const secs = timeRemaining % 60;
-            document.getElementById('timer-text').innerText = `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+        function renderQuestion() {
+            const q = currentQuestions[currentIndex];
+            document.getElementById('question-number').innerText = `Vraag ${currentIndex + 1} van ${currentQuestions.length}`;
+            document.getElementById('question-text').innerText = q.question;
 
-            if (timeRemaining <= 0) {
-                clearInterval(timerInterval);
-                alert("Tijd is om! Het examen wordt nu ingeleverd.");
-                submitExam();
-            }
-        }, 1000);
-    }
+            document.getElementById('feedback-container').style.display = 'none';
+            document.getElementById('btn-next').classList.add('hidden');
+            document.getElementById('btn-submit-exam').classList.add('hidden');
 
-    function submitExam() {
-        clearInterval(timerInterval);
-        document.getElementById('screen-quiz').classList.add('hidden');
-        document.getElementById('screen-results').classList.remove('hidden');
+            const optionsContainer = document.getElementById('options-container');
+            optionsContainer.innerHTML = '';
 
-        let correctCount = 0;
-        const reviewContainer = document.getElementById('review-container');
-        reviewContainer.innerHTML = '';
-
-        currentQuestions.forEach((q, idx) => {
-            const isCorrect = userAnswers[idx] === q.correct;
-            if (isCorrect) correctCount++;
-
-            if (!isCorrect) {
-                const reviewCard = document.createElement('div');
-                reviewCard.style.cssText = "background: rgba(230,57,70,0.1); border-left: 4px solid #e63946; padding: 12px; margin-bottom: 10px; border-radius: 4px;";
-                reviewCard.innerHTML = `
-                    <strong>Vraag ${idx + 1}: ${q.question}</strong><br/>
-                    <span style="color: #e63946;">Jouw antwoord: ${userAnswers[idx] !== undefined ? q.options[userAnswers[idx]] : 'Niet ingevuld'}</span><br/>
-                    <span style="color: #2a9d8f;">Juist antwoord: ${q.options[q.correct]}</span><br/>
-                    <small style="display:block; margin-top:5px; color: #8d99ae;">${q.explanation} (${q.source})</small>
-                `;
-                reviewContainer.appendChild(reviewCard);
-            }
-        });
-
-        const percentage = Math.round((correctCount / currentQuestions.length) * 100);
-        document.getElementById('result-score').innerText = `${percentage}%`;
-
-        const passed = percentage >= 75;
-        const statusEl = document.getElementById('result-status');
-        statusEl.innerText = passed ? "PASSED / GESLAAGD 🎉" : "FAILED / NIET GESLAAGD ❌";
-        statusEl.style.color = passed ? "#2a9d8f" : "#e63946";
-    }
-
-    function leaveQuiz() {
-        if (confirm("Weet je zeker dat je deze sessie wilt verlaten?")) {
-            goHome();
+            q.options.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.innerText = `${String.fromCharCode(65 + idx)}. ${opt}`;
+                btn.onclick = () => handleAnswer(idx);
+                optionsContainer.appendChild(btn);
+            });
         }
-    }
-</script>
+
+        function handleAnswer(selectedIndex) {
+            const q = currentQuestions[currentIndex];
+            userAnswers[currentIndex] = selectedIndex;
+
+            const buttons = document.querySelectorAll('.option-btn');
+            buttons.forEach(b => b.disabled = true);
+
+            if (!isExamMode) {
+                const feedbackBox = document.getElementById('feedback-container');
+                const isCorrect = selectedIndex === q.correct;
+
+                feedbackBox.className = `feedback-box ${isCorrect ? 'correct' : 'incorrect'}`;
+                document.getElementById('feedback-title').innerText = isCorrect ? "✓ Juist Antwoord!" : "✗ Onjuist Antwoord";
+                document.getElementById('feedback-text').innerText = q.explanation;
+                document.getElementById('feedback-source').innerText = q.source;
+                feedbackBox.style.display = 'block';
+
+                buttons[selectedIndex].classList.add('selected');
+
+                if (currentIndex < currentQuestions.length - 1) {
+                    document.getElementById('btn-next').classList.remove('hidden');
+                }
+            } else {
+                buttons[selectedIndex].classList.add('selected');
+                
+                setTimeout(() => {
+                    if (currentIndex < currentQuestions.length - 1) {
+                        currentIndex++;
+                        renderQuestion();
+                    } else {
+                        document.getElementById('btn-submit-exam').classList.remove('hidden');
+                    }
+                }, 300);
+            }
+        }
+
+        function nextQuestion() {
+            if (currentIndex < currentQuestions.length - 1) {
+                currentIndex++;
+                renderQuestion();
+            }
+        }
+
+        function startTimer() {
+            clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                timeRemaining--;
+                const mins = Math.floor(timeRemaining / 60);
+                const secs = timeRemaining % 60;
+                document.getElementById('timer-text').innerText = `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+
+                if (timeRemaining <= 0) {
+                    clearInterval(timerInterval);
+                    alert("Tijd is om! Het examen wordt nu ingeleverd.");
+                    submitExam();
+                }
+            }, 1000);
+        }
+
+        function submitExam() {
+            clearInterval(timerInterval);
+            document.getElementById('screen-quiz').classList.add('hidden');
+            document.getElementById('screen-results').classList.remove('hidden');
+
+            let correctCount = 0;
+            const reviewContainer = document.getElementById('review-container');
+            reviewContainer.innerHTML = '';
+
+            currentQuestions.forEach((q, idx) => {
+                const isCorrect = userAnswers[idx] === q.correct;
+                if (isCorrect) correctCount++;
+
+                if (!isCorrect) {
+                    const reviewCard = document.createElement('div');
+                    reviewCard.style.cssText = "background: rgba(230,57,70,0.1); border-left: 4px solid #e63946; padding: 12px; margin-bottom: 10px; border-radius: 4px;";
+                    reviewCard.innerHTML = `
+                        <strong>Vraag ${idx + 1}: ${q.question}</strong><br/>
+                        <span style="color: #e63946;">Jouw antwoord: ${userAnswers[idx] !== undefined ? q.options[userAnswers[idx]] : 'Niet ingevuld'}</span><br/>
+                        <span style="color: #2a9d8f;">Juist antwoord: ${q.options[q.correct]}</span><br/>
+                        <small style="display:block; margin-top:5px; color: #8d99ae;">${q.explanation} (${q.source})</small>
+                    `;
+                    reviewContainer.appendChild(reviewCard);
+                }
+            });
+
+            const percentage = Math.round((correctCount / currentQuestions.length) * 100);
+            document.getElementById('result-score').innerText = `${percentage}%`;
+
+            const passed = percentage >= 75;
+            const statusEl = document.getElementById('result-status');
+            statusEl.innerText = passed ? "PASSED / GESLAAGD 🎉" : "FAILED / NIET GESLAAGD ❌";
+            statusEl.style.color = passed ? "#2a9d8f" : "#e63946";
+        }
+
+        function leaveQuiz() {
+            if (confirm("Weet je zeker dat je deze sessie wilt verlaten?")) {
+                goHome();
+            }
+        }
+    </script>
+</body>
+</html>
