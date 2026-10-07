@@ -1,12 +1,51 @@
 {
-"_note": "Correcties op tekst die in de bron-PDF afgebroken of beschadigd is. Formaat: id -> {question?, options?: {index: tekst}}",
-"665564": {"question": "Welke van de volgende documenten moeten aan boord zijn tijdens een internationale vlucht? a) Bewijs van inschrijving b) Bewijs van luchtwaardigheid c) Airworthiness review certificate (ARC) d) EASA Formulier-1 e) Vliegtuiglogboek f) Benodigde vergunningen van de bemanning g) … (tekst afgebroken in de bron)"},
-"665595": {"question": "U bent overdag onderschept door een militair luchtvaartuig. Wat betekent het volgende signaal: Een plotselinge bocht van 90 graden of meer en een optrekkende klim van het luchtvaartuig, zonder hierbij door de koers van het onderschepte luchtvaartuig te kruisen?", "options": {"0": "Ik breng u naar het dichtstbijzijnde vliegveld"}},
-"665897": {"options": {"3": "Het bericht is verstaanbaar, maar met moeite"}},
-"666073": {"options": {"2": "buitenlanding (landing buiten het veld)."}},
-"666095": {"question": "Hoeveel taxibrandstof (100LL, AVGAS) moet je verbruiken voor het opstijgen om het gewicht van het vliegtuig te reduceren tot het maximum opstijggewicht? Maximum taxigewicht (Maximum Ramp Mass): 1150 kg, Actueel taxigewicht: 1145 kg, Maximum opstijggewicht: 1140 kg (laatste waarde gereconstrueerd, tekst afgebroken in de bron)."},
-"666213": {"options": {"1": "Deviatie, bochtfout en acceleratiefout"}},
-"666191": {"options": {"1": "Een brandstofindicatie moet beschikbaar zijn voor iedere tank en de indicator moet gecalibreerd zijn om \"nul\" aan te duiden tijdens horizontale vlucht wanneer de resterende hoeveelheid in de tank gelijk is aan de onbruikbare hoeveelheid brandstof in de tank"}},
-"666068": {"options": {"0": "Zogturbulentie (wake turbulence) die dwars op de landingsbaan draait", "1": "Zogturbulentie (wake turbulence) roteert sneller en hoger", "2": "Zogturbulentie (wake turbulence) op of nabij de landingsbaan", "3": "Zogturbulentie (wake turbulence) wordt versterkt en vervormd"}},
-"666282": {"options": {"0": "51°50´27´´N"}}
+"_note": "Correcties op tekst die in de bron-PDF afgebroken of beschadigd is. Formaat: id -> {question?, options?: {index: tekst}} '_replace' = tekstvervanging in alle vragen en antwoorden (van -> naar).",
+"_replace": {
+"overlandvlieguur": "uur cross-country"
+},
+"665564": {
+"question": "Welke van de volgende documenten moeten aan boord zijn tijdens een internationale vlucht? a) Bewijs van inschrijving b) Bewijs van luchtwaardigheid c) Airworthiness review certificate (ARC) d) EASA Formulier-1 e) Vliegtuiglogboek f) Benodigde vergunningen van de bemanning g) … (tekst afgebroken in de bron)"
+},
+"665595": {
+"question": "U bent overdag onderschept door een militair luchtvaartuig. Wat betekent het volgende signaal: Een plotselinge bocht van 90 graden of meer en een optrekkende klim van het luchtvaartuig, zonder hierbij door de koers van het onderschepte luchtvaartuig te kruisen?",
+"options": {
+"0": "Ik breng u naar het dichtstbijzijnde vliegveld"
+}
+},
+"665897": {
+"options": {
+"3": "Het bericht is verstaanbaar, maar met moeite"
+}
+},
+"666073": {
+"options": {
+"2": "buitenlanding (landing buiten het veld)."
+}
+},
+"666095": {
+"question": "Hoeveel taxibrandstof (100LL, AVGAS) moet je verbruiken voor het opstijgen om het gewicht van het vliegtuig te reduceren tot het maximum opstijggewicht? Maximum taxigewicht (Maximum Ramp Mass): 1150 kg, Actueel taxigewicht: 1145 kg, Maximum opstijggewicht: 1140 kg (laatste waarde gereconstrueerd, tekst afgebroken in de bron)."
+},
+"666213": {
+"options": {
+"1": "Deviatie, bochtfout en acceleratiefout"
+}
+},
+"666191": {
+"options": {
+"1": "Een brandstofindicatie moet beschikbaar zijn voor iedere tank en de indicator moet gecalibreerd zijn om \"nul\" aan te duiden tijdens horizontale vlucht wanneer de resterende hoeveelheid in de tank gelijk is aan de onbruikbare hoeveelheid brandstof in de tank"
+}
+},
+"666068": {
+"options": {
+"0": "Zogturbulentie (wake turbulence) die dwars op de landingsbaan draait",
+"1": "Zogturbulentie (wake turbulence) roteert sneller en hoger",
+"2": "Zogturbulentie (wake turbulence) op of nabij de landingsbaan",
+"3": "Zogturbulentie (wake turbulence) wordt versterkt en vervormd"
+}
+},
+"666282": {
+"options": {
+"0": "51°50´27´´N"
+}
+}
 }
