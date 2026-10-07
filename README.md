@@ -24,7 +24,7 @@ Onofficieel oefenplatform voor de theorie-examens **PPL(A)** (EASA Part-FCL, BCA
 | `content/_patches.json` | Correcties op tekst die in de bron-PDF afgebroken is |
 | `js/bank.js` | **Gegenereerd** door `tools/build.py` |
 
-## Nieuwe PDF's toevoegen (bv. Meteorologie)
+## Nieuwe PDF's toevoegen
 ```bash
 pip install pymupdf
 python3 tools/extract_pdf.py meteorology pad/naar/30_Meteorology.pdf

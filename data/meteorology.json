@@ -1,0 +1,1366 @@
+[
+ {
+  "id": "665754",
+  "topic": "30.1.1.1.1 List the composition of gases in dry air with 78% Nitrogen, 21% Oxygen and 1% CO2 and other gases",
+  "question": "Wat is de gassamenstelling van \"lucht\"?",
+  "options": [
+   "Stikstof 21 % Zuurstof 78 % Edelgassen/ koolstofdioxide 1 %",
+   "Zuurstof 21 % Stikstof 78 % Edelgassen/ koolstofdioxide 1 %",
+   "Zuurstof 78 % Waterdamp 21 % Stikstof 1 %",
+   "Zuurstof 21 % Waterdamp 78 % Edelgassen/ koolstofdioxide 1 %"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665757",
+  "topic": "30.1.1.2.2 Describe the Tropopause as the boundary area between Troposphere and Stratosphere",
+  "question": "De term \"tropopauze\" wordt gedefinieerd als...",
+  "options": [
+   "De hoogte waarboven de temperatuur begint te dalen.",
+   "De laag boven de troposfeer die een stijgende temperatuur vertoont.",
+   "Het grensgebied tussen de troposfeer en de stratosfeer.",
+   "Het grensgebied tussen de mesosfeer en de stratosfeer."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665758",
+  "topic": "30.1.2.1.1 State the unit for air temperature used in flight meteorology: degrees Celsius",
+  "question": "Welke eenheid wordt gebruikt voor temperaturen die worden gegeven door luchtvaart meteorologische diensten in Europa en Afrika?",
+  "options": [
+   "Gpdam",
+   "Graden Celsius (° C)",
+   "Kelvin",
+   "Graden Fahrenheit"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665786",
+  "topic": "30.1.2.3.1 State conduction and latent heat as primary factors for tranfer of heat within the Troposphere",
+  "question": "Welk proces veroorzaakt het vrijkomen van latente warmte in de bovenste troposfeer?",
+  "options": [
+   "Wolkvorming door condensatie",
+   "Verdamping over uitgestrekte wateroppervlakten",
+   "Stabilisatie van instromende luchtmassa`s",
+   "Dalende lucht over wijdverspreide gebieden"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665787",
+  "topic": "30.1.2.4.2 Explain how the rate at which an air mass cools/heats when rising/descending depends on the relative humidity",
+  "question": "De verzadigde adiabatische vervalsnelheid (lapse rate) is...",
+  "options": [
+   "Lager dan de droge adiabatische snelheid.",
+   "Gelijk aan de droge adiabatische snelheid.",
+   "Evenredig met de droge adiabatische snelheid.",
+   "Hoger dan de droge adiabatische snelheid."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665789",
+  "topic": "30.1.2.4.3 State the dry adiabatic lapse rate as 3 deg C/1000 ft (or 1 deg C/100 m) and saturated adiabatic lapse rate with an",
+  "question": "De verzadigde adiabatische verloopsnelheid (lapse rate) moet worden aangenomen met een gemiddelde waarde van:",
+  "options": [
+   "2° C/ 1000 ft.",
+   "1,0° C/ 100 m.",
+   "0° C/ 100 m.",
+   "0,6° C/ 100 m."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665788",
+  "topic": "30.1.2.4.3 State the dry adiabatic lapse rate as 3 deg C/1000 ft (or 1 deg C/100 m) and saturated adiabatic lapse rate with an",
+  "question": "De droge adiabatische verloopsnelheid (lapse rate) heeft een waarde van...",
+  "options": [
+   "2°/ 1000 ft.",
+   "0,6° C/ 100 m.",
+   "0,65° C/ 100 m.",
+   "1,0° C/ 100 m."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665840",
+  "topic": "30.1.2.5.1 Describe an 'inversion' as a layer with increasing temperature with increasing height",
+  "question": "Een inversie is een laag...",
+  "options": [
+   "Met toenemende temperatuur met toenemende hoogte.",
+   "Met toenemende druk met toenemende hoogte.",
+   "Met dalende temperatuur bij toenemende hoogte.",
+   "Met constante temperatuur met toenemende hoogte."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665761",
+  "topic": "30.1.3.2.1 State the decrease in air pressure with increasing altitude as approximately by 1/2 every 5.500 m or 18.000 ft",
+  "question": "Wat is de ISA standaard druk op FL 180 (5500 m)?",
+  "options": [
+   "250 hPa",
+   "1013,25 hPa",
+   "500 hPa",
+   "300 hPa"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665858",
+  "topic": "30.1.3.2.1 State the decrease in air pressure with increasing altitude as approximately by 1/2 every 5.500 m or 18.000 ft",
+  "question": "Wat is de luchtdruk buiten een vliegtuig dat op vliegniveau 180 vliegt, zoals gedefinieerd door de internationale standaardatmosfeer (ISA)?",
+  "options": [
+   "700 hPa",
+   "500 hPa",
+   "850 hPa",
+   "250 hPa"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665843",
+  "topic": "30.1.5.1.1 State the rate of decrease in temperature with altitude altitude in the ISA Troposphere as 0.65 deg C/100 m or 2 deg",
+  "question": "Hoe verandert de luchttemperatuur in ISA (standaard atmosfeer) van MSL tot ca. 10.000 m hoogte?",
+  "options": [
+   "Van +30° tot -40°C",
+   "Van +15° tot -50°C",
+   "Van -15° tot 50°C",
+   "Van +20° tot -40°C"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665759",
+  "topic": "30.1.5.1.1 State the rate of decrease in temperature with altitude altitude in the ISA Troposphere as 0.65 deg C/100 m or 2 deg",
+  "question": "De temperatuurdaling met toenemende hoogte in de troposfeer volgens ISA is...",
+  "options": [
+   "0,65° C/ 100 m.",
+   "0,6° C/ 100 m.",
+   "3° C/ 100 m.",
+   "1° C/ 100 m."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665762",
+  "topic": "30.1.5.1.2 List the values of the ICAO standard atmosphere at MSL with +15 deg C, 1013.25 hPa, 1.225 kg/m3 and 0% relative",
+  "question": "De druk op MSL in ISA condities is...",
+  "options": [
+   "1013,25 hPa.",
+   "15 hPa.",
+   "113,25 hPa.",
+   "1123 hPa."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665755",
+  "topic": "30.1.5.1.2 List the values of the ICAO standard atmosphere at MSL with +15 deg C, 1013.25 hPa, 1.225 kg/m3 and 0% relative",
+  "question": "Wat is de massa van een \"kubus van lucht\" met de randen 1 m lang (1m3), op MSL volgens ISA?",
+  "options": [
+   "12,25 kg",
+   "1,225 kg",
+   "0,1225 kg",
+   "0,01225 kg"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665756",
+  "topic": "30.1.5.1.3 State the height of the tropopause in ISA with 11 km or 36.000 ft",
+  "question": "Wat is de gemiddelde hoogte van de tropopauze volgens de ISA (ICAO Standard Atmosphere)?",
+  "options": [
+   "11.000 m",
+   "11.000 ft",
+   "36.000 m",
+   "18.000 ft"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665763",
+  "topic": "30.1.5.1.3 State the height of the tropopause in ISA with 11 km or 36.000 ft",
+  "question": "De hoogte van de tropopauze van de Internationale Standaardatmosfeer (ISA) ligt op...",
+  "options": [
+   "11.000 ft",
+   "36.000 ft",
+   "48.000 ft",
+   "5.500 ft."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665764",
+  "topic": "30.1.6.2.1 Describe the indication of the barometric altimeter as height above selected reference pressure level",
+  "question": "De barometrische hoogtemeter geeft de hoogte aan boven...",
+  "options": [
+   "Een geselecteerd referentiedrukniveau.",
+   "De gemiddelde zeespiegel.",
+   "De standaarddruk 1013,25 hPa.",
+   "De grond."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665766",
+  "topic": "30.1.6.2.2 Interpret the indication on the barometric altimeter when selecting QNH, QFE or 1013 hPa as reference pressure",
+  "question": "De barometrische hoogtemeter met QFE-instelling geeft wat aan...?",
+  "options": [
+   "De hoogte boven MSL.",
+   "De hoogte boven de standaarddruk 1013,25 hPa.",
+   "De hoogte boven het drukniveau op vliegveldhoogte.",
+   "De ware hoogte boven MSL."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665765",
+  "topic": "30.1.6.2.2 Interpret the indication on the barometric altimeter when selecting QNH, QFE or 1013 hPa as reference pressure",
+  "question": "De hoogtemeter kan op de grond worden gecontroleerd door...",
+  "options": [
+   "QNH en het vergelijken van de indicatie met de hoogte van het vliegveld.",
+   "QFF en de indicatie te vergelijken met de hoogte van het vliegveld.",
+   "QFE en het vergelijken van de indicatie met de hoogte van het vliegveld.",
+   "QNE en controleer of de indicatie nul aangeeft op de grond."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665767",
+  "topic": "30.1.6.3.1 Determine true altitude from pressure altitude or QNH altitude with QNH and temperature deviation from ISA given,",
+  "question": "Gegeven de volgende informatie, wat is de ware hoogte? (Afgerond op de dichtstbijzijnde 50 ft) QNH: 983 hPa Hoogte: FL 85 Buitenluchttemperatuur: ISA - 10°",
+  "options": [
+   "7900 ft",
+   "7300 ft",
+   "9400 ft",
+   "7600 ft"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665769",
+  "topic": "30.2.2.1.3 Describe the resulting airflow above the friction layer as parallel to the isobars (geostrophic wind)",
+  "question": "Boven de wrijvingrensgslaag, met een heersende drukgradiënt, is de windrichting...",
+  "options": [
+   "Parallel aan de isobaren.",
+   "Loodrecht op de isohypsen.",
+   "Loodrecht op de isobaren.",
+   "Onder een hoek van 30° met de isobaren naar lage druk."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665770",
+  "topic": "30.2.2.2.1 Explain the influence of surface friction on wind direction in the friction layer",
+  "question": "Welk van de genoemde oppervlakken zal de windsnelheid het meest verminderen als gevolg van de wrijving over de grond?",
+  "options": [
+   "Vlak land, veel begroeiing",
+   "Vlak land, verlaten land, geen begroeiing",
+   "Oceanische gebieden",
+   "Bergachtige gebieden, vegetatiedek"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665771",
+  "topic": "30.2.3.1.1 Define the terms 'convergence' and 'divergence' and describe associated weather conditions",
+  "question": "De beweging van samenstromende lucht wordt genoemd...",
+  "options": [
+   "Verzakking.",
+   "Divergentie.",
+   "Convergentie.",
+   "Concordantie"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665772",
+  "topic": "30.2.3.1.1 Define the terms 'convergence' and 'divergence' and describe associated weather conditions",
+  "question": "De beweging van uit elkaar stromende lucht wordt genoemd...",
+  "options": [
+   "Divergentie.",
+   "Convergentie.",
+   "Verzakking.",
+   "Overeenstemming."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665773",
+  "topic": "30.2.3.1.1 Define the terms 'convergence' and 'divergence' and describe associated weather conditions",
+  "question": "Welke weersontwikkeling zal het gevolg zijn van convergentie op grondniveau?",
+  "options": [
+   "Dalende lucht en wolkenverspreiding",
+   "Dalende lucht en wolkenvorming",
+   "Stijgende lucht en wolkenverspreiding",
+   "Stijgende lucht en wolkenvorming"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665774",
+  "topic": "30.2.3.1.1 Define the terms 'convergence' and 'divergence' and describe associated weather conditions",
+  "question": "Wanneer luchtmassa`s elkaar frontaal ontmoeten, hoe wordt dit dan bedoeld en welke luchtbewegingen volgen dan?",
+  "options": [
+   "Convergentie resulterend in zinkende lucht",
+   "Divergentie resulterend in zinkende lucht",
+   "Divergentie waardoor lucht wordt opgetild",
+   "Convergentie waardoor lucht wordt opgetild"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665776",
+  "topic": "30.2.3.1.2 Describe the midlatitudes (50  70N/S) as an area where polar air and subtropical air form the Polar Front as a",
+  "question": "Wat de globale circulatie in de atmosfeer betreft, waar ontmoet polaire koude lucht subtropische warme lucht?",
+  "options": [
+   "Bij de subtropische hogedrukgordel",
+   "Aan het polaire front",
+   "Aan de evenaar",
+   "Op de geografische polen"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665811",
+  "topic": "30.2.3.1.3 List the typical latitudes for High and Low pressure areas resulting from global circulation",
+  "question": "Uitgestrekte hogedrukgebieden zijn het hele jaar door te vinden ...",
+  "options": [
+   "In tropische gebieden, dicht bij de evenaar.",
+   "In gematigde zones langs het polaire front",
+   "Boven oceaangebieden op breedtegraden rond 30°NB/ZB.",
+   "In gebieden met uitgebreide stijgende lucht."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665844",
+  "topic": "30.2.4.1.1 Define the terms 'anabatic' and 'katabatic winds', and 'mountain' and 'valley winds'",
+  "question": "Bergopwaartse stromingen kunnen worden versterkt door ...",
+  "options": [
+   "Zonnestraling aan de lijzijde",
+   "Zonnestraling aan de loefzijde",
+   "Warmtestraling van de loefzijde gedurende de nacht",
+   "Door opwarming van de bovenste atmosferische lagen"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665777",
+  "topic": "30.2.4.1.1 Define the terms 'anabatic' and 'katabatic winds', and 'mountain' and 'valley winds'",
+  "question": "Opwaartse winden worden gedefinieerd als...",
+  "options": [
+   "Dalende winden.",
+   "Katabatische winden.",
+   "Anabatische winden.",
+   "Convergerende winden."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665782",
+  "topic": "30.3.1.1.1 Describe air humidity as water molecules in gaseous form mixed with dry air",
+  "question": "Welk antwoord bevat elke toestand van water die in de atmosfeer voorkomt?",
+  "options": [
+   "Vloeistof",
+   "Vloeibaar, vast, en gasvormig",
+   "Vloeibaar en vast",
+   "Gasvormig en vloeibaar"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665784",
+  "topic": "30.3.1.2.6 Define 'temperaturedewpoint spread (TDS)' as difference between temperature and dew point",
+  "question": "De \"spreiding\" wordt gedefinieerd als...",
+  "options": [
+   "Verschil tussen de werkelijke temperatuur en het dauwpunt.",
+   "Verhouding van de werkelijke tot de maximaal mogelijke vochtigheid van de lucht.",
+   "Verschil tussen dauwpunt en condensatiepunt.",
+   "Maximale hoeveelheid waterdamp die in lucht kan worden opgenomen."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665783",
+  "topic": "30.3.1.2.7 Describe the relationship between relative humidity, dew point and spread with change in temperature",
+  "question": "Hoe veranderen de temperatuursverschil en de relatieve vochtigheid bij stijgende temperatuur?",
+  "options": [
+   "Spreiding neemt toe, relatieve vochtigheid neemt af",
+   "Spreiding blijft constant, relatieve vochtigheid daalt",
+   "Spreiding blijft constant, relatieve vochtigheid stijgt",
+   "Spreiding neemt toe, relatieve vochtigheid neemt toe"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665790",
+  "topic": "30.4.1.1.3 Explain the height of the cloud base with regard to the spread of the ascending air (at ground level)",
+  "question": "Op welke hoogte wordt de basis van een cumuluswolk gevormd?",
+  "options": [
+   "De hoogte waarop de stijgende lucht de top van een inversielaag bereikt",
+   "De hoogte waarop de temperatuur van de opstijgende lucht het omgevingsdauwpunt bereikt",
+   "De hoogte waarop de relatieve vochtigheid van de opstijgende lucht 0 % bereikt",
+   "De hoogte waarop de temperatuur van de opstijgende lucht het dauwpunt bereikt"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665791",
+  "topic": "30.4.1.2.1 Describe the two basic cloud types Cumulus (Cu) and Stratus (St) with regard to flight hazards (turbulence and",
+  "question": "Welke geslachtgroepen van wolken zijn er eigenlijk?",
+  "options": [
+   "Gelaagde en opgetilde wolken",
+   "Onweers- en buienwolken",
+   "Cumulus en Stratus wolken",
+   "Stratuswolken en ijswolken"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665793",
+  "topic": "30.4.1.2.3 Identify cumulus/stratus clouds on a given picture",
+  "question": "Welk type wolk laat de foto zien? Zie figuur (MET-002).",
+  "options": [
+   "Stratus",
+   "Cumulus",
+   "Alto",
+   "Cirrus"
+  ],
+  "correct": 1,
+  "images": [
+   "img/meteorology/665793_0.jpeg"
+  ]
+ },
+ {
+  "id": "665794",
+  "topic": "30.4.1.2.4 Identifiy low/alto/cirro clouds on a given picture",
+  "question": "Welk type wolk laat de foto zien? Zie figuur (MET-004).",
+  "options": [
+   "Stratus",
+   "Cumulus",
+   "Cirrus",
+   "Altocumulus"
+  ],
+  "correct": 2,
+  "images": [
+   "img/meteorology/665794_0.jpeg"
+  ]
+ },
+ {
+  "id": "665795",
+  "topic": "30.4.1.3.1 Describe the effect of an inversion layer on the lifting process with cloud development and atmospheric stability",
+  "question": "Welke factor kan de top van cumuluswolken beïnvloeden?",
+  "options": [
+   "De absolute vochtigheid",
+   "De aanwezigheid van een inversielaag",
+   "De temperatuursverschil",
+   "Relatieve vochtigheid"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665796",
+  "topic": "30.4.2.1.1 Describe the general conditions for fog formation with low spread and descending temperature",
+  "question": "Welke factoren kunnen wijzen op een neiging tot mistvorming?",
+  "options": [
+   "Lage temperatuursverschil, dalende temperatuur",
+   "Lage druk, stijgende temperatuur",
+   "Lage temperatuursverschil, stijgende temperatuur",
+   "Sterke winden, dalende temperatuur"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665830",
+  "topic": "30.4.2.1.3 Explain the difference between 'haze' (HZ) and 'mist' (BR)",
+  "question": "Welke vermindering van de zichtbaarheid is niet erg gevoelig voor veranderingen in temperatuur?",
+  "options": [
+   "Mistflarden (BCFG)",
+   "Mist (BR)",
+   "Nevel (HZ)",
+   "Stralingsmist (FG)"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665797",
+  "topic": "30.4.2.2.1 Explain the formation of radiation fog",
+  "question": "Welke conditie kan de vorming van stralingsmist voorkomen?",
+  "options": [
+   "Lage temperatuursverschil",
+   "Bewolking",
+   "Heldere nacht, geen wolken",
+   "Kalme wind"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665798",
+  "topic": "30.5.1.1.1 Describe the process of precipitation develepment as a combination of coalescence and icing",
+  "question": "Welke factoren zijn vereist voor de vorming van neerslag in wolken?",
+  "options": [
+   "Kalme winden en intensieve zonnestraling",
+   "De aanwezigheid van een inversielaag",
+   "Matige tot sterke opwaartse luchtstroom",
+   "Hoge vochtigheid en hoge temperaturen"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665799",
+  "topic": "30.5.1.1.1 Describe the process of precipitation develepment as a combination of coalescence and icing",
+  "question": "De vorming van middelgrote tot grote neerslagdeeltjes vereist...",
+  "options": [
+   "Sterke opwaartse luchtstroom",
+   "Een hoge wolkenbasis.",
+   "Harde wind.",
+   "Een inversielaag."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665775",
+  "topic": "30.6.1.1.1 List the air masses usually affecting the weather in mid Europe",
+  "question": "Wat zijn de luchtmassa`s waar Midden-Europa voornamelijk door wordt beïnvloed?",
+  "options": [
+   "Polair koude lucht en tropisch warme lucht",
+   "Equatoriale en tropische warme lucht",
+   "Arctische en polaire koude lucht",
+   "Tropische en arctische koude lucht"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665801",
+  "topic": "30.6.1.1.2 Describe and identify air masses with respect to origin (tropical/polar) and track (maritime/continental)",
+  "question": "Het karakter van een luchtmassa wordt bepaald door welke eigenschappen?",
+  "options": [
+   "Gebied van herkomst en traject tijdens de verplaatsing",
+   "Temperaturen bij oorsprong en huidig gebied",
+   "Verticale thermische gradiënt bij oorsprong",
+   "Windsnelheid en tropopauzehoogte"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665800",
+  "topic": "30.6.1.2.1 Describe how properties of air masses (humidity, temperature and stability) may change along their tracks",
+  "question": "Hoe wordt een luchtmassa beschreven die zich in de winter via het Russische continent naar Midden-Europa verplaatst?",
+  "options": [
+   "Maritieme polaire lucht",
+   "Continentale polaire lucht",
+   "Continentale tropische lucht",
+   "Maritieme tropische lucht"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665802",
+  "topic": "30.6.1.2.1 Describe how properties of air masses (humidity, temperature and stability) may change along their tracks",
+  "question": "Hoe verandert de stabiliteit van een polaire koude luchtmassa wanneer deze zich in de lente of de zomer zuidwaarts naar Midden-Europa beweegt?",
+  "options": [
+   "Het stabiliseert als de relatieve vochtigheid toeneemt",
+   "Het destabiliseert door de opwarming van de lucht in de lagere troposfeer",
+   "Hij destabiliseert door de opwarming van de lucht in de bovenste troposfeer",
+   "Het stabiliseert door de opwarming van de lucht in de lagere troposfeer"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665804",
+  "topic": "30.6.2.2.6 Name and identify warm fronts on surface weather charts",
+  "question": "Het symbool met het label (2) op de afbeelding is een/... Zie afbeelding (MET-005)",
+  "options": [
+   "Hoogtefront.",
+   "Warmtefront.",
+   "Occlusie.",
+   "Koudefront."
+  ],
+  "correct": 1,
+  "images": [
+   "img/meteorology/665804_0.jpeg"
+  ]
+ },
+ {
+  "id": "665806",
+  "topic": "30.6.2.3.2 List typical clouds and precipitation associated with a cold front",
+  "question": "Welke wolken en welk weer kunnen typisch worden waargenomen tijdens de passage van een koudefront?",
+  "options": [
+   "Cirrus, dikker wordende altostratus en altocumulus wolken, dalende wolkenbasis met regen, nimbostratus",
+   "Sterk ontwikkelde cumuluswolken (Cb) met regen- en onweersbuien, windvlagen gevolgd door cumuluswolken met af en toe regenbuien",
+   "Windstilte, wolkenverspreiding en opwarming in de zomer, vorming van lange hoge mistlagen in de winter",
+   "In kustgebieden overdag wind van de kust en vorming van cumuluswolken, verdwijning van wolken gedurende de avond en nacht"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665803",
+  "topic": "30.6.2.3.6 Name and identify cold fronts on surface weather charts",
+  "question": "Het symbool met het label (1) op de afbeelding is een/... Zie afbeelding (MET-005)",
+  "options": [
+   "Hoogtefront.",
+   "Warmtefront.",
+   "Koudefront.",
+   "Occlusie."
+  ],
+  "correct": 2,
+  "images": [
+   "img/meteorology/665803_0.jpeg"
+  ]
+ },
+ {
+  "id": "665807",
+  "topic": "30.6.2.5.1 Describe the typical weather phenomena and visual meteorological flight conditions after a cold front has passed with",
+  "question": "Welke visuele vliegomstandigheden kunnen worden verwacht na de passage van een koudefront?",
+  "options": [
+   "Verspreide wolkenlagen, zichtbaarheid meer dan 5 km, vorming van ondiepe cumuluswolken",
+   "Slecht zicht, vorming van bewolking of grond bedekkende stratuswolken, sneeuw",
+   "Goed zicht, vorming van cumuluswolken met regen- of sneeuwbuien",
+   "Middelmatig zicht met afnemende wolkenbasis, begin van langdurige neerslag"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665859",
+  "topic": "30.6.2.5.1 Describe the typical weather phenomena and visual meteorological flight conditions after a cold front has passed with",
+  "question": "Welke vliegzichtcondities kan men verwachten bij een koufront?",
+  "options": [
+   "Gematigd tot goed vliegzicht, vrij van wolken",
+   "Goed vliegzicht, wat geïsoleerde hoge bewolking",
+   "Vliegzicht minder dan 1000 m, grond bedekt met wolken en constante neerslag",
+   "Gematigd vliegzicht, zware buien, turbulentie en onweerstormen"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665805",
+  "topic": "30.6.2.6.4 Name and identify occlusion lines on surface weather charts",
+  "question": "Het symbool met het label (3) op de afbeelding is een/... Zie afbeelding (MET-005)",
+  "options": [
+   "Koudefront.",
+   "Occlusie.",
+   "Hoogtefront.",
+   "Warmtefront."
+  ],
+  "correct": 1,
+  "images": [
+   "img/meteorology/665805_0.jpeg"
+  ]
+ },
+ {
+  "id": "665808",
+  "topic": "30.6.2.8.1 Describe the typical path of movement of a polar front low as in direction of the warm sector isobars",
+  "question": "Wat is de gebruikelijke bewegingsrichting van een laag polair front?",
+  "options": [
+   "Naar het noordwesten in de winter, naar het zuidwesten in de zomer",
+   "Naar het noordoosten in de winter, naar het zuidoosten in de zomer",
+   "Parallel aan de warme frontlijn naar het zuiden",
+   "Parallel aan de isobaren van de warme sector"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665809",
+  "topic": "30.6.2.9.1 Describe the changes in air pressure, temperature and approximate wind direction with the passage of a polar front",
+  "question": "Welk drukpatroon kan worden waargenomen tijdens de passage van een laag polair front?",
+  "options": [
+   "Stijgende druk voor het warmtefront, stijgende druk binnen de warme sector, dalende druk achter het koudefront",
+   "Dalende druk voor het warmtefront, constante druk binnen de warme sector, dalende druk achter het koudefront",
+   "Stijgende druk voor het warmtefront, constante druk binnen de warme sector, stijgende druk achter het koudefront",
+   "Dalende druk voor het warmtefront, constante druk binnen de warme sector, stijgende druk achter het koudefront"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665814",
+  "topic": "30.7.2.1.1 State that low pressure areas on different scale are usually associated with convergence and ascending air with",
+  "question": "Welke weersverschijnselen zijn te verwachten rond een trog op hoger niveau?",
+  "options": [
+   "Ontwikkeling van buien en onweersbuien (Cb)",
+   "Kalm weer, vorming van opgetrokken mistlagen",
+   "Kalme wind, vorming van ondiepe cumulus wolken",
+   "Vorming van hoge stratus wolken, grond bedekkende wolken."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665813",
+  "topic": "30.7.2.1.1 State that low pressure areas on different scale are usually associated with convergence and ascending air with",
+  "question": "Koude luchtinstroom in hoge troposferische lagen kan resulteren in...",
+  "options": [
+   "Stabilisatie en rustig weer.",
+   "Buien en onweersbuien.",
+   "Kalm weer en wolkenvelden.",
+   "Frontaal weer."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665812",
+  "topic": "30.8.2.2.1 Describe the prevailing weather situation with high pressure areas (warm and cold high) in summer and winter",
+  "question": "Welk type wolk kan typisch worden waargenomen in wijdverspreide hogedrukgebieden tijdens de zomer?",
+  "options": [
+   "Bewolkt Ns wolken",
+   "Bewolkt lage stratus",
+   "Buienlijnen en onweersbuien",
+   "Verspreide Cu wolken"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665815",
+  "topic": "30.8.2.2.1 Describe the prevailing weather situation with high pressure areas (warm and cold high) in summer and winter",
+  "question": "Welke weersomstandigheden kunnen in de zomer in hogedrukgebieden worden verwacht?",
+  "options": [
+   "Buien lijnen en onweersbuien.",
+   "Veranderend weer met het passeren van fronten.",
+   "Kalme wind en wijdverspreide gebieden met hoge mist.",
+   "Kalm weer en wolkenvelden, weinig hoge Cu."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665816",
+  "topic": "30.8.2.3.1 State that high pressure areas in summer are usually associated with flat pressure pattern",
+  "question": "Welke weersomstandigheden in Midden-Europa komen typisch voor in hogedrukgebieden tijdens de zomer?",
+  "options": [
+   "Grote isobaarafstand met kalme winden, vorming van lokale windsystemen",
+   "Grote isobaarafstand met sterke overheersende westenwinden",
+   "Kleine isobaarafstanden met kalme winden, vorming van lokale windsystemen",
+   "Kleine isobaarafstand met sterke overheersende noordelijke winden"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665817",
+  "topic": "30.8.2.3.3 State that with a flat pressure pattern local wind systems may form",
+  "question": "Welke windcondities kunnen worden verwacht in gebieden met grote afstanden tussen de isobaren?",
+  "options": [
+   "Sterke overheersende en krimpende oostenwinden.",
+   "Vorming van lokale windsystemen met sterke overheersende westenwinden.",
+   "Variabele winden, vorming van lokale windsystemen.",
+   "Sterke overheersende en snel ruimende westenwinden."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665752",
+  "topic": "30.8.3.1.1 Explain the typical conditions and development of a mountain wave over the alps ('Foehn')",
+  "question": "Welke wolken en welk weer kunnen het gevolg zijn van een vochtige en instabiele luchtmassa, die door de overheersende wind tegen een bergketen wordt geduwd en gedwongen wordt te stijgen?",
+  "options": [
+   "Ingesloten CB met onweersbuien en buien met hagel en/of regen.",
+   "Dunne Altostratus en Cirrostratus bewolking met lichte en regelmatige neerslag.",
+   "Gladde, ongestructureerde NS-wolk met lichte motregen of sneeuw (in de winter).",
+   "Bewolkt lage stratus (hoge mist) met geen neerslag."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665778",
+  "topic": "30.8.3.1.1 Explain the typical conditions and development of a mountain wave over the alps ('Foehn')",
+  "question": "Föhn condities ontwikkelen zich meestal met...",
+  "options": [
+   "Stabiliteit, wijdverspreide lucht geblazen tegen een bergkam.",
+   "Onstabiliteit, wijdverspreide lucht die tegen een bergkam wordt geblazen.",
+   "Stabiliteit, hogedrukgebied met kalme wind.",
+   "Onstabiliteit, hogedrukgebied met kalme wind."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665792",
+  "topic": "30.8.3.1.2 Identify the different zones with downdrafts, updrafts, rotors and lenticular clouds of a mountain wave (foehn system)",
+  "question": "Welk weersverschijnsel, aangeduid met \"2\", moet aan de lijzijde worden verwacht tijdens de geïllustreerde omstandigheden? Zie figuur (MET-001).",
+  "options": [
+   "Altocumulus Castellanus",
+   "Nimbostratus",
+   "Altocumulus lenticularis",
+   "Cumulonimbus"
+  ],
+  "correct": 2,
+  "images": [
+   "img/meteorology/665792_0.jpeg"
+  ]
+ },
+ {
+  "id": "665819",
+  "topic": "30.9.1.1.1 List meteorological conditions (humidity, temperature, precipitation) that affecting type and intensity of airframe icing",
+  "question": "Welke van de volgende omstandigheden zijn het gunstigst voor ijsafzetting?",
+  "options": [
+   "Temperaturen tussen 0° C en -12° C, aanwezigheid van onderkoelde waterdruppels (wolken)",
+   "Temperaturen tussen +10° C en -30° C, aanwezigheid van hagel (bewolking)",
+   "Temperaturen onder 0° C, sterke wind, onbewolkte hemel",
+   "Temperaturen tussen -20° C en -40° C, aanwezigheid van ijskristallen (Ci wolken)"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665820",
+  "topic": "30.9.1.1.1 List meteorological conditions (humidity, temperature, precipitation) that affecting type and intensity of airframe icing",
+  "question": "Welke temperaturen zijn het gevaarlijkst met betrekking tot ijsvorming op vliegtuigrompen?",
+  "options": [
+   "0° tot -12° C",
+   "+5° tot -10° C",
+   "-20° tot -40° C",
+   "+20° tot -5° C"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665780",
+  "topic": "30.9.2.1.2 List typical zones with turbulence and how to avoid them, e.g. below Cu clouds, shower downdrafts, mountain waves,",
+  "question": "Lichte turbulentie moet je altijd verwachten...",
+  "options": [
+   "Onder cumuluswolken door thermische convectie.",
+   "Bij het ingaan van inversies.",
+   "Onder stratiforme bewolking in middelhoge lagen.",
+   "Boven cumulus wolken als gevolg van thermische convectie."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665821",
+  "topic": "30.9.3.3.2 Explain how to identify and avoid hazards associated with wind shears from rain showers during final approach",
+  "question": "Welke situatie kan leiden tot het optreden van hevige windschering?",
+  "options": [
+   "Vooruitvliegend op een warm front met zichtbare Ci wolken",
+   "Over land vliegen en onder Cu wolken met ongeveer 4 octa dekking",
+   "Als er een bui zichtbaar is in de buurt van het vliegveld",
+   "Tijdens de eindnadering, 30 minuten nadat een zware regenbui het vliegveld is gepasseerd"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665823",
+  "topic": "30.9.4.1.1 List the conditions favourable for thunderstorm formation with regard to temperature, humidity and atmospheric",
+  "question": "Welke voorwaarden zijn noodzakelijk voor de vorming van warmteonweersbuien?",
+  "options": [
+   "Absoluut stabiele atmosfeer, hoge temperatuur en hoge vochtigheid",
+   "Onstabiele atmosfeer, lage temperatuur en lage vochtigheid",
+   "Onstabiele atmosfeer, hoge temperatuur en hoge vochtigheid",
+   "Absoluut stabiele atmosfeer, hoge temperatuur en lage vochtigheid"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665822",
+  "topic": "30.9.4.1.1 List the conditions favourable for thunderstorm formation with regard to temperature, humidity and atmospheric",
+  "question": "Welke omstandigheden zijn gunstig voor de vorming van onweersbuien?",
+  "options": [
+   "Warme vochtige lucht, onstabiele verticale thermische gradiënt.",
+   "Kalme wind en koude lucht, bewolking met St of As.",
+   "Warme en droge lucht, sterke inversielaag",
+   "Heldere nacht boven land, koude lucht en mistflarden"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665825",
+  "topic": "30.9.4.2.1 Describe the formation and lifecycle of singlecell thunderstorms",
+  "question": "Welk stadium van een onweersbui wordt gedomineerd door opwaartse winden?",
+  "options": [
+   "Het oplossings- of uitdovingsstadium.",
+   "Stijgwind etappe in het volgroeide stadium.",
+   "Het volwassen- of volgroeide stadium.",
+   "Cumulus- of ontwikkelingsstadium"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665824",
+  "topic": "30.9.4.2.1 Describe the formation and lifecycle of singlecell thunderstorms",
+  "question": "Wat de onweersbuien betreft, verschijnen er sterke op- en neerwaartse winden tijdens...?",
+  "options": [
+   "Het volwassen- of volgroeide stadium.",
+   "Cumulus- of ontwikkelingsstadium",
+   "Het oplossings- of uitdovingsstadium.",
+   "Gehele duur van de onweersbui"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665826",
+  "topic": "30.9.4.3.1 Explain the possible hazards from lightning strikes to aircrafts in flight",
+  "question": "Welk gevaar dreigt het meest wanneer een vliegtuig door de bliksem wordt getroffen?",
+  "options": [
+   "Snelle drukverlaging in de cabine en rook in de cabine",
+   "Verstoorde radiocommunicatie, statische ruis signalen",
+   "Oververhitting van het oppervlak en schade aan blootgestelde vliegtuigonderdelen",
+   "Explosie van elektrische apparatuur in de cockpit"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665827",
+  "topic": "30.9.4.4.1 Describe the vertical outflow of air below thunderstorms resulting in vertical and horizontal wind shear as possible",
+  "question": "Zware daalwinden en sterke windschering dicht bij de grond kunnen worden verwacht...",
+  "options": [
+   "In de buurt van de neerslaggebieden van zware buien of onweersbuien.",
+   "Tijdens warme zomerdagen met hoge, afgeplatte Cu wolken.",
+   "Tijdens koude, heldere nachten met de vorming van stralingsmist.",
+   "Tijdens de nadering van een vliegveld aan de kust met een sterke zeewind."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665828",
+  "topic": "30.9.4.4.1 Describe the vertical outflow of air below thunderstorms resulting in vertical and horizontal wind shear as possible",
+  "question": "Welk verschijnsel wordt veroorzaakt door valwinden van koude lucht met neerslag uit een volledig ontwikkelde onweerswolk?",
+  "options": [
+   "Vriezende regen",
+   "Windvlaagfront",
+   "Elektrische ontlading",
+   "Aambeeld-hoofd top van Cb wolk"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665829",
+  "topic": "30.9.5.1.1 Explain the possible hazards from strong inversion layers with regard to aircraft performance",
+  "question": "Waar moet je op letten als je opstijgt in een grondinversie?",
+  "options": [
+   "Klimmen moet worden uitgevoerd met de laagst mogelijke snelheid en maximale kracht.",
+   "Als gevolg van lage temperaturen dicht bij de grond, moet ijsvorming worden verwacht.",
+   "Tijdens de klim moet rekening worden gehouden met een plotselinge toename van de snelheid en de klimprestaties.",
+   "Tijdens het klimmen moet rekening worden gehouden met een plotselinge daling van de snelheid en de klimprestaties."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665818",
+  "topic": "30.9.6.1.2 Describe possible hazards from stable air mass lifted due to horizontal movement against a mountain range with",
+  "question": "Welke weersomstandigheden kan men verwachten bij Föhn wind aan de loefzijde van een bergketen?",
+  "options": [
+   "Laaghangende bewolking, bergen verduisterd, slecht zicht, matige of zware regen",
+   "Verspreide cumuluswolken met buien en onweer",
+   "Afnemende bewolking met ongewone opwarming, vergezeld van sterke, vlagerige winden",
+   "Kalme wind en vorming van hoge stratus wolken (hoge mist)"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665781",
+  "topic": "30.9.6.2.2 Describe possible hazards associated with strong winds perpendicular to a mountain ridge / range",
+  "question": "Matige tot zware turbulentie moet worden verwacht...",
+  "options": [
+   "Aan de luwe kant van een bergketen als er rotorwolken zijn.",
+   "Onder dikke wolkenlagen aan de loefzijde van een bergketen.",
+   "Met het verschijnen van uitgestrekte lage stratus wolken (hoge mist).",
+   "Boven ononderbroken wolkenlagen."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665779",
+  "topic": "30.9.6.2.2 Describe possible hazards associated with strong winds perpendicular to a mountain ridge / range",
+  "question": "Welk type turbulentie komt typisch voor dicht bij de grond aan de lijzijde tijdens Föhn wind (neerwaartse wind)?",
+  "options": [
+   "Troebeling in de lucht (CAT)",
+   "Turbulentie in rotors",
+   "Thermische turbulentie",
+   "Inversie turbulentie"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665833",
+  "topic": "30.10.1.3.1 Explain the purpose of meteorological satellite imagery",
+  "question": "Welke informatie kan worden verkregen uit satellietbeelden?",
+  "options": [
+   "Temperatuur en dauwpunt van de omgevingslucht",
+   "Overzicht van wolkendekking en frontlinies",
+   "Vliegzicht, grondzicht, en grondcontact",
+   "Turbulentie en ijsvorming"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665851",
+  "topic": "30.10.1.3.2 Describe different types of satellity image construction (VIS / IR)",
+  "question": "Satellietbeelden in het infrarode (IR) spectrum kunnen worden gebruikt om...",
+  "options": [
+   "Temperaturen en daarmee wolkenbasisdekking vast te stellen.",
+   "Temperaturen te identificeren en daarmee het topniveau van de wolken.",
+   "Neerslaggebieden identificeren en voorspellen.",
+   "Identificeren van heldere lucht turbulentie gebieden en voorspelling."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665852",
+  "topic": "30.10.1.3.2 Describe different types of satellity image construction (VIS / IR)",
+  "question": "Het HRV (Hoge Resolutie Visueel) kanaal van de satellietbeelden toont...",
+  "options": [
+   "Wolkengebieden en vooral atmosferische convectie.",
+   "Ligging en intensiteit van neerslaggebieden.",
+   "Toplaag van wolken door temperatuurmeting.",
+   "Voorspelde ontwikkeling van drukpatronen."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665855",
+  "topic": "30.10.1.3.2 Describe different types of satellity image construction (VIS / IR)",
+  "question": "De RGB (Rood-Groen-Blauw) satellietbeelden tonen...",
+  "options": [
+   "Voorspelde ontwikkeling van drukpatronen.",
+   "Ligging en intensiteit van neerslaggebieden.",
+   "Toplaag van wolken door temperatuurmeting.",
+   "Wolkengebieden door beelden van verschillende visuele kanalen te combineren."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665856",
+  "topic": "30.10.1.3.2 Describe different types of satellity image construction (VIS / IR)",
+  "question": "Het voordeel van RGB-satellietbeelden boven HRV-beelden is dat.…",
+  "options": [
+   "RGB-beelden worden door meteorologische modellen berekend om bewegingen van fronten te voorspellen.",
+   "Door verschillende visuele kanalen te combineren, kunnen wolkentypes en hoogtes gemakkelijker worden onderscheiden.",
+   "Door visuele en radarkanalen te combineren, kunnen wolken- en neerslagtypes worden geïdentificeerd.",
+   "Door visuele en IR-kanalen te combineren, zien wolkenbeelden er dag en nacht hetzelfde uit."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665854",
+  "topic": "30.10.1.3.3 Describe and interpret data from meteorological satellite imagery",
+  "question": "De wolkentypes die op HRV (High Resolution Visual) satellietbeelden worden weergegeven als \"compacte, afzonderlijke witte vlekken\" kunnen worden geïnterpreteerd als:",
+  "options": [
+   "Nimbostratus (Ns)",
+   "Convectieve bewolking (Cu, Cb)",
+   "Stratus (St)",
+   "Cirrus (Ci)"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665853",
+  "topic": "30.10.1.3.3 Describe and interpret data from meteorological satellite imagery",
+  "question": "De wolkentypes die op HRV (High Resolution Visual) satellietbeelden als \"semi-transparante strepen\" worden weergegeven, kunnen worden geïnterpreteerd als:",
+  "options": [
+   "Cumulus (Cu)",
+   "Cirrus (Ci)",
+   "Nimbostratus (Ns)",
+   "Cumulonimbus (Cb)"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665845",
+  "topic": "30.10.1.4.1 Explain the purpose of groundbased WX radar",
+  "question": "Weerradars op de grond worden gebruikt om wat op te sporen en weer te geven?",
+  "options": [
+   "Temperaturen",
+   "Drukpatronen",
+   "Wolken",
+   "Neerslag"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665846",
+  "topic": "30.10.1.4.1 Explain the purpose of groundbased WX radar",
+  "question": "Weerradars op de grond geven het volgende weer:",
+  "options": [
+   "De temperatuurverdeling op verschillende hoogtes.",
+   "De huidige locatie en intensiteit van neerslaggebieden.",
+   "De voorspelling van plaats en intensiteit van wolken en neerslag.",
+   "De verticale verdeling van wolken met basis- en topniveaus."
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665834",
+  "topic": "30.10.1.4.1 Explain the purpose of groundbased WX radar",
+  "question": "Welke kaart toont gebieden met neerslag?",
+  "options": [
+   "GAFOR",
+   "Satellietbeelden",
+   "Radarbeelden",
+   "Windkaarten"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665847",
+  "topic": "30.10.1.4.2 Describe the operating principle of WX radar",
+  "question": "De sterkte van de echo`s die door weerradars op de grond worden ontvangen (\"reflectiviteit\") is gerelateerd aan...",
+  "options": [
+   "Het basis en topniveau van de reflecterende wolken.",
+   "De hoogte en verticale snelheid van de reflecterende deeltjes.",
+   "De grootte en aard van de reflecterende deeltjes.",
+   "De temperatuur van de laag waar de echo`s vandaan komen."
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665850",
+  "topic": "30.10.1.4.3 Describe and interpret information from WX radar images",
+  "question": "Welk type neerslag kan worden verwacht op grondradarbeelden met \"oranje\" of \"rode\" gebieden?",
+  "options": [
+   "Buien van regen, hagel of zachte hagel (korrel hagel)",
+   "Mist of aanvriezende mist",
+   "Gestadige lichte regen",
+   "Motregen of ijskristallen"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665848",
+  "topic": "30.10.1.4.3 Describe and interpret information from WX radar images",
+  "question": "De techniek die wordt gebruikt om kleinere, lokale weerradarbeelden samen te voegen tot beelden die grotere gebieden bestrijken, wordt aangeduid als:",
+  "options": [
+   "Scannen",
+   "Rasteren",
+   "Samenstellen",
+   "Combineren"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665849",
+  "topic": "30.10.1.4.3 Describe and interpret information from WX radar images",
+  "question": "De kleurvolgorde die in weerradarbeelden wordt gebruikt om de neerslagintensiteit van laag naar hoog aan te geven, is typisch:",
+  "options": [
+   "Groen - geel - blauw - rood",
+   "Blauw - groen - oranje - geel",
+   "Groen - geel - oranje - rood",
+   "Rood - oranje - geel - groen"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665835",
+  "topic": "30.10.2.1.1 Define the term 'significant weather' as potential hazards relevant for flight planning decisions",
+  "question": "Welke kaart geeft de meest nauwkeurige informatie over actuele vlieggevaren, zoals heldere luchtturbulentie (CAT) of de frequentie van onweersbuien?",
+  "options": [
+   "Windkaart",
+   "Hypsometrische grafiek",
+   "Oppervlakte weerkaart",
+   "Significante weerkaart (SWC)"
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665831",
+  "topic": "30.10.2.2.1 Describe the basic contents shown in surface weather charts (synoptic or analytic charts)",
+  "question": "Informatie over drukpatronen en frontale situatie is te vinden in welke grafiek?",
+  "options": [
+   "Hypsometrische grafiek",
+   "Weerkaart",
+   "Windkaart",
+   "Significante weerkaart (SWC)"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665836",
+  "topic": "30.10.2.2.1 Describe the basic contents shown in surface weather charts (synoptic or analytic charts)",
+  "question": "Gemeten drukverdeling in MSL en bijbehorende frontale systemen worden weergegeven op?",
+  "options": [
+   "Prognostische grafiek.",
+   "Significante weerkaart (SWC).",
+   "Hypsometrische grafiek.",
+   "Oppervlakte weerkaart."
+  ],
+  "correct": 3,
+  "images": []
+ },
+ {
+  "id": "665832",
+  "topic": "30.10.2.2.1 Describe the basic contents shown in surface weather charts (synoptic or analytic charts)",
+  "question": "Welke weerkaart toont de werkelijke luchtdruk in MSL, samen met drukcentra en fronten?",
+  "options": [
+   "Weerkaart",
+   "Hypsometrische grafiek",
+   "Prognostische grafiek",
+   "Windkaart"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665841",
+  "topic": "30.10.2.2.4 Describe the wind direction to be expected on a chart showing high and low pressure areas and isobars",
+  "question": "Wat kan men verwachten voor de heersende wind met isobaren op een weerkaart die grote afstanden aangeeft?",
+  "options": [
+   "Lagedruk gradiënten resulterend in sterke heersende wind",
+   "Lagedruk gradiënten resulterend in weinig heersende wind",
+   "Sterke drukgradiënten resulterend in sterke heersende wind",
+   "Sterke drukgradiënten resulterend in weinig heersende wind"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665768",
+  "topic": "30.10.2.2.4 Describe the wind direction to be expected on a chart showing high and low pressure areas and isobars",
+  "question": "Hoe kunnen windsnelheid en windrichting worden afgeleid uit oppervlakte-weerkaarten?",
+  "options": [
+   "Door annotaties uit het tekstgedeelte van de grafiek",
+   "Door uitlijning van lijnen van warme- en koudefronten.",
+   "Door uitlijning en afstand van de isobaren",
+   "Door uitlijning en afstand van hypsometrische lijnen"
+  ],
+  "correct": 2,
+  "images": []
+ },
+ {
+  "id": "665838",
+  "topic": "30.10.3.1.3 Define ATIS and describe content with structure, time of issue and validity period",
+  "question": "Weer- en operationele informatie over de luchthaven van bestemming kan tijdens de vlucht worden verkregen door...",
+  "options": [
+   "ATIS.",
+   "SIGMET.",
+   "VOLMET.",
+   "PIREP."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665837",
+  "topic": "30.10.3.1.4 List and interpret the lettergroups for METAR and TAF commonly used in Europe",
+  "question": "In een METAR, worden (matige) regenbuien aangeduid met",
+  "options": [
+   "SHRA.",
+   "TS.",
+   "+TSRA.",
+   "+RA."
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665842",
+  "topic": "30.10.3.1.4 List and interpret the lettergroups for METAR and TAF commonly used in Europe",
+  "question": "Welke wind wordt gerapporteerd als 225/15?",
+  "options": [
+   "Zuidwestenwind met 15 kt",
+   "Noordoostenwind met 15 kt",
+   "Zuidwestenwind met 15 km/u",
+   "Noordoostenwind met 15 km/u"
+  ],
+  "correct": 0,
+  "images": []
+ },
+ {
+  "id": "665839",
+  "topic": "30.10.3.4.1 Describe SIGMET and list criteria for issueing",
+  "question": "SIGMET-waarschuwingen worden uitgegeven voor...",
+  "options": [
+   "Landen.",
+   "FIRs/ UIRs.",
+   "Vliegvelden.",
+   "Specifieke routes"
+  ],
+  "correct": 1,
+  "images": []
+ },
+ {
+  "id": "665857",
+  "topic": "30.10.4.1.3 Describe how data from numerical weather prediction models can be used during flight",
+  "question": "Voorspellingen van numerieke weersvoorspellingsmodellen kunnen worden gebruikt om",
+  "options": [
+   "Een nauwkeurige voorspelling te maken van de wolken- en zichtbaarheidssituatie op een luchthaven tot 14 dagen.",
+   "De kwaliteit van HRV- en RGB-satellietbeelden te verbeteren.",
+   "Vluchtgevaren langs de geplande route te visualiseren.",
+   "De actuele wolken- en zichtsituatie op de luchthaven van bestemming te controleren."
+  ],
+  "correct": 2,
+  "images": []
+ }
+]
