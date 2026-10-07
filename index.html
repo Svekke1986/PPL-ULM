@@ -36,9 +36,6 @@
         .glow-accent {
             box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
         }
-        .glow-accent-lg {
-            box-shadow: 0 0 30px rgba(6, 182, 212, 0.4);
-        }
         .glass-panel {
             background: rgba(17, 30, 56, 0.85);
             backdrop-filter: blur(12px);
@@ -91,7 +88,7 @@
                 <div class="space-y-4">
                     <div>
                         <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Gemini API Key</label>
-                        <input type="password" id="apiKeyInput" placeholder="AIzaSy..." 
+                        <input type="password" id="apiKeyInput" placeholder="Plak hier je sleutel..." 
                             class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-sm transition">
                     </div>
 
@@ -105,14 +102,14 @@
                     <div class="pt-4 border-t border-slate-800 text-center">
                         <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs text-cyan-400 hover:text-cyan-300 underline">
                             <i class="fa-solid fa-external-link text-xs"></i>
-                            <span>Hoe krijg ik gratis een Gemini API Key? (Google AI Studio)</span>
+                            <span>Gratis een Gemini API Key ophalen via Google AI Studio</span>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- HOME VIEW: SELECT LICENSE & MODE -->
+        <!-- HOME VIEW -->
         <div id="homeView" class="space-y-8">
             <div class="text-center max-w-2xl mx-auto space-y-3">
                 <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Belgische Luchtvaart Examens</h2>
@@ -135,13 +132,12 @@
 
             <!-- Subject Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="subjectGrid">
-                <!-- Injected via JavaScript -->
+                <!-- Injected via JS -->
             </div>
         </div>
 
-        <!-- ACTIVE QUESTION / EXAM SCREEN -->
+        <!-- ACTIVE QUIZ/EXAM VIEW -->
         <div id="quizView" class="hidden space-y-6">
-            <!-- Quiz Status Bar -->
             <div class="glass-panel p-4 rounded-2xl flex flex-wrap justify-between items-center gap-4">
                 <div class="flex items-center space-x-3">
                     <button onclick="app.confirmExitQuiz()" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-sm transition">
@@ -154,13 +150,11 @@
                 </div>
 
                 <div class="flex items-center space-x-6">
-                    <!-- Progress Info -->
                     <div class="text-right">
                         <div class="text-xs text-slate-400 uppercase tracking-wider">Vraag</div>
                         <div class="text-base font-bold text-cyan-400" id="quizQuestionCount">1 / 20</div>
                     </div>
 
-                    <!-- Timer (Only visible in Exam Mode) -->
                     <div id="timerContainer" class="hidden text-right border-l border-slate-700 pl-6">
                         <div class="text-xs text-slate-400 uppercase tracking-wider">Resterende Tijd</div>
                         <div class="text-lg font-mono font-bold text-amber-400" id="quizTimer">40:00</div>
@@ -172,12 +166,11 @@
             <div id="quizLoader" class="glass-panel p-12 rounded-2xl text-center space-y-4">
                 <div class="inline-block animate-spin rounded-full h-12 w-12 border-4 border-cyan-500 border-t-transparent"></div>
                 <h4 class="text-lg font-bold text-white">Vraag genereren via AI...</h4>
-                <p class="text-sm text-slate-400 max-w-md mx-auto" id="loaderMessage">De vraag wordt samengesteld op basis van EASA/DGLV exameneisen en de Bas Vrijhof VFR theorie.</p>
+                <p class="text-sm text-slate-400 max-w-md mx-auto" id="loaderMessage">De vraag wordt gegenereerd met Gemini Flash op basis van EASA/DGLV normen en de Bas Vrijhof VFR theorie.</p>
             </div>
 
             <!-- Question Card -->
             <div id="questionCard" class="hidden glass-panel p-6 sm:p-8 rounded-2xl space-y-6">
-                <!-- Question Header & Text -->
                 <div class="space-y-3">
                     <div class="flex justify-between items-center">
                         <span id="questionSourceTag" class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono border border-slate-700">EASA SERA / AIP Belgium</span>
@@ -187,12 +180,10 @@
                     </h3>
                 </div>
 
-                <!-- Answer Options -->
                 <div id="optionsContainer" class="space-y-3">
                     <!-- Dynamically generated options -->
                 </div>
 
-                <!-- Explanation Box (Practice mode / After submit) -->
                 <div id="explanationBox" class="hidden p-5 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
                     <div class="flex items-center space-x-2 text-cyan-400 text-sm font-bold">
                         <i class="fa-solid fa-lightbulb"></i>
@@ -203,7 +194,6 @@
                     </p>
                 </div>
 
-                <!-- Footer / Action Buttons -->
                 <div class="flex justify-between items-center pt-4 border-t border-slate-800">
                     <button id="btnPrev" onclick="app.previousQuestion()" class="hidden px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-sm font-semibold text-slate-300 transition">
                         <i class="fa-solid fa-chevron-left mr-1"></i> Vorige
@@ -220,7 +210,7 @@
             </div>
         </div>
 
-        <!-- EXAM RESULTS SCREEN -->
+        <!-- RESULTS VIEW -->
         <div id="resultsView" class="hidden glass-panel p-8 rounded-2xl max-w-3xl mx-auto space-y-8 text-center">
             <div id="resultStatusIcon" class="w-24 h-24 mx-auto rounded-full flex items-center justify-center text-4xl">
                 <i class="fa-solid fa-trophy"></i>
@@ -231,7 +221,6 @@
                 <p id="resultSubtitle" class="text-slate-400 text-sm">Je hebt de vereiste grens van 75% behaald.</p>
             </div>
 
-            <!-- Score Circle/Box -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-xl mx-auto py-4">
                 <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800">
                     <div class="text-xs text-slate-400 uppercase">Score</div>
@@ -251,12 +240,9 @@
                 </div>
             </div>
 
-            <!-- Detailed Mistakes Review -->
             <div id="mistakesReviewContainer" class="text-left space-y-4 pt-4 border-t border-slate-800">
                 <h3 class="text-lg font-bold text-white">Review van Fouten</h3>
-                <div id="mistakesList" class="space-y-4">
-                    <!-- Injected list of wrong questions -->
-                </div>
+                <div id="mistakesList" class="space-y-4"></div>
             </div>
 
             <div class="pt-6 flex justify-center space-x-4">
@@ -271,17 +257,15 @@
 
     </main>
 
-    <!-- FOOTER -->
     <footer class="glass-panel border-t border-slate-800 py-4 px-4 text-center text-xs text-slate-500">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
             <p>Conform EASA FCL.125 / DGLV Belgische Luchtvaartregelgeving & VFR Theorie.</p>
-            <p>© 2026 AeroExam BE - Gemini AI Powered Engine</p>
+            <p>© AeroExam BE - Gemini AI Powered Engine</p>
         </div>
     </footer>
 
-    <!-- APPLICATION LOGIC JS -->
     <script>
-        // Official Subject Configuration
+        // Official Subject Config
         const SUBJECTS = {
             PPL: [
                 { id: 'air_law', name: 'Luchtvaartrecht', questions: 20, time: 40, icon: 'fa-scale-balanced', desc: 'SERA, ICAO Bijlagen, AIP België, Luchtruimstructuur' },
@@ -302,13 +286,14 @@
             ]
         };
 
-        // Application State
+        const GEMINI_MODELS = ["gemini-3.8-flash", "gemini-3.7-flash", "gemini-2.5-flash", "gemini-1.5-flash"];
+
         class AeroExamApp {
             constructor() {
                 this.apiKey = localStorage.getItem('gemini_api_key') || '';
                 this.currentLicense = 'PPL';
                 this.currentSubject = null;
-                this.currentMode = null; // 'practice' or 'exam'
+                this.currentMode = null;
                 this.questions = [];
                 this.currentIndex = 0;
                 this.userAnswers = [];
@@ -337,11 +322,36 @@
 
             updateApiKeyStatus(isValid) {
                 const statusEl = document.getElementById('apiKeyStatus');
-                if (isValid) {
-                    statusEl.classList.remove('hidden');
-                } else {
-                    statusEl.classList.add('hidden');
+                if (isValid) statusEl.classList.remove('hidden');
+                else statusEl.classList.add('hidden');
+            }
+
+            async callGeminiAPI(prompt) {
+                let lastError = null;
+                for (const model of GEMINI_MODELS) {
+                    try {
+                        const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${this.apiKey}`;
+                        const response = await fetch(url, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({
+                                contents: [{ parts: [{ text: prompt }] }],
+                                generationConfig: { responseMimeType: "application/json" }
+                            })
+                        });
+
+                        if (response.ok) {
+                            const data = await response.json();
+                            const jsonText = data.candidates[0].content.parts[0].text;
+                            return JSON.parse(jsonText);
+                        } else {
+                            lastError = new Error(`API ${model} gaf status ${response.status}`);
+                        }
+                    } catch (err) {
+                        lastError = err;
+                    }
                 }
+                throw lastError || new Error("Gemini API onbereikbaar op alle modellen");
             }
 
             async validateAndSaveKey() {
@@ -361,28 +371,15 @@
                 msgEl.classList.add('hidden');
 
                 try {
-                    // Quick test call to Gemini API
-                    const testPrompt = "Test key validity. Respond with JSON: {\"status\": \"ok\"}";
-                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${inputKey}`;
-                    
-                    const response = await fetch(apiUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({
-                            contents: [{ parts: [{ text: testPrompt }] }]
-                        })
-                    });
-
-                    if (!response.ok) {
-                        throw new Error(`API Fout: ${response.status}`);
-                    }
-
                     this.apiKey = inputKey;
+                    const testPrompt = `Geef exact dit JSON object terug: {"status": "ok"}`;
+                    await this.callGeminiAPI(testPrompt);
+
                     localStorage.setItem('gemini_api_key', inputKey);
                     this.updateApiKeyStatus(true);
                     this.closeApiKeyModal();
                 } catch (err) {
-                    msgEl.textContent = `Ongeldige API Sleutel of verbinding mislukt (${err.message}). Controleer je sleutel op Google AI Studio.`;
+                    msgEl.textContent = `Validatie mislukt (${err.message}). Controleer of de sleutel correct gekopieerd is uit Google AI Studio.`;
                     msgEl.className = 'text-xs p-3 rounded-lg bg-rose-950 border border-rose-800 text-rose-300';
                     msgEl.classList.remove('hidden');
                 } finally {
@@ -393,16 +390,12 @@
 
             selectLicense(type) {
                 this.currentLicense = type;
-                const tabPPL = document.getElementById('tabPPL');
-                const tabULM = document.getElementById('tabULM');
-
-                if (type === 'PPL') {
-                    tabPPL.className = 'px-6 py-2.5 rounded-xl font-bold text-sm transition flex items-center space-x-2 bg-cyan-500 text-slate-950 shadow-md';
-                    tabULM.className = 'px-6 py-2.5 rounded-xl font-bold text-sm transition flex items-center space-x-2 text-slate-400 hover:text-white';
-                } else {
-                    tabULM.className = 'px-6 py-2.5 rounded-xl font-bold text-sm transition flex items-center space-x-2 bg-cyan-500 text-slate-950 shadow-md';
-                    tabPPL.className = 'px-6 py-2.5 rounded-xl font-bold text-sm transition flex items-center space-x-2 text-slate-400 hover:text-white';
-                }
+                document.getElementById('tabPPL').className = type === 'PPL' ? 
+                    'px-6 py-2.5 rounded-xl font-bold text-sm transition flex items-center space-x-2 bg-cyan-500 text-slate-950 shadow-md' :
+                    'px-6 py-2.5 rounded-xl font-bold text-sm transition flex items-center space-x-2 text-slate-400 hover:text-white';
+                document.getElementById('tabULM').className = type === 'ULM' ? 
+                    'px-6 py-2.5 rounded-xl font-bold text-sm transition flex items-center space-x-2 bg-cyan-500 text-slate-950 shadow-md' :
+                    'px-6 py-2.5 rounded-xl font-bold text-sm transition flex items-center space-x-2 text-slate-400 hover:text-white';
 
                 this.renderSubjects();
             }
@@ -423,16 +416,15 @@
                                 </div>
                                 <div>
                                     <h3 class="font-bold text-white text-base leading-snug">${sub.name}</h3>
-                                    <span class="text-xs text-slate-400">${sub.questions} Vragen • ${sub.time} Minuten</span>
+                                    <span class="text-xs text-slate-400">${sub.questions} Vragen • ${sub.time} Min</span>
                                 </div>
                             </div>
                             <p class="text-xs text-slate-400 line-clamp-2">${sub.desc}</p>
                         </div>
-
                         <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-800">
                             <button onclick="app.startPractice('${sub.id}')" class="py-2 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 transition flex items-center justify-center space-x-1.5">
                                 <i class="fa-solid fa-graduation-cap text-cyan-400"></i>
-                                <span>Oefenmodus</span>
+                                <span>Oefenen</span>
                             </button>
                             <button onclick="app.startExam('${sub.id}')" class="py-2 px-3 rounded-xl bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 text-xs font-bold transition flex items-center justify-center space-x-1.5">
                                 <i class="fa-solid fa-clock"></i>
@@ -451,7 +443,6 @@
                 document.getElementById('resultsView').classList.add('hidden');
             }
 
-            // --- QUIZ & EXAM ENGINE ---
             startPractice(subjectId) {
                 if (!this.checkApiKey()) return;
                 this.currentSubject = SUBJECTS[this.currentLicense].find(s => s.id === subjectId);
@@ -475,18 +466,16 @@
                 this.setupQuizUI();
                 this.startTimer(this.currentSubject.time * 60);
 
-                // Fetch exam question set
                 document.getElementById('quizLoader').classList.remove('hidden');
                 document.getElementById('questionCard').classList.add('hidden');
                 document.getElementById('loaderMessage').textContent = `AI stelt momenteel het volledige examen samen (${this.currentSubject.questions} vragen)...`;
 
                 try {
-                    const fetchedQuestions = await this.generateExamSetFromAI(this.currentSubject, this.currentLicense);
-                    this.questions = fetchedQuestions;
+                    const prompt = `Je bent de examencommissie BCAA/DGLV België. Genereer een examenset van ${this.currentSubject.questions} vragen voor '${this.currentSubject.name}' (${this.currentLicense}).
+Geef een JSON ARRAY terug: [{"question": "...", "options": ["A","B","C","D"], "correct": 0, "explanation": "...", "source": "..."}]`;
+                    this.questions = await this.callGeminiAPI(prompt);
                     this.displayCurrentExamQuestion();
                 } catch (e) {
-                    console.error(e);
-                    // Fallback generator if rate limit or network error
                     this.questions = this.generateFallbackQuestions(this.currentSubject, this.currentSubject.questions);
                     this.displayCurrentExamQuestion();
                 }
@@ -508,11 +497,10 @@
                 document.getElementById('quizBadge').textContent = this.currentLicense;
                 document.getElementById('quizSubjectTitle').textContent = `${this.currentSubject.name} (${this.currentMode === 'exam' ? 'Examen' : 'Oefenen'})`;
 
-                const timerContainer = document.getElementById('timerContainer');
                 if (this.currentMode === 'exam') {
-                    timerContainer.classList.remove('hidden');
+                    document.getElementById('timerContainer').classList.remove('hidden');
                 } else {
-                    timerContainer.classList.add('hidden');
+                    document.getElementById('timerContainer').classList.add('hidden');
                 }
             }
 
@@ -538,87 +526,31 @@
                 this.timerInterval = setInterval(updateDisplay, 1000);
             }
 
-            // AI Question Generation Call
             async fetchAndDisplayQuestion() {
                 document.getElementById('quizLoader').classList.remove('hidden');
                 document.getElementById('questionCard').classList.add('hidden');
                 document.getElementById('quizQuestionCount').textContent = `${this.currentIndex + 1} (Eindeloos)`;
 
                 try {
-                    const q = await this.generateSingleQuestionFromAI(this.currentSubject, this.currentLicense);
+                    const prompt = `Genereer 1 meerkeuzevraag voor Belgisch brevet ${this.currentLicense} vak '${this.currentSubject.name}'. Bas Vrijhof VFR theorie.
+JSON object: {"question": "...", "options": ["A","B","C","D"], "correct": 0, "explanation": "...", "source": "..."}`;
+                    const q = await this.callGeminiAPI(prompt);
                     this.questions[this.currentIndex] = q;
                     this.displayCurrentPracticeQuestion();
                 } catch (err) {
-                    console.warn("AI generation failed, using fallback", err);
                     const q = this.generateFallbackQuestions(this.currentSubject, 1)[0];
                     this.questions[this.currentIndex] = q;
                     this.displayCurrentPracticeQuestion();
                 }
             }
 
-            async generateSingleQuestionFromAI(subject, license) {
-                const systemPrompt = `Je bent een officiële examencommissie-expert voor de Belgische Luchtvaartautoriteiten (BCAA / DGLV) en docent VFR theorie (Bas Vrijhof handboek).
-Genereer 1 unieke, hoogwaardige meerkeuzevraag over het vak '${subject.name}' voor het ${license} brevet.
-Geef je antwoord uitsluitend als een geldig JSON object zonder markdown codeblocks.
-Format:
-{
-  "question": "Duidelijke vraagstelling in het Nederlands",
-  "options": ["Optie A", "Optie B", "Optie C", "Optie D"],
-  "correct": 0,
-  "explanation": "Gedetailleerde uitleg gebaseerd op Bas Vrijhof VFR theorie of Belgische regelgeving",
-  "source": "EASA SERA / AIP Belgium / KB ULM / Bas Vrijhof"
-}`;
-
-                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${this.apiKey}`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        contents: [{ parts: [{ text: systemPrompt }] }],
-                        generationConfig: { responseMimeType: "application/json" }
-                    })
-                });
-
-                const data = await response.json();
-                const jsonText = data.candidates[0].content.parts[0].text;
-                return JSON.parse(jsonText);
-            }
-
-            async generateExamSetFromAI(subject, license) {
-                const systemPrompt = `Je bent een examencommissie van de Belgische Luchtvaart (BCAA/DGLV).
-Genereer een volledige examenset van ${subject.questions} unieke, realistisch samengestelde examenvragen over '${subject.name}' voor het ${license} brevet.
-Inclusief regelgeving (AIP België, SERA, KB ULM) en Bas Vrijhof VFR theorie.
-Geef een JSON ARRAY terug van vragen. Geen extra tekst of markdown codeblocks.
-Format per item in de array:
-{
-  "question": "string",
-  "options": ["A", "B", "C", "D"],
-  "correct": integer (0..3),
-  "explanation": "string",
-  "source": "string"
-}`;
-
-                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${this.apiKey}`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        contents: [{ parts: [{ text: systemPrompt }] }],
-                        generationConfig: { responseMimeType: "application/json" }
-                    })
-                });
-
-                const data = await response.json();
-                const jsonText = data.candidates[0].content.parts[0].text;
-                return JSON.parse(jsonText);
-            }
-
-            // Rendering Questions
             displayCurrentPracticeQuestion() {
                 document.getElementById('quizLoader').classList.add('hidden');
                 document.getElementById('questionCard').classList.remove('hidden');
 
                 const q = this.questions[this.currentIndex];
                 document.getElementById('questionText').textContent = q.question;
-                document.getElementById('questionSourceTag').textContent = q.source || 'EASA / DGLV Reglementering';
+                document.getElementById('questionSourceTag').textContent = q.source || 'EASA / DGLV';
 
                 const optsContainer = document.getElementById('optionsContainer');
                 optsContainer.innerHTML = '';
@@ -626,10 +558,9 @@ Format per item in de array:
                 q.options.forEach((opt, idx) => {
                     const btn = document.createElement('button');
                     btn.className = `w-full text-left p-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/50 transition flex items-center space-x-3 text-sm text-slate-200 option-btn`;
-                    btn.dataset.index = idx;
                     btn.onclick = () => this.selectOption(idx);
                     btn.innerHTML = `
-                        <span class="w-7 h-7 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-xs text-cyan-400 opt-letter">${String.fromCharCode(65 + idx)}</span>
+                        <span class="w-7 h-7 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-xs text-cyan-400">${String.fromCharCode(65 + idx)}</span>
                         <span class="flex-grow">${opt}</span>
                     `;
                     optsContainer.appendChild(btn);
@@ -649,7 +580,7 @@ Format per item in de array:
 
                 const q = this.questions[this.currentIndex];
                 document.getElementById('questionText').textContent = q.question;
-                document.getElementById('questionSourceTag').textContent = q.source || 'EASA / DGLV Reglementering';
+                document.getElementById('questionSourceTag').textContent = q.source || 'EASA / DGLV';
 
                 const optsContainer = document.getElementById('optionsContainer');
                 optsContainer.innerHTML = '';
@@ -688,11 +619,9 @@ Format per item in de array:
             selectOption(idx) {
                 const btns = document.querySelectorAll('.option-btn');
                 btns.forEach((btn, i) => {
-                    if (i === idx) {
-                        btn.className = 'w-full text-left p-4 rounded-xl bg-cyan-500/20 border-cyan-500 text-white font-semibold border option-btn flex items-center space-x-3 text-sm';
-                    } else {
-                        btn.className = 'w-full text-left p-4 rounded-xl bg-slate-900/80 border-slate-800 text-slate-200 hover:border-cyan-500/50 border option-btn flex items-center space-x-3 text-sm';
-                    }
+                    btn.className = (i === idx) ? 
+                        'w-full text-left p-4 rounded-xl bg-cyan-500/20 border-cyan-500 text-white font-semibold border option-btn flex items-center space-x-3 text-sm' :
+                        'w-full text-left p-4 rounded-xl bg-slate-900/80 border-slate-800 text-slate-200 hover:border-cyan-500/50 border option-btn flex items-center space-x-3 text-sm';
                 });
                 this.selectedPracticeOption = idx;
             }
@@ -714,7 +643,6 @@ Format per item in de array:
 
                 document.getElementById('explanationText').textContent = q.explanation;
                 document.getElementById('explanationBox').classList.remove('hidden');
-
                 document.getElementById('btnCheck').classList.add('hidden');
                 document.getElementById('btnNext').classList.remove('hidden');
             }
@@ -770,13 +698,10 @@ Format per item in de array:
                 const pct = Math.round((correctCount / this.questions.length) * 100);
                 const passed = pct >= 75;
 
-                // Time calculation
                 const timeUsedSecs = this.examTotalSeconds - Math.max(0, this.secondsLeft);
                 const mins = Math.floor(timeUsedSecs / 60);
                 const secs = timeUsedSecs % 60;
-                const timeFormatted = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
 
-                // UI Render Results
                 document.getElementById('quizView').classList.add('hidden');
                 document.getElementById('resultsView').classList.remove('hidden');
 
@@ -784,18 +709,17 @@ Format per item in de array:
                 if (passed) {
                     statusIcon.className = 'w-24 h-24 mx-auto rounded-full flex items-center justify-center text-4xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30';
                     document.getElementById('resultTitle').textContent = 'Gefeliciteerd! Geslaagd!';
-                    document.getElementById('resultSubtitle').textContent = `Je behaalde de EASA/DGLV slaaggarantie van minimaal 75%.`;
+                    document.getElementById('resultSubtitle').textContent = `Je behaalde de EASA/DGLV slaagnorm van 75%.`;
                 } else {
                     statusIcon.className = 'w-24 h-24 mx-auto rounded-full flex items-center justify-center text-4xl bg-rose-500/20 text-rose-400 border border-rose-500/30';
                     document.getElementById('resultTitle').textContent = 'Niet Geslaagd';
-                    document.getElementById('resultSubtitle').textContent = `Je score ligt onder de vereiste 75% grens. Oefen nog eens!`;
+                    document.getElementById('resultSubtitle').textContent = `Je score ligt onder de vereiste 75% grens.`;
                 }
 
                 document.getElementById('resultScorePct').textContent = `${pct}%`;
                 document.getElementById('resultScoreCorrect').textContent = `${correctCount} / ${this.questions.length}`;
-                document.getElementById('resultTimeUsed').textContent = timeFormatted;
+                document.getElementById('resultTimeUsed').textContent = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
 
-                // Mistakes list
                 const mistakesContainer = document.getElementById('mistakesList');
                 mistakesContainer.innerHTML = '';
 
@@ -830,7 +754,6 @@ Format per item in de array:
                 }
             }
 
-            // Fallback Algorithmic Generator for offline/rate-limit backup
             generateFallbackQuestions(subject, count) {
                 const list = [];
                 for (let i = 0; i < count; i++) {
@@ -839,7 +762,7 @@ Format per item in de array:
                         options: [
                             "Zicht op de grond of het water behouden bij VMC condities",
                             "Continue IFR navigatie aanvragen bij Brussels Control",
-                            "Transponder instellen op Sqwawk 7700 tijdens Kruisvlucht",
+                            "Transponder instellen op Squawk 7700 tijdens Kruisvlucht",
                             "Geen radioverplichting in Klasse C luchtruim"
                         ],
                         correct: 0,
@@ -851,7 +774,6 @@ Format per item in de array:
             }
         }
 
-        // Initialize App on DOM Ready
         let app;
         window.addEventListener('DOMContentLoaded', () => {
             app = new AeroExamApp();
