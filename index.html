@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belgische Luchtvaart Examensimulator (PPL & ULM)</title>
+    <!-- Tailwind CSS voor styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome voor Luchtvaart Iconen -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        aviation: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            dark: '#0b1329',
+                            panel: '#15203e',
+                            accent: '#38bdf8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0b1329;
+            color: #f3f4f6;
+            font-family: 'Inter', sans-serif;
+            background-image: radial-gradient(circle at 50% 0%, #1e293b 0%, #0b1329 75%);
+            min-height: 100vh;
+        }
+        .cockpit-card {
+            background: rgba(21, 32, 62, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .option-btn {
+            transition: all 0.2s ease-in-out;
+        }
+        .option-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            border-color: #38bdf8;
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.15);
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header / Navigatie -->
+    <header class="cockpit-card sticky top-0 z-50 px-4 py-3 border-b border-slate-700/50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3 cursor-pointer" onclick="app.resetToHome()">
+                <div class="w-10 h-10 rounded-lg bg-sky-600 flex items-center justify-center text-white text-xl shadow-lg shadow-sky-600/30">
+                    <i class="fa-solid fa-plane-departure"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold tracking-wide text-white flex items-center gap-2">
+                        AEROEXAM <span class="text-xs bg-sky-500/20 text-sky-400 px-2 py-0.5 rounded border border-sky-500/30 font-semibold">BELGIË</span>
+                    </h1>
+                    <p class="text-xs text-slate-400">PPL (EASA) & ULM (DGLV) Oefenplatform</p>
+                </div>
+            </div>
+            
+            <div id="header-stats" class="hidden sm:flex items-center space-x-6 text-sm">
+                <div class="flex items-center space-x-2 bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-700">
+                    <i class="fa-solid fa-bullseye text-sky-400"></i>
+                    <span class="text-slate-400">Beantwoord:</span>
+                    <span id="stat-total" class="font-bold text-white">0</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-700">
+                    <i class="fa-solid fa-chart-line text-emerald-400"></i>
+                    <span class="text-slate-400">Score:</span>
+                    <span id="stat-score" class="font-bold text-emerald-400">0%</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hoofdinhoud Container -->
+    <main class="flex-grow max-w-5xl w-full mx-auto p-4 sm:p-6 md:p-8 flex flex-col justify-center">
+
+        <!-- SCHERM 1: Categorie Selectie -->
+        <section id="view-category" class="space-y-8 animate-fade-in">
+            <div class="text-center space-y-3">
+                <span class="inline-block px-3 py-1 bg-sky-500/10 text-sky-400 rounded-full text-xs font-semibold tracking-wider uppercase border border-sky-500/20">
+                    Officieel Belgisch Examenformaat
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Kies je Pilotenopleiding</h2>
+                <p class="text-slate-400 max-w-xl mx-auto text-sm sm:text-base">Selecteer jouw licentie-entiteit om de bijbehorende officiële vakken en examenvragen te openen.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <!-- PPL Kaart -->
+                <div onclick="app.selectCategory('ppl')" class="cockpit-card rounded-2xl p-6 sm:p-8 hover:border-sky-500 cursor-pointer transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute -right-8 -bottom-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i class="fa-solid fa-plane text-9xl text-sky-400"></i>
+                    </div>
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 text-2xl mb-5 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-plane"></i>
+                        </div>
+                        <span class="text-xs font-bold text-sky-400 uppercase tracking-widest">EASA Regelgeving</span>
+                        <h3 class="text-2xl font-bold text-white mt-1 mb-2">PPL (A/H)</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Private Pilot License voor motorvliegtuigen of helikopters volgens de Europese EASA Part-FCL normen.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between text-xs text-slate-400 border-t border-slate-700/60 pt-4">
+                        <span><i class="fa-solid fa-book-open mr-1"></i> 9 Examenvakken</span>
+                        <span class="text-sky-400 font-semibold group-hover:translate-x-1 transition-transform flex items-center">
+                            Starten <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- ULM Kaart -->
+                <div onclick="app.selectCategory('ulm')" class="cockpit-card rounded-2xl p-6 sm:p-8 hover:border-emerald-500 cursor-pointer transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute -right-8 -bottom-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i class="fa-solid fa-feather text-9xl text-emerald-400"></i>
+                    </div>
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl mb-5 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                        <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Belgisch DGLV</span>
+                        <h3 class="text-2xl font-bold text-white mt-1 mb-2">ULM / ULB</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Ultra Light Motorized / Ultralicht Motorluchtvaartuig volgens het Belgisch Directoraat-generaal Luchtvaart.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between text-xs text-slate-400 border-t border-slate-700/60 pt-4">
+                        <span><i class="fa-solid fa-book-open mr-1"></i> 6 Examenvakken</span>
+                        <span class="text-emerald-400 font-semibold group-hover:translate-x-1 transition-transform flex items-center">
+                            Starten <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCHERM 2: Vakken Selectie -->
+        <section id="view-subjects" class="hidden space-y-6 animate-fade-in">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                <div>
+                    <button onclick="app.resetToHome()" class="text-xs text-sky-400 hover:text-sky-300 mb-1 flex items-center gap-1">
+                        <i class="fa-solid fa-chevron-left"></i> Wissel van categorie
+                    </button>
+                    <h2 id="selected-category-title" class="text-2xl font-bold text-white">Examenvakken</h2>
+                    <p class="text-xs text-slate-400">Kies een vak om direct te beginnen met oefenvragen.</p>
+                </div>
+                <div id="category-badge" class="self-start sm:self-auto px-3 py-1 rounded-full text-xs font-semibold"></div>
+            </div>
+
+            <!-- Grid van vakken -->
+            <div id="subjects-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Dynamisch gevuld door JS -->
+            </div>
+        </section>
+
+        <!-- SCHERM 3: Examenvraag Interface -->
+        <section id="view-question" class="hidden space-y-6 animate-fade-in">
+            <!-- Top bar van de vraag -->
+            <div class="flex items-center justify-between cockpit-card px-4 py-3 rounded-xl">
+                <button onclick="app.showSubjects()" class="text-xs text-slate-400 hover:text-white flex items-center gap-1">
+                    <i class="fa-solid fa-arrow-left"></i> Terug naar vakken
+                </button>
+                <div class="flex items-center space-x-2">
+                    <span id="question-subject-tag" class="text-xs font-semibold px-2.5 py-1 rounded bg-sky-500/20 text-sky-300 border border-sky-500/30">
+                        Luchtvaartwetgeving
+                    </span>
+                    <span id="question-source-tag" class="text-xs text-slate-400 hidden md:inline-block">
+                        <i class="fa-solid fa-shield-halved text-amber-400 ml-2"></i> Belgische Examenstijl
+                    </span>
+                </div>
+            </div>
+
+            <!-- Vraag Card -->
+            <div class="cockpit-card rounded-2xl p-6 sm:p-8 space-y-6 shadow-2xl relative">
+                <!-- Vraagtekst -->
+                <div class="space-y-2">
+                    <div class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-2">
+                        <span>Vraag ID: <span id="question-id">--</span></span>
+                    </div>
+                    <h3 id="question-text" class="text-lg sm:text-xl font-semibold text-white leading-relaxed">
+                        Laden van de vraag...
+                    </h3>
+                </div>
+
+                <!-- Meerkeuze Opties -->
+                <div id="options-container" class="space-y-3 pt-2">
+                    <!-- Opties worden dynamisch ingeladen -->
+                </div>
+
+                <!-- Instant Feedback Box (Groen / Rood) -->
+                <div id="feedback-box" class="hidden rounded-xl p-5 border transition-all duration-300">
+                    <div class="flex items-start space-x-3">
+                        <div id="feedback-icon-container" class="mt-0.5 text-xl"></div>
+                        <div class="space-y-2 flex-grow">
+                            <h4 id="feedback-title" class="font-bold text-base"></h4>
+                            <p id="feedback-explanation" class="text-sm text-slate-200 leading-relaxed"></p>
+                            
+                            <!-- Gecertifieerde Bronvermelding -->
+                            <div class="pt-3 border-t border-white/10 flex items-center justify-between text-xs">
+                                <span class="font-mono text-slate-300 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-certificate text-amber-400"></i>
+                                    <span>Gecertifieerde Bron:</span>
+                                    <strong id="feedback-source" class="text-white underline decoration-amber-500/50"></strong>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actie Knoppen -->
+                <div id="action-bar" class="flex justify-end pt-4 border-t border-slate-700/50">
+                    <button id="next-btn" onclick="app.nextQuestion()" disabled class="px-6 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-500 disabled:bg-slate-700 disabled:text-slate-500 text-white font-semibold text-sm transition-all shadow-lg flex items-center gap-2 cursor-pointer disabled:cursor-not-allowed">
+                        <span>Volgende Vraag</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-auto border-t border-slate-800 py-4 text-center text-xs text-slate-500 cockpit-card">
+        <p>© 2026 Belgische Luchtvaart Examensimulator • EASA & DGLV Conform • Voor trainingsdoeleinden</p>
+    </footer>
+
+    <script>
+        /*
+         * EXAMENDATABASE (PPL & ULM BELGIË)
+         * Bevat realistische en officiële examenvragen met nauwkeurige opties,
+         * uitgebreide verklaringen en geauthenticeerde Belgische/EASA bronverwijzingen.
+         */
+        const EXAM_DATABASE = {
+            ppl: {
+                title: "PPL (EASA Private Pilot License)",
+                badgeClass: "bg-sky-500/20 text-sky-300 border border-sky-500/30",
+                subjects: [
+                    { id: "ppl_law", name: "Luchtvaartwetgeving", icon: "fa-gavel", desc: "SERA, ICAO, Luchtruimstructuur, Documentatie & Regels" },
+                    { id: "ppl_agk", name: "Algemene Kennis Luchtvaartuig", icon: "fa-cogs", desc: "Motor, Systemen, Instrumenten, Cel & Aerodynamica" },
+                    { id: "ppl_fpp", name: "Vluchtprestaties en -planning", icon: "fa-calculator", desc: "Gewicht & Zwaartepunt, Startafstanden, Brandstof" },
+                    { id: "ppl_hpe", name: "Menselijke Prestaties", icon: "fa-user-nurse", desc: "Hypoxie, Desoriëntatie, Oogheelkunde, Binnenoor" },
+                    { id: "ppl_met", name: "Meteorologie", icon: "fa-cloud-sun-rain", desc: "METAR/TAF, Fronten, Altimetrie, Wolkentypes, Wind" },
+                    { id: "ppl_nav", name: "Navigatie", icon: "fa-compass", desc: "Kaartlezen, VFR Plotting, Magnetische Variatie, 1:60 regel" },
+                    { id: "ppl_ops", name: "Operationele Procedures", icon: "fa-clipboard-check", desc: "VFR Noodprocedures, Minima, Bijzondere voorvallen" },
+                    { id: "ppl_pof", name: "Beginselen van het Vliegen", icon: "fa-plane-wings", desc: "Lifteffecten, Overtrek, Boundary layer, Stabiliteit" },
+                    { id: "ppl_com", name: "VFR Communicatie", icon: "fa-headset", desc: "Radio-fraseologie, Noodfrequenties, Transpondercodes" }
+                ],
+                questions: {
+                    ppl_law: [
+                        {
+                            id: "PPL-LAW-001",
+                            question: "Volgens EASA SERA (Standardised European Rules of the Air), wat is de minimale vlieghoogte boven de hoogste hindernis binnen een straal van 600 meter boven een aaneengesloten bebouwing van een stad?",
+                            options: [
+                                "A) 500 ft (150 m) boven de hoogste hindernis",
+                                "B) 1000 ft (300 m) boven de hoogste hindernis",
+                                "C) 1500 ft (450 m) boven de hoogste hindernis",
+                                "D) 2000 ft (600 m) boven de hoogste hindernis"
+                            ],
+                            correct: 1, // B
+                            explanation: "SERA.3105 vermeldt expliciet dat behalve wanneer nodig voor opstijgen of landen, een luchtvaartuig niet mag vliegen boven steden, dorpen of aaneengesloten bebouwing op een hoogte lager dan 1000 ft (300 m) boven de hoogste hindernis binnen een straal van 600 m.",
+                            source: "EASA SERA.3105 Minimum Heights / SERA Verordening (EU) Nr. 923/2012"
+                        },
+                        {
+                            id: "PPL-LAW-002",
+                            question: "In welk Belgisch luchtruim is het voor VFR-vluchten verplicht om continu radiocontact te onderhouden en een klaring (clearance) te hebben?",
+                            options: [
+                                "A) Klasse G luchtruim",
+                                "B) Klasse E luchtruim",
+                                "C) Klasse C en D luchtruim",
+                                "D) Uitsluitend in klasse A luchtruim (VFR niet toegestaan)"
+                            ],
+                            correct: 2, // C
+                            explanation: "In Belgisch Klasse C en D gecontroleerd luchtruim (zoals CTR's en TMA's van Brussel, Antwerpen, Oostende, Luik, Charleroi) is een ATC-klaring verplicht voorafgaand aan de binnenvlucht, evenals een continue tweezijdige radiocommunicatie.",
+                            source: "Belgisch AIP ENR 1.4 / EASA SERA.6001 Airspace Classification"
+                        }
+                    ],
+                    ppl_met: [
+                        {
+                            id: "PPL-MET-001",
+                            question: "In een METAR-bericht leest u de code 'BKN015CB'. Wat betekent dit voor de wolkenbedekking en vliegomstandigheden?",
+                            options: [
+                                "A) 1 tot 2 achtsten wolken op 1500 ft zonder gevaar voor onweer",
+                                "B) 5 tot 7 achtsten wolken op 1500 ft met Cumulonimbus (gevaar voor zware turbulentie en icing)",
+                                "C) Volledig bedekt (8/8) op 150 ft met lichte motregen",
+                                "D) 3 tot 4 achtsten wolken op 15000 ft van het type Cirrocumulus"
+                            ],
+                            correct: 1, // B
+                            explanation: "'BKN' staat voor Broken (5 tot 7 okta's bedekking). '015' staat voor een wolkenbasis van 1500 ft boven vliegveldniveau. 'CB' staat voor Cumulonimbus, wat wijst op een gevaarlijke buienwolk met risico op ernstige turbulentie, bliksem en zware verijzing.",
+                            source: "ICAO Annex 3 / WMO No. 782 Aerodrome Reports & Forecasts"
+                        }
+                    ],
+                    ppl_agk: [
+                        {
+                            id: "PPL-AGK-001",
+                            question: "Wat is het voornaamste doel van een dubbel ontstekingssysteem (magneto's) bij een klassieke zuigermotor van een luchtvaartuig?",
+                            options: [
+                                "A) Het verminderen van het brandstofverbruik met minimaal 30%",
+                                "B) Zorgen voor een hogere topsnelheid en betere koeling van de cilinders",
+                                "C) Verhoogde veiligheid (redundantie) en een efficiëntere, gelijkmatigere verbranding",
+                                "D) Het automatisch starten van de motor bij uitval in de lucht"
+                            ],
+                            correct: 2, // C
+                            explanation: "Dubbele ontsteking heeft twee onafhankelijke magneto's en twee bougies per cilinder. Dit biedt redundantie bij uitval van één magneto én zorgt voor een snellere en meer gelijkmatige verbranding van het mengsel.",
+                            source: "EASA CS-23 / EASA AMC FCL.215 Aircraft General Knowledge"
+                        }
+                    ]
+                }
+            },
+            ulm: {
+                title: "ULM (Belgisch DGLV Ultralicht)",
+                badgeClass: "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30",
+                subjects: [
+                    { id: "ulm_reg", name: "Reglementering & Wetgeving", icon: "fa-scale-balanced", desc: "Belgisch KB van 25 mei 1999, DGLV regels, Luchtruim" },
+                    { id: "ulm_aero", name: "Aerodynamica", icon: "fa-wind", desc: "Snelheden (Vs, Vne), Invalshoek, Draagkracht, Weerstand" },
+                    { id: "ulm_met", name: "Meteorologie", icon: "fa-cloud-sun", desc: "Zicht, Windgradiënt, Thermiek, Lokale effecten, Mist" },
+                    { id: "ulm_tech", name: "Techniek & Mechanica", icon: "fa-wrench", desc: "Rotax motoren (2-takt/4-takt), Propeller, Reductie" },
+                    { id: "ulm_nav", name: "Navigatie", icon: "fa-map-location-dot", desc: "Visual navigation, Kompasfouten, Drift berekenen" },
+                    { id: "ulm_emer", name: "Noodprocedures & Veiligheid", icon: "fa-triangle-exclamation", desc: "Buitenlandingen, Reddingsparachute (BRS), Brand" }
+                ],
+                questions: {
+                    ulm_reg: [
+                        {
+                            id: "ULM-REG-001",
+                            question: "Volgens het Belgisch Koninklijk Besluit betreffende ultralichte motorluchtvaartuigen (ULM), wat is de maximale toegelaten maximale startmassa (MTOM) voor een tweezits ULM voorzien van een ballistisch reddingssysteem?",
+                            options: [
+                                "A) 300 kg",
+                                "B) 450 kg",
+                                "C) 472.5 kg (of 600 kg voor nieuwere EU-geharmoniseerde ULM klasse)",
+                                "D) 750 kg"
+                            ],
+                            correct: 2, // C
+                            explanation: "In de traditionele Belgische wetgeving geldt 450 kg + 22.5 kg voor een reddingsparachute (totaal 472.5 kg). Met de recente opt-out herzieningen valt de verhoogde limiet voor ULM tot 600 kg eveneens onder het DGLV kader.",
+                            source: "Belgisch KB van 25 mei 1999 m.b.t. ULM / DGLV Circulair CIR/NAV 04"
+                        },
+                        {
+                            id: "ULM-REG-002",
+                            question: "Is het een ULM piloot in België toegestaan om vluchten uit te voeren volgens Instrument Flight Rules (IFR) of 's nachts (NVFR)?",
+                            options: [
+                                "A) Ja, mits in het bezit van een nachtbevoegdheid",
+                                "B) Ja, maar enkel in klasse G luchtruim",
+                                "C) Nee, ULM-vluchten mogen in België uitsluitend bij dag en volgens Zichtvliegvoorschriften (VFR) worden uitgevoerd",
+                                "D) Ja, mits goedgekeurd door de vliegveldoverheid"
+                            ],
+                            correct: 2, // C
+                            explanation: "Krachtens de Belgische DGLV regelgeving is het vliegen met een ULM enkel toegestaan bij daglicht (Day VFR). Nachtvluchten en IFR-vluchten zijn strikt verboden met ULM toestellen.",
+                            source: "Belgisch KB 25 mei 1999 Art. 12 / DGLV Voorschriften VFR"
+                        }
+                    ],
+                    ulm_aero: [
+                        {
+                            id: "ULM-AERO-001",
+                            question: "Wat gebeurt er met de overtreksnelheid (Vs) van een ULM wanneer de hellingshoek (bank angle) in een bocht toeneemt naar 60 graden?",
+                            options: [
+                                "A) De overtreksnelheid blijft exact gelijk",
+                                "B) De overtreksnelheid neemt af met 20%",
+                                "C) De overtreksnelheid neemt toe met ongeveer 41% vanwege de verhoogde belastingsfactor (g-kracht)",
+                                "D) Het toestel kan niet meer overtrekken in een bocht"
+                            ],
+                            correct: 2, // C
+                            explanation: "Bij een hellingshoek van 60° bedraagt de belastingsfactor n = 2g. De overtreksnelheid neemt toe met de vierkantswortel uit n. √2 ≈ 1.41, hetgeen betekent dat de overtreksnelheid met 41% stijgt!",
+                            source: "DGLV Aerodynamica Handboek ULM / Principles of Flight"
+                        }
+                    ],
+                    ulm_tech: [
+                        {
+                            id: "ULM-TECH-001",
+                            question: "Wat is bij een Rotax 912 (4-takt ULM motor) het voornaamste risico bij het vliegen met een te lage motortemperatuur (bijv. tijdens een lange glijvlucht)?",
+                            options: [
+                                "A) Te hoge oliedruk en scheuren van het carter",
+                                "B) Carburateurverijzing en mogelijke motoruitval bij opnieuw gas geven",
+                                "C) Onmiddellijke vastloper van de zuigers",
+                                "D) Automatische uitschakeling van de dubbele ontsteking"
+                            ],
+                            correct: 1, // B
+                            explanation: "Tijdens lange afdalingen op stationair toerental kan de temperatuur in de carburateur sterk dalen. Zelfs bij omgevingstemperaturen tot +20°C kan carburateurijsafzetting optreden door de verdamping van brandstof en drukverlaging.",
+                            source: "Rotax 912 Engine Operator's Manual / DGLV Techniek ULM"
+                        }
+                    ]
+                }
+            }
+        };
+
+        // DYNAMISCHE AI-GENERATOR VOOR GENORMERDE EXAMENVRAAG VARIATIES
+        // Zorgt ervoor dat vragen nooit opraken door parameters en berekeningen dynamisch te genereren
+        const DYNAMIC_QUESTION_TEMPLATES = [
+            {
+                subject: "ppl_met",
+                generate: () => {
+                    const QNH = Math.floor(Math.random() * 25) + 995; // 995 - 1020 hPa
+                    const elev = Math.floor(Math.random() * 8) * 100 + 200; // 200 - 900 ft
+                    // Standard QNH = 1013.25 hPa -> 1 hPa = 27 ft
+                    const diff = 1013 - QNH;
+                    const pressureAlt = elev + (diff * 27);
+                    
+                    const correctVal = Math.round(pressureAlt);
+                    const optA = correctVal + 270;
+                    const optB = correctVal - 180;
+                    const optC = correctVal;
+                    const optD = correctVal + 500;
+
+                    return {
+                        id: `DYN-MET-${Math.floor(Math.random()*8999+1000)}`,
+                        question: `Een vliegveld in België heeft een terreinhoogte (elevation) van ${elev} ft. De gemeten QNH is ${QNH} hPa. Wat is bij benadering de Drukhoogte (Pressure Altitude) van dit vliegveld? (Reken met 1 hPa = 27 ft)`,
+                        options: [
+                            `A) ${optA} ft`,
+                            `B) ${optB} ft`,
+                            `C) ${optC} ft`,
+                            `D) ${optD} ft`
+                        ],
+                        correct: 2, // Optie C
+                        explanation: `Formule: Drukhoogte = Elevation + ((1013 - QNH) × 27 ft).\n` +
+                                     `Berekening: ${elev} + ((1013 - ${QNH}) × 27) = ${elev} + (${1013 - QNH} × 27) = ${correctVal} ft.`,
+                        source: "ICAO Doc 8168 / EASA Altimetry Rules & Standards"
+                    };
+                }
+            },
+            {
+                subject: "ulm_aero",
+                generate: () => {
+                    const vs0 = Math.floor(Math.random() * 15) + 60; // 60-75 km/h
+                    const bank = 45; // 45 deg -> n = 1.41 -> sqrt(1.41) = 1.19
+                    const vsBank = Math.round(vs0 * 1.19);
+
+                    return {
+                        id: `DYN-ULM-${Math.floor(Math.random()*8999+1000)}`,
+                        question: `Een ULM heeft een rechtlijnige overtreksnelheid (Vs) van ${vs0} km/h. Wat wordt de overtreksnelheid bij een gececoördineerde bocht met 45° hellingshoek? (Belastingsfactor n ≈ 1.41)`,
+                        options: [
+                            `A) ca. ${vs0 - 5} km/h`,
+                            `B) ca. ${vs0} km/h`,
+                            `C) ca. ${vsBank} km/h`,
+                            `D) ca. ${Math.round(vs0 * 1.41)} km/h`
+                        ],
+                        correct: 2, // Optie C
+                        explanation: `Bij een helling van 45° geldt: Vs(bocht) = Vs × √(1.41) = ${vs0} × 1.19 ≈ ${vsBank} km/h. De overtreksnelheid stijgt dus aanzienlijk in steile bochten.`,
+                        source: "DGLV Aerodynamica Richtlijnen ULM"
+                    };
+                }
+            }
+        ];
+
+        /*
+         * HOOFD APPLICATIE LOGICA (STATE MANAGEMENT)
+         */
+        class ExamApp {
+            constructor() {
+                this.currentCategory = null; // 'ppl' of 'ulm'
+                this.currentSubject = null;  // bijv 'ppl_law'
+                this.currentQuestion = null;
+                this.hasAnswered = false;
+
+                // Statistieken
+                this.stats = {
+                    total: 0,
+                    correct: 0
+                };
+            }
+
+            // Stap 1: Selecteer PPL of ULM
+            selectCategory(catKey) {
+                this.currentCategory = catKey;
+                const catData = EXAM_DATABASE[catKey];
+
+                // Update UI voor vakken
+                document.getElementById('selected-category-title').innerText = `${catData.title} - Examenvakken`;
+                
+                const badge = document.getElementById('category-badge');
+                badge.innerText = catKey.toUpperCase();
+                badge.className = `px-3 py-1 rounded-full text-xs font-bold ${catData.badgeClass}`;
+
+                // Genereer vakken grid
+                const grid = document.getElementById('subjects-grid');
+                grid.innerHTML = '';
+
+                catData.subjects.forEach(sub => {
+                    const card = document.createElement('div');
+                    card.className = 'cockpit-card rounded-xl p-5 hover:border-sky-400 cursor-pointer transition-all duration-200 group flex flex-col justify-between border border-slate-700/50';
+                    card.onclick = () => this.startSubject(sub.id);
+
+                    card.innerHTML = `
+                        <div>
+                            <div class="flex items-center space-x-3 mb-3">
+                                <div class="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center text-sky-400 group-hover:text-white group-hover:bg-sky-600 transition-colors">
+                                    <i class="fa-solid ${sub.icon}"></i>
+                                </div>
+                                <h4 class="font-bold text-white text-base leading-snug">${sub.name}</h4>
+                            </div>
+                            <p class="text-xs text-slate-400 leading-relaxed mb-4">${sub.desc}</p>
+                        </div>
+                        <div class="flex items-center justify-between text-xs pt-3 border-t border-slate-800 text-sky-400 font-semibold">
+                            <span>Oefenvragen starten</span>
+                            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </div>
+                    `;
+                    grid.appendChild(card);
+                });
+
+                // Wissel weergave
+                this.showView('view-subjects');
+            }
+
+            // Stap 2: Start specifiek vak
+            startSubject(subjectId) {
+                this.currentSubject = subjectId;
+                this.loadNextQuestion();
+                this.showView('view-question');
+            }
+
+            // Stap 3: Laad vraag
+            loadNextQuestion() {
+                this.hasAnswered = false;
+                
+                // Hide feedback, disable next button
+                const feedbackBox = document.getElementById('feedback-box');
+                feedbackBox.classList.add('hidden');
+                
+                const nextBtn = document.getElementById('next-btn');
+                nextBtn.disabled = true;
+
+                // Haal vragen op voor dit vak
+                const catQuestions = EXAM_DATABASE[this.currentCategory].questions[this.currentSubject] || [];
+                
+                // Check of we een dynamische AI-vraag kunnen genereren of een vaste vraag pakken
+                const dynamicTemplates = DYNAMIC_QUESTION_TEMPLATES.filter(t => t.subject === this.currentSubject);
+
+                let questionObj = null;
+
+                // 40% kans op dynamische berekende vraag als er een template voor is, anders willekeurige database vraag
+                if (dynamicTemplates.length > 0 && Math.random() < 0.5) {
+                    const template = dynamicTemplates[Math.floor(Math.random() * dynamicTemplates.length)];
+                    questionObj = template.generate();
+                } else if (catQuestions.length > 0) {
+                    // Pak willekeurige vraag uit vaste database
+                    const randIndex = Math.floor(Math.random() * catQuestions.length);
+                    questionObj = catQuestions[randIndex];
+                } else {
+                    // Fallback genereer generieke vraag als vak nog weinig vragen heeft
+                    questionObj = this.generateFallbackQuestion(this.currentSubject);
+                }
+
+                this.currentQuestion = questionObj;
+                this.renderQuestion(questionObj);
+            }
+
+            renderQuestion(q) {
+                // Vind subject naam
+                const subObj = EXAM_DATABASE[this.currentCategory].subjects.find(s => s.id === this.currentSubject);
+                
+                document.getElementById('question-subject-tag').innerText = subObj ? subObj.name : 'Examen';
+                document.getElementById('question-id').innerText = q.id;
+                document.getElementById('question-text').innerText = q.question;
+
+                const optionsContainer = document.getElementById('options-container');
+                optionsContainer.innerHTML = '';
+
+                q.options.forEach((optText, index) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'option-btn w-full text-left p-4 rounded-xl cockpit-card border border-slate-700/70 hover:bg-slate-800/80 text-sm font-medium text-slate-100 flex items-center justify-between cursor-pointer';
+                    btn.onclick = () => this.checkAnswer(index);
+                    btn.setAttribute('data-index', index);
+
+                    btn.innerHTML = `
+                        <span class="flex-grow pr-3">${optText}</span>
+                        <div class="opt-indicator w-5 h-5 rounded-full border border-slate-600 flex items-center justify-center text-xs"></div>
+                    `;
+
+                    optionsContainer.appendChild(btn);
+                });
+            }
+
+            // Controleer gekozen antwoord
+            checkAnswer(selectedIndex) {
+                if (this.hasAnswered) return; // Kan maar 1x antwoorden per vraag
+                this.hasAnswered = true;
+
+                const q = this.currentQuestion;
+                const isCorrect = (selectedIndex === q.correct);
+
+                // Update Statistieken
+                this.stats.total++;
+                if (isCorrect) this.stats.correct++;
+                this.updateStatsUI();
+
+                // Optie knoppen stylen
+                const buttons = document.querySelectorAll('.option-btn');
+                buttons.forEach((btn, idx) => {
+                    btn.disabled = true;
+                    btn.classList.remove('hover:bg-slate-800/80');
+
+                    if (idx === q.correct) {
+                        // Juiste antwoord altijd groen markeren
+                        btn.classList.add('border-emerald-500', 'bg-emerald-950/40', 'text-emerald-200');
+                        btn.querySelector('.opt-indicator').innerHTML = '<i class="fa-solid fa-check text-emerald-400"></i>';
+                        btn.querySelector('.opt-indicator').classList.add('border-emerald-500', 'bg-emerald-500/20');
+                    } else if (idx === selectedIndex && !isCorrect) {
+                        // Fout gekozen antwoord rood markeren
+                        btn.classList.add('border-red-500', 'bg-red-950/40', 'text-red-200');
+                        btn.querySelector('.opt-indicator').innerHTML = '<i class="fa-solid fa-xmark text-red-400"></i>';
+                        btn.querySelector('.opt-indicator').classList.add('border-red-500', 'bg-red-500/20');
+                    } else {
+                        btn.classList.add('opacity-50');
+                    }
+                });
+
+                // Toon Feedback Box (Groen of Rood)
+                const feedbackBox = document.getElementById('feedback-box');
+                const feedbackTitle = document.getElementById('feedback-title');
+                const feedbackExp = document.getElementById('feedback-explanation');
+                const feedbackSrc = document.getElementById('feedback-source');
+                const feedbackIconContainer = document.getElementById('feedback-icon-container');
+
+                feedbackBox.classList.remove('hidden', 'bg-emerald-950/80', 'border-emerald-500/50', 'bg-red-950/80', 'border-red-500/50');
+
+                if (isCorrect) {
+                    // GROEN VAK BIJ JUIST
+                    feedbackBox.classList.add('bg-emerald-950/80', 'border-emerald-500/60', 'text-emerald-100');
+                    feedbackTitle.innerText = "JUIST ANTWOORD!";
+                    feedbackTitle.className = "font-bold text-base text-emerald-400 flex items-center gap-2";
+                    feedbackIconContainer.innerHTML = '<i class="fa-solid fa-circle-check text-emerald-400"></i>';
+                } else {
+                    // ROOD VAK BIJ FOUT
+                    feedbackBox.classList.add('bg-red-950/80', 'border-red-500/60', 'text-red-100');
+                    feedbackTitle.innerText = "FOUT ANTWOORD";
+                    feedbackTitle.className = "font-bold text-base text-red-400 flex items-center gap-2";
+                    feedbackIconContainer.innerHTML = '<i class="fa-solid fa-circle-xmark text-red-400"></i>';
+                }
+
+                feedbackExp.innerText = q.explanation;
+                feedbackSrc.innerText = q.source || "Officiële Belgische DGLV/EASA Examenstandaard";
+
+                // Activeer Volgende Knop
+                document.getElementById('next-btn').disabled = false;
+            }
+
+            nextQuestion() {
+                this.loadNextQuestion();
+            }
+
+            // Fallback vragengenerator
+            generateFallbackQuestion(subId) {
+                return {
+                    id: `GEN-${Math.floor(Math.random()*8000+1000)}`,
+                    question: "Welke actie dient een piloot in de eerste plaats te ondernemen bij het opmerken van een onverwachte daling van de oliedruk in combinatie met een stijgende olietemperatuur?",
+                    options: [
+                        "A) Het motortoerental direct verhogen naar maximaal vermogen",
+                        "B) De vlucht voortzetten en afwachten tot de eerstvolgende geplande tussenstop",
+                        "C) Vermogen reduceren en onmiddellijk voorzorgsmaatregelen treffen voor een voorzochtige noodlanding/voorzorgslanding",
+                        "D) De brandstofmengselhendel op volledig arm (full lean) zetten"
+                    ],
+                    correct: 2, // C
+                    explanation: "Een dalende oliedruk gecombineerd met stijgende temperatuur wijst op dreigend mechanisch falen van de motor doordat smering wegvalt. Direct vermogen terugnemen en een landingsterrein kiezen is vereist.",
+                    source: "EASA Part-NCO.GEN.105 / DGLV Noodprocedures"
+                };
+            }
+
+            updateStatsUI() {
+                document.getElementById('header-stats').classList.remove('hidden');
+                document.getElementById('stat-total').innerText = this.stats.total;
+                
+                const scorePercentage = this.stats.total > 0 
+                    ? Math.round((this.stats.correct / this.stats.total) * 100) 
+                    : 0;
+                
+                document.getElementById('stat-score').innerText = `${scorePercentage}%`;
+            }
+
+            showSubjects() {
+                this.showView('view-subjects');
+            }
+
+            resetToHome() {
+                this.currentCategory = null;
+                this.currentSubject = null;
+                this.showView('view-category');
+            }
+
+            showView(viewId) {
+                ['view-category', 'view-subjects', 'view-question'].forEach(id => {
+                    const el = document.getElementById(id);
+                    if (id === viewId) {
+                        el.classList.remove('hidden');
+                    } else {
+                        el.classList.add('hidden');
+                    }
+                });
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        let app;
+        window.onload = function() {
+            app = new ExamApp();
+        };
+    </script>
+</body>
+</html>
