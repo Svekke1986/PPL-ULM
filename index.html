@@ -374,284 +374,193 @@
             <button class="btn" style="margin-top: 20px;" onclick="goHome()">Terug naar Hoofdmenu</button>
         </div>
     </div>
-
-    <script>
-        const data = {
-            ULM: {
-                title: "ULM - Directoraat-generaal Luchtvaart (DGLV)",
+<script>
+const data = {
+    PPL: {
+        title: "PPL / LAPL / ULM - Theorie Vrijhof & EASA/DGLV",
+        // De boeken van Bas Vrijhof fungeren als categorieën
+        books: [
+            {
+                bookId: "boek1",
+                bookTitle: "Boek 1: Aerodynamica, Prestatieleer & Vliegtuigtechniek",
                 subjects: [
-                    { id: "ulm_reg", name: "1. Luchtvaartwetgeving", questions: 20, time: 40 },
-                    { id: "ulm_met", name: "2. Meteorologie", questions: 20, time: 40 },
-                    { id: "ulm_hum", name: "3. Menselijke Prestaties", questions: 12, time: 24 },
-                    { id: "ulm_com", name: "4. Communicatie & Radiotelefonie", questions: 12, time: 24 }
-                ]
-            },
-            PPL: {
-                title: "PPL (A/H) - EASA Part-FCL",
-                subjects: [
-                    { id: "ppl_law", name: "1. Luchtvaartrecht", questions: 20, time: 40 },
-                    { id: "ppl_agk", name: "2. Algemene Kennis Luchtvaartuigen", questions: 12, time: 24 },
-                    { id: "ppl_fpl", name: "3. Prestaties en Vluchtplanning", questions: 12, time: 24 },
-                    { id: "ppl_hum", name: "4. Menselijke Prestaties", questions: 12, time: 24 },
-                    { id: "ppl_met", name: "5. Meteorologie", questions: 20, time: 40 },
-                    { id: "ppl_nav", name: "6. Navigatie", questions: 20, time: 60 },
-                    { id: "ppl_ops", name: "7. Operationele Procedures", questions: 12, time: 24 },
-                    { id: "ppl_pof", name: "8. Beginselen van het Vliegen", questions: 12, time: 24 },
-                    { id: "ppl_com", name: "9. Communicatie", questions: 12, time: 24 }
-                ]
-            }
-        };
-
-        const questionDatabase = [
-            {
-                subjectId: "ulm_reg",
-                question: "Wat is de minimale vlieghoogte boven steden of door een mensenmassa voor een ULM in België, tenzij noodzakelijk voor opstijgen of landen?",
-                options: [
-                    "150 meter (500 ft) boven de hoogste hindernis",
-                    "300 meter (1000 ft) boven de hoogste hindernis binnen een straal van 600 meter",
-                    "200 meter (650 ft) boven de grond",
-                    "Er geldt geen minimale hoogte zolang de piloot het veilig acht"
-                ],
-                correct: 1,
-                explanation: "Volgens het Belgische SERA.3105 en het Koninklijk Besluit betreffende ULM's is de minimale hoogte boven dichtbebouwde gebieden 1000 ft (300m) boven de hoogste hindernis binnen 600m.",
-                source: "Bron: Belgisch KB ULM 25 mei 1999 & EASA SERA.3105"
-            },
-            {
-                subjectId: "ulm_met",
-                question: "Wat gebeurt er met de dichtheidshoogte (Density Altitude) bij een stijging van de temperatuur bij een gelijke luchtdruk?",
-                options: [
-                    "De dichtheidshoogte neemt af",
-                    "De dichtheidshoogte blijft gelijk",
-                    "De dichtheidshoogte neemt toe",
-                    "De dichtheidshoogte hangt enkel af van de vochtigheid"
-                ],
-                correct: 2,
-                explanation: "Warmere lucht zet uit en wordt minder dicht. Een lagere luchtdichtheid komt overeen met een hogere dichtheidshoogte, wat de vliegprestaties negatief beïnvloedt.",
-                source: "Bron: ICAO Annex 3 - Meteorological Service for International Air Navigation"
-            },
-            {
-                subjectId: "ppl_law",
-                question: "Welke VFR-half-circle regel geldt in België bij een magnetische koers (Magnetic Track) tussen 000° en 179° boven FL050?",
-                options: [
-                    "Even duizendtallen voeten (bijv. FL060)",
-                    "Oneven duizendtallen voeten plus 500 ft (bijv. FL055, FL075)",
-                    "Even duizendtallen voeten plus 500 ft (bijv. FL065)",
-                    "Elke hoogte is toegestaan mits goedgekeurd door ATC"
-                ],
-                correct: 1,
-                explanation: "Voor VFR-vluchten op koersen van 000° t/m 179° (Oost) geldt: oneven vliegniveaus + 500 ft (bijv. FL55, FL75).",
-                source: "Bron: SERA.5005 Table S5-1 / AIP Belgium ENR 1.7"
-            }
-        ];
-
-        let selectedCategory = null;
-        let currentSubject = null;
-        let isExamMode = false;
-        let currentQuestions = [];
-        let currentIndex = 0;
-        let userAnswers = [];
-        let timerInterval = null;
-        let timeRemaining = 0;
-
-        function selectLicense(type) {
-            selectedCategory = type;
-            document.getElementById('screen-selection').classList.add('hidden');
-            document.getElementById('screen-subjects').classList.remove('hidden');
-            document.getElementById('btn-home').classList.remove('hidden');
-            
-            document.getElementById('subject-heading').innerText = data[type].title;
-
-            const listContainer = document.getElementById('subject-list');
-            listContainer.innerHTML = '';
-
-            data[type].subjects.forEach(sub => {
-                const card = document.createElement('div');
-                card.className = 'subject-card';
-                card.innerHTML = `
-                    <h3>${sub.name}</h3>
-                    <small style="display:block; margin-top:5px; color:#cbd5e1;">Examen: ${sub.questions} vragen | ${sub.time} min</small>
-                    <div class="mode-selection">
-                        <button class="mode-btn mode-practice" onclick="startQuiz('${sub.id}', false)">Oefenen</button>
-                        <button class="mode-btn mode-exam" onclick="startQuiz('${sub.id}', true)">Proefexamen</button>
-                    </div>
-                `;
-                listContainer.appendChild(card);
-            });
-        }
-
-        function goHome() {
-            clearInterval(timerInterval);
-            document.getElementById('screen-selection').classList.remove('hidden');
-            document.getElementById('screen-subjects').classList.add('hidden');
-            document.getElementById('screen-quiz').classList.add('hidden');
-            document.getElementById('screen-results').classList.add('hidden');
-            document.getElementById('btn-home').classList.add('hidden');
-        }
-
-        function startQuiz(subjectId, examMode) {
-            isExamMode = examMode;
-            
-            const sub = data[selectedCategory].subjects.find(s => s.id === subjectId);
-            currentSubject = sub;
-
-            let filtered = questionDatabase.filter(q => q.subjectId === subjectId);
-            
-            while (filtered.length < (examMode ? sub.questions : 5)) {
-                filtered.push({
-                    subjectId: subjectId,
-                    question: `[Demonstratievraag ${filtered.length + 1}] Wat is de juiste procedure bij de onderstaande luchtvaartsituatie volgens EASA/DGLV normen?`,
-                    options: [
-                        "Optie A: Voldoet aan de standaard operationele limieten",
-                        "Optie B: Vereist een daling en afwijking naar de dichtstbijzijnde luchthaven",
-                        "Optie C: Enkel toegestaan na goedkeuring van de gezagvoerder",
-                        "Optie D: Geen restricties van toepassing"
-                    ],
-                    correct: 0,
-                    explanation: "Dit is een voorbeeld-uitleg gebaseerd op gecertifieerde Belgische reglementering.",
-                    source: "Bron: Belgisch AIP / EASA Part-FCL"
-                });
-            }
-
-            currentQuestions = filtered.slice(0, examMode ? sub.questions : 10);
-            currentIndex = 0;
-            userAnswers = [];
-
-            document.getElementById('screen-subjects').classList.add('hidden');
-            document.getElementById('screen-quiz').classList.remove('hidden');
-
-            document.getElementById('quiz-badge').innerText = `${selectedCategory} - ${sub.name} (${examMode ? 'EXAMEN' : 'OEFENEN'})`;
-
-            if (examMode) {
-                document.getElementById('timer-container').classList.remove('hidden');
-                timeRemaining = sub.time * 60;
-                startTimer();
-            } else {
-                document.getElementById('timer-container').classList.add('hidden');
-            }
-
-            renderQuestion();
-        }
-
-        function renderQuestion() {
-            const q = currentQuestions[currentIndex];
-            document.getElementById('question-number').innerText = `Vraag ${currentIndex + 1} van ${currentQuestions.length}`;
-            document.getElementById('question-text').innerText = q.question;
-
-            document.getElementById('feedback-container').style.display = 'none';
-            document.getElementById('btn-next').classList.add('hidden');
-            document.getElementById('btn-submit-exam').classList.add('hidden');
-
-            const optionsContainer = document.getElementById('options-container');
-            optionsContainer.innerHTML = '';
-
-            q.options.forEach((opt, idx) => {
-                const btn = document.createElement('button');
-                btn.className = 'option-btn';
-                btn.innerText = `${String.fromCharCode(65 + idx)}. ${opt}`;
-                btn.onclick = () => handleAnswer(idx);
-                optionsContainer.appendChild(btn);
-            });
-        }
-
-        function handleAnswer(selectedIndex) {
-            const q = currentQuestions[currentIndex];
-            userAnswers[currentIndex] = selectedIndex;
-
-            const buttons = document.querySelectorAll('.option-btn');
-            buttons.forEach(b => b.disabled = true);
-
-            if (!isExamMode) {
-                const feedbackBox = document.getElementById('feedback-container');
-                const isCorrect = selectedIndex === q.correct;
-
-                feedbackBox.className = `feedback-box ${isCorrect ? 'correct' : 'incorrect'}`;
-                document.getElementById('feedback-title').innerText = isCorrect ? "✓ Juist Antwoord!" : "✗ Onjuist Antwoord";
-                document.getElementById('feedback-text').innerText = q.explanation;
-                document.getElementById('feedback-source').innerText = q.source;
-                feedbackBox.style.display = 'block';
-
-                buttons[selectedIndex].classList.add('selected');
-
-                if (currentIndex < currentQuestions.length - 1) {
-                    document.getElementById('btn-next').classList.remove('hidden');
-                }
-            } else {
-                buttons[selectedIndex].classList.add('selected');
-                
-                setTimeout(() => {
-                    if (currentIndex < currentQuestions.length - 1) {
-                        currentIndex++;
-                        renderQuestion();
-                    } else {
-                        document.getElementById('btn-submit-exam').classList.remove('hidden');
+                    {
+                        id: "ppl_agk",
+                        name: "Algemene Kennis van het Luchtvaartuig (AGK)",
+                        questions: 16,
+                        time: 32,
+                        chapters: [
+                            "Motoren & Cilinders",
+                            "Brandstof- en Oliesystemen",
+                            "Elektrische Systemen",
+                            "Flight Instruments & Pitot-Statisch Systeem"
+                        ]
+                    },
+                    {
+                        id: "ppl_poa",
+                        name: "Beginselen van het Vliegen (Principles of Flight)",
+                        questions: 16,
+                        time: 32,
+                        chapters: [
+                            "Aerodynamische Krachten & Stroomlijning",
+                            "Overtrekken (Stall) & Ingewikkelde Vliegstanden",
+                            "Stabiliteit & Besturing van het Vliegtuig"
+                        ]
+                    },
+                    {
+                        id: "ppl_fpl",
+                        name: "Vluchtprestaties en -planning",
+                        questions: 16,
+                        time: 32,
+                        chapters: [
+                            "Massa & Balans (Weight & Balance)",
+                            "Start- en Landingsafstanden",
+                            "Klim- en Kruisprestaties"
+                        ]
                     }
-                }, 300);
+                ]
+            },
+            {
+                bookId: "boek2",
+                bookTitle: "Boek 2: Luchtvaartmeteorologie & Navigatie",
+                subjects: [
+                    {
+                        id: "ppl_met",
+                        name: "Meteorologie",
+                        questions: 16,
+                        time: 32,
+                        chapters: [
+                            "De Atmosfeer & Drukgebieden",
+                            "Fronten & Wolkentypes",
+                            "METAR & TAF Lezen",
+                            "Wind, Turbulentie & IJsafzetting"
+                        ]
+                    },
+                    {
+                        id: "ppl_nav",
+                        name: "Navigatie",
+                        questions: 16,
+                        time: 32,
+                        chapters: [
+                            "Kaartprojecties & Coördinaten",
+                            "Driehoek van Snelheden (Course, Heading, Track)",
+                            "Radionavigatie (VOR, NDB, GPS)",
+                            "Vliegplanning & Computations"
+                        ]
+                    }
+                ]
+            },
+            {
+                bookId: "boek3",
+                bookTitle: "Boek 3: Luchtvaartwetgeving & Operationele Procedures",
+                subjects: [
+                    {
+                        id: "ppl_law",
+                        name: "Luchtvaartwetgeving (Air Law)",
+                        questions: 16,
+                        time: 32,
+                        chapters: [
+                            "SERA (Standard European Rules of the Air)",
+                            "Luchtruimstructuur & Classificaties",
+                            "ICAO & DGLV Reglementering"
+                        ]
+                    },
+                    {
+                        id: "ppl_ops",
+                        name: "Operationele Procedures",
+                        questions: 12,
+                        time: 24,
+                        chapters: [
+                            "Noodprocedures & Signalen",
+                            "Vliegtuigonderhoud & Documenten",
+                            "Koolmonoxide & Veiligheid aan boord"
+                        ]
+                    }
+                ]
+            },
+            {
+                bookId: "boek4",
+                bookTitle: "Boek 4: Menselijke Prestaties & Beperkingen",
+                subjects: [
+                    {
+                        id: "ppl_hp",
+                        name: "Menselijke Prestaties en Beperkingen",
+                        questions: 12,
+                        time: 24,
+                        chapters: [
+                            "Zintuiglijke Waarneming & Illusies",
+                            "Hypoxie & Drukveranderingen",
+                            "Besluitvorming & Human Factors (CRM)"
+                        ]
+                    }
+                ]
+            },
+            {
+                bookId: "boek5",
+                bookTitle: "Boek 5: Radiocommunicatie-VFR",
+                subjects: [
+                    {
+                        id: "ppl_com",
+                        name: "Communicatie (VFR Radiotelefonie)",
+                        questions: 12,
+                        time: 24,
+                        chapters: [
+                            "Standaard Frasologie & Spellingsalfabet",
+                            "Nood- en Spoedverkeer (Mayday / Pan Pan)",
+                            "ATC clearances & Transpondercodes"
+                        ]
+                    }
+                ]
             }
-        }
+        ]
+    }
+};
 
-        function nextQuestion() {
-            if (currentIndex < currentQuestions.length - 1) {
-                currentIndex++;
-                renderQuestion();
-            }
-        }
-
-        function startTimer() {
-            clearInterval(timerInterval);
-            timerInterval = setInterval(() => {
-                timeRemaining--;
-                const mins = Math.floor(timeRemaining / 60);
-                const secs = timeRemaining % 60;
-                document.getElementById('timer-text').innerText = `${mins}:${secs < 10 ? '0' : ''}${secs}`;
-
-                if (timeRemaining <= 0) {
-                    clearInterval(timerInterval);
-                    alert("Tijd is om! Het examen wordt nu ingeleverd.");
-                    submitExam();
-                }
-            }, 1000);
-        }
-
-        function submitExam() {
-            clearInterval(timerInterval);
-            document.getElementById('screen-quiz').classList.add('hidden');
-            document.getElementById('screen-results').classList.remove('hidden');
-
-            let correctCount = 0;
-            const reviewContainer = document.getElementById('review-container');
-            reviewContainer.innerHTML = '';
-
-            currentQuestions.forEach((q, idx) => {
-                const isCorrect = userAnswers[idx] === q.correct;
-                if (isCorrect) correctCount++;
-
-                if (!isCorrect) {
-                    const reviewCard = document.createElement('div');
-                    reviewCard.style.cssText = "background: rgba(230,57,70,0.1); border-left: 4px solid #e63946; padding: 12px; margin-bottom: 10px; border-radius: 4px;";
-                    reviewCard.innerHTML = `
-                        <strong>Vraag ${idx + 1}: ${q.question}</strong><br/>
-                        <span style="color: #e63946;">Jouw antwoord: ${userAnswers[idx] !== undefined ? q.options[userAnswers[idx]] : 'Niet ingevuld'}</span><br/>
-                        <span style="color: #2a9d8f;">Juist antwoord: ${q.options[q.correct]}</span><br/>
-                        <small style="display:block; margin-top:5px; color: #8d99ae;">${q.explanation} (${q.source})</small>
-                    `;
-                    reviewContainer.appendChild(reviewCard);
-                }
-            });
-
-            const percentage = Math.round((correctCount / currentQuestions.length) * 100);
-            document.getElementById('result-score').innerText = `${percentage}%`;
-
-            const passed = percentage >= 75;
-            const statusEl = document.getElementById('result-status');
-            statusEl.innerText = passed ? "PASSED / GESLAAGD 🎉" : "FAILED / NIET GESLAAGD ❌";
-            statusEl.style.color = passed ? "#2a9d8f" : "#e63946";
-        }
-
-        function leaveQuiz() {
-            if (confirm("Weet je zeker dat je deze sessie wilt verlaten?")) {
-                goHome();
-            }
-        }
-    </script>
+// Vragendatabase gekoppeld aan de vakken EN specifieke hoofdstukken uit de boeken
+const questionDatabase = [
+    {
+        subjectId: "ppl_law",
+        chapter: "SERA (Standard European Rules of the Air)",
+        question: "Welke VFR-half-circle regel geldt bij een magnetische koers (Magnetic Track) tussen 000° en 179° boven FL050?",
+        options: [
+            "Even duizendtallen voeten (bijv. FL060)",
+            "Oneven duizendtallen voeten plus 500 ft (bijv. FL055, FL075)",
+            "Even duizendtallen voeten plus 500 ft (bijv. FL065)",
+            "Elke hoogte is toegestaan mits goedgekeurd door ATC"
+        ],
+        correct: 1,
+        explanation: "Voor VFR-vluchten op koersen van 000° t/m 179° (Oost) geldt: oneven vliegniveaus + 500 ft (bijv. FL55, FL75).",
+        source: "Bas Vrijhof - Boek 3: Luchtvaartwetgeving"
+    },
+    {
+        subjectId: "ppl_met",
+        chapter: "De Atmosfeer & Drukgebieden",
+        question: "Wat gebeurt er met de dichtheidshoogte (Density Altitude) bij een stijging van de temperatuur bij gelijkblijvende druk?",
+        options: [
+            "De dichtheidshoogte neemt af",
+            "De dichtheidshoogte blijft gelijk",
+            "De dichtheidshoogte neemt toe",
+            "De dichtheidshoogte hangt enkel af van de vochtigheid"
+        ],
+        correct: 2,
+        explanation: "Warmere lucht zet uit en wordt minder dicht. Een lagere luchtdichtheid komt overeen met een hogere dichtheidshoogte.",
+        source: "Bas Vrijhof - Boek 2: Meteorologie"
+    },
+    {
+        subjectId: "ppl_agk",
+        chapter: "Flight Instruments & Pitot-Statisch Systeem",
+        question: "Wat gebeurt er met de snelheidsmeter (ASI) als de Pitotbuis volledig geblokkeerd raakt door ijs tijdens een stijging?",
+        options: [
+            "De snelheidsmeter geeft een te lage snelheid aan",
+            "De snelheidsmeter geeft nul aan",
+            "De snelheidsmeter reageert als een hoogtemeter en geeft een te hoge snelheid aan",
+            "De snelheidsmeter blijft de laatst gemeten snelheid aangeven"
+        ],
+        correct: 2,
+        explanation: "Bij een verstopping van de pitotbuis blijft de druk in de buis opgesloten. Als het toestel stijgt, neemt de statische druk buiten af, waardoor de snelheidsmeter een hogere snelheid aangeeft dan de werkelijke snelheid.",
+        source: "Bas Vrijhof - Boek 1: Vliegtuigtechniek"
+    }
+];
+</script>
 </body>
 </html>
