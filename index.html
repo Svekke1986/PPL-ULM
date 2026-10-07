@@ -3,440 +3,471 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AEROEXAM BE - PPL & ULM Examensimulator</title>
+    <title>PPL / ULM AI Examenplatform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        :root {
-            --primary: #1e3a8a;
-            --primary-hover: #1d4ed8;
-            --bg: #f8fafc;
-            --card-bg: #ffffff;
-            --text: #1e293b;
-            --border: #e2e8f0;
-            --success: #16a34a;
-            --error: #dc2626;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-        }
-        .container {
-            width: 100%;
-            max-width: 650px;
-            background: var(--card-bg);
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-        h1 { font-size: 24px; color: var(--primary); margin-bottom: 5px; text-align: center; }
-        h2 { font-size: 16px; color: #64748b; font-weight: normal; margin-top: 0; margin-bottom: 25px; text-align: center; }
-        .section { display: none; }
-        .section.active { display: block; }
-        .form-group { margin-bottom: 20px; }
-        label { display: block; font-weight: 600; margin-bottom: 8px; }
-        input[type="text"], select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            box-sizing: border-box;
-            font-size: 14px;
-        }
-        button {
-            width: 100%;
-            padding: 12px;
-            background-color: var(--primary);
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        button:hover { background-color: var(--primary-hover); }
-        button:disabled { background-color: #cbd5e1; cursor: not-allowed; }
-        .meta-bar {
-            display: flex;
-            justify-content: space-between;
-            font-weight: bold;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid var(--border);
-        }
-        .question-box { font-size: 18px; font-weight: 600; margin-bottom: 20px; line-height: 1.5; }
-        .options-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 25px; }
-        .option-item {
-            display: flex;
-            align-items: center;
-            padding: 12px;
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        .option-item:hover { background-color: #f1f5f9; }
-        .option-item.selected { border-color: var(--primary); background-color: #eff6ff; }
-        .option-item.correct { border-color: var(--success); background-color: #dcfce7; color: var(--success); font-weight: 600; }
-        .option-item.wrong { border-color: var(--error); background-color: #fee2e2; color: var(--error); }
-        .option-item input { margin-right: 12px; pointer-events: none; }
-        .explanation-box {
-            background-color: #f8fafc;
-            border-left: 4px solid var(--primary);
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 0 6px 6px 0;
-            display: none;
-        }
-        .nav-buttons { display: flex; gap: 10px; }
-        .nav-buttons button { flex: 1; }
-        .secondary-btn { background-color: #64748b; }
-        .secondary-btn:hover { background-color: #475569; }
-        .result-screen { text-align: center; }
-        .score-big { font-size: 48px; font-weight: 800; margin: 20px 0; }
-        .pass { color: var(--success); }
-        .fail { color: var(--error); }
-        .loading { text-align: center; font-style: italic; color: #64748b; padding: 40px 0; }
+        .hidden { display: none !important; }
     </style>
 </head>
-<body>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col font-sans">
 
-<div class="container">
-    <h1>AEROEXAM BE</h1>
-    <h2>PPL (EASA) & ULM (DGLV) Examensimulator</h2>
-
-    <!-- SCHERM 1: INITIALISATIE -->
-    <div id="setup-screen" class="section active">
-        <div class="form-group">
-            <label for="api-key">Google Gemini API Key</label>
-            <input type="text" id="api-key" placeholder="Plak je AI Studio API Key hier...">
-            <small style="display:block; margin-top:5px; color:#64748b;">
-                Sleutel nodig? Haal er gratis een via <a href="https://aistudio.google.com" target="_blank">Google AI Studio</a>.
-            </small>
+    <!-- HEADER -->
+    <header class="bg-slate-800 border-b border-slate-700 px-6 py-4 flex justify-between items-center shadow-md">
+        <div class="flex items-center gap-3">
+            <i class="fa-solid fa-plane-departure text-blue-500 text-2xl"></i>
+            <h1 class="text-xl font-bold tracking-wide">PPL / ULM Examen Platform</h1>
         </div>
-        <div class="form-group">
-            <label for="exam-type">Examentype</label>
-            <select id="exam-type" onchange="updateSubjects()">
-                <option value="PPL">PPL (EASA - 9 Vakken)</option>
-                <option value="ULM">ULM (DGLV - 4 Vakken)</option>
-            </select>
+        <div id="keyStatusContainer" class="hidden flex items-center gap-3 bg-slate-700/50 px-3 py-1.5 rounded-lg border border-slate-600">
+            <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+            <span class="text-xs text-slate-300 font-mono">API Sleutel Actief (Gemini 3.8 Flash)</span>
+            <button onclick="resetApiKey()" class="text-xs text-blue-400 hover:text-blue-300 ml-2 underline">⚙️ Key Wijzigen</button>
         </div>
-        <div class="form-group">
-            <label for="subject">Vakgebied</label>
-            <select id="subject"></select>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="flex-1 container mx-auto px-4 py-8 max-w-4xl">
+
+        <!-- STEP 1: MANDATORY GATE FOR API KEY -->
+        <div id="gateSection" class="bg-slate-800 border border-slate-700 rounded-xl p-8 shadow-2xl text-center max-w-lg mx-auto my-12">
+            <div class="w-16 h-16 bg-blue-600/20 text-blue-400 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                <i class="fa-solid fa-key"></i>
+            </div>
+            <h2 class="text-2xl font-bold mb-2">API Sleutel Vereist</h2>
+            <p class="text-slate-400 text-sm mb-6">
+                Voer je Google Gemini API sleutel in. Deze wordt uitsluitend lokaal in je browser opgeslagen.
+            </p>
+
+            <div class="mb-4 text-left">
+                <label class="block text-xs font-semibold text-slate-400 mb-1">GEMINI API KEY</label>
+                <input type="password" id="apiKeyInput" placeholder="Plak je sleutel hier..." 
+                       class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-blue-500 transition-colors">
+            </div>
+
+            <div id="gateError" class="hidden mb-4 p-3 bg-red-950/80 border border-red-500/50 text-red-200 text-xs rounded-lg text-left"></div>
+
+            <button onclick="validateAndSaveKey()" id="valideerBtn" class="w-full bg-blue-600 hover:bg-blue-500 font-semibold py-3 rounded-lg transition-all flex items-center justify-center gap-2">
+                <span>Valideer & Start</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
         </div>
-        <button onclick="startExam()">Valideer & Start</button>
-    </div>
 
-    <!-- SCHERM 2: SIMULATOR INTERFACE -->
-    <div id="exam-screen" class="section">
-        <div class="meta-bar">
-            <span id="meta-info">PPL - Luchtvaartrecht</span>
-            <span id="meta-progress">Vraag 1 / 20</span>
-            <span id="meta-timer">Resterende Tijd: 40:00</span>
-        </div>
+        <!-- STEP 2: DASHBOARD / MODE SELECTION -->
+        <div id="dashboardSection" class="hidden space-y-6">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-extrabold text-white mb-2">Kies je Oefenmodus</h2>
+                <p class="text-slate-400">Selecteer de gewenste leervorm voor PPL / ULM wetgeving en Bas Vrijhof theorie.</p>
+            </div>
 
-        <div id="loading-indicator" class="loading">
-            De vraag wordt gegenereerd met Gemini Flash op basis van EASA/DGLV normen en de Bas Vrijhof VFR theorie...
-        </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Practice Mode Card -->
+                <div onclick="startPracticeMode()" class="bg-slate-800 border border-slate-700 hover:border-blue-500 rounded-xl p-6 cursor-pointer transition-all hover:scale-[1.02] shadow-lg group">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-blue-500/10 text-blue-400 rounded-lg flex items-center justify-center text-xl group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <span class="text-xs font-semibold px-2.5 py-1 bg-slate-700 text-slate-300 rounded-full">Onbeperkt</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Oefenmodus</h3>
+                    <p class="text-slate-400 text-sm mb-4">Oefen vragen per vak met directe feedback en uitgebreide Bas Vrijhof theorie-uitleg.</p>
+                    <div class="text-blue-400 text-sm font-semibold flex items-center gap-2">
+                        Start Oefenen <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </div>
+                </div>
 
-        <div id="question-content" style="display: none;">
-            <div id="question-text" class="question-box"></div>
-            <div id="options-container" class="options-list"></div>
-            <div id="explanation-text" class="explanation-box"></div>
-
-            <div class="nav-buttons">
-                <button id="btn-prev" class="secondary-btn" onclick="prevQuestion()">Vorige</button>
-                <button id="btn-check" onclick="checkAnswer()">Controleer Antwoord</button>
-                <button id="btn-next" onclick="nextQuestion()">Volgende Vraag</button>
+                <!-- Exam Mode Card -->
+                <div onclick="openExamSetup()" class="bg-slate-800 border border-slate-700 hover:border-amber-500 rounded-xl p-6 cursor-pointer transition-all hover:scale-[1.02] shadow-lg group">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-lg flex items-center justify-center text-xl group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-stopwatch"></i>
+                        </div>
+                        <span class="text-xs font-semibold px-2.5 py-1 bg-amber-500/20 text-amber-300 rounded-full">Officieel</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Examenmodus</h3>
+                    <p class="text-slate-400 text-sm mb-4">Simuleer een officieel BCAA/DGLV examen met exact aantal vragen en de officiële tijdslimiet per vak.</p>
+                    <div class="text-amber-400 text-sm font-semibold flex items-center gap-2">
+                        Configureer Examen <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- SCHERM 3: SUMMARY FINISH -->
-    <div id="result-screen" class="section result-screen">
-        <h2>Examen Beëindigd</h2>
-        <div id="score-display" class="score-big">0%</div>
-        <p id="result-status" style="font-weight: bold; font-size: 18px;"></p>
-        <p id="score-details"></p>
-        <button onclick="resetSimulator()" style="margin-top:20px;">Hoofdmenu / Herkans Examen</button>
-    </div>
-</div>
+        <!-- STEP 3: EXAM SETUP -->
+        <div id="examSetupSection" class="hidden bg-slate-800 border border-slate-700 rounded-xl p-6 shadow-xl max-w-xl mx-auto">
+            <h3 class="text-2xl font-bold mb-4">Examen Configureren</h3>
+            <p class="text-slate-400 text-sm mb-6">Selecteer het vak om de AI-examensimulator te starten met officiële BCAA/DGLV parameters.</p>
 
-<script>
-    let apiKey = "";
-    let examType = "";
-    let currentSubject = "";
-    let currentQuestionIndex = 0;
-    const totalQuestions = 20;
-    let timerInterval = null;
-    let timeLeft = 2400; 
-    let questionsData = []; 
+            <div class="space-y-4 mb-6">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 mb-2">VAK SELECTIE</label>
+                    <select id="subjectSelect" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-blue-500">
+                        <option value="air_law">Luchtvaartwetgeving (Air Law) - 24 vragen / 30 min</option>
+                        <option value="agk">Algemene Kennis Luchtvaartuigen (AGK) - 16 vragen / 20 min</option>
+                        <option value="flight_performance">Vluchtprestaties & Planning - 16 vragen / 25 min</option>
+                        <option value="human_performance">Menselijke Prestaties & Beperkingen - 12 vragen / 15 min</option>
+                        <option value="meteorology">Meteorologie - 16 vragen / 20 min</option>
+                        <option value="navigation">Navigatie - 20 vragen / 30 min</option>
+                        <option value="operational_procedures">Operationele Procedures - 12 vragen / 15 min</option>
+                        <option value="principles_of_flight">Beginselen van het Vliegen - 16 vragen / 20 min</option>
+                        <option value="communications">Communicatie (VFR) - 12 vragen / 15 min</option>
+                    </select>
+                </div>
+            </div>
 
-    const subjectsMap = {
-        PPL: ["Luchtvaartrecht", "Algemene Kennis van het Luchtvaartuig", "Vluchtprestaties en Vluchtplanning", "Menselijke Prestaties en Beperkingen", "Meteorologie", "Navigatie", "Operationele Procedures", "Beginselen van het Vliegen", "Communicatie"],
-        ULM: ["Reglementering", "Aerodynamica en Techniek", "Meteorologie", "Navigatie en Veiligheid"]
-    };
+            <div class="flex gap-3">
+                <button onclick="backToDashboard()" class="w-1/3 bg-slate-700 hover:bg-slate-600 font-semibold py-3 rounded-lg transition-colors">Annuleren</button>
+                <button onclick="startExam()" class="w-2/3 bg-amber-600 hover:bg-amber-500 font-semibold py-3 rounded-lg transition-colors flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-play"></i> Start Officieel Examen
+                </button>
+            </div>
+        </div>
 
-    function updateSubjects() {
-        const type = document.getElementById("exam-type").value;
-        const subjectSelect = document.getElementById("subject");
-        subjectSelect.innerHTML = "";
-        subjectsMap[type].forEach(sub => {
-            const opt = document.createElement("option");
-            opt.value = sub;
-            opt.textContent = sub;
-            subjectSelect.appendChild(opt);
-        });
-    }
+        <!-- STEP 4: QUIZ INTERFACE -->
+        <div id="quizSection" class="hidden space-y-6">
+            <div class="bg-slate-800 border border-slate-700 rounded-xl p-4 flex justify-between items-center">
+                <div>
+                    <span id="quizModeBadge" class="text-xs font-bold px-2.5 py-1 rounded bg-blue-500/20 text-blue-300">OEFENMODUS</span>
+                    <h3 id="quizSubjectTitle" class="text-lg font-bold mt-1 text-white">Luchtvaartwetgeving</h3>
+                </div>
+                <div id="timerContainer" class="text-right hidden">
+                    <div class="text-xs text-slate-400">RESTERENDE TIJD</div>
+                    <div id="timerDisplay" class="text-xl font-mono font-bold text-amber-400">00:00</div>
+                </div>
+            </div>
 
-    function startExam() {
-        const keyInput = document.getElementById("api-key").value.trim();
-        if (!keyInput) {
-            alert("Voer een geldige Gemini API Key in.");
-            return;
-        }
-        apiKey = keyInput;
-        examType = document.getElementById("exam-type").value;
-        currentSubject = document.getElementById("subject").value;
-        
-        document.getElementById("meta-info").textContent = `${examType} - ${currentSubject}`;
-        
-        switchScreen("exam-screen");
-        
-        currentQuestionIndex = 0;
-        questionsData = [];
-        
-        timeLeft = 2400;
-        startTimer();
-        fetchQuestion();
-    }
+            <div class="bg-slate-800 border border-slate-700 rounded-xl p-6 shadow-xl">
+                <div class="flex justify-between items-center text-xs text-slate-400 mb-4">
+                    <span id="questionCounter">Vraag 1 van 10</span>
+                    <span id="modelUsedBadge" class="font-mono text-[10px] text-slate-500">Gemini 3.8 Flash</span>
+                </div>
 
-    function startTimer() {
-        clearInterval(timerInterval);
-        timerInterval = setInterval(() => {
-            if (timeLeft <= 0) {
-                clearInterval(timerInterval);
-                finishExam();
-                return;
-            }
-            timeLeft--;
-            const mins = Math.floor(timeLeft / 60).toString().padStart(2, '0');
-            const secs = (timeLeft % 60).toString().padStart(2, '0');
-            document.getElementById("meta-timer").textContent = `Resterende Tijd: ${mins}:${secs}`;
-        }, 1000);
-    }
+                <div id="questionText" class="text-lg font-medium text-slate-100 mb-6 leading-relaxed">
+                    Laden van de vraag...
+                </div>
 
-    async function fetchQuestion() {
-        document.getElementById("question-content").style.display = "none";
-        document.getElementById("loading-indicator").style.display = "block";
-        document.getElementById("explanation-text").style.display = "none";
+                <div id="optionsContainer" class="space-y-3"></div>
 
-        document.getElementById("meta-progress").textContent = `Vraag ${currentQuestionIndex + 1} / ${totalQuestions}`;
-        document.getElementById("btn-prev").disabled = (currentQuestionIndex === 0);
+                <div id="explanationBox" class="hidden mt-6 p-4 rounded-lg bg-slate-900/80 border border-slate-700 space-y-2">
+                    <div id="explanationHeader" class="font-bold text-sm"></div>
+                    <p id="explanationText" class="text-sm text-slate-300 leading-relaxed"></p>
+                </div>
+            </div>
 
-        if (questionsData[currentQuestionIndex]) {
-            renderQuestion(questionsData[currentQuestionIndex]);
-            return;
-        }
+            <div class="flex justify-between items-center">
+                <button id="prevBtn" onclick="prevQuestion()" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 px-5 py-2.5 rounded-lg font-semibold text-sm transition-colors">
+                    <i class="fa-solid fa-chevron-left"></i> Vorige
+                </button>
+                <button id="nextBtn" onclick="nextQuestion()" class="bg-blue-600 hover:bg-blue-500 px-6 py-2.5 rounded-lg font-semibold text-sm transition-colors">
+                    Volgende <i class="fa-solid fa-chevron-right ml-1"></i>
+                </button>
+            </div>
+        </div>
 
-        const model = "gemini-3.8-flash"; 
-        const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+    </main>
 
-        const promptText = `Je bent een officiële examinator voor Belgische Luchtvaart Examens. 
-        Genereer exact één unieke meervoudige keuzevraag (MCQ) voor het ${examType} theorie-examen, vakgebied: ${currentSubject}. 
-        Gebruik uitsluitend de Bas Vrijhof VFR theorie en EASA SERA luchtvaartwetgeving conform Belgische richtlijnen. 
-        Geef je antwoord verplicht in het Nederlands.`;
+    <script>
+        // STRICT MODEL CONFIGURATION
+        const GEMINI_MODEL = 'gemini-3.8-flash';
 
-        const payload = {
-            contents: [{ parts: [{ text: promptText }] }],
-            generationConfig: {
-                responseMimeType: "application/json",
-                responseSchema: {
-                    type: "OBJECT",
-                    properties: {
-                        question: { type: "STRING" },
-                        options: { 
-                            type: "ARRAY", 
-                            items: { type: "STRING" },
-                            minItems: 4,
-                            maxItems: 4
-                        },
-                        correctIndex: { type: "INTEGER" },
-                        explanation: { type: "STRING" }
-                    },
-                    required: ["question", "options", "correctIndex", "explanation"]
-                }
-            }
+        let apiKey = localStorage.getItem('gemini_api_key') || '';
+        let currentMode = 'practice';
+        let currentSubject = 'air_law';
+        let currentQuestions = [];
+        let currentIndex = 0;
+        let userAnswers = [];
+        let timerInterval = null;
+        let timeRemaining = 0;
+
+        const subjectConfigs = {
+            air_law: { name: 'Luchtvaartwetgeving', questions: 24, timeMinutes: 30 },
+            agk: { name: 'Algemene Kennis Luchtvaartuigen', questions: 16, timeMinutes: 20 },
+            flight_performance: { name: 'Vluchtprestaties & Planning', questions: 16, timeMinutes: 25 },
+            human_performance: { name: 'Menselijke Prestaties', questions: 12, timeMinutes: 15 },
+            meteorology: { name: 'Meteorologie', questions: 16, timeMinutes: 20 },
+            navigation: { name: 'Navigatie', questions: 20, timeMinutes: 30 },
+            operational_procedures: { name: 'Operationele Procedures', questions: 12, timeMinutes: 15 },
+            principles_of_flight: { name: 'Beginselen van het Vliegen', questions: 16, timeMinutes: 20 },
+            communications: { name: 'Communicatie (VFR)', questions: 12, timeMinutes: 15 }
         };
 
-        try {
-            const response = await fetch(url, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(payload)
+        window.addEventListener('DOMContentLoaded', () => {
+            if (apiKey) {
+                showDashboard();
+            } else {
+                showGate();
+            }
+        });
+
+        function showGate() {
+            document.getElementById('gateSection').classList.remove('hidden');
+            document.getElementById('dashboardSection').classList.add('hidden');
+            document.getElementById('examSetupSection').classList.add('hidden');
+            document.getElementById('quizSection').classList.add('hidden');
+            document.getElementById('keyStatusContainer').classList.add('hidden');
+        }
+
+        function showDashboard() {
+            document.getElementById('gateSection').classList.add('hidden');
+            document.getElementById('dashboardSection').classList.remove('hidden');
+            document.getElementById('examSetupSection').classList.add('hidden');
+            document.getElementById('quizSection').classList.add('hidden');
+            document.getElementById('keyStatusContainer').classList.remove('hidden');
+        }
+
+        function resetApiKey() {
+            localStorage.removeItem('gemini_api_key');
+            apiKey = '';
+            document.getElementById('apiKeyInput').value = '';
+            showGate();
+        }
+
+        async function validateAndSaveKey() {
+            const inputVal = document.getElementById('apiKeyInput').value.trim();
+            const errDiv = document.getElementById('gateError');
+            const btn = document.getElementById('valideerBtn');
+
+            errDiv.classList.add('hidden');
+            if (!inputVal) {
+                errDiv.textContent = 'Voer een API-sleutel in.';
+                errDiv.classList.remove('hidden');
+                return;
+            }
+
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Valideren met Gemini 3.8 Flash...';
+
+            try {
+                const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${inputVal}`;
+                const response = await fetch(endpoint, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{ parts: [{ text: "Ping" }] }]
+                    })
+                });
+
+                if (!response.ok) {
+                    const errData = await response.json().catch(() => ({}));
+                    throw new Error(`API status ${response.status}: ${errData.error?.message || 'Fout bij het verbinden met gemini-3.8-flash'}`);
+                }
+
+                apiKey = inputVal;
+                localStorage.setItem('gemini_api_key', apiKey);
+                showDashboard();
+            } catch (err) {
+                errDiv.textContent = `Validatie mislukt (${err.message}). Controleer of gemini-3.8-flash beschikbaar is op je API key.`;
+                errDiv.classList.remove('hidden');
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = '<span>Valideer & Start</span> <i class="fa-solid fa-arrow-right"></i>';
+            }
+        }
+
+        function startPracticeMode() {
+            currentMode = 'practice';
+            currentSubject = 'air_law';
+            startQuizSession();
+        }
+
+        function openExamSetup() {
+            document.getElementById('dashboardSection').classList.add('hidden');
+            document.getElementById('examSetupSection').classList.remove('hidden');
+        }
+
+        function backToDashboard() {
+            showDashboard();
+        }
+
+        function startExam() {
+            currentMode = 'exam';
+            currentSubject = document.getElementById('subjectSelect').value;
+            startQuizSession();
+        }
+
+        async function startQuizSession() {
+            document.getElementById('dashboardSection').classList.add('hidden');
+            document.getElementById('examSetupSection').classList.add('hidden');
+            document.getElementById('quizSection').classList.remove('hidden');
+
+            const config = subjectConfigs[currentSubject];
+            document.getElementById('quizSubjectTitle').textContent = config.name;
+            document.getElementById('quizModeBadge').textContent = currentMode === 'exam' ? 'OFFICIEEL EXAMEN' : 'OEFENMODUS';
+            document.getElementById('quizModeBadge').className = currentMode === 'exam' 
+                ? 'text-xs font-bold px-2.5 py-1 rounded bg-amber-500/20 text-amber-300' 
+                : 'text-xs font-bold px-2.5 py-1 rounded bg-blue-500/20 text-blue-300';
+
+            if (currentMode === 'exam') {
+                document.getElementById('timerContainer').classList.remove('hidden');
+                startTimer(config.timeMinutes * 60);
+            } else {
+                document.getElementById('timerContainer').classList.add('hidden');
+            }
+
+            currentIndex = 0;
+            userAnswers = [];
+            currentQuestions = await generateAIQuestions(config.name, currentMode === 'exam' ? config.questions : 5);
+            renderQuestion();
+        }
+
+        async function generateAIQuestions(subjectName, count) {
+            document.getElementById('questionText').innerHTML = '<i class="fa-solid fa-circle-notch fa-spin text-blue-500 mr-2"></i> Examenvragen genereren met Gemini 3.8 Flash...';
+            document.getElementById('optionsContainer').innerHTML = '';
+
+            const prompt = `Genereer ${count} meervoudige keuze vragen (A, B, C, D) over het vak "${subjectName}" voor het Belgische PPL/ULM examen gebaseerd op de BCAA/DGLV normen en Bas Vrijhof theorie.
+Return ONLY valid JSON in the following format without markdown or quotes around JSON:
+[
+  {
+    "question": "De vraagtekst...",
+    "options": ["Optie A", "Optie B", "Optie C", "Optie D"],
+    "correct": 0,
+    "explanation": "Uitgebreide theorie-uitleg waarom dit het juiste antwoord is."
+  }
+]`;
+
+            try {
+                const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${apiKey}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
+                });
+
+                if (!res.ok) {
+                    const errData = await res.json().catch(() => ({}));
+                    throw new Error(`API status ${res.status}: ${errData.error?.message || 'Fout bij ophalen van vragen'}`);
+                }
+
+                const data = await res.json();
+                const textResult = data.candidates?.[0]?.content?.parts?.[0]?.text;
+                if (!textResult) throw new Error("Geen tekst ontvangen van Gemini 3.8 Flash.");
+
+                const cleanJson = textResult.replace(/```json/g, '').replace(/```/g, '').trim();
+                return JSON.parse(cleanJson);
+            } catch (err) {
+                console.error("Fout bij Gemini 3.8 Flash aanroep:", err);
+                alert(`Er is een fout opgetreden bij het aanroepen van ${GEMINI_MODEL}: ${err.message}`);
+                return getFallbackQuestions(subjectName, count);
+            }
+        }
+
+        function getFallbackQuestions(subjectName, count) {
+            const fallbackDB = [
+                {
+                    question: `[Bas Vrijhof Theorie] Wat is de minimale vlieghoogte boven een aaneengesloten bebouwing voor een VFR vlucht?`,
+                    options: ["500 feet AGL", "1000 feet boven de hoogste hindernis binnen 600m", "1500 feet AGL", "2000 feet AGL"],
+                    correct: 1,
+                    explanation: "Volgens SERA en Bas Vrijhof theorie geldt over steden minimaal 1000 ft boven het hoogste obstakel in een straal van 600m."
+                }
+            ];
+            return Array(count).fill(0).map((_, i) => fallbackDB[i % fallbackDB.length]);
+        }
+
+        function renderQuestion() {
+            const q = currentQuestions[currentIndex];
+            document.getElementById('questionCounter').textContent = `Vraag ${currentIndex + 1} van ${currentQuestions.length}`;
+            document.getElementById('questionText').textContent = q.question;
+
+            const optsContainer = document.getElementById('optionsContainer');
+            optsContainer.innerHTML = '';
+
+            const expBox = document.getElementById('explanationBox');
+            expBox.classList.add('hidden');
+
+            q.options.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left p-4 rounded-lg bg-slate-900 border border-slate-700 hover:border-blue-500 transition-all flex items-center justify-between";
+                btn.innerHTML = `<span>${String.fromCharCode(65 + idx)}. ${opt}</span>`;
+                
+                if (userAnswers[currentIndex] === idx) {
+                    btn.classList.add('border-blue-500', 'bg-blue-950/40');
+                }
+
+                btn.onclick = () => selectOption(idx);
+                optsContainer.appendChild(btn);
             });
 
-            if (!response.ok) {
-                const errData = await response.json();
-                throw new Error(errData.error?.message || "API Error");
+            if (currentMode === 'practice' && userAnswers[currentIndex] !== undefined) {
+                showExplanation();
             }
-
-            const data = await response.json();
-            const rawJson = data.candidates.content.parts.text;
-            const parsedQuestion = JSON.parse(rawJson);
-            
-            // Initialiseer extra parameters voor navigatie-state tracking
-            parsedQuestion.userSelectedIndex = null;
-            parsedQuestion.isChecked = false;
-            
-            questionsData[currentQuestionIndex] = parsedQuestion;
-            renderQuestion(parsedQuestion);
-        } catch (error) {
-            console.error(error);
-            alert("Fout bij het ophalen van de vraag: " + error.message + "\n\nControleer of je API-key klopt en je internetlocatie ondersteund is.");
-            resetSimulator();
         }
-    }
 
-    function renderQuestion(qData) {
-        document.getElementById("loading-indicator").style.display = "none";
-        document.getElementById("question-content").style.display = "block";
-
-        document.getElementById("question-text").textContent = qData.question;
-        const container = document.getElementById("options-container");
-        container.innerHTML = "";
-
-        qData.options.forEach((opt, idx) => {
-            const div = document.createElement("div");
-            div.className = "option-item";
-            div.dataset.index = idx;
-            div.innerHTML = `<input type="radio" name="options" id="opt-${idx}"> <label for="opt-${idx}">${opt}</label>`;
-            
-            if (!qData.isChecked) {
-                div.onclick = () => selectOption(idx);
+        function selectOption(idx) {
+            userAnswers[currentIndex] = idx;
+            renderQuestion();
+            if (currentMode === 'practice') {
+                showExplanation();
             }
-            container.appendChild(div);
-        });
-
-        // Restore status als de vraag al beantwoord is in de geschiedenis
-        if (qData.userSelectedIndex !== null) {
-            selectOption(qData.userSelectedIndex);
         }
 
-        if (qData.isChecked) {
-            applyVisualFeedback(qData);
-            document.getElementById("btn-check").style.display = "none";
-            document.getElementById("btn-next").style.display = "block";
-        } else {
-            document.getElementById("btn-check").style.display = "block";
-            document.getElementById("btn-next").style.display = "none";
-        }
-    }
+        function showExplanation() {
+            const q = currentQuestions[currentIndex];
+            const chosen = userAnswers[currentIndex];
+            const expBox = document.getElementById('explanationBox');
+            const expHeader = document.getElementById('explanationHeader');
+            const expText = document.getElementById('explanationText');
 
-    function selectOption(index) {
-        const qData = questionsData[currentQuestionIndex];
-        if (qData.isChecked) return;
-        
-        qData.userSelectedIndex = index;
-        document.querySelectorAll(".option-item").forEach((el, idx) => {
-            el.classList.toggle("selected", idx === index);
-            el.querySelector("input").checked = (idx === index);
-        });
-    }
-
-    function checkAnswer() {
-        const qData = questionsData[currentQuestionIndex];
-        if (qData.userSelectedIndex === null) {
-            alert("Selecteer eerst een antwoord.");
-            return;
-        }
-        
-        qData.isChecked = true;
-        applyVisualFeedback(qData);
-
-        document.getElementById("btn-check").style.display = "none";
-        document.getElementById("btn-next").style.display = "block";
-    }
-
-    function applyVisualFeedback(qData) {
-        const items = document.querySelectorAll(".option-item");
-        items.forEach((item, idx) => {
-            if (idx === qData.correctIndex) {
-                item.className = "option-item correct";
-            } else if (idx === qData.userSelectedIndex) {
-                item.className = "option-item wrong";
+            expBox.classList.remove('hidden');
+            if (chosen === q.correct) {
+                expHeader.className = "font-bold text-sm text-emerald-400";
+                expHeader.textContent = "✓ Correct Antwoord!";
             } else {
-                item.className = "option-item";
+                expHeader.className = "font-bold text-sm text-red-400";
+                expHeader.textContent = `✗ Onjuist (Juiste antwoord: ${String.fromCharCode(65 + q.correct)})`;
             }
-        });
-
-        const expBox = document.getElementById("explanation-text");
-        expBox.textContent = `Theoretische Toelichting (Bas Vrijhof VFR): ${qData.explanation}`;
-        expBox.style.display = "block";
-    }
-
-    function nextQuestion() {
-        currentQuestionIndex++;
-        if (currentQuestionIndex >= totalQuestions) {
-            finishExam();
-        } else {
-            fetchQuestion();
+            expText.textContent = q.explanation;
         }
-    }
 
-    function prevQuestion() {
-        if (currentQuestionIndex > 0) {
-            currentQuestionIndex--;
-            fetchQuestion();
-        }
-    }
-
-    function finishExam() {
-        clearInterval(timerInterval);
-        switchScreen("result-screen");
-        
-        let correctCount = 0;
-        questionsData.forEach(q => {
-            if (q && q.userSelectedIndex === q.correctIndex) {
-                correctCount++;
+        function prevQuestion() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                renderQuestion();
             }
-        });
-
-        const finalPercentage = Math.round((correctCount / totalQuestions) * 100);
-        const scoreDisplay = document.getElementById("score-display");
-        const statusText = document.getElementById("result-status");
-        
-        scoreDisplay.textContent = `${finalPercentage}%`;
-        document.getElementById("score-details").textContent = `Correct: ${correctCount} / ${totalQuestions} | Norm: 75%`;
-        
-        if (finalPercentage >= 75) {
-            scoreDisplay.className = "score-big pass";
-            statusText.textContent = "Gefeliciteerd! Geslaagd!";
-            statusText.className = "pass";
-        } else {
-            scoreDisplay.className = "score-big fail";
-            statusText.textContent = "Helaas. Niet geslaagd.";
-            statusText.className = "fail";
         }
-    }
 
-    function resetSimulator() {
-        clearInterval(timerInterval);
-        switchScreen("setup-screen");
-    }
+        function nextQuestion() {
+            if (currentIndex < currentQuestions.length - 1) {
+                currentIndex++;
+                renderQuestion();
+            } else {
+                finishQuiz();
+            }
+        }
 
-    function switchScreen(screenId) {
-        document.querySelectorAll(".section").forEach(s => s.classList.remove("active"));
-        document.getElementById(screenId).classList.add("active");
-    }
+        function startTimer(seconds) {
+            clearInterval(timerInterval);
+            timeRemaining = seconds;
+            updateTimerDisplay();
 
-    updateSubjects();
-</script>
+            timerInterval = setInterval(() => {
+                timeRemaining--;
+                updateTimerDisplay();
+                if (timeRemaining <= 0) {
+                    clearInterval(timerInterval);
+                    alert("Tijd is verstreken! Het examen wordt ingediend.");
+                    finishQuiz();
+                }
+            }, 1000);
+        }
 
+        function updateTimerDisplay() {
+            const mins = Math.floor(timeRemaining / 60);
+            const secs = timeRemaining % 60;
+            document.getElementById('timerDisplay').textContent = 
+                `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+        }
+
+        function finishQuiz() {
+            clearInterval(timerInterval);
+            let correctCount = 0;
+            currentQuestions.forEach((q, idx) => {
+                if (userAnswers[idx] === q.correct) correctCount++;
+            });
+
+            const scorePct = Math.round((correctCount / currentQuestions.length) * 100);
+            const passed = scorePct >= 75;
+
+            alert(`Examen Afgerond!\nResultaat: ${scorePct}%\nStatus: ${passed ? 'GESLAAGD (≥75%)' : 'NIET GESLAAGD'}`);
+            showDashboard();
+        }
+    </script>
 </body>
 </html>
