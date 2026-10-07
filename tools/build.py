@@ -25,6 +25,12 @@ def licences(subject, topic):
 
 def main():
     patches = json.load(open(os.path.join(ROOT, "content", "_patches.json"), encoding="utf-8"))
+    replacements = patches.get("_replace", {})
+
+    def fix(text):
+        for old, new in replacements.items():
+            text = text.replace(old, new)
+        return text
     bank, problems = {}, []
     for path in sorted(glob.glob(os.path.join(ROOT, "data", "*.json"))):
         subject = os.path.splitext(os.path.basename(path))[0]
@@ -46,8 +52,8 @@ def main():
                 "id": q["id"],
                 "lo": lo[0],
                 "loText": lo[1] if len(lo) > 1 else "",
-                "q": p.get("question", q["question"]),
-                "o": options,
+                "q": fix(p.get("question", q["question"])),
+                "o": [fix(o) for o in options],
                 "c": q["correct"],
                 "img": q["images"],
                 "e": c[0],
