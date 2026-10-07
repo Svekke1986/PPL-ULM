@@ -125,8 +125,6 @@ h2 { font-size: 1.3rem; margin: 0 0 12px; }
 .progress { height: 6px; background: var(--surface-2); border-radius: 99px; overflow: hidden; }
 .progress > span { display: block; height: 100%; background: var(--ok-border); }
 .badge { display: inline-block; font-size: .75rem; font-weight: 700; padding: 2px 8px; border-radius: 99px; background: var(--surface-2); color: var(--muted); }
-.badge-ai { background: #efe6ff; color: #5b21b6; }
-@media (prefers-color-scheme: dark) { .badge-ai { background: #2e2050; color: #d8c7ff; } }
 
 /* Question */
 .quiz-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 16px; }
@@ -184,20 +182,10 @@ h2 { font-size: 1.3rem; margin: 0 0 12px; }
 .result-hero.fail { border-color: var(--bad-border); background: var(--bad-bg); color: var(--bad-text); }
 .review-item { margin-top: 16px; }
 
-/* Settings */
-label.field { display: block; font-weight: 600; margin: 14px 0 6px; }
-input[type=text], input[type=password], select {
-  width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border);
-  background: var(--surface); color: var(--text); font: inherit;
-}
-.check { display: flex; gap: 10px; align-items: center; margin-top: 14px; }
-
 /* Lightbox */
 .lightbox { position: fixed; inset: 0; background: rgba(0,0,0,.8); display: grid; place-items: center; z-index: 50; cursor: zoom-out; padding: 16px; }
 .lightbox img { max-width: 100%; max-height: 100%; background: #fff; border-radius: 8px; }
 
-.spinner { display: inline-block; width: 18px; height: 18px; border: 3px solid var(--border); border-top-color: var(--primary); border-radius: 50%; animation: spin 0.8s linear infinite; vertical-align: middle; }
-@keyframes spin { to { transform: rotate(360deg); } }
 
 @media (max-width: 560px) {
   .topbar { padding: 10px 12px; }

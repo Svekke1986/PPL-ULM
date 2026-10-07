@@ -66,14 +66,11 @@
     const review = q.review
       ? '<div class="review">⚠️ Let op: over deze vraag bestaat twijfel tussen het antwoord in de voorbeeldvragen en de officiële regelgeving. Controleer de bron.</div>'
       : '';
-    const ai = q.ai
-      ? '<div class="review">🤖 Deze vraag is door AI gegenereerd en niet gecontroleerd. De uitleg en de bronverwijzing kunnen fouten bevatten.</div>'
-      : '';
     return `<div class="feedback ${ok ? 'ok' : 'bad'}">
       <h3>${head}</h3>
       ${whyWrong}
       <p>${esc(q.e || 'Geen uitleg beschikbaar.')}</p>
-      ${review}${ai}
+      ${review}
       ${sourceHtml(q)}
     </div>`;
   }
@@ -89,7 +86,7 @@
       return `<button class="${cls}" data-i="${i}" ${opts.locked ? 'disabled' : ''}>
         <span class="letter">${LETTERS[i]}</span><span>${esc(text)}</span></button>`;
     }).join('');
-    return `<div class="q-meta"><span>${opts.counter || ''}</span><span>${q.ai ? '<span class="badge badge-ai">AI-gegenereerd</span>' : (q.lo ? 'ECQB ' + esc(q.lo) : '')}</span></div>
+    return `<div class="q-meta"><span>${opts.counter || ''}</span><span>${q.lo ? 'ECQB ' + esc(q.lo) : ''}</span></div>
       <p class="q-text">${esc(q.q)}</p>
       ${imgs ? `<div class="q-images">${imgs}</div>` : ''}
       <div class="options">${options}</div>`;
@@ -119,14 +116,12 @@
 
   function viewLicence(licence) {
     const L = LICENCES[licence];
-    const ai = window.AI.available();
     const cards = licenceSubjects(licence).map(key => {
       const S = SUBJECTS[key];
       const n = questionsFor(licence, key).length;
       const ex = L.exams[key];
       const st = stats(licence, key);
       const pct = st.answered ? Math.round(100 * st.correct / st.answered) : 0;
-      const canPractice = n > 0 || ai;
       return `<div class="card subject-card">
         <div class="subject-head">
           <div class="subject-icon">${S.icon}</div>
@@ -134,9 +129,9 @@
         </div>
         <div class="subject-meta">${n} vragen in de databank · examen: ${ex.questions} vragen / ${ex.minutes} min</div>
         ${st.answered ? `<div class="subject-meta">Jouw score: ${st.correct}/${st.answered} (${pct}%)</div><div class="progress"><span style="width:${pct}%"></span></div>` : ''}
-        ${n === 0 ? `<div class="subject-meta">${ai ? 'Nog geen vragen in de databank: oefenen gebeurt met AI-vragen.' : 'Nog geen vragen in de databank.'}</div>` : ''}
+        ${n === 0 ? '<div class="subject-meta">Nog geen vragen in de databank.</div>' : ''}
         <div class="btn-row">
-          <a class="btn btn-primary" href="#/${licence.toLowerCase()}/${key}/oefenen" ${canPractice ? '' : 'aria-disabled="true" onclick="return false" style="opacity:.5;pointer-events:none"'}>Oefenen</a>
+          <a class="btn btn-primary" href="#/${licence.toLowerCase()}/${key}/oefenen" ${n ? '' : 'aria-disabled="true" onclick="return false" style="opacity:.5;pointer-events:none"'}>Oefenen</a>
           <a class="btn btn-accent" href="#/${licence.toLowerCase()}/${key}/examen" ${n ? '' : 'aria-disabled="true" onclick="return false" style="opacity:.5;pointer-events:none"'}>Proefexamen</a>
         </div>
       </div>`;
@@ -169,7 +164,7 @@
     const all = questionsFor(licence, subject);
     const chapter = (window.CHAPTERS[subject] || []).find(c => c.id === chapterId) || null;
     const pool = chapter ? all.filter(q => window.chapterOf(subject, q.lo) === chapter) : all;
-    if (!pool.length && !window.AI.available()) {
+    if (!pool.length) {
       location.hash = chapter ? `#/${licence.toLowerCase()}/${subject}/oefenen` : '#/' + licence.toLowerCase();
       return;
     }
@@ -188,39 +183,24 @@
     return P.pool.find(q => q.id === id);
   }
 
-  async function nextPractice(forceAI) {
+  function nextPractice() {
     const P = practice;
     P.chosen = null;
     P.count++;
-    const ai = window.AI.available();
-    const useAI = ai && (forceAI || !P.pool.length || (window.AI.settings().mix && P.count % 3 === 0));
-    if (useAI) {
-      renderPracticeLoading();
-      try {
-        const examples = shuffle(P.pool.length ? P.pool : Object.values(BANK).flat()).slice(0, 3);
-        P.q = present(await window.AI.generate(P.licence, P.subject, examples, P.chapter && P.chapter.name));
-      } catch (err) {
-        if (!P.pool.length) { renderPracticeError(err); return; }
-        P.q = present(drawFromDeck());
-        P.aiError = err.message;
-      }
-    } else {
-      P.q = present(drawFromDeck());
-    }
+    P.q = present(drawFromDeck());
     renderPractice();
   }
 
   function practiceHeader() {
     const P = practice;
     const S = SUBJECTS[P.subject];
-    const ai = window.AI.available();
     const total = questionsFor(P.licence, P.subject).length;
     const chapterOpts = chaptersFor(P.licence, P.subject)
-      .filter(c => c.count > 0 || ai)
+      .filter(c => c.count > 0)
       .map(c => `<option value="${esc(c.ch.id)}" ${P.chapter === c.ch ? 'selected' : ''}>${esc(c.ch.name)} (${c.count})</option>`).join('');
     return `<div class="crumbs"><a href="#/">Home</a> › <a href="#/${P.licence.toLowerCase()}">${esc(LICENCES[P.licence].name)}</a> › ${esc(S.name)}</div>
       <div class="quiz-head">
-        <div><h1>${S.icon} ${esc(S.name)}</h1><div class="muted small">Oefenmodus · ${P.pool.length} vragen${P.chapter ? ' in dit hoofdstuk' : ' in de databank'}${ai ? ' · AI-vragen aan' : ''}</div></div>
+        <div><h1>${S.icon} ${esc(S.name)}</h1><div class="muted small">Oefenmodus · ${P.pool.length} vragen${P.chapter ? ' in dit hoofdstuk' : ' in de databank'}</div></div>
         <span class="score-pill">Sessie: ${P.session.correct}/${P.session.answered}</span>
       </div>
       ${chapterOpts ? `<div class="chapter-filter">
@@ -237,45 +217,29 @@
     };
   }
 
-  function renderPracticeLoading() {
-    app.innerHTML = practiceHeader() + `<div class="card"><span class="spinner"></span> Nieuwe vraag wordt gegenereerd…</div>`;
-    bindChapterSelect();
-  }
-  function renderPracticeError(err) {
-    app.innerHTML = practiceHeader() + `<div class="card"><div class="feedback bad"><h3>Kon geen vraag genereren</h3><p>${esc(err.message)}</p></div>
-      <div class="quiz-actions"><a class="btn" href="#/instellingen">Instellingen</a><button class="btn btn-primary" id="retry">Opnieuw proberen</button></div></div>`;
-    document.getElementById('retry').onclick = () => nextPractice(true);
-    bindChapterSelect();
-  }
-
   function renderPractice() {
     const P = practice;
     const answered = P.chosen !== null;
-    const aiBtn = window.AI.available() && P.pool.length ? '<button class="btn" id="ai-q">✨ AI-vraag</button>' : '';
     app.innerHTML = practiceHeader() + `
-      ${P.aiError ? `<div class="notice">AI-vraag mislukt (${esc(P.aiError)}). Er werd een vraag uit de databank getoond.</div>` : ''}
       <div class="card">
         ${questionHtml(P.q, { chosen: P.chosen, reveal: answered, locked: answered, counter: `Vraag ${P.count}` })}
         ${answered ? feedbackHtml(P.q, P.chosen) : ''}
         <div class="quiz-actions">
           <a class="btn" href="#/${P.licence.toLowerCase()}">← Vakken</a>
-          <div class="btn-row">${aiBtn}<button class="btn btn-primary" id="next">${answered ? 'Volgende vraag →' : 'Overslaan →'}</button></div>
+          <div class="btn-row"><button class="btn btn-primary" id="next">${answered ? 'Volgende vraag →' : 'Overslaan →'}</button></div>
         </div>
       </div>`;
-    P.aiError = null;
     app.querySelectorAll('.option').forEach(b => b.onclick = () => {
       if (P.chosen !== null) return;
       P.chosen = +b.dataset.i;
       const ok = P.chosen === P.q.c;
       P.session.answered++; if (ok) P.session.correct++;
-      if (!P.q.ai) addStat(P.licence, P.subject, ok);
+      addStat(P.licence, P.subject, ok);
       renderPractice();
       app.querySelector('.feedback')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
     document.getElementById('next').onclick = () => nextPractice();
     bindChapterSelect();
-    const ai = document.getElementById('ai-q');
-    if (ai) ai.onclick = () => nextPractice(true);
     bindImages();
   }
 
@@ -403,49 +367,19 @@
 
   // ---------- settings ----------
   function viewSettings() {
-    const s = window.AI.settings();
     app.innerHTML = `
       <div class="crumbs"><a href="#/">Home</a> › Instellingen</div>
       <div class="card">
         <h1>Instellingen</h1>
-        <h2 style="margin-top:16px">AI-vraaggenerator (optioneel)</h2>
-        <p class="muted">Standaard komen de vragen uit de databank met gecontroleerde ECQB-voorbeeldvragen. Wil je extra, nieuw gegenereerde vragen, dan kun je je eigen Google Gemini API-sleutel invullen.
-          De sleutel wordt alleen in deze browser bewaard. AI-vragen worden duidelijk gemarkeerd en <strong>niet gecontroleerd</strong>: de uitleg en de bronnen kunnen fouten bevatten.</p>
-        <label class="check"><input type="checkbox" id="ai-enabled" ${s.enabled ? 'checked' : ''}> AI-vragen inschakelen</label>
-        <label class="field" for="ai-key">Gemini API-sleutel</label>
-        <input type="password" id="ai-key" value="${esc(s.apiKey)}" placeholder="AIza…" autocomplete="off">
-        <label class="field" for="ai-model">Model</label>
-        <input type="text" id="ai-model" value="${esc(s.model)}">
-        <label class="check"><input type="checkbox" id="ai-mix" ${s.mix ? 'checked' : ''}> In oefenmodus elke 3e vraag door AI laten genereren</label>
-        <div class="btn-row" style="margin-top:18px">
-          <button class="btn btn-primary" id="save">Opslaan</button>
-          <button class="btn" id="test">Test verbinding</button>
-        </div>
-        <p id="msg" class="small"></p>
-        <h2 style="margin-top:24px">Voortgang</h2>
+        <h2 style="margin-top:16px">Voortgang</h2>
         <p class="muted">Je scores worden alleen lokaal in deze browser bewaard.</p>
         <button class="btn" id="reset">Voortgang wissen</button>
+        <p id="msg" class="small"></p>
       </div>`;
-    const read = () => ({
-      enabled: document.getElementById('ai-enabled').checked,
-      apiKey: document.getElementById('ai-key').value.trim(),
-      model: document.getElementById('ai-model').value.trim() || 'gemini-2.5-flash',
-      mix: document.getElementById('ai-mix').checked
-    });
-    const msg = document.getElementById('msg');
-    document.getElementById('save').onclick = () => { window.AI.save(read()); msg.textContent = '✅ Opgeslagen.'; };
-    document.getElementById('test').onclick = async () => {
-      window.AI.save(Object.assign(read(), { enabled: true }));
-      msg.innerHTML = '<span class="spinner"></span> Testen…';
-      try {
-        const q = await window.AI.generate('PPL', 'air_law', (BANK.air_law || []).slice(0, 2));
-        msg.textContent = '✅ Werkt! Voorbeeld: ' + q.q;
-      } catch (e) { msg.textContent = '❌ ' + e.message; }
-    };
     document.getElementById('reset').onclick = () => {
       if (!confirm('Alle lokale scores en voortgang wissen?')) return;
-      Object.keys(localStorage).filter(k => k.startsWith('pplulm.') && k !== 'pplulm.ai').forEach(k => localStorage.removeItem(k));
-      msg.textContent = 'Voortgang gewist.';
+      Object.keys(localStorage).filter(k => k.startsWith('pplulm.')).forEach(k => localStorage.removeItem(k));
+      document.getElementById('msg').textContent = 'Voortgang gewist.';
     };
   }
 
@@ -475,6 +409,9 @@
     if (parts[2] === 'examen') return viewExamIntro(licence, subject);
     return viewPractice(licence, subject, parts[3]);
   }
+
+  // Opruimen: de vroegere AI-instellingen (incl. API-sleutel) uit de browser verwijderen.
+  try { localStorage.removeItem('pplulm.ai'); } catch (e) { /* ignore */ }
 
   window.addEventListener('hashchange', route);
   window.addEventListener('beforeunload', e => { if (exam && !exam.done) { e.preventDefault(); e.returnValue = ''; } });

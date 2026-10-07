@@ -10,7 +10,6 @@ Onofficieel oefenplatform voor de theorie-examens **PPL(A)** (EASA Part-FCL, BCA
   Na het antwoorden krijg je een **groen** (juist) of **rood** (fout) vak met uitleg en een link naar de officiële bron (EASA, BCAA/DGLV, Belgische AIP).
 - **Per hoofdstuk oefenen**: in de oefenmodus kies je "Alle hoofdstukken" of één hoofdstuk van het vak (indeling via de ECQB-leerdoelcodes, zie `CHAPTERS` in `js/config.js`).
 - **Proefexamen** per vak met het aantal vragen en de tijd van het echte examen, met timer, markeren, overzicht en uitleg achteraf.
-- Optioneel: **AI-gegenereerde vragen** via je eigen Google Gemini API-sleutel (⚙️ Instellingen). Die vragen worden duidelijk gemarkeerd als niet gecontroleerd.
 - Je voortgang wordt lokaal in de browser bewaard.
 
 ## Structuur
@@ -18,7 +17,6 @@ Onofficieel oefenplatform voor de theorie-examens **PPL(A)** (EASA Part-FCL, BCA
 |---|---|
 | `index.html`, `css/`, `js/app.js` | De website (statisch, geen server nodig) |
 | `js/config.js` | Vakken, examenparameters (aantal vragen/tijd/slaagdrempel) en bronnen |
-| `js/ai.js` | Optionele Gemini-vraaggenerator |
 | `data/<vak>.json` | Vragen uit de PDF's (het juiste antwoord is het groene vakje in de PDF) |
 | `img/<vak>/` | Afbeeldingen/bijlagen bij de vragen |
 | `content/<vak>.json` | Uitleg + bron per vraag-ID: `[uitleg, bron, artikel]` |
