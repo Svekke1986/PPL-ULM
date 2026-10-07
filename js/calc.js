@@ -19,6 +19,11 @@ window.CALC = (function () {
   const hmin = mins => { const m = Math.round(mins); return `${Math.floor(m / 60)}:${pad2(m % 60)} h`; };
   const ew = v => `${Math.abs(v)}° ${v >= 0 ? 'E' : 'W'}`;
   const signed = v => (v >= 0 ? '+' : '−') + Math.abs(v);
+  // Uitleg voor ware → magnetisch (variatie) of magnetisch → kompas (deviatie):
+  // oost aftrekken ("East is least"), west optellen ("West is best").
+  const ewStep = (kind, fromName, fromVal, v, toName, toVal) =>
+    `${kind[0].toUpperCase() + kind.slice(1)} ${ew(v)}: ${v > 0 ? `oost${kind} trek je af ("East is least")` : `west${kind} tel je op ("West is best")`}.\n` +
+    `${toName} = ${fromName} ${v > 0 ? '−' : '+'} ${kind} = ${hdg(fromVal)} ${v > 0 ? '−' : '+'} ${Math.abs(v)}° = ${hdg(toVal)}.`;
 
   // Build the 4 options: correct first, then distinct distractors (fallback: correct ± k·step).
   function options(correct, wrong, fmt, step, minGap = 0) {
@@ -107,9 +112,9 @@ window.CALC = (function () {
         const ask = pick(['MH', 'CH']);
         const ans = ask === 'MH' ? mh : ch;
         const steps = [
-          `TH = TT + WCA = ${tt}° ${wca >= 0 ? '+' : '−'} ${Math.abs(wca)}° = ${hdg(th)}.`,
-          `MH = TH − oostvariatie / + westvariatie ("East is least, West is best"): ${hdg(th)} ${v > 0 ? '−' : '+'} ${Math.abs(v)}° = ${hdg(mh)}.`,
-          ask === 'CH' ? `CH = MH − oostdeviatie / + westdeviatie: ${hdg(mh)} ${dv > 0 ? '−' : '+'} ${Math.abs(dv)}° = ${hdg(ch)}.` : ''
+          `Opstuurhoek ${signed(wca)}° (${wca > 0 ? 'naar rechts' : 'naar links'}): TH = TT ${wca >= 0 ? '+' : '−'} WCA = ${hdg(tt)} ${wca >= 0 ? '+' : '−'} ${Math.abs(wca)}° = ${hdg(th)}.`,
+          ewStep('variatie', 'TH', th, v, 'MH', mh),
+          ask === 'CH' ? ewStep('deviatie', 'MH', mh, dv, 'CH', ch) : ''
         ].filter(Boolean);
         const q = `Gegeven: TT ${hdg(tt)}, opstuurhoek (WCA) ${signed(wca)}°, variatie ${ew(v)}, deviatie ${ew(dv)}. Wat is de ${ask === 'MH' ? 'magnetische luchtkoers (MH)' : 'kompaskoers (CH)'}?`;
         const wrong = ask === 'MH'
@@ -133,7 +138,9 @@ window.CALC = (function () {
         const steps = [
           `${given} = ${meaning[given]}; ${ask} = ${meaning[ask]}.`,
           fromGiven !== fromAsk ? 'Van "vanaf" naar "naar" het station (of omgekeerd): ±180°.' : 'Zelfde richting (vanaf/naar): geen 180° nodig.',
-          magGiven !== magAsk ? `Waar = magnetisch + oostvariatie (− westvariatie). Variatie ${ew(v)}.` : 'Beide magnetisch of beide waar: de variatie speelt geen rol.',
+          magGiven === magAsk ? 'Beide magnetisch of beide waar: de variatie speelt geen rol.'
+            : magAsk ? `Van waar naar magnetisch, variatie ${ew(v)}: ${v > 0 ? 'oostvariatie trek je af ("East is least")' : 'westvariatie tel je op ("West is best")'}.`
+              : `Van magnetisch naar waar, variatie ${ew(v)}: omgekeerd, dus ${v > 0 ? 'oostvariatie tel je op' : 'westvariatie trek je af'}.`,
           `${ask} = ${brg(val[ask])}.`
         ];
         const ans = val[ask];
@@ -377,7 +384,7 @@ window.CALC = (function () {
         let v; do { v = rnd(-8, 8); } while (v === 0);
         const mt = norm(tt - v);
         if (mt === 0 || mt === 179 || mt === 180 || mt === 359) return this.gen();
-        const min = rnd(3, 7) * 1000;
+        const min = rnd(5, 8) * 1000; // boven de Belgische overgangshoogte (4500 ft)
         const east = mt < 180;
         // VFR: oost (000-179) oneven duizendtallen + 500, west (180-359) even + 500
         let fl = 35; while (!(fl * 100 > min && ((Math.floor(fl / 10) % 2 === 1) === east))) fl += 10;
@@ -385,14 +392,14 @@ window.CALC = (function () {
         const ttEast = tt < 180;
         let flTT = 35; while (!(flTT * 100 > min && ((Math.floor(flTT / 10) % 2 === 1) === ttEast))) flTT += 10;
         const steps = [
-          `MT = TT − oostvariatie / + westvariatie = ${tt}° ${v > 0 ? '−' : '+'} ${Math.abs(v)}° = ${brg(mt)}.`,
-          `VFR boven 3000 ft: MT 000°-179° → oneven duizendtallen + 500 ft (FL35, 55, 75…), MT 180°-359° → even duizendtallen + 500 ft (FL45, 65, 85…).`,
-          `${brg(mt)} valt in ${east ? '000-179' : '180-359'}. Het laagste geschikte niveau boven ${min} ft is FL${pad2(fl).padStart(3, '0')}.`,
+          ewStep('variatie', 'TT', tt, v, 'MT', mt),
+          `VFR boven 3000 ft: MT 000°-179° → oneven duizendtallen + 500 ft (FL55, FL75, FL95…), MT 180°-359° → even duizendtallen + 500 ft (FL65, FL85…).`,
+          `${brg(mt)} valt in ${east ? '000°-179°' : '180°-359°'}. Het laagste geschikte niveau boven ${min} ft is FL${String(fl).padStart(3, '0')}.`,
           'De regel gebruikt de magnetische grondkoers, niet de ware koers.'
         ];
         const fmt = f => `FL${String(f).padStart(3, '0')}`;
         const q = `Ware grondkoers ${hdg(tt)}, variatie ${ew(v)}. Wat is het laagste VFR-vliegniveau boven ${min} ft?`;
-        return Q({ q, o: options(fl, [other, flTT === fl ? fl - 10 : flTT, fl + 5], fmt, 20), e: steps.join('\n'), src: 'sera', ref: 'SERA.5005(g) en Appendix 3 – Tabel van kruishoogtes', lo: this.lo, loText: 'Een geschikte hoogte/vliegniveau kiezen' });
+        return Q({ q, o: options(fl, [other, flTT === fl ? fl + 20 : flTT, fl + 5], fmt, 20), e: steps.join('\n'), src: 'sera', ref: 'SERA.5005(g) en Appendix 3 – Tabel van kruishoogtes', lo: this.lo, loText: 'Een geschikte hoogte/vliegniveau kiezen' });
       }
     },
     {
