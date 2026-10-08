@@ -497,20 +497,70 @@
   }
 
   // ---------- settings ----------
+  // Elke rij is een vak (of instrument) met de localStorage-sleutels die bij die voortgang horen.
+  function progressRows() {
+    const keys = () => Object.keys(localStorage).filter(k => k.startsWith('pplulm.'));
+    const rows = [];
+    Object.keys(LICENCES).forEach(lic => {
+      licenceSubjects(lic).forEach(sub => {
+        const S = SUBJECTS[sub];
+        const own = k => k === `pplulm.stats.${lic}.${sub}` || k === `pplulm.exams.${lic}.${sub}`
+          || k === `pplulm.deck.${lic}.${sub}` || k.startsWith(`pplulm.deck.${lic}.${sub}.`);
+        rows.push({ section: LICENCES[lic].name, id: `${lic}.${sub}`, label: `${S.icon} ${S.name}`,
+          st: stats(lic, sub), exams: store.get(`exams.${lic}.${sub}`, []).length, keys: () => keys().filter(own) });
+      });
+    });
+    Object.keys(SETS).forEach(setKey => {
+      const SET = SETS[setKey], API = SET.api();
+      if (!API) return;
+      SET.order.filter(k => API.GENERATORS[k]).forEach(key => {
+        const G = SET.group(key), full = `pplulm.${SET.statsKey}.${key}`;
+        rows.push({ section: SET.title, id: `${setKey}.${key}`, label: `${G.icon} ${G.name}`,
+          st: store.get(`${SET.statsKey}.${key}`, { answered: 0, correct: 0 }), exams: 0, keys: () => keys().filter(k => k === full) });
+      });
+    });
+    return rows;
+  }
+
   function viewSettings() {
+    const rows = progressRows();
+    const sections = [...new Set(rows.map(r => r.section))].map(sec => {
+      const list = rows.filter(r => r.section === sec).map(r => {
+        const has = r.keys().length > 0;
+        const pct = r.st.answered ? Math.round(100 * r.st.correct / r.st.answered) : 0;
+        const info = r.st.answered
+          ? `${r.st.correct}/${r.st.answered} juist (${pct}%)${r.exams ? ` · ${r.exams} proefexamen${r.exams > 1 ? 's' : ''}` : ''}`
+          : (has ? 'Alleen oefenvolgorde of proefexamens bewaard' : 'Nog geen voortgang');
+        return `<li class="progress-row">
+          <div><div>${esc(r.label)}</div><div class="muted small">${info}</div></div>
+          <button class="btn btn-small" data-reset="${esc(r.id)}" ${has ? '' : 'disabled'}>Wissen</button>
+        </li>`;
+      }).join('');
+      return `<h3 class="progress-section">${esc(sec)}</h3><ul class="progress-list">${list}</ul>`;
+    }).join('');
     app.innerHTML = `
       <div class="crumbs"><a href="#/">Home</a> › Instellingen</div>
       <div class="card">
         <h1>Instellingen</h1>
         <h2 style="margin-top:16px">Voortgang</h2>
-        <p class="muted">Je scores worden alleen lokaal in deze browser bewaard.</p>
-        <button class="btn" id="reset">Voortgang wissen</button>
+        <p class="muted">Je scores worden alleen lokaal in deze browser bewaard. Je kunt de voortgang per vak wissen (score, oefenvolgorde en proefexamens van dat vak) of alles in één keer.</p>
+        ${sections}
+        <h3 class="progress-section">Alles</h3>
+        <button class="btn" id="reset">Alle voortgang wissen</button>
         <p id="msg" class="small"></p>
       </div>`;
+    app.querySelectorAll('[data-reset]').forEach(btn => btn.onclick = () => {
+      const r = rows.find(x => x.id === btn.dataset.reset);
+      if (!r || !confirm(`Voortgang van "${r.label.replace(/^\S+\s/, '')}" (${r.section}) wissen?`)) return;
+      r.keys().forEach(k => localStorage.removeItem(k));
+      viewSettings();
+      document.getElementById('msg').textContent = `Voortgang van ${r.label.replace(/^\S+\s/, '')} (${r.section}) gewist.`;
+    });
     document.getElementById('reset').onclick = () => {
       if (!confirm('Alle lokale scores en voortgang wissen?')) return;
       Object.keys(localStorage).filter(k => k.startsWith('pplulm.')).forEach(k => localStorage.removeItem(k));
-      document.getElementById('msg').textContent = 'Voortgang gewist.';
+      viewSettings();
+      document.getElementById('msg').textContent = 'Alle voortgang gewist.';
     };
   }
 
