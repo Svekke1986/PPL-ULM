@@ -23,6 +23,37 @@ dan op één artikel gebaseerd en citeren eruit. Deze teksten worden (nog) niet 
 > op baseert. Tabellen (VMC-minima, onderscheppingssignalen …) komen in platte tekst niet altijd goed over: bij elke
 > bepaling staat de pagina van het Publicatieblad (bv. "L 281/37"), zodat je ze in de PDF kunt nakijken.
 
+## EASA Easy Access Rules (geconsolideerd, Engels) — `easa/`
+De meest actuele versies, met de regel zelf (IR) én de AMC en GM. **Gebruik deze als hoofdbron**; de PDF's in `eu/` zijn
+oorspronkelijke (verouderde) Nederlandstalige versies, handig voor de Nederlandse terminologie.
+
+| Bestand | Inhoud | Versie |
+|---|---|---|
+| `easa/sera.json` / `.md` | SERA (923/2012) incl. Sectie 14 (spreekprocedures) — 352 bepalingen | Revision August 2025 |
+| `easa/aircrew.json` / `.md` | Aircrew (1178/2011): Part-FCL, Part-MED, ARA/ORA/DTO, PPL/LAPL-syllabus (AMC1 FCL.210; FCL.215) — 988 bepalingen | Revision November 2025 |
+| `easa/airops.json` / `.md` | Air Operations (965/2012): **Part-NCO**, ORO, CAT, SPO, NCC, SPA … — 3 650 bepalingen | Revision March 2026 |
+| `easa/part21.json` / `.md` | Initial Airworthiness (748/2012): Part 21 en **Part 21 Light** — 1 183 bepalingen | Revision November 2025 |
+| `easa/cont-airworthiness.json` / `.md` | Continuing Airworthiness (1321/2014): **Part-ML**, Part-M, CAMO, CAO, 145, 66, 147 — 1 166 bepalingen | Revision September 2025 |
+
+Elke bepaling: `{"id": "SERA.14083", "soort": "IR|AMC|GM|CR|CS", "titel": "...", "kop1": "ANNEX ...", "kop2": "SECTION 14 ...", "tekst": "..."}`.
+De eerste regel van de tekst noemt meestal de wijzigende verordening of ED Decision (bv. "Regulation (EU) 2024/404").
+Opnieuw aanmaken uit de XML-download van EASA (de XML zelf staat niet in de repository, 15–65 MB):
+```bash
+python3 tools/extract_ear.py "<Easy Access Rules … .xml>" sera "Easy Access Rules for SERA" "Revision August 2025"
+```
+
+## ECQB 2026 — aandachtspunten (EASA "ECQB Update", januari 2026)
+Het document zelf staat niet in de repository (EASA: "Proprietary document – All rights reserved"). Samenvatting:
+- ECQB 2026 is afgestemd op de EU-regelgeving en ICAO-SARPs **zoals gewijzigd begin 2025**. Detailverwijzingen per leerdoel
+  staan in het "TK Syllabus Comparison Document" (v6) op de ECQB-pagina van EASA.
+- **Radiostoring**: afgestemd op SERA na Verordening (EU) 2024/404 — nieuwe code **7601** (IFR-vlucht die in VMC verder vliegt)
+  en de IFR-regel van 7 minuten werd **20 minuten** (SERA.14083). Voor VFR blijft het: 7600, in VMC blijven, landen op het
+  dichtstbijzijnde geschikte vliegveld en aankomst melden. Raakt 010 Air Law en 090 Communications.
+- **Brandstof**: nieuwe fuel-schema's (2021–2022), "Discretionary fuel" en herziene "Extra fuel" (031, 033, 070).
+- **All-weather operations** (Verordening (EU) 2021/2237): alleen niet-gewijzigde aspecten worden bevraagd.
+- **Meteo**: WAFC T+24 significant-weather-kaarten in het nieuwe formaat van 2025 (050).
+- **Baansterkte**: nog ACN/PCN in de EU (010, 032). Noord-Atlantisch luchtruim: ICAO Doc 007 (2025).
+
 ## Formaat van de JSON
 ```json
 {
