@@ -129,26 +129,58 @@ window.CALC = (function () {
         const qdr = rnd(0, 359);
         let v; do { v = rnd(-10, 10); } while (v === 0);
         const val = { QDR: qdr, QDM: qdr + 180, QTE: qdr + v, QUJ: qdr + 180 + v };
-        const meaning = { QDR: 'magnetische peiling vanaf het station', QDM: 'magnetische peiling naar het station', QTE: 'ware peiling vanaf het station', QUJ: 'ware peiling naar het station' };
         const keys = Object.keys(val);
         const given = pick(keys);
         let ask; do { ask = pick(keys); } while (ask === given);
         const magGiven = given === 'QDR' || given === 'QDM', magAsk = ask === 'QDR' || ask === 'QDM';
         const fromGiven = given === 'QDR' || given === 'QTE', fromAsk = ask === 'QDR' || ask === 'QTE';
-        const steps = [
-          `${given} = ${meaning[given]}; ${ask} = ${meaning[ask]}.`,
-          fromGiven !== fromAsk ? 'Van "vanaf" naar "naar" het station (of omgekeerd): ±180°.' : 'Zelfde richting (vanaf/naar): geen 180° nodig.',
-          magGiven === magAsk ? 'Beide magnetisch of beide waar: de variatie speelt geen rol.'
-            : magAsk ? `Van waar naar magnetisch, variatie ${ew(v)}: ${v > 0 ? 'oostvariatie trek je af ("East is least")' : 'westvariatie tel je op ("West is best")'}.`
-              : `Van magnetisch naar waar, variatie ${ew(v)}: omgekeerd, dus ${v > 0 ? 'oostvariatie tel je op' : 'westvariatie trek je af'}.`,
-          `${ask} = ${brg(val[ask])}.`
-        ];
-        const ans = val[ask];
+        const g = val[given], ans = val[ask];
         const flip = fromGiven !== fromAsk ? 180 : 0;
         const varTerm = magGiven === magAsk ? 0 : (magAsk ? -v : v);
-        const wrong = [val[given] + flip - varTerm, val[given] + (flip ? 0 : 180) + varTerm, val[given] + (flip ? 0 : 180) - varTerm, val[given] + flip + 2 * varTerm];
-        const q = `Gegeven: ${given} ${brg(val[given])}, variatie ${ew(v)}. Wat is de ${ask}?`;
-        return Q({ q, o: options(norm(ans), wrong.map(norm), brg, 5), e: steps.join('\n'), lo: this.lo, loText: "De termen 'QTE', 'QUJ', 'QDM', 'QDR' omzetten" });
+        const kind = (m, f) => `${m ? 'magnetische' : 'ware'} ${f ? 'peiling vanaf' : 'koers naar'} het station`;
+        const east = v > 0;
+        const dirName = f => f ? 'peiling vanaf het station' : 'koers naar het station';
+
+        // Stap 1: vanaf ↔ naar
+        const mid = g + flip;
+        const step1 = flip
+          ? `${given} is een ${dirName(fromGiven)}, ${ask} is een ${dirName(fromAsk)}: de richting draait om, dus ±180°.\n${brg(g)} ${norm(g) < 180 ? '+' : '−'} 180° = ${brg(mid)}.`
+          : `${given} en ${ask} zijn allebei een ${dirName(fromAsk)}: de richting blijft dezelfde, dus geen 180°.\nWe blijven op ${brg(mid)}.`;
+        // Stap 2: waar ↔ magnetisch
+        const step2 = varTerm === 0
+          ? `${given} (${kind(magGiven, fromGiven).replace(' het station', '')}) en ${ask} (${kind(magAsk, fromAsk).replace(' het station', '')}) zijn allebei ${magAsk ? 'magnetisch' : 'waar'}: de variatie (${ew(v)}) speelt hier geen rol. Ze staat er alleen om je op het verkeerde been te zetten.`
+          : magAsk
+            ? `Van een ware ${fromAsk ? 'peiling' : 'koers'} naar een magnetische ${fromAsk ? 'peiling' : 'koers'}: ${east ? 'oostvariatie trek je af ("East is least")' : 'westvariatie tel je op ("West is best")'}.\n${brg(mid)} ${east ? '−' : '+'} ${Math.abs(v)}° = ${brg(ans)}.`
+            : `Van een magnetische ${fromAsk ? 'peiling' : 'koers'} naar een ware ${fromAsk ? 'peiling' : 'koers'}: omgekeerd, dus ${east ? 'oostvariatie tel je op' : 'westvariatie trek je af'}.\n${brg(mid)} ${east ? '+' : '−'} ${Math.abs(v)}° = ${brg(ans)}.`;
+
+        // Foute antwoorden = typische denkfouten (met uitleg in de valkuilen)
+        const traps = flip
+          ? [[g + varTerm, `180° vergeten: dat is de ${dirName(fromGiven)}, niet de ${dirName(fromAsk)}`]]
+          : [[g + 180 + varTerm, `180° bijgeteld, terwijl ${given} en ${ask} allebei een ${dirName(fromAsk)} zijn`]];
+        if (varTerm) {
+          traps.push([g + flip - varTerm, `variatie de verkeerde kant op toegepast bij het omzetten van ${magGiven ? 'magnetisch' : 'waar'} naar ${magAsk ? 'magnetisch' : 'waar'}`]);
+          traps.push([g + flip, `variatie vergeten: dat is nog de ${magGiven ? 'magnetische' : 'ware'} ${fromAsk ? 'peiling' : 'koers'}, niet de ${magAsk ? 'magnetische' : 'ware'}`]);
+        } else {
+          const both = magAsk ? 'magnetisch' : 'waar'; // beide koers/peiling t.o.v. hetzelfde noorden
+          traps.push([g + flip + Math.abs(v), `variatie toch toegepast (+${Math.abs(v)}°), terwijl ${given} en ${ask} allebei al ${both} zijn`]);
+          traps.push([g + flip - Math.abs(v), `variatie toch toegepast (−${Math.abs(v)}°), terwijl ${given} en ${ask} allebei al ${both} zijn`]);
+        }
+        traps.push([g + flip + 2 * varTerm, 'variatie twee keer toegepast']);
+        const o = options(norm(ans), traps.map(t => norm(t[0])), brg, 5);
+        const seen = new Set([brg(ans)]);
+        const pit = traps.filter(([val2]) => { const k = brg(val2); if (!o.includes(k) || seen.has(k)) return false; seen.add(k); return true; })
+          .map(([val2, why]) => `${brg(val2)}: ${why}.`);
+
+        const steps = [
+          `**De vier Q-codes:**\nQDM = ${kind(true, false)} · QDR = ${kind(true, true)}\nQUJ = ${kind(false, false)} · QTE = ${kind(false, true)}\n`,
+          `**Wat is gegeven en gevraagd?**\n${given} ${brg(g)} = ${kind(magGiven, fromGiven)}. Gevraagd: ${ask} = ${kind(magAsk, fromAsk)}.\n`,
+          `**Stap 1 – Vanaf of naar het station?**\n${step1}\n`,
+          `**Stap 2 – Waar of magnetisch?**\n${step2}\n`,
+          `**Antwoord:**\n${ask} = ${brg(ans)}.`,
+          ...(pit.length ? [`\n**Valkuilen:**\n${pit.join('\n')}`] : [])
+        ];
+        const q = `Gegeven: ${given} ${brg(g)}, variatie ${ew(v)}. Wat is de ${ask}?`;
+        return Q({ q, o, e: steps.join('\n'), lo: this.lo, loText: "De termen 'QTE', 'QUJ', 'QDM', 'QDR' omzetten" });
       }
     },
     {
