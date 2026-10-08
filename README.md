@@ -12,6 +12,7 @@ Onofficieel oefenplatform voor de theorie-examens **PPL(A)** (EASA Part-FCL, BCA
 - **Proefexamen** per vak met het aantal vragen en de tijd van het echte examen, met timer, markeren, overzicht en uitleg achteraf.
 - **Rekenvragen**: aparte categorie waar de site zelf telkens nieuwe rekenoefeningen maakt (navigatie, vluchtplanning, meteo, aerodynamica, instrumenten …), met stap-voor-stap uitleg. Zie `js/calc.js`.
 - **VOR & radionavigatie**: aparte categorie met zelf getekende instrumenten (VOR/CDI, ADF/RBI, RMI) in de stijl van de examenbijlagen; telkens een nieuwe stand, met stap-voor-stap uitleg. Zie `js/radionav.js`.
+- **Afkortingen**: na elk antwoord staan de afkortingen uit de vraag (VOR, NDB, QNH …) met volledige benaming en korte uitleg, vóór de bronvermelding. Zie `js/glossary.js`.
 - Je voortgang wordt lokaal in de browser bewaard.
 
 ## Structuur
@@ -20,6 +21,7 @@ Onofficieel oefenplatform voor de theorie-examens **PPL(A)** (EASA Part-FCL, BCA
 | `index.html`, `css/`, `js/app.js` | De website (statisch, geen server nodig) |
 | `js/calc.js` | Generatoren voor de rekenvragen (per vak een lijst oefeningstypes) |
 | `js/radionav.js` | VOR/ADF/RMI-oefeningen en het tekenen van de instrumenten (SVG) |
+| `js/glossary.js` | Woordenlijst met luchtvaartafkortingen (volledige benaming + uitleg) |
 | `js/config.js` | Vakken, examenparameters (aantal vragen/tijd/slaagdrempel) en bronnen |
 | `data/<vak>.json` | Vragen uit de PDF's (het juiste antwoord is het groene vakje in de PDF) |
 | `img/<vak>/` | Afbeeldingen/bijlagen bij de vragen |
