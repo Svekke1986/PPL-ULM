@@ -207,3 +207,5 @@ select {
   .brand span:last-child { display: none; }
   .topnav a { padding: 6px 8px; }
 }
+.explain-fig { margin: 10px 0 4px; }
+.explain-fig img { max-width: 260px; width: 100%; border-radius: 10px; border: 1px solid var(--border); cursor: zoom-in; }
