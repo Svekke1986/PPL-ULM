@@ -329,7 +329,7 @@ window.CALC = (function () {
         const t = pick(['l2kg', 'usg2l', 'kg2lbs']);
         if (t === 'l2kg') {
           const l = rnd(40, 250, 5), kg = l * 0.72;
-          return Q({ q: `Hoeveel kg weegt ${l} liter AVGAS 100LL (dichtheid 0,72 kg/l)?`, o: options(Math.round(kg), [Math.round(l / 0.72), Math.round(l * 0.72 * 2.2), Math.round(l * 0.8)], v => `${v} kg`, 3),
+          return Q({ q: `Hoeveel kg weegt ${l} liter AVGAS 100LL?`, o: options(Math.round(kg), [Math.round(l / 0.72), Math.round(l * 0.72 * 2.2), Math.round(l * 0.8)], v => `${v} kg`, 3),
             e: `Massa = volume × dichtheid = ${l} × 0,72 ≈ ${Math.round(kg)} kg.`, lo: this.lo, loText: 'Eenheden voor brandstof' });
         }
         if (t === 'usg2l') {
@@ -354,7 +354,7 @@ window.CALC = (function () {
           `Taxi: ${taxi} l.`,
           `Totaal = ${taxi} + ${num(trip, 1)} + ${num(res, 1)} ≈ ${Math.round(total)} l.`
         ];
-        const q = `VFR-vlucht ${night ? "'s nachts" : 'overdag'} met een vliegtuig (geen uitwijkhaven nodig). Vliegtijd ${tripMin} min, verbruik ${ff} l/h, taxibrandstof ${taxi} l. Hoeveel brandstof heb je minimaal nodig bij vertrek (taxi + trip + eindreserve)?`;
+        const q = `VFR-vlucht ${night ? "'s nachts" : 'overdag'} met een vliegtuig (geen uitwijkhaven nodig). Vliegtijd ${tripMin} min, verbruik ${ff} l/h, taxibrandstof ${taxi} l. Hoeveel brandstof heb je minimaal nodig bij vertrek?`;
         return Q({ q, o: options(Math.round(total), [Math.round(trip + res), Math.round(taxi + trip), Math.round(taxi + trip + (night ? 30 : 45) / 60 * ff)], v => `${v} l`, 3),
           e: steps.join('\n'), src: 'nco', ref: 'Part-NCO, NCO.OP.125 – Fuel and oil supply (aeroplanes): VFR overdag 30 min, ’s nachts 45 min reserve', lo: this.lo, loText: 'Brandstof voor een vlucht berekenen' });
       }
@@ -409,7 +409,7 @@ window.CALC = (function () {
         const ramp = mtom + over;
         const l = over / 0.72;
         const steps = [`Te veel: ${ramp} − ${mtom} = ${over} kg.`, `Dat is ${over} / 0,72 ≈ ${num(l, 1)} l AVGAS die je tijdens het taxiën moet verbruiken (of je laadt minder).`];
-        const q = `Je taximassa is ${ramp} kg, de maximale startmassa (MTOM) is ${mtom} kg. Hoeveel liter AVGAS (0,72 kg/l) moet je minstens verbruiken voor het opstijgen?`;
+        const q = `Je taximassa is ${ramp} kg, de maximale startmassa (MTOM) is ${mtom} kg. Hoeveel liter AVGAS moet je minstens verbruiken voor het opstijgen?`;
         return Q({ q, o: options(Math.ceil(l), [over, Math.round(over * 0.72), Math.ceil(l) * 2], v => `${v} l`, 2), e: steps.join('\n'), lo: this.lo, loText: 'Maximale taximassa en startmassa' });
       }
     }
@@ -455,12 +455,12 @@ window.CALC = (function () {
         const elev = rnd(3, 30) * 100, qnh = rnd(990, 1035);
         const pa = elev + (1013 - qnh) * 30;
         if (Math.random() < 0.5) {
-          return Q({ q: `Vliegveldhoogte ${elev} ft, QNH ${qnh} hPa. Wat is de drukhoogte van het vliegveld? (1 hPa ≈ 30 ft)`, o: options(pa, [elev - (1013 - qnh) * 30, elev, (1013 - qnh) * 30], v => `${v} ft`, 60),
-            e: `Drukhoogte = hoogte + (1013 − QNH) × 30 ft = ${elev} + (${1013 - qnh}) × 30 = ${pa} ft.\nLagere druk dan standaard geeft een hogere drukhoogte.`, lo: this.lo, loText: 'Drukhoogte berekenen' });
+          return Q({ q: `Vliegveldhoogte ${elev} ft, QNH ${qnh} hPa. Wat is de drukhoogte van het vliegveld?`, o: options(pa, [elev - (1013 - qnh) * 30, elev, (1013 - qnh) * 30], v => `${v} ft`, 60),
+            e: `Vuistregel: 1 hPa ≈ 30 ft.\nDrukhoogte = hoogte + (1013 − QNH) × 30 ft = ${elev} + (${1013 - qnh}) × 30 = ${pa} ft.\nLagere druk dan standaard geeft een hogere drukhoogte.`, lo: this.lo, loText: 'Drukhoogte berekenen' });
         }
         const qfe = qnh - elev / 30;
-        return Q({ q: `Vliegveldhoogte ${elev} ft, QNH ${qnh} hPa. Wat is ongeveer de QFE? (1 hPa ≈ 30 ft)`, o: options(Math.round(qfe), [Math.round(qnh + elev / 30), qnh, Math.round(qnh - elev / 8)], v => `${v} hPa`, 2),
-          e: `${elev} ft / 30 ft per hPa ≈ ${Math.round(elev / 30)} hPa.\nQFE = QNH − ${Math.round(elev / 30)} ≈ ${Math.round(qfe)} hPa (op het vliegveld is de druk lager dan op zeeniveau).`, lo: '30.1.6.2.2', loText: 'QNH en QFE' });
+        return Q({ q: `Vliegveldhoogte ${elev} ft, QNH ${qnh} hPa. Wat is ongeveer de QFE?`, o: options(Math.round(qfe), [Math.round(qnh + elev / 30), qnh, Math.round(qnh - elev / 8)], v => `${v} hPa`, 2),
+          e: `Vuistregel: 1 hPa ≈ 30 ft.\n${elev} ft / 30 ft per hPa ≈ ${Math.round(elev / 30)} hPa.\nQFE = QNH − ${Math.round(elev / 30)} ≈ ${Math.round(qfe)} hPa (op het vliegveld is de druk lager dan op zeeniveau).`, lo: '30.1.6.2.2', loText: 'QNH en QFE' });
       }
     },
     {
@@ -507,7 +507,7 @@ window.CALC = (function () {
           `Aan de lijzijde daalt de (nu droge) lucht droog-adiabatisch: +1 °C/100 m × ${top / 100} = +${top / 100} °C → ${num(tLee, 1)} °C op zeeniveau.`,
           'De lucht is aan de lijzijde warmer en droger: het Föhn-effect.'
         ];
-        const q = `Lucht van ${t0} °C op zeeniveau stroomt over een bergkam van ${top} m. De condensatie (wolkenbasis) begint op ${base} m. Welke temperatuur heeft de lucht aan de lijzijde terug op zeeniveau (droog 1 °C/100 m, nat 0,6 °C/100 m)?`;
+        const q = `Lucht van ${t0} °C op zeeniveau stroomt over een bergkam van ${top} m. De wolkenbasis aan de loefzijde ligt op ${base} m. Welke temperatuur heeft de lucht aan de lijzijde terug op zeeniveau?`;
         return Q({ q, o: options(Math.round(tLee), [t0, Math.round(tTop + 0.6 * top / 100), Math.round(tLee + 3)], v => `${v} °C`, 2), e: steps.join('\n'), lo: this.lo, loText: 'Droog- en nat-adiabatische temperatuurgradiënt' });
       }
     }
@@ -524,9 +524,9 @@ window.CALC = (function () {
         let b; do { b = rnd(990, 1030); } while (Math.abs(b - a) < 3);
         const d = (b - a) * 30;
         const fmt = v => (v > 0 ? `${v} ft hoger` : `${-v} ft lager`);
-        const q = `Je verstelt de subschaal van de hoogtemeter van ${a} hPa naar ${b} hPa. Hoe verandert de aanwijzing? (1 hPa ≈ 30 ft)`;
+        const q = `Je verstelt de subschaal van de hoogtemeter van ${a} hPa naar ${b} hPa. Hoe verandert de aanwijzing?`;
         return Q({ q, o: options(d, [-d, (b - a) * 8, (b - a) * 300], fmt, 30),
-          e: `Verschil: ${b} − ${a} = ${b - a} hPa × 30 ft = ${Math.abs(d)} ft.\nEen hogere subschaalwaarde geeft een hogere aanwijzing (en omgekeerd).`, lo: this.lo, loText: 'Verandering van de hoogtemeteraanwijzing bij een andere instelling' });
+          e: `Vuistregel: 1 hPa ≈ 30 ft.\nVerschil: ${b} − ${a} = ${b - a} hPa × 30 ft = ${Math.abs(d)} ft.\nEen hogere subschaalwaarde geeft een hogere aanwijzing (en omgekeerd).`, lo: this.lo, loText: 'Verandering van de hoogtemeteraanwijzing bij een andere instelling' });
       }
     },
     {
@@ -596,8 +596,8 @@ window.CALC = (function () {
       id: 'rateone', name: 'Hellingshoek voor een rate-one-bocht', lo: '51.6.1.5.8',
       gen() {
         const tas = rnd(70, 150, 5), bank = tas / 10 + 7;
-        return Q({ q: `Welke hellingshoek heb je ongeveer nodig voor een rate-one-bocht (3°/s, 360° in 2 min) bij ${tas} kt TAS?`, o: options(Math.round(bank), [Math.round(tas / 10), Math.round(tas / 10 + 15), Math.round(tas / 5)], v => `${v}°`, 3),
-          e: `Vuistregel: helling ≈ TAS/10 + 7 = ${tas}/10 + 7 ≈ ${Math.round(bank)}°.\nDe helling hangt af van de TAS.`, lo: this.lo, loText: 'Hellingshoek voor een rate-one-bocht' });
+        return Q({ q: `Welke hellingshoek heb je ongeveer nodig voor een rate-one-bocht bij ${tas} kt TAS?`, o: options(Math.round(bank), [Math.round(tas / 10), Math.round(tas / 10 + 15), Math.round(tas / 5)], v => `${v}°`, 3),
+          e: `Een rate-one-bocht is een bocht van 3° per seconde: 360° in 2 minuten.\nVuistregel: helling ≈ TAS/10 + 7 = ${tas}/10 + 7 ≈ ${Math.round(bank)}°.\nDe helling hangt af van de TAS: hoe sneller, hoe meer helling nodig.`, lo: this.lo, loText: 'Hellingshoek voor een rate-one-bocht' });
       }
     },
     {
