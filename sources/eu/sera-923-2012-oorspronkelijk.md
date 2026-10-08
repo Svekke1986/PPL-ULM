@@ -2,11 +2,11 @@
 
 - Publicatie: PB L 281 van 13.10.2012, blz. 1 (CELEX 32012R0923)
 - Link: https://eur-lex.europa.eu/eli/reg_impl/2012/923/oj
-- **Oorspronkelijke tekst zoals bekendgemaakt in 2012, NIET geconsolideerd: latere wijzigingen ontbreken.**
+- **Oorspronkelijke tekst zoals bekendgemaakt, NIET geconsolideerd: latere wijzigingen ontbreken.**
 - EU-wetgeving: hergebruik toegestaan met bronvermelding (Besluit 2011/833/EU). © Europese Unie, https://eur-lex.europa.eu
-- Tabellen zijn in platte tekst niet altijd goed leesbaar: controleer ze in de PDF (paginanummer staat bij elke bepaling).
+- Tabellen zijn in platte tekst niet altijd goed leesbaar: controleer ze in de PDF (de pagina van het Publicatieblad staat bij elke bepaling).
 
-## Artikel 1 Onderwerp en toepassingsgebied  _(pdf blz. 2)_
+## Artikel 1 Onderwerp en toepassingsgebied  _(PB L 281/2)_
 
 1. Het doel van deze verordening is de gemeenschappelijke regels en operationele bepalingen voor luchtvaartnavigatiediensten en -procedures vast te stellen, welke van toepassing zijn op algemeen luchtverkeer binnen het toepassingsgebied van Verordening (EG) nr. 551/2004. 2. Deze verordening is met name van toepassing op luchtruimgebruikers en luchtvaartuigen die actief zijn als algemeen luchtverkeer:
 
@@ -14,7 +14,7 @@ a) naar, binnen of uit de Unie;
 
 b) met de nationaliteit en registratiekentekens van een lidstaat van de Unie, welke actief zijn in om het even welk luchtruim, voor zover ze niet in strijd zijn met de regels die zijn gepubliceerd door het land dat rechtsbevoegdheid heeft over het grondgebied waarboven wordt gevlogen. 3. Deze verordening is ook van toepassing op de bevoegde autoriteiten van de lidstaten, de verleners van luchtvaartnavigatiediensten en het relevante grondpersoneel dat bij de luchtvaartactiviteiten is betrokken.
 
-## Artikel 2 Definities  _(pdf blz. 2)_
+## Artikel 2 Definities  _(PB L 281/2)_
 
 Voor de toepassing van deze verordening wordt verstaan onder:
 
@@ -354,11 +354,11 @@ b) de grootste afstand waarop lichten van ongeveer 1 000 candela’s kunnen word
 
 143. „VMC”: de afkorting van „visual meteorological conditions” (zichtweersomstandigheden).
 
-## Artikel 3 Naleving  _(pdf blz. 9)_
+## Artikel 3 Naleving  _(PB L 281/9)_
 
 De lidstaten zien toe op de naleving van de gemeenschappelijke regels en bepalingen die zijn uiteengezet in de bijlage bij deze verordening, onverminderd de flexibiliteitsregeling in artikel 14 van Verordening (EG) nr. 216/2008 en de vrijwaringsbepalingen in artikel 13 van Verordening (EG) nr. 549/2004.
 
-## Artikel 4 Vrijstellingen voor bijzondere activiteiten  _(pdf blz. 9)_
+## Artikel 4 Vrijstellingen voor bijzondere activiteiten  _(PB L 281/9)_
 
 1. Op verzoek van de entiteiten die de onderstaande activiteiten uitvoeren, kunnen de bevoegde autoriteiten aan die entiteiten vrijstelling van de eisen van deze verordening verlenen voor de volgende activiteiten van openbaar belang en voor de opleiding die nodig is om deze activiteiten veilig te kunnen uitvoeren:
 
@@ -378,7 +378,7 @@ g) brandbestrijding;
 
 h) vrijstellingen die nodig zijn voor de beveiliging van staatshoofden, ministers en soortgelijke overheidsfunctionarissen. 2. De bevoegde autoriteit die deze vrijstellingen verleent, stelt het EASA uiterlijk twee maanden na de goedkeuring van de vrijstelling in kennis van de aard van de vrijstelling. 3. Dit artikel laat artikel 3 onverlet en mag worden toegepast in gevallen waarin de in lid 1 vermelde activiteiten niet kunnen worden uitgevoerd als operationeel luchtverkeer of waarin ze anderszins niet in aanmerking komen voor de in deze verordening vastgestelde flexibiliteitsbepalingen.
 
-## Artikel 5 Afwijkingen  _(pdf blz. 9)_
+## Artikel 5 Afwijkingen  _(PB L 281/9)_
 
 1. Na de inwerkingtreding van deze verordening, en uiterlijk op de datum waarop ze van toepassing wordt, dienen de lidstaten;
 
@@ -386,7 +386,7 @@ a) de ICAO formeel te melden dat alle eerder aangemelde afwijkingen ten opzichte
 
 b) de gezamenlijk overeengekomen afwijkingen in het supplement op de bijlage bij deze verordening aan te melden bij de ICAO. 2. Overeenkomstig bijlage 15 bij het Verdrag van Chicago publiceert elke lidstaat in zijn Luchtvaartgids de gezamenlijk overeengekomen afwijkingen die bij de ICAO zijn aangemeld overeenkomstig lid 1, onder b), van dit artikel, alsook alle andere bepalingen die noodzakelijk zijn wegens lokale luchtdefensie en -beveiliging, overeenkomstig lid 1, onder a), van dit artikel.
 
-## Artikel 6 Toezicht op wijzigingen  _(pdf blz. 10)_
+## Artikel 6 Toezicht op wijzigingen  _(PB L 281/10)_
 
 1. Na de inwerkingtreding van deze verordening zet de Commissie, met de steun van Eurocontrol en het EASA, een permanent proces op:
 
@@ -394,19 +394,19 @@ a) om te garanderen dat alle in het kader van het Verdrag van Chicago vastgestel
 
 b) om, waar nodig, voorstellen te ontwikkelen voor wijzigingen van de bijlage bij deze verordening. 2. De bepalingen van artikel 5 van deze verordening, met betrekking tot de intrekking en aanmelding van afwijkingen en de publicatie ervan in de Luchtvaartgids, en artikel 7, met betrekking tot wijzigingen van de bijlage, zijn desgevallend van toepassing.
 
-## Artikel 7 Wijzigingen van de bijlage  _(pdf blz. 10)_
+## Artikel 7 Wijzigingen van de bijlage  _(PB L 281/10)_
 
 1. De bijlage wordt gewijzigd overeenkomstig artikel 5, lid 3, van Verordening (EG) nr. 549/2004. 2. De in lid 1 bedoelde wijzigingen hebben onder meer betrekking op, maar zijn niet beperkt tot wijzigingen die nodig zijn om de samenhang van de wetsbepalingen te garanderen bij de toekomstige uitbreiding van deze verordening met de relevante bepalingen van andere ICAO-bijlagen en -documenten dan die in bijlage 2, of wijzigingen die voortvloeien uit actualiseringen van die ICAO-bijlagen en -documenten zelf of uit wijzigingen van relevante EU-verordeningen.
 
-## Artikel 8 Overgangsmaatregelen en aanvullende maatregelen  _(pdf blz. 10)_
+## Artikel 8 Overgangsmaatregelen en aanvullende maatregelen  _(PB L 281/10)_
 
 1. De lidstaten die vóór de inwerkingtreding van deze verordening aanvullende bepalingen hebben vastgesteld ter aanvulling van een ICAO-norm, zien erop toe dat die bepalingen in overeenstemming zijn met deze verordening. 2. Met het oog op de toepassing van dit artikel mogen dergelijke bepalingen ter aanvulling van een ICAO-norm geen afwijking vormen van het Verdrag van Chicago. Dergelijke aanvullende maatregelen en alle kwesties waarover een bevoegde autoriteit krachtens deze verordening een besluit moet nemen, worden door de lidstaten gepubliceerd in hun Luchtvaartgids. De lidstaten stellen de Commissie en het EASA hier uiterlijk twee maanden na de inwerkingtreding van deze verordening, of wanneer de aanvullende bepaling is vastgesteld, van in kennis.
 
-## Artikel 9 Veiligheidseisen  _(pdf blz. 10)_
+## Artikel 9 Veiligheidseisen  _(PB L 281/10)_
 
 1. Ingevolge de inwerkingtreding van deze verordening, en onverminderd artikel 7, zorgen de lidstaten ervoor, teneinde het bestaande veiligheidsniveau te handhaven of te verbeteren, dat binnen de context van een veiligheidsbeheerproces waarin alle aspecten van de tenuitvoerlegging van deze verordening aan bod komen, een veiligheidsbeoordeling van het tenuitvoerleggingsplan wordt uitgevoerd, inclusief gevarenidentificatie, risicobeoordeling en -beperking, alvorens de eerder toegepaste procedures effectief worden gewijzigd. De risicobeperking kan onder meer betrekking hebben op de toepassing van artikel 3.
 
-## Artikel 10 Wijzigingen van Verordeningen (EG) nr. 730/2006, (EG)  _(pdf blz. 10)_
+## Artikel 10 Wijzigingen van Verordeningen (EG) nr. 730/2006, (EG)  _(PB L 281/10)_
 
 nr. 1033/2006, (EG) nr. 1794/2006, (EG) nr. 1265/2007, (EU) nr. 255/2010 en Uitvoeringsverordening (EU) nr. 1035/2011
 
@@ -444,7 +444,7 @@ b) de verwijzing in bijlage II, punt 4, onder c), naar „bijlage 11 betreffende
 
 c) de verwijzing in bijlage III, punt 2, onder b), naar „bijlage 11 betreffende luchtverkeersdiensten, dertiende editie, juli 2001, met inbegrip van alle wijzigingen tot en met nr. 47-B” wordt vervangen door aan het einde van deze zin toe te voegen „en Uitvoeringsverordening (EU) nr. 923/2012, voor zover van toepassing”.
 
-## Artikel 11 Inwerkingtreding  _(pdf blz. 11)_
+## Artikel 11 Inwerkingtreding  _(PB L 281/11)_
 
 1. Deze verordening treedt in werking op de twintigste dag na die van de bekendmaking ervan in het Publicatieblad van de Europese Unie. Zij is van toepassing met ingang van 4 december 2012. 2. Bij wijze van uitzondering op de tweede alinea van lid 1 mogen lidstaten beslissen de bepalingen van deze verordening niet toe te passen tot 4 december 2014. Wanneer een lidstaat gebruik maakt van deze mogelijkheid, stelt zij de Commissie en het EASA overeenkomstig artikel 12, lid 1, van Verordening (EG) nr. 549/2004 in kennis van de redenen voor die uitzondering, de duur ervan en het geplande tijdschema voor de tenuitvoerlegging van deze verordening. Deze verordening is verbindend in al haar onderdelen en is rechtstreeks toepasselijk in elke lidstaat. Gedaan te Brussel, 26 september 2012. Voor de Commissie De voorzitter José Manuel BARROSO
 
@@ -452,7 +452,7 @@ BIJLAGE LUCHTVERKEERSREGELS
 
 DEEL 1 Vluchten over de volle zee
 
-## SERA.1001 Algemeen  _(pdf blz. 12)_
+## SERA.1001 Algemeen  _(PB L 281/12)_
 
 a) De regels in bijlage 2 bij het Verdrag van Chicago zijn zonder uitzondering van toepassing op vluchten over de volle zee. Met het oog op de continuïteit en naadloze verlening van luchtverkeersdiensten, met name in functionele luchtruimblokken, mogen de bepalingen van bijlage 11 bij het Verdrag van Chicago worden toegepast op het luchtruim boven de volle zee, op een wijze die samenhangend is met de wijze waarop deze bepalingen worden toegepast boven het grondgebied van de lidstaten. Dit laat de activiteiten van staatsluchtvaartuigen onder artikel 3 van het Verdrag van Chicago onverlet. Dit laat eveneens de verantwoordelijkheden van de lidstaten onverlet om ervoor te zorgen dat de activiteiten van luchtvaartuigen in de vluchtinformatiegebieden waarin zij verantwoordelijk zijn voor het verlenen van luchtverkeersdiensten overeenkomstig regionale luchtvaartnavigatieovereenkomsten van de ICAO, plaatsvinden op veilige, vlotte en efficiënte wijze.
 
@@ -460,7 +460,7 @@ b) Voor de delen van de volle zee waarvoor een lidstaat, overeenkomstig een regi
 
 DEEL 2 Toepasselijkheid en naleving
 
-## SERA.2001 Toepasselijkheid  _(pdf blz. 12)_
+## SERA.2001 Toepasselijkheid  _(PB L 281/12)_
 
 Onverminderd SERA.1001 hierboven is deze verordening, overeenkomstig artikel 1, met name van toepassing op luchtruimgebruikers en luchtvaartuigen:
 
@@ -468,7 +468,7 @@ a) die naar, binnen of uit de Unie vliegen;
 
 b) met de nationaliteit en registratiekentekens van een lidstaat van de Unie, actief in om het even welk luchtruim, voor zover ze niet in strijd zijn met de regels die zijn gepubliceerd door de staat die rechtsbevoegdheid heeft over het grondgebied waarboven wordt gevlogen. Deze verordening is ook van toepassing op de bevoegde autoriteiten van de lidstaten, de verleners van luchtvaartnavigatiediensten en het relevante grondpersoneel dat bij de luchtvaartactiviteiten is betrokken.
 
-## SERA.2005 Naleving van de luchtverkeersregels  _(pdf blz. 12)_
+## SERA.2005 Naleving van de luchtverkeersregels  _(PB L 281/12)_
 
 De bediening van een luchtvaartuig, tijdens de vlucht, op het bewegingsgebied van een luchtvaartterrein of op een operatielocatie, geschiedt in overeenstemming met de algemene regels, de toepasselijke lokale bepalingen en, tijdens de vlucht:
 
@@ -476,17 +476,17 @@ a) de zichtvliegvoorschriften, of
 
 b) de instrumentvliegvoorschriften.
 
-## SERA.2010 Verantwoordelijkheden  _(pdf blz. 12)_
+## SERA.2010 Verantwoordelijkheden  _(PB L 281/12)_
 
 a) Verantwoordelijkheden van de gezagvoerder De gezagvoerder van een luchtvaartuig, ongeacht het feit of hij al dan niet het luchtvaartuig bestuurt, is verantwoordelijk voor de bediening van het luchtvaartuig overeenkomstig deze verordening; hij mag van deze verordening afwijken indien dit absoluut noodzakelijk is in het belang van de veiligheid.
 
 b) Acties voorafgaand aan de vlucht Alvorens een vlucht aan te vangen, zorgt de gezagvoerder van een luchtvaartuig ervoor dat hij vertrouwd is met alle beschikbare informatie die relevant is voor de geplande activiteit. Voor vluchten buiten de nabijheid van een luchtvaartterrein en voor alle IFR-vluchten moeten vóór de vlucht zorgvuldig de beschikbare actuele weersverslagen en verwachtingen worden bestudeerd, waarbij rekening dient te worden gehouden met de benodigde brandstof en een alternatief vluchtverloop, indien de vlucht niet kan worden uitgevoerd zoals gepland.
 
-## SERA.2015 Bevoegdheid van de gezagvoerder van een luchtvaartuig  _(pdf blz. 13)_
+## SERA.2015 Bevoegdheid van de gezagvoerder van een luchtvaartuig  _(PB L 281/13)_
 
 De gezagvoerder van een luchtvaartuig heeft de eindbevoegdheid over het luchtvaartuig.
 
-## SERA.2020 Problematisch gebruik van psychoactieve stoffen  _(pdf blz. 13)_
+## SERA.2020 Problematisch gebruik van psychoactieve stoffen  _(PB L 281/13)_
 
 Geen enkele persoon wiens functie van kritiek belang is voor de veiligheid van het luchtvaartuig (veiligheidsgevoelig personeel) mag die functie uitoefenen terwijl hij zich onder invloed van psychoactieve stoffen bevindt, waardoor zijn menselijke prestaties worden verminderd. Geen van deze personen mag zich inlaten met enige vorm van problematisch gebruik van dergelijke stoffen.
 
@@ -494,15 +494,15 @@ DEEL 3 Algemene regels en het vermijden van botsingen
 
 HOOFDSTUK 1 Bescherming van personen en eigendommen
 
-## SERA.3101 Onachtzaam of roekeloos gebruik van luchtvaartuigen  _(pdf blz. 13)_
+## SERA.3101 Onachtzaam of roekeloos gebruik van luchtvaartuigen  _(PB L 281/13)_
 
 Een luchtvaartuig mag niet op onachtzame of roekeloze wijze worden bediend teneinde het leven of de eigendom van anderen in gevaar te brengen.
 
-## SERA.3105 Minimumhoogten  _(pdf blz. 13)_
+## SERA.3105 Minimumhoogten  _(PB L 281/13)_
 
 Behalve wanneer dit nodig is voor opstijgen of landen of wanneer de bevoegde autoriteit anderszins toestemming heeft verleend, mogen luchtvaartuigen niet over dichtbevolkte gebieden van steden, gemeenten of nederzettingen, noch vliegen over een openluchtbijeenkomst van personen, tenzij op een hoogte die het mogelijk maakt om in noodgevallen te landen zonder overmatig gevaar voor personen of eigendommen op de grond. De minimumhoogten voor VFR-vluchten zijn gespecificeerd in SERA.5005, onder f), en de minimumniveaus voor IFR-vluchten in SERA.5015, onder b).
 
-## SERA.3110 Kruisniveaus  _(pdf blz. 13)_
+## SERA.3110 Kruisniveaus  _(PB L 281/13)_
 
 De kruisniveaus waarop een vlucht of een gedeelte van een vlucht moet worden uitgevoerd, worden uitgedrukt in:
 
@@ -510,7 +510,7 @@ a) vliegniveaus (flight levels), voor vluchten op of boven het laagste bruikbare
 
 b) altitudes, voor vluchten onder het laagste bruikbare vliegniveau of, voor zover van toepassing, op of onder de overgangshoogte.
 
-## SERA.3115 Afwerpen of sproeien  _(pdf blz. 13)_
+## SERA.3115 Afwerpen of sproeien  _(PB L 281/13)_
 
 Afwerpen of sproeien uit een luchtvaartuig tijdens een vlucht mag alleen worden uitgevoerd:
 
@@ -518,7 +518,7 @@ a) overeenkomstig de EU-wetgeving of, voor zover van toepassing, de nationale re
 
 b) zoals aangegeven in alle relevante informatie, adviezen en/of klaringen van de daartoe aangewezen eenheden voor luchtverkeersdiensten.
 
-## SERA.3120 Slepen  _(pdf blz. 13)_
+## SERA.3120 Slepen  _(PB L 281/13)_
 
 Een luchtvaartuig of ander voorwerp mag alleen door een luchtvaartuig worden gesleept:
 
@@ -526,7 +526,7 @@ a) overeenkomstig de EU-wetgeving of, voor zover van toepassing, de nationale re
 
 b) zoals aangegeven in alle relevante informatie, adviezen en/of klaringen van de daartoe aangewezen eenheden voor luchtverkeersdiensten.
 
-## SERA.3125 Valschermsprongen  _(pdf blz. 13)_
+## SERA.3125 Valschermsprongen  _(PB L 281/13)_
 
 Behalve in noodgevallen mogen valschermsprongen alleen worden uitgevoerd:
 
@@ -534,7 +534,7 @@ a) overeenkomstig de EU-wetgeving of, voor zover van toepassing, de nationale re
 
 b) zoals aangegeven in alle relevante informatie, adviezen en/of klaringen van de daartoe aangewezen eenheden voor luchtverkeersdiensten.
 
-## SERA.3130 Kunstvluchten  _(pdf blz. 14)_
+## SERA.3130 Kunstvluchten  _(PB L 281/14)_
 
 Kunstvluchten mogen alleen worden uitgevoerd:
 
@@ -542,7 +542,7 @@ a) overeenkomstig de EU-wetgeving of, voor zover van toepassing, de nationale re
 
 b) zoals aangegeven in alle relevante informatie, adviezen en/of klaringen van de daartoe aangewezen eenheden voor luchtverkeersdiensten.
 
-## SERA.3135 Formatievluchten  _(pdf blz. 14)_
+## SERA.3135 Formatievluchten  _(PB L 281/14)_
 
 Luchtvaartuigen mogen niet in formatie vliegen, tenzij dit vooraf is overeengekomen tussen de gezagvoerders van de luchtvaartuigen die deelnemen aan de vlucht en, voor formatievluchten in gecontroleerde delen van het luchtruim, overeenkomstig de voorwaarden die door de bevoegde autoriteit zijn voorgeschreven. Het betreft onder andere de volgende voorwaarden:
 
@@ -554,25 +554,25 @@ c) de separatie van de luchtvaartuigen tijdens de vlucht is de verantwoordelijkh
 
 d) voor staatsluchtvaartuigen: een maximale laterale, longitudinale en verticale afstand tussen elk luchtvaartuig en de vluchtleider, overeenkomstig het Verdrag van Chicago. Voor andere dan staatsluchtvaartuigen, behoudt elk luchtvaartuig een laterale en longitudinale afstand ten hoogste 1 km (0,5 nm) en een verticale afstand ten hoogste 30 m (100 ft) ten opzichte van de vluchtleider.
 
-## SERA.3140 Onbemande vrije ballonnen  _(pdf blz. 14)_
+## SERA.3140 Onbemande vrije ballonnen  _(PB L 281/14)_
 
 Een onbemande vrije ballon wordt bediend in overeenstemming met de voorwaarden in aanhangsel 2 en op zodanige wijze dat het gevaar voor personen, eigendommen of andere luchtvaartuigen tot een minimum wordt beperkt.
 
-## SERA.3145 Verboden gebieden en gebieden met beperkingen  _(pdf blz. 14)_
+## SERA.3145 Verboden gebieden en gebieden met beperkingen  _(PB L 281/14)_
 
 Luchtvaartuigen mogen niet vliegen in een verboden gebied of een gebied met beperkingen waarvan de bijzondere kenmerken op passende wijze zijn bekendgemaakt, tenzij overeenkomstig de voorwaarden van de beperkingen of met de toestemming van de lidstaat boven wiens grondgebied de gebieden zijn ingesteld.
 
 HOOFDSTUK 2 Vermijden van botsingen
 
-## SERA.3201 Algemeen  _(pdf blz. 14)_
+## SERA.3201 Algemeen  _(PB L 281/14)_
 
 Niets in deze verordening ontheft de gezagvoerder van een luchtvaartuig van de verantwoordelijkheid om maatregelen te nemen om botsingen te vermijden, inclusief manoeuvres die gebaseerd zijn op adviezen ter voorkoming van botsingen die door ACAS-apparatuur worden verstrekt.
 
-## SERA.3205 Nabijheid  _(pdf blz. 14)_
+## SERA.3205 Nabijheid  _(PB L 281/14)_
 
 Met een luchtvaartuig mag niet dusdanig nabij andere luchtvaartuigen worden geopereerd dat botsingsgevaar ontstaat.
 
-## SERA.3210 Voorrangsregels  _(pdf blz. 14)_
+## SERA.3210 Voorrangsregels  _(PB L 281/14)_
 
 a) Het luchtvaartuig dat voorrang heeft behoudt zijn koers en snelheid.
 
@@ -628,7 +628,7 @@ iii) Aan hulpverleningsvoertuigen die assistentie gaan verlenen aan luchtvaartui
 
 iv) Onverminderd het bepaalde onder iii), dienen voertuigen op het landingsterrein zich aan de volgende regels te houden: A) voertuigen en voertuigen die een luchtvaartuig slepen, geven voorrang aan luchtvaartuigen die landen, opstijgen, taxiën of worden gesleept; B) voertuigen geven voorrang aan andere voertuigen die een luchtvaartuig slepen; C) voertuigen geven voorrang aan andere voertuigen overeenkomstig instructies van een eenheid voor luchtverkeersdiensten; D) onverminderd het bepaalde onder A), B) en C) volgen voertuigen en voertuigen die een luchtvaartuig slepen de instructies van de plaatselijke luchtverkeersleiding op.
 
-## SERA.3215 Lichten die een luchtvaartuig moet voeren  _(pdf blz. 16)_
+## SERA.3215 Lichten die een luchtvaartuig moet voeren  _(PB L 281/16)_
 
 a) Behalve als bepaald onder e), moeten alle luchtvaartuigen ’s nachts tijdens de vlucht de volgende lichten voeren:
 
@@ -664,7 +664,7 @@ c) en d) doven of de intensiteit ervan verlagen als deze lichten
 
 2) een verblindend effect hebben op externe waarnemers.
 
-## SERA.3220 Gesimuleerde instrumentvluchten  _(pdf blz. 17)_
+## SERA.3220 Gesimuleerde instrumentvluchten  _(PB L 281/17)_
 
 Een luchtvaartuig mag niet onder gesimuleerde instrumentvliegomstandigheden vliegen tenzij:
 
@@ -672,7 +672,7 @@ a) het luchtvaartuig is uitgerust met volledig werkende dubbele besturing; en
 
 b) een aanvullende gekwalificeerde piloot („veiligheidspiloot” genoemd in deze regel) op een besturingsstoel aanwezig is om op te treden als veiligheidspiloot voor de persoon die onder gesimuleerde instrumentvliegomstandigheden vliegt. De veiligheidspiloot moet voldoende zicht voorwaarts en naar elke zijde van het luchtvaartuig hebben of een bevoegde waarnemer, die in contact staat met de veiligheidspiloot, moet op een plaats in het luchtvaartuig zitten die passend zicht biedt ter aanvulling van dat van de veiligheidspiloot.
 
-## SERA.3225 Exploitatie op en in de nabijheid van een luchtvaartterrein  _(pdf blz. 17)_
+## SERA.3225 Exploitatie op en in de nabijheid van een luchtvaartterrein  _(PB L 281/17)_
 
 Een luchtvaartuig dat op of in de nabijheid van een luchtvaartterrein opereert, moet:
 
@@ -684,7 +684,7 @@ c) met uitzondering van ballonnen, alle bochten naar links nemen bij het aanvlie
 
 d) met uitzondering van ballonnen, landen en opstijgen tegen de wind in, tenzij een andere richting de voorkeur geniet om redenen van veiligheid, baanconfiguratie of luchtverkeer.
 
-## SERA.3230 Operaties op en boven water  _(pdf blz. 17)_
+## SERA.3230 Operaties op en boven water  _(PB L 281/17)_
 
 a) Wanneer twee luchtvaartuigen of een luchtvaartuig en een schip elkaar naderen en er gevaar op botsing bestaat, houden de luchtvaartuigen zorgvuldig rekening met de omstandigheden en voorwaarden, inclusief de beperkingen van de respectieve luchtvaartuigen/schepen.
 
@@ -700,7 +700,7 @@ b) Lichten die moeten worden gevoerd op het water. ’s Nachts of tijdens om het
 
 HOOFDSTUK 3 Signalen
 
-## SERA.3301 Algemeen  _(pdf blz. 18)_
+## SERA.3301 Algemeen  _(PB L 281/18)_
 
 a) Bij het waarnemen of ontvangen van de in aanhangsel 1 vermelde signalen nemen luchtvaartuigen de maatregelen die vereist zijn krachtens de in dat aanhangsel uiteengezette interpretatie van de signalen.
 
@@ -716,7 +716,7 @@ f) Bij daglicht gebruikt al het deelnemend grondpersoneel fluorescerende sticks,
 
 HOOFDSTUK 4 Tijd
 
-## SERA.3401 Algemeen  _(pdf blz. 18)_
+## SERA.3401 Algemeen  _(PB L 281/18)_
 
 a) Er wordt gebruikgemaakt van gecoördineerde universele tijd (UTC), uitgedrukt in uren, minuten en, voor zover nodig, seconden van het etmaal dat middernacht begint.
 
@@ -730,7 +730,7 @@ d) Tijdsaanduiding met betrekking tot luchtverkeersdiensten
 
 DEEL 4 Vliegplannen
 
-## SERA.4001 Indiening van een vliegplan  _(pdf blz. 18)_
+## SERA.4001 Indiening van een vliegplan  _(PB L 281/18)_
 
 a) De aan de eenheden voor luchtverkeersdiensten te verstrekken informatie met betrekking tot een geplande vlucht of een gepland deel van een vlucht, moet worden ingediend in de vorm van een vliegplan. De term „vliegplan” wordt zowel gebruikt voor volledige informatie over alle punten in de beschrijving van het vliegplan die betrekking hebben op de volledige route van een vlucht, als voor beperkte informatie, die onder meer vereist is om klaring te verkrijgen voor een klein deel van een vlucht, zoals het kruisen van een luchtweg, het opstijgen van of het landen op een gecontroleerd luchtvaartterrein.
 
@@ -756,7 +756,7 @@ d) Een vliegplan voor een geplande vlucht die internationale grenzen overschrijd
 
 2) het punt waarop het luchtvaartuig een luchtweg of route waarlangs luchtverkeersadvisering wordt verleend, zal kruisen.
 
-## SERA.4005 Inhoud van een vliegplan  _(pdf blz. 19)_
+## SERA.4005 Inhoud van een vliegplan  _(PB L 281/19)_
 
 a) Een vliegplan bevat informatie over de volgende punten die door de bevoegde autoriteit als relevant worden beschouwd:
 
@@ -792,19 +792,19 @@ a) Een vliegplan bevat informatie over de volgende punten die door de bevoegde a
 
 b) Voor vliegplannen die tijdens de vlucht worden ingediend, geldt als luchtvaartterrein of operatielocatie van vertrek de plaats van waar aanvullende informatie over de vlucht kan worden verkregen, indien vereist. In plaats van de geschatte vertrektijd moet het tijdstip boven het eerste punt op de route waarop het vliegplan betrekking heeft, worden verstrekt.
 
-## SERA.4010 Voltooiing van een vliegplan  _(pdf blz. 20)_
+## SERA.4010 Voltooiing van een vliegplan  _(PB L 281/20)_
 
 a) Een vliegplan bevat informatie, voor zover van toepassing, over relevante punten tot en met „Uitwijkhavens of -operatielocatie(s)” voor de volledige route of het deel ervan waarop het vliegplan betrekking heeft.
 
 b) Indien de bevoegde autoriteit dit voorschrijft of de persoon die het vliegplan indient dit nodig acht, bevat het bovendien informatie over alle andere punten, voor zover van toepassing.
 
-## SERA.4015 Wijzigingen van een vliegplan  _(pdf blz. 20)_
+## SERA.4015 Wijzigingen van een vliegplan  _(PB L 281/20)_
 
 a) Volgens de voorwaarden van SERA.8020, onder b), moeten alle wijzigingen van een vliegplan voor een IFR-vlucht of voor een VFR-vlucht die als gecontroleerde vlucht wordt geëxploiteerd, aan de passende eenheid voor luchtverkeersdiensten worden meegedeeld zodra dit in de praktijk mogelijk is. Voor andere VFR-vluchten moeten significante wijzigingen van een vliegplan aan de passende eenheid voor luchtverkeersdiensten worden meegedeeld zodra dit in de praktijk mogelijk is.
 
 b) Indien de vóór het vertrek ingediende informatie over het bereik of het totaal aantal personen aan boord niet correct is, vormt dit een significante wijziging van het vliegplan en dient dit als dusdanig te worden meegedeeld.
 
-## SERA.4020 Sluiten van een vliegplan  _(pdf blz. 20)_
+## SERA.4020 Sluiten van een vliegplan  _(PB L 281/20)_
 
 a) Voor elke vlucht waarvoor een vliegplan is ingediend voor de volledige vlucht of het resterende gedeelte van een vlucht naar het luchtvaartterrein van bestemming wordt zo snel mogelijk na de landing persoonlijk, via radiotelefonie, datalink of andere door de bevoegde autoriteit voorgeschreven middelen een aankomstrapport ingediend bij de passende eenheid voor luchtverkeersdiensten op het luchtvaartterrein van aankomst.
 
@@ -830,7 +830,7 @@ e) Aankomstrapporten van luchtvaartuigen bevatten de volgende informatie:
 
 DEEL 5 Zichtweersomstandigheden, zichtvliegvoorschriften, speciale zicht- en instrumentvliegvoorschriften
 
-## SERA.5001 VMC Minima inzake zicht en afstand tot wolken  _(pdf blz. 21)_
+## SERA.5001 VMC Minima inzake zicht en afstand tot wolken  _(PB L 281/21)_
 
 De minima inzake zicht en afstand tot wolken in zichtweersomstandigheden zijn vermeld in tabel S5-1.
 
@@ -844,7 +844,7 @@ a) mag een zicht dat beperkt is tot niet minder dan 1 500 m worden toegestaan vo
 
 b) HELIKOPTERS mogen activiteiten uitvoeren bij een vliegzicht van minder dan 1 500 m, maar niet minder dan 800 m, voor zover ze worden bestuurd aan een snelheid die voldoende gelegenheid biedt ander verkeer of eventuele hindernissen tijdig op te merken en een botsing te vermijden. In speciale gevallen mogen activiteiten bij een zicht van minder dan 800 m worden toegestaan, bv. voor medischehulpvluchten, opsporings- en reddingsactiviteiten en brandbestrijding.
 
-## SERA.5005 Zichtvliegvoorschriften  _(pdf blz. 21)_
+## SERA.5005 Zichtvliegvoorschriften  _(PB L 281/21)_
 
 a) Behalve wanneer ze worden geëxploiteerd als bijzondere VFR-vluchten, worden VFR-vluchten zodanig uitgevoerd dat het zicht en de afstand van het luchtvaartuig tot wolken minstens gelijk zijn aan de waarden die vermeld zijn in tabel S5-1.
 
@@ -912,7 +912,7 @@ j) Een luchtvaartuig dat volgens de zichtvliegvoorschriften vliegt en wenst over
 
 2) zoals vereist krachtens SERA.4001, onder b), zo snel mogelijk een vliegplan indienen bij de passende eenheid voor luchtverkeersdiensten en klaring krijgen alvorens over te gaan naar IFR wanneer het zich in gecontroleerd luchtruim bevindt.
 
-## SERA.5010 Bijzondere VFR in plaatselijke luchtverkeersleidingsgebieden  _(pdf blz. 23)_
+SERA.5010 Bijzondere VFR in plaatselijke luchtverkeersleidingsgebieden
 
 In een plaatselijke luchtverkeersleidingsgebied mogen bijzondere VFR-vluchten worden uitgevoerd mits een luchtverkeersleidingsklaring is verleend. Tenzij de bevoegde autoriteit toestemming heeft gegeven voor helikopters in bijzondere gevallen, zoals medische hulpvluchten, opsporings- en reddingsvluchten en brandbestrijdingsvluchten, moeten de volgende aanvullende voorwaarden worden nageleefd:
 
@@ -932,7 +932,7 @@ b) door de luchtverkeersleider:
 
 3) wolkenbasis op ten minste 180 m (600 ft).
 
-## SERA.5015 Instrumentvliegvoorschriften (IFR) — Regels die van toepassing zijn op alle IFR-vluchten  _(pdf blz. 23)_
+## SERA.5015 Instrumentvliegvoorschriften (IFR) — Regels die van toepassing zijn op alle IFR-vluchten  _(PB L 281/23)_
 
 a) Apparatuur van luchtvaartuigen Luchtvaartuigen dienen te zijn uitgerust met passende instrumenten en met navigatieapparatuur die is aangepast aan de te vliegen route en die in overeenstemming is met de toepasselijke wetgeving inzake luchtvaartactiviteiten.
 
@@ -948,13 +948,13 @@ c) Wijziging van IFR-vlucht naar VFR-vlucht
 
 2) Wanneer een luchtvaartuig dat onder de instrumentvliegvoorschriften wordt geëxploiteerd, zichtweersomstandigheden binnenvliegt of tegenkomt, annuleert het zijn IFR-vlucht niet, tenzij wordt verwacht dat de vlucht gedurende een redelijke periode zal worden voortgezet in ononderbroken zichtweersomstandigheden.
 
-## SERA.5020 IFR — Regels voor IFR-vluchten in gecontroleerd luchtruim  _(pdf blz. 24)_
+## SERA.5020 IFR — Regels voor IFR-vluchten in gecontroleerd luchtruim  _(PB L 281/24)_
 
 a) IFR-vluchten moeten beantwoorden aan de bepalingen van deel 8 wanneer zij worden geëxploiteerd in gecontroleerd luchtruim.
 
 b) Een IFR-vlucht in kruisvlucht in gecontroleerd luchtruim wordt gevlogen op een kruisniveau of, indien de luchtverkeersleidingseenheid toestaat dat kruisklimtechnieken worden gebruikt, tussen twee niveaus of boven een niveau, geselecteerd uit de tabel van kruisniveaus in aanhangsel 3, behalve dat de in die tabel voorgeschreven correlatie tussen de niveaus en de grondkoers niet van toepassing is wanneer anders aangegeven in luchtverkeersleidingsklaringen of anders gespecificeerd door de bevoegde autoriteit in Luchtvaartgidsen.
 
-## SERA.5025 IFR — Regels voor IFR-vluchten buiten gecontroleerd luchtruim  _(pdf blz. 24)_
+## SERA.5025 IFR — Regels voor IFR-vluchten buiten gecontroleerd luchtruim  _(PB L 281/24)_
 
 a) Kruisniveaus Een IFR-vlucht in vlakke kruisvlucht buiten gecontroleerd luchtruim wordt gevlogen op een kruisniveau dat is aangepast aan de grondkoers, zoals aangegeven in de tabel van kruisniveaus in aanhangsel 3, behalve wanneer anders gespecificeerd door de bevoegde autoriteit op of boven 900 m (3 000 ft) boven gemiddeld zeeniveau.
 
@@ -964,7 +964,7 @@ c) Positierapporten Een IFR-vlucht buiten gecontroleerd luchtruim die door de be
 
 DEEL 6 Luchtruimclassificatie
 
-## SERA.6001 Luchtruimclassificatie  _(pdf blz. 24)_
+## SERA.6001 Luchtruimclassificatie  _(PB L 281/24)_
 
 Afhankelijk van hun behoeften categoriseren de lidstaten het luchtruim in klassen die overeenstemmen met de volgende luchtruimclassificatie en met aanhangsel 4:
 
@@ -984,7 +984,7 @@ g) Klasse G. IFR- en VFR-vluchten zijn toegestaan en ontvangen op verzoek vlucht
 
 h) Indeling in Klasse F dient een tijdelijke maatregel te zijn, die alleen wordt toegepast tot ze door een andere luchtruimclassificatie kan worden vervangen.
 
-## SERA.6005 Eisen inzake communicatie en SSR-transponders  _(pdf blz. 25)_
+## SERA.6005 Eisen inzake communicatie en SSR-transponders  _(PB L 281/25)_
 
 a) Radio Mandatory Zone (RMZ)
 
@@ -1000,7 +1000,7 @@ c) Als RMZ en/of TMZ aangemerkte luchtruimdelen moeten worden bekendgemaakt in d
 
 DEEL 7 Luchtverkeersdiensten
 
-## SERA.7001 Algemeen — Doelstellingen van luchtverkeersdiensten  _(pdf blz. 25)_
+## SERA.7001 Algemeen — Doelstellingen van luchtverkeersdiensten  _(PB L 281/25)_
 
 Luchtverkeersdiensten beogen:
 
@@ -1014,7 +1014,7 @@ d) adviezen en informatie te verstrekken die nuttig zijn voor de veilige en doel
 
 e) bij de verantwoordelijke organisaties melding te maken van luchtvaartuigen die behoefte hebben aan opsporing en redding, en dergelijke organisaties op verzoek te assisteren.
 
-## SERA.7005 Coördinatie tussen de luchtvaartuigexploitant en eenheden voor luchtverkeersdiensten  _(pdf blz. 26)_
+## SERA.7005 Coördinatie tussen de luchtvaartuigexploitant en eenheden voor luchtverkeersdiensten  _(PB L 281/26)_
 
 a) Eenheden voor luchtverkeersdiensten besteden bij het verwezenlijken van hun doelstellingen passende aandacht aan de eisen van de luchtvaartuigexploitanten overeenkomstig hun verplichtingen die zijn vastgelegd in de relevante EU-wetgeving inzake luchtvaartactiviteiten. Indien de luchtvaartuigexploitanten daarom verzoeken, stellen eenheden voor luchtverkeersdiensten de informatie waarover zij beschikken beschikbaar aan de luchtvaartuigexploitanten of aan degenen die bevoegd zijn om hen te vertegenwoordigen zodat zij zich van hun verantwoordelijkheden kunnen kwijten.
 
@@ -1022,7 +1022,7 @@ b) Indien een luchtvaartuigexploitant daarom verzoekt, worden door eenheden voor
 
 DEEL 8 Luchtverkeersleidingsdiensten
 
-## SERA.8001 Toepassing  _(pdf blz. 26)_
+## SERA.8001 Toepassing  _(PB L 281/26)_
 
 Luchtverkeersleidingsdiensten worden verleend:
 
@@ -1034,7 +1034,7 @@ c) aan alle bijzondere VFR-vluchten;
 
 d) aan het luchtvaartterreinverkeer op gecontroleerde luchtvaartterreinen.
 
-## SERA.8005 Werking van luchtverkeersleidingsdiensten  _(pdf blz. 26)_
+## SERA.8005 Werking van luchtverkeersleidingsdiensten  _(PB L 281/26)_
 
 a) Met het oog op het verlenen van luchtverkeersleidingsdiensten moet een luchtverkeersleidingseenheid:
 
@@ -1072,7 +1072,7 @@ i) longitudinale separatie, die wordt bereikt door een interval (uitgedrukt in t
 
 ii) laterale separatie, die wordt bereikt door luchtvaartuigen op verschillende routes of in verschillende geografische gebieden te laten vliegen.
 
-## SERA.8010 Separatieminima  _(pdf blz. 27)_
+## SERA.8010 Separatieminima  _(PB L 281/27)_
 
 a) De selectie van in een bepaald luchtruimdeel geldende separatieminima wordt gemaakt door de luchtvaartnavigatiedienstverlener die verantwoordelijk is voor de verlening van luchtverkeersdiensten en wordt goedgekeurd door de betrokken bevoegde autoriteit.
 
@@ -1084,7 +1084,7 @@ c) Nadere gegevens over de geselecteerde separatieminima en de gebieden waarin d
 
 2) piloten en luchtvaartuigexploitanten via Luchtvaartgidsen (AIP’s), wanneer de separatie is gebaseerd op het gebruik van gespecificeerde navigatiehulpmiddelen of -technieken door luchtvaartuigen.
 
-## SERA.8015 Luchtverkeersleidingsklaringen  _(pdf blz. 27)_
+## SERA.8015 Luchtverkeersleidingsklaringen  _(PB L 281/27)_
 
 a) Luchtverkeersleidingsklaringen mogen uitsluitend gebaseerd zijn op de eisen voor het verlenen van luchtverkeersleidingsdiensten.
 
@@ -1160,7 +1160,7 @@ iii) Tenzij downstream clearances worden gecoördineerd, mogen die geen invloed 
 
 6) Wanneer een luchtvaartuig een algemeen luchtverkeersleidingsgebied wil verlaten om buiten het gecontroleerde luchtruim te vliegen, en vervolgens hetzelfde of een ander algemeen luchtverkeersleidingsgebied weer zal binnenvliegen, mag een klaring worden afgegeven vanaf het vertrekpunt naar het luchtvaartterrein van de eerste voorgenomen landing. Deze klaring of herzieningen daarvan gelden alleen voor de vluchtgedeelten die in het gecontroleerde luchtruim worden uitgevoerd.
 
-## SERA.8020 Naleving van het vliegplan  _(pdf blz. 29)_
+## SERA.8020 Naleving van het vliegplan  _(PB L 281/29)_
 
 a) Behalve zoals bepaald onder b) en d) moet een luchtvaartuig het geldende vliegplan of het toepasselijke deel van een geldend vliegplan dat voor een gecontroleerde vlucht is ingediend, volgen, tenzij een verzoek tot wijziging is ingediend en klaring is verkregen van de desbetreffende luchtverkeersleidingseenheid, of tenzij zich een noodsituatie voordoet die onmiddellijke actie van het luchtvaartuig vereist. In dat geval wordt de luchtverkeersleidingsheid, zodra de omstandigheden het mogelijk maken, zo snel mogelijk na de uitoefening van de noodbevoegdheid in kennis gesteld van de genomen maatregelen en van het feit dat deze maatregelen onder noodbevoegdheid zijn genomen.
 
@@ -1204,17 +1204,17 @@ d) Verslechtering van het weer tot onder de zichtweersomstandigheden. Als het du
 
 4) klaring vragen om overeenkomstig de instrumentvliegvoorschriften te worden uitgevoerd.
 
-## SERA.8025 Positierapporten  _(pdf blz. 30)_
+## SERA.8025 Positierapporten  _(PB L 281/30)_
 
 a) Tenzij vrijgesteld door de bevoegde autoriteit of door de passende eenheid voor luchtverkeersdiensten onder de door die autoriteit gespecificeerde voorwaarden, rapporteert een gecontroleerde vlucht zo snel mogelijk het tijdstip en niveau waarop hij boven elk aangewezen verplicht meldingspunt vliegt, samen met alle andere vereiste informatie, aan de passende eenheid voor luchtverkeersdiensten. Wanneer de passende luchtverkeersleidingseenheid daarom vraagt, worden op soortelijke wijze positieverslagen opgesteld in relatie tot aanvullende punten. Bij gebrek aan aangewezen meldingspunten worden positierapporten opgesteld op intervals die door de bevoegde autoriteit zijn voorgeschreven of door de passende eenheid voor luchtverkeersleidingsdiensten zijn gespecificeerd.
 
 1) Gecontroleerde vluchten die positie-informatie via datalinkcommunicatie aan de passende eenheid voor luchtverkeersdiensten verstrekken, stellen alleen op verzoek mondelinge positierapporten ter beschikking.
 
-## SERA.8030 Beëindiging van de verkeersleiding  _(pdf blz. 30)_
+## SERA.8030 Beëindiging van de verkeersleiding  _(PB L 281/30)_
 
 Behalve bij het landen op een gecontroleerd luchtvaartterrein licht een gecontroleerde vlucht de luchtverkeersleidingseenheid in van zodra hij niet meer onder luchtverkeersleidingsdiensten valt.
 
-## SERA.8035 Communicatie  _(pdf blz. 30)_
+## SERA.8035 Communicatie  _(PB L 281/30)_
 
 a) Een luchtvaartuig dat als een gecontroleerde vlucht wordt geëxploiteerd, onderhoudt permanente mondelinge lucht-grondcommunicatie op het passende communicatiekanaal en brengt zo nodig tweezijdige communicatie tot stand met de passende luchtverkeersleidingseenheid, behalve indien de verlener van luchtvaartnavigatiediensten anders voorschrijft voor luchtvaartuigen die deel uitmaken van luchtvaartterreinverkeer op een gecontroleerd luchtvaartterrein.
 
@@ -1224,7 +1224,7 @@ b) De lidstaten voldoen aan de passende bepalingen inzake communicatiestoringen 
 
 DEEL 9 Vluchtinformatiedienst
 
-## SERA.9001 Toepassing  _(pdf blz. 31)_
+## SERA.9001 Toepassing  _(PB L 281/31)_
 
 a) De vluchtinformatiedienst wordt door de bevoegde eenheden voor luchtverkeersdiensten verleend aan alle luchtvaartuigen die belang kunnen hebben bij die informatie en:
 
@@ -1236,7 +1236,7 @@ b) De ontvangst van de vluchtinformatiedienst ontslaat de gezagvoerder van een l
 
 c) Wanneer eenheden voor luchtverkeersdiensten zowel een vluchtinformatiedienst als een luchtverkeersleidingsdienst verlenen, heeft de verlening van de luchtverkeersleidingsdienst voorrang op de verlening van de vluchtinformatiedienst telkens wanneer de verlening van de luchtverkeersleidingsdienst zulks vereist.
 
-## SERA.9005 Werkingssfeer van de vluchtinformatiedienst  _(pdf blz. 31)_
+## SERA.9005 Werkingssfeer van de vluchtinformatiedienst  _(PB L 281/31)_
 
 a) De vluchtinformatiedienst omvat het verstrekken van relevante:
 
@@ -1262,7 +1262,7 @@ b) Naast de onder a) beschreven informatie omvat de aan vluchten verleende vluch
 
 c) Naast de onder a) beschreven informatie omvat de aan VFR-vluchten verleende vluchtinformatiedienst de verstrekking van beschikbare informatie over de verkeerssituatie en weersomstandigheden langs de vliegroute die vluchten volgens zichtvliegvoorschriften (VFR) onuitvoerbaar maken.
 
-## SERA.9010 Automatic terminal information service (ATIS)  _(pdf blz. 32)_
+## SERA.9010 Automatic terminal information service (ATIS)  _(PB L 281/32)_
 
 a) Gebruik van ATIS-berichten in geleide vraag-/antwoordtransmissies
 
@@ -1410,7 +1410,7 @@ d) ATIS voor vertrekkende luchtvaartuigen ATIS-berichten met alleen vertrekinfor
 
 DEEL 10 Alarmeringsdienst
 
-## SERA.10001 Toepassing  _(pdf blz. 35)_
+## SERA.10001 Toepassing  _(PB L 281/35)_
 
 a) De alarmeringsdienst wordt verleend door eenheden voor luchtverkeersdiensten:
 
@@ -1420,7 +1420,7 @@ a) De alarmeringsdienst wordt verleend door eenheden voor luchtverkeersdiensten:
 
 3) aan luchtvaartuigen waarvan bekend is of wordt vermoed dat er wederrechtelijke daden zijn tegen gepleegd.
 
-## SERA.10005 Informatieverstrekking aan luchtvaartuigen die vluchten uitvoeren in de nabijheid van een in nood  _(pdf blz. 35)_
+## SERA.10005 Informatieverstrekking aan luchtvaartuigen die vluchten uitvoeren in de nabijheid van een in nood  _(PB L 281/35)_
 
 verkerend luchtvaartuig
 
@@ -1430,13 +1430,13 @@ b) Wanneer een eenheid voor luchtverkeersdiensten ervan op de hoogte is of veron
 
 DEEL 11 Wederrechtelijke daden, noodsituaties en onderschepping
 
-## SERA.11001 Wederrechtelijke daden  _(pdf blz. 35)_
+## SERA.11001 Wederrechtelijke daden  _(PB L 281/35)_
 
 a) Een luchtvaartuig waartegen een wederrechtelijke daad wordt gepleegd, tracht de transponder op Code 7500 te zetten en de passende luchtverkeersleidingseenheid in kennis te stellen van alle significante omstandigheden en de daaruit voortvloeiende afwijkingen van het geldende vliegplan, teneinde de luchtverkeersleidingseenheid in staat te stellen voorrang te geven aan het luchtvaartuig en conflicten met andere luchtvaartuigen tot een minimum te beperken.
 
 b) Als een wederrechtelijke daad tegen een luchtvaartuig wordt gepleegd, tracht de gezagvoerder zo snel mogelijk te landen op het dichtstbijzijnde geschikte luchtvaartterrein of op een luchtvaartterrein dat specifiek daarvoor is aangewezen door de bevoegde autoriteit, tenzij de omstandigheden aan boord van het luchtvaartuig anders bepalen.
 
-## SERA.11005 Dienstverlening aan luchtvaartuigen in noodgevallen  _(pdf blz. 35)_
+## SERA.11005 Dienstverlening aan luchtvaartuigen in noodgevallen  _(PB L 281/35)_
 
 a) Aan elk luchtvaartuig waarvan bekend is of verondersteld wordt dat het in nood verkeert of het voorwerp is van een wederrechtelijke daad, wordt maximale aandacht en assistentie verleend door de eenheden voor luchtverkeersdiensten en wordt de nodige prioriteit gegeven boven andere luchtvaartuigen indien de omstandigheden zulks vereisen.
 
@@ -1444,7 +1444,7 @@ b) Als een wederrechtelijke daad tegen een luchtvaartuig wordt gepleegd of wordt
 
 c) Als een wederrechtelijke daad tegen een luchtvaartuig wordt gepleegd of wordt vermoed, moeten de eenheden voor luchtverkeersdiensten volgens ter plaatse overeengekomen procedures de door de staat aangewezen bevoegde autoriteit onmiddellijk op de hoogte stellen en de nodige informatie uitwisselen met de luchtvaartuigexploitant of degene die bevoegd is hem te vertegenwoordigen.
 
-## SERA.11010 Noodsituaties tijdens de vlucht  _(pdf blz. 35)_
+## SERA.11010 Noodsituaties tijdens de vlucht  _(PB L 281/35)_
 
 Afgedwaalde of niet-geïdentificeerde luchtvaartuigen
 
@@ -1484,7 +1484,7 @@ b) Zodra een eenheid voor luchtverkeersdiensten kennis krijgt van een niet-geïd
 
 c) In het geval van een afgedwaalde of niet-geïdentificeerd luchtvaartuig moet ermee rekening worden gehouden dat het luchtvaartuig het voorwerp kan zijn van wederrechtelijke daden. Als de eenheid voor luchtverkeersdiensten van mening is dat een afgedwaald of niet-geïdentificeerd luchtvaartuig het voorwerp kan zijn van wederrechtelijke daden, wordt de door de staat aangewezen bevoegde autoriteit onmiddellijk op de hoogte gesteld volgens ter plaatse overeengekomen procedures.
 
-## SERA.11015 Onderschepping  _(pdf blz. 36)_
+## SERA.11015 Onderschepping  _(PB L 281/36)_
 
 a) Behalve voor onderscheppings- en escorteringsdiensten die op verzoek aan een luchtvaartuig worden verleend, valt de onderschepping van civiele luchtvaartuigen onder de passende regels en administratieve richtsnoeren die door de lidstaten zijn opgesteld overeenkomstig het Verdrag inzake de burgerluchtvaart, en met name artikel 3, onder d), waarbij de ICAO-lidstaten bij het opstellen van regels voor hun staatsluchtvaartuigen rekening moeten houden met de veiligheid van het luchtverkeer van civiele luchtvaartuigen.
 
@@ -1538,7 +1538,7 @@ g) Zodra een eenheid voor luchtverkeersdiensten ervan op de hoogte is dat een lu
 
 DEEL 12 Meteorologische diensten — Waarnemingen vanuit luchtvaartuigen en meldingen via mondelinge communicatie
 
-## SERA.12001 Soorten waarnemingen vanuit luchtvaartuigen  _(pdf blz. 39)_
+## SERA.12001 Soorten waarnemingen vanuit luchtvaartuigen  _(PB L 281/39)_
 
 a) De volgende waarnemingen vanuit luchtvaartuigen vinden plaats in elke vluchtfase:
 
@@ -1546,7 +1546,7 @@ a) De volgende waarnemingen vanuit luchtvaartuigen vinden plaats in elke vluchtf
 
 2) andere niet-routinematige waarnemingen vanuit luchtvaartuigen.
 
-## SERA.12005 Speciale waarnemingen vanuit luchtvaartuigen  _(pdf blz. 40)_
+## SERA.12005 Speciale waarnemingen vanuit luchtvaartuigen  _(PB L 281/40)_
 
 a) Speciale waarnemingen worden gedaan en gemeld door alle luchtvaartuigen wanneer de volgende omstandigheden zich voordoen of worden vastgesteld:
 
@@ -1568,17 +1568,17 @@ a) Speciale waarnemingen worden gedaan en gemeld door alle luchtvaartuigen wanne
 
 b) De bevoegde autoriteiten schrijven zo nodig voor welke andere omstandigheden, wanneer die zich voordoen of worden vastgesteld, door alle luchtvaartuigen moeten worden gemeld.
 
-## SERA.12010 Andere niet-routinematige waarnemingen vanuit luchtvaartuigen  _(pdf blz. 40)_
+## SERA.12010 Andere niet-routinematige waarnemingen vanuit luchtvaartuigen  _(PB L 281/40)_
 
 Wanneer er zich andere, niet in SERA.12005, onder a), beschreven weersomstandigheden voordoen, bijvoorbeeld windschering, die naar het oordeel van de gezagvoerder gevaar kunnen opleveren voor de veiligheid of in ernstige mate afbreuk kunnen doen aan het efficiënt functioneren van andere luchtvaartuigen, dient de gezagvoerder de bevoegde eenheid voor luchtverkeersdiensten zo snel mogelijk daarvan op de hoogte te stellen.
 
-## SERA.12015 Melding van waarnemingen vanuit luchtvaartuigen via mondelinge communicatie  _(pdf blz. 40)_
+## SERA.12015 Melding van waarnemingen vanuit luchtvaartuigen via mondelinge communicatie  _(PB L 281/40)_
 
 a) Waarnemingen vanuit luchtvaartuigen moeten tijdens de vlucht worden gemeld op het waarnemingstijdstip of zo snel mogelijk daarna.
 
 b) Waarnemingen vanuit luchtvaartuigen moeten worden gemeld als vluchtrapporten (AIREP’s) en dienen te voldoen aan de technische specificaties in aanhangsel 5.
 
-## SERA.12020 Uitwisseling van vluchtrapporten  _(pdf blz. 40)_
+## SERA.12020 Uitwisseling van vluchtrapporten  _(PB L 281/40)_
 
 a) Eenheden voor luchtverkeersdiensten moeten zo snel mogelijk speciale en niet-routinematige vluchtrapporten doorgeven aan:
 
@@ -1590,7 +1590,7 @@ a) Eenheden voor luchtverkeersdiensten moeten zo snel mogelijk speciale en niet-
 
 b) De betrokken eenheid voor luchtverkeersdiensten bepaalt met welke frequentie en gedurende welke tijdspanne de vluchtrapporten worden doorgegeven aan luchtvaartuigen.
 
-## Aanhangsel 1 Signalen  _(pdf blz. 41)_
+## Aanhangsel 1 Signalen  _(PB L 281/41)_
 
 1. NOOD- EN URGENTIESIGNALEN 1.1. Algemeen 1.1.1. Onverminderd het bepaalde onder 1.2 en 1.3 gebruikt een luchtvaartuig in nood alle middelen waarover het beschikt om de aandacht te trekken, zijn positie bekend te maken en hulp te krijgen. 1.1.2. De procedures voor telecommunicatietransmissies van nood- en urgentiesignalen moeten in overeenstemming zijn met Boekdeel II van bijlage 10 bij het Verdrag van Chicago. 1.2. Noodsignalen 1.2.1. De volgende signalen, afzonderlijk of samen gebruikt, betekenen dat er een ernstige dreiging op handen is en dat onmiddellijke bijstand wordt gevraagd:
 
@@ -1704,7 +1704,7 @@ a) Steek het aantal vingers van één hand omhoog om het nummer aan te geven van
 
 4. Brand Beweeg de rechterhand in een waaierbeweging van schouder naar knie, en wijs tegelijk met de linkerhand naar de plaats van de brand. ’s Nachts — identiek maar met lichtgevende sticks.
 
-## Aanhangsel 2 Onbemande vrije ballonnen  _(pdf blz. 54)_
+## Aanhangsel 2 Onbemande vrije ballonnen  _(PB L 281/54)_
 
 1. CLASSIFICATIE VAN ONBEMANDE VRIJE BALLONNEN 1.1. Onbemande vrije ballonnen worden geclassificeerd als (zie figuur AP2-1):
 
@@ -1784,7 +1784,7 @@ c) het geschatte tijdstip waarop de ballon door drukhoogte 18 000 m (60 000 ft) 
 
 d) het geschatte tijdstip en de geschatte plaats waarop de ballon de grond zal raken. 6.5. Wanneer de operatie is beëindigd, stelt de exploitant van een middelzware of zware onbemande vrije ballon de passende eenheid voor luchtverkeersdiensten daarvan in kennis.
 
-## Aanhangsel 3 Tabel van kruisniveaus  _(pdf blz. 59)_
+## Aanhangsel 3 Tabel van kruisniveaus  _(PB L 281/59)_
 
 1.1. De volgende kruisniveaus moeten in acht worden genomen: KOERS (*) Van 000 tot 179 graden Van 180 tot 359 graden IFR-vluchten VFR-vluchten IFR-vluchten VFR-vluchten Niveau Niveau Niveau Niveau FL Voet Meter FL Voet Meter FL Voet Meter FL Voet Meter 1 000
 
@@ -1800,7 +1800,7 @@ d) het geschatte tijdstip en de geschatte plaats waarop de ballon de grond zal r
 
 — 3 000 3 500 1 050 4 000 1 200 4 500 1 350 5 000 1 500 5 500 1 700 6 000 1 850 6 500 2 000 7 000 2 150 7 500 2 300 8 000 2 450 8 500 2 600 9 000 2 750 9 500 2 900 10 000 3 050 10 500 3 200 11 000 3 350 11 500 3 500 12 000 3 650 12 500 3 800 13 000 3 950 13 500 4 100 14 000 4 250 14 500 4 400 15 000 4 550 15 500 4 700 16 000 4 900 16 500 5 050 17 000 5 200 17 500 5 350 18 000 5 500 18 500 5 650 19 000 5 800 19 500 5 950 20 000 6 100 20 500 6 250 21 000 6 400 21 500 6 550 22 000 6 700 22 500 6 850 23 000 7 000 23 500 7 150 24 000 7 300 24 500 7 450 25 000 7 600 25 500 7 750 26 000 7 900 26 500 8 100 27 000 8 250 27 500 8 400 28 000 8 550 28 500 8 700 29 000 8 850 30 000 9 150 31 000 9 450 32 000 9 750 33 000 10 050 34 000 10 350 35 000 10 650 36 000 10 950 37 000 11 300 38 000 11 600 39 000 11 900 40 000 12 200 41 000 12 500 43 000 13 100 45 000 13 700 47 000 14 350 49 000 14 950 51 000 15 550 enz. enz. enz. enz. enz. enz. (*) De magnetische koers of, in poolgebieden op breedtegraden boven 70 graden en binnen door de bevoegde autoriteiten voorgeschreven uitbreidingen van deze gebieden, de gridkoers die wordt bepaald door een netwerk van evenwijdig met de meridiaan van Greenwich lopende lijnen dat wordt geprojecteerd op een polaire stereografische kaart, waarbij de richting naar de noordpool als gridnoorden wordt gebruikt.
 
-## Aanhangsel 4 Luchtruimklassen voor luchtverkeersdiensten — Dienstverlening en vereisten tijdens de vlucht  _(pdf blz. 60)_
+## Aanhangsel 4 Luchtruimklassen voor luchtverkeersdiensten — Dienstverlening en vereisten tijdens de vlucht  _(PB L 281/60)_
 
 (afgeleid uit SERA.6001 en SERA.5025, onder b) Klasse Soort vlucht Separatie Verleende dienst Snelheidsbeperking (*) Vereist vermogen om radiocommunicatie tot stand te brengen Permanente mondelinge lucht-grondcommunicatie in beide richtingen vereist Onderworpen aan een luchtverkeersleidingsklaring A Alleen IFR Alle luchtvaartuigen Luchtverkeersleidingsdienst Niet van toepassing Ja Ja Ja B IFR Alle luchtvaartuigen Luchtverkeersleidingsdienst Niet van toepassing Ja Ja Ja VFR Alle luchtvaartuigen Luchtverkeersleidingsdienst Niet van toepassing Ja Ja Ja C IFR IFR van IFR, IFR van VFR Luchtverkeersleidingsdienst Niet van toepassing Ja Ja Ja VFR VFR van IFR
 
@@ -1808,7 +1808,7 @@ d) het geschatte tijdstip en de geschatte plaats waarop de ballon de grond zal r
 
 2) VFR/VFR-luchtverkeersinformatie (en luchtverkeersontwijkadvies indien daarom wordt verzocht) Aangewezen luchtsnelheid (IAS) 250 kts beneden 3 050 m (10 000 ft) boven gemiddeld zeeniveau Ja Ja Ja D IFR IFR van VFR Luchtverkeersleidingsdienst, luchtverkeersinformatie over VFR-vluchten (en luchtverkeersontwijkadvies indien daarom wordt verzocht) Aangewezen luchtsnelheid (IAS) 250 kts beneden 3 050 m (10 000 ft) boven gemiddeld zeeniveau Ja Ja Ja VFR Geen IFR/VFR- en VFR/VFR-luchtverkeersinformatie (en luchtverkeersontwijkadvies indien daarom wordt verzocht) Aangewezen luchtsnelheid (IAS) 250 kts beneden 3 050 m (10 000 ft) boven gemiddeld zeeniveau Ja Ja Ja E IFR IFR van IFR Luchtverkeersleidingsdienst en voor zover uitvoerbaar, luchtverkeersinformatie over VFR-vluchten Aangewezen luchtsnelheid (IAS) 250 kts beneden 3 050 m (10 000 ft) boven gemiddeld zeeniveau Ja Ja Ja VFR Geen Luchtverkeersinformatie, voor zover uitvoerbaar Aangewezen luchtsnelheid (IAS) 250 kts beneden 3 050 m (10 000 ft) boven gemiddeld zeeniveau Neen (**) Neen (**) Neen Klasse Soort vlucht Separatie Verleende dienst Snelheidsbeperking (*) Vereist vermogen om radiocommunicatie tot stand te brengen Permanente mondelinge lucht-grondcommunicatie in beide richtingen vereist Onderworpen aan een luchtverkeersleidingsklaring F IFR IFR van IFR, indien praktisch uitvoerbaar Luchtverkeersadviseringsdienst; vluchtinformatiedienst indien daarom wordt verzocht Aangewezen luchtsnelheid (IAS) 250 kts beneden 3 050 m (10 000 ft) boven gemiddeld zeeniveau Ja (***) Neen (***) Neen VFR Geen Vluchtinformatiedienst indien daarom wordt verzocht Aangewezen luchtsnelheid (IAS) 250 kts beneden 3 050 m (10 000 ft) boven gemiddeld zeeniveau Neen (**) Neen (**) Neen G IFR Geen Vluchtinformatiedienst indien daarom wordt verzocht Aangewezen luchtsnelheid (IAS) 250 kts beneden 3 050 m (10 000 ft) boven gemiddeld zeeniveau Ja (**) Neen (**) Neen VFR Geen Vluchtinformatiedienst indien daarom wordt verzocht Aangewezen luchtsnelheid (IAS) 250 kts beneden 3 050 m (10 000 ft) boven gemiddeld zeeniveau Neen (**) Neen (**) Neen (*) Wanneer de overgangsvlieghoogte minder is dan 3 050 m (10 000 ft) boven gemiddeld zeeniveau (AMSL), dient vliegniveau 100 te worden gebruikt in plaats van 10 000 ft. De bevoegde autoriteit mag ook vrijstelling verlenen voor luchtvaarttypes die om technische of veiligheidsredenen deze snelheid niet kunnen aanhouden. (**) Piloten moeten zorgen voor permanente mondelinge lucht-grondcommunicatie en zo nodig tweezijdige communicatie tot stand brengen op het gepaste communicatiekanaal in RMZ. (***) Mondelinge lucht-grondcommunicatie is verplicht voor vluchten die deelnemen aan de vluchtadviseringsdienst. Piloten moeten zorgen voor permanente mondelinge lucht-grondcommunicatie en zo nodig tweezijdige communicatie tot stand brengen op het gepaste communicatiekanaal in RMZ.
 
-## Aanhangsel 5 EISEN INZAKE LUCHTVAARTNAVIGATIEDIENSTEN  _(pdf blz. 62)_
+## Aanhangsel 5 EISEN INZAKE LUCHTVAARTNAVIGATIEDIENSTEN  _(PB L 281/62)_
 
 Technische specificaties inzake waarnemingen vanuit luchtvaartuigen en meldingen via mondelinge communicatie 1. INHOUD VAN VLUCHTRAPPORTEN 1.1. Speciale vluchtrapporten 1.1.1. De speciale vluchtrapporten (AIREP’s) bevatten de volgende onderdelen: Typecode van het bericht Deel 1 (positie-informatie) Identificatie van het luchtvaartuig Positie of breedte- en lengtegraad Tijd Vliegniveau of bereik van vliegniveaus Deel 3 (meteorologische informatie) Omstandigheid die aanleiding geeft tot de afgifte van een speciaal vluchtrapport, te selecteren uit de lijst in SERA.12005, onder a). 2. SPECIFIEKE BEPALINGEN INZAKE DE MELDING VAN WINDSCHERING EN VULKANISCHE AS 2.1. Melding van windschering 2.1.1. Wanneer bij waarnemingen vanuit luchtvaartuigen windschering wordt gemeld tijdens de klim- en naderingsfase van de vlucht, moet het luchtvaartuigtype worden opgenomen. 2.1.2. Wanneer in de naderings- of klimfase van de vlucht windschering werd gemeld of voorspeld, maar die omstandigheden zich niet hebben voorgedaan, dient de gezagvoerder de bevoegde eenheid voor luchtverkeersdiensten zo snel mogelijk op de hoogte te stellen tenzij de gezagvoerder heeft kunnen constateren dat een vorig luchtvaartuig de bevoegde eenheid voor luchtverkeersdiensten daarvan al op de hoogte heeft gesteld. 2.2. Melding van vulkanische activiteit na de vlucht 2.2.1. Bij aankomst van een vlucht op een luchtvaartterrein moet de luchtvaartuigexploitant of een cockpitpersoneelslid onverwijld een volledig ingevuld verslag over vulkanische activiteit bezorgen aan de meteorologische dienst van het luchtvaartterrein. Wanneer deze dienst niet eenvoudig te bereiken is voor aankomende cockpitpersoneelsleden, moet het ingevulde formulier worden verwerkt zoals ter plaatse overeengekomen door de meteorologische autoriteit en de luchtvaartexploitant. 2.2.2. De meteorologische dienst moet het ingevulde verslag over vulkanische activiteit na ontvangst onverwijld doorgeven aan het luchtvaartmeteorologisch observatiecentrum (MWO) dat verantwoordelijk is voor de meteorologische bewaking van het vluchtinformatiegebied waarin de vulkanische activiteit werd waargenomen. Supplement op de BIJLAGE Lijst van gemeenschappelijk overeengekomen afwijkingen, aan te melden bij de Internationale Burgerluchtvaartorganisatie (ICAO) overeenkomstig artikel 5 van deze verordening. ICAO-bijlage 2 Punten waarop deze verordening afwijkt van de internationale normen in bijlage 2 (tiende uitgave, tot en met amendement 42) bij het Verdrag inzake de internationale burgerluchtvaart Afwijking A2-01 ICAO-bijlage 2 Hoofdstuk 3 3.2.2 Nieuwe bepaling. In Uitvoeringsverordening (EU) nr. 923/2012, SERA.3210, onder b), is gespecificeerd: „b) Een luchtvaartuig dat zich ervan bewust is dat het de manoeuvres van een ander luchtvaartuig hindert, verleent dat luchtvaartuig voorrang.” Afwijking A2-02 ICAO-bijlage 2 Hoofdstuk 3 3.2.3.2. b) In Uitvoeringsverordening (EU) nr. 923/2012, SERA.3215, onder b), punt 2), is gespecificeerd (met toevoeging van de onderstreepte tekst aan de ICAO-norm in bijlage 2, 3.2.3.2 b)): „2) alle luchtvaartuigen op het bewegingsgebied van een luchtvaartterrein lichten voeren die bedoeld zijn om de uiteinden van hun structuur aan te geven, voor zover mogelijk, tenzij de luchtvaartuigen stilstaan en op een andere passende wijze zijn verlicht;” Afwijking A2-03 ICAO-bijlage 2 Hoofdstuk 3 3.2.5. c) en d) Uitvoeringsverordening (EU) nr. 923/2012, SERA.3225, wijkt af van de ICAO-norm in bijlage 2, 3.2.5. c) en 3.2.5. d), omdat erin gespecificeerd is dat het bepaalde onder c) en d) niet van toepassing is op ballonnen: „c) met uitzondering van ballonnen, alle bochten naar links nemen bij het naderen voor een landing en na het opstijgen, tenzij anders aangegeven of anders meegedeeld door de luchtverkeersleiding;
 
@@ -1874,7 +1874,7 @@ iv) door de luchtverkeersleider opgegeven of in ATIS-uitzendingen opgenomen over
 
 2) Andere klaringen of instructies, met inbegrip van voorwaardelijke klaringen en taxi-instructies, moeten zodanig worden teruggemeld of bevestigd dat duidelijk vast komt te staan dat ze werden begrepen en zullen worden nageleefd. Afwijking A11-06 ICAO-bijlage 11 Hoofdstuk 3 Nieuwe bepaling. In Uitvoeringsverordening (EU) nr. 923/2012, punt SERA.5010, is als volgt gespecificeerd:
 
-SERA.5010 Bijzondere VFR in plaatselijke luchtverkeersleidingsgebieden
+## SERA.5010 Bijzondere VFR in plaatselijke luchtverkeersleidingsgebieden  _(PB L 281/66)_
 
 In een plaatselijk luchtverkeersleidingsgebied mogen bijzondere VFR-vluchten worden uitgevoerd mits een luchtverkeersleidingsklaring is verleend. Tenzij de bevoegde autoriteit daartoe toestemming heeft gegeven voor helikopters in bijzondere gevallen, zoals medische hulpvluchten, opsporings- en reddingsvluchten en brandbestrijdingsvluchten, moeten de volgende aanvullende voorwaarden worden nageleefd:
 

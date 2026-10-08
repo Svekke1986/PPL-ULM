@@ -2,8 +2,9 @@
 """Zet een EU-verordening (PDF uit het Publicatieblad / EUR-Lex) om naar leesbare tekst en een JSON per bepaling.
 
 Een "bepaling" is een artikel van de verordening ("Artikel 3") of een punt uit de bijlage
-("SERA.5001", "21.A.15", ...). Per bepaling bewaren we ook de pagina in de PDF, zodat je de
-originele tekst (en tabellen, die in platte tekst niet altijd goed overkomen) snel terugvindt.
+("SERA.5001", "21.A.15", "FCL.740", "MED.A.030" ...). Per bepaling bewaren we ook de pagina van het
+Publicatieblad (bv. "L 281/37"), zodat je de originele tekst (en tabellen, die in platte tekst niet
+altijd goed overkomen) snel terugvindt en correct kunt citeren.
 
     python3 tools/extract_eu.py            # alle teksten uit DOCS
     python3 tools/extract_eu.py sera       # één tekst
@@ -30,6 +31,42 @@ DOCS = {
             "url": "https://eur-lex.europa.eu/eli/reg_impl/2012/923/oj",
         },
     },
+    "aircrew": {
+        "pdf": ["aircrew-1178-2011-oorspronkelijk-deel1.pdf", "aircrew-1178-2011-oorspronkelijk-deel2.pdf"],
+        "out": "aircrew-1178-2011-oorspronkelijk",
+        "id": r"FCL\.\d{3,4}(?:\.[A-Z]{1,4})?|MED\.[A-D]\.\d{3}",
+        "meta": {
+            "titel": "Verordening (EU) nr. 1178/2011 van de Commissie van 3 november 2011 – bemanning van burgerluchtvaartuigen (Aircrew: Part-FCL, Part-MED …)",
+            "kort": "Aircrew (1178/2011), oorspronkelijke versie",
+            "celex": "32011R1178",
+            "publicatie": "PB L 311 van 25.11.2011, blz. 1",
+            "url": "https://eur-lex.europa.eu/eli/reg/2011/1178/oj",
+        },
+    },
+    "airops": {
+        "pdf": ["airops-965-2012-oorspronkelijk-deel1.pdf", "airops-965-2012-oorspronkelijk-deel2.pdf"],
+        "out": "airops-965-2012-oorspronkelijk",
+        "id": r"(?:ARO|ORO|CAT|SPA)(?:\.[A-Z]{1,5}){1,3}\.\d{3}",
+        "meta": {
+            "titel": "Verordening (EU) nr. 965/2012 van de Commissie van 5 oktober 2012 – vluchtuitvoering (Air Operations: Part-ARO, ORO, CAT, SPA)",
+            "kort": "Air Operations (965/2012), oorspronkelijke versie",
+            "celex": "32012R0965",
+            "publicatie": "PB L 296 van 25.10.2012, blz. 1",
+            "url": "https://eur-lex.europa.eu/eli/reg/2012/965/oj",
+        },
+    },
+    "contaw": {
+        "pdf": ["cont-airworthiness-1321-2014-oorspronkelijk-deel1.pdf", "cont-airworthiness-1321-2014-oorspronkelijk-deel2.pdf"],
+        "out": "cont-airworthiness-1321-2014-oorspronkelijk",
+        "id": r"(?:M|145|66|147)\.[AB]\.\d{2,3}[A-Z]?",
+        "meta": {
+            "titel": "Verordening (EU) nr. 1321/2014 van de Commissie van 26 november 2014 – permanente luchtwaardigheid (Part-M, Part-145, Part-66, Part-147)",
+            "kort": "Permanente luchtwaardigheid (1321/2014), oorspronkelijke versie",
+            "celex": "32014R1321",
+            "publicatie": "PB L 362 van 17.12.2014, blz. 1",
+            "url": "https://eur-lex.europa.eu/eli/reg/2014/1321/oj",
+        },
+    },
     "part21": {
         "pdf": "part21-748-2012-oorspronkelijk.pdf",
         "id": r"21\.[AB]\.\d+[A-Z]?",
@@ -46,20 +83,25 @@ DOCS = {
 }
 COMMON_META = {
     "taal": "nl",
-    "versie": "Oorspronkelijke tekst zoals bekendgemaakt in 2012, NIET geconsolideerd: latere wijzigingen ontbreken.",
+    "versie": "Oorspronkelijke tekst zoals bekendgemaakt, NIET geconsolideerd: latere wijzigingen ontbreken.",
     "licentie": "EU-wetgeving: hergebruik toegestaan met bronvermelding (Besluit 2011/833/EU). © Europese Unie, https://eur-lex.europa.eu",
 }
 
 # Kop- en voetregels van het Publicatieblad
 NOISE = re.compile(r"^(NL|L \d+/\d+|Publicatieblad van de Europese Unie|\d{1,2}\.\d{1,2}\.\d{4})$")
 TOC = re.compile(r"(\. ){4,}|\.{6,}")  # inhoudstafel met puntjes
-HEAD = r"Artikel \d+|Aanhangsel [IVX\d]+|AANHANGSEL [IVX\d]+"
+HEAD = r"Artikel \d+|Aanhangsel [IVX\d]+|AANHANGSEL [IVX\d]+|BIJLAGE [IVX]+"
 
 
-def lines_with_pages(doc, fixes=None):
+def lines_with_pages(docs, fixes=None):
+    """Regels zonder kop/voet, met de pagina van het Publicatieblad (bv. "L 281/37") of anders het pdf-paginanummer."""
     fixes = dict(fixes or {})
-    for pno, page in enumerate(doc, start=1):
-        lines = [l.replace("\xa0", " ").strip() for l in page.get_text().splitlines()]
+    pages = [page for doc in docs for page in doc]
+    for n, page in enumerate(pages, start=1):
+        text = page.get_text()
+        oj = re.search(r"(?m)^\s*(L \d+/\d+)\s*$", text)
+        pno = oj.group(1) if oj else str(n)
+        lines = [l.replace("\xa0", " ").strip() for l in text.splitlines()]
         if sum(bool(TOC.search(l)) for l in lines) >= 5:
             continue  # pagina van de inhoudstafel
         for s in lines:
@@ -74,7 +116,7 @@ def reflow(items, idpat):
     """Voeg afgebroken regels samen. Een nieuwe alinea begint bij een kop, een bepaling of een opsomming.
     Na de kop van een bepaling (id + titel) begint de tekst altijd op een nieuwe alinea."""
     # Kop = id alleen op de regel, of id gevolgd door een titel met hoofdletter. Anders is het een verwijzing.
-    idbrk = rf"{idpat}(?:$|\s+[A-ZÀ-Ý])"
+    idbrk = rf"{idpat}(?:$|\s+[A-ZÀ-Ý\[])"
     brk = re.compile(rf"^({HEAD}|{idbrk}|BIJLAGE|HOOFDSTUK|AFDELING|SUBDEEL|DEEL|Tabel|\(?[a-z]\)|\(?\d+\)|\d+\.\s|[ivx]+\)|—|•|-\s)")
     head = re.compile(rf"^({HEAD}|{idpat})$")
     out, state = [], 0  # state 1: kop zonder titel gezien (volgende regel = titel); 2: titel compleet
@@ -104,23 +146,18 @@ def reflow(items, idpat):
 
 
 def split(paras, idpat):
-    """Artikelen staan vóór de BIJLAGE en lopen op (1, 2, 3 ...); bijlagepunten en aanhangsels erna.
-    Zo worden verwijzingen in de tekst die toevallig met een nummer beginnen niet als kop gezien."""
-    head = re.compile(rf"^({HEAD}|{idpat})(?:$|\s+(?=[A-ZÀ-Ý])(.*))")
+    """Artikelen staan vóór de bijlage en lopen op (1, 2, 3 ...); bijlagepunten en aanhangsels erna.
+    Een bijlagepunt kan meer dan eens als kop voorkomen (inhoudstafel zonder puntjes, verwijzing vooraan
+    een regel). Dan houden we de versie met de meeste tekst; de andere wordt bij de vorige bepaling gevoegd."""
+    head = re.compile(rf"^({HEAD}|{idpat})(?:$|\s+(?=[A-ZÀ-Ý\[])(.*))")
     provisions, cur, intro = [], None, []
-    seen, in_annex, last_art = set(), False, 0
+    in_annex, last_art = False, 0
     for pno, text in paras:
         if re.match(r"^(BIJLAGE\b|SECTIE A\b|SUBDEEL A\b)", text):
             in_annex = True
         m = head.match(text)
         ok = False
-        if m and m.group(1) in seen:
-            # Eerste keer was een regel uit de inhoudstafel (zonder tekst): vervang door de echte kop.
-            old = next(p for p in provisions if p["id"] == m.group(1))
-            if len(old["tekst"]) < 20 and not m.group(1).startswith("Artikel"):
-                provisions.remove(old)
-                seen.discard(m.group(1))
-        if m and m.group(1) not in seen:
+        if m:
             if m.group(1).startswith("Artikel"):
                 n = int(m.group(1).split()[1])
                 ok = not in_annex and last_art < n <= last_art + 3  # oplopend (een artikel kan ontbreken)
@@ -129,7 +166,6 @@ def split(paras, idpat):
             else:
                 ok = in_annex
         if ok:
-            seen.add(m.group(1))
             cur = {"id": m.group(1), "titel": (m.group(2) or "")[:200], "pagina": pno, "tekst": ""}
             provisions.append(cur)
             continue
@@ -137,7 +173,19 @@ def split(paras, idpat):
             intro.append(text)
         else:
             cur["tekst"] += ("\n" if cur["tekst"] else "") + text
-    return intro, provisions
+    # Dubbels oplossen
+    best = {}
+    for i, p in enumerate(provisions):
+        if p["id"] not in best or len(p["tekst"]) > len(provisions[best[p["id"]]]["tekst"]):
+            best[p["id"]] = i
+    kept = []
+    for i, p in enumerate(provisions):
+        if best[p["id"]] == i:
+            kept.append(p)
+        elif kept:
+            extra = f"{p['id']} {p['titel']}".strip() + ("\n" + p["tekst"] if p["tekst"] else "")
+            kept[-1]["tekst"] += ("\n" if kept[-1]["tekst"] else "") + extra
+    return intro, kept
 
 
 def to_markdown(meta, provisions):
@@ -146,19 +194,20 @@ def to_markdown(meta, provisions):
           f"- Link: {meta['url']}",
           f"- **{meta['versie']}**",
           f"- {meta['licentie']}",
-          "- Tabellen zijn in platte tekst niet altijd goed leesbaar: controleer ze in de PDF (paginanummer staat bij elke bepaling).", ""]
+          "- Tabellen zijn in platte tekst niet altijd goed leesbaar: controleer ze in de PDF (de pagina van het Publicatieblad staat bij elke bepaling).", ""]
     for p in provisions:
-        md += [f"## {p['id']} {p['titel']}".rstrip() + f"  _(pdf blz. {p['pagina']})_", "", p["tekst"].replace("\n", "\n\n"), ""]
+        md += [f"## {p['id']} {p['titel']}".rstrip() + f"  _(PB {p['pagina']})_", "", p["tekst"].replace("\n", "\n\n"), ""]
     return re.sub(r"\n{3,}", "\n\n", "\n".join(md)).rstrip() + "\n"
 
 
 def run(key):
     cfg = DOCS[key]
     meta = {**cfg["meta"], **COMMON_META}
-    doc = pymupdf.open(os.path.join(SRC, cfg["pdf"]))
-    paras = reflow(lines_with_pages(doc, cfg.get("fixes")), cfg["id"])
+    pdfs = cfg["pdf"] if isinstance(cfg["pdf"], list) else [cfg["pdf"]]
+    docs = [pymupdf.open(os.path.join(SRC, f)) for f in pdfs]
+    paras = reflow(lines_with_pages(docs, cfg.get("fixes")), cfg["id"])
     intro, provisions = split(paras, cfg["id"])
-    base = os.path.join(SRC, os.path.splitext(cfg["pdf"])[0])
+    base = os.path.join(SRC, cfg.get("out") or os.path.splitext(pdfs[0])[0])
     with open(base + ".json", "w", encoding="utf-8") as f:
         json.dump({**meta, "bepalingen": provisions}, f, ensure_ascii=False, indent=1)
     with open(base + ".md", "w", encoding="utf-8") as f:

@@ -2,11 +2,11 @@
 
 - Publicatie: PB L 224 van 21.8.2012, blz. 1 (CELEX 32012R0748)
 - Link: https://eur-lex.europa.eu/eli/reg/2012/748/oj
-- **Oorspronkelijke tekst zoals bekendgemaakt in 2012, NIET geconsolideerd: latere wijzigingen ontbreken.**
+- **Oorspronkelijke tekst zoals bekendgemaakt, NIET geconsolideerd: latere wijzigingen ontbreken.**
 - EU-wetgeving: hergebruik toegestaan met bronvermelding (Besluit 2011/833/EU). © Europese Unie, https://eur-lex.europa.eu
-- Tabellen zijn in platte tekst niet altijd goed leesbaar: controleer ze in de PDF (paginanummer staat bij elke bepaling).
+- Tabellen zijn in platte tekst niet altijd goed leesbaar: controleer ze in de PDF (de pagina van het Publicatieblad staat bij elke bepaling).
 
-## Artikel 1 Toepassingsgebied en definities  _(pdf blz. 2)_
+## Artikel 1 Toepassingsgebied en definities  _(PB L 224/2)_
 
 1. In overeenstemming met artikel 5, lid 5, en artikel 6, lid 3, van Verordening (EG) nr. 216/2008 stelt de onderhavige verordening gemeenschappelijke technische eisen en administratieve procedures vast voor de luchtwaardigheid en milieucertificering van producten, onderdelen en uitrustingsstukken en specificeert:
 
@@ -76,11 +76,11 @@ v) een gasluchtschip dat aan elk van de volgende kenmerken beantwoordt:
 
 vi) een heel licht hefschroefvliegtuig.
 
-## Artikel 2 Certificering van producten, onderdelen en  _(pdf blz. 3)_
+## Artikel 2 Certificering van producten, onderdelen en  _(PB L 224/3)_
 
 uitrustingsstukken 1. Voor producten, onderdelen en uitrustingsstukken worden certificaten afgegeven, als omschreven in bijlage I (deel 21). 2. In afwijking van lid 1, zijn luchtvaartuigen, met inbegrip van daarin geïnstalleerde producten, onderdelen en uitrustingsstukken die niet zijn geregistreerd in een lidstaat, vrijgesteld van de bepalingen van de subdelen H en I van bijlage I (deel 21). Zij zijn eveneens vrijgesteld van de bepalingen van subdeel P van bijlage I (deel 21) tenzij een lidstaat bepaalde identificatieaanduidingen oplegt.
 
-## Artikel 3 Voortdurende geldigheid van  _(pdf blz. 3)_
+## Artikel 3 Voortdurende geldigheid van  _(PB L 224/3)_
 
 typecertificaten en de daarmee verbonden bewijzen van luchtwaardigheid 1. Ten aanzien van een product dat een typecertificaat had, of een document dat afgifte van een bewijs van luchtwaardigheid toestond, die vóór 28 september 2003 door lidstaten zijn afgegeven, zijn de volgende bepalingen van toepassing:
 
@@ -126,7 +126,7 @@ c) de typecertificeringsbasis die door de JAA of, indien van toepassing, de lids
 
 d) de bevindingen die tijdens procedures van de JAA of lidstaten zijn gedaan, worden beschouwd als zijnde bevindingen welke zijn gedaan door het Agentschap, ter naleving van het bepaalde in punt 21.A.103, onder a) en b), van bijlage I (deel 21). 4. Ten aanzien van producten met een nationaal typecertificaat of een equivalent daarvan, waarvoor de goedkeuringsprocedure voor door lidstaten uitgevoerde ingrijpende reparatieontwerpen ten tijde van de vaststelling van het typecertificaat in overeenstemming met de onderhavige verordening nog niet is afgerond, geldt dat de bevindingen die tijdens procedures van de JAA of lidstaten zijn gedaan, worden beschouwd als zijnde bevindingen welke zijn gedaan door het Agentschap, ter naleving van het bepaalde in punt 21.A.433, onder a), van bijlage I (deel 21). 5. Een door een lidstaat afgegeven bewijs van luchtwaardigheid dat de conformiteit bevestigt met een typecertificaat dat is vastgesteld in overeenstemming met lid 1 wordt beschouwd als een certificaat dat voldoet aan de onderhavige verordening.
 
-## Artikel 4 Voortdurende geldigheid van aanvullende typecertificaten  _(pdf blz. 4)_
+## Artikel 4 Voortdurende geldigheid van aanvullende typecertificaten  _(PB L 224/4)_
 
 1. Ten aanzien van door een lidstaat volgens JAA-procedures of overeenkomstig de toepasselijke nationale procedures afgegeven aanvullende typecertificaten en ten aanzien van wijzigingen in producten die zijn voorgesteld door andere personen dan de houder van het typecertificaat van het product en welke zijn goedgekeurd door een lidstaat overeenkomstig de toepasselijke nationale procedures, waarbij het aanvullende typecertificaat of de wijziging geldig was op 28 september 2003, wordt het aanvullende typecertificaat of de wijziging geacht krachtens deze verordening te zijn afgegeven. 2. Ten aanzien van aanvullende typecertificaten waarvoor op 28 september 2003 volgens de van toepassing zijnde JAA-procedures voor aanvullende typecertificaten een certificeringsprocedure werd uitgevoerd door een lidstaat, en ten aanzien van ingrijpende wijzigingen in producten die zijn voorgesteld door andere personen dan de houder van het typecertificaat van het product, waarvoor volgens de op 28 september 2003 van toepassing zijnde nationale procedures een certificeringsprocedure werd uitgevoerd door een lidstaat, geldt het volgende:
 
@@ -140,7 +140,7 @@ d) de bevindingen die tijdens procedures van de JAA of lidstaten zijn gedaan, wo
 
 21).
 
-## Artikel 5 Voortgezet gebruik van bepaalde door lidstaten  _(pdf blz. 5)_
+## Artikel 5 Voortgezet gebruik van bepaalde door lidstaten  _(PB L 224/5)_
 
 geregistreerde luchtvaartuigen Met betrekking tot een luchtvaartuig dat niet kan worden beschouwd als een luchtvaartuig waaraan overeenkomstig artikel 3, lid 1, onder a), van deze verordening een typecertificaat is toegekend, waaraan door een lidstaat vóór de inwerkingtreding van Verordening (EG) nr. 1702/2003 in die lidstaat een bewijs van luchtwaardigheid is verstrekt ( 1 ), dat op de vermelde datum in die lidstaat was geregistreerd en op 28 maart 2007 nog steeds bij een lidstaat was geregistreerd, wordt de combinatie van de volgende elementen beschouwd als de overeenkomstig deze verordening van toepassing zijnde specifieke luchtwaardigheidsspecificaties:
 
@@ -150,7 +150,7 @@ b) de eisen inzake milieubescherming van bijlage 16 van het Verdrag van Chicago,
 
 c) de verplichte voortgezette luchtwaardigheidsgegevens van het land van ontwerp.
 
-## Artikel 6 Voortdurende geldigheid van certificaten voor onderdelen  _(pdf blz. 5)_
+## Artikel 6 Voortdurende geldigheid van certificaten voor onderdelen  _(PB L 224/5)_
 
 en uitrustingsstukken 1. Door een lidstaat afgegeven goedkeuringen van onderdelen en uitrustingsstukken die geldig waren op 28 september 2003, worden geacht te zijn afgegeven in overeenstemming met deze verordening. 2. Ten aanzien van onderdelen en uitrustingsstukken die op 28 september 2003 het voorwerp uitmaakten van een lopende goedkeurings- of autorisatieprocedure bij een lidstaat, geldt het volgende:
 
@@ -162,11 +162,11 @@ c) de overeenkomstig punt 21.A.605 van bijlage I (deel 21) toepasselijke vereist
 
 d) bevindingen die door de desbetreffende lidstaat zijn gedaan, worden beschouwd als zijnde bevindingen die zijn gedaan door het Agentschap, ter naleving van het bepaalde in punt 21.A.606, onder b), van bijlage I (deel 21).
 
-## Artikel 7 Vliegvergunningen  _(pdf blz. 5)_
+## Artikel 7 Vliegvergunningen  _(PB L 224/5)_
 
 De door de lidstaten vóór 28 maart 2007 vastgestelde voorwaarden voor de afgifte van een vliegvergunning of ander bewijs van luchtwaardigheid ten behoeve van luchtvaartuigen waarvoor geen bewijs van luchtwaardigheid of beperkt bewijs van luchtwaardigheid krachtens de onderhavige verordening gold, worden geacht te zijn vastgesteld overeenkomstig de onderhavige verordening, tenzij het Agentschap vóór 28 maart 2008 heeft geconcludeerd dat bedoelde voorwaarden niet leiden tot het vereiste veiligheidsniveau volgens Verordening (EG) nr. 216/2008 of de onderhavige verordening.
 
-## Artikel 8 Ontwerporganisaties  _(pdf blz. 5)_
+## Artikel 8 Ontwerporganisaties  _(PB L 224/5)_
 
 1. Een organisatie die verantwoordelijk is voor het ontwerp van producten, onderdelen en uitrustingsstukken of voor eventuele wijzigingen of reparaties daarvan toont haar bekwaamheid aan in overeenstemming met de bepalingen van bijlage I (deel 21). 2. In afwijking van lid 1, kan een organisatie die haar hoofdvestiging in een niet- lidstaat heeft haar bekwaamheid aantonen op basis van een certificaat dat aan de organisatie is afgegeven door dat land, voor het product, het onderdeel en het uitrustingsstuk waarvoor de aanvraag is ingediend, mits:
 
@@ -174,7 +174,7 @@ a) het betreffende land het land van ontwerp is, ( 1 ) EU 15: 28 september 2003,
 
 b) het Agentschap heeft vastgesteld dat het systeem van het land hetzelfde onafhankelijke niveau van controle op naleving kent als de onderhavige verordening, via een gelijkwaardig systeem van goedkeuringen van organisaties of via directe betrokkenheid van de bevoegde autoriteit in het betreffende land. 3. Goedkeuringen voor ontwerporganisaties die door een lidstaat zijn afgegeven of erkend volgens de van toepassing zijnde JAA-vereisten en -procedures en die vóór 28 september 2003 geldig waren, worden beschouwd als goedkeuringen die voldoen aan de onderhavige verordening.
 
-## Artikel 9 Productieorganisaties  _(pdf blz. 6)_
+## Artikel 9 Productieorganisaties  _(PB L 224/6)_
 
 1. Een organisatie die verantwoordelijk is voor de fabricage van producten, onderdelen en uitrustingsstukken toont haar bekwaamheid aan in overeenstemming met de bepalingen van bijlage I (deel 21). 2. In afwijking van lid 1, kan een fabrikant die niet in een lidstaat gevestigd is haar bekwaamheid aantonen op basis van een certificaat dat aan de organisatie is afgegeven door dat land, voor het product, het onderdeel en het uitrustingsstuk waarvoor de aanvraag is ingediend, mits:
 
@@ -182,15 +182,15 @@ a) het betreffende land het land van vervaardiging is,
 
 b) het Agentschap heeft vastgesteld dat het systeem van het land hetzelfde onafhankelijke niveau van controle op naleving kent als de onderhavige verordening, via een gelijkwaardig systeem van goedkeuringen van organisaties of via directe betrokkenheid van de bevoegde autoriteit in het betreffende land. 3. Goedkeuringen voor productieorganisaties die door een lidstaat zijn afgegeven of erkend volgens de van toepassing zijnde JAA-vereisten en -procedures en die vóór 28 september 2003 geldig waren, worden beschouwd als goedkeuringen die voldoen aan de onderhavige verordening. Article 10
 
-## Artikel 10 Maatregelen van het Agentschap  _(pdf blz. 6)_
+## Artikel 10 Maatregelen van het Agentschap  _(PB L 224/6)_
 
 1. Het Agentschap zal aanvaardbare middelen van naleving opstellen waarvan bevoegde autoriteiten, organisaties en personeel gebruik kunnen maken om aan te tonen dat zij voldoen aan de voorschriften van bijlage I (deel 21) bij deze verordening. 2. De aanvaardbare middelen van naleving die door het Agentschap worden opgesteld, mogen niet leiden tot de invoering van nieuwe eisen, noch tot de matiging van de eisen van bijlage I (deel 21) bij deze verordening. 3. Wanneer gebruik wordt gemaakt van de door het Agentschap opgestelde aanvaardbare middelen van naleving wordt zonder verdere bewijsvoering geacht te zijn voldaan aan de overeenkomstige eisen van bijlage I (deel 21) bij deze verordening, onverminderd de artikelen 54 en 55 van Verordening (EG) nr. 216/2008.
 
-## Artikel 11 Intrekking  _(pdf blz. 6)_
+## Artikel 11 Intrekking  _(PB L 224/6)_
 
 Verordening (EG) nr. 1702/2003 wordt ingetrokken. Verwijzingen naar de ingetrokken verordening gelden als verwijzingen naar de onderhavige verordening en worden gelezen volgens de concordantietabel in bijlage III.
 
-## Artikel 12 Inwerkingtreding  _(pdf blz. 6)_
+## Artikel 12 Inwerkingtreding  _(PB L 224/6)_
 
 De onderhavige verordening treedt in werking op de twintigste dag na die van de bekendmaking ervan in het Publicatieblad van de Europese Unie. Deze verordening is verbindend in al haar onderdelen en is rechtstreeks toepasselijk in elke lidstaat. Gedaan te Brussel, 3 augustus 2012. Voor de Commissie De voorzitter José Manuel BARROSO 21.1 Algemeen Voor de toepassing van deze bijlage wordt verstaan onder „bevoegde autoriteit”:
 
@@ -200,15 +200,15 @@ b) voor organisaties die niet gevestigd zijn in een lidstaat, het Agentschap. SE
 
 SUBDEEL A — ALGEMENE BEPALINGEN
 
-## 21.A.1 Toepassingsgebied  _(pdf blz. 14)_
+## 21.A.1 Toepassingsgebied  _(PB L 224/14)_
 
 In deze sectie worden de algemene bepalingen vastgelegd betreffende de rechten en verplichtingen van de aanvrager en houder van een certificaat dat overeenkomstig deze sectie is of zal worden afgegeven.
 
-## 21.A.2 Uitvoering door een andere persoon dan de aanvrager of houder van een certificaat  _(pdf blz. 14)_
+## 21.A.2 Uitvoering door een andere persoon dan de aanvrager of houder van een certificaat  _(PB L 224/14)_
 
 De acties en verplichtingen die overeenkomstig deze sectie moeten worden uitgevoerd door de houder of aanvrager van een certificaat voor een product, onderdeel of uitrustingsstuk mogen in zijn naam worden uitgevoerd door een andere natuurlijke of rechtspersoon, op voorwaarde dat de houder of aanvrager van dat certificaat kan aantonen dat hij een overeenkomst met die andere persoon heeft gesloten om zeker te stellen dat de verplichtingen van de houder naar behoren worden en zullen worden vervuld.
 
-## 21.A.3A Gebreken, storingen en defecten  _(pdf blz. 14)_
+## 21.A.3A Gebreken, storingen en defecten  _(PB L 224/14)_
 
 a) Systeem voor het verzamelen, onderzoeken en analyseren van gegevens. De houder van een typecertificaat, een beperkt typecertificaat, een aanvullend typecertificaat, een ETSO-autorisatie (European Technical Standard Order), een goedkeuring van een ontwerp voor een ingrijpende reparatie of enige andere relevante goedkeuring die beschouwd kan worden krachtens de onderhavige verordening te zijn afgegeven, moet beschikken over een systeem voor het verzamelen, onderzoeken en analyseren van rapporten en informatie over gebreken, storingen, defecten of andere voorvallen die een nadelig effect hebben of kunnen hebben op de blijvende luchtwaardigheid van het product, het onderdeel of het uitrustingsstuk waarvoor het typecertificaat, het beperkte typecertificaat, het aanvullend typecertificaat, de ETSO-autorisatie, de goedkeuring van een ontwerp voor een ingrijpende reparatie of enige andere relevante goedkeuring uit hoofde van de onderhavige verordening, is afgegeven. Informatie over dit systeem moet ter beschikking worden gesteld aan alle bekende gebruikers van het product, onderdeel of uitrustingsstuk en, op verzoek, aan eenieder die bevoegd is overeenkomstig andere aanverwante uitvoeringsvoorschriften.
 
@@ -224,7 +224,7 @@ c) Onderzoek van gerapporteerde voorvallen
 
 2. Als het Agentschap oordeelt dat een maatregel dient te worden getroffen om de tekortkoming te verhelpen, moet de houder van het typecertificaat, het beperkt typecertificaat, het aanvullend typecertificaat, de goedkeuring van het ontwerp voor een ingrijpende reparatie, de ETSO-autorisatie, of enige andere relevante goedkeuring uit hoofde van de onderhavige verordening, of de fabrikant, naargelang van toepassing, de desbetreffende gegevens voorleggen aan het Agentschap.
 
-## 21.A.3B Luchtwaardigheidsaanwijzingen  _(pdf blz. 15)_
+## 21.A.3B Luchtwaardigheidsaanwijzingen  _(PB L 224/15)_
 
 a) Een luchtwaardigheidsaanwijzing is een door het Agentschap uitgevaardigd of overgenomen document dat werkzaamheden oplegt die aan een luchtvaartuig moeten worden uitgevoerd om opnieuw een aanvaardbaar veiligheidsniveau tot stand te brengen, als er aanwijzingen voor zijn dat het veiligheidsniveau van dat luchtvaartuig anders zou kunnen worden aangetast.
 
@@ -252,7 +252,7 @@ d) Een luchtwaardigheidsaanwijzing moet ten minste de volgende informatie bevatt
 
 5. de datum van inwerkingtreding.
 
-## 21.A.4 Coördinatie tussen ontwerp en productie  _(pdf blz. 15)_
+## 21.A.4 Coördinatie tussen ontwerp en productie  _(PB L 224/15)_
 
 Elke houder van een typecertificaat, een beperkt typecertificaat, een aanvullend typecertificaat, een ETSO-autorisatie, een goedkeuring van een wijziging aan een typeontwerp of een goedkeuring van een reparatieontwerp moet zo nodig samenwerken met de productieorganisatie om te komen tot:
 
@@ -262,15 +262,15 @@ b) een passende ondersteuning van de blijvende luchtwaardigheid van het product,
 
 SUBDEEL B — TYPECERTIFICATEN EN BEPERKTE TYPECERTIFICATEN
 
-## 21.A.11 Toepassingsgebied  _(pdf blz. 15)_
+## 21.A.11 Toepassingsgebied  _(PB L 224/15)_
 
 In dit subdeel wordt de procedure vastgelegd voor de afgifte van typecertificaten voor producten en beperkte typecertificaten voor luchtvaartuigen, en worden ook de rechten en verplichtingen vastgelegd van de aanvragers en houders van deze certificaten.
 
-## 21.A.13 Aanvaardbaarheid  _(pdf blz. 16)_
+## 21.A.13 Aanvaardbaarheid  _(PB L 224/16)_
 
 Elke natuurlijke of rechtspersoon die zijn bekwaamheid overeenkomstig punt 21.A.14 aangetoond heeft, of aan het bewijzen is, is aanvaardbaar als aanvrager van een typecertificaat of een beperkt typecertificaat onder de in dit subdeel beschreven voorwaarden.
 
-## 21.A.14 Bewijs van bekwaamheid  _(pdf blz. 16)_
+## 21.A.14 Bewijs van bekwaamheid  _(PB L 224/16)_
 
 a) Elke organisatie die een typecertificaat of een beperkt typecertificaat aanvraagt moet haar bekwaamheid bewijzen door houder te zijn van een door het Agentschap in overeenstemming met subdeel J afgegeven erkenning als ontwerporganisatie.
 
@@ -290,7 +290,7 @@ c) In afwijking van punt a) mag een aanvrager zijn bekwaamheid bewijzen door het
 
 2. een in een ELA1-luchtvaartuig geïnstalleerde motor of propeller.
 
-## 21.A.15 Aanvraag  _(pdf blz. 16)_
+## 21.A.15 Aanvraag  _(PB L 224/16)_
 
 a) Een aanvraag om een typecertificaat of een beperkt typecertificaat moet worden ingediend in een vorm en op een wijze als vastgesteld door het Agentschap.
 
@@ -298,11 +298,11 @@ b) Bij een aanvraag om een typecertificaat of een beperkt typecertificaat voor e
 
 c) Bij een aanvraag om een typecertificaat voor een motor of propeller moet een algemene overzichtstekening van de motor of de propeller worden gevoegd, evenals een beschrijving van de ontwerpkenmerken, de gebruikskenmerken en de voorgestelde gebruiksbeperkingen.
 
-## 21.A.16A Luchtwaardigheidsvoorschriften  _(pdf blz. 16)_
+## 21.A.16A Luchtwaardigheidsvoorschriften  _(PB L 224/16)_
 
 Het Agentschap zal, in overeenstemming met artikel 19 van Verordening (EG) nr. 216/2008, luchtwaardigheidsvoorschriften uitvaardigen als standaardmiddelen om aan te tonen dat producten, onderdelen en uitrustingsstukken voldoen aan de essentiële eisen van bijlage 1 bij Verordening (EG) nr. 216/2008. Deze voorschriften moeten voldoende gedetailleerd en specifiek zijn, zodat de aanvragers weten onder welke voorwaarden certificaten worden afgegeven.
 
-## 21.A.16B Aanvullende voorwaarden  _(pdf blz. 16)_
+## 21.A.16B Aanvullende voorwaarden  _(PB L 224/16)_
 
 a) Het Agentschap zal speciale gedetailleerde technische specificaties, aanvullende voorwaarden genoemd, voorschrijven voor een product, als de betreffende luchtwaardigheidsvoorschriften geen adequate of geschikte veiligheidsnormen voor dat product bevatten, omdat:
 
@@ -314,7 +314,7 @@ a) Het Agentschap zal speciale gedetailleerde technische specificaties, aanvulle
 
 b) De aanvullende voorwaarden bevatten de veiligheidsnormen die het Agentschap noodzakelijk acht om te komen tot een veiligheidsniveau dat gelijkstaat met het in de toepasselijke luchtwaardigheidsvoorschriften vastgelegde veiligheidsniveau.
 
-## 21.A.17 Typecertificatiebasis  _(pdf blz. 17)_
+## 21.A.17 Typecertificatiebasis  _(PB L 224/17)_
 
 a) De typecertificatiebasis die dient te worden gemeld voor het afgeven van een typecertificaat of een beperkt typecertificaat moet bestaan uit:
 
@@ -336,7 +336,7 @@ c) Als er geen typecertificaat is afgegeven, of als duidelijk is dat er geen typ
 
 d) Als een aanvrager verkiest te voldoen aan een amendement bij de luchtwaardigheidsvoorschriften dat van kracht wordt nadat de aanvraag om een typecertificaat is ingediend, moet de aanvrager ook voldoen aan elk ander amendement dat er naar het oordeel van het Agentschap rechtstreeks verband mee houdt.
 
-## 21.A.18 Aanduiding van de toepasselijke milieueisen en certificeringsspecificaties  _(pdf blz. 17)_
+## 21.A.18 Aanduiding van de toepasselijke milieueisen en certificeringsspecificaties  _(PB L 224/17)_
 
 a) De toepasselijke geluidseisen voor het afgeven van een typecertificaat voor een luchtvaartuig zijn vastgelegd overeenkomstig de bepalingen van hoofdstuk 1 van bijlage 16, boekdeel I, deel II van het Verdrag van Chicago en:
 
@@ -360,11 +360,11 @@ c) Het Agentschap zal in overeenstemming met artikel 19 van Verordening (EG) nr.
 
 b) beschreven geluids- respectievelijk emissievereisten.
 
-## 21.A.19 Wijzigingen die een nieuw typecertificaat vereisen  _(pdf blz. 18)_
+## 21.A.19 Wijzigingen die een nieuw typecertificaat vereisen  _(PB L 224/18)_
 
 Elke natuurlijke of rechtspersoon die een wijziging aan een product voorstelt, moet een nieuw typecertificaat aanvragen als het Agentschap oordeelt dat de verandering van ontwerp, vermogen, stuwkracht of massa zo groot is, dat een nagenoeg compleet onderzoek vereist is om na te gaan of voldaan wordt aan de toepasselijke typecertificeringsbasis.
 
-## 21.A.20 Voldoening aan de typecertificatiebasis en de milieueisen  _(pdf blz. 18)_
+## 21.A.20 Voldoening aan de typecertificatiebasis en de milieueisen  _(PB L 224/18)_
 
 a) De aanvrager van een typecertificaat of een beperkt typecertificaat moet voldoen aan de toepasselijke typecertificatiebasis en milieueisen, en moet aan het Agentschap aantonen met welke middelen hieraan voldaan wordt.
 
@@ -376,7 +376,7 @@ d) De aanvrager moet verklaren dat hij volledig voldoet aan de toepasselijke typ
 
 e) Als de aanvrager houder is van een erkenning als ontwerporganisatie, moet de verklaring van punt d) worden ingediend overeenkomstig de bepalingen van subdeel J.
 
-## 21.A.21 Afgifte van een typecertificaat  _(pdf blz. 18)_
+## 21.A.21 Afgifte van een typecertificaat  _(PB L 224/18)_
 
 De aanvrager heeft recht op een door het Agentschap afgegeven producttypecertificaat nadat:
 
@@ -396,7 +396,7 @@ c) is aangetoond dat:
 
 d) in het geval van een luchtvaartuigtypecertificaat voor de motor en/of de propeller, indien geïnstalleerd in het luchtvaartuig, een typecertificaat is afgegeven of vastgesteld in overeenstemming met de onderhavige verordening.
 
-## 21.A.23 Afgifte van een beperkt typecertificaat  _(pdf blz. 18)_
+## 21.A.23 Afgifte van een beperkt typecertificaat  _(PB L 224/18)_
 
 a) Voor een luchtvaartuig dat niet voldoet aan de bepalingen van punt 21.A.21, onder c), heeft de aanvrager recht op een door het Agentschap afgegeven beperkt typecertificaat, na:
 
@@ -410,7 +410,7 @@ b) Voor de in het luchtvaartuig geïnstalleerde motor en/of propeller, moet:
 
 2. zijn aangetoond dat hij voldoet aan de certificeringsspecificaties die noodzakelijk zijn voor de vliegveiligheid van het luchtvaartuig.
 
-## 21.A.31 Typeontwerp  _(pdf blz. 19)_
+## 21.A.31 Typeontwerp  _(PB L 224/19)_
 
 a) Het typeontwerp moet bestaan uit:
 
@@ -424,7 +424,7 @@ a) Het typeontwerp moet bestaan uit:
 
 b) Elk typeontwerp dient naar behoren te worden geïdentificeerd.
 
-## 21.A.33 Onderzoek en proeven  _(pdf blz. 19)_
+## 21.A.33 Onderzoek en proeven  _(PB L 224/19)_
 
 a) De aanvrager moet alle inspecties en proeven uitvoeren die nodig zijn om aan te tonen dat het product voldoet aan de toepasselijke typecertificatiebasis en milieueisen.
 
@@ -450,7 +450,7 @@ e) Voor proeven die door het Agentschap worden uitgevoerd of bijgewoond overeenk
 
 2. mag geen wijziging die betrekking heeft op de test en invloed heeft op de conformiteitsverklaring worden aangebracht aan een product, onderdeel of uitrustingsstuk tussen het moment dat wordt aangetoond dat het voldoet aan punt b) en het moment dat het aan het Agentschap wordt aangeboden om te worden getest.
 
-## 21.A.35 Vliegproeven  _(pdf blz. 19)_
+## 21.A.35 Vliegproeven  _(PB L 224/19)_
 
 a) Vliegproeven met het oog op het verkrijgen van een typecertificaat moeten worden uitgevoerd in overeenstemming met de voorwaarden die door het Agentschap zijn vastgelegd voor dergelijke vliegproeven.
 
@@ -478,11 +478,11 @@ f) De in punt b), 2) voorgeschreven vliegproeven moeten omvatten:
 
 2. voor alle andere luchtvaartuigen: tenminste 150 vlieguren.
 
-## 21.A.41 Typecertificaat  _(pdf blz. 20)_
+## 21.A.41 Typecertificaat  _(PB L 224/20)_
 
 Het typecertificaat en het beperkte typecertificaat omvatten beide het typeontwerp, de gebruiksbeperkingen, het gegevensblad voor luchtwaardigheid en emissies, de toepasselijke typecertificatiebasis en de milieueisen waarvan het Agentschap bijhoudt of eraan voldaan wordt, en alle andere voorwaarden of beperkingen die voor het product worden voorgeschreven in de toepasselijke certificeringsspecificaties en milieueisen. Het typecertificaat en het beperkte typecertificaat voor luchtvaartuigen omvatten bovendien ook het gegevensblad voor geluid. Het gegevensblad van het typecertificaat van de motor omvat de gegevens omtrent naleving van de emissievereisten.
 
-## 21.A.44 Verplichtingen van de houder  _(pdf blz. 20)_
+## 21.A.44 Verplichtingen van de houder  _(PB L 224/20)_
 
 Elke houder van een typecertificaat of een beperkt typecertificaat moet:
 
@@ -490,11 +490,11 @@ a) de in de punten 21.A.3, 21.A.3B, 21.A.4, 21.A.55, 21.A.57 en 21.A.61 beschrev
 
 b) de identificatiekenmerken in overeenstemming met subdeel Q specificeren.
 
-## 21.A.47 Overdraagbaarheid  _(pdf blz. 20)_
+## 21.A.47 Overdraagbaarheid  _(PB L 224/20)_
 
 Een typecertificaat of een beperkt typecertificaat mag alleen worden overgedragen aan een natuurlijke of rechtspersoon die in staat is om de in punt 21.A.44 vermelde verplichtingen na te komen en te dien einde heeft aangetoond dat hij bekwaam is om te voldoen aan de criteria van punt 21.A.14.
 
-## 21.A.51 Duur en blijvende geldigheid  _(pdf blz. 20)_
+## 21.A.51 Duur en blijvende geldigheid  _(PB L 224/20)_
 
 a) Een typecertificaat en een beperkt typecertificaat worden afgegeven voor een onbeperkte duur. Zij blijven geldig op voorwaarde dat:
 
@@ -504,15 +504,15 @@ a) Een typecertificaat en een beperkt typecertificaat worden afgegeven voor een 
 
 b) In geval van afstand of intrekking moeten het typecertificaat en beperkt typecertificaat worden ingeleverd bij het Agentschap.
 
-## 21.A.55 Administratie  _(pdf blz. 20)_
+## 21.A.55 Administratie  _(PB L 224/20)_
 
 Alle relevante ontwerpinformatie, tekeningen en testrapporten, met inbegrip van de inspectieverslagen voor het geteste product, moeten door de houder van het typecertificaat of het beperkt typecertificaat ter beschikking van het Agentschap worden gehouden en worden bewaard, zodat de nodige informatie voorhanden is om vast te stellen dat het product blijvend luchtwaardig is en voldoet aan de toepasselijke milieueisen.
 
-## 21.A.57 Handboeken  _(pdf blz. 21)_
+## 21.A.57 Handboeken  _(PB L 224/21)_
 
 De houder van een typecertificaat of een beperkt typecertificaat moet originele exemplaren samenstellen, bijhouden en bijwerken van alle handboeken die voor het product vereist worden door de toepasselijke typecertificatiebasis en milieueisen, en hij moet, op verzoek, kopieën bezorgen aan het Agentschap.
 
-## 21.A.61 Instructies voor blijvende luchtwaardigheid  _(pdf blz. 21)_
+## 21.A.61 Instructies voor blijvende luchtwaardigheid  _(PB L 224/21)_
 
 a) De houder van het typecertificaat of het beperkt typecertificaat moet tenminste één pakket complete instructies voor blijvende luchtwaardigheid, bevattende de beschrijvende gegevens en uitvoeringsinstructies die zijn opgesteld in overeenstemming met de toepasselijke typecertificatiebasis, bezorgen aan elke bekende eigenaar van één of meer luchtvaartuigen, motoren of propellers bij aflevering van het product of bij afgifte van het eerste bewijs van luchtwaardigheid voor het betreffende luchtvaartuig, al naargelang wat laatst geschiedt, en nadien deze instructies op verzoek beschikbaar stellen aan eenieder die moet voldoen aan een of meer bepalingen van deze instructies. Het ter beschikking stellen van een handboek of een deel van de instructies voor blijvende luchtwaardigheid dat betrekking heeft op revisie of andere vormen van groot onderhoud, mag worden uitgesteld tot na de ingebruikneming van het product, maar moet gebeuren voordat een van de producten de desbetreffende leeftijd of het desbetreffende aantal vlieguren/cycli bereikt.
 
@@ -520,7 +520,7 @@ b) Bovendien moeten wijzigingen in de instructies voor blijvende luchtwaardighei
 
 SUBDEEL D — WIJZIGINGEN AAN DE TYPECERTIFICATEN EN BEPERKTE TYPECERTIFICATEN
 
-## 21.A.90 A Toepassingsgebied  _(pdf blz. 21)_
+## 21.A.90 A Toepassingsgebied  _(PB L 224/21)_
 
 In dit subdeel wordt de procedure vastgelegd voor de goedkeuring van wijzigingen aan typeontwerpen en typecertificaten, en worden ook de rechten en verplichtingen vastgelegd van de aanvragers en houders van deze goedkeuringen. In dit subdeel worden ook standaardwijzigingen gedefinieerd waarvoor geen goedkeuringsprocedure uit hoofde van dit subdeel vereist is. In dit subdeel wordt met typecertificaten ook verwezen naar beperkte typecertificaten. 21A.90B Standaardwijzigingen
 
@@ -540,17 +540,17 @@ iii) zweefvliegtuigen, gemotoriseerde zweefvliegtuigen, ballonnen en luchtschepe
 
 b) De punten 21A.91 tot en met 21A.109 zijn niet van toepassing op standaardwijzigingen.
 
-## 21.A.91 Classificatie van wijzigingen aan typeontwerpen  _(pdf blz. 21)_
+## 21.A.91 Classificatie van wijzigingen aan typeontwerpen  _(PB L 224/21)_
 
 Wijzigingen aan typeontwerpen worden geclassificeerd als geringe en ingrijpende wijzigingen. Een „geringe wijziging” is een wijziging die geen merkbaar effect heeft op de massa, de balans, de structurele sterkte, de betrouwbaarheid, de operationele kenmerken, het geluid, de brandstofventilatie, de uitlaatemissie of andere kenmerken die de luchtwaardigheid van het product beïnvloeden. Onverminderd punt 21.A.19 worden alle andere wijzigingen in dit subdeel beschouwd als „ingrijpende wijzigingen”. Ingrijpende en geringe wijzigingen moeten worden goedgekeurd in overeenstemming met punt 21.A.95 of punt 21.A.97, al naargelang van toepassing, en moeten naar behoren worden geïdentificeerd.
 
-## 21.A.92 Aanvaardbaarheid  _(pdf blz. 22)_
+## 21.A.92 Aanvaardbaarheid  _(PB L 224/22)_
 
 a) Alleen de houder van het typecertificaat mag een aanvraag om goedkeuring van een ingrijpende wijziging aan een typeontwerp indienen overeenkomstig dit subdeel; alle andere aanvragers van een ingrijpende wijziging aan een typeontwerp moeten hun aanvraag indienen overeenkomstig subdeel E.
 
 b) Elke natuurlijke of rechtspersoon mag een aanvraag om goedkeuring van een geringe wijziging aan een typeontwerp indienen overeenkomstig dit subdeel.
 
-## 21.A.93 Aanvraag  _(pdf blz. 22)_
+## 21.A.93 Aanvraag  _(PB L 224/22)_
 
 Een aanvraag om goedkeuring van een wijziging aan een typeontwerp moet gebeuren in de vorm en op de wijze zoals vastgelegd door het Agentschap, en moet omvatten:
 
@@ -562,7 +562,7 @@ a) Een beschrijving van de wijziging, met identificatie van:
 
 b) Een identificatie van nieuwe onderzoeken die nodig zijn om aan te tonen dat het gewijzigde product voldoet aan de toepasselijke certificeringsspecificaties en milieueisen.
 
-## 21.A.95 Geringe wijzigingen  _(pdf blz. 22)_
+## 21.A.95 Geringe wijzigingen  _(PB L 224/22)_
 
 Geringe wijzigingen aan een typeontwerp moeten worden geclassificeerd en goedgekeurd:
 
@@ -570,7 +570,7 @@ a) door het Agentschap, of
 
 b) door een erkende ontwerporganisatie volgens een met het Agentschap overeengekomen procedure.
 
-## 21.A.97 Ingrijpende wijzigingen  _(pdf blz. 22)_
+## 21.A.97 Ingrijpende wijzigingen  _(PB L 224/22)_
 
 a) Een aanvrager van een goedkeuring van een ingrijpende wijziging moet:
 
@@ -586,7 +586,7 @@ a) Een aanvrager van een goedkeuring van een ingrijpende wijziging moet:
 
 b) De goedkeuring van een ingrijpende wijziging aan een typeontwerp blijft beperkt tot die specifieke configuratie(s) van het typeontwerp waarop de wijziging betrekking heeft.
 
-## 21.A.101 Aanduiding van de toepasselijke certificeringsspecificaties en milieueisen  _(pdf blz. 22)_
+## 21.A.101 Aanduiding van de toepasselijke certificeringsspecificaties en milieueisen  _(PB L 224/22)_
 
 a) Een aanvrager van een wijziging aan een typecertificaat moet aantonen dat het gewijzigde product voldoet aan de luchtwaardigheidsvoorschriften die van toepassing zijn voor het gewijzigde product en van kracht zijn op de datum van de aanvraag om de wijziging, tenzij de aanvrager ervoor kiest de certificeringsspecificaties van latere wijzigingen na te leven of daartoe verplicht is krachtens de punten e) en f), en aan de toepasselijke milieu-eisen zoals uiteengezet in punt 21.A.18.
 
@@ -614,7 +614,7 @@ e) Een aanvraag om een wijziging aan een typecertificaat voor grote luchtvaartui
 
 f) Als een aanvrager verkiest te voldoen aan een certificeringsspecificatie van een amendement bij de luchtwaardigheidsvoorschriften dat van kracht wordt nadat de aanvraag om een typecertificaat is ingediend, moet de aanvrager ook voldoen aan alle andere certificeringsspecificaties die er naar het oordeel van het Agentschap rechtstreeks verband mee houden.
 
-## 21.A.103 Goedkeuring  _(pdf blz. 23)_
+## 21.A.103 Goedkeuring  _(PB L 224/23)_
 
 a) De aanvrager heeft recht op een door het Agentschap afgegeven goedkeuring van een ingrijpende wijziging aan een typeontwerp nadat:
 
@@ -630,17 +630,17 @@ iii) geen kenmerk of eigenschap het product onveilig maakt voor het gebruik waar
 
 b) Een geringe wijziging aan een typeontwerp zal slechts worden goedgekeurd in overeenstemming met punt 21.A.95 als wordt aangetoond dat het gewijzigde product voldoet aan de in punt 21.A.101 gespecificeerde toepasselijke certificeringsspecificaties.
 
-## 21.A.105 Administratie  _(pdf blz. 24)_
+## 21.A.105 Administratie  _(PB L 224/24)_
 
 Voor elke wijziging moeten alle desbetreffende ontwerpinformatie, tekeningen en testrapporten, met inbegrip van de inspectieverslagen voor het geteste product, door de aanvrager ter beschikking van het Agentschap worden gehouden en worden bewaard, zodat de nodige informatie voorhanden is om vast te stellen dat het gewijzigde product blijvend luchtwaardig is en voldoet aan de van toepassing zijnde voorschriften op het gebied van milieubescherming.
 
-## 21.A.107 Instructies voor blijvende luchtwaardigheid  _(pdf blz. 24)_
+## 21.A.107 Instructies voor blijvende luchtwaardigheid  _(PB L 224/24)_
 
 a) De houder van de goedkeuring van een kleine wijziging aan een typeontwerp moet ten minste één kopie van de geringe eventueel mee gepaard gaande aanvullingen op de instructies voor blijvende luchtwaardigheid van het product waaraan de geringe wijziging wordt aangebracht, opgesteld in overeenstemming met de toepasselijke certificeringsbasis, bezorgen aan elke bekende eigenaar van één of meer luchtvaartuigen, motoren of propellers waarin de geringe wijziging is geïntegreerd, bij de levering of bij de afgifte van het eerste bewijs van luchtwaardigheid voor het betreffende luchtvaartuig, al naargelang wat laatst geschiedt, en daarna deze aanvullingen op de instructies op verzoek ter beschikking stellen van eenieder die dient te voldoen aan één of meer bepalingen van deze instructies.
 
 b) Bovendien moeten wijzigingen aan deze aanvullingen op de instructies voor blijvende luchtwaardigheid ter beschikking worden gesteld van alle bekende gebruikers van een product waarin de geringe wijziging is geïntegreerd en, op verzoek, aan eenieder die moet voldoen aan één of meer van deze instructies.
 
-## 21.A.109 Verplichtingen en EPA-identificatiekenmerk  _(pdf blz. 24)_
+## 21.A.109 Verplichtingen en EPA-identificatiekenmerk  _(PB L 224/24)_
 
 De houder van een goedkeuring van een geringe wijziging aan een typeontwerp moet:
 
@@ -650,15 +650,15 @@ b) het identificatiekenmerk specificeren, met inbegrip van de EPA-letters („Eu
 
 SUBDEEL E — AANVULLENDE TYPECERTIFICATEN
 
-## 21.A.111 Toepassingsgebied  _(pdf blz. 24)_
+## 21.A.111 Toepassingsgebied  _(PB L 224/24)_
 
 In dit subdeel wordt de procedure vastgelegd voor de goedkeuring van ingrijpende wijzigingen aan het typeontwerp overeenkomstig de procedures van het aanvullend typecertificaat, en worden ook de rechten en verplichtingen vastgelegd van de aanvragers of houders van deze certificaten.
 
-## 21.A.112A Aanvaardbaarheid  _(pdf blz. 24)_
+## 21.A.112A Aanvaardbaarheid  _(PB L 224/24)_
 
 Elke natuurlijke of rechtspersoon (organisatie) die zijn bekwaamheid overeenkomstig punt 21.A.112B heeft bewezen, of aan het bewijzen is, is aanvaardbaar als aanvrager van een aanvullend typecertificaat onder de in dit subdeel beschreven voorwaarden.
 
-## 21.A.112B Bewijs van bekwaamheid  _(pdf blz. 24)_
+## 21.A.112B Bewijs van bekwaamheid  _(PB L 224/24)_
 
 a) Elke organisatie die een aanvullend typecertificaat aanvraagt, moet zijn bekwaamheid bewijzen door houder te zijn van een door het Agentschap in overeenstemming met subdeel J afgegeven erkenning als ontwerporganisatie.
 
@@ -666,17 +666,17 @@ b) In afwijking van punt a) kan een aanvrager, als alternatieve procedure om zij
 
 c) Bij wijze van afwijking van de punten a) en b) mag een aanvrager ervoor kiezen zijn bekwaamheid aan te tonen via de goedkeuring door het Agentschap van een certificeringsprogramma waarin gedetailleerd de middelen zijn uiteengezet waarmee de naleving kan worden aangetoond voor een STC op in punt 21A.14, onder c) gedefinieerde luchtvaartuigen, motors en propellers.
 
-## 21.A.113 Aanvraag om een aanvullend typecertificaat  _(pdf blz. 25)_
+## 21.A.113 Aanvraag om een aanvullend typecertificaat  _(PB L 224/25)_
 
 a) Een aanvraag om een aanvullend typecertificaat moet worden ingediend in de vorm en op de wijze zoals vastgelegd door het Agentschap.
 
 b) Een aanvraag om een aanvullend typecertificaat moet vergezeld gaan van de in punt 21.A.93 voorgeschreven beschrijvingen en identificatie. Daarnaast moet deze aanvraag ook een verantwoording bevatten die stelt dat de informatie waarop deze identificaties gebaseerd zijn toereikend is, en verkregen is uit de eigen bronnen van de aanvrager of via een overeenkomst met de houder van het typecertificaat.
 
-## 21.A.114 Conformiteit  _(pdf blz. 25)_
+## 21.A.114 Conformiteit  _(PB L 224/25)_
 
 Elke aanvrager van een aanvullend typecertificaat moet voldoen aan punt 21.A.97.
 
-## 21.A.115 Afgifte van een aanvullend typecertificaat  _(pdf blz. 25)_
+## 21.A.115 Afgifte van een aanvullend typecertificaat  _(PB L 224/25)_
 
 De aanvrager heeft het recht op een door het Agentschap afgegeven aanvullend typecertificaat nadat:
 
@@ -692,11 +692,11 @@ d) als de aanvrager, overeenkomstig punt 21.A.113, onder b), een overeenkomst he
 
 2. de houder van het typecertificaat ermee heeft ingestemd om met de houder van het aanvullend typecertificaat samen te werken om ervoor te zorgen dat alle verplichtingen inzake de blijvende luchtwaardigheid van het gewijzigde product nagekomen worden in overeenstemming met de punten 21.A.44 en 21.A.118A.
 
-## 21.A.116 Overdraagbaarheid  _(pdf blz. 25)_
+## 21.A.116 Overdraagbaarheid  _(PB L 224/25)_
 
 Een aanvullend typecertificaat mag alleen worden overgedragen aan een natuurlijke of rechtspersoon die in staat is om de verplichtingen van punt 21.A.118A na te komen en te dien einde zijn bekwaamheid overeenkomstig de criteria van punt 21.A.112B heeft bewezen, behalve voor ELA1-luchtvaartuigen waarvoor de natuurlijke persoon of rechtspersoon de toestemming van het Agentschap heeft gevraagd voor het gebruik van procedures waarin zijn activiteiten voor het nakomen van deze verplichtingen zijn uiteengezet.
 
-## 21.A.117 Wijzigingen aan het deel van een product waarop een aanvullend typecertificaat betrekking heeft  _(pdf blz. 25)_
+## 21.A.117 Wijzigingen aan het deel van een product waarop een aanvullend typecertificaat betrekking heeft  _(PB L 224/25)_
 
 a) Geringe wijzigingen aan het deel van een product waarop een aanvullend typecertificaat betrekking heeft, moeten worden geclassificeerd en goedgekeurd in overeenstemming met subdeel D.
 
@@ -704,7 +704,7 @@ b) Elke ingrijpende wijziging aan het deel van een product waarop een aanvullend
 
 c) In afwijking van punt b) kan een ingrijpende wijziging aan het deel van een product waarop een aanvullend typecertificaat betrekking heeft, dat door de houder van het aanvullend typecertificaat is ingediend, worden goedgekeurd als een wijziging aan het bestaande aanvullende typecertificaat.
 
-## 21.A.118A Verplichtingen en EPA-identficatiekenmerk  _(pdf blz. 26)_
+## 21.A.118A Verplichtingen en EPA-identficatiekenmerk  _(PB L 224/26)_
 
 Elke houder van een aanvullend typecertificaat moet:
 
@@ -718,7 +718,7 @@ c), 2 en hiertoe blijven voldoen aan de criteria van punt 21.A.112B;
 
 b) het identificatiekenmerk specificeren, met inbegrip van de EPA-letters, in overeenstemming met punt 21.A.804, onder a).
 
-## 21.A.118B Duur en blijvende geldigheid  _(pdf blz. 26)_
+## 21.A.118B Duur en blijvende geldigheid  _(PB L 224/26)_
 
 a) Een aanvullend typecertificaat wordt afgegeven voor een onbeperkte duur. Het blijft geldig op voorwaarde dat:
 
@@ -728,11 +728,11 @@ a) Een aanvullend typecertificaat wordt afgegeven voor een onbeperkte duur. Het 
 
 b) In geval van afstand of intrekking moet het aanvullende typecertificaat worden ingeleverd bij het Agentschap.
 
-## 21.A.119 Handboeken  _(pdf blz. 26)_
+## 21.A.119 Handboeken  _(PB L 224/26)_
 
 De houder van een aanvullend typecertificaat moet originele exemplaren samenstellen, bijhouden en bijwerken van de aanvullingen op de door de toepasselijke typecertificatiebasis en milieueisen vereiste handboeken, die noodzakelijk zijn om de overeenkomstig het aanvullend typecertificaat aangebrachte wijzigingen te behandelen en hij moet, op verzoek, kopieën van deze handboeken bezorgen aan het Agentschap.
 
-## 21.A.120 Instructies voor blijvende luchtwaardigheid  _(pdf blz. 26)_
+## 21.A.120 Instructies voor blijvende luchtwaardigheid  _(PB L 224/26)_
 
 a) De houder van het aanvullend typecertificaat moet ten minste één kopie van de betreffende aanvullingen op de instructies voor blijvende luchtwaardigheid, opgesteld in overeenstemming met de toepasselijke typecertificatiebasis, bezorgen aan elke bekende eigenaar van één of meer luchtvaartuigen, motoren of propellers, bij levering van het product of bij afgifte van het eerste certificaat van luchtwaardigheid voor het betreffende luchtvaartuig, al naargelang wat laatst geschiedt, en nadien deze aanvullingen op de instructies op verzoek beschikbaar stellen aan eenieder die dient te voldoen aan één of meer bepalingen van deze instructies. Het beschikbaar stellen van een handboek of een deel van de aanvullingen op de instructies voor blijvende luchtwaardigheid dat betrekking heeft op revisie of andere vormen van groot onderhoud, mag worden uitgesteld tot na de ingebruikneming van het product, maar moet gebeuren voordat een van de producten de desbetreffende leeftijd of het desbetreffende aantal vlieguren/cycli bereikt.
 
@@ -740,13 +740,13 @@ b) Bovendien moeten wijzigingen aan deze aanvullingen op de instructies voor bli
 
 SUBDEEL F — PRODUCTIE ZONDER ERKENNING ALS PRODUCTIEORGANISATIE
 
-## 21.A.121 Toepassingsgebied  _(pdf blz. 26)_
+## 21.A.121 Toepassingsgebied  _(PB L 224/26)_
 
 a) In dit subdeel wordt de procedure vastgelegd volgens dewelke moet worden aangetoond dat aan de toepasselijke ontwerpgegevens wordt voldaan door een product, onderdeel of uitrustingsstuk dat zal worden vervaardigd zonder erkenning als productieorganisatie overeenkomstig subdeel G.
 
 b) In dit subdeel worden de regels vastgelegd betreffende de verplichtingen van de fabrikant van producten, onderdelen of uitrustingsstukken die worden vervaardigd overeenkomstig dit subdeel.
 
-## 21.A.122 Aanvaardbaarheid  _(pdf blz. 27)_
+## 21.A.122 Aanvaardbaarheid  _(PB L 224/27)_
 
 Elke natuurlijke of rechtspersoon mag een aanvraag indienen om de conformiteit van individuele producten, onderdelen of uitrustingsstukken aan te tonen overeenkomstig dit subdeel, als:
 
@@ -754,7 +754,7 @@ a) hij houder is van of een aanvraag heeft ingediend voor een goedkeuring van he
 
 b) hij heeft gezorgd voor een toereikende coördinatie tussen productie en ontwerp, via een overeenkomst met de aanvrager of houder van een goedkeuring van zo'n ontwerp.
 
-## 21.A.124 Aanvraag  _(pdf blz. 27)_
+## 21.A.124 Aanvraag  _(PB L 224/27)_
 
 a) Elke aanvraag om een akkoordverklaring voor het aantonen van de conformiteit van individuele producten, onderdelen en uitrustingsstukken overeenkomstig dit subdeel moet gebeuren in de vorm en op de wijze zoals vastgelegd door de bevoegde autoriteit.
 
@@ -768,7 +768,7 @@ ii) de certificering of goedkeuring van een product, onderdeel of uitrustingsstu
 
 2. een overzicht van de in punt 21.A.125A, onder b), voorgeschreven informatie.
 
-## 21.A.125A Afgifte van een akkoordverklaring  _(pdf blz. 27)_
+## 21.A.125A Afgifte van een akkoordverklaring  _(PB L 224/27)_
 
 De aanvrager heeft recht op een door de bevoegde autoriteit afgegeven akkoordverklaring waarin deze zich akkoord verklaart met het aantonen van de conformiteit van individuele producten, onderdelen en uitrustingsstukken overeenkomstig dit subdeel, nadat:
 
@@ -784,7 +784,7 @@ b) hij een handboek heeft verstrekt met daarin:
 
 c) hij heeft aangetoond dat hij in staat is om bijstand te verlenen in overeenstemming met de punten 21.A.3 en 21.A.129, onder d).
 
-## 21.A.125B Bevindingen  _(pdf blz. 27)_
+## 21.A.125B Bevindingen  _(PB L 224/27)_
 
 a) Als op basis van objectieve bewijzen wordt vastgesteld dat de houder van een akkoordverklaring niet voldoet aan de toepasselijke eisen van deze bijlage, wordt deze bevinding als volgt geclassificeerd:
 
@@ -804,7 +804,7 @@ c) Na ontvangst van de kennisgeving betreffende de bevindingen overeenkomstig pu
 
 d) In het geval van niveau 1- of niveau 2-bevindingen kan de akkoordverklaring gedeeltelijk of volledig worden gelimiteerd, opgeschort of ingetrokken overeenkomstig punt 21.B.145. De houder van de akkoordverklaring moet binnen een redelijke termijn bevestigen dat hij de kennisgeving van limitatie, opschorting of intrekking van de akkoordverklaring heeft ontvangen.
 
-## 21.A.125C Duur en blijvende geldigheid  _(pdf blz. 28)_
+## 21.A.125C Duur en blijvende geldigheid  _(PB L 224/28)_
 
 a) De akkoordverklaring wordt afgegeven voor een beperkte duur van ten hoogste één jaar. De verklaring blijft geldig tenzij:
 
@@ -818,7 +818,7 @@ a) De akkoordverklaring wordt afgegeven voor een beperkte duur van ten hoogste �
 
 b) In geval van afstand, intrekking of verloop moet de akkoordverklaring worden ingeleverd bij de bevoegde autoriteit.
 
-## 21.A.126 Productie-inspectiesysteem  _(pdf blz. 28)_
+## 21.A.126 Productie-inspectiesysteem  _(PB L 224/28)_
 
 a) Het in punt 21.A.125A, onder a), voorgeschreven productie-inspectiesysteem moet het mogelijk maken om vast te stellen dat:
 
@@ -844,7 +844,7 @@ b) Het in punt 21.A.125A, onder a), voorgeschreven productie-inspectiesysteem mo
 
 6. de registraties van het productie-inspectiesysteem worden bijgehouden, geïdentificeerd met het afgewerkte product of onderdeel, indien uitvoerbaar, en bewaard door de fabrikant zodat de nodige informatie voorhanden is om de blijvende luchtwaardigheid van het product te kunnen waarborgen.
 
-## 21.A.127 Proeven: luchtvaartuigen  _(pdf blz. 28)_
+## 21.A.127 Proeven: luchtvaartuigen  _(PB L 224/28)_
 
 a) Elke fabrikant van een luchtvaartuig dat wordt vervaardigd overeenkomstig dit subdeel moet een goedgekeurde testprocedure met grond- en vliegproeven opstellen, evenals aankruisformulieren, en in overeenstemming met deze formulieren elk geproduceerd luchtvaartuig beproeven, teneinde vast te stellen of op een relevante manier wordt voldaan aan punt 21.A.125A, onder a).
 
@@ -862,11 +862,11 @@ b) Elke testprocedure moet ten minste het volgende omvatten:
 
 6. een controle van alle andere specifieke elementen van het te beproeven luchtvaartuig.
 
-## 21.A.128 Proeven: motoren, propellers  _(pdf blz. 29)_
+## 21.A.128 Proeven: motoren, propellers  _(PB L 224/29)_
 
 Elke fabrikant van motoren of propellers die worden vervaardigd overeenkomstig dit subdeel moet elke motor of propeller met variabele spoed onderwerpen aan een aanvaardbare functionele test zoals gespecificeerd in de documentatie van de houder van het typecertificaat teneinde na te gaan of hij goed werkt tijdens de gebruikstoepassingen waarvoor een typecertificaat is afgegeven, teneinde vast te stellen of op een relevante manier wordt voldaan aan punt 21.A.125A, onder a).
 
-## 21.A.129 Verplichtingen van de fabrikant  _(pdf blz. 29)_
+## 21.A.129 Verplichtingen van de fabrikant  _(PB L 224/29)_
 
 Elke fabrikant van een product, onderdeel of uitrustingsstuk dat wordt vervaardigd overeenkomstig dit subdeel, moet:
 
@@ -886,7 +886,7 @@ f) 1. aan de houder van het typecertificaat, beperkte typecertificaat of de ontw
 
 3. ingeval de fabrikant optreedt als leverancier voor een andere productieorganisatie, ook aan die andere organisatie alle gevallen melden waarin hij producten, onderdelen of uitrustingsstukken heeft vrijgegeven en nadien heeft vastgesteld dat ze mogelijke afwijkingen van de toepasselijke ontwerpgegevens vertonen.
 
-## 21.A.130 Conformiteitsverklaring  _(pdf blz. 29)_
+## 21.A.130 Conformiteitsverklaring  _(PB L 224/29)_
 
 a) Elke fabrikant van een product, onderdeel of uitrustingsstuk dat vervaardigd is overeenkomstig dit subdeel moet een conformiteitsverklaring overleggen, d.w.z. een EASA-formulier 52 voor complete luchtvaartuigen of een EASA-formulier 1 voor andere producten, onderdelen of uitrustingsstukken (zie aanhangsel VIII). Deze verklaring moet worden ondertekend door een bevoegd persoon die een verantwoordelijke functie bekleedt in de productieorganisatie.
 
@@ -910,7 +910,7 @@ d) De bevoegde autoriteit moet met haar handtekening de conformiteitsverklaring 
 
 SUBDEEL G — ERKENNING ALS PRODUCTIEORGANISATIE
 
-## 21.A.131 Toepassingsgebied  _(pdf blz. 30)_
+## 21.A.131 Toepassingsgebied  _(PB L 224/30)_
 
 In dit subdeel worden vastgelegd:
 
@@ -918,7 +918,7 @@ a) de procedure voor de afgifte van een erkenning als productieorganisatie aan e
 
 b) de regels betreffende de rechten en verplichtingen van de aanvragers en houders van dergelijke erkenningen.
 
-## 21.A.133 Aanvaardbaarheid  _(pdf blz. 30)_
+## 21.A.133 Aanvaardbaarheid  _(PB L 224/30)_
 
 Elke natuurlijke of rechtspersoon („organisatie”) komt in aanmerking voor een erkenning overeenkomstig dit subdeel. De aanvrager moet:
 
@@ -928,15 +928,15 @@ b) houder zijn van of een aanvraag hebben ingediend voor een goedkeuring van dat
 
 c) via een passende overeenkomst met de aanvrager of houder van een goedkeuring van dat specifieke ontwerp, gezorgd hebben voor een toereikende coördinatie tussen productie en ontwerp.
 
-## 21.A.134 Aanvraag  _(pdf blz. 30)_
+## 21.A.134 Aanvraag  _(PB L 224/30)_
 
 Elke aanvraag om een erkenning als productieorganisatie moet worden ingediend bij de bevoegde autoriteit in de vorm en op de wijze zoals vastgelegd door die autoriteit, en moet een overzicht bevatten van de in punt 21.A.143 voorgeschreven informatie en van de voorwaarden van de aangevraagde erkenning overeenkomstig punt 21.A.151.
 
-## 21.A.135 Afgifte van een erkenning als productieorganisatie  _(pdf blz. 30)_
+## 21.A.135 Afgifte van een erkenning als productieorganisatie  _(PB L 224/30)_
 
 Een organisatie heeft recht op een door de bevoegde autoriteit afgegeven erkenning als productieorganisatie, indien het heeft aangetoond dat het voldoet aan de toepasselijke eisen overeenkomstig dit subdeel.
 
-## 21.A.139 Kwaliteitssysteem  _(pdf blz. 30)_
+## 21.A.139 Kwaliteitssysteem  _(PB L 224/30)_
 
 a) De productieorganisatie moet aantonen dat het een kwaliteitssysteem heeft ingesteld en in stand kan houden. Het kwaliteitssysteem moet gedocumenteerd zijn. Dit kwaliteitssysteem moet de productieorganisatie in staat stellen om te garanderen dat elk product, onderdeel of uitrustingsstuk dat wordt geproduceerd door de organisatie of door zijn partners, of wordt geleverd door of uitbesteed aan derden, voldoet aan de toepasselijke ontwerpgegevens en veilig kan worden gebruikt, zodat de organisatie de in punt 21.A.163 beschreven voorrechten kan uitoefenen.
 
@@ -980,7 +980,7 @@ xvii) afgifte van een vliegvergunning en goedkeuring van de daaraan gekoppelde v
 
 2. Een onafhankelijke kwaliteitsborgingsfunctie om de conformiteit en de geschiktheid van de gedocumenteerde procedures van het kwaliteitssysteem te bewaken. Deze bewaking moet een systeem omvatten van feedback aan de in punt 21.A.145, onder c), 2, vermelde persoon of groep personen en uiteindelijk aan de in punt 21.A.145, onder c), 1), bedoelde manager, zodat corrigerende maatregelen worden uitgevoerd wanneer nodig.
 
-## 21.A.143 Organisatiehandboek  _(pdf blz. 31)_
+## 21.A.143 Organisatiehandboek  _(PB L 224/31)_
 
 a) De organisatie moet aan de bevoegde autoriteit een handboek voorleggen met de volgende informatie:
 
@@ -1010,7 +1010,7 @@ a) De organisatie moet aan de bevoegde autoriteit een handboek voorleggen met de
 
 b) Het handboek moet worden aangepast naargelang nodig is om de beschrijving van de organisatie actueel te houden, en kopieën van alle aanpassingen moeten worden bezorgd aan de bevoegde autoriteit.
 
-## 21.A.145 Erkenningseisen  _(pdf blz. 32)_
+## 21.A.145 Erkenningseisen  _(PB L 224/32)_
 
 De productieorganisatie moet aantonen, op basis van de overeenkomstig punt 21.A.143 voorgelegde informatie:
 
@@ -1040,33 +1040,33 @@ d) met betrekking tot certificeringspersoneel dat door de productieorganisatie i
 
 3. aan het certificeringspersoneel een bewijs van hun bevoegdheden is verstrekt.
 
-## 21.A.147 Wijzigingen in de erkende productieorganisatie  _(pdf blz. 32)_
+## 21.A.147 Wijzigingen in de erkende productieorganisatie  _(PB L 224/32)_
 
 a) Nadat een erkenning als productieorganisatie is afgegeven, moet elke wijziging in de erkende productieorganisatie die gevolgen heeft voor de conformiteit of voor de luchtwaardigheid, de geluidskenmerken, de brandstofventilatie en de uitlaatemissies van het product, het onderdeel of het uitrustingsstuk, met name wijzigingen aan het kwaliteitssysteem, worden goedgekeurd door de bevoegde autoriteit. Een aanvraag voor dergelijke wijziging moet schriftelijk bij de bevoegde autoriteit worden ingediend en de productieorganisatie moet de bevoegde autoriteit aantonen voordat de wijziging wordt toegepast, dat het zal blijven voldoen aan dit subdeel.
 
 b) De bevoegde autoriteit legt de voorwaarden vast waaronder een overeenkomstig dit subdeel erkend productieorganisatie kan blijven werken gedurende dergelijke wijzigingen, tenzij de bevoegde autoriteit bepaalt dat de erkenning dient te worden opgeschort.
 
-## 21.A.148 Wijzigingen van vestigingsplaats  _(pdf blz. 33)_
+## 21.A.148 Wijzigingen van vestigingsplaats  _(PB L 224/33)_
 
 Een wijziging van de vestigingsplaats van de fabricage-faciliteiten van de erkende productieorganisatie dient te worden beschouwd als een ingrijpende wijziging en moet bijgevolg voldoen aan punt 21.A.147.
 
-## 21.A.149 Overdraagbaarheid  _(pdf blz. 33)_
+## 21.A.149 Overdraagbaarheid  _(PB L 224/33)_
 
 Behalve in het geval van een verandering van eigendom, die dient te worden beschouwd als een ingrijpende wijziging en moet voldoen aan punt 21.A.147, kan een erkenning als productieorganisatie niet worden overgedragen.
 
-## 21.A.151 Erkenningsvoorwaarden  _(pdf blz. 33)_
+## 21.A.151 Erkenningsvoorwaarden  _(PB L 224/33)_
 
 De erkenningsvoorwaarden bepalen de werkzaamheden, en de producten en/of de categorieën van onderdelen en uitrustingsstukken waarvoor de houder het recht heeft om de in punt 21.A.163 vastgelegde bevoegdheden uit te oefenen. Deze voorwaarden worden afgegeven als onderdeel van een erkenning als productieorganisatie.
 
-## 21.A.153 Wijzigingen van de erkenningsvoorwaarden  _(pdf blz. 33)_
+## 21.A.153 Wijzigingen van de erkenningsvoorwaarden  _(PB L 224/33)_
 
 Elke wijziging van de erkenningsvoorwaarden moet worden goedgekeurd door de bevoegde autoriteit. Een aanvraag om een wijziging van de erkenningsvoorwaarden moet worden ingediend in de vorm en op de wijze zoals vastgelegd door de bevoegde autoriteit. De aanvrager moet voldoen aan de toepasselijke eisen van dit subdeel.
 
-## 21.A.157 Onderzoeken  _(pdf blz. 33)_
+## 21.A.157 Onderzoeken  _(PB L 224/33)_
 
 Een productieorganisatie moet voorzieningen treffen die de bevoegde autoriteit in staat stellen om de nodige onderzoeken, met inbegrip van een onderzoek van de partners en onderaannemers, uit te voeren, teneinde vast te stellen of voldaan wordt en permanent voldaan zal worden aan de toepasselijke eisen van dit subdeel.
 
-## 21.A.158 Bevindingen  _(pdf blz. 33)_
+## 21.A.158 Bevindingen  _(PB L 224/33)_
 
 a) Als op basis van objectieve bewijzen wordt vastgesteld dat de houder van een erkenning als productieorganisatie niet voldoet aan de toepasselijke eisen van deze bijlage, wordt deze bevinding als volgt geclassificeerd:
 
@@ -1086,7 +1086,7 @@ c) Na ontvangst van de kennisgeving betreffende de bevindingen overeenkomstig pu
 
 d) In het geval van een niveau 1- of niveau 2-bevinding kan de erkenning als productieorganisatie gedeeltelijk of volledig worden gelimiteerd, opgeschort of ingetrokken overeenkomstig punt 21.B.245. De houder van de erkenning als productieorganisatie moet binnen een redelijke termijn bevestigen dat hij de kennisgeving van de limitatie, opschorting of intrekking van de erkenning als productieorganisatie heeft ontvangen.
 
-## 21.A.159 Duur en blijvende geldigheid  _(pdf blz. 34)_
+## 21.A.159 Duur en blijvende geldigheid  _(PB L 224/34)_
 
 a) Een erkenning als productieorganisatie wordt afgegeven voor een onbeperkte duur. Ze blijft geldig tenzij:
 
@@ -1102,7 +1102,7 @@ a) Een erkenning als productieorganisatie wordt afgegeven voor een onbeperkte du
 
 b) In geval van afstand of intrekking moet het certificaat worden ingeleverd bij de bevoegde autoriteit.
 
-## 21.A.163 Bevoegdheden  _(pdf blz. 34)_
+## 21.A.163 Bevoegdheden  _(PB L 224/34)_
 
 Overeenkomstig de in punt 21.A.135 vermelde erkenningsvoorwaarden kan de houder van een erkenning als productieorganisatie:
 
@@ -1116,7 +1116,7 @@ d) een nieuw, door hem geproduceerd luchtvaartuig onderhouden en een certificaat
 
 e) met inachtneming van de procedures zoals overeengekomen met zijn bevoegde autoriteit voor productie, wanneer het gaat om een luchtvaartuig dat de houder zelf heeft gebouwd en in het geval de productieorganisatie krachtens haar erkenning als productieorganisatie zelf controle uitoefent op de configuratie van het luchtvaartuig en verklaart zich te zullen conformeren aan de voor de vlucht goedgekeurde ontwerpvoorwaarden, een vliegvergunning afgeven overeenkomstig punt 21.A.711 c), tevens houdende goedkeuring van de vluchtvoorwaarden overeenkomstig punt 21.A.710, onder b).
 
-## 21.A.165 Verplichtingen van de houder  _(pdf blz. 34)_
+## 21.A.165 Verplichtingen van de houder  _(PB L 224/34)_
 
 De houder van een erkenning als productieorganisatie moet:
 
@@ -1154,15 +1154,15 @@ c) en e), wordt nageleefd, alvorens een vliegvergunning voor een luchtvaartuig a
 
 SUBDEEL H — BEWIJZEN VAN LUCHTWAARDIGHEID EN BEPERKTE BEWIJZEN VAN LUCHTWAARDIGHEID
 
-## 21.A.171 Toepassingsgebied  _(pdf blz. 35)_
+## 21.A.171 Toepassingsgebied  _(PB L 224/35)_
 
 In dit subdeel wordt de procedure vastgelegd voor de afgifte van bewijzen van luchtwaardigheid.
 
-## 21.A.172 Aanvaardbaarheid  _(pdf blz. 35)_
+## 21.A.172 Aanvaardbaarheid  _(PB L 224/35)_
 
 Elke natuurlijke of rechtspersoon onder wiens naam een luchtvaartuig is geregistreerd of zal worden geregistreerd in een lidstaat („lidstaat van registratie”), of zijn vertegenwoordiger, kan in aanmerking komen om een bewijs van luchtwaardigheid voor dat luchtvaartuig aan te vragen overeenkomstig dit subdeel.
 
-## 21.A.173 Classificatie  _(pdf blz. 35)_
+## 21.A.173 Classificatie  _(PB L 224/35)_
 
 Bewijzen van luchtwaardigheid worden als volgt geclassificeerd:
 
@@ -1174,7 +1174,7 @@ b) beperkte bewijzen van luchtwaardigheid worden afgegeven voor luchtvaartuigen:
 
 2. waarvan is aangetoond aan het Agentschap dat zij voldoen aan de specifieke luchtwaardigheidsspecificaties die een toereikende veiligheid garanderen.
 
-## 21.A.174 Aanvraag  _(pdf blz. 35)_
+## 21.A.174 Aanvraag  _(PB L 224/35)_
 
 a) Overeenkomstig punt 21.A.172 moet een aanvraag om een bewijs van luchtwaardigheid worden ingediend in de vorm en op de wijze zoals vastgelegd door de bevoegde autoriteit van de lidstaat van registratie.
 
@@ -1214,15 +1214,15 @@ ii) komende van een niet-lidstaat:
 
 c) Tenzij anders overeengekomen, moeten de verklaringen vermeld in de punten b), 2), i) en b), 3), ii) worden afgegeven ten laatste 60 dagen voordat het luchtvaartuig wordt aangeboden aan de bevoegde autoriteit van de lidstaat van registratie.
 
-## 21.A.175 Taal  _(pdf blz. 36)_
+## 21.A.175 Taal  _(PB L 224/36)_
 
 De handboeken, opschriften, lijsten en instrumentmarkeringen, en alle andere noodzakelijke informatie die vereist wordt door de toepasselijke certificeringsspecificaties moeten worden opgesteld in één of meerdere van de voor de bevoegde autoriteit van de lidstaat van registratie aanvaardbare officiële talen van de Unie.
 
-## 21.A.177 Amendement of wijziging  _(pdf blz. 36)_
+## 21.A.177 Amendement of wijziging  _(PB L 224/36)_
 
 Een bewijs van luchtwaardigheid kan alleen door de bevoegde autoriteit van de lidstaat van registratie worden geamendeerd of gewijzigd.
 
-## 21.A.179 Overdraagbaarheid en nieuwe afgifte binnen lidstaten  _(pdf blz. 36)_
+## 21.A.179 Overdraagbaarheid en nieuwe afgifte binnen lidstaten  _(PB L 224/36)_
 
 a) Als een luchtvaartuig van eigenaar is veranderd:
 
@@ -1236,11 +1236,11 @@ ii) als voldaan wordt aan punt 21.A.175.
 
 b) Als een luchtvaartuig van eigenaar is veranderd, en het luchtvaartuig een beperkt bewijs van luchtwaardigheid heeft dat niet beantwoordt aan een beperkt typecertificaat, worden de bewijzen van luchtwaardigheid tezamen met het luchtvaartuig overgedragen, met dien verstande dat het luchtvaartuig in hetzelfde register blijft ingeschreven of de bewijzen van luchtwaardigheid alleen worden afgegeven met de formele instemming van de bevoegde autoriteit van de lidstaat van registratie waaraan het luchtvaartuig wordt overgedragen.
 
-## 21.A.180 Inspecties  _(pdf blz. 37)_
+## 21.A.180 Inspecties  _(PB L 224/37)_
 
 De houder van het bewijs van luchtwaardigheid moet op verzoek van de bevoegde autoriteit van de lidstaat van registratie toegang verlenen tot het luchtvaartuig waarvoor het bewijs van luchtwaardigheid is afgegeven.
 
-## 21.A.181 Duur en blijvende geldigheid  _(pdf blz. 37)_
+## 21.A.181 Duur en blijvende geldigheid  _(PB L 224/37)_
 
 a) Een bewijs van luchtwaardigheid wordt afgegeven voor een onbeperkte duur. Het blijft geldig op voorwaarde dat:
 
@@ -1254,21 +1254,21 @@ a) Een bewijs van luchtwaardigheid wordt afgegeven voor een onbeperkte duur. Het
 
 b) In geval van afstand of intrekking moet het bewijs worden ingeleverd bij de bevoegde autoriteit van de lidstaat van registratie.
 
-## 21.A.182 Identificatie van het luchtvaartuig  _(pdf blz. 37)_
+## 21.A.182 Identificatie van het luchtvaartuig  _(PB L 224/37)_
 
 Elke aanvrager van een bewijs van luchtwaardigheid overeenkomstig dit subdeel moet aantonen dat zijn luchtvaartuig geïdentificeerd is overeenkomstig subdeel Q.
 
 SUBDEEL I — GELUIDSCERTIFICATEN
 
-## 21.A.201 Toepassingsgebied  _(pdf blz. 37)_
+## 21.A.201 Toepassingsgebied  _(PB L 224/37)_
 
 In dit subdeel wordt de procedure vastgelegd voor de afgifte van geluidscertificaten.
 
-## 21.A.203 Aanvaardbaarheid  _(pdf blz. 37)_
+## 21.A.203 Aanvaardbaarheid  _(PB L 224/37)_
 
 Elke natuurlijke of rechtspersoon onder wiens naam een luchtvaartuig is geregistreerd of zal worden geregistreerd in een lidstaat (lidstaat van registratie), of zijn vertegenwoordiger, kan in aanmerking komen om een geluidscertificaat voor dat luchtvaartuig aan te vragen overeenkomstig dit subdeel.
 
-## 21.A.204 Aanvraag  _(pdf blz. 37)_
+## 21.A.204 Aanvraag  _(PB L 224/37)_
 
 a) Overeenkomstig punt 21.A.203 moet een aanvraag om een geluidscertificaat worden ingediend in de vorm en op de wijze zoals vastgelegd door de bevoegde autoriteit van de lidstaat van registratie.
 
@@ -1294,11 +1294,11 @@ ii) historische gegevens om de productie-, wijzigings- en onderhoudsstatus van h
 
 c) Tenzij anders overeengekomen, moeten de in punt b), 1) vermelde verklaringen worden afgegeven ten laatste 60 dagen voordat het luchtvaartuig wordt aangeboden aan de bevoegde autoriteit van de lidstaat van registratie.
 
-## 21.A.207 Amendement of wijziging  _(pdf blz. 38)_
+## 21.A.207 Amendement of wijziging  _(PB L 224/38)_
 
 Een geluidscertificaat kan alleen door de bevoegde autoriteit van de lidstaat van registratie worden geamendeerd of gewijzigd.
 
-## 21.A.209 Overdraagbaarheid en nieuwe afgifte binnen lidstaten  _(pdf blz. 38)_
+## 21.A.209 Overdraagbaarheid en nieuwe afgifte binnen lidstaten  _(PB L 224/38)_
 
 Als een luchtvaartuig van eigenaar is veranderd:
 
@@ -1306,11 +1306,11 @@ a) en het luchtvaartuig blijft ingeschreven in hetzelfde register, moet het gelu
 
 b) en het luchtvaartuig wordt ingeschreven in het register van een andere lidstaat, moet een nieuw geluidscertificaat worden afgegeven na overlegging van het oude geluidscertificaat.
 
-## 21.A.210 Inspecties  _(pdf blz. 38)_
+## 21.A.210 Inspecties  _(PB L 224/38)_
 
 De houder van het geluidscertificaat moet op verzoek van de bevoegde autoriteit van de lidstaat van registratie of van het Agentschap toegang verlenen tot het luchtvaartuig waarvoor het geluidscertificaat is afgegeven, voor de uitvoering van inspecties.
 
-## 21.A.211 Duur en blijvende geldigheid  _(pdf blz. 38)_
+## 21.A.211 Duur en blijvende geldigheid  _(PB L 224/38)_
 
 a) Een geluidscertificaat wordt afgegeven voor een onbeperkte duur. Het blijft geldig op voorwaarde dat:
 
@@ -1326,11 +1326,11 @@ b) In geval van afstand of intrekking moet het certificaat worden ingeleverd bij
 
 SUBDEEL J — ERKENNING ALS ONTWERPORGANISATIE
 
-## 21.A.231 Toepassingsgebied  _(pdf blz. 38)_
+## 21.A.231 Toepassingsgebied  _(PB L 224/38)_
 
 In dit subdeel wordt de procedure vastgelegd voor de erkenning van ontwerporganisaties, en worden ook de regels betreffende de rechten en verplichtingen van de aanvragers en houders van dergelijke erkenningen vastgelegd.
 
-## 21.A.233 Aanvaardbaarheid  _(pdf blz. 38)_
+## 21.A.233 Aanvaardbaarheid  _(PB L 224/38)_
 
 Elke natuurlijke of rechtspersoon („organisatie”) komt in aanmerking als aanvrager van een erkenning overeenkomstig dit subdeel:
 
@@ -1338,15 +1338,15 @@ a) in overeenstemming met punt 21.A.14, 21.A.112B, 21.A.432B of 21.A.602B, of
 
 b) voor de goedkeuring van geringe wijzigingen of een ontwerp voor kleine reparaties, indien aangevraagd met het oog op het verkrijgen van bevoegdheden overeenkomstig punt 21.A.263.
 
-## 21.A.234 Aanvraag  _(pdf blz. 39)_
+## 21.A.234 Aanvraag  _(PB L 224/39)_
 
 Elke aanvraag om een erkenning als ontwerporganisatie moet worden ingediend in de vorm en op de wijze zoals vastgelegd door het Agentschap en moet een overzicht bevatten van de in punt 21.A.243 voorgeschreven informatie en van de overeenkomstig punt 21.A.251 vast te leggen erkenningsvoorwaarden.
 
-## 21.A.235 Afgifte van een erkenning als ontwerporganisatie  _(pdf blz. 39)_
+## 21.A.235 Afgifte van een erkenning als ontwerporganisatie  _(PB L 224/39)_
 
 Een organisatie heeft recht op een door het Agentschap afgegeven erkenning als ontwerporganisatie, indien het heeft aangetoond dat het voldoet aan de toepasselijke eisen overeenkomstig dit subdeel.
 
-## 21.A.239 Ontwerpborgingssysteem  _(pdf blz. 39)_
+## 21.A.239 Ontwerpborgingssysteem  _(PB L 224/39)_
 
 a) De ontwerporganisatie moet aantonen dat het een ontwerpborgingssysteem heeft ingesteld en in stand kan houden voor het beheersen van en het toezien op het ontwerp, en ontwerpwijzigingen, van de producten, onderdelen en uitrustingsstukken waarop de aanvraag betrekking heeft. Dit ontwerpborgingssysteem moet dusdanig zijn, dat de organisatie in staat wordt gesteld om:
 
@@ -1364,7 +1364,7 @@ b) Het ontwerpborgingssysteem moet een onafhankelijke conformiteitscontrole beva
 
 c) De ontwerporganisatie moet specificeren op welke manier het ontwerpborgingssysteem zeker stelt dat de ontworpen onderdelen of uitrustingsstukken aanvaardbaar zijn of dat de partners of onderaannemers hun taken uitvoeren overeenkomstig methoden die zijn vastgelegd in schriftelijke procedures.
 
-## 21.A.243 Gegevens  _(pdf blz. 39)_
+## 21.A.243 Gegevens  _(PB L 224/39)_
 
 a) De ontwerporganisatie moet aan het Agentschap een handboek bezorgen waarin, rechtstreeks of door middel van verwijzingen, de organisatie, de relevante procedures en de te ontwerpen producten of productwijzigingen worden beschreven.
 
@@ -1374,7 +1374,7 @@ c) Het handboek moet naargelang nodig worden aangepast om de beschrijving van de
 
 d) De ontwerporganisatie moet een verklaring opstellen over de kwalificaties en ervaring van het management en van andere personen die in de organisatie verantwoordelijk zijn voor het nemen van beslissingen inzake luchtwaardigheid en milieubescherming.
 
-## 21.A.245 Erkenningseisen  _(pdf blz. 39)_
+## 21.A.245 Erkenningseisen  _(PB L 224/39)_
 
 De ontwerporganisatie moet, op basis van de in overeenstemming met punt 21.A.243 voorgelegde informatie, aantonen dat niet alleen wordt voldaan aan punt 21.A.239, maar dat bovendien:
 
@@ -1382,29 +1382,29 @@ a) het personeel in alle technische afdelingen voldoende talrijk en ervaren is e
 
 b) er tussen en binnen de afdelingen een volledige en efficiënte coördinatie is met betrekking tot luchtwaardigheids- en milieubeschermingsaangelegenheden.
 
-## 21.A.247 Wijzigingen aan het ontwerpborgingssysteem  _(pdf blz. 40)_
+## 21.A.247 Wijzigingen aan het ontwerpborgingssysteem  _(PB L 224/40)_
 
 Nadat een erkenning als ontwerporganisatie is afgegeven, moet elke wijziging aan het ontwerpborgingssysteem die invloed heeft op de conformiteit of de luchtwaardigheid en milieubeschermingskenmerken van het product, worden goedgekeurd door het Agentschap. Een schriftelijke aanvraag om goedkeuring moet worden ingediend bij het Agentschap en de ontwerporganisatie moet aan het Agentschap aantonen, op basis van ingediende voorstellen voor wijzigingen aan het handboek en alvorens de wijzigingen toe te passen, dat het na de toepassing zal blijven voldoen aan dit subdeel.
 
-## 21.A.249 Overdraagbaarheid  _(pdf blz. 40)_
+## 21.A.249 Overdraagbaarheid  _(PB L 224/40)_
 
 Behalve in het geval van een verandering van eigendom, die dient te worden beschouwd als een ingrijpende wijziging en moet voldoen aan punt 21.A.247, kan een erkenning als ontwerporganisatie niet worden overgedragen.
 
-## 21.A.251 Erkenningsvoorwaarden  _(pdf blz. 40)_
+## 21.A.251 Erkenningsvoorwaarden  _(PB L 224/40)_
 
 De erkenningsvoorwaarden bepalen de ontwerpwerkzaamheden en de categorieën van producten, onderdelen en uitrustingsstukken waarvoor de ontwerporganisatie een erkenning als ontwerporganisatie heeft gekregen, evenals de functies en verplichtingen die de organisatie mag vervullen met betrekking tot de luchtwaardigheid en de geluidskenmerken, de brandstofventilatie en de uitlaatemissies van de producten. Voor erkenningen als ontwerporganisatie die een typecertificering of ETSO-autorisatie voor hulpaggregaten (APU) inhouden, moeten de erkenningsvoorwaarden ook nog een lijst van producten of hulpaggregaten bevatten. Deze voorwaarden worden afgegeven als onderdeel van een erkenning als ontwerporganisatie.
 
-## 21.A.253 Wijzigingen van de erkenningsvoorwaarden  _(pdf blz. 40)_
+## 21.A.253 Wijzigingen van de erkenningsvoorwaarden  _(PB L 224/40)_
 
 Elke wijziging van de erkenningsvoorwaarden moet worden goedgekeurd door het Agentschap. Een aanvraag om een wijziging van de erkenningsvoorwaarden moet worden ingediend in de vorm en op de wijze zoals vastgelegd door het Agentschap. De aanvrager moet voldoen aan de toepasselijke eisen van dit subdeel.
 
-## 21.A.257 Onderzoeken  _(pdf blz. 40)_
+## 21.A.257 Onderzoeken  _(PB L 224/40)_
 
 a) De ontwerporganisatie moet voorzieningen treffen die het Agentschap in staat stellen om de nodige onderzoeken, met inbegrip van een onderzoek van partners en onderaannemers, uit te voeren, teneinde vast te stellen of voldaan wordt en permanent voldaan zal worden aan de toepasselijke eisen van dit subdeel.
 
 b) De ontwerporganisatie moet het Agentschap toestaan om alle rapporten te analyseren en alle inspecties en grond- en vliegproeven bij te wonen en uit te voeren die nodig zijn om de geldigheid te controleren van de door de aanvrager overeenkomstig punt 21.A.239, onder b), voorgelegde conformiteitsverklaringen.
 
-## 21.A.258 Bevindingen  _(pdf blz. 40)_
+## 21.A.258 Bevindingen  _(PB L 224/40)_
 
 a) Als op basis van objectieve bewijzen wordt vastgesteld dat de houder van een erkenning als ontwerporganisatie niet voldoet aan de toepasselijke eisen van deze bijlage, wordt deze bevinding als volgt geclassificeerd:
 
@@ -1424,7 +1424,7 @@ c) Na ontvangst van de kennisgeving betreffende de bevindingen volgens de door h
 
 d) In het geval van een niveau 1- of niveau 2-bevinding kan de erkenning als ontwerporganisatie gedeeltelijk of volledig worden opgeschort of ingetrokken volgens de administratieve procedures van het Agentschap. De houder van de erkenning als ontwerporganisatie moet binnen een redelijke termijn bevestigen dat hij de kennisgeving van opschorting of intrekking van de akkoordverklaring heeft ontvangen.
 
-## 21.A.259 Duur en blijvende geldigheid  _(pdf blz. 41)_
+## 21.A.259 Duur en blijvende geldigheid  _(PB L 224/41)_
 
 a) Een erkenning als ontwerporganisatie wordt afgegeven voor een onbeperkte duur. Ze blijft geldig tenzij:
 
@@ -1438,7 +1438,7 @@ a) Een erkenning als ontwerporganisatie wordt afgegeven voor een onbeperkte duur
 
 b) In geval van afstand of intrekking moet het certificaat worden ingeleverd bij het Agentschap.
 
-## 21.A.263 Bevoegdheden  _(pdf blz. 41)_
+## 21.A.263 Bevoegdheden  _(PB L 224/41)_
 
 a) De houder van een erkenning als ontwerporganisatie heeft het recht om ontwerpwerkzaamheden uit te voeren overeenkomstig de bepalingen van deze bijlage en binnen het toepassingsgebied van de erkenning.
 
@@ -1470,7 +1470,7 @@ c) De houder van een erkenning als ontwerporganisatie heeft het recht om, overee
 
 7. een vliegvergunning af te geven in overeenstemming met punt 21.A.711, onder b), voor een luchtvaartuig dat het heeft ontworpen of gewijzigd, of waarvoor het onder punt 21.A.263, onder c), 6, de voorwaarden waaronder de vliegvergunning kan worden afgegeven, heeft goedgekeurd, en wanneer de ontwerporganisatie zelf de configuratie van het luchtvaartuig controleert op grond van haar erkenning als ontwerporganisatie en de conformiteit met de voor de vlucht goedgekeurde ontwerpvoorwaarden bevestigt.
 
-## 21.A.265 Verplichtingen van de houder  _(pdf blz. 42)_
+## 21.A.265 Verplichtingen van de houder  _(PB L 224/42)_
 
 De houder van een erkenning als ontwerporganisatie moet:
 
@@ -1490,11 +1490,11 @@ g) Indien van toepassing, op grond van bevoegdheid onder punt 21.A.163, onder c)
 
 SUBDEEL K — ONDERDELEN EN UITRUSTINGSSTUKKEN
 
-## 21.A.301 Toepassingsgebied  _(pdf blz. 42)_
+## 21.A.301 Toepassingsgebied  _(PB L 224/42)_
 
 In dit subdeel wordt de procedure vastgelegd voor de goedkeuring van onderdelen en uitrustingsstukken.
 
-## 21.A.303 Overeenstemming met toepasselijke vereisten  _(pdf blz. 42)_
+## 21.A.303 Overeenstemming met toepasselijke vereisten  _(PB L 224/42)_
 
 De overeenstemming van de onderdelen en uitrustingsstukken die worden geïnstalleerd in een product waarvoor een typecertificaat is afgegeven dient te worden aangetoond:
 
@@ -1504,11 +1504,11 @@ b) indien van toepassing, overeenkomstig de ETSO-autorisatieprocedures van subde
 
 c) in het geval van standaardonderdelen, in overeenstemming met officieel erkende normen.
 
-## 21.A.305 Goedkeuring van onderdelen en uitrustingsstukken  _(pdf blz. 42)_
+## 21.A.305 Goedkeuring van onderdelen en uitrustingsstukken  _(PB L 224/42)_
 
 In alle gevallen waarin de goedkeuring van een onderdeel of uitrustingsstuk expliciet vereist wordt door wetgeving van de Unie of maatregelen van het Agentschap, moet het onderdeel of uitrustingsstuk voldoen aan de toepasselijke ETSO-bepalingen of aan de specificaties die door het Agentschap als gelijkwaardig worden beschouwd voor het concrete geval.
 
-## 21.A.307 Geschiktheid van onderdelen en uitrustingsstukken om te worden geïnstalleerd  _(pdf blz. 42)_
+## 21.A.307 Geschiktheid van onderdelen en uitrustingsstukken om te worden geïnstalleerd  _(PB L 224/42)_
 
 Geen enkel onderdeel of uitrustingsstuk (met uitzondering van standaardonderdelen) wordt geschikt bevonden om te worden geïnstalleerd in een product met typecertificaat, tenzij het:
 
@@ -1530,7 +1530,7 @@ c) in het geval van ELA1- of ELA2-luchtvaartuigen, een onderdeel of uitrustingss
 
 SUBDEEL M — REPARATIES
 
-## 21.A.431 A Toepassingsgebied  _(pdf blz. 43)_
+## 21.A.431 A Toepassingsgebied  _(PB L 224/43)_
 
 a) In dit subdeel wordt de procedure vastgelegd voor de goedkeuring van reparatieontwerpen, en worden ook de rechten en verplichtingen vastgelegd van de aanvragers en houders van deze goedkeuringen.
 
@@ -1558,13 +1558,13 @@ iii) zweefvliegtuigen en gemotoriseerde zweefvliegtuigen, ballonnen en luchtsche
 
 b) De punten 21A.432A tot en met 21A.451 zijn niet van toepassing op standaardreparaties.
 
-## 21.A.432A Aanvaardbaarheid  _(pdf blz. 43)_
+## 21.A.432A Aanvaardbaarheid  _(PB L 224/43)_
 
 a) Elke natuurlijke of rechtspersoon die zijn bekwaamheid overeenkomstig punt 21.A.432B bewezen heeft, of aan het bewijzen is, is aanvaardbaar als aanvrager van een goedkeuring van een ontwerp voor een grotere reparatie onder de in dit subdeel beschreven voorwaarden.
 
 b) Elke natuurlijke of rechtspersoon komt in aanmerking om een goedkeuring van een ontwerp voor een kleine reparatie aan te vragen.
 
-## 21.A.432B Bewijs van bekwaamheid  _(pdf blz. 43)_
+## 21.A.432B Bewijs van bekwaamheid  _(PB L 224/43)_
 
 a) Een aanvrager van een goedkeuring van een ontwerp voor een ingrijpende reparatie moet zijn bekwaamheid bewijzen door houder te zijn van een door het Agentschap in overeenstemming met subdeel J afgegeven erkenning als ontwerporganisatie.
 
@@ -1572,7 +1572,7 @@ b) In afwijking van punt a) kan een aanvrager, als alternatieve procedure om zij
 
 c) Bij wijze van afwijking van de punten a) en b) mag een aanvrager de toestemming van het Agentschap vragen voor de goedkeuring van een certificeringsprogramma waarin de specifieke ontwerppraktijken, de hulpmiddelen en de volgorde van de activiteiten die nodig zijn opdat een in punt 21A.14, onder c), gedefinieerd product aan dit deel zou voldoen, zijn vermeld.
 
-## 21.A.433 Reparatieontwerp  _(pdf blz. 44)_
+## 21.A.433 Reparatieontwerp  _(PB L 224/44)_
 
 a) De aanvrager van een goedkeuring van een reparatieontwerp moet:
 
@@ -1584,7 +1584,7 @@ a) De aanvrager van een goedkeuring van een reparatieontwerp moet:
 
 b) Als de aanvrager niet de houder is van het typecertificaat, het aanvullend typecertificaat of de ETSO-autorisatie voor een hulpaggregaat, al naargelang van toepassing, kan hij voldoen aan de eisen van punt a) door gebruik te maken van eigen bronnen of via een overeenkomst met de houder van het typecertificaat, het aanvullend typecertificaat of de ETSO-autorisatie voor een hulpaggregaat, al naargelang van toepassing.
 
-## 21.A.435 Classificatie van reparaties  _(pdf blz. 44)_
+## 21.A.435 Classificatie van reparaties  _(PB L 224/44)_
 
 a) Een reparatie kan „groot” of „klein” zijn. De classificatie moet gebeuren in overeenstemming met de criteria van punt 21.A.91 voor een wijziging aan het typeontwerp.
 
@@ -1594,7 +1594,7 @@ b) Een reparatie wordt overeenkomstig punt a) geclassificeerd als „groot” of
 
 2. door een erkende ontwerporganisatie volgens een met het Agentschap overeengekomen procedure.
 
-## 21.A.437 Afgifte van een goedkeuring van een reparatieontwerp  _(pdf blz. 44)_
+## 21.A.437 Afgifte van een goedkeuring van een reparatieontwerp  _(PB L 224/44)_
 
 Als is verklaard en aangetoond dat het reparatieontwerp voldoet aan de toepasselijke certificeringsspecificaties en milieueisen van punt 21.A.433, onder a), 1, zal het worden goedgekeurd:
 
@@ -1604,7 +1604,7 @@ b) door een erkende organisatie die ook de houder van het typecertificaat, het a
 
 c) uitsluitend voor kleine reparaties, door een erkende ontwerporganisatie, volgens een met het Agentschap overeengekomen procedure.
 
-## 21.A.439 Productie van reparatieonderdelen  _(pdf blz. 44)_
+## 21.A.439 Productie van reparatieonderdelen  _(PB L 224/44)_
 
 Voor de reparatie te gebruiken onderdelen en uitrustingsstukken moeten worden gefabriceerd in overeenstemming met productiegegevens die gebaseerd zijn op alle nodige ontwerpgegevens, verstrekt door de houder van de goedkeuring van het reparatieontwerp:
 
@@ -1614,7 +1614,7 @@ b) door een organisatie die erkend is overeenkomstig subdeel G, of
 
 c) door een naar behoren erkende onderhoudsorganisatie.
 
-## 21.A.441 Uitvoering van een reparatie  _(pdf blz. 44)_
+## 21.A.441 Uitvoering van een reparatie  _(PB L 224/44)_
 
 a) De uitvoering van een reparatie moet gebeuren overeenkomstig deel M of deel 145, voor zover van toepassing, of door een productieorganisatie die is erkend in overeenstemming met subdeel G, overeenkomstig de in punt 21.A.163, onder
 
@@ -1622,11 +1622,11 @@ d), bedoelde bevoegdheid.
 
 b) De ontwerporganisatie moet de organisatie die de reparatie uitvoert alle nodige installatie-instructies bezorgen.
 
-## 21.A.443 Beperkingen  _(pdf blz. 45)_
+## 21.A.443 Beperkingen  _(PB L 224/45)_
 
 Een reparatieontwerp kan worden goedgekeurd onder voorbehoud van beperkingen; in dat geval bevat de goedkeuring van het reparatieontwerp alle nodige instructies en beperkingen. Deze instructies en beperkingen moeten door de houder van de goedkeuring van het reparatieontwerp worden bezorgd aan de gebruiker volgens een met het Agentschap overeengekomen procedure.
 
-## 21.A.445 Niet-gerepareerde schade  _(pdf blz. 45)_
+## 21.A.445 Niet-gerepareerde schade  _(PB L 224/45)_
 
 a) Als een beschadigd product, onderdeel of uitrustingsstuk niet gerepareerd wordt en niet valt onder eerder goedgekeurde gegevens, mogen de gevolgen van de schade voor de luchtwaardigheid van het product, onderdeel of uitrustingsstuk alleen worden beoordeeld;
 
@@ -1636,7 +1636,7 @@ a) Als een beschadigd product, onderdeel of uitrustingsstuk niet gerepareerd wor
 
 b) Als de organisatie die de schade beoordeelt overeenkomstig punt a) noch het Agentschap noch de houder van het typecertificaat, het aanvullend typecertificaat of de ETSO-autorisatie voor een hulpaggregaat is, moet deze organisatie aantonen dat de informatie waarop de beoordeling is gebaseerd toereikend is, hetzij aan de hand van eigen bronnen, hetzij via een overeenkomst met de houder van het typecertificaat, het aanvullend typecertificaat of de ETSO-autorisatie voor een hulpaggregaat of de fabrikant, al naargelang van toepassing.
 
-## 21.A.447 Administratie  _(pdf blz. 45)_
+## 21.A.447 Administratie  _(PB L 224/45)_
 
 Voor elke reparatie moeten alle relevante ontwerpinformatie, tekeningen en testrapporten, de eventueel in overeenstemming met punt 21.A.443 vastgelegde instructies en beperkingen, de classificatieverantwoording en de bewijzen van de ontwerpgoedkeuring:
 
@@ -1644,13 +1644,13 @@ a) door de houder van de goedkeuring van het reparatieontwerp ter beschikking va
 
 b) door de houder van de goedkeuring van het reparatieontwerp worden bewaard zodat de nodige informatie voorhanden is om te waarborgen dat de gerepareerde producten, onderdelen en uitrustingsstukken blijvend luchtwaardig zijn.
 
-## 21.A.449 Instructies voor blijvende luchtwaardigheid  _(pdf blz. 45)_
+## 21.A.449 Instructies voor blijvende luchtwaardigheid  _(PB L 224/45)_
 
 a) De houder van de goedkeuring van het reparatieontwerp moet ten minste één volledige kopie van de wijzigingen aan de instructies voor blijvende luchtwaardigheid die voortvloeien uit het ontwerp van de reparatie, met o.a. beschrijvende gegevens en uitvoeringsinstructies opgesteld in overeenstemming met de toepasselijke eisen, bezorgen aan elke gebruiker van luchtvaartuigen waarop de reparatie is uitgevoerd. Het gerepareerde product, onderdeel of uitrustingsstuk mag voor gebruik worden vrijgegeven voordat de wijzigingen aan deze instructies zijn voltooid, maar dit slechts voor een beperkte gebruiksperiode en na akkoord van het Agentschap. Deze wijzigingen aan de instructies moeten op verzoek beschikbaar worden gesteld voor eenieder die moet voldoen aan een of meer bepalingen van deze wijzigingen aan de instructies. Het ter beschikking stellen van een handboek of een deel van de instructies voor blijvende luchtwaardigheid dat betrekking heeft op revisie of andere vormen van groot onderhoud, mag worden uitgesteld tot na de ingebruikneming van het product, maar moet gebeuren voordat een van de producten de desbetreffende leeftijd of het desbetreffende aantal vlieguren/cycli bereikt.
 
 b) Als de houder van de goedkeuring van het reparatieontwerp de wijzigingen aan de instructies voor blijvende luchtwaardigheid aanpast nadat de reparatie is goedgekeurd, moeten deze aanpassingen worden bezorgd aan elke gebruiker en op verzoek beschikbaar worden gesteld voor eenieder die moet voldoen aan alle bepalingen van deze wijzigingen aan de instructies. Een programma dat toont hoe wijzigingen aan de instructies voor blijvende luchtwaardigheid zullen worden verspreid, moet aan het Agentschap worden voorgelegd.
 
-## 21.A.451 Verplichtingen en EPA-identificatiekenmerk  _(pdf blz. 45)_
+## 21.A.451 Verplichtingen en EPA-identificatiekenmerk  _(PB L 224/45)_
 
 a) Elke houder van een goedkeuring van een ontwerp voor een ingrijpende reparatie moet:
 
@@ -1670,15 +1670,15 @@ b) Behalve houders van een typecertificaat of een ETSO-autorisatie voor een hulp
 
 SUBDEEL O — ETSO-AUTORISATIES
 
-## 21.A.601 Toepassingsgebied  _(pdf blz. 46)_
+## 21.A.601 Toepassingsgebied  _(PB L 224/46)_
 
 In dit subdeel wordt de procedure vastgelegd voor de afgifte van ETSO-autorisaties, en worden ook de regels betreffende de rechten en verplichtingen van de aanvragers of houders van dergelijke autorisaties vastgelegd.
 
-## 21.A.602A Aanvaardbaarheid  _(pdf blz. 46)_
+## 21.A.602A Aanvaardbaarheid  _(PB L 224/46)_
 
 Elke natuurlijke of rechtspersoon die een ETSO-artikel produceert of de productie ervan voorbereidt en zijn bekwaamheid overeenkomstig punt 21.A.602B bewezen heeft, of aan het bewijzen is, komt in aanmerking als aanvrager van een ETSO-autorisatie.
 
-## 21.A.602B Bewijs van bekwaamheid  _(pdf blz. 46)_
+## 21.A.602B Bewijs van bekwaamheid  _(PB L 224/46)_
 
 Elke aanvrager van een ETSO-autorisatie moet zijn bekwaamheid als volgt bewijzen:
 
@@ -1690,13 +1690,13 @@ b) in het geval van ontwerp:
 
 2. voor alle andere artikelen: door procedures te gebruiken die beschrijven met welke specifieke ontwerppraktijken, -methoden en -werkzaamheden zal worden voldaan aan de bepalingen van deze bijlage.
 
-## 21.A.603 Aanvraag  _(pdf blz. 46)_
+## 21.A.603 Aanvraag  _(PB L 224/46)_
 
 a) Een aanvraag om een ETSO-autorisatie moet worden ingediend in de vorm en op de wijze zoals vastgelegd door het Agentschap en moet een overzicht van de in punt 21.A.605 voorgeschreven informatie bevatten.
 
 b) Als een reeks geringe wijzigingen in overeenstemming met punt 21.A.611 wordt voorzien, moet de aanvrager in zijn aanvraag het nummer van het basismodel van het artikel en de bijbehorende stuknummers laten volgen door open haakjes, om aan te geven dat wijzigingsnummers of -letters (of combinaties van beide) van tijd tot tijd als achtervoegsel zullen worden toegevoegd.
 
-## 21.A.604 ETSO-autorisatie voor een hulpaggregaat (APU)  _(pdf blz. 46)_
+## 21.A.604 ETSO-autorisatie voor een hulpaggregaat (APU)  _(PB L 224/46)_
 
 Met betrekking tot ETSO-autorisaties voor een hulpaggregaat:
 
@@ -1706,7 +1706,7 @@ b) is subdeel D of subdeel E van deze Sectie, in afwijking van punt 21.A.611, va
 
 c) Subdeel M is van toepassing op de goedkeuring van reparatieontwerpen.
 
-## 21.A.605 Vereisten inzake gegevens  _(pdf blz. 47)_
+## 21.A.605 Vereisten inzake gegevens  _(PB L 224/47)_
 
 De aanvrager moet de volgende documenten voorleggen aan het Agentschap:
 
@@ -1722,7 +1722,7 @@ e) voor een hulpaggregaat het handboek (of een verwijzing naar het handboek) dat
 
 f) voor alle andere artikelen, de in punt 21.A.602B, onder b), 2, vermelde procedures.
 
-## 21.A.606 Afgifte van een ETSO-autorisatie  _(pdf blz. 47)_
+## 21.A.606 Afgifte van een ETSO-autorisatie  _(PB L 224/47)_
 
 De aanvrager heeft recht op een door het Agentschap afgegeven ETSO-autorisatie, nadat:
 
@@ -1732,11 +1732,11 @@ b) hij heeft aangetoond dat het artikel voldoet aan de technische voorwaarden va
 
 c) hij expliciet verklaard heeft bereid te zijn punt 21.A.609 na te leven.
 
-## 21.A.607 Bevoegdheden verbonden aan een ETSO-autorisatie  _(pdf blz. 47)_
+## 21.A.607 Bevoegdheden verbonden aan een ETSO-autorisatie  _(PB L 224/47)_
 
 De houder van een ETSO-autorisatie heeft het recht om het artikel te produceren en te voorzien van de passende ETSO-identificatiekenmerk.
 
-## 21.A.608 Ontwerp- en prestatieverklaring (DDP)  _(pdf blz. 47)_
+## 21.A.608 Ontwerp- en prestatieverklaring (DDP)  _(PB L 224/47)_
 
 a) De ontwerp- en prestatieverklaring moet ten minste de volgende informatie bevatten:
 
@@ -1756,7 +1756,7 @@ a) De ontwerp- en prestatieverklaring moet ten minste de volgende informatie bev
 
 b) De ontwerp- en prestatieverklaring moet met datum en handtekening worden bekrachtigd door de houder van de ETSO-autorisatie, of door zijn erkende vertegenwoordiger.
 
-## 21.A.609 Verplichtingen van de houders van ETSO-autorisaties  _(pdf blz. 47)_
+## 21.A.609 Verplichtingen van de houders van ETSO-autorisaties  _(PB L 224/47)_
 
 De houder van een ETSO-autorisatie overeenkomstig dit subdeel moet:
 
@@ -1774,13 +1774,13 @@ f) voldoen aan de punten 21.A.3, 21.A.3B en 21.A.4;
 
 g) blijven voldoen aan de kwalificatie-eisen van punt 21.A.602B.
 
-## 21.A.610 Goedkeuring voor een afwijking  _(pdf blz. 48)_
+## 21.A.610 Goedkeuring voor een afwijking  _(PB L 224/48)_
 
 a) Elke fabrikant die een goedkeuring vraagt om te mogen afwijken van een ETSO-prestatienorm moet aantonen dat de normen waarvan een afwijking wordt gevraagd worden gecompenseerd door factoren of ontwerpkenmerken die een gelijkwaardig veiligheidsniveau waarborgen.
 
 b) Het verzoek om een goedkeuring voor een afwijking moet, samen met alle relevante gegevens, worden ingediend bij het Agentschap.
 
-## 21.A.611 Ontwerpwijzigingen  _(pdf blz. 48)_
+## 21.A.611 Ontwerpwijzigingen  _(PB L 224/48)_
 
 a) De houder van de ETSO-autorisatie mag geringe wijzigingen (alle wijzigingen die geen ingrijpende wijziging zijn) aan het ontwerp aanbrengen zonder toestemming van het Agentschap. In dat geval behoudt het gewijzigde artikel het nummer van het originele model (geringe wijzigingen worden aangeduid door gewijzigde stuknummers of door amendementen) en moet de houder aan het Agentschap alle herziene gegevens bezorgen die nodig zijn om te voldoen aan punt 21.A.603, onder b).
 
@@ -1788,11 +1788,11 @@ b) Als de houder van de ETSO-autorisatie een wijziging aan een ontwerp aanbrengt
 
 c) Geen enkele wijziging die aan een ontwerp wordt aangebracht door een natuurlijke of rechtspersoon die niet de houder van de ETSO-autorisatie is, en die de conformiteitsverklaring voor het artikel heeft ingediend, komt in aanmerking voor een goedkeuring overeenkomstig dit subdeel O, tenzij de persoon die de goedkeuring wenst, een aanvraag om een afzonderlijke ETSO-autorisatie indient overeenkomstig punt 21.A.603.
 
-## 21.A.613 Administratie  _(pdf blz. 48)_
+## 21.A.613 Administratie  _(PB L 224/48)_
 
 Naast de administratievereisten die eigen zijn aan of verband houden met het kwaliteitssysteem, moeten alle relevante ontwerpinformatie, tekeningen en testrapporten, met inbegrip van inspectieverslagen voor het geteste artikel, ter beschikking van het Agentschap worden gehouden en worden bewaard, zodat de nodige informatie voorhanden is om te waarborgen dat zowel het artikel als het product met typecertificaat waarin het wordt geïnstalleerd blijvend luchtwaardig zijn.
 
-## 21.A.615 Inspectie door het Agentschap  _(pdf blz. 48)_
+## 21.A.615 Inspectie door het Agentschap  _(PB L 224/48)_
 
 Op verzoek van het Agentschap moet elke aanvrager of houder van een ETSO-autorisatie voor een artikel het Agentschap toelaten om:
 
@@ -1800,7 +1800,7 @@ a) proeven bij te wonen;
 
 b) de technische gegevensbestanden betreffende dat artikel te controleren.
 
-## 21.A.619 Duur en blijvende geldigheid  _(pdf blz. 48)_
+## 21.A.619 Duur en blijvende geldigheid  _(PB L 224/48)_
 
 a) Een ETSO-autorisatie wordt afgegeven voor een onbeperkte duur. Ze blijft geldig, tenzij:
 
@@ -1814,13 +1814,13 @@ a) Een ETSO-autorisatie wordt afgegeven voor een onbeperkte duur. Ze blijft geld
 
 b) In geval van afstand of intrekking moet de autorisatie worden ingeleverd bij het Agentschap.
 
-## 21.A.621 Overdraagbaarheid  _(pdf blz. 49)_
+## 21.A.621 Overdraagbaarheid  _(PB L 224/49)_
 
 Behalve in het geval van een verandering van eigendom, die dient te worden beschouwd als een ingrijpende wijziging en dus moet voldoen aan de punten 21.A.147 en 21.A.247, al naargelang van toepassing, kan een overeenkomstig deze bijlage afgegeven ETSO-autorisatie niet worden overgedragen.
 
 SUBDEEL P — VLIEGVERGUNNING
 
-## 21.A.701 Toepassingsgebied  _(pdf blz. 49)_
+## 21.A.701 Toepassingsgebied  _(PB L 224/49)_
 
 a) Vliegvergunningen worden overeenkomstig dit subdeel afgegeven voor luchtvaartuigen die niet voldoen aan of waarvan niet is aangetoond dat zij voldoen aan de geldende luchtwaardigheidsvereisten, doch welke op veilige wijze kunnen vliegen onder nader omschreven voorwaarden en voor de volgende doeleinden:
 
@@ -1856,13 +1856,13 @@ a) Vliegvergunningen worden overeenkomstig dit subdeel afgegeven voor luchtvaart
 
 b) In dit subdeel wordt de procedure vastgelegd voor de afgifte van vliegvergunningen en de goedkeuring van daaraan gekoppelde vluchtvoorwaarden, en worden de rechten en verplichtingen vastgelegd van de aanvragers en houders van deze vergunningen en goedkeuringen van vluchtvoorwaarden.
 
-## 21.A.703 Aanvaardbaarheid  _(pdf blz. 49)_
+## 21.A.703 Aanvaardbaarheid  _(PB L 224/49)_
 
 a) Iedere natuurlijke of rechtspersoon heeft het recht een vliegvergunning aan te vragen, behalve indien het een vliegvergunning betreft die wordt aangevraagd voor doeleinden als omschreven in punt 21.A.701, onder a), 15, waarbij de aanvrager tevens de eigenaar is.
 
 b) Iedere natuurlijke of rechtspersoon heeft het recht om de goedkeuring van de vluchtvoorwaarden te vragen.
 
-## 21.A.705 Bevoegde autoriteit  _(pdf blz. 49)_
+## 21.A.705 Bevoegde autoriteit  _(PB L 224/49)_
 
 Onverminderd het bepaalde in punt 21.1 van deze bijlage, wordt voor de toepassing van het onderhavige subdeel onder „bevoegde autoriteit” verstaan:
 
@@ -1870,7 +1870,7 @@ a) de door de lidstaat van registratie aangewezen instantie, of
 
 b) in het geval van niet-geregistreerde luchtvaartuigen, de instantie die is aangewezen door de lidstaat die voorschriften uitvaardigde voor identificatieaanduidingen.
 
-## 21.A.707 Aanvraag van een vliegvergunning  _(pdf blz. 50)_
+## 21.A.707 Aanvraag van een vliegvergunning  _(PB L 224/50)_
 
 a) Ingevolge punt 21.A.703, en indien de aanvrager niet over de bevoegdheid beschikt om een vliegvergunning af te geven, dient een vliegvergunning bij de bevoegde autoriteit te worden aangevraagd in de vorm en op de wijze als vastgesteld door deze instantie.
 
@@ -1884,7 +1884,7 @@ b) Elke aanvraag van een vliegvergunning moet het volgende bevatten:
 
 c) Indien de vluchtvoorwaarden niet zijn goedgekeurd op het moment waarop de vliegvergunning wordt aangevraagd, dient een goedkeuring van de vluchtvoorwaarden te worden aangevraagd overeenkomstig punt 21.A.709.
 
-## 21.A.708 Vluchtvoorwaarden  _(pdf blz. 50)_
+## 21.A.708 Vluchtvoorwaarden  _(PB L 224/50)_
 
 De vluchtvoorwaarden hebben betrekking op:
 
@@ -1908,7 +1908,7 @@ c) de staving dat het luchtvaartuig veilig kan vliegen onder de in punt b) genoe
 
 d) de methode die wordt gebruikt voor controle op de configuratie van het luchtvaartuig om te kunnen blijven voldoen aan de vastgestelde voorwaarden.
 
-## 21.A.709 Aanvraag tot goedkeuring van vluchtvoorwaarden  _(pdf blz. 50)_
+## 21.A.709 Aanvraag tot goedkeuring van vluchtvoorwaarden  _(PB L 224/50)_
 
 a) Ingevolge punt 21.A.707, onder c), en indien de aanvrager niet bevoegd is voor de goedkeuring van de vluchtvoorwaarden, dient een goedkeuring van de vluchtvoorwaarden te worden aangevraagd:
 
@@ -1924,7 +1924,7 @@ b) Bij iedere aanvraag tot goedkeuring van de vluchtvoorwaarden dient het volgen
 
 3. de verzekering dat het luchtvaartuig veilig kan vliegen onder de voorwaarden of beperkingen van punt 21.A.708, onder b).
 
-## 21.A.710 Goedkeuring van vluchtvoorwaarden  _(pdf blz. 50)_
+## 21.A.710 Goedkeuring van vluchtvoorwaarden  _(PB L 224/50)_
 
 a) Wanneer de goedkeuring van de vluchtvoorwaarden verband houdt met de veiligheid van het ontwerp, worden de voorwaarden goedgekeurd door:
 
@@ -1936,7 +1936,7 @@ b) Indien goedkeuring van de vluchtvoorwaarden geen verband houdt met de veiligh
 
 c) Voordat de vluchtvoorwaarden worden goedgekeurd, dient het Agentschap of de bevoegde autoriteit of de erkende organisatie overtuigd te zijn dat het luchtvaartuig veilig kan vliegen onder de gespecificeerde voorwaarden en beperkingen. Het Agentschap of de bevoegde autoriteit kan de aanvrager ertoe verplichten de daarvoor noodzakelijke inspecties of proefnemingen uit te voeren.
 
-## 21.A.711 Afgifte van een vliegvergunning  _(pdf blz. 51)_
+## 21.A.711 Afgifte van een vliegvergunning  _(PB L 224/51)_
 
 a) Een vliegvergunning (EASA-formulier 20a, zie aanhangsel III) mag worden afgegeven door de bevoegde autoriteit onder de voorwaarden gespecificeerd in punt 21.B.525.
 
@@ -1952,27 +1952,27 @@ f) Voor vergunningen afgegeven onder de punten b), c) of d) dient een kopie van 
 
 g) Als er aanwijzingen zijn dat de in punt 21.A.723, onder a), gespecificeerde voorwaarden niet worden vervuld voor een vliegvergunning die door een organisatie werd afgegeven overeenkomstig de punten b), c) of d), zal de organisatie deze vliegvergunning onmiddellijk intrekken en de bevoegde autoriteit onverwijld op de hoogte brengen.
 
-## 21.A.713 Wijzigingen  _(pdf blz. 51)_
+## 21.A.713 Wijzigingen  _(PB L 224/51)_
 
 a) Iedere wijziging als gevolg waarvan de vluchtvoorwaarden of de daarmee verband houdende gronden voor afgifte van de vliegvergunning teniet worden gedaan, dient te worden goedgekeurd overeenkomstig punt 21.A.710. Voor zover relevant, dient een aanvraag te worden gedaan overeenkomstig punt 21.A.709.
 
 b) Wanneer een wijziging gevolgen heeft voor de inhoud van de vliegvergunning, dient een nieuwe vliegvergunning te worden afgegeven overeenkomstig punt 21.A.711.
 
-## 21.A.715 Taal  _(pdf blz. 51)_
+## 21.A.715 Taal  _(PB L 224/51)_
 
 De handboeken, (plak)biljetten, lijsten en overzichten, instrumentaanduidingen en andere noodzakelijke informatie zoals vereist ingevolge de geldende certificeringsspecificaties zijn gesteld in een of meer, voor de bevoegde autoriteit aanvaardbare talen van de Unie.
 
-## 21.A.719 Overdraagbaarheid  _(pdf blz. 51)_
+## 21.A.719 Overdraagbaarheid  _(PB L 224/51)_
 
 a) Een vliegvergunning is niet overdraagbaar.
 
 b) Onverminderd het bepaalde onder punt a) geldt voor een vliegvergunning welke is afgegeven krachtens punt 21.A.701, onder a), 15, wanneer een luchtvaartuig van eigenaar is veranderd, dat deze vliegvergunning tezamen met het luchtvaartuig wordt overgedragen, met dien verstande dat het luchtvaartuig in hetzelfde register blijft ingeschreven, of dat de vliegvergunning alleen wordt afgegeven met instemming van de bevoegde autoriteit van de lidstaat van registratie waaraan overdracht plaatsvindt. ( 1 ) PB L 315 van 28.11.2003, blz. 1.
 
-## 21.A.721 Inspecties  _(pdf blz. 52)_
+## 21.A.721 Inspecties  _(PB L 224/52)_
 
 De houder of aanvrager van een vliegvergunning dient op verzoek van de bevoegde autoriteit toegang te verlenen tot het betrokken luchtvaartuig.
 
-## 21.A.723 Duur en blijvende geldigheid  _(pdf blz. 52)_
+## 21.A.723 Duur en blijvende geldigheid  _(PB L 224/52)_
 
 a) Een vliegvergunning wordt afgegeven voor een periode van maximaal 12 maanden en blijft geldig op voorwaarde dat:
 
@@ -1986,15 +1986,15 @@ b) Onverminderd het bepaalde onder a), kan een vliegvergunning welke is afgegeve
 
 c) In het geval van afstand of intrekking dient de vliegvergunning terug te worden gegeven aan de bevoegde autoriteit.
 
-## 21.A.725 Verlenging van de vliegvergunning  _(pdf blz. 52)_
+## 21.A.725 Verlenging van de vliegvergunning  _(PB L 224/52)_
 
 Een verlenging van de vliegvergunning wordt beschouwd als een wijziging overeenkomstig punt 21.A.713.
 
-## 21.A.727 Verplichtingen van de houder van een vliegvergunning  _(pdf blz. 52)_
+## 21.A.727 Verplichtingen van de houder van een vliegvergunning  _(PB L 224/52)_
 
 De houder van een vliegvergunning dient erop toe te zien dat alle aan de vliegvergunning verbonden voorwaarden en beperkingen worden nageleefd.
 
-## 21.A.729 Administratie  _(pdf blz. 52)_
+## 21.A.729 Administratie  _(PB L 224/52)_
 
 a) Alle documenten ter vaststelling en waarborging van de vluchtvoorwaarden zullen door de houder van de goedkeuring van de vluchtvoorwaarden ter beschikking van het Agentschap en de bevoegde autoriteit worden gehouden, en zullen worden bewaard teneinde de noodzakelijke informatie te kunnen verstrekken ter waarborging van de blijvende luchtwaardigheid van het luchtvaartuig.
 
@@ -2002,7 +2002,7 @@ b) Alle documenten verband houdend met de afgifte van vliegvergunningen krachten
 
 SUBDEEL Q — IDENTIFICATIE VAN PRODUCTEN, ONDERDELEN EN UITRUSTINGSSTUKKEN
 
-## 21.A.801 Identificatie van producten  _(pdf blz. 52)_
+## 21.A.801 Identificatie van producten  _(PB L 224/52)_
 
 a) De identificatie van producten moet de volgende informatie bevatten:
 
@@ -2020,7 +2020,7 @@ c) Elke natuurlijke of rechtspersoon die een propeller, een propellerblad of een
 
 d) Voor bemande ballonnen moet de in punt b) voorgeschreven identificatieplaat worden bevestigd aan het ballonomhulsel en, indien mogelijk, zodanig worden geplaatst dat de gebruiker ze kan lezen wanneer de ballon is opgeblazen. Verder moeten op de mand, het laadgedeelte en de brander permanent en leesbaar aangebracht zijn: de naam van de fabrikant, het stuknummer, of gelijkwaardig, en het serienummer, of gelijkwaardig.
 
-## 21.A.803 Behandeling van de identificatiegegevens  _(pdf blz. 53)_
+## 21.A.803 Behandeling van de identificatiegegevens  _(PB L 224/53)_
 
 a) Niemand mag identificatie-informatie zoals bedoeld in punt 21.A.801, onder a), voor luchtvaartuigen, motoren, propellers, propellerbladen of propellernaven, of zoals bedoeld in punt 21.A.807, onder a), voor hulpaggregaten, verwijderen, wijzigen of plaatsen zonder goedkeuring van het Agentschap.
 
@@ -2034,7 +2034,7 @@ c) In afwijking van de punten a) en b) mogen natuurlijke en rechtspersonen die o
 
 d) Niemand mag een in overeenstemming met punt c), 2) verwijderde identificatieplaat aanbrengen op een ander luchtvaartuig of een andere motor, propeller, propellerblad of propellernaaf dan waarvan deze verwijderd is.
 
-## 21.A.804 Identificatie van onderdelen en uitrustingsstukken  _(pdf blz. 53)_
+## 21.A.804 Identificatie van onderdelen en uitrustingsstukken  _(PB L 224/53)_
 
 a) Op elk onderdeel of uitrustingsstuk moet permanent en leesbaar zijn aangebracht:
 
@@ -2046,11 +2046,11 @@ a) Op elk onderdeel of uitrustingsstuk moet permanent en leesbaar zijn aangebrac
 
 b) In afwijking van punt a), als het Agentschap ermee akkoord gaat dat het onderdeel of uitrustingsstuk te klein is of dat het niet praktisch zou zijn om het onderdeel of uitrustingsstuk te voorzien van de in punt a) voorgeschreven informatie, mag op het certificaat van vrijgave dat bij het onderdeel of het uitrustingsstuk of zijn verpakking is gevoegd, de informatie worden vermeld die niet kon worden aangebracht op het onderdeel of uitrustingsstuk.
 
-## 21.A.805 Identificatie van kritieke onderdelen  _(pdf blz. 53)_
+## 21.A.805 Identificatie van kritieke onderdelen  _(PB L 224/53)_
 
 Naast de vereisten van punt 21.A.804, moet elke fabrikant van een in een product met typecertificaat te installeren onderdeel dat is geïdentificeerd als een kritiek onderdeel, permanent en leesbaar een stuknummer en een serienummer aanbrengen op dat onderdeel.
 
-## 21.A.807 Identificatie van ETSO-artikelen  _(pdf blz. 53)_
+## 21.A.807 Identificatie van ETSO-artikelen  _(PB L 224/53)_
 
 a) Elke houder van een ETSO-autorisatie overeenkomstig subdeel O moet elk artikel permanent en leesbaar voorzien van de volgende informatie:
 
@@ -2068,17 +2068,17 @@ c) Eenieder die een hulpaggregaat overeenkomstig subdeel G of subdeel F vervaard
 
 SUBDEEL A — ALGEMENE VOORZIENINGEN
 
-## 21.B.5 Toepassingsgebied  _(pdf blz. 54)_
+## 21.B.5 Toepassingsgebied  _(PB L 224/54)_
 
 a) In deze sectie wordt vastgelegd welke procedure de bevoegde autoriteit van de lidstaat moet volgen bij het uitoefenen van haar taken en verantwoordelijkheden met betrekking tot het afgeven, behouden, wijzigen, opschorten en intrekken van de in deze bijlage behandelde certificaten, goedkeuringen en autorisaties.
 
 b) Het Agentschap ontwikkelt in overeenstemming met artikel 19 van Verordening (EG) nr. 216/2008 certificeringsspecificaties en richtsnoeren om de lidstaten bij te staan bij de tenuitvoerlegging van deze sectie.
 
-## 21.B.20 Verplichtingen van de bevoegde autoriteit  _(pdf blz. 54)_
+## 21.B.20 Verplichtingen van de bevoegde autoriteit  _(PB L 224/54)_
 
 Elke bevoegde autoriteit van de lidstaat is verantwoordelijk voor de tenuitvoerlegging van sectie A, subdelen F, G, H, I en P, voor zover het aanvragers of houders betreft die gevestigd zijn op haar grondgebied.
 
-## 21.B.25 Vereisten voor de organisatie van de bevoegde autoriteit  _(pdf blz. 54)_
+## 21.B.25 Vereisten voor de organisatie van de bevoegde autoriteit  _(PB L 224/54)_
 
 a) Algemeen: De lidstaat stelt een bevoegde autoriteit aan die verantwoordelijkheden toegewezen krijgt voor de tenuitvoerlegging van sectie A, subdelen F, G, H, I en P met gedocumenteerde procedures, organisatiestructuur en personeel.
 
@@ -2090,35 +2090,35 @@ b) Personeel:
 
 c) Kwalificatie en opleiding: Alle personeelsleden moeten de juiste kwalificatie hebben en over voldoende kennis, ervaring en opleiding beschikken om de hun toegewezen taken uit te voeren.
 
-## 21.B.30 Gedocumenteerde procedures  _(pdf blz. 54)_
+## 21.B.30 Gedocumenteerde procedures  _(PB L 224/54)_
 
 a) De bevoegde autoriteit van de lidstaat moet gedocumenteerde procedures vastleggen om te beschrijven met welke organisatie, middelen en methoden zij de vereisten van deze bijlage zal naleven. De procedures moeten geregeld worden bijgewerkt en binnen de autoriteit als basiswerkdocumenten voor alle verbandhoudende werkzaamheden dienen.
 
 b) Een kopie van de procedures en hun amendementen moet aan het Agentschap ter beschikking worden gesteld.
 
-## 21.B.35 Wijzigingen in organisatie en procedures  _(pdf blz. 54)_
+## 21.B.35 Wijzigingen in organisatie en procedures  _(PB L 224/54)_
 
 a) De bevoegde autoriteit van de lidstaat moet alle ingrijpende wijzigingen in de organisatie en gedocumenteerde procedures melden aan het Agentschap.
 
 b) De bevoegde autoriteit van de lidstaat moet zijn gedocumenteerde procedures binnen een redelijke termijn aanpassen aan elke wijziging van de voorschriften, teneinde een effectieve tenuitvoerlegging te waarborgen.
 
-## 21.B.40 Oplossing van geschillen  _(pdf blz. 55)_
+## 21.B.40 Oplossing van geschillen  _(PB L 224/55)_
 
 a) De bevoegde autoriteit van de lidstaat moet een procedé vastleggen voor de oplossing van geschillen binnen haar organisatie.
 
 b) Als er een onoplosbaar geschil bestaat tussen de bevoegde autoriteiten van de lidstaten, moeten de in punt 21.B.25, onder b), 2), bedoelde managers de kwestie bespreken met het Agentschap en de bemiddeling ervan inroepen.
 
-## 21.B.45 Rapportage/coördinatie  _(pdf blz. 55)_
+## 21.B.45 Rapportage/coördinatie  _(PB L 224/55)_
 
 a) De bevoegde autoriteit van de lidstaat moet zorgen voor de coördinatie, al naargelang van toepassing, met andere betreffende certificerings-, onderzoeks- of erkenningsteams van die autoriteit, met andere lidstaten en met het Agentschap, om een efficiënte uitwisseling te waarborgen van informatie die relevant is voor de veiligheid van de producten, onderdelen en uitrustingsstukken.
 
 b) De bevoegde autoriteit van de lidstaat moet elke moeilijkheid bij de tenuitvoerlegging van deze bijlage melden aan het Agentschap.
 
-## 21.B.55 Administratie  _(pdf blz. 55)_
+## 21.B.55 Administratie  _(PB L 224/55)_
 
 De bevoegde autoriteit van de lidstaat moet de passende administratie bijhouden, of toegankelijk houden, van de certificaten, goedkeuringen en autorisaties die ze heeft afgegeven in overeenstemming met de respectievelijke nationale regelgevingen, en waarvoor verantwoordelijkheid is overgedragen aan het Agentschap, voor zover deze documenten nog niet zijn overgedragen aan het Agentschap.
 
-## 21.B.60 Luchtwaardigheidsaanwijzingen  _(pdf blz. 55)_
+## 21.B.60 Luchtwaardigheidsaanwijzingen  _(PB L 224/55)_
 
 Als de bevoegde autoriteit van een lidstaat een luchtwaardigheidsaanwijzing ontvangt van de bevoegde autoriteit van een niet-lidstaat, moet die luchtwaardigheidsaanwijzing worden overgedragen aan het Agentschap, dat hem verspreidt in overeenstemming met artikel 20 van Verordening (EG) nr. 216/2008.
 
@@ -2130,7 +2130,7 @@ SUBDEEL E — AANVULLENDE TYPECERTIFICATEN De door het Agentschap vastgestelde a
 
 SUBDEEL F — PRODUCTIE ZONDER ERKENNING ALS PRODUCTIEORGANISATIE
 
-## 21.B.120 Onderzoek  _(pdf blz. 55)_
+## 21.B.120 Onderzoek  _(PB L 224/55)_
 
 a) De bevoegde autoriteit moet voor elke aanvrager of houder van een akkoordverklaring een onderzoeksteam aanstellen dat alle relevante taken met betrekking tot deze akkoordverklaring vervult en bestaat uit een teamleider, die het onderzoeksteam bestuurt en leidt, en, indien nodig, één of meer teamleden. De teamleider brengt verslag uit bij de manager die verantwoordelijk is voor de betreffende werkzaamheid, zoals bepaald in punt 21.B.25, onder b), 2).
 
@@ -2152,7 +2152,7 @@ c) De bevoegde autoriteit moet procedures opstellen voor het onderzoek van aanvr
 
 7. aanbevelingen inzake het afgeven, wijzigen, opschorten of intrekken van de akkoordverklaring.
 
-## 21.B.125 Bevindingen  _(pdf blz. 56)_
+## 21.B.125 Bevindingen  _(PB L 224/56)_
 
 a) Als de bevoegde autoriteit op basis van audits of door andere middelen objectief bewijsmateriaal vindt waaruit blijkt dat de houder van een akkoordverklaring niet voldoet aan de toepasselijke eisen in sectie A van deze bijlage, wordt deze bevinding geclassificeerd overeenkomstig punt 21.A.125B. onder a).
 
@@ -2164,7 +2164,7 @@ b) De bevoegde autoriteit neemt de volgende acties:
 
 c) De bevoegde autoriteit moet actie ondernemen om de akkoordverklaring geheel of gedeeltelijk op te schorten als de termijn die door de bevoegde autoriteit werd toegekend, niet werd gerespecteerd.
 
-## 21.B.130 Afgifte van een akkoordverklaring  _(pdf blz. 56)_
+## 21.B.130 Afgifte van een akkoordverklaring  _(PB L 224/56)_
 
 a) Als de bevoegde autoriteit ervan overtuigd is dat de fabrikant voldoet aan de toepasselijke eisen van sectie A, subdeel F, geeft zij zonder onnodig uitstel een brief af waarin zij zich akkoord verklaart met de bewijzen van conformiteit van individuele producten, onderdelen of uitrustingsstukken (EASA-formulier 65, zie aanhangsel XI).
 
@@ -2172,7 +2172,7 @@ b) In de akkoordverklaring moet vermeld staan in hoeverre, tot welke datum en, i
 
 c) De akkoordverklaring is niet langer dan een jaar geldig.
 
-## 21.B.135 Behoud van de akkoordverklaring  _(pdf blz. 56)_
+## 21.B.135 Behoud van de akkoordverklaring  _(PB L 224/56)_
 
 De bevoegde autoriteit zal de akkoordverklaring behouden zolang:
 
@@ -2194,19 +2194,19 @@ b) bij de inspecties die door de bevoegde autoriteit worden uitgevoerd voor de v
 
 c) geen einddatum voor de akkoordverklaring is bereikt.
 
-## 21.B.140 Wijziging van een akkoordverklaring  _(pdf blz. 57)_
+## 21.B.140 Wijziging van een akkoordverklaring  _(PB L 224/57)_
 
 a) De bevoegde autoriteit moet, in overeenstemming met punt 21.B.120, elke wijziging van de akkoordverklaring zo nodig onderzoeken.
 
 b) Als de bevoegde autoriteit ervan overtuigd is dat er nog altijd wordt voldaan aan de eisen van sectie A, subdeel F, wijzigt ze de akkoordverklaring dienovereenkomstig.
 
-## 21.B.145 Limitatie, opschorting en intrekking van een akkoordverklaring  _(pdf blz. 57)_
+## 21.B.145 Limitatie, opschorting en intrekking van een akkoordverklaring  _(PB L 224/57)_
 
 a) De limitatie, opschorting of intrekking van een akkoordverklaring moet schriftelijk worden meegedeeld aan de houder van de akkoordverklaring. De bevoegde autoriteit specificeert de redenen voor de limitatie, opschorting of intrekking en brengt de houder van de akkoordverklaring op de hoogte van zijn recht op beroep.
 
 b) Een opgeschorte akkoordverklaring wordt pas hersteld nadat opnieuw voldaan wordt aan sectie A, subdeel F, van deze bijlage.
 
-## 21.B.150 Administratie  _(pdf blz. 57)_
+## 21.B.150 Administratie  _(PB L 224/57)_
 
 a) De bevoegde autoriteit moet een administratiesysteem instellen dat het mogelijk maakt om vlot het proces van afgifte, behoud, wijziging, opschorting of intrekking van elke afzonderlijke akkoordverklaring toegankelijk te maken.
 
@@ -2226,7 +2226,7 @@ d) De bevoegde autoriteit moet ook een administratie bijhouden van alle conformi
 
 SUBDEEL G — ERKENNING ALS PRODUCTIEORGANISATIE
 
-## 21.B.220 Onderzoek  _(pdf blz. 57)_
+## 21.B.220 Onderzoek  _(PB L 224/57)_
 
 a) De bevoegde autoriteit moet voor elke aanvrager of houder van een erkenning als productieorganisatie een onderzoeksteam aanstellen dat alle relevante taken met betrekking tot deze erkenning als productieorganisatie vervult en bestaat uit een teamleider, die het onderzoeksteam bestuurt en leidt, en, indien nodig, één of meer teamleden. De teamleider brengt verslag uit bij de manager die verantwoordelijk is voor de betreffende werkzaamheid, zoals bepaald in punt 21.B.25, onder b), 2).
 
@@ -2250,7 +2250,7 @@ c) De bevoegde autoriteit moet procedures opstellen voor het onderzoek van een e
 
 8. permanent toezicht.
 
-## 21.B.225 Bevindingen  _(pdf blz. 58)_
+## 21.B.225 Bevindingen  _(PB L 224/58)_
 
 a) Als de bevoegde autoriteit op basis van audits of door andere middelen objectief bewijsmateriaal vindt waaruit blijkt dat de houder van een erkenning als productieorganisatie niet voldoet aan de toepasselijke eisen in sectie A van deze bijlage, wordt deze bevinding geclassificeerd overeenkomstig punt 21.A.158, onder a).
 
@@ -2262,13 +2262,13 @@ b) De bevoegde autoriteit neemt de volgende acties:
 
 c) De bevoegde autoriteit moet actie ondernemen om de erkenning geheel of gedeeltelijk op te schorten als de termijn die door de bevoegde autoriteit werd toegekend, niet werd gerespecteerd.
 
-## 21.B.230 Afgifte van een certificaat  _(pdf blz. 58)_
+## 21.B.230 Afgifte van een certificaat  _(PB L 224/58)_
 
 a) Als de bevoegde autoriteit ervan overtuigd is dat de productieorganisatie voldoet aan de toepasselijke eisen van sectie A, subdeel G, geeft zij zonder onnodig uitstel een erkenning als productieorganisatie (EASA-formulier 55, zie aanhangsel X) af.
 
 b) Het referentienummer moet worden opgenomen in EASA-formulier 55 op een door het Agentschap vastgestelde wijze.
 
-## 21.B.235 Permanent toezicht  _(pdf blz. 58)_
+## 21.B.235 Permanent toezicht  _(PB L 224/58)_
 
 a) Om het behoud van de erkenning als productieorganisatie te verantwoorden moet de bevoegde autoriteit permanent toezicht houden:
 
@@ -2284,7 +2284,7 @@ b) Er moet permanent toezicht worden uitgeoefend in overeenstemming met punt 21.
 
 c) De bevoegde autoriteit moet er door middel van planmatig permanent toezicht voor zorgen dat een erkenning als productieorganisatie gedurende een periode van 24 maanden volledig wordt beoordeeld inzake haar conformiteit met deze bijlage. Het permanent toezicht mag tijdens deze periode bestaan uit verscheidene onderzoeksactiviteiten. Het aantal controles kan variëren naar gelang van de complexiteit van de organisatie, het aantal vestigingen en het kritieke karakter van de productie. Op zijn minst moet de houder van een erkenning als productieorganisatie tenminste eenmaal per jaar worden onderworpen aan een activiteit van permanent toezicht door de bevoegde autoriteit.
 
-## 21.B.240 Wijziging van een erkenning als productieorganisatie  _(pdf blz. 59)_
+## 21.B.240 Wijziging van een erkenning als productieorganisatie  _(PB L 224/59)_
 
 a) De bevoegde autoriteit controleert elke wijziging, hoe klein ook, via de activiteiten van permanent toezicht.
 
@@ -2292,7 +2292,7 @@ b) De bevoegde autoriteit onderzoekt, naargelang van toepassing, in overeenstemm
 
 c) Als de bevoegde autoriteit ervan overtuigd is dat er nog altijd wordt voldaan aan de eisen van sectie A, subdeel G, wijzigt ze de erkenning als productieorganisatie dienovereenkomstig.
 
-## 21.B.245 Opschorting en intrekking van een erkenning als productieorganisatie  _(pdf blz. 59)_
+## 21.B.245 Opschorting en intrekking van een erkenning als productieorganisatie  _(PB L 224/59)_
 
 a) In het geval van een niveau 1- of niveau 2-bevinding moet de bevoegde autoriteit een erkenning als productieorganisatie als volgt geheel of gedeeltelijk limiteren, opschorten of intrekken:
 
@@ -2306,7 +2306,7 @@ b) De limitatie, opschorting of intrekking van de erkenning als productieorganis
 
 c) Een opgeschorte erkenning als productieorganisatie wordt pas hersteld nadat opnieuw voldaan wordt aan sectie A, subdeel G.
 
-## 21.B.260 Administratie  _(pdf blz. 59)_
+## 21.B.260 Administratie  _(PB L 224/59)_
 
 a) De bevoegde autoriteit moet een administratiesysteem instellen dat het mogelijk maakt om vlot het proces van afgifte, behoud, wijziging, opschorting of intrekking van elke afzonderlijke erkenning als productieorganisatie toegankelijk te maken.
 
@@ -2326,7 +2326,7 @@ c) De documenten van het administratiesysteem moeten in een archief worden bewaa
 
 SUBDEEL H — BEWIJZEN VAN LUCHTWAARDIGHEID EN BEPERKTE BEWIJZEN VAN LUCHTWAARDIGHEID
 
-## 21.B.320 Onderzoek  _(pdf blz. 59)_
+## 21.B.320 Onderzoek  _(PB L 224/59)_
 
 a) De bevoegde autoriteit van de lidstaat van registratie moet voldoende onderzoeksactiviteiten uitvoeren voor een aanvrager of houder van een bewijs van luchtwaardigheid om de afgifte, behoud, wijziging, opschorting of intrekking van het certificaat of de vergunning te verantwoorden.
 
@@ -2344,7 +2344,7 @@ b) De bevoegde autoriteit van de lidstaat van registratie moet evaluatieprocedur
 
 6. vastlegging van de noodzakelijke voorwaarden of beperkingen voor de bewijzen van luchtwaardigheid.
 
-## 21.B.325 Afgifte van bewijzen van luchtwaardigheid  _(pdf blz. 60)_
+## 21.B.325 Afgifte van bewijzen van luchtwaardigheid  _(PB L 224/60)_
 
 a) De bevoegde autoriteit van de lidstaat van registratie zal zonder onnodig uitstel een bewijs van luchtwaardigheid (EASA-formulier 25, zie aanhangsel VI) afgeven of wijzigen als zij ervan overtuigd is dat wordt voldaan aan de eisen van punt 21.B.326 en de toepasselijke eisen van sectie A, subdeel H, van deze bijlage.
 
@@ -2352,7 +2352,7 @@ b) De bevoegde autoriteit van de lidstaat van registratie zal zonder onnodig uit
 
 c) Voor een nieuw luchtvaartuig of een gebruikt luchtvaartuig afkomstig uit een niet-lidstaat, geeft de bevoegde autoriteit van de lidstaat van registratie, naast een bewijs van luchtwaardigheid als bedoeld in punt a) of b), een certificaat van beoordeling van de luchtwaardigheid af (EASA-formulier 15a, zie aanhangsel II).
 
-## 21.B.326 Bewijs van luchtwaardigheid  _(pdf blz. 60)_
+## 21.B.326 Bewijs van luchtwaardigheid  _(PB L 224/60)_
 
 De bevoegde autoriteit van de lidstaat van registratie geeft een bewijs van luchtwaardigheid af:
 
@@ -2374,7 +2374,7 @@ iii) het luchtvaartuig is geïnspecteerd in overeenstemming met de toepasselijke
 
 2. als de bevoegde autoriteit van de lidstaat van registratie ervan overtuigd is dat het luchtvaartuig beantwoordt aan een goedgekeurd ontwerp en veilig kan worden gebruikt. Hiervoor kunnen inspecties door de bevoegde autoriteit van de lidstaat van registratie nodig zijn.
 
-## 21.B.327 Beperkt bewijs van luchtwaardigheid  _(pdf blz. 60)_
+## 21.B.327 Beperkt bewijs van luchtwaardigheid  _(PB L 224/60)_
 
 a) De bevoegde autoriteit van de lidstaat van registratie geeft een beperkt bewijs van luchtwaardigheid af:
 
@@ -2398,7 +2398,7 @@ b) Voor een luchtvaartuig dat niet kan voldoen aan de in Verordening (EG) nr. 21
 
 c) Aan beperkte bewijzen van luchtwaardigheid worden gebruiksbeperkingen gekoppeld, met inbegrip van luchtruimbeperkingen, naargelang nodig is om rekening te houden met afwijkingen van de in Verordening (EG) nr. 216/2008 vastgelegde essentiële eisen inzake luchtwaardigheid.
 
-## 21.B.330 Opschorting en intrekking van bewijzen van luchtwaardigheid en beperkte bewijzen van luchtwaar  _(pdf blz. 61)_
+## 21.B.330 Opschorting en intrekking van bewijzen van luchtwaardigheid en beperkte bewijzen van luchtwaar  _(PB L 224/61)_
 
 digheid
 
@@ -2406,7 +2406,7 @@ a) Als er aanwijzingen zijn dat de in punt 21.A.181, onder a), genoemde voorwaar
 
 b) Bij het afgeven van de kennisgeving van opschorting of intrekking van een bewijs van luchtwaardigheid of een beperkt bewijs van luchtwaardigheid specificeert de bevoegde autoriteit van de lidstaat van registratie de redenen voor de opschorting of intrekking en brengt zij de houder van het certificaat op de hoogte van zijn recht op beroep.
 
-## 21.B.345 Administratie  _(pdf blz. 61)_
+## 21.B.345 Administratie  _(PB L 224/61)_
 
 a) De bevoegde autoriteit van de lidstaat van registratie moet een administratiesysteem instellen dat het mogelijk maakt om vlot het proces van afgifte, behoud, wijziging, opschorting of intrekking van elk afzonderlijk bewijs van luchtwaardigheid toegankelijk te maken.
 
@@ -2422,7 +2422,7 @@ c) De documenten van de administratie moeten in een archief worden bewaard gedur
 
 SUBDEEL I — GELUIDSCERTIFICATEN
 
-## 21.B.420 Onderzoek  _(pdf blz. 61)_
+## 21.B.420 Onderzoek  _(PB L 224/61)_
 
 a) De bevoegde autoriteit van de lidstaat van registratie moet voldoende onderzoeksactiviteiten uitvoeren voor een aanvrager of houder van een geluidscertificaat om de afgifte, behoud, wijziging, opschorting of intrekking van het certificaat te verantwoorden.
 
@@ -2434,17 +2434,17 @@ b) De bevoegde autoriteit van de lidstaat van registratie moet evaluatieprocedur
 
 3. inspectie van het luchtvaartuig.
 
-## 21.B.425 Afgifte van geluidscertificaten  _(pdf blz. 62)_
+## 21.B.425 Afgifte van geluidscertificaten  _(PB L 224/62)_
 
 De bevoegde autoriteit van de lidstaat van registratie zal, naargelang van toepassing, zonder onnodig uitstel een geluidscertificaat (EASA-formulier 45, zie aanhangsel VIII) afgeven of wijzigen als zij ervan overtuigd is dat wordt voldaan aan de toepasselijke eisen van sectie A, subdeel I.
 
-## 21.B.430 Opschorting en intrekking van een geluidscertificaat  _(pdf blz. 62)_
+## 21.B.430 Opschorting en intrekking van een geluidscertificaat  _(PB L 224/62)_
 
 a) Als er aanwijzingen zijn dat een aantal van de in punt 21.A.211, onder a), genoemde voorwaarden niet wordt vervuld, kan de bevoegde autoriteit van de lidstaat van registratie een geluidscertificaat opschorten of intrekken.
 
 b) Bij het afgeven van de kennisgeving van opschorting of intrekking van een geluidscertificaat specificeert de bevoegde autoriteit van de lidstaat van registratie de redenen voor de opschorting of intrekking en brengt zij de houder van het certificaat op de hoogte van zijn recht op beroep.
 
-## 21.B.445 Administratie  _(pdf blz. 62)_
+## 21.B.445 Administratie  _(PB L 224/62)_
 
 a) De bevoegde autoriteit van de lidstaat van registratie moet een administratiesysteem instellen dat het mogelijk maakt om vlot het proces van afgifte, behoud, wijziging, opschorting of intrekking van elk afzonderlijk geluidscertificaat toegankelijk te maken.
 
@@ -2468,7 +2468,7 @@ SUBDEEL O — ETSO-AUTORISATIES De door het Agentschap vastgestelde administrati
 
 SUBDEEL P — VLIEGVERGUNNING
 
-## 21.B.520 Onderzoek  _(pdf blz. 63)_
+## 21.B.520 Onderzoek  _(PB L 224/63)_
 
 a) De bevoegde autoriteit zal voldoende onderzoek verrichten om de afgifte of intrekking van de vliegvergunning te rechtvaardigen.
 
@@ -2484,7 +2484,7 @@ b) De bevoegde autoriteit zal evaluatieprocedures ontwikkelen voor minstens de v
 
 5. goedkeuring van de vluchtvoorwaarden overeenkomstig punt 21.A.710, onder b).
 
-## 21.B.525 Afgifte van vliegvergunningen  _(pdf blz. 63)_
+## 21.B.525 Afgifte van vliegvergunningen  _(PB L 224/63)_
 
 De bevoegde autoriteit gaat zonder onnodig uitstel over tot afgifte van een vliegvergunning (EASA-formulier 20a, zie aanhangsel III):
 
@@ -2494,13 +2494,13 @@ b) als de in punt 21.A.708 genoemde vluchtvoorwaarden werden goedgekeurd overeen
 
 c) indien de bevoegde autoriteit door eigen onderzoekmeer in de vorm van inspecties of via met de aanvrager overeengekomen procedures, ervan overtuigd is dat het luchtvaartuig voldoet aan het overeenkomstig punt 21.A.708 vastgestelde ontwerp alvorens ermee wordt gevlogen.
 
-## 21.B.530 Intrekking van vliegvergunningen  _(pdf blz. 63)_
+## 21.B.530 Intrekking van vliegvergunningen  _(PB L 224/63)_
 
 a) Indien er aanwijzingen zijn dat aan één van de in punt 21.A.723, onder a), vermelde voorwaarden van een door de bevoegde autoriteit afgegeven vliegvergunning niet is voldaan, trekt zij die vergunning in.
 
 b) Bij kennisgeving van de intrekking van een vliegvergunning deelt de bevoegde autoriteit de redenen mee voor de intrekking, en informeert zij de houder van de vliegvergunning over diens recht daartegen beroep aan te tekenen.
 
-## 21.B.545 Administratie  _(pdf blz. 63)_
+## 21.B.545 Administratie  _(PB L 224/63)_
 
 a) De bevoegde autoriteit zal een administratie bijhouden op basis waarvan op adequate wijze controle kan worden uitgeoefend op de procedures voor de afgifte en intrekking van iedere individuele vliegvergunning.
 
@@ -2538,7 +2538,7 @@ Aanhangsel X — EASA-formulier 55 Certificaat erkenning als productieorganisati
 
 Aanhangsel XI — EASA-formulier 65 Akkoordverklaring voor productie zonder erkenning als productieorganisatie
 
-## Aanhangsel I Certificaat van vrijgave — EASA-formulier 1, waarnaar in bijlage I (deel 21) wordt verwezen  _(pdf blz. 65)_
+## Aanhangsel I Certificaat van vrijgave — EASA-formulier 1, waarnaar in bijlage I (deel 21) wordt verwezen  _(PB L 224/65)_
 
 Instructies voor het gebruik van EASA-formulier 1 Deze instructies gelden slechts voor het gebruik van EASA-formulier 1 voor productiedoeleinden. De aandacht wordt gevestigd op aanhangsel II bij bijlage I (deel M) bij [Verordening (EG) nr. 2042/2003] dat het gebruik beschrijft van EASA-formulier 1 voor onderhoudsdoeleinden. 1. DOEL EN TOEPASSINGSGEBIED 1.1. Een primaire doelstelling van het certificaat is het luchtwaardig verklaren van nieuwe luchtvaartproducten, onderdelen en uitrustingsstukken (hierna „artikel(en)” genoemd). 1.2. Tussen het certificaat en het artikel of de artikelen moet een correlatie zijn vastgesteld. De opdrachtgever moet een certificaat bijhouden in een vorm die controle van de originele gegevens toelaat. 1.3. Het certificaat wordt aanvaard door veel luchtwaardigheidsautoriteiten, maar kan afhangen van bilaterale overeenkomsten en/of het beleid van de luchtwaardigheidsautoriteit. 1.4. Het certificaat is geen leveringsbon of verschepingsdocument. 1.5. Luchtvaartuigen mogen niet worden vrijgegeven door middel van dit certificaat. 1.6. Het certificaat is geen goedkeuring om het artikel te installeren in een welbepaald luchtvaartuig, een welbepaalde motor of propeller, maar helpt de eindgebruiker zich een oordeel te vormen over de stand van zaken bij de goedkeuring van de luchtwaardigheid ervan. 1.7. Een mengeling van door fabricage en door onderhoud vrijgegeven artikelen is niet geoorloofd op hetzelfde certificaat. 1.8. Een mengeling van artikelen die conform „goedgekeurde gegevens” en „niet-goedgekeurde gegevens” gecertificeerd zijn, is niet toegestaan op hetzelfde certificaat. ALGEMEEN 2.1. Het certificaat moet overeenstemmen met het bijgevoegde formaat inclusief de nummers van de vakken en de plaats van elk vak. De opmaak van ieder vak mag evenwel worden aangepast aan de individuele aanvraag, maar niet in zodanige mate dat de conformiteitsverklaring er onherkenbaar door wordt. 2.2. Het certificaat moet opgemaakt zijn in „liggende” indeling, maar het totale formaat van het certificaat mag in aanzienlijke mate worden vergroot of verkleind zolang het certificaat herkenbaar en leesbaar blijft. In geval van twijfel dient u de bevoegde autoriteit te raadplegen. 2.3. De verklaring in verband met de verantwoordelijkheden van de gebruiker/installateur mag op de voor- of de achterzijde van het formulier worden geplaatst. 2.4. Tekst moet duidelijk en leesbaar worden aangebracht om het leesgemak te vergroten. 2.5. Het certificaat kan ofwel voorgedrukt ofwel per computer gegenereerd worden; in beide gevallen moeten de regels en tekens duidelijk en goed leesbaar en in overeenstemming met de vastgestelde opmaak worden afgedrukt. 2.6. Het certificaat moet worden opgesteld in het Engels en, voor zover van toepassing, in een of meer andere talen. 2.7. De gegevens die op het certificaat moeten worden ingevuld, kunnen machinaal of per computer worden afgedrukt of kunnen met de hand worden ingevuld in blokletters en de tekst moet gemakkelijk leesbaar zijn. 2.8. Het gebruik van afkortingen moet, voor de duidelijkheid, tot een minimum worden beperkt. 2.9. De open ruimte op de achterkant van het certificaat mag door de opsteller worden gebruikt om aanvullende informatie te geven maar mag geen certificeringsverklaring bevatten. Als het certificaat op de achterkant wordt ingevuld, moet hiernaar worden verwezen in het betreffende vak op de voorkant van het certificaat. 3. AFSCHRIFTEN 3.1. Het aantal afschriften van het certificaat dat naar de klant gestuurd wordt of door de opsteller bewaard wordt, is onbeperkt. 4. FOUT(EN) OP EEN CERTIFICAAT 4.1. Als een eindgebruiker een fout of fouten aantreft op een certificaat, moet hij deze schriftelijk melden aan de opsteller. De opsteller mag een nieuw certificaat opmaken als deze de fout(en) kan verifiëren en verbeteren. 4.2. Het nieuwe certificaat moet een nieuw volgnummer krijgen en het moet opnieuw ondertekend en gedateerd worden. 4.3. De aanvraag van een nieuw certificaat kan worden gehonoreerd zonder een hernieuwde verificatie van de toestand van het artikel of de artikelen. Het nieuwe certificaat is geen verklaring over de huidige toestand en dient in vak 12 naar het vorige certificaat te verwijzen door middel van de volgende verklaring: „Dit certificaat corrigeert de fout(en) in vak(ken) [gecorrigeerd(e) vak(ken) invullen] van certificaat [oorspronkelijk volgnummer invullen] op datum van [oorspronkelijke afgiftedatum invullen] en houdt geen verklaring van overeenstemming/toestand/vrijgave voor gebruik in”. Beide certificaten moeten worden bewaard gedurende de bewaringsperiode die geldt voor het eerste certificaat. 5. INVULLEN VAN HET CERTIFICAAT DOOR DE OPSTELLER Vak 1 Bevoegde autoriteit /land van afgifte erkenning Vermeld de naam en het land van de bevoegde autoriteit onder wier bevoegdheid dit certificaat wordt afgegeven. Indien de bevoegde autoriteit het Agentschap is, moet alleen „EASA” vermeld worden. Vak 2 Koptekst EASA-formulier 1 „CERTIFICAAT VAN VRIJGAVE EASA-FORMULIER 1” Vak 3 Volgnummer formulier In dit vak moet een uniek nummer staan dat wordt vastgesteld door het nummeringssysteem of de nummeringsprocedure van de in vak 4 vermelde organisatie; dit nummer mag alfanumerieke en numerieke tekens bevatten. Vak 4 Naam en adres organisatie Vul de volledige naam en het adres in van de productieorganisatie (raadpleeg EASA-formulier 55 blad A) die het artikel of de artikelen waarover het certificaat handelt, vrijgeeft. Logo’s e.d. van de organisatie zijn toegestaan als ze in het vak passen. Vak 5 Werkopdracht/contract/factuur Vul het werkopdrachtnummer, contractnummer, factuurnummer of een gelijkaardig referentienummer in om de traceerbaarheid van het artikel of de artikelen te vergemakkelijken. Vak 6 Artikel Vul regelartikelnummers in wanneer er meer dan een regelartikel is. Dit vak maakt het mogelijk om kruisverwijzingen aan te brengen met de opmerkingen in vak 12. Vak 7 Omschrijving Hier moet de naam of een omschrijving van het artikel worden ingevuld. Het verdient de voorkeur de benaming te gebruiken uit de instructies voor blijvende luchtwaardigheid of onderhoudsgegevens (bv. geïllustreerde onderdelencatalogus, handboek voor luchtvaartuigonderhoud, onderhoudsrapport, handboek voor onderdelenonderhoud). Vak 8 Onderdeelnummer Vul het onderdeelnummer in zoals dit wordt vermeld op het artikel of het label/de verpakking. Voor een motor of propeller mag de benaming van het type worden gebruikt. Vak 9 Aantal Vermeld het aantal artikelen. Vak 10 Serienummer Als het artikel volgens de regelgeving moet worden geïdentificeerd met een serienummer, moet dit hier worden vermeld. Bovendien mogen alle andere serienummers worden vermeld die niet door de regelgeving worden vereist. Vul „n.v.t.” in als het artikel geen serienummer draagt. Vak 11 Status/werk Vermeld hier „PROTOTYPE” of „NIEUW”. Vermeld „PROTOTYPE” voor:
 
@@ -2558,31 +2558,35 @@ iv) het onderzoek van een eerder vrijgegeven nieuw artikel voordat dit in gebrui
 
 2. Kruis het vakje „niet-goedgekeurde ontwerpgegevens zoals gespecificeerd in vak 12” aan als het artikel of de artikelen werden vervaardigd met behulp van toepasselijke niet-goedgekeurde ontwerpgegevens. Preciseer de gegevens in vak 12 (bv. in afwachting van een typecertificaat, bestemd voor testdoeleinden, in afwachting van goedgekeurde gegevens). Een mengeling van artikelen die worden vrijgegeven op grond van goedgekeurde en niet-goedgekeurde ontwerpgegevens, is niet toegestaan op hetzelfde certificaat. Vak 13b Bevoegde handtekening In deze ruimte moet de handtekening van de bevoegde persoon worden gezet. Alleen personen die specifiek gemachtigd zijn volgens de regels en het beleid van de bevoegde autoriteit, mogen dit vak ondertekenen. Ter vergroting van de herkenbaarheid mag een uniek nummer worden toegevoegd dat de bevoegde persoon identificeert. Vak 13c Nummer erkenning/autorisatie Vermeld het nummer/de referentie van de erkenning/autorisatie. Dit nummer of deze referentie wordt afgegeven door de bevoegde autoriteit. Vak 13d Naam Vermeld de naam van de persoon wiens handtekening in vak 13b wordt gezet in een leesbare vorm. Vak 13e Datum Hier moet de datum waarop vak 13b wordt ondertekend, worden ingevuld in de volgende vorm: dd = 2 cijfers voor de dag, mmm = de 3 eerste letters van de maand, jjjj = 4 cijfers voor het jaartal. Vak 14a-14e Algemene vereisten voor de vakken 14a-14e: worden niet gebruikt voor productievrijgave. Breng schaduw of een donkere kleur aan of markeer deze vakken zodanig dat er geen onopzettelijk of onbevoegd gebruik van kan worden gemaakt. Verantwoordelijkheden van de gebruiker/installateur Zet de volgende verklaring op het certificaat om de eindgebruikers erop te wijzen dat zij niet van hun verantwoordelijkheden ontheven worden betreffende installatie en gebruik van een artikel dat door dit formulier wordt vergezeld: „DIT CERTIFICAAT HOUDT NIET AUTOMATISCH TOESTEMMING TOT INSTALLATIE IN. INDIEN DE GEBRUIKER/INSTALLATEUR TE WERK GAAT VOLGENS DE VOORSCHRIFTEN VAN EEN ANDERE LUCHTWAARDIGHEIDSAUTORITEIT DAN DE IN VAK 1 VERMELDE LUCHTWAARDIGHEIDSAUTORITEIT, IS HET VAN ESSENTIEEL BELANG DAT DE GEBRUIKER/INSTALLATEUR ZICH ERVAN VERGEWIST DAT ZIJN/ HAAR LUCHTWAARDIGHEIDSAUTORITEIT DE ARTIKELEN VAN DE IN VAK 1 VERMELDE LUCHTWAARDIGHEIDSAUTORITEIT ACCEPTEERT. DE VERKLARINGEN IN VAKKEN 13a EN 14a VORMEN GEEN INSTALLATIECERTIFICERING. HET ONDERHOUDSRAPPORT VOOR LUCHTVAARTUIGEN MOET IN ALLE GEVALLEN EEN INSTALLATIECERTIFICERING BEVATTEN DIE OVEREENKOMSTIG DE NATIONALE VOORSCHRIFTEN AAN DE GEBRUIKER/INSTALLATEUR IS AFGEGEVEN VOORDAT ER MET HET LUCHTVAARTUIG GEVLOGEN MAG WORDEN.”.
 
-## Aanhangsel II Certificaat van herbeoordeling van de luchtwaardigheid — EASA-formulier 15a  _(pdf blz. 70)_
+## Aanhangsel II Certificaat van herbeoordeling van de luchtwaardigheid — EASA-formulier 15a  _(PB L 224/70)_
 
-## Aanhangsel III Aanhangsel IV  _(pdf blz. 71)_
+## Aanhangsel III Aanhangsel IV  _(PB L 224/71)_
 
-## Aanhangsel V Beperkt bewijs van luchtwaardigheid — EASA-formulier 24  _(pdf blz. 73)_
+## Aanhangsel V Beperkt bewijs van luchtwaardigheid — EASA-formulier 24  _(PB L 224/73)_
 
-## Aanhangsel VI Bewijs van luchtwaardigheid — EASA-formulier 25  _(pdf blz. 74)_
+## Aanhangsel VI Bewijs van luchtwaardigheid — EASA-formulier 25  _(PB L 224/74)_
 
-## Aanhangsel VII Aanhangsel VIII  _(pdf blz. 75)_
+## Aanhangsel VII Aanhangsel VIII  _(PB L 224/75)_
 
 Conformiteitsverklaring voor luchtvaartuigen — EASA-formulier 52 Instructies voor het gebruik van het EASA-formulier 52 Conformiteitsverklaring voor luchtvaartuigen 1. DOEL EN TOEPASSINGSGEBIED 1.1. Het gebruik van de door de uit hoofde van deel 21, sectie A, subdeel F, producerende fabrikant afgegeven conformiteitsverklaring voor luchtvaartuigen wordt beschreven in punt 21.A.130 en de bijhorende aanvaardbare middelen ter naleving. 1.2. Met de krachtens deel 21, sectie A, subdeel G, afgegeven conformiteitsverklaring voor luchtvaartuigen (EASA-formulier 52) wordt beoogd de houder van een toepasselijke erkenning als productieorganisatie in staat te stellen zijn privilege te laten gelden om een individueel bewijs van luchtwaardigheid voor een luchtvaartuig te verkrijgen van de bevoegde autoriteit van de lidstaat van registratie. 2. ALGEMEEN 2.1. De conformiteitsverklaring moet overeenstemmen met het bijgevoegde formaat inclusief de nummers van de vakken en de plaats van elk vak. De opmaak van ieder vak mag evenwel worden aangepast aan de individuele aanvraag, maar niet in zodanige mate dat de conformiteitsverklaring er onherkenbaar door wordt. In geval van twijfel dient u de bevoegde autoriteit te raadplegen. 2.2. De conformiteitsverklaring kan ofwel voorgedrukt ofwel per computer gegenereerd worden; in beide gevallen moeten de regels en tekens duidelijk en goed leesbaar worden afgedrukt. Voorgedrukte formuleringen zijn toegestaan overeenkomstig het aangehechte model maar andere certificeringsverklaringen zijn niet toegestaan. 2.3. U mag het formulier met de typemachine/computer of met de hand invullen indien u blokletters gebruikt om de tekst gemakkelijk leesbaar te maken. De conformiteitsverklaringen mogen worden opgesteld in het Engels en, voor zover van toepassing, in een of meerdere officiële talen van de lidstaten die het afgeven. 2.4. Een afschrift van de verklaring en alle referentiestukken moeten door de erkende productieorganisatie worden bewaard. 3. INVULLEN VAN DE CONFORMITEITSVERKLARING DOOR DE OPSTELLER 3.1. Om van dit document een geldige verklaring te maken moeten alle vakken worden ingevuld. 3.2. Een conformiteitsverklaring mag niet worden afgegeven door de bevoegde autoriteit van de lidstaat van registratie als het ontwerp van het luchtvaartuig en de daarop te monteren producten niet zijn goedgekeurd. 3.3. De in de vakken 9, 10, 11, 12, 13 en 14 in te vullen gegevens mogen een verwijzing zijn naar een apart document dat door de productieorganisatie in haar archieven wordt bewaard, tenzij de bevoegde autoriteit anders beslist. 3.4. Met deze conformiteitsverklaring worden niet alle artikelen van de uitrusting bedoeld die geschikt zouden moeten zijn voor installatie ter naleving van de van toepassing zijnde operationele voorschriften. Evenwel kunnen een aantal individuele artikelen worden opgenomen in vak 10 of in het goedgekeurde typeontwerp. Exploitanten worden derhalve herinnerd aan hun verantwoordelijkheid de naleving van de toepasselijke operationele voorschriften voor hun eigen particuliere exploitanten te garanderen. Vak 1 Vul hier de naam van de lidstaat van vervaardiging in. Vak 2 Hier moet de bevoegde autoriteit worden vermeld uit hoofde waarvan de conformiteitsverklaring wordt afgegeven. Vak 3 Een uniek serienummer moet worden voorgedrukt in dit vak ten behoeve van controle en traceerbaarheid van de verklaring. In het geval van een per computer gegenereerd document hoeft het nummer niet voorgedrukt te zijn, als de computer zodanig geprogrammeerd is dat het een uniek nummer kan produceren en printen. Vak 4 Hier komt de volledige naam en het adres van de organisatie die de verklaring afgeeft. Dit vak mag voorgedrukt zijn. Logo's e.d. zijn toegestaan mits deze in het vak passen. Vak 5 Schrijf het luchtvaartuigtype voluit zoals gedefinieerd in het typecertificaat en het bijbehorende gegevensblad. Vak 6 Referentienummers van het typecertificaat en datum van afgifte voor het desbetreffende luchtvaartuig. Vak 7 Indien het luchtvaartuig geregistreerd is, moeten hier de registratietekens worden ingevuld. Indien het luchtvaartuig niet geregistreerd is, moet hier een teken worden ingevuld dat door de bevoegde autoriteit van de lidstaat aanvaard wordt en, indien van toepassing, door de bevoegde autoriteit van een derde land. Vak 8 Vermeld hier het identificatienummer van de fabrikant ten behoeve van controle, traceerbaarheid en productondersteuning. Soms wordt hiernaar verwezen als serienummer van de fabrikant of nummer van de constructeur. Vak 9 Schrijf het type motor en propeller voluit zoals gedefinieerd in het typecertificaat en het bijhorende gegevensblad. Het identificatienummer van de fabrikant en het bijbehorende adres moeten ook worden vermeld. Vak 10 Goedgekeurde wijzigingen in het ontwerp van de definitie van het luchtvaartuig. Vak 11 Een opsomming van alle toepasselijke luchtwaardigheidsaanwijzingen (of equivalente voorschriften) en een verklaring omtrent naleving hiervan, samen met een beschrijving van de wijze van naleving voor individuele luchtvaartuigen inclusief producten en gemonteerde onderdelen, uitrustingsstukken en apparatuur. Eventuele toekomstige vereisten wat betreft uitvoeringstermijn moeten worden vermeld. Vak 12 Goedgekeurde, niet-opzettelijke afwijking van het goedgekeurde typeontwerp waarnaar soms verwezen wordt als concessie, divergentie of niet-conform ontwerp. Vak 13 Uitsluitend overeengekomen vrijstellingen, afstandsverklaringen of derogaties mogen hier worden opgenomen. Vak 14 Opmerkingen. Eventuele verklaringen, informatie, bijzondere gegevens of beperkingen die van invloed kunnen zijn op de luchtwaardigheid van het luchtvaartuig. Indien dergelijke informatie of gegevens ontbreken, vul „GEEN” in. Vak 15 Vul in „Bewijs van luchtwaardigheid” of „Beperkt bewijs van luchtwaardigheid” al naargelang de toepassing. Vak 16 Bijkomende vereisten zoals meegedeeld door een importerend land moeten in dit vak worden vermeld. Vak 17 De conformiteitsverklaring is geldig als alle vakken op het formulier zijn ingevuld. Een kopie van het testvluchtrapport dient samen met eventueel geregistreerde defecten en rectificatiegegevens door de EPO-houder te worden gearchiveerd. Het rapport moet worden ondertekend als voldoende door het ter zake kundige certificeringspersoneel en een lid van de bemanning, bv. de testpiloot of de boordwerkdeskundige tijdens de testvlucht. De uitgevoerde testvluchten gebeuren overeenkomstig de bepalingen van het kwaliteitssysteem, zoals vastgesteld door punt 21.A.139 en met name 21.A.139, onder b), 1, vi), teneinde te waarborgen dat het luchtvaartuig overeenstemt met de toepasselijke ontwerpgegevens en geschikt is voor veilig gebruik. De opsomming van verschafte (of beschikbaar gestelde) artikelen om te voldoen aan de veilige exploitatieaspecten van deze verklaring moeten door de EPO-houder worden gearchiveerd. Vak 18 De conformiteitsverklaring mag worden ondertekend door de persoon die daartoe geautoriseerd is door de houder van de erkenning als productieorganisatie in overeenstemming met punt 21.A.145, onder d). Gebruik van een stempel is niet toegestaan. Vak 19 Hier moet de naam van de ondertekenaar worden ingevuld in een leesbare vorm, gedrukt of getypt. Vak 20 Hier moet de datum worden vermeld waarop de conformiteitsverklaring is ondertekend. Vak 21 Vermeld hier het door de bevoegde autoriteit verstrekte erkenningsnummer.
 
-## Aanhangsel IX CERTIFICAAT VAN VRIJGAVE VOOR GEBRUIK — EASA-FORMULIER 53  _(pdf blz. 79)_
+## Aanhangsel IX CERTIFICAAT VAN VRIJGAVE VOOR GEBRUIK — EASA-FORMULIER 53  _(PB L 224/79)_
 
 INSTRUCTIES VOOR HET INVULLEN Het vak KORTE BESCHRIJVING VAN DE UITGEVOERDE WERKZAAMHEDEN op EASA-formulier 53 moet een verwijzing bevatten naar de goedgekeurde gegevens die gebruikt zijn om de werkzaamheden uit te voeren. Het vak LOCATIE op EASA-formulier 53 verwijst naar de plaats waar het onderhoud is gepleegd, niet de plaats waar de organisatie haar faciliteiten heeft (indien verschillend).
 
-## Aanhangsel X Certificaten erkenning als productieorganisatie waarnaar in subdeel G van bijlage I (deel 21) wordt verwezen —  _(pdf blz. 81)_
+## Aanhangsel X Certificaten erkenning als productieorganisatie waarnaar in subdeel G van bijlage I (deel 21) wordt verwezen —  _(PB L 224/81)_
 
 EASA-formulier 55
 
-## Aanhangsel XI Akkoordverklaring — EASA-formulier 65 — waarnaar in subdeel F van bijlage I (deel 21) wordt verwezen  _(pdf blz. 83)_
+## Aanhangsel XI Akkoordverklaring — EASA-formulier 65 — waarnaar in subdeel F van bijlage I (deel 21) wordt verwezen  _(PB L 224/83)_
 
-BIJLAGE II Ingetrokken verordening met overzicht van de achtereenvolgende wijzigingen ervan Verordening (EG) nr. 1702/2003 van de Commissie (PB L 243 van 27.9.2003, blz. 6) Verordening (EG) nr. 381/2005 van de Commissie (PB L 61 van 8.3.2005, blz. 3) Verordening (EG) nr. 706/2006 van de Commissie (PB L 122 van 9.5.2006, blz. 16) Verordening (EG) nr. 335/2007 van de Commissie (PB L 88 van 29.3.2007, blz. 40) Verordening (EG) nr. 375/2007 van de Commissie (PB L 94 van 4.4.2007, blz. 3) Verordening (EG) nr. 287/2008 van de Commissie (PB L 87 van 29.3.2008, blz. 3) Verordening (EG) nr. 1057/2008 van de Commissie (PB L 283 van 28.10.2008, blz. 30) Verordening (EG) nr. 1194/2009 van de Commissie (PB L 321 van 8.12.2009, blz. 5)
+## BIJLAGE II Ingetrokken verordening met overzicht van de achtereenvolgende wijzigingen ervan  _(PB L 224/84)_
 
-BIJLAGE III Concordantietabel Verordening (EG) nr. 1702/2003 De onderhavige verordening
+Verordening (EG) nr. 1702/2003 van de Commissie (PB L 243 van 27.9.2003, blz. 6) Verordening (EG) nr. 381/2005 van de Commissie (PB L 61 van 8.3.2005, blz. 3) Verordening (EG) nr. 706/2006 van de Commissie (PB L 122 van 9.5.2006, blz. 16) Verordening (EG) nr. 335/2007 van de Commissie (PB L 88 van 29.3.2007, blz. 40) Verordening (EG) nr. 375/2007 van de Commissie (PB L 94 van 4.4.2007, blz. 3) Verordening (EG) nr. 287/2008 van de Commissie (PB L 87 van 29.3.2008, blz. 3) Verordening (EG) nr. 1057/2008 van de Commissie (PB L 283 van 28.10.2008, blz. 30) Verordening (EG) nr. 1194/2009 van de Commissie (PB L 321 van 8.12.2009, blz. 5)
+
+## BIJLAGE III Concordantietabel  _(PB L 224/85)_
+
+Verordening (EG) nr. 1702/2003 De onderhavige verordening
 
 Artikel 1 Artikel 1
 

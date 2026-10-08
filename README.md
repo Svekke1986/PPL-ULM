@@ -31,7 +31,7 @@ Onofficieel oefenplatform voor de theorie-examens **PPL(A)** (EASA Part-FCL, BCA
 | `img/<vak>/` | Afbeeldingen/bijlagen bij de vragen |
 | `content/<vak>.json` | Uitleg + bron per vraag-ID: `[uitleg, bron, artikel]` |
 | `content/_patches.json` | Correcties op tekst die in de bron-PDF afgebroken is, tekstvervangingen (`_replace`) en gedraaide afbeeldingen (`_rotate`) |
-| `sources/` | Officiële bronteksten (KB ULM van 20/12/2024, SERA en Part 21) als `.md` en per artikel als `.json`, voor een latere vragen-pijplijn. Zie `sources/README.md` |
+| `sources/` | Officiële bronteksten (KB ULM van 20/12/2024, SERA, Aircrew, Air Operations, Part 21, permanente luchtwaardigheid) als `.md` en per artikel als `.json`, voor een latere vragen-pijplijn. Zie `sources/README.md` |
 | `tools/extract_law.py`, `tools/extract_eu.py` | Zetten een wettekst uit het Staatsblad of het EU-Publicatieblad (PDF) om naar `sources/` |
 | `js/bank.js` | **Gegenereerd** door `tools/build.py` |
 

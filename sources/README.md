@@ -7,13 +7,21 @@ dan op één artikel gebaseerd en citeren eruit. Deze teksten worden (nog) niet 
 |---|---|---|
 | `ulm/` | Koninklijk besluit van 20 december 2024 betreffende de ultralichte motorluchtvaartuigen (BS numac 2025000168) | `.pdf` (origineel), `.md` (leesbaar), `.json` (per artikel) |
 | `eu/sera-923-2012-oorspronkelijk` | SERA – Uitvoeringsverordening (EU) nr. 923/2012, **oorspronkelijke versie 2012** (11 artikelen, 67 SERA-punten, 5 aanhangsels) | `.pdf`, `.md`, `.json` (per bepaling, met pdf-pagina) |
-| `eu/part21-748-2012-oorspronkelijk` | Part 21 – Verordening (EU) nr. 748/2012, **oorspronkelijke versie 2012** (12 artikelen, 211 punten 21.A/21.B, aanhangsels) | `.pdf`, `.md`, `.json` |
+| `eu/part21-748-2012-oorspronkelijk` | Part 21 – Verordening (EU) nr. 748/2012, **oorspronkelijke versie 2012** (12 artikelen, 213 punten 21.A/21.B, aanhangsels) | `.pdf`, `.md`, `.json` |
+| `eu/aircrew-1178-2011-oorspronkelijk` | Aircrew – Verordening (EU) nr. 1178/2011, **oorspronkelijke versie 2011**: Part-FCL (FCL.xxx), Part-MED (MED.A–D), bijlagen II–IV (12 artikelen, 230 punten) | 2 × `.pdf` (deel 1 en 2), `.md`, `.json` |
+| `eu/airops-965-2012-oorspronkelijk` | Air Operations – Verordening (EU) nr. 965/2012, **oorspronkelijke versie 2012**: Part-ARO, ORO, CAT, SPA (10 artikelen, 390 punten) | 2 × `.pdf`, `.md`, `.json` |
+| `eu/cont-airworthiness-1321-2014-oorspronkelijk` | Permanente luchtwaardigheid – Verordening (EU) nr. 1321/2014, **oorspronkelijke versie 2014**: Part-M, 145, 66, 147 (9 artikelen, 187 punten) | 2 × `.pdf`, `.md`, `.json` |
 
-> ⚠️ De EU-teksten zijn de versies zoals bekendgemaakt in 2012, **niet geconsolideerd**. Latere wijzigingen ontbreken,
-> bv. in SERA de spreekprocedures van Sectie 14 (toegevoegd door Verordening (EU) 2016/1185) en de herziene VMC-tabel.
+> ⚠️ De EU-teksten zijn de versies zoals oorspronkelijk bekendgemaakt (2011–2014), **niet geconsolideerd**. Latere wijzigingen ontbreken,
+> en dat zijn er voor de PPL/ULM-theorie belangrijke:
+> - SERA: de spreekprocedures van Sectie 14 (toegevoegd door Verordening (EU) 2016/1185) en de herziene VMC-tabel.
+> - Air Operations: **Part-NCO** (niet-commerciële vluchten met eenvoudige luchtvaartuigen, dus de PPL) ontbreekt; dat werd pas
+>   toegevoegd door Verordening (EU) nr. 800/2013.
+> - Permanente luchtwaardigheid: **Part-ML** (lichte luchtvaartuigen) ontbreekt; dat werd toegevoegd door Verordening (EU) 2019/1383.
+> - Aircrew: o.a. de latere wijzigingen voor LAPL/PPL, SPL/BPL (nu in aparte verordeningen) en recentere Part-MED-aanpassingen.
 > Vervang ze door de geconsolideerde versie (EUR-Lex "Geconsolideerde tekst" of EASA Easy Access Rules) voor je er vragen
 > op baseert. Tabellen (VMC-minima, onderscheppingssignalen …) komen in platte tekst niet altijd goed over: bij elke
-> bepaling staat de pdf-pagina, zodat je ze in de PDF kunt nakijken.
+> bepaling staat de pagina van het Publicatieblad (bv. "L 281/37"), zodat je ze in de PDF kunt nakijken.
 
 ## Formaat van de JSON
 ```json
@@ -24,7 +32,7 @@ dan op één artikel gebaseerd en citeren eruit. Deze teksten worden (nog) niet 
   ]
 }
 ```
-De EU-teksten gebruiken `"bepalingen": [{ "id": "SERA.5001", "titel": "VMC Minima ...", "pagina": 25, "tekst": "..." }]`.
+De EU-teksten gebruiken `"bepalingen": [{ "id": "SERA.5001", "titel": "VMC Minima ...", "pagina": "L 281/25", "tekst": "..." }]`.
 
 ## Opnieuw aanmaken of een tekst toevoegen
 ```bash
