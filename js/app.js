@@ -238,19 +238,26 @@
     };
   }
 
+  // Kaart met de vraag, met de kompasrekenmachine ernaast (breed scherm) of eronder (mobiel).
+  function withCompassCalc(cardHtml, q) {
+    const side = window.COMPASSCALC ? window.COMPASSCALC.html(q) : '';
+    return side
+      ? `<div class="qa-layout"><div class="qa-main">${cardHtml}</div><aside class="qa-side">${side}</aside></div>`
+      : cardHtml;
+  }
+
   function renderPractice() {
     const P = practice;
     const answered = P.chosen !== null;
-    app.innerHTML = practiceHeader() + `
+    app.innerHTML = practiceHeader() + withCompassCalc(`
       <div class="card">
         ${questionHtml(P.q, { chosen: P.chosen, reveal: answered, locked: answered, counter: `Vraag ${P.count}` })}
-        ${window.COMPASSCALC ? window.COMPASSCALC.html(P.q) : ''}
         ${answered ? feedbackHtml(P.q, P.chosen) : ''}
         <div class="quiz-actions">
           <a class="btn" href="#/${P.licence.toLowerCase()}">← Vakken</a>
           <div class="btn-row"><button class="btn btn-primary" id="next">${answered ? 'Volgende vraag →' : 'Overslaan →'}</button></div>
         </div>
-      </div>`;
+      </div>`, P.q);
     app.querySelectorAll('.option').forEach(b => b.onclick = () => {
       if (P.chosen !== null) return;
       P.chosen = +b.dataset.i;
@@ -461,15 +468,14 @@
         <label for="calctype">Soort oefening</label>
         <select id="calctype"><option value="">Alle soorten (willekeurig)</option>${opts}</select>
       </div>
-      <div class="card">
+      ${withCompassCalc(`<div class="card">
         ${questionHtml(C.q, { chosen: C.chosen, reveal: answered, locked: answered, counter: `Oefening ${C.count} · ${esc(C.q.typeName)}` })}
-        ${window.COMPASSCALC ? window.COMPASSCALC.html(C.q) : ''}
         ${answered ? feedbackHtml(C.q, C.chosen) : ''}
         <div class="quiz-actions">
           <a class="btn" href="#/${C.setKey}">← ${esc(SET.groupWord)}</a>
           <button class="btn btn-primary" id="next">${answered ? 'Nieuwe oefening →' : 'Andere oefening →'}</button>
         </div>
-      </div>`;
+      </div>`, C.q)}`;
     app.querySelectorAll('.option').forEach(b => b.onclick = () => {
       if (C.chosen !== null) return;
       C.chosen = +b.dataset.i;
