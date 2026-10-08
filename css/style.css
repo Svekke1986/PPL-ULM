@@ -258,3 +258,8 @@ select {
 /* Weerbericht (METAR/TAF) */
 .wx-code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 1rem; line-height: 1.6; padding: 12px 14px; margin: 0 0 14px; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--border); word-spacing: 2px; overflow-wrap: anywhere; }
 .wx-code mark { background: #fde68a; color: #1f2937; padding: 1px 3px; border-radius: 4px; font-weight: 700; }
+
+/* Homepage: secties Licentie en Oefeningen */
+.home-section { margin-top: 28px; }
+.home-section .section-title { margin: 0; font-size: 1.35rem; padding-bottom: 6px; border-bottom: 2px solid var(--border); }
+.home-section .section-sub { margin: 8px 0 14px; }
