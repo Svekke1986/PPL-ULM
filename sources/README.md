@@ -5,6 +5,7 @@ dan op één artikel gebaseerd en citeren eruit. Deze teksten worden (nog) niet 
 
 | Map | Tekst | Bestanden |
 |---|---|---|
+| `bcaa/altmoc-fcl-2022-01` | BCAA/AltMoC/FCL/2022-01 – aantal vragen, verdeling per vak en duur van de theorie-examens PPL/LAPL/BPL/SPL in België (geldig vanaf 01/02/2022); basis voor `LICENCES` in `js/config.js` | `.pdf`, `.md` (tekst per pagina) |
 | `ulm/` | Koninklijk besluit van 20 december 2024 betreffende de ultralichte motorluchtvaartuigen (BS 18.02.2025, numac 2025000168; tekst gecontroleerd tegen etaamb.openjustice.be: identiek) | `.pdf` (origineel), `.md` (leesbaar), `.json` (per artikel) |
 | `eu/sera-923-2012-oorspronkelijk` | SERA – Uitvoeringsverordening (EU) nr. 923/2012, **oorspronkelijke versie 2012** (11 artikelen, 67 SERA-punten, 5 aanhangsels) | `.pdf`, `.md`, `.json` (per bepaling, met pagina in het Publicatieblad) |
 | `eu/ongevalsonderzoek-996-2010-oorspronkelijk` | Ongevalsonderzoek – Verordening (EU) nr. 996/2010, **oorspronkelijke versie 2010** (26 artikelen + bijlage met voorbeelden van ernstige incidenten) | `.pdf`, `.md`, `.json` |
