@@ -163,7 +163,7 @@ Regulation (EU) 2024/1108
 
 4.By way of derogation from paragraphs 1 to 3 of this Article, aircraft, including any installed product, part and appliance, which are not registered in a Member State shall be exempted from the provisions of Subparts H and I of Section A of Annex I (Part 21) and Subparts H and I of Section A of Annex Ib (Part 21 Light). They shall also be exempted from the provisions of Subpart P of Section A of Annex I (Part 21) and Subpart P of Section A of Annex Ib (Part 21 Light), except where aircraft identification marks are prescribed by a Member State.
 
-## Article 2a - Transitional arrangements for certificates previously issued under Annex I (Part 21)  _(CR)_
+## Article 2a Transitional arrangements for certificates previously issued under Annex I (Part 21)  _(CR)_
 
 Regulation (EU) 2022/1358
 
@@ -19513,7 +19513,7 @@ The competent authority shall issue a permit to fly (EASA Form 20a, see Appendix
 
 (c) when the competent authority, through its own investigations, which may include inspections, or through procedures agreed with the applicant, is satisfied that the aircraft conforms to the design defined under point 21.A.708 before flight.
 
-## Appendix I — EASA Form 1 — Authorised Release Certificate  _(IR)_
+## Appendix I EASA Form 1 — Authorised Release Certificate  _(IR)_
 
 Regulation (EU) No 69/2014
 
@@ -19733,7 +19733,7 @@ WHERE THE USER/INSTALLER PERFORMS WORK IN ACCORDANCE WITH REGULATIONS OF AN AIRW
 
 STATEMENTS IN BLOCKS 13A AND 14A DO NOT CONSTITUTE INSTALLATION CERTIFICATION. IN ALL CASES AIRCRAFT MAINTENANCE RECORDS MUST CONTAIN AN INSTALLATION CERTIFICATION ISSUED IN ACCORDANCE WITH THE NATIONAL REGULATIONS BY THE USER/INSTALLER BEFORE THE AIRCRAFT MAY BE FLOWN.'
 
-## Appendix II — EASA Form 15a, 15c and 15d — Airworthiness Review Certificate  _(IR)_
+## Appendix II EASA Form 15a, 15c and 15d — Airworthiness Review Certificate  _(IR)_
 
 Regulation (EU) 2024/1108
 
@@ -19765,7 +19765,7 @@ AIRWORTHINESS REVIEW CERTIFICATE (ARC) / (for unmanned aircraft (UA) that comply
 
 EASA Form 15d - Issue 1 / (*)The issuer of the form may tailor it to their needs by deleting the name, the certifying statement, the reference to the subject aircraft and the issuance details that are not relevant for their use.
 
-## Appendix III — EASA Form 20a — Permit to Fly  _(IR)_
+## Appendix III EASA Form 20a — Permit to Fly  _(IR)_
 
 Regulation (EU) 2024/1108
 
@@ -19793,7 +19793,7 @@ This permit to fly is issued pursuant to Regulation (EU) 2018/1139 and certifies
 
 EASA Form 20a — Issue 2 / (*) For use by the State of registry.
 
-## Appendix IV — EASA Form 20b — Permit to Fly (issued by approval organisations)  _(IR)_
+## Appendix IV EASA Form 20b — Permit to Fly (issued by approval organisations)  _(IR)_
 
 Regulation (EU) 2024/1108
 
@@ -19821,7 +19821,7 @@ This permit to fly is issued pursuant to Regulation (EU) 2018/1139 and certifies
 
 EASA Form 20b— Issue 2 / (*) For use by the organization approval holder.
 
-## Appendix V — EASA Form 24 — Restricted Certificate of Airworthiness  _(IR)_
+## Appendix V EASA Form 24 — Restricted Certificate of Airworthiness  _(IR)_
 
 Regulation (EU) 2024/1108
 
@@ -19849,7 +19849,7 @@ EASA Form 24 — Issue 3 / (*) For use by the State of registry. / (**) Delete a
 
 This restricted certificate of airworthiness shall be carried on board during all flights.
 
-## Appendix VI — EASA Form 25 — Certificate of Airworthiness  _(IR)_
+## Appendix VI EASA Form 25 — Certificate of Airworthiness  _(IR)_
 
 Regulation (EU) 2024/1108
 
@@ -19877,7 +19877,7 @@ EASA Form 25 — Issue 3 / (*) For use by the State of registry.
 
 This certificate of airworthiness shall be carried on board during all flights.
 
-## Appendix VII — EASA Form 45 — Noise Certificate  _(IR)_
+## Appendix VII EASA Form 45 — Noise Certificate  _(IR)_
 
 Regulation (EU) 2025/1065
 
@@ -20025,7 +20025,7 @@ Block 20Signature
 
 Block 20 contains the signature of the officer issuing the noise certificate. Other information may be added such as seal and stamp.
 
-## Appendix VIII — EASA Form 52— Aircraft/Unmanned Aircraft System statement of conformity  _(IR)_
+## Appendix VIII EASA Form 52— Aircraft/Unmanned Aircraft System statement of conformity  _(IR)_
 
 Regulation (EU) 2024/1108
 
@@ -20139,7 +20139,7 @@ Block 20The date on which the statement of conformity is signed must be given.
 
 Block 21The competent authority approval reference must be quoted.
 
-## Appendix IX — EASA Form 53 — Certificate of Release to Service  _(IR)_
+## Appendix IX EASA Form 53 — Certificate of Release to Service  _(IR)_
 
 Regulation (EU) No 748/2012
 
@@ -20155,7 +20155,7 @@ The Block BRIEF DESCRIPTION OF WORK PERFORMED appearing in EASA FORM 53 should i
 
 The Block LOCATION appearing in EASA FORM 53 refers to the location where the maintenance has been performed, not to the location of the facilities of the organisation (if different).
 
-## Appendix X — EASA Form 55 — Production organisation approval certificate  _(IR)_
+## Appendix X EASA Form 55 — Production organisation approval certificate  _(IR)_
 
 Regulation (EU) 2024/1108
 
@@ -20203,7 +20203,7 @@ Revision No.: | For [COMPETENT AUTHORITY IDENTIFICATION]
 
 EASA Form 55b - Issue 3
 
-## Appendix XI – EASA Form 65 – Letter of Agreement for production without a production organisation approval  _(IR)_
+## Appendix XI EASA Form 65 – Letter of Agreement for production without a production organisation approval  _(IR)_
 
 Regulation (EU) 2024/1108
 
@@ -20217,7 +20217,7 @@ Letter of agreement referred to in Subpart F of Annex I (Part 21)
 
 EASA Form 65 – Issue 4 / (*) Or 'EASA', if EASA is the competent authority. / (**) Delete for third countries.
 
-## Appendix XII — Categories of flight tests and associated flight test crew qualifications  _(IR)_
+## Appendix XII Categories of flight tests and associated flight test crew qualifications  _(IR)_
 
 Regulation (EU) 2015/1039
 
@@ -32409,7 +32409,7 @@ Regulation (EU) 2022/1361
 
 (e) If the competent authority detects a non-compliance of the natural or legal person issuing statements of conformity (EASA Form 52B) or authorised release certificates (EASA Form 1) with the applicable requirements of Section A and the implementation of safety measures mandated according to points (c) and (d) of point 21L.B.15, the competent authority shall act in accordance with points 21L.B.21 and 21L.B.22.
 
-## Appendix I — EASA Form 24B — Restricted certificate of airworthiness  _(IR)_
+## Appendix I EASA Form 24B — Restricted certificate of airworthiness  _(IR)_
 
 Regulation (EU) 2022/1358
 
@@ -32441,7 +32441,7 @@ This certificate shall be carried on board during all flights.
 
 (4) 2For use by the Member State of registry
 
-## Appendix II — EASA Form 45B — Restricted noise certificate  _(IR)_
+## Appendix II EASA Form 45B — Restricted noise certificate  _(IR)_
 
 Regulation (EU) 2022/1358
 
@@ -32469,7 +32469,7 @@ Remarks
 
 EASA Form 45B — Issue 1
 
-## Appendix III —EASA Form 52B — Aircraft statement of conformity  _(IR)_
+## Appendix III EASA Form 52B — Aircraft statement of conformity  _(IR)_
 
 Regulation (EU) 2022/1358
 
@@ -32593,7 +32593,7 @@ Block 20The date on which the statement of conformity is signed should be given.
 
 Block 21The competent authority approval reference should be quoted.
 
-## Appendix IV — EASA Form 53B — Certificate of release to service  _(IR)_
+## Appendix IV EASA Form 53B — Certificate of release to service  _(IR)_
 
 Regulation (EU) 2022/1358
 

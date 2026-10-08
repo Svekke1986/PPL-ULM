@@ -18185,11 +18185,11 @@ Language proficiency erosion (language attrition) occurs rapidly over time: the 
 
 It is documented that one’s language and communicative proficiency, even in one’s native language, deteriorates sharply under stress; therefore, regular participation in language training is recommended.
 
-## Appendix 1 — NOTAM FORMAT  _(IR)_
+## Appendix 1 NOTAM FORMAT  _(IR)_
 
 Delegated Regulation (EU) 2020/2148
 
-## Appendix 2 — SNOWTAM FORMAT  _(IR)_
+## Appendix 2 SNOWTAM FORMAT  _(IR)_
 
 Delegated Regulation (EU) 2020/2148
 

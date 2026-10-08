@@ -7,6 +7,7 @@ dan op één artikel gebaseerd en citeren eruit. Deze teksten worden (nog) niet 
 |---|---|---|
 | `ulm/` | Koninklijk besluit van 20 december 2024 betreffende de ultralichte motorluchtvaartuigen (BS numac 2025000168) | `.pdf` (origineel), `.md` (leesbaar), `.json` (per artikel) |
 | `eu/sera-923-2012-oorspronkelijk` | SERA – Uitvoeringsverordening (EU) nr. 923/2012, **oorspronkelijke versie 2012** (11 artikelen, 67 SERA-punten, 5 aanhangsels) | `.pdf`, `.md`, `.json` (per bepaling, met pagina in het Publicatieblad) |
+| `eu/ongevalsonderzoek-996-2010-oorspronkelijk` | Ongevalsonderzoek – Verordening (EU) nr. 996/2010, **oorspronkelijke versie 2010** (26 artikelen + bijlage met voorbeelden van ernstige incidenten) | `.pdf`, `.md`, `.json` |
 | `eu/part21-748-2012-oorspronkelijk` | Part 21 – Verordening (EU) nr. 748/2012, **oorspronkelijke versie 2012** (12 artikelen, 213 punten 21.A/21.B, aanhangsels) | `.pdf`, `.md`, `.json` |
 | `eu/aircrew-1178-2011-oorspronkelijk` | Aircrew – Verordening (EU) nr. 1178/2011, **oorspronkelijke versie 2011**: Part-FCL (FCL.xxx), Part-MED (MED.A–D), bijlagen II–IV (12 artikelen, 230 punten) | 2 × `.pdf` (deel 1 en 2), `.md`, `.json` |
 | `eu/airops-965-2012-oorspronkelijk` | Air Operations – Verordening (EU) nr. 965/2012, **oorspronkelijke versie 2012**: Part-ARO, ORO, CAT, SPA (10 artikelen, 390 punten) | 2 × `.pdf`, `.md`, `.json` |
@@ -35,7 +36,9 @@ oorspronkelijke (verouderde) Nederlandstalige versies, handig voor de Nederlands
 | `easa/part21.json` / `.md` | Initial Airworthiness (748/2012): Part 21 en **Part 21 Light** — 1 183 bepalingen | Revision November 2025 |
 | `easa/cont-airworthiness.json` / `.md` | Continuing Airworthiness (1321/2014): **Part-ML**, Part-M, CAMO, CAO, 145, 66, 147 — 1 166 bepalingen | Revision September 2025 |
 | `easa/aerodromes.json` / `.md` | Aerodromes (139/2014): ADR-regels en CS ADR-DSN (markeringen, borden, lichten) — 1 200 bepalingen | Revision March 2026 |
-| `easa/atm-ans.json` / `.md` | ATM/ANS (2017/373): o.a. **Part-MET** (METAR/TAF, MET.TR.200), Part-ATS, Part-AIS — 1 335 bepalingen | Revision March 2025 |
+| `easa/atm-ans.json` / `.md` | ATM/ANS (2017/373): o.a. **Part-MET** (METAR/TAF, MET.TR.200), Part-ATS, Part-AIS — 1 348 bepalingen | Revision March 2025 |
+| `easa/basic-regulation.json` / `.md` | Basisverordening (2018/1139): 141 artikelen + bijlagen I–X (o.a. **bijlage I**: luchtvaartuigen buiten EASA, zoals ULM's tot 300/450 kg — met nationale opt-out tot 600 kg) | Revision January 2023 |
+| `easa/occurrence-reporting.json` / `.md` | Voorvalmelding (376/2014) met GM — 107 bepalingen | Revision September 2023 |
 
 Elke bepaling: `{"id": "SERA.14083", "soort": "IR|AMC|GM|CR|CS", "titel": "...", "kop1": "ANNEX ...", "kop2": "SECTION 14 ...", "tekst": "..."}`.
 De eerste regel van de tekst noemt meestal de wijzigende verordening of ED Decision (bv. "Regulation (EU) 2024/404").

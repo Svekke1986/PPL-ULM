@@ -25,6 +25,9 @@ PKG = "{http://schemas.microsoft.com/office/2006/xmlPackage}"
 # Kopstijlen van de Easy Access Rules → soort bepaling
 PROVISION = re.compile(r"^Heading\d(CR|IR|AMC|GM|CS)$")
 CONTEXT = re.compile(r"^Heading[1-3]$")  # PART / ANNEX / SUBPART / SECTION / CHAPTER
+# Sommige documenten (bv. de Basic Regulation) gebruiken gewone kopstijlen: dan telt de tekst ("Article 9 – …").
+PLAIN = re.compile(r"^Heading[4-6]$")
+PLAIN_TEXT = re.compile(r"^(Article|ANNEX|Annex|Appendix)\s+[\dIVX]")
 _REF = r"(?:(?:Article|Appendix|Annex)\s+[\w().-]+|[A-Z0-9][A-Z0-9-]*(?:\.[A-Z0-9][A-Za-z0-9]*)+(?:\([a-z0-9]+\))*)"
 # Een kop kan naar meerdere punten verwijzen: "AMC1 FCL.115; FCL.120; FCL.210 Titel"
 ID = re.compile(rf"^((?:AMC|GM|CS)\d*\s+)?({_REF}(?:\s*[;,&]\s*{_REF})*)\s*(.*)$")
@@ -80,25 +83,35 @@ def convert(path):
         if not txt or st.startswith("TOC"):
             continue
         m = PROVISION.match(st)
+        if not m and PLAIN.match(st) and PLAIN_TEXT.match(txt):
+            m = re.match(r"(IR)", "IR")
         if m:
             started = True
             idm = ID.match(txt)
             pid = ((idm.group(1) or "") + idm.group(2)).strip() if idm else txt[:80]
-            cur = {"id": re.sub(r"\s+", " ", pid), "soort": m.group(1), "titel": (idm.group(3) if idm else "").strip(),
+            cur = {"id": re.sub(r"\s+", " ", pid), "soort": m.group(1), "titel": (idm.group(3) if idm else "").strip(" –—-"),
                    **{k: v for k, v in context.items()}, "tekst": []}
             provisions.append(cur)
             continue
-        if CONTEXT.match(st) and started:
+        if CONTEXT.match(st) and (started or re.match(r"^ANNEX [IVX]+\b", txt)):
+            started = True
             level = int(st[7])
             context = {k: v for k, v in context.items() if int(k[-1]) < level}
             context[f"kop{level}"] = txt
+            if cur is not None and cur["id"].startswith("Annex ") and not cur["tekst"] and not re.match(r"^ANNEX ", txt):
+                cur["titel"] = (cur["titel"] + " – " if cur["titel"] else "") + txt  # ondertitel van de bijlage
+                continue
             cur = None
+            am = re.match(r"^(ANNEX [IVX]+)\b\s*[–—-]?\s*(.*)$", txt)
+            if am:  # tekst die direct onder een bijlage staat (bv. de essentiële eisen) niet verliezen
+                cur = {"id": "Annex " + am.group(1).split()[1], "soort": "IR", "titel": am.group(2), **context, "tekst": []}
+                provisions.append(cur)
             continue
         if cur is not None:
             cur["tekst"].append(txt)
     for p in provisions:
         p["tekst"] = "\n".join(p["tekst"])
-    return provisions
+    return [p for p in provisions if p["tekst"] or not p["id"].startswith("Annex ")]
 
 
 def to_markdown(meta, provisions):

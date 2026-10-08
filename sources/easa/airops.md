@@ -5,7 +5,7 @@
 - © European Union / EASA. Hergebruik toegestaan met bronvermelding (zie copyright notice in de Easy Access Rules).
 - IR = de regel zelf (verordening), AMC = aanvaardbare wijze van naleving, GM = toelichting.
 
-## Article 1 - Subject matter and scope  _(CR)_
+## Article 1 Subject matter and scope  _(CR)_
 
 Regulation (EU) 2025/133
 
@@ -31,7 +31,7 @@ Regulation (EU) 2025/133
 
 (b) operations conducted under instrument flight rules.
 
-## Article 2 - Definitions  _(CR)_
+## Article 2 Definitions  _(CR)_
 
 Regulation (EU) 2025/133
 
@@ -203,7 +203,7 @@ VEMS FLIGHT
 
 (c) The VEMS dispatch centre is a location where, if established, the coordination and tasking of VEMS missions takes place.
 
-## Article 3 - Oversight capabilities  _(CR)_
+## Article 3 Oversight capabilities  _(CR)_
 
 Regulation (EU) 2018/394
 
@@ -245,7 +245,7 @@ INSPECTIONS BY PERSONNEL AUTHORISED BY THE COMPETENT AUTHORITY
 
 Inspections performed by personnel authorised by the competent authority to perform oversight or certification tasks means announced or unannounced inspections, including in-flight inspections, to oversee any operations in accordance with this Regulation.
 
-## Article 4 - Ramp inspections  _(CR)_
+## Article 4 Ramp inspections  _(CR)_
 
 Regulation (EU) 2018/1042
 
@@ -265,7 +265,7 @@ GENERAL — ALCOHOL TESTING
 
 If alcohol testing of flight crew and cabin crew is carried out by other authorised officials, e.g. by the police, and outside the framework of the ramp inspection programme of Subpart RAMP of Annex II, those other authorised officials do not need to comply with the requirements for qualification of inspectors of Subpart RAMP of Annex II. Member States should ensure that these officials are qualified for carrying out alcohol tests.
 
-## Article 5 - Air operations  _(CR)_
+## Article 5 Air operations  _(CR)_
 
 Regulation (EU) 2025/133
 
@@ -325,7 +325,7 @@ In the case of points (a), (b) and (c) of the first subparagraph, the training o
 
 7.Flights taking place immediately before, during or immediately after specialised operations and directly connected to those operations shall be operated in accordance with paragraphs 3, 4 and 6, as applicable. Except for crew members, persons other than those indispensable to the mission shall not be carried on board.
 
-## Article 6 - Derogations  _(CR)_
+## Article 6 Derogations  _(CR)_
 
 Regulation (EU) 2025/133
 
@@ -403,7 +403,7 @@ MARGINAL ACTIVITY
 
 The term ‘marginal activity’ should be understood as representing a very minor part of the overall activity of an organisation, mainly for the purpose of promoting itself or attracting new students or members. An organisation intending to offer such flights as regular business activity is not considered to meet the condition of marginal activity. Also, flights organised with the sole intent to generate income for the organisation, are not considered to be a marginal activity.
 
-## Article 7 - Air operator certificates  _(CR)_
+## Article 7 Air operator certificates  _(CR)_
 
 Regulation (EU) No 965/2012
 
@@ -427,7 +427,7 @@ The conversion report shall describe:
 
 The conversion report shall include copies of all documents necessary to demonstrate the elements set out in points (a) to (c), including copies of the relevant national requirements and procedures.
 
-## Article 8 - Flight time limitations  _(CR)_
+## Article 8 Flight time limitations  _(CR)_
 
 Regulation (EU) 2024/1111
 
@@ -441,7 +441,7 @@ Regulation (EU) 2024/1111
 
 5.An IAM operator shall, as regards flight time limitations, comply with the requirements specified in the national law of the Member State in which the operator has its principal place of business, or, where the operator has no principal place of business, the place where the operator is established or resides.
 
-## Article 9 - Minimum equipment lists  _(CR)_
+## Article 9 Minimum equipment lists  _(CR)_
 
 Regulation (EU) No 71/2014
 
@@ -451,19 +451,19 @@ After the entry into force of this Regulation any change to the MEL referred to 
 
 Any change to an MEL referred to in the first subparagraph, for which an MMEL has not been established as part of the operational suitability data, shall continue to be made in accordance with the MMEL accepted by the State of Operator or Registry as applicable.
 
-## Article 9a - Flight and cabin crew training  _(CR)_
+## Article 9a Flight and cabin crew training  _(CR)_
 
 Regulation (EU) No 71/2014
 
 Operators shall ensure that flight crew and cabin crew members who are already in operation and have completed training in accordance with Subparts FC and CC of Annex III which did not include the mandatory elements established in the relevant operational suitability data, undertake training covering those mandatory elements not later than 18 December 2017 or two years after the approval of the operational suitability data, whichever is the latest.
 
-## Article 9aa - Flight crew requirements for maintenance check flights  _(CR)_
+## Article 9aa Flight crew requirements for maintenance check flights  _(CR)_
 
 Regulation (EU) 2019/1387
 
 A pilot having acted, before 25 September 2019, as a pilot-in-command on a maintenance check flight that in accordance with the definition in point SPO.SPEC.MCF.100 in Annex VIII is categorised as a Level A maintenance check flight, shall be given credit for the purpose of complying with point SPO.SPEC.MCF.115(a)(1) of that Annex. In that case, the operator shall ensure that the pilot-in-command receives a briefing on any differences identified between the operating practices established before 25 September 2019 and the obligations provided in Section 5 of Subpart E of Annex VIII to this Regulation including those derived from the related procedures established by the operator.
 
-## Article 9b - Review  _(CR)_
+## Article 9b Review  _(CR)_
 
 Regulation (EU) 2021/1296
 
@@ -489,7 +489,7 @@ The review shall assess the impact of at least the following on the alertness of
 
 That review shall involve relevant expertise and shall be based on data gathered, with the assistance of Member States and the Agency, on a long-term basis.
 
-## Article 10 - Entry into force  _(CR)_
+## Article 10 Entry into force  _(CR)_
 
 Regulation (EU) 2025/133
 
@@ -585,7 +585,7 @@ The President
 
 José Manuel BARROSO
 
-## Annex I — Definitions for terms used in Annexes II to IX  _(IR)_
+## Annex I Definitions for terms used in Annexes II to IX  _(IR)_
 
 Regulation (EU) 2025/133
 
@@ -57319,13 +57319,13 @@ FLIGHT CREW TRAINING AND CHECKING
 
 (d) Training and checking should make full use of full flight simulators (FFSs) for normal, abnormal, and emergency procedures related to all aspects of helicopter offshore operations (HOFO).
 
-## SPA.SET -IMC.100 SET-IMC operations  _(IR)_
+## SPA.SET IMC.100 SET-IMC operations  _(IR)_
 
 Regulation (EU) 2017/363
 
 In commercial air transport (CAT) operations, single-engined turbine aeroplanes shall only be operated at night or in IMC if the operator has been granted a SET-IMC approval by the competent authority.
 
-## SPA.SET -IMC.105 SET-IMC operations approval  _(IR)_
+## SPA.SET IMC.105 SET-IMC operations approval  _(IR)_
 
 Regulation (EU) 2019/1387
 
@@ -57355,7 +57355,7 @@ To obtain a SET-IMC approval by the competent authority, the operator shall prov
 
 (e) a safety risk assessment has been performed, including the determination of an acceptable risk period if an operator intends to make use of it.
 
-## AMC1 SPA.SET -IMC.105 SET-IMC operations approval  _(AMC)_
+## AMC1 SPA.SET IMC.105 SET-IMC operations approval  _(AMC)_
 
 ED Decision 2017/004/R
 
@@ -57369,7 +57369,7 @@ After obtaining the initial approval, the operator should make available to its 
 
 (c) the number of occurrences sorted by type.
 
-## AMC1 SPA.SET -IMC.105(a) SET-IMC operations approval  _(AMC)_
+## AMC1 SPA.SET IMC.105(a) SET-IMC operations approval  _(AMC)_
 
 ED Decision 2017/004/R
 
@@ -57381,7 +57381,7 @@ TURBINE ENGINE RELIABILITY
 
 (c) The in-service experience with the intended engine-airframe combination should be at least 100 000 h, demonstrating the required level of reliability. If this experience has not been accumulated, then, based on analysis or test, in-service experience with a similar or related type of airframe and turbine engine might be considered by the TC/STC holder to develop an equivalent safety argument in order to demonstrate that the reliability criteria are achievable.
 
-## AMC1 SPA.SET -IMC.105(b) SET-IMC operations approval  _(AMC)_
+## AMC1 SPA.SET IMC.105(b) SET-IMC operations approval  _(AMC)_
 
 ED Decision 2017/004/R
 
@@ -57407,7 +57407,7 @@ The engine reliability programme should include, as a minimum, the engine hours 
 
 The actual period selected should reflect the global utilisation and the relevance of the experience included (e.g. early data may not be relevant due to subsequent mandatory modifications that affected the power loss rate). After the introduction of a new engine variant and whilst global utilisation is relatively low, the total available experience may have to be used to try to achieve a statistically meaningful average.
 
-## AMC1 SPA.SET -IMC.105(c) SET-IMC operations approval  _(AMC)_
+## AMC1 SPA.SET IMC.105(c) SET-IMC operations approval  _(AMC)_
 
 ED Decision 2017/004/R
 
@@ -57503,7 +57503,7 @@ The following items should be included into the list of required items to be che
 
 Following conversion training and checking, the next recurrent training session and the next OPCs including SET-IMC operations items should be conducted in a suitable FFS or FSTD, where available.
 
-## AMC2 SPA.SET -IMC.105(c) SET-IMC operations approval  _(AMC)_
+## AMC2 SPA.SET IMC.105(c) SET-IMC operations approval  _(AMC)_
 
 ED Decision 2017/004/R
 
@@ -57513,7 +57513,7 @@ CREW COMPOSITION
 
 (b) A lesser number of flight hours under IFR on the relevant type or class of aeroplane may be acceptable to the competent authority when the flight crew member has significant previous IFR experience.
 
-## AMC1 SPA.SET -IMC.105(d)(2) SET-IMC operations approval  _(AMC)_
+## AMC1 SPA.SET IMC.105(d)(2) SET-IMC operations approval  _(AMC)_
 
 ED Decision 2017/004/R
 
@@ -57555,7 +57555,7 @@ The total duration of the risk period per flight should not exceed 15 min unless
 
 (e) Landing sites suitable for a diversion or forced landing should be programmed into the navigation system so that track and distance to the landing sites are immediately and continuously available. None of these preprogrammed positions should be altered in-flight.
 
-## AMC2 SPA.SET -IMC.105(d)(2) SET-IMC operations approval  _(AMC)_
+## AMC2 SPA.SET IMC.105(d)(2) SET-IMC operations approval  _(AMC)_
 
 ED Decision 2017/004/R
 
@@ -57575,7 +57575,7 @@ The operator should ensure, to the extent possible, that the arrival procedures 
 
 The operator should ensure that any planned or diversionary route should be selected and be flown at an altitude such that, in the event of power loss, the pilot is able to make a safe landing on a landing site.
 
-## AMC3 SPA.SET -IMC.105(d)(2) SET-IMC operations approval  _(AMC)_
+## AMC3 SPA.SET IMC.105(d)(2) SET-IMC operations approval  _(AMC)_
 
 ED Decision 2017/004/R
 
@@ -57589,7 +57589,7 @@ A landing site is an aerodrome or an area where a safe forced landing can be per
 
 (c) Both ends of the landing area, or only the zone in front of the landing area for one-way landing areas, should be clear of any obstacle which may be a hazard during the landing phase.
 
-## GM1 SPA.SET -IMC.105(d)(2) SET-IMC operations approval  _(GM)_
+## GM1 SPA.SET IMC.105(d)(2) SET-IMC operations approval  _(GM)_
 
 ED Decision 2017/004/R
 
@@ -57615,7 +57615,7 @@ LANDING SITE
 
 the surface of the landing area should allow a safe forced landing to be conducted.
 
-## GM2 SPA.SET -IMC.105(d)(2) SET-IMC operations approval  _(GM)_
+## GM2 SPA.SET IMC.105(d)(2) SET-IMC operations approval  _(GM)_
 
 ED Decision 2017/004/R
 
@@ -57715,7 +57715,7 @@ Probability in % | Description
 
 99-100 | Certain
 
-## AMC1 SPA.SET -IMC.105(d)(4) SET-IMC operations approval  _(AMC)_
+## AMC1 SPA.SET IMC.105(d)(4) SET-IMC operations approval  _(AMC)_
 
 ED Decision 2017/004/R
 
@@ -57723,7 +57723,7 @@ CONTINGENCY PROCEDURES
 
 When a risk period is used during the take-off or landing phase, the contingency procedures should include appropriate information for the crew on the path to be followed after an engine failure in order to minimise to the greatest extent possible the risk to people on the ground.
 
-## SPA.SET -IMC.110 Equipment requirements for SET-IMC operations  _(IR)_
+## SPA.SET IMC.110 Equipment requirements for SET-IMC operations  _(IR)_
 
 Regulation (EU) 2021/1296
 
@@ -57767,7 +57767,7 @@ Aeroplanes used for SET-IMC operations shall be equipped with all the following 
 
 (l) an emergency engine power control device that permits continuing operation of the engine at a sufficient power range to safely complete the flight in the event of any reasonably probable failure of the fuel/energy control unit.
 
-## AMC1 SPA.SET -IMC.110(b) Equipment requirements for SET-IMC operations  _(AMC)_
+## AMC1 SPA.SET IMC.110(b) Equipment requirements for SET-IMC operations  _(AMC)_
 
 ED Decision 2017/004/R
 
@@ -57775,7 +57775,7 @@ ATTITUDE INDICATORS
 
 A backup or standby attitude indicator built in the glass cockpit installations is an acceptable means of compliance for the second attitude indicator.
 
-## AMC1 SPA.SET -IMC.110(d) Equipment requirements for SET-IMC operations  _(AMC)_
+## AMC1 SPA.SET IMC.110(d) Equipment requirements for SET-IMC operations  _(AMC)_
 
 ED Decision 2017/004/R
 
@@ -57783,7 +57783,7 @@ AIRBORNE WEATHER-DETECTING EQUIPMENT
 
 The airborne weather-detecting equipment should be an airborne weather radar, as defined in the applicable Certification Specification — European Technical Standard Order (CS-ETSO) issued by the Agency, or equivalent.
 
-## AMC1 SPA.SET -IMC.110(f) Equipment requirements for SET-IMC operations  _(AMC)_
+## AMC1 SPA.SET IMC.110(f) Equipment requirements for SET-IMC operations  _(AMC)_
 
 ED Decision 2017/004/R
 
@@ -57791,7 +57791,7 @@ AREA NAVIGATION SYSTEM
 
 The area navigation system should be based on a global navigation satellite system (GNSS) stand-alone receiver or multi-sensor system, including at least one GNSS sensor, to enable at least required navigation performance approach (RNP APCH) operations without vertical guidance.
 
-## GM1 SPA.SET -IMC.110(f) Equipment requirements for SET-IMC operations  _(GM)_
+## GM1 SPA.SET IMC.110(f) Equipment requirements for SET-IMC operations  _(GM)_
 
 ED Decision 2017/004/R
 
@@ -57799,7 +57799,7 @@ AREA NAVIGATION SYSTEM
 
 Acceptable standards for the area navigation system are ETSO-145/146c, ETSO-C129a, ETSO-C196a or ETSO-C115 issued by the Agency, or equivalent.
 
-## GM1 SPA.SET -IMC.110(h) Equipment requirements for SET-IMC operations  _(GM)_
+## GM1 SPA.SET IMC.110(h) Equipment requirements for SET-IMC operations  _(GM)_
 
 ED Decision 2017/004/R
 
@@ -57807,7 +57807,7 @@ LANDING LIGHTS
 
 In order to demonstrate the compliance of its aeroplane’s landing lights with the 200-ft illumination capability requirement, and in the absence of relevant data available in the aircraft flight manual (AFM), the operator should liaise with the type certificate (TC) holder or supplemental type certificate (STC) holder, as applicable, to obtain a statement of compliance.
 
-## GM1 SPA.SET -IMC.110(i)(7) Equipment requirements for SET-IMC operations  _(GM)_
+## GM1 SPA.SET IMC.110(i)(7) Equipment requirements for SET-IMC operations  _(GM)_
 
 ED Decision 2017/004/R
 
@@ -57815,7 +57815,7 @@ ELEMENTS AFFECTING PILOT’S VISION FOR LANDING
 
 Examples of elements affecting pilot’s vision for landing are rain, ice and window fogging.
 
-## AMC1 SPA.SET -IMC.110(l) Equipment requirements for SET-IMC operations  _(AMC)_
+## AMC1 SPA.SET IMC.110(l) Equipment requirements for SET-IMC operations  _(AMC)_
 
 ED Decision 2017/004/R
 
@@ -59231,7 +59231,7 @@ APPLICATIONS DISPLAYING OWN-SHIP POSITION IN FLIGHT
 
 The depiction of a circle around the EFB own-ship symbol may be used to differentiate it from the avionics one.
 
-## SPA.PINS -VFR.100 Helicopter point-in-space (PinS) approaches and departures with reduced VFR minima  _(IR)_
+## SPA.PINS VFR.100 Helicopter point-in-space (PinS) approaches and departures with reduced VFR minima  _(IR)_
 
 Regulation (EU) 2023/1020
 
@@ -59253,7 +59253,7 @@ Regulation (EU) 2023/1020
 
 (d) The operator shall ensure that the flight crew members are experienced and trained to operate with reduced VFR operating minima.
 
-## AMC1 SPA.PINS -VFR.100 Helicopter point-in-space (PinS) approaches and departures with reduced VFR minima  _(AMC)_
+## AMC1 SPA.PINS VFR.100 Helicopter point-in-space (PinS) approaches and departures with reduced VFR minima  _(AMC)_
 
 ED Decision 2023/007/R
 

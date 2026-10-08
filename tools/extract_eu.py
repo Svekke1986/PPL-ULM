@@ -67,6 +67,17 @@ DOCS = {
             "url": "https://eur-lex.europa.eu/eli/reg/2014/1321/oj",
         },
     },
+    "ongevalsonderzoek": {
+        "pdf": "ongevalsonderzoek-996-2010-oorspronkelijk.pdf",
+        "id": r"(?!x)x",  # alleen artikelen, geen bijlagepunten
+        "meta": {
+            "titel": "Verordening (EU) nr. 996/2010 van het Europees Parlement en de Raad van 20 oktober 2010 – onderzoek en preventie van ongevallen en incidenten in de burgerluchtvaart",
+            "kort": "Ongevalsonderzoek (996/2010), oorspronkelijke versie",
+            "celex": "32010R0996",
+            "publicatie": "PB L 295 van 12.11.2010, blz. 35",
+            "url": "https://eur-lex.europa.eu/eli/reg/2010/996/oj",
+        },
+    },
     "part21": {
         "pdf": "part21-748-2012-oorspronkelijk.pdf",
         "id": r"21\.[AB]\.\d+[A-Z]?",
@@ -90,7 +101,7 @@ COMMON_META = {
 # Kop- en voetregels van het Publicatieblad
 NOISE = re.compile(r"^(NL|L \d+/\d+|Publicatieblad van de Europese Unie|\d{1,2}\.\d{1,2}\.\d{4})$")
 TOC = re.compile(r"(\. ){4,}|\.{6,}")  # inhoudstafel met puntjes
-HEAD = r"Artikel \d+|Aanhangsel [IVX\d]+|AANHANGSEL [IVX\d]+|BIJLAGE [IVX]+"
+HEAD = r"Artikel \d+|Aanhangsel [IVX\d]+|AANHANGSEL [IVX\d]+|BIJLAGE(?: [IVX]+)?"
 
 
 def lines_with_pages(docs, fixes=None):

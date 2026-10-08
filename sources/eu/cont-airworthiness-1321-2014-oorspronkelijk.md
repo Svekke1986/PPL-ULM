@@ -2566,7 +2566,7 @@ b) Na deze datum dienen leden van het certificeringspersoneel die de reikwijdte 
 
 c) Behoudens punt 2, onder b), is overeenstemming met punt 1, onder c) en d), niet vereist in het geval van aanvullende typegerichte opleiding.
 
-BIJLAGE III (Deel 66)
+## BIJLAGE III (Deel 66)  _(PB L 362/84)_
 
 INHOUDSOPGAVE 66.1 Bevoegde autoriteit SECTIE A — TECHNISCHE VOORSCHRIFTEN
 

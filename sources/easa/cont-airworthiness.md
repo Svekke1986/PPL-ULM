@@ -5937,7 +5937,7 @@ Regulation (EU) 2019/1383
 
 Upon receipt of a notification of aircraft transfer between the Member States according to point M.A.903, the competent authority of the Member State where the aircraft is currently registered shall inform the competent authority of the Member State where the aircraft will be registered of any known problems with the aircraft being transferred. The competent authority of the Member State where the aircraft will be registered shall ensure that the competent authority of the Member State where the aircraft is currently registered has been properly notified about the transfer.
 
-## Appendix I — Continuing airworthiness management contract  _(IR)_
+## Appendix I Continuing airworthiness management contract  _(IR)_
 
 Regulation (EU) 2022/1360
 
@@ -6101,7 +6101,7 @@ ED Decision 2020/002/R
 
 An operator should establish adequate coordination between flight operations and the CAO/CAMO to ensure that both will receive all the necessary information on the condition of the aircraft to enable them perform their tasks.
 
-## Appendix II — Authorised Release Certificate — EASA Form 1  _(IR)_
+## Appendix II Authorised Release Certificate — EASA Form 1  _(IR)_
 
 Regulation (EU) 2019/1383
 
@@ -6463,7 +6463,7 @@ Information needed to support shipment with shortages or re-assembly after deliv
 
 References to aid traceability, such as batch numbers.
 
-## Appendix III — Airworthiness Review Certificate — EASA Form 15  _(IR)_
+## Appendix III Airworthiness Review Certificate — EASA Form 15  _(IR)_
 
 EASA Form 15b
 
@@ -6489,7 +6489,7 @@ EASA Form 15a Issue 5
 
 (**) Except for airships.
 
-## Appendix IV — Class and rating system for the terms of approval of maintenance organisations referred to in Annex I (Part-M), Subpart F  _(IR)_
+## Appendix IV Class and rating system for the terms of approval of maintenance organisations referred to in Annex I (Part-M), Subpart F  _(IR)_
 
 Regulation (EU) 2021/1963
 
@@ -6595,7 +6595,7 @@ SPECIALISED SERVICES | D1 Non-Destructive Testing | [Shall state particular NDT 
 
 (*) Delete as appropriate
 
-## Appendix V — Maintenance Organisation Certificate referred to in Annex I (Part-M), Subpart F – EASA Form 3-MF  _(IR)_
+## Appendix V Maintenance Organisation Certificate referred to in Annex I (Part-M), Subpart F – EASA Form 3-MF  _(IR)_
 
 Regulation (EU) 2021/700
 
@@ -6659,7 +6659,7 @@ Date of last revision approved: It refers to the date of the last revision of th
 
 Revision No: It refers to the revision No of the last revision of the maintenance organisation manual affecting the content of the certificate. Changes to the maintenance organisation manual which do not affect the content of the certificate do not require the reissuance of the certificate.
 
-## Appendix VI — Continuing airworthiness management organisation certificate referred to in Annex I (Part-M) Subpart G – EASA Form 14-MG  _(IR)_
+## Appendix VI Continuing airworthiness management organisation certificate referred to in Annex I (Part-M) Subpart G – EASA Form 14-MG  _(IR)_
 
 Regulation (EU) 2021/700
 
@@ -6701,7 +6701,7 @@ Date of last revision: It refers to the date of the last revision of the continu
 
 Revision No: It refers to the revision No of the last revision of the continuing airworthiness management exposition affecting the content of the certificate. Changes to the continuing airworthiness management exposition which do not affect the content of the certificate do not require the reissuance of the certificate.
 
-## Appendix VII — Complex Maintenance Tasks  _(IR)_
+## Appendix VII Complex Maintenance Tasks  _(IR)_
 
 Regulation (EU) 2021/1963
 
@@ -6789,7 +6789,7 @@ ED Decision 2015/029/R
 
 The sentence ‘suitably approved or authorised welder’ contained in Appendix VII, paragraph 3(c), means that the qualification should meet an officially recognised standard or, otherwise, should be accepted by the competent authority.
 
-## Appendix VIII — Limited Pilot-owner Maintenance  _(IR)_
+## Appendix VIII Limited Pilot-owner Maintenance  _(IR)_
 
 Regulation (EU) 2020/270
 
@@ -15593,13 +15593,13 @@ The competent authority shall:
 
 (c) suspend or limit in whole or in part a certificate if unforeseeable circumstances outside the control of the competent authority prevent its inspectors from discharging their oversight responsibilities over the oversight planning cycle.
 
-## Appendix I — Authorised Release Certificate — EASA Form 1  _(IR)_
+## Appendix I Authorised Release Certificate — EASA Form 1  _(IR)_
 
 Regulation (EU) No 1321/2014
 
 The provisions of Appendix II to Annex I (Part-M) apply.
 
-## Appendix II — Class and rating system for the terms of approval of Part-145 maintenance organisations  _(IR)_
+## Appendix II Class and rating system for the terms of approval of Part-145 maintenance organisations  _(IR)_
 
 Regulation (EU) 2021/1963
 
@@ -15727,7 +15727,7 @@ SPECIALISED SERVICES | D1 NDT | NDT METHOD(S) TO BE SPECIFIED.
 
 It should be noted that such an organisation may be further limited by the competent authority in the terms of approval depending on the capabilities of the particular organisation.
 
-## Appendix III — Maintenance Organisation Certificate — EASA Form 3-145  _(IR)_
+## Appendix III Maintenance Organisation Certificate — EASA Form 3-145  _(IR)_
 
 Regulation (EU) 2020/270
 
@@ -15783,7 +15783,7 @@ EASA Form 3-145 Issue 4
 
 (****) | Complete with appropriate limitation and state whether the issue of airworthiness review certificates is authorised or not.
 
-## AMC1 Appendix III — Maintenance Organisation Approval referred to in Annex II (Part-145)  _(AMC)_
+## AMC1 Appendix III Maintenance Organisation Approval referred to in Annex II (Part-145)  _(AMC)_
 
 ED Decision 2022/011/R
 
@@ -15795,7 +15795,7 @@ Date of last revision approved: It refers to the date of the last revision of th
 
 Revision No: It refers to the revision No of the last revision of the maintenance organisation exposition affecting the content of the certificate. Changes to the maintenance organisation exposition which do not affect the content of the certificate do not require the reissuance of the certificate.
 
-## GM1 Appendix III — Maintenance Organisation Certificate — EASA Form 3-145  _(GM)_
+## GM1 Appendix III Maintenance Organisation Certificate — EASA Form 3-145  _(GM)_
 
 ED Decision 2022/011/R
 
@@ -15803,7 +15803,7 @@ The expression ‘or not’ at the end of the footnote ‘(****)’ on page 2 of
 
 If the organisation holds the privilege to issue an airworthiness review certificate for an aircraft series, type and group, the competent authority will state it on the relevant line. If the organisation does not have that privilege, the competent authority may state it, but does not have to.
 
-## Appendix IV — Conditions for the use of staff not qualified in accordance with Annex III (Part-66) referred to in points 145.A.30(j)1 and 2  _(IR)_
+## Appendix IV Conditions for the use of staff not qualified in accordance with Annex III (Part-66) referred to in points 145.A.30(j)1 and 2  _(IR)_
 
 Regulation (EU) No 1321/2014
 
@@ -18181,7 +18181,7 @@ The competent authority shall suspend, limit or revoke the aircraft maintenance 
 
 8.issuing certificate of release to service while not in compliance with this Regulation.
 
-## Appendix I — Basic Knowledge Requirements (except for category L licence)  _(IR)_
+## Appendix I Basic Knowledge Requirements (except for category L licence)  _(IR)_
 
 1. Knowledge levels for Category A, B1, B2, B2L, B3 and C aircraft maintenance licences
 
@@ -19199,7 +19199,7 @@ An appropriate training method, or combination of methods, shall be determined f
 
 Multimedia-based training (MBT) methods may be used in order to achieve the training objectives either in a physically or in a virtually controlled environment.
 
-## AMC1 Appendix I — Basic Knowledge Requirements (except for category L licence) Section 2  _(AMC)_
+## AMC1 Appendix I Basic Knowledge Requirements (except for category L licence) Section 2  _(AMC)_
 
 ED Decision 2023/019/R
 
@@ -20451,7 +20451,7 @@ MODULE 17 — PROPELLER | LEVEL
 
  | Propeller preservation and depreservation. |  | 
 
-## AMC1 Appendix I — Basic Knowledge Requirements (except for category L licence) Section 3  _(AMC)_
+## AMC1 Appendix I Basic Knowledge Requirements (except for category L licence) Section 3  _(AMC)_
 
 ED Decision 2023/019/R
 
@@ -20463,7 +20463,7 @@ The actual training method and training tools should be adapted to suit the trai
 
 Basic training modules 7, 9, 11, 12, 13, 14, 15, 16 and 17 should not normally be taught solely through a student-centred method unless provisions are in place to verify the actual and progressive acquisition of knowledge, skills and attitude by the student.
 
-## Appendix II — Basic examination standard (except for category L licence)  _(IR)_
+## Appendix II Basic examination standard (except for category L licence)  _(IR)_
 
 1. General
 
@@ -20717,7 +20717,7 @@ Category B3, B1.1 and B1.2: 32 multiple-choice, no essay questions.
 
 Time allowed: 40 minutes.
 
-## AMC1 Appendix II — Basic examination standard (except for category L licence)  _(AMC)_
+## AMC1 Appendix II Basic examination standard (except for category L licence)  _(AMC)_
 
 ED Decision 2023/019/R
 
@@ -23065,7 +23065,7 @@ SQ = it depends on system qualification
 
 **: excluding the subjects related to turbine engines;
 
-## Appendix V — Application Form — EASA Form 19  _(IR)_
+## Appendix V Application Form — EASA Form 19  _(IR)_
 
 Regulation (EU) 2021/700
 
@@ -23109,7 +23109,7 @@ Recommendation (if applicable): It is hereby certified that the applicant has me
 
 EASA Form 19 Issue 5
 
-## Appendix VI — Aircraft Maintenance Licence referred to in Annex III (Part-66) — EASA Form 26  _(IR)_
+## Appendix VI Aircraft Maintenance Licence referred to in Annex III (Part-66) — EASA Form 26  _(IR)_
 
 Regulation (EU) 2023/989
 
@@ -23197,7 +23197,7 @@ III. Licence No: |  |
 
 EASA Form 26 Issue 5
 
-## Appendix VII — Basic knowledge requirements for category L aircraft maintenance licence  _(IR)_
+## Appendix VII Basic knowledge requirements for category L aircraft maintenance licence  _(IR)_
 
 Regulation (EU) 2023/989
 
@@ -23799,7 +23799,7 @@ MODULE 12L — RADIO COM / ELTs / TRANSPONDERS / INSTRUMENTS | Level
 
 12L.4 Avionics general test equipment / —Operation, function, and use of general test equipment for avionics. | 1
 
-## Appendix VIII — Basic examination standard for category L aircraft maintenance licence  _(IR)_
+## Appendix VIII Basic examination standard for category L aircraft maintenance licence  _(IR)_
 
 Regulation (EU) 2023/989
 
@@ -23869,7 +23869,7 @@ Time allowed: 50 minutes;
 
 Time allowed: 25 minutes.
 
-## AMC1 Appendix VIII — Basic examination standard for category L aircraft maintenance licence  _(AMC)_
+## AMC1 Appendix VIII Basic examination standard for category L aircraft maintenance licence  _(AMC)_
 
 ED Decision 2023/019/R
 
@@ -34813,7 +34813,7 @@ Task No | ATA chapter | Task description | B1.1 | B2
 
 448 | 80 Starting | Troubleshoot faulty system | X | X
 
-## Appendix III — Evaluation of the competence: assessment and assessors  _(AMC)_
+## Appendix III Evaluation of the competence: assessment and assessors  _(AMC)_
 
 ED Decision 2015/029/R
 
@@ -36033,7 +36033,7 @@ The competent authority shall:
 
 (b) suspend, revoke or limit an approval pursuant to 147.B.130.
 
-## Appendix I — Basic training course duration  _(IR)_
+## Appendix I Basic training course duration  _(IR)_
 
 Regulation (EU) 2018/1142
 
@@ -36077,7 +36077,7 @@ SURVEILLANCE | 40 |
 
 AIRFRAME SYSTEMS | 100 | 
 
-## Appendix II — Maintenance Training Organisation Approval — EASA Form 11  _(IR)_
+## Appendix II Maintenance Training Organisation Approval — EASA Form 11  _(IR)_
 
 Regulation (EU) 2020/270
 
@@ -36153,7 +36153,7 @@ Date of last revision approved: It refers to the date of the last revision of th
 
 Revision No: It refers to the revision No of the last revision of the maintenance training organisation exposition affecting the content of the certificate. Changes to the maintenance training organisation exposition which do not affect the content of the certificate do not require the reissuance of the certificate.
 
-## Appendix III — Certificates of Recognition referred to in Annex IV (Part-147) — EASA Forms 148 and 149  _(IR)_
+## Appendix III Certificates of Recognition referred to in Annex IV (Part-147) — EASA Forms 148 and 149  _(IR)_
 
 1. Basic Training/Examination
 
@@ -36253,7 +36253,7 @@ After successful completion of all module examinations corresponding to a licenc
 
 After successful completion of certain modules/sub-modules/subjects. It must be noted that ‘successful completion of a course’ (without the module examinations) means successful completion of the theoretical and practical training including the corresponding practical assessment.
 
-## Appendix I — Maintenance training organisation exposition (MTOE)  _(AMC)_
+## Appendix I Maintenance training organisation exposition (MTOE)  _(AMC)_
 
 ED Decision 2015/029/R
 
@@ -36355,7 +36355,7 @@ PART 4 – APPENDICES
 
 4.3.Cross-reference index - if applicable
 
-## Appendix II — EASA Form 4  _(AMC)_
+## Appendix II EASA Form 4  _(AMC)_
 
 ED Decision 2015/029/R
 
@@ -36365,7 +36365,7 @@ Competent authority use only / Name and signature of authorised competent author
 
 EASA Form 4
 
-## Appendix III — EASA Form 22  _(AMC)_
+## Appendix III EASA Form 22  _(AMC)_
 
 ED Decision 2015/029/R
 
@@ -36541,7 +36541,7 @@ Part 5: Part-147 approval or continued approval or change recommendation
 
 Name of organisation: / Approval reference: / Audit reference(s): / Applicable Part-147 amendment status: / The following Part-147 scope of approval is recommended for this organisation: / Or, it is recommended that the Part-147 scope of approval specified in EASA Form 11 referenced ...................................................... be continued. / Name of recommending competent authority surveyor: / Signature of recommending competent authority surveyor: / Competent authority office: / Date of recommendation: / EASA Form 22 review (quality check) : Date:
 
-## Appendix IV — EASA Form 12  _(AMC)_
+## Appendix IV EASA Form 12  _(AMC)_
 
 ED Decision 2020/002/R
 
@@ -39831,7 +39831,7 @@ If during aircraft surveys or by other means, evidence is found showing non-comp
 
 (b) for Level 2 findings, impose the corrective action appropriate to the nature of the finding.
 
-## Appendix I — Continuing-airworthiness management contract  _(IR)_
+## Appendix I Continuing-airworthiness management contract  _(IR)_
 
 Regulation (EU) 2022/1360
 
@@ -39931,7 +39931,7 @@ In the case of an aircraft subject to a declaration of design compliance, organi
 
 (xii) inform the contracted CAMO or CAO no later than 30 days after completion of any Pilot-owner maintenance task.
 
-## Appendix II — Limited Pilot-owner maintenance  _(IR)_
+## Appendix II Limited Pilot-owner maintenance  _(IR)_
 
 Regulation (EU) 2019/1383
 
@@ -40469,7 +40469,7 @@ Area and task | Hot-air airship | Hot-air balloon | Gas balloon
 
 (33) Air filters (if installed) — removal, cleaning and replacement | Yes | n/a | n/a
 
-## Appendix III — Complex maintenance tasks not to be released by the Pilot-owner  _(IR)_
+## Appendix III Complex maintenance tasks not to be released by the Pilot-owner  _(IR)_
 
 Regulation (EU) 2020/270
 
@@ -40555,7 +40555,7 @@ All of the following constitutes the complex maintenance tasks which, according 
 
 (2) significant coordination procedures because of the extensive duration of the tasks and the involvement of several persons.
 
-## Appendix IV — Airworthiness review certificate (EASA Form 15c)  _(IR)_
+## Appendix IV Airworthiness review certificate (EASA Form 15c)  _(IR)_
 
 Regulation (EU) 2021/700
 
@@ -46397,7 +46397,7 @@ The competent authority shall:
 
 (b) suspend, revoke or limit an approval pursuant to point CAO.B.060.
 
-## Appendix I — Combined airworthiness organisation (CAO) certificate - EASA Form 3-CAO  _(IR)_
+## Appendix I Combined airworthiness organisation (CAO) certificate - EASA Form 3-CAO  _(IR)_
 
 Regulation (EU) 2020/270
 

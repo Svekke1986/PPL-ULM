@@ -759,6 +759,644 @@ The President
 
 Jean-Claude JUNCKER
 
+## Annex I Part-DEFINITIONS  _(IR)_
+
+Regulation (EU) 2024/403
+
+For the purposes of Annexes II to XIII, the following definitions shall apply:
+
+(1) ‘acceptable means of compliance (AMC)’ means non-binding standards adopted by the Agency to illustrate means to establish compliance with Regulation (EC) No 216/2008 and its implementing rules;
+
+(2) ‘aerial work’ means an aircraft operation in which an aircraft is used for specialised services such as agriculture, construction, photography, surveying, observation and patrol, search and rescue or aerial advertisement;
+
+(3) ‘aerodrome climatological summary’ means a concise summary of specified meteorological elements at an aerodrome, based on statistical data;
+
+(4) ‘aerodrome climatological table’ means a table providing statistical data on the observed occurrence of one or more meteorological elements at an aerodrome;
+
+(5) ‘aerodrome elevation’ means the elevation of the highest point of the landing area;
+
+(6) ‘aerodrome flight information service (AFIS)’ means flight information service for aerodrome traffic provided by a designated air traffic services provider;
+
+(7) ‘aerodrome meteorological office’ means an office responsible for providing meteorological service for an aerodrome;
+
+(8) ‘aerodrome warning’ means information issued by an aerodrome meteorological office concerning the occurrence or expected occurrence of meteorological conditions which could adversely affect aircraft on the ground, including parked aircraft and the aerodrome facilities and services;
+
+(9) ‘aeronautical data’ means a representation of aeronautical facts, concepts or instructions in a formalised manner suitable for communication, interpretation or processing;
+
+(10) ‘aeronautical database’ means a collection of aeronautical data organised and arranged as a structured data set, stored electronically on systems, which is valid for a dedicated period and may be updated;
+
+(11) ‘aeronautical fixed service (AFS)’ means a telecommunication service between specified fixed points provided primarily for the safety of air navigation and for the regular, efficient and economical operation of air services;
+
+(12) ‘aeronautical fixed telecommunication network (AFTN)’ means a worldwide system of aeronautical fixed circuits provided, as part of the AFS, for the exchange of messages and/or digital data between aeronautical fixed stations having the same or compatible communications characteristics;
+
+(13) ‘aeronautical information’ means information resulting from the assembly, analysis and formatting of aeronautical data;
+
+(14) ‘aerodrome mapping data’ means data collected for the purpose of compiling aerodrome mapping information;
+
+(15) ‘aerodrome mapping database (AMDB)’ means a collection of aerodrome mapping data organised and arranged as a structured data set;
+
+(16) ‘aeronautical meteorological station’ means a station making observations and meteorological reports for use in air navigation;
+
+(17) ‘air-report’ means a report from an aircraft in flight prepared in conformity with the requirements for position and operational and/or meteorological reporting;
+
+(18) ‘aircraft’ means any machine that can derive support in the atmosphere from the reactions of the air other than the reactions of the air against the earth's surface;
+
+(19) ‘AIRMET’ means information issued by a meteorological watch office concerning the occurrence or expected occurrence of specified en-route weather phenomena which may affect the safety of low-level aircraft operations and of the development of those phenomena in time and space, and which was not already included in the forecast issued for low-level flights in the flight information region concerned or sub-area thereof;
+
+(20) ‘air traffic safety electronics personnel (ATSEP)’ means any authorised personnel who are competent to operate, maintain, release from, and return into operations equipment of the functional system;
+
+(21) ‘air traffic services unit’ is a generic term meaning variously air traffic control unit, flight information centre, aerodrome flight information service unit or air traffic services reporting office;
+
+(22) ‘alternate aerodrome’ means an aerodrome to which an aircraft may proceed when it becomes either impossible or inadvisable to proceed to or to land at the aerodrome of intended landing where the necessary services and facilities are available, where aircraft performance requirements can be met and which is operational at the expected time of use;
+
+(23) ‘alternative means of compliance (AltMOC)’ means those means of compliance that propose an alternative to an existing AMC or those that propose new means to establish compliance with Regulation (EC) No 216/2008 and its Implementing Rules for which no associated AMC have been adopted by the Agency;
+
+(24) ‘altitude’ means the vertical distance of a level, a point, or an object considered as a point, measured from mean sea level;
+
+(25) ‘area control centre (ACC)’ means a unit established to provide air traffic control service to controlled flights in control areas under its jurisdiction;
+
+(26) ‘area forecast for low-level flights’ means a forecast of weather phenomena for a flight information region or sub-area thereof, issued to cover the layer below flight level 100 (or below flight level 150 in mountainous areas, or higher, where necessary);
+
+(27) ‘area navigation (RNAV)’ means a method of navigation which permits aircraft operation on any desired flight path within the coverage of ground- or space-based navigation aids or within the limits of the capability of self-contained aids, or a combination of them;
+
+(28) ‘argument’ means a claim that is supported via inferences by a body of evidence;
+
+(29) ‘ASHTAM’ means a special series of NOTAM notifying by means of a specific format of a change in the activity of a volcano, a volcanic eruption and/or volcanic ash cloud that is of significance to aircraft operations;
+
+(30) ‘ATM network functions’ means the functions performed by the Network Manager in accordance with Regulation (EU) No 677/2011;
+
+(30a) ‘ATM/ANS equipment’ means ATM/ANS constituents as defined in Article 3(6) of Regulation (EU) 2018/1139, and ATM/ANS systems as defined in Article 3(7) of that Regulation, excluding airborne constituents, which are subject to Commission Regulation (EU) No 748/2012 ()
+
+(31) ‘audit’ means a systematic, independent and documented process for obtaining evidence and evaluating it objectively to determine the extent to which requirements are complied with;
+
+(32) ‘authoritative source’ means:
+
+(a) a State authority: or
+
+(b) an organisation formally recognised by the State authority to originate and/or publish data which meets the data quality requirements (DQRs) as specified by that State;
+
+(33) ‘automatic observing system’ means an observing system that measures, derives and reports all required elements without human interaction;
+
+(34) ‘aviation undertaking’ means an entity, person or organisation, other than the service providers regulated by this Regulation, that is affected by or affects a service delivered by a service provider;
+
+(34a) ‘boundary’ means a lateral or vertical plane delineating the airspace in which an ATC unit provides air traffic services;
+
+(35) ‘break’ means a period of time within the duty period when an air traffic controller is not required to perform duties, for recuperation purposes;
+
+(36) ‘certified aircraft application’ means a software application approved by the Agency as part of aircraft subject to Article 4 of Regulation (EC) No 216/2008;
+
+(37) ‘cloud of operational significance’ means a cloud with the height of cloud base below 5 000 ft or below the highest minimum sector altitude, whichever is greater, or a cumulonimbus cloud or a towering cumulus cloud at any height;
+
+(38) ‘commercial air transport’ means any aircraft operation involving the transport of passengers, cargo or mail for remuneration or other valuable consideration;
+
+(38a) ‘conventional navigation route’ means an ATS route established by reference to ground navigation aids;
+
+(39) ‘control area’ means a controlled airspace extending upwards from a specified limit above the earth;
+
+(39a) ‘coordination data’ means data of interest to operational staff in connection with the process of notification, coordination and transfer of flights, and with the process of civil-military coordination;
+
+(39b) ‘coordination point’ (COP) means a point on or adjacent to the boundary used by the ATC units and referred to in coordination processes;
+
+(40) ‘critical incident stress’ means the manifestation of unusual and/or extreme emotional, physical and/or behavioural reactions of an individual following an event or incident;
+
+(40a) ‘data link service’ means a set of related air traffic management transactions, supported by air-ground data link communications, which have a clearly defined operational goal and begin and end on an operational event;
+
+(41) ‘data quality’ means a degree or level of confidence that the provided data meets the user's data requirements in terms of accuracy, resolution, integrity (or equivalent assurance level), traceability, timeliness, completeness, and format;
+
+(42) ‘data quality requirements (DQRs)’ means a specification of the characteristics of data (i.e. accuracy, resolution, integrity (or equivalent assurance level), traceability, timeliness, completeness and format) to ensure that the data is compatible with its intended use;
+
+(43) ‘destination alternate’ means an alternate aerodrome at which an aircraft would be able to land should it become either impossible or inadvisable to land at the aerodrome of intended landing;
+
+(44) ‘duty’ means any task that an air traffic controller is required to perform by the air traffic control service provider;
+
+(45) ‘duty period’ means a period which starts when an air traffic controller is required by the air traffic control service provider to report for or be available for or to commence duty and ends when the air traffic controller is free from duty;
+
+(46) ‘elevation’ means the vertical distance of a point or a level, on or affixed to the surface of the earth, measured from mean sea level;
+
+(46a) ‘eligible interrogator code’ means any code among the II codes and the SI codes, except:
+
+(a) II code 0;
+
+(b) the interrogator code(s) reserved for military entities, including intergovernmental organisations and in particular North Atlantic Treaty Organisation management and allocation;
+
+(47) ‘en-route alternate’ means an alternate aerodrome at which an aircraft would be able to land in the event that a diversion becomes necessary while en-route;
+
+(47a) ‘estimate data’ means the coordination point, the estimated time of an aircraft and the expected flight level of the aircraft at the coordination point;
+
+(48) ‘fatigue’ means a physiological state of reduced mental or physical performance capability resulting from sleep loss or extended wakefulness, circadian phase or workload (mental or physical activity, or both) that can impair an individual's alertness and ability to safely perform his/her tasks;
+
+(49) ‘flight documentation’ means documents, including charts or forms, containing meteorological information for a flight;
+
+(50) ‘flight information centre (FIC)’ means a unit established to provide flight information service and alerting service;
+
+(51) ‘flight information region (FIR)’ means an airspace of defined dimensions within which flight information service and alerting service are provided;
+
+(52) ‘flight level (FL)’ means a surface of constant atmospheric pressure which is related to a specific pressure datum, 1013,2 hectopascals (hPa), and is separated from other such surfaces by specific pressure intervals;
+
+(53) ‘flight test’ means a flight for the development phase of a new design (aircraft, propulsion systems, parts and appliances), a flight to demonstrate compliance to certification basis or to type design for aircraft coming from the production line, a flight intended to experiment new design concepts, requiring unconventional manoeuvres or profiles for which it could be possible to exit the already approved envelope of the aircraft or a training flight to perform either of those flights;
+
+(54) ‘forecast’ means a statement of expected meteorological conditions for a specified time or period, and for a specified area or portion of airspace;
+
+(55) ‘forecast for take-off’ means a forecast for a specified period of time, prepared by an aerodrome meteorological office, which contains information on expected conditions over the runways complex in regard to surface wind direction and speed and any variations thereof, temperature, pressure (QNH) and any other element as agreed locally;
+
+(56) ‘functional system’ means a combination of procedures, human resources and equipment, including hardware and software, organised to perform a function within the context of ATM/ANS and other ATM network functions;
+
+(57) ‘general aviation’ means any civil aircraft operation other than aerial work or commercial air transport;
+
+(58) ‘grid point data in digital form’ means computer-processed meteorological data for a set of regularly spaced points on a chart, for transmission from a meteorological computer to another computer in a code form suitable for automated use;
+
+(59) ‘guidance material’ means non-binding material developed by the Agency that helps to illustrate the meaning of a requirement or specification and is used to support the interpretation of Regulation (EC) No 216/2008, its implementing rules and AMC;
+
+(60) ‘gridded global forecasts’ means forecasts of expected values of meteorological elements on a global grid with a defined vertical and horizontal resolution;
+
+(61) ‘hazard’ means any condition, event, or circumstance which could induce a harmful effect;
+
+(62) ‘height’ means the vertical distance of a level, a point or an object considered as a point, measured from a specified datum;
+
+(62a) ‘implementation sequence’ means the time-bounded sequence of implementation of interrogator code allocations with which Mode S operators need to comply to avoid temporary interrogator code conflicts;
+
+(63) ‘level’ is a generic term relating to the vertical position of an aircraft in flight and meaning variously height, altitude or flight level;
+
+(64) ‘local routine report’ means a meteorological report issued at fixed time intervals, intended only for dissemination at the aerodrome of origin where the observations were made;
+
+(65) ‘local special report’ means a meteorological report issued in accordance with the criteria established for special observations, intended only for dissemination at the aerodrome of origin where the observations were made;
+
+(66) ‘meteorological bulletin’ means a text comprising meteorological information preceded by an appropriate heading;
+
+(67) ‘meteorological information’ means meteorological report, analysis, forecast, and any other statement relating to existing or expected meteorological conditions;
+
+(68) ‘meteorological observation’ means the measurement and/or evaluation of one or more meteorological elements;
+
+(69) ‘meteorological report’ means a statement of observed meteorological conditions related to a specified time and location;
+
+(70) ‘meteorological satellite’ means an artificial Earth satellite making meteorological observations and transmitting these observations to Earth;
+
+(71) ‘meteorological watch office (MWO)’ means an office monitoring meteorological conditions affecting flight operations and providing information concerning the occurrence or expected occurrence of specified enroute weather and other phenomena in the atmosphere which may affect the safety of aircraft operations within its specified area of responsibility;
+
+(72) ‘minimum sector altitude (MSA)’ means the lowest altitude which may be used which will provide a minimum clearance of 300 m (1000 ft) above all objects located in an area contained within a sector of a circle of 46 km (25 NM) radius centred on a significant point, the aerodrome reference point (ARP) or the heliport reference point (HRP);
+
+(73) ‘NOTAM’ means a notice distributed by means of telecommunication containing information concerning the establishment, condition, or change in any aeronautical facility, service, procedure, or hazard, the timely knowledge of which is essential to personnel concerned with flight operations;
+
+(73a) ‘notified unit’ means the ATC unit that has received the notification information;
+
+(74) ‘obstacle’ means all fixed (whether temporary or permanent) and mobile objects, or parts thereof, that:
+
+(a) are located on an area intended for the surface movement of aircraft; or
+
+(b) extend above a defined surface intended to protect aircraft in flight; or
+
+(c) stand outside those defined surfaces and have been assessed as being a hazard to air navigation;
+
+(75) ‘OPMET’ means operational meteorological information for use in preparatory or in-flight planning of flight operations;
+
+(76) ‘OPMET databank’ means a databank established to store and make available internationally operational meteorological information for aeronautical use;
+
+(77) ‘pre-eruption volcanic activity’ means an unusual and/or increasing volcanic activity which could presage a volcanic eruption;
+
+(78) ‘prevailing visibility’ means the greatest visibility value, observed in accordance with the definition of ‘visibility’, which is reached within at least half the horizon circle or within at least half of the surface of the aerodrome. These areas could comprise contiguous or non-contiguous sectors;
+
+(79) ‘problematic use of psychoactive substances’ means the use of one or more psychoactive substances by an individual, in a way that:
+
+(a) constitutes a direct hazard to the user or endangers the lives, health, or welfare of others; and/or
+
+(b) causes or worsens an occupational, social, mental or physical problem or disorder;
+
+(80) ‘prognostic chart’ means a forecast of (a) specified meteorological element(s) for a specified time or period and a specified surface or portion of airspace, depicted graphically on a chart;
+
+(81) ‘psychoactive substances’ means alcohol, opioids, cannabinoids, sedatives and hypnotics, cocaine, other psychostimulants, hallucinogens, and volatile solvents, whereas caffeine and tobacco are excluded;
+
+(81a) ‘receiving unit’ means the air traffic control unit that receives data;
+
+(82) ‘rescue coordination centre (RCC)’ means a unit responsible for promoting efficient organisation of search and rescue services, and for coordinating the conduct of search and rescue operations within a search and rescue region;
+
+(83) ‘rest period’ means a continuous and defined period of time, subsequent to and/or prior to duty, during which an air traffic controller is free of all duties;
+
+(84) ‘rostering system’ means the structure of duty and rest periods of air traffic controllers in accordance with legal and operational requirements;
+
+(85) ‘risk’ means the combination of the overall probability or frequency of occurrence of a harmful effect induced by a hazard and the severity of that effect;
+
+(86) ‘runway’ means a defined rectangular area on a land aerodrome prepared for the landing and take-off of aircraft;
+
+(87) ‘runway visual range (RVR)’ means the range over which the pilot of an aircraft on the centre line of a runway can see the runway surface markings or the lights delineating the runway or identifying its centre line;
+
+(88) ‘safety directive’ means a document issued or adopted by a competent authority which:
+
+(1) mandates actions to be performed on a functional system or sets restrictions to its operational use to restore safety when evidence shows that aviation safety may otherwise be compromised; or
+
+(2) mandates actions to be performed on ATM/ANS equipment subject to the statement of compliance issued in accordance with Article 6 to Commission Delegated Regulation (EU) 2023/1768 () to address an unsafe or insecure condition, or both, that has been identified and restore the performance and interoperability of that ATM/ANS equipment when evidence shows that the safety, security, performance or interoperability of that particular equipment may otherwise be compromised.
+
+(89) ‘safety management system (SMS)’ means a systematic approach to managing safety, including the necessary organisational structures, accountabilities, policies, and procedures;
+
+(90) ‘search and rescue services unit’ is a generic term covering, as the case may be, rescue coordination centre, rescue sub-centre or alerting post;
+
+(92) ‘semi-automatic observing system’ means an observing system that allows the augmentation of measured elements and requires a human in the loop for issuing the appropriate reports;
+
+(93) ‘SIGMET’ means information, issued by a meteorological watch office, concerning the occurrence or expected occurrence of specified en-route weather and other phenomena in the atmosphere which may affect the safety of aircraft operations and of the development of those phenomena in time and space;
+
+[applicable until 30 April 2025 - Regulation (EU) 2023/1771]
+
+(93) ‘SIGMET’ means information issued by a meteorological watch office concerning the occurrence or expected occurrence of specified en-route weather and other phenomena in the atmosphere which may affect the safety of aircraft operations and of the development of those phenomena in time and space;
+
+[applicable from 1 May 2025 - Regulation (EU) 2024/403]
+
+(95) ‘special air-report’ means a meteorological report by an aircraft issued in accordance with the criteria based on observations made during the flight;
+
+(96) ‘stress’ means the outcomes experienced by an individual when faced with a potential cause (‘stressor’) of human performance modification. The experience of the stressor may impact the individual's performance negatively (distress), neutrally or positively (eustress), based on the individual's perception of his/her ability to manage the stressor;
+
+(97) ‘system and equipment rating training’ means training designed to impart specific system/equipment knowledge and skills leading towards operational competence;
+
+(98) ‘tailored data’ means aeronautical data which is provided by the aircraft operator or DAT provider on the aircraft operator's behalf and produced for this aircraft operator for its intended operational use;
+
+(99) ‘take-off alternate aerodrome’ means an alternate aerodrome at which an aircraft would be able to land should this become necessary shortly after take-off and if it is not possible to use the aerodrome of departure;
+
+(100) ‘terminal aerodrome forecast (TAF)’ means a concise statement of the expected meteorological conditions at an aerodrome for a specified period;
+
+(101) ‘terrain’ means the surface of the Earth containing naturally occurring features such as mountains, hills, ridges, valleys, bodies of water, permanent ice and snow, and excluding obstacles;
+
+(102) ‘threshold’ means the beginning of that portion of the runway usable for landing;
+
+(103) ‘touchdown zone’ means the portion of a runway, beyond the threshold, where it is intended that landing aeroplanes first contact the runway;
+
+(104) ‘tropical cyclone’ is a generic term for a non-frontal synoptic-scale cyclone originating over tropical or subtropical waters with organised convection and definite cyclonic surface wind circulation;
+
+(105) ‘tropical cyclone advisory centre (TCAC)’ means a meteorological centre providing advisory information to meteorological watch offices, world area forecast centres and international OPMET databanks regarding the position, forecast direction and speed of movement, central pressure and maximum surface wind of tropical cyclones;
+
+(106) ‘visibility’ means visibility for aeronautical purposes, which is the greater of:
+
+(a) the greatest distance at which a black object of suitable dimensions, situated near the ground, can be seen and recognised when observed against a bright background;
+
+(b) the greatest distance at which lights in the vicinity of 1000 candelas can be seen and identified against an unlit background;
+
+(107) ‘volcanic ash advisory centre (VAAC)’ means a meteorological centre that provides advisory information to meteorological watch offices, area control centres, flight information centres, world area forecast centres and international OPMET databanks regarding the lateral and vertical extent and forecast movement of volcanic ash in the atmosphere;
+
+(107a) ‘working position’ means the furniture and technical equipment at which a member of the air traffic services staff undertakes task associated with their job;
+
+(107b) ‘warning’ means a message displayed at a working position when the automated coordination process has failed;
+
+(108) ‘world area forecast centre (WAFC)’ means a meteorological centre preparing and issuing significant weather (SIGWX) forecasts and upper-air forecasts in digital form on a global basis direct to the Member States as part of the aeronautical fixed service (AFS) internet-based services;
+
+(109) ‘world area forecast system (WAFS)’ means a worldwide system by which world area forecast centres provide aeronautical meteorological en-route forecasts in uniform standardised formats.
+
+(110) ‘aerodrome control tower’ means a unit established to provide air traffic control service to aerodrome traffic;
+
+(111) ‘aerodrome traffic’ means all traffic on the manoeuvring area of an aerodrome and all aircraft flying in the vicinity of an aerodrome. An aircraft operating in the vicinity of an aerodrome includes but is not limited to aircraft entering or leaving an aerodrome traffic circuit;
+
+(112) ‘aerodrome traffic circuit’ means the specified path to be flown by aircraft operating in the vicinity of an aerodrome;
+
+(113) ‘aeronautical fixed station’ means a station in the aeronautical fixed service;
+
+(114) ‘aeronautical ground light’ means any light specially provided as an aid to air navigation, other than a light displayed on an aircraft;
+
+(115) ‘aeronautical information circular (AIC)’ means a notice containing information that does not qualify for the origination of a NOTAM or for inclusion in the aeronautical information publication, but which relates to flight safety, air navigation, technical, administrative or legislative matters;
+
+(116) ‘aeronautical information management (AIM)’ means the dynamic, integrated management of aeronautical information through the provision and exchange of quality-assured digital aeronautical data in collaboration with all parties;
+
+(117) ‘aeronautical information product’ means aeronautical data and aeronautical information provided either as digital data sets or as a standardised presentation in paper or electronic media. Aeronautical information products include:
+
+aeronautical information publication, including amendments and supplements;
+
+AIC;
+
+aeronautical charts;
+
+NOTAM;
+
+digital data sets;
+
+(118) ‘aeronautical information publication (AIP)’ means a publication issued by or with the authority of a State and containing aeronautical information of a lasting character essential to air navigation;
+
+(119) ‘AIP amendment’ means a permanent change to the information contained in the AIP;
+
+(120) ‘AIP supplement’ means a temporary change to the information contained in the AIP, which is provided by means of special pages;
+
+(121) ‘aeronautical information regulation and control’ (AIRAC) means a system aimed at advance notification, based on common effective dates, of circumstances that necessitate significant changes in operating practices;
+
+(122) ‘aeronautical mobile service’ means a mobile service between aeronautical stations and aircraft stations, or between aircraft stations, in which survival craft stations may participate; emergency position-indicating radio beacon stations may also participate in this service on designated distress and emergency frequencies;
+
+(123) ‘aeronautical station’ means a land station in the aeronautical mobile service. In certain instances, an aeronautical station may be located, for example, on board a ship or on a platform at sea;
+
+(124) ‘aeronautical telecommunication station’ means a station in a telecommunication service provided for any aeronautical purpose;
+
+(125) ‘AFIS aerodrome’ means an aerodrome where AFIS is provided within the airspace associated with such aerodrome;
+
+(126) ‘AFIS unit’ means a unit established to provide AFIS and alerting service;
+
+(127) ‘aircraft identification’ means a group of letters, figures or a combination thereof which is either identical to, or the coded equivalent of, the aircraft call sign to be used in air-ground communications, and which is used to identify the aircraft in ground-ground air traffic service communications;
+
+(128) ‘air-ground communication’ means two-way communication between aircraft and stations or locations on the surface of the earth;
+
+(129) ‘air traffic advisory service’ means a service provided within an airspace of defined dimensions, or a designated route (advisory airspace) to ensure separation, in so far as practical, between aircraft which are operating on instrument flight rules (IFR) flight plans;
+
+(130) ‘air traffic control clearance’ or ‘ATC clearance’ means authorisation for an aircraft to proceed under conditions specified by an air traffic control unit;
+
+(131) ‘air traffic control instruction’ or ‘ATC instruction’ means directives issued by ATC for the purpose of requiring a pilot to take a specific action;
+
+(132) ‘air traffic control (ATC) unit’ or ‘ATC unit’ is a generic term meaning variously, area control centre, approach control unit or aerodrome control tower;
+
+(133) ‘ALERFA’ is the code word used to designate an alert phase;
+
+(134) ‘alerting service’ means a service provided to notify appropriate organisations regarding aircraft in need of search and rescue aid, and assist such organisations as required;
+
+(135) ‘alert phase’ means a situation wherein apprehension exists as to the safety of an aircraft and its occupants;
+
+(136) ‘approach control unit’ means a unit established to provide air traffic control service to controlled flights arriving at, or departing from, one or more aerodromes;
+
+(137) ‘area navigation route’ means an ATS route established for the use of aircraft capable of employing area navigation;
+
+(138) ‘assemble’ means a process of merging data from multiple sources into a database and establishing a baseline for subsequent processing;
+
+(139) ‘ATS route’ means a specified route designed for channelling the flow of traffic as necessary for the provision of ATS;
+
+(140) ‘ATS surveillance service’ means a service provided directly by means of an ATS surveillance system;
+
+(141) ‘ATS surveillance system’ means a generic term meaning variously, ADS-B, PSR, SSR or any comparable ground-based system that enables the identification of aircraft;
+
+(142) ‘automatic dependent surveillance – broadcast (ADS-B)’ means a means by which aircraft, aerodrome vehicles and other objects can automatically transmit or receive, or transmit and receive data such as identification, position and additional data, as appropriate, in a broadcast mode via a data link;
+
+(143) ‘automatic dependent surveillance – contract (ADS-C)’ means a means by which the terms of an ADS-C agreement will be exchanged between the ground system and the aircraft, via a data link, specifying under what conditions ADS-C reports would be initiated, and what data would be contained in the reports;
+
+(144) ‘automatic terminal information service (ATIS)’ means the automatic provision of current, routine information to arriving and departing aircraft throughout 24 hours a day or a specified portion thereof;
+
+(145) ‘data link-automatic terminal information service (D-ATIS)’ means the provision of ATIS via data link;
+
+(146) ‘voice-automatic terminal information service (Voice-ATIS)’ means the provision of ATIS by means of continuous and repetitive voice broadcasts;
+
+(147) ‘broadcast’ means a transmission of information relating to air navigation that is not addressed to a specific station or stations;
+
+(148) ‘ceiling’ means the height above the ground or water of the base of the lowest layer of cloud below 6 000 m (20 000 ft) covering more than half of the sky;
+
+(149) ‘clearance limit’ means the point to which an aircraft is granted an ATC clearance;
+
+(150) ‘cloud base’ means the height of the base of the lowest observed or forecast cloud element in the vicinity of an aerodrome or operating site or within a specified area of operations, normally measured above aerodrome elevation or, in the case of offshore operations, above mean sea level;
+
+(151) ‘completeness’ means, in relation to data, the degree of confidence that all data needed to support the intended use is provided;
+
+(152) ‘confidence level’ means the probability that the true value of a parameter is within a certain interval around the estimate of its value;
+
+(153) ‘conference communications’ means communication facilities whereby direct speech conversation may be conducted between three or more locations simultaneously;
+
+(154) ‘control zone’ means a controlled airspace extending upwards from the surface of the Earth to a specified upper limit;
+
+(155) ‘controlled aerodrome’ means an aerodrome at which air traffic control service is provided to aerodrome traffic;
+
+(156) ‘controlled airspace’ means an airspace of defined dimensions within which air traffic control service is provided in accordance with the airspace classification;
+
+(157) ‘controlled flight’ means any flight which is subject to an ATC clearance;
+
+(158) ‘controller-pilot data link communications (CPDLC)’ means a means of communication between air traffic controller and pilot, using data link for ATC communications;
+
+(159) ‘critical area’ means an area of defined dimensions extending around the ground equipment of a precision instrument approach within which the presence of vehicles or aircraft will cause unacceptable disturbance of the guidance signals;
+
+(160) ‘cruising level’ means a level maintained during a significant portion of a flight;
+
+(161) ‘cyclic redundancy check (CRC)’ means a mathematical algorithm applied to the digital expression of data that provides a level of assurance against loss or alteration of data;
+
+(162) ‘danger area’ means an airspace of defined dimensions within which activities dangerous to the flight of aircraft may exist at specified times;
+
+(163) ‘data accuracy’ means a degree of conformance between the estimated or measured value and the true value;
+
+(164) ‘data collection surface’ means a defined surface intended for the purpose of collecting obstacle or terrain data;
+
+(165) ‘data integrity’ means a degree of assurance that aeronautical data and its value has not been lost or altered since the data origination or authorised amendment;
+
+(166) ‘data item’ means a single attribute of a complete data set, which is allocated a value that defines its current status;
+
+(167) ‘data link communications’ means a form of communication intended for the exchange of messages via a data link;
+
+(168) ‘data link-VOLMET (D-VOLMET)’ means the provision of aerodrome routine meteorological report (METAR), aerodrome special meteorological report (SPECI), TAF, SIGMET, special air-reports not covered by a SIGMET and, where available, AIRMET via data link;
+
+(169) ‘data origination’ means the creation of a new data item with its associated value, the modification of the value of an existing data item or the deletion of an existing data item;
+
+(170) ‘data product specification’ means a detailed description of a data set or a collection of data sets together with additional information that will enable it to be created, supplied to and used by another party;
+
+(171) ‘data set’ means an identifiable collection of data;
+
+(172) ‘datum’ means any quantity or set of quantities that may serve as a reference or basis for the calculation of other quantities;
+
+(173) ‘DETRESFA’ is the code word used to designate a distress phase;
+
+(174) ‘distress phase’ means a situation wherein there is reasonable certainty that an aircraft and its occupants are threatened by grave and imminent danger or require immediate assistance;
+
+(175) ‘downstream clearance’ means a clearance issued to an aircraft by an air traffic control unit that is not the current controlling authority of that aircraft;
+
+(176) ‘essential traffic’ means controlled traffic to which the provision of separation by air traffic control service is applicable, but which, in relation to a particular controlled flight is not, or will not be, separated from other controlled traffic by the appropriate separation minimum;
+
+(177) ‘essential local traffic’ means any aircraft, vehicle or personnel on or near the manoeuvring area, or traffic in the take-off and climb-out area or the final approach area, which may constitute a hazard to the aircraft concerned;
+
+(178) ‘estimated time of arrival’ means:
+
+(a) for IFR flights, the time at which it is estimated that the aircraft will arrive over a designated point, defined by reference to navigation aids, from which it is intended that an instrument approach procedure will be commenced, or, if no navigation aid is associated with the aerodrome, the time at which the aircraft will arrive over the aerodrome;
+
+(b) for visual flight rules (VFR) flights, the time at which it is estimated that the aircraft will arrive over the aerodrome;
+
+(179) ‘feature’ means an abstraction of real world phenomena;
+
+(180) ‘feature attribute’ means a characteristic of a feature that has a name, a data type and a value domain associated with it;
+
+(181) ‘feature type’ means a class of real world phenomena with common properties, which forms the basic level of classification in a feature catalogue;
+
+(182) ‘final approach’ means that part of an instrument approach procedure which:
+
+(a) commences at the specified fix or point, or, where such a fix or point is not specified, at either of the following places:
+
+(i) at the end of the last procedure turn, base turn or inbound turn of a racetrack procedure, if specified;
+
+(ii) at the point of interception of the last track specified in the approach procedure,
+
+(b) ends at a point in the vicinity of an aerodrome from which a landing can be made or a missed approach procedure is initiated;
+
+(183) ‘flight information zone’ means an airspace of defined dimension within which aerodrome flight information service and alerting service for aerodrome traffic are provided;
+
+(184) ‘flight procedure design services’ means services for the design, documentation, validation, maintenance and periodic review of flight procedures necessary for the safety, regularity and efficiency of air navigation;
+
+(185) ‘flight procedure designer’ means a qualified person who performs design, documentation, validation, continuous maintenance, and periodic review of flight procedures;
+
+(186) ‘flight procedure’ means a set of predetermined flight manoeuvres intended to be followed by a pilot, published by electronic, printed or digital means, or both. Flight procedure is conducted either in accordance with instrument flight rules (IFR) or visual flight rules (VFR);
+
+(187) ‘flight plan’ means specified information provided to air traffic services units, relative to an intended flight or portion of a flight of an aircraft;
+
+(188) ‘flight visibility’ means the visibility forward from the cockpit of an aircraft in flight;
+
+(189) ‘format’ means, in relation to data, a structure of data items, records and files arranged to meet standards, specifications or data quality requirements;
+
+(190) ‘geoid’ means the equipotential surface in the gravity field of the Earth which coincides with the undisturbed mean sea level (MSL) extended continuously through the continents;
+
+(191) ‘geoid undulation’ means the distance of the geoid above (positive) or below (negative) the mathematical reference ellipsoid;
+
+(192) ‘glide path’ means a descent profile determined for vertical guidance during a final approach;
+
+(193) ‘ground visibility’ means the visibility at an aerodrome, as reported by an accredited observer or by automatic systems;
+
+(194) ‘heading’ means the direction in which the longitudinal axis of an aircraft is pointed, usually expressed in degrees from North (true, magnetic, compass or grid);
+
+(195) ‘heliport’ means an aerodrome or a defined area on a structure intended to be used wholly or in part for the arrival, departure and surface movement of helicopters;
+
+(196) ‘integrity classification’ means, in relation to aeronautical data, a classification based upon the potential risk resulting from the use of corrupted data, defining routine, essential and critical data;
+
+(197) ‘international NOTAM office (NOF)’ means an office designated by a Member State for the exchange of NOTAM internationally;
+
+(198) ‘holding fix’ means a geographical location that serves as a reference for a holding procedure;
+
+(199) ‘holding procedure’ means a predetermined manoeuvre which keeps an aircraft within a specified airspace while awaiting further clearance;
+
+(200) ‘identification’ means the situation which exists when the position indication of a particular aircraft is seen on a situation display and positively identified;
+
+(201) ‘instrument flight rules’ are rules which allow an aircraft which is equipped with suitable navigation equipment appropriate to the route to be flown in accordance with the applicable requirements on air operations.
+
+(202) ‘INCERFA’ is the code word used to designate an uncertainty phase;
+
+(203) ‘instrument approach operations’ means an approach and landing using instruments for navigation guidance based on an instrument approach procedure. There are two methods for executing instrument approach operations:
+
+(a) a two-dimensional (2D) instrument approach operation, using lateral navigation guidance only;
+
+(b) a three-dimensional (3D) instrument approach operation, using both lateral and vertical navigation guidance;
+
+(204) ‘instrument approach procedure (IAP)’ means a series of predetermined manoeuvres by reference to flight instruments with specified protection from obstacles from the initial approach fix, or where applicable, from the beginning of a defined arrival route to a point from which a landing can be completed and thereafter, if a landing is not completed, to a position at which holding or en-route obstacle clearance criteria apply. Instrument approach procedures are classified as follows:
+
+(a) ‘non-precision approach (NPA) procedure’ means an instrument approach procedure designed for 2D instrument approach operations Type A.
+
+(b) ‘approach procedure with vertical guidance (APV)’ means a performance-based navigation (PBN) instrument approach procedure designed for 3D instrument approach operations Type A.
+
+(c) ‘precision approach (PA) procedure’ means an instrument approach procedure based on navigation systems (ILS, MLS, GLS and SBAS Cat I) designed for 3D instrument approach operations Type A or B;]
+
+(205) ‘instrument meteorological conditions (IMC)’ means meteorological conditions expressed in terms of visibility, distance from cloud, and ceiling, less than the minima specified for visual meteorological conditions;
+
+(206) ‘low-visibility operations (LVOs)’ means approach or take-off operations on a runway with a runway visual range (RVR) of less than 550 m or with a decision height (DH) of less than 200 ft;
+
+(206a) ‘low-visibility procedures’ means procedures applied at an aerodrome for the purpose of ensuring safety during low-visibility operations;
+
+(207) ‘manoeuvring area’ means that part of an aerodrome to be used for the take-off, landing and taxiing of aircraft, excluding aprons;
+
+(208) ‘metadata’ means data about data;
+
+(209) ‘movement area’ means that part of an aerodrome to be used for the take-off, landing and taxiing of aircraft, consisting of the manoeuvring area and the apron;
+
+(210) ‘navigation aid’ means a facility or system external to the aircraft, which generates electro-magnetic signals to be used by aircraft navigation systems for position determination or flight path guidance;
+
+(211) ‘mode Secondary Surveillance Radar (SSR)’ means the conventional identifier related to specific functions of the interrogation signals transmitted by an SSR interrogator. There are four modes specified in ICAO Annex 10: A, C, S and intermode;
+
+(212) ‘near-parallel runways’ means non-intersecting runways whose extended centre lines have an angle of convergence/divergence of 15 degrees or less;
+
+(212a) ‘operation with operational credits’ means an operation using specific aircraft or ground equipment, or a combination of aircraft and ground equipment which allows any of the following elements:
+
+(a) the application of lower-than-standard aerodrome operating minima for a particular classification of operation;
+
+(b) visibility requirements can be satisfied or reduced;
+
+(c) fewer ground facilities are required;
+
+(213) ‘pilot-in-command’ means the pilot designated by the operator, or in the case of General Aviation, the owner, as being in command and charged with the safe conduct of a flight;
+
+(214) ‘position’ means, in a geographical context, a set of coordinates (latitude and longitude) referenced to the mathematical reference ellipsoid, which define the position of a point on the surface of the Earth;
+
+(215) ‘position indication’ means the visual indication, in non-symbolic or symbolic form, or both, on a situation display, of the position of an aircraft, aerodrome vehicle or other object;
+
+(216) ‘pressure-altitude’ means an atmospheric pressure expressed in terms of altitude which corresponds to that pressure in the Standard Atmosphere;
+
+(217) ‘primary radar’ means a radar system which uses reflected radio signals;
+
+(218) ‘printed communications’ means communications which automatically provide a permanent printed record at each terminal of a circuit of all messages which pass over such circuit;
+
+(219) ‘prohibited area’ means an airspace of defined dimensions, above the land areas or territorial waters of a Member State, within which the flight of aircraft is prohibited;
+
+(220) ‘radio navigation service’ means a service providing guidance information or position data for the efficient and safe operation of aircraft supported by one or more radio navigation aids;
+
+(221) ‘radiotelephony’ means a form of radio communication primarily intended for the exchange of information in the form of speech;
+
+(222) ‘required communication performance specification’ or ‘RCP specification’ means a set of requirements for air traffic service provision and associated ground equipment, aircraft capability, and operations needed to support performance-based communication;
+
+(223) ‘required surveillance performance specification’ or ‘RSP specification’ means a set of requirements for air traffic service provision and associated ground equipment, aircraft capability, and operations needed to support performance-based surveillance;
+
+(224) ‘resolution’ means, in relation to data, a number of units or digits to which a measured or calculated value is expressed and used;
+
+(225) ‘restricted area’ means an airspace of defined dimensions, above the land areas or territorial waters of a Member State, within which the flight of aircraft is restricted in accordance with certain specified conditions;
+
+(226) ‘route stage’ means a route or portion of a route flown without an intermediate landing;
+
+(227) ‘runway-in-use’ means the runway or runways that, at a particular time, are considered by the air traffic services unit to be the most suitable for use by the types of aircraft expected to land or take off at the aerodrome. Separate or multiple runways may be designated runway-in-use for arriving aircraft and departing aircraft;
+
+(228) ‘secondary radar’ means a radar system wherein a radio signal transmitted from the radar station initiates the transmission of a radio signal from another station;
+
+(229) ‘secondary surveillance radar (SSR)’ means a surveillance radar system which uses transmitters and receivers (interrogators) and transponders;
+
+(230) ‘sensitive area’ means an area extending beyond the critical area where the parking or movement of aircraft or vehicles will affect the guidance signal to the extent that it may be rendered as an unacceptable disturbance to aircraft using the signal;
+
+(231) ‘SNOWTAM’ means a special series NOTAM given in a standard format, which provides a surface condition report notifying the presence or cessation of hazardous conditions due to snow, ice, slush, frost, standing water or water associated with snow, slush, ice, or frost on the movement area;
+
+(232) ‘significant point’ means a specified geographical location used in defining an ATS route or the flight path of an aircraft and for other navigation and air traffic services purposes;
+
+(233) ‘situation display’ means an electronic display depicting the position and movement of aircraft and other information as required;
+
+(234) ‘standard instrument arrival (STAR)’ means a designated IFR arrival route that links a significant point, normally on an ATS route, with a point from which a published instrument approach procedure can be commenced;
+
+(235) ‘standard instrument departure (SID)’ means a designated IFR departure route that links the aerodrome or a specified runway of the aerodrome with a specified significant point, normally on a designated ATS route, at which the en-route phase of a flight commences;
+
+(236) ‘special VFR flight’ means a VFR flight cleared by ATC to operate within a control zone in meteorological conditions below VMC;
+
+(237) ‘taxiing’ means movement of an aircraft on the surface of an aerodrome or an operating site under its own power, excluding take-off and landing;
+
+(238) ‘taxiway’ means a defined path on a land aerodrome established for the taxiing of aircraft and intended to provide a link between one part of the aerodrome and another;
+
+(239) ‘terminal control area (TMA)’ means a control area normally established at the confluence of ATS routes in the vicinity of one or more major aerodromes;
+
+(240) ‘timeliness’ means, in relation to data, the degree of confidence that the data is applicable to the period of its intended use;
+
+(241) ‘traceability’ means, in relation to data, the degree to which a system or a data product can provide a record of the changes made to that product and thereby enable an audit trail to be followed from the end-user to the party originating data;
+
+(242) ‘track’ means the projection on the Earth’s surface of the path of an aircraft, the direction of which path at any point is usually expressed in degrees from North (true, magnetic or grid);
+
+(243) ‘traffic information’ means information issued by an air traffic services unit to alert a pilot to other known or observed air traffic which may be in proximity to the position or intended route of flight and to help the pilot avoid a collision;
+
+(244) ‘transfer of control point’ means a defined point located along the flight path of an aircraft, at which the responsibility for providing air traffic control service to the aircraft is transferred from one control unit or control position to the next;
+
+(245) ‘transferring unit’ means air traffic control unit in the process of transferring the responsibility for providing air traffic control service to an aircraft to the next air traffic control unit or air traffic controller along the route of flight;
+
+(246) ‘transition altitude’ means the altitude at or below which the vertical position of an aircraft is controlled by reference to altitudes;
+
+(247) ‘transition layer’ means the airspace between the transition altitude and the transition level;
+
+(248) ‘transition level’ means the lowest flight level available for use above the transition altitude;
+
+(249) ‘validation’ means, in relation to data, the process of ensuring that data meets the requirements for the specified application or intended use;
+
+(250) ‘verification’ means, in relation to data, the evaluation of the output of an aeronautical data process to ensure correctness and consistency with respect to the inputs and applicable data standards, rules and conventions used in that process;
+
+(251) ‘uncertainty phase’ means a situation wherein uncertainty exists as to the safety of an aircraft and its occupants;
+
+(252) ‘unmanned free balloon’ means a non-power-driven, unmanned, lighter-than-air aircraft in free flight;
+
+(253) ‘vectoring’ means the provision of navigational guidance to aircraft in the form of specific headings, based on the use of an ATS surveillance system;
+
+(254) ‘visual flight rules flight’ or ‘VFR flight’ means a flight conducted in accordance with the visual flight rules;
+
+(255) ‘visual approach’ means an approach by an IFR flight when either part or all of an instrument approach procedure is not completed and the approach is executed in visual reference to terrain;
+
+(256) ‘visual meteorological conditions (VMC)’ means meteorological conditions expressed in terms of visibility, distance from cloud, and ceiling, equal to or better than specified minima;
+
+(257) ‘VOLMET’ means meteorological information for aircraft in flight;
+
+(258) ‘VOLMET broadcast’ means the provision, as appropriate, of current METAR, SPECI, TAF and SIGMET by means of continuous and repetitive voice broadcasts;
+
+(259) ‘waypoint’ means a specified geographical location used to define an area navigation route or the flight path of an aircraft employing area navigation. Waypoints are identified as either:
+
+(a) fly-by waypoint – a waypoint which requires turn anticipation to allow tangential interception of the next segment of a route or procedure, or
+
+(b) fly-over waypoint – a waypoint at which a turn is initiated in order to join the next segment of a route or procedure
+
+(260) “U-space airspace”means a UAS geographical zone designated by Member States, where UAS operations are only allowed to take place with the support of U-space services;
+
+(261) “U-space service”means a service relying on digital services and automation of functions designed to support safe, secure and efficient access to U-space airspace for a large number of UAS;
+
+(262) “common information service”means a service consisting in dissemination of static and dynamic data to enable the provision of U-space services for the management of traffic of unmanned aircraft;
+
+(263) “dynamic airspace reconfiguration”means the temporary modification of the U-space airspace in order to accommodate short-term changes in manned traffic demand, by adjusting the geographical limits of that U-space airspace.
+
+(264) ‘volcano observatory’ means a provider, selected by the competent authority, which observes the activity of a volcano or a group of volcanoes and makes these observations available to an agreed list of aviation recipients;
+
+(265) ‘Geography Markup Language (GML)’ means an encoding standard of the Open Geospatial Consortium (OGC);
+
+(266) ‘space weather centre (SWXC)’ means a centre designated to monitor and provide advisory information on space weather phenomena expected to affect high-frequency radio communications, communications via satellite, GNSS-based navigation and surveillance systems and/or pose a radiation risk to aircraft occupants.
+
 ## GM1 2. Aerial work  _(GM)_
 
 ED Decision 2020/008/R
@@ -1004,6 +1642,10 @@ ED Decision 2022/004/R
 GENERAL
 
 A space weather centre (SWXC) is designated as global and/or regional.
+
+## Annex II Part-ATM/ANS.AR  _(IR)_
+
+REQUIREMENTS FOR COMPETENT AUTHORITIES — OVERSIGHT OF SERVICES AND OTHER ATM NETWORK FUNCTIONS
 
 ## ATM/ANS.AR.A.001 Scope  _(IR)_
 
@@ -2291,7 +2933,7 @@ OBSERVATIONS
 
 The observation should be a way to communicate and draw future audit teams’ attention on specific matters that deserve scrutiny. It should be communicated to the audited service provider.
 
-## Appendix 1 — EASA Form 157  _(IR)_
+## Appendix 1 EASA Form 157  _(IR)_
 
 Commission Implementing Regulation (EU) 2020/469
 
@@ -2430,6 +3072,10 @@ Conditions2 |
 Date of issue: / Signed: [Competent authority] / For the Member State/EASA
 
 EASA Form 157 Issue 1 — Page 4/4
+
+## Annex III Part-ATM/ANS.OR  _(IR)_
+
+ANNEX III COMMON REQUIREMENTS FOR SERVICE PROVIDERS (Part-ATM/ANS.OR)
 
 ## ATM/ANS.OR.A.001 Scope  _(IR)_
 
@@ -7806,6 +8452,10 @@ Schedule | A repetitive time period, composed of one or more intervals or specia
 Code list | A set of predefined text strings or values | Text
 
 Text | Free text | String of characters without constraints’
+
+## Annex IV Part-ATS  _(IR)_
+
+SPECIFIC REQUIREMENTS FOR PROVIDERS OF AIR TRAFFIC SERVICES
 
 ## GM1 Annex IV (Part-ATS)  _(GM)_
 
@@ -17063,6 +17713,10 @@ C.Between units that provide area control services required to operate the data 
 
 (7) Failure of the next-authority-notified-process to confirm completion, in accordance with the applicable quality-of-service requirements, shall result in the initiation of local procedures within the transferring unit.
 
+## Annex V Part-MET  _(IR)_
+
+SPECIFIC REQUIREMENTS FOR PROVIDERS OF METEOROLOGICAL SERVICES
+
 ## MET.OR.100 Meteorological data and information  _(IR)_
 
 Regulation (EU) 2017/373
@@ -21958,6 +22612,10 @@ Ref. | Elements | Range | Resolution
  |  | KT | 0–150 | 5
 
 (1) Non-dimensional.
+
+## Annex VI Part-AIS  _(IR)_
+
+SPECIFIC REQUIREMENTS FOR THE PROVIDERS OF AERONAUTICAL INFORMATION SERVICES
 
 ## AIS.OR.100 Aeronautical information management  _(IR)_
 
@@ -26967,6 +27625,10 @@ The colour code for the level of alert indicating the status of activity of the 
 
 3.11Item K – Any operationally significant information, additional to the foregoing, shall be included in plain language.
 
+## Annex VII Part-DAT  _(IR)_
+
+SPECIFIC REQUIREMENTS FOR PROVIDERS OF DATA SERVICES
+
 ## DAT.OR.100 Aeronautical data and information  _(IR)_
 
 Regulation (EU) 2017/373
@@ -27457,6 +28119,10 @@ INTERFACES WITH AIRCRAFT OPERATORS — TYPE 2 DAT PROVIDERS
 
 The Type 2 DAT provider should demonstrate that a formal interface with aircraft operators is in place to confirm that operators’ requests are clearly defined and subject to review.
 
+## Annex VIII Part-CNS  _(IR)_
+
+SPECIFIC REQUIREMENTS FOR PROVIDERS OF COMMUNICATION, NAVIGATION, OR SURVEILLANCE SERVICES
+
 ## CNS.OR.100 Technical and operational competence and capability  _(IR)_
 
 Regulation (EU) 2017/373
@@ -27601,17 +28267,29 @@ Regulation (EU) 2023/1771
 
 (e) The surveillance services provider shall ensure that each of their Mode S interrogators uses exclusively its allocated interrogator code.
 
+## Annex IX Part-ATFM  _(IR)_
+
+SPECIFIC REQUIREMENTS FOR PROVIDERS OF AIR TRAFFIC FLOW MANAGEMENT
+
 ## ATFM.TR.100 Working methods and operating procedures for providers of air traffic flow management  _(IR)_
 
 Regulation (EU) 2023/1771
 
 An air traffic flow management provider shall be able to demonstrate that its working methods and operating procedures are compliant with Commission Regulations (EU) No 255/2010 and (EU) 2019/123
 
+## Annex X Part-ASM  _(IR)_
+
+SPECIFIC REQUIREMENTS FOR PROVIDERS OF AIRSPACE MANAGEMENT
+
 ## ASM.TR.100 Working methods and operating procedures for providers of airspace management  _(IR)_
 
 Regulation (EU) 2023/1771
 
 An airspace management provider shall be able to demonstrate that its working methods and operating procedures are compliant with Commission Regulations (EC) No 2150/2005 and and (EU) 2019/123.
+
+## Annex XI Part-FPD  _(IR)_
+
+SPECIFIC REQUIREMENTS FOR PROVIDERS OF FLIGHT PROCEDURE DESIGN SERVICES
 
 ## FPD.OR.100 Flight procedure design (FPD) services  _(IR)_
 
@@ -28511,6 +29189,10 @@ PROHIBITED, RESTRICTED AND DANGER AREAS
 
 (b) Nationality letters are those contained in ICAO Doc 7910 ‘Location Indicators’.
 
+## Annex XII Part-NM  _(IR)_
+
+SPECIFIC REQUIREMENTS FOR THE NETWORK MANAGER
+
 ## NM.TR.100 Working methods and operating procedures for the Network Manager  _(IR)_
 
 Regulation (EU) 2023/1771
@@ -28550,6 +29232,10 @@ Regulation (EU) 2023/1771
 (a) The Network Manager shall, based on the airspace volume declared according to Appendix 1 to point (b) of point ATS.OR.446 of this Regulation and the flight plans filed in accordance with point SERA.4013 of Implementing Regulation (EU) No 923/2012, assess the eligibility of the flight for the assignment of the conspicuity SSR code A1000.
 
 (b) The Network Manager shall communicate to all affected air traffic services units those flights that are eligible for the use of the conspicuity SSR code A1000.
+
+## Annex XIII Part-PERS  _(IR)_
+
+REQUIREMENTS FOR SERVICE PROVIDERS CONCERNING PERSONNEL TRAINING AND COMPETENCE ASSESSMENT
 
 ## ATSEP.OR.100 Scope  _(IR)_
 
@@ -29055,7 +29741,7 @@ ASSESSMENT RESPONSIBILITIES
 
 (b) If the appointed technical assessor also acts as line manager to the individual ATSEP, the service provider should have in place a process to reduce biases. Responsibility for determining competence lies with the person having the safety accountability for the ATSEP function.
 
-## Appendix 1 — Basic training — Shared  _(IR)_
+## Appendix 1 Basic training — Shared  _(IR)_
 
 Regulation (EU) 2017/373
 
@@ -29097,7 +29783,7 @@ Sub-topic 1.4 — Air Traffic Control Tools and Monitoring Aids
 
 Sub-topic 1.5 — Familiarisation
 
-## Appendix 1a — Basic training — Shared  _(AMC)_
+## Appendix 1a Basic training — Shared  _(AMC)_
 
 ED Decision 2020/020/R
 
@@ -29285,7 +29971,7 @@ ATSEP.BAS.MET_1.4 | Meteorological Systems |  |
 
 ATSEP.BAS.MET_1.4.1 | Explain the basic principles of the main meteorological systems in use | 2 | e.g. weather display and information systems, wind speed (anemometer), wind direction (weather vane), visibility (types of IRVR, forward scatter), temperature probes, pressure (aneroid barometers), humidity, cloud base (laser ceilometers)
 
-## Appendix 2 — Basic training — Streams  _(IR)_
+## Appendix 2 Basic training — Streams  _(IR)_
 
 Regulation (EU) 2017/373
 
@@ -29305,7 +29991,7 @@ Subject 9: SYSTEM MONITORING & SYSTEM CONTROL
 
 Subject 10: MAINTENANCE PROCEDURES
 
-## Appendix 2a — Basic training — Streams  _(AMC)_
+## Appendix 2a Basic training — Streams  _(AMC)_
 
 ED Decision 2020/020/R
 
@@ -29745,7 +30431,7 @@ ATSEP.BAS.FAC_1.2.1 | State the function, appropriate terminology and performanc
 
 ATSEP.BAS.FAC_1.2.2 | State the importance and criticality of maintaining a controlled environment | 1 | Short- and long-term effect on people and equipment
 
-## Appendix 3 — Qualification training — Shared  _(IR)_
+## Appendix 3 Qualification training — Shared  _(IR)_
 
 Regulation (EU) 2017/373
 
@@ -29819,7 +30505,7 @@ TOPIC 8 — Human Error
 
 Sub-topic 8.1 — Human Error
 
-## Appendix 3a — Qualification training — Shared  _(AMC)_
+## Appendix 3a Qualification training — Shared  _(AMC)_
 
 ED Decision 2020/020/R
 
@@ -30103,7 +30789,7 @@ ATSEP UOID / (Unique Objective IDentifier) | CORPUS | T / A / X | CONTENT
 
 ATSEP.QLF.SHR.ISS_1.1.14 | Appreciate a holistic security architecture | 3 | Application security, network security, operating systems security, role of SOC/CERT, system of systems e.g. firewalls, proxies, routers, switches, network data flow, PKIs, DMZ, IDS/IPS, etc.
 
-## Appendix 4 — Qualification training — Streams  _(IR)_
+## Appendix 4 Qualification training — Streams  _(IR)_
 
 Regulation (EU) 2017/343
 
@@ -31523,7 +32209,7 @@ Sub-topic 1.2 — Data Configuration Control
 
 Sub-topic 1.2 — Data Standards
 
-## Appendix 4a — Qualification training — Streams  _(AMC)_
+## Appendix 4a Qualification training — Streams  _(AMC)_
 
 ED Decision 2020/020/R
 
@@ -33069,7 +33755,7 @@ COM-Voice | COM-Data | NAV-NDB | NAV-DF | NAV-VOR | NAV-DME | NAV-ILS | SUR-PSR 
 
  |  |  |  |  |  |  |  |  |  |  | X | X | X | X | ATSEP.QLF.SMC.TEC_1.6.2 | Appreciate the impact of the loss of supply and/or replacement of components in facility equipment | 3 | Continuity of service, integrity
 
-## Appendix 5a — General guidelines  _(GM)_
+## Appendix 5a General guidelines  _(GM)_
 
 ED Decision 2020/020/R
 

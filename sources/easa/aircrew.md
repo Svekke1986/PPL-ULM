@@ -5,7 +5,7 @@
 - © European Union / EASA. Hergebruik toegestaan met bronvermelding (zie copyright notice in de Easy Access Rules).
 - IR = de regel zelf (verordening), AMC = aanvaardbare wijze van naleving, GM = toelichting.
 
-## Article 1 — Subject matter  _(CR)_
+## Article 1 Subject matter  _(CR)_
 
 Regulation (EU) 2020/359
 
@@ -31,7 +31,7 @@ Regulation (EU) 2020/359
 
 2.Articles 11b and 11c of this Regulation as well as Annex IV (Part-MED), Annex VI (Part-ARA), Annex VII (Part-ORA) and Annex VIII (Part-DTO) to this Regulation shall apply to pilot licences for balloons and sailplanes.
 
-## Article 2 — Definitions  _(CR)_
+## Article 2 Definitions  _(CR)_
 
 Regulation (EU) 2024/2076
 
@@ -275,7 +275,7 @@ MEANING OF THE TERM ‘SINGLE THRUST CONTROL’
 
 The SEP aeroplane class, as defined in Article 2(8c), includes aeroplanes whose single propulsion unit (propeller) is driven by more than one engine (e.g. a hybrid engine system, consisting of a piston and an electric engine). Despite such a ‘multi-engine’ power plant system, such an aircraft can follow the single-engine aeroplane licensing framework since malfunctions of one engine will lead to a (partial) loss of power but never to an asymmetric flight condition. Hence, if during the certification process for a particular aeroplane it is determined that, from a pilot’s perspective, there is no difference between operating a conventional single-engine power plant and the as above described multi-engine single-propeller power plant of the aeroplane under certification, that aeroplane for the purpose of flight crew licensing can be treated as a single-engine aeroplane. In this context, the term ‘single thrust control’ is meant to refer to engine controls of such an innovative power plant which are equivalent to the engine controls of a conventional single-engine power plant.
 
-## Article 3 — Pilot licensing and medical certification  _(CR)_
+## Article 3 Pilot licensing and medical certification  _(CR)_
 
 Regulation (EU) 2024/2076
 
@@ -283,7 +283,7 @@ Regulation (EU) 2024/2076
 
 2.Notwithstanding the privileges of the holders of licences as defined in Annex I to this Regulation, holders of pilot licences issued in accordance with Subpart B or C of Annex I to this Regulation may carry out flights referred to in Article 6(4a) of Regulation (EU) No 965/2012. This is without prejudice to compliance with any additional requirements for the carriage of passengers or the development of commercial operations defined in Subparts B or C of Annex I to this Regulation.
 
-## Article 3a — Transitional measures for medical assessment protocols applied in accordance with point ARA.MED.330 of Annex VI (Part-ARA) and medical certificates issued on the basis thereof  _(CR)_
+## Article 3a Transitional measures for medical assessment protocols applied in accordance with point ARA.MED.330 of Annex VI (Part-ARA) and medical certificates issued on the basis thereof  _(CR)_
 
 Regulation (EU) 2024/2076
 
@@ -291,7 +291,7 @@ Regulation (EU) 2024/2076
 
 2.Holders of medical certificates issued in accordance with the medical assessment protocols referred to in paragraph 1 may exercise the privileges of their pilot licences on the basis of their medical certificates, as long as the relevant medical assessment protocol continues to apply in accordance with paragraph 1.
 
-## Article 4 — Existing national pilots’ licences  _(CR)_
+## Article 4 Existing national pilots’ licences  _(CR)_
 
 Regulation (EU) 2025/134
 
@@ -363,7 +363,7 @@ Regulation (EU) 2025/134
 
 9.For licences issued before 19 August 2018, Member States shall comply with the requirements laid down in the second paragraph of point (a) of ARA.FCL.200 as amended by Commission Regulation (EU) 2018/1065 by 31 December 2022 at the latest.
 
-## Article 4a — Performance-based navigation instrument rating privileges  _(CR)_
+## Article 4a Performance-based navigation instrument rating privileges  _(CR)_
 
 Regulation (EU) 2016/539
 
@@ -383,7 +383,7 @@ Regulation (EU) 2016/539
 
 5.IR pilots without PBN privileges may only fly on routes and approaches that do not require PBN privileges and no PBN items shall be required for the renewal of their IR, until 25 August 2020; after that date, PBN privileges shall be required for every IR.
 
-## Article 4b — Upset prevention and recovery training  _(CR)_
+## Article 4b Upset prevention and recovery training  _(CR)_
 
 Regulation (EU) 2018/1974
 
@@ -407,7 +407,7 @@ in accordance with Annex I (Part-FCL).
 
 For the purpose of paragraph 1, the competent authority may on its own assessment and pursuant to a recommendation from an ATO give credit for any upset prevention and recovery training completed before 20 December 2019 under national training requirements.
 
-## Article 4c — Transitional measures for holders of an en route instrument rating  _(CR)_
+## Article 4c Transitional measures for holders of an en route instrument rating  _(CR)_
 
 Regulation (EU) 2021/2227
 
@@ -425,7 +425,7 @@ Regulation (EU) 2021/2227
 
 3.Applicants for a BIR who hold an EIR or have passed the theoretical knowledge examination for an EIR in accordance with point FCL.825(d) prior to 8 September 2021 shall receive full credit towards the requirements for the theoretical knowledge instruction and examination for the BIR.
 
-## Article 4d — Transitional measures for single-engine instrument rating privileges for helicopters  _(CR)_
+## Article 4d Transitional measures for single-engine instrument rating privileges for helicopters  _(CR)_
 
 Regulation (EU) 2021/2227
 
@@ -435,7 +435,7 @@ Without prejudice to point FCL.630.H of Annex I (Part-FCL) to this Regulation, a
 
 2.Applicants who before 30 October 2022 commenced training for an IR(H) for either singleengine or multi-engine helicopters shall be allowed to complete that training and, in such a case, be issued with an IR(H) for both single-engine and multi-engine helicopters.
 
-## Article 4e — Transitional measures for training, testing and checking related to multi-pilot operations in single-pilot helicopters  _(CR)_
+## Article 4e Transitional measures for training, testing and checking related to multi-pilot operations in single-pilot helicopters  _(CR)_
 
 Regulation (EU) 2021/2227
 
@@ -449,7 +449,7 @@ Regulation (EU) 2021/2227
 
 2.The privileges issued in accordance with paragraph 1 shall be valid until 30 October 2025. In order to revalidate the privileges, applicants shall comply with the experience requirements for instructor and examiner privileges related to multi-pilot operation in single-pilot helicopters as set out in Part-FCL.
 
-## Article 4f — Type ratings for VCA  _(CR)_
+## Article 4f Type ratings for VCA  _(CR)_
 
 Regulation (EU) 2024/1111
 
@@ -561,7 +561,7 @@ Article 4f(8), they should complete the instructor refresher training in the for
 
 (b) If applicants for the renewal of an instructor certificate referred to in Article 4f(7) of Regulation (EU) No 1178/2011 wish to renew instructor privileges for VCA as per Article 4f(8), they should complete the instructor refresher training following an individual training programme that is established by an ATO, after that ATO has determined on a case-by-case basis the amount of refresher training needed, based on an assessment of the applicant. Such individual training programmes should be based on the content of the training referred to in Article 4f(7)(c).
 
-## Article 4g — Specific requirements for applicants for a gyroplane pilot licence  _(CR)_
+## Article 4g Specific requirements for applicants for a gyroplane pilot licence  _(CR)_
 
 Regulation (EU) 2025/134
 
@@ -575,7 +575,7 @@ Regulation (EU) 2025/134
 
 [applicable from 18 February 2026 - Regulation (EU) 2025/134]
 
-## Article 4h — Transitional measures for holders of a mountain rating  _(CR)_
+## Article 4h Transitional measures for holders of a mountain rating  _(CR)_
 
 Regulation (EU) 2024/2076
 
@@ -591,7 +591,7 @@ Regulation (EU) 2019/1747
 
 [Deleted]
 
-## Article 6 — Conversion of flight test qualifications  _(CR)_
+## Article 6 Conversion of flight test qualifications  _(CR)_
 
 Regulation (EU) No 1178/2011
 
@@ -599,7 +599,7 @@ Regulation (EU) No 1178/2011
 
 2.This conversion shall be carried out in accordance with the elements established in a conversion report that complies with the requirements set out in Article 4(4) and (5).
 
-## Article 7 — Existing national flight engineers’ licences  _(CR)_
+## Article 7 Existing national flight engineers’ licences  _(CR)_
 
 Regulation (EU) No 1178/2011
 
@@ -615,7 +615,7 @@ Regulation (EU) 2020/723
 
 [Deleted by Commission Delegated Regulation (EU) 2020/723]
 
-## Article 9 — Credit for training commenced prior to the application of this Regulation  _(CR)_
+## Article 9 Credit for training commenced prior to the application of this Regulation  _(CR)_
 
 Regulation (EU) 2019/1747
 
@@ -625,7 +625,7 @@ Regulation (EU) 2019/1747
 
 3.The credit report shall describe the scope of the training, indicate for which requirements of Part-FCL licences credit is given and, if applicable, which requirements applicants need to comply with in order to be issued with Part-FCL licences. It shall include copies of all documents necessary to demonstrate the scope of the training and of the national regulations and procedures in accordance with which the training was commenced.
 
-## Article 9a — Type rating training and operational suitability data  _(CR)_
+## Article 9a Type rating training and operational suitability data  _(CR)_
 
 Regulation (EU) No 70/2014
 
@@ -633,7 +633,7 @@ Regulation (EU) No 70/2014
 
 2.Type rating training courses approved before the approval of the minimum syllabus of pilot type rating training in the operational suitability data for the relevant type of aircraft in accordance with Regulation (EU) No 748/2012 shall include the mandatory training elements not later than 18 December 2017 or within two years after the operational suitability data was approved, whichever is the latest.
 
-## Article 10 — Credit for pilot licences obtained during military service  _(CR)_
+## Article 10 Credit for pilot licences obtained during military service  _(CR)_
 
 Regulation (EU) No 1178/2011
 
@@ -653,7 +653,7 @@ Regulation (EU) No 1178/2011
 
 (e) include copies of all documents necessary to demonstrate the elements above, accompanied by copies of the relevant national requirements and procedures.
 
-## Article 10a — Pilot training organisations  _(CR)_
+## Article 10a Pilot training organisations  _(CR)_
 
 Regulation (EU) 2021/2227
 
@@ -671,25 +671,25 @@ However, having regard to Article 24(6) of Regulation (EU) 2018/1139, organisati
 
 6.Pilot training organisations that provide training for the IR(H) shall adapt their training programme to be compliant with Annex I by 30 October 2023.
 
-## Article 10b — Flight simulation training devices  _(CR)_
+## Article 10b Flight simulation training devices  _(CR)_
 
 Regulation (EU) 2019/1747
 
 1.Flight simulation training devices (FSTDs) used for pilot training, testing and checking, with the exception of developmental training devices used for flight test training, shall comply with the technical requirements and administrative procedures laid down in Annexes VI and VII and shall be qualified.
 
-## Article 10c — Aero-medical centres  _(CR)_
+## Article 10c Aero-medical centres  _(CR)_
 
 Regulation (EU) 2019/1747
 
 1.Aero-medical centres shall comply with the technical requirements and administrative procedures laid down in Annexes VI and VII and shall be certified.
 
-## Article 11 — Cabin crew medical fitness  _(CR)_
+## Article 11 Cabin crew medical fitness  _(CR)_
 
 Regulation (EU) 2019/1747
 
 1.Cabin crew members involved in the operation of aircraft referred to in Article 4(1)(b) and (c) of Regulation (EC) No 216/2008 shall comply with the technical requirements and administrative procedures laid down in Annex IV.
 
-## Article 11a — Cabin crew qualifications and related attestations  _(CR)_
+## Article 11a Cabin crew qualifications and related attestations  _(CR)_
 
 Regulation (EU) 2019/1747
 
@@ -709,7 +709,7 @@ Regulation (EU) 2019/1747
 
 5.Without prejudice to Article 2, cabin crew attestations complying with the format laid down in Annex VI shall be issued to all cabin crew members involved in commercial operations by helicopters by 8 April 2013 at the latest.
 
-## Article 11b — Oversight capabilities  _(CR)_
+## Article 11b Oversight capabilities  _(CR)_
 
 Regulation (EU) No 290/2012
 
@@ -741,7 +741,7 @@ Regulation (EU) No 290/2012
 
 6.The tasks under paragraph 5 shall be carried out in compliance with the legal provisions of the relevant Member State.
 
-## Article 11c — Transitional measures  _(CR)_
+## Article 11c Transitional measures  _(CR)_
 
 Regulation (EU) 2020/359
 
@@ -751,7 +751,7 @@ Member States shall:
 
 (b) in coordination with EASA, conclude, certification processes initiated before 8 April 2020 and issue the certificate following which EASA assumes all its responsibilities as a competent authority for those certified organisations.
 
-## Article 12 — Entry into force and application (of Commission Regulation (EU) No 1178/2011)  _(CR)_
+## Article 12 Entry into force and application (of Commission Regulation (EU) No 1178/2011)  _(CR)_
 
 Regulation (EU) 2020/2193
 
@@ -41597,7 +41597,7 @@ in case of applicants wishing to conduct assessments of competence:
 
 [applicable from 18 February 2026 - Regulation (EU) 2025/134]
 
-## Appendix 1 – Crediting of theoretical knowledge  _(IR)_
+## Appendix 1 Crediting of theoretical knowledge  _(IR)_
 
 Regulation (EU) 2025/134
 
@@ -41723,7 +41723,7 @@ CROSS-CREDITS FOR THE SUBJECT AREA 100 KSA
 
 (d) Before recommending applicants for theoretical knowledge examinations in accordance with point FCL.025(a)(2), the ATO should ensure that applicants’ instruction and assessments in total (credits and bridge instructions and assessments) have covered all aspects of Area 100 KSA for the licence sought. In the case of applicants for an ATPL theoretical knowledge examination holding a CPL in the same aircraft category, the ATO should specifically ensure that all aspects of Area 100 KSA related to multi-pilot operations have been covered.
 
-## Appendix 2 – Language Proficiency Rating Scale – Expert, extended and operational level  _(IR)_
+## Appendix 2 Language Proficiency Rating Scale – Expert, extended and operational level  _(IR)_
 
 Regulation (EU) No 1178/2011
 
@@ -41737,7 +41737,7 @@ Operational / (Level 4) | Pronunciation, stress, rhythm, and intonation are infl
 
 Note: The initial text of Appendix 2 has been transferred to AMC, see also the Explanatory Note.
 
-## Appendix 3 – Training courses for the issue of a CPL and an ATPL  _(IR)_
+## Appendix 3 Training courses for the issue of a CPL and an ATPL  _(IR)_
 
 Regulation (EU) 2021/2227
 
@@ -44223,7 +44223,7 @@ ED Decision 2019/005/R
 
 An ATPL/CPL/MPL grading system may be developed by using the grading system in GM3 FCL.735.A.
 
-## Appendix 4 – Skill test for the issue of a CPL  _(IR)_
+## Appendix 4 Skill test for the issue of a CPL  _(IR)_
 
 Regulation (EU) 2024/2076
 
@@ -44677,7 +44677,7 @@ f | As determined by the FE – any relevant items of the class or type rating s
 
 g | Oral questions
 
-## Appendix 5 – Integrated MPL training course  _(IR)_
+## Appendix 5 Integrated MPL training course  _(IR)_
 
 Regulation (EU) 2018/1974
 
@@ -45657,7 +45657,7 @@ Consistency and repeatability of all the competencies above is achieved if the s
 
 The take-off and landing training in an aeroplane should include at least one go-around. Due consideration should be given to environmental conditions when evaluating competency.
 
-## Appendix 6 – Modular training courses for the IR  _(IR)_
+## Appendix 6 Modular training courses for the IR  _(IR)_
 
 Regulation (EU) 2021/2227
 
@@ -47095,7 +47095,7 @@ The following elements may be used by the examiner for the applicant’s verbal 
 
 (108) describe, decode (by using a code table), and interpret the following messages: runway state message (as written in a METAR) and general aviation forecast (GAFOR).
 
-## Appendix 7 – BIR and IR skill test  _(IR)_
+## Appendix 7 BIR and IR skill test  _(IR)_
 
 Regulation (EU) 2020/359
 
@@ -47565,7 +47565,7 @@ Signature of examiner: | Name(s) in capital letters:
 
 * if applicable
 
-## Appendix 8 – Cross-crediting of the IR part of a class or type rating proficiency check or EBT practical assessment  _(IR)_
+## Appendix 8 Cross-crediting of the IR part of a class or type rating proficiency check or EBT practical assessment  _(IR)_
 
 Regulation (EU) 2024/2076
 
@@ -47597,7 +47597,7 @@ Single-pilot helicopter (SPH) type rating, in multipilot operations | Privileges
 
 *1 Provided that within the preceding 12 months at least three IFR departures and approaches exercising PBN privileges, including one RNP APCH approach (which may be a Point in Space (PinS) approach), have been performed on a SP type of helicopter in SP operations.
 
-## Appendix 9 – Training, skill test and proficiency check for the MPL, and the ATPL, and for type and class ratings, and proficiency checks for the BIR and the IR  _(IR)_
+## Appendix 9 Training, skill test and proficiency check for the MPL, and the ATPL, and for type and class ratings, and proficiency checks for the BIR and the IR  _(IR)_
 
 Regulation (EU) 2024/2076
 
@@ -49299,7 +49299,7 @@ PBN PRIVILEGES WITHOUT RNP APCH PRIVILEGES
 
 (b) The exclusion of RNP APCH privileges can be documented through an appropriate remark (e.g. ‘No RNP APCH’) on the licence (instrument rating).
 
-## Appendix 10 – Revalidation and renewal of type ratings, and revalidation and renewal of IRs when combined with the revalidation or renewal of type ratings – EBT practical assessment  _(IR)_
+## Appendix 10 Revalidation and renewal of type ratings, and revalidation and renewal of IRs when combined with the revalidation or renewal of type ratings – EBT practical assessment  _(IR)_
 
 Regulation (EU) 2020/2193
 
@@ -49454,6 +49454,16 @@ EBT practical assessment (or Practical assessment) is defined in FCL.010. More i
 (a) The demonstration of skills to revalidate or renew referred to in the definition of ‘proficiency check’ in point FCL.010 is equivalent to the EBT practical assessments conducted in the EBT programme and the final review of the examiner. In fact, one single EBT practical assessment demonstrates the necessary skills performed in legacy training; however, EBT goes one step further — to revalidate or renew, the pilot performs at least two demonstrations, corresponding to at least two EBT modules within the validity period of the type rating.
 
 (b) A proficiency check is equivalent to the combination of the evaluation phase (EVAL) and manoeuvres training phase (MT). However, EBT also requires a scenario-based training phase (SBT) following the EVAL to complete the module.
+
+## Annex II Conditions for the conversion of existing national licences and ratings for aeroplanes and helicopters  _(IR)_
+
+Regulation (EU) 2015/445
+
+## Annex III  _(IR)_
+
+Regulation (EU) 2020/723
+
+[Deleted by Commission Delegated Regulation (EU) 2020/723]
 
 ## MED.A.001 Competent authority  _(IR)_
 
@@ -65405,13 +65415,13 @@ DECLARATION / pursuant to Commission Regulation (EU) No 1178/2011
 
 9. | Statement / The DTO has developed a safety policy in accordance with Annex VIII (Part-DTO) to Commission Regulation (EU) No 1178/2011, and in particular with point DTO.GEN.210(a)(1)(ii) thereof, and will apply that policy during all training activities covered by the declaration. / The DTO complies and will, during all training activities covered by the declaration, continue to comply with the essential requirements set out in Annex IV to Regulation (EU) 2018/1139, with the requirements of Annex I (Part-FCL) and Annex VIII (Part-DTO) to Commission Regulation (EU) No 1178/2011, and with the requirements of Annex III (Part-BFCL) to Commission Regulation (EU) 2018/395 and Annex III (PartSFCL) to Commission Implementing Regulation (EU) 2018/1976. / We confirm that all information contained in this declaration, including its annexes (if applicable), is complete and correct. / Name, date and signature of the representative of the DTO / Name, date and signature of the head of training of the DTO
 
-## Article 1 — Scope  _(CR)_
+## Article 1 Scope  _(CR)_
 
 Regulation (EU) 2020/723
 
 This Regulation lays down the detailed rules for the conditions for the acceptance of pilot licences and associated ratings, privileges or certificates, as well as associated medical certificates issued in accordance with laws of third countries.
 
-## Article 2 — Definitions  _(CR)_
+## Article 2 Definitions  _(CR)_
 
 Regulation (EU) 2020/723
 
@@ -65419,7 +65429,7 @@ Regulation (EU) 2020/723
 
 2.In addition, for the purposes of this Regulation, ‘manufacturer flights’ means the flights referred to in Article 6(3) of Commission Regulation (EU) No 965/2012.
 
-## Article 3 — Acceptance of licences from third countries  _(CR)_
+## Article 3 Acceptance of licences from third countries  _(CR)_
 
 Regulation (EU) 2020/723
 
@@ -65433,7 +65443,7 @@ Without prejudice to international agreements concluded between the Union and a 
 
 (d) issue aeroplane or helicopter type ratings to holders of licences issued in accordance with Regulation (EU) No 1178/2011 that comply with the requirements established by a third country for the issue of such ratings; those ratings shall be restricted to aircraft registered in that third country, but this restriction may be removed when the pilot complies with the requirements in Article 10 to this Regulation.
 
-## Article 4 — General provisions for validation of licences  _(CR)_
+## Article 4 General provisions for validation of licences  _(CR)_
 
 Regulation (EU) 2020/723
 
@@ -65451,7 +65461,7 @@ The competent authority that validated the licence may extend the validity only 
 
 4.The holders of a licence validated by a Member State shall exercise their privileges in accordance with the requirements stated in Annex I (Part-FCL) to Regulation (EU) No 1178/2011.
 
-## Article 5 — Pilot licences for commercial air transport and other commercial activities  _(CR)_
+## Article 5 Pilot licences for commercial air transport and other commercial activities  _(CR)_
 
 Regulation (EU) 2020/723
 
@@ -65469,7 +65479,7 @@ For the validation of pilot licences for commercial air transport and other comm
 
 (f) in the case of helicopters, in addition to the requirements in points (a) to (d), comply with the experience requirements set out in table 2 in the Annex to this Regulation.
 
-## Article 6 — Pilot licences for non-commercial activities with an instrument rating  _(CR)_
+## Article 6 Pilot licences for non-commercial activities with an instrument rating  _(CR)_
 
 Regulation (EU) 2020/723
 
@@ -65485,7 +65495,7 @@ For the validation of private pilot licences with an instrument rating, or Comme
 
 (e) have a minimum experience of at least 100 hours of instrument flight time as pilot in command (‘PIC’) in the relevant category of aircraft.
 
-## Article 7 — Pilot licences for non-commercial activities without an instrument rating  _(CR)_
+## Article 7 Pilot licences for non-commercial activities without an instrument rating  _(CR)_
 
 Regulation (EU) 2020/723
 
@@ -65503,7 +65513,7 @@ For the validation of private pilot licences, or CPL and ATPL licences without a
 
 (f) have a minimum experience of at least 100 hours as pilot in the relevant category of aircraft.
 
-## Article 8 — Validation of pilot licences for specific tasks of limited duration  _(CR)_
+## Article 8 Validation of pilot licences for specific tasks of limited duration  _(CR)_
 
 Regulation (EU) 2020/723
 
@@ -65527,7 +65537,7 @@ In this case, the privileges of the holder shall be limited by the competent aut
 
 (b) has completed at least one acclimatisation flight with a qualified instructor prior to carrying out the specific tasks of limited duration.
 
-## Article 9 — Conditions for conversion of licences  _(CR)_
+## Article 9 Conditions for conversion of licences  _(CR)_
 
 Regulation (EU) 2020/723
 
@@ -65551,7 +65561,7 @@ Regulation (EU) 2020/723
 
 (f) have completed at least 100 hours of flight time as a pilot.
 
-## Article 10 — Conditions for acceptance of class and type ratings  _(CR)_
+## Article 10 Conditions for acceptance of class and type ratings  _(CR)_
 
 Regulation (EU) 2020/723
 
@@ -65573,7 +65583,7 @@ A valid class or type rating contained in a licence issued by a third country ma
 
 (iv) for all other helicopters, 350 hours of flight experience as a pilot in that type.
 
-## Article 11 — Amendments to Regulation (EU) No 1178/2011  _(CR)_
+## Article 11 Amendments to Regulation (EU) No 1178/2011  _(CR)_
 
 Regulation (EU) 2020/723
 
@@ -65583,7 +65593,7 @@ Regulation (EU) No 1178/2011 is amended as follows:
 
 (b) Annex III is deleted.
 
-## Article 12 — Entry into force and application  _(CR)_
+## Article 12 Entry into force and application  _(CR)_
 
 Regulation (EU) 2020/723
 

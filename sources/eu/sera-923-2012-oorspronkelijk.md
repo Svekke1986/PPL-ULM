@@ -448,7 +448,7 @@ c) de verwijzing in bijlage III, punt 2, onder b), naar „bijlage 11 betreffend
 
 1. Deze verordening treedt in werking op de twintigste dag na die van de bekendmaking ervan in het Publicatieblad van de Europese Unie. Zij is van toepassing met ingang van 4 december 2012. 2. Bij wijze van uitzondering op de tweede alinea van lid 1 mogen lidstaten beslissen de bepalingen van deze verordening niet toe te passen tot 4 december 2014. Wanneer een lidstaat gebruik maakt van deze mogelijkheid, stelt zij de Commissie en het EASA overeenkomstig artikel 12, lid 1, van Verordening (EG) nr. 549/2004 in kennis van de redenen voor die uitzondering, de duur ervan en het geplande tijdschema voor de tenuitvoerlegging van deze verordening. Deze verordening is verbindend in al haar onderdelen en is rechtstreeks toepasselijk in elke lidstaat. Gedaan te Brussel, 26 september 2012. Voor de Commissie De voorzitter José Manuel BARROSO
 
-BIJLAGE LUCHTVERKEERSREGELS
+## BIJLAGE LUCHTVERKEERSREGELS  _(PB L 281/12)_
 
 DEEL 1 Vluchten over de volle zee
 
