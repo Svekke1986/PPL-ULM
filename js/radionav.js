@@ -244,7 +244,7 @@ window.RADIONAV = (function () {
           sec('Conclusie:', `${kant(half)} + ${kant(side)} = ${QUAD[quadOf(R)].toLowerCase()} van de VOR. In dit voorbeeld zat je op radiaal ${brg(R)} (zie schets).`),
           headingNote
         ];
-        const q = 'Waar bevindt het luchtvaartuig zich ten opzichte van de VOR? (de koers van het vliegtuig speelt geen rol)';
+        const q = 'Waar bevindt het luchtvaartuig zich ten opzichte van de VOR?';
         const right = QUAD[quadOf(R)];
         const o = [right, ...Object.values(QUAD).filter(x => x !== right)];
         return Q({ q, o, e: steps.join('\n\n'), eImg: sketchSvg(obs, R), img: cdiSvg(obs, st.dev / 10, st.to), lo: this.lo, loText: 'VOR-informatie aflezen en interpreteren' });
@@ -334,7 +334,7 @@ window.RADIONAV = (function () {
       }
     },
     {
-      id: 'qdr', name: 'QDR (peiling vanaf het NDB)', lo: '92.2.2.2.2',
+      id: 'qdr', name: 'QDR bepalen', lo: '92.2.2.2.2',
       gen() {
         const mh = rnd(0, 71) * 5;
         let rb; do { rb = rnd(0, 71) * 5; } while (rb === 0 || rb === 180);
@@ -345,7 +345,7 @@ window.RADIONAV = (function () {
           sec('Stap 2 – QDR:', `de QDR is de omgekeerde richting, van het NDB naar jou: ${brg(qdm)} ± 180° = ${brg(qdr)}.`),
           sec('Ezelsbruggetje:', 'QDM = de koers die je vliegt om bij het station te komen (naar het station). QDR = de radiaal, altijd vanaf het station naar jou. Ze verschillen altijd precies 180°.')
         ];
-        return Q({ q: `Je vliegt een magnetische koers van ${brg(mh)}. Op welke QDR (magnetische peiling vanaf het NDB) bevind je je?`, o: options(qdr, [qdm, norm(rb + 180), norm(mh - rb + 180)], brg),
+        return Q({ q: `Je vliegt een magnetische koers van ${brg(mh)}. Wat is de QDR van het NDB?`, o: options(qdr, [qdm, norm(rb + 180), norm(mh - rb + 180)], brg),
           e: steps.join('\n\n'), eImg: bearingSketch(mh, qdm), img: rbiSvg(rb), lo: this.lo, loText: 'Aanwijzingen van RBI en RMI interpreteren' });
       }
     },
@@ -367,7 +367,7 @@ window.RADIONAV = (function () {
         for (const v of [fmt(qdm), wrongDir(qdm), fmt(norm(mh - rb)), fmt(rb), wrongDir(norm(mh - rb)), fmt(norm(qdm + 20)), fmt(norm(qdm - 20))]) {
           if (!o.includes(v) && o.length < 4) o.push(v);
         }
-        return Q({ q: `Je vliegt een magnetische koers van ${brg(mh)} en wil (windstil) rechtstreeks naar het NDB. Wat doe je?`, o,
+        return Q({ q: `Je vliegt een magnetische koers van ${brg(mh)} en wil rechtstreeks naar het NDB vliegen. Het is windstil. Wat doe je?`, o,
           e: steps.join('\n\n'), eImg: bearingSketch(mh, qdm), img: rbiSvg(rb), lo: this.lo, loText: 'Homing naar een NDB' });
       }
     }
@@ -413,7 +413,7 @@ window.RADIONAV = (function () {
   const GENERATORS = { vor, adf, rmi };
   const GROUPS = {
     vor: { name: 'VOR (CDI)', icon: '📡', code: 'VOR', desc: 'Radiaal, TO/FROM, naalduitslag en positie aflezen' },
-    adf: { name: 'ADF (RBI, vaste kaart)', icon: '🧭', code: 'ADF', desc: 'Relatieve peiling, QDM, QDR en homing' },
+    adf: { name: 'ADF (RBI)', icon: '🧭', code: 'ADF', desc: 'Relatieve peiling, QDM, QDR en homing' },
     rmi: { name: 'RMI', icon: '🎯', code: 'RMI', desc: 'QDM en radiaal aflezen met draaiende kaart' }
   };
 
