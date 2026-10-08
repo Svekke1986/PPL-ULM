@@ -6,6 +6,7 @@ window.COMPASSCALC = (function () {
   'use strict';
 
   const state = { a: '', op: '+', b: '' };
+  let lastQ = null; // bij een nieuwe vraag worden de velden en het resultaat leeggemaakt
   const OPEN_KEY = 'pplulm.compasscalc.open';
 
   const pad = v => String(v).padStart(3, '0');
@@ -82,6 +83,7 @@ window.COMPASSCALC = (function () {
   }
 
   function html(q) {
+    if (q !== lastQ) { lastQ = q; state.a = ''; state.b = ''; state.op = '+'; }
     if (!relevant(q)) return '';
     // Breed scherm: naast de vraag, standaard open. Mobiel: eronder, open/dicht zoals de gebruiker het laatst koos.
     let open = window.matchMedia && window.matchMedia('(min-width: 1000px)').matches;
