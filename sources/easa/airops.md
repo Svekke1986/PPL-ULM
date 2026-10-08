@@ -37913,7 +37913,7 @@ APPLICATION FOR ALTERNATIVE TAKE-OFF AND LANDING PROCEDURES
 
 (c) The Category A ground level surface area requirement may be applied at a specific elevated FATO when the operator can demonstrate to the competent authority that the usable cue environment at that aerodrome/operating site would permit such a reduction in size.
 
-## GM1 CAT.POL.H.205 &CAT.POL.H.220 Take-off and landing  _(GM)_
+## GM1 CAT.POL.H.205&CAT.POL.H.220 Take-off and landing  _(GM)_
 
 ED Decision 2014/015/R
 
@@ -38029,7 +38029,7 @@ Regulation (EU) No 965/2012
 
 (e) That part of the landing from the LDP to touchdown shall be conducted in sight of the surface.
 
-## GM1 CAT.POL.H.205 &CAT.POL.H.220 Take-off and landing  _(GM)_
+## GM1 CAT.POL.H.205&CAT.POL.H.220 Take-off and landing  _(GM)_
 
 ED Decision 2014/015/R
 
@@ -67299,7 +67299,7 @@ Regulation (EU) 2019/1384
 
 (7) Mach number whenever speed limitations are expressed in terms of Mach number, if applicable.
 
-## AMC1 NCC.IDE.A.120 &NCC.IDE.A.125 Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCC.IDE.A.120&NCC.IDE.A.125 Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2013/021/R
 
@@ -67323,7 +67323,7 @@ For flights that do not exceed 60 minutes’ duration, that take off and land at
 
 (c) both an attitude indicator and a slip indicator.
 
-## AMC1 NCC.IDE.A.120(a)(1) &NCC.IDE.A.125(a)(1) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCC.IDE.A.120(a)(1)&NCC.IDE.A.125(a)(1) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2013/021/R
 
@@ -67331,7 +67331,7 @@ MEANS OF MEASURING AND DISPLAYING MAGNETIC HEADING
 
 The means of measuring and displaying magnetic heading should be a magnetic compass or equivalent.
 
-## AMC1 NCC.IDE.A.120(a)(2) &NCC.IDE.A.125(a)(2) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCC.IDE.A.120(a)(2)&NCC.IDE.A.125(a)(2) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2013/021/R
 
@@ -67339,7 +67339,7 @@ MEANS OF MEASURING AND DISPLAYING THE TIME
 
 An acceptable means of compliance is a clock displaying hours, minutes and seconds, with a sweep-second pointer or digital presentation.
 
-## AMC1 NCC.IDE.A.120(a)(3) &NCC.IDE.A.125(a)(3) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCC.IDE.A.120(a)(3)&NCC.IDE.A.125(a)(3) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2019/019/R
 
@@ -67403,7 +67403,7 @@ Aeroplanes operated under IFR shall be equipped with:
 
 (h) an emergency power supply, independent of the main electrical generating system, for the purpose of operating and illuminating an attitude indicating system for a minimum period of 30 minutes. The emergency power supply shall be automatically operative after the total failure of the main electrical generating system and clear indication shall be given on the instrument or on the instrument panel that the attitude indicator is being operated by emergency power.
 
-## AMC1 NCC.IDE.A.120(a)(4) &NCC.IDE.A.125(a)(4) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCC.IDE.A.120(a)(4)&NCC.IDE.A.125(a)(4) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2013/021/R
 
@@ -67411,7 +67411,7 @@ CALIBRATION OF THE INSTRUMENT INDICATING AIRSPEED
 
 The instrument indicating airspeed should be calibrated in knots (kt).
 
-## AMC1 NCC.IDE.A.120(c) &NCC.IDE.A.125(c) Operations under VFR & operations under IFR — flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCC.IDE.A.120(c)&NCC.IDE.A.125(c) Operations under VFR & operations under IFR — flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2013/021/R
 
@@ -69591,7 +69591,7 @@ Regulation (EU) 2019/1384
 
 (6) stabilised heading, if applicable.
 
-## AMC1 NCC.IDE.H.120 &NCC.IDE.H.125 Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCC.IDE.H.120&NCC.IDE.H.125 Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2013/021/R
 
@@ -69601,7 +69601,7 @@ INTEGRATED INSTRUMENTS
 
 (b) The means of measuring and indicating slip, helicopter attitude and stabilised helicopter heading may be met by combinations of instruments or by integrated flight director systems, provided that the safeguards against total failure, inherent in the three separate instruments, are retained.
 
-## AMC1 NCC.IDE.H.120(a)(1) &NCC.IDE.H.125(a)(1) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCC.IDE.H.120(a)(1)&NCC.IDE.H.125(a)(1) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2013/021/R
 
@@ -69609,7 +69609,7 @@ MEANS OF MEASURING AND DISPLAYING MAGNETIC HEADING
 
 The means of measuring and displaying magnetic heading should be a magnetic compass or equivalent.
 
-## AMC1 NCC.IDE.H.120(a)(2) &NCC.IDE.H.125(a)(2) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCC.IDE.H.120(a)(2)&NCC.IDE.H.125(a)(2) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2013/021/R
 
@@ -69617,7 +69617,7 @@ MEANS FOR MEASURING AND DISPLAYING THE TIME
 
 An acceptable means of compliance is a clock displaying hours, minutes and seconds, with a sweep-second pointer or digital presentation.
 
-## AMC1 NCC.IDE.H.120(a)(3) &NCC.IDE.H.125(a)(3) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCC.IDE.H.120(a)(3)&NCC.IDE.H.125(a)(3) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2013/021/R
 
@@ -69625,7 +69625,7 @@ CALIBRATION OF THE MEANS FOR MEASURING AND DISPLAYING PRESSURE ALTITUDE
 
 The instrument measuring and displaying pressure altitude should be of a sensitive type calibrated in feet (ft), with a sub-scale setting, calibrated in hectopascals/millibars, adjustable for any barometric pressure likely to be set during flight.
 
-## AMC1 NCC.IDE.H.120(a)(4) &NCC.IDE.H.125(a)(4) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCC.IDE.H.120(a)(4)&NCC.IDE.H.125(a)(4) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2013/021/R
 
@@ -69633,7 +69633,7 @@ CALIBRATION OF THE INSTRUMENT INDICATING AIRSPEED
 
 The instrument indicating airspeed should be calibrated in knots (kt).
 
-## AMC1 NCC.IDE.H.120(b)(1)(iii) &NCC.IDE.H.125(a)(8) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCC.IDE.H.120(b)(1)(iii)&NCC.IDE.H.125(a)(8) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2013/021/R
 
@@ -69741,7 +69741,7 @@ Two pilots should be considered to be required by the operation if multi-pilot o
 
 (b) the operations manual.
 
-## AMC1 NCC.IDE.H.120(c) &NCC.IDE.H.125(c) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCC.IDE.H.120(c)&NCC.IDE.H.125(c) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2013/021/R
 
@@ -74231,7 +74231,7 @@ and
 
 (c) Aeroplanes operated in conditions where they cannot be maintained in a desired flight path without reference to one or more additional instruments, shall be, in addition to (a) and (b), equipped with a means of preventing malfunction of the airspeed indicating system required in (a)(4) due to condensation or icing.
 
-## AMC1 NCO.IDE.A.120 &NCO.IDE.A.125 Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCO.IDE.A.120&NCO.IDE.A.125 Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2014/016/R
 
@@ -74303,7 +74303,7 @@ ALTERNATE SOURCE OF STATIC PRESSURE
 
 Aeroplanes should be equipped with an alternate source of static pressure.
 
-## AMC1 NCO.IDE.A.120(a)(1) &NCO.IDE.A.125(a)(1) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCO.IDE.A.120(a)(1)&NCO.IDE.A.125(a)(1) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2014/016/R
 
@@ -74311,7 +74311,7 @@ MEANS OF MEASURING AND DISPLAYING MAGNETIC HEADING
 
 The means of measuring and displaying magnetic direction should be a magnetic compass or equivalent.
 
-## AMC1 NCO.IDE.A.120(a)(2) &NCO.IDE.A.125(a)(2) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCO.IDE.A.120(a)(2)&NCO.IDE.A.125(a)(2) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2014/016/R
 
@@ -74319,7 +74319,7 @@ MEANS OF MEASURING AND DISPLAYING THE TIME
 
 A means of measuring and displaying the time in hours, minutes and seconds may be a wrist watch capable of the same functions.
 
-## AMC1 NCO.IDE.A.120(a)(3) &NCO.IDE.A.125(a)(3) Operations under VFR operations & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCO.IDE.A.120(a)(3)&NCO.IDE.A.125(a)(3) Operations under VFR operations & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2019/019/R
 
@@ -74335,7 +74335,7 @@ ALTIMETERS
 
 Altimeters with counter drum-pointer or equivalent presentation are considered to be less susceptible to misinterpretation for aeroplanes operating above 10 000 ft.
 
-## AMC1 NCO.IDE.A.120(a)(4) &NCO.IDE.A.125(a)(4) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCO.IDE.A.120(a)(4)&NCO.IDE.A.125(a)(4) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2015/004/R
 
@@ -74345,7 +74345,7 @@ CALIBRATION OF THE INSTRUMENT INDICATING AIRSPEED
 
 (b) In the case of aeroplanes with a maximum certified take-off mass (MCTOM) below 2 000 kg, calibration in kilometres per hour (kph) or in miles per hour (mph) is acceptable when such units are used in the AFM.
 
-## AMC1 NCO.IDE.A.120(c) &NCO.IDE.A.125(c) Operations under IFR — flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCO.IDE.A.120(c)&NCO.IDE.A.125(c) Operations under IFR — flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2014/016/R
 
@@ -75477,7 +75477,7 @@ INTEGRATED INSTRUMENTS
 
 (b) The means of measuring and indicating turn and slip, rotorcraft attitude and stabilised rotorcraft heading may be met by combinations of instruments or by integrated flight director systems, provided that the safeguards against total failure, inherent in the three separate instruments, are retained.
 
-## AMC1 NCO.IDE.H.120(a)(1) &NCO.IDE.H.125(a)(1) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCO.IDE.H.120(a)(1)&NCO.IDE.H.125(a)(1) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2014/016/R
 
@@ -75485,7 +75485,7 @@ MEANS OF MEASURING AND DISPLAYING MAGNETIC HEADING
 
 The means of measuring and displaying magnetic direction should be a magnetic compass or equivalent.
 
-## AMC1 NCO.IDE.H.120(a)(2) &NCO.IDE.H.125(a)(2) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCO.IDE.H.120(a)(2)&NCO.IDE.H.125(a)(2) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2014/016/R
 
@@ -75493,7 +75493,7 @@ MEANS OF MEASURING AND DISPLAYING THE TIME
 
 A means of measuring and displaying the time in hours, minutes and seconds may be a wrist watch capable of the same functions.
 
-## AMC1 NCO.IDE.H.120(a)(3) &NCO.IDE.H.125(a)(3) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCO.IDE.H.120(a)(3)&NCO.IDE.H.125(a)(3) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2014/016/R
 
@@ -75559,7 +75559,7 @@ CALIBRATION OF THE INSTRUMENT INDICATING AIRSPEED
 
 (b) In the case of rotorcraft with an MCTOM below 2 000 kg, calibration in kilometres per hour (km/h) or in miles per hour (mph) is acceptable when such units are used in the AFM.
 
-## AMC1 NCO.IDE.H.120(b)(1)(iii) &NCO.IDE.H.125(a)(8) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCO.IDE.H.120(b)(1)(iii)&NCO.IDE.H.125(a)(8) Operations under VFR & operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2014/016/R
 
@@ -75567,7 +75567,7 @@ STABILISED HEADING
 
 Stabilised direction should be achieved for VFR flights by a gyroscopic direction indicator, whereas for IFR flights, this should be achieved through a magnetic gyroscopic direction indicator.
 
-## AMC1 NCO.IDE.H.120(c) &NCO.IDE.H.125(c) Operations under VFR & Operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
+## AMC1 NCO.IDE.H.120(c)&NCO.IDE.H.125(c) Operations under VFR & Operations under IFR – flight and navigational instruments and associated equipment  _(AMC)_
 
 ED Decision 2014/016/R
 

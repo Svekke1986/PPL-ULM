@@ -34,6 +34,8 @@ oorspronkelijke (verouderde) Nederlandstalige versies, handig voor de Nederlands
 | `easa/airops.json` / `.md` | Air Operations (965/2012): **Part-NCO**, ORO, CAT, SPO, NCC, SPA … — 3 650 bepalingen | Revision March 2026 |
 | `easa/part21.json` / `.md` | Initial Airworthiness (748/2012): Part 21 en **Part 21 Light** — 1 183 bepalingen | Revision November 2025 |
 | `easa/cont-airworthiness.json` / `.md` | Continuing Airworthiness (1321/2014): **Part-ML**, Part-M, CAMO, CAO, 145, 66, 147 — 1 166 bepalingen | Revision September 2025 |
+| `easa/aerodromes.json` / `.md` | Aerodromes (139/2014): ADR-regels en CS ADR-DSN (markeringen, borden, lichten) — 1 200 bepalingen | Revision March 2026 |
+| `easa/atm-ans.json` / `.md` | ATM/ANS (2017/373): o.a. **Part-MET** (METAR/TAF, MET.TR.200), Part-ATS, Part-AIS — 1 335 bepalingen | Revision March 2025 |
 
 Elke bepaling: `{"id": "SERA.14083", "soort": "IR|AMC|GM|CR|CS", "titel": "...", "kop1": "ANNEX ...", "kop2": "SECTION 14 ...", "tekst": "..."}`.
 De eerste regel van de tekst noemt meestal de wijzigende verordening of ED Decision (bv. "Regulation (EU) 2024/404").

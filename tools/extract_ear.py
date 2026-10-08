@@ -25,7 +25,7 @@ PKG = "{http://schemas.microsoft.com/office/2006/xmlPackage}"
 # Kopstijlen van de Easy Access Rules → soort bepaling
 PROVISION = re.compile(r"^Heading\d(CR|IR|AMC|GM|CS)$")
 CONTEXT = re.compile(r"^Heading[1-3]$")  # PART / ANNEX / SUBPART / SECTION / CHAPTER
-_REF = r"(?:(?:Article|Appendix|Annex)\s+[\w().-]+|[A-Z0-9]+(?:\.[A-Z0-9][A-Za-z0-9]*)+(?:\([a-z0-9]+\))*)"
+_REF = r"(?:(?:Article|Appendix|Annex)\s+[\w().-]+|[A-Z0-9][A-Z0-9-]*(?:\.[A-Z0-9][A-Za-z0-9]*)+(?:\([a-z0-9]+\))*)"
 # Een kop kan naar meerdere punten verwijzen: "AMC1 FCL.115; FCL.120; FCL.210 Titel"
 ID = re.compile(rf"^((?:AMC|GM|CS)\d*\s+)?({_REF}(?:\s*[;,&]\s*{_REF})*)\s*(.*)$")
 
