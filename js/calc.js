@@ -137,7 +137,7 @@ window.CALC = (function () {
         const g = val[given], ans = val[ask];
         const flip = fromGiven !== fromAsk ? 180 : 0;
         const varTerm = magGiven === magAsk ? 0 : (magAsk ? -v : v);
-        const kind = (m, f) => `${m ? 'magnetisch' : 'waar'}, ${f ? 'vanaf' : 'naar'} het station`;
+        const kind = (m, f) => `${m ? 'magnetische' : 'ware'} ${f ? 'peiling vanaf' : 'koers naar'} het station`;
         const east = v > 0;
 
         // Stap 1: vanaf ↔ naar
