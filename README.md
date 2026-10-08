@@ -31,8 +31,8 @@ Onofficieel oefenplatform voor de theorie-examens **PPL(A)** (EASA Part-FCL, BCA
 | `img/<vak>/` | Afbeeldingen/bijlagen bij de vragen |
 | `content/<vak>.json` | Uitleg + bron per vraag-ID: `[uitleg, bron, artikel]` |
 | `content/_patches.json` | Correcties op tekst die in de bron-PDF afgebroken is, tekstvervangingen (`_replace`) en gedraaide afbeeldingen (`_rotate`) |
-| `sources/` | Officiële bronteksten: KB ULM (20/12/2024), BCAA AltMoC (examenparameters), EASA Easy Access Rules (SERA, Aircrew, Air Operations, Part 21, Continuing Airworthiness, Aerodromes, ATM/ANS incl. Part-MET, Basisverordening, voorvalmelding) en ongevalsonderzoek (996/2010) en de oorspronkelijke EU-teksten in het Nederlands als `.md` en per artikel als `.json`, voor een latere vragen-pijplijn. Zie `sources/README.md` |
-| `tools/extract_law.py`, `tools/extract_eu.py`, `tools/extract_ear.py` | Zetten een wettekst uit het Staatsblad, het EU-Publicatieblad (PDF) of de EASA Easy Access Rules (XML) om naar `sources/` |
+| `sources/` | Officiële bronteksten: KB ULM (20/12/2024), BCAA AltMoC (examenparameters), EASA TK-syllabus met bron per leerdoel (ECQB 2026), EASA Easy Access Rules (SERA, Aircrew, Air Operations, Part 21, Continuing Airworthiness, Aerodromes, ATM/ANS incl. Part-MET, Basisverordening, voorvalmelding) en ongevalsonderzoek (996/2010) en de oorspronkelijke EU-teksten in het Nederlands als `.md` en per artikel als `.json`, voor een latere vragen-pijplijn. Zie `sources/README.md` |
+| `tools/extract_law.py`, `tools/extract_eu.py`, `tools/extract_ear.py`, `tools/extract_tk.py` | Zetten een wettekst uit het Staatsblad, het EU-Publicatieblad (PDF), de EASA Easy Access Rules (XML) of de EASA TK-syllabus (xlsx) om naar `sources/` |
 | `js/bank.js` | **Gegenereerd** door `tools/build.py` |
 
 ## Nieuwe PDF's toevoegen
