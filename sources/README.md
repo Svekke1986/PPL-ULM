@@ -48,6 +48,17 @@ Opnieuw aanmaken uit de XML-download van EASA (de XML zelf staat niet in de repo
 python3 tools/extract_ear.py "<Easy Access Rules … .xml>" sera "Easy Access Rules for SERA" "Revision August 2025"
 ```
 
+## ECQB-syllabus — `ecqb/`
+| Bestand | Inhoud |
+|---|---|
+| `ecqb/tk-syllabus-comparison-doc-v6.xlsx` | EASA TK Syllabus Comparison Document, versie 6 (17/12/2025), voor ECQB 2026 (origineel) |
+| `ecqb/tk-syllabus-v6.json` | Per leerdoel: `ref` (bv. `010.05.06.01.05`), `tekst`, `bk` (basiskennis, geen aparte examenvraag), `brevetten`, `bron` (bv. "SERA.11015 Interception, Tables S11-1 …"); plus de lijst met bronversies (`bronnen`). 15 vakken, 6 365 regels, 1 244 met bron |
+
+> Dit is de syllabus voor **ATPL/CPL/IR**. De leerdoelen voor **LAPL/PPL** (nummering zoals "10.5.5.1.4", die in de
+> vragenbank staat) zijn een apart EASA-document dat hier nog ontbreekt. Veel onderwerpen zijn gelijk, dus de kolom `bron`
+> is ook voor PPL-vragen een goede aanwijzing welk artikel je moet citeren.
+Opnieuw aanmaken: `python3 tools/extract_tk.py sources/ecqb/tk-syllabus-comparison-doc-v6.xlsx`
+
 ## ECQB 2026 — aandachtspunten (EASA "ECQB Update", januari 2026)
 Het document zelf staat niet in de repository (EASA: "Proprietary document – All rights reserved"). Samenvatting:
 - ECQB 2026 is afgestemd op de EU-regelgeving en ICAO-SARPs **zoals gewijzigd begin 2025**. Detailverwijzingen per leerdoel
