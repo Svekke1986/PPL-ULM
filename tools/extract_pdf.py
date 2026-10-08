@@ -4,10 +4,38 @@ Usage: python3 tools/extract_pdf.py <subject_key> <pdf> [<pdf> ...]
 Writes data/<subject_key>.json and images to img/<subject_key>/.
 The correct answer is the option whose checkbox has a green fill.
 """
-import json, os, re, sys
+import io, json, os, re, sys
 import pymupdf
 
+try:
+    from PIL import Image
+except ImportError:  # Pillow is optioneel: zonder blijven de beelden onbewerkt
+    Image = None
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def load_rotations():
+    """Afbeeldingen die in de bron-PDF 90° gedraaid staan (content/_patches.json -> _rotate)."""
+    path = os.path.join(ROOT, "content", "_patches.json")
+    if not os.path.exists(path):
+        return {}
+    return json.load(open(path, encoding="utf-8")).get("_rotate", {})
+
+
+def save_image(path, data, qid, rotations):
+    """Schrijf een bijlage weg: rechtzetten indien nodig en grote beelden verkleinen."""
+    deg = rotations.get(qid)
+    if Image is None or (not deg and len(data) < 400_000):
+        with open(path, "wb") as fh:
+            fh.write(data)
+        return
+    im = Image.open(io.BytesIO(data)).convert("RGB")
+    if deg:
+        im = im.rotate(deg, expand=True)  # tegen de klok in
+    if max(im.size) > 2200:
+        im.thumbnail((2200, 2200))
+    im.save(path, quality=85, optimize=True)
 
 
 def is_green(fill):
@@ -26,6 +54,7 @@ def extract(subject, pdfs):
     imgdir = os.path.join(ROOT, "img", subject)
     os.makedirs(imgdir, exist_ok=True)
     questions, by_id = [], {}
+    rotations = load_rotations()
     for pdf in pdfs:
         doc = pymupdf.open(pdf)
         for page in doc:
@@ -43,8 +72,7 @@ def extract(subject, pdfs):
                 q = by_id.get(qid)
                 for n, im in enumerate(images):
                     name = f"{qid}_{len(q['images']) if q else n}.{im['ext']}"
-                    with open(os.path.join(imgdir, name), "wb") as fh:
-                        fh.write(im["image"])
+                    save_image(os.path.join(imgdir, name), im["image"], qid, rotations)
                     if q:
                         q["images"].append(f"img/{subject}/{name}")
                 continue
