@@ -25,6 +25,14 @@ dan op één artikel gebaseerd en citeren eruit. Deze teksten worden (nog) niet 
 > op baseert. Tabellen (VMC-minima, onderscheppingssignalen …) komen in platte tekst niet altijd goed over: bij elke
 > bepaling staat de pagina van het Publicatieblad (bv. "L 281/37"), zodat je ze in de PDF kunt nakijken.
 
+## ULM-examen: wat is officieel vastgelegd?
+- **KB 20/12/2024, art. 48, 2°**: theorie-examen bij het DGLV over **luchtvaartwetgeving, meteorologie, menselijke prestaties en
+  communicatie**, "overeenkomstig de voorwaarden die de minister heeft vastgelegd".
+- **KB 20/12/2024, art. 48, 4°**: tijdens de praktische proef toetst de examinator de klassespecifieke kennis: **beginselen van het
+  vliegen, operationele procedures, vluchtprestaties en -planning, algemene kennis van het luchtvaartuig en navigatie**.
+- Een ministerieel besluit met het detailprogramma is (nog) niet gevonden; aantal vragen, tijd en slaagdrempel (70 % over de vier
+  vakken) komen van de examenpagina van het DGLV.
+
 ## EASA Easy Access Rules (geconsolideerd, Engels) — `easa/`
 De meest actuele versies, met de regel zelf (IR) én de AMC en GM. **Gebruik deze als hoofdbron**; de PDF's in `eu/` zijn
 oorspronkelijke (verouderde) Nederlandstalige versies, handig voor de Nederlandse terminologie.

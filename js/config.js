@@ -53,7 +53,11 @@ window.LICENCES = {
       meteorology:       { questions: 20, minutes: 40 },
       communications:    { questions: 10, minutes: 20 }
     },
-    examRef: 'DGLV – ULM-theorie-examen',
+    // Vakken: KB van 20 december 2024 betreffende de ULM's, art. 48, 2° (theorie-examen bij het DGLV).
+    // Beginselen van het vliegen, operationele procedures, vluchtprestaties en -planning, algemene kennis van het
+    // luchtvaartuig en navigatie worden volgens art. 48, 4° door de examinator getoetst tijdens de praktische proef.
+    // Aantal vragen, tijd en slaagdrempel: DGLV (niet in het KB zelf).
+    examRef: 'KB 20/12/2024 betreffende de ULM\'s, art. 48, 2° (vakken); DGLV – ULM-theorie-examen (aantal vragen en tijd)',
     examSource: 'bcaa_ulm'
   }
 };
