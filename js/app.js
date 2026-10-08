@@ -244,6 +244,7 @@
     app.innerHTML = practiceHeader() + `
       <div class="card">
         ${questionHtml(P.q, { chosen: P.chosen, reveal: answered, locked: answered, counter: `Vraag ${P.count}` })}
+        ${window.COMPASSCALC ? window.COMPASSCALC.html(P.q) : ''}
         ${answered ? feedbackHtml(P.q, P.chosen) : ''}
         <div class="quiz-actions">
           <a class="btn" href="#/${P.licence.toLowerCase()}">← Vakken</a>
@@ -261,6 +262,7 @@
     });
     document.getElementById('next').onclick = () => nextPractice();
     bindChapterSelect();
+    if (window.COMPASSCALC) window.COMPASSCALC.bind(app);
     bindImages();
   }
 
@@ -461,6 +463,7 @@
       </div>
       <div class="card">
         ${questionHtml(C.q, { chosen: C.chosen, reveal: answered, locked: answered, counter: `Oefening ${C.count} · ${esc(C.q.typeName)}` })}
+        ${window.COMPASSCALC ? window.COMPASSCALC.html(C.q) : ''}
         ${answered ? feedbackHtml(C.q, C.chosen) : ''}
         <div class="quiz-actions">
           <a class="btn" href="#/${C.setKey}">← ${esc(SET.groupWord)}</a>
@@ -484,6 +487,7 @@
       location.hash = `#/${C.setKey}/${C.group}${e.target.value ? '/' + e.target.value : ''}`;
     };
     bindImages();
+    if (window.COMPASSCALC) window.COMPASSCALC.bind(app);
   }
 
   // ---------- settings ----------

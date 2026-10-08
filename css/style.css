@@ -213,3 +213,18 @@ select {
 .feedback .glossary summary { cursor: pointer; font-weight: 700; }
 .feedback .glossary ul { margin: 6px 0 0; padding-left: 18px; }
 .feedback .glossary li { margin: 3px 0; }
+
+/* Kompasrekenmachine */
+.ccalc { margin: 14px 0 0; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-2); }
+.ccalc summary { cursor: pointer; padding: 10px 14px; font-weight: 700; }
+.ccalc-body { padding: 0 14px 14px; }
+.ccalc-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.ccalc-row input { width: 130px; padding: 9px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font: inherit; }
+.ccalc-ops { display: flex; gap: 4px; }
+.ccalc-ops .btn { padding: 8px 14px; font-size: 1.1rem; }
+.ccalc-quick { display: flex; gap: 8px; margin: 10px 0; flex-wrap: wrap; }
+.ccalc-quick .btn { padding: 6px 12px; font-size: .9rem; }
+#cc-out { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.ccalc-result { flex: 1 1 220px; }
+.ccalc-big { font-size: 1.8rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+.ccalc-rose { color: var(--text); flex: 0 0 auto; }
