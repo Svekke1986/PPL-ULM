@@ -205,7 +205,14 @@ select {
 }
 @media (max-width: 560px) {
   .brand span:last-child { display: none; }
-  .topnav a { padding: 6px 8px; }
+  .topbar { padding: 10px 12px; gap: 6px; }
+  .topnav { gap: 2px; min-width: 0; }
+  .topnav a { padding: 6px 7px; }
+}
+@media (max-width: 400px) {
+  .topbar { padding: 10px 8px; }
+  .topnav a { padding: 6px 4px; font-size: .86rem; }
+  .brand-icon { font-size: 1.2rem; }
 }
 .explain-fig { margin: 10px 0 4px; }
 .explain-fig img { max-width: 260px; width: 100%; border-radius: 10px; border: 1px solid var(--border); cursor: zoom-in; }
@@ -247,3 +254,7 @@ select {
 .progress-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 12px; }
 .progress-row + .progress-row { border-top: 1px solid var(--border); }
 .btn-small { padding: 6px 12px; font-size: .85rem; flex-shrink: 0; }
+
+/* Weerbericht (METAR/TAF) */
+.wx-code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 1rem; line-height: 1.6; padding: 12px 14px; margin: 0 0 14px; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--border); word-spacing: 2px; overflow-wrap: anywhere; }
+.wx-code mark { background: #fde68a; color: #1f2937; padding: 1px 3px; border-radius: 4px; font-weight: 700; }
