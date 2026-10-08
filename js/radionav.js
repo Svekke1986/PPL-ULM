@@ -359,13 +359,26 @@ window.RADIONAV = (function () {
           adfIntro(rb),
           sec('Welke kant?', `de naald staat ${dir === 'rechts' ? 'rechts' : 'links'} van de neus (${brg(rb)} ${rb < 180 ? 'is tussen 000° en 180°' : 'is tussen 180° en 360°'}), dus je draait naar ${dir}, de kortste weg.`),
           sec('Hoeveel?', `${amt}°: ${brg(mh)} ${dir === 'rechts' ? '+' : '−'} ${amt}° = ${brg(qdm)}. Draai tot de naald recht vooruit wijst (0 bovenaan).`),
-          sec('Resultaat:', `je nieuwe koers ${brg(qdm)} is de QDM. Bij windstil weer vlieg je zo rechtstreeks naar het NDB (homing).`)
+          sec('Resultaat:', `je nieuwe koers ${brg(qdm)} is de QDM. Bij windstil weer vlieg je zo rechtstreeks naar het NDB (homing).`),
+          sec('Valkuilen:', `${amt}° naar ${dir === 'rechts' ? 'links' : 'rechts'} (koers ${brg(mh - (rb < 180 ? rb : rb - 360))}) is de verkeerde kant op. Koers ${brg(qdm + 180)} is de QDR: daarmee vlieg je van het NDB weg. En ${brg(rb)} is de relatieve peiling, geen koers.`)
         ];
-        const fmt = v => `${dir === 'rechts' ? 'Naar rechts' : 'Naar links'} naar ${brg(v)}`;
-        const wrongDir = v => `${dir === 'rechts' ? 'Naar links' : 'Naar rechts'} naar ${brg(v)}`;
+        // Elk antwoord is op zich consistent: kortste draai (richting + graden) en de koers waar je dan uitkomt.
+        // Alleen de doelkoers verschilt; de foute antwoorden zijn typische denkfouten.
+        const turnTo = target => {
+          const d = diff(target, mh);
+          return `${Math.abs(d)}° naar ${d > 0 ? 'rechts' : 'links'} draaien, nieuwe koers ${brg(target)}`;
+        };
+        const targets = [
+          qdm,                    // juist: koers + relatieve peiling
+          norm(mh - rb),          // fout: relatieve peiling afgetrokken (verkeerde kant)
+          norm(qdm + 180),        // fout: QDR gevlogen (weg van het NDB)
+          rb,                     // fout: relatieve peiling als koers genomen
+          norm(qdm + 30), norm(qdm - 30)
+        ];
         const o = [];
-        for (const v of [fmt(qdm), wrongDir(qdm), fmt(norm(mh - rb)), fmt(rb), wrongDir(norm(mh - rb)), fmt(norm(qdm + 20)), fmt(norm(qdm - 20))]) {
-          if (!o.includes(v) && o.length < 4) o.push(v);
+        for (const t of targets) {
+          const txt = turnTo(t);
+          if (norm(t) !== norm(mh) && !o.includes(txt) && !o.some(x => x.endsWith(brg(t))) && o.length < 4) o.push(txt);
         }
         return Q({ q: `Je vliegt een magnetische koers van ${brg(mh)} en wil rechtstreeks naar het NDB vliegen. Het is windstil. Wat doe je?`, o,
           e: steps.join('\n\n'), eImg: bearingSketch(mh, qdm), img: rbiSvg(rb), lo: this.lo, loText: 'Homing naar een NDB' });
