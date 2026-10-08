@@ -212,10 +212,12 @@ window.CALC = (function () {
         const right = Math.random() < 0.5;
         const a = off * 60 / flown, b = off * 60 / remain;
         const total = Math.round(a + b);
+        const side = right ? 'rechts' : 'links', back = right ? 'links' : 'rechts';
         const steps = [
-          `Afwijkingshoek (track error) = ${off} × 60 / ${flown} ≈ ${num(a, 1)}°.`,
-          `Hoek om de bestemming te halen = ${off} × 60 / ${remain} ≈ ${num(b, 1)}°.`,
-          `Totale koerscorrectie = ${num(a, 1)}° + ${num(b, 1)}° ≈ ${total}° naar ${right ? 'links' : 'rechts'} (terug naar de geplande lijn).`
+          `**De 1-op-60-regel:**\n1 NM naast de koers na 60 NM gevlogen ≈ 1° afwijking. Daarom: hoek (°) = afwijking (NM) × 60 / afstand (NM). De 60 komt van 1 radiaal ≈ 57,3°, voor het gemak afgerond naar 60.\n`,
+          `**Stap 1 – Afwijkingshoek (track error):**\nNa ${flown} NM zit je ${off} NM ${side}: ${off} × 60 / ${flown} ≈ ${num(a, 1)}°. Draai je alleen dit bij, dan vlieg je evenwijdig aan de route en blijf je ${off} NM ${side}.\n`,
+          `**Stap 2 – Hoek naar de bestemming (closing angle):**\nDie ${off} NM moet je goedmaken over de resterende ${remain} NM: ${off} × 60 / ${remain} ≈ ${num(b, 1)}°.\n`,
+          `**Stap 3 – Totaal:**\n${num(a, 1)}° + ${num(b, 1)}° ≈ ${total}°, naar **${back}** (je zit ${side} van de route, dus terug naar ${back}).`
         ];
         const q = `Na ${flown} NM stel je vast dat je ${off} NM ${right ? 'rechts' : 'links'} van de geplande koers zit. Er resten nog ${remain} NM tot de bestemming. Hoeveel graden moet je de koers aanpassen om rechtstreeks naar de bestemming te vliegen?`;
         const dir = right ? 'links' : 'rechts', wdir = right ? 'rechts' : 'links';
