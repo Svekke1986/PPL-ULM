@@ -43,12 +43,12 @@ window.METAR = (function () {
 
   // ---------- betekenis van de codes ----------
   const COVER = {
-    FEW: { nl: 'weinig wolken (few)', okta: '1–2 achtsten' },
-    SCT: { nl: 'verspreide wolken (scattered)', okta: '3–4 achtsten' },
-    BKN: { nl: 'zwaar bewolkt (broken)', okta: '5–7 achtsten' },
-    OVC: { nl: 'geheel bewolkt (overcast)', okta: '8 achtsten' }
+    FEW: { nl: 'weinig wolken', okta: '1–2 achtsten' },
+    SCT: { nl: 'verspreide wolken', okta: '3–4 achtsten' },
+    BKN: { nl: 'zwaar bewolkt', okta: '5–7 achtsten' },
+    OVC: { nl: 'geheel bewolkt', okta: '8 achtsten' }
   };
-  const coverText = (cov, h, type) => `${COVER[cov].nl}, ${COVER[cov].okta}, basis op ${(h * 100)} ft boven het vliegveld${type === 'CB' ? ', met cumulonimbus (onweerswolken)' : type === 'TCU' ? ', met torenvormige cumulus (TCU)' : ''}`;
+  const coverText = (cov, h, type) => `${COVER[cov].nl}, ${COVER[cov].okta}, basis op ${(h * 100)} ft boven het vliegveld${type === 'CB' ? ', met cumulonimbus (onweerswolken)' : type === 'TCU' ? ', met torenvormige cumulus' : ''}`;
 
   const WX = {
     '-RA': 'lichte regen', 'RA': 'matige regen', '+RA': 'zware regen',
@@ -199,7 +199,7 @@ window.METAR = (function () {
   function trendText(tr) {
     if (tr === 'NOSIG') return 'geen significante verandering verwacht in de komende 2 uur';
     const [kind, ...rest] = tr.split(' ');
-    const what = rest.map(x => x === 'NSW' ? 'einde van het significante weer (no significant weather)'
+    const what = rest.map(x => x === 'NSW' ? 'einde van het significante weer'
       : /^\d{4}$/.test(x) ? `zicht ${visText(+x)}` : WX[x] ? WX[x] : /^(FEW|SCT|BKN|OVC)\d{3}/.test(x) ? coverText(x.slice(0, 3), +x.slice(3, 6), x.slice(6)) : x).join(', ');
     return `${kind === 'TEMPO' ? 'tijdelijk' : 'geleidelijk en blijvend'} in de komende 2 uur: ${what}`;
   }
@@ -360,7 +360,7 @@ window.METAR = (function () {
         const e = [
           sec('Opbouw:', `${m} = bedekking ${c.cov} + hoogte ${pad(c.h, 3)} in honderden voet${c.type ? ` + wolkensoort ${c.type}` : ''}.`),
           sec('Hoogte:', `${pad(c.h, 3)} × 100 = ${(c.h * 100)} ft, gemeten boven het vliegveld (niet boven zeeniveau).`),
-          sec('Bedekking in achtsten (okta):', 'FEW = 1–2 · SCT = 3–4 · BKN = 5–7 · OVC = 8. Alleen CB en TCU worden als wolkensoort vermeld.'),
+          sec('Bedekking in achtsten (okta):', 'FEW (few) = 1–2 · SCT (scattered) = 3–4 · BKN (broken) = 5–7 · OVC (overcast) = 8.\nAlleen CB (cumulonimbus) en TCU (towering cumulus) worden als wolkensoort vermeld.'),
           decode(w)
         ].join('\n');
         return Q({ q: qText(m), o, e, code: metarText(w), mark: m, lo: LO, loText: LOTXT });
@@ -409,11 +409,11 @@ window.METAR = (function () {
         const w = isCavok ? makeWeather('cavok') : (() => { const x = makeWeather('fair'); x.nsc = true; x.clouds = []; return x; })();
         const m = isCavok ? 'CAVOK' : 'NSC';
         const o = isCavok
-          ? opts('Zicht 10 km of meer, geen wolken onder 5000 ft (of de hoogste MSA), geen CB/TCU en geen significant weer', [
+          ? opts('Zicht 10 km of meer, geen wolken onder 5000 ft (of de hoogste MSA), geen cumulonimbus of torenvormige cumulus en geen significant weer', [
             'Geen enkele wolk aan de hemel en zicht 10 km of meer',
             'Zicht 5 km of meer en geen wolken onder 1500 ft',
             'Wolken en zicht zijn voldoende voor VFR (minstens 5 km zicht en 1500 ft wolkenbasis)'])
-          : opts('Geen significante bewolking: geen wolken onder 5000 ft (of de hoogste MSA) en geen CB/TCU', [
+          : opts('Geen significante bewolking: geen wolken onder 5000 ft (of de hoogste MSA) en geen cumulonimbus of torenvormige cumulus', [
             'Geen enkele wolk aan de hemel',
             'Geen significant weer (geen neerslag, mist …)',
             'Geen bewolking gemeten (sensor defect)']);
@@ -552,9 +552,9 @@ window.METAR = (function () {
     const g1s = start + rnd(2, 6), g1e = g1s + rnd(3, 6);
     const g2s = g1e + rnd(1, 4), g2e = g2s + 2;
     const g3s = Math.min(end - 4, g2e + rnd(2, 5)), g3e = g3s + rnd(2, 4);
-    const tempoVis = pick([2500, 3000, 4000]), becmgH = rnd(5, 12), probVis = pick([300, 500, 800]);
+    const cbH = rnd(12, 20), tempoVis = pick([2500, 3000, 4000]), becmgH = rnd(5, 12), probVis = pick([300, 500, 800]);
     const groups = [
-      { kind: 'TEMPO', s: g1s, e: g1e, text: `TEMPO ${at(g1s)}/${at(g1e, true)} ${pad(tempoVis, 4)} SHRA BKN0${rnd(12, 20)}CB`, vis: tempoVis, what: `zicht ${visText(tempoVis)} in regenbuien, ${COVER.BKN.nl} met CB` },
+      { kind: 'TEMPO', s: g1s, e: g1e, text: `TEMPO ${at(g1s)}/${at(g1e, true)} ${pad(tempoVis, 4)} SHRA BKN${pad(cbH, 3)}CB`, vis: tempoVis, what: `zicht ${visText(tempoVis)} in regenbuien, ${coverText('BKN', cbH, 'CB')}` },
       { kind: 'BECMG', s: g2s, e: g2e, text: `BECMG ${at(g2s)}/${at(g2e, true)} BKN${pad(becmgH, 3)}`, what: coverText('BKN', becmgH) },
       { kind: 'PROB30', s: g3s, e: g3e, text: `PROB30 ${at(g3s)}/${at(g3e, true)} ${pad(probVis, 4)} FG`, vis: probVis, what: `zicht ${visText(probVis)} in mist` }
     ];
