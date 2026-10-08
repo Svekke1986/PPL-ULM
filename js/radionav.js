@@ -26,7 +26,7 @@ window.RADIONAV = (function () {
   function Q(o) {
     return {
       q: o.q, o: o.o, c: 0, e: o.e, src: o.src || 'syl', ref: o.ref || '', lo: o.lo || '', loText: o.loText || '',
-      img: o.img ? [svgUri(o.img)] : [], review: false, calc: true
+      img: o.img ? [svgUri(o.img)] : [], eImg: o.eImg ? svgUri(o.eImg) : '', review: false, calc: true
     };
   }
 
@@ -124,10 +124,102 @@ window.RADIONAV = (function () {
     const d2 = diff(R, obs + 180);
     return { to: true, dev: d2 };                                 // TO: rechtsom van de inkomende radiaal → naald rechts
   }
-  const needleTxt = dev => (Math.abs(dev) < 0.5 ? 'gecentreerd' : `${Math.min(5, Math.round(Math.abs(dev) / 2))} dot${Math.round(Math.abs(dev) / 2) === 1 ? '' : 's'} ${dev > 0 ? 'rechts' : 'links'}${Math.abs(dev) >= 10 ? ' (volle uitslag)' : ''}`);
+  const dots = dev => Math.min(5, Math.round(Math.abs(dev) / 2));
+  const needleTxt = dev => (Math.abs(dev) < 0.5 ? 'in het midden' : `${dots(dev)} dot${dots(dev) === 1 ? '' : 's'} ${dev > 0 ? 'rechts' : 'links'}${Math.abs(dev) >= 10 ? ' (volle uitslag)' : ''}`);
   const QUAD = { NO: 'Noordoosten', ZO: 'Zuidoosten', ZW: 'Zuidwesten', NW: 'Noordwesten' };
   const quadOf = R => (R < 90 ? 'NO' : R < 180 ? 'ZO' : R < 270 ? 'ZW' : 'NW');
-  const COMPASS = { 0: 'noord', 90: 'oost', 180: 'zuid', 270: 'west' };
+  // Windrichting (8 streken) van een richting in graden, bv. 145 → 'zuidoosten'
+  const DIR8 = ['noorden', 'noordoosten', 'oosten', 'zuidoosten', 'zuiden', 'zuidwesten', 'westen', 'noordwesten'];
+  const dir8 = d => DIR8[Math.round(norm(d) / 45) % 8];
+  const DIRADJ = { noorden: 'noord', oosten: 'oost', zuiden: 'zuid', westen: 'west' };
+  const kant = d => (DIRADJ[dir8(d)] || dir8(d).replace(/en$/, '')) + 'kant'; // 'oostkant', 'zuidoostkant'
+  // Bereik van radialen binnen 90° van een richting, rechtsom geschreven: "005° tot 185°"
+  const range90 = d => `${brg(d - 90)} tot ${brg(d + 90)}`;
+
+  // Uitleg-blok: kopje in het vet + tekst. In de app wordt **…** vet weergegeven.
+  const sec = (h, t) => `**${h}** ${t}`;
+
+  // Algemene uitleg van de OBS-lijn (komt bij elke VOR-oefening terug)
+  const obsLine = obs =>
+    sec('De OBS-lijn:', `met de OBS op ${brg(obs)} legt de VOR-indicator één rechte lijn door het station: radiaal ${brg(obs)} aan de ene kant en radiaal ${brg(obs + 180)} aan de andere kant (${brg(obs)} ± 180°). Een radiaal wijst altijd vanaf het station naar buiten.`);
+
+  function flagSec(obs, to, R) {
+    const recip = norm(obs + 180);
+    const txt = to
+      ? `de vlag staat op TO. Als je ${brg(obs)} vliegt, vlieg je naar het station toe: het station ligt vóór je. Jij zit dus aan de overkant, op of rond radiaal ${brg(recip)} (de ${kant(recip)} van het station). Het instrument toont TO zolang je op een radiaal binnen 90° van ${brg(recip)} zit, dus van ${range90(recip)}.`
+      : `de vlag staat op FROM. Als je ${brg(obs)} vliegt, vlieg je van het station weg: het station ligt achter je. Jij zit dus op of rond radiaal ${brg(obs)} (de ${kant(obs)} van het station). Het instrument toont FROM zolang je op een radiaal binnen 90° van ${brg(obs)} zit, dus van ${range90(obs)}.`;
+    const check = R === undefined ? '' : ` Radiaal ${brg(R)} ligt ${Math.abs(diff(R, obs))}° van ${brg(obs)}: dat is ${to ? 'meer' : 'minder'} dan 90°, dus ${to ? 'TO' : 'FROM'}.`;
+    return sec('TO of FROM:', txt + check);
+  }
+
+  function needleSec(obs, dev) {
+    if (Math.abs(dev) < 0.5) return sec('Naald:', 'de naald staat in het midden, dus je zit precies op de OBS-lijn.');
+    const lineSide = dev > 0 ? 'rechts' : 'links', youSide = dev > 0 ? 'links' : 'rechts';
+    const youDir = dev > 0 ? obs - 90 : obs + 90;
+    return sec('Naald:', `de naald wijst altijd naar de OBS-lijn. Kijk in de richting van koers ${brg(obs)} (naar het ${dir8(obs)}): de naald staat ${lineSide}, dus de lijn ligt ${lineSide} van je en jij zit ${youSide} ervan. ${youSide[0].toUpperCase() + youSide.slice(1)} van koers ${brg(obs)} is de ${kant(youDir)}.`);
+  }
+
+  function deflSec(dev) {
+    if (Math.abs(dev) < 0.5) return '';
+    return sec('Uitslag:', Math.abs(dev) >= 10
+      ? `je zit ${Math.abs(Math.round(dev))}° naast de lijn. Vanaf 10° staat de naald van een VOR volledig uit (volle uitslag).`
+      : `elke dot is 2° (volle uitslag = 5 dots = 10°). ${needleTxt(dev)[0].toUpperCase() + needleTxt(dev).slice(1)} betekent dus ${Math.abs(Math.round(dev))}° naast de lijn.`);
+  }
+
+  const headingNote = sec('Let op:', 'de koers die het vliegtuig echt vliegt heeft geen invloed op een VOR-indicator. Alleen je positie (de radiaal) en de OBS-instelling bepalen wat je ziet.');
+  const mnemonic = obs => sec('Ezelsbruggetje:', `TO-koers − 180° = de radiaal waarop je zit (${brg(obs)} − 180° = ${brg(obs + 180)}). Bij FROM is de OBS-waarde zelf je radiaal.`);
+
+  // Schets voor de uitleg: station, OBS-lijn met beide radialen, TO-/FROM-kant en jouw positie.
+  function sketchSvg(obs, R) {
+    const c = 130, r = 100;
+    const P = (a, rr) => [c + Math.sin(rad(a)) * rr, c - Math.cos(rad(a)) * rr];
+    const pt = (a, rr) => P(a, rr).map(v => v.toFixed(1)).join(',');
+    const recip = norm(obs + 180);
+    const half = (centre, fill) => {
+      const [x1, y1] = P(centre - 90, r), [x2, y2] = P(centre + 90, r);
+      return `<path d="M${c},${c} L${x1.toFixed(1)},${y1.toFixed(1)} A${r},${r} 0 0 1 ${x2.toFixed(1)},${y2.toFixed(1)} Z" fill="${fill}"/>`;
+    };
+    const lbl = (a, rr, t, col = '#334') => { const [x, y] = P(a, rr); return `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" font-size="11" font-family="Arial, sans-serif" fill="${col}" text-anchor="middle" dominant-baseline="central">${t}</text>`; };
+    const [ax, ay] = P(R, 72);
+    const [ox, oy] = P(obs, 45), [ox2, oy2] = P(obs, 60);
+    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 270" width="260" height="270">
+      <rect width="260" height="270" rx="10" fill="#ffffff"/>
+      ${half(recip, '#d9f2e1')}${half(obs, '#dde8fb')}
+      <circle cx="${c}" cy="${c}" r="${r}" fill="none" stroke="#9aa4b2" stroke-width="1"/>
+      ${lbl(0, r + 12, 'N', '#000')}${lbl(90, r + 12, 'O', '#000')}${lbl(180, r + 12, 'Z', '#000')}${lbl(270, r + 12, 'W', '#000')}
+      ${lbl(recip + 40, 60, 'TO-kant', '#1d7a3e')}${lbl(obs + 40, 60, 'FROM-kant', '#1d4fa8')}
+      <line x1="${P(obs, r).map(v => v.toFixed(1)).join('" y1="')}" x2="${P(recip, r)[0].toFixed(1)}" y2="${P(recip, r)[1].toFixed(1)}" stroke="#222" stroke-width="2"/>
+      ${lbl(obs - 14, r - 12, 'R' + brg(obs).replace('°', ''), '#222')}${lbl(recip - 14, r - 12, 'R' + brg(recip).replace('°', ''), '#222')}
+      <line x1="${ox.toFixed(1)}" y1="${oy.toFixed(1)}" x2="${ox2.toFixed(1)}" y2="${oy2.toFixed(1)}" stroke="#d97706" stroke-width="3"/>
+      <polygon points="${pt(obs, 68)} ${pt(obs - 6, 56)} ${pt(obs + 6, 56)}" fill="#d97706"/>
+      <polygon points="${pt(0, 8)} ${pt(120, 8)} ${pt(240, 8)}" fill="#fff" stroke="#222" stroke-width="2"/>
+      <line x1="${c}" y1="${c}" x2="${ax.toFixed(1)}" y2="${ay.toFixed(1)}" stroke="#d64545" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <circle cx="${ax.toFixed(1)}" cy="${ay.toFixed(1)}" r="6" fill="#d64545"/>
+      <text x="${(ax + (ax > c ? -10 : 10)).toFixed(1)}" y="${(ay - 10).toFixed(1)}" font-size="12" font-weight="bold" font-family="Arial, sans-serif" fill="#d64545" text-anchor="${ax > c ? 'end' : 'start'}">jij</text>
+      <text x="8" y="262" font-size="10.5" font-family="Arial, sans-serif" fill="#555">oranje pijl = OBS ${brg(obs)} · rode stip = jij (radiaal ${brg(R)})</text>
+    </svg>`;
+  }
+
+  // Schets voor ADF/RMI: vliegtuig in het midden met zijn koers, richting naar het station (QDM).
+  function bearingSketch(hdg, qdm) {
+    const c = 130, r = 100;
+    const P = (a, rr) => [c + Math.sin(rad(a)) * rr, c - Math.cos(rad(a)) * rr];
+    const lbl = (a, rr, t, col = '#334') => { const [x, y] = P(a, rr); return `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" font-size="11" font-family="Arial, sans-serif" fill="${col}" text-anchor="middle" dominant-baseline="central">${t}</text>`; };
+    const [hx, hy] = P(hdg, 55), [sx, sy] = P(qdm, 88), [tx, ty] = P(qdm + 180, 60);
+    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 270" width="260" height="270">
+      <rect width="260" height="270" rx="10" fill="#ffffff"/>
+      <circle cx="${c}" cy="${c}" r="${r}" fill="none" stroke="#9aa4b2" stroke-width="1"/>
+      ${lbl(0, r + 12, 'N', '#000')}${lbl(90, r + 12, 'O', '#000')}${lbl(180, r + 12, 'Z', '#000')}${lbl(270, r + 12, 'W', '#000')}
+      <line x1="${c}" y1="${c}" x2="${hx.toFixed(1)}" y2="${hy.toFixed(1)}" stroke="#d97706" stroke-width="4"/>
+      ${lbl(hdg - 16, 50, 'koers ' + brg(hdg), '#d97706')}
+      <line x1="${c}" y1="${c}" x2="${sx.toFixed(1)}" y2="${sy.toFixed(1)}" stroke="#1d7a3e" stroke-width="2"/>
+      <line x1="${c}" y1="${c}" x2="${tx.toFixed(1)}" y2="${ty.toFixed(1)}" stroke="#1d4fa8" stroke-width="2" stroke-dasharray="4 3"/>
+      <rect x="${(sx - 7).toFixed(1)}" y="${(sy - 7).toFixed(1)}" width="14" height="14" fill="#1d7a3e" transform="rotate(45 ${sx.toFixed(1)} ${sy.toFixed(1)})"/>
+      ${lbl(qdm + 16, 66, 'QDM ' + brg(qdm), '#1d7a3e')}${lbl(qdm + 196, 66, 'QDR ' + brg(qdm + 180), '#1d4fa8')}
+      <circle cx="${c}" cy="${c}" r="5" fill="#d64545"/>
+      <text x="8" y="262" font-size="11" font-family="Arial, sans-serif" fill="#555">rood = jij · groen = station (QDM) · blauw = QDR</text>
+    </svg>`;
+  }
 
   const vor = [
     {
@@ -136,20 +228,19 @@ window.RADIONAV = (function () {
         const obs = pick([0, 90, 180, 270]);
         let R; do { R = rnd(0, 359); } while ([0, 90, 180, 270, 360].some(c => Math.abs(R - c) < 15));
         const st = cdiState(R, obs);
-        const half = st.to ? norm(obs + 180) : obs;          // kant van het station waar je zit
-        const side = st.dev < 0 ? norm(obs + 90) : norm(obs - 90); // naald links → je zit rechts van de koers
+        const half = st.to ? norm(obs + 180) : obs;
+        const side = st.dev < 0 ? norm(obs + 90) : norm(obs - 90);
         const steps = [
-          `Stap 1 – de vlag (TO/FROM) vertelt aan welke kant van het station je zit. Stel je voor dat je de OBS-koers ${brg(obs)} vliegt: ${st.to
-            ? `de vlag TO zegt dat je dan naar het station toe vliegt. Het station ligt dus ${COMPASS[obs]} van je, en jij zit aan de ${COMPASS[half]}kant van het station.`
-            : `de vlag FROM zegt dat je dan van het station weg vliegt. Het station ligt dus achter je, en jij zit aan de ${COMPASS[half]}kant van het station.`}`,
-          `Stap 2 – de naald wijst altijd naar de gekozen koerslijn (de lijn door het station in richting ${brg(obs)}). Naald ${st.dev < 0 ? 'links' : 'rechts'}: de lijn ligt ${st.dev < 0 ? 'links' : 'rechts'} van je, dus jij zit ${st.dev < 0 ? 'rechts' : 'links'} van die lijn. Als je ${brg(obs)} vliegt, is ${st.dev < 0 ? 'rechts' : 'links'} het ${COMPASS[side]}en: je zit aan de ${COMPASS[side]}kant.`,
-          `Conclusie: ${COMPASS[half]}kant + ${COMPASS[side]}kant = ${QUAD[quadOf(R)].toLowerCase()} van de VOR (in dit voorbeeld radiaal ${brg(R)}).`,
-          'Let op: de koers die het vliegtuig echt vliegt speelt geen rol. Een VOR-indicator toont alleen waar je zit ten opzichte van de gekozen koers (OBS).'
+          obsLine(obs),
+          flagSec(obs, st.to),
+          needleSec(obs, st.dev),
+          sec('Conclusie:', `${kant(half)} + ${kant(side)} = ${QUAD[quadOf(R)].toLowerCase()} van de VOR. In dit voorbeeld zat je op radiaal ${brg(R)} (zie schets).`),
+          headingNote
         ];
         const q = 'Waar bevindt het luchtvaartuig zich ten opzichte van de VOR? (de koers van het vliegtuig speelt geen rol)';
         const right = QUAD[quadOf(R)];
         const o = [right, ...Object.values(QUAD).filter(x => x !== right)];
-        return Q({ q, o, e: steps.join('\n'), img: cdiSvg(obs, st.dev / 10, st.to), lo: this.lo, loText: 'VOR-informatie aflezen en interpreteren' });
+        return Q({ q, o, e: steps.join('\n\n'), eImg: sketchSvg(obs, R), img: cdiSvg(obs, st.dev / 10, st.to), lo: this.lo, loText: 'VOR-informatie aflezen en interpreteren' });
       }
     },
     {
@@ -161,17 +252,18 @@ window.RADIONAV = (function () {
         // FROM: naald rechts (dev>0) → R = OBS − dev ; TO: naald rechts → R = OBS + 180 + dev
         const R = to ? norm(obs + 180 + dev) : norm(obs - dev);
         const base = to ? norm(obs + 180) : obs;
+        const bigger = (dev > 0) === to;
         const steps = [
-          to ? `Stap 1 – vlag TO: met koers ${brg(obs)} vlieg je naar het station toe, dus je zit aan de andere kant: op de radiaal OBS + 180° = ${brg(base)}.`
-             : `Stap 1 – vlag FROM: met koers ${brg(obs)} vlieg je van het station weg, dus je zit op de radiaal die gelijk is aan de OBS: ${brg(obs)}.`,
-          dev === 0 ? 'Stap 2 – de naald staat in het midden: je zit precies op die radiaal.'
-            : `Stap 2 – de naald staat ${needleTxt(dev)}. Elke dot is 2°, dus je wijkt ${Math.abs(dev)}° af van radiaal ${brg(base)}.`,
-          dev === 0 ? `Antwoord: radiaal ${brg(R)}.`
-            : `Stap 3 – welke kant? De naald wijst naar de koerslijn: naald ${dev > 0 ? 'rechts' : 'links'} = de lijn ligt ${dev > 0 ? 'rechts' : 'links'} van je (als je ${brg(obs)} vliegt). Dat betekent hier dat je radiaal ${(dev > 0) === to ? 'groter' : 'kleiner'} is: ${brg(base)} ${(dev > 0) === to ? '+' : '−'} ${Math.abs(dev)}° = ${brg(R)}.`,
-          `Valkuil: ${to ? `bij TO is de OBS-waarde (${brg(obs)}) niet je radiaal maar je koers naar het station.` : `bij FROM is de OBS-waarde wel je radiaal; ${brg(obs + 180)} zou de koers naar het station zijn.`}`
-        ];
+          obsLine(obs),
+          flagSec(obs, to),
+          dev === 0 ? sec('Naald:', `de naald staat in het midden, dus je zit precies op radiaal ${brg(base)}.`)
+            : sec('Naald (hoeveel):', `de naald staat ${needleTxt(dev)}. Elke dot is 2°, dus je zit ${Math.abs(dev)}° naast radiaal ${brg(base)}.`),
+          dev === 0 ? '' : sec('Naald (welke kant):', `kijk in de richting van koers ${brg(obs)}. De naald staat ${dev > 0 ? 'rechts' : 'links'}, dus de lijn ligt ${dev > 0 ? 'rechts' : 'links'} van je en jij zit ${dev > 0 ? 'links' : 'rechts'} ervan, aan de ${kant(dev > 0 ? obs - 90 : obs + 90)}. Vanaf radiaal ${brg(base)} is dat een stukje ${bigger ? 'rechtsom (grotere waarde)' : 'linksom (kleinere waarde)'}: ${brg(base)} ${bigger ? '+' : '−'} ${Math.abs(dev)}° = ${brg(R)}.`),
+          sec('Antwoord:', `radiaal ${brg(R)}.`),
+          to ? mnemonic(obs) : sec('Valkuil:', `bij FROM is de OBS-waarde (${brg(obs)}) je radiaal. ${brg(obs + 180)} is de koers die je naar het station zou moeten vliegen.`)
+        ].filter(Boolean);
         const wrong = [to ? obs + 180 - dev : obs + dev, to ? obs + dev : obs + 180 - dev, to ? obs - dev : obs + 180 + dev];
-        return Q({ q: 'Op welke VOR-radiaal bevindt het luchtvaartuig zich?', o: options(R, wrong.map(norm), brg), e: steps.join('\n'),
+        return Q({ q: 'Op welke VOR-radiaal bevindt het luchtvaartuig zich?', o: options(R, wrong.map(norm), brg), e: steps.join('\n\n'), eImg: sketchSvg(obs, R),
           img: cdiSvg(obs, dev / 10, to), lo: this.lo, loText: 'VOR-informatie aflezen (geselecteerde koers, naald, TO/FROM)' });
       }
     },
@@ -180,14 +272,17 @@ window.RADIONAV = (function () {
       gen() {
         const obs = rnd(0, 71) * 5, to = Math.random() < 0.5;
         const qdm = to ? obs : norm(obs + 180);
+        const R = norm(qdm + 180);
         const steps = [
-          `De naald staat in het midden: je zit precies op de lijn van de gekozen koers ${brg(obs)}.`,
-          to ? `Vlag TO: als je ${brg(obs)} vliegt, kom je recht bij het station uit. De koers naar het station (QDM) is dus ${brg(qdm)}.`
-             : `Vlag FROM: als je ${brg(obs)} vliegt, vlieg je juist van het station weg. Naar het station is het de tegenovergestelde richting: ${brg(obs)} ± 180° = ${brg(qdm)}.`,
-          to ? 'Bij windstil weer vlieg je die koers en blijft de naald gecentreerd.' : `Tip: draai de OBS naar ${brg(qdm)}; de vlag springt dan naar TO en de naald blijft in het midden.`
+          obsLine(obs),
+          sec('Naald:', `de naald staat in het midden, dus je zit precies op de OBS-lijn, op radiaal ${brg(R)}.`),
+          to ? sec('TO of FROM:', `de vlag staat op TO: als je ${brg(obs)} vliegt, kom je recht bij het station uit. De koers naar het station (QDM) is dus ${brg(qdm)}.`)
+             : sec('TO of FROM:', `de vlag staat op FROM: als je ${brg(obs)} vliegt, vlieg je juist van het station weg. Naar het station moet je de andere kant op: ${brg(obs)} ± 180° = ${brg(qdm)}.`),
+          to ? sec('Ezelsbruggetje:', `bij TO + naald in het midden is de OBS-waarde meteen je koers naar het station.`)
+             : sec('Tip:', `draai de OBS naar ${brg(qdm)}. De vlag springt dan naar TO en de naald blijft in het midden: zo vlieg je met koers ${brg(qdm)} naar het station.`)
         ];
         return Q({ q: 'Het is windstil. Welke magnetische koers moet je vliegen om rechtstreeks naar de VOR te gaan?', o: options(qdm, [norm(qdm + 180), norm(qdm + 90), norm(qdm - 90)], brg),
-          e: steps.join('\n'), img: cdiSvg(obs, 0, to), lo: this.lo, loText: 'VOR-informatie aflezen (koers naar het station)' });
+          e: steps.join('\n\n'), eImg: sketchSvg(obs, R), img: cdiSvg(obs, 0, to), lo: this.lo, loText: 'VOR-informatie aflezen (koers naar het station)' });
       }
     },
     {
@@ -197,22 +292,22 @@ window.RADIONAV = (function () {
         do { R = rnd(0, 359); obs = rnd(0, 71) * 5; st = cdiState(R, obs); } while (Math.abs(st.dev) < 3 || Math.abs(Math.abs(diff(R, obs)) - 90) < 8);
         const label = (to, right) => `${to ? 'TO' : 'FROM'}, naald ${right ? 'rechts' : 'links'}`;
         const right = st.dev > 0;
+        const youDir = right ? obs - 90 : obs + 90;
         const steps = [
-          `Stap 1 – TO of FROM? Vergelijk je radiaal (${brg(R)}) met de OBS (${brg(obs)}): ze verschillen ${Math.abs(diff(R, obs))}°. ${st.to
-            ? 'Meer dan 90°: de gekozen koers wijst naar het station toe, dus de vlag toont TO.'
-            : 'Minder dan 90°: je zit aan de kant waar de gekozen koers naartoe wijst, dus de vlag toont FROM.'}`,
-          st.to
-            ? `Stap 2 – naald: de lijn naar het station toe is radiaal ${brg(obs + 180)}. Jouw radiaal ligt ${Math.abs(st.dev)}° ${right ? 'rechtsom (grotere waarde)' : 'linksom (kleinere waarde)'} daarvan. Als je ${brg(obs)} naar het station vliegt, is dat ${right ? 'links' : 'rechts'} van de lijn. De lijn ligt dus ${right ? 'rechts' : 'links'} van je: naald ${right ? 'rechts' : 'links'}.`
-            : `Stap 2 – naald: jouw radiaal ligt ${Math.abs(st.dev)}° ${right ? 'linksom (kleinere waarde)' : 'rechtsom (grotere waarde)'} van radiaal ${brg(obs)}. Als je ${brg(obs)} van het station weg vliegt, is dat ${right ? 'links' : 'rechts'} van de lijn. De lijn ligt dus ${right ? 'rechts' : 'links'} van je: naald ${right ? 'rechts' : 'links'}.`,
-          `Stap 3 – uitslag: ${Math.abs(st.dev) >= 10 ? `${Math.abs(st.dev)}° is meer dan 10°, dus volle uitslag.` : `${Math.abs(st.dev)}° ≈ ${Math.round(Math.abs(st.dev) / 2)} dots (2° per dot).`}`,
-          'De koers die het vliegtuig vliegt speelt geen rol: een VOR-indicator hangt alleen af van je positie en de OBS-instelling.'
+          obsLine(obs),
+          flagSec(obs, st.to, R),
+          sec('Naald:', `op radiaal ${brg(R)} sta je ten ${dir8(R)} van het station, aan de ${kant(youDir)} van de lijn ${brg(obs)}/${brg(obs + 180)}. Kijk in de richting van koers ${brg(obs)} (naar het ${dir8(obs)}): de lijn ligt dan ${right ? 'rechts' : 'links'} van je. De naald wijst naar de lijn, dus naald ${right ? 'rechts' : 'links'}.`),
+          deflSec(st.dev),
+          headingNote
         ];
         const o = [label(st.to, right), label(st.to, !right), label(!st.to, right), label(!st.to, !right)];
-        return Q({ q: `Je bevindt je op radiaal ${brg(R)} van een VOR en stelt de OBS in op ${brg(obs)}. Wat toont de VOR-indicator?`, o, e: steps.join('\n'),
+        return Q({ q: `Je bevindt je op radiaal ${brg(R)} van een VOR en stelt de OBS in op ${brg(obs)}. Wat toont de VOR-indicator?`, o, e: steps.join('\n\n'), eImg: sketchSvg(obs, R),
           lo: this.lo, loText: 'Werking van de VOR-indicator (TO/FROM en naalduitslag)' });
       }
     }
   ];
+
+  const adfIntro = rb => sec('Wat toont de ADF?', `bij een ADF met vaste kaart staat 0 altijd bovenaan, en dat is de neus van het vliegtuig. De naald toont dus niet de richting op het kompas, maar de relatieve peiling: de hoek van je neus naar het NDB, rechtsom gemeten. Hier ${brg(rb)}, dus het NDB ligt ${rb > 180 ? `${360 - rb}° links` : `${rb}° rechts`} van je neus.`);
 
   const adf = [
     {
@@ -222,12 +317,13 @@ window.RADIONAV = (function () {
         let rb; do { rb = rnd(0, 71) * 5; } while (rb === 0 || rb === 180);
         const qdm = norm(mh + rb);
         const steps = [
-          `Een ADF met vaste kaart heeft altijd 0 bovenaan (de neus van het vliegtuig). De naald toont dus de relatieve peiling: de hoek van je neus naar het NDB, rechtsom gemeten. Hier ${brg(rb)}${rb > 180 ? `, dus ${360 - rb}° links van de neus` : `, dus ${rb}° rechts van de neus`}.`,
-          `QDM (magnetische koers naar het NDB) = magnetische koers + relatieve peiling = ${brg(mh)} + ${brg(rb)} = ${brg(qdm)}${mh + rb >= 360 ? ' (360° afgetrokken)' : ''}.`,
-          `Controle: ${brg(mh)} ${rb > 180 ? '−' : '+'} ${rb > 180 ? 360 - rb : rb}° = ${brg(qdm)}. Valkuil: ${brg(rb)} is alleen de relatieve peiling, niet de QDM.`
+          adfIntro(rb),
+          sec('Berekening:', `QDM (de magnetische koers naar het NDB) = je koers + de relatieve peiling = ${brg(mh)} + ${brg(rb)} = ${brg(qdm)}${mh + rb >= 360 ? ' (boven 360°, dus 360° aftrekken)' : ''}.`),
+          sec('Controle:', `het NDB ligt ${rb > 180 ? `${360 - rb}° links` : `${rb}° rechts`} van je neus: ${brg(mh)} ${rb > 180 ? '−' : '+'} ${rb > 180 ? 360 - rb : rb}° = ${brg(qdm)}.`),
+          sec('Valkuil:', `${brg(rb)} is alleen de relatieve peiling. De QDM krijg je pas als je je eigen koers erbij telt.`)
         ];
         return Q({ q: `Je vliegt een magnetische koers van ${brg(mh)}. Wat is de QDM naar het NDB?`, o: options(qdm, [norm(mh - rb), rb, norm(qdm + 180)], brg),
-          e: steps.join('\n'), img: rbiSvg(rb), lo: this.lo, loText: 'Aanwijzingen van RBI en RMI interpreteren' });
+          e: steps.join('\n\n'), eImg: bearingSketch(mh, qdm), img: rbiSvg(rb), lo: this.lo, loText: 'Aanwijzingen van RBI en RMI interpreteren' });
       }
     },
     {
@@ -237,12 +333,13 @@ window.RADIONAV = (function () {
         let rb; do { rb = rnd(0, 71) * 5; } while (rb === 0 || rb === 180);
         const qdm = norm(mh + rb), qdr = norm(qdm + 180);
         const steps = [
-          `De naald van de vaste-kaart-ADF toont de relatieve peiling: ${brg(rb)}.`,
-          `Eerst de QDM (koers naar het NDB): ${brg(mh)} + ${brg(rb)} = ${brg(qdm)}.`,
-          `De QDR is de tegenovergestelde richting, van het NDB naar jou: ${brg(qdm)} ± 180° = ${brg(qdr)}.`
+          adfIntro(rb),
+          sec('Stap 1 – QDM:', `koers + relatieve peiling = ${brg(mh)} + ${brg(rb)} = ${brg(qdm)}. Dat is de richting van jou naar het NDB.`),
+          sec('Stap 2 – QDR:', `de QDR is de omgekeerde richting, van het NDB naar jou: ${brg(qdm)} ± 180° = ${brg(qdr)}.`),
+          sec('Ezelsbruggetje:', 'QDM = de koers die je vliegt om bij het station te komen (naar het station). QDR = de radiaal, altijd vanaf het station naar jou. Ze verschillen altijd precies 180°.')
         ];
         return Q({ q: `Je vliegt een magnetische koers van ${brg(mh)}. Op welke QDR (magnetische peiling vanaf het NDB) bevind je je?`, o: options(qdr, [qdm, norm(rb + 180), norm(mh - rb + 180)], brg),
-          e: steps.join('\n'), img: rbiSvg(rb), lo: this.lo, loText: 'Aanwijzingen van RBI en RMI interpreteren' });
+          e: steps.join('\n\n'), eImg: bearingSketch(mh, qdm), img: rbiSvg(rb), lo: this.lo, loText: 'Aanwijzingen van RBI en RMI interpreteren' });
       }
     },
     {
@@ -252,9 +349,10 @@ window.RADIONAV = (function () {
         let rb; do { rb = rnd(2, 70) * 5; } while (Math.abs(rb - 180) < 20);
         const qdm = norm(mh + rb), dir = rb < 180 ? 'rechts' : 'links', amt = rb < 180 ? rb : 360 - rb;
         const steps = [
-          `De naald wijst ${brg(rb)} relatief: het NDB ligt ${amt}° ${dir === 'rechts' ? 'rechts' : 'links'} van je neus.`,
-          `Draai ${amt}° naar ${dir} tot de naald recht vooruit wijst (0 bovenaan): ${brg(mh)} ${dir === 'rechts' ? '+' : '−'} ${amt}° = ${brg(qdm)}.`,
-          'Die nieuwe koers is de QDM. Bij windstil weer vlieg je zo rechtstreeks naar het NDB (homing).'
+          adfIntro(rb),
+          sec('Welke kant?', `de naald staat ${dir === 'rechts' ? 'rechts' : 'links'} van de neus (${brg(rb)} ${rb < 180 ? 'is tussen 000° en 180°' : 'is tussen 180° en 360°'}), dus je draait naar ${dir}, de kortste weg.`),
+          sec('Hoeveel?', `${amt}°: ${brg(mh)} ${dir === 'rechts' ? '+' : '−'} ${amt}° = ${brg(qdm)}. Draai tot de naald recht vooruit wijst (0 bovenaan).`),
+          sec('Resultaat:', `je nieuwe koers ${brg(qdm)} is de QDM. Bij windstil weer vlieg je zo rechtstreeks naar het NDB (homing).`)
         ];
         const fmt = v => `${dir === 'rechts' ? 'Naar rechts' : 'Naar links'} naar ${brg(v)}`;
         const wrongDir = v => `${dir === 'rechts' ? 'Naar links' : 'Naar rechts'} naar ${brg(v)}`;
@@ -263,10 +361,12 @@ window.RADIONAV = (function () {
           if (!o.includes(v) && o.length < 4) o.push(v);
         }
         return Q({ q: `Je vliegt een magnetische koers van ${brg(mh)} en wil (windstil) rechtstreeks naar het NDB. Wat doe je?`, o,
-          e: steps.join('\n'), img: rbiSvg(rb), lo: this.lo, loText: 'Homing naar een NDB' });
+          e: steps.join('\n\n'), eImg: bearingSketch(mh, qdm), img: rbiSvg(rb), lo: this.lo, loText: 'Homing naar een NDB' });
       }
     }
   ];
+
+  const rmiIntro = hdg => sec('Wat toont de RMI?', `bij een RMI draait de kompasroos mee met het vliegtuig: bovenaan staat altijd je koers (hier ${brg(hdg)}). Daardoor toont de naald echte magnetische richtingen. Je hoeft niets op te tellen, alleen af te lezen.`);
 
   const rmi = [
     {
@@ -276,13 +376,13 @@ window.RADIONAV = (function () {
         let qdm; do { qdm = rnd(0, 71) * 5; } while (Math.abs(diff(qdm, hdg)) < 20 || Math.abs(diff(qdm, hdg)) > 160);
         const rb = norm(qdm - hdg);
         const steps = [
-          `Bij een RMI draait de kompasroos mee met het vliegtuig: bovenaan staat altijd je koers (hier ${brg(hdg)}).`,
-          `Daardoor wijst de kop van de naald rechtstreeks de magnetische peiling naar het station aan: lees af waar de kop op de roos staat → QDM ${brg(qdm)}.`,
-          `De staart van de naald wijst de QDR / radiaal aan (${brg(qdm + 180)}).`,
-          `Valkuil: ${brg(rb)} is de relatieve peiling (QDM − koers). Die lees je af op een ADF met vaste kaart, niet op een RMI.`
+          rmiIntro(hdg),
+          sec('Kop van de naald:', `wijst naar het station. Lees af waar de kop op de roos staat: QDM ${brg(qdm)}.`),
+          sec('Staart van de naald:', `wijst de omgekeerde richting aan, de QDR / radiaal: ${brg(qdm + 180)}.`),
+          sec('Valkuil:', `${brg(rb)} is de relatieve peiling (QDM − koers). Die zie je op een ADF met vaste kaart, niet op een RMI.`)
         ];
         return Q({ q: 'Wat is de QDM naar het station volgens de RMI?', o: options(qdm, [norm(qdm + 180), rb, hdg], brg),
-          e: steps.join('\n'), img: rmiSvg(hdg, qdm), lo: this.lo, loText: 'Aanwijzingen van RBI en RMI interpreteren' });
+          e: steps.join('\n\n'), eImg: bearingSketch(hdg, qdm), img: rmiSvg(hdg, qdm), lo: this.lo, loText: 'Aanwijzingen van RBI en RMI interpreteren' });
       }
     },
     {
@@ -292,13 +392,13 @@ window.RADIONAV = (function () {
         let qdm; do { qdm = rnd(0, 71) * 5; } while (Math.abs(diff(qdm, hdg)) < 20 || Math.abs(diff(qdm, hdg)) > 160);
         const qdr = norm(qdm + 180);
         const steps = [
-          `Bij een RMI draait de kompasroos mee met de koers (bovenaan ${brg(hdg)}). De naald toont dus echte magnetische richtingen.`,
-          `De kop van de naald wijst naar het station: QDM ${brg(qdm)}.`,
-          `De radiaal is de richting van het station naar jou, dus de staart van de naald: ${brg(qdr)}.`,
-          `Valkuil: de kop (${brg(qdm)}) is de koers naar het station, niet je radiaal.`
+          rmiIntro(hdg),
+          sec('Kop van de naald:', `wijst naar het station: QDM ${brg(qdm)}.`),
+          sec('Staart van de naald:', `een radiaal wijst altijd vanaf het station naar buiten, dus naar jou toe. Dat is de staart van de naald: radiaal ${brg(qdr)}.`),
+          sec('Valkuil:', `de kop (${brg(qdm)}) is de koers naar het station, niet je radiaal. Ze verschillen altijd 180°.`)
         ];
         return Q({ q: 'De naald van de RMI is gekoppeld aan een VOR. Op welke radiaal bevind je je?', o: options(qdr, [qdm, norm(qdm - hdg), norm(qdr - hdg)], brg),
-          e: steps.join('\n'), img: rmiSvg(hdg, qdm), lo: this.lo, loText: 'Aanwijzingen van RBI en RMI interpreteren' });
+          e: steps.join('\n\n'), eImg: bearingSketch(hdg, qdm), img: rmiSvg(hdg, qdm), lo: this.lo, loText: 'Aanwijzingen van RBI en RMI interpreteren' });
       }
     }
   ];

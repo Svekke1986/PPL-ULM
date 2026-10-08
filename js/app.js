@@ -69,7 +69,8 @@
     return `<div class="feedback ${ok ? 'ok' : 'bad'}">
       <h3>${head}</h3>
       ${whyWrong}
-      <p class="explain">${esc(q.e || 'Geen uitleg beschikbaar.')}</p>
+      <p class="explain">${esc(q.e || 'Geen uitleg beschikbaar.').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')}</p>
+      ${q.eImg ? `<div class="explain-fig"><img src="${esc(q.eImg)}" alt="Schets bij de uitleg"></div>` : ''}
       ${review}
       ${sourceHtml(q)}
     </div>`;
