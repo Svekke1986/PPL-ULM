@@ -119,9 +119,12 @@
     const count = l => Object.keys(LICENCES[l].exams).reduce((n, s) => n + questionsFor(l, s).length, 0);
     app.innerHTML = `
       <h1>Oefen je PPL- of ULM-theorie</h1>
-      <p class="lead">Kies je opleiding, daarna het vak. Je kunt onbeperkt oefenen met directe feedback, of een proefexamen afleggen met hetzelfde aantal vragen en dezelfde tijd als op het examen. Bij <strong>Rekenvragen</strong>, <strong>VOR &amp; radionavigatie</strong> en <strong>METAR &amp; TAF</strong> maakt de site telkens een nieuwe oefening.</p>
+      <p class="lead">Kies bij <strong>Licentie</strong> je opleiding en daarna het vak: oefen met de vragenbank of leg een proefexamen af met hetzelfde aantal vragen en dezelfde tijd als op het examen. Bij <strong>Oefeningen</strong> maakt de site telkens een nieuwe oefening.</p>
       <div class="notice"><strong>Dit is geen officieel platform.</strong> Het is niet verbonden aan EASA, de BCAA of het DGLV.
         Slagen op deze website geeft <strong>geen garantie</strong> dat je slaagt voor het echte theorie-examen.</div>
+      <section class="home-section">
+      <h2 class="section-title">Licentie</h2>
+      <p class="muted section-sub">Vragenbank per vak, met oefenmodus en proefexamen</p>
       <div class="grid grid-2">
         <a class="card licence-card" href="#/ppl">
           <div class="big">🛩️</div>
@@ -133,6 +136,12 @@
           <h2>ULM</h2>
           <p class="muted">${esc(LICENCES.ULM.full)}<br>4 vakken · ${count('ULM')} vragen in de databank</p>
         </a>
+      </div>
+      </section>
+      <section class="home-section">
+      <h2 class="section-title">Oefeningen</h2>
+      <p class="muted section-sub">De site maakt telkens een nieuwe oefening, met stap-voor-stap uitleg</p>
+      <div class="grid grid-3">
         <a class="card licence-card" href="#/rekenvragen">
           <div class="big">🧮</div>
           <h2>Rekenvragen</h2>
@@ -148,7 +157,8 @@
           <h2>METAR &amp; TAF</h2>
           <p class="muted">Telkens een nieuw weerbericht: wat betekent dit deel, en wat doe je ermee?<br>${Object.keys(window.METAR.GENERATORS).length} onderdelen · ${Object.values(window.METAR.GENERATORS).reduce((n, l) => n + l.length, 0)} soorten oefeningen</p>
         </a>
-      </div>`;
+      </div>
+      </section>`;
   }
 
   function viewLicence(licence) {
