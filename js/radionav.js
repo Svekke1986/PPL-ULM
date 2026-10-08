@@ -145,11 +145,18 @@ window.RADIONAV = (function () {
 
   function flagSec(obs, to, R) {
     const recip = norm(obs + 180);
-    const txt = to
-      ? `de vlag staat op TO. Als je ${brg(obs)} vliegt, vlieg je naar het station toe: het station ligt vóór je. Jij zit dus aan de overkant, op of rond radiaal ${brg(recip)} (de ${kant(recip)} van het station). Het instrument toont TO zolang je op een radiaal binnen 90° van ${brg(recip)} zit, dus van ${range90(recip)}.`
-      : `de vlag staat op FROM. Als je ${brg(obs)} vliegt, vlieg je van het station weg: het station ligt achter je. Jij zit dus op of rond radiaal ${brg(obs)} (de ${kant(obs)} van het station). Het instrument toont FROM zolang je op een radiaal binnen 90° van ${brg(obs)} zit, dus van ${range90(obs)}.`;
-    const check = R === undefined ? '' : ` Radiaal ${brg(R)} ligt ${Math.abs(diff(R, obs))}° van ${brg(obs)}: dat is ${to ? 'meer' : 'minder'} dan 90°, dus ${to ? 'TO' : 'FROM'}.`;
-    return sec('TO of FROM:', txt + check);
+    if (R === undefined) {
+      // Vlag is gegeven (op het instrument): leg uit wat ze betekent.
+      return sec('TO of FROM:', to
+        ? `de vlag staat op TO. Dat betekent: als je koers ${brg(obs)} zou vliegen, kom je bij het station uit (het station ligt vóór je). Je zit dus aan de overkant van het station, in de TO-helft rond radiaal ${brg(recip)}: de ${kant(recip)} van het station (groene helft in de schets).`
+        : `de vlag staat op FROM. Dat betekent: als je koers ${brg(obs)} zou vliegen, vlieg je van het station weg (het station ligt achter je). Je zit dus in de FROM-helft rond radiaal ${brg(obs)}: de ${kant(obs)} van het station (blauwe helft in de schets).`);
+    }
+    // Radiaal is gegeven: bepaal de vlag met één eenvoudige regel.
+    const d = Math.abs(diff(R, obs));
+    return sec('TO of FROM:', `vergelijk je radiaal met de OBS-waarde. Radiaal ${brg(R)} en OBS ${brg(obs)} liggen ${d}° uit elkaar.\n` +
+      `• Minder dan 90° → FROM (je zit aan de kant waar de OBS-koers naartoe wijst).\n` +
+      `• Meer dan 90° → TO (je zit aan de overkant; de OBS-koers brengt je naar het station).\n` +
+      `${d}° is ${to ? 'meer' : 'minder'} dan 90°, dus ${to ? 'TO' : 'FROM'}. In de schets: de grens tussen TO en FROM is de lijn ${brg(obs - 90)}–${brg(obs + 90)}, haaks op de OBS-lijn. Radiaal ${brg(R)} ligt in de ${to ? 'groene TO-helft (rond radiaal ' + brg(recip) + ')' : 'blauwe FROM-helft (rond radiaal ' + brg(obs) + ')'}.`);
   }
 
   function needleSec(obs, dev) {
