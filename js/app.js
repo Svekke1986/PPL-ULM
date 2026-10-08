@@ -86,6 +86,16 @@
     </div>`;
   }
 
+  // Weerbericht (METAR/TAF) in een kader, met het gevraagde deel gemarkeerd (alleen als volledig woord).
+  function codeHtml(code, mark) {
+    let html = esc(code);
+    if (mark) {
+      const m = esc(mark).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      html = html.replace(new RegExp(`(^|\\s)(${m})(?=\\s|$)`), '$1<mark>$2</mark>');
+    }
+    return `<div class="wx-code" aria-label="Weerbericht">${html}</div>`;
+  }
+
   function questionHtml(q, opts) {
     const imgs = (q.img || []).map(src => `<img src="${esc(src)}" alt="Bijlage bij de vraag" loading="lazy">`).join('');
     const options = q.o.map((text, i) => {
@@ -98,6 +108,7 @@
         <span class="letter">${LETTERS[i]}</span><span>${esc(text)}</span></button>`;
     }).join('');
     return `<div class="q-meta"><span>${opts.counter || ''}</span><span>${q.lo ? 'ECQB ' + esc(q.lo) : ''}</span></div>
+      ${q.code ? codeHtml(q.code, q.mark) : ''}
       <p class="q-text">${esc(q.q)}</p>
       ${imgs ? `<div class="q-images">${imgs}</div>` : ''}
       <div class="options">${options}</div>`;
@@ -108,7 +119,7 @@
     const count = l => Object.keys(LICENCES[l].exams).reduce((n, s) => n + questionsFor(l, s).length, 0);
     app.innerHTML = `
       <h1>Oefen je PPL- of ULM-theorie</h1>
-      <p class="lead">Kies je opleiding, daarna het vak. Je kunt onbeperkt oefenen met directe feedback, of een proefexamen afleggen met hetzelfde aantal vragen en dezelfde tijd als op het examen. Bij <strong>Rekenvragen</strong> en <strong>VOR &amp; radionavigatie</strong> maakt de site telkens een nieuwe oefening.</p>
+      <p class="lead">Kies je opleiding, daarna het vak. Je kunt onbeperkt oefenen met directe feedback, of een proefexamen afleggen met hetzelfde aantal vragen en dezelfde tijd als op het examen. Bij <strong>Rekenvragen</strong>, <strong>VOR &amp; radionavigatie</strong> en <strong>METAR &amp; TAF</strong> maakt de site telkens een nieuwe oefening.</p>
       <div class="notice"><strong>Dit is geen officieel platform.</strong> Het is niet verbonden aan EASA, de BCAA of het DGLV.
         Slagen op deze website geeft <strong>geen garantie</strong> dat je slaagt voor het echte theorie-examen.</div>
       <div class="grid grid-2">
@@ -131,6 +142,11 @@
           <div class="big">📡</div>
           <h2>VOR &amp; radionavigatie</h2>
           <p class="muted">VOR, ADF en RMI aflezen op telkens nieuw getekende instrumenten<br>${Object.keys(window.RADIONAV.GENERATORS).length} instrumenten · ${Object.values(window.RADIONAV.GENERATORS).reduce((n, l) => n + l.length, 0)} soorten oefeningen</p>
+        </a>
+        <a class="card licence-card" href="#/metar">
+          <div class="big">🌦️</div>
+          <h2>METAR &amp; TAF</h2>
+          <p class="muted">Telkens een nieuw weerbericht: wat betekent dit deel, en wat doe je ermee?<br>${Object.keys(window.METAR.GENERATORS).length} onderdelen · ${Object.values(window.METAR.GENERATORS).reduce((n, l) => n + l.length, 0)} soorten oefeningen</p>
         </a>
       </div>`;
   }
@@ -404,6 +420,13 @@
       group: key => ({ icon: SUBJECTS[key].icon, title: `${SUBJECTS[key].code} · ${SUBJECTS[key].name}`, name: SUBJECTS[key].name, tags: window.CALC.LICENCE_TAGS[key] }),
       lead: 'Kies een vak. De site maakt telkens een nieuwe oefening met andere getallen. Het juiste antwoord wordt berekend, de foute antwoorden zijn typische denkfouten. Na je antwoord zie je de berekening stap voor stap.',
       sub: 'Rekenvragen · telkens nieuwe getallen'
+    },
+    metar: {
+      title: 'METAR & TAF', icon: '🌦️', api: () => window.METAR, statsKey: 'metarstats', groupWord: 'Onderdelen',
+      order: ['metar', 'toepassen', 'taf'],
+      group: key => { const G = window.METAR.GROUPS[key]; return { icon: G.icon, title: G.name, name: G.name, tags: ['PPL', 'ULM'], desc: G.desc }; },
+      lead: 'Kies een onderdeel. De site maakt telkens een nieuw, realistisch weerbericht voor een Belgisch vliegveld en vraagt wat een deel betekent of wat je ermee moet doen. Na je antwoord zie je het hele bericht ontcijferd.',
+      sub: 'METAR & TAF · telkens een nieuw weerbericht'
     },
     vor: {
       title: 'VOR & radionavigatie', icon: '📡', api: () => window.RADIONAV, statsKey: 'radiostats', groupWord: 'Instrumenten',

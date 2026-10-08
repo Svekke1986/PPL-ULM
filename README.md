@@ -12,6 +12,7 @@ Onofficieel oefenplatform voor de theorie-examens **PPL(A)** (EASA Part-FCL, BCA
 - **Proefexamen** per vak met het aantal vragen en de tijd van het echte examen, met timer, markeren, overzicht en uitleg achteraf.
 - **Rekenvragen**: aparte categorie waar de site zelf telkens nieuwe rekenoefeningen maakt (navigatie, vluchtplanning, meteo, aerodynamica, instrumenten …), met stap-voor-stap uitleg. Zie `js/calc.js`.
 - **VOR & radionavigatie**: aparte categorie met zelf getekende instrumenten (VOR/CDI, ADF/RBI, RMI) in de stijl van de examenbijlagen; telkens een nieuwe stand, met stap-voor-stap uitleg. Zie `js/radionav.js`.
+- **METAR & TAF**: aparte categorie waar de site telkens een nieuw, realistisch weerbericht voor een Belgisch vliegveld maakt. Je krijgt vragen over één gemarkeerd deel (wind, zicht, weer, wolken, temperatuur, QNH, CAVOK, trend), over het toepassen (ceiling, VFR-minima in een CTR volgens SERA.5005(b), baan en zijwind, cumulusbasis) en over TAFs (geldigheid, TEMPO/BECMG/PROB). Na je antwoord zie je het hele bericht ontcijferd. Zie `js/metar.js`.
 - **Afkortingen**: na elk antwoord staan de afkortingen uit de vraag (VOR, NDB, QNH …) met volledige benaming en korte uitleg, vóór de bronvermelding. Zie `js/glossary.js`.
 - **Kompasrekenmachine** (alleen in de oefenmodus, niet in het proefexamen): graden optellen/aftrekken met terugrekenen naar 0–360°, tussenstappen en een kleine kompasroos. Noorden volgens de luchtvaartstandaard: koers 360°, radiaal/peiling 000°. Zie `js/compasscalc.js`.
 - Je voortgang wordt lokaal in de browser bewaard. Bij **Instellingen** wis je de voortgang per vak/instrument (score, oefenvolgorde en proefexamens) of alles in één keer.
@@ -22,6 +23,7 @@ Onofficieel oefenplatform voor de theorie-examens **PPL(A)** (EASA Part-FCL, BCA
 | `index.html`, `css/`, `js/app.js` | De website (statisch, geen server nodig) |
 | `js/calc.js` | Generatoren voor de rekenvragen (per vak een lijst oefeningstypes) |
 | `js/radionav.js` | VOR/ADF/RMI-oefeningen en het tekenen van de instrumenten (SVG) |
+| `js/metar.js` | METAR- en TAF-oefeningen (weerberichten genereren en ontcijferen) |
 | `js/glossary.js` | Woordenlijst met luchtvaartafkortingen (volledige benaming + uitleg) |
 | `js/compasscalc.js` | Kompasrekenmachine bij vragen met richtingen (alleen oefenmodus) |
 | `js/config.js` | Vakken, examenparameters (aantal vragen/tijd/slaagdrempel) en bronnen |

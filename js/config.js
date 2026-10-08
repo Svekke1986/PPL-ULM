@@ -75,7 +75,8 @@ window.SOURCES = {
   bcaa:    { org: 'BCAA / DGLV', title: 'FOD Mobiliteit – Luchtvaart', url: 'https://mobilit.belgium.be/nl/luchtvaart' },
   bcaa_ppl:{ org: 'BCAA / DGLV', title: 'Theorie-examen vliegtuigen en helikopters', url: 'https://mobilit.belgium.be/nl/luchtvaart/vliegen-met/vliegtuigen-helikopters/piloot/examens' },
   bcaa_ulm:{ org: 'DGLV', title: 'ULM – examens', url: 'https://mobilit.belgium.be/nl/luchtvaart/vliegen-met/ultralichte-motorluchtvaartuigen-ulm/piloot/examens' },
-  aip:     { org: 'skeyes / BCAA', title: 'AIP België & Luxemburg', url: 'https://ops.skeyes.be/services-aip' }
+  aip:     { org: 'skeyes / BCAA', title: 'AIP België & Luxemburg', url: 'https://ops.skeyes.be/services-aip' },
+  met:     { org: 'EU / ICAO', title: 'Uitvoeringsverordening (EU) 2017/373 – Part-MET (METAR/TAF), gebaseerd op ICAO Annex 3', url: 'https://eur-lex.europa.eu/eli/reg_impl/2017/373/oj' }
 };
 
 window.resolveSource = function (key) {
