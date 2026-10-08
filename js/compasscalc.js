@@ -83,8 +83,9 @@ window.COMPASSCALC = (function () {
 
   function html(q) {
     if (!relevant(q)) return '';
-    let open = false;
-    try { open = localStorage.getItem(OPEN_KEY) === '1'; } catch (e) { /* ignore */ }
+    // Breed scherm: naast de vraag, standaard open. Mobiel: eronder, open/dicht zoals de gebruiker het laatst koos.
+    let open = window.matchMedia && window.matchMedia('(min-width: 1000px)').matches;
+    if (!open) { try { open = localStorage.getItem(OPEN_KEY) === '1'; } catch (e) { /* ignore */ } }
     return `<details class="ccalc" ${open ? 'open' : ''}>
       <summary>🧭 Kompasrekenmachine</summary>
       <div class="ccalc-body">
@@ -110,7 +111,10 @@ window.COMPASSCALC = (function () {
     if (!box) return;
     const out = box.querySelector('#cc-out');
     const refresh = () => { out.innerHTML = resultHtml(); };
-    box.addEventListener('toggle', () => { try { localStorage.setItem(OPEN_KEY, box.open ? '1' : '0'); } catch (e) { /* ignore */ } });
+    box.addEventListener('toggle', () => {
+      if (window.matchMedia && window.matchMedia('(min-width: 1000px)').matches) return; // naast de vraag: niet onthouden
+      try { localStorage.setItem(OPEN_KEY, box.open ? '1' : '0'); } catch (e) { /* ignore */ }
+    });
     box.querySelector('#cc-a').oninput = e => { state.a = e.target.value; refresh(); };
     box.querySelector('#cc-b').oninput = e => { state.b = e.target.value; refresh(); };
     box.querySelectorAll('[data-op]').forEach(btn => btn.onclick = () => {

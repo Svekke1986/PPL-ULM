@@ -228,3 +228,15 @@ select {
 .ccalc-result { flex: 1 1 220px; }
 .ccalc-big { font-size: 1.8rem; font-weight: 800; font-variant-numeric: tabular-nums; }
 .ccalc-rose { color: var(--text); flex: 0 0 auto; }
+
+/* Vraag + kompasrekenmachine: naast elkaar op brede schermen, onder elkaar op mobiel */
+.qa-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+.qa-side .ccalc { margin: 0; background: var(--surface); box-shadow: var(--shadow); }
+@media (min-width: 1000px) {
+  .container:has(.qa-layout) { max-width: 1260px; }
+  .qa-layout { grid-template-columns: minmax(0, 1fr) 320px; align-items: start; }
+  .qa-side { position: sticky; top: 16px; }
+  .qa-side .ccalc-row input { flex: 1 1 80px; width: auto; min-width: 0; }
+  .qa-side #cc-out { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .qa-side .ccalc-result { flex: 0 0 auto; }
+}
