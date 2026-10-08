@@ -6,7 +6,7 @@ dan op één artikel gebaseerd en citeren eruit. Deze teksten worden (nog) niet 
 | Map | Tekst | Bestanden |
 |---|---|---|
 | `ulm/` | Koninklijk besluit van 20 december 2024 betreffende de ultralichte motorluchtvaartuigen (BS numac 2025000168) | `.pdf` (origineel), `.md` (leesbaar), `.json` (per artikel) |
-| `eu/sera-923-2012-oorspronkelijk` | SERA – Uitvoeringsverordening (EU) nr. 923/2012, **oorspronkelijke versie 2012** (11 artikelen, 67 SERA-punten, 5 aanhangsels) | `.pdf`, `.md`, `.json` (per bepaling, met pdf-pagina) |
+| `eu/sera-923-2012-oorspronkelijk` | SERA – Uitvoeringsverordening (EU) nr. 923/2012, **oorspronkelijke versie 2012** (11 artikelen, 67 SERA-punten, 5 aanhangsels) | `.pdf`, `.md`, `.json` (per bepaling, met pagina in het Publicatieblad) |
 | `eu/part21-748-2012-oorspronkelijk` | Part 21 – Verordening (EU) nr. 748/2012, **oorspronkelijke versie 2012** (12 artikelen, 213 punten 21.A/21.B, aanhangsels) | `.pdf`, `.md`, `.json` |
 | `eu/aircrew-1178-2011-oorspronkelijk` | Aircrew – Verordening (EU) nr. 1178/2011, **oorspronkelijke versie 2011**: Part-FCL (FCL.xxx), Part-MED (MED.A–D), bijlagen II–IV (12 artikelen, 230 punten) | 2 × `.pdf` (deel 1 en 2), `.md`, `.json` |
 | `eu/airops-965-2012-oorspronkelijk` | Air Operations – Verordening (EU) nr. 965/2012, **oorspronkelijke versie 2012**: Part-ARO, ORO, CAT, SPA (10 artikelen, 390 punten) | 2 × `.pdf`, `.md`, `.json` |
