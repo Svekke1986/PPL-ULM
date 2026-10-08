@@ -97,7 +97,7 @@
     const count = l => Object.keys(LICENCES[l].exams).reduce((n, s) => n + questionsFor(l, s).length, 0);
     app.innerHTML = `
       <h1>Oefen je PPL- of ULM-theorie</h1>
-      <p class="lead">Kies je opleiding, daarna het vak. Je kunt onbeperkt oefenen met directe feedback, of een proefexamen afleggen met hetzelfde aantal vragen en dezelfde tijd als op het examen. Bij <strong>Rekenvragen</strong> maakt de site telkens een nieuwe rekenoefening.</p>
+      <p class="lead">Kies je opleiding, daarna het vak. Je kunt onbeperkt oefenen met directe feedback, of een proefexamen afleggen met hetzelfde aantal vragen en dezelfde tijd als op het examen. Bij <strong>Rekenvragen</strong> en <strong>VOR &amp; radionavigatie</strong> maakt de site telkens een nieuwe oefening.</p>
       <div class="notice"><strong>Dit is geen officieel platform.</strong> Het is niet verbonden aan EASA, de BCAA of het DGLV.
         Slagen op deze website geeft <strong>geen garantie</strong> dat je slaagt voor het echte theorie-examen.</div>
       <div class="grid grid-2">
@@ -115,6 +115,11 @@
           <div class="big">🧮</div>
           <h2>Rekenvragen</h2>
           <p class="muted">Telkens nieuwe rekenoefeningen met stap-voor-stap uitleg<br>${Object.keys(window.CALC.GENERATORS).length} vakken · ${Object.values(window.CALC.GENERATORS).reduce((n, l) => n + l.length, 0)} soorten oefeningen</p>
+        </a>
+        <a class="card licence-card" href="#/vor">
+          <div class="big">📡</div>
+          <h2>VOR &amp; radionavigatie</h2>
+          <p class="muted">VOR, ADF en RMI aflezen op telkens nieuw getekende instrumenten<br>${Object.keys(window.RADIONAV.GENERATORS).length} instrumenten · ${Object.values(window.RADIONAV.GENERATORS).reduce((n, l) => n + l.length, 0)} soorten oefeningen</p>
         </a>
       </div>`;
   }
@@ -370,36 +375,54 @@
     window.scrollTo(0, 0);
   }
 
-  // ---------- rekenvragen ----------
-  const CALC_ORDER = ['navigation', 'flight_performance', 'meteorology', 'principles_of_flight', 'aircraft_general', 'human_performance', 'air_law'];
+  // ---------- generated practice sets (rekenvragen, radionavigatie) ----------
+  // Elke set heeft groepen (vakken of instrumenten) met generatoren die telkens een nieuwe oefening maken.
+  const SETS = {
+    rekenvragen: {
+      title: 'Rekenvragen', icon: '🧮', api: () => window.CALC, statsKey: 'calcstats', groupWord: 'Vakken',
+      order: ['navigation', 'flight_performance', 'meteorology', 'principles_of_flight', 'aircraft_general', 'human_performance', 'air_law'],
+      group: key => ({ icon: SUBJECTS[key].icon, title: `${SUBJECTS[key].code} · ${SUBJECTS[key].name}`, name: SUBJECTS[key].name, tags: window.CALC.LICENCE_TAGS[key] }),
+      lead: 'Kies een vak. De site maakt telkens een nieuwe oefening met andere getallen. Het juiste antwoord wordt berekend, de foute antwoorden zijn typische denkfouten. Na je antwoord zie je de berekening stap voor stap.',
+      sub: 'Rekenvragen · telkens nieuwe getallen'
+    },
+    vor: {
+      title: 'VOR & radionavigatie', icon: '📡', api: () => window.RADIONAV, statsKey: 'radiostats', groupWord: 'Instrumenten',
+      order: ['vor', 'adf', 'rmi'],
+      group: key => { const G = window.RADIONAV.GROUPS[key]; return { icon: G.icon, title: G.name, name: G.name, tags: ['PPL'], desc: G.desc }; },
+      lead: 'Kies een instrument. De site tekent telkens een nieuw instrument met een andere stand, in de stijl van de examenbijlagen (NAV-019, NAV-022, NAV-024). Na je antwoord zie je stap voor stap hoe je het afleest.',
+      sub: 'Radionavigatie · telkens een nieuwe instrumentstand'
+    }
+  };
   let calc = null;
 
-  function viewCalcHome() {
-    const cards = CALC_ORDER.filter(k => window.CALC.GENERATORS[k]).map(key => {
-      const S = SUBJECTS[key], gens = window.CALC.GENERATORS[key];
-      const st = store.get(`calcstats.${key}`, { answered: 0, correct: 0 });
+  function viewSetHome(setKey) {
+    const SET = SETS[setKey], API = SET.api();
+    const cards = SET.order.filter(k => API.GENERATORS[k]).map(key => {
+      const G = SET.group(key), gens = API.GENERATORS[key];
+      const st = store.get(`${SET.statsKey}.${key}`, { answered: 0, correct: 0 });
       const pct = st.answered ? Math.round(100 * st.correct / st.answered) : 0;
-      const tags = window.CALC.LICENCE_TAGS[key].map(t => `<span class="badge">${t}</span>`).join(' ');
-      return `<a class="card subject-card licence-card" href="#/rekenvragen/${key}">
+      const tags = G.tags.map(t => `<span class="badge">${t}</span>`).join(' ');
+      return `<a class="card subject-card licence-card" href="#/${setKey}/${key}">
         <div class="subject-head">
-          <div class="subject-icon">${S.icon}</div>
-          <div><h3>${esc(S.code)} · ${esc(S.name)}</h3><div class="subject-meta">${tags}</div></div>
+          <div class="subject-icon">${G.icon}</div>
+          <div><h3>${esc(G.title)}</h3><div class="subject-meta">${tags}</div></div>
         </div>
+        ${G.desc ? `<div class="subject-meta">${esc(G.desc)}</div>` : ''}
         <div class="subject-meta">${gens.map(g => esc(g.name)).join(' · ')}</div>
         ${st.answered ? `<div class="subject-meta">Jouw score: ${st.correct}/${st.answered} (${pct}%)</div><div class="progress"><span style="width:${pct}%"></span></div>` : ''}
       </a>`;
     }).join('');
     app.innerHTML = `
-      <div class="crumbs"><a href="#/">Home</a> › Rekenvragen</div>
-      <h1>🧮 Rekenvragen</h1>
-      <p class="lead">Kies een vak. De site maakt telkens een nieuwe oefening met andere getallen. Het juiste antwoord wordt berekend, de foute antwoorden zijn typische denkfouten. Na je antwoord zie je de berekening stap voor stap.</p>
+      <div class="crumbs"><a href="#/">Home</a> › ${esc(SET.title)}</div>
+      <h1>${SET.icon} ${esc(SET.title)}</h1>
+      <p class="lead">${esc(SET.lead)}</p>
       <div class="grid grid-3">${cards}</div>`;
   }
 
-  function viewCalc(subject, typeId) {
-    const gens = window.CALC.GENERATORS[subject];
+  function viewSet(setKey, group, typeId) {
+    const gens = SETS[setKey].api().GENERATORS[group];
     const type = gens.find(g => g.id === typeId) || null;
-    calc = { subject, type, q: null, chosen: null, count: 0, session: { answered: 0, correct: 0 } };
+    calc = { setKey, group, type, q: null, chosen: null, count: 0, session: { answered: 0, correct: 0 } };
     nextCalc();
   }
 
@@ -407,18 +430,18 @@
     const C = calc;
     C.chosen = null;
     C.count++;
-    C.q = present(window.CALC.generate(C.subject, C.type && C.type.id));
+    C.q = present(SETS[C.setKey].api().generate(C.group, C.type && C.type.id));
     renderCalc();
   }
 
   function renderCalc() {
-    const C = calc, S = SUBJECTS[C.subject], gens = window.CALC.GENERATORS[C.subject];
+    const C = calc, SET = SETS[C.setKey], G = SET.group(C.group), gens = SET.api().GENERATORS[C.group];
     const answered = C.chosen !== null;
     const opts = gens.map(g => `<option value="${esc(g.id)}" ${C.type === g ? 'selected' : ''}>${esc(g.name)}</option>`).join('');
     app.innerHTML = `
-      <div class="crumbs"><a href="#/">Home</a> › <a href="#/rekenvragen">Rekenvragen</a> › ${esc(S.name)}</div>
+      <div class="crumbs"><a href="#/">Home</a> › <a href="#/${C.setKey}">${esc(SET.title)}</a> › ${esc(G.name)}</div>
       <div class="quiz-head">
-        <div><h1>🧮 ${esc(S.name)}</h1><div class="muted small">Rekenvragen · telkens nieuwe getallen</div></div>
+        <div><h1>${SET.icon} ${esc(G.name)}</h1><div class="muted small">${esc(SET.sub)}</div></div>
         <span class="score-pill">Sessie: ${C.session.correct}/${C.session.answered}</span>
       </div>
       <div class="chapter-filter">
@@ -429,7 +452,7 @@
         ${questionHtml(C.q, { chosen: C.chosen, reveal: answered, locked: answered, counter: `Oefening ${C.count} · ${esc(C.q.typeName)}` })}
         ${answered ? feedbackHtml(C.q, C.chosen) : ''}
         <div class="quiz-actions">
-          <a class="btn" href="#/rekenvragen">← Vakken</a>
+          <a class="btn" href="#/${C.setKey}">← ${esc(SET.groupWord)}</a>
           <button class="btn btn-primary" id="next">${answered ? 'Nieuwe oefening →' : 'Andere oefening →'}</button>
         </div>
       </div>`;
@@ -438,16 +461,18 @@
       C.chosen = +b.dataset.i;
       const ok = C.chosen === C.q.c;
       C.session.answered++; if (ok) C.session.correct++;
-      const st = store.get(`calcstats.${C.subject}`, { answered: 0, correct: 0 });
+      const key = `${SET.statsKey}.${C.group}`;
+      const st = store.get(key, { answered: 0, correct: 0 });
       st.answered++; if (ok) st.correct++;
-      store.set(`calcstats.${C.subject}`, st);
+      store.set(key, st);
       renderCalc();
       app.querySelector('.feedback')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
     document.getElementById('next').onclick = () => nextCalc();
     document.getElementById('calctype').onchange = e => {
-      location.hash = `#/rekenvragen/${C.subject}${e.target.value ? '/' + e.target.value : ''}`;
+      location.hash = `#/${C.setKey}/${C.group}${e.target.value ? '/' + e.target.value : ''}`;
     };
+    bindImages();
   }
 
   // ---------- settings ----------
@@ -487,7 +512,7 @@
     window.scrollTo(0, 0);
     if (!parts.length) return viewHome();
     if (parts[0] === 'instellingen') return viewSettings();
-    if (parts[0] === 'rekenvragen') return parts[1] && window.CALC.GENERATORS[parts[1]] ? viewCalc(parts[1], parts[2]) : viewCalcHome();
+    if (SETS[parts[0]]) return parts[1] && SETS[parts[0]].api().GENERATORS[parts[1]] ? viewSet(parts[0], parts[1], parts[2]) : viewSetHome(parts[0]);
     if (!LICENCES[licence]) return viewHome();
     if (parts.length === 1) return viewLicence(licence);
     const subject = parts[1];

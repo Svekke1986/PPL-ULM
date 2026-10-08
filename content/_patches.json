@@ -1,7 +1,23 @@
 {
-"_note": "Correcties op tekst die in de bron-PDF afgebroken of beschadigd is. Formaat: id -> {question?, options?: {index: tekst}} '_replace' = tekstvervanging in alle vragen en antwoorden (van -> naar).",
+"_note": "Correcties op tekst die in de bron-PDF afgebroken of beschadigd is. Formaat: id -> {question?, options?: {index: tekst}} '_replace' = tekstvervanging in alle vragen en antwoorden (van -> naar). '_rotate' = afbeeldingen die in de bron-PDF gedraaid staan: graden tegen de klok in (id -> graden).",
 "_replace": {
 "overlandvlieguur": "uur cross-country"
+},
+"_rotate": {
+"665623": 90,
+"666146": 90,
+"666166": 90,
+"666167": 90,
+"666272": 90,
+"665746": 90,
+"666116": 90,
+"666117": 90,
+"666118": 90,
+"666123": 90,
+"666128": 90,
+"666130": 90,
+"666353": 90,
+"666354": 90
 },
 "665564": {
 "question": "Welke van de volgende documenten moeten aan boord zijn tijdens een internationale vlucht? a) Bewijs van inschrijving b) Bewijs van luchtwaardigheid c) Airworthiness review certificate (ARC) d) EASA Formulier-1 e) Vliegtuiglogboek f) Benodigde vergunningen van de bemanning g) … (tekst afgebroken in de bron)"
