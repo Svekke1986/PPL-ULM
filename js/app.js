@@ -49,6 +49,15 @@
     return Object.assign({}, q, { o: order.map(i => q.o[i]), c: order.indexOf(q.c) });
   }
 
+  // Afkortingen uit vraag, antwoorden en uitleg, met volledige benaming en korte uitleg.
+  function glossaryHtml(q) {
+    if (!window.GLOSSARY) return '';
+    const items = window.GLOSSARY.find([q.q, ...q.o, q.e]);
+    if (!items.length) return '';
+    return `<details class="glossary" open><summary>📖 Afkortingen in deze vraag (${items.length})</summary><ul>${items.map(i =>
+      `<li><strong>${esc(i.key)}</strong> – <em>${esc(i.full)}</em>: ${esc(i.text)}</li>`).join('')}</ul></details>`;
+  }
+
   function sourceHtml(q) {
     const s = window.resolveSource(q.src);
     const ref = q.ref ? ` — <em>${esc(q.ref)}</em>` : '';
@@ -72,6 +81,7 @@
       <p class="explain">${esc(q.e || 'Geen uitleg beschikbaar.').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')}</p>
       ${q.eImg ? `<div class="explain-fig"><img src="${esc(q.eImg)}" alt="Schets bij de uitleg"></div>` : ''}
       ${review}
+      ${glossaryHtml(q)}
       ${sourceHtml(q)}
     </div>`;
   }
@@ -350,7 +360,7 @@
     const reviews = E.questions.map((q, k) => {
       const a = E.answers[k];
       const body = a === null
-        ? `<div class="feedback bad"><h3>⏺ Niet beantwoord – het juiste antwoord is ${LETTERS[q.c]}: ${esc(q.o[q.c])}</h3><p>${esc(q.e)}</p>${sourceHtml(q)}</div>`
+        ? `<div class="feedback bad"><h3>⏺ Niet beantwoord – het juiste antwoord is ${LETTERS[q.c]}: ${esc(q.o[q.c])}</h3><p class="explain">${esc(q.e).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')}</p>${glossaryHtml(q)}${sourceHtml(q)}</div>`
         : feedbackHtml(q, a);
       return `<div class="card review-item" id="r${k}">${questionHtml(q, { chosen: a, reveal: true, locked: true, counter: `Vraag ${k + 1}` })}${body}</div>`;
     }).join('');

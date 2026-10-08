@@ -209,3 +209,7 @@ select {
 }
 .explain-fig { margin: 10px 0 4px; }
 .explain-fig img { max-width: 260px; width: 100%; border-radius: 10px; border: 1px solid var(--border); cursor: zoom-in; }
+.feedback .glossary { margin-top: 10px; padding-top: 10px; border-top: 1px dashed currentColor; font-size: .9rem; }
+.feedback .glossary summary { cursor: pointer; font-weight: 700; }
+.feedback .glossary ul { margin: 6px 0 0; padding-left: 18px; }
+.feedback .glossary li { margin: 3px 0; }
