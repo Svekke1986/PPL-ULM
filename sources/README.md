@@ -5,7 +5,7 @@ dan op één artikel gebaseerd en citeren eruit. Deze teksten worden (nog) niet 
 
 | Map | Tekst | Bestanden |
 |---|---|---|
-| `ulm/` | Koninklijk besluit van 20 december 2024 betreffende de ultralichte motorluchtvaartuigen (BS numac 2025000168) | `.pdf` (origineel), `.md` (leesbaar), `.json` (per artikel) |
+| `ulm/` | Koninklijk besluit van 20 december 2024 betreffende de ultralichte motorluchtvaartuigen (BS 18.02.2025, numac 2025000168; tekst gecontroleerd tegen etaamb.openjustice.be: identiek) | `.pdf` (origineel), `.md` (leesbaar), `.json` (per artikel) |
 | `eu/sera-923-2012-oorspronkelijk` | SERA – Uitvoeringsverordening (EU) nr. 923/2012, **oorspronkelijke versie 2012** (11 artikelen, 67 SERA-punten, 5 aanhangsels) | `.pdf`, `.md`, `.json` (per bepaling, met pagina in het Publicatieblad) |
 | `eu/ongevalsonderzoek-996-2010-oorspronkelijk` | Ongevalsonderzoek – Verordening (EU) nr. 996/2010, **oorspronkelijke versie 2010** (26 artikelen + bijlage met voorbeelden van ernstige incidenten) | `.pdf`, `.md`, `.json` |
 | `eu/part21-748-2012-oorspronkelijk` | Part 21 – Verordening (EU) nr. 748/2012, **oorspronkelijke versie 2012** (12 artikelen, 213 punten 21.A/21.B, aanhangsels) | `.pdf`, `.md`, `.json` |
