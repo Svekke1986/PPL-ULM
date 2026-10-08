@@ -139,30 +139,31 @@ window.CALC = (function () {
         const varTerm = magGiven === magAsk ? 0 : (magAsk ? -v : v);
         const kind = (m, f) => `${m ? 'magnetische' : 'ware'} ${f ? 'peiling vanaf' : 'koers naar'} het station`;
         const east = v > 0;
+        const dirName = f => f ? 'peiling vanaf het station' : 'koers naar het station';
 
         // Stap 1: vanaf ↔ naar
         const mid = g + flip;
         const step1 = flip
-          ? `${given} is ${fromGiven ? 'vanaf' : 'naar'} het station, ${ask} is ${fromAsk ? 'vanaf' : 'naar'} het station: de richting draait om, dus ±180°.\n${brg(g)} ${norm(g) < 180 ? '+' : '−'} 180° = ${brg(mid)}.`
-          : `${given} en ${ask} zijn allebei ${fromAsk ? 'vanaf' : 'naar'} het station: de richting blijft dezelfde, dus geen 180°.\nWe blijven op ${brg(mid)}.`;
+          ? `${given} is een ${dirName(fromGiven)}, ${ask} is een ${dirName(fromAsk)}: de richting draait om, dus ±180°.\n${brg(g)} ${norm(g) < 180 ? '+' : '−'} 180° = ${brg(mid)}.`
+          : `${given} en ${ask} zijn allebei een ${dirName(fromAsk)}: de richting blijft dezelfde, dus geen 180°.\nWe blijven op ${brg(mid)}.`;
         // Stap 2: waar ↔ magnetisch
         const step2 = varTerm === 0
-          ? `${given} en ${ask} zijn allebei ${magAsk ? 'magnetisch' : 'waar'}: de variatie (${ew(v)}) speelt hier geen rol. Ze staat er alleen om je op het verkeerde been te zetten.`
+          ? `${given} (${kind(magGiven, fromGiven).replace(' het station', '')}) en ${ask} (${kind(magAsk, fromAsk).replace(' het station', '')}) zijn allebei ${magAsk ? 'magnetisch' : 'waar'}: de variatie (${ew(v)}) speelt hier geen rol. Ze staat er alleen om je op het verkeerde been te zetten.`
           : magAsk
-            ? `Van waar naar magnetisch: ${east ? 'oostvariatie trek je af ("East is least")' : 'westvariatie tel je op ("West is best")'}.\n${brg(mid)} ${east ? '−' : '+'} ${Math.abs(v)}° = ${brg(ans)}.`
-            : `Van magnetisch naar waar: omgekeerd, dus ${east ? 'oostvariatie tel je op' : 'westvariatie trek je af'}.\n${brg(mid)} ${east ? '+' : '−'} ${Math.abs(v)}° = ${brg(ans)}.`;
+            ? `Van een ware ${fromAsk ? 'peiling' : 'koers'} naar een magnetische ${fromAsk ? 'peiling' : 'koers'}: ${east ? 'oostvariatie trek je af ("East is least")' : 'westvariatie tel je op ("West is best")'}.\n${brg(mid)} ${east ? '−' : '+'} ${Math.abs(v)}° = ${brg(ans)}.`
+            : `Van een magnetische ${fromAsk ? 'peiling' : 'koers'} naar een ware ${fromAsk ? 'peiling' : 'koers'}: omgekeerd, dus ${east ? 'oostvariatie tel je op' : 'westvariatie trek je af'}.\n${brg(mid)} ${east ? '+' : '−'} ${Math.abs(v)}° = ${brg(ans)}.`;
 
         // Foute antwoorden = typische denkfouten (met uitleg in de valkuilen)
         const traps = flip
-          ? [[g + varTerm, '180° vergeten: je blijft dan in de verkeerde richting (vanaf/naar)']]
-          : [[g + 180 + varTerm, '180° bijgeteld, terwijl de richting (vanaf/naar) dezelfde blijft']];
+          ? [[g + varTerm, `180° vergeten: dat is de ${dirName(fromGiven)}, niet de ${dirName(fromAsk)}`]]
+          : [[g + 180 + varTerm, `180° bijgeteld, terwijl ${given} en ${ask} allebei een ${dirName(fromAsk)} zijn`]];
         if (varTerm) {
-          traps.push([g + flip - varTerm, 'variatie de verkeerde kant op toegepast']);
-          traps.push([g + flip, 'variatie vergeten']);
+          traps.push([g + flip - varTerm, `variatie de verkeerde kant op toegepast bij het omzetten van ${magGiven ? 'magnetisch' : 'waar'} naar ${magAsk ? 'magnetisch' : 'waar'}`]);
+          traps.push([g + flip, `variatie vergeten: dat is nog de ${magGiven ? 'magnetische' : 'ware'} ${fromAsk ? 'peiling' : 'koers'}, niet de ${magAsk ? 'magnetische' : 'ware'}`]);
         } else {
-          const both = magAsk ? 'magnetisch' : 'waar';
-          traps.push([g + flip + Math.abs(v), `variatie toch toegepast (+${Math.abs(v)}°), terwijl beide al ${both} zijn`]);
-          traps.push([g + flip - Math.abs(v), `variatie toch toegepast (−${Math.abs(v)}°), terwijl beide al ${both} zijn`]);
+          const both = magAsk ? 'magnetisch' : 'waar'; // beide koers/peiling t.o.v. hetzelfde noorden
+          traps.push([g + flip + Math.abs(v), `variatie toch toegepast (+${Math.abs(v)}°), terwijl ${given} en ${ask} allebei al ${both} zijn`]);
+          traps.push([g + flip - Math.abs(v), `variatie toch toegepast (−${Math.abs(v)}°), terwijl ${given} en ${ask} allebei al ${both} zijn`]);
         }
         traps.push([g + flip + 2 * varTerm, 'variatie twee keer toegepast']);
         const o = options(norm(ans), traps.map(t => norm(t[0])), brg, 5);
