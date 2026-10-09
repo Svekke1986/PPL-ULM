@@ -31,6 +31,7 @@
     .law mark { background: var(--warn-bg); color: inherit; outline: 1px solid var(--warn-border); }
     .savebar { position: sticky; bottom: 0; background: var(--surface); border-top: 1px solid var(--border); padding: 12px 16px;
       display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; z-index: 5; }
+    .savebar[hidden] { display: none; }
     .msg { padding: 10px 12px; border-radius: 8px; margin: 10px 0; }
     .msg.ok { background: var(--ok-bg); color: var(--ok-text); }
     .msg.bad { background: var(--bad-bg); color: var(--bad-text); }
@@ -140,9 +141,10 @@
       document.getElementById('login').onsubmit = async e => {
         e.preventDefault();
         auth = { token: document.getElementById('token').value.trim(), name: document.getElementById('name').value.trim() };
+        const remember = document.getElementById('remember').checked;
         try {
           await start();
-          keyStore.set(auth, document.getElementById('remember').checked);
+          keyStore.set(auth, remember);
         } catch (err) { auth = null; viewLogin(loginError(err)); }
       };
     }
