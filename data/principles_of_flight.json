@@ -656,5 +656,511 @@
   ],
   "correct": 3,
   "images": []
+ },
+ {
+  "id": "JH1-01",
+  "topic": "51.1.1.1.1 Define 'static pressure', 'dynamic pressure' and 'total pressure'",
+  "question": "De statische druk van een gas werkt…",
+  "options": [
+   "alleen in de richting evenwijdig aan de luchtstroom.",
+   "alleen in de richting van de totale druk.",
+   "in alle richtingen.",
+   "alleen in de stromingsrichting."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH1-02",
+  "topic": "51.1.1.1.2 Describe the relationship of total, static and dynamic pressure with airflow through a narrowed cross section",
+  "question": "De wet van Bernoulli zegt dat…",
+  "options": [
+   "statische druk = totale druk + dynamische druk",
+   "totale druk = dynamische druk – statische druk",
+   "dynamische druk = totale druk + statische druk",
+   "totale druk = dynamische druk + statische druk"
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH1-03",
+  "topic": "51.1.1.3.1 Describe the total aerodynamic force on a wing as a vectorized sum of drag and lift force",
+  "question": "Elk voorwerp in een luchtstroom produceert…",
+  "options": [
+   "lift, maar geen weerstand.",
+   "weerstand en lift.",
+   "dezelfde weerstand ongeacht de snelheid.",
+   "weerstand."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH1-04",
+  "topic": "51.1.5.4.2 Explain why total drag is lowest at a certain airspeed",
+  "question": "Hoe gedragen geïnduceerde en parasitaire weerstand zich als de vliegsnelheid toeneemt tijdens een horizontale rechtlijnige vlucht?",
+  "options": [
+   "Geïnduceerde weerstand neemt af, parasitaire weerstand stijgt",
+   "Parasitaire weerstand neemt af, geïnduceerde weerstand stijgt",
+   "Parasitaire weerstand neemt af, geïnduceerde weerstand neemt af",
+   "Geïnduceerde weerstand stijgt, parasitaire weerstand stijgt"
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH1-05",
+  "topic": "51.1.1.4.2 Name and identify geometric properties of an airfoil (nose radius, chord, chamber, location of max. thickness, angle",
+  "question": "De denkbeeldige rechte lijn die de voorkant van het vleugelprofiel verbindt met de achterkant is de:",
+  "options": [
+   "welvingslijn",
+   "koorde",
+   "angle of attack",
+   "camber line"
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH1-06",
+  "topic": "51.1.1.4.2 Name and identify geometric properties of an airfoil (nose radius, chord, chamber, location of max. thickness, angle",
+  "question": "De angle of attack is de hoek tussen…",
+  "options": [
+   "de ongestoorde luchtstroom en de langsas van het vliegtuig.",
+   "de koorde en de langsas van het vliegtuig.",
+   "de koorde en de relatieve luchtstroom.",
+   "de vleugel en de langsas van het vliegtuig."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH1-07",
+  "topic": "51.1.4.2.1 Explain the formation of induced drag and tip vortices",
+  "question": "Op welke plaats vindt er drukcompensatie plaats aan de vleugel?",
+  "options": [
+   "Vleugelwortel",
+   "Wingtips",
+   "Vleugelachterrand",
+   "Vleugelvoorrand"
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH1-08",
+  "topic": "51.1.4.2.1 Explain the formation of induced drag and tip vortices",
+  "question": "Bij welke van volgende opties wordt er de meeste geïnduceerde weerstand geproduceerd?",
+  "options": [
+   "Grote aspect ratio",
+   "Kleine aspect ratio",
+   "Lage liftcoëfficiënt",
+   "Bij een vleugel met winglets"
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH1-09",
+  "topic": "51.1.5.4.1 State that total drag is composed from parasite drag and induced drag",
+  "question": "Op welke plaats is er sprake van interferentieweerstand?",
+  "options": [
+   "Aan de vleugelwortel",
+   "Aan de ailerons",
+   "Nabij de wingtips",
+   "Bij het landingsgestel"
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH1-10",
+  "topic": "51.1.1 Atmosfeer: de standaardatmosfeer (ISA)",
+  "question": "De standaardatmosfeer mag omschreven worden als volgt:",
+  "options": [
+   "Op MSL een temperatuur van 15 °C en een druk van 1013,25 hPa. Een afname van 0,65 °C per 100 m en dit tot op +/- 11.000 ft waar de temperatuur constant −71,5 °C blijft.",
+   "Op 0 ft QFE met een temperatuur van 15 °C en een druk van 1013,25 hPa, gepaard gaande met een temperatuurafname van 2 °C per 1000 ft.",
+   "Op MSL bij 15 °C een druk van 1013 hPa. Een drukafname van 1 hPa per 30 ft en een temperatuurafname van 2 °F per 1000 ft.",
+   "Op zeeniveau een druk van 1013,25 hPa en een temperatuur van 15 °C. De temperatuur neemt af met 2 °C per 1000 ft en dit tot +/- 11.000 m waar ze de waarde van −56,5 °C bereikt."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH1-11",
+  "topic": "51.1.6.1.1 Explain the effects of entering and leaving ground effect.",
+  "question": "Het grondeffect is:",
+  "options": [
+   "Het gevolg van een beïnvloeding van de luchtstromingen rond een vliegtuig door het aardoppervlak.",
+   "Het gevolg van een verandering van de luchtstromingen welke de geïnduceerde weerstand rond de vleugels laat toenemen.",
+   "Het negatief beïnvloeden van de luchtstromingen rond een vleugel tot aan het punt waarop de vleugel stopt met het produceren van lift.",
+   "Zowel een beïnvloeding van de luchtstroming door het aardoppervlak als een toename van de geïnduceerde weerstand."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH1-12",
+  "topic": "51.1.5.3 Geïnduceerde weerstand in functie van de snelheid",
+  "question": "Welke curve beschrijft de geïnduceerde weerstand?",
+  "options": [
+   "Curve 1",
+   "Curve 4",
+   "Curve 2",
+   "Curve 3"
+  ],
+  "correct": 0,
+  "images": [
+   "img/principles_of_flight/jh1-12_0.jpeg"
+  ],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH1-13",
+  "topic": "51.1.5.4.2 Explain why total drag is lowest at a certain airspeed",
+  "question": "Wanneer is de totale weerstand het kleinst?",
+  "options": [
+   "Geïnduceerde weerstand is twee keer groter dan de parasitaire weerstand.",
+   "Parasitaire weerstand is twee keer groter dan de geïnduceerde weerstand.",
+   "Parasitaire weerstand is gelijk aan de geïnduceerde weerstand.",
+   "Geïnduceerde weerstand is kleiner dan de parasitaire weerstand."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH1-14",
+  "topic": "51.1.1.4 Vleugelprofiel: koorde en welving",
+  "question": "Bij een asymmetrisch profiel is:",
+  "options": [
+   "De koorde gelijk aan de vleugeldikte.",
+   "De welvingslijn gelijk aan de vleugeldikte.",
+   "De koorde niet gelijk aan de welvingslijn.",
+   "De koorde gelijk aan de welvingslijn."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH1-15",
+  "topic": "51.1.2 Lift en aanvalshoek",
+  "question": "In een eenparig rechtlijnige horizontale vlucht laat de piloot de snelheid zakken van 100 kt naar 80 kt. Om op dezelfde hoogte te blijven moet de:",
+  "options": [
+   "aanvalshoek verminderen.",
+   "aanvalshoek toenemen.",
+   "aanvalshoek gelijk blijven.",
+   "instelhoek van de vleugel t.o.v. de romp toenemen."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-01",
+  "topic": "51.1.8.2.2 Describe the differences between leading and trailing edge highlift devices with regard to critical angle of attack and",
+  "question": "Vergeleken met flaps (vleugelachterrandkleppen), zorgen vleugelvoorrandkleppen (slats) voor…",
+  "options": [
+   "een kleinere kritische angle of attack bij een bepaalde snelheid.",
+   "hogere snelheden bij take-off en landing.",
+   "minder weerstand en een grotere kritische angle of attack.",
+   "een vergroting van het camber en een lagere kritische angle of attack."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-02",
+  "topic": "51.2.2.1.1 Explain the balancing of moments between wing lift, weight and forces generated by the elevator/horizontal stabilizer",
+  "question": "Stabilisatie rond de dwarsas gebeurt door…",
+  "options": [
+   "het horizontale keilvlak",
+   "de ailerons",
+   "de flaps",
+   "het richtingsroer"
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-03",
+  "topic": "51.1.2.4.1 Define and interpret 'center of pressure' as a point the resulting aeordynamic force acts on",
+  "question": "Alle aerodynamische krachten grijpen aan op hetzelfde punt:",
+  "options": [
+   "het zwaartepunt",
+   "het drukpunt",
+   "het stagnatiepunt",
+   "het loslatingspunt"
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-04",
+  "topic": "51.2.1 De assen van het vliegtuig",
+  "question": "De drie assen van een vliegtuig kruisen elkaar in het…",
+  "options": [
+   "zwaartepunt",
+   "drukpunt",
+   "stagnatiepunt",
+   "separatiepunt"
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-05",
+  "topic": "51.1.2.2.1 Define and identify the stagnation point (from depictions)",
+  "question": "Wat gebeurt er bij het stagnatiepunt?",
+  "options": [
+   "Aan de bovenzijde van de vleugel begint de grenslaag los te laten.",
+   "De laminaire grenslaag gaat over in een turbulente grenslaag.",
+   "Alle aerodynamische krachten grijpen aan op dit punt.",
+   "Stroomlijnen worden verdeeld naar de boven- of onderkant van het profiel."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-06",
+  "topic": "51.1.2.4.2 Explain the longitudinal movement of center of pressure with changing angle of attack",
+  "question": "Hoe beweegt het drukpunt bij een asymmetrisch profiel?",
+  "options": [
+   "Het beweegt naar de vleugelvoorrand (leading edge) als de aanvalshoek afneemt.",
+   "Het bevindt zich op ongeveer 25 % van de koorde, gemeten vanaf de leading edge.",
+   "Het beweegt naar de vleugelachterrand (trailing edge) als de aanvalshoek afneemt.",
+   "Het beweegt nooit onder invloed van een veranderende angle of attack."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-07",
+  "topic": "51.1.7.3.1 Describe the influence of washout on an aircraft's stall characteristics",
+  "question": "Welk van onderstaande antwoorden beschrijft het voordeel van vleugelverdraaiing?",
+  "options": [
+   "De vleugel is sterker en beter bestand tegen verdraaiingen.",
+   "Dankzij de vleugelverdraaiing zal de vormweerstand verkleinen als de snelheid toeneemt.",
+   "Bij grote aanvalshoeken zullen de ailerons langer effectief blijven.",
+   "Bij grote aanvalshoeken zullen de ailerons als eerste hun effectiviteit verliezen."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-08",
+  "topic": "51.1.5.4.1 State that total drag is composed from parasite drag and induced drag",
+  "question": "Welke weerstandsvorm maakt niet deel uit van de parasitaire weerstand?",
+  "options": [
+   "Interferentieweerstand",
+   "Wrijvingsweerstand",
+   "Geïnduceerde weerstand",
+   "Vormweerstand"
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-09",
+  "topic": "51.1.2.7.1 Describe the relationship of angle of attack (AOA) with lift coefficient (cL) by use of the cL/AOA graph",
+  "question": "Wat gebeurt er met lift en weerstand als we een stall benaderen?",
+  "options": [
+   "Lift en weerstand nemen af",
+   "Lift en weerstand nemen toe",
+   "Lift neemt af en weerstand neemt toe",
+   "Lift neemt toe en weerstand neemt af"
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-10",
+  "topic": "51.1.7.4.4 Describe the general procedures for preventing imminant stall, if not stated other in AFM/POH",
+  "question": "In geval van een stall is het belangrijk om…",
+  "options": [
+   "de hellingshoek te vergroten en de snelheid te verminderen.",
+   "de aanvalshoek te vergroten en de snelheid te vergroten.",
+   "de aanvalshoek te verkleinen en de snelheid te vergroten.",
+   "de aanvalshoek te vergroten en de snelheid te verminderen."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-11",
+  "topic": "51.1.7.1.9 Describe the 'critical angle of attack' and factors affecting it",
+  "question": "De kritische aanvalshoek…",
+  "options": [
+   "verandert met een toenemend gewicht.",
+   "vermindert met een voorwaarts zwaartepunt.",
+   "is onafhankelijk van het gewicht.",
+   "vergroot met een achterlijk zwaartepunt."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-12",
+  "topic": "51.1.7.4.4 Describe the general procedures for preventing imminant stall, if not stated other in AFM/POH",
+  "question": "De kunstmatige overtrekwaarschuwing wordt veelal geactiveerd door een verandering van…",
+  "options": [
+   "het zwaartepunt",
+   "het transitiepunt",
+   "het drukpunt",
+   "het stagnatiepunt"
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-13",
+  "topic": "51.1.7.5.9 Describe the general procedures for spin recovery, if not stated other in AFM/POH",
+  "question": "Welk statement over een spin is correct?",
+  "options": [
+   "Tijdens het herstel moeten de ailerons neutraal blijven.",
+   "Alleen oude vliegtuigen vertonen het risico om te spinnen.",
+   "Tijdens het herstel moeten de ailerons in tegenovergestelde richting aan de draairichting uitgeslagen worden.",
+   "Tijdens een spin gaat de snelheid voortdurend omhoog."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-14",
+  "topic": "51.1.8.1.3 Explain the general working principles of highlift devices, e.g. increase of chamber, increase of wing area",
+  "question": "Met betrekking tot het gebruik van flaps, welke van de volgende opties verklaart het vergroten van de liftproductie?",
+  "options": [
+   "De aanvalshoek verkleint.",
+   "De welving van het profiel vergroot.",
+   "De vormweerstand verkleint.",
+   "De geïnduceerde weerstand vermindert."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-15",
+  "topic": "51.1.8.1.3 Explain the general working principles of highlift devices, e.g. increase of chamber, increase of wing area",
+  "question": "Opstijgen met de flaps in de take-off positie veroorzaakt…",
+  "options": [
+   "een grote klimsnelheid",
+   "een grotere acceleratie",
+   "een kortere take-off roll",
+   "verminderde weerstand"
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-16",
+  "topic": "51.1.9.1.1 Describe a laminar boundary layer and identify it on a streamline pattern",
+  "question": "De laminaire grenslaag bevindt zich tussen…",
+  "options": [
+   "het transitiepunt en het separatiepunt (loslatingspunt).",
+   "het stagnatiepunt en het transitiepunt.",
+   "het transitiepunt en het drukpunt.",
+   "het stagnatiepunt en het drukpunt."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-17",
+  "topic": "51.1.9.1.2 Describe a turbulent layer and identify it on a streamline pattern",
+  "question": "Welke soorten grenslaag kunnen teruggevonden worden bij een vleugelprofiel?",
+  "options": [
+   "Laminaire grenslaag bij de vleugelvoorrand, turbulente grenslaag bij de vleugelachterrand.",
+   "Turbulente grenslaag over de hele bovenzijde van de vleugel met een loslatende luchtstroom.",
+   "Turbulente grenslaag bij de vleugelvoorrand en laminaire grenslaag bij de vleugelachterrand.",
+   "Laminaire grenslaag over de hele bovenzijde van de vleugel met een niet-loslatende luchtstroom."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-18",
+  "topic": "51.1.9.1.2 Describe a turbulent layer and identify it on a streamline pattern",
+  "question": "Hoe verschillen een laminaire en een turbulente grenslaag?",
+  "options": [
+   "De laminaire grenslaag produceert lift, de turbulente produceert weerstand.",
+   "De turbulente grenslaag is dikker, maar produceert minder wrijvingsweerstand.",
+   "De laminaire grenslaag is dunner, maar produceert meer wrijvingsweerstand.",
+   "De turbulente grenslaag kan het vleugelprofiel beter volgen bij grotere aanvalshoeken."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-19",
+  "topic": "51.3.3.1.2 Explain the aerodynamic basics of yaw control",
+  "question": "Een rotatie rond de topas is…",
+  "options": [
+   "rollen",
+   "stampen (pitch)",
+   "gieren (yaw)",
+   "slippen"
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-20",
+  "topic": "51.3.4.2.4 Describe technical (aerodynamic) means to reduce adverse yaw by differential aileron deflection",
+  "question": "Wat is het voordeel van aileron differentieel?",
+  "options": [
+   "De verhouding tussen de weerstandscoëfficiënt en de liftcoëfficiënt vergroot.",
+   "De adverse yaw (haakeffect) is groter.",
+   "De weerstand van de aileron die neerwaarts beweegt is lager en daardoor verkleint het haakeffect.",
+   "De totale lift blijft constant tijdens aileronuitslagen."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JH2-21",
+  "topic": "51.3.7.2.1 Name and describe the function of the most common types of trim",
+  "question": "Tijdens kruisvlucht met constant motorvermogen heeft een vliegtuig voortdurend de neiging om te klimmen. Hoe kan deze neiging teniet gedaan worden?",
+  "options": [
+   "Het trimvlak naar boven te bewegen.",
+   "Het zwaartepunt naar achter te verplaatsen.",
+   "Het hoogteroer omhoog te bewegen.",
+   "Het trimvlak naar beneden te bewegen."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen"
  }
 ]

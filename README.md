@@ -27,7 +27,7 @@ Onofficieel oefenplatform voor de theorie-examens **PPL(A)** (EASA Part-FCL, BCA
 | `js/glossary.js` | Woordenlijst met luchtvaartafkortingen (volledige benaming + uitleg) |
 | `js/compasscalc.js` | Kompasrekenmachine bij vragen met richtingen (alleen oefenmodus) |
 | `js/config.js` | Vakken, examenparameters (aantal vragen/tijd/slaagdrempel) en bronnen |
-| `data/<vak>.json` | Vragen uit de PDF's (het juiste antwoord is het groene vakje in de PDF) |
+| `data/<vak>.json` | Vragen uit de PDF's (het juiste antwoord is het groene vakje in de PDF). Aanvullende vragen van een auteur hebben een veld `author` (bv. de aerodynamicatoetsen van Jeroen Huygen, id `JH1-..`/`JH2-..`); de site toont dan "Aanvullende vraag · auteur: …" |
 | `img/<vak>/` | Afbeeldingen/bijlagen bij de vragen |
 | `content/<vak>.json` | Uitleg + bron per vraag-ID: `[uitleg, bron, artikel]` |
 | `content/_patches.json` | Correcties op tekst die in de bron-PDF afgebroken is, tekstvervangingen (`_replace`) en gedraaide afbeeldingen (`_rotate`) |
