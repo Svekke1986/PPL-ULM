@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Vragenbeheer – PPL & ULM Oefenplatform</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔑</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .field { display: block; margin: 10px 0; }
+    .field > span { display: block; font-size: .85rem; font-weight: 600; color: var(--muted); margin-bottom: 4px; }
+    .field input[type=text], .field input[type=password], .field textarea, .field select {
+      width: 100%; font: inherit; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border);
+      background: var(--surface); color: var(--text);
+    }
+    .field textarea { min-height: 70px; resize: vertical; }
+    .field textarea.long { min-height: 180px; }
+    .opt { display: flex; gap: 8px; align-items: center; margin: 6px 0; }
+    .opt input[type=text] { flex: 1; font: inherit; padding: 7px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); }
+    .opt label { font-size: .8rem; color: var(--muted); white-space: nowrap; }
+    .opt.is-correct input[type=text] { border-color: var(--ok-border); background: var(--ok-bg); color: var(--ok-text); }
+    .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+    .tabs .btn.active { background: var(--primary); border-color: var(--primary); color: var(--primary-ink); }
+    .qcard { margin-bottom: 16px; }
+    .qhead { display: flex; justify-content: space-between; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .status-pending { background: var(--warn-bg); color: var(--text); }
+    .status-approved { background: var(--ok-bg); color: var(--ok-text); }
+    .status-rejected { background: var(--bad-bg); color: var(--bad-text); }
+    .law { background: var(--surface-2); border-radius: 8px; padding: 10px 12px; white-space: pre-line; font-size: .9rem; max-height: 320px; overflow: auto; }
+    .law mark { background: var(--warn-bg); color: inherit; outline: 1px solid var(--warn-border); }
+    .savebar { position: sticky; bottom: 0; background: var(--surface); border-top: 1px solid var(--border); padding: 12px 16px;
+      display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; z-index: 5; }
+    .savebar[hidden] { display: none; }
+    .msg { padding: 10px 12px; border-radius: 8px; margin: 10px 0; }
+    .msg.ok { background: var(--ok-bg); color: var(--ok-text); }
+    .msg.bad { background: var(--bad-bg); color: var(--bad-text); }
+    .inline { display: inline-flex; gap: 6px; align-items: center; margin-right: 14px; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; }
+    @media (max-width: 600px) { .grid2 { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a href="./" class="brand"><span class="brand-icon">✈️</span><span>PPL &amp; ULM Oefenplatform</span></a>
+    <nav class="topnav"><a href="./">Naar de site</a><a href="#" id="logout" hidden>Afmelden</a></nav>
+  </header>
+  <main id="app" class="container"></main>
+  <div id="savebar" class="savebar" hidden></div>
+
+  <script src="js/config.js"></script>
+  <script>
+  (function () {
+    'use strict';
+    const REPO = 'Svekke1986/PPL-ULM', BRANCH = 'main', FILE = 'js/extra.js';
+    const API = `https://api.github.com/repos/${REPO}/contents/${FILE}`;
+    const KB_URL = 'sources/ulm/kb-2024-12-20-ulm.json';
+    const SUBJECTS = window.SUBJECTS;
+    const app = document.getElementById('app'), bar = document.getElementById('savebar');
+    const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    const STATUS = { pending: 'Te beoordelen', approved: 'Goedgekeurd', rejected: 'Afgekeurd' };
+
+    // Opslag van de sleutel: alleen op dit toestel (localStorage als "onthouden", anders alleen voor dit tabblad).
+    const keyStore = {
+      get() { try { return JSON.parse(localStorage.getItem('pplulm.beheer') || sessionStorage.getItem('pplulm.beheer') || 'null'); } catch (e) { return null; } },
+      set(v, remember) { try { (remember ? localStorage : sessionStorage).setItem('pplulm.beheer', JSON.stringify(v)); } catch (e) { /* geen opslag */ } },
+      clear() { try { localStorage.removeItem('pplulm.beheer'); sessionStorage.removeItem('pplulm.beheer'); } catch (e) { /* */ } }
+    };
+
+    let auth = null, sha = null, list = [], original = '', kb = null, tab = 'pending', message = null;
+
+    // ---------- GitHub ----------
+    const b64decode = b64 => new TextDecoder().decode(Uint8Array.from(atob(b64.replace(/\s/g, '')), c => c.charCodeAt(0)));
+    const b64encode = str => {
+      const bytes = new TextEncoder().encode(str);
+      let bin = '';
+      for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+      return btoa(bin);
+    };
+    async function gh(method, body) {
+      const res = await fetch(API + (method === 'GET' ? `?ref=${BRANCH}&t=${Date.now()}` : ''), {
+        method,
+        headers: { Authorization: `Bearer ${auth.token}`, Accept: 'application/vnd.github+json', ...(body ? { 'Content-Type': 'application/json' } : {}) },
+        body: body ? JSON.stringify(body) : undefined,
+        cache: 'no-store'
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) { const err = new Error(data.message || res.statusText); err.status = res.status; throw err; }
+      return data;
+    }
+    const parse = text => JSON.parse(text.slice(text.indexOf('=') + 1, text.lastIndexOf(';')));
+    const serialize = arr => "// Aanvullende vragen – beheerd via beheer.html. Alleen vragen met status 'approved' verschijnen op de site.\n" +
+      'window.EXTRA_QUESTIONS = ' + JSON.stringify(arr, null, 1) + ';\n';
+
+    async function load() {
+      const data = await gh('GET');
+      sha = data.sha;
+      list = parse(b64decode(data.content));
+      original = JSON.stringify(list);
+    }
+    async function save() {
+      const n = changedCount();
+      const data = await gh('PUT', {
+        message: `Vragenbeheer: ${n} vraag/vragen bijgewerkt door ${auth.name}`,
+        content: b64encode(serialize(list)), sha, branch: BRANCH
+      });
+      sha = data.content.sha;
+      original = JSON.stringify(list);
+    }
+    const changedCount = () => {
+      const before = Object.fromEntries(JSON.parse(original || '[]').map(q => [q.id, JSON.stringify(q)]));
+      return list.filter(q => before[q.id] !== JSON.stringify(q)).length;
+    };
+
+    // ---------- Weergave ----------
+    function viewLogin(error) {
+      bar.hidden = true;
+      document.getElementById('logout').hidden = true;
+      app.innerHTML = `<h1>🔑 Vragenbeheer</h1>
+        <p class="lead">Hier keur je aanvullende vragen goed voor ze op de site verschijnen. Alleen wie de sleutel heeft, kan iets wijzigen.</p>
+        ${error ? `<div class="msg bad">${esc(error)}</div>` : ''}
+        <form class="card" id="login">
+          <label class="field"><span>Sleutel</span><input type="password" id="token" autocomplete="off" required placeholder="github_pat_…"></label>
+          <label class="field"><span>Je naam (komt bij “nagekeken door”)</span><input type="text" id="name" required></label>
+          <label class="inline"><input type="checkbox" id="remember"> Onthoud op dit toestel</label>
+          <div class="btn-row" style="margin-top:12px"><button class="btn btn-primary" type="submit">Aanmelden</button></div>
+        </form>
+        <details class="card"><summary><strong>Hoe maak ik een sleutel?</strong></summary>
+          <p>De sleutel is een persoonlijk toegangstoken van GitHub dat alleen het bestand met de vragen in deze repository mag wijzigen.</p>
+          <ol>
+            <li>Ga op GitHub naar <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Settings › Developer settings › Fine-grained tokens › Generate new token</a>.</li>
+            <li>Kies een naam (bv. “vragenbeheer”) en een vervaldatum.</li>
+            <li>Bij <em>Repository access</em>: <strong>Only select repositories</strong> → <code>${REPO}</code>.</li>
+            <li>Bij <em>Permissions › Repository permissions</em>: <strong>Contents: Read and write</strong>. Verder niets.</li>
+            <li>Klik op <em>Generate token</em> en plak het hier. Deel het met niemand.</li>
+          </ol>
+          <p class="small muted">De sleutel wordt alleen in deze browser bewaard en enkel naar GitHub gestuurd.</p>
+        </details>`;
+      const saved = keyStore.get();
+      if (saved) { document.getElementById('name').value = saved.name || ''; }
+      document.getElementById('login').onsubmit = async e => {
+        e.preventDefault();
+        auth = { token: document.getElementById('token').value.trim(), name: document.getElementById('name').value.trim() };
+        const remember = document.getElementById('remember').checked;
+        try {
+          await start();
+          keyStore.set(auth, remember);
+        } catch (err) { auth = null; viewLogin(loginError(err)); }
+      };
+    }
+    const loginError = err => err.status === 401 ? 'Deze sleutel is ongeldig of verlopen.'
+      : err.status === 404 || err.status === 403 ? 'Deze sleutel heeft geen toegang tot de vragen van deze site.'
+      : 'Aanmelden mislukt: ' + err.message;
+
+    async function start() {
+      app.innerHTML = '<p class="muted">Vragen laden…</p>';
+      await load();
+      if (!kb) kb = await fetch(KB_URL).then(r => r.ok ? r.json() : null).catch(() => null);
+      document.getElementById('logout').hidden = false;
+      render();
+    }
+
+    function lawHtml(q) {
+      if (!kb || !q.art) return '';
+      const a = kb.artikelen.find(x => x.artikel === Number(q.art));
+      if (!a) return '';
+      let text = esc(a.tekst);
+      if (q.citaat && a.tekst.includes(q.citaat)) text = text.replace(esc(q.citaat), `<mark>${esc(q.citaat)}</mark>`);
+      return `<details><summary>📜 Wettekst: art. ${a.artikel} (${esc(a.hoofdstuk || '')})</summary><div class="law">${text}</div></details>`;
+    }
+
+    function cardHtml(q) {
+      const subjects = Object.entries(SUBJECTS).map(([k, s]) => `<option value="${k}" ${q.subject === k ? 'selected' : ''}>${s.code} · ${esc(s.name)}</option>`).join('');
+      const opts = q.o.map((t, i) => `<div class="opt ${q.c === i ? 'is-correct' : ''}">
+          <input type="text" data-f="o" data-i="${i}" value="${esc(t)}" aria-label="Antwoord ${i + 1}">
+          <label><input type="radio" name="c-${esc(q.id)}" data-f="c" value="${i}" ${q.c === i ? 'checked' : ''}> juist</label></div>`).join('');
+      const actions = q.status === 'pending'
+        ? `<button class="btn btn-primary btn-small" data-act="approved">✅ Goedkeuren</button><button class="btn btn-small" data-act="rejected">❌ Afkeuren</button>`
+        : `<button class="btn btn-small" data-act="pending">↩ Terug naar te beoordelen</button>`;
+      return `<div class="card qcard" data-id="${esc(q.id)}">
+        <div class="qhead"><strong>${esc(q.id)}</strong>
+          <span class="badge status-${q.status}">${STATUS[q.status]}${q.nagekeken ? ' · ' + esc(q.nagekeken) : ''}</span></div>
+        <label class="field"><span>Vraag</span><textarea data-f="q">${esc(q.q)}</textarea></label>
+        <div class="field"><span>Antwoorden (duid het juiste aan; op de site worden ze geschud)</span>${opts}</div>
+        <label class="field"><span>Uitleg (**vet**, nieuwe regel = nieuwe alinea)</span><textarea class="long" data-f="e">${esc(q.e)}</textarea></label>
+        <div class="grid2">
+          <label class="field"><span>Bron (verwijzing)</span><input type="text" data-f="ref" value="${esc(q.ref)}"></label>
+          <label class="field"><span>Vak</span><select data-f="subject">${subjects}</select></label>
+        </div>
+        <div class="field"><span>Zichtbaar voor</span>
+          ${['PPL', 'ULM'].map(l => `<label class="inline"><input type="checkbox" data-f="lic" value="${l}" ${q.lic.includes(l) ? 'checked' : ''}> ${l}</label>`).join('')}</div>
+        ${lawHtml(q)}
+        <div class="btn-row" style="margin-top:12px">${actions}</div>
+      </div>`;
+    }
+
+    function render() {
+      const counts = Object.fromEntries(Object.keys(STATUS).map(s => [s, list.filter(q => q.status === s).length]));
+      const shown = list.filter(q => q.status === tab);
+      app.innerHTML = `<h1>🔑 Vragenbeheer</h1>
+        <p class="muted">Aangemeld als <strong>${esc(auth.name)}</strong>. Goedgekeurde vragen verschijnen na het opslaan binnen een paar minuten op de site, als “aanvullende vraag”.</p>
+        ${message ? `<div class="msg ${message.ok ? 'ok' : 'bad'}">${esc(message.text)}</div>` : ''}
+        <div class="tabs">${Object.entries(STATUS).map(([s, label]) =>
+          `<button class="btn btn-small ${tab === s ? 'active' : ''}" data-tab="${s}">${label} (${counts[s]})</button>`).join('')}
+          <button class="btn btn-small" id="new">＋ Nieuwe vraag</button></div>
+        ${shown.length ? shown.map(cardHtml).join('') : '<p class="muted">Geen vragen in deze lijst.</p>'}`;
+      renderBar();
+    }
+
+    function renderBar() {
+      const n = changedCount();
+      bar.hidden = n === 0;
+      bar.innerHTML = `<span>${n} vraag/vragen gewijzigd, nog niet opgeslagen.</span>
+        <span class="btn-row"><button class="btn btn-small" id="undo">Ongedaan maken</button>
+        <button class="btn btn-accent btn-small" id="save">Opslaan en publiceren</button></span>`;
+    }
+
+    function validate(q) {
+      if (!q.q.trim()) return 'de vraag is leeg';
+      if (q.o.length !== 4 || q.o.some(o => !o.trim())) return 'niet alle vier de antwoorden zijn ingevuld';
+      if (new Set(q.o.map(o => o.trim().toLowerCase())).size !== 4) return 'twee antwoorden zijn gelijk';
+      if (!(q.c >= 0 && q.c < 4)) return 'er is geen juist antwoord aangeduid';
+      if (!q.e.trim()) return 'de uitleg is leeg';
+      if (!q.lic.length) return 'kies minstens PPL of ULM';
+      return null;
+    }
+
+    // ---------- Gebeurtenissen ----------
+    const byId = id => list.find(q => q.id === id);
+    app.addEventListener('input', e => {
+      const card = e.target.closest('.qcard'); if (!card) return;
+      const q = byId(card.dataset.id), f = e.target.dataset.f;
+      if (f === 'o') q.o[Number(e.target.dataset.i)] = e.target.value;
+      else if (f === 'c') { q.c = Number(e.target.value); card.querySelectorAll('.opt').forEach((el, i) => el.classList.toggle('is-correct', i === q.c)); }
+      else if (f === 'lic') q.lic = [...card.querySelectorAll('[data-f=lic]:checked')].map(x => x.value);
+      else if (f) q[f] = e.target.value;
+      renderBar();
+    });
+    app.addEventListener('click', e => {
+      const t = e.target.closest('button'); if (!t) return;
+      if (t.dataset.tab) { tab = t.dataset.tab; message = null; render(); return; }
+      if (t.id === 'new') {
+        const n = list.reduce((m, q) => Math.max(m, Number((q.id.match(/^X-(\d+)$/) || [])[1] || 0)), 0) + 1;
+        list.push({ id: 'X-' + String(n).padStart(3, '0'), status: 'pending', subject: 'air_law', lic: ['PPL', 'ULM'], lo: 'EXTRA',
+          basis: 'eigen vraag', q: '', o: ['', '', '', ''], c: 0, e: '', src: 'syl', ref: '', opgesteld: auth.name });
+        tab = 'pending'; message = null; render();
+        app.querySelector('.qcard:last-of-type textarea')?.focus();
+        return;
+      }
+      const card = t.closest('.qcard');
+      if (card && t.dataset.act) {
+        const q = byId(card.dataset.id);
+        if (t.dataset.act === 'approved') {
+          const err = validate(q);
+          if (err) { message = { ok: false, text: `${q.id} kan niet goedgekeurd worden: ${err}.` }; render(); return; }
+          q.nagekeken = auth.name;
+        }
+        if (t.dataset.act === 'pending') delete q.nagekeken;
+        q.status = t.dataset.act;
+        q.bijgewerkt = new Date().toISOString().slice(0, 10);
+        message = { ok: true, text: `${q.id}: ${STATUS[q.status].toLowerCase()}. Vergeet niet op te slaan.` };
+        render();
+      }
+    });
+    bar.addEventListener('click', async e => {
+      const t = e.target.closest('button'); if (!t) return;
+      if (t.id === 'undo') { list = JSON.parse(original); message = null; render(); return; }
+      if (t.id === 'save') {
+        t.disabled = true; t.textContent = 'Opslaan…';
+        try { await save(); message = { ok: true, text: 'Opgeslagen. De site wordt binnen een paar minuten bijgewerkt.' }; }
+        catch (err) {
+          message = { ok: false, text: err.status === 409 || err.status === 422
+            ? 'Het bestand is intussen elders gewijzigd. Herlaad de pagina en doe je wijzigingen opnieuw.'
+            : 'Opslaan mislukt: ' + err.message };
+        }
+        render();
+      }
+    });
+    window.addEventListener('beforeunload', e => { if (auth && changedCount()) { e.preventDefault(); e.returnValue = ''; } });
+    document.getElementById('logout').onclick = e => { e.preventDefault(); keyStore.clear(); auth = null; viewLogin(); };
+
+    const saved = keyStore.get();
+    if (saved && saved.token) { auth = saved; start().catch(err => { keyStore.clear(); auth = null; viewLogin(loginError(err)); }); }
+    else viewLogin();
+  })();
+  </script>
+</body>
+</html>
