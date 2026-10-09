@@ -165,7 +165,7 @@ window.GLOSSARY = (function () {
     SERA: ['Standardised European Rules of the Air', 'Europese luchtverkeersregels (Verordening (EU) 923/2012).'],
     EASA: ['European Union Aviation Safety Agency', 'Europees Agentschap voor de veiligheid van de luchtvaart.'],
     ICAO: ['International Civil Aviation Organization', 'internationale burgerluchtvaartorganisatie van de VN.'],
-    ECQB: ['European Central Question Bank', 'Europese vragenbank voor de theorie-examens.'],
+    ECQB: ['European Central Question Bank', 'centrale Europese verzameling examenvragen voor de theorie-examens.'],
     BCAA: ['Belgian Civil Aviation Authority', 'Belgische luchtvaartautoriteit (= DGLV).'],
     DGLV: ['Directoraat-generaal Luchtvaart', 'Belgische luchtvaartautoriteit binnen de FOD Mobiliteit.'],
     PPL: ['Private Pilot Licence', 'brevet van privépiloot.'],

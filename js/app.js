@@ -122,22 +122,22 @@
     const count = l => Object.keys(LICENCES[l].exams).reduce((n, s) => n + questionsFor(l, s).length, 0);
     app.innerHTML = `
       <h1>Oefen je PPL- of ULM-theorie</h1>
-      <p class="lead">Kies bij <strong>Licentie</strong> je opleiding en daarna het vak: oefen met de vragenbank of leg een proefexamen af met hetzelfde aantal vragen en dezelfde tijd als op het examen. Bij <strong>Oefeningen</strong> maakt de site telkens een nieuwe oefening.</p>
+      <p class="lead">Kies bij <strong>Licentie</strong> je opleiding en daarna het vak: oefen met examenvragen of leg een proefexamen af met hetzelfde aantal vragen en dezelfde tijd als op het examen. Bij <strong>Oefeningen</strong> maakt de site telkens een nieuwe oefening.</p>
       <div class="notice"><strong>Dit is geen officieel platform.</strong> Het is niet verbonden aan EASA, de BCAA of het DGLV.
         Slagen op deze website geeft <strong>geen garantie</strong> dat je slaagt voor het echte theorie-examen.</div>
       <section class="home-section">
       <h2 class="section-title">Licentie</h2>
-      <p class="muted section-sub">Vragenbank per vak, met oefenmodus en proefexamen</p>
+      <p class="muted section-sub">Oefenvragen per vak, met oefenmodus en proefexamen</p>
       <div class="grid grid-2">
         <a class="card licence-card" href="#/ppl">
           <div class="big">🛩️</div>
           <h2>PPL(A)</h2>
-          <p class="muted">${esc(LICENCES.PPL.full)}<br>9 vakken · ${count('PPL')} vragen in de databank</p>
+          <p class="muted">${esc(LICENCES.PPL.full)}<br>9 vakken · ${count('PPL')} oefenvragen</p>
         </a>
         <a class="card licence-card" href="#/ulm">
           <div class="big">🪂</div>
           <h2>ULM</h2>
-          <p class="muted">${esc(LICENCES.ULM.full)}<br>4 vakken · ${count('ULM')} vragen in de databank</p>
+          <p class="muted">${esc(LICENCES.ULM.full)}<br>4 vakken · ${count('ULM')} oefenvragen</p>
         </a>
       </div>
       </section>
@@ -177,9 +177,9 @@
           <div class="subject-icon">${S.icon}</div>
           <div><h3>${esc(S.code)} · ${esc(S.name)}</h3><div class="subject-meta">${esc(S.en)}</div></div>
         </div>
-        <div class="subject-meta">${n} vragen in de databank · examen: ${ex.questions} vragen / ${ex.minutes} min</div>
+        <div class="subject-meta">${n} oefenvragen · examen: ${ex.questions} vragen / ${ex.minutes} min</div>
         ${st.answered ? `<div class="subject-meta">Jouw score: ${st.correct}/${st.answered} (${pct}%)</div><div class="progress"><span style="width:${pct}%"></span></div>` : ''}
-        ${n === 0 ? '<div class="subject-meta">Nog geen vragen in de databank.</div>' : ''}
+        ${n === 0 ? '<div class="subject-meta">Nog geen oefenvragen voor dit vak.</div>' : ''}
         <div class="btn-row">
           <a class="btn btn-primary" href="#/${licence.toLowerCase()}/${key}/oefenen" ${n ? '' : 'aria-disabled="true" onclick="return false" style="opacity:.5;pointer-events:none"'}>Oefenen</a>
           <a class="btn btn-accent" href="#/${licence.toLowerCase()}/${key}/examen" ${n ? '' : 'aria-disabled="true" onclick="return false" style="opacity:.5;pointer-events:none"'}>Proefexamen</a>
@@ -250,7 +250,7 @@
       .map(c => `<option value="${esc(c.ch.id)}" ${P.chapter === c.ch ? 'selected' : ''}>${esc(c.ch.name)} (${c.count})</option>`).join('');
     return `<div class="crumbs"><a href="#/">Home</a> › <a href="#/${P.licence.toLowerCase()}">${esc(LICENCES[P.licence].name)}</a> › ${esc(S.name)}</div>
       <div class="quiz-head">
-        <div><h1>${S.icon} ${esc(S.name)}</h1><div class="muted small">Oefenmodus · ${P.pool.length} vragen${P.chapter ? ' in dit hoofdstuk' : ' in de databank'}</div></div>
+        <div><h1>${S.icon} ${esc(S.name)}</h1><div class="muted small">Oefenmodus · ${P.pool.length} vragen${P.chapter ? ' in dit hoofdstuk' : ''}</div></div>
         <span class="score-pill">Sessie: ${P.session.correct}/${P.session.answered}</span>
       </div>
       ${chapterOpts ? `<div class="chapter-filter">
@@ -316,7 +316,7 @@
       <div class="card">
         <h1>${S.icon} Proefexamen ${esc(S.name)}</h1>
         <p class="lead">${esc(L.name)} · ${ex.questions} vragen · ${ex.minutes} minuten · geslaagd vanaf ${L.passMark}% (${Math.ceil(ex.questions * L.passMark / 100)} juist)${L.passRule === 'total' ? ' (op het echte ULM-examen geldt dit over de 4 vakken samen)' : ''}</p>
-        ${short ? `<div class="notice">De databank bevat voor dit vak nog maar ${pool.length} vragen. Dit proefexamen telt daarom ${n} vragen en ${minutes} minuten (in verhouding).</div>` : ''}
+        ${short ? `<div class="notice">Voor dit vak zijn er nog maar ${pool.length} oefenvragen. Dit proefexamen telt daarom ${n} vragen en ${minutes} minuten (in verhouding).</div>` : ''}
         <ul class="muted">
           <li>Tijdens het examen zie je nog niet of je antwoord juist is, net zoals op het echte examen.</li>
           <li>Je kunt vragen markeren en terugkeren tot je inlevert.</li>
