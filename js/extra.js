@@ -893,7 +893,7 @@ window.EXTRA_QUESTIONS = [
  },
  {
   "id": "SERA-A01",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -916,11 +916,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.2010",
   "citaat": "shall, whether manipulating the controls or not, be responsible for the operation of the aircraft",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A02",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -943,11 +945,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.2010",
   "citaat": "may depart from these rules in circumstances that render such departure absolutely necessary in the interests of safety",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A03",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -970,11 +974,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.2010",
   "citaat": "shall include a careful study of available current weather reports and forecasts, taking into consideration fuel/energy requirements and an alternative course of action if the flight cannot be completed as planned",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A05",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -997,11 +1003,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.2020",
   "citaat": "shall undertake that function while under the influence of any psychoactive substance, by reason of which human performance is impaired",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A06",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1024,11 +1032,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3101",
   "citaat": "An aircraft shall not be operated in a negligent or reckless manner so as to endanger life or property of others.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A07",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1051,11 +1061,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3105",
   "citaat": "unless at such a height as will permit, in the event of an emergency arising, a landing to be made without undue hazard to persons or property on the surface",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A08",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1078,11 +1090,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3110",
   "citaat": "(b) altitudes, for flights below the lowest usable flight level or, where applicable, at or below the transition altitude.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A09",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1105,11 +1119,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 3",
   "citaat": "Van 000 tot 179 graden Van 180 tot 359 graden IFR-vluchten VFR-vluchten",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A11",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1132,11 +1148,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3135",
   "citaat": "Aircraft shall not be flown in formation except by pre-arrangement among the pilots-in-command of the aircraft taking part in the flight",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A12",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1159,11 +1177,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3135",
   "citaat": "a distance not exceeding 1 km (0,5 nm) laterally and longitudinally and 30 m (100 ft) vertically from the flight leader shall be maintained by each aircraft",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A13",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1186,11 +1206,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3145",
   "citaat": "except in accordance with the conditions of the restrictions or by permission of the Member State over whose territory the areas are established",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A14",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1213,11 +1235,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3201",
   "citaat": "Nothing in this Regulation shall relieve the pilot-in-command of an aircraft from the responsibility of taking such action",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A15",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1240,11 +1264,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3210",
   "citaat": "(a) The aircraft that has the right-of-way shall maintain its heading and speed.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A16",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1267,11 +1293,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3210",
   "citaat": "(b) An aircraft that is aware that the manoeuvrability of another aircraft is impaired shall give way to that aircraft.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A17",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1294,11 +1322,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3210",
   "citaat": "shall avoid passing over, under or in front of the other, unless it passes well clear and takes into account the effect of aircraft wake turbulence",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A18",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1321,11 +1351,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3210",
   "citaat": "(i) power-driven heavier-than-air aircraft shall give way to airships, sailplanes and balloons;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A19",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1348,11 +1380,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3210",
   "citaat": "(iv) power-driven aircraft shall give way to aircraft which are seen to be towing other aircraft or objects.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A20",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1375,11 +1409,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3210",
   "citaat": "approaches another from the rear on a line forming an angle of less than 70 degrees with the plane of symmetry of the latter",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A21",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1402,11 +1438,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3210",
   "citaat": "no subsequent change in the relative positions of the two aircraft shall absolve the overtaking aircraft from this obligation until it is entirely past and clear",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A22",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1429,11 +1467,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3210",
   "citaat": "(i) Sailplanes overtaking. A sailplane overtaking another sailplane may alter its course to the right or to the left.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A23",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1456,11 +1496,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3210",
   "citaat": "An aircraft in flight, or operating on the ground or water, shall give way to aircraft landing or in the final stages of an approach to land.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A24",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1483,11 +1525,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3210",
   "citaat": "aircraft at the higher level shall give way to aircraft at the lower level, but the latter shall not take advantage of this rule to cut in front of another",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A25",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1510,11 +1554,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3210",
   "citaat": "Nevertheless, power-driven heavier-than-air aircraft shall give way to sailplanes.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A26",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1537,11 +1583,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3210",
   "citaat": "(ii) Emergency landing. An aircraft that is aware that another is compelled to land shall give way to that aircraft.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A27",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1564,11 +1612,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3210",
   "citaat": "(5) Taking off. An aircraft taxiing on the manoeuvring area of an aerodrome shall give way to aircraft taking off or about to take off.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A28",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1591,11 +1641,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3210",
   "citaat": "(i) when two aircraft are approaching head on, or approximately so, each shall stop or where practicable alter its course to the right so as to keep well clear;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A29",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1618,11 +1670,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3210",
   "citaat": "shall stop and hold at all runway-holding positions unless an explicit clearance to enter or cross the runway has been issued by the aerodrome control tower",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A30",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1645,11 +1699,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3210",
   "citaat": "shall stop and hold at all lighted stop bars and may proceed further in accordance with (2) when the lights are switched off",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A31",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1672,11 +1728,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3212",
   "citaat": "(1) stop the aircraft; and\n(2) simultaneously notify the appropriate air traffic services unit of the circumstances (including the last known position).",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A32",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1699,11 +1757,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3212",
   "citaat": "(2) if able to locate a nearby suitable taxiway, vacate the runway as expeditiously as possible, unless otherwise instructed by the air traffic services unit; and then,",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A33",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1726,11 +1786,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3215",
   "citaat": "(1) anti-collision lights intended to attract attention to the aircraft; and",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A34",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1753,11 +1815,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3215",
   "citaat": "(c) Except as provided by (e), all aircraft in flight and fitted with anti-collision lights to meet the requirement of (a)(1) shall display such lights also during day.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A35",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1780,11 +1844,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3220",
   "citaat": "an additional qualified pilot (in this rule called a safety pilot) occupies a control seat",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A36",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1807,11 +1873,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3225",
   "citaat": "(c) except for balloons, make all turns to the left, when approaching for a landing and after taking off, unless otherwise indicated, or instructed by ATC;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A37",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1834,11 +1902,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3230",
   "citaat": "(1) Converging. An aircraft which has another aircraft or a vessel on its right shall give way so as to keep well clear.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-A38",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1861,11 +1931,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.3401",
   "citaat": "(b) A time check shall be obtained prior to operating a controlled flight",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B01",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1888,7 +1960,9 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5001",
   "citaat": "F G | 5 km (***) | Clear of cloud and with the surface in sight",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B02",
