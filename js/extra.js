@@ -1966,7 +1966,7 @@ window.EXTRA_QUESTIONS = [
  },
  {
   "id": "SERA-B02",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -1989,11 +1989,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5001",
   "citaat": "At and below 900 m (3 000 ft) AMSL, or 300 m (1 000 ft) above terrain, whichever is the higher",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B03",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2016,11 +2018,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5001",
   "citaat": "(a) flight visibilities reduced to not less than 1 500 m may be permitted for flights operating:\n(1) at speeds of 140 kts IAS or less",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B04",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2043,11 +2047,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5001",
   "citaat": "(*)When the height of the transition altitude is lower than 3 050 m (10 000 ft) AMSL, FL 100 shall be used in lieu of 10 000 ft.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B05",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2070,11 +2076,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5001",
   "citaat": "(**)The VMC minima in Class A airspace are included for guidance to pilots and do not imply acceptance of VFR flights in Class A airspace.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B06",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2097,11 +2105,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5001",
   "citaat": "Below 3 050 m (10 000 ft) AMSL and above 900 m (3 000 ft) AMSL, or above 300 m (1 000 ft) above terrain, whichever is the higher | A (**) B C D E F G | 5 km | 1500 m horizontally / 300 m (1 000 ft) vertically",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B07",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2124,11 +2134,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5005",
   "citaat": "(1) the ceiling is less than 450 m (1 500 ft); or",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B08",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2151,11 +2163,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5005",
   "citaat": "(2) the ground visibility is less than 5 km.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B09",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2178,11 +2192,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5005",
   "citaat": "VFR flights shall not take off or land at an aerodrome within a control zone, or enter the aerodrome traffic zone or aerodrome traffic circuit, when the reported meteorological conditions at that aerodrome are below the following minima",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B10",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2205,11 +2221,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5005",
   "citaat": "(i) the ceiling shall not be less than 450 m (1 500 ft);",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B11",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2232,11 +2250,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5005",
   "citaat": "(ii) the reduced flight visibility provisions specified in Table S5-1(a) and (b) shall not apply;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B12",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2259,11 +2279,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5005",
   "citaat": "(iii) in airspace classes B, C, D, E, F and G, at and below 900 m (3 000 ft) AMSL or 300 m (1 000 ft) above terrain, whichever is the higher, the pilot shall maintain continuous sight of the surface",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B14",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2286,11 +2308,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5005",
   "citaat": "(2) flights shall establish and maintain two-way radio communication on the appropriate ATS communication channel, when available;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B15",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2313,11 +2337,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5005",
   "citaat": "(ii) elsewhere than as specified in i), at a level which is at least 300 m (1 000 ft) above the highest obstacle located within 8 km of the estimated position of the aircraft.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B16",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2340,11 +2366,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "GM1 SERA.5005(c)(3)(iii)",
   "citaat": "the pilot may elect to fly above a cloud layer (VFR on top)",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B17",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2367,11 +2395,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5005",
   "citaat": "(2) above FL 195. Exceptions to this requirement are the following:",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B18",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2394,11 +2424,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5005",
   "citaat": "(1) over the congested areas of cities, towns or settlements or over an open-air assembly of persons at a height less than 300 m (1 000 ft) above the highest obstacle within a radius of 600 m from the aircraft;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B19",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2421,11 +2453,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5005",
   "citaat": "(2) elsewhere than as specified in (1), at a height less than 150 m (500 ft) above the ground or water, or 150 m (500 ft) above the highest obstacle within a radius of 150 m (500 ft) from the aircraft.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B20",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2448,11 +2482,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5005",
   "citaat": "over an open-air assembly of persons",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B21",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2475,11 +2511,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "AMC1 SERA.5005(f)",
   "citaat": "The competent authority should specify the conditions under which the permission is or may be granted, including the minimum heights above the terrain, water or the highest obstacle within a radius of 150 m (500 ft) from an aircraft practising forced landings",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B22",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2502,11 +2540,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5005",
   "citaat": "(2) as required by SERA.4001(b), submit a flight plan to the appropriate air traffic services unit as soon as practicable and obtain a clearance prior to proceeding IFR when in controlled airspace.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B23",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2529,11 +2569,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5005",
   "citaat": "(h) VFR flights shall comply with the provisions of Section 8:\n(1) when operated within Classes B, C and D airspace;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B24",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2556,11 +2598,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5010",
   "citaat": "Special VFR flights may be authorised to operate within a control zone, subject to an ATC clearance.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B25",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2583,11 +2627,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5010",
   "citaat": "(2) the flight visibility is not less than 1 500 m or, for helicopters, not less than 800 m;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B26",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2610,11 +2656,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5010",
   "citaat": "(3) fly at a speed of 140 kts IAS or less to give adequate opportunity to observe other traffic and any obstacles in time to avoid a collision",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B27",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2637,11 +2685,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5010",
   "citaat": "(a) such special VFR flights may be conducted during day only, unless otherwise permitted by the competent authority;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B28",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2664,11 +2714,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.5010",
   "citaat": "(2) the ceiling is less than 180 m (600 ft).",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B29",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2691,11 +2743,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "GM1 SERA.5010(c)",
   "citaat": "ATC may issue a special VFR clearance for a flight crossing the control zone and not intending to land at an aerodrome within the control zone",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B30",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2718,11 +2772,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.6001",
   "citaat": "(3) Class C. IFR and VFR flights are permitted. All flights are provided with air traffic control service and IFR flights are separated from other IFR flights and from VFR flights. VFR flights are separated from IFR flights and receive traffic information in respect of other VFR flights",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B31",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2745,11 +2801,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.6001",
   "citaat": "VFR flights receive traffic information in respect of all other flights and traffic avoidance advice on request.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B32",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2772,11 +2830,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.6001",
   "citaat": "Continuous air-ground voice communications are required for IFR flights. A speed limitation of 250 kts IAS applies to all flights below 3 050 m (10 000 ft) AMSL",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B33",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2799,11 +2859,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.6001",
   "citaat": "Class E shall not be used for control zones.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B34",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2826,11 +2888,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.6001",
   "citaat": "(7) Class G. IFR and VFR flights are permitted and receive flight information service if requested.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B35",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2853,11 +2917,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.6001",
   "citaat": "(2) Class B. IFR and VFR flights are permitted. All flights are provided with air traffic control service and are separated from each other.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B36",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2880,11 +2946,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 4",
   "citaat": "B IFR Alle luchtvaartuigen Luchtverkeersleidingsdienst Niet van toepassing Ja Ja Ja VFR Alle luchtvaartuigen Luchtverkeersleidingsdienst Niet van toepassing",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B37",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2907,11 +2975,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.6001",
   "citaat": "(b) The designation of the airspace classification shall be appropriate to the needs of the Member States, except that all airspace above FL 195 shall be classified as Class C airspace.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B38",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2934,11 +3004,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "AMC1 SERA.6001",
   "citaat": "Where ATS airspaces adjoin vertically, i.e. one above the other, flights at a common level should comply with the requirements of, and be given services applicable to, the less restrictive class of airspace.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B39",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2961,11 +3033,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.6005",
   "citaat": "VFR flights operating in parts of Classes E, F or G airspace and IFR flights operating in parts of Classes F or G airspace designated as a radio mandatory zone (RMZ)",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B40",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -2988,11 +3062,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.6005",
   "citaat": "an initial call containing the designation of the station being called, call sign, type of aircraft, position, level, the intentions of the flight and other information as prescribed by the competent authority",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-B41",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -3015,11 +3091,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.6005",
   "citaat": "unless in compliance with alternative provisions prescribed for that particular airspace by the ANSP.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C01",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3042,11 +3120,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14001",
   "citaat": "Only when standardised phraseology cannot serve an intended transmission, plain language shall be used.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C02",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3069,11 +3149,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14005",
   "citaat": "(b) Urgency messages, including messages preceded by the medical transports signal | PAN PAN or PAN PAN MEDICAL",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C03",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3096,11 +3178,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14005",
   "citaat": "(f) Flight regularity messages | —",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C04",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3123,11 +3207,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14010",
   "citaat": "(c) meteorological advice of immediate concern to an aircraft in flight or about to depart (individually communicated or for broadcast);",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C05",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3150,11 +3236,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14015",
   "citaat": "(a) The air-ground radiotelephony communications shall be conducted in the English language or in the language normally used by the station on the ground.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C06",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3177,11 +3265,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14020",
   "citaat": "When proper names, service abbreviations and words of which the spelling is doubtful are spelled out in radiotelephony, the alphabet in the Table S14-2 shall be used.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C07",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3204,11 +3294,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14035",
   "citaat": "(i) Flight levels shall be transmitted by pronouncing each digit separately, except for the case of flight levels in whole hundreds.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C08",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3231,11 +3323,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14035",
   "citaat": "except for the case of a setting of 1 000 hPa, which shall be transmitted as “ONE THOUSAND”.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C09",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3258,11 +3352,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14035",
   "citaat": "when the transponder codes contain whole thousands only, the information shall be transmitted by pronouncing the digit in the number of thousands followed by the word “THOUSAND”.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C10",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3285,11 +3381,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14035",
   "citaat": "Combinations of thousands and whole hundreds shall be transmitted by pronouncing each digit in the number of thousands followed by the word ‘THOUSAND’",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C11",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3312,11 +3410,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "GM1 SERA.14035(a)(1)",
   "citaat": "160 degrees 18 knots gusting 30 knots | wind one six zero degrees one eight knots gusting three zero knots",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C12",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3339,11 +3439,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "GM1 SERA.14035(a)(6)",
   "citaat": "118.025 | ONE ONE EIGHT DECIMAL ZERO TWO FIVE",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C13",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3366,11 +3468,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14045",
   "citaat": "WILCO | (Abbreviation for ‘will comply’) / ‘I understand your message and will comply with it.’",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C14",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3393,11 +3497,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "GM7 SERA.14045",
   "citaat": "‘STANDBY’ is not an approval or denial.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C15",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3420,11 +3526,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14045",
   "citaat": "MONITOR | ‘Listen out on (frequency).’",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C17",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3447,11 +3555,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14045",
   "citaat": "UNABLE | ‘I cannot comply with your request, instruction, or clearance.’",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C18",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3474,11 +3584,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14045",
   "citaat": "(c) The expression “TAKE-OFF” shall only be used in radiotelephony when an aircraft is cleared for take-off or when cancelling a take-off clearance.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C19",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3501,11 +3613,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14050",
   "citaat": "(1) Type (a) — the first character of the registration and at least the last two characters of the call sign;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C20",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3528,11 +3642,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14055",
   "citaat": "Except for reasons of safety, no transmission shall be directed to an aircraft during take-off, during the last part of the final approach or during the landing roll.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C21",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3555,11 +3671,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14055",
   "citaat": "(2) When issuing ATC clearances and reading back such clearances, controllers and pilots shall always add the call sign of the aircraft to which the clearance applies.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C22",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3582,11 +3700,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14065",
   "citaat": "(3) position; and",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C23",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3609,11 +3729,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14070",
   "citaat": "(4) the frequency being used.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C25",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3636,11 +3758,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14075",
   "citaat": "(1) When an error has been made in transmission, the word ‘CORRECTION’ shall be spoken, the last correct group or phrase repeated, and then the correct version transmitted.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C26",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3663,11 +3787,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14075",
   "citaat": "‘SAY AGAIN ALL AFTER… (last word satisfactorily received)’.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C27",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3690,11 +3816,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14075",
   "citaat": "(d) If, in checking the correctness of a read-back, incorrect items are noticed, the words ‘NEGATIVE I SAY AGAIN’ shall be transmitted at the conclusion of the read-back followed by the correct version of the items concerned.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C28",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3717,11 +3845,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "AMC1 SERA.14080",
   "citaat": "Aircraft on flights other than those specified should guard the emergency frequency 121,5 MHz to the extent possible.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C29",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3744,11 +3874,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14083",
   "citaat": "the flight crew shall attempt to establish contact on the previous channel used and, if not successful, on another channel appropriate to the route.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C30",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3771,11 +3903,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14083",
   "citaat": "(3) A VFR flight shall continue to fly in visual meteorological conditions, land at the nearest suitable aerodrome, and report its arrival by the most expeditious means to the appropriate air traffic services unit.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C31",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3798,11 +3932,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14083",
   "citaat": "(1) The aircraft, when forming part of the aerodrome traffic at a controlled aerodrome, shall keep a watch for instructions as may be issued by visual signals.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C32",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3825,11 +3961,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14085",
   "citaat": "(2) advise the time of its next intended transmission;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C33",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3852,11 +3990,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14095",
   "citaat": "(ii) consist of as many as possible of the following elements spoken distinctly and, if possible, in the following order:",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C34",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3879,11 +4019,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14095",
   "citaat": "(A) ‘STOP TRANSMITTING’;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C35",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3906,11 +4048,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14095",
   "citaat": "This message shall be originated only by the ATS unit controlling the communications",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C36",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3933,11 +4077,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14095",
   "citaat": "shall nevertheless continue listening to such traffic until it is evident that assistance is being provided.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C37",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3960,11 +4106,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.14095",
   "citaat": "each word of the group pronounced as the French word ‘panne’",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C38",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -3987,11 +4135,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "Appendix 1",
   "citaat": "The procedure words ‘ROGER’ and ‘WILCO’ are insufficient acknowledgement of the instructions ‘HOLD, HOLD POSITION and HOLD SHORT OF (position)’.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C39",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -4014,11 +4164,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "Appendix 1",
   "citaat": "The report ‘LONG FINAL’ is made when an aircraft turns on to final approach at a distance greater than 7 km (4 NM) from touchdown",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C40",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -4041,11 +4193,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "Appendix 1",
   "citaat": "*e) NEGATIVE CONTACT [reasons]; | * |",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C41",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -4068,11 +4222,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "Appendix 1",
   "citaat": "*j) (condition) LINING UP (brief reiteration of the condition); | * |",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-C42",
-  "status": "pending",
+  "status": "approved",
   "subject": "communications",
   "lic": [
    "PPL",
@@ -4095,11 +4251,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.8015",
   "citaat": "(iv) transition levels, whether issued by the controller or contained in ATIS broadcasts.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D01",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4122,11 +4280,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "d) vuurpijlen of lichtkogels die rood licht afgeven en die een per een met korte intervallen worden afgeschoten;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D02",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4149,11 +4309,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "a) het herhaaldelijk in- en uitschakelen van de landingslichten; of",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D03",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4176,11 +4338,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "worden met een reeks vanaf de grond afgeschoten projecten met intervallen van 10 seconden, die elk rood en groen licht of sterren verspreiden",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D04",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4203,11 +4367,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "Ononderbroken rood licht Wijk uit voor andere luchtvaartuigen en blijf cirkelen",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D05",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4230,11 +4396,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "Ononderbroken rood licht Wijk uit voor andere luchtvaartuigen en blijf cirkelen Stop",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D06",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4257,11 +4425,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "Ononderbroken groen licht Geklaard om te landen Geklaard om op te stijgen",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D07",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4284,11 +4454,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "Groen knipperlicht Keer terug om te landen (*) Geklaard om te taxiën",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D08",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4311,11 +4483,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "Wit knipperlicht Land op dit luchtvaartterrein en begeef u naar het luchtvaartterreinplatform (*)",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D09",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4338,11 +4512,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "Keer terug naar de plaats op het luchtvaartterrein van waar u vertrokken bent",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D10",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4365,11 +4541,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "Rode lichtkogels of vuurpijlen Ondanks eerdere aanwijzingen voorlopig niet landen",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D11",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4392,11 +4570,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "— door het op en neer bewegen van de vleugels, behalve voor het basis- en de slotgedeelten van de nadering;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D12",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4419,11 +4599,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "— door het tweemaal aan- en uitschakelen van de landingslichten of, indien het luchtvaartuig niet is uitgerust met landingslichten, het tweemaal aan- en uitschakelen van de navigatielichten.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D13",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4446,11 +4628,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "— door het op en neer bewegen van de rolroeren of het richtingsroer van het luchtvaartuig;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D14",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4473,11 +4657,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "Een horizontaal rood vierkant met één gele diagonaal (figuur A1-3), afgebeeld in een signaalgebied, betekent dat wegens de slechte staat van het landingsterrein of andere redenen speciale voorzorgen moeten worden genomen bij de landingsnadering of landing.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D15",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4500,11 +4686,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "Een horizontale witte halter (figuur A1-4), afgebeeld in een signaalgebied, betekent dat landen, opstijgen en taxiën uitsluitend is toegestaan op banen en taxibanen.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D16",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4527,11 +4715,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "Kruisen in één kleur, geel of wit (figuur A1-6), horizontaal afgebeeld op banen en taxibanen of delen daarvan, betekent dat een gebied ongeschikt is voor bewegingen van luchtvaartuigen.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D17",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4554,11 +4744,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "geeft de richting aan voor opstijgen en landen, namelijk parallel met het staande been van de T en in de richting van de voet naar de top van de T.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D18",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4581,11 +4773,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "geeft een pijl naar rechts, in een opvallende kleur (figuur A1-9), aan dat vóór het landen en na het opstijgen iedere bocht naar rechts moet worden gemaakt.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D19",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4608,11 +4802,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "Een zwarte C tegen een gele achtergrond (figuur A1-10) geeft de plaats aan van de luchtverkeersmeldingspost.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D20",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4635,11 +4831,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera2012",
   "art": "Aanhangsel 1",
   "citaat": "Strek arm en lichtgevende stick voor het lichaam, op schouderhoogte; beweeg hand en lichtgevende stick naar de bovenkant van de linkerschouder en beweeg vervolgens de lichtgevende stick in een snijbeweging langs de keel naar de bovenkant van de rechterschouder.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D21",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4662,11 +4860,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.11005",
   "citaat": "An aircraft which is being subjected to unlawful interference shall endeavour to set the transponder to Code 7500",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D22",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4689,11 +4889,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.11005",
   "citaat": "the pilot-in-command shall attempt to land as soon as practicable at the nearest suitable aerodrome or operating site",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D24",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4716,11 +4918,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.11015",
   "citaat": "attempt to establish radio-communication with the intercepting aircraft or with the appropriate intercept control unit, by making a general call on the emergency frequency 121,5 MHz, giving the identity of the intercepted aircraft and the nature of the flight",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D25",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4743,11 +4947,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.11015",
   "citaat": "if equipped with SSR transponder, select Mode A, Code 7700, unless otherwise instructed by the appropriate air traffic services unit;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D26",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4770,11 +4976,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.11015",
   "citaat": "the intercepted aircraft shall request immediate clarification while continuing to comply with the visual instructions given by the intercepting aircraft.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D27",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4797,11 +5005,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.11015",
   "citaat": "Rocking aircraft, flashing navigational lights at irregular intervals and following.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D28",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4824,11 +5034,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.11015",
   "citaat": "Lowering landing gear (if fitted), showing steady landing lights and overflying runway in use",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D29",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4851,11 +5063,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.11015",
   "citaat": "Raising landing gear (if fitted) and flashing landing lights while passing over runway in use or helicopter / VTOL-capable aircraft landing area at a height exceeding 300 m (1 000 ft) but not exceeding 600 m (2 000 ft)",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D30",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4878,11 +5092,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.11015",
   "citaat": "Regular switching on and off of all available lights but in such a manner as to be distinct from flashing lights.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D31",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4905,11 +5121,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.11015",
   "citaat": "Irregular flashing of all available lights.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D32",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4932,11 +5150,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "GM1 SERA.11012",
   "citaat": "This is not an emergency situation but an indication that an emergency situation is possible should any additional delay occur.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D33",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4959,11 +5179,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.11012",
   "citaat": "shall indicate that by using the radiotelephony distress signal (MAYDAY), preferably spoken three times, followed by the nature of the distress condition (FUEL).",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D34",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -4986,11 +5208,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.13001",
   "citaat": "When an aircraft carries a serviceable SSR transponder, the pilot shall operate the transponder at all times during flight, regardless of whether the aircraft is within or outside airspace where SSR is used for ATS purposes.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D35",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5013,11 +5237,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.13001",
   "citaat": "Pilots shall not operate the IDENT feature unless requested by ATS.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D36",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5040,11 +5266,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.13001",
   "citaat": "Except for flight in airspace designated by the competent authority for mandatory operation of transponder, aircraft without sufficient electrical power supply are exempted from the requirement to operate the transponder at all times.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D37",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5067,11 +5295,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.13005",
   "citaat": "when not receiving air traffic services, select code 7000 in order to improve the detection of suitably equipped aircraft unless otherwise prescribed by the competent authority.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D39",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5094,11 +5324,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.13010",
   "citaat": "When the aircraft carries serviceable Mode C equipment, the pilot shall continuously operate this mode unless otherwise dictated by ATC.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D40",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5121,11 +5353,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.13015",
   "citaat": "shall transmit the aircraft identification as specified in the flight plan or, when no flight plan has been filed, the aircraft registration",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-D41",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5148,11 +5382,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.13020",
   "citaat": "inform ATS as soon as possible, preferably before submission of a flight plan;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E01",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5175,11 +5411,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.4001",
   "citaat": "any flight planned to operate at night, if leaving the vicinity of an aerodrome.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E02",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5202,11 +5440,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.4001",
   "citaat": "limited information required, inter alia, when the purpose is to obtain a clearance for a minor portion of a flight such as to cross an airway, to take off from, or to land at a controlled aerodrome",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E03",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5229,11 +5469,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.4001",
   "citaat": "any flight within or into areas or along routes designated by the competent authority, to facilitate coordination with appropriate military units or with air traffic services units in adjacent States in order to avoid the possible need for interception for the purpose of identification",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E04",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5256,11 +5498,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.4001",
   "citaat": "at least 60 minutes before departure for all other flights not covered in point (2)",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E05",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5283,11 +5527,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.4001",
   "citaat": "at least 10 minutes before the aircraft is estimated to reach:",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E06",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5310,11 +5556,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.4015",
   "citaat": "a delay of 1 hour for an uncontrolled flight for which a flight plan has been submitted",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E07",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5337,11 +5585,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.4015",
   "citaat": "In the event of a delay of 30 minutes in excess of the estimated off-block time for a controlled flight",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E09",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5364,11 +5614,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.4015",
   "citaat": "Information submitted prior to departure regarding fuel or energy endurance or total number of persons carried on board, if incorrect at time of departure, constitutes a significant change to the flight plan and as such shall be reported.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E10",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5391,11 +5643,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.4020",
   "citaat": "at the earliest possible moment after landing, to the appropriate air traffic services unit at the arrival aerodrome",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E11",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5418,11 +5672,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.4020",
   "citaat": "Submission of an arrival report is not required after landing on an aerodrome where air traffic services are provided on condition that radio communication or visual signals indicate that the landing has been observed.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E12",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5445,11 +5701,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.4020",
   "citaat": "the arrival report, when required, shall be made as soon as practicable after landing and by the quickest means available to the nearest air traffic services unit",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E13",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5472,11 +5730,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.4020",
   "citaat": "destination aerodrome or operating site (only in the case of a diversionary landing)",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E14",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5499,11 +5759,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "Appendix 6",
   "citaat": "Z –if the flight is initially operated under VFR, followed by one or more subsequent changes of flight rules.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E15",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5526,11 +5788,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "Appendix 6",
   "citaat": "G –if general aviation;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E16",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5553,11 +5817,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "Appendix 6",
   "citaat": "INSERTZZZZ and SPECIFY, in Item 18:",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E18",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5580,11 +5846,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.8015",
   "citaat": "the flight crew shall obtain the clearance from the appropriate air traffic control unit prior to entering the area where controlled flight will be commenced",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E20",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5607,11 +5875,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.8015",
   "citaat": "clearance limit;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E22",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5634,11 +5904,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.8015",
   "citaat": "the approach clearance or the clearance to enter the traffic circuit;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E23",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5661,11 +5933,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.8020",
   "citaat": "if operated within a control zone, request authorisation to operate as a special VFR flight",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E24",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5688,11 +5962,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.8020",
   "citaat": "continue to operate in VMC and notify the appropriate ATC unit of the action being taken either to leave the airspace concerned or to land at the nearest suitable aerodrome or operating site",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E25",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5715,11 +5991,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.8020",
   "citaat": "the appropriate air traffic services unit shall be notified of the action taken and that this action has been taken under emergency authority",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E26",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5742,11 +6020,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.8020",
   "citaat": "Deviation from track: if the aircraft is off track, action shall be taken forthwith to adjust the heading of the aircraft to regain track as soon as practicable.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E27",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5769,11 +6049,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.8030",
   "citaat": "A controlled flight shall, except when landing at a controlled aerodrome, advise the appropriate ATC unit as soon as it ceases to be subject to air traffic control service.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E28",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5796,11 +6078,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.9001",
   "citaat": "The reception of flight information service does not relieve the pilot-in-command of an aircraft of any responsibilities and the pilot-in-command shall make the final decision regarding any suggested alteration of flight plan.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E29",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5823,11 +6107,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.9005",
   "citaat": "Flight information service provided to VFR flights shall include, in addition to that outlined in (a), the provision of available information concerning traffic and weather conditions along the route of flight that are likely to make operation under the visual flight rules impracticable.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E30",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5850,11 +6136,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.9010",
   "citaat": "aircraft shall acknowledge receipt of the information upon establishing communication with the ATS unit providing approach control service, the aerodrome control tower or Aerodrome Flight Information Service (AFIS), as appropriate",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E31",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5877,11 +6165,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.9010",
   "citaat": "Information contained in a current ATIS, the receipt of which has been acknowledged by the aircraft concerned, need not be included in a directed transmission to the aircraft, with the exception of the altimeter setting",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E32",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5904,11 +6194,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.10001",
   "citaat": "in so far as practicable, to all other aircraft having filed a flight plan or otherwise known to the air traffic services",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E33",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5931,11 +6223,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.10001",
   "citaat": "report during the period 20 to 40 minutes following the time of the last contact",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E34",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5958,11 +6252,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.12005",
   "citaat": "moderate or severe turbulence; or",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E35",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -5985,11 +6281,13 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.12005",
   "citaat": "the runway braking action encountered is not as good as reported.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "SERA-E36",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL",
@@ -6012,6 +6310,8 @@ window.EXTRA_QUESTIONS = [
   "doc": "sera",
   "art": "SERA.12010",
   "citaat": "When other meteorological conditions not listed under SERA.12005(a), e.g. wind shear, are encountered and which, in the opinion of the pilot-in-command, may affect the safety or markedly affect the efficiency of other aircraft operations, the pilot-in-command shall advise the appropriate air traffic services unit as soon as practicable.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  }
 ];
