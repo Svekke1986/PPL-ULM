@@ -11,6 +11,13 @@ DOCS = {
     "kb": ("sources/ulm/kb-2024-12-20-ulm.json", "artikelen", lambda a: str(a["artikel"])),
     "sera": ("sources/easa/sera.json", "bepalingen", lambda a: a["id"]),
     "sera2012": ("sources/eu/sera-923-2012-oorspronkelijk.json", "bepalingen", lambda a: a["id"]),
+    "aircrew": ("sources/easa/aircrew.json", "bepalingen", lambda a: a["id"]),
+    "airops": ("sources/easa/airops.json", "bepalingen", lambda a: a["id"]),
+    "ml": ("sources/easa/cont-airworthiness.json", "bepalingen", lambda a: a["id"]),
+    "part21": ("sources/easa/part21.json", "bepalingen", lambda a: a["id"]),
+    "occ": ("sources/easa/occurrence-reporting.json", "bepalingen", lambda a: a["id"]),
+    "atmans": ("sources/easa/atm-ans.json", "bepalingen", lambda a: a["id"]),
+    "acc996": ("sources/eu/ongevalsonderzoek-996-2010-oorspronkelijk.json", "bepalingen", lambda a: a["id"]),
 }
 SUB = re.compile(r"^\s*(\(\d+\)|\([ivx]+\)|\d+°|[a-z]\)|\(\w\)\s*\(\d+\)|-\s)")       # onderdeel van een opsomming
 TOP = re.compile(r"^\s*(\([a-z]\)|[a-z]\)\S|§\s*\d+|\d+\.\s)")                      # (a), a), § 1, 1.
