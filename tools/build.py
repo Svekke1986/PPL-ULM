@@ -31,6 +31,9 @@ def main():
         for old, new in replacements.items():
             text = text.replace(old, new)
         return text
+    # Nederlandse vertaling van de leerdoelen (code -> tekst); de Engelse ECQB-tekst blijft in data/*.json.
+    lo_path = os.path.join(ROOT, "content", "_lo_nl.json")
+    lo_nl = json.load(open(lo_path, encoding="utf-8")) if os.path.exists(lo_path) else {}
     bank, problems = {}, []
     for path in sorted(glob.glob(os.path.join(ROOT, "data", "*.json"))):
         subject = os.path.splitext(os.path.basename(path))[0]
@@ -51,7 +54,7 @@ def main():
             out.append({
                 "id": q["id"],
                 "lo": lo[0],
-                "loText": lo[1] if len(lo) > 1 else "",
+                "loText": lo_nl.get(lo[0], lo[1] if len(lo) > 1 else ""),
                 "q": fix(p.get("question", q["question"])),
                 "o": [fix(o) for o in options],
                 "c": q["correct"],
