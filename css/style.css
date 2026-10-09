@@ -160,6 +160,12 @@ h2 { font-size: 1.3rem; margin: 0 0 12px; }
 .feedback p { margin: 6px 0; }
 .feedback .source { margin-top: 10px; padding-top: 10px; border-top: 1px dashed currentColor; font-size: .9rem; }
 .feedback .source a { color: inherit; font-weight: 700; }
+.ai-notice { margin-top: 12px; padding: 10px 12px; border-radius: 8px; background: var(--surface-2); border: 1px solid var(--border); border-left: 4px solid var(--primary); color: var(--text); font-size: .92rem; }
+.ai-notice p { margin: 0 0 6px; }
+.ai-notice p:last-child { margin-bottom: 0; }
+.ai-quote-label { margin: 8px 0 4px; color: var(--muted); }
+.ai-quote { margin: 0; padding: 6px 10px; border-left: 3px solid var(--primary); background: var(--surface); font-style: italic; white-space: pre-line; }
+.ai-banner { margin: -4px 0 16px; }
 .feedback .review { margin-top: 8px; font-size: .88rem; padding: 8px 10px; border-radius: 8px; background: var(--warn-bg); color: var(--text); border: 1px solid var(--warn-border); }
 
 .quiz-actions { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-top: 18px; }

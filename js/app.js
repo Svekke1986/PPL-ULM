@@ -63,7 +63,20 @@
       `<li><strong>${esc(i.key)}</strong> – <em>${esc(i.full)}</em>: ${esc(i.text)}</li>`).join('')}</ul></details>`;
   }
 
+  // Brondocument van een AI-vraag (veld "doc"; zonder doc = KB ULM).
+  const AI_DOCS = { kb: { name: 'het KB ULM', src: 'kbulm' }, sera: { name: 'SERA', src: 'sera' }, sera2012: { name: 'SERA', src: 'sera' } };
+  const aiDoc = q => AI_DOCS[q.doc || 'kb'] || { name: 'de wettekst', src: q.src };
+
+  // Antwoord van een AI-vraag: de bron en het stuk tekst waarop de vraag gebaseerd is.
+  function aiSourceHtml(q) {
+    const s = window.resolveSource(q.src || aiDoc(q).src);
+    return `<div class="source">📘 Bron: <strong>${esc(s.org)}</strong> – <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>${q.ref ? ` — <em>${esc(q.ref)}</em>` : ''}
+      ${q.citaat ? `<div class="small ai-quote-label">Tekst uit het document${q.doc === 'sera' ? ' (geldende tekst, enkel in het Engels)' : ''}:</div>
+      <blockquote class="ai-quote">${esc(q.citaat)}</blockquote>` : ''}</div>`;
+  }
+
   function sourceHtml(q) {
+    if (q.ai) return aiSourceHtml(q);
     const s = window.resolveSource(q.src);
     const ref = q.ref ? ` — <em>${esc(q.ref)}</em>` : '';
     const lo = q.extra
@@ -116,7 +129,7 @@
       return `<button class="${cls}" data-i="${i}" ${opts.locked ? 'disabled' : ''}>
         <span class="letter">${LETTERS[i]}</span><span>${esc(text)}</span></button>`;
     }).join('');
-    const tag = q.extra ? `${q.ai ? 'AI-gegenereerde vraag' : 'Aanvullende vraag'} · ${esc(q.basis || 'aanvullend')}` : q.auteur ? `Aanvullende vraag · auteur: ${esc(q.auteur)}` : (q.lo ? 'ECQB ' + esc(q.lo) : '');
+    const tag = q.extra ? (q.ai ? `🤖 AI-gegenereerde vraag, gebaseerd op ${esc(aiDoc(q).name)}` : `Aanvullende vraag · ${esc(q.basis || 'aanvullend')}`) : q.auteur ? `Aanvullende vraag · auteur: ${esc(q.auteur)}` : (q.lo ? 'ECQB ' + esc(q.lo) : '');
     return `<div class="q-meta"><span>${opts.counter || ''}</span><span>${tag}</span></div>
       ${q.code ? codeHtml(q.code, q.mark) : ''}
       <p class="q-text">${esc(q.q)}</p>
@@ -263,7 +276,12 @@
       ${chapterOpts ? `<div class="chapter-filter">
         <label for="chapter">Hoofdstuk</label>
         <select id="chapter"><option value="">Alle hoofdstukken (${total})</option>${chapterOpts}</select>
-      </div>` : ''}`;
+      </div>` : ''}
+      ${P.chapter && P.chapter.id === 'ai' ? aiBannerHtml() : ''}`;
+  }
+
+  function aiBannerHtml() {
+    return `<div class="ai-notice ai-banner">🤖 <strong>Deze vragen zijn gegenereerd door AI</strong> op basis van officiële documenten. Lees altijd het officiële document na: bij elk antwoord staan de bron en de tekst waarop de vraag gebaseerd is.</div>`;
   }
 
   function bindChapterSelect() {
