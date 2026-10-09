@@ -516,5 +516,34 @@
 },
 "665892": {
 "question": "Welke zin gebruikt een piloot om de toren te melden dat hij een doorstart maakt?"
+},
+"665841": {
+"question": "Welke wind verwacht je als de isobaren op een weerkaart ver uit elkaar liggen?",
+"options": {
+"0": "Een kleine drukgradiënt, dus sterke wind",
+"1": "Een kleine drukgradiënt, dus zwakke wind",
+"2": "Een grote drukgradiënt, dus sterke wind",
+"3": "Een grote drukgradiënt, dus zwakke wind"
+}
+},
+"665779": {
+"options": {
+"0": "Heldere-luchtturbulentie (clear air turbulence, CAT)",
+"1": "Rotorturbulentie"
+}
+},
+"666229": {
+"question": "Een stijg- en daalsnelheidsmeter die aangesloten is op een te groot vereffeningsreservoir, geeft…",
+"options": {
+"0": "een te kleine stijg- of daalsnelheid aan",
+"1": "geen aanwijzing",
+"2": "een te grote stijg- of daalsnelheid aan",
+"3": "mechanische overbelasting"
+}
+},
+"665712": {
+"options": {
+"0": "De luchtvaartinlichtingendienst (Aeronautical Information Service, AIS)"
+}
 }
 }
