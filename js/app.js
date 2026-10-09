@@ -293,8 +293,8 @@
   }
 
   // Kaart met de vraag, met de kompasrekenmachine ernaast (breed scherm) of eronder (mobiel).
-  function withCompassCalc(cardHtml, q) {
-    const side = window.COMPASSCALC ? window.COMPASSCALC.html(q) : '';
+  function withCompassCalc(cardHtml, q, context) {
+    const side = window.COMPASSCALC ? window.COMPASSCALC.html(q, context) : '';
     return side
       ? `<div class="qa-layout"><div class="qa-main">${cardHtml}</div><aside class="qa-side">${side}</aside></div>`
       : cardHtml;
@@ -311,7 +311,7 @@
           <a class="btn" href="#/${P.licence.toLowerCase()}">← Vakken</a>
           <div class="btn-row"><button class="btn btn-primary" id="next">${answered ? 'Volgende vraag →' : 'Overslaan →'}</button></div>
         </div>
-      </div>`, P.q);
+      </div>`, P.q, P.subject);
     app.querySelectorAll('.option').forEach(b => b.onclick = () => {
       if (P.chosen !== null) return;
       P.chosen = +b.dataset.i;
@@ -536,7 +536,7 @@
           <a class="btn" href="#/${C.setKey}">← ${esc(SET.groupWord)}</a>
           <button class="btn btn-primary" id="next">${answered ? 'Nieuwe oefening →' : 'Andere oefening →'}</button>
         </div>
-      </div>`, C.q)}`;
+      </div>`, C.q, C.group)}`;
     app.querySelectorAll('.option').forEach(b => b.onclick = () => {
       if (C.chosen !== null) return;
       C.chosen = +b.dataset.i;

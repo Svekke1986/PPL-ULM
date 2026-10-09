@@ -13,10 +13,20 @@ window.COMPASSCALC = (function () {
   const norm = v => ((v % 360) + 360) % 360;
   const rad = d => d * Math.PI / 180;
 
-  // Is dit een vraag waarbij je met graden (richtingen) rekent?
-  function relevant(q) {
+  // Alleen bij vakken/oefeningen waarin je met richtingen rekent.
+  const CONTEXTS = new Set(['navigation', 'flight_performance', 'vor', 'adf', 'rmi']);
+
+  // Is dit een vraag waarbij je met graden (richtingen) moet rekenen?
+  // Nodig: een rekenvraag (getallen in de vraag) met minstens twee richtingen, of een richting samen met
+  // variatie, deviatie, een Q-code, radiaal of peiling. Een losse 'koers' of '30° helling' volstaat niet.
+  function relevant(q, context) {
+    if (q.extra || (context && !CONTEXTS.has(context))) return false;
+    if (['vor', 'adf', 'rmi'].includes(context)) return true; // instrumentoefeningen: altijd met richtingen
     const txt = [q.q, ...(q.o || [])].join(' ');
-    return /\d{1,3}\s*°(?!\s*[CF])/.test(txt) || /\b(QDM|QDR|QTE|QUJ|radiaal|koers|peiling|variatie|deviatie)\b/i.test(q.q);
+    if (!/\d/.test(q.q)) return false;
+    const dirs = new Set((txt.match(/\b\d{3}\s*(?:°(?!\s*[CFNOEWZ]\b)|graden)/g) || []).map(d => parseInt(d, 10)));
+    const kw = /\b(QDM|QDR|QTE|QUJ|radiaal|radial|peiling|variatie|deviatie|kompaskoers|ware koers|magnetische koers|windrichting|wind)\b/i.test(txt);
+    return dirs.size >= 2 || (dirs.size >= 1 && kw);
   }
 
   function compute() {
@@ -82,9 +92,9 @@ window.COMPASSCALC = (function () {
     </svg>`;
   }
 
-  function html(q) {
+  function html(q, context) {
     if (q !== lastQ) { lastQ = q; state.a = ''; state.b = ''; state.op = '+'; }
-    if (!relevant(q)) return '';
+    if (!relevant(q, context)) return '';
     // Breed scherm: naast de vraag, standaard open. Mobiel: eronder, open/dicht zoals de gebruiker het laatst koos.
     let open = window.matchMedia && window.matchMedia('(min-width: 1000px)').matches;
     if (!open) { try { open = localStorage.getItem(OPEN_KEY) === '1'; } catch (e) { /* ignore */ } }
