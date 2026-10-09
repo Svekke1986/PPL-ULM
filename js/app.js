@@ -665,6 +665,24 @@
     });
   }
 
+  // ---------- bezoekersteller (GoatCounter, zonder cookies) ----------
+  // De site gebruikt #/-adressen; daarom tellen we zelf bij elke paginawissel (vak, oefening, examen …).
+  function countView(parts) {
+    const code = window.ANALYTICS && window.ANALYTICS.goatcounter;
+    if (!code) return;
+    const path = '/' + parts.slice(0, 3).join('/');
+    const send = () => window.goatcounter && window.goatcounter.count && window.goatcounter.count({ path, title: document.title });
+    if (window.goatcounter && window.goatcounter.count) return send();
+    if (!document.getElementById('gc-script')) {
+      const sc = document.createElement('script');
+      sc.id = 'gc-script'; sc.async = true; sc.src = 'https://gc.zgo.at/count.js';
+      sc.dataset.goatcounter = `https://${code}.goatcounter.com/count`;
+      sc.dataset.goatcounterSettings = JSON.stringify({ no_onload: true });
+      sc.onload = send;
+      document.head.appendChild(sc);
+    }
+  }
+
   // ---------- router ----------
   function route() {
     if (exam && !exam.done) { stopTimer(); exam = null; } // leaving a running exam
@@ -672,6 +690,7 @@
     const licence = (parts[0] || '').toUpperCase();
     document.querySelectorAll('.topnav a').forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#/' + (parts[0] || '')));
     window.scrollTo(0, 0);
+    countView(parts);
     if (!parts.length) return viewHome();
     if (parts[0] === 'instellingen') return viewSettings();
     if (SETS[parts[0]]) return parts[1] && SETS[parts[0]].api().GENERATORS[parts[1]] ? viewSet(parts[0], parts[1], parts[2]) : viewSetHome(parts[0]);
