@@ -157,6 +157,31 @@
       : err.status === 404 || err.status === 403 ? 'Deze sleutel heeft geen toegang tot de vragen van deze site.'
       : 'Aanmelden mislukt: ' + err.message;
 
+    // ---------- bezoekers (GoatCounter) ----------
+    let visits = null; // null = nog niet geladen; { error } of { total, week, month }
+    async function loadVisits() {
+      const code = window.ANALYTICS && window.ANALYTICS.goatcounter;
+      if (!code) { visits = { error: 'off' }; return; }
+      const day = n => new Date(Date.now() - n * 864e5).toISOString().slice(0, 10);
+      const get = q => fetch(`https://${code}.goatcounter.com/counter/TOTAL.json${q}`).then(r => r.ok ? r.json() : Promise.reject(r.status));
+      try {
+        const [total, month, week] = await Promise.all([get(''), get(`?start=${day(30)}`), get(`?start=${day(7)}`)]);
+        visits = { code, total: total.count, month: month.count, week: week.count };
+      } catch (e) { visits = { code, error: 'api' }; }
+    }
+    function visitsHtml() {
+      if (!visits) return '<div class="card"><strong>📊 Bezoekers</strong> <span class="muted">laden…</span></div>';
+      if (visits.error === 'off') return '<div class="card"><strong>📊 Bezoekers</strong><p class="muted small">De bezoekersteller staat nog niet aan (js/config.js → ANALYTICS.goatcounter).</p></div>';
+      const link = `<a href="https://${esc(visits.code)}.goatcounter.com" target="_blank" rel="noopener">Volledig overzicht op GoatCounter</a>`;
+      if (visits.error) return `<div class="card"><strong>📊 Bezoekers</strong><p class="muted small">Cijfers niet beschikbaar. Zet in GoatCounter bij <em>Settings</em> de optie <em>“Allow adding visitor counts on your website”</em> aan. ${link}</p></div>`;
+      return `<div class="card"><strong>📊 Bezoekers</strong> <span class="muted small">(bezoeken)</span>
+        <div class="grid2" style="grid-template-columns:repeat(3,1fr);margin-top:8px">
+          <div><div class="muted small">Laatste 7 dagen</div><strong>${esc(visits.week)}</strong></div>
+          <div><div class="muted small">Laatste 30 dagen</div><strong>${esc(visits.month)}</strong></div>
+          <div><div class="muted small">Totaal</div><strong>${esc(visits.total)}</strong></div>
+        </div><p class="small" style="margin:8px 0 0">${link}</p></div>`;
+    }
+
     async function start() {
       app.innerHTML = '<p class="muted">Vragen laden…</p>';
       await load();
@@ -164,6 +189,7 @@
       await Promise.all(needed.map(async k => { docs[k] = await fetch(DOCS[k].url).then(r => r.ok ? r.json() : null).catch(() => null); }));
       document.getElementById('logout').hidden = false;
       render();
+      loadVisits().then(() => { const el = document.getElementById('visits'); if (el) el.innerHTML = visitsHtml(); });
     }
 
     function lawHtml(q) {
@@ -209,6 +235,7 @@
       const shown = list.filter(q => q.status === tab && (!basis || (q.basis || 'eigen vraag') === basis));
       app.innerHTML = `<h1>🔑 Vragenbeheer</h1>
         <p class="muted">Aangemeld als <strong>${esc(auth.name)}</strong>. Goedgekeurde vragen verschijnen na het opslaan binnen een paar minuten op de site, als “aanvullende vraag”.</p>
+        <div id="visits">${visitsHtml()}</div>
         ${message ? `<div class="msg ${message.ok ? 'ok' : 'bad'}">${esc(message.text)}</div>` : ''}
         <div class="tabs">${Object.entries(STATUS).map(([s, label]) =>
           `<button class="btn btn-small ${tab === s ? 'active' : ''}" data-tab="${s}">${label} (${counts[s]})</button>`).join('')}

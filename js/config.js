@@ -1,6 +1,10 @@
 // Configuratie van licenties, vakken, examenparameters en bronnen.
 // Pas hier het aantal vragen / de examentijd aan als de BCAA/DGLV iets wijzigt.
 
+// Bezoekersteller: GoatCounter (gratis, zonder cookies of persoonsgegevens). Vul de naam van het
+// GoatCounter-account in (bv. 'ppl-ulm' voor ppl-ulm.goatcounter.com); leeg = geen teller.
+window.ANALYTICS = { goatcounter: '' };
+
 window.SUBJECTS = {
   air_law:                { code: '10', name: 'Luchtvaartwetgeving', en: 'Air Law', icon: '⚖️' },
   human_performance:      { code: '20', name: 'Menselijke prestaties', en: 'Human Performance', icon: '🧠' },
