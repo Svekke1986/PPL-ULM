@@ -1954,7 +1954,7 @@ window.EXTRA_QUESTIONS = [
    "Geen enkele eis, zolang het vliegzicht minstens 5 km is"
   ],
   "c": 0,
-  "e": "Buiten de wolken blijven met het aardoppervlak in zicht (clear of cloud and with the surface in sight). Dat is het minimum in klasse F en G op of onder 3 000 ft AMSL of 1 000 ft boven het terrein, als dat hoger is.\n\n**Wat zegt SERA?**\nIn de onderste band van tabel S5-1 gelden voor klasse F en G geen vaste afstanden tot de wolken. Je moet wel buiten de wolken blijven en de grond blijven zien. Het vliegzicht moet in principe 5 km zijn.\n\n**Valkuil:**\n1 500 m horizontaal en 1 000 ft verticaal geldt in klasse B tot E, en in alle klassen boven 3 000 ft AMSL/1 000 ft boven het terrein. Laag in klasse G is de regel soepeler, maar je moet de grond blijven zien.",
+  "e": "Buiten de wolken blijven met het aardoppervlak in zicht (clear of cloud and with the surface in sight). Dat is het minimum in klasse F en G op of onder 3 000 ft AMSL of 1 000 ft boven het terrein, als dat hoger is.\n\n**Wat zegt SERA?**\nIn de onderste band van de VMC-tabel van SERA (minimumzicht en afstand tot de wolken per luchtruimklasse en hoogte) gelden voor klasse F en G geen vaste afstanden tot de wolken. Je moet wel buiten de wolken blijven en de grond blijven zien. Het vliegzicht moet in principe 5 km zijn.\n\n**Valkuil:**\n1 500 m horizontaal en 1 000 ft verticaal geldt in klasse B tot E, en in alle klassen boven 3 000 ft AMSL/1 000 ft boven het terrein. Laag in klasse G is de regel soepeler, maar je moet de grond blijven zien.",
   "src": "sera",
   "ref": "SERA.5001 – VMC-zicht- en wolkenafstandsminima",
   "doc": "sera",
@@ -1983,7 +1983,7 @@ window.EXTRA_QUESTIONS = [
    "De minima van de onderste band gelden alleen boven water, dus hier gelden 1 500 m en 1 000 ft"
   ],
   "c": 0,
-  "e": "Je zit in de onderste band, dus geldt buiten de wolken en met het aardoppervlak in zicht. De grens ligt op 3 000 ft AMSL of op 1 000 ft boven het terrein, als dat hoger is. Hier is dat 2 500 + 1 000 = 3 500 ft AMSL.\n\n**Wat zegt SERA?**\nDe onderste band van tabel S5-1 loopt tot 900 m (3 000 ft) AMSL of 300 m (1 000 ft) boven het terrein, als dat hoger is (whichever is the higher).\n\n**In de praktijk:**\nBoven heuvelachtig terrein ligt de grens hoger dan 3 000 ft AMSL. Reken ze dus altijd uit met de terreinhoogte onder je.\n\n**Valkuil:**\nAlleen naar 3 000 ft AMSL kijken is fout: de hoogste van de twee waarden telt.",
+  "e": "Je zit in de onderste band, dus geldt buiten de wolken en met het aardoppervlak in zicht. De grens ligt op 3 000 ft AMSL of op 1 000 ft boven het terrein, als dat hoger is. Hier is dat 2 500 + 1 000 = 3 500 ft AMSL.\n\n**Wat zegt SERA?**\nDe onderste band van de VMC-tabel van SERA (minimumzicht en afstand tot de wolken per luchtruimklasse en hoogte) loopt tot 900 m (3 000 ft) AMSL of 300 m (1 000 ft) boven het terrein, als dat hoger is (whichever is the higher).\n\n**In de praktijk:**\nBoven heuvelachtig terrein ligt de grens hoger dan 3 000 ft AMSL. Reken ze dus altijd uit met de terreinhoogte onder je.\n\n**Valkuil:**\nAlleen naar 3 000 ft AMSL kijken is fout: de hoogste van de twee waarden telt.",
   "src": "sera",
   "ref": "SERA.5001 – VMC-zicht- en wolkenafstandsminima",
   "doc": "sera",
@@ -2012,7 +2012,7 @@ window.EXTRA_QUESTIONS = [
    "Niet minder dan 3 km, bij 100 kt IAS of minder"
   ],
   "c": 0,
-  "e": "Niet minder dan 1 500 m, bij 140 kt IAS of minder. Zo heb je genoeg tijd om ander verkeer en hindernissen op tijd te zien.\n\n**Wat zegt SERA?**\nVoetnoot (***) bij tabel S5-1: als de bevoegde autoriteit het voorschrijft, mag het vliegzicht in klasse F en G in de onderste band dalen tot niet minder dan 1 500 m. Dat kan bij een snelheid van 140 kt IAS of minder, of waar je weinig ander verkeer kunt verwachten (bv. luchtwerk op lage hoogte).\n\n**Valkuil:**\n800 m is de ondergrens voor helikopters, niet voor vliegtuigen. 250 kt is de algemene snelheidsbeperking onder 10 000 ft, geen voorwaarde voor verminderd zicht.\n\n**In de praktijk:**\nDit geldt alleen als de autoriteit het toestaat. Kijk in de AIP wat in België geldt.",
+  "e": "Niet minder dan 1 500 m, bij 140 kt IAS of minder. Zo heb je genoeg tijd om ander verkeer en hindernissen op tijd te zien.\n\n**Wat zegt SERA?**\nVoetnoot (***) bij de VMC-tabel van SERA (minimumzicht en afstand tot de wolken per luchtruimklasse en hoogte): als de bevoegde autoriteit het voorschrijft, mag het vliegzicht in klasse F en G in de onderste band dalen tot niet minder dan 1 500 m. Dat kan bij een snelheid van 140 kt IAS of minder, of waar je weinig ander verkeer kunt verwachten (bv. luchtwerk op lage hoogte).\n\n**Valkuil:**\n800 m is de ondergrens voor helikopters, niet voor vliegtuigen. 250 kt is de algemene snelheidsbeperking onder 10 000 ft, geen voorwaarde voor verminderd zicht.\n\n**In de praktijk:**\nDit geldt alleen als de autoriteit het toestaat. Kijk in de AIP wat in België geldt.",
   "src": "sera",
   "ref": "SERA.5001 – VMC-zicht- en wolkenafstandsminima",
   "doc": "sera",
@@ -2033,7 +2033,7 @@ window.EXTRA_QUESTIONS = [
   "lo": "SERA",
   "loText": "",
   "basis": "SERA",
-  "q": "In tabel S5-1 wijzigt het vereiste vliegzicht op 10 000 ft AMSL. Waar ligt die grens als de overgangshoogte (transition altitude) lager is dan 10 000 ft, zoals in België?",
+  "q": "In de VMC-tabel van SERA (minimumzicht en afstand tot de wolken per luchtruimklasse en hoogte) wijzigt het vereiste vliegzicht op 10 000 ft AMSL. Waar ligt die grens als de overgangshoogte (transition altitude) lager is dan 10 000 ft, zoals in België?",
   "o": [
    "Op FL 100",
    "Op 10 000 ft met de QNH ingesteld",
@@ -2041,7 +2041,7 @@ window.EXTRA_QUESTIONS = [
    "Op FL 095"
   ],
   "c": 0,
-  "e": "Op FL 100. Ligt de overgangshoogte lager dan 10 000 ft AMSL, dan gebruik je FL 100 in plaats van 10 000 ft.\n\n**Wat zegt SERA?**\nVoetnoot (*) bij tabel S5-1: is de overgangshoogte lager dan 3 050 m (10 000 ft) AMSL, dan geldt FL 100 in plaats van 10 000 ft.\n\n**In de praktijk:**\nIn België ligt de overgangshoogte ver onder 10 000 ft. Boven de overgangshoogte vlieg je op 1013,25 hPa. De grens tussen 5 km en 8 km vliegzicht is dus een vliegniveau, geen altitude op QNH.\n\n**Valkuil:**\nDe grens valt niet samen met de overgangshoogte. Die bepaalt alleen vanaf waar je in vliegniveaus vliegt.",
+  "e": "Op FL 100. Ligt de overgangshoogte lager dan 10 000 ft AMSL, dan gebruik je FL 100 in plaats van 10 000 ft.\n\n**Wat zegt SERA?**\nVoetnoot (*) bij de VMC-tabel: is de overgangshoogte lager dan 3 050 m (10 000 ft) AMSL, dan geldt FL 100 in plaats van 10 000 ft.\n\n**In de praktijk:**\nIn België ligt de overgangshoogte ver onder 10 000 ft. Boven de overgangshoogte vlieg je op 1013,25 hPa. De grens tussen 5 km en 8 km vliegzicht is dus een vliegniveau, geen altitude op QNH.\n\n**Valkuil:**\nDe grens valt niet samen met de overgangshoogte. Die bepaalt alleen vanaf waar je in vliegniveaus vliegt.",
   "src": "sera",
   "ref": "SERA.5001 – VMC-zicht- en wolkenafstandsminima",
   "doc": "sera",
@@ -2062,7 +2062,7 @@ window.EXTRA_QUESTIONS = [
   "lo": "SERA",
   "loText": "",
   "basis": "SERA",
-  "q": "Tabel S5-1 vermeldt ook VMC-minima voor klasse A. Wat betekent dat voor een VFR-vlucht?",
+  "q": "De VMC-tabel van SERA (minimumzicht en afstand tot de wolken per luchtruimklasse en hoogte) vermeldt ook VMC-minima voor klasse A. Wat betekent dat voor een VFR-vlucht?",
   "o": [
    "Niets: die minima zijn alleen ter informatie, VFR-vluchten zijn in klasse A niet toegelaten",
    "VFR is in klasse A toegelaten als je die minima naleeft en een klaring hebt",
@@ -2070,7 +2070,7 @@ window.EXTRA_QUESTIONS = [
    "VFR is in klasse A alleen boven FL 195 toegelaten"
   ],
   "c": 0,
-  "e": "Niets: de VMC-minima voor klasse A staan er alleen ter informatie voor piloten. Ze betekenen niet dat VFR-vluchten in klasse A aanvaard worden.\n\n**Wat zegt SERA?**\nVoetnoot (**) bij tabel S5-1 zegt dit uitdrukkelijk. In de luchtruimclassificatie staat bovendien dat in klasse A alleen IFR-vluchten zijn toegestaan.\n\n**Waarom staan ze er dan?**\nOok een IFR-piloot kan VMC nodig hebben, bijvoorbeeld om zelf visueel separatie te houden of om een visuele nadering te vliegen.\n\n**Valkuil:**\nEen klaring maakt een VFR-vlucht in klasse A niet mogelijk. In klasse B, C en D maakt een klaring dat wel.",
+  "e": "Niets: de VMC-minima voor klasse A staan er alleen ter informatie voor piloten. Ze betekenen niet dat VFR-vluchten in klasse A aanvaard worden.\n\n**Wat zegt SERA?**\nVoetnoot (**) bij de VMC-tabel zegt dit uitdrukkelijk. In de luchtruimclassificatie staat bovendien dat in klasse A alleen IFR-vluchten zijn toegestaan.\n\n**Waarom staan ze er dan?**\nOok een IFR-piloot kan VMC nodig hebben, bijvoorbeeld om zelf visueel separatie te houden of om een visuele nadering te vliegen.\n\n**Valkuil:**\nEen klaring maakt een VFR-vlucht in klasse A niet mogelijk. In klasse B, C en D maakt een klaring dat wel.",
   "src": "sera",
   "ref": "SERA.5001 – VMC-zicht- en wolkenafstandsminima",
   "doc": "sera",
@@ -2099,7 +2099,7 @@ window.EXTRA_QUESTIONS = [
    "1 000 m horizontaal en 1 000 ft verticaal van de wolken, bij minstens 8 km vliegzicht"
   ],
   "c": 0,
-  "e": "1 500 m horizontaal en 1 000 ft (300 m) verticaal van de wolken, bij minstens 5 km vliegzicht. Boven 3 000 ft AMSL (of 1 000 ft boven het terrein) gelden die waarden ook in klasse G.\n\n**Wat zegt SERA?**\nIn de band tussen 3 000 ft AMSL/1 000 ft boven het terrein en 10 000 ft AMSL (FL 100) is tabel S5-1 voor alle klassen gelijk: 5 km vliegzicht, 1 500 m horizontaal en 300 m (1 000 ft) verticaal.\n\n**Valkuil:**\nBuiten de wolken met zicht op de grond is alleen genoeg in klasse F en G onder die grens. Klim je in klasse G boven 3 000 ft, dan moet je meer afstand tot de wolken houden.\n\n**In de praktijk:**\nLigt de wolkenbasis op 5 000 ft, dan is 4 000 ft de hoogste altitude die je VFR mag aanhouden.",
+  "e": "1 500 m horizontaal en 1 000 ft (300 m) verticaal van de wolken, bij minstens 5 km vliegzicht. Boven 3 000 ft AMSL (of 1 000 ft boven het terrein) gelden die waarden ook in klasse G.\n\n**Wat zegt SERA?**\nIn de band tussen 3 000 ft AMSL/1 000 ft boven het terrein en 10 000 ft AMSL (FL 100) is de VMC-tabel van SERA (minimumzicht en afstand tot de wolken per luchtruimklasse en hoogte) voor alle klassen gelijk: 5 km vliegzicht, 1 500 m horizontaal en 300 m (1 000 ft) verticaal.\n\n**Valkuil:**\nBuiten de wolken met zicht op de grond is alleen genoeg in klasse F en G onder die grens. Klim je in klasse G boven 3 000 ft, dan moet je meer afstand tot de wolken houden.\n\n**In de praktijk:**\nLigt de wolkenbasis op 5 000 ft, dan is 4 000 ft de hoogste altitude die je VFR mag aanhouden.",
   "src": "sera",
   "ref": "SERA.5001 – VMC-zicht- en wolkenafstandsminima",
   "doc": "sera",
@@ -2215,7 +2215,7 @@ window.EXTRA_QUESTIONS = [
    "900 m (3 000 ft)"
   ],
   "c": 0,
-  "e": "450 m (1 500 ft). Voor VFR 's nachts gelden de minima van tabel S5-1, maar de wolkenbasis mag niet lager zijn dan 1 500 ft.\n\n**Wat zegt SERA?**\nAls de bevoegde autoriteit VFR bij nacht toestaat, gelden de VMC-minima van tabel S5-1 met extra eisen: een wolkenbasis van minstens 1 500 ft, geen verminderd vliegzicht, en zicht op de grond onder 3 000 ft AMSL/1 000 ft boven het terrein.\n\n**Valkuil:**\n1 000 ft is de minimale hoogte boven de hoogste hindernis 's nachts (binnen 8 km). Dat is een andere regel dan de minimale wolkenbasis.\n\n**In de praktijk:**\nBij een wolkenbasis van 1 000 ft OVC is een nachtelijke VFR-vlucht niet toegelaten, ook al is het zicht uitstekend.",
+  "e": "450 m (1 500 ft). Voor VFR 's nachts gelden de minima van de VMC-tabel van SERA (minimumzicht en afstand tot de wolken per luchtruimklasse en hoogte), maar de wolkenbasis mag niet lager zijn dan 1 500 ft.\n\n**Wat zegt SERA?**\nAls de bevoegde autoriteit VFR bij nacht toestaat, gelden de VMC-minima van de VMC-tabel met extra eisen: een wolkenbasis van minstens 1 500 ft, geen verminderd vliegzicht, en zicht op de grond onder 3 000 ft AMSL/1 000 ft boven het terrein.\n\n**Valkuil:**\n1 000 ft is de minimale hoogte boven de hoogste hindernis 's nachts (binnen 8 km). Dat is een andere regel dan de minimale wolkenbasis.\n\n**In de praktijk:**\nBij een wolkenbasis van 1 000 ft OVC is een nachtelijke VFR-vlucht niet toegelaten, ook al is het zicht uitstekend.",
   "src": "sera",
   "ref": "SERA.5005 – Zichtvliegvoorschriften (VFR)",
   "doc": "sera",
@@ -2244,7 +2244,7 @@ window.EXTRA_QUESTIONS = [
    "3 km, met het aardoppervlak in zicht"
   ],
   "c": 0,
-  "e": "5 km. 's Nachts gelden de uitzonderingen voor verminderd vliegzicht uit tabel S5-1 (tot 1 500 m voor vliegtuigen en 800 m voor helikopters) niet.\n\n**Wat zegt SERA?**\nBij VFR bij nacht gelden de VMC-minima van tabel S5-1, met als uitzondering dat de bepalingen over verminderd vliegzicht in (a) en (b) niet van toepassing zijn.\n\n**Valkuil:**\nOverdag kan de autoriteit in klasse F/G laag 1 500 m toestaan bij 140 kt IAS of minder. 's Nachts kan dat niet, ook al vlieg je traag.\n\n**In de praktijk:**\nBij nevel of mist 's nachts zie je lichten van ver nog goed, maar het terrein en de hindernissen niet. Daarom is er 's nachts geen versoepeling.",
+  "e": "5 km. 's Nachts gelden de uitzonderingen voor verminderd vliegzicht uit de VMC-tabel van SERA (minimumzicht en afstand tot de wolken per luchtruimklasse en hoogte) (tot 1 500 m voor vliegtuigen en 800 m voor helikopters) niet.\n\n**Wat zegt SERA?**\nBij VFR bij nacht gelden de VMC-minima van de VMC-tabel, met als uitzondering dat de bepalingen over verminderd vliegzicht in (a) en (b) niet van toepassing zijn.\n\n**Valkuil:**\nOverdag kan de autoriteit in klasse F/G laag 1 500 m toestaan bij 140 kt IAS of minder. 's Nachts kan dat niet, ook al vlieg je traag.\n\n**In de praktijk:**\nBij nevel of mist 's nachts zie je lichten van ver nog goed, maar het terrein en de hindernissen niet. Daarom is er 's nachts geen versoepeling.",
   "src": "sera",
   "ref": "SERA.5005 – Zichtvliegvoorschriften (VFR)",
   "doc": "sera",
@@ -3172,7 +3172,7 @@ window.EXTRA_QUESTIONS = [
    "Berichten in verband met radiopeiling (direction finding)"
   ],
   "c": 0,
-  "e": "De vluchtregelmatigheidsberichten (flight regularity messages) staan helemaal onderaan in de prioriteitsvolgorde.\n\n**Wat zegt SERA?**\nTabel S14-1 geeft de volgorde: noodberichten (MAYDAY), spoedberichten (PAN PAN), radiopeiling, vluchtveiligheidsberichten, meteorologische berichten en als laatste vluchtregelmatigheidsberichten.\n\n**In de praktijk:**\nVluchtregelmatigheidsberichten gaan over de regelmaat van de operatie, niet over de veiligheid van een vlucht. Ze moeten daarom altijd wijken voor berichten met een hogere prioriteit.\n\n**Valkuil:**\nMeteorologische berichten lijken minder dringend, maar ze komen nog vóór de vluchtregelmatigheidsberichten.",
+  "e": "De vluchtregelmatigheidsberichten (flight regularity messages) staan helemaal onderaan in de prioriteitsvolgorde.\n\n**Wat zegt SERA?**\nDe lijst met berichtcategorieën in SERA geeft de volgorde: noodberichten (MAYDAY), spoedberichten (PAN PAN), radiopeiling, vluchtveiligheidsberichten, meteorologische berichten en als laatste vluchtregelmatigheidsberichten.\n\n**In de praktijk:**\nVluchtregelmatigheidsberichten gaan over de regelmaat van de operatie, niet over de veiligheid van een vlucht. Ze moeten daarom altijd wijken voor berichten met een hogere prioriteit.\n\n**Valkuil:**\nMeteorologische berichten lijken minder dringend, maar ze komen nog vóór de vluchtregelmatigheidsberichten.",
   "src": "sera14",
   "ref": "SERA.14005 – Categorieën van berichten",
   "doc": "sera",
@@ -3259,7 +3259,7 @@ window.EXTRA_QUESTIONS = [
    "Alleen wanneer de verkeersleider uitdrukkelijk WORDS TWICE vraagt"
   ],
   "c": 0,
-  "e": "Het spellingsalfabet gebruik je om eigennamen, dienstafkortingen en woorden met een twijfelachtige spelling uit te spellen.\n\n**Wat zegt SERA?**\nTabel S14-2 legt het alfabet vast, met de benaderende uitspraak, bv. Alfa (AL FAH), Juliett (JEW LEE ETT), Quebec (KEH BECK).\n\n**In de praktijk:**\nJe spelt bijvoorbeeld de naam van een klein veld of een meldpunt dat de verkeersleider niet kent. De tekens van een roepnaam van type (a) spreek je ook met het spellingsalfabet uit.\n\n**Valkuil:**\nDe roepnaam is maar één van de toepassingen. Bij een slechte leesbaarheid spel je ook niet elk woord: daarvoor bestaat de uitdrukking WORDS TWICE.",
+  "e": "Het spellingsalfabet gebruik je om eigennamen, dienstafkortingen en woorden met een twijfelachtige spelling uit te spellen.\n\n**Wat zegt SERA?**\nSERA legt het alfabet vast, met de benaderende uitspraak, bv. Alfa (AL FAH), Juliett (JEW LEE ETT), Quebec (KEH BECK).\n\n**In de praktijk:**\nJe spelt bijvoorbeeld de naam van een klein veld of een meldpunt dat de verkeersleider niet kent. De tekens van een roepnaam van type (a) spreek je ook met het spellingsalfabet uit.\n\n**Valkuil:**\nDe roepnaam is maar één van de toepassingen. Bij een slechte leesbaarheid spel je ook niet elk woord: daarvoor bestaat de uitdrukking WORDS TWICE.",
   "src": "sera14",
   "ref": "SERA.14020 – Spellen in radiotelefonie",
   "doc": "sera",
@@ -3462,7 +3462,7 @@ window.EXTRA_QUESTIONS = [
    "Ja, dat is correct"
   ],
   "c": 0,
-  "e": "WILCO is de afkorting van will comply: ik heb je bericht begrepen en zal het uitvoeren.\n\n**Wat zegt SERA?**\nTabel S14-4 geeft de betekenis van de standaardwoorden: WILCO betekent dat je het bericht begrijpt en het zult opvolgen; ROGER betekent alleen dat je de laatste uitzending volledig hebt ontvangen; AFFIRM betekent ja.\n\n**In de praktijk:**\nWILCO gebruik je bv. na REPORT RIGHT BASE: je hebt het begrepen en zult het doen. Voor klaringen en items die je moet terugherhalen volstaat WILCO niet: daar herhaal je de inhoud terug.\n\n**Valkuil:**\nROGER zegt niets over het uitvoeren van een opdracht; alleen WILCO bevestigt dat je zult gehoorzamen.",
+  "e": "WILCO is de afkorting van will comply: ik heb je bericht begrepen en zal het uitvoeren.\n\n**Wat zegt SERA?**\nIn de lijst met standaardwoorden van SERA: WILCO betekent dat je het bericht begrijpt en het zult opvolgen; ROGER betekent alleen dat je de laatste uitzending volledig hebt ontvangen; AFFIRM betekent ja.\n\n**In de praktijk:**\nWILCO gebruik je bv. na REPORT RIGHT BASE: je hebt het begrepen en zult het doen. Voor klaringen en items die je moet terugherhalen volstaat WILCO niet: daar herhaal je de inhoud terug.\n\n**Valkuil:**\nROGER zegt niets over het uitvoeren van een opdracht; alleen WILCO bevestigt dat je zult gehoorzamen.",
   "src": "sera14",
   "ref": "SERA.14045 – Zendtechniek (standaardwoorden)",
   "doc": "sera",
@@ -3491,7 +3491,7 @@ window.EXTRA_QUESTIONS = [
    "Je moet overschakelen naar een andere frequentie en daar opnieuw oproepen"
   ],
   "c": 0,
-  "e": "STANDBY betekent: wacht, ik roep je terug. Het is uitdrukkelijk geen toestemming en geen weigering.\n\n**Wat zegt SERA?**\nIn tabel S14-4 betekent STANDBY 'Wait and I will call you'. De GM voegt toe dat STANDBY geen goedkeuring of weigering is, en dat de oproeper normaal opnieuw contact opneemt als het wachten lang duurt.\n\n**In de praktijk:**\nBlijf buiten de CTR (bv. in een wachtpatroon buiten de grens) tot je effectief een klaring krijgt. Duurt het erg lang, roep dan beleefd opnieuw op.\n\n**Valkuil:**\nWie STANDBY als impliciete toestemming leest, vliegt zonder klaring gecontroleerd luchtruim binnen.",
+  "e": "STANDBY betekent: wacht, ik roep je terug. Het is uitdrukkelijk geen toestemming en geen weigering.\n\n**Wat zegt SERA?**\nIn de lijst met standaardwoorden van SERA betekent STANDBY 'Wait and I will call you'. De GM voegt toe dat STANDBY geen goedkeuring of weigering is, en dat de oproeper normaal opnieuw contact opneemt als het wachten lang duurt.\n\n**In de praktijk:**\nBlijf buiten de CTR (bv. in een wachtpatroon buiten de grens) tot je effectief een klaring krijgt. Duurt het erg lang, roep dan beleefd opnieuw op.\n\n**Valkuil:**\nWie STANDBY als impliciete toestemming leest, vliegt zonder klaring gecontroleerd luchtruim binnen.",
   "src": "sera14",
   "ref": "SERA.14045 – Zendtechniek (GM7: STANDBY)",
   "doc": "sera",
@@ -3520,7 +3520,7 @@ window.EXTRA_QUESTIONS = [
    "Je bevestigt en vraagt eerst toestemming om de frequentie te verlaten"
   ],
   "c": 0,
-  "e": "MONITOR betekent: luister uit op die frequentie. Je schakelt over en luistert, maar je roept niet zelf op.\n\n**Wat zegt SERA?**\nIn tabel S14-4 betekent MONITOR 'Listen out on (frequency)' en CONTACT 'Establish communications with...'. De fraseologie vermeldt dat een luchtvaartuig gevraagd kan worden een frequentie te 'monitoren' wanneer er informatie op wordt uitgezonden.\n\n**In de praktijk:**\nNa MONITOR wacht je tot het station jou oproept. Na CONTACT moet je zelf de eerste oproep doen.\n\n**Valkuil:**\nWie na MONITOR toch oproept, belast de frequentie onnodig; het verschil met CONTACT zit net in wie het contact legt.",
+  "e": "MONITOR betekent: luister uit op die frequentie. Je schakelt over en luistert, maar je roept niet zelf op.\n\n**Wat zegt SERA?**\nIn de lijst met standaardwoorden van SERA betekent MONITOR 'Listen out on (frequency)' en CONTACT 'Establish communications with...'. De fraseologie vermeldt dat een luchtvaartuig gevraagd kan worden een frequentie te 'monitoren' wanneer er informatie op wordt uitgezonden.\n\n**In de praktijk:**\nNa MONITOR wacht je tot het station jou oproept. Na CONTACT moet je zelf de eerste oproep doen.\n\n**Valkuil:**\nWie na MONITOR toch oproept, belast de frequentie onnodig; het verschil met CONTACT zit net in wie het contact legt.",
   "src": "sera14",
   "ref": "SERA.14045 – Zendtechniek (standaardwoorden)",
   "doc": "sera",
