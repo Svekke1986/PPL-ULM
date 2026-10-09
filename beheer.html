@@ -54,7 +54,12 @@
     'use strict';
     const REPO = 'Svekke1986/PPL-ULM', BRANCH = 'main', FILE = 'js/extra.js';
     const API = `https://api.github.com/repos/${REPO}/contents/${FILE}`;
-    const KB_URL = 'sources/ulm/kb-2024-12-20-ulm.json';
+    // Wetteksten waarnaar een vraag kan verwijzen (veld "doc"; zonder doc = KB ULM).
+    const DOCS = {
+      kb: { url: 'sources/ulm/kb-2024-12-20-ulm.json', list: d => d.artikelen, key: a => String(a.artikel), label: a => `art. ${a.artikel} (${a.hoofdstuk || ''})` },
+      sera: { url: 'sources/easa/sera.json', list: d => d.bepalingen, key: a => a.id, label: a => `${a.id} ${a.titel || ''} (SERA, geconsolideerd)` },
+      sera2012: { url: 'sources/eu/sera-923-2012-oorspronkelijk.json', list: d => d.bepalingen, key: a => a.id, label: a => `${a.id} ${a.titel || ''} (SERA, oorspronkelijke tekst 2012)` }
+    };
     const SUBJECTS = window.SUBJECTS;
     const app = document.getElementById('app'), bar = document.getElementById('savebar');
     const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -67,7 +72,7 @@
       clear() { try { localStorage.removeItem('pplulm.beheer'); sessionStorage.removeItem('pplulm.beheer'); } catch (e) { /* */ } }
     };
 
-    let auth = null, sha = null, list = [], original = '', kb = null, tab = 'pending', message = null;
+    let auth = null, sha = null, list = [], original = '', docs = {}, tab = 'pending', basis = '', message = null;
 
     // ---------- GitHub ----------
     const b64decode = b64 => new TextDecoder().decode(Uint8Array.from(atob(b64.replace(/\s/g, '')), c => c.charCodeAt(0)));
@@ -155,18 +160,20 @@
     async function start() {
       app.innerHTML = '<p class="muted">Vragen laden…</p>';
       await load();
-      if (!kb) kb = await fetch(KB_URL).then(r => r.ok ? r.json() : null).catch(() => null);
+      const needed = [...new Set(list.filter(q => q.art).map(q => q.doc || 'kb'))].filter(k => DOCS[k] && !(k in docs));
+      await Promise.all(needed.map(async k => { docs[k] = await fetch(DOCS[k].url).then(r => r.ok ? r.json() : null).catch(() => null); }));
       document.getElementById('logout').hidden = false;
       render();
     }
 
     function lawHtml(q) {
-      if (!kb || !q.art) return '';
-      const a = kb.artikelen.find(x => x.artikel === Number(q.art));
+      const D = DOCS[q.doc || 'kb'], data = docs[q.doc || 'kb'];
+      if (!D || !data || !q.art) return '';
+      const a = D.list(data).find(x => D.key(x) === String(q.art));
       if (!a) return '';
       let text = esc(a.tekst);
       if (q.citaat && a.tekst.includes(q.citaat)) text = text.replace(esc(q.citaat), `<mark>${esc(q.citaat)}</mark>`);
-      return `<details><summary>📜 Wettekst: art. ${a.artikel} (${esc(a.hoofdstuk || '')})</summary><div class="law">${text}</div></details>`;
+      return `<details><summary>📜 Wettekst: ${esc(D.label(a))}</summary><div class="law">${text}</div></details>`;
     }
 
     function cardHtml(q) {
@@ -196,13 +203,17 @@
 
     function render() {
       const counts = Object.fromEntries(Object.keys(STATUS).map(s => [s, list.filter(q => q.status === s).length]));
-      const shown = list.filter(q => q.status === tab);
+      const bases = [...new Set(list.map(q => q.basis || 'eigen vraag'))].sort();
+      const shown = list.filter(q => q.status === tab && (!basis || (q.basis || 'eigen vraag') === basis));
       app.innerHTML = `<h1>🔑 Vragenbeheer</h1>
         <p class="muted">Aangemeld als <strong>${esc(auth.name)}</strong>. Goedgekeurde vragen verschijnen na het opslaan binnen een paar minuten op de site, als “aanvullende vraag”.</p>
         ${message ? `<div class="msg ${message.ok ? 'ok' : 'bad'}">${esc(message.text)}</div>` : ''}
         <div class="tabs">${Object.entries(STATUS).map(([s, label]) =>
           `<button class="btn btn-small ${tab === s ? 'active' : ''}" data-tab="${s}">${label} (${counts[s]})</button>`).join('')}
-          <button class="btn btn-small" id="new">＋ Nieuwe vraag</button></div>
+          <button class="btn btn-small" id="new">＋ Nieuwe vraag</button>
+          <select id="basis" aria-label="Bron"><option value="">Alle bronnen</option>${bases.map(b =>
+            `<option ${b === basis ? 'selected' : ''}>${esc(b)}</option>`).join('')}</select></div>
+        ${basis ? `<p class="muted small">${shown.length} vragen met bron ${esc(basis)} in deze lijst.</p>` : ''}
         ${shown.length ? shown.map(cardHtml).join('') : '<p class="muted">Geen vragen in deze lijst.</p>'}`;
       renderBar();
     }
@@ -227,6 +238,7 @@
 
     // ---------- Gebeurtenissen ----------
     const byId = id => list.find(q => q.id === id);
+    app.addEventListener('change', e => { if (e.target.id === 'basis') { basis = e.target.value; message = null; render(); } });
     app.addEventListener('input', e => {
       const card = e.target.closest('.qcard'); if (!card) return;
       const q = byId(card.dataset.id), f = e.target.dataset.f;
