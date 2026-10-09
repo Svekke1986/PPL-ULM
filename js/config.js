@@ -107,8 +107,7 @@ window.CHAPTERS = {
     { id: 'ats', name: 'Luchtverkeersdiensten & luchtruim', prefixes: ['10.7'] },
     { id: 'ais', name: 'Luchtvaartinformatie (AIP, NOTAM)', prefixes: ['10.8'] },
     { id: 'ad', name: 'Vliegvelden, markeringen & seinen', prefixes: ['10.9'] },
-    { id: 'sar', name: 'Opsporing & redding, ongevallenonderzoek', prefixes: ['10.10', '10.11', '10.12'] },
-    { id: 'ulm', name: 'ULM-regelgeving (KB 20/12/2024)', prefixes: ['KB'] }
+    { id: 'sar', name: 'Opsporing & redding, ongevallenonderzoek', prefixes: ['10.10', '10.11', '10.12'] }
   ],
   human_performance: [
     { id: 'atm', name: 'Atmosfeer, zuurstof & hypoxie', prefixes: ['20.1', '20.2.1'] },
@@ -176,6 +175,11 @@ window.CHAPTERS = {
     { id: 'radio', name: 'Radionavigatie (VDF, ADF, VOR, DME, radar)', prefixes: ['92.2', '92.3', '92.4'] }
   ]
 };
+
+// Door AI opgestelde (en nagekeken) aanvullende vragen krijgen in elk vak een eigen categorie.
+Object.keys(window.SUBJECTS).forEach(subject => {
+  (window.CHAPTERS[subject] = window.CHAPTERS[subject] || []).push({ id: 'ai', name: '🤖 AI-gegenereerde vragen', prefixes: ['AI'] });
+});
 
 window.chapterOf = function (subject, lo) {
   let best = null, len = -1;
