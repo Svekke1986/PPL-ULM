@@ -429,7 +429,7 @@
   const SETS = {
     rekenvragen: {
       title: 'Rekenvragen', icon: '🧮', api: () => window.CALC, statsKey: 'calcstats', groupWord: 'Vakken',
-      order: ['navigation', 'flight_performance', 'meteorology', 'principles_of_flight', 'aircraft_general', 'human_performance', 'air_law'],
+      order: Object.keys(SUBJECTS), // zelfde volgorde als de vakken: 10, 20, 30 …
       group: key => ({ icon: SUBJECTS[key].icon, title: `${SUBJECTS[key].code} · ${SUBJECTS[key].name}`, name: SUBJECTS[key].name, tags: window.CALC.LICENCE_TAGS[key] }),
       lead: 'Kies een vak. De site maakt telkens een nieuwe oefening met andere getallen. Het juiste antwoord wordt berekend, de foute antwoorden zijn typische denkfouten. Na je antwoord zie je de berekening stap voor stap.',
       sub: 'Rekenvragen · telkens nieuwe getallen'
