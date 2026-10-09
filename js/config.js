@@ -3,7 +3,7 @@
 
 // Bezoekersteller: GoatCounter (gratis, zonder cookies of persoonsgegevens). Vul de naam van het
 // GoatCounter-account in (bv. 'ppl-ulm' voor ppl-ulm.goatcounter.com); leeg = geen teller.
-window.ANALYTICS = { goatcounter: '' };
+window.ANALYTICS = { goatcounter: 'svekke1986' };
 
 window.SUBJECTS = {
   air_law:                { code: '10', name: 'Luchtvaartwetgeving', en: 'Air Law', icon: '⚖️' },
