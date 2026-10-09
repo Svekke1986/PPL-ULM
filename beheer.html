@@ -169,7 +169,9 @@
     function lawHtml(q) {
       const D = DOCS[q.doc || 'kb'], data = docs[q.doc || 'kb'];
       if (!D || !data || !q.art) return '';
-      const a = D.list(data).find(x => D.key(x) === String(q.art));
+      // Een id kan dubbel voorkomen (bv. "Appendix 1" in SERA): neem dan de bepaling die het citaat bevat.
+      const hits = D.list(data).filter(x => D.key(x) === String(q.art));
+      const a = hits.find(x => q.citaat && x.tekst.includes(q.citaat)) || hits[0];
       if (!a) return '';
       let text = esc(a.tekst);
       if (q.citaat && a.tekst.includes(q.citaat)) text = text.replace(esc(q.citaat), `<mark>${esc(q.citaat)}</mark>`);
