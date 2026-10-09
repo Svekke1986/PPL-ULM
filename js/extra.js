@@ -25,7 +25,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "En waarvan voor de ULA en DPM de overtreksnelheid of de minimale constante vliegsnelheid in landingsconfiguratie niet hoger is dan 35 knopen gekalibreerde luchtsnelheid (Calibrated Air Speed, CAS).",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "| | ULA/ULH/DPM | Amfibie ULA/ULH/DPM | Met totaal reddingsparachutesysteem op het luchtframe | Autogiro |\n|---|---|---|---|---|\n| Eénpersoons | 300 kg MTOM | extra 30 kg MTOM | extra 15 kg MTOM | 600 kg MTOM |\n| Tweepersoons | 450 kg MTOM | extra 45 kg MTOM | extra 25 kg MTOM | 600 kg MTOM |\n\nEn waarvan voor de ULA en DPM de overtreksnelheid of de minimale constante vliegsnelheid in landingsconfiguratie niet hoger is dan 35 knopen gekalibreerde luchtsnelheid (Calibrated Air Speed, CAS)."
  },
  {
   "id": "KB-002",
@@ -52,7 +53,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "| Maximum tweepersoons | 600 kg MTOM | 650 kg MTOM | niets extra | – |\n\nEn waarvan voor de ULA en DPM de overtreksnelheid of de minimale constante vliegsnelheid in landingsconfiguratie niet hoger is dan 45 knopen gekalibreerde luchtsnelheid (Calibrated Air Speed, CAS).",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "| | ULA/ULH/DPM | Amfibie ULA/ULH/DPM | Met totaal reddingsparachutesysteem op het luchtframe | Autogiro |\n|---|---|---|---|---|\n| Maximum tweepersoons | 600 kg MTOM | 650 kg MTOM | niets extra | – |\n\nEn waarvan voor de ULA en DPM de overtreksnelheid of de minimale constante vliegsnelheid in landingsconfiguratie niet hoger is dan 45 knopen gekalibreerde luchtsnelheid (Calibrated Air Speed, CAS)."
  },
  {
   "id": "KB-003",
@@ -79,7 +81,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "| Tweepersoons | 450 kg MTOM | extra 45 kg MTOM | extra 25 kg MTOM | 600 kg MTOM |",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "| | ULA/ULH/DPM | Amfibie ULA/ULH/DPM | Met totaal reddingsparachutesysteem op het luchtframe | Autogiro |\n|---|---|---|---|---|\n| Eénpersoons | 300 kg MTOM | extra 30 kg MTOM | extra 15 kg MTOM | 600 kg MTOM |\n| Tweepersoons | 450 kg MTOM | extra 45 kg MTOM | extra 25 kg MTOM | 600 kg MTOM |"
  },
  {
   "id": "KB-004",
@@ -106,7 +109,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "| Tweepersoons | 450 kg MTOM | extra 45 kg MTOM | extra 25 kg MTOM | 600 kg MTOM |",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "| | ULA/ULH/DPM | Amfibie ULA/ULH/DPM | Met totaal reddingsparachutesysteem op het luchtframe | Autogiro |\n|---|---|---|---|---|\n| Eénpersoons | 300 kg MTOM | extra 30 kg MTOM | extra 15 kg MTOM | 600 kg MTOM |\n| Tweepersoons | 450 kg MTOM | extra 45 kg MTOM | extra 25 kg MTOM | 600 kg MTOM |"
  },
  {
   "id": "KB-005",
@@ -133,7 +137,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Ultralicht gemotoriseerd vliegtuig van het type \"deltavleugel\" (hierna DPM): ULM waarvan de controle in vlucht gebeurt door een verplaatsing van het zwaartepunt uitgevoerd door de piloot.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "3. Ultralicht gemotoriseerd vliegtuig van het type \"deltavleugel\" (hierna DPM): ULM waarvan de controle in vlucht gebeurt door een verplaatsing van het zwaartepunt uitgevoerd door de piloot."
  },
  {
   "id": "KB-006",
@@ -160,7 +165,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "18. Overlandvlucht: vlucht tussen twee punten op een afstand van 40 km of meer.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "17. Lokale vlucht: vlucht uitgevoerd rondom een luchtvaartterrein op zodanige afstand dat vanaf de grond gegeven optische seinen steeds waarneembaar zijn.\n18. Overlandvlucht: vlucht tussen twee punten op een afstand van 40 km of meer."
  },
  {
   "id": "KB-007",
@@ -187,7 +193,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "met een maximale duur van 45 minuten, met als doel nieuwe leerlingen aan te trekken",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Initiatievlucht: elke lokale vlucht die wordt uitgevoerd tegen betaling of enige andere vergoeding, met een maximale duur van 45 minuten, met als doel nieuwe leerlingen aan te trekken en die aan de volgende cumulatieve voorwaarden voldoet:\na) dat de initiatievlucht wordt voorafgegaan door een theorieles van ten minste 30 minuten waarvan de minister of zijn gemachtigde de inhoud bepaalt en;\nb) dat de initiatievlucht wordt uitgevoerd door een instructeur met een luchtvaartuig dat aanvaard is om opleidingen te geven en dat de exploitant in eigendom of op grond van een huurovereenkomst exploiteert en;\nc) dat de betaling of enige …"
  },
  {
   "id": "KB-008",
@@ -214,7 +221,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "moet binnen dertig dagen door de houder van het registratiebewijs schriftelijk ter kennis worden gegeven aan de minister of aan zijn gemachtigde",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Van elk feit dat aanleiding geeft tot wijziging van de gegevens die de aanvraag en de documenten volgens artikel 8 moet bevatten met het oog op de registratie, moet binnen dertig dagen door de houder van het registratiebewijs schriftelijk ter kennis worden gegeven aan de minister of aan zijn gemachtigde."
  },
  {
   "id": "KB-009",
@@ -241,7 +249,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "namelijk de letters OO, gevolgd door zijn registratiekenmerk bestaande uit een groep van drie cijfers of een combinatie van maximum drie letters en cijfers",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Elk ULM toestel geregistreerd in het register van de ULM's voert het kenmerk van de Belgische nationaliteit, namelijk de letters OO, gevolgd door zijn registratiekenmerk bestaande uit een groep van drie cijfers of een combinatie van maximum drie letters en cijfers, zoals bepaald door de minister of zijn gemachtigde."
  },
  {
   "id": "KB-010",
@@ -268,7 +277,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "is beperkt tot het grondgebied van het Koninkrijk, behoudens uitzonderingen opgenomen in overeenkomsten tussen het DGLV en de luchtvaartautoriteit van een andere Staat",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "§ 1. De toelating tot het luchtverkeer van een ULM wordt vastgesteld door een beperkte toelating tot het luchtverkeer (BTTL), afgegeven door de minister of zijn gemachtigde.\n§ 2. De toelating tot het luchtverkeer van een ULM voorzien van een beperkte toelating tot het luchtverkeer (BTTL) is beperkt tot het grondgebied van het Koninkrijk, behoudens uitzonderingen opgenomen in overeenkomsten tussen het DGLV en de luchtvaartautoriteit van een andere Staat of in het kader van een door een andere Staat toegekende bijzondere toelating."
  },
  {
   "id": "KB-011",
@@ -295,7 +305,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "De geldigheidsduur van de beperkte toelating tot het luchtverkeer bedraagt drie jaar.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "De geldigheidsduur van de beperkte toelating tot het luchtverkeer bedraagt drie jaar."
  },
  {
   "id": "KB-012",
@@ -322,7 +333,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Elke belangrijke wijziging van een ULM moet, vóór de toepassing ervan, door de minister of zijn gemachtigde worden goedgekeurd.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Elke belangrijke wijziging van een ULM moet, vóór de toepassing ervan, door de minister of zijn gemachtigde worden goedgekeurd."
  },
  {
   "id": "KB-013",
@@ -349,7 +361,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "3° het reisdagboek, zoals bedoeld in het ministerieel besluit van 12 juli 1988 houdende regeling van het uitreiken en bijhouden van het residagboek van de luchtvaartuigen, behalve voor een lokale vlucht;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Geen enkele ULM wordt tot het luchtverkeer toegelaten indien het de volgende documenten niet meevoert:\n1° het registratiebewijs;\n2° de beperkte toelating tot het luchtverkeer of de voorlopige toelating tot het luchtverkeer, luchtvaartpas genoemd;\n3° het reisdagboek, zoals bedoeld in het ministerieel besluit van 12 juli 1988 houdende regeling van het uitreiken en bijhouden van het residagboek van de luchtvaartuigen, behalve voor een lokale vlucht;\n4° voor ULM's waarvan het type na 25 mei 1999 werd toegelaten, het in artikel 31 bedoelde gebruikershandboek, behalve voor de ULM's die niet over een gesloten cabine beschikken;\n5° de vergunning voor radio-installatie, indien van toepassing;\n6° de actuele en geschikte luchtvaartkaarten voor het gebied van de geplande vlucht."
  },
  {
   "id": "KB-014",
@@ -376,7 +389,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "en een geldig medisch certificaat klasse 1, klasse 2 of klasse LAPL",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "§ 1. Niemand mag een in België geregistreerd ULM besturen indien hij geen houder is van de ULM vergunning met de toepasselijke voorrechten, de met zijn functies overeenstemmende bevoegdverklaring, en een geldig medisch certificaat klasse 1, klasse 2 of klasse LAPL, of indien hij hiertoe als leerling-piloot niet gemachtigd is."
  },
  {
   "id": "KB-015",
@@ -403,7 +417,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "1° ten minste 16 jaar oud zijn;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "§ 2. De leerling-piloot moet:\n1° ten minste 16 jaar oud zijn;\n2° bij een instructeur geregistreerd zijn voor de opleiding tot het besturen van een ULM;\n3° houder zijn van een geldig medisch certificaat klasse 1, klasse 2 of klasse LAPL, vóór de eerste vlucht als enig inzittende;\n4° indien tijdens de opleiding van een leerling-piloot de registratie naar een nieuwe instructeur moet worden overgedragen, moet deze laatste een kopie van het opleidingsdossier ontvangen van de vorige instructeur."
  },
  {
   "id": "KB-016",
@@ -430,7 +445,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "3° houder zijn van een geldig medisch certificaat klasse 1, klasse 2 of klasse LAPL, vóór de eerste vlucht als enig inzittende;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "§ 2. De leerling-piloot moet:\n1° ten minste 16 jaar oud zijn;\n2° bij een instructeur geregistreerd zijn voor de opleiding tot het besturen van een ULM;\n3° houder zijn van een geldig medisch certificaat klasse 1, klasse 2 of klasse LAPL, vóór de eerste vlucht als enig inzittende;\n4° indien tijdens de opleiding van een leerling-piloot de registratie naar een nieuwe instructeur moet worden overgedragen, moet deze laatste een kopie van het opleidingsdossier ontvangen van de vorige instructeur."
  },
  {
   "id": "KB-017",
@@ -457,7 +473,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "op voorwaarde dat hij een minimale ervaring van twee overlandvluchten in dubbelbesturing aantoont",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "§ 1. In het kader van een opleiding tot het besturen van een ULM, is de leerling-piloot gemachtigd om:\n1° dubbelbesturingsvluchten uit te voeren in aanwezigheid van zijn instructeur of examinator aan boord. Deze vluchten vinden plaats onder de verantwoordelijkheid van de instructeur of examinator;\n2° als enig inzittende lokale vluchten uit te voeren onder de verantwoordelijkheid en met voorafgaande schriftelijke toelating van zijn instructeur;\n3° als enig inzittende overlandvluchten uit te voeren onder de verantwoordelijkheid en met voorafgaande schriftelijke toelating van zijn instructeur, op voorwaarde dat hij een minimale ervaring van twee overlandvluchten in dubbelbesturing aantoont."
  },
  {
   "id": "KB-018",
@@ -484,7 +501,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "het theoretisch examen over de algemene materies luchtvaartwetgeving, meteorologie, menselijke prestaties en communicatie",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Om de ULM vergunning te verkrijgen, moet de aanvrager:\n1° de volle leeftijd van 16 jaar hebben bereikt;\n2° met goed gevolg het theoretisch examen over de algemene materies luchtvaartwetgeving, meteorologie, menselijke prestaties en communicatie hebben afgelegd bij de daartoe door de minister aangewezen instantie en overeenkomstig de voorwaarden die de minister heeft vastgelegd;\n3° Voorgedragen zijn door zijn instructeur om de vakbekwaamheidsbeoordeling af te leggen bij een examinator met de betreffende klassebevoegdheid;\n4° geslaagd zijn voor een praktische proef met een examinator aan boord die tot doel heeft de verwerving van specifieke theoretische en praktische kennis betreffende de toepasselijke ULM klasse, bepaald door de minister of zijn gemachtigde, aan te tonen. Deze specifieke theoretisch kennis gaat voor iedere klasse over \"Beginselen van het vliegen\", \"Operationele procedures\", \"Vluchtprestaties en -planning\", \"Algemene kennis van het luchtvaartuig\" en \"Navigatie\". De examinator stelt vast of de kandidaat al dan niet geslaagd is en brengt verslag uit aan de DG. Hij maakt er ook melding van in het vlieglogboek van de kandidaat."
  },
  {
   "id": "KB-019",
@@ -511,7 +529,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "ten minste 25 uur vlieginstructie met ULA's hebben gevolgd, onder de verantwoordelijkheid van een instructeur",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "§ 1. De eisen voor het bekomen van de klassebevoegdverklaring van een ULA zijn de volgende:\n1° ten minste 25 uur vlieginstructie met ULA's hebben gevolgd, onder de verantwoordelijkheid van een instructeur, waaronder ten minste:\na) 10 uur solovliegtijd onder toezicht;\nb) 5 uur overlandvluchten waaronder ten minsten 3 uur solovlucht overland onder toezicht;\nc) 30 starts, 30 naderingen en 30 landingen tot volledige stilstand onder toezicht.\n2° Van de vliegtijd bedoeld in § 1, 1° moet ten minste 15 uur zijn voltooid met het type ULA waarmee de praktische proef wordt afgelegd."
  },
  {
   "id": "KB-020",
@@ -538,7 +557,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "ten minste 12 vlieguren als enige piloot in de relevante ULM-klasse hebben uitgevoerd",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "§ 1. De ULM vergunning met een bepaalde klassebevoegdverklaring is geldig voor onbeperkte duur, voor zover dat deze vergezeld is van een geldig medisch certificaat klasse 1, klasse 2 of klasse LAPL, en dat de houder van de vergunning in de 24 maanden volgende op de praktische proef voor het bekomen van de toelating tot besturen of de laatste positieve herhalingstraining met een instructeur in de relevante klasse, aan de hieronder bedoelde eisen heeft voldaan:\n1° ten minste 12 vlieguren als enige piloot in de relevante ULM-klasse hebben uitgevoerd, met inbegrip van 12 starts en landingen waarvan ten minste 6 uur in het voorgaande jaar; en\n2° Een herhalingstraining in vlucht te hebben gevolgd in de relevante ULM-klasse, waarbij de instructeur nagaat of de houder van de toelating tot besturen onder alle omstandigheden het toestel veilig kan besturen."
  },
  {
   "id": "KB-021",
@@ -565,7 +585,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "2° een herhalingstraining van tenminste 1 uur totale vliegtijd volgen in de overeenkomstige klasse met een instructeur.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "§ 2. De houders van een ULM vergunning die niet voldoen aan de eisen onder paragraaf 1 moeten:\n1° onder de verantwoordelijkheid van een instructeur, als enig inzittende of met dubbele besturing, de bijkomende vlieguren of starts en landingen uitvoeren om te voldoen aan de eisen onder paragraaf 1, punt 1;\n2° een herhalingstraining van tenminste 1 uur totale vliegtijd volgen in de overeenkomstige klasse met een instructeur. Tijdens de herhalingstraining moeten alle oefeningen van een vaardigheidstest worden uitgevoerd met de instructeur aan boord."
  },
  {
   "id": "KB-022",
@@ -592,7 +613,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "indien de piloot via zijn persoonlijk vlieglogboek kan aantonen dat het voorrecht voor tenminste 6 uur werd toegepast in de voorbije 2 jaar",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "§ 5. Een voorrecht binnen een klasse wordt samen met de klassebevoegdverklaring verlengd door een instructeur indien de piloot via zijn persoonlijk vlieglogboek kan aantonen dat het voorrecht voor tenminste 6 uur werd toegepast in de voorbije 2 jaar. Voor het voorrecht om zweefvliegtuigen te slepen wordt deze vereiste vervangen door artikel 71 § 1, tweede lid."
  },
  {
   "id": "KB-023",
@@ -619,7 +641,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Om een voorrecht binnen een klassebevoegdverklaring te bekomen, moet de piloot een opleiding volgen bij een instructeur die zelf over dit voorrecht beschikt.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "§ 1. Om een voorrecht binnen een klassebevoegdverklaring te bekomen, moet de piloot een opleiding volgen bij een instructeur die zelf over dit voorrecht beschikt."
  },
  {
   "id": "KB-024",
@@ -646,7 +669,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Automatische piloot Drijvers Variabele spoed Vliegen met passagiers.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "De voorrechten die bekomen kunnen worden voor de klasse autogiro zijn:\nAutomatische piloot Drijvers Variabele spoed Vliegen met passagiers."
  },
  {
   "id": "KB-025",
@@ -673,7 +697,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "een ervaring bewijzen van minstens 30 uur als gezagvoerder in de betreffende ULM klasse. In deze vliegtijd moeten minstens 5 uur begrepen zijn op het ULM-type waarmee gesleept zal worden",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Om het voorrecht voor het slepen van zweefvliegtuigen te verkrijgen, moet de aanvrager:\n1° Na het behalen van de toelating tot besturen van een ULA/DPM, een ervaring bewijzen van minstens 30 uur als gezagvoerder in de betreffende ULM klasse. In deze vliegtijd moeten minstens 5 uur begrepen zijn op het ULM-type waarmee gesleept zal worden;\n2° een minimale theoretische opleiding in overeenstemming met het de door minister of zijn gemachtigde beschreven programma hebben gevolgd. …"
  },
  {
   "id": "KB-026",
@@ -700,7 +725,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "De examinatoren mogen geen praktische proeven afnemen voor de afgifte van een ULM vergunning of een bevoegdverklaring aan kandidaten aan wie ze vlieginstructie hebben gegeven vereist voor de ULM vergunning",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "§ 2. De examinatoren mogen geen praktische proeven afnemen voor de afgifte van een ULM vergunning of een bevoegdverklaring aan kandidaten aan wie ze vlieginstructie hebben gegeven vereist voor de ULM vergunning, voor een klassebevoegdverklaring of voor een bevoegdverklaring als instructeur."
  },
  {
   "id": "KB-027",
@@ -727,7 +753,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "De vluchten uitgevoerd onder toezicht van een instructeur worden door deze laatste in het vliegboek medeondertekend.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "§ 1. De piloot dient al zijn vluchten chronologisch in zijn vliegboek in te schrijven en daarbij telkens de datum, het gebruikte type ULM en de registratie ervan, de duur van de vlucht alsook de plaatsen en tijdstippen van opstijgen en landen, en zijn functie als piloot, leerling piloot of instructeur te vermelden.\n§ 2. De vluchten uitgevoerd onder toezicht van een instructeur worden door deze laatste in het vliegboek medeondertekend."
  },
  {
   "id": "KB-028",
@@ -754,7 +781,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "de ULM's mogen enkel vliegen bij dag, met zicht op de grond of het water, en in weersomstandigheden die vliegen op zicht toelaten",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Naast de in artikel 78 bedoelde reglementaire bepalingen zijn de volgende regels van toepassing:\n1° de ULM's mogen enkel vliegen bij dag, met zicht op de grond of het water, en in weersomstandigheden die vliegen op zicht toelaten. De zichtbaarheid op de grond en in de lucht mag niet minder zijn dan 5 km, behalve in het geval van oefening in het circuit waarvoor slechts een minimale zichtbaarheid van 3 km vereist is;\n2° de ULM's mogen geen acrobatische vluchten uitvoeren."
  },
  {
   "id": "KB-029",
@@ -781,7 +809,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "De zichtbaarheid op de grond en in de lucht mag niet minder zijn dan 5 km, behalve in het geval van oefening in het circuit waarvoor slechts een minimale zichtbaarheid van 3 km vereist is",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Naast de in artikel 78 bedoelde reglementaire bepalingen zijn de volgende regels van toepassing:\n1° de ULM's mogen enkel vliegen bij dag, met zicht op de grond of het water, en in weersomstandigheden die vliegen op zicht toelaten. De zichtbaarheid op de grond en in de lucht mag niet minder zijn dan 5 km, behalve in het geval van oefening in het circuit waarvoor slechts een minimale zichtbaarheid van 3 km vereist is;\n2° de ULM's mogen geen acrobatische vluchten uitvoeren."
  },
  {
   "id": "KB-030",
@@ -808,7 +837,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "elk incident of ongeval, dat zich voordoet bij het gebruik van het luchtvaartuig, uiterlijk binnen de 48 uur, of zo snel mogelijk in geval van fysieke verhindering, schriftelijk aan de DG te melden",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "De ULM-piloot dient, zoals omschreven in Verordening (EU) nr. 996/2010 van het Europees parlement en de raad van 20 oktober 2010 inzake onderzoek en preventie van ongevallen en incidenten in de burgerluchtvaart en houdende intrekking van Richtlijn 94/56/EG, elk incident of ongeval, dat zich voordoet bij het gebruik van het luchtvaartuig, uiterlijk binnen de 48 uur, of zo snel mogelijk in geval van fysieke verhindering, schriftelijk aan de DG te melden."
  },
  {
   "id": "KB-031",
@@ -835,7 +865,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "6° dat de massa en de centrering van de ULM toelaten de vlucht in alle veiligheid uit te voeren, rekening houdend met de voorziene vliegomstandigheden;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Geen enkele vlucht mag worden aangevat alvorens de gezagvoerder zich ervan vergewist heeft:\n1° dat de ULM geschikt is voor de vlucht, naar behoren geregistreerd, en dat de stukken die dit bewijzen aan boord zijn;\n2° dat de leden van het stuurpersoneel de ULM vergunning of de valideringen door de DGLV van de door andere Staten afgegeven toelatingen tot het besturen hebben en dat deze documenten aan boord zijn;\n3° dat het beperkt bewijs van radiotelefonist van de gebruiker van de radio-installatie aan boord is, indien van toepassing;\n4° dat de ULM voorzien is van de gepaste instrumenten en uitrusting, rekening houdend met de voorziene vliegomstandigheden;\n5° dat de noodzakelijke onderhoudswerken uitgevoerd zijn overeenkomstig de bepalingen van hoofdstuk IV;\n6° dat de massa en de centrering van de ULM toelaten de vlucht in alle veiligheid uit te voeren, rekening houdend met de voorziene vliegomstandigheden;\n7° dat de lading aan boord verspreid wordt geplaatst en op zodanige wijze vastgemaakt dat de veiligheid niet in het gedrang komt;\n8° dat de gebruikslimieten van het ULM, vastgelegd in het vlieghandboek of in een gelijkaardig document, niet worden overschreden."
  },
  {
   "id": "KB-032",
@@ -862,7 +893,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "wordt voortgezet dan naar het dichtstbijzijnde geschikte landingsterrein wanneer zijn geschiktheid om zijn functies uit te oefenen aanzienlijk verminderd is",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "De gezagvoerder waakt erover dat geen enkele vlucht:\n1° wordt aangevat indien hij niet in staat is om zijn functies uit te oefenen om redenen als verwonding, vermoeidheid, ziekte, effecten als gevolg van psychoactieve stoffen of zijn capaciteiten worden beïnvloed;\n2° wordt voortgezet dan naar het dichtstbijzijnde geschikte landingsterrein wanneer zijn geschiktheid om zijn functies uit te oefenen aanzienlijk verminderd is als gevolg van een afname van zijn capaciteiten wegens vermoeidheid of ziekte."
  },
  {
   "id": "KB-033",
@@ -889,7 +921,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "2° reclame aangebracht op het luchtframe;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "§ 1. Wat de commerciële vluchtuitvoering betreft, mogen de ULM's uitsluitend voor de volgende activiteiten worden gebruikt, mits voorafgaande toelating tot commerciële vluchtuitvoering afgegeven door de minister of zijn gemachtigde:\n1° de opleiding;\n2° reclame aangebracht op het luchtframe;\n3° het slepen van zweefvliegtuigen;\n4° de initiatievlucht.\n§ 2. De minister of zijn gemachtigde bepaalt de technische en operationele voorwaarden met betrekking tot de opleiding, de reclame, het slepen en de initiatievlucht."
  },
  {
   "id": "SERA-A01",
@@ -918,7 +951,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "shall, whether manipulating the controls or not, be responsible for the operation of the aircraft",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "The pilot-in-command of an aircraft shall, whether manipulating the controls or not, be responsible for the operation of the aircraft in accordance with this Regulation, except that the pilot-in-command may depart from these rules in circumstances that render such departure absolutely necessary in the interests of safety."
  },
  {
   "id": "SERA-A02",
@@ -947,7 +981,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "may depart from these rules in circumstances that render such departure absolutely necessary in the interests of safety",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "The pilot-in-command of an aircraft shall, whether manipulating the controls or not, be responsible for the operation of the aircraft in accordance with this Regulation, except that the pilot-in-command may depart from these rules in circumstances that render such departure absolutely necessary in the interests of safety."
  },
  {
   "id": "SERA-A03",
@@ -976,7 +1011,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "shall include a careful study of available current weather reports and forecasts, taking into consideration fuel/energy requirements and an alternative course of action if the flight cannot be completed as planned",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Before beginning a flight, the pilot-in-command of an aircraft shall become familiar with all available information appropriate to the intended operation. Pre-flight action for flights away from the vicinity of an aerodrome, and for all IFR flights, shall include a careful study of available current weather reports and forecasts, taking into consideration fuel/energy requirements and an alternative course of action if the flight cannot be completed as planned."
  },
  {
   "id": "SERA-A05",
@@ -1005,7 +1041,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "shall undertake that function while under the influence of any psychoactive substance, by reason of which human performance is impaired",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Regulation (EU) No 923/2012\nNo person whose function is critical to the safety of aviation (safety-sensitive personnel) shall undertake that function while under the influence of any psychoactive substance, by reason of which human performance is impaired. No such person shall engage in any kind of problematic use of substances."
  },
  {
   "id": "SERA-A06",
@@ -1034,7 +1071,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "An aircraft shall not be operated in a negligent or reckless manner so as to endanger life or property of others.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Regulation (EU) No 923/2012\nAn aircraft shall not be operated in a negligent or reckless manner so as to endanger life or property of others."
  },
  {
   "id": "SERA-A07",
@@ -1063,7 +1101,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "unless at such a height as will permit, in the event of an emergency arising, a landing to be made without undue hazard to persons or property on the surface",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Regulation (EU) No 923/2012\nExcept when necessary for take-off or landing, or except by permission from the competent authority, aircraft shall not be flown over the congested areas of cities, towns or settlements or over an open-air assembly of persons, unless at such a height as will permit, in the event of an emergency arising, a landing to be made without undue hazard to persons or property on the surface. The minimum heights for VFR flights shall be those specified in SERA.5005(f) and minimum levels for IFR flights shall be those specified in SERA.5015(b)."
  },
  {
   "id": "SERA-A08",
@@ -1092,7 +1131,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(b) altitudes, for flights below the lowest usable flight level or, where applicable, at or below the transition altitude.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Regulation (EU) No 923/2012\nThe cruising levels at which a flight or a portion of a flight is to be conducted shall be in terms of:\n(a) flight levels, for flights at or above the lowest usable flight level or, where applicable, above the transition altitude;\n(b) altitudes, for flights below the lowest usable flight level or, where applicable, at or below the transition altitude."
  },
  {
   "id": "SERA-A09",
@@ -1121,7 +1161,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Van 000 tot 179 graden Van 180 tot 359 graden IFR-vluchten VFR-vluchten",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "1.1. De volgende kruisniveaus moeten in acht worden genomen: KOERS (*) Van 000 tot 179 graden Van 180 tot 359 graden IFR-vluchten VFR-vluchten IFR-vluchten VFR-vluchten Niveau Niveau Niveau Niveau FL Voet Meter FL Voet Meter FL Voet Meter FL Voet Meter 1 000"
  },
  {
   "id": "SERA-A11",
@@ -1150,7 +1191,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Aircraft shall not be flown in formation except by pre-arrangement among the pilots-in-command of the aircraft taking part in the flight",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Aircraft shall not be flown in formation except by pre-arrangement among the pilots-in-command of the aircraft taking part in the flight and, for formation flight in controlled airspace, in accordance with the conditions prescribed by the competent authority. These conditions shall include the following:"
  },
  {
   "id": "SERA-A12",
@@ -1179,7 +1221,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "a distance not exceeding 1 km (0,5 nm) laterally and longitudinally and 30 m (100 ft) vertically from the flight leader shall be maintained by each aircraft",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(d) for State aircraft a maximum lateral, longitudinal and vertical distance between each aircraft and the flight leader in accordance with the Chicago Convention. For other than State aircraft a distance not exceeding 1 km (0,5 nm) laterally and longitudinally and 30 m (100 ft) vertically from the flight leader shall be maintained by each aircraft."
  },
  {
   "id": "SERA-A13",
@@ -1208,7 +1251,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "except in accordance with the conditions of the restrictions or by permission of the Member State over whose territory the areas are established",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Regulation (EU) No 923/2012\nAircraft shall not be flown in a prohibited area, or in a restricted area, the particulars of which have been duly published, except in accordance with the conditions of the restrictions or by permission of the Member State over whose territory the areas are established."
  },
  {
   "id": "SERA-A14",
@@ -1237,7 +1281,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Nothing in this Regulation shall relieve the pilot-in-command of an aircraft from the responsibility of taking such action",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Regulation (EU) No 923/2012\nNothing in this Regulation shall relieve the pilot-in-command of an aircraft from the responsibility of taking such action, including collision avoidance manoeuvres based on resolution advisories provided by ACAS equipment, as will best avert collision."
  },
  {
   "id": "SERA-A15",
@@ -1266,7 +1311,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(a) The aircraft that has the right-of-way shall maintain its heading and speed.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) The aircraft that has the right-of-way shall maintain its heading and speed."
  },
  {
   "id": "SERA-A16",
@@ -1295,7 +1341,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(b) An aircraft that is aware that the manoeuvrability of another aircraft is impaired shall give way to that aircraft.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) The aircraft that has the right-of-way shall maintain its heading and speed.\n(b) An aircraft that is aware that the manoeuvrability of another aircraft is impaired shall give way to that aircraft."
  },
  {
   "id": "SERA-A17",
@@ -1324,7 +1371,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "shall avoid passing over, under or in front of the other, unless it passes well clear and takes into account the effect of aircraft wake turbulence",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(c) An aircraft that is obliged by the following rules to keep out of the way of another shall avoid passing over, under or in front of the other, unless it passes well clear and takes into account the effect of aircraft wake turbulence.\n(1) Approaching head-on. When two aircraft are approaching head-on or approximately so and there is danger of collision, each shall alter its heading to the right.\n(2) Converging. When two aircraft are converging at approximately the same level, the aircraft that has the other on its right shall give way, except as follows:"
  },
  {
   "id": "SERA-A18",
@@ -1353,7 +1401,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(i) power-driven heavier-than-air aircraft shall give way to airships, sailplanes and balloons;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) power-driven heavier-than-air aircraft shall give way to airships, sailplanes and balloons;\n(ii) airships shall give way to sailplanes and balloons;\n(iii) sailplanes shall give way to balloons;\n(iv) power-driven aircraft shall give way to aircraft which are seen to be towing other aircraft or objects.\n(3) Overtaking. An overtaking aircraft is an aircraft that approaches another from the rear on a line forming an angle of less than 70 degrees with the plane of symmetry of the latter, i.e. is in such a position with reference to the other aircraft that at night it should be unable to see either of the aircraft’s left (port) or right (starboard) navigation lights. An aircraft that is being overtaken has the right-of-way and the overtaking aircraft, whether climbing, descending or in horizontal flight, shall keep out of the way of the other aircraft by altering its heading to the right, and no subsequent change in the relative positions of the two aircraft shall absolve the overtaking aircraft from this obligation until it is entirely past and clear."
  },
  {
   "id": "SERA-A19",
@@ -1382,7 +1431,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(iv) power-driven aircraft shall give way to aircraft which are seen to be towing other aircraft or objects.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) power-driven heavier-than-air aircraft shall give way to airships, sailplanes and balloons;\n(ii) airships shall give way to sailplanes and balloons;\n(iii) sailplanes shall give way to balloons;\n(iv) power-driven aircraft shall give way to aircraft which are seen to be towing other aircraft or objects.\n(3) Overtaking. An overtaking aircraft is an aircraft that approaches another from the rear on a line forming an angle of less than 70 degrees with the plane of symmetry of the latter, i.e. is in such a position with reference to the other aircraft that at night it should be unable to see either of the aircraft’s left (port) or right (starboard) navigation lights. An aircraft that is being overtaken has the right-of-way and the overtaking aircraft, whether climbing, descending or in horizontal flight, shall keep out of the way of the other aircraft by altering its heading to the right, and no subsequent change in the relative positions of the two aircraft shall absolve the overtaking aircraft from this obligation until it is entirely past and clear."
  },
  {
   "id": "SERA-A20",
@@ -1411,7 +1461,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "approaches another from the rear on a line forming an angle of less than 70 degrees with the plane of symmetry of the latter",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) power-driven heavier-than-air aircraft shall give way to airships, sailplanes and balloons;\n(ii) airships shall give way to sailplanes and balloons;\n(iii) sailplanes shall give way to balloons;\n(iv) power-driven aircraft shall give way to aircraft which are seen to be towing other aircraft or objects.\n(3) Overtaking. An overtaking aircraft is an aircraft that approaches another from the rear on a line forming an angle of less than 70 degrees with the plane of symmetry of the latter, i.e. is in such a position with reference to the other aircraft that at night it should be unable to see either of the aircraft’s left (port) or right (starboard) navigation lights. An aircraft that is being overtaken has the right-of-way and the overtaking aircraft, whether climbing, descending or in horizontal flight, shall keep out of the way of the other aircraft by altering its heading to the right, and no subsequent change in the relative positions of the two aircraft shall absolve the overtaking aircraft from this obligation until it is entirely past and clear."
  },
  {
   "id": "SERA-A21",
@@ -1440,7 +1491,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "no subsequent change in the relative positions of the two aircraft shall absolve the overtaking aircraft from this obligation until it is entirely past and clear",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) power-driven heavier-than-air aircraft shall give way to airships, sailplanes and balloons;\n(ii) airships shall give way to sailplanes and balloons;\n(iii) sailplanes shall give way to balloons;\n(iv) power-driven aircraft shall give way to aircraft which are seen to be towing other aircraft or objects.\n(3) Overtaking. An overtaking aircraft is an aircraft that approaches another from the rear on a line forming an angle of less than 70 degrees with the plane of symmetry of the latter, i.e. is in such a position with reference to the other aircraft that at night it should be unable to see either of the aircraft’s left (port) or right (starboard) navigation lights. An aircraft that is being overtaken has the right-of-way and the overtaking aircraft, whether climbing, descending or in horizontal flight, shall keep out of the way of the other aircraft by altering its heading to the right, and no subsequent change in the relative positions of the two aircraft shall absolve the overtaking aircraft from this obligation until it is entirely past and clear."
  },
  {
   "id": "SERA-A22",
@@ -1469,7 +1521,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(i) Sailplanes overtaking. A sailplane overtaking another sailplane may alter its course to the right or to the left.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) Sailplanes overtaking. A sailplane overtaking another sailplane may alter its course to the right or to the left.\n(4) Landing. An aircraft in flight, or operating on the ground or water, shall give way to aircraft landing or in the final stages of an approach to land."
  },
  {
   "id": "SERA-A23",
@@ -1498,7 +1551,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "An aircraft in flight, or operating on the ground or water, shall give way to aircraft landing or in the final stages of an approach to land.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) Sailplanes overtaking. A sailplane overtaking another sailplane may alter its course to the right or to the left.\n(4) Landing. An aircraft in flight, or operating on the ground or water, shall give way to aircraft landing or in the final stages of an approach to land."
  },
  {
   "id": "SERA-A24",
@@ -1527,7 +1581,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "aircraft at the higher level shall give way to aircraft at the lower level, but the latter shall not take advantage of this rule to cut in front of another",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) When two or more heavier-than-air aircraft are approaching an aerodrome or an operating site for the purpose of landing, aircraft at the higher level shall give way to aircraft at the lower level, but the latter shall not take advantage of this rule to cut in front of another which is in the final stages of an approach to land, or to overtake that aircraft. Nevertheless, power-driven heavier-than-air aircraft shall give way to sailplanes.\n(ii) Emergency landing. An aircraft that is aware that another is compelled to land shall give way to that aircraft.\n(5) Taking off. An aircraft taxiing on the manoeuvring area of an aerodrome shall give way to aircraft taking off or about to take off."
  },
  {
   "id": "SERA-A25",
@@ -1556,7 +1611,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Nevertheless, power-driven heavier-than-air aircraft shall give way to sailplanes.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) When two or more heavier-than-air aircraft are approaching an aerodrome or an operating site for the purpose of landing, aircraft at the higher level shall give way to aircraft at the lower level, but the latter shall not take advantage of this rule to cut in front of another which is in the final stages of an approach to land, or to overtake that aircraft. Nevertheless, power-driven heavier-than-air aircraft shall give way to sailplanes.\n(ii) Emergency landing. An aircraft that is aware that another is compelled to land shall give way to that aircraft.\n(5) Taking off. An aircraft taxiing on the manoeuvring area of an aerodrome shall give way to aircraft taking off or about to take off."
  },
  {
   "id": "SERA-A26",
@@ -1585,7 +1641,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(ii) Emergency landing. An aircraft that is aware that another is compelled to land shall give way to that aircraft.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) When two or more heavier-than-air aircraft are approaching an aerodrome or an operating site for the purpose of landing, aircraft at the higher level shall give way to aircraft at the lower level, but the latter shall not take advantage of this rule to cut in front of another which is in the final stages of an approach to land, or to overtake that aircraft. Nevertheless, power-driven heavier-than-air aircraft shall give way to sailplanes.\n(ii) Emergency landing. An aircraft that is aware that another is compelled to land shall give way to that aircraft.\n(5) Taking off. An aircraft taxiing on the manoeuvring area of an aerodrome shall give way to aircraft taking off or about to take off."
  },
  {
   "id": "SERA-A27",
@@ -1614,7 +1671,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(5) Taking off. An aircraft taxiing on the manoeuvring area of an aerodrome shall give way to aircraft taking off or about to take off.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) When two or more heavier-than-air aircraft are approaching an aerodrome or an operating site for the purpose of landing, aircraft at the higher level shall give way to aircraft at the lower level, but the latter shall not take advantage of this rule to cut in front of another which is in the final stages of an approach to land, or to overtake that aircraft. Nevertheless, power-driven heavier-than-air aircraft shall give way to sailplanes.\n(ii) Emergency landing. An aircraft that is aware that another is compelled to land shall give way to that aircraft.\n(5) Taking off. An aircraft taxiing on the manoeuvring area of an aerodrome shall give way to aircraft taking off or about to take off."
  },
  {
   "id": "SERA-A28",
@@ -1643,7 +1701,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(i) when two aircraft are approaching head on, or approximately so, each shall stop or where practicable alter its course to the right so as to keep well clear;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) when two aircraft are approaching head on, or approximately so, each shall stop or where practicable alter its course to the right so as to keep well clear;\n(ii) when two aircraft are on a converging course, the one which has the other on its right shall give way;\n(iii) an aircraft which is being overtaken by another aircraft shall have the right-of-way and the overtaking aircraft shall keep well clear of the other aircraft.\n(2) At a controlled aerodrome an aircraft taxiing on the manoeuvring area shall stop and hold at all runway-holding positions unless an explicit clearance to enter or cross the runway has been issued by the aerodrome control tower.\n(3) An aircraft taxiing on the manoeuvring area shall stop and hold at all lighted stop bars and may proceed further in accordance with (2) when the lights are switched off.\n(4) Movement of persons and vehicles at aerodromes:"
  },
  {
   "id": "SERA-A29",
@@ -1672,7 +1731,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "shall stop and hold at all runway-holding positions unless an explicit clearance to enter or cross the runway has been issued by the aerodrome control tower",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) when two aircraft are approaching head on, or approximately so, each shall stop or where practicable alter its course to the right so as to keep well clear;\n(ii) when two aircraft are on a converging course, the one which has the other on its right shall give way;\n(iii) an aircraft which is being overtaken by another aircraft shall have the right-of-way and the overtaking aircraft shall keep well clear of the other aircraft.\n(2) At a controlled aerodrome an aircraft taxiing on the manoeuvring area shall stop and hold at all runway-holding positions unless an explicit clearance to enter or cross the runway has been issued by the aerodrome control tower.\n(3) An aircraft taxiing on the manoeuvring area shall stop and hold at all lighted stop bars and may proceed further in accordance with (2) when the lights are switched off.\n(4) Movement of persons and vehicles at aerodromes:"
  },
  {
   "id": "SERA-A30",
@@ -1701,7 +1761,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "shall stop and hold at all lighted stop bars and may proceed further in accordance with (2) when the lights are switched off",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) when two aircraft are approaching head on, or approximately so, each shall stop or where practicable alter its course to the right so as to keep well clear;\n(ii) when two aircraft are on a converging course, the one which has the other on its right shall give way;\n(iii) an aircraft which is being overtaken by another aircraft shall have the right-of-way and the overtaking aircraft shall keep well clear of the other aircraft.\n(2) At a controlled aerodrome an aircraft taxiing on the manoeuvring area shall stop and hold at all runway-holding positions unless an explicit clearance to enter or cross the runway has been issued by the aerodrome control tower.\n(3) An aircraft taxiing on the manoeuvring area shall stop and hold at all lighted stop bars and may proceed further in accordance with (2) when the lights are switched off.\n(4) Movement of persons and vehicles at aerodromes:"
  },
  {
   "id": "SERA-A31",
@@ -1730,7 +1791,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(1) stop the aircraft; and\n(2) simultaneously notify the appropriate air traffic services unit of the circumstances (including the last known position).",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "a)Except as provided for in point (b), a pilot in doubt as to the position of the aircraft with respect to the manoeuvring area shall immediately:\n(1) stop the aircraft; and\n(2) simultaneously notify the appropriate air traffic services unit of the circumstances (including the last known position)."
  },
  {
   "id": "SERA-A32",
@@ -1759,7 +1821,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(2) if able to locate a nearby suitable taxiway, vacate the runway as expeditiously as possible, unless otherwise instructed by the air traffic services unit; and then,",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(b) When a pilot is in doubt as to the position of the aircraft with respect to the manoeuvring area, but recognises that the aircraft is on a runway, the pilot shall immediately:\n(1) notify the appropriate air traffic services unit of the circumstances (including the last known position);\n(2) if able to locate a nearby suitable taxiway, vacate the runway as expeditiously as possible, unless otherwise instructed by the air traffic services unit; and then,\n(3) stop the aircraft."
  },
  {
   "id": "SERA-A33",
@@ -1788,7 +1851,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(1) anti-collision lights intended to attract attention to the aircraft; and",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) Except as provided by (e), at night all aircraft in flight shall display:\n(1) anti-collision lights intended to attract attention to the aircraft; and\n(2) except for balloons, navigation lights intended to indicate the relative path of the aircraft to an observer. Other lights shall not be displayed if they are likely to be mistaken for these lights."
  },
  {
   "id": "SERA-A34",
@@ -1817,7 +1881,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(c) Except as provided by (e), all aircraft in flight and fitted with anti-collision lights to meet the requirement of (a)(1) shall display such lights also during day.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(4) all aircraft on the movement area of an aerodrome whose engines are running shall display lights which indicate that fact.\n(c) Except as provided by (e), all aircraft in flight and fitted with anti-collision lights to meet the requirement of (a)(1) shall display such lights also during day."
  },
  {
   "id": "SERA-A35",
@@ -1846,7 +1911,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "an additional qualified pilot (in this rule called a safety pilot) occupies a control seat",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Regulation (EU) No 923/2012\nAn aircraft shall not be flown under simulated instrument flight conditions unless:\n(a) fully functioning dual controls are installed in the aircraft; and\n(b) an additional qualified pilot (in this rule called a safety pilot) occupies a control seat to act as safety pilot for the person who is flying under simulated instrument conditions. The safety pilot shall have adequate vision forward and to each side of the aircraft, or a competent observer in communication with the safety pilot shall occupy a position in the aircraft from which the observer’s field of vision adequately supplements that of the safety pilot."
  },
  {
   "id": "SERA-A36",
@@ -1875,7 +1941,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(c) except for balloons, make all turns to the left, when approaching for a landing and after taking off, unless otherwise indicated, or instructed by ATC;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Regulation (EU) No 923/2012\nAn aircraft operated on or in the vicinity of an aerodrome shall:\n(a) observe other aerodrome traffic for the purpose of avoiding collision;\n(b) conform with or avoid the pattern of traffic formed by other aircraft in operation;\n(c) except for balloons, make all turns to the left, when approaching for a landing and after taking off, unless otherwise indicated, or instructed by ATC;\n(d) except for balloons, land and take off into the wind unless safety, the runway configuration, or air traffic considerations determine that a different direction is preferable."
  },
  {
   "id": "SERA-A37",
@@ -1904,7 +1971,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(1) Converging. An aircraft which has another aircraft or a vessel on its right shall give way so as to keep well clear.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) When two aircraft or an aircraft and a vessel are approaching one another and there is a risk of collision, the aircraft shall proceed with careful regard to existing circumstances and conditions including the limitations of the respective craft.\n(1) Converging. An aircraft which has another aircraft or a vessel on its right shall give way so as to keep well clear.\n(2) Approaching head-on. An aircraft approaching another aircraft or a vessel head-on, or approximately so, shall alter its heading to the right to keep well clear.\n(3) Overtaking. The aircraft or vessel which is being overtaken has the right of way, and the one overtaking shall alter its heading to keep well clear.\n(4) Landing and taking off. Aircraft landing on or taking off from the water shall, in so far as practicable, keep well clear of all vessels and avoid impeding their navigation."
  },
  {
   "id": "SERA-A38",
@@ -1933,7 +2001,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(b) A time check shall be obtained prior to operating a controlled flight",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(b) A time check shall be obtained prior to operating a controlled flight and at such other times during the flight as may be necessary."
  },
  {
   "id": "SERA-B01",
@@ -1962,7 +2031,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "F G | 5 km (***) | Clear of cloud and with the surface in sight",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Table S5-1 (*)\nAltitude band | Airspace class | Flight visibility | Distance from cloud\nAt and above 3 050 m (10 000 ft) AMSL | A (**) B C D E F G | 8 km | 1 500 m horizontally / 300 m (1 000 ft) vertically\nBelow 3 050 m (10 000 ft) AMSL and above 900 m (3 000 ft) AMSL, or above 300 m (1 000 ft) above terrain, whichever is the higher | A (**) B C D E F G | 5 km | 1500 m horizontally / 300 m (1 000 ft) vertically\nAt and below 900 m (3 000 ft) AMSL, or 300 m (1 000 ft) above terrain, whichever is the higher | A (**) B C D E | 5 km | 1500 m horizontally / 300 m (1 000 ft) vertically\n | F G | 5 km (***) | Clear of cloud and with the surface in sight"
  },
  {
   "id": "SERA-B02",
@@ -1991,7 +2061,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "At and below 900 m (3 000 ft) AMSL, or 300 m (1 000 ft) above terrain, whichever is the higher",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Table S5-1 (*)\nAltitude band | Airspace class | Flight visibility | Distance from cloud\nAt and above 3 050 m (10 000 ft) AMSL | A (**) B C D E F G | 8 km | 1 500 m horizontally / 300 m (1 000 ft) vertically\nBelow 3 050 m (10 000 ft) AMSL and above 900 m (3 000 ft) AMSL, or above 300 m (1 000 ft) above terrain, whichever is the higher | A (**) B C D E F G | 5 km | 1500 m horizontally / 300 m (1 000 ft) vertically\nAt and below 900 m (3 000 ft) AMSL, or 300 m (1 000 ft) above terrain, whichever is the higher | A (**) B C D E | 5 km | 1500 m horizontally / 300 m (1 000 ft) vertically\n | F G | 5 km (***) | Clear of cloud and with the surface in sight"
  },
  {
   "id": "SERA-B03",
@@ -2020,7 +2091,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(a) flight visibilities reduced to not less than 1 500 m may be permitted for flights operating:\n(1) at speeds of 140 kts IAS or less",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) flight visibilities reduced to not less than 1 500 m may be permitted for flights operating:\n(1) at speeds of 140 kts IAS or less to give adequate opportunity to observe other traffic or any obstacles in time to avoid collision; or\n(2) in circumstances in which the probability of encounters with other traffic would normally be low, e.g. in areas of low volume traffic and for aerial work at low levels;"
  },
  {
   "id": "SERA-B04",
@@ -2049,7 +2121,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(*)When the height of the transition altitude is lower than 3 050 m (10 000 ft) AMSL, FL 100 shall be used in lieu of 10 000 ft.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Table S5-1 (*)\nAltitude band | Airspace class | Flight visibility | Distance from cloud\nAt and above 3 050 m (10 000 ft) AMSL | A (**) B C D E F G | 8 km | 1 500 m horizontally / 300 m (1 000 ft) vertically\nBelow 3 050 m (10 000 ft) AMSL and above 900 m (3 000 ft) AMSL, or above 300 m (1 000 ft) above terrain, whichever is the higher | A (**) B C D E F G | 5 km | 1500 m horizontally / 300 m (1 000 ft) vertically\nAt and below 900 m (3 000 ft) AMSL, or 300 m (1 000 ft) above terrain, whichever is the higher | A (**) B C D E | 5 km | 1500 m horizontally / 300 m (1 000 ft) vertically\n | F G | 5 km (***) | Clear of cloud and with the surface in sight\n(*)When the height of the transition altitude is lower than 3 050 m (10 000 ft) AMSL, FL 100 shall be used in lieu of 10 000 ft."
  },
  {
   "id": "SERA-B05",
@@ -2078,7 +2151,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(**)The VMC minima in Class A airspace are included for guidance to pilots and do not imply acceptance of VFR flights in Class A airspace.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(*)When the height of the transition altitude is lower than 3 050 m (10 000 ft) AMSL, FL 100 shall be used in lieu of 10 000 ft.\n(**)The VMC minima in Class A airspace are included for guidance to pilots and do not imply acceptance of VFR flights in Class A airspace."
  },
  {
   "id": "SERA-B06",
@@ -2107,7 +2181,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Below 3 050 m (10 000 ft) AMSL and above 900 m (3 000 ft) AMSL, or above 300 m (1 000 ft) above terrain, whichever is the higher | A (**) B C D E F G | 5 km | 1500 m horizontally / 300 m (1 000 ft) vertically",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Table S5-1 (*)\nAltitude band | Airspace class | Flight visibility | Distance from cloud\nAt and above 3 050 m (10 000 ft) AMSL | A (**) B C D E F G | 8 km | 1 500 m horizontally / 300 m (1 000 ft) vertically\nBelow 3 050 m (10 000 ft) AMSL and above 900 m (3 000 ft) AMSL, or above 300 m (1 000 ft) above terrain, whichever is the higher | A (**) B C D E F G | 5 km | 1500 m horizontally / 300 m (1 000 ft) vertically\nAt and below 900 m (3 000 ft) AMSL, or 300 m (1 000 ft) above terrain, whichever is the higher | A (**) B C D E | 5 km | 1500 m horizontally / 300 m (1 000 ft) vertically\n | F G | 5 km (***) | Clear of cloud and with the surface in sight"
  },
  {
   "id": "SERA-B07",
@@ -2136,7 +2211,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(1) the ceiling is less than 450 m (1 500 ft); or",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(b) Except when a clearance is obtained from an air traffic control unit, VFR flights shall not take off or land at an aerodrome within a control zone, or enter the aerodrome traffic zone or aerodrome traffic circuit, when the reported meteorological conditions at that aerodrome are below the following minima:\n(1) the ceiling is less than 450 m (1 500 ft); or\n(2) the ground visibility is less than 5 km."
  },
  {
   "id": "SERA-B08",
@@ -2165,7 +2241,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(2) the ground visibility is less than 5 km.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(b) Except when a clearance is obtained from an air traffic control unit, VFR flights shall not take off or land at an aerodrome within a control zone, or enter the aerodrome traffic zone or aerodrome traffic circuit, when the reported meteorological conditions at that aerodrome are below the following minima:\n(1) the ceiling is less than 450 m (1 500 ft); or\n(2) the ground visibility is less than 5 km."
  },
  {
   "id": "SERA-B09",
@@ -2194,7 +2271,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "VFR flights shall not take off or land at an aerodrome within a control zone, or enter the aerodrome traffic zone or aerodrome traffic circuit, when the reported meteorological conditions at that aerodrome are below the following minima",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(b) Except when a clearance is obtained from an air traffic control unit, VFR flights shall not take off or land at an aerodrome within a control zone, or enter the aerodrome traffic zone or aerodrome traffic circuit, when the reported meteorological conditions at that aerodrome are below the following minima:\n(1) the ceiling is less than 450 m (1 500 ft); or\n(2) the ground visibility is less than 5 km."
  },
  {
   "id": "SERA-B10",
@@ -2223,7 +2301,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(i) the ceiling shall not be less than 450 m (1 500 ft);",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) the ceiling shall not be less than 450 m (1 500 ft);\n(ii) the reduced flight visibility provisions specified in Table S5-1(a) and (b) shall not apply;\n(iii) in airspace classes B, C, D, E, F and G, at and below 900 m (3 000 ft) AMSL or 300 m (1 000 ft) above terrain, whichever is the higher, the pilot shall maintain continuous sight of the surface; and\n(iv) [Deleted.]"
  },
  {
   "id": "SERA-B11",
@@ -2252,7 +2331,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(ii) the reduced flight visibility provisions specified in Table S5-1(a) and (b) shall not apply;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) the ceiling shall not be less than 450 m (1 500 ft);\n(ii) the reduced flight visibility provisions specified in Table S5-1(a) and (b) shall not apply;\n(iii) in airspace classes B, C, D, E, F and G, at and below 900 m (3 000 ft) AMSL or 300 m (1 000 ft) above terrain, whichever is the higher, the pilot shall maintain continuous sight of the surface; and\n(iv) [Deleted.]"
  },
  {
   "id": "SERA-B12",
@@ -2281,7 +2361,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(iii) in airspace classes B, C, D, E, F and G, at and below 900 m (3 000 ft) AMSL or 300 m (1 000 ft) above terrain, whichever is the higher, the pilot shall maintain continuous sight of the surface",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) the ceiling shall not be less than 450 m (1 500 ft);\n(ii) the reduced flight visibility provisions specified in Table S5-1(a) and (b) shall not apply;\n(iii) in airspace classes B, C, D, E, F and G, at and below 900 m (3 000 ft) AMSL or 300 m (1 000 ft) above terrain, whichever is the higher, the pilot shall maintain continuous sight of the surface; and\n(iv) [Deleted.]"
  },
  {
   "id": "SERA-B14",
@@ -2310,7 +2391,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(2) flights shall establish and maintain two-way radio communication on the appropriate ATS communication channel, when available;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(c) When so prescribed by the competent authority, VFR flights at night may be permitted under the following conditions:\n(1) if leaving the vicinity of an aerodrome, a flight plan shall be submitted in accordance with SERA.4001(b)(6);\n(2) flights shall establish and maintain two-way radio communication on the appropriate ATS communication channel, when available;\n(3) the VMC visibility and distance from cloud minima as specified in Table S5-1 shall apply except that:"
  },
  {
   "id": "SERA-B15",
@@ -2339,7 +2421,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(ii) elsewhere than as specified in i), at a level which is at least 300 m (1 000 ft) above the highest obstacle located within 8 km of the estimated position of the aircraft.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) over high terrain or in mountainous areas, at a level which is at least 600 m (2 000 ft) above the highest obstacle located within 8 km of the estimated position of the aircraft;\n(ii) elsewhere than as specified in i), at a level which is at least 300 m (1 000 ft) above the highest obstacle located within 8 km of the estimated position of the aircraft."
  },
  {
   "id": "SERA-B16",
@@ -2368,7 +2451,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "the pilot may elect to fly above a cloud layer (VFR on top)",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "When flying in airspace classes B, C, D, E, F, or G, more than 900 m (3 000 ft) above mean sea level (MSL) or 300 m (1 000 ft) above terrain, whichever is higher, the pilot may elect to fly above a cloud layer (VFR on top). When making the decision on whether to fly above or below a cloud at night, consideration should be given at least but not limited to the following:"
  },
  {
   "id": "SERA-B17",
@@ -2397,7 +2481,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(2) above FL 195. Exceptions to this requirement are the following:",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(d) VFR flights shall not be operated:\n(1) at transonic and supersonic speeds unless authorised by the competent authority;\n(2) above FL 195. Exceptions to this requirement are the following:"
  },
  {
   "id": "SERA-B18",
@@ -2426,7 +2511,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(1) over the congested areas of cities, towns or settlements or over an open-air assembly of persons at a height less than 300 m (1 000 ft) above the highest obstacle within a radius of 600 m from the aircraft;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(f) Except when necessary for take-off or landing, or except by permission from the competent authority, a VFR flight shall not be flown:\n(1) over the congested areas of cities, towns or settlements or over an open-air assembly of persons at a height less than 300 m (1 000 ft) above the highest obstacle within a radius of 600 m from the aircraft;\n(2) elsewhere than as specified in (1), at a height less than 150 m (500 ft) above the ground or water, or 150 m (500 ft) above the highest obstacle within a radius of 150 m (500 ft) from the aircraft."
  },
  {
   "id": "SERA-B19",
@@ -2455,7 +2541,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(2) elsewhere than as specified in (1), at a height less than 150 m (500 ft) above the ground or water, or 150 m (500 ft) above the highest obstacle within a radius of 150 m (500 ft) from the aircraft.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(f) Except when necessary for take-off or landing, or except by permission from the competent authority, a VFR flight shall not be flown:\n(1) over the congested areas of cities, towns or settlements or over an open-air assembly of persons at a height less than 300 m (1 000 ft) above the highest obstacle within a radius of 600 m from the aircraft;\n(2) elsewhere than as specified in (1), at a height less than 150 m (500 ft) above the ground or water, or 150 m (500 ft) above the highest obstacle within a radius of 150 m (500 ft) from the aircraft."
  },
  {
   "id": "SERA-B20",
@@ -2484,7 +2571,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "over an open-air assembly of persons",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(f) Except when necessary for take-off or landing, or except by permission from the competent authority, a VFR flight shall not be flown:\n(1) over the congested areas of cities, towns or settlements or over an open-air assembly of persons at a height less than 300 m (1 000 ft) above the highest obstacle within a radius of 600 m from the aircraft;\n(2) elsewhere than as specified in (1), at a height less than 150 m (500 ft) above the ground or water, or 150 m (500 ft) above the highest obstacle within a radius of 150 m (500 ft) from the aircraft."
  },
  {
   "id": "SERA-B21",
@@ -2513,7 +2601,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "The competent authority should specify the conditions under which the permission is or may be granted, including the minimum heights above the terrain, water or the highest obstacle within a radius of 150 m (500 ft) from an aircraft practising forced landings",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "ED Decision 2013/013/R\nVFR MINIMUM HEIGHTS — PERMISSION FROM THE COMPETENT AUTHORITY\nThe competent authority should specify the conditions under which the permission is or may be granted, including the minimum heights above the terrain, water or the highest obstacle within a radius of 150 m (500 ft) from an aircraft practising forced landings, a balloon or an aircraft executing ridge or hill soaring."
  },
  {
   "id": "SERA-B22",
@@ -2542,7 +2631,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(2) as required by SERA.4001(b), submit a flight plan to the appropriate air traffic services unit as soon as practicable and obtain a clearance prior to proceeding IFR when in controlled airspace.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(j) An aircraft operated in accordance with the visual flight rules which wishes to change to compliance with the instrument flight rules shall:\n(1) if a flight plan was submitted, communicate the necessary changes to be effected to its current flight plan; or\n(2) as required by SERA.4001(b), submit a flight plan to the appropriate air traffic services unit as soon as practicable and obtain a clearance prior to proceeding IFR when in controlled airspace."
  },
  {
   "id": "SERA-B23",
@@ -2571,7 +2661,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(h) VFR flights shall comply with the provisions of Section 8:\n(1) when operated within Classes B, C and D airspace;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(h) VFR flights shall comply with the provisions of Section 8:\n(1) when operated within Classes B, C and D airspace;\n(2) when forming part of aerodrome traffic at controlled aerodromes; or\n(3) when operated as special VFR flights."
  },
  {
   "id": "SERA-B24",
@@ -2600,7 +2691,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Special VFR flights may be authorised to operate within a control zone, subject to an ATC clearance.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Special VFR flights may be authorised to operate within a control zone, subject to an ATC clearance. Except when otherwise permitted by the competent authority for helicopters in special cases such as, but not limited to, police, medical, search and rescue operations and firefighting flights, the following additional conditions shall apply:"
  },
  {
   "id": "SERA-B25",
@@ -2629,7 +2721,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(2) the flight visibility is not less than 1 500 m or, for helicopters, not less than 800 m;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(b) by the pilot:\n(1) clear of cloud and with the surface in sight;\n(2) the flight visibility is not less than 1 500 m or, for helicopters, not less than 800 m;\n(3) fly at a speed of 140 kts IAS or less to give adequate opportunity to observe other traffic and any obstacles in time to avoid a collision; and"
  },
  {
   "id": "SERA-B26",
@@ -2658,7 +2751,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(3) fly at a speed of 140 kts IAS or less to give adequate opportunity to observe other traffic and any obstacles in time to avoid a collision",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(b) by the pilot:\n(1) clear of cloud and with the surface in sight;\n(2) the flight visibility is not less than 1 500 m or, for helicopters, not less than 800 m;\n(3) fly at a speed of 140 kts IAS or less to give adequate opportunity to observe other traffic and any obstacles in time to avoid a collision; and"
  },
  {
   "id": "SERA-B27",
@@ -2687,7 +2781,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(a) such special VFR flights may be conducted during day only, unless otherwise permitted by the competent authority;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Special VFR flights may be authorised to operate within a control zone, subject to an ATC clearance. Except when otherwise permitted by the competent authority for helicopters in special cases such as, but not limited to, police, medical, search and rescue operations and firefighting flights, the following additional conditions shall apply:\n(a) such special VFR flights may be conducted during day only, unless otherwise permitted by the competent authority;"
  },
  {
   "id": "SERA-B28",
@@ -2716,7 +2811,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(2) the ceiling is less than 180 m (600 ft).",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(c) an air traffic control unit shall not issue a special VFR clearance to aircraft to take off or land at an aerodrome within a control zone, or enter the aerodrome traffic circuit within a control zone, when the reported meteorological conditions at that aerodrome are below the following minima:\n(1) the ground visibility is less than 1 500 m or, for helicopters, less than 800 m;\n(2) the ceiling is less than 180 m (600 ft)."
  },
  {
   "id": "SERA-B29",
@@ -2745,7 +2841,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "ATC may issue a special VFR clearance for a flight crossing the control zone and not intending to land at an aerodrome within the control zone",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "ED Decision 2024/007/R\nISSUANCE OF SPECIAL VFR CLEARANCE\nWhen the reported ground visibility at the aerodrome is less than 1 500 m, ATC may issue a special VFR clearance for a flight crossing the control zone and not intending to land at an aerodrome within the control zone, or enter the aerodrome traffic circuit when the flight visibility reported by the pilot is not less than 1 500 m, or, for helicopters, not less than 800 m."
  },
  {
   "id": "SERA-B30",
@@ -2774,7 +2871,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(3) Class C. IFR and VFR flights are permitted. All flights are provided with air traffic control service and IFR flights are separated from other IFR flights and from VFR flights. VFR flights are separated from IFR flights and receive traffic information in respect of other VFR flights",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… All flights shall be subject to ATC clearance.\n(3) Class C. IFR and VFR flights are permitted. All flights are provided with air traffic control service and IFR flights are separated from other IFR flights and from VFR flights. VFR flights are separated from IFR flights and receive traffic information in respect of other VFR flights and traffic avoidance advice on request. …"
  },
  {
   "id": "SERA-B31",
@@ -2803,7 +2901,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "VFR flights receive traffic information in respect of all other flights and traffic avoidance advice on request.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… VFR flights receive traffic information in respect of all other flights and traffic avoidance advice on request. Continuous air-ground voice communications are required for all flights and a speed limitation of 250 kts IAS applies to all flights below 3 050 m (10 000 ft) AMSL, except where approved by the competent authority for aircraft types, which for technical or safety reasons, cannot maintain this speed. …"
  },
  {
   "id": "SERA-B32",
@@ -2832,7 +2931,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Continuous air-ground voice communications are required for IFR flights. A speed limitation of 250 kts IAS applies to all flights below 3 050 m (10 000 ft) AMSL",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Continuous air-ground voice communications are required for IFR flights. A speed limitation of 250 kts IAS applies to all flights below 3 050 m (10 000 ft) AMSL, except where approved by the competent authority for aircraft types, which for technical or safety reasons cannot maintain this speed. …"
  },
  {
   "id": "SERA-B33",
@@ -2861,7 +2961,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Class E shall not be used for control zones.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Class E shall not be used for control zones.\n(6) Class F. …"
  },
  {
   "id": "SERA-B34",
@@ -2890,7 +2991,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(7) Class G. IFR and VFR flights are permitted and receive flight information service if requested.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… ATC clearance is not required.\n(7) Class G. IFR and VFR flights are permitted and receive flight information service if requested. All IFR flights shall be capable of establishing air- ground voice communications. …"
  },
  {
   "id": "SERA-B35",
@@ -2919,7 +3021,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(2) Class B. IFR and VFR flights are permitted. All flights are provided with air traffic control service and are separated from each other.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… All flights shall be subject to ATC clearance.\n(2) Class B. IFR and VFR flights are permitted. All flights are provided with air traffic control service and are separated from each other. Continuous air- ground voice communications are required for all flights. …"
  },
  {
   "id": "SERA-B36",
@@ -2948,7 +3051,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "B IFR Alle luchtvaartuigen Luchtverkeersleidingsdienst Niet van toepassing Ja Ja Ja VFR Alle luchtvaartuigen Luchtverkeersleidingsdienst Niet van toepassing",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(afgeleid uit SERA.6001 en SERA.5025, onder b) Klasse Soort vlucht Separatie Verleende dienst Snelheidsbeperking (*) Vereist vermogen om radiocommunicatie tot stand te brengen Permanente mondelinge lucht-grondcommunicatie in beide richtingen vereist Onderworpen aan een luchtverkeersleidingsklaring A Alleen IFR Alle luchtvaartuigen Luchtverkeersleidingsdienst Niet van toepassing Ja Ja Ja B IFR Alle luchtvaartuigen Luchtverkeersleidingsdienst Niet van toepassing Ja Ja Ja VFR Alle luchtvaartuigen Luchtverkeersleidingsdienst Niet van toepassing Ja Ja Ja C IFR IFR van IFR, IFR van VFR Luchtverkeersleidingsdienst Niet van toepassing Ja Ja Ja VFR VFR van IFR"
  },
  {
   "id": "SERA-B37",
@@ -2977,7 +3081,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(b) The designation of the airspace classification shall be appropriate to the needs of the Member States, except that all airspace above FL 195 shall be classified as Class C airspace.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(8) Implementation of Class F shall be considered as a temporary measure until such time as it can be replaced by an alternative classification.\n(b) The designation of the airspace classification shall be appropriate to the needs of the Member States, except that all airspace above FL 195 shall be classified as Class C airspace."
  },
  {
   "id": "SERA-B38",
@@ -3006,7 +3111,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Where ATS airspaces adjoin vertically, i.e. one above the other, flights at a common level should comply with the requirements of, and be given services applicable to, the less restrictive class of airspace.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "ED Decision 2013/013/R\nGENERAL\nWhere ATS airspaces adjoin vertically, i.e. one above the other, flights at a common level should comply with the requirements of, and be given services applicable to, the less restrictive class of airspace."
  },
  {
   "id": "SERA-B39",
@@ -3035,7 +3141,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "VFR flights operating in parts of Classes E, F or G airspace and IFR flights operating in parts of Classes F or G airspace designated as a radio mandatory zone (RMZ)",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) Radio mandatory zone (RMZ)\n(1) VFR flights operating in parts of Classes E, F or G airspace and IFR flights operating in parts of Classes F or G airspace designated as a radio mandatory zone (RMZ) by the competent authority shall maintain continuous air-ground voice communication watch and establish two-way communication, as necessary, on the appropriate communication channel, unless in compliance with alternative provisions prescribed for that particular airspace by the ANSP.\n(2) Before entering a radio mandatory zone, an initial call containing the designation of the station being called, call sign, type of aircraft, position, level, the intentions of the flight and other information as prescribed by the competent authority, shall be made by pilots on the appropriate communication channel."
  },
  {
   "id": "SERA-B40",
@@ -3064,7 +3171,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "an initial call containing the designation of the station being called, call sign, type of aircraft, position, level, the intentions of the flight and other information as prescribed by the competent authority",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) Radio mandatory zone (RMZ)\n(1) VFR flights operating in parts of Classes E, F or G airspace and IFR flights operating in parts of Classes F or G airspace designated as a radio mandatory zone (RMZ) by the competent authority shall maintain continuous air-ground voice communication watch and establish two-way communication, as necessary, on the appropriate communication channel, unless in compliance with alternative provisions prescribed for that particular airspace by the ANSP.\n(2) Before entering a radio mandatory zone, an initial call containing the designation of the station being called, call sign, type of aircraft, position, level, the intentions of the flight and other information as prescribed by the competent authority, shall be made by pilots on the appropriate communication channel."
  },
  {
   "id": "SERA-B41",
@@ -3093,7 +3201,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "unless in compliance with alternative provisions prescribed for that particular airspace by the ANSP.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) Radio mandatory zone (RMZ)\n(1) VFR flights operating in parts of Classes E, F or G airspace and IFR flights operating in parts of Classes F or G airspace designated as a radio mandatory zone (RMZ) by the competent authority shall maintain continuous air-ground voice communication watch and establish two-way communication, as necessary, on the appropriate communication channel, unless in compliance with alternative provisions prescribed for that particular airspace by the ANSP.\n(2) Before entering a radio mandatory zone, an initial call containing the designation of the station being called, call sign, type of aircraft, position, level, the intentions of the flight and other information as prescribed by the competent authority, shall be made by pilots on the appropriate communication channel."
  },
  {
   "id": "SERA-C01",
@@ -3122,7 +3231,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Only when standardised phraseology cannot serve an intended transmission, plain language shall be used.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Standardised phraseology shall be used in all situations for which it has been specified. Only when standardised phraseology cannot serve an intended transmission, plain language shall be used."
  },
  {
   "id": "SERA-C02",
@@ -3151,7 +3261,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(b) Urgency messages, including messages preceded by the medical transports signal | PAN PAN or PAN PAN MEDICAL",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) Distress calls, distress messages and distress traffic | MAYDAY\n(b) Urgency messages, including messages preceded by the medical transports signal | PAN PAN or PAN PAN MEDICAL"
  },
  {
   "id": "SERA-C03",
@@ -3180,7 +3291,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(f) Flight regularity messages | —",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(e) Meteorological messages | —\n(f) Flight regularity messages | —"
  },
  {
   "id": "SERA-C04",
@@ -3209,7 +3321,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(c) meteorological advice of immediate concern to an aircraft in flight or about to depart (individually communicated or for broadcast);",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Flight safety messages shall comprise the following:\n(a) movement and control messages;\n(b) messages originated by an aircraft operator or by an aircraft, of immediate concern to an aircraft in flight;\n(c) meteorological advice of immediate concern to an aircraft in flight or about to depart (individually communicated or for broadcast);\n(d) other messages concerning aircraft in flight or about to depart."
  },
  {
   "id": "SERA-C05",
@@ -3238,7 +3351,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(a) The air-ground radiotelephony communications shall be conducted in the English language or in the language normally used by the station on the ground.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) The air-ground radiotelephony communications shall be conducted in the English language or in the language normally used by the station on the ground."
  },
  {
   "id": "SERA-C06",
@@ -3267,7 +3381,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "When proper names, service abbreviations and words of which the spelling is doubtful are spelled out in radiotelephony, the alphabet in the Table S14-2 shall be used.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "When proper names, service abbreviations and words of which the spelling is doubtful are spelled out in radiotelephony, the alphabet in the Table S14-2 shall be used."
  },
  {
   "id": "SERA-C07",
@@ -3296,7 +3411,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(i) Flight levels shall be transmitted by pronouncing each digit separately, except for the case of flight levels in whole hundreds.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) Transmission of numbers\n(1) All numbers used in the transmission of aircraft call sign, headings, wind direction and speed, and runway shall be transmitted by pronouncing each digit separately.\n(i) Flight levels shall be transmitted by pronouncing each digit separately, except for the case of flight levels in whole hundreds.\n(ii) The altimeter setting shall be transmitted by pronouncing each digit separately, except for the case of a setting of 1 000 hPa, which shall be transmitted as “ONE THOUSAND”.\n(iii) All numbers used in the transmission of transponder codes shall be transmitted by pronouncing each digit separately except that, when the transponder codes contain whole thousands only, the information shall be transmitted by pronouncing the digit in the number of …"
  },
  {
   "id": "SERA-C08",
@@ -3325,7 +3441,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "except for the case of a setting of 1 000 hPa, which shall be transmitted as “ONE THOUSAND”.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) Transmission of numbers\n(1) All numbers used in the transmission of aircraft call sign, headings, wind direction and speed, and runway shall be transmitted by pronouncing each digit separately.\n(i) Flight levels shall be transmitted by pronouncing each digit separately, except for the case of flight levels in whole hundreds.\n(ii) The altimeter setting shall be transmitted by pronouncing each digit separately, except for the case of a setting of 1 000 hPa, which shall be transmitted as “ONE THOUSAND”.\n(iii) All numbers used in the transmission of transponder codes shall be transmitted by pronouncing each digit separately except that, when the transponder codes contain whole thousands only, the information shall be transmitted by pronouncing the digit in the number of thousands followed by the word “THOUSAND”.\n(2) All numbers used in transmission of other information than those described in point (a)(1) shall be transmitted by pronouncing each …"
  },
  {
   "id": "SERA-C09",
@@ -3354,7 +3471,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "when the transponder codes contain whole thousands only, the information shall be transmitted by pronouncing the digit in the number of thousands followed by the word “THOUSAND”.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… y.\n(i) Flight levels shall be transmitted by pronouncing each digit separately, except for the case of flight levels in whole hundreds.\n(ii) The altimeter setting shall be transmitted by pronouncing each digit separately, except for the case of a setting of 1 000 hPa, which shall be transmitted as “ONE THOUSAND”.\n(iii) All numbers used in the transmission of transponder codes shall be transmitted by pronouncing each digit separately except that, when the transponder codes contain whole thousands only, the information shall be transmitted by pronouncing the digit in the number of thousands followed by the word “THOUSAND”.\n(2) All numbers used in transmission of other information than those described in point (a)(1) shall be transmitted by pronouncing each digit separately, except that all numbers containing whole hundreds and whole thousands shall be transmitted by pronouncing each digit in the number of hundreds or thousands followed by the word ‘HUNDRED’ or ‘THOUSAND’, as appropriate. …"
  },
  {
   "id": "SERA-C10",
@@ -3383,7 +3501,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Combinations of thousands and whole hundreds shall be transmitted by pronouncing each digit in the number of thousands followed by the word ‘THOUSAND’",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Combinations of thousands and whole hundreds shall be transmitted by pronouncing each digit in the number of thousands followed by the word ‘THOUSAND’, followed by the number of hundreds followed by the word ‘HUNDRED’.\n(3) In cases where there is a need to clarify the number transmitted as whole thousands and/or whole hundreds, the number shall be transmitted by pronouncing each digit separately.\n(4) When providing information regarding the relative bearing to an object or to conflicting traffic in terms of the 12-hour clock, the information shall be given pronouncing the digits together such …"
  },
  {
   "id": "SERA-C11",
@@ -3412,7 +3531,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "160 degrees 18 knots gusting 30 knots | wind one six zero degrees one eight knots gusting three zero knots",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "ED Decision 2024/007/R\nCALL SIGN, HEADING, RUNWAY AND WIND\nThe following examples illustrate the application.\naircraft call signs | transmitted as\nCCA 238 | Air China two three eight\nOAL 242 | Olympic two four two\nheadings | transmitted as\n100 degrees | heading one zero zero\n080 degrees | heading zero eight zero\nrunway | transmitted as\n27 | runway two seven\n30 | runway three zero\nwind direction and speed | transmitted as\n200 degrees 70 knots | wind two zero zero degrees seven zero knots\n160 degrees 18 knots gusting 30 knots | wind one six zero degrees one eight knots gusting three zero knots"
  },
  {
   "id": "SERA-C12",
@@ -3441,7 +3561,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "118.025 | ONE ONE EIGHT DECIMAL ZERO TWO FIVE",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "118.010 | ONE ONE EIGHT DECIMAL ZERO ONE ZERO\n118.025 | ONE ONE EIGHT DECIMAL ZERO TWO FIVE"
  },
  {
   "id": "SERA-C13",
@@ -3470,7 +3591,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "WILCO | (Abbreviation for ‘will comply’) / ‘I understand your message and will comply with it.’",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "UNABLE | ‘I cannot comply with your request, instruction, or clearance.’\nWILCO | (Abbreviation for ‘will comply’) / ‘I understand your message and will comply with it.’"
  },
  {
   "id": "SERA-C14",
@@ -3499,7 +3621,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "‘STANDBY’ is not an approval or denial.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "ED Decision 2016/023/R\nSTANDBY\nThe caller would normally re-establish contact if the delay is lengthy. ‘STANDBY’ is not an approval or denial."
  },
  {
   "id": "SERA-C15",
@@ -3528,7 +3651,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "MONITOR | ‘Listen out on (frequency).’",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "MAINTAIN | ‘Continue in accordance with the condition(s) specified’ or in its literal sense.\nMONITOR | ‘Listen out on (frequency).’"
  },
  {
   "id": "SERA-C17",
@@ -3557,7 +3681,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "UNABLE | ‘I cannot comply with your request, instruction, or clearance.’",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "STANDBY | ‘Wait and I will call you.’\nUNABLE | ‘I cannot comply with your request, instruction, or clearance.’"
  },
  {
   "id": "SERA-C18",
@@ -3586,7 +3711,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(c) The expression “TAKE-OFF” shall only be used in radiotelephony when an aircraft is cleared for take-off or when cancelling a take-off clearance.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "WORDS TWICE | (a) As a request: ‘Communication is difficult. Please send every word, or group of words, twice.’ / (b) As information: ‘Since communication is difficult, every word, or group of words, in this message will be sent twice.’\n(c) The expression “TAKE-OFF” shall only be used in radiotelephony when an aircraft is cleared for take-off or when cancelling a take-off clearance."
  },
  {
   "id": "SERA-C19",
@@ -3615,7 +3741,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(1) Type (a) — the first character of the registration and at least the last two characters of the call sign;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(b) Abbreviated call signs:\nThe aircraft radiotelephony call signs shown in point (a), with the exception of Type (c), may be abbreviated under the circumstances prescribed in point SERA.14055(c). Abbreviated call signs shall be in the following form:\n(1) Type (a) — the first character of the registration and at least the last two characters of the call sign;\n(2) Type (b) — the telephony designator of the aircraft operator, followed by at least the last two characters of the call sign;\n(3) Type (c) — no abbreviated form."
  },
  {
   "id": "SERA-C20",
@@ -3644,7 +3771,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Except for reasons of safety, no transmission shall be directed to an aircraft during take-off, during the last part of the final approach or during the landing roll.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) An aircraft shall not change the type of its radiotelephony call sign during flight, except temporarily on the instruction of an ATC unit in the interests of safety. Except for reasons of safety, no transmission shall be directed to an aircraft during take-off, during the last part of the final approach or during the landing roll."
  },
  {
   "id": "SERA-C21",
@@ -3673,7 +3801,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(2) When issuing ATC clearances and reading back such clearances, controllers and pilots shall always add the call sign of the aircraft to which the clearance applies.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(c) Subsequent radiotelephony communications\n(1) Abbreviated radiotelephony call signs, as prescribed in point SERA.14050(b), shall be used only after satisfactory communication has been established and provided that no confusion is likely to arise. An aircraft shall use its abbreviated call sign only after it has been addressed in this manner by the aeronautical station.\n(2) When issuing ATC clearances and reading back such clearances, controllers and pilots shall always add the call sign of the aircraft to which the clearance applies. For other than those occasions, continuous two-way communication after contact has been established shall be permitted without further identification or call until termination of the contact."
  },
  {
   "id": "SERA-C22",
@@ -3702,7 +3831,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(3) position; and",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "For aircraft being provided with aerodrome control service, the initial call shall contain:\n(1) the designation of the ATS unit being called;\n(2) call sign, immediately followed by the word “Heavy” or “Super” corresponding, as appropriate, to the wake turbulence category of the aircraft;\n(3) position; and\n(4) additional elements, as required by the ANSP responsible for the provision of services and approved by the competent authority."
  },
  {
   "id": "SERA-C23",
@@ -3731,7 +3861,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(4) the frequency being used.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) The form of test transmissions shall be as follows:\n(1) the identification of the station being called;\n(2) the identification of the station calling;\n(3) the words ‘RADIO CHECK’;\n(4) the frequency being used.\n(b) The reply to a test transmission shall be as follows:\n(1) the identification of the station requesting the test;\n(2) the identification of the station replying;\n(3) information regarding the readability of the station requesting the test transmission.\n(c) When the tests are made, the following readability scale shall be used:\nReadability Scale\n(1) 1 Unreadable\n(2) 2 Readable now and then\n(3) 3 Readable but with difficulty\n(4) 4 Readable\n(5) 5 Perfectly readable"
  },
  {
   "id": "SERA-C25",
@@ -3760,7 +3891,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(1) When an error has been made in transmission, the word ‘CORRECTION’ shall be spoken, the last correct group or phrase repeated, and then the correct version transmitted.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(c) Corrections and repetitions\n(1) When an error has been made in transmission, the word ‘CORRECTION’ shall be spoken, the last correct group or phrase repeated, and then the correct version transmitted.\n(2) If a correction can best be made by repeating the entire message, the phrase ‘CORRECTION, I SAY AGAIN’ shall be used before the message is transmitted a second time.\n(3) If the receiving station is in doubt as to the correctness of the message received, a repetition either in full or in part shall be requested.\n(4) If repetition of an entire message is required, the words ‘SAY AGAIN’ shall be spoken. If repetition of a portion of a message is required, the phrase: ‘SAY AGAIN ALL BEFORE… (first word satisfactorily received)’ shall be used; or ‘SAY AGAIN… (word before missing portion) TO…(word after missing portion)’; or ‘SAY AGAIN ALL AFTER… (last word satisfactorily received)’."
  },
  {
   "id": "SERA-C26",
@@ -3789,7 +3921,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "‘SAY AGAIN ALL AFTER… (last word satisfactorily received)’.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(c) Corrections and repetitions\n(1) When an error has been made in transmission, the word ‘CORRECTION’ shall be spoken, the last correct group or phrase repeated, and then the correct version transmitted.\n(2) If a correction can best be made by repeating the entire message, the phrase ‘CORRECTION, I SAY AGAIN’ shall be used before the message is transmitted a second time.\n(3) If the receiving station is in doubt as to the correctness of the message received, a repetition either in full or in part shall be requested.\n(4) If repetition of an entire message is required, the words ‘SAY AGAIN’ shall be spoken. If repetition of a portion of a message is required, the phrase: ‘SAY AGAIN ALL BEFORE… (first word satisfactorily received)’ shall be used; or ‘SAY AGAIN… (word before missing portion) TO…(word after missing portion)’; or ‘SAY AGAIN ALL AFTER… (last word satisfactorily received)’."
  },
  {
   "id": "SERA-C27",
@@ -3818,7 +3951,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(d) If, in checking the correctness of a read-back, incorrect items are noticed, the words ‘NEGATIVE I SAY AGAIN’ shall be transmitted at the conclusion of the read-back followed by the correct version of the items concerned.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(4) If repetition of an entire message is required, the words ‘SAY AGAIN’ shall be spoken. If repetition of a portion of a message is required, the phrase: ‘SAY AGAIN ALL BEFORE… (first word satisfactorily received)’ shall be used; or ‘SAY AGAIN… (word before missing portion) TO…(word after missing portion)’; or ‘SAY AGAIN ALL AFTER… (last word satisfactorily received)’.\n(d) If, in checking the correctness of a read-back, incorrect items are noticed, the words ‘NEGATIVE I SAY AGAIN’ shall be transmitted at the conclusion of the read-back followed by the correct version of the items concerned."
  },
  {
   "id": "SERA-C28",
@@ -3847,7 +3981,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Aircraft on flights other than those specified should guard the emergency frequency 121,5 MHz to the extent possible.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "ED Decision 2016/023/R\nGUARD ON FREQUENCY 121,5 MHZ\nAircraft on flights other than those specified should guard the emergency frequency 121,5 MHz to the extent possible."
  },
  {
   "id": "SERA-C29",
@@ -3876,7 +4011,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "the flight crew shall attempt to establish contact on the previous channel used and, if not successful, on another channel appropriate to the route.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) When an aircraft is unable to comply with SERA.8035, point (a), the flight crew shall attempt to establish contact on the previous channel used and, if not successful, on another channel appropriate to the route. If these attempts fail, the flight crew shall attempt to establish communication with:\n(1) the appropriate air traffic services unit;\n(2) other air traffic services units; or\n(3) other aircraft,\nusing all available means, including, inter alia, data link, satellite voice and mobile phones and, when successful, advise that contact on the assigned channel could not be established."
  },
  {
   "id": "SERA-C30",
@@ -3905,7 +4041,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(3) A VFR flight shall continue to fly in visual meteorological conditions, land at the nearest suitable aerodrome, and report its arrival by the most expeditious means to the appropriate air traffic services unit.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(c) When an aircraft is unable to comply with point SERA.8035(a) and the attempts described in point (a) of SERA.14083 to establish communications are not successful, the radio communication failure procedures described below shall be applied:\n(1) The aircraft, when forming part of the aerodrome traffic at a controlled aerodrome, shall keep a watch for instructions as may be issued by visual signals.\n(2) The aircraft shall set the transponder on Mode A Code 7600 and/or set the ADS-B transmitter to indicate the loss of air-ground communications and comply with the procedures described in points (3), (4), (5) and (6), as appropriate.\n(3) A VFR flight shall continue to fly in visual meteorological conditions, land at the nearest suitable aerodrome, and report its arrival by the most expeditious means to the appropriate air traffic services unit.\n(4) Except as provided for in point (5), an IFR flight shall:"
  },
  {
   "id": "SERA-C31",
@@ -3934,7 +4071,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(1) The aircraft, when forming part of the aerodrome traffic at a controlled aerodrome, shall keep a watch for instructions as may be issued by visual signals.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(c) When an aircraft is unable to comply with point SERA.8035(a) and the attempts described in point (a) of SERA.14083 to establish communications are not successful, the radio communication failure procedures described below shall be applied:\n(1) The aircraft, when forming part of the aerodrome traffic at a controlled aerodrome, shall keep a watch for instructions as may be issued by visual signals.\n(2) The aircraft shall set the transponder on Mode A Code 7600 and/or set the ADS-B transmitter to indicate the loss of air-ground communications and comply with the procedures described in points (3), (4), (5) and (6), as appropriate.\n(3) A VFR flight shall continue to fly in visual meteorological conditions, land at the nearest suitable aerodrome, and report its arrival by the most expeditious means to the appropriate air traffic services unit.\n(4) Except as provided for in point (5), an IFR flight shall:"
  },
  {
   "id": "SERA-C32",
@@ -3963,7 +4101,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(2) advise the time of its next intended transmission;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(b) When an aircraft is unable to establish communication due to receiver failure, it shall transmit reports at the scheduled times, or positions, on the channel in use preceded by the phrase ‘TRANSMITTING BLIND DUE TO RECEIVER FAILURE’. The aircraft shall:\n(1) transmit the intended message, following this by a complete repetition;\n(2) advise the time of its next intended transmission;\n(3) when provided with ATS, transmit information regarding the intention of the pilot-in-command with respect to the continuation of the flight."
  },
  {
   "id": "SERA-C33",
@@ -3992,7 +4131,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(ii) consist of as many as possible of the following elements spoken distinctly and, if possible, in the following order:",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) be on the air-ground frequency in use at the time;\n(ii) consist of as many as possible of the following elements spoken distinctly and, if possible, in the following order:\n(A) the name of the ATS unit addressed (time and circumstances permitting);\n(B) the identification of the aircraft;\n(C) the nature of the distress condition;\n(D) the intention of the pilot-in-command;\n(E) present position, level and heading.\n(2) Action by the ATS unit addressed or by the first ATS unit acknowledging the distress message"
  },
  {
   "id": "SERA-C34",
@@ -4021,7 +4161,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(A) ‘STOP TRANSMITTING’;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) The aircraft in distress, or the ATS unit in control of distress traffic, shall be permitted to impose silence, either on all stations of the mobile service in the area or on any station which interferes with the distress traffic. It shall address these instructions ‘to all stations’ or to one station only, according to the circumstances. In either case, it shall use:\n(A) ‘STOP TRANSMITTING’;\n(B) the radiotelephony distress signal ‘MAYDAY’.\n(ii) The use of the signals specified in point (b)(3)(i) shall be reserved for the aircraft in distress and for the ATS unit controlling the distress traffic.\n(4) Action by all other ATS units/aircraft"
  },
  {
   "id": "SERA-C35",
@@ -4050,7 +4191,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "This message shall be originated only by the ATS unit controlling the communications",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(B) the aircraft operator concerned, or its representative, in accordance with pre-established arrangements.\n(iii) The distress communication and silence conditions shall be terminated by transmitting a message, including the words ‘DISTRESS TRAFFIC ENDED’, on the frequency or frequencies being used for the distress traffic. This message shall be originated only by the ATS unit controlling the communications when, after the reception of the message prescribed in point (b)(5)(i), it is authorised to do so by the competent authority."
  },
  {
   "id": "SERA-C36",
@@ -4079,7 +4221,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "shall nevertheless continue listening to such traffic until it is evident that assistance is being provided.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(D) it has itself to render assistance.\n(ii) Any ATS unit/aircraft which has knowledge of distress traffic, and which cannot itself assist the aircraft in distress, shall nevertheless continue listening to such traffic until it is evident that assistance is being provided.\n(5) Termination of distress communications and of silence"
  },
  {
   "id": "SERA-C37",
@@ -4108,7 +4251,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "each word of the group pronounced as the French word ‘panne’",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "In addition to being preceded by the radiotelephony urgency signal ‘PAN PAN’ in accordance with point (a)(2), preferably spoken three times and each word of the group pronounced as the French word ‘panne’, the urgency message to be sent by an aircraft reporting an urgency condition shall:"
  },
  {
   "id": "SERA-C38",
@@ -4137,7 +4281,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "The procedure words ‘ROGER’ and ‘WILCO’ are insufficient acknowledgement of the instructions ‘HOLD, HOLD POSITION and HOLD SHORT OF (position)’.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… The procedure words ‘ROGER’ and ‘WILCO’ are insufficient acknowledgement of the instructions ‘HOLD, HOLD POSITION and HOLD SHORT OF (position)’. In each case, the acknowledgement is to be by the phraseology ‘HOLDING’ or ‘HOLDING SHORT’, as appropriate. …"
  },
  {
   "id": "SERA-C39",
@@ -4166,7 +4311,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "The report ‘LONG FINAL’ is made when an aircraft turns on to final approach at a distance greater than 7 km (4 NM) from touchdown",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… — The report ‘LONG FINAL’ is made when an aircraft turns on to final approach at a distance greater than 7 km (4 NM) from touchdown or when an aircraft on a straight-in approach is 15 km (8 NM) from touchdown. …"
  },
  {
   "id": "SERA-C40",
@@ -4195,7 +4341,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "*e) NEGATIVE CONTACT [reasons]; | * |",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… |  | \n1.1.7 | Traffic information | a) TRAFFIC (information); |  | \n | ...to pass traffic information | b) NO REPORTED TRAFFIC; |  | \n | ...to acknowledge traffic information | *c) LOOKING OUT; | * | \n |  | *d) TRAFFIC IN SIGHT; | * | \n |  | *e) NEGATIVE CONTACT [reasons]; | * | \n |  | f) [ADDITIONAL] TRAFFIC (direction) BOUND (type of aircraft) (level) ESTIMATED (or OVER) (significant point) AT (time); |  | \n |  | g) TRAFFIC IS (classification) UNMANNED FREE BALLOON(S) WAS [or ESTIMATED] OVER (place) AT (time) REPORTED level(s)) [or LEVEL UNKNOWN] MOVING (direction) (other pertinent information, if any). …"
  },
  {
   "id": "SERA-C41",
@@ -4224,7 +4371,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "*j) (condition) LINING UP (brief reiteration of the condition); | * |",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… BE READY FOR IMMEDIATE DEPARTURE; |  | \n | ...conditional clearances | ‡i) (condition) LINE UP (brief reiteration of the condition); |  | \n | ...acknowledgement of a conditional clearance | *j) (condition) LINING UP (brief reiteration of the condition); | * | \n | ...confirmation or otherwise of the readback of a conditional clearance | k) [THAT IS] CORRECT (or NEGATIVE) [I SAY AGAIN] (as appropriate); |  | \n | …request for departure from an intersection take-off position | *l) REQUEST DEPARTURE FROM RUNWAY (number), INTERSECTION (designation or name of intersection); | * | \n | …approval of requested departure from an intersection take-off position | m) APPROVED, TAXI TO HOLDING POINT RUNWAY (number), …"
  },
  {
   "id": "SERA-C42",
@@ -4253,7 +4401,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "(iv) transition levels, whether issued by the controller or contained in ATIS broadcasts.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… The following items shall always be read back:\n(i) ATC route clearances;\n(ii) clearances and instructions to enter, land on, take off from, hold short of, cross, taxi and backtrack on any runway; and\n(iii) runway-in-use, altimeter settings, SSR codes, newly assigned communication channels, level instructions, heading and speed instructions; and\n(iv) transition levels, whether issued by the controller or contained in ATIS broadcasts.\n(2) Other clearances or instructions, including conditional clearances and taxi instructions, shall be read back or acknowledged in a manner to clearly indicate that they have been understood and will be complied with.\n(3) The controller shall listen to the read-back to ascertain that the clearance or instruction has been correctly acknowledged by the flight crew and shall take immediate action to correct any discrepancies revealed by the read-b …"
  },
  {
   "id": "SERA-D01",
@@ -4282,7 +4431,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "d) vuurpijlen of lichtkogels die rood licht afgeven en die een per een met korte intervallen worden afgeschoten;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… in Morse-code), verzonden via radiotelegrafie of een andere signalisatiemethode;\nb) een via radiotelefonie verzonden noodsignaal, bestaande uit het gesproken woord MAYDAY;\nc) een via datalink verzonden noodsignaal dat de betekenis van het woord MAYDAY weergeeft;\nd) vuurpijlen of lichtkogels die rood licht afgeven en die een per een met korte intervallen worden afgeschoten;\ne) een parachutefakkel die rood licht afgeeft;\nf) het instellen van de transponder op Mode A Code 7700. …"
  },
  {
   "id": "SERA-D02",
@@ -4311,7 +4461,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "a) het herhaaldelijk in- en uitschakelen van de landingslichten; of",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… De volgende signalen, afzonderlijk of samen gebruikt, betekenen dat een luchtvaartuig wil aangeven dat het moeilijkheden ondervindt die het verplichten te landen, zonder onmiddellijke bijstand te vragen:\na) het herhaaldelijk in- en uitschakelen van de landingslichten; of\nb) het herhaaldelijk in- en uitschakelen van de navigatielichten op zodanige wijze dat dit kan worden onderscheiden van knipperende navigatielichten. …"
  },
  {
   "id": "SERA-D03",
@@ -4340,7 +4491,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "worden met een reeks vanaf de grond afgeschoten projecten met intervallen van 10 seconden, die elk rood en groen licht of sterren verspreiden",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Wanneer gebruik wordt gemaakt van visuele signalen voor het waarschuwen van luchtvaartuigen die, overdag of ’s nachts, zonder toestemming in een beperkt toegankelijk, verboden gebied of danger area vliegen, worden met een reeks vanaf de grond afgeschoten projecten met intervallen van 10 seconden, die elk rood en groen licht of sterren verspreiden, die luchtvaartuigen erop gewezen dat zij een in beperkt toegankelijk, verboden gebied of danger area vliegen of dreigen dat te gaan doen en dat zij de nodige corrigerende acties moeten ondernemen. …"
  },
  {
   "id": "SERA-D04",
@@ -4369,7 +4521,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Ononderbroken rood licht Wijk uit voor andere luchtvaartuigen en blijf cirkelen",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Instructies\nTabel AP 1-1 Licht Van de plaatselijke luchtverkeersleidingsdienst naar Luchtvaartuigen in de vlucht Luchtvaartuigen op de grond Gericht aan de betrokken lucht-vaartuigen (zie figuur A1-1) Ononderbroken groen licht Geklaard om te landen Geklaard om op te stijgen Ononderbroken rood licht Wijk uit voor andere luchtvaartuigen en blijf cirkelen Stop Groen knipperlicht Keer terug om te landen (*) Geklaard om te taxiën Rood knipperlicht Luchtvaartterrein onveilig, niet landen Taxi weg van de in gebruik zijnde landingsbaan Wit knipperlicht Land op dit luchtvaartterrein en begeef u naar het luchtvaartterreinplatform (*) Keer terug naar de plaats op het luchtvaartterrein van waar u vertrokken bent Rode lichtkogels of vuurpijlen Ondanks eerdere aanwijzingen voorlopig niet landen (*) Klaringe …"
  },
  {
   "id": "SERA-D05",
@@ -4398,7 +4551,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Ononderbroken rood licht Wijk uit voor andere luchtvaartuigen en blijf cirkelen Stop",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Instructies\nTabel AP 1-1 Licht Van de plaatselijke luchtverkeersleidingsdienst naar Luchtvaartuigen in de vlucht Luchtvaartuigen op de grond Gericht aan de betrokken lucht-vaartuigen (zie figuur A1-1) Ononderbroken groen licht Geklaard om te landen Geklaard om op te stijgen Ononderbroken rood licht Wijk uit voor andere luchtvaartuigen en blijf cirkelen Stop Groen knipperlicht Keer terug om te landen (*) Geklaard om te taxiën Rood knipperlicht Luchtvaartterrein onveilig, niet landen Taxi weg van de in gebruik zijnde landingsbaan Wit knipperlicht Land op dit luchtvaartterrein en begeef u naar het luchtvaartterreinplatform (*) Keer terug naar de plaats op het luchtvaartterrein van waar u vertrokken bent Rode lichtkogels of vuurpijlen Ondanks eerdere aanwijzingen voorlopig niet landen (*) Klaringen om …"
  },
  {
   "id": "SERA-D06",
@@ -4427,7 +4581,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Ononderbroken groen licht Geklaard om te landen Geklaard om op te stijgen",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Instructies\nTabel AP 1-1 Licht Van de plaatselijke luchtverkeersleidingsdienst naar Luchtvaartuigen in de vlucht Luchtvaartuigen op de grond Gericht aan de betrokken lucht-vaartuigen (zie figuur A1-1) Ononderbroken groen licht Geklaard om te landen Geklaard om op te stijgen Ononderbroken rood licht Wijk uit voor andere luchtvaartuigen en blijf cirkelen Stop Groen knipperlicht Keer terug om te landen (*) Geklaard om te taxiën Rood knipperlicht Luchtvaartterrein onveilig, niet landen Taxi weg van de in gebruik zijnde landingsbaan Wit knipperlicht Land op dit luchtvaartterrein en begeef u naar het luchtvaartterreinplatform (*) Keer terug naar de plaats op het luchtvaartterrein van waar u vertrokken bent Rode lichtkoge …"
  },
  {
   "id": "SERA-D07",
@@ -4456,7 +4611,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Groen knipperlicht Keer terug om te landen (*) Geklaard om te taxiën",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Instructies\nTabel AP 1-1 Licht Van de plaatselijke luchtverkeersleidingsdienst naar Luchtvaartuigen in de vlucht Luchtvaartuigen op de grond Gericht aan de betrokken lucht-vaartuigen (zie figuur A1-1) Ononderbroken groen licht Geklaard om te landen Geklaard om op te stijgen Ononderbroken rood licht Wijk uit voor andere luchtvaartuigen en blijf cirkelen Stop Groen knipperlicht Keer terug om te landen (*) Geklaard om te taxiën Rood knipperlicht Luchtvaartterrein onveilig, niet landen Taxi weg van de in gebruik zijnde landingsbaan Wit knipperlicht Land op dit luchtvaartterrein en begeef u naar het luchtvaartterreinplatform (*) Keer terug naar de plaats op het luchtvaartterrein van waar u vertrokken bent Rode lichtkogels of vuurpijlen Ondanks eerdere aanwijzingen voorlopig niet landen (*) Klaringen om te landen en te taxiën worden te zijner tijd gegeven. …"
  },
  {
   "id": "SERA-D08",
@@ -4485,7 +4641,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Wit knipperlicht Land op dit luchtvaartterrein en begeef u naar het luchtvaartterreinplatform (*)",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Luchtvaartuigen in de vlucht Luchtvaartuigen op de grond Gericht aan de betrokken lucht-vaartuigen (zie figuur A1-1) Ononderbroken groen licht Geklaard om te landen Geklaard om op te stijgen Ononderbroken rood licht Wijk uit voor andere luchtvaartuigen en blijf cirkelen Stop Groen knipperlicht Keer terug om te landen (*) Geklaard om te taxiën Rood knipperlicht Luchtvaartterrein onveilig, niet landen Taxi weg van de in gebruik zijnde landingsbaan Wit knipperlicht Land op dit luchtvaartterrein en begeef u naar het luchtvaartterreinplatform (*) Keer terug naar de plaats op het luchtvaartterrein van waar u vertrokken bent Rode lichtkogels of vuurpijlen Ondanks eerdere aanwijzingen voorlopig niet landen (*) Klaringen om te landen en te taxiën worden te zijner tijd gegeven. …"
  },
  {
   "id": "SERA-D09",
@@ -4514,7 +4671,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Keer terug naar de plaats op het luchtvaartterrein van waar u vertrokken bent",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… (zie figuur A1-1) Ononderbroken groen licht Geklaard om te landen Geklaard om op te stijgen Ononderbroken rood licht Wijk uit voor andere luchtvaartuigen en blijf cirkelen Stop Groen knipperlicht Keer terug om te landen (*) Geklaard om te taxiën Rood knipperlicht Luchtvaartterrein onveilig, niet landen Taxi weg van de in gebruik zijnde landingsbaan Wit knipperlicht Land op dit luchtvaartterrein en begeef u naar het luchtvaartterreinplatform (*) Keer terug naar de plaats op het luchtvaartterrein van waar u vertrokken bent Rode lichtkogels of vuurpijlen Ondanks eerdere aanwijzingen voorlopig niet landen (*) Klaringen om te landen en te taxiën worden te zijner tijd gegeven. …"
  },
  {
   "id": "SERA-D10",
@@ -4543,7 +4701,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Rode lichtkogels of vuurpijlen Ondanks eerdere aanwijzingen voorlopig niet landen",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… op te stijgen Ononderbroken rood licht Wijk uit voor andere luchtvaartuigen en blijf cirkelen Stop Groen knipperlicht Keer terug om te landen (*) Geklaard om te taxiën Rood knipperlicht Luchtvaartterrein onveilig, niet landen Taxi weg van de in gebruik zijnde landingsbaan Wit knipperlicht Land op dit luchtvaartterrein en begeef u naar het luchtvaartterreinplatform (*) Keer terug naar de plaats op het luchtvaartterrein van waar u vertrokken bent Rode lichtkogels of vuurpijlen Ondanks eerdere aanwijzingen voorlopig niet landen (*) Klaringen om te landen en te taxiën worden te zijner tijd gegeven. …"
  },
  {
   "id": "SERA-D11",
@@ -4572,7 +4731,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "— door het op en neer bewegen van de vleugels, behalve voor het basis- en de slotgedeelten van de nadering;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Bevestiging door een luchtvaartuig\na) tijdens de vlucht:\n1) bij daglicht:\n— door het op en neer bewegen van de vleugels, behalve voor het basis- en de slotgedeelten van de nadering;\n2) bij duisternis:\n— door het tweemaal aan- en uitschakelen van de landingslichten of, indien het luchtvaartuig niet is uitgerust met landingslichten, het tweemaal aan- en uitschakelen van de navigatielichten.\nb) Op de grond:\n1) bij daglicht:\n— door het op en neer bewegen van de rolroeren of het richtingsroer van het luchtvaartuig;\n2) bij duisternis:\n— door het tweemaal aan- en uitschakelen van de landingslichten of, indien het luchtvaartuig nie …"
  },
  {
   "id": "SERA-D12",
@@ -4601,7 +4761,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "— door het tweemaal aan- en uitschakelen van de landingslichten of, indien het luchtvaartuig niet is uitgerust met landingslichten, het tweemaal aan- en uitschakelen van de navigatielichten.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Bevestiging door een luchtvaartuig\na) tijdens de vlucht:\n1) bij daglicht:\n— door het op en neer bewegen van de vleugels, behalve voor het basis- en de slotgedeelten van de nadering;\n2) bij duisternis:\n— door het tweemaal aan- en uitschakelen van de landingslichten of, indien het luchtvaartuig niet is uitgerust met landingslichten, het tweemaal aan- en uitschakelen van de navigatielichten.\nb) Op de grond:\n1) bij daglicht:\n— door het op en neer bewegen van de rolroeren of het richtingsroer van het luchtvaartuig;\n2) bij duisternis:\n— door het tweemaal aan- en uitschakelen van de landingslichten of, indien het luchtvaartuig niet is uitgerust met landingslichten, het tweemaal aan- en uitschakelen van de navigatielichten. …"
  },
  {
   "id": "SERA-D13",
@@ -4630,7 +4791,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "— door het op en neer bewegen van de rolroeren of het richtingsroer van het luchtvaartuig;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Bevestiging door een luchtvaartuig\na) tijdens de vlucht:\n1) bij daglicht:\n— door het op en neer bewegen van de vleugels, behalve voor het basis- en de slotgedeelten van de nadering;\n2) bij duisternis:\n— door het tweemaal aan- en uitschakelen van de landingslichten of, indien het luchtvaartuig niet is uitgerust met landingslichten, het tweemaal aan- en uitschakelen van de navigatielichten.\nb) Op de grond:\n1) bij daglicht:\n— door het op en neer bewegen van de rolroeren of het richtingsroer van het luchtvaartuig;\n2) bij duisternis:\n— door het tweemaal aan- en uitschakelen van de landingslichten of, indien het luchtvaartuig niet is uitgerust met landingslichten, het tweemaal aan- en uitschakelen van de navigatielichten. …"
  },
  {
   "id": "SERA-D14",
@@ -4659,7 +4821,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Een horizontaal rood vierkant met één gele diagonaal (figuur A1-3), afgebeeld in een signaalgebied, betekent dat wegens de slechte staat van het landingsterrein of andere redenen speciale voorzorgen moeten worden genomen bij de landingsnadering of landing.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Een horizontaal rood vierkant met één gele diagonaal (figuur A1-3), afgebeeld in een signaalgebied, betekent dat wegens de slechte staat van het landingsterrein of andere redenen speciale voorzorgen moeten worden genomen bij de landingsnadering of landing. Figuur A1-3 3.2.3. …"
  },
  {
   "id": "SERA-D15",
@@ -4688,7 +4851,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Een horizontale witte halter (figuur A1-4), afgebeeld in een signaalgebied, betekent dat landen, opstijgen en taxiën uitsluitend is toegestaan op banen en taxibanen.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Een horizontale witte halter (figuur A1-4), afgebeeld in een signaalgebied, betekent dat landen, opstijgen en taxiën uitsluitend is toegestaan op banen en taxibanen. Figuur A1-4 3.2.3.2. …"
  },
  {
   "id": "SERA-D16",
@@ -4717,7 +4881,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Kruisen in één kleur, geel of wit (figuur A1-6), horizontaal afgebeeld op banen en taxibanen of delen daarvan, betekent dat een gebied ongeschikt is voor bewegingen van luchtvaartuigen.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Kruisen in één kleur, geel of wit (figuur A1-6), horizontaal afgebeeld op banen en taxibanen of delen daarvan, betekent dat een gebied ongeschikt is voor bewegingen van luchtvaartuigen. Figuur A1-6 3.2.5. …"
  },
  {
   "id": "SERA-D17",
@@ -4746,7 +4911,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "geeft de richting aan voor opstijgen en landen, namelijk parallel met het staande been van de T en in de richting van de voet naar de top van de T.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Een horizontale, witte of oranje, landings-T (figuur A1-7) geeft de richting aan voor opstijgen en landen, namelijk parallel met het staande been van de T en in de richting van de voet naar de top van de T. Bij gebruik ’s nachts wordt de landings-T ofwel verlicht ofwel wordt de omtrek ervan aangegeven met witte lichten. …"
  },
  {
   "id": "SERA-D18",
@@ -4775,7 +4941,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "geeft een pijl naar rechts, in een opvallende kleur (figuur A1-9), aan dat vóór het landen en na het opstijgen iedere bocht naar rechts moet worden gemaakt.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Wanneer afgebeeld in een signaalgebied of horizontaal aan het einde van de in gebruik zijnde baan of strip, geeft een pijl naar rechts, in een opvallende kleur (figuur A1-9), aan dat vóór het landen en na het opstijgen iedere bocht naar rechts moet worden gemaakt. Figuur A1-9 3.2.7. …"
  },
  {
   "id": "SERA-D19",
@@ -4804,7 +4971,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Een zwarte C tegen een gele achtergrond (figuur A1-10) geeft de plaats aan van de luchtverkeersmeldingspost.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Een zwarte C tegen een gele achtergrond (figuur A1-10) geeft de plaats aan van de luchtverkeersmeldingspost. Figuur A1-10 3.2.8. …"
  },
  {
   "id": "SERA-D20",
@@ -4833,7 +5001,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Strek arm en lichtgevende stick voor het lichaam, op schouderhoogte; beweeg hand en lichtgevende stick naar de bovenkant van de linkerschouder en beweeg vervolgens de lichtgevende stick in een snijbeweging langs de keel naar de bovenkant van de rechterschouder.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "10. Zet de motoren stil Strek arm en lichtgevende stick voor het lichaam, op schouderhoogte; beweeg hand en lichtgevende stick naar de bovenkant van de linkerschouder en beweeg vervolgens de lichtgevende stick in een snijbeweging langs de keel naar de bovenkant van de rechterschouder."
  },
  {
   "id": "SERA-D21",
@@ -4862,7 +5031,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "An aircraft which is being subjected to unlawful interference shall endeavour to set the transponder to Code 7500",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(aa) An aircraft which is being subjected to unlawful interference shall endeavour to set the transponder to Code 7500 and notify the appropriate ATS unit of any significant circumstances associated therewith and any deviation from the current flight plan necessitated by the circumstances, in order to enable the ATS unit to give priority to the aircraft and to minimise conflict with other aircraft."
  },
  {
   "id": "SERA-D22",
@@ -4891,7 +5061,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "the pilot-in-command shall attempt to land as soon as practicable at the nearest suitable aerodrome or operating site",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(ab) If an aircraft is subjected to unlawful interference, the pilot-in-command shall attempt to land as soon as practicable at the nearest suitable aerodrome or operating site or at a dedicated aerodrome or operating site assigned by the competent authority, unless considerations aboard the aircraft dictate otherwise."
  },
  {
   "id": "SERA-D24",
@@ -4920,7 +5091,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "attempt to establish radio-communication with the intercepting aircraft or with the appropriate intercept control unit, by making a general call on the emergency frequency 121,5 MHz, giving the identity of the intercepted aircraft and the nature of the flight",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(b) The pilot-in-command of a civil aircraft, when intercepted, shall:\n(1) immediately follow the instructions given by the intercepting aircraft, interpreting and responding to visual signals in accordance with the specifications in Tables S11-1 and S11-2;\n(2) notify, if possible, the appropriate air traffic services unit;\n(3) attempt to establish radio-communication with the intercepting aircraft or with the appropriate intercept control unit, by making a general call on the emergency frequency 121,5 MHz, giving the identity of the intercepted aircraft and the nature of the flight; and if no contact has been established and if practicable, repeating this call on the emergency frequency 243 MHz,\n(4) if equipped with SSR transponder, select Mode A, Code 7700, unless otherwise instructed by the appropriate air traffic services unit;\n(5) if equipped with ADS-B or ADS-C, select the appropriate emergency functionality, if available, unless otherwise instructed by the appropriate air traffic services unit."
  },
  {
   "id": "SERA-D25",
@@ -4949,7 +5121,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "if equipped with SSR transponder, select Mode A, Code 7700, unless otherwise instructed by the appropriate air traffic services unit;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(b) The pilot-in-command of a civil aircraft, when intercepted, shall:\n(1) immediately follow the instructions given by the intercepting aircraft, interpreting and responding to visual signals in accordance with the specifications in Tables S11-1 and S11-2;\n(2) notify, if possible, the appropriate air traffic services unit;\n(3) attempt to establish radio-communication with the intercepting aircraft or with the appropriate intercept control unit, by making a general call on the emergency frequency 121,5 MHz, giving the identity of the intercepted aircraft and the nature of the flight; and if no contact has been established and if practicable, repeating this call on the emergency frequency 243 MHz,\n(4) if equipped with SSR transponder, select Mode A, Code 7700, unless otherwise instructed by the appropriate air traffic services unit;\n(5) if equipped with ADS-B or ADS-C, select the appropriate emergency functionality, if available, unless otherwise instructed by the appropriate air traffic services unit."
  },
  {
   "id": "SERA-D26",
@@ -4978,7 +5151,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "the intercepted aircraft shall request immediate clarification while continuing to comply with the visual instructions given by the intercepting aircraft.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Series | INTERCEPTED Aircraft Signals | Meaning | INTERCEPTING Aircraft Responds | Meaning\n4 | DAY or NIGHT – Raising landing gear (if fitted) and flashing landing lights while passing over runway in use or helicopter / VTOL-capable aircraft landing area at a height exceeding 300 m (1 000 ft) but not exceeding 600 m (2 000 ft) (in the case of a helicopter, at a height exceeding 50 m (170 ft) but not exceeding 100 m (330 ft)) above the aerodrome level, and continuing to circle runway in use or helicopter / VTOL-capable aircraft landing area. If unable to flash landing lights, flash any other lights available. | Aerodrome you have designated is inadequate. | DAY or NIGHT – If it is desired that the intercepted aircraft follow the intercepting aircraft to an alternate aerodrome, the intercepting aircraft raises its landing gear (if fitted) and uses the Series 1 signals prescribed for intercepting aircraft. / If it is decided to release the intercepted aircraft, the intercepting aircraft uses the Series 2 signals prescribed for intercepting aircraft. | Understood, follow me. / Understood, you may proceed.\n5 | DAY or NIGHT — Regular switching on and off of all available lights but in such a manner as to be distinct from flashing lights. | Cannot comply. | DAY or NIGHT — Use Series 2 signals prescribed for intercepting aircraft. | Understood.\n6 | DAY or NIGHT — Irregular flashing of all available lights. | In distress. | DAY or NIGHT — Use Series 2 signals prescribed for intercepting aircraft. | Understood.\n(c) If any instructions received by radio from any sources conflict with those given by the intercepting aircraft by visual signals, the intercepted aircraft shall request immediate clarification while continuing to comply with the visual instructions given by the intercepting aircraft."
  },
  {
   "id": "SERA-D27",
@@ -5007,7 +5181,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Rocking aircraft, flashing navigational lights at irregular intervals and following.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Series | INTERCEPTING Aircraft Signals | Meaning | INTERCEPTED Aircraft Responds | Meaning\n1 | DAY or NIGHT — Rocking aircraft and flashing navigational lights at irregular intervals (and landing lights in the case of a helicopter) from a position slightly above and ahead of, and normally to the left of, the intercepted aircraft (or to the right if the intercepted aircraft is a helicopter) and, after acknowledgement, a slow level turn, normally to the left (or to the right in the case of a helicopter) on the desired heading. / Note 1 / Meteorological conditions or terrain may require the intercepting aircraft to reverse the positions and direction of turn given above in Series 1. / Note 2 / If the intercepted aircraft is not able to keep pace with the intercepting aircraft, the latter is expected to fly a series of race-track patterns and to rock the aircraft each time it passes the intercepted aircraft. | You have been intercepted. Follow me. | DAY or NIGHT — Rocking aircraft, flashing navigational lights at irregular intervals and following. | Understood, will comply.\n2 | DAY or NIGHT — An abrupt breakaway manoeuvre from the intercepted aircraft consisting of a climbing turn of 90 degrees or more without crossing the line of flight of the intercepted aircraft. | You may proceed. | DAY or NIGHT — Rocking the aircraft. | Understood, will comply.\n3 | DAY or NIGHT – Lowering landing gear (if fitted), showing steady landing lights and overflying runway in use or, if the intercepted aircraft is a helicopter / VTOL-capable aircraft, overflying the helicopter / VTOL-capable aircraft landing area. In the case of helicopters / VTOL-capable aircraft, the intercepting helicopter / VTOL-capable aircraft makes a landing approach, coming to hover near the landing area. | Land at this aerodrome. | DAY or NIGHT – Lowering landing gear, (if fitted), showing steady landing lights and following the intercepting aircraft and, if, after overflying the runway in use or helicopter / VTOL-capable aircraft landing area, landing is considered safe, proceeding to land. | Understood, will comply."
  },
  {
   "id": "SERA-D28",
@@ -5036,7 +5211,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Lowering landing gear (if fitted), showing steady landing lights and overflying runway in use",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Series | INTERCEPTING Aircraft Signals | Meaning | INTERCEPTED Aircraft Responds | Meaning\n1 | DAY or NIGHT — Rocking aircraft and flashing navigational lights at irregular intervals (and landing lights in the case of a helicopter) from a position slightly above and ahead of, and normally to the left of, the intercepted aircraft (or to the right if the intercepted aircraft is a helicopter) and, after acknowledgement, a slow level turn, normally to the left (or to the right in the case of a helicopter) on the desired heading. / Note 1 / Meteorological conditions or terrain may require the intercepting aircraft to reverse the positions and direction of turn given above in Series 1. / Note 2 / If the intercepted aircraft is not able to keep pace with the intercepting aircraft, the latter is expected to fly a series of race-track patterns and to rock the aircraft each time it passes the intercepted aircraft. | You have been intercepted. Follow me. | DAY or NIGHT — Rocking aircraft, flashing navigational lights at irregular intervals and following. | Understood, will comply.\n2 | DAY or NIGHT — An abrupt breakaway manoeuvre from the intercepted aircraft consisting of a climbing turn of 90 degrees or more without crossing the line of flight of the intercepted aircraft. | You may proceed. | DAY or NIGHT — Rocking the aircraft. | Understood, will comply.\n3 | DAY or NIGHT – Lowering landing gear (if fitted), showing steady landing lights and overflying runway in use or, if the intercepted aircraft is a helicopter / VTOL-capable aircraft, overflying the helicopter / VTOL-capable aircraft landing area. In the case of helicopters / VTOL-capable aircraft, the intercepting helicopter / VTOL-capable aircraft makes a landing approach, coming to hover near the landing area. | Land at this aerodrome. | DAY or NIGHT – Lowering landing gear, (if fitted), showing steady landing lights and following the intercepting aircraft and, if, after overflying the runway in use or helicopter / VTOL-capable aircraft landing area, landing is considered safe, proceeding to land. | Understood, will comply."
  },
  {
   "id": "SERA-D29",
@@ -5065,7 +5241,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Raising landing gear (if fitted) and flashing landing lights while passing over runway in use or helicopter / VTOL-capable aircraft landing area at a height exceeding 300 m (1 000 ft) but not exceeding 600 m (2 000 ft)",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Series | INTERCEPTED Aircraft Signals | Meaning | INTERCEPTING Aircraft Responds | Meaning\n4 | DAY or NIGHT – Raising landing gear (if fitted) and flashing landing lights while passing over runway in use or helicopter / VTOL-capable aircraft landing area at a height exceeding 300 m (1 000 ft) but not exceeding 600 m (2 000 ft) (in the case of a helicopter, at a height exceeding 50 m (170 ft) but not exceeding 100 m (330 ft)) above the aerodrome level, and continuing to circle runway in use or helicopter / VTOL-capable aircraft landing area. If unable to flash landing lights, flash any other lights available. | Aerodrome you have designated is inadequate. | DAY or NIGHT – If it is desired that the intercepted aircraft follow the intercepting aircraft to an alternate aerodrome, the intercepting aircraft raises its landing gear (if fitted) and uses the Series 1 signals prescribed for intercepting aircraft. / If it is decided to release the intercepted aircraft, the intercepting aircraft uses the Series 2 signals prescribed for intercepting aircraft. | Understood, follow me. / Understood, you may proceed.\n5 | DAY or NIGHT — Regular switching on and off of all available lights but in such a manner as to be distinct from flashing lights. | Cannot comply. | DAY or NIGHT — Use Series 2 signals prescribed for intercepting aircraft. | Understood.\n6 | DAY or NIGHT — Irregular flashing of all available lights. | In distress. | DAY or NIGHT — Use Series 2 signals prescribed for intercepting aircraft. | Understood."
  },
  {
   "id": "SERA-D30",
@@ -5094,7 +5271,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Regular switching on and off of all available lights but in such a manner as to be distinct from flashing lights.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Series | INTERCEPTED Aircraft Signals | Meaning | INTERCEPTING Aircraft Responds | Meaning\n4 | DAY or NIGHT – Raising landing gear (if fitted) and flashing landing lights while passing over runway in use or helicopter / VTOL-capable aircraft landing area at a height exceeding 300 m (1 000 ft) but not exceeding 600 m (2 000 ft) (in the case of a helicopter, at a height exceeding 50 m (170 ft) but not exceeding 100 m (330 ft)) above the aerodrome level, and continuing to circle runway in use or helicopter / VTOL-capable aircraft landing area. If unable to flash landing lights, flash any other lights available. | Aerodrome you have designated is inadequate. | DAY or NIGHT – If it is desired that the intercepted aircraft follow the intercepting aircraft to an alternate aerodrome, the intercepting aircraft raises its landing gear (if fitted) and uses the Series 1 signals prescribed for intercepting aircraft. / If it is decided to release the intercepted aircraft, the intercepting aircraft uses the Series 2 signals prescribed for intercepting aircraft. | Understood, follow me. / Understood, you may proceed.\n5 | DAY or NIGHT — Regular switching on and off of all available lights but in such a manner as to be distinct from flashing lights. | Cannot comply. | DAY or NIGHT — Use Series 2 signals prescribed for intercepting aircraft. | Understood.\n6 | DAY or NIGHT — Irregular flashing of all available lights. | In distress. | DAY or NIGHT — Use Series 2 signals prescribed for intercepting aircraft. | Understood."
  },
  {
   "id": "SERA-D31",
@@ -5123,7 +5301,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Irregular flashing of all available lights.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Series | INTERCEPTED Aircraft Signals | Meaning | INTERCEPTING Aircraft Responds | Meaning\n4 | DAY or NIGHT – Raising landing gear (if fitted) and flashing landing lights while passing over runway in use or helicopter / VTOL-capable aircraft landing area at a height exceeding 300 m (1 000 ft) but not exceeding 600 m (2 000 ft) (in the case of a helicopter, at a height exceeding 50 m (170 ft) but not exceeding 100 m (330 ft)) above the aerodrome level, and continuing to circle runway in use or helicopter / VTOL-capable aircraft landing area. If unable to flash landing lights, flash any other lights available. | Aerodrome you have designated is inadequate. | DAY or NIGHT – If it is desired that the intercepted aircraft follow the intercepting aircraft to an alternate aerodrome, the intercepting aircraft raises its landing gear (if fitted) and uses the Series 1 signals prescribed for intercepting aircraft. / If it is decided to release the intercepted aircraft, the intercepting aircraft uses the Series 2 signals prescribed for intercepting aircraft. | Understood, follow me. / Understood, you may proceed.\n5 | DAY or NIGHT — Regular switching on and off of all available lights but in such a manner as to be distinct from flashing lights. | Cannot comply. | DAY or NIGHT — Use Series 2 signals prescribed for intercepting aircraft. | Understood.\n6 | DAY or NIGHT — Irregular flashing of all available lights. | In distress. | DAY or NIGHT — Use Series 2 signals prescribed for intercepting aircraft. | Understood."
  },
  {
   "id": "SERA-D32",
@@ -5152,7 +5331,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "This is not an emergency situation but an indication that an emergency situation is possible should any additional delay occur.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "ED Decision 2025/012/R\nThe declaration by the pilot of minimum fuel/energy using the phrase ‘MINIMUM FUEL’ informs ATC that all planned aerodrome options have been reduced to a specific aerodrome of intended landing, and any change to the existing clearance may result in landing with less than the planned final reserve fuel/energy. This is not an emergency situation but an indication that an emergency situation is possible should any additional delay occur."
  },
  {
   "id": "SERA-D33",
@@ -5181,7 +5361,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "shall indicate that by using the radiotelephony distress signal (MAYDAY), preferably spoken three times, followed by the nature of the distress condition (FUEL).",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) When a pilot reports a state of minimum fuel/energy, the controller shall inform the pilot as soon as practicable of any anticipated delays or that no delays are expected.\n(b) When the level of fuel/energy renders declaring a situation of distress necessary, the pilot, in accordance with point SERA.14095, shall indicate that by using the radiotelephony distress signal (MAYDAY), preferably spoken three times, followed by the nature of the distress condition (FUEL)."
  },
  {
   "id": "SERA-D34",
@@ -5210,7 +5391,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "When an aircraft carries a serviceable SSR transponder, the pilot shall operate the transponder at all times during flight, regardless of whether the aircraft is within or outside airspace where SSR is used for ATS purposes.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) When an aircraft carries a serviceable SSR transponder, the pilot shall operate the transponder at all times during flight, regardless of whether the aircraft is within or outside airspace where SSR is used for ATS purposes.\n(b) Pilots shall not operate the IDENT feature unless requested by ATS.\n(c) Except for flight in airspace designated by the competent authority for mandatory operation of transponder, aircraft without sufficient electrical power supply are exempted from the requirement to operate the transponder at all times."
  },
  {
   "id": "SERA-D35",
@@ -5239,7 +5421,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Pilots shall not operate the IDENT feature unless requested by ATS.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) When an aircraft carries a serviceable SSR transponder, the pilot shall operate the transponder at all times during flight, regardless of whether the aircraft is within or outside airspace where SSR is used for ATS purposes.\n(b) Pilots shall not operate the IDENT feature unless requested by ATS.\n(c) Except for flight in airspace designated by the competent authority for mandatory operation of transponder, aircraft without sufficient electrical power supply are exempted from the requirement to operate the transponder at all times."
  },
  {
   "id": "SERA-D36",
@@ -5268,7 +5451,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Except for flight in airspace designated by the competent authority for mandatory operation of transponder, aircraft without sufficient electrical power supply are exempted from the requirement to operate the transponder at all times.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) When an aircraft carries a serviceable SSR transponder, the pilot shall operate the transponder at all times during flight, regardless of whether the aircraft is within or outside airspace where SSR is used for ATS purposes.\n(b) Pilots shall not operate the IDENT feature unless requested by ATS.\n(c) Except for flight in airspace designated by the competent authority for mandatory operation of transponder, aircraft without sufficient electrical power supply are exempted from the requirement to operate the transponder at all times."
  },
  {
   "id": "SERA-D37",
@@ -5297,7 +5481,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "when not receiving air traffic services, select code 7000 in order to improve the detection of suitably equipped aircraft unless otherwise prescribed by the competent authority.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(b) Except in the cases described in (a) above, the pilot shall:\n(1) select codes as instructed by the ATS unit; or\n(2) in the absence of ATS instructions related to code setting, select code 2000 or another code as prescribed by the competent authority; or\n(3) when not receiving air traffic services, select code 7000 in order to improve the detection of suitably equipped aircraft unless otherwise prescribed by the competent authority."
  },
  {
   "id": "SERA-D39",
@@ -5326,7 +5511,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "When the aircraft carries serviceable Mode C equipment, the pilot shall continuously operate this mode unless otherwise dictated by ATC.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) When the aircraft carries serviceable Mode C equipment, the pilot shall continuously operate this mode unless otherwise dictated by ATC.\n(b) Unless otherwise prescribed by the competent authority, verification of the pressure-altitude-derived level information displayed shall be effected at least once by each suitably equipped ATS unit on initial contact with the aircraft concerned or, if this is not feasible, as soon as possible thereafter."
  },
  {
   "id": "SERA-D40",
@@ -5355,7 +5541,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "shall transmit the aircraft identification as specified in the flight plan or, when no flight plan has been filed, the aircraft registration",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) Aircraft equipped with a Mode S or ADS-B transmitter that has an aircraft identification feature shall transmit the aircraft identification as specified in the flight plan or, when no flight plan has been filed, the aircraft registration, unless the aircraft operator holds an approval from the competent authority to use other than the aircraft registration as aircraft identification for flights without a flight plan."
  },
  {
   "id": "SERA-D41",
@@ -5384,7 +5571,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "inform ATS as soon as possible, preferably before submission of a flight plan;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(b) In the case of a transponder which has failed and cannot be restored before departure, pilots shall:\n(1) inform ATS as soon as possible, preferably before submission of a flight plan;\n(2) insert in Item 10 of the ICAO flight plan form under SSR the character ‘N’ for complete unserviceability of the transponder or, in case of partial transponder failure, insert the character corresponding to the remaining transponder capability; and\n(3) comply with any published procedures for requesting an exemption from the requirements to carry a functioning SSR transponder."
  },
  {
   "id": "SERA-E01",
@@ -5413,7 +5601,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "any flight planned to operate at night, if leaving the vicinity of an aerodrome.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(b) A flight plan shall be submitted prior to operating:\n(1) any flight or portion thereof to be provided with air traffic control service;\n(2) any IFR flight within advisory airspace;\n(3) any flight within or into areas, or along routes designated by the competent authority, to facilitate the provision of flight information, alerting and search and rescue services;\n(4) any flight within or into areas or along routes designated by the competent authority, to facilitate coordination with appropriate military units or with air traffic services units in adjacent States in order to avoid the possible need for interception for the purpose of identification;\n(5) any flight across international borders, unless otherwise prescribed by the States concerned;\n(6) any flight planned to operate at night, if leaving the vicinity of an aerodrome."
  },
  {
   "id": "SERA-E02",
@@ -5442,7 +5631,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "limited information required, inter alia, when the purpose is to obtain a clearance for a minor portion of a flight such as to cross an airway, to take off from, or to land at a controlled aerodrome",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) Information relative to an intended flight or portion of a flight, to be provided to air traffic services units, shall be in the form of a flight plan. The term ‘flight plan’ is used to mean variously, full information on all items comprised in the flight plan description, covering the whole route of a flight, or limited information required, inter alia, when the purpose is to obtain a clearance for a minor portion of a flight such as to cross an airway, to take off from, or to land at a controlled aerodrome."
  },
  {
   "id": "SERA-E03",
@@ -5471,7 +5661,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "any flight within or into areas or along routes designated by the competent authority, to facilitate coordination with appropriate military units or with air traffic services units in adjacent States in order to avoid the possible need for interception for the purpose of identification",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(b) A flight plan shall be submitted prior to operating:\n(1) any flight or portion thereof to be provided with air traffic control service;\n(2) any IFR flight within advisory airspace;\n(3) any flight within or into areas, or along routes designated by the competent authority, to facilitate the provision of flight information, alerting and search and rescue services;\n(4) any flight within or into areas or along routes designated by the competent authority, to facilitate coordination with appropriate military units or with air traffic services units in adjacent States in order to avoid the possible need for interception for the purpose of identification;\n(5) any flight across international borders, unless otherwise prescribed by the States concerned;\n(6) any flight planned to operate at night, if leaving the vicinity of an aerodrome."
  },
  {
   "id": "SERA-E04",
@@ -5500,7 +5691,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "at least 60 minutes before departure for all other flights not covered in point (2)",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(d) Unless a shorter period of time has been prescribed by the competent authority for domestic VFR flights, a flight plan for any flight planned to operate across international borders or to be provided with air traffic control service or air traffic advisory service shall be submitted as follows:\n(1) not more than 120 hours before the estimated off-block time;\n(2) at least 3 hours before the estimated off-block time for flights that may be subject to air traffic flow management measures;\n(3) at least 60 minutes before departure for all other flights not covered in point (2); or\n(4) if submitted during flight, at a time which ensures its receipt by the appropriate ATS unit, at least 10 minutes before the aircraft is estimated to reach:"
  },
  {
   "id": "SERA-E05",
@@ -5529,7 +5721,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "at least 10 minutes before the aircraft is estimated to reach:",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(d) Unless a shorter period of time has been prescribed by the competent authority for domestic VFR flights, a flight plan for any flight planned to operate across international borders or to be provided with air traffic control service or air traffic advisory service shall be submitted as follows:\n(1) not more than 120 hours before the estimated off-block time;\n(2) at least 3 hours before the estimated off-block time for flights that may be subject to air traffic flow management measures;\n(3) at least 60 minutes before departure for all other flights not covered in point (2); or\n(4) if submitted during flight, at a time which ensures its receipt by the appropriate ATS unit, at least 10 minutes before the aircraft is estimated to reach:"
  },
  {
   "id": "SERA-E06",
@@ -5558,7 +5751,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "a delay of 1 hour for an uncontrolled flight for which a flight plan has been submitted",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(b) In the event of a delay of 30 minutes in excess of the estimated off-block time for a controlled flight or a delay of 1 hour for an uncontrolled flight for which a flight plan has been submitted, the flight plan shall be amended, or a new flight plan submitted, and the old flight plan cancelled, whichever is applicable. For any flight operated in accordance with IFR, delays of more than 15 minutes shall be communicated to the Network Manager."
  },
  {
   "id": "SERA-E07",
@@ -5587,7 +5781,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "In the event of a delay of 30 minutes in excess of the estimated off-block time for a controlled flight",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(b) In the event of a delay of 30 minutes in excess of the estimated off-block time for a controlled flight or a delay of 1 hour for an uncontrolled flight for which a flight plan has been submitted, the flight plan shall be amended, or a new flight plan submitted, and the old flight plan cancelled, whichever is applicable. For any flight operated in accordance with IFR, delays of more than 15 minutes shall be communicated to the Network Manager."
  },
  {
   "id": "SERA-E09",
@@ -5616,7 +5811,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Information submitted prior to departure regarding fuel or energy endurance or total number of persons carried on board, if incorrect at time of departure, constitutes a significant change to the flight plan and as such shall be reported.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(d) Information submitted prior to departure regarding fuel or energy endurance or total number of persons carried on board, if incorrect at time of departure, constitutes a significant change to the flight plan and as such shall be reported."
  },
  {
   "id": "SERA-E10",
@@ -5645,7 +5841,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "at the earliest possible moment after landing, to the appropriate air traffic services unit at the arrival aerodrome",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) An arrival report shall be made in person, by radiotelephony, via data link or by other means as prescribed by the competent authority at the earliest possible moment after landing, to the appropriate air traffic services unit at the arrival aerodrome, by any flight for which a flight plan has been submitted covering the entire flight or the remaining portion of a flight to the destination aerodrome.\n(1) Submission of an arrival report is not required after landing on an aerodrome where air traffic services are provided on condition that radio communication or visual signals indicate that the landing has been observed."
  },
  {
   "id": "SERA-E11",
@@ -5674,7 +5871,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Submission of an arrival report is not required after landing on an aerodrome where air traffic services are provided on condition that radio communication or visual signals indicate that the landing has been observed.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) An arrival report shall be made in person, by radiotelephony, via data link or by other means as prescribed by the competent authority at the earliest possible moment after landing, to the appropriate air traffic services unit at the arrival aerodrome, by any flight for which a flight plan has been submitted covering the entire flight or the remaining portion of a flight to the destination aerodrome.\n(1) Submission of an arrival report is not required after landing on an aerodrome where air traffic services are provided on condition that radio communication or visual signals indicate that the landing has been observed."
  },
  {
   "id": "SERA-E12",
@@ -5703,7 +5901,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "the arrival report, when required, shall be made as soon as practicable after landing and by the quickest means available to the nearest air traffic services unit",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(c) When no air traffic services unit exists at the arrival aerodrome or operating site, the arrival report, when required, shall be made as soon as practicable after landing and by the quickest means available to the nearest air traffic services unit."
  },
  {
   "id": "SERA-E13",
@@ -5732,7 +5931,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "destination aerodrome or operating site (only in the case of a diversionary landing)",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(e) Arrival reports made by aircraft shall contain the following elements of information:\n(1) aircraft identification;\n(2) departure aerodrome or operating site;\n(3) destination aerodrome or operating site (only in the case of a diversionary landing);\n(4) arrival aerodrome or operating site;\n(5) time of arrival."
  },
  {
   "id": "SERA-E14",
@@ -5761,7 +5961,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Z –if the flight is initially operated under VFR, followed by one or more subsequent changes of flight rules.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Y –if the flight is initially operated under IFR, followed by one or more subsequent changes of flight rules; or\nZ –if the flight is initially operated under VFR, followed by one or more subsequent changes of flight rules."
  },
  {
   "id": "SERA-E15",
@@ -5790,7 +5991,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "G –if general aviation;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "G –if general aviation;\nM –if military;\nX –if other than any of the defined categories above."
  },
  {
   "id": "SERA-E16",
@@ -5819,7 +6021,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "INSERTZZZZ and SPECIFY, in Item 18:",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "INSERTZZZZ and SPECIFY, in Item 18:\n—the name and location of the aerodrome preceded by DEP/; or\n—the first point of the route or the marker radio beacon preceded by DEP/…, if the aircraft has not taken off from an aerodrome;\nOR, –if the flight plan is received from an aircraft in flight,\nINSERTAFIL, and SPECIFY, in Item 18, the ICAO 4-letter location indicator of the location of the ATS unit from which supplementary flight plan data can be obtained, preceded by DEP/."
  },
  {
   "id": "SERA-E18",
@@ -5848,7 +6051,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "the flight crew shall obtain the clearance from the appropriate air traffic control unit prior to entering the area where controlled flight will be commenced",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… Such clearance shall be requested through the submission of a flight plan to an air traffic control unit.\n(2) When a flight plan specifies that the initial portion of a flight will be uncontrolled, and that the subsequent portion of the flight will be subject to air traffic control service, the flight crew shall obtain the clearance from the appropriate air traffic control unit prior to entering the area where controlled flight will be commenced.\n(3) When a flight plan specifies that the initial portion of a flight will be subject to air traffic control service, and that the subsequent portion will be uncontrolled, the aircraft shall normally be cleared to the point at which the controlled flight terminates.\n(4) The pilot-in-command of an aircraft shall inform the air traffic control unit if an air traffic control clearance is not satisfactory. …"
  },
  {
   "id": "SERA-E20",
@@ -5877,7 +6081,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "clearance limit;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "An air traffic control clearance shall indicate:\n(1) aircraft identification as shown in the flight plan;\n(2) clearance limit;\n(3) route of flight:"
  },
  {
   "id": "SERA-E22",
@@ -5906,7 +6111,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "the approach clearance or the clearance to enter the traffic circuit;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) the descent clearance, when first cleared to an altitude below the transition level;\n(ii) the approach clearance or the clearance to enter the traffic circuit;\n(iii) the taxi clearance for departing aircraft.\n(4) A QFE altimeter setting shall be provided to aircraft on request or on a regular basis in accordance with local arrangements.\n(5) When an aircraft has been given clearance to land or where an aircraft has been informed that the runway is available for landing at AFIS aerodromes and that aircraft is completing its approach using atmospheric pressure at aerodrome elevation (QFE), the vertical position of that aircraft shall be expressed in terms of height above aerodrome elevation during that portion of its flight for which QFE may be used, except that it shall be expressed in terms of height above runway threshold elevation:"
  },
  {
   "id": "SERA-E23",
@@ -5935,7 +6141,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "if operated within a control zone, request authorisation to operate as a special VFR flight",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(d) Weather deterioration below the VMC. When it becomes evident that flight in VMC in accordance with its current flight plan will not be practicable, a VFR flight operated as a controlled flight shall:\n(1) request an amended clearance enabling the aircraft to continue in VMC to destination or to an alternative aerodrome or operating site, or to leave the airspace within which an ATC clearance is required; or\n(2) if no clearance in accordance with point (1) can be obtained, continue to operate in VMC and notify the appropriate ATC unit of the action being taken either to leave the airspace concerned or to land at the nearest suitable aerodrome or operating site; or\n(3) if operated within a control zone, request authorisation to operate as a special VFR flight; or\n(4) request clearance to operate in accordance with the instrument flight rules."
  },
  {
   "id": "SERA-E24",
@@ -5964,7 +6171,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "continue to operate in VMC and notify the appropriate ATC unit of the action being taken either to leave the airspace concerned or to land at the nearest suitable aerodrome or operating site",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(d) Weather deterioration below the VMC. When it becomes evident that flight in VMC in accordance with its current flight plan will not be practicable, a VFR flight operated as a controlled flight shall:\n(1) request an amended clearance enabling the aircraft to continue in VMC to destination or to an alternative aerodrome or operating site, or to leave the airspace within which an ATC clearance is required; or\n(2) if no clearance in accordance with point (1) can be obtained, continue to operate in VMC and notify the appropriate ATC unit of the action being taken either to leave the airspace concerned or to land at the nearest suitable aerodrome or operating site; or\n(3) if operated within a control zone, request authorisation to operate as a special VFR flight; or\n(4) request clearance to operate in accordance with the instrument flight rules."
  },
  {
   "id": "SERA-E25",
@@ -5993,7 +6201,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "the appropriate air traffic services unit shall be notified of the action taken and that this action has been taken under emergency authority",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) Except as provided for in (b) and (d) an aircraft shall adhere to the current flight plan or the applicable portion of a current flight plan submitted for a controlled flight unless a request for a change has been made and clearance obtained from the appropriate air traffic control unit, or unless an emergency situation arises which necessitates immediate action by the aircraft, in which event as soon as circumstances permit, after such emergency authority is exercised, the appropriate air traffic services unit shall be notified of the action taken and that this action has been taken under emergency authority.\n(1) Unless otherwise authorised by the competent authority, or directed by the appropriate air traffic control unit, controlled flights shall, in so far as practicable:"
  },
  {
   "id": "SERA-E26",
@@ -6022,7 +6231,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Deviation from track: if the aircraft is off track, action shall be taken forthwith to adjust the heading of the aircraft to regain track as soon as practicable.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "… In the event that a controlled flight inadvertently deviates from its current flight plan, the following action shall be taken:\n(1) Deviation from track: if the aircraft is off track, action shall be taken forthwith to adjust the heading of the aircraft to regain track as soon as practicable.\n(2) Deviation from the air traffic control assigned Mach number/indicated airspeed: the appropriate air traffic services unit shall be informed immediately.\n(3) Deviation from Mach number/true airspeed: if the sustained Mach number/true airspeed at cruising level varies by plus or minus Mach 0,02 or more, or plus or minus 19 km/h (10 kt) true airspeed or more from the current flight plan, the appropriate air traffic services unit shall be so inf …"
  },
  {
   "id": "SERA-E27",
@@ -6051,7 +6261,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "A controlled flight shall, except when landing at a controlled aerodrome, advise the appropriate ATC unit as soon as it ceases to be subject to air traffic control service.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Regulation (EU) No 923/2012\nA controlled flight shall, except when landing at a controlled aerodrome, advise the appropriate ATC unit as soon as it ceases to be subject to air traffic control service."
  },
  {
   "id": "SERA-E28",
@@ -6080,7 +6291,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "The reception of flight information service does not relieve the pilot-in-command of an aircraft of any responsibilities and the pilot-in-command shall make the final decision regarding any suggested alteration of flight plan.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(b) The reception of flight information service does not relieve the pilot-in-command of an aircraft of any responsibilities and the pilot-in-command shall make the final decision regarding any suggested alteration of flight plan."
  },
  {
   "id": "SERA-E29",
@@ -6109,7 +6321,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Flight information service provided to VFR flights shall include, in addition to that outlined in (a), the provision of available information concerning traffic and weather conditions along the route of flight that are likely to make operation under the visual flight rules impracticable.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(c) Flight information service provided to VFR flights shall include, in addition to that outlined in (a), the provision of available information concerning traffic and weather conditions along the route of flight that are likely to make operation under the visual flight rules impracticable."
  },
  {
   "id": "SERA-E30",
@@ -6138,7 +6351,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "aircraft shall acknowledge receipt of the information upon establishing communication with the ATS unit providing approach control service, the aerodrome control tower or Aerodrome Flight Information Service (AFIS), as appropriate",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) aircraft shall acknowledge receipt of the information upon establishing communication with the ATS unit providing approach control service, the aerodrome control tower or Aerodrome Flight Information Service (AFIS), as appropriate; and\n(ii) the appropriate air traffic services unit shall, when replying to an aircraft acknowledging receipt of an ATIS message or, in the case of arriving aircraft, at such other time as may be prescribed by the competent authority, provide the aircraft with the current altimeter setting.\n(3) Information contained in a current ATIS, the receipt of which has been acknowledged by the aircraft concerned, need not be included in a directed transmission to the aircraft, with the exception of the altimeter setting, which shall be provided in accordance with (2).\n(4) If an aircraft acknowledges receipt of an ATIS that is no longer current, the ATS unit shall without delay take one of the following actions:"
  },
  {
   "id": "SERA-E31",
@@ -6167,7 +6381,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "Information contained in a current ATIS, the receipt of which has been acknowledged by the aircraft concerned, need not be included in a directed transmission to the aircraft, with the exception of the altimeter setting",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(i) aircraft shall acknowledge receipt of the information upon establishing communication with the ATS unit providing approach control service, the aerodrome control tower or Aerodrome Flight Information Service (AFIS), as appropriate; and\n(ii) the appropriate air traffic services unit shall, when replying to an aircraft acknowledging receipt of an ATIS message or, in the case of arriving aircraft, at such other time as may be prescribed by the competent authority, provide the aircraft with the current altimeter setting.\n(3) Information contained in a current ATIS, the receipt of which has been acknowledged by the aircraft concerned, need not be included in a directed transmission to the aircraft, with the exception of the altimeter setting, which shall be provided in accordance with (2).\n(4) If an aircraft acknowledges receipt of an ATIS that is no longer current, the ATS unit shall without delay take one of the following actions:"
  },
  {
   "id": "SERA-E32",
@@ -6196,7 +6411,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "in so far as practicable, to all other aircraft having filed a flight plan or otherwise known to the air traffic services",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) Alerting service shall be provided by the air traffic services units:\n(1) for all aircraft provided with air traffic control service;\n(2) in so far as practicable, to all other aircraft having filed a flight plan or otherwise known to the air traffic services; and\n(3) to any aircraft known or believed to be the subject of unlawful interference."
  },
  {
   "id": "SERA-E33",
@@ -6225,7 +6441,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "report during the period 20 to 40 minutes following the time of the last contact",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(b) Unless otherwise prescribed by the competent authority, aircraft equipped with suitable two-way radio-communications shall report during the period 20 to 40 minutes following the time of the last contact, whatever the purpose of such contact, merely to indicate that the flight is progressing according to plan, such report to comprise identification of the aircraft and the words ‘Operations normal’."
  },
  {
   "id": "SERA-E34",
@@ -6254,7 +6471,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "moderate or severe turbulence; or",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) Special observations shall be made and reported by all aircraft whenever the following conditions are encountered or observed:\n(1) moderate or severe turbulence; or\n(2) moderate or severe icing; or\n(3) severe mountain wave; or\n(4) thunderstorms, without hail, that are obscured, embedded, widespread or in squall lines; or\n(5) thunderstorms, with hail, that are obscured, embedded, widespread or in squall lines; or\n(6) heavy dust storm or heavy sandstorm; or\n(7) volcanic ash cloud; or\n(8) pre-eruption volcanic activity or a volcanic eruption; or\n(9) the runway braking action encountered is not as good as reported."
  },
  {
   "id": "SERA-E35",
@@ -6283,7 +6501,8 @@ window.EXTRA_QUESTIONS = [
   "citaat": "the runway braking action encountered is not as good as reported.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "(a) Special observations shall be made and reported by all aircraft whenever the following conditions are encountered or observed:\n(1) moderate or severe turbulence; or\n(2) moderate or severe icing; or\n(3) severe mountain wave; or\n(4) thunderstorms, without hail, that are obscured, embedded, widespread or in squall lines; or\n(5) thunderstorms, with hail, that are obscured, embedded, widespread or in squall lines; or\n(6) heavy dust storm or heavy sandstorm; or\n(7) volcanic ash cloud; or\n(8) pre-eruption volcanic activity or a volcanic eruption; or\n(9) the runway braking action encountered is not as good as reported."
  },
  {
   "id": "SERA-E36",
@@ -6312,6 +6531,7 @@ window.EXTRA_QUESTIONS = [
   "citaat": "When other meteorological conditions not listed under SERA.12005(a), e.g. wind shear, are encountered and which, in the opinion of the pilot-in-command, may affect the safety or markedly affect the efficiency of other aircraft operations, the pilot-in-command shall advise the appropriate air traffic services unit as soon as practicable.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
   "nagekeken": "Sven",
-  "bijgewerkt": "2026-10-09"
+  "bijgewerkt": "2026-10-09",
+  "fragment": "Regulation (EU) No 923/2012\nWhen other meteorological conditions not listed under SERA.12005(a), e.g. wind shear, are encountered and which, in the opinion of the pilot-in-command, may affect the safety or markedly affect the efficiency of other aircraft operations, the pilot-in-command shall advise the appropriate air traffic services unit as soon as practicable."
  }
 ];
