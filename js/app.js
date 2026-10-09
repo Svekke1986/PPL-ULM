@@ -67,7 +67,7 @@
     const s = window.resolveSource(q.src);
     const ref = q.ref ? ` — <em>${esc(q.ref)}</em>` : '';
     const lo = q.extra
-      ? `<div class="small">${q.ai ? 'AI-gegenereerde vraag' : 'Aanvullende vraag'}, opgesteld op basis van de wettekst${q.nagekeken ? ' · nagekeken door ' + esc(q.nagekeken) : ''}</div>`
+      ? `<div class="small">${q.ai ? 'AI-gegenereerde vraag' : 'Aanvullende vraag'}, opgesteld op basis van de wettekst</div>`
       : q.auteur
       ? `<div class="small">Onderwerp (ECQB ${esc(q.lo)})${q.loText ? ': ' + esc(q.loText) : ''} · Auteur van de vraag: ${esc(q.auteur)}</div>`
       : q.lo ? `<div class="small">ECQB-leerdoel ${esc(q.lo)}${q.loText ? ': ' + esc(q.loText) : ''}</div>` : '';
