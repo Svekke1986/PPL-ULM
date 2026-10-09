@@ -2,6 +2,10 @@
   'use strict';
 
   const BANK = window.QUESTION_BANK || {};
+  // Aanvullende vragen (js/extra.js, beheerd via beheer.html): alleen goedgekeurde vragen komen in de oefenvragen.
+  (window.EXTRA_QUESTIONS || []).filter(q => q.status === 'approved' && BANK[q.subject]).forEach(q => {
+    BANK[q.subject].push({ ...q, extra: true, img: q.img || [], loText: q.loText || '' });
+  });
   const SUBJECTS = window.SUBJECTS;
   const LICENCES = window.LICENCES;
   const app = document.getElementById('app');
@@ -61,7 +65,9 @@
   function sourceHtml(q) {
     const s = window.resolveSource(q.src);
     const ref = q.ref ? ` — <em>${esc(q.ref)}</em>` : '';
-    const lo = q.auteur
+    const lo = q.extra
+      ? `<div class="small">Aanvullende vraag, opgesteld op basis van de wettekst${q.nagekeken ? ' · nagekeken door ' + esc(q.nagekeken) : ''}</div>`
+      : q.auteur
       ? `<div class="small">Onderwerp (ECQB ${esc(q.lo)})${q.loText ? ': ' + esc(q.loText) : ''} · Auteur van de vraag: ${esc(q.auteur)}</div>`
       : q.lo ? `<div class="small">ECQB-leerdoel ${esc(q.lo)}${q.loText ? ': ' + esc(q.loText) : ''}</div>` : '';
     return `<div class="source">📘 Bron: <strong>${esc(s.org)}</strong> – <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>${ref}${lo}</div>`;
@@ -109,7 +115,7 @@
       return `<button class="${cls}" data-i="${i}" ${opts.locked ? 'disabled' : ''}>
         <span class="letter">${LETTERS[i]}</span><span>${esc(text)}</span></button>`;
     }).join('');
-    const tag = q.auteur ? `Aanvullende vraag · auteur: ${esc(q.auteur)}` : (q.lo ? 'ECQB ' + esc(q.lo) : '');
+    const tag = q.extra ? `Aanvullende vraag · ${esc(q.basis || 'aanvullend')}` : q.auteur ? `Aanvullende vraag · auteur: ${esc(q.auteur)}` : (q.lo ? 'ECQB ' + esc(q.lo) : '');
     return `<div class="q-meta"><span>${opts.counter || ''}</span><span>${tag}</span></div>
       ${q.code ? codeHtml(q.code, q.mark) : ''}
       <p class="q-text">${esc(q.q)}</p>

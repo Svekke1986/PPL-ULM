@@ -80,6 +80,7 @@ window.SOURCES = {
   bcaa_ppl:{ org: 'BCAA / DGLV', title: 'Theorie-examen vliegtuigen en helikopters', url: 'https://mobilit.belgium.be/nl/luchtvaart/vliegen-met/vliegtuigen-helikopters/piloot/examens' },
   bcaa_ulm:{ org: 'DGLV', title: 'ULM – examens', url: 'https://mobilit.belgium.be/nl/luchtvaart/vliegen-met/ultralichte-motorluchtvaartuigen-ulm/piloot/examens' },
   aip:     { org: 'skeyes / BCAA', title: 'AIP België & Luxemburg', url: 'https://ops.skeyes.be/services-aip' },
+  kbulm:   { org: 'FOD Mobiliteit en Vervoer', title: 'KB van 20 december 2024 betreffende de ultralichte motorluchtvaartuigen (BS 18/02/2025)', url: 'https://www.ejustice.just.fgov.be/cgi/article_body.pl?language=nl&caller=summary&pub_date=25-02-18&numac=2025000168' },
   met:     { org: 'EU / ICAO', title: 'Uitvoeringsverordening (EU) 2017/373 – Part-MET (METAR/TAF), gebaseerd op ICAO Annex 3', url: 'https://eur-lex.europa.eu/eli/reg_impl/2017/373/oj' }
 };
 
@@ -106,7 +107,8 @@ window.CHAPTERS = {
     { id: 'ats', name: 'Luchtverkeersdiensten & luchtruim', prefixes: ['10.7'] },
     { id: 'ais', name: 'Luchtvaartinformatie (AIP, NOTAM)', prefixes: ['10.8'] },
     { id: 'ad', name: 'Vliegvelden, markeringen & seinen', prefixes: ['10.9'] },
-    { id: 'sar', name: 'Opsporing & redding, ongevallenonderzoek', prefixes: ['10.10', '10.11', '10.12'] }
+    { id: 'sar', name: 'Opsporing & redding, ongevallenonderzoek', prefixes: ['10.10', '10.11', '10.12'] },
+    { id: 'ulm', name: 'ULM-regelgeving (KB 20/12/2024)', prefixes: ['KB'] }
   ],
   human_performance: [
     { id: 'atm', name: 'Atmosfeer, zuurstof & hypoxie', prefixes: ['20.1', '20.2.1'] },
