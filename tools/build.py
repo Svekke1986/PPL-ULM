@@ -61,6 +61,7 @@ def main():
                 "ref": c[2] if len(c) > 2 else "",
                 "review": len(c) > 3 and c[3] == "review",
                 "lic": licences(subject, q["topic"]),
+                **({"auteur": q["author"]} if q.get("author") else {}),  # aanvullende vraag van een auteur, geen ECQB-voorbeeldvraag
             })
         bank[subject] = out
     with open(os.path.join(ROOT, "js", "bank.js"), "w", encoding="utf-8") as fh:
