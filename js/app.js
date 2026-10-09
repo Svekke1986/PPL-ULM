@@ -63,18 +63,21 @@
       `<li><strong>${esc(i.key)}</strong> – <em>${esc(i.full)}</em>: ${esc(i.text)}</li>`).join('')}</ul></details>`;
   }
 
-  // Brondocumenten van de AI-vragen (veld "doc"; zonder doc = KB ULM).
+  // Brondocument van een AI-vraag (veld "doc"; zonder doc = KB ULM).
   const AI_DOCS = {
-    kb: { name: 'het KB van 20 december 2024 betreffende de ultralichte motorluchtvaartuigen', src: 'kbulm' },
-    sera: { name: 'SERA (Uitvoeringsverordening (EU) 923/2012, geconsolideerde tekst)', src: 'sera' },
-    sera2012: { name: 'SERA (Uitvoeringsverordening (EU) 923/2012, oorspronkelijke Nederlandse tekst van 2012)', src: 'sera' }
+    kb: { name: 'het KB ULM van 20 december 2024', src: 'kbulm' },
+    sera: { name: 'SERA (Europese luchtverkeersregels)', src: 'sera' },
+    sera2012: { name: 'SERA (Europese luchtverkeersregels)', src: 'sera' }
   };
   const aiDoc = q => AI_DOCS[q.doc || 'kb'] || { name: 'de officiële wettekst', src: q.src };
 
-  // AI-vraag: alleen een verwijzing naar de tekst in het brondocument.
+  // Per AI-vraag: op basis van welk document, en welke tekst je daarin moet nalezen.
   function aiSourceHtml(q) {
-    const s = window.resolveSource(q.src || aiDoc(q).src);
-    return `<div class="source">📘 Lees na in het officiële document: <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>${q.ref ? ` — <em>${esc(q.ref)}</em>` : ''}</div>`;
+    const d = aiDoc(q), s = window.resolveSource(q.src || d.src);
+    return `<div class="ai-notice">🤖 Deze vraag is gegenereerd door AI op basis van <strong>${esc(d.name)}</strong>. Lees zeker de officiële tekst na:
+      <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>${q.ref ? ` — <em>${esc(q.ref)}</em>` : ''}
+      ${q.citaat ? `<p class="small ai-quote-label">Tekst uit het document waarop de vraag gebaseerd is${q.doc === 'sera' ? ' (geldende tekst, enkel in het Engels)' : ''}:</p>
+      <blockquote class="ai-quote">${esc(q.citaat)}</blockquote>` : ''}</div>`;
   }
 
   function sourceHtml(q) {
@@ -279,13 +282,11 @@
         <label for="chapter">Hoofdstuk</label>
         <select id="chapter"><option value="">Alle hoofdstukken (${total})</option>${chapterOpts}</select>
       </div>` : ''}
-      ${P.chapter && P.chapter.id === 'ai' ? aiBannerHtml(P.pool) : ''}`;
+      ${P.chapter && P.chapter.id === 'ai' ? aiBannerHtml() : ''}`;
   }
 
-  function aiBannerHtml(pool) {
-    const names = [...new Set(pool.filter(q => q.ai).map(q => aiDoc(q).name.replace(/ \(.*\)$/, '')))];
-    return `<div class="ai-notice ai-banner">🤖 <strong>Deze vragen zijn gegenereerd door AI</strong> op basis van ${esc(names.join(' en '))}.
-      Lees altijd het officiële document na: bij elk antwoord staat naar welke tekst je moet kijken.</div>`;
+  function aiBannerHtml() {
+    return `<div class="ai-notice ai-banner">🤖 <strong>Deze vragen zijn gegenereerd door AI.</strong> Bij elk antwoord staat op basis van welk document de vraag gemaakt is en welke tekst je daarin moet nalezen.</div>`;
   }
 
   function bindChapterSelect() {
