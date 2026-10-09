@@ -60,6 +60,17 @@
       sera: { url: 'sources/easa/sera.json', list: d => d.bepalingen, key: a => a.id, label: a => `${a.id} ${a.titel || ''} (SERA, geconsolideerd)` },
       sera2012: { url: 'sources/eu/sera-923-2012-oorspronkelijk.json', list: d => d.bepalingen, key: a => a.id, label: a => `${a.id} ${a.titel || ''} (SERA, oorspronkelijke tekst 2012)` }
     };
+    // Andere EASA/EU-teksten: zelfde opbouw (bepalingen met id, titel, tekst).
+    const easa = (url, naam) => ({ url, list: d => d.bepalingen, key: a => a.id, label: a => `${a.id} ${a.titel || ''} (${naam})` });
+    Object.assign(DOCS, {
+      aircrew: easa('sources/easa/aircrew.json', 'Aircrew: Part-FCL / Part-MED'),
+      airops: easa('sources/easa/airops.json', 'Air Operations: Part-NCO'),
+      ml: easa('sources/easa/cont-airworthiness.json', 'Continuing Airworthiness: Part-ML'),
+      part21: easa('sources/easa/part21.json', 'Part 21'),
+      occ: easa('sources/easa/occurrence-reporting.json', 'Verordening 376/2014'),
+      atmans: easa('sources/easa/atm-ans.json', 'ATM/ANS: Part-MET'),
+      acc996: easa('sources/eu/ongevalsonderzoek-996-2010-oorspronkelijk.json', 'Verordening 996/2010')
+    });
     const SUBJECTS = window.SUBJECTS;
     const app = document.getElementById('app'), bar = document.getElementById('savebar');
     const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));

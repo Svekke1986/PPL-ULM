@@ -65,13 +65,14 @@
 
   // Brondocument van een AI-vraag (veld "doc"; zonder doc = KB ULM).
   const AI_DOCS = { kb: { name: 'het KB ULM', src: 'kbulm' }, sera: { name: 'SERA', src: 'sera' }, sera2012: { name: 'SERA', src: 'sera' } };
-  const aiDoc = q => AI_DOCS[q.doc || 'kb'] || { name: 'de wettekst', src: q.src };
+  const EN_DOCS = new Set(['sera', 'aircrew', 'airops', 'ml', 'part21', 'occ', 'atmans']); // geconsolideerde EASA-teksten (Engels)
+  const aiDoc = q => AI_DOCS[q.doc || 'kb'] || { name: q.basis || 'de wettekst', src: q.src };
 
   // Antwoord van een AI-vraag: de bron en het stuk tekst waarop de vraag gebaseerd is.
   function aiSourceHtml(q) {
     const s = window.resolveSource(q.src || aiDoc(q).src);
     return `<div class="source">📘 Bron: <strong>${esc(s.org)}</strong> – <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>${q.ref ? ` — <em>${esc(q.ref)}</em>` : ''}
-      ${q.citaat ? `<div class="small ai-quote-label">Tekst uit het document${q.doc === 'sera' ? ' (geldende tekst, enkel in het Engels)' : ''}; het gemarkeerde deel is waar het antwoord op steunt:</div>
+      ${q.citaat ? `<div class="small ai-quote-label">Tekst uit het document${EN_DOCS.has(q.doc) ? ' (geldende tekst, enkel in het Engels)' : ''}; het gemarkeerde deel is waar het antwoord op steunt:</div>
       <blockquote class="ai-quote">${fragmentHtml(q.fragment || q.citaat, q.citaat)}</blockquote>` : ''}</div>`;
   }
 

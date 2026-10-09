@@ -77,6 +77,7 @@ window.SOURCES = {
   sera:    { org: 'EASA', title: 'Easy Access Rules – SERA (Uitvoeringsverordening (EU) 923/2012)', url: 'https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera' },
   sera14:  { org: 'EASA', title: 'Easy Access Rules – SERA, Sectie 14 (spreekprocedures)', url: 'https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air-sera' },
   adr:     { org: 'EASA / EU', title: 'Verordening (EU) 139/2014 – Aerodromes (incl. CS-ADR-DSN)', url: 'https://eur-lex.europa.eu/eli/reg/2014/139/oj' },
+  occ:     { org: 'EU', title: 'Verordening (EU) 376/2014 – Melden, analyseren en opvolgen van voorvallen', url: 'https://eur-lex.europa.eu/eli/reg/2014/376/oj' },
   acc:     { org: 'EU', title: 'Verordening (EU) 996/2010 – Onderzoek van ongevallen en incidenten', url: 'https://eur-lex.europa.eu/eli/reg/2010/996/oj' },
   cs23:    { org: 'EASA', title: 'Certification Specifications CS-23', url: 'https://www.easa.europa.eu/en/document-library/easy-access-rules' },
   syl:     { org: 'EASA', title: 'Part-FCL – PPL-syllabus (AMC1 FCL.210) / ECQB-leerdoelen', url: 'https://www.easa.europa.eu/en/domains/aircrew-and-medical/european-central-question-bank-ecqb' },
