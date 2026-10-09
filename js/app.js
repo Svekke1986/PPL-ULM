@@ -71,8 +71,38 @@
   function aiSourceHtml(q) {
     const s = window.resolveSource(q.src || aiDoc(q).src);
     return `<div class="source">📘 Bron: <strong>${esc(s.org)}</strong> – <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>${q.ref ? ` — <em>${esc(q.ref)}</em>` : ''}
-      ${q.citaat ? `<div class="small ai-quote-label">Tekst uit het document${q.doc === 'sera' ? ' (geldende tekst, enkel in het Engels)' : ''}:</div>
-      <blockquote class="ai-quote">${esc(q.citaat)}</blockquote>` : ''}</div>`;
+      ${q.citaat ? `<div class="small ai-quote-label">Tekst uit het document${q.doc === 'sera' ? ' (geldende tekst, enkel in het Engels)' : ''}; het gemarkeerde deel is waar het antwoord op steunt:</div>
+      <blockquote class="ai-quote">${fragmentHtml(q.fragment || q.citaat, q.citaat)}</blockquote>` : ''}</div>`;
+  }
+
+  // Stuk wettekst rond het citaat: tabellen als tabel, het citaat gemarkeerd.
+  function fragmentHtml(text, cit) {
+    const c = (cit || '').trim();
+    const mark = line => {
+      const t = line.trim();
+      if (t.length > 3 && c.includes(t)) return `<mark>${esc(line)}</mark>`;
+      return c && line.includes(c) ? esc(line).replace(esc(c), `<mark>${esc(c)}</mark>`) : esc(line);
+    };
+    const isRow = l => (l.match(/\|/g) || []).length >= 2;
+    const out = [];
+    let rows = [];
+    const flush = () => {
+      if (!rows.length) return;
+      out.push(`<div class="ai-table-wrap"><table class="ai-table">${rows.filter(r => !/^\s*\|?\s*-{3}/.test(r)).map(r => {
+        const t = r.trim(), md = t.startsWith('|') && t.endsWith('|'); // Markdown-rij: | a | b |
+        const hl = t.length > 3 && (c.includes(t) || t.includes(c));
+        const cells = (md ? t.slice(1, -1) : r).split('|');
+        return `<tr${hl ? ' class="hl"' : ''}>${cells.map(x => `<td>${esc(x.trim())}</td>`).join('')}</tr>`;
+      }).join('')}</table></div>`);
+      rows = [];
+    };
+    for (const line of text.split('\n')) {
+      if (isRow(line)) { rows.push(line); continue; }
+      flush();
+      if (line.trim()) out.push(`<div>${mark(line)}</div>`);
+    }
+    flush();
+    return out.join('');
   }
 
   function sourceHtml(q) {
