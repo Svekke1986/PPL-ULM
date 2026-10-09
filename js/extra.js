@@ -6681,7 +6681,7 @@ window.EXTRA_QUESTIONS = [
  },
  {
   "id": "FCL-06",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -6704,11 +6704,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.030",
   "citaat": "Before a skill test for the issue of a licence, rating or certificate is taken, the applicant shall have passed the required theoretical knowledge examination, except in the case of applicants undergoing a course of integrated flying training.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) Before a skill test for the issue of a licence, rating or certificate is taken, the applicant shall have passed the required theoretical knowledge examination, except in the case of applicants undergoing a course of integrated flying training."
+  "fragment": "(a) Before a skill test for the issue of a licence, rating or certificate is taken, the applicant shall have passed the required theoretical knowledge examination, except in the case of applicants undergoing a course of integrated flying training.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-07",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -6731,11 +6733,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.040",
   "citaat": "The exercise of the privileges granted by a licence shall be dependent upon the validity of the ratings contained therein, if applicable, and of the medical certificate as appropriate to the privileges exercised.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "The exercise of the privileges granted by a licence shall be dependent upon the validity of the ratings contained therein, if applicable, and of the medical certificate as appropriate to the privileges exercised."
+  "fragment": "The exercise of the privileges granted by a licence shall be dependent upon the validity of the ratings contained therein, if applicable, and of the medical certificate as appropriate to the privileges exercised.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-08",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -6758,11 +6762,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.045",
   "citaat": "(a) A valid licence and a valid medical certificate shall always be carried by the pilot when exercising the privileges of the licence.\n(b) The pilot shall also carry a personal identification document containing his/her photo.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) A valid licence and a valid medical certificate shall always be carried by the pilot when exercising the privileges of the licence.\n(b) The pilot shall also carry a personal identification document containing his/her photo."
+  "fragment": "(a) A valid licence and a valid medical certificate shall always be carried by the pilot when exercising the privileges of the licence.\n(b) The pilot shall also carry a personal identification document containing his/her photo.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-09",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -6785,11 +6791,13 @@ window.EXTRA_QUESTIONS = [
   "art": "AMC1 FCL.050",
   "citaat": "if the holder of a pilot licence carries out a number of flights upon the same day returning on each occasion to the same place of departure and the interval between successive flights does not exceed 30 minutes, such series of flights may be recorded as a single entry;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "… he or she acts as an instructor in an aircraft;\n(iv) the holder of an examiner’s certificate may log as PIC all flight time during which he or she occupies a pilot’s seat and acts as an examiner in an aircraft;\n(v) a co-pilot acting as PICUS on an aircraft on which more than one pilot is required under the type certification of the aircraft or as required by operational requirements provided that such PICUS time is countersigned by the PIC;\n(vi) if the holder of a pilot licence carries out a number of flights upon the same day returning on each occasion to the same place of departure and the interval between successive flights does not exceed 30 minutes, such series of flights may be recorded as a single entry;\n(vii) where Regulation (EU) No 965/2012 requires the pilot to act as PIC under the supervision of another pilot (supervisor), both the pilot and the supervisor may log the flight time as PIC.\n(2) co-pilot flight time: the holder of a pilot licence occupying a pilot seat as co-pilot may log all flight time as co-pilot flight time on an aircraft on which more than one pilot is required under the type certification of the aircraft, the regulations …"
+  "fragment": "… he or she acts as an instructor in an aircraft;\n(iv) the holder of an examiner’s certificate may log as PIC all flight time during which he or she occupies a pilot’s seat and acts as an examiner in an aircraft;\n(v) a co-pilot acting as PICUS on an aircraft on which more than one pilot is required under the type certification of the aircraft or as required by operational requirements provided that such PICUS time is countersigned by the PIC;\n(vi) if the holder of a pilot licence carries out a number of flights upon the same day returning on each occasion to the same place of departure and the interval between successive flights does not exceed 30 minutes, such series of flights may be recorded as a single entry;\n(vii) where Regulation (EU) No 965/2012 requires the pilot to act as PIC under the supervision of another pilot (supervisor), both the pilot and the supervisor may log the flight time as PIC.\n(2) co-pilot flight time: the holder of a pilot licence occupying a pilot seat as co-pilot may log all flight time as co-pilot flight time on an aircraft on which more than one pilot is required under the type certification of the aircraft, the regulations …",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-10",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -6812,11 +6820,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.055",
   "citaat": "The minimum acceptable proficiency level is the operational level (Level 4) in accordance with Appendix 2 to this Annex.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) General. Aeroplane, helicopter, powered-lift and airship pilots required to use the radio telephone shall not exercise the privileges of their licences and ratings unless they have a language proficiency endorsement on their licence in either English or the language used for radio communications involved in the flight. The endorsement shall indicate the language, the proficiency level and the validity date, and it shall be obtained in accordance with a procedure established by a competent authority. The minimum acceptable proficiency level is the operational level (Level 4) in accordance with Appendix 2 to this Annex."
+  "fragment": "(a) General. Aeroplane, helicopter, powered-lift and airship pilots required to use the radio telephone shall not exercise the privileges of their licences and ratings unless they have a language proficiency endorsement on their licence in either English or the language used for radio communications involved in the flight. The endorsement shall indicate the language, the proficiency level and the validity date, and it shall be obtained in accordance with a procedure established by a competent authority. The minimum acceptable proficiency level is the operational level (Level 4) in accordance with Appendix 2 to this Annex.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-11",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -6839,11 +6849,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.055",
   "citaat": "(1) 4 years, if the level demonstrated is operational level (level 4); or\n(2) 6 years, if the level demonstrated is extended level (level 5).",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(c) Except for pilots who have demonstrated language proficiency at an expert level (level 6) in accordance with Appendix 2 to this Annex, the language proficiency endorsement shall be re-evaluated every:\n(1) 4 years, if the level demonstrated is operational level (level 4); or\n(2) 6 years, if the level demonstrated is extended level (level 5)."
+  "fragment": "(c) Except for pilots who have demonstrated language proficiency at an expert level (level 6) in accordance with Appendix 2 to this Annex, the language proficiency endorsement shall be re-evaluated every:\n(1) 4 years, if the level demonstrated is operational level (level 4); or\n(2) 6 years, if the level demonstrated is extended level (level 5).",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-12",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -6866,11 +6878,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.055",
   "citaat": "unless they have a language proficiency endorsement on their licence in either in English or the language used for radio communications involved in the flight.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) General. Aeroplane, helicopter, powered-lift aircraft, airship and gyroplane pilots required to use the radio telephone shall not exercise the privileges of their licences and ratings unless they have a language proficiency endorsement on their licence in either in English or the language used for radio communications involved in the flight. The endorsement shall indicate the language, the proficiency level and the validity date, and it shall be obtained in accordance with a procedure established by a competent authority. The minimum acceptable proficiency level is the operational level (Level 4) in accordance with Appendix 2 to this Annex."
+  "fragment": "(a) General. Aeroplane, helicopter, powered-lift aircraft, airship and gyroplane pilots required to use the radio telephone shall not exercise the privileges of their licences and ratings unless they have a language proficiency endorsement on their licence in either in English or the language used for radio communications involved in the flight. The endorsement shall indicate the language, the proficiency level and the validity date, and it shall be obtained in accordance with a procedure established by a competent authority. The minimum acceptable proficiency level is the operational level (Level 4) in accordance with Appendix 2 to this Annex.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-13",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -6893,11 +6907,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.060",
   "citaat": "as PIC or co-pilot unless he or she has carried out, in the preceding 90 days, at least 3 takeoffs, approaches and landings as a pilot flying in an aircraft of the same type or class or an FFS representing that type or class.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(b) Aeroplanes, helicopters, powered-lift aircraft, airships, VTOL-capable aircraft (VCA) and gyroplanes. A pilot shall not operate an aircraft in commercial air transport or for carrying passengers:\n[applicable from 18 February 2026 - Regulation (EU) 2025/134]\n(1) as PIC or co-pilot unless he or she has carried out, in the preceding 90 days, at least 3 takeoffs, approaches and landings as a pilot flying in an aircraft of the same type or class or an FFS representing that type or class. The 3 take-offs and landings shall be performed in either multi-pilot or single-pilot operations, depending on the privileges held by the pilot; and\n(2) as PIC at night unless he/she:"
+  "fragment": "(b) Aeroplanes, helicopters, powered-lift aircraft, airships, VTOL-capable aircraft (VCA) and gyroplanes. A pilot shall not operate an aircraft in commercial air transport or for carrying passengers:\n[applicable from 18 February 2026 - Regulation (EU) 2025/134]\n(1) as PIC or co-pilot unless he or she has carried out, in the preceding 90 days, at least 3 takeoffs, approaches and landings as a pilot flying in an aircraft of the same type or class or an FFS representing that type or class. The 3 take-offs and landings shall be performed in either multi-pilot or single-pilot operations, depending on the privileges held by the pilot; and\n(2) as PIC at night unless he/she:",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-14",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -6920,11 +6936,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.060",
   "citaat": "(i) has carried out in the preceding 90 days at least 1 take-off, approach and landing at night as a pilot flying in an aircraft of the same type or class or an FFS representing that type or class; or",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(i) has carried out in the preceding 90 days at least 1 take-off, approach and landing at night as a pilot flying in an aircraft of the same type or class or an FFS representing that type or class; or\n(ii) holds an IR;\n(3) as cruise relief co-pilot unless he or she has completed, within the preceding 90 days, either of the following:"
+  "fragment": "(i) has carried out in the preceding 90 days at least 1 take-off, approach and landing at night as a pilot flying in an aircraft of the same type or class or an FFS representing that type or class; or\n(ii) holds an IR;\n(3) as cruise relief co-pilot unless he or she has completed, within the preceding 90 days, either of the following:",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-15",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -6947,11 +6965,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.065",
   "citaat": "Holders of a pilot licence who has attained the age of 65 years shall not act as a pilot of an aircraft that is engaged in commercial air transport.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "… Holders of a pilot licence who has attained the age of 65 years shall not act as a pilot of an aircraft that is engaged in commercial air transport."
+  "fragment": "… Holders of a pilot licence who has attained the age of 65 years shall not act as a pilot of an aircraft that is engaged in commercial air transport.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-16",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -6974,11 +6994,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.200",
   "citaat": "Applicants for a PPL or a GPL shall be at least 17 years old.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "Applicants for a PPL shall be at least 17 years old.\n[applicable until 17 February 2026 - Regulation (EU) 2020/359]\nApplicants for a PPL or a GPL shall be at least 17 years old.\n[applicable from 18 February 2026 - Regulation (EU) 2025/134]"
+  "fragment": "Applicants for a PPL shall be at least 17 years old.\n[applicable until 17 February 2026 - Regulation (EU) 2020/359]\nApplicants for a PPL or a GPL shall be at least 17 years old.\n[applicable from 18 February 2026 - Regulation (EU) 2025/134]",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-17",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7001,11 +7023,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.105.A",
   "citaat": "with a maximum certified take-off mass of 2 000 kg or less, carrying a maximum of three passengers",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) Privileges\nThe privileges of the holder of an LAPL for aeroplanes are to act as PIC on SEP aeroplanes-land (SEP(land)), SEP aeroplanes-sea (SEP(sea)) or TMG with a maximum certified take-off mass of 2 000 kg or less, carrying a maximum of three passengers, such that there are never more than four persons on board the aircraft.\n(b) Conditions\n(1) Holders of a LAPL(A) shall carry passengers only if they have completed 10 hours of flight time as PIC on aeroplanes or TMG after the issuance of the licence.\n(2) Holders of a LAPL(A) who previously held an ATPL(A), an MPL(A), a CPL(A) or a PPL(A), are exempted from the requirements laid down in point (b)(1)."
+  "fragment": "(a) Privileges\nThe privileges of the holder of an LAPL for aeroplanes are to act as PIC on SEP aeroplanes-land (SEP(land)), SEP aeroplanes-sea (SEP(sea)) or TMG with a maximum certified take-off mass of 2 000 kg or less, carrying a maximum of three passengers, such that there are never more than four persons on board the aircraft.\n(b) Conditions\n(1) Holders of a LAPL(A) shall carry passengers only if they have completed 10 hours of flight time as PIC on aeroplanes or TMG after the issuance of the licence.\n(2) Holders of a LAPL(A) who previously held an ATPL(A), an MPL(A), a CPL(A) or a PPL(A), are exempted from the requirements laid down in point (b)(1).",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-18",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7028,11 +7052,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.105.A",
   "citaat": "carrying a maximum of three passengers, such that there are never more than four persons on board the aircraft.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) Privileges\nThe privileges of the holder of an LAPL for aeroplanes are to act as PIC on SEP aeroplanes-land (SEP(land)), SEP aeroplanes-sea (SEP(sea)) or TMG with a maximum certified take-off mass of 2 000 kg or less, carrying a maximum of three passengers, such that there are never more than four persons on board the aircraft.\n(b) Conditions\n(1) Holders of a LAPL(A) shall carry passengers only if they have completed 10 hours of flight time as PIC on aeroplanes or TMG after the issuance of the licence.\n(2) Holders of a LAPL(A) who previously held an ATPL(A), an MPL(A), a CPL(A) or a PPL(A), are exempted from the requirements laid down in point (b)(1)."
+  "fragment": "(a) Privileges\nThe privileges of the holder of an LAPL for aeroplanes are to act as PIC on SEP aeroplanes-land (SEP(land)), SEP aeroplanes-sea (SEP(sea)) or TMG with a maximum certified take-off mass of 2 000 kg or less, carrying a maximum of three passengers, such that there are never more than four persons on board the aircraft.\n(b) Conditions\n(1) Holders of a LAPL(A) shall carry passengers only if they have completed 10 hours of flight time as PIC on aeroplanes or TMG after the issuance of the licence.\n(2) Holders of a LAPL(A) who previously held an ATPL(A), an MPL(A), a CPL(A) or a PPL(A), are exempted from the requirements laid down in point (b)(1).",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-19",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7055,11 +7081,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.105.A",
   "citaat": "Holders of a LAPL(A) shall carry passengers only if they have completed 10 hours of flight time as PIC on aeroplanes or TMG after the issuance of the licence.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) Privileges\nThe privileges of the holder of an LAPL for aeroplanes are to act as PIC on SEP aeroplanes-land (SEP(land)), SEP aeroplanes-sea (SEP(sea)) or TMG with a maximum certified take-off mass of 2 000 kg or less, carrying a maximum of three passengers, such that there are never more than four persons on board the aircraft.\n(b) Conditions\n(1) Holders of a LAPL(A) shall carry passengers only if they have completed 10 hours of flight time as PIC on aeroplanes or TMG after the issuance of the licence.\n(2) Holders of a LAPL(A) who previously held an ATPL(A), an MPL(A), a CPL(A) or a PPL(A), are exempted from the requirements laid down in point (b)(1)."
+  "fragment": "(a) Privileges\nThe privileges of the holder of an LAPL for aeroplanes are to act as PIC on SEP aeroplanes-land (SEP(land)), SEP aeroplanes-sea (SEP(sea)) or TMG with a maximum certified take-off mass of 2 000 kg or less, carrying a maximum of three passengers, such that there are never more than four persons on board the aircraft.\n(b) Conditions\n(1) Holders of a LAPL(A) shall carry passengers only if they have completed 10 hours of flight time as PIC on aeroplanes or TMG after the issuance of the licence.\n(2) Holders of a LAPL(A) who previously held an ATPL(A), an MPL(A), a CPL(A) or a PPL(A), are exempted from the requirements laid down in point (b)(1).",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-20",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7082,11 +7110,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.110.A",
   "citaat": "Applicants for an LAPL(A) shall have completed at least 30 hours of flight instruction on aeroplanes or TMGs, including at least:",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) Applicants for an LAPL(A) shall have completed at least 30 hours of flight instruction on aeroplanes or TMGs, including at least:\n(1) 15 hours of dual flight instruction in the class in which the skill test will be taken;\n(2) 6 hours of supervised solo flight time, including at least 3 hours of solo cross-country flight time with at least 1 cross-country flight of at least 150 km (80 NM), during which 1 full stop landing at an aerodrome different from the aerodrome of departure shall be made."
+  "fragment": "(a) Applicants for an LAPL(A) shall have completed at least 30 hours of flight instruction on aeroplanes or TMGs, including at least:\n(1) 15 hours of dual flight instruction in the class in which the skill test will be taken;\n(2) 6 hours of supervised solo flight time, including at least 3 hours of solo cross-country flight time with at least 1 cross-country flight of at least 150 km (80 NM), during which 1 full stop landing at an aerodrome different from the aerodrome of departure shall be made.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-21",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7109,11 +7139,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.140.A",
   "citaat": "(1) they have completed at least 12 hours of flight time as PIC or flying dual or solo under the supervision of an instructor, including:\n(i) 12 take-offs and landings;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) Holders of a LAPL(A) shall exercise the privileges of their licence only if in the last 2 years they have met any of the following conditions as pilots of aeroplanes or TMGs:\n(1) they have completed at least 12 hours of flight time as PIC or flying dual or solo under the supervision of an instructor, including:\n(i) 12 take-offs and landings;\n(ii) refresher training of at least 1 hour of total flight time with and to the satisfaction of an instructor who shall select those flight exercises that allow the applicant to refresh their competence in safely operating the aircraft and applying normal, abnormal and emergency procedures;\n(2) they have passed a LAPL(A) proficiency check with an examiner. The proficiency check programme shall be based on the skill test for the LAPL(A);"
+  "fragment": "(a) Holders of a LAPL(A) shall exercise the privileges of their licence only if in the last 2 years they have met any of the following conditions as pilots of aeroplanes or TMGs:\n(1) they have completed at least 12 hours of flight time as PIC or flying dual or solo under the supervision of an instructor, including:\n(i) 12 take-offs and landings;\n(ii) refresher training of at least 1 hour of total flight time with and to the satisfaction of an instructor who shall select those flight exercises that allow the applicant to refresh their competence in safely operating the aircraft and applying normal, abnormal and emergency procedures;\n(2) they have passed a LAPL(A) proficiency check with an examiner. The proficiency check programme shall be based on the skill test for the LAPL(A);",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-22",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7136,11 +7168,13 @@ window.EXTRA_QUESTIONS = [
   "art": "GM1 FCL.205.A(a); FCL.205.H(a); FCL.305(a)(1); FCL.505(a)(1)",
   "citaat": "This pilot could still fly SEP aeroplanes under the conditions specified in point FCL.105.A(a), as long as the class rating is still valid.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(b) As an example, when the holder of a PPL and a SEP aeroplane class rating temporarily loses his or her class 2 medical certificate but keeps an LAPL medical certificate, he or she is still holder of a PPL and of that SEP aeroplane class rating in terms of Part-FCL Subpart H. This pilot could still fly SEP aeroplanes under the conditions specified in point FCL.105.A(a), as long as the class rating is still valid. If the class rating is about to expire, it needs to be revalidated in accordance with point FCL.740.A. Only after the PPL is exchanged for an LAPL, that pilot will fall under Subpart B of Part-FCL and can maintain SEP aeroplane class privileges through compliance with LAPL(A) recency requirements."
+  "fragment": "(b) As an example, when the holder of a PPL and a SEP aeroplane class rating temporarily loses his or her class 2 medical certificate but keeps an LAPL medical certificate, he or she is still holder of a PPL and of that SEP aeroplane class rating in terms of Part-FCL Subpart H. This pilot could still fly SEP aeroplanes under the conditions specified in point FCL.105.A(a), as long as the class rating is still valid. If the class rating is about to expire, it needs to be revalidated in accordance with point FCL.740.A. Only after the PPL is exchanged for an LAPL, that pilot will fall under Subpart B of Part-FCL and can maintain SEP aeroplane class privileges through compliance with LAPL(A) recency requirements.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-23",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7163,11 +7197,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.205.A",
   "citaat": "The privileges of the holders of a PPL(A) are to act without remuneration as PIC or co-pilots of aeroplanes or TMGs engaged in non-commercial operations",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) The privileges of the holders of a PPL(A) are to act without remuneration as PIC or co-pilots of aeroplanes or TMGs engaged in non-commercial operations and to exercise all privileges of holders of an LAPL(A).\n(b) Notwithstanding the paragraph above, the holder of a PPL(A) with instructor or examiner privileges may receive remuneration for:\n(1) the provision of flight instruction for the LAPL(A) or PPL(A);\n(2) the conduct of skill tests and proficiency checks for the licences specified in point (1);\n(3) the training, testing and checking for the ratings or certificates associated with the instructor’s or examiner’s licence, as applicable."
+  "fragment": "(a) The privileges of the holders of a PPL(A) are to act without remuneration as PIC or co-pilots of aeroplanes or TMGs engaged in non-commercial operations and to exercise all privileges of holders of an LAPL(A).\n(b) Notwithstanding the paragraph above, the holder of a PPL(A) with instructor or examiner privileges may receive remuneration for:\n(1) the provision of flight instruction for the LAPL(A) or PPL(A);\n(2) the conduct of skill tests and proficiency checks for the licences specified in point (1);\n(3) the training, testing and checking for the ratings or certificates associated with the instructor’s or examiner’s licence, as applicable.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-25",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7190,11 +7226,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.210.A",
   "citaat": "Applicants for a PPL(A) shall have completed at least 45 hours of flight instruction in aeroplanes or TMGs, of which 5 hours may have been completed in an FSTD",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) Applicants for a PPL(A) shall have completed at least 45 hours of flight instruction in aeroplanes or TMGs, of which 5 hours may have been completed in an FSTD, including at least the following:\n(1) 25 hours of dual flight instruction;\n(2) 10 hours of supervised solo flight time, including at least 5 hours of solo cross-country flight time with at least one cross-country flight of at least 270 km (150 NM), during which full-stop landings at two aerodromes different from the aerodrome of departure shall be made."
+  "fragment": "(a) Applicants for a PPL(A) shall have completed at least 45 hours of flight instruction in aeroplanes or TMGs, of which 5 hours may have been completed in an FSTD, including at least the following:\n(1) 25 hours of dual flight instruction;\n(2) 10 hours of supervised solo flight time, including at least 5 hours of solo cross-country flight time with at least one cross-country flight of at least 270 km (150 NM), during which full-stop landings at two aerodromes different from the aerodrome of departure shall be made.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-26",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7217,11 +7255,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.210.A",
   "citaat": "(1) 25 hours of dual flight instruction;\n(2) 10 hours of supervised solo flight time,",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) Applicants for a PPL(A) shall have completed at least 45 hours of flight instruction in aeroplanes or TMGs, of which 5 hours may have been completed in an FSTD, including at least the following:\n(1) 25 hours of dual flight instruction;\n(2) 10 hours of supervised solo flight time, including at least 5 hours of solo cross-country flight time with at least one cross-country flight of at least 270 km (150 NM), during which full-stop landings at two aerodromes different from the aerodrome of departure shall be made."
+  "fragment": "(a) Applicants for a PPL(A) shall have completed at least 45 hours of flight instruction in aeroplanes or TMGs, of which 5 hours may have been completed in an FSTD, including at least the following:\n(1) 25 hours of dual flight instruction;\n(2) 10 hours of supervised solo flight time, including at least 5 hours of solo cross-country flight time with at least one cross-country flight of at least 270 km (150 NM), during which full-stop landings at two aerodromes different from the aerodrome of departure shall be made.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-27",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7244,11 +7284,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.210.A",
   "citaat": "with at least one cross-country flight of at least 270 km (150 NM), during which full-stop landings at two aerodromes different from the aerodrome of departure shall be made.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) Applicants for a PPL(A) shall have completed at least 45 hours of flight instruction in aeroplanes or TMGs, of which 5 hours may have been completed in an FSTD, including at least the following:\n(1) 25 hours of dual flight instruction;\n(2) 10 hours of supervised solo flight time, including at least 5 hours of solo cross-country flight time with at least one cross-country flight of at least 270 km (150 NM), during which full-stop landings at two aerodromes different from the aerodrome of departure shall be made."
+  "fragment": "(a) Applicants for a PPL(A) shall have completed at least 45 hours of flight instruction in aeroplanes or TMGs, of which 5 hours may have been completed in an FSTD, including at least the following:\n(1) 25 hours of dual flight instruction;\n(2) 10 hours of supervised solo flight time, including at least 5 hours of solo cross-country flight time with at least one cross-country flight of at least 270 km (150 NM), during which full-stop landings at two aerodromes different from the aerodrome of departure shall be made.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-28",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7271,11 +7313,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.215",
   "citaat": "(b) specific subjects concerning the different aircraft categories:\nPrinciples of flight,\nOperational procedures,\nFlight performance and planning, and\nAircraft general knowledge.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "Navigation.\n(b) specific subjects concerning the different aircraft categories:\nPrinciples of flight,\nOperational procedures,\nFlight performance and planning, and\nAircraft general knowledge."
+  "fragment": "Navigation.\n(b) specific subjects concerning the different aircraft categories:\nPrinciples of flight,\nOperational procedures,\nFlight performance and planning, and\nAircraft general knowledge.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-29",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7298,11 +7342,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.740",
   "citaat": "The validity period of class and type ratings shall be 1 year, except for single-pilot single-engine class ratings for which the validity period shall be 2 years, unless otherwise determined in the OSD.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) Validity\n(1) The validity period of class and type ratings shall be 1 year, except for single-pilot single-engine class ratings for which the validity period shall be 2 years, unless otherwise determined in the OSD. If pilots choose to fulfil the revalidation requirements earlier than prescribed in points FCL.740.A, FCL.740.H, FCL.740.PL and FCL.740.As, the new validity period shall commence from the date of the proficiency check.\n(2) Applicants for the revalidation of a class or type rating shall receive full credits for the proficiency check as required in this Subpart when they complete EBT practical assessment in accordance with Appendix 10 at an operator that has implemented EBT for the relevant class or type rating."
+  "fragment": "(a) Validity\n(1) The validity period of class and type ratings shall be 1 year, except for single-pilot single-engine class ratings for which the validity period shall be 2 years, unless otherwise determined in the OSD. If pilots choose to fulfil the revalidation requirements earlier than prescribed in points FCL.740.A, FCL.740.H, FCL.740.PL and FCL.740.As, the new validity period shall commence from the date of the proficiency check.\n(2) Applicants for the revalidation of a class or type rating shall receive full credits for the proficiency check as required in this Subpart when they complete EBT practical assessment in accordance with Appendix 10 at an operator that has implemented EBT for the relevant class or type rating.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-30",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7325,11 +7371,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.740.A",
   "citaat": "within the 12 months preceding the expiry date of the rating, complete 12 hours of flight time in the relevant class, including the following:\n(A) 6 hours as PIC;\n(B) 12 take-offs and 12 landings;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "… For the revalidation of SEP aeroplane class ratings or TMG class ratings, applicants shall:\n(i) within the 3 months preceding the expiry date of the rating, pass a proficiency check in the relevant class in accordance with Appendix 9 to this Part with an examiner; or\n(ii) within the 12 months preceding the expiry date of the rating, complete 12 hours of flight time in the relevant class, including the following:\n(A) 6 hours as PIC;\n(B) 12 take-offs and 12 landings;\n(C) refresher training of at least 1 hour of total flight time with and to the satisfaction of a flight instructor (FI) or a class rating instructor (CRI) who shall select those flight exercises that allow the applicant to refresh their competence in safely operating the aircraft and applying normal, abnormal and emergency procedures. …"
+  "fragment": "… For the revalidation of SEP aeroplane class ratings or TMG class ratings, applicants shall:\n(i) within the 3 months preceding the expiry date of the rating, pass a proficiency check in the relevant class in accordance with Appendix 9 to this Part with an examiner; or\n(ii) within the 12 months preceding the expiry date of the rating, complete 12 hours of flight time in the relevant class, including the following:\n(A) 6 hours as PIC;\n(B) 12 take-offs and 12 landings;\n(C) refresher training of at least 1 hour of total flight time with and to the satisfaction of a flight instructor (FI) or a class rating instructor (CRI) who shall select those flight exercises that allow the applicant to refresh their competence in safely operating the aircraft and applying normal, abnormal and emergency procedures. …",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-31",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7352,11 +7400,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.740",
   "citaat": "If pilots choose to fulfil the revalidation requirements earlier than prescribed in points FCL.740.A, FCL.740.H, FCL.740.PL and FCL.740.As, the new validity period shall commence from the date of the proficiency check.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) Validity\n(1) The validity period of class and type ratings shall be 1 year, except for single-pilot single-engine class ratings for which the validity period shall be 2 years, unless otherwise determined in the OSD. If pilots choose to fulfil the revalidation requirements earlier than prescribed in points FCL.740.A, FCL.740.H, FCL.740.PL and FCL.740.As, the new validity period shall commence from the date of the proficiency check.\n(2) Applicants for the revalidation of a class or type rating shall receive full credits for the proficiency check as required in this Subpart when they complete EBT practical assessment in accordance with Appendix 10 at an operator that has implemented EBT for the relevant class or type rating."
+  "fragment": "(a) Validity\n(1) The validity period of class and type ratings shall be 1 year, except for single-pilot single-engine class ratings for which the validity period shall be 2 years, unless otherwise determined in the OSD. If pilots choose to fulfil the revalidation requirements earlier than prescribed in points FCL.740.A, FCL.740.H, FCL.740.PL and FCL.740.As, the new validity period shall commence from the date of the proficiency check.\n(2) Applicants for the revalidation of a class or type rating shall receive full credits for the proficiency check as required in this Subpart when they complete EBT practical assessment in accordance with Appendix 10 at an operator that has implemented EBT for the relevant class or type rating.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-32",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7379,11 +7429,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.740",
   "citaat": "at a DTO, at an ATO or with an instructor, if the rating expired no more than 3 years ago and the rating concerned a non-high-performance SEP aeroplane class rating or a TMG class rating;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(i) at an ATO;\n(ii) at a DTO or at an ATO, if the expired rating concerned a non-high-performance SEP aeroplane class rating, a TMG class rating or a single-engine type rating for helicopters referred to in point DTO.GEN.110(a)(2)(c) of Annex VIII;\n(iii) at a DTO, at an ATO or with an instructor, if the rating expired no more than 3 years ago and the rating concerned a non-high-performance SEP aeroplane class rating or a TMG class rating;\n(iv) at an EBT operator that is specifically approved for such refresher training;\n(2) if deemed necessary by the organisation or the instructor providing the assessment as per point (1), they shall complete refresher training at that organisation or with that instructor;\n(3) after complying with point (1) and, as applicable, point (2), they shall pass a proficiency check in accordance with Appendix 9 or complete EBT practical assessment in accordance with Appendix 10. That EBT practical assessment may be combined with the refresher training specified in point (2)."
+  "fragment": "(i) at an ATO;\n(ii) at a DTO or at an ATO, if the expired rating concerned a non-high-performance SEP aeroplane class rating, a TMG class rating or a single-engine type rating for helicopters referred to in point DTO.GEN.110(a)(2)(c) of Annex VIII;\n(iii) at a DTO, at an ATO or with an instructor, if the rating expired no more than 3 years ago and the rating concerned a non-high-performance SEP aeroplane class rating or a TMG class rating;\n(iv) at an EBT operator that is specifically approved for such refresher training;\n(2) if deemed necessary by the organisation or the instructor providing the assessment as per point (1), they shall complete refresher training at that organisation or with that instructor;\n(3) after complying with point (1) and, as applicable, point (2), they shall pass a proficiency check in accordance with Appendix 9 or complete EBT practical assessment in accordance with Appendix 10. That EBT practical assessment may be combined with the refresher training specified in point (2).",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-33",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7406,11 +7458,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.740.A",
   "citaat": "Applicants who fail to achieve a pass in all sections of a proficiency check before the expiry date of a class or type rating shall not exercise the privileges of that rating until a pass in the proficiency check has been achieved.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(c) Applicants who fail to achieve a pass in all sections of a proficiency check before the expiry date of a class or type rating shall not exercise the privileges of that rating until a pass in the proficiency check has been achieved."
+  "fragment": "(c) Applicants who fail to achieve a pass in all sections of a proficiency check before the expiry date of a class or type rating shall not exercise the privileges of that rating until a pass in the proficiency check has been achieved.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-34",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7433,11 +7487,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.710",
   "citaat": "The differences training or the proficiency check in that variant shall be entered in the pilots’ logbook or equivalent record and signed by the instructor or examiner as appropriate.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(e) The differences training or the proficiency check in that variant shall be entered in the pilots’ logbook or equivalent record and signed by the instructor or examiner as appropriate."
+  "fragment": "(e) The differences training or the proficiency check in that variant shall be entered in the pilots’ logbook or equivalent record and signed by the instructor or examiner as appropriate.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-35",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7460,11 +7516,13 @@ window.EXTRA_QUESTIONS = [
   "art": "GM1 FCL.710",
   "citaat": "(a) Differences training requires the acquisition of additional knowledge and training on an appropriate training device or the aircraft.\n(b) Familiarisation requires the acquisition of additional knowledge.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "ED Decision 2025/002/R\nDIFFERENCES TRAINING AND FAMILIARISATION\n(a) Differences training requires the acquisition of additional knowledge and training on an appropriate training device or the aircraft.\n(b) Familiarisation requires the acquisition of additional knowledge."
+  "fragment": "ED Decision 2025/002/R\nDIFFERENCES TRAINING AND FAMILIARISATION\n(a) Differences training requires the acquisition of additional knowledge and training on an appropriate training device or the aircraft.\n(b) Familiarisation requires the acquisition of additional knowledge.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-36",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7487,11 +7545,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.800",
   "citaat": "(1) after the issue of the licence, at least 30 hours of flight time as PIC in aeroplanes or TMGs;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(b) Applicants for an aerobatic rating shall have completed:\n(1) after the issue of the licence, at least 30 hours of flight time as PIC in aeroplanes or TMGs;\n(2) a training course at DTO or at an ATO, including:"
+  "fragment": "(b) Applicants for an aerobatic rating shall have completed:\n(1) after the issue of the licence, at least 30 hours of flight time as PIC in aeroplanes or TMGs;\n(2) a training course at DTO or at an ATO, including:",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-37",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7514,11 +7574,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.805",
   "citaat": "at least 30 hours of flight time as PIC and 60 take-offs and landings in aeroplanes, if the activity is to be carried out in aeroplanes,",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(b) Applicants for a sailplane towing rating shall have completed:\n(1) at least 30 hours of flight time as PIC and 60 take-offs and landings in aeroplanes, if the activity is to be carried out in aeroplanes, or in TMGs, if the activity is to be carried out in TMGs, completed after the issue of the licence;\n(2) a training course at a DTO or at an ATO, including:"
+  "fragment": "(b) Applicants for a sailplane towing rating shall have completed:\n(1) at least 30 hours of flight time as PIC and 60 take-offs and landings in aeroplanes, if the activity is to be carried out in aeroplanes, or in TMGs, if the activity is to be carried out in TMGs, completed after the issue of the licence;\n(2) a training course at a DTO or at an ATO, including:",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-38",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7541,11 +7603,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.805",
   "citaat": "In order to exercise the privileges of the sailplane or banner towing ratings, the holder of the rating shall have completed a minimum of 5 tows during the last 24 months.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(e) In order to exercise the privileges of the sailplane or banner towing ratings, the holder of the rating shall have completed a minimum of 5 tows during the last 24 months."
+  "fragment": "(e) In order to exercise the privileges of the sailplane or banner towing ratings, the holder of the rating shall have completed a minimum of 5 tows during the last 24 months.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-39",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7568,11 +7632,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.810",
   "citaat": "Applicants shall have completed a training course within a period of up to 6 months at a DTO or at an ATO to exercise the privileges of an LAPL or a PPL for aeroplanes, TMGs or airships in VFR conditions at night.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) Aeroplanes, TMGs, airships.\n(1) Applicants shall have completed a training course within a period of up to 6 months at a DTO or at an ATO to exercise the privileges of an LAPL or a PPL for aeroplanes, TMGs or airships in VFR conditions at night. The course shall comprise:"
+  "fragment": "(a) Aeroplanes, TMGs, airships.\n(1) Applicants shall have completed a training course within a period of up to 6 months at a DTO or at an ATO to exercise the privileges of an LAPL or a PPL for aeroplanes, TMGs or airships in VFR conditions at night. The course shall comprise:",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-40",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7595,11 +7661,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.810",
   "citaat": "at least one dual cross-country flight of at least 50 km (27 NM) and 5 solo take-offs and 5 solo full-stop landings.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(i) theoretical knowledge instruction;\n(ii) at least 5 hours of flight time in the appropriate aircraft category at night, including at least 3 hours of dual instruction, including at least 1 hour of cross-country navigation with at least one dual cross-country flight of at least 50 km (27 NM) and 5 solo take-offs and 5 solo full-stop landings.\n(2) Before completing the training at night, LAPL holders shall have completed the basic instrument flight training required for the issue of the PPL.\n(3) When applicants hold both an SEP aeroplane-land and a TMG class rating, they may meet the requirements in point (1) in either class or in both classes.\n(4) Applicants for a night rating for aeroplanes or TMGs in accordance with this subparagraph shall receive full credit towards the requirements of subparagraphs (1) and (2) if they hold a TMG night rating in accordance with point SFCL.210 of Annex III (Part-SFCL) to Commission Implementing Regulation (EU) 2018/1976 or if they have fulfilled all the requirements for the issue of that rating."
+  "fragment": "(i) theoretical knowledge instruction;\n(ii) at least 5 hours of flight time in the appropriate aircraft category at night, including at least 3 hours of dual instruction, including at least 1 hour of cross-country navigation with at least one dual cross-country flight of at least 50 km (27 NM) and 5 solo take-offs and 5 solo full-stop landings.\n(2) Before completing the training at night, LAPL holders shall have completed the basic instrument flight training required for the issue of the PPL.\n(3) When applicants hold both an SEP aeroplane-land and a TMG class rating, they may meet the requirements in point (1) in either class or in both classes.\n(4) Applicants for a night rating for aeroplanes or TMGs in accordance with this subparagraph shall receive full credit towards the requirements of subparagraphs (1) and (2) if they hold a TMG night rating in accordance with point SFCL.210 of Annex III (Part-SFCL) to Commission Implementing Regulation (EU) 2018/1976 or if they have fulfilled all the requirements for the issue of that rating.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-01",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7622,11 +7690,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MED.A.030",
   "citaat": "(2) private pilot licence (PPL), the pilot shall hold at least a valid class 2 medical certificate;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(c) When exercising the privileges of a:\n(1) light aircraft pilot licence (LAPL), a balloon pilot licence (BPL) issued in accordance with Annex III (Part-BFCL) to Commission Regulation (EU 2018/395, or a sailplane pilot licence (SPL) issued in accordance with Annex III (Part-SFCL) to Commission Implementing Regulation (EU) 2018/1976, the pilot shall hold at least a valid LAPL medical certificate;\n(2) private pilot licence (PPL), the pilot shall hold at least a valid class 2 medical certificate;\n[applicable until 17 February 2026 - Regulation (EU) 2024/2076]\n(2) private pilot licence (PPL) or gyroplane pilot licence (GPL), the pilot shall hold at least a valid class 2 medical certificate;\n[applicable from 18 February 2026 - Regulation (EU) 2025/134]\n(3) BPL for the purpose of:"
+  "fragment": "(c) When exercising the privileges of a:\n(1) light aircraft pilot licence (LAPL), a balloon pilot licence (BPL) issued in accordance with Annex III (Part-BFCL) to Commission Regulation (EU 2018/395, or a sailplane pilot licence (SPL) issued in accordance with Annex III (Part-SFCL) to Commission Implementing Regulation (EU) 2018/1976, the pilot shall hold at least a valid LAPL medical certificate;\n(2) private pilot licence (PPL), the pilot shall hold at least a valid class 2 medical certificate;\n[applicable until 17 February 2026 - Regulation (EU) 2024/2076]\n(2) private pilot licence (PPL) or gyroplane pilot licence (GPL), the pilot shall hold at least a valid class 2 medical certificate;\n[applicable from 18 February 2026 - Regulation (EU) 2025/134]\n(3) BPL for the purpose of:",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-02",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7649,11 +7719,13 @@ window.EXTRA_QUESTIONS = [
   "art": "AMC1 MED.A.030",
   "citaat": "(a) A class 1 medical certificate includes the privileges and validities of class 2 and LAPL medical certificates.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "ED Decision 2019/002/R\n(a) A class 1 medical certificate includes the privileges and validities of class 2 and LAPL medical certificates.\n(b) A class 2 medical certificate includes the privileges and validities of a LAPL medical certificate."
+  "fragment": "ED Decision 2019/002/R\n(a) A class 1 medical certificate includes the privileges and validities of class 2 and LAPL medical certificates.\n(b) A class 2 medical certificate includes the privileges and validities of a LAPL medical certificate.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-03",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7676,11 +7748,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MED.A.030",
   "citaat": "(f) A licence holder shall not at any time hold more than one medical certificate issued in accordance with this Annex (Part-MED).",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(e) If an instrument rating or basic instrument rating is added to a PPL, the licence holder shall undergo pure tone audiometry examinations in accordance with the periodicity and the standard required for class 1 medical certificate holders.\n(f) A licence holder shall not at any time hold more than one medical certificate issued in accordance with this Annex (Part-MED)."
+  "fragment": "(e) If an instrument rating or basic instrument rating is added to a PPL, the licence holder shall undergo pure tone audiometry examinations in accordance with the periodicity and the standard required for class 1 medical certificate holders.\n(f) A licence holder shall not at any time hold more than one medical certificate issued in accordance with this Annex (Part-MED).",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-04",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7703,11 +7777,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MED.A.030",
   "citaat": "(d) If a night rating is added to a PPL or LAPL, the licence holder shall be colour safe.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(5) a commercial pilot licence (CPL), a multi-crew pilot licence (MPL) or an airline transport pilot licence (ATPL), the pilot shall hold a valid class 1 medical certificate.\n(d) If a night rating is added to a PPL or LAPL, the licence holder shall be colour safe."
+  "fragment": "(5) a commercial pilot licence (CPL), a multi-crew pilot licence (MPL) or an airline transport pilot licence (ATPL), the pilot shall hold a valid class 1 medical certificate.\n(d) If a night rating is added to a PPL or LAPL, the licence holder shall be colour safe.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-05",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7730,11 +7806,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MED.A.040",
   "citaat": "(2) Class 2 medical certificates shall be issued by an AeMC or an AME.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(b) Initial issuance\n(1) Class 1 medical certificates shall be issued by an AeMC.\n(2) Class 2 medical certificates shall be issued by an AeMC or an AME.\n(3) LAPL medical certificates shall be issued by an AeMC or an AME. They may also be issued by a GMP if so permitted under the national law of the Member State of the licensing authority to which the application for the medical certificate has been made."
+  "fragment": "(b) Initial issuance\n(1) Class 1 medical certificates shall be issued by an AeMC.\n(2) Class 2 medical certificates shall be issued by an AeMC or an AME.\n(3) LAPL medical certificates shall be issued by an AeMC or an AME. They may also be issued by a GMP if so permitted under the national law of the Member State of the licensing authority to which the application for the medical certificate has been made.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-06",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7757,11 +7835,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MED.A.040",
   "citaat": "They may also be issued by a GMP if so permitted under the national law of the Member State of the licensing authority to which the application for the medical certificate has been made.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(b) Initial issuance\n(1) Class 1 medical certificates shall be issued by an AeMC.\n(2) Class 2 medical certificates shall be issued by an AeMC or an AME.\n(3) LAPL medical certificates shall be issued by an AeMC or an AME. They may also be issued by a GMP if so permitted under the national law of the Member State of the licensing authority to which the application for the medical certificate has been made."
+  "fragment": "(b) Initial issuance\n(1) Class 1 medical certificates shall be issued by an AeMC.\n(2) Class 2 medical certificates shall be issued by an AeMC or an AME.\n(3) LAPL medical certificates shall be issued by an AeMC or an AME. They may also be issued by a GMP if so permitted under the national law of the Member State of the licensing authority to which the application for the medical certificate has been made.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-07",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7784,11 +7864,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MED.A.045",
   "citaat": "(i) 60 months, until the licence holder reaches the age of 40.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(i) 60 months, until the licence holder reaches the age of 40. A medical certificate issued prior to the licence holder reaching the age of 40 shall cease to be valid after the licence holder reaches the age of 42;\n(ii) 24 months, for licence holders aged between 40 and 50. A medical certificate issued prior to the licence holder reaching the age of 50 shall cease to be valid after the licence holder reaches the age of 51;\n(iii) 12 months, for licence holders aged above 50.\n(4) LAPL medical certificates shall be valid for a period of:"
+  "fragment": "(i) 60 months, until the licence holder reaches the age of 40. A medical certificate issued prior to the licence holder reaching the age of 40 shall cease to be valid after the licence holder reaches the age of 42;\n(ii) 24 months, for licence holders aged between 40 and 50. A medical certificate issued prior to the licence holder reaching the age of 50 shall cease to be valid after the licence holder reaches the age of 51;\n(iii) 12 months, for licence holders aged above 50.\n(4) LAPL medical certificates shall be valid for a period of:",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-08",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7811,11 +7893,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MED.A.045",
   "citaat": "A medical certificate issued prior to the licence holder reaching the age of 40 shall cease to be valid after the licence holder reaches the age of 42;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(i) 60 months, until the licence holder reaches the age of 40. A medical certificate issued prior to the licence holder reaching the age of 40 shall cease to be valid after the licence holder reaches the age of 42;\n(ii) 24 months, for licence holders aged between 40 and 50. A medical certificate issued prior to the licence holder reaching the age of 50 shall cease to be valid after the licence holder reaches the age of 51;\n(iii) 12 months, for licence holders aged above 50.\n(4) LAPL medical certificates shall be valid for a period of:"
+  "fragment": "(i) 60 months, until the licence holder reaches the age of 40. A medical certificate issued prior to the licence holder reaching the age of 40 shall cease to be valid after the licence holder reaches the age of 42;\n(ii) 24 months, for licence holders aged between 40 and 50. A medical certificate issued prior to the licence holder reaching the age of 50 shall cease to be valid after the licence holder reaches the age of 51;\n(iii) 12 months, for licence holders aged above 50.\n(4) LAPL medical certificates shall be valid for a period of:",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-09",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7838,11 +7922,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MED.A.045",
   "citaat": "(ii) 24 months, for licence holders aged between 40 and 50.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(i) 60 months, until the licence holder reaches the age of 40. A medical certificate issued prior to the licence holder reaching the age of 40 shall cease to be valid after the licence holder reaches the age of 42;\n(ii) 24 months, for licence holders aged between 40 and 50. A medical certificate issued prior to the licence holder reaching the age of 50 shall cease to be valid after the licence holder reaches the age of 51;\n(iii) 12 months, for licence holders aged above 50.\n(4) LAPL medical certificates shall be valid for a period of:"
+  "fragment": "(i) 60 months, until the licence holder reaches the age of 40. A medical certificate issued prior to the licence holder reaching the age of 40 shall cease to be valid after the licence holder reaches the age of 42;\n(ii) 24 months, for licence holders aged between 40 and 50. A medical certificate issued prior to the licence holder reaching the age of 50 shall cease to be valid after the licence holder reaches the age of 51;\n(iii) 12 months, for licence holders aged above 50.\n(4) LAPL medical certificates shall be valid for a period of:",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-10",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7865,11 +7951,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MED.A.045",
   "citaat": "(ii) 24 months, for licence holders aged above 40.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(i) 60 months, until the licence holder reaches the age of 40. A medical certificate issued prior to the licence holder reaching the age of 40 shall cease to be valid after the licence holder reaches the age of 42;\n(ii) 24 months, for licence holders aged above 40.\n(5) The validity period of a medical certificate, including any associated examination or special investigation, shall be calculated from the date of the aero-medical examination in the case of initial issue and renewal, and from the expiry date of the previous medical certificate in the case of revalidation."
+  "fragment": "(i) 60 months, until the licence holder reaches the age of 40. A medical certificate issued prior to the licence holder reaching the age of 40 shall cease to be valid after the licence holder reaches the age of 42;\n(ii) 24 months, for licence holders aged above 40.\n(5) The validity period of a medical certificate, including any associated examination or special investigation, shall be calculated from the date of the aero-medical examination in the case of initial issue and renewal, and from the expiry date of the previous medical certificate in the case of revalidation.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-11",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7892,11 +7980,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MED.A.045",
   "citaat": "Aero-medical examinations and assessments, as applicable, for the revalidation of a medical certificate may be undertaken up to 45 days prior to the expiry date of the medical certificate.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(b) Revalidation\nAero-medical examinations and assessments, as applicable, for the revalidation of a medical certificate may be undertaken up to 45 days prior to the expiry date of the medical certificate."
+  "fragment": "(b) Revalidation\nAero-medical examinations and assessments, as applicable, for the revalidation of a medical certificate may be undertaken up to 45 days prior to the expiry date of the medical certificate.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-12",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7919,11 +8009,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MED.A.045",
   "citaat": "and from the expiry date of the previous medical certificate in the case of revalidation.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(i) 60 months, until the licence holder reaches the age of 40. A medical certificate issued prior to the licence holder reaching the age of 40 shall cease to be valid after the licence holder reaches the age of 42;\n(ii) 24 months, for licence holders aged above 40.\n(5) The validity period of a medical certificate, including any associated examination or special investigation, shall be calculated from the date of the aero-medical examination in the case of initial issue and renewal, and from the expiry date of the previous medical certificate in the case of revalidation."
+  "fragment": "(i) 60 months, until the licence holder reaches the age of 40. A medical certificate issued prior to the licence holder reaching the age of 40 shall cease to be valid after the licence holder reaches the age of 42;\n(ii) 24 months, for licence holders aged above 40.\n(5) The validity period of a medical certificate, including any associated examination or special investigation, shall be calculated from the date of the aero-medical examination in the case of initial issue and renewal, and from the expiry date of the previous medical certificate in the case of revalidation.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-13",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7946,11 +8038,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MED.A.045",
   "citaat": "(i) if the medical certificate has expired for less than 2 years, a routine revalidation aero-medical examination shall be performed;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(i) if the medical certificate has expired for less than 2 years, a routine revalidation aero-medical examination shall be performed;\n(ii) if the medical certificate has expired for more than 2 years but less than 5 years, the AeMC or AME shall only conduct the renewal aero-medical examination after assessment of the aero-medical records of the applicant;\n(iii) if the medical certificate has expired for more than 5 years, the aero-medical examination requirements for initial issue shall apply and the assessment shall be based on the revalidation requirements.\n(3) In the case of LAPL medical certificates, the AeMC, AME or GMP shall assess the medical history of the applicant and perform the aero-medical examinations and assessments, as applicable, in accordance with points MED.B.005 and MED.B.095."
+  "fragment": "(i) if the medical certificate has expired for less than 2 years, a routine revalidation aero-medical examination shall be performed;\n(ii) if the medical certificate has expired for more than 2 years but less than 5 years, the AeMC or AME shall only conduct the renewal aero-medical examination after assessment of the aero-medical records of the applicant;\n(iii) if the medical certificate has expired for more than 5 years, the aero-medical examination requirements for initial issue shall apply and the assessment shall be based on the revalidation requirements.\n(3) In the case of LAPL medical certificates, the AeMC, AME or GMP shall assess the medical history of the applicant and perform the aero-medical examinations and assessments, as applicable, in accordance with points MED.B.005 and MED.B.095.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-14",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -7973,11 +8067,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MED.A.020",
   "citaat": "(2) have commenced the regular use of any medication;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(b) In addition, holders of a medical certificate shall, without undue delay and before exercising the privileges of their licence, seek aero-medical advice from the AeMC, AME or GMP, as applicable, when they:\n(1) have undergone a surgical operation or invasive procedure;\n(2) have commenced the regular use of any medication;\n(3) have suffered any significant personal injury involving incapacity to function as a member of the flight crew;\n(4) have been suffering from any significant illness involving incapacity to function as a member of the flight crew;\n(5) are pregnant;\n(6) have been admitted to hospital or medical clinic;\n(7) first require correcting lenses."
+  "fragment": "(b) In addition, holders of a medical certificate shall, without undue delay and before exercising the privileges of their licence, seek aero-medical advice from the AeMC, AME or GMP, as applicable, when they:\n(1) have undergone a surgical operation or invasive procedure;\n(2) have commenced the regular use of any medication;\n(3) have suffered any significant personal injury involving incapacity to function as a member of the flight crew;\n(4) have been suffering from any significant illness involving incapacity to function as a member of the flight crew;\n(5) are pregnant;\n(6) have been admitted to hospital or medical clinic;\n(7) first require correcting lenses.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-15",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8000,11 +8096,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MED.B.045",
   "citaat": "(1) In the event of pregnancy, an applicant may continue to exercise her privileges until the end of the 26th week of gestation only if the AeMC or AME considers that she is fit to do so.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) Applicants who have undergone a major gynaecological operation shall be assessed as unfit. However, they may be assessed as fit after full recovery.\n(b) Pregnancy\n(1) In the event of pregnancy, an applicant may continue to exercise her privileges until the end of the 26th week of gestation only if the AeMC or AME considers that she is fit to do so.\n(2) For holders of a class 1 medical certificate who are pregnant, an OML shall apply. Notwithstanding point MED.B.001, in that case, the OML may be imposed and removed by the AeMC or AME.\n(3) An applicant may resume exercising her privileges after recovery following the end of the pregnancy."
+  "fragment": "(a) Applicants who have undergone a major gynaecological operation shall be assessed as unfit. However, they may be assessed as fit after full recovery.\n(b) Pregnancy\n(1) In the event of pregnancy, an applicant may continue to exercise her privileges until the end of the 26th week of gestation only if the AeMC or AME considers that she is fit to do so.\n(2) For holders of a class 1 medical certificate who are pregnant, an OML shall apply. Notwithstanding point MED.B.001, in that case, the OML may be imposed and removed by the AeMC or AME.\n(3) An applicant may resume exercising her privileges after recovery following the end of the pregnancy.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-16",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8027,11 +8125,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MED.A.020",
   "citaat": "(7) first require correcting lenses.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(b) In addition, holders of a medical certificate shall, without undue delay and before exercising the privileges of their licence, seek aero-medical advice from the AeMC, AME or GMP, as applicable, when they:\n(1) have undergone a surgical operation or invasive procedure;\n(2) have commenced the regular use of any medication;\n(3) have suffered any significant personal injury involving incapacity to function as a member of the flight crew;\n(4) have been suffering from any significant illness involving incapacity to function as a member of the flight crew;\n(5) are pregnant;\n(6) have been admitted to hospital or medical clinic;\n(7) first require correcting lenses."
+  "fragment": "(b) In addition, holders of a medical certificate shall, without undue delay and before exercising the privileges of their licence, seek aero-medical advice from the AeMC, AME or GMP, as applicable, when they:\n(1) have undergone a surgical operation or invasive procedure;\n(2) have commenced the regular use of any medication;\n(3) have suffered any significant personal injury involving incapacity to function as a member of the flight crew;\n(4) have been suffering from any significant illness involving incapacity to function as a member of the flight crew;\n(5) are pregnant;\n(6) have been admitted to hospital or medical clinic;\n(7) first require correcting lenses.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-17",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8054,11 +8154,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MED.A.020",
   "citaat": "(1) holders of class 1 and class 2 medical certificates shall seek the aero-medical advice of an AeMC or AME.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(c) In the cases referred to in point (b):\n(1) holders of class 1 and class 2 medical certificates shall seek the aero-medical advice of an AeMC or AME. In that case, the AeMC or AME shall assess their medical fitness and decide whether they are fit to resume the exercise of their privileges;\n(2) holders of light aircraft pilot licence medical certificates shall seek the aero-medical advice of an AeMC, an AME or the GMP who signed the medical certificate. In that case, the AeMC, AME or GMP shall assess their medical fitness and decide whether they are fit to resume the exercise of their privileges."
+  "fragment": "(c) In the cases referred to in point (b):\n(1) holders of class 1 and class 2 medical certificates shall seek the aero-medical advice of an AeMC or AME. In that case, the AeMC or AME shall assess their medical fitness and decide whether they are fit to resume the exercise of their privileges;\n(2) holders of light aircraft pilot licence medical certificates shall seek the aero-medical advice of an AeMC, an AME or the GMP who signed the medical certificate. In that case, the AeMC, AME or GMP shall assess their medical fitness and decide whether they are fit to resume the exercise of their privileges.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-18",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8081,11 +8183,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MED.B.070",
   "citaat": "(5) A spare set of similarly correcting spectacles, for distant or near vision as applicable, shall be readily available for immediate use when exercising the privileges of the applicable licence(s).",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(g) Spectacles and contact lenses\n(1) If satisfactory visual function is achieved only with the use of correction, the spectacles or contact lenses shall provide optimal visual function, be well-tolerated and suitable for aviation purposes.\n(2) No more than one pair of spectacles shall be used to meet the visual requirements when exercising the privileges of the applicable licence(s).\n(3) For distant vision, spectacles or contact lenses shall be worn when exercising the privileges of the applicable licence(s).\n(4) For near vision, a pair of spectacles shall be kept available when exercising the privileges of the applicable licence(s).\n(5) A spare set of similarly correcting spectacles, for distant or near vision as applicable, shall be readily available for immediate use when exercising the privileges of the applicable licence(s).\n(6) If contact lenses are worn when exercising the privileges of the applicable licence(s), they shall be for distant vision, monofocal, and non-tinted and well-tolerated.\n(7) Applicants with a large refractive error shall use contact lenses or high-index spectacle lenses.\n(8) Orthokeratological lenses shall not be used."
+  "fragment": "(g) Spectacles and contact lenses\n(1) If satisfactory visual function is achieved only with the use of correction, the spectacles or contact lenses shall provide optimal visual function, be well-tolerated and suitable for aviation purposes.\n(2) No more than one pair of spectacles shall be used to meet the visual requirements when exercising the privileges of the applicable licence(s).\n(3) For distant vision, spectacles or contact lenses shall be worn when exercising the privileges of the applicable licence(s).\n(4) For near vision, a pair of spectacles shall be kept available when exercising the privileges of the applicable licence(s).\n(5) A spare set of similarly correcting spectacles, for distant or near vision as applicable, shall be readily available for immediate use when exercising the privileges of the applicable licence(s).\n(6) If contact lenses are worn when exercising the privileges of the applicable licence(s), they shall be for distant vision, monofocal, and non-tinted and well-tolerated.\n(7) Applicants with a large refractive error shall use contact lenses or high-index spectacle lenses.\n(8) Orthokeratological lenses shall not be used.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-19",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8108,11 +8212,13 @@ window.EXTRA_QUESTIONS = [
   "art": "AMC2 MED.B.001",
   "citaat": "VNL | Valid only with correction for defective near vision",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "VML | Valid only with correction for defective distant, intermediate and near vision\nVNL | Valid only with correction for defective near vision"
+  "fragment": "VML | Valid only with correction for defective distant, intermediate and near vision\nVNL | Valid only with correction for defective near vision",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MED-20",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8135,11 +8241,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MED.B.070",
   "citaat": "(6) If contact lenses are worn when exercising the privileges of the applicable licence(s), they shall be for distant vision, monofocal, and non-tinted and well-tolerated.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(g) Spectacles and contact lenses\n(1) If satisfactory visual function is achieved only with the use of correction, the spectacles or contact lenses shall provide optimal visual function, be well-tolerated and suitable for aviation purposes.\n(2) No more than one pair of spectacles shall be used to meet the visual requirements when exercising the privileges of the applicable licence(s).\n(3) For distant vision, spectacles or contact lenses shall be worn when exercising the privileges of the applicable licence(s).\n(4) For near vision, a pair of spectacles shall be kept available when exercising the privileges of the applicable licence(s).\n(5) A spare set of similarly correcting spectacles, for distant or near vision as applicable, shall be readily available for immediate use when exercising the privileges of the applicable licence(s).\n(6) If contact lenses are worn when exercising the privileges of the applicable licence(s), they shall be for distant vision, monofocal, and non-tinted and well-tolerated.\n(7) Applicants with a large refractive error shall use contact lenses or high-index spectacle lenses.\n(8) Orthokeratological lenses shall not be used."
+  "fragment": "(g) Spectacles and contact lenses\n(1) If satisfactory visual function is achieved only with the use of correction, the spectacles or contact lenses shall provide optimal visual function, be well-tolerated and suitable for aviation purposes.\n(2) No more than one pair of spectacles shall be used to meet the visual requirements when exercising the privileges of the applicable licence(s).\n(3) For distant vision, spectacles or contact lenses shall be worn when exercising the privileges of the applicable licence(s).\n(4) For near vision, a pair of spectacles shall be kept available when exercising the privileges of the applicable licence(s).\n(5) A spare set of similarly correcting spectacles, for distant or near vision as applicable, shall be readily available for immediate use when exercising the privileges of the applicable licence(s).\n(6) If contact lenses are worn when exercising the privileges of the applicable licence(s), they shall be for distant vision, monofocal, and non-tinted and well-tolerated.\n(7) Applicants with a large refractive error shall use contact lenses or high-index spectacle lenses.\n(8) Orthokeratological lenses shall not be used.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-01",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8162,11 +8270,13 @@ window.EXTRA_QUESTIONS = [
   "art": "ML.A.201",
   "citaat": "The pilot-in-command of the aircraft shall be responsible for the satisfactory accomplishment of the preflight inspection.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(d) The pilot-in-command of the aircraft shall be responsible for the satisfactory accomplishment of the preflight inspection. That inspection shall be carried out by the pilot or another qualified person but need not be carried out by an approved maintenance organisation or by certifying staff."
+  "fragment": "(d) The pilot-in-command of the aircraft shall be responsible for the satisfactory accomplishment of the preflight inspection. That inspection shall be carried out by the pilot or another qualified person but need not be carried out by an approved maintenance organisation or by certifying staff.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-02",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8189,11 +8299,13 @@ window.EXTRA_QUESTIONS = [
   "art": "ML.A.201",
   "citaat": "where the aircraft is leased, the responsibilities set out in point (a) shall apply to the lessee, if the lessee is identified either in the registration document of the aircraft or in the leasing contract.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(b) By derogation from point (a), where the aircraft is leased, the responsibilities set out in point (a) shall apply to the lessee, if the lessee is identified either in the registration document of the aircraft or in the leasing contract."
+  "fragment": "(b) By derogation from point (a), where the aircraft is leased, the responsibilities set out in point (a) shall apply to the lessee, if the lessee is identified either in the registration document of the aircraft or in the leasing contract.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-03",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8216,11 +8328,13 @@ window.EXTRA_QUESTIONS = [
   "art": "ML.A.302",
   "citaat": "for aeroplanes, touring motor gliders (‘TMGs’) and balloons, every annual or 100-h interval, whichever comes first, to which a tolerance of 1 month or 10 h may be applied.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) for aeroplanes, touring motor gliders (‘TMGs’) and balloons, every annual or 100-h interval, whichever comes first, to which a tolerance of 1 month or 10 h may be applied. The next interval shall be calculated as from the time the inspection takes place;"
+  "fragment": "(a) for aeroplanes, touring motor gliders (‘TMGs’) and balloons, every annual or 100-h interval, whichever comes first, to which a tolerance of 1 month or 10 h may be applied. The next interval shall be calculated as from the time the inspection takes place;",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-04",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8243,11 +8357,13 @@ window.EXTRA_QUESTIONS = [
   "art": "Appendix II",
   "citaat": "is not considered a maintenance task and, therefore, does not require a CRS.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "Any task described in the aircraft flight manual (or other operational manuals), for example preparing the aircraft for flight (assembling the sailplane wings, or performing a preflight inspection, or assembling a basket, burner, fuel cylinders and an envelope combination for a balloon, etc.), is not considered a maintenance task and, therefore, does not require a CRS. Nevertheless, the person assembling those parts is responsible for ensuring that those parts are eligible for installation and in a serviceable condition."
+  "fragment": "Any task described in the aircraft flight manual (or other operational manuals), for example preparing the aircraft for flight (assembling the sailplane wings, or performing a preflight inspection, or assembling a basket, burner, fuel cylinders and an envelope combination for a balloon, etc.), is not considered a maintenance task and, therefore, does not require a CRS. Nevertheless, the person assembling those parts is responsible for ensuring that those parts are eligible for installation and in a serviceable condition.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-05",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8270,11 +8386,13 @@ window.EXTRA_QUESTIONS = [
   "art": "ML.A.305",
   "citaat": "Each entry shall be made as soon as possible but not later than 30 days after the day of the completion of the maintenance task.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) At the completion of any maintenance, the certificate of release to service (CRS) required by point ML.A.801 shall be entered in the aircraft continuing airworthiness record system. Each entry shall be made as soon as possible but not later than 30 days after the day of the completion of the maintenance task."
+  "fragment": "(a) At the completion of any maintenance, the certificate of release to service (CRS) required by point ML.A.801 shall be entered in the aircraft continuing airworthiness record system. Each entry shall be made as soon as possible but not later than 30 days after the day of the completion of the maintenance task.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-06",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8297,11 +8415,13 @@ window.EXTRA_QUESTIONS = [
   "art": "ML.A.403",
   "citaat": "Any defect not rectified before flight shall be recorded in the aircraft continuing airworthiness record system referred to in point ML.A.305 and a record shall be available to the pilot.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(d) Any defect not rectified before flight shall be recorded in the aircraft continuing airworthiness record system referred to in point ML.A.305 and a record shall be available to the pilot."
+  "fragment": "(d) Any defect not rectified before flight shall be recorded in the aircraft continuing airworthiness record system referred to in point ML.A.305 and a record shall be available to the pilot.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-07",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8324,11 +8444,13 @@ window.EXTRA_QUESTIONS = [
   "art": "ML.A.801",
   "citaat": "the owner may authorise any person, with no less than 3 years of appropriate maintenance experience and holding the proper qualifications, to maintain the aircraft",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(c) By derogation from point (b), in the case of unforeseen circumstances, when an aircraft is grounded at a location where no appropriately approved maintenance organisation and no appropriate certifying staff are available, the owner may authorise any person, with no less than 3 years of appropriate maintenance experience and holding the proper qualifications, to maintain the aircraft according to the standards set out in Subpart D of this Annex and release the aircraft. The owner shall in that case:\n(1) obtain and keep in the aircraft records, details of all the work carried out and of the qualifications held by the person issuing the certification;\n(2) ensure that any such maintenance is rechecked and released in accordance with point (b) of point ML.A.801 at the earliest opportunity and within a period not exceeding 7 days or, in the case of aircraft operated under Annex VII to Regulation (EU) No 965/2012 (Part-NCO) or, in the case of balloons, not operated under Subpart-ADD of Annex II (Part-BOP) to Regulation (EU) 2018/395 or, in the case of sailplanes not following Subpart DEC of Annex II (Part-SAO) to Regulation (EU) 2018/1976, within a period not exceeding 30 days;\n(3) notify the contracted CAMO or CAO, or the competent authority in the absence of such a contract, within 7 days of the issuance of such authorisation."
+  "fragment": "(c) By derogation from point (b), in the case of unforeseen circumstances, when an aircraft is grounded at a location where no appropriately approved maintenance organisation and no appropriate certifying staff are available, the owner may authorise any person, with no less than 3 years of appropriate maintenance experience and holding the proper qualifications, to maintain the aircraft according to the standards set out in Subpart D of this Annex and release the aircraft. The owner shall in that case:\n(1) obtain and keep in the aircraft records, details of all the work carried out and of the qualifications held by the person issuing the certification;\n(2) ensure that any such maintenance is rechecked and released in accordance with point (b) of point ML.A.801 at the earliest opportunity and within a period not exceeding 7 days or, in the case of aircraft operated under Annex VII to Regulation (EU) No 965/2012 (Part-NCO) or, in the case of balloons, not operated under Subpart-ADD of Annex II (Part-BOP) to Regulation (EU) 2018/395 or, in the case of sailplanes not following Subpart DEC of Annex II (Part-SAO) to Regulation (EU) 2018/1976, within a period not exceeding 30 days;\n(3) notify the contracted CAMO or CAO, or the competent authority in the absence of such a contract, within 7 days of the issuance of such authorisation.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-08",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8351,11 +8473,13 @@ window.EXTRA_QUESTIONS = [
   "art": "Appendix II",
   "citaat": "it is carried out in compliance with an AD or an airworthiness limitation item (ALI) unless specifically allowed in the AD or the ALI;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "A maintenance task shall not be released by the pilot-owner if any of the following conditions occurs:\n(1) it is a critical maintenance task;\n(2) it requires the removal of major components o r a major assembly;\n(3) it is carried out in compliance with an AD or an airworthiness limitation item (ALI) unless specifically allowed in the AD or the ALI;\n(4) it requires the use of special tools or calibrated tools (except for torque wrench and crimping tool);\n(5) it requires the use of test equipment or special testing (e.g. non-destructive testing (NDT), system tests or operational checks for avionics equipment);\n(6) it is composed of any unscheduled special inspections (e.g. heavy-landing check);\n(7) it affects systems essential for the instrumental flight rules (IFR) operations;\n(8) it is a complex maintenance task in accordance with Appendix III, or it is a component maintenance task in accordance with point (a) or (b) of point ML.A.502;\n(9) it is part of the 100-h/annual check (for those cases the maintenance task is combined with the airworthiness review performed by maintenance organisations or independent certifying staff)."
+  "fragment": "A maintenance task shall not be released by the pilot-owner if any of the following conditions occurs:\n(1) it is a critical maintenance task;\n(2) it requires the removal of major components o r a major assembly;\n(3) it is carried out in compliance with an AD or an airworthiness limitation item (ALI) unless specifically allowed in the AD or the ALI;\n(4) it requires the use of special tools or calibrated tools (except for torque wrench and crimping tool);\n(5) it requires the use of test equipment or special testing (e.g. non-destructive testing (NDT), system tests or operational checks for avionics equipment);\n(6) it is composed of any unscheduled special inspections (e.g. heavy-landing check);\n(7) it affects systems essential for the instrumental flight rules (IFR) operations;\n(8) it is a complex maintenance task in accordance with Appendix III, or it is a component maintenance task in accordance with point (a) or (b) of point ML.A.502;\n(9) it is part of the 100-h/annual check (for those cases the maintenance task is combined with the airworthiness review performed by maintenance organisations or independent certifying staff).",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-09",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8378,11 +8502,13 @@ window.EXTRA_QUESTIONS = [
   "art": "ML.A.901",
   "citaat": "The ARC shall be valid for 1 year;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) An ARC is issued in accordance with Appendix IV (EASA Form 15c) to this Annex upon completion of a satisfactory airworthiness review. The ARC shall be valid for 1 year;"
+  "fragment": "(a) An ARC is issued in accordance with Appendix IV (EASA Form 15c) to this Annex upon completion of a satisfactory airworthiness review. The ARC shall be valid for 1 year;",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-10",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8405,11 +8531,13 @@ window.EXTRA_QUESTIONS = [
   "art": "ML.A.902",
   "citaat": "the aircraft has been involved in an accident or incident that affects the airworthiness of the aircraft, without subsequent appropriate action to restore airworthiness;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(b) An aircraft shall not fly if the ARC is invalid or if any of the following circumstances are present:\n(1) the continuing airworthiness of the aircraft or any component fitted to the aircraft does not meet the requirements of this Annex;\n(2) the aircraft does not remain in conformity with the type design approved by the Agency;\n(3) the aircraft has been operated beyond the limitations of the approved flight manual or airworthiness certificate, without appropriate action being taken;\n(4) the aircraft has been involved in an accident or incident that affects the airworthiness of the aircraft, without subsequent appropriate action to restore airworthiness;\n(5) a modification or repair to the aircraft or any component fitted to the aircraft is not in compliance with Annex I (Part 21) or, as applicable, Annex Ib (Part 21 Light) to Regulation (EU) No 748/2012."
+  "fragment": "(b) An aircraft shall not fly if the ARC is invalid or if any of the following circumstances are present:\n(1) the continuing airworthiness of the aircraft or any component fitted to the aircraft does not meet the requirements of this Annex;\n(2) the aircraft does not remain in conformity with the type design approved by the Agency;\n(3) the aircraft has been operated beyond the limitations of the approved flight manual or airworthiness certificate, without appropriate action being taken;\n(4) the aircraft has been involved in an accident or incident that affects the airworthiness of the aircraft, without subsequent appropriate action to restore airworthiness;\n(5) a modification or repair to the aircraft or any component fitted to the aircraft is not in compliance with Annex I (Part 21) or, as applicable, Annex Ib (Part 21 Light) to Regulation (EU) No 748/2012.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-11",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8432,11 +8560,13 @@ window.EXTRA_QUESTIONS = [
   "art": "21.A.181",
   "citaat": "the aircraft remaining on the same register; and",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "2.the aircraft remaining on the same register; and\n3.the type-certificate or restricted type-certificate under which it is issued not being previously invalidated under point 21.A.51;\n4.the certificate has not been revoked by the competent authority under point 21.B.65, or surrendered by the certificate holder."
+  "fragment": "2.the aircraft remaining on the same register; and\n3.the type-certificate or restricted type-certificate under which it is issued not being previously invalidated under point 21.A.51;\n4.the certificate has not been revoked by the competent authority under point 21.B.65, or surrendered by the certificate holder.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-12",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8459,11 +8589,13 @@ window.EXTRA_QUESTIONS = [
   "art": "21.A.173",
   "citaat": "restricted certificates of airworthiness shall be issued to aircraft:",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "Regulation (EU) No 748/2012\nAirworthiness certificates shall be classified as follows:\n(a) certificates of airworthiness shall be issued to aircraft which conform to a type-certificate that has been issued in accordance with this Annex I (Part 21);\n(b) restricted certificates of airworthiness shall be issued to aircraft:\n1.which conform to a restricted type-certificate that has been issued in accordance with this Annex I (Part 21); or\n2.which have been shown to the Agency to comply with specific airworthiness specifications ensuring adequate safety."
+  "fragment": "Regulation (EU) No 748/2012\nAirworthiness certificates shall be classified as follows:\n(a) certificates of airworthiness shall be issued to aircraft which conform to a type-certificate that has been issued in accordance with this Annex I (Part 21);\n(b) restricted certificates of airworthiness shall be issued to aircraft:\n1.which conform to a restricted type-certificate that has been issued in accordance with this Annex I (Part 21); or\n2.which have been shown to the Agency to comply with specific airworthiness specifications ensuring adequate safety.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-13",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8486,11 +8618,13 @@ window.EXTRA_QUESTIONS = [
   "art": "21.A.701",
   "citaat": "flying the aircraft to a location where maintenance or airworthiness review are to be performed, or to a place of storage;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "11.flying the aircraft to a location where maintenance or airworthiness review are to be performed, or to a place of storage;\n12.flying an aircraft at a weight in excess of its maximum certificated takeoff weight for flight beyond the normal range over water, or over land areas where adequate landing facilities or appropriate fuel is not available;\n13.record breaking, air racing or similar competition;\n14.flying aircraft meeting the applicable airworthiness requirements before conformity to the applicable environmental protection requirements has been demonstrated;\n15.for non-commercial flying activity on individual non-complex aircraft or types for which a certificate of airworthiness or restricted certificate of airworthiness is not appropriate."
+  "fragment": "11.flying the aircraft to a location where maintenance or airworthiness review are to be performed, or to a place of storage;\n12.flying an aircraft at a weight in excess of its maximum certificated takeoff weight for flight beyond the normal range over water, or over land areas where adequate landing facilities or appropriate fuel is not available;\n13.record breaking, air racing or similar competition;\n14.flying aircraft meeting the applicable airworthiness requirements before conformity to the applicable environmental protection requirements has been demonstrated;\n15.for non-commercial flying activity on individual non-complex aircraft or types for which a certificate of airworthiness or restricted certificate of airworthiness is not appropriate.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-14",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8513,11 +8647,13 @@ window.EXTRA_QUESTIONS = [
   "art": "21.A.723",
   "citaat": "A permit to fly shall be issued for a maximum period of 12 months",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) A permit to fly shall be issued for a maximum period of 12 months and shall remain valid subject to compliance with all the following conditions:\n1.the organisation continues to comply with the conditions and restrictions associated with the permit to fly as set out in point 21.A.711(e);\n2.the holder or any of its partners, suppliers or subcontractors acknowledge that the competent authority may carry out investigations in accordance with point 21.A.9;\n3.the permit to fly has not been revoked by the competent authority under point 21.B.65, or surrendered by its holder;\n4.the aircraft remains on the same register."
+  "fragment": "(a) A permit to fly shall be issued for a maximum period of 12 months and shall remain valid subject to compliance with all the following conditions:\n1.the organisation continues to comply with the conditions and restrictions associated with the permit to fly as set out in point 21.A.711(e);\n2.the holder or any of its partners, suppliers or subcontractors acknowledge that the competent authority may carry out investigations in accordance with point 21.A.9;\n3.the permit to fly has not been revoked by the competent authority under point 21.B.65, or surrendered by its holder;\n4.the aircraft remains on the same register.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-15",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8540,11 +8676,13 @@ window.EXTRA_QUESTIONS = [
   "art": "21.A.211",
   "citaat": "A noise certificate shall be issued for an unlimited period of time.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) A noise certificate shall be issued for an unlimited period of time. It shall remain valid subject to compliance with all the following conditions:\n1.the aircraft continues to comply with the applicable type design and continued airworthiness requirements; and\n2.the aircraft remaining on the same register; and\n3.the type-certificate or restricted type-certificate under which it is issued not being previously invalidated under point 21.A.51;\n4.the certificate has not been revoked by the competent authority under point 21.B.65, or surrendered by the certificate holder."
+  "fragment": "(a) A noise certificate shall be issued for an unlimited period of time. It shall remain valid subject to compliance with all the following conditions:\n1.the aircraft continues to comply with the applicable type design and continued airworthiness requirements; and\n2.the aircraft remaining on the same register; and\n3.the type-certificate or restricted type-certificate under which it is issued not being previously invalidated under point 21.A.51;\n4.the certificate has not been revoked by the competent authority under point 21.B.65, or surrendered by the certificate holder.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-16",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8567,11 +8705,13 @@ window.EXTRA_QUESTIONS = [
   "art": "Artikel 2",
   "citaat": "behandeling in een ziekenhuis gedurende meer dan 48 uur vereist, te beginnen binnen zeven dagen vanaf de dag dat het letsel werd opgelopen;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "17. „ernstig letsel”: een door een bij een ongeval betrokken persoon opgelopen letsel dat:\na) behandeling in een ziekenhuis gedurende meer dan 48 uur vereist, te beginnen binnen zeven dagen vanaf de dag dat het letsel werd opgelopen;\nb) leidt tot één of meer botbreuken (uitgezonderd enkelvoudige fracturen van vingers, tenen of neus);\nc) gepaard gaat met snijwonden welke ernstige bloedingen of beschadiging van zenuwen, spieren of pezen tot gevolg hebben;\nd) gepaard gaat met letsel aan een inwendig orgaan;\ne) gepaard gaat met tweede- of derdegraads brandwonden, of met brandwonden die meer dan 5 % van het lichaamsoppervlak beslaan;\nf) gepaard gaat met geconstateerde blootstelling aan besmettelijke stoffen of schadelijke straling."
+  "fragment": "17. „ernstig letsel”: een door een bij een ongeval betrokken persoon opgelopen letsel dat:\na) behandeling in een ziekenhuis gedurende meer dan 48 uur vereist, te beginnen binnen zeven dagen vanaf de dag dat het letsel werd opgelopen;\nb) leidt tot één of meer botbreuken (uitgezonderd enkelvoudige fracturen van vingers, tenen of neus);\nc) gepaard gaat met snijwonden welke ernstige bloedingen of beschadiging van zenuwen, spieren of pezen tot gevolg hebben;\nd) gepaard gaat met letsel aan een inwendig orgaan;\ne) gepaard gaat met tweede- of derdegraads brandwonden, of met brandwonden die meer dan 5 % van het lichaamsoppervlak beslaan;\nf) gepaard gaat met geconstateerde blootstelling aan besmettelijke stoffen of schadelijke straling.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-17",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8594,11 +8734,13 @@ window.EXTRA_QUESTIONS = [
   "art": "Artikel 2",
   "citaat": "plaatsvindt tussen het tijdstip waarop een persoon zich aan boord begeeft met het voornemen een vlucht uit te voeren en het tijdstip waarop alle personen die zich met dit voornemen aan boord hebben begeven, zijn uitgestapt",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "… „ongeval”: een met het gebruik van een luchtvaartuig verband houdend voorval dat, in het geval van een bemand luchtvaartuig, plaatsvindt tussen het tijdstip waarop een persoon zich aan boord begeeft met het voornemen een vlucht uit te voeren en het tijdstip waarop alle personen die zich met dit voornemen aan boord hebben begeven, zijn uitgestapt, of, in het geval van een onbemand luchtvaartuig, tussen het tijdstip waarop het luchtvaartuig klaar is om zich in beweging te zetten met het oog op het uitvoeren van een vlucht tot het tijdstip waarop het tot stilstand komt na het beëindigen van een vlucht en de hoofdaandrijving is stopgezet, waarbij:\na) een persoon dodelijk of ernstig gewond raakt omdat hij:\n— zich in het luchtvaartuig bevond,\n— direct in contact is gekomen met een onderdeel v …"
+  "fragment": "… „ongeval”: een met het gebruik van een luchtvaartuig verband houdend voorval dat, in het geval van een bemand luchtvaartuig, plaatsvindt tussen het tijdstip waarop een persoon zich aan boord begeeft met het voornemen een vlucht uit te voeren en het tijdstip waarop alle personen die zich met dit voornemen aan boord hebben begeven, zijn uitgestapt, of, in het geval van een onbemand luchtvaartuig, tussen het tijdstip waarop het luchtvaartuig klaar is om zich in beweging te zetten met het oog op het uitvoeren van een vlucht tot het tijdstip waarop het tot stilstand komt na het beëindigen van een vlucht en de hoofdaandrijving is stopgezet, waarbij:\na) een persoon dodelijk of ernstig gewond raakt omdat hij:\n— zich in het luchtvaartuig bevond,\n— direct in contact is gekomen met een onderdeel v …",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-18",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8621,11 +8763,13 @@ window.EXTRA_QUESTIONS = [
   "art": "Artikel 9",
   "citaat": "Alle betrokken personen die weten dat zich een ongeval of een ernstig incident heeft voorgedaan, stellen de bevoegde veiligheidsonderzoeksinstantie van de lidstaat op wiens grondgebied het ongeval of incident heeft plaatsgevonden daarvan onverwijld in kennis.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "1. Alle betrokken personen die weten dat zich een ongeval of een ernstig incident heeft voorgedaan, stellen de bevoegde veiligheidsonderzoeksinstantie van de lidstaat op wiens grondgebied het ongeval of incident heeft plaatsgevonden daarvan onverwijld in kennis. 2. De veiligheidsonderzoeksinstantie stelt de Commissie, het EASA, de Internationale Burgerluchtvaartorganisatie (ICAO), de betrokken lidstaten en derde staten overeenkomstig de internationale normen en aanbevolen werkwijzen in kennis van alle ongevallen en ernstige incidenten die haar zijn gemeld."
+  "fragment": "1. Alle betrokken personen die weten dat zich een ongeval of een ernstig incident heeft voorgedaan, stellen de bevoegde veiligheidsonderzoeksinstantie van de lidstaat op wiens grondgebied het ongeval of incident heeft plaatsgevonden daarvan onverwijld in kennis. 2. De veiligheidsonderzoeksinstantie stelt de Commissie, het EASA, de Internationale Burgerluchtvaartorganisatie (ICAO), de betrokken lidstaten en derde staten overeenkomstig de internationale normen en aanbevolen werkwijzen in kennis van alle ongevallen en ernstige incidenten die haar zijn gemeld.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-19",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8648,11 +8792,13 @@ window.EXTRA_QUESTIONS = [
   "art": "Artikel 13",
   "citaat": "In afwachting van de aankomst van de veiligheidsonderzoekers mag niemand de staat van de plaats van het ongeval wijzigen",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "… In afwachting van de aankomst van de veiligheidsonderzoekers mag niemand de staat van de plaats van het ongeval wijzigen, monsters nemen, het luchtvaartuig, de inhoud of de wrakstukken ervan verplaatsen, verwijderen of er monsters van nemen, behalve als dit nodig is om veiligheidsredenen, om bijstand te verlenen aan gewonden of met de uitdrukkelijke toestemming van de instanties die de plaats beheren en, waar mogelijk, in overleg met de veiligheidsonderzoeksinstantie. …"
+  "fragment": "… In afwachting van de aankomst van de veiligheidsonderzoekers mag niemand de staat van de plaats van het ongeval wijzigen, monsters nemen, het luchtvaartuig, de inhoud of de wrakstukken ervan verplaatsen, verwijderen of er monsters van nemen, behalve als dit nodig is om veiligheidsredenen, om bijstand te verlenen aan gewonden of met de uitdrukkelijke toestemming van de instanties die de plaats beheren en, waar mogelijk, in overleg met de veiligheidsonderzoeksinstantie. …",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-20",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8675,11 +8821,13 @@ window.EXTRA_QUESTIONS = [
   "art": "Artikel 1",
   "citaat": "hetgeen uitsluitend tot doel heeft toekomstige ongevallen en incidenten te voorkomen, zonder schuld of aansprakelijkheid vast te stellen",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "… Deze verordening is erop gericht de veiligheid van de luchtvaart te verbeteren door te garanderen dat de efficiëntie, de snelle uitvoering en kwaliteit van Europese veiligheidsonderzoeken in de burgerluchtvaart van hoog niveau zijn, hetgeen uitsluitend tot doel heeft toekomstige ongevallen en incidenten te voorkomen, zonder schuld of aansprakelijkheid vast te stellen, onder meer door de instelling van een Europees netwerk van veiligheidsonderzoeksinstanties in de burgerluchtvaart. …"
+  "fragment": "… Deze verordening is erop gericht de veiligheid van de luchtvaart te verbeteren door te garanderen dat de efficiëntie, de snelle uitvoering en kwaliteit van Europese veiligheidsonderzoeken in de burgerluchtvaart van hoog niveau zijn, hetgeen uitsluitend tot doel heeft toekomstige ongevallen en incidenten te voorkomen, zonder schuld of aansprakelijkheid vast te stellen, onder meer door de instelling van een Europees netwerk van veiligheidsonderzoeksinstanties in de burgerluchtvaart. …",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-21",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8702,11 +8850,13 @@ window.EXTRA_QUESTIONS = [
   "art": "Article 4",
   "citaat": "The persons listed in paragraph 6 shall report occurrences within 72 hours of becoming aware of the occurrence, unless exceptional circumstances prevent this.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "7.The persons listed in paragraph 6 shall report occurrences within 72 hours of becoming aware of the occurrence, unless exceptional circumstances prevent this."
+  "fragment": "7.The persons listed in paragraph 6 shall report occurrences within 72 hours of becoming aware of the occurrence, unless exceptional circumstances prevent this.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-22",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8729,11 +8879,13 @@ window.EXTRA_QUESTIONS = [
   "art": "ANNEX V— OCCURRENCES RELATED TO AIRCRAFT OTHER THAN COMPLEX MOTOR-POWERED AIRCRA",
   "citaat": "(2) Airspace infringement.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "1.3.Interaction with air navigation services and air traffic management\n(1) Interaction with air navigation services (for example: incorrect services provided, conflicting communications or deviation from clearance) which has or could have endangered the aircraft, its occupants or any other person.\n(2) Airspace infringement."
+  "fragment": "1.3.Interaction with air navigation services and air traffic management\n(1) Interaction with air navigation services (for example: incorrect services provided, conflicting communications or deviation from clearance) which has or could have endangered the aircraft, its occupants or any other person.\n(2) Airspace infringement.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-23",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8756,11 +8908,13 @@ window.EXTRA_QUESTIONS = [
   "art": "ANNEX V— OCCURRENCES RELATED TO AIRCRAFT OTHER THAN COMPLEX MOTOR-POWERED AIRCRA",
   "citaat": "(7) Icing including carburettor icing which has or could have endangered the aircraft, its occupants or any other person.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "1.5.External environment and meteorology\n(1) A collision on the ground or in the air, with another aircraft, terrain or obstacle ().\n(2) A near collision, on the ground or in the air, with another aircraft, terrain or obstacle (1) requiring an emergency avoidance manoeuvre to avoid a collision.\n(3) Wildlife strike including bird strike which resulted in damage to the aircraft or loss or malfunction of any essential service.\n(4) Interference with the aircraft by firearms, fireworks, flying kites, laser illumination, high powered lights lasers, Remotely Piloted Aircraft Systems, model aircraft or by similar means.\n(5) A lightning strike resulting in damage to or loss of functions of the aircraft.\n(6) Severe turbulence encounter which resulted in injury to aircraft occupants or in the need for a post-flight turbulence damage check of the aircraft.\n(7) Icing including carburettor icing which has or could have endangered the aircraft, its occupants or any other person."
+  "fragment": "1.5.External environment and meteorology\n(1) A collision on the ground or in the air, with another aircraft, terrain or obstacle ().\n(2) A near collision, on the ground or in the air, with another aircraft, terrain or obstacle (1) requiring an emergency avoidance manoeuvre to avoid a collision.\n(3) Wildlife strike including bird strike which resulted in damage to the aircraft or loss or malfunction of any essential service.\n(4) Interference with the aircraft by firearms, fireworks, flying kites, laser illumination, high powered lights lasers, Remotely Piloted Aircraft Systems, model aircraft or by similar means.\n(5) A lightning strike resulting in damage to or loss of functions of the aircraft.\n(6) Severe turbulence encounter which resulted in injury to aircraft occupants or in the need for a post-flight turbulence damage check of the aircraft.\n(7) Icing including carburettor icing which has or could have endangered the aircraft, its occupants or any other person.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-24",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8783,11 +8937,13 @@ window.EXTRA_QUESTIONS = [
   "art": "Article 5",
   "citaat": "(a) not subject to mandatory reporting pursuant to Article 4(1);",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "4.The voluntary reporting systems shall be used to facilitate the collection of details of occurrences and safety-related information:\n(a) not subject to mandatory reporting pursuant to Article 4(1);"
+  "fragment": "4.The voluntary reporting systems shall be used to facilitate the collection of details of occurrences and safety-related information:\n(a) not subject to mandatory reporting pursuant to Article 4(1);",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "LW-25",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -8810,11 +8966,13 @@ window.EXTRA_QUESTIONS = [
   "art": "Article 16",
   "citaat": "in cases of wilful misconduct;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) in cases of wilful misconduct;"
+  "fragment": "(a) in cases of wilful misconduct;",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-02",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -8837,11 +8995,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.GEN.105",
   "citaat": "keep his/her safety belt fastened while at his/her station",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(f) During flight, the pilot-in-command shall:\n(1) keep his/her safety belt fastened while at his/her station; and\n(2) remain at the controls of the aircraft at all times except if another pilot is taking the controls."
+  "fragment": "(f) During flight, the pilot-in-command shall:\n(1) keep his/her safety belt fastened while at his/her station; and\n(2) remain at the controls of the aircraft at all times except if another pilot is taking the controls.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-04",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -8864,11 +9024,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.GEN.125",
   "citaat": "shall not permit any person to use a portable electronic device (PED) on board an aircraft, including an electronic flight bag (EFB), that could adversely affect the performance of the aircraft systems and equipment",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "The pilot-in-command shall not permit any person to use a portable electronic device (PED) on board an aircraft, including an electronic flight bag (EFB), that could adversely affect the performance of the aircraft systems and equipment or the ability of the flight crew member to operate the aircraft."
+  "fragment": "The pilot-in-command shall not permit any person to use a portable electronic device (PED) on board an aircraft, including an electronic flight bag (EFB), that could adversely affect the performance of the aircraft systems and equipment or the ability of the flight crew member to operate the aircraft.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-05",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -8891,11 +9053,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.GEN.135",
   "citaat": "(2) the original certificate of registration;\n(3) the original certificate of airworthiness (CofA);",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) The following documents, manuals and information shall be carried on each flight as originals or copies unless otherwise specified:\n(1) the AFM, or equivalent document(s);\n(2) the original certificate of registration;\n(3) the original certificate of airworthiness (CofA);\n(4) the noise certificate, if applicable;\n(5) the list of specific approvals, if applicable;\n(6) the aircraft radio licence, if applicable;\n(7) the third party liability insurance certificate(s);\n(8) the journey log, or equivalent, for the aircraft;\n(9) details of the filed ATS flight plan, if applicable;\n(10) current and suitable aeronautical charts for the route area of the proposed flight and all routes along which it is reasonable to expect that the flight may be diverted;\n(11) procedures and visual signals information for use by intercepting and intercepted aircraft;\n(12) the MEL or CDL, if applicable; and\n(13) any other documentation that may be pertinent to the flight or is required by the States concerned with the flight."
+  "fragment": "(a) The following documents, manuals and information shall be carried on each flight as originals or copies unless otherwise specified:\n(1) the AFM, or equivalent document(s);\n(2) the original certificate of registration;\n(3) the original certificate of airworthiness (CofA);\n(4) the noise certificate, if applicable;\n(5) the list of specific approvals, if applicable;\n(6) the aircraft radio licence, if applicable;\n(7) the third party liability insurance certificate(s);\n(8) the journey log, or equivalent, for the aircraft;\n(9) details of the filed ATS flight plan, if applicable;\n(10) current and suitable aeronautical charts for the route area of the proposed flight and all routes along which it is reasonable to expect that the flight may be diverted;\n(11) procedures and visual signals information for use by intercepting and intercepted aircraft;\n(12) the MEL or CDL, if applicable; and\n(13) any other documentation that may be pertinent to the flight or is required by the States concerned with the flight.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-06",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -8918,11 +9082,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.GEN.135",
   "citaat": "the documents and information in (a)(2) to (a)(8) may be retained at the aerodrome or operating site.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(2) remaining within a distance or area determined by the competent authority,\nthe documents and information in (a)(2) to (a)(8) may be retained at the aerodrome or operating site."
+  "fragment": "(2) remaining within a distance or area determined by the competent authority,\nthe documents and information in (a)(2) to (a)(8) may be retained at the aerodrome or operating site.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-07",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -8945,11 +9111,13 @@ window.EXTRA_QUESTIONS = [
   "art": "AMC1 NCO.GEN.135(a)(10)",
   "citaat": "The aeronautical data should be appropriate for the current aeronautical information regulation and control (AIRAC) cycle.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(c) The aeronautical data should be appropriate for the current aeronautical information regulation and control (AIRAC) cycle."
+  "fragment": "(c) The aeronautical data should be appropriate for the current aeronautical information regulation and control (AIRAC) cycle.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-08",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -8972,11 +9140,13 @@ window.EXTRA_QUESTIONS = [
   "art": "GM1 NCO.GEN.135",
   "citaat": "In case of loss or theft of documents specified in NCO.GEN.135, the operation may continue until the flight reaches the base or a place where a replacement document can be provided.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "ED Decision 2014/016/R\nGENERAL\n(a) In case of loss or theft of documents specified in NCO.GEN.135, the operation may continue until the flight reaches the base or a place where a replacement document can be provided.\n(b) The documents, manuals and information may be available in a form other than on printed paper. An electronic storage medium is acceptable if accessibility, usability and reliability can be assured."
+  "fragment": "ED Decision 2014/016/R\nGENERAL\n(a) In case of loss or theft of documents specified in NCO.GEN.135, the operation may continue until the flight reaches the base or a place where a replacement document can be provided.\n(b) The documents, manuals and information may be available in a form other than on printed paper. An electronic storage medium is acceptable if accessibility, usability and reliability can be assured.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-09",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -8999,11 +9169,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.GEN.140",
   "citaat": "The pilot-in-command shall ensure that passengers are provided with information about dangerous goods in accordance with the Technical Instructions.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(e) The pilot-in-command shall ensure that passengers are provided with information about dangerous goods in accordance with the Technical Instructions."
+  "fragment": "(e) The pilot-in-command shall ensure that passengers are provided with information about dangerous goods in accordance with the Technical Instructions.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-10",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9026,11 +9198,13 @@ window.EXTRA_QUESTIONS = [
   "art": "AMC1 NCO.GEN.150",
   "citaat": "signature of the pilot-in-command",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "ED Decision 2014/016/R\nGENERAL\n(a) The aircraft journey log, or equivalent, should include the following items, where applicable:\n(1) aircraft nationality and registration;\n(2) date;\n(3) name of crew member(s);\n(4) duty assignments of crew members, if applicable;\n(5) place of departure;\n(6) place of arrival;\n(7) time of departure;\n(8) time of arrival;\n(9) hours of flight;\n(10) nature of flight;\n(11) incidents and observations (if any); and\n(12) signature of the pilot-in-command.\n(b) The information or parts thereof may be recorded in a form other than on printed paper. Accessibility, usability and reliability should be assured."
+  "fragment": "ED Decision 2014/016/R\nGENERAL\n(a) The aircraft journey log, or equivalent, should include the following items, where applicable:\n(1) aircraft nationality and registration;\n(2) date;\n(3) name of crew member(s);\n(4) duty assignments of crew members, if applicable;\n(5) place of departure;\n(6) place of arrival;\n(7) time of departure;\n(8) time of arrival;\n(9) hours of flight;\n(10) nature of flight;\n(11) incidents and observations (if any); and\n(12) signature of the pilot-in-command.\n(b) The information or parts thereof may be recorded in a form other than on printed paper. Accessibility, usability and reliability should be assured.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-11",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9053,11 +9227,13 @@ window.EXTRA_QUESTIONS = [
   "art": "AMC1 NCO.OP.125(b)",
   "citaat": "for 30 minutes at holding speed at 1 500 ft (450 m) above the destination under VFR by day",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) for aeroplanes:\n(1) for 10 minutes at maximum continuous cruise power at 1 500 ft (450 m) above the destination under VFR by day, taking off and landing at the same aerodrome/landing site, and always remaining within sight of that aerodrome/landing site;\n(2) for 30 minutes at holding speed at 1 500 ft (450 m) above the destination under VFR by day; and\n(3) for 45 minutes at holding speed at 1 500 ft (450 m) above the destination or destination alternate aerodrome under VFR flights by night and IFR; and"
+  "fragment": "(a) for aeroplanes:\n(1) for 10 minutes at maximum continuous cruise power at 1 500 ft (450 m) above the destination under VFR by day, taking off and landing at the same aerodrome/landing site, and always remaining within sight of that aerodrome/landing site;\n(2) for 30 minutes at holding speed at 1 500 ft (450 m) above the destination under VFR by day; and\n(3) for 45 minutes at holding speed at 1 500 ft (450 m) above the destination or destination alternate aerodrome under VFR flights by night and IFR; and",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-12",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9080,11 +9256,13 @@ window.EXTRA_QUESTIONS = [
   "art": "AMC1 NCO.OP.125(b)",
   "citaat": "for 45 minutes at holding speed at 1 500 ft (450 m) above the destination or destination alternate aerodrome under VFR flights by night and IFR",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) for aeroplanes:\n(1) for 10 minutes at maximum continuous cruise power at 1 500 ft (450 m) above the destination under VFR by day, taking off and landing at the same aerodrome/landing site, and always remaining within sight of that aerodrome/landing site;\n(2) for 30 minutes at holding speed at 1 500 ft (450 m) above the destination under VFR by day; and\n(3) for 45 minutes at holding speed at 1 500 ft (450 m) above the destination or destination alternate aerodrome under VFR flights by night and IFR; and"
+  "fragment": "(a) for aeroplanes:\n(1) for 10 minutes at maximum continuous cruise power at 1 500 ft (450 m) above the destination under VFR by day, taking off and landing at the same aerodrome/landing site, and always remaining within sight of that aerodrome/landing site;\n(2) for 30 minutes at holding speed at 1 500 ft (450 m) above the destination under VFR by day; and\n(3) for 45 minutes at holding speed at 1 500 ft (450 m) above the destination or destination alternate aerodrome under VFR flights by night and IFR; and",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-13",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9107,11 +9285,13 @@ window.EXTRA_QUESTIONS = [
   "art": "AMC1 NCO.OP.125(b)",
   "citaat": "for 10 minutes at maximum continuous cruise power at 1 500 ft (450 m) above the destination under VFR by day, taking off and landing at the same aerodrome/landing site, and always remaining within sight of that aerodrome/landing site",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) for aeroplanes:\n(1) for 10 minutes at maximum continuous cruise power at 1 500 ft (450 m) above the destination under VFR by day, taking off and landing at the same aerodrome/landing site, and always remaining within sight of that aerodrome/landing site;\n(2) for 30 minutes at holding speed at 1 500 ft (450 m) above the destination under VFR by day; and\n(3) for 45 minutes at holding speed at 1 500 ft (450 m) above the destination or destination alternate aerodrome under VFR flights by night and IFR; and"
+  "fragment": "(a) for aeroplanes:\n(1) for 10 minutes at maximum continuous cruise power at 1 500 ft (450 m) above the destination under VFR by day, taking off and landing at the same aerodrome/landing site, and always remaining within sight of that aerodrome/landing site;\n(2) for 30 minutes at holding speed at 1 500 ft (450 m) above the destination under VFR by day; and\n(3) for 45 minutes at holding speed at 1 500 ft (450 m) above the destination or destination alternate aerodrome under VFR flights by night and IFR; and",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-14",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9134,11 +9314,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.OP.125",
   "citaat": "when no destination alternate is required, to fly to the aerodrome or operating site of intended landing, plus the final reserve fuel/energy",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(c) The pilot-in-command shall commence a flight only if the aircraft carries sufficient fuel/energy and oil:\n(1) when no destination alternate is required, to fly to the aerodrome or operating site of intended landing, plus the final reserve fuel/energy; or\n(2) when a destination alternate is required, to fly to the aerodrome or operating site of intended landing, and thereafter, to an alternate aerodrome, plus the final reserve fuel/energy."
+  "fragment": "(c) The pilot-in-command shall commence a flight only if the aircraft carries sufficient fuel/energy and oil:\n(1) when no destination alternate is required, to fly to the aerodrome or operating site of intended landing, plus the final reserve fuel/energy; or\n(2) when a destination alternate is required, to fly to the aerodrome or operating site of intended landing, and thereafter, to an alternate aerodrome, plus the final reserve fuel/energy.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-16",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9161,11 +9343,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.OP.185",
   "citaat": "when the usable fuel/energy estimated to be available upon landing at the nearest aerodrome or operating site where a safe landing can be made is less than the planned final reserve fuel/energy",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(c) The pilot-in-command of a controlled flight shall declare a situation of ‘fuel/energy emergency’ by broadcasting ‘MAYDAY MAYDAY MAYDAY FUEL’ when the usable fuel/energy estimated to be available upon landing at the nearest aerodrome or operating site where a safe landing can be made is less than the planned final reserve fuel/energy."
+  "fragment": "(c) The pilot-in-command of a controlled flight shall declare a situation of ‘fuel/energy emergency’ by broadcasting ‘MAYDAY MAYDAY MAYDAY FUEL’ when the usable fuel/energy estimated to be available upon landing at the nearest aerodrome or operating site where a safe landing can be made is less than the planned final reserve fuel/energy.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-17",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9188,11 +9372,13 @@ window.EXTRA_QUESTIONS = [
   "art": "AMC1 NCO.OP.130",
   "citaat": "The briefing should include the locations and use of seat belts",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "ED Decision 2019/008/R\nGENERAL\n(a) The briefing should include the locations and use of seat belts and if applicable:\n(1) emergency exits;\n(2) passenger emergency briefing cards;\n(3) life-jackets;\n(4) oxygen dispensing equipment;\n(5) life rafts; and\n(6) other emergency equipment provided for individual passenger use.\n(b) The briefing should also include the location and general manner of use of the principal emergency equipment carried for collective use."
+  "fragment": "ED Decision 2019/008/R\nGENERAL\n(a) The briefing should include the locations and use of seat belts and if applicable:\n(1) emergency exits;\n(2) passenger emergency briefing cards;\n(3) life-jackets;\n(4) oxygen dispensing equipment;\n(5) life rafts; and\n(6) other emergency equipment provided for individual passenger use.\n(b) The briefing should also include the location and general manner of use of the principal emergency equipment carried for collective use.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-18",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9215,11 +9401,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.OP.145",
   "citaat": "The aircraft shall not be refuelled with aviation gasoline (AVGAS) or wide-cut type fuel or a mixture of these types of fuel, when passengers are embarking, on board or disembarking.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) The aircraft shall not be refuelled with aviation gasoline (AVGAS) or wide-cut type fuel or a mixture of these types of fuel, when passengers are embarking, on board or disembarking.\n(b) For all other types of fuel/energy, the aircraft shall not be refuelled when passengers are embarking, on board or disembarking, unless it is attended by the pilot-in-command or other qualified personnel ready to initiate and direct an evacuation of the aircraft by the most practical and expeditious means available."
+  "fragment": "(a) The aircraft shall not be refuelled with aviation gasoline (AVGAS) or wide-cut type fuel or a mixture of these types of fuel, when passengers are embarking, on board or disembarking.\n(b) For all other types of fuel/energy, the aircraft shall not be refuelled when passengers are embarking, on board or disembarking, unless it is attended by the pilot-in-command or other qualified personnel ready to initiate and direct an evacuation of the aircraft by the most practical and expeditious means available.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-19",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9242,11 +9430,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.OP.160",
   "citaat": "only commence or continue a VFR flight if the latest available meteorological information indicates that the meteorological conditions along the route and at the intended destination at the estimated time of use will be at or above the applicable VFR operating minima",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) The pilot-in-command shall only commence or continue a VFR flight if the latest available meteorological information indicates that the meteorological conditions along the route and at the intended destination at the estimated time of use will be at or above the applicable VFR operating minima."
+  "fragment": "(a) The pilot-in-command shall only commence or continue a VFR flight if the latest available meteorological information indicates that the meteorological conditions along the route and at the intended destination at the estimated time of use will be at or above the applicable VFR operating minima.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-20",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9269,11 +9459,13 @@ window.EXTRA_QUESTIONS = [
   "art": "AMC1 NCO.OP.160",
   "citaat": "deteriorations associated with persistent conditions in connection with e.g. haze, mist, fog, dust/sandstorm, continuous precipitation should be applied",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(e) In a period indicated by TEMPO (alone), TEMPO FM, TEMPO TL, TEMPO FM TL, PROB30/40 (alone):\n(1) deteriorations associated with persistent conditions in connection with e.g. haze, mist, fog, dust/sandstorm, continuous precipitation should be applied;\n(2) deteriorations associated with transient/showery conditions in connection with short-lived weather phenomena, e.g. thunderstorms, showers may be ignored; and\n(3) improvements should in all cases be disregarded."
+  "fragment": "(e) In a period indicated by TEMPO (alone), TEMPO FM, TEMPO TL, TEMPO FM TL, PROB30/40 (alone):\n(1) deteriorations associated with persistent conditions in connection with e.g. haze, mist, fog, dust/sandstorm, continuous precipitation should be applied;\n(2) deteriorations associated with transient/showery conditions in connection with short-lived weather phenomena, e.g. thunderstorms, showers may be ignored; and\n(3) improvements should in all cases be disregarded.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-21",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9296,11 +9488,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.OP.165",
   "citaat": "The pilot-in-command shall only commence take-off if the aircraft is clear of any deposit that might adversely affect the performance or controllability of the aircraft, except as permitted in the AFM.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "Regulation (EU) No 800/2013\nThe pilot-in-command shall only commence take-off if the aircraft is clear of any deposit that might adversely affect the performance or controllability of the aircraft, except as permitted in the AFM."
+  "fragment": "Regulation (EU) No 800/2013\nThe pilot-in-command shall only commence take-off if the aircraft is clear of any deposit that might adversely affect the performance or controllability of the aircraft, except as permitted in the AFM.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-22",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9323,11 +9517,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.OP.180",
   "citaat": "The pilot-in-command shall, when carrying passengers or cargo, not simulate:",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) The pilot-in-command shall, when carrying passengers or cargo, not simulate:\n(1) situations that require the application of abnormal or emergency procedures; or\n(2) flight in instrument meteorological conditions (IMC).\n(b) Notwithstanding (a), when training flights are conducted by a training organisation referred to in Article 10a of Commission Regulation (EU) No 1178/2011, such situations may be simulated with student pilots on-board."
+  "fragment": "(a) The pilot-in-command shall, when carrying passengers or cargo, not simulate:\n(1) situations that require the application of abnormal or emergency procedures; or\n(2) flight in instrument meteorological conditions (IMC).\n(b) Notwithstanding (a), when training flights are conducted by a training organisation referred to in Article 10a of Commission Regulation (EU) No 1178/2011, such situations may be simulated with student pilots on-board.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-23",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9350,11 +9546,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.OP.190",
   "citaat": "all crew members engaged in performing duties essential to the safe operation of an aircraft in flight use supplemental oxygen for any period in excess of 30 minutes when the pressure altitude in the the passenger compartment will be between 10 000 ft and 13 000 ft",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(b) In any other case when the pilot-in-command cannot determine how the lack of oxygen might affect all occupants on board, he/she shall ensure that:\n(1) all crew members engaged in performing duties essential to the safe operation of an aircraft in flight use supplemental oxygen for any period in excess of 30 minutes when the pressure altitude in the the passenger compartment will be between 10 000 ft and 13 000 ft; and\n(2) all occupants use supplemental oxygen for any period that the pressure altitude in the the passenger compartment will be above 13 000 ft."
+  "fragment": "(b) In any other case when the pilot-in-command cannot determine how the lack of oxygen might affect all occupants on board, he/she shall ensure that:\n(1) all crew members engaged in performing duties essential to the safe operation of an aircraft in flight use supplemental oxygen for any period in excess of 30 minutes when the pressure altitude in the the passenger compartment will be between 10 000 ft and 13 000 ft; and\n(2) all occupants use supplemental oxygen for any period that the pressure altitude in the the passenger compartment will be above 13 000 ft.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-24",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9377,11 +9575,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.OP.190",
   "citaat": "all occupants use supplemental oxygen for any period that the pressure altitude in the the passenger compartment will be above 13 000 ft",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(b) In any other case when the pilot-in-command cannot determine how the lack of oxygen might affect all occupants on board, he/she shall ensure that:\n(1) all crew members engaged in performing duties essential to the safe operation of an aircraft in flight use supplemental oxygen for any period in excess of 30 minutes when the pressure altitude in the the passenger compartment will be between 10 000 ft and 13 000 ft; and\n(2) all occupants use supplemental oxygen for any period that the pressure altitude in the the passenger compartment will be above 13 000 ft."
+  "fragment": "(b) In any other case when the pilot-in-command cannot determine how the lack of oxygen might affect all occupants on board, he/she shall ensure that:\n(1) all crew members engaged in performing duties essential to the safe operation of an aircraft in flight use supplemental oxygen for any period in excess of 30 minutes when the pressure altitude in the the passenger compartment will be between 10 000 ft and 13 000 ft; and\n(2) all occupants use supplemental oxygen for any period that the pressure altitude in the the passenger compartment will be above 13 000 ft.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-25",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9404,11 +9604,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.IDE.A.120",
   "citaat": "time, in hours, minutes and seconds",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) Aeroplanes operated under VFR by day shall be equipped with a means of measuring and displaying the following:\n(1) magnetic heading;\n(2) time, in hours, minutes and seconds;\n(3) barometric altitude;\n(4) indicated airspeed; and\n(5) Mach number, whenever speed limitations are expressed in terms of Mach number."
+  "fragment": "(a) Aeroplanes operated under VFR by day shall be equipped with a means of measuring and displaying the following:\n(1) magnetic heading;\n(2) time, in hours, minutes and seconds;\n(3) barometric altitude;\n(4) indicated airspeed; and\n(5) Mach number, whenever speed limitations are expressed in terms of Mach number.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-26",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9431,11 +9633,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.IDE.A.120",
   "citaat": "(i) turn and slip;\n(ii) attitude;\n(iii) vertical speed; and\n(iv) stabilised heading;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(i) turn and slip;\n(ii) attitude;\n(iii) vertical speed; and\n(iv) stabilised heading;\nand\n(2) a means of indicating when the supply of power to the gyroscopic instruments is not adequate."
+  "fragment": "(i) turn and slip;\n(ii) attitude;\n(iii) vertical speed; and\n(iv) stabilised heading;\nand\n(2) a means of indicating when the supply of power to the gyroscopic instruments is not adequate.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-27",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9458,11 +9662,13 @@ window.EXTRA_QUESTIONS = [
   "art": "AMC2 NCO.IDE.A.120",
   "citaat": "For flights that do not exceed 60 minutes duration, that take off and land at the same aerodrome, and that remain within 50 NM of that aerodrome",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "ED Decision 2014/016/R\nLOCAL FLIGHTS\nFor flights that do not exceed 60 minutes duration, that take off and land at the same aerodrome, and that remain within 50 NM of that aerodrome, an equivalent means of complying with NCO.IDE.A.120(b)(1)(i), (b)(1)(ii) may be:\n(a) a turn and slip indicator;\n(b) a turn co-ordinator; or\n(c) both an attitude indicator and a slip indicator."
+  "fragment": "ED Decision 2014/016/R\nLOCAL FLIGHTS\nFor flights that do not exceed 60 minutes duration, that take off and land at the same aerodrome, and that remain within 50 NM of that aerodrome, an equivalent means of complying with NCO.IDE.A.120(b)(1)(i), (b)(1)(ii) may be:\n(a) a turn and slip indicator;\n(b) a turn co-ordinator; or\n(c) both an attitude indicator and a slip indicator.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-28",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9485,11 +9691,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.IDE.A.115",
   "citaat": "an independent portable light for each crew member station",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "Regulation (EU) No 800/2013\nAeroplanes operated at night shall be equipped with:\n(a) an anti-collision light system;\n(b) navigation/position lights;\n(c) a landing light;\n(d) lighting supplied from the aeroplane’s electrical system to provide adequate illumination for all instruments and equipment essential to the safe operation of the aeroplane;\n(e) lighting supplied from the aeroplane’s electrical system to provide illumination in all passenger compartments;\n(f) an independent portable light for each crew member station; and\n(g) lights to conform with the International Regulations for Preventing Collisions at Sea if the aeroplane is operated as a seaplane."
+  "fragment": "Regulation (EU) No 800/2013\nAeroplanes operated at night shall be equipped with:\n(a) an anti-collision light system;\n(b) navigation/position lights;\n(c) a landing light;\n(d) lighting supplied from the aeroplane’s electrical system to provide adequate illumination for all instruments and equipment essential to the safe operation of the aeroplane;\n(e) lighting supplied from the aeroplane’s electrical system to provide illumination in all passenger compartments;\n(f) an independent portable light for each crew member station; and\n(g) lights to conform with the International Regulations for Preventing Collisions at Sea if the aeroplane is operated as a seaplane.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-29",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9512,11 +9720,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.IDE.A.140",
   "citaat": "a child restraint device (CRD) for each person on board younger than 24 months",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) Aeroplanes shall be equipped with:\n(1) a seat or berth for each person on board who is aged 24 months or more;\n(2) a seat belt on each seat and restraining belts for each berth;\n(3) a child restraint device (CRD) for each person on board younger than 24 months; and\n(4) a seat belt with upper torso restraint system on each flight crew seat, having a single point release for aeroplanes having a CofA first issued on or after 25 August 2016."
+  "fragment": "(a) Aeroplanes shall be equipped with:\n(1) a seat or berth for each person on board who is aged 24 months or more;\n(2) a seat belt on each seat and restraining belts for each berth;\n(3) a child restraint device (CRD) for each person on board younger than 24 months; and\n(4) a seat belt with upper torso restraint system on each flight crew seat, having a single point release for aeroplanes having a CofA first issued on or after 25 August 2016.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-30",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9539,11 +9749,13 @@ window.EXTRA_QUESTIONS = [
   "art": "AMC2 NCO.IDE.A.145",
   "citaat": "replenished after use in-flight at the first opportunity where replacement items are available",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "ED Decision 2014/016/R\nMAINTENANCE OF FIRST-AID KIT\nTo be kept up-to-date, the first-aid kit should be:\n(a) inspected periodically to confirm, to the extent possible, that contents are maintained in the condition necessary for their intended use;\n(b) replenished at regular intervals, in accordance with instructions contained on their labels, or as circumstances warrant; and\n(c) replenished after use in-flight at the first opportunity where replacement items are available."
+  "fragment": "ED Decision 2014/016/R\nMAINTENANCE OF FIRST-AID KIT\nTo be kept up-to-date, the first-aid kit should be:\n(a) inspected periodically to confirm, to the extent possible, that contents are maintained in the condition necessary for their intended use;\n(b) replenished at regular intervals, in accordance with instructions contained on their labels, or as circumstances warrant; and\n(c) replenished after use in-flight at the first opportunity where replacement items are available.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-31",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9566,11 +9778,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.IDE.A.160",
   "citaat": "Aeroplanes, except ELA1 aeroplanes, shall be equipped with at least one hand fire extinguisher",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) Aeroplanes, except ELA1 aeroplanes, shall be equipped with at least one hand fire extinguisher:\n(1) in the flight crew compartment; and\n(2) in each passenger compartment that is separate from the flight crew compartment, except if the compartment is readily accessible to the flight crew.\n(b) The type and quantity of extinguishing agent for the required fire extinguishers shall be suitable for the type of fire likely to occur in the compartment where the extinguisher is intended to be used and to minimise the hazard of toxic gas concentration in compartments occupied by persons."
+  "fragment": "(a) Aeroplanes, except ELA1 aeroplanes, shall be equipped with at least one hand fire extinguisher:\n(1) in the flight crew compartment; and\n(2) in each passenger compartment that is separate from the flight crew compartment, except if the compartment is readily accessible to the flight crew.\n(b) The type and quantity of extinguishing agent for the required fire extinguishers shall be suitable for the type of fire likely to occur in the compartment where the extinguisher is intended to be used and to minimise the hazard of toxic gas concentration in compartments occupied by persons.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-32",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9593,11 +9807,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.IDE.A.170",
   "citaat": "a survival ELT (ELT(S)) or a personal locator beacon (PLB), carried by a crew member or a passenger, when certified for a maximum passenger seating configuration of six or less",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "Regulation (EU) No 800/2013\n(a) Aeroplanes shall be equipped with:\n(1) an ELT of any type, when first issued with an individual CofA on or before 1 July 2008;\n(2) an automatic ELT, when first issued with an individual CofA after 1 July 2008; or\n(3) a survival ELT (ELT(S)) or a personal locator beacon (PLB), carried by a crew member or a passenger, when certified for a maximum passenger seating configuration of six or less.\n(b) ELTs of any type and PLBs shall be capable of transmitting simultaneously on 121,5 MHz and 406 MHz."
+  "fragment": "Regulation (EU) No 800/2013\n(a) Aeroplanes shall be equipped with:\n(1) an ELT of any type, when first issued with an individual CofA on or before 1 July 2008;\n(2) an automatic ELT, when first issued with an individual CofA after 1 July 2008; or\n(3) a survival ELT (ELT(S)) or a personal locator beacon (PLB), carried by a crew member or a passenger, when certified for a maximum passenger seating configuration of six or less.\n(b) ELTs of any type and PLBs shall be capable of transmitting simultaneously on 121,5 MHz and 406 MHz.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-33",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9620,11 +9836,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.IDE.A.170",
   "citaat": "ELTs of any type and PLBs shall be capable of transmitting simultaneously on 121,5 MHz and 406 MHz.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "Regulation (EU) No 800/2013\n(a) Aeroplanes shall be equipped with:\n(1) an ELT of any type, when first issued with an individual CofA on or before 1 July 2008;\n(2) an automatic ELT, when first issued with an individual CofA after 1 July 2008; or\n(3) a survival ELT (ELT(S)) or a personal locator beacon (PLB), carried by a crew member or a passenger, when certified for a maximum passenger seating configuration of six or less.\n(b) ELTs of any type and PLBs shall be capable of transmitting simultaneously on 121,5 MHz and 406 MHz."
+  "fragment": "Regulation (EU) No 800/2013\n(a) Aeroplanes shall be equipped with:\n(1) an ELT of any type, when first issued with an individual CofA on or before 1 July 2008;\n(2) an automatic ELT, when first issued with an individual CofA after 1 July 2008; or\n(3) a survival ELT (ELT(S)) or a personal locator beacon (PLB), carried by a crew member or a passenger, when certified for a maximum passenger seating configuration of six or less.\n(b) ELTs of any type and PLBs shall be capable of transmitting simultaneously on 121,5 MHz and 406 MHz.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-34",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9647,11 +9865,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.IDE.A.175",
   "citaat": "flying over water beyond gliding distance from land",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(i) flying over water beyond gliding distance from land; or\n(ii) taking off or landing at an aerodrome or operating site where, in the opinion of the pilot-in-command, the take-off or approach path is so disposed over water that there would be a likelihood of a ditching;\n(2) seaplanes operated over water; and\n(3) aeroplanes operated at a distance away from land where an emergency landing is possible greater than that corresponding to 30 minutes at normal cruising speed or 50 NM, whichever is less."
+  "fragment": "(i) flying over water beyond gliding distance from land; or\n(ii) taking off or landing at an aerodrome or operating site where, in the opinion of the pilot-in-command, the take-off or approach path is so disposed over water that there would be a likelihood of a ditching;\n(2) seaplanes operated over water; and\n(3) aeroplanes operated at a distance away from land where an emergency landing is possible greater than that corresponding to 30 minutes at normal cruising speed or 50 NM, whichever is less.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-35",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9674,11 +9894,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.IDE.A.175",
   "citaat": "greater than that corresponding to 30 minutes at normal cruising speed or 50 NM, whichever is the lesser, shall determine the risks to survival of the occupants of the aeroplane in the event of a ditching",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(c) The pilot-in-command of an aeroplane operated at a distance away from land where an emergency landing is possible greater than that corresponding to 30 minutes at normal cruising speed or 50 NM, whichever is the lesser, shall determine the risks to survival of the occupants of the aeroplane in the event of a ditching, based on which he/she shall determine the carriage of:\n(1) equipment for making the distress signals;\n(2) life-rafts in sufficient numbers to carry all persons on board, stowed so as to facilitate their ready use in emergency; and\n(3) life-saving equipment, to provide the means of sustaining life, as appropriate to the flight to be undertaken."
+  "fragment": "(c) The pilot-in-command of an aeroplane operated at a distance away from land where an emergency landing is possible greater than that corresponding to 30 minutes at normal cruising speed or 50 NM, whichever is the lesser, shall determine the risks to survival of the occupants of the aeroplane in the event of a ditching, based on which he/she shall determine the carriage of:\n(1) equipment for making the distress signals;\n(2) life-rafts in sufficient numbers to carry all persons on board, stowed so as to facilitate their ready use in emergency; and\n(3) life-saving equipment, to provide the means of sustaining life, as appropriate to the flight to be undertaken.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-36",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9701,11 +9923,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.IDE.A.175",
   "citaat": "taking off or landing at an aerodrome or operating site where, in the opinion of the pilot-in-command, the take-off or approach path is so disposed over water that there would be a likelihood of a ditching",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(i) flying over water beyond gliding distance from land; or\n(ii) taking off or landing at an aerodrome or operating site where, in the opinion of the pilot-in-command, the take-off or approach path is so disposed over water that there would be a likelihood of a ditching;\n(2) seaplanes operated over water; and\n(3) aeroplanes operated at a distance away from land where an emergency landing is possible greater than that corresponding to 30 minutes at normal cruising speed or 50 NM, whichever is less."
+  "fragment": "(i) flying over water beyond gliding distance from land; or\n(ii) taking off or landing at an aerodrome or operating site where, in the opinion of the pilot-in-command, the take-off or approach path is so disposed over water that there would be a likelihood of a ditching;\n(2) seaplanes operated over water; and\n(3) aeroplanes operated at a distance away from land where an emergency landing is possible greater than that corresponding to 30 minutes at normal cruising speed or 50 NM, whichever is less.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-37",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9728,11 +9952,13 @@ window.EXTRA_QUESTIONS = [
   "art": "GM1 NCO.IDE.A.175",
   "citaat": "Seat cushions are not considered to be flotation devices.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "ED Decision 2014/016/R\nSEAT CUSHIONS\nSeat cushions are not considered to be flotation devices."
+  "fragment": "ED Decision 2014/016/R\nSEAT CUSHIONS\nSeat cushions are not considered to be flotation devices.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-38",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9755,11 +9981,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.IDE.A.190",
   "citaat": "Radio communication equipment, if required by (a), shall provide for communication on the aeronautical emergency frequency 121,5 MHz.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "Regulation (EU) No 800/2013\n(a) Where required by the airspace being flown aeroplanes shall be equipped with radio communication equipment capable of conducting two-way communication with those aeronautical stations and on those frequencies to meet airspace requirements.\n(b) Radio communication equipment, if required by (a), shall provide for communication on the aeronautical emergency frequency 121,5 MHz.\n(c) When more than one communication equipment unit is required, each shall be independent of the other or others to the extent that a failure in any one will not result in failure of any other."
+  "fragment": "Regulation (EU) No 800/2013\n(a) Where required by the airspace being flown aeroplanes shall be equipped with radio communication equipment capable of conducting two-way communication with those aeronautical stations and on those frequencies to meet airspace requirements.\n(b) Radio communication equipment, if required by (a), shall provide for communication on the aeronautical emergency frequency 121,5 MHz.\n(c) When more than one communication equipment unit is required, each shall be independent of the other or others to the extent that a failure in any one will not result in failure of any other.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-39",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9782,11 +10010,13 @@ window.EXTRA_QUESTIONS = [
   "art": "NCO.IDE.A.105",
   "citaat": "A flight shall not be commenced when any of the aeroplane instruments, items of equipment or functions required for the intended flight are inoperative or missing, unless:",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "Regulation (EU) No 800/2013\nA flight shall not be commenced when any of the aeroplane instruments, items of equipment or functions required for the intended flight are inoperative or missing, unless:\n(a) the aeroplane is operated in accordance with the MEL, if established; or\n(b) the aeroplane is subject to a permit to fly issued in accordance with the applicable airworthiness requirements."
+  "fragment": "Regulation (EU) No 800/2013\nA flight shall not be commenced when any of the aeroplane instruments, items of equipment or functions required for the intended flight are inoperative or missing, unless:\n(a) the aeroplane is operated in accordance with the MEL, if established; or\n(b) the aeroplane is subject to a permit to fly issued in accordance with the applicable airworthiness requirements.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "NCO-40",
-  "status": "pending",
+  "status": "approved",
   "subject": "operational_procedures",
   "lic": [
    "PPL"
@@ -9809,11 +10039,13 @@ window.EXTRA_QUESTIONS = [
   "art": "AMC2 NCO.IDE.A.155",
   "citaat": "The need for oxygen supply, when required by NCO.OP.190, may be met either by means of installed equipment or portable equipment.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "ED Decision 2016/018/R\nOXYGEN SUPPLY\nThe need for oxygen supply, when required by NCO.OP.190, may be met either by means of installed equipment or portable equipment."
+  "fragment": "ED Decision 2016/018/R\nOXYGEN SUPPLY\nThe need for oxygen supply, when required by NCO.OP.190, may be met either by means of installed equipment or portable equipment.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-01",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -9837,11 +10069,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MET.TR.210",
   "citaat": "10 minutes for METAR and SPECI, except that when the 10-minute period includes a marked discontinuity in the wind direction and/or speed",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(i) 2 minutes for local routine report and local special report and for wind displays in ATS units;\n(ii) 10 minutes for METAR and SPECI, except that when the 10-minute period includes a marked discontinuity in the wind direction and/or speed; only data occurring after the discontinuity shall be used for obtaining mean values; hence, the time interval in these circumstances shall be correspondingly reduced."
+  "fragment": "(i) 2 minutes for local routine report and local special report and for wind displays in ATS units;\n(ii) 10 minutes for METAR and SPECI, except that when the 10-minute period includes a marked discontinuity in the wind direction and/or speed; only data occurring after the discontinuity shall be used for obtaining mean values; hence, the time interval in these circumstances shall be correspondingly reduced.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-02",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -9865,11 +10099,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MET.TR.205",
   "citaat": "(A) 5 kt or more in local routine report and local special report when noise abatement procedures are applied;\n(B) 10 kt or more otherwise;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(C) when the total variation is 180° or more, the wind direction shall be reported as variable with no mean wind direction;\n(iii) variations from the mean wind speed (gusts), during the past 10 minutes shall be reported when the maximum wind speed exceeds the mean speed by, alternatively:\n(A) 5 kt or more in local routine report and local special report when noise abatement procedures are applied;\n(B) 10 kt or more otherwise;\n(iv) when a wind speed of less than 1 kt is reported, it shall be indicated as calm;"
+  "fragment": "(C) when the total variation is 180° or more, the wind direction shall be reported as variable with no mean wind direction;\n(iii) variations from the mean wind speed (gusts), during the past 10 minutes shall be reported when the maximum wind speed exceeds the mean speed by, alternatively:\n(A) 5 kt or more in local routine report and local special report when noise abatement procedures are applied;\n(B) 10 kt or more otherwise;\n(iv) when a wind speed of less than 1 kt is reported, it shall be indicated as calm;",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-03",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -9893,11 +10129,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MET.TR.200",
   "citaat": "when the following conditions occur simultaneously at the time of observation:\n(1) visibility, 10 km or more, and the lowest visibility is not reported;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(d) Information on visibility, runway visual range, present weather and cloud amount, cloud type and height of cloud base shall be replaced in all meteorological reports by the term ‘CAVOK’ when the following conditions occur simultaneously at the time of observation:\n(1) visibility, 10 km or more, and the lowest visibility is not reported;\n(2) no cloud of operational significance;\n(3) no weather of significance to aviation."
+  "fragment": "(d) Information on visibility, runway visual range, present weather and cloud amount, cloud type and height of cloud base shall be replaced in all meteorological reports by the term ‘CAVOK’ when the following conditions occur simultaneously at the time of observation:\n(1) visibility, 10 km or more, and the lowest visibility is not reported;\n(2) no cloud of operational significance;\n(3) no weather of significance to aviation.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-04",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -9921,11 +10159,13 @@ window.EXTRA_QUESTIONS = [
   "art": "Annex I",
   "citaat": "‘cloud of operational significance’ means a cloud with the height of cloud base below 5 000 ft or below the highest minimum sector altitude, whichever is greater, or a cumulonimbus cloud or a towering cumulus cloud at any height;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "… ;\n(34a) ‘boundary’ means a lateral or vertical plane delineating the airspace in which an ATC unit provides air traffic services;\n(35) ‘break’ means a period of time within the duty period when an air traffic controller is not required to perform duties, for recuperation purposes;\n(36) ‘certified aircraft application’ means a software application approved by the Agency as part of aircraft subject to Article 4 of Regulation (EC) No 216/2008;\n(37) ‘cloud of operational significance’ means a cloud with the height of cloud base below 5 000 ft or below the highest minimum sector altitude, whichever is greater, or a cumulonimbus cloud or a towering cumulus cloud at any height;\n(38) ‘commercial air transport’ means any aircraft operation involving the transport of passengers, cargo or mail for remuneration or other valuable consideration;\n(38a) ‘conventional navigation route’ means an ATS route established by reference to ground navigation aids;\n(39) ‘control area’ means a controlled airspace extending upwards from a specified limit above the earth;\n(39a) ‘coordination data’ means data of interest to operational staff …"
+  "fragment": "… ;\n(34a) ‘boundary’ means a lateral or vertical plane delineating the airspace in which an ATC unit provides air traffic services;\n(35) ‘break’ means a period of time within the duty period when an air traffic controller is not required to perform duties, for recuperation purposes;\n(36) ‘certified aircraft application’ means a software application approved by the Agency as part of aircraft subject to Article 4 of Regulation (EC) No 216/2008;\n(37) ‘cloud of operational significance’ means a cloud with the height of cloud base below 5 000 ft or below the highest minimum sector altitude, whichever is greater, or a cumulonimbus cloud or a towering cumulus cloud at any height;\n(38) ‘commercial air transport’ means any aircraft operation involving the transport of passengers, cargo or mail for remuneration or other valuable consideration;\n(38a) ‘conventional navigation route’ means an ATS route established by reference to ground navigation aids;\n(39) ‘control area’ means a controlled airspace extending upwards from a specified limit above the earth;\n(39a) ‘coordination data’ means data of interest to operational staff …",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-05",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -9949,11 +10189,13 @@ window.EXTRA_QUESTIONS = [
   "art": "AMC1 MET.TR.205(b)(1)",
   "citaat": "when the lowest visibility is different from the prevailing visibility, and (1) less than 1 500 m or (2) less than 50 % of the prevailing visibility, and less than 5 000 m, the lowest visibility observed should also be reported",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) when the lowest visibility is different from the prevailing visibility, and (1) less than 1 500 m or (2) less than 50 % of the prevailing visibility, and less than 5 000 m, the lowest visibility observed should also be reported and, when possible, its general direction in relation to the aerodrome reference point indicated by reference to one of the eight points of the compass;"
+  "fragment": "(a) when the lowest visibility is different from the prevailing visibility, and (1) less than 1 500 m or (2) less than 50 % of the prevailing visibility, and less than 5 000 m, the lowest visibility observed should also be reported and, when possible, its general direction in relation to the aerodrome reference point indicated by reference to one of the eight points of the compass;",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-06",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -9977,11 +10219,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MET.TR.205",
   "citaat": "Any observed value which does not fit the reporting scale in use shall be rounded down to the nearest lower whole hectopascal.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(g) Atmospheric pressure\n(1) In local routine report, local special report, METAR and SPECI, the QNH and QFE shall be computed in tenths of hectopascals and reported therein in steps of whole hectopascals, using four digits.\n(2) Any observed value which does not fit the reporting scale in use shall be rounded down to the nearest lower whole hectopascal.\n(3) In local routine report and local special report:"
+  "fragment": "(g) Atmospheric pressure\n(1) In local routine report, local special report, METAR and SPECI, the QNH and QFE shall be computed in tenths of hectopascals and reported therein in steps of whole hectopascals, using four digits.\n(2) Any observed value which does not fit the reporting scale in use shall be rounded down to the nearest lower whole hectopascal.\n(3) In local routine report and local special report:",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-07",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -10005,11 +10249,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MET.TR.210",
   "citaat": "(i) The height of cloud base shall be reported above aerodrome elevation.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(i) The height of cloud base shall be reported above aerodrome elevation.\n(ii) When a precision approach runway in use has a threshold elevation of 50 ft (15 m) or more below the aerodrome elevation, local arrangements shall be made in order that the height of cloud bases reported to arriving aircraft shall refer to the threshold elevation.\n(iii) In the case of reports from offshore structures, the height of cloud base shall be given above mean sea level."
+  "fragment": "(i) The height of cloud base shall be reported above aerodrome elevation.\n(ii) When a precision approach runway in use has a threshold elevation of 50 ft (15 m) or more below the aerodrome elevation, local arrangements shall be made in order that the height of cloud bases reported to arriving aircraft shall refer to the threshold elevation.\n(iii) In the case of reports from offshore structures, the height of cloud base shall be given above mean sea level.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-08",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -10033,11 +10279,13 @@ window.EXTRA_QUESTIONS = [
   "art": "GM2 MET.OR.200(b)",
   "citaat": "A SPECI representing an improvement in conditions should be disseminated only after the improvement has been maintained for 10 minutes",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "ED Decision 2022/004/R\nDISSEMINATION OF SPECI\nA SPECI representing an improvement in conditions should be disseminated only after the improvement has been maintained for 10 minutes; it should be amended before dissemination, if necessary, to indicate the conditions prevailing at the end of that 10-minute period."
+  "fragment": "ED Decision 2022/004/R\nDISSEMINATION OF SPECI\nA SPECI representing an improvement in conditions should be disseminated only after the improvement has been maintained for 10 minutes; it should be amended before dissemination, if necessary, to indicate the conditions prevailing at the end of that 10-minute period.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-09",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -10061,11 +10309,13 @@ window.EXTRA_QUESTIONS = [
   "art": "AMC1 MET.OR.200(b)",
   "citaat": "(f) when the amount of a cloud layer below 1 500 ft (450 m) changes:\n(1) from scattered (SCT) or less to broken (BKN) or overcast (OVC); or",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(f) when the amount of a cloud layer below 1 500 ft (450 m) changes:\n(1) from scattered (SCT) or less to broken (BKN) or overcast (OVC); or\n(2) from BKN or OVC to SCT or less."
+  "fragment": "(f) when the amount of a cloud layer below 1 500 ft (450 m) changes:\n(1) from scattered (SCT) or less to broken (BKN) or overcast (OVC); or\n(2) from BKN or OVC to SCT or less.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-10",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -10089,11 +10339,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MET.OR.225",
   "citaat": "The period of validity of a TREND forecast shall be 2 hours from the time of the report which forms part of the landing forecast.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) An aerodrome meteorological office shall prepare forecasts for landing as determined by the competent authority.\n(b) This forecast for landing shall be issued in the form of a TREND forecast.\n(c) The period of validity of a TREND forecast shall be 2 hours from the time of the report which forms part of the landing forecast."
+  "fragment": "(a) An aerodrome meteorological office shall prepare forecasts for landing as determined by the competent authority.\n(b) This forecast for landing shall be issued in the form of a TREND forecast.\n(c) The period of validity of a TREND forecast shall be 2 hours from the time of the report which forms part of the landing forecast.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-11",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -10117,11 +10369,13 @@ window.EXTRA_QUESTIONS = [
   "art": "AMC1 MET.TR.225(c)(7)(ii)",
   "citaat": "When the change is forecast to commence at the beginning of the trend forecast period but be completed before the end of that period, the abbreviation ‘FM’ and its associated time group should be omitted and only ‘TL’ and its associated time group should be used.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(b) When the change is forecast to commence at the beginning of the trend forecast period but be completed before the end of that period, the abbreviation ‘FM’ and its associated time group should be omitted and only ‘TL’ and its associated time group should be used."
+  "fragment": "(b) When the change is forecast to commence at the beginning of the trend forecast period but be completed before the end of that period, the abbreviation ‘FM’ and its associated time group should be omitted and only ‘TL’ and its associated time group should be used.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-12",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -10145,11 +10399,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MET.TR.220",
   "citaat": "The period of validity of a routine TAF shall be either 9 or 24 or 30 hours",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(c) The period of validity of a routine TAF shall be either 9 or 24 or 30 hours, unless otherwise prescribed by the competent authority taking into account the traffic requirements for aerodromes which operate for less than 9 hours."
+  "fragment": "(c) The period of validity of a routine TAF shall be either 9 or 24 or 30 hours, unless otherwise prescribed by the competent authority taking into account the traffic requirements for aerodromes which operate for less than 9 hours.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-13",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -10173,11 +10429,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MET.TR.220",
   "citaat": "at an unspecified time during the time period. The time period shall not exceed 4 hours.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "… However, in the case of significant changes in respect of cloud, all cloud groups, including layers or masses not expected to change, shall be indicated.\n(3) The change indicator ‘BECMG’ and the associated time group shall be used to describe changes where the meteorological conditions are expected to reach or pass through specified threshold values at a regular or irregular rate and at an unspecified time during the time period. The time period shall not exceed 4 hours.\n(4) The change indicator ‘TEMPO’ and the associated time group shall be used to describe expected frequent or infrequent temporary fluctuations in the meteorological conditions which reach or pass specified threshold values and last for a period of less than 1 hour in each instance and, in the aggregate, cover less than one half of the forecast period during which the fluctuations are expected to occur. …"
+  "fragment": "… However, in the case of significant changes in respect of cloud, all cloud groups, including layers or masses not expected to change, shall be indicated.\n(3) The change indicator ‘BECMG’ and the associated time group shall be used to describe changes where the meteorological conditions are expected to reach or pass through specified threshold values at a regular or irregular rate and at an unspecified time during the time period. The time period shall not exceed 4 hours.\n(4) The change indicator ‘TEMPO’ and the associated time group shall be used to describe expected frequent or infrequent temporary fluctuations in the meteorological conditions which reach or pass specified threshold values and last for a period of less than 1 hour in each instance and, in the aggregate, cover less than one half of the forecast period during which the fluctuations are expected to occur. …",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-14",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -10201,11 +10459,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MET.TR.220",
   "citaat": "last for a period of less than 1 hour in each instance and, in the aggregate, cover less than one half of the forecast period during which the fluctuations are expected to occur.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "… The time period shall not exceed 4 hours.\n(4) The change indicator ‘TEMPO’ and the associated time group shall be used to describe expected frequent or infrequent temporary fluctuations in the meteorological conditions which reach or pass specified threshold values and last for a period of less than 1 hour in each instance and, in the aggregate, cover less than one half of the forecast period during which the fluctuations are expected to occur. If the temporary fluctuation is expected to last 1 hour or longer, the change group ‘BECMG’ shall be used in accordance with point (3), or the validity period should be subdivided in accordance with point (5).\n(5) Where one set of prevailing weather conditions is expected to change significantly and more or less completely to a different set of conditions, the period of validity shall be subdivided into self-contained periods using the abbreviat …"
+  "fragment": "… The time period shall not exceed 4 hours.\n(4) The change indicator ‘TEMPO’ and the associated time group shall be used to describe expected frequent or infrequent temporary fluctuations in the meteorological conditions which reach or pass specified threshold values and last for a period of less than 1 hour in each instance and, in the aggregate, cover less than one half of the forecast period during which the fluctuations are expected to occur. If the temporary fluctuation is expected to last 1 hour or longer, the change group ‘BECMG’ shall be used in accordance with point (3), or the validity period should be subdivided in accordance with point (5).\n(5) Where one set of prevailing weather conditions is expected to change significantly and more or less completely to a different set of conditions, the period of validity shall be subdivided into self-contained periods using the abbreviat …",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-15",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -10229,11 +10489,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MET.TR.220",
   "citaat": "all forecasted conditions given before the abbreviation shall be superseded by those following the abbreviation.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "… The subdivided period following the abbreviation ‘FM’ shall be self-contained and all forecasted conditions given before the abbreviation shall be superseded by those following the abbreviation.\n(g) The probability of occurrence of an alternative value of a forecast element or elements shall be included when:\n(1) a 30 % or 40 % probability of alternative meteorological conditions exists during a specific forecast time period; or\n(2) a 30 % or 40 % probability of temporary fluctuations in meteorological conditions exists during a specific forecast time period.\nThis shall be indicated in the TAF by using the abbreviation ‘PROB’ followed b …"
+  "fragment": "… The subdivided period following the abbreviation ‘FM’ shall be self-contained and all forecasted conditions given before the abbreviation shall be superseded by those following the abbreviation.\n(g) The probability of occurrence of an alternative value of a forecast element or elements shall be included when:\n(1) a 30 % or 40 % probability of alternative meteorological conditions exists during a specific forecast time period; or\n(2) a 30 % or 40 % probability of temporary fluctuations in meteorological conditions exists during a specific forecast time period.\nThis shall be indicated in the TAF by using the abbreviation ‘PROB’ followed b …",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-16",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -10257,11 +10519,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MET.TR.220",
   "citaat": "a 30 % or 40 % probability of alternative meteorological conditions exists during a specific forecast time period",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(g) The probability of occurrence of an alternative value of a forecast element or elements shall be included when:\n(1) a 30 % or 40 % probability of alternative meteorological conditions exists during a specific forecast time period; or\n(2) a 30 % or 40 % probability of temporary fluctuations in meteorological conditions exists during a specific forecast time period."
+  "fragment": "(g) The probability of occurrence of an alternative value of a forecast element or elements shall be included when:\n(1) a 30 % or 40 % probability of alternative meteorological conditions exists during a specific forecast time period; or\n(2) a 30 % or 40 % probability of temporary fluctuations in meteorological conditions exists during a specific forecast time period.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-17",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -10285,11 +10549,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MET.OR.250",
   "citaat": "ensure that the period of validity of a SIGMET is not more than 4 hours",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(c) ensure that the period of validity of a SIGMET is not more than 4 hours, and in the special case of SIGMET for volcanic ash cloud and tropical cyclones, it shall be extended up to 6 hours;"
+  "fragment": "(c) ensure that the period of validity of a SIGMET is not more than 4 hours, and in the special case of SIGMET for volcanic ash cloud and tropical cyclones, it shall be extended up to 6 hours;",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-18",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -10313,11 +10579,13 @@ window.EXTRA_QUESTIONS = [
   "art": "Appendix 5",
   "citaat": "ISOL CB / OCNL CB / FRQ CB / ISOL TCU / OCNL TCU / FRQ TCU / MOD TURB / MOD ICE / MOD MTW",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "… PSN Nnn[nn] or Snn[nn] Wnnn[nn] or Ennn[nn] CB / SEV TURB / SEV ICE / SEV ICE (FZRA) / SEV MTW / HVY DS / HVY SS / [VA ERUPTION] [MT nnnnnnnnnn] / [PSN Nnn[nn] or Snn[nn] Ennn[nn] or Wnnn[nn]] / VA CLD / RDOACT CLD | SFC WIND nnn/nn[n]KT / SFC VIS [n][n]nnM (nn) / ISOL TS[GR] / OCNL TS[GR] / MT OBSC / BKN CLD / BKN CLD [n]nnn/[ABV][n]nnnnFT / or / BKN CLD SFC/[ABV][n]nnnnFT / or / OVC CLD [n]nnn/[ABV][n]nnnnFT / or / OVC CLD SFC/[ABV][n]nnnnFT / ISOL CB / OCNL CB / FRQ CB / ISOL TCU / OCNL TCU / FRQ TCU / MOD TURB / MOD ICE / MOD MTW\n11 | Observed or forecast phenomenon (M) (),() | Indication whether the information is observed and expected to continue, or forecast | OBS [AT nnnnZ] or / FCST [AT nnnnZ]\n12 | Location (C) (),(),() | Location (referring to latitude and longitude (in degrees and minutes)) | Nnn[nn] Wnnn[nn] or / Nnn[nn] Ennn[nn] or / Snn[nn] Wnnn[nn] or / Snn[nn] Ennn[nn] / or / N OF Nnn[nn] or / S OF Nnn[nn] or / N OF Snn[nn] or / S OF Snn[nn] or / [AND] / W OF …"
+  "fragment": "… PSN Nnn[nn] or Snn[nn] Wnnn[nn] or Ennn[nn] CB / SEV TURB / SEV ICE / SEV ICE (FZRA) / SEV MTW / HVY DS / HVY SS / [VA ERUPTION] [MT nnnnnnnnnn] / [PSN Nnn[nn] or Snn[nn] Ennn[nn] or Wnnn[nn]] / VA CLD / RDOACT CLD | SFC WIND nnn/nn[n]KT / SFC VIS [n][n]nnM (nn) / ISOL TS[GR] / OCNL TS[GR] / MT OBSC / BKN CLD / BKN CLD [n]nnn/[ABV][n]nnnnFT / or / BKN CLD SFC/[ABV][n]nnnnFT / or / OVC CLD [n]nnn/[ABV][n]nnnnFT / or / OVC CLD SFC/[ABV][n]nnnnFT / ISOL CB / OCNL CB / FRQ CB / ISOL TCU / OCNL TCU / FRQ TCU / MOD TURB / MOD ICE / MOD MTW\n11 | Observed or forecast phenomenon (M) (),() | Indication whether the information is observed and expected to continue, or forecast | OBS [AT nnnnZ] or / FCST [AT nnnnZ]\n12 | Location (C) (),(),() | Location (referring to latitude and longitude (in degrees and minutes)) | Nnn[nn] Wnnn[nn] or / Nnn[nn] Ennn[nn] or / Snn[nn] Wnnn[nn] or / Snn[nn] Ennn[nn] / or / N OF Nnn[nn] or / S OF Nnn[nn] or / N OF Snn[nn] or / S OF Snn[nn] or / [AND] / W OF …",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-19",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -10341,11 +10609,13 @@ window.EXTRA_QUESTIONS = [
   "art": "MET.TR.255",
   "citaat": "(3) widespread areas of broken or overcast cloud with height of base less than 1 000 ft above ground level",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(c) Only one of the phenomena in Appendix 5 shall be included in an AIRMET, using the appropriate abbreviations and the following threshold values, when the phenomenon is below flight level 100, or below flight level 150 in mountainous areas, or higher, where necessary:\n(1) widespread surface wind speed above 30 kt with relevant direction and units;\n(2) widespread areas affected by reduction of visibility to less than 5 000 m, including the weather phenomenon causing the reduction of visibility;\n(3) widespread areas of broken or overcast cloud with height of base less than 1 000 ft above ground level’."
+  "fragment": "(c) Only one of the phenomena in Appendix 5 shall be included in an AIRMET, using the appropriate abbreviations and the following threshold values, when the phenomenon is below flight level 100, or below flight level 150 in mountainous areas, or higher, where necessary:\n(1) widespread surface wind speed above 30 kt with relevant direction and units;\n(2) widespread areas affected by reduction of visibility to less than 5 000 m, including the weather phenomenon causing the reduction of visibility;\n(3) widespread areas of broken or overcast cloud with height of base less than 1 000 ft above ground level’.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "MET-20",
-  "status": "pending",
+  "status": "approved",
   "subject": "meteorology",
   "lic": [
    "PPL",
@@ -10369,6 +10639,8 @@ window.EXTRA_QUESTIONS = [
   "art": "MET.OR.260",
   "citaat": "area forecasts for low-level flights are issued every 6 hours for a period of validity of 6 hours",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(a) in the case of AIRMET being issued in combination with area forecasts for low-level flights in accordance with point MET.OR.255(a), area forecasts for low-level flights are issued every 6 hours for a period of validity of 6 hours and transmitted to the meteorological watch offices concerned not later than 1 hour prior to the beginning of their validity period;"
+  "fragment": "(a) in the case of AIRMET being issued in combination with area forecasts for low-level flights in accordance with point MET.OR.255(a), area forecasts for low-level flights are issued every 6 hours for a period of validity of 6 hours and transmitted to the meteorological watch offices concerned not later than 1 hour prior to the beginning of their validity period;",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  }
 ];
