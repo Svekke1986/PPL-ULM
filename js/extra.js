@@ -2,7 +2,7 @@
 window.EXTRA_QUESTIONS = [
  {
   "id": "KB-001",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -23,11 +23,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 1, 1°",
   "art": 1,
   "citaat": "En waarvan voor de ULA en DPM de overtreksnelheid of de minimale constante vliegsnelheid in landingsconfiguratie niet hoger is dan 35 knopen gekalibreerde luchtsnelheid (Calibrated Air Speed, CAS).",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-002",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -48,11 +50,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 1, 1°",
   "art": 1,
   "citaat": "| Maximum tweepersoons | 600 kg MTOM | 650 kg MTOM | niets extra | – |\n\nEn waarvan voor de ULA en DPM de overtreksnelheid of de minimale constante vliegsnelheid in landingsconfiguratie niet hoger is dan 45 knopen gekalibreerde luchtsnelheid (Calibrated Air Speed, CAS).",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-003",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -73,11 +77,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 1, 1°",
   "art": 1,
   "citaat": "| Tweepersoons | 450 kg MTOM | extra 45 kg MTOM | extra 25 kg MTOM | 600 kg MTOM |",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-004",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -98,11 +104,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 1, 1°",
   "art": 1,
   "citaat": "| Tweepersoons | 450 kg MTOM | extra 45 kg MTOM | extra 25 kg MTOM | 600 kg MTOM |",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-005",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -123,11 +131,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 1, 3°",
   "art": 1,
   "citaat": "Ultralicht gemotoriseerd vliegtuig van het type \"deltavleugel\" (hierna DPM): ULM waarvan de controle in vlucht gebeurt door een verplaatsing van het zwaartepunt uitgevoerd door de piloot.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-006",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -148,11 +158,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 1, 18°",
   "art": 1,
   "citaat": "18. Overlandvlucht: vlucht tussen twee punten op een afstand van 40 km of meer.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-007",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -173,11 +185,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 1, 16°",
   "art": 1,
   "citaat": "met een maximale duur van 45 minuten, met als doel nieuwe leerlingen aan te trekken",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-008",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -198,11 +212,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 9",
   "art": 9,
   "citaat": "moet binnen dertig dagen door de houder van het registratiebewijs schriftelijk ter kennis worden gegeven aan de minister of aan zijn gemachtigde",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-009",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -223,11 +239,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 16",
   "art": 16,
   "citaat": "namelijk de letters OO, gevolgd door zijn registratiekenmerk bestaande uit een groep van drie cijfers of een combinatie van maximum drie letters en cijfers",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-010",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -248,11 +266,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 22, § 2",
   "art": 22,
   "citaat": "is beperkt tot het grondgebied van het Koninkrijk, behoudens uitzonderingen opgenomen in overeenkomsten tussen het DGLV en de luchtvaartautoriteit van een andere Staat",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-011",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -273,11 +293,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 23",
   "art": 23,
   "citaat": "De geldigheidsduur van de beperkte toelating tot het luchtverkeer bedraagt drie jaar.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-012",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -298,11 +320,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 34",
   "art": 34,
   "citaat": "Elke belangrijke wijziging van een ULM moet, vóór de toepassing ervan, door de minister of zijn gemachtigde worden goedgekeurd.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-013",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -323,11 +347,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 44, 3°",
   "art": 44,
   "citaat": "3° het reisdagboek, zoals bedoeld in het ministerieel besluit van 12 juli 1988 houdende regeling van het uitreiken en bijhouden van het residagboek van de luchtvaartuigen, behalve voor een lokale vlucht;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-014",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -348,11 +374,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 45, § 1",
   "art": 45,
   "citaat": "en een geldig medisch certificaat klasse 1, klasse 2 of klasse LAPL",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-015",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -373,11 +401,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 46, § 2",
   "art": 46,
   "citaat": "1° ten minste 16 jaar oud zijn;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-016",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -398,11 +428,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 46, § 2",
   "art": 46,
   "citaat": "3° houder zijn van een geldig medisch certificaat klasse 1, klasse 2 of klasse LAPL, vóór de eerste vlucht als enig inzittende;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-017",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -423,11 +455,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 46, § 1",
   "art": 46,
   "citaat": "op voorwaarde dat hij een minimale ervaring van twee overlandvluchten in dubbelbesturing aantoont",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-018",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -448,11 +482,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 48",
   "art": 48,
   "citaat": "het theoretisch examen over de algemene materies luchtvaartwetgeving, meteorologie, menselijke prestaties en communicatie",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-019",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -473,11 +509,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 49, § 1",
   "art": 49,
   "citaat": "ten minste 25 uur vlieginstructie met ULA's hebben gevolgd, onder de verantwoordelijkheid van een instructeur",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-020",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -498,11 +536,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 53, § 1",
   "art": 53,
   "citaat": "ten minste 12 vlieguren als enige piloot in de relevante ULM-klasse hebben uitgevoerd",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-021",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -523,11 +563,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 53, § 2",
   "art": 53,
   "citaat": "2° een herhalingstraining van tenminste 1 uur totale vliegtijd volgen in de overeenkomstige klasse met een instructeur.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-022",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -548,11 +590,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 58, § 5",
   "art": 58,
   "citaat": "indien de piloot via zijn persoonlijk vlieglogboek kan aantonen dat het voorrecht voor tenminste 6 uur werd toegepast in de voorbije 2 jaar",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-023",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -573,11 +617,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 58, § 1 en art. 59",
   "art": 58,
   "citaat": "Om een voorrecht binnen een klassebevoegdverklaring te bekomen, moet de piloot een opleiding volgen bij een instructeur die zelf over dit voorrecht beschikt.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-024",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -598,11 +644,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 61",
   "art": 61,
   "citaat": "Automatische piloot Drijvers Variabele spoed Vliegen met passagiers.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-025",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -623,11 +671,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 71, § 1",
   "art": 71,
   "citaat": "een ervaring bewijzen van minstens 30 uur als gezagvoerder in de betreffende ULM klasse. In deze vliegtijd moeten minstens 5 uur begrepen zijn op het ULM-type waarmee gesleept zal worden",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-026",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -648,11 +698,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 74, § 2",
   "art": 74,
   "citaat": "De examinatoren mogen geen praktische proeven afnemen voor de afgifte van een ULM vergunning of een bevoegdverklaring aan kandidaten aan wie ze vlieginstructie hebben gegeven vereist voor de ULM vergunning",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-027",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -673,11 +725,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 76, § 2",
   "art": 76,
   "citaat": "De vluchten uitgevoerd onder toezicht van een instructeur worden door deze laatste in het vliegboek medeondertekend.",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-028",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -698,11 +752,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 79, 1°",
   "art": 79,
   "citaat": "de ULM's mogen enkel vliegen bij dag, met zicht op de grond of het water, en in weersomstandigheden die vliegen op zicht toelaten",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-029",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -723,11 +779,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 79, 1°",
   "art": 79,
   "citaat": "De zichtbaarheid op de grond en in de lucht mag niet minder zijn dan 5 km, behalve in het geval van oefening in het circuit waarvoor slechts een minimale zichtbaarheid van 3 km vereist is",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-030",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -748,11 +806,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 80",
   "art": 80,
   "citaat": "elk incident of ongeval, dat zich voordoet bij het gebruik van het luchtvaartuig, uiterlijk binnen de 48 uur, of zo snel mogelijk in geval van fysieke verhindering, schriftelijk aan de DG te melden",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-031",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -773,11 +833,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 83, 6°",
   "art": 83,
   "citaat": "6° dat de massa en de centrering van de ULM toelaten de vlucht in alle veiligheid uit te voeren, rekening houdend met de voorziene vliegomstandigheden;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-032",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -798,11 +860,13 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 84, 2°",
   "art": 84,
   "citaat": "wordt voortgezet dan naar het dichtstbijzijnde geschikte landingsterrein wanneer zijn geschiktheid om zijn functies uit te oefenen aanzienlijk verminderd is",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "KB-033",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "ULM"
@@ -823,6 +887,8 @@ window.EXTRA_QUESTIONS = [
   "ref": "KB ULM 20/12/2024, art. 85, § 1",
   "art": 85,
   "citaat": "2° reclame aangebracht op het luchtframe;",
-  "opgesteld": "AI (Claude), op basis van de wettekst"
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  }
 ];
