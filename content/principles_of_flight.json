@@ -29,7 +29,7 @@
 "665956": ["Reageer op de overtrekwaarschuwing door de stuurknuppel naar voren te duwen (invalshoek kleiner) en vermogen bij te geven."],
 "665957": ["Bij het herstel uit een spin houd je de rolroeren neutraal. Standaard (PARE): gas dicht, rolroer neutraal, vol tegenroer, stuur naar voren tot de rotatie stopt."],
 "665958": ["Als je de kleppen uitschuift veranderen de lift, het drukpunt en de downwash op het staartvlak. De trimtoestand verandert dus en je moet opnieuw trimmen."],
-"665928": ["Voorrandkleppen en slots maken een grotere kritische invalshoek mogelijk met relatief weinig extra weerstand. Achterrandkleppen verhogen vooral de welving en de weerstand."],
+"665928": ["**Slats** zijn beweegbare kleppen aan de vleugelvoorrand. Uitgeschoven vormen ze een spleet (slot) waardoor lucht van onder naar boven over de vleugel stroomt. De grenslaag krijgt zo nieuwe energie en laat later los: de **kritische aanvalshoek wordt groter**, met relatief weinig extra weerstand.\n\n**Vergeleken met flaps:** achterrandkleppen vergroten vooral de welving (meer lift, maar ook veel meer weerstand) en verkleinen de kritische aanvalshoek."],
 "665959": ["De laminaire grenslaag loopt van het stuwpunt tot het omslagpunt (transition point). Daarna wordt ze turbulent."],
 "665960": ["Vooraan op het profiel is de grenslaag laminair, verder naar achteren turbulent."],
 "665966": ["Het horizontale staartvlak zorgt voor stabiliteit rond de dwarsas (langsstabiliteit, pitch)."],
