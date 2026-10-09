@@ -65,26 +65,20 @@
 
   // Brondocumenten van de AI-vragen (veld "doc"; zonder doc = KB ULM).
   const AI_DOCS = {
-    kb: { name: 'het KB van 20 december 2024 betreffende de ultralichte motorluchtvaartuigen', src: 'kbulm', lang: '' },
-    sera: { name: 'SERA (Uitvoeringsverordening (EU) 923/2012, geconsolideerde tekst)', src: 'sera', lang: ' (originele Engelse tekst)' },
-    sera2012: { name: 'SERA (Uitvoeringsverordening (EU) 923/2012, oorspronkelijke Nederlandse tekst van 2012)', src: 'sera', lang: '' }
+    kb: { name: 'het KB van 20 december 2024 betreffende de ultralichte motorluchtvaartuigen', src: 'kbulm' },
+    sera: { name: 'SERA (Uitvoeringsverordening (EU) 923/2012, geconsolideerde tekst)', src: 'sera' },
+    sera2012: { name: 'SERA (Uitvoeringsverordening (EU) 923/2012, oorspronkelijke Nederlandse tekst van 2012)', src: 'sera' }
   };
-  const aiDoc = q => AI_DOCS[q.doc || 'kb'] || { name: 'de officiële wettekst', src: q.src, lang: '' };
+  const aiDoc = q => AI_DOCS[q.doc || 'kb'] || { name: 'de officiële wettekst', src: q.src };
 
-  // Melding + de tekst uit het document waarop een AI-vraag gebaseerd is.
-  function aiNoticeHtml(q) {
-    const d = aiDoc(q), s = window.resolveSource(q.src || d.src);
-    const quote = q.citaat ? `<blockquote class="ai-quote">${esc(q.citaat)}</blockquote>` : '';
-    return `<div class="ai-notice">
-      <p>🤖 <strong>Deze vraag is gegenereerd door AI</strong> op basis van ${esc(d.name)}. Lees altijd het officiële document na.</p>
-      <p class="small"><strong>Tekst uit het document</strong>${q.ref ? ` – ${esc(q.ref)}` : ''}${d.lang}:</p>
-      ${quote}
-      <p class="small">📘 Officieel document: <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></p>
-    </div>`;
+  // AI-vraag: alleen een verwijzing naar de tekst in het brondocument.
+  function aiSourceHtml(q) {
+    const s = window.resolveSource(q.src || aiDoc(q).src);
+    return `<div class="source">📘 Lees na in het officiële document: <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>${q.ref ? ` — <em>${esc(q.ref)}</em>` : ''}</div>`;
   }
 
   function sourceHtml(q) {
-    if (q.ai) return aiNoticeHtml(q);
+    if (q.ai) return aiSourceHtml(q);
     const s = window.resolveSource(q.src);
     const ref = q.ref ? ` — <em>${esc(q.ref)}</em>` : '';
     const lo = q.extra
@@ -291,7 +285,7 @@
   function aiBannerHtml(pool) {
     const names = [...new Set(pool.filter(q => q.ai).map(q => aiDoc(q).name.replace(/ \(.*\)$/, '')))];
     return `<div class="ai-notice ai-banner">🤖 <strong>Deze vragen zijn gegenereerd door AI</strong> op basis van ${esc(names.join(' en '))}.
-      Lees altijd het officiële document na. Bij elke vraag zie je na het antwoorden de tekst uit het document waarop ze gebaseerd is.</div>`;
+      Lees altijd het officiële document na: bij elk antwoord staat naar welke tekst je moet kijken.</div>`;
   }
 
   function bindChapterSelect() {

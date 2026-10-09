@@ -164,7 +164,6 @@ h2 { font-size: 1.3rem; margin: 0 0 12px; }
 .ai-notice p { margin: 0 0 6px; }
 .ai-notice p:last-child { margin-bottom: 0; }
 .ai-banner { margin: -4px 0 16px; }
-.ai-quote { margin: 4px 0 8px; padding: 6px 10px; border-left: 3px solid var(--border); background: var(--surface); font-style: italic; white-space: pre-line; }
 .feedback .review { margin-top: 8px; font-size: .88rem; padding: 8px 10px; border-radius: 8px; background: var(--warn-bg); color: var(--text); border: 1px solid var(--warn-border); }
 
 .quiz-actions { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
