@@ -6536,7 +6536,7 @@ window.EXTRA_QUESTIONS = [
  },
  {
   "id": "FCL-01",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -6559,11 +6559,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.015",
   "citaat": "For the issue of a licence, rating or certificate the applicant shall apply not later than 6 months after having succeeded at the skill test or assessment of competence.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "(f) For the issue of a licence, rating or certificate the applicant shall apply not later than 6 months after having succeeded at the skill test or assessment of competence."
+  "fragment": "(f) For the issue of a licence, rating or certificate the applicant shall apply not later than 6 months after having succeeded at the skill test or assessment of competence.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-02",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -6586,11 +6588,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.025",
   "citaat": "A pass in a theoretical knowledge examination paper will be awarded to an applicant achieving at least 75 % of the marks allocated to that paper. No penalty marking shall be applied.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "… If the applicant has failed to attempt at least one theoretical knowledge examination paper within this period of validity, the need for further training shall be determined by the DTO or the ATO, based on the needs of the applicant.\n(b) Pass standards\n(1) A pass in a theoretical knowledge examination paper will be awarded to an applicant achieving at least 75 % of the marks allocated to that paper. No penalty marking shall be applied.\n(2) Unless otherwise determined in this Part, an applicant has successfully completed the required theoretical knowledge examination for the appropriate pilot licence or rating if he or she has passed all the required theoretical knowledge examination papers within a period of 18 months counted from the end of the calendar month when the applicant first attempted an examination.\n(3) If an applicant for the ATPL theoretical knowledge examination, …"
+  "fragment": "… If the applicant has failed to attempt at least one theoretical knowledge examination paper within this period of validity, the need for further training shall be determined by the DTO or the ATO, based on the needs of the applicant.\n(b) Pass standards\n(1) A pass in a theoretical knowledge examination paper will be awarded to an applicant achieving at least 75 % of the marks allocated to that paper. No penalty marking shall be applied.\n(2) Unless otherwise determined in this Part, an applicant has successfully completed the required theoretical knowledge examination for the appropriate pilot licence or rating if he or she has passed all the required theoretical knowledge examination papers within a period of 18 months counted from the end of the calendar month when the applicant first attempted an examination.\n(3) If an applicant for the ATPL theoretical knowledge examination, …",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-03",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -6613,11 +6617,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.025",
   "citaat": "if he or she has passed all the required theoretical knowledge examination papers within a period of 18 months counted from the end of the calendar month when the applicant first attempted an examination.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "… No penalty marking shall be applied.\n(2) Unless otherwise determined in this Part, an applicant has successfully completed the required theoretical knowledge examination for the appropriate pilot licence or rating if he or she has passed all the required theoretical knowledge examination papers within a period of 18 months counted from the end of the calendar month when the applicant first attempted an examination.\n(3) If an applicant for the ATPL theoretical knowledge examination, or for the issue of a commercial pilot licence (CPL), or an instrument rating (IR) has failed to pass one of the theoretical knowledge examination papers within four attempts, or has failed to pass all papers within either six sittings or within the period mentioned in point (b)(2), he or she shall retake the complete set of theoretical knowledge examination papers.\n(4) If appli …"
+  "fragment": "… No penalty marking shall be applied.\n(2) Unless otherwise determined in this Part, an applicant has successfully completed the required theoretical knowledge examination for the appropriate pilot licence or rating if he or she has passed all the required theoretical knowledge examination papers within a period of 18 months counted from the end of the calendar month when the applicant first attempted an examination.\n(3) If an applicant for the ATPL theoretical knowledge examination, or for the issue of a commercial pilot licence (CPL), or an instrument rating (IR) has failed to pass one of the theoretical knowledge examination papers within four attempts, or has failed to pass all papers within either six sittings or within the period mentioned in point (b)(2), he or she shall retake the complete set of theoretical knowledge examination papers.\n(4) If appli …",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-04",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -6640,11 +6646,13 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.025",
   "citaat": "have failed to pass one of the theoretical knowledge examination papers within four attempts or have failed to pass all papers within the period mentioned in point (b)(2), they shall retake the complete set of theoretical knowledge examination papers.",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "… instrument rating (IR) has failed to pass one of the theoretical knowledge examination papers within four attempts, or has failed to pass all papers within either six sittings or within the period mentioned in point (b)(2), he or she shall retake the complete set of theoretical knowledge examination papers.\n(4) If applicants for the issue of a light aircraft pilot licence (LAPL), a private pilot licence (PPL), or a basic instrument rating (BIR) have failed to pass one of the theoretical knowledge examination papers within four attempts or have failed to pass all papers within the period mentioned in point (b)(2), they shall retake the complete set of theoretical knowledge examination papers.\n[applicable until 17 February 2026 - Regulation (EU) 2024/2076]\n(4) If applicants for the issue of a light aircraft pilot licence (LAPL), a private pilot licence (PPL), a basic instrument rating (BIR) or a gyroplane pilot licence (GPL) have failed to pass one of the theoretical knowledge examination papers within four attempts or have failed to pass all papers within the period mentioned in point (b)(2), they shall retake the complete set of the …"
+  "fragment": "… instrument rating (IR) has failed to pass one of the theoretical knowledge examination papers within four attempts, or has failed to pass all papers within either six sittings or within the period mentioned in point (b)(2), he or she shall retake the complete set of theoretical knowledge examination papers.\n(4) If applicants for the issue of a light aircraft pilot licence (LAPL), a private pilot licence (PPL), or a basic instrument rating (BIR) have failed to pass one of the theoretical knowledge examination papers within four attempts or have failed to pass all papers within the period mentioned in point (b)(2), they shall retake the complete set of theoretical knowledge examination papers.\n[applicable until 17 February 2026 - Regulation (EU) 2024/2076]\n(4) If applicants for the issue of a light aircraft pilot licence (LAPL), a private pilot licence (PPL), a basic instrument rating (BIR) or a gyroplane pilot licence (GPL) have failed to pass one of the theoretical knowledge examination papers within four attempts or have failed to pass all papers within the period mentioned in point (b)(2), they shall retake the complete set of the …",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-05",
-  "status": "pending",
+  "status": "approved",
   "subject": "air_law",
   "lic": [
    "PPL"
@@ -6667,7 +6675,9 @@ window.EXTRA_QUESTIONS = [
   "art": "FCL.025",
   "citaat": "for the issue of a light aircraft pilot licence, a private pilot licence or a gyroplane pilot licence, for a period of 24 months;",
   "opgesteld": "AI (Claude), op basis van de wettekst",
-  "fragment": "for the issue of a light aircraft pilot licence, a private pilot licence or a gyroplane pilot licence, for a period of 24 months;\n[applicable from 18 February 2026 - Regulation (EU) 2025/134]\n(ii) for the issue of a commercial pilot licence, a multi-crew pilot licence or an instrument rating (IR), for a period of 36 months;\n(iii) for the issue of a basic instrument rating (BIR), for an unlimited duration."
+  "fragment": "for the issue of a light aircraft pilot licence, a private pilot licence or a gyroplane pilot licence, for a period of 24 months;\n[applicable from 18 February 2026 - Regulation (EU) 2025/134]\n(ii) for the issue of a commercial pilot licence, a multi-crew pilot licence or an instrument rating (IR), for a period of 36 months;\n(iii) for the issue of a basic instrument rating (BIR), for an unlimited duration.",
+  "nagekeken": "Sven",
+  "bijgewerkt": "2026-10-09"
  },
  {
   "id": "FCL-06",
