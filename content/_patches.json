@@ -63,5 +63,458 @@
 "options": {
 "0": "51°50´27´´N"
 }
+},
+"665932": {
+"question": "De statische druk van gassen werkt…",
+"options": {
+"0": "in alle richtingen.",
+"1": "alleen in de richting van de totale druk.",
+"2": "alleen in de stromingsrichting.",
+"3": "alleen loodrecht op de stromingsrichting."
+}
+},
+"665933": {
+"question": "De vergelijking van Bernoulli voor wrijvingsloze, onsamendrukbare gassen zegt dat…",
+"options": {
+"0": "statische druk = totale druk + dynamische druk.",
+"1": "totale druk = dynamische druk − statische druk.",
+"2": "totale druk = dynamische druk + statische druk.",
+"3": "dynamische druk = totale druk + statische druk."
+}
+},
+"665934": {
+"question": "Een willekeurig gevormd voorwerp in een luchtstroom (v > 0) produceert…",
+"options": {
+"0": "bij elke snelheid dezelfde weerstand.",
+"1": "weerstand.",
+"2": "weerstand en lift.",
+"3": "lift zonder weerstand."
+}
+},
+"665936": {
+"question": "Nummer 2 in de tekening is de… Zie figuur (PFA-010)",
+"options": {
+"0": "profieldikte.",
+"1": "aanvalshoek.",
+"2": "koorde (lengte).",
+"3": "koordelijn."
+}
+},
+"665941": {
+"question": "De hoek alfa in de figuur wordt … genoemd. Zie figuur (PFA-003) DoF: richting van de luchtstroom",
+"options": {
+"0": "lifthoek",
+"1": "instelhoek",
+"2": "hellingshoek",
+"3": "aanvalshoek"
+}
+},
+"665937": {
+"question": "De verhouding tussen de spanwijdte en de gemiddelde koordelengte heet…",
+"options": {
+"0": "de slankheid (aspect ratio).",
+"1": "de trapeziumvorm.",
+"2": "de pijlstelling.",
+"3": "de taps toelopende vorm."
+}
+},
+"665938": {
+"question": "Welk punt op het vleugelprofiel wordt voorgesteld door nummer 1? Zie figuur (PFA-009)",
+"options": {
+"0": "Drukpunt",
+"1": "Stagnatiepunt",
+"2": "Transitiepunt",
+"3": "Separatiepunt (loslatingspunt)"
+}
+},
+"665939": {
+"question": "Welk drukpatroon zie je bij een vleugelprofiel dat lift levert bij een positieve aanvalshoek?",
+"options": {
+"0": "Boven blijft de druk gelijk, onder het profiel ontstaat een hogere druk",
+"1": "Boven ontstaat een hoge druk, onder het profiel een lagere druk",
+"2": "Onder blijft de druk gelijk, boven het profiel ontstaat een lagere druk",
+"3": "Boven ontstaat een lage druk, onder het profiel een hogere druk"
+}
+},
+"665935": {
+"question": "Het drukpunt is het theoretische aangrijpingspunt van…",
+"options": {
+"0": "alleen de resulterende totale weerstand.",
+"1": "de zwaartekracht en de aerodynamische krachten.",
+"2": "de zwaartekracht op het profiel.",
+"3": "alle aerodynamische krachten op het profiel."
+}
+},
+"665940": {
+"question": "De ligging van het drukpunt bij een gewelfd profiel…",
+"options": {
+"0": "verschuift naar de achterrand als de aanvalshoek kleiner wordt.",
+"1": "verschuift naar de voorrand als de aanvalshoek kleiner wordt.",
+"2": "ligt op ongeveer 25 % van de koorde, gemeten vanaf de voorrand.",
+"3": "verschuift niet, want het is onafhankelijk van de aanvalshoek."
+}
+},
+"665953": {
+"question": "Hoe veranderen lift en weerstand wanneer je een overtrek (stall) nadert?",
+"options": {
+"0": "Lift en weerstand nemen af",
+"1": "Lift en weerstand nemen toe",
+"2": "Lift neemt toe en weerstand neemt af",
+"3": "Lift neemt af en weerstand neemt toe"
+}
+},
+"665945": {
+"question": "Drukcompensatie aan een vleugel gebeurt aan de…",
+"options": {
+"0": "aansluitingen op de romp.",
+"1": "vleugelwortels.",
+"2": "vleugeltips.",
+"3": "voorrand."
+}
+},
+"665946": {
+"question": "Welke delen van een vliegtuig bepalen vooral het ontstaan van geïnduceerde weerstand?",
+"options": {
+"0": "het onderste deel van het landingsgestel.",
+"1": "het buitenste deel van de rolroeren.",
+"2": "het voorste deel van de romp.",
+"3": "de vleugeltips."
+}
+},
+"665949": {
+"question": "Welk effect heeft een dalende snelheid op de geïnduceerde weerstand tijdens een horizontale, stabiele kruisvlucht?",
+"options": {
+"0": "De geïnduceerde weerstand valt helemaal weg",
+"1": "De geïnduceerde weerstand neemt licht af",
+"2": "De geïnduceerde weerstand neemt toe",
+"3": "De geïnduceerde weerstand blijft gelijk"
+}
+},
+"665944": {
+"question": "Als de snelheid van de luchtstroom verdubbelt en alle andere parameters gelijk blijven, hoe verandert de parasitaire weerstand dan ongeveer?",
+"options": {
+"0": "Ze halveert",
+"1": "Ze verdubbelt",
+"2": "Ze wordt 4 keer zo groot",
+"3": "Ze wordt 4 keer zo klein"
+}
+},
+"665950": {
+"question": "Welke uitspraak over de geïnduceerde weerstand tijdens een horizontale kruisvlucht is juist?",
+"options": {
+"0": "De geïnduceerde weerstand neemt toe bij een hogere snelheid",
+"1": "De geïnduceerde weerstand heeft een minimum bij een bepaalde snelheid en neemt toe bij zowel hogere als lagere snelheden",
+"2": "De geïnduceerde weerstand heeft een maximum bij een bepaalde snelheid en neemt af bij zowel hogere als lagere snelheden",
+"3": "De geïnduceerde weerstand neemt af bij een hogere snelheid"
+}
+},
+"665947": {
+"question": "Vormweerstand (drukweerstand), interferentieweerstand en wrijvingsweerstand behoren tot de groep van de…",
+"options": {
+"0": "hoofdweerstand.",
+"1": "totale weerstand.",
+"2": "geïnduceerde weerstand.",
+"3": "parasitaire weerstand."
+}
+},
+"665952": {
+"question": "Welke soorten weerstand vormen samen de totale weerstand?",
+"options": {
+"0": "Geïnduceerde weerstand, vormweerstand en wrijvingsweerstand",
+"1": "Interferentieweerstand en parasitaire weerstand",
+"2": "Vormweerstand, wrijvingsweerstand en interferentieweerstand",
+"3": "Geïnduceerde weerstand en parasitaire weerstand"
+}
+},
+"665951": {
+"question": "In welke situatie is de totale weerstand het kleinst?",
+"options": {
+"0": "De parasitaire weerstand is twee keer zo groot als de geïnduceerde weerstand",
+"1": "De parasitaire weerstand is gelijk aan de geïnduceerde weerstand",
+"2": "De geïnduceerde weerstand is twee keer zo groot als de parasitaire weerstand",
+"3": "De geïnduceerde weerstand is kleiner dan de parasitaire weerstand"
+}
+},
+"665948": {
+"question": "Hoe veranderen de geïnduceerde en de parasitaire weerstand bij een hogere snelheid tijdens een horizontale, stabiele kruisvlucht?",
+"options": {
+"0": "Parasitaire weerstand neemt af en geïnduceerde weerstand neemt af",
+"1": "Parasitaire weerstand neemt af en geïnduceerde weerstand neemt toe",
+"2": "Geïnduceerde weerstand neemt af en parasitaire weerstand neemt toe",
+"3": "Geïnduceerde weerstand neemt toe en parasitaire weerstand neemt toe"
+}
+},
+"665980": {
+"question": "Wat wordt bedoeld met \"grondeffect\"?",
+"options": {
+"0": "Meer lift en minder geïnduceerde weerstand dicht bij de grond",
+"1": "Meer lift en meer geïnduceerde weerstand dicht bij de grond",
+"2": "Minder lift en meer geïnduceerde weerstand dicht bij de grond",
+"3": "Minder lift en minder geïnduceerde weerstand dicht bij de grond"
+}
+},
+"665943": {
+"question": "Welke uitspraak over de aanvalshoek is juist?",
+"options": {
+"0": "De aanvalshoek kan niet negatief zijn",
+"1": "Een grotere aanvalshoek geeft minder lift",
+"2": "Een te grote aanvalshoek kan leiden tot verlies van lift",
+"3": "De aanvalshoek blijft tijdens de hele vlucht gelijk"
+}
+},
+"665965": {
+"question": "De kritische aanvalshoek…",
+"options": {
+"0": "verandert bij een ander gewicht van het vliegtuig.",
+"1": "wordt groter bij een voorwaarts zwaartepunt.",
+"2": "verandert niet bij een ander gewicht van het vliegtuig.",
+"3": "wordt kleiner bij een achterwaarts zwaartepunt."
+}
+},
+"665955": {
+"question": "Wat leidt tot een lagere overtreksnelheid Vs (IAS)?",
+"options": {
+"0": "Een hogere belastingsfactor",
+"1": "Een lagere hoogte",
+"2": "Een lagere luchtdichtheid",
+"3": "Een lager gewicht"
+}
+},
+"665976": {
+"question": "Wat geldt voor de belastingsfactor (n) en de overtreksnelheid (Vs) in een gecoördineerde bocht?",
+"options": {
+"0": "n is kleiner dan 1, Vs is hoger dan in rechtlijnige horizontale vlucht.",
+"1": "n is groter dan 1, Vs is hoger dan in rechtlijnige horizontale vlucht.",
+"2": "n is kleiner dan 1, Vs is lager dan in rechtlijnige horizontale vlucht.",
+"3": "n is groter dan 1, Vs is lager dan in rechtlijnige horizontale vlucht."
+}
+},
+"665942": {
+"question": "Wat is een voordeel van vleugelverdraaiing (washout)?",
+"options": {
+"0": "Bij grote aanvalshoeken blijven de rolroeren zo lang mogelijk effectief",
+"1": "Een grotere hardheid, omdat de vleugel meer torsiekrachten kan opvangen",
+"2": "De vleugel wordt constructief stijver tegen verdraaiing",
+"3": "Door de verdraaiing neemt de vormweerstand af bij hoge snelheden"
+}
+},
+"665954": {
+"question": "Bij een overtrek (stall) is het belangrijk om…",
+"options": {
+"0": "de hellingshoek te vergroten en de snelheid te verminderen.",
+"1": "de aanvalshoek te vergroten en de snelheid te verminderen.",
+"2": "de aanvalshoek te verkleinen en de snelheid te vergroten.",
+"3": "de aanvalshoek te vergroten en de snelheid te vergroten."
+}
+},
+"665956": {
+"question": "Hoe reageert de piloot op een overtrekwaarschuwing?",
+"options": {
+"0": "Stuur naar voren, vermogen bijgeven",
+"1": "Neus omhoog om de snelheid te verminderen",
+"2": "Stuur naar achteren, vermogen verminderen",
+"3": "Stuur naar achteren, vermogen bijgeven"
+}
+},
+"665957": {
+"question": "Welke uitspraak over een vrille (spin) is juist?",
+"options": {
+"0": "Tijdens het herstel moeten de rolroeren gekruist worden",
+"1": "Tijdens de vrille neemt de snelheid voortdurend toe",
+"2": "Tijdens het herstel moeten de rolroeren neutraal blijven",
+"3": "Alleen heel oude vliegtuigen lopen het risico in een vrille te gaan"
+}
+},
+"665958": {
+"question": "Wat verandert er als je de flaps uitzet?",
+"options": {
+"0": "Het draaieffect van de motor",
+"1": "De ligging van het zwaartepunt",
+"2": "De trimtoestand",
+"3": "De effectiviteit van de rolroeren"
+}
+},
+"665928": {
+"question": "Vergeleken met achterrandkleppen (flaps) zorgen voorrandvoorzieningen zoals slots ervoor dat…",
+"options": {
+"0": "hogere snelheden mogelijk zijn bij het opstijgen en landen.",
+"1": "de kritische aanvalshoek bij een bepaalde snelheid kleiner wordt.",
+"2": "er minder weerstand is, terwijl een grotere aanvalshoek mogelijk is.",
+"3": "de welving groter wordt en een kleinere aanvalshoek mogelijk is."
+}
+},
+"665959": {
+"question": "De laminaire grenslaag op het vleugelprofiel ligt tussen…",
+"options": {
+"0": "het transitiepunt en het drukpunt.",
+"1": "het stagnatiepunt en het transitiepunt.",
+"2": "het transitiepunt en het separatiepunt.",
+"3": "het stagnatiepunt en het drukpunt."
+}
+},
+"665960": {
+"question": "Welke soorten grenslaag vind je op een vleugelprofiel?",
+"options": {
+"0": "Een laminaire grenslaag over de hele bovenzijde, met een aanliggende luchtstroom",
+"1": "Een turbulente grenslaag vooraan op de vleugel, een laminaire grenslaag achteraan",
+"2": "Een laminaire grenslaag vooraan op de vleugel, een turbulente grenslaag achteraan",
+"3": "Een turbulente grenslaag over de hele bovenzijde, met een loslatende luchtstroom"
+}
+},
+"665966": {
+"question": "Wat is (onder andere) de functie van het horizontale staartvlak?",
+"options": {
+"0": "Een bocht inzetten rond de topas",
+"1": "Het vliegtuig stabiliseren rond de langsas",
+"2": "Het vliegtuig stabiliseren rond de dwarsas",
+"3": "Het vliegtuig stabiliseren rond de topas"
+}
+},
+"665964": {
+"question": "De stabiliteit rond welke as wordt vooral beïnvloed door de ligging van het zwaartepunt in de lengterichting?",
+"options": {
+"0": "Topas",
+"1": "Langsas",
+"2": "Zwaartekrachtas",
+"3": "Dwarsas"
+}
+},
+"665961": {
+"question": "Welk constructie-element geeft een vliegtuig stabiliteit rond de langsas (rolstabiliteit)?",
+"options": {
+"0": "Het hoogteroer",
+"1": "Het verticale staartvlak",
+"2": "Differentiële rolroeruitslag",
+"3": "De V-stand van de vleugels"
+}
+},
+"665962": {
+"question": "Welke constructieve eigenschap toont de figuur? Zie figuur (PFA-006) L: lift",
+"options": {
+"0": "Richtingsstabiliteit door liftopwekking",
+"1": "Differentiële rolroeruitslag",
+"2": "Rolstabiliteit door de V-stand van de vleugels",
+"3": "Langsstabiliteit door de V-stand van de vleugels"
+}
+},
+"665963": {
+"question": "\"Langsstabiliteit\" is stabiliteit rond welke as?",
+"options": {
+"0": "Langsas",
+"1": "Topas",
+"2": "Propelleras",
+"3": "Dwarsas"
+}
+},
+"665967": {
+"question": "Het hoogteroer beweegt een vliegtuig rond de…",
+"options": {
+"0": "hoogteroeras.",
+"1": "dwarsas.",
+"2": "topas.",
+"3": "langsas."
+}
+},
+"665968": {
+"question": "Het richtingsroer naar links uitslaan zorgt voor…",
+"options": {
+"0": "stampen van het vliegtuig naar rechts.",
+"1": "stampen van het vliegtuig naar links.",
+"2": "gieren van het vliegtuig naar rechts.",
+"3": "gieren van het vliegtuig naar links."
+}
+},
+"665970": {
+"question": "Welke constructieve oplossing kan het haakeffect (adverse yaw) compenseren?",
+"options": {
+"0": "Rolroertrim",
+"1": "De V-stand van de vleugels",
+"2": "Volledige uitslag van de rolroeren",
+"3": "Differentiële rolroeruitslag"
+}
+},
+"665969": {
+"question": "Wat is het voordeel van differentiële rolroeruitslag?",
+"options": {
+"0": "De totale lift blijft gelijk tijdens rolroeruitslag",
+"1": "De verhouding tussen weerstandscoëfficiënt en liftcoëfficiënt wordt groter",
+"2": "Het haakeffect (adverse yaw) wordt groter",
+"3": "De weerstand van het neerwaarts uitgeslagen rolroer is lager, waardoor het haakeffect kleiner wordt"
+}
+},
+"665971": {
+"question": "De aerodynamische compensatie van een roer…",
+"options": {
+"0": "verkleint de stuurkrachten.",
+"1": "verkleint de stuurvlakken.",
+"2": "stelt de overtrek uit.",
+"3": "verbetert de werking van het roer."
+}
+},
+"665972": {
+"question": "Tijdens kruisvlucht met constant vermogen heeft een vliegtuig voortdurend de neiging om de neus op te tillen. Hoe kun je dat wegwerken?",
+"options": {
+"0": "Door het zwaartepunt naar achteren te verplaatsen",
+"1": "Door het trimvlak van het hoogteroer naar beneden uit te slaan",
+"2": "Door het hoogteroer naar boven uit te slaan",
+"3": "Door het trimvlak van het hoogteroer naar boven uit te slaan"
+}
+},
+"665929": {
+"question": "Vliegen met een snelheid hoger dan de never-exceed-snelheid (VNE) kan leiden tot…",
+"options": {
+"0": "een te hoge totale druk, waardoor de snelheidsmeter onbruikbaar wordt.",
+"1": "minder weerstand met grotere stuurkrachten.",
+"2": "flutter en mechanische schade aan de vleugels.",
+"3": "een betere lift/weerstandverhouding en een betere glijhoek."
+}
+},
+"665973": {
+"question": "Wat beschrijft de \"vleugelbelasting\"?",
+"options": {
+"0": "Weerstand per vleugeloppervlak",
+"1": "Vleugeloppervlak per gewicht",
+"2": "Gewicht per vleugeloppervlak",
+"3": "Weerstand per gewicht"
+}
+},
+"665974": {
+"question": "De verandering van de spoed van een propellerblad van de wortel naar de tip zorgt voor…",
+"options": {
+"0": "de grootst mogelijke aanvalshoek aan de bladtip.",
+"1": "een bijna constante belasting door een gelijke effectieve aanvalshoek over de hele lengte van het blad.",
+"2": "de meeste stuwkracht aan de bladwortel.",
+"3": "de meeste stuwkracht aan de bladtip."
+}
+},
+"665930": {
+"question": "Welke gevolgen heeft ijsafzetting op de propeller meestal?",
+"options": {
+"0": "Minder vermogen, dalend toerental.",
+"1": "Meer vermogen, dalend toerental.",
+"2": "Meer vermogen, stijgend toerental.",
+"3": "Minder vermogen, stijgend toerental."
+}
+},
+"665977": {
+"question": "Hoe verandert het krachtenevenwicht tijdens een bocht?",
+"options": {
+"0": "De resulterende kracht is de som van de zwaartekracht en de centripetale kracht",
+"1": "Een kleinere liftkracht compenseert een kleinere resulterende kracht dan in horizontale vlucht",
+"2": "De liftkracht moet groter worden om de som van centrifugaalkracht en zwaartekracht te compenseren",
+"3": "De horizontale component van de liftkracht in een bocht is de centrifugaalkracht"
+}
+},
+"665975": {
+"question": "De hellingshoek in een bocht van twee minuten (rate one turn) hangt af van de…",
+"options": {
+"0": "wind.",
+"1": "belastingsfactor.",
+"2": "massa.",
+"3": "TAS (ware luchtsnelheid)."
+}
+},
+"665892": {
+"question": "Welke zin gebruikt een piloot om de toren te melden dat hij een doorstart maakt?"
 }
 }
