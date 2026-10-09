@@ -101,7 +101,7 @@ window.GLOSSARY = (function () {
     TORA: ['Take-Off Run Available', 'beschikbare startbaanlengte.'],
     LDA: ['Landing Distance Available', 'beschikbare landingsafstand.'],
     RWY: ['Runway', 'start- en landingsbaan.'],
-    PARE: ['Power – Ailerons – Rudder – Elevator', 'geheugensteun voor het herstel uit een vrille.'],
+    PARE: ['Power – Ailerons – Rudder – Elevator', 'geheugensteun voor het herstel uit een spin.'],
 
     // --- Meteo ---
     ISA: ['International Standard Atmosphere', 'standaardatmosfeer: 15 °C en 1013,25 hPa op zeeniveau, −2 °C per 1000 ft.'],
