@@ -6533,5 +6533,3832 @@ window.EXTRA_QUESTIONS = [
   "nagekeken": "Sven",
   "bijgewerkt": "2026-10-09",
   "fragment": "Regulation (EU) No 923/2012\nWhen other meteorological conditions not listed under SERA.12005(a), e.g. wind shear, are encountered and which, in the opinion of the pilot-in-command, may affect the safety or markedly affect the efficiency of other aircraft operations, the pilot-in-command shall advise the appropriate air traffic services unit as soon as practicable."
+ },
+ {
+  "id": "FCL-01",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je bent geslaagd voor je praktijkexamen (skill test) voor de PPL(A). Binnen welke termijn moet je de afgifte van je vergunning aanvragen?",
+  "o": [
+   "Uiterlijk 6 maanden na het slagen voor het praktijkexamen",
+   "Uiterlijk 3 maanden na het slagen voor het praktijkexamen",
+   "Uiterlijk 12 maanden na het slagen voor het praktijkexamen",
+   "Uiterlijk 24 maanden na het slagen voor het praktijkexamen"
+  ],
+  "c": 0,
+  "e": "Je moet de afgifte aanvragen uiterlijk 6 maanden nadat je geslaagd bent voor het praktijkexamen. Dezelfde termijn geldt voor de afgifte van een bevoegdverklaring of certificaat.\n\n**Wat zegt de regel?**\nDe aanvraag gaat naar de bevoegde autoriteit, in de vorm die zij vastlegt, samen met het bewijs dat je aan de eisen van Part-FCL en Part-MED voldoet.\n\n**In de praktijk:**\nDien je dossier meteen na je examen in, zodat je niet tegen de termijn aanloopt.\n\n**Valkuil:**\n24 maanden is de geldigheid van je geslaagde theorie-examen, niet de termijn om na je praktijkexamen de vergunning aan te vragen.",
+  "src": "fcl",
+  "ref": "FCL.015 – Aanvraag en afgifte van vergunningen, bevoegdverklaringen en certificaten",
+  "doc": "aircrew",
+  "art": "FCL.015",
+  "citaat": "For the issue of a licence, rating or certificate the applicant shall apply not later than 6 months after having succeeded at the skill test or assessment of competence.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(f) For the issue of a licence, rating or certificate the applicant shall apply not later than 6 months after having succeeded at the skill test or assessment of competence."
+ },
+ {
+  "id": "FCL-02",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Hoeveel procent van de punten moet je minstens halen om te slagen voor één examenvak (examination paper) van het theorie-examen PPL(A)?",
+  "o": [
+   "75 %, zonder strafpunten voor foute antwoorden",
+   "70 %, zonder strafpunten voor foute antwoorden",
+   "75 %, met aftrek van punten voor foute antwoorden",
+   "80 %, zonder strafpunten voor foute antwoorden"
+  ],
+  "c": 0,
+  "e": "Je slaagt voor een examenvak als je minstens 75 % van de punten haalt. Er worden geen strafpunten gegeven voor foute antwoorden.\n\n**Wat zegt de regel?**\nHet slaagcijfer geldt per examenvak (paper), niet als gemiddelde over alle vakken. Een sterk vak compenseert dus geen zwak vak.\n\n**In de praktijk:**\nLaat nooit een vraag open: een fout antwoord kost je niets extra.\n\n**Valkuil:**\nDe grens ligt niet op 70 % of 80 %, en er is geen negatieve puntentelling.",
+  "src": "fcl",
+  "ref": "FCL.025 – Theorie-examens voor de afgifte van vergunningen en bevoegdverklaringen",
+  "doc": "aircrew",
+  "art": "FCL.025",
+  "citaat": "A pass in a theoretical knowledge examination paper will be awarded to an applicant achieving at least 75 % of the marks allocated to that paper. No penalty marking shall be applied.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "… If the applicant has failed to attempt at least one theoretical knowledge examination paper within this period of validity, the need for further training shall be determined by the DTO or the ATO, based on the needs of the applicant.\n(b) Pass standards\n(1) A pass in a theoretical knowledge examination paper will be awarded to an applicant achieving at least 75 % of the marks allocated to that paper. No penalty marking shall be applied.\n(2) Unless otherwise determined in this Part, an applicant has successfully completed the required theoretical knowledge examination for the appropriate pilot licence or rating if he or she has passed all the required theoretical knowledge examination papers within a period of 18 months counted from the end of the calendar month when the applicant first attempted an examination.\n(3) If an applicant for the ATPL theoretical knowledge examination, …"
+ },
+ {
+  "id": "FCL-03",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je legt in maart je eerste theorie-examenvak voor de PPL(A) af. Binnen welke periode moet je voor alle vereiste vakken geslaagd zijn?",
+  "o": [
+   "Binnen 18 maanden, gerekend vanaf het einde van de kalendermaand van je eerste poging",
+   "Binnen 18 maanden, gerekend vanaf de dag van je eerste poging",
+   "Binnen 12 maanden, gerekend vanaf het einde van de kalendermaand van je eerste poging",
+   "Binnen 24 maanden, gerekend vanaf de dag van je eerste poging"
+  ],
+  "c": 0,
+  "e": "Alle vakken moeten geslaagd zijn binnen 18 maanden, gerekend vanaf het einde van de kalendermaand waarin je je eerste examenpoging deed. Een eerste poging in maart betekent dus dat de 18 maanden vanaf eind maart lopen.\n\n**Wat zegt de regel?**\nLukt dat niet binnen die periode, dan moet je de volledige reeks examenvakken opnieuw afleggen, na bijkomende opleiding bij je DTO of ATO.\n\n**Valkuil:**\nDe 24 maanden gaan over hoe lang je geslaagde theorie geldig blijft voor de afgifte van je vergunning, niet over de periode waarbinnen je alle vakken moet halen.",
+  "src": "fcl",
+  "ref": "FCL.025 – Theorie-examens voor de afgifte van vergunningen en bevoegdverklaringen",
+  "doc": "aircrew",
+  "art": "FCL.025",
+  "citaat": "if he or she has passed all the required theoretical knowledge examination papers within a period of 18 months counted from the end of the calendar month when the applicant first attempted an examination.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "… No penalty marking shall be applied.\n(2) Unless otherwise determined in this Part, an applicant has successfully completed the required theoretical knowledge examination for the appropriate pilot licence or rating if he or she has passed all the required theoretical knowledge examination papers within a period of 18 months counted from the end of the calendar month when the applicant first attempted an examination.\n(3) If an applicant for the ATPL theoretical knowledge examination, or for the issue of a commercial pilot licence (CPL), or an instrument rating (IR) has failed to pass one of the theoretical knowledge examination papers within four attempts, or has failed to pass all papers within either six sittings or within the period mentioned in point (b)(2), he or she shall retake the complete set of theoretical knowledge examination papers.\n(4) If appli …"
+ },
+ {
+  "id": "FCL-04",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je zakt voor de vierde keer voor het examenvak Meteorologie van de PPL(A). Wat is het gevolg?",
+  "o": [
+   "Je moet de volledige reeks theorie-examenvakken opnieuw afleggen, na bijkomende opleiding",
+   "Je mag alleen Meteorologie nog één vijfde keer afleggen",
+   "Je moet alleen Meteorologie opnieuw afleggen, na een wachttijd van 3 maanden",
+   "Je moet de volledige PPL-opleiding inclusief vlieguren opnieuw doen"
+  ],
+  "c": 0,
+  "e": "Na vier mislukte pogingen voor één examenvak moet je de volledige reeks theorie-examenvakken opnieuw afleggen. Ook vakken waarvoor je al geslaagd was, vervallen dan.\n\n**Wat zegt de regel?**\nVoor LAPL en PPL heb je per vak maximaal vier pogingen. Voor je opnieuw begint, volg je bijkomende opleiding bij een DTO of ATO; die organisatie bepaalt hoeveel opleiding je nodig hebt.\n\n**Valkuil:**\nEr is geen vijfde poging voor dat ene vak. Je vlieguren blijven wel staan: het gaat alleen om de theorie-examens.",
+  "src": "fcl",
+  "ref": "FCL.025 – Theorie-examens voor de afgifte van vergunningen en bevoegdverklaringen",
+  "doc": "aircrew",
+  "art": "FCL.025",
+  "citaat": "have failed to pass one of the theoretical knowledge examination papers within four attempts or have failed to pass all papers within the period mentioned in point (b)(2), they shall retake the complete set of theoretical knowledge examination papers.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "… instrument rating (IR) has failed to pass one of the theoretical knowledge examination papers within four attempts, or has failed to pass all papers within either six sittings or within the period mentioned in point (b)(2), he or she shall retake the complete set of theoretical knowledge examination papers.\n(4) If applicants for the issue of a light aircraft pilot licence (LAPL), a private pilot licence (PPL), or a basic instrument rating (BIR) have failed to pass one of the theoretical knowledge examination papers within four attempts or have failed to pass all papers within the period mentioned in point (b)(2), they shall retake the complete set of theoretical knowledge examination papers.\n[applicable until 17 February 2026 - Regulation (EU) 2024/2076]\n(4) If applicants for the issue of a light aircraft pilot licence (LAPL), a private pilot licence (PPL), a basic instrument rating (BIR) or a gyroplane pilot licence (GPL) have failed to pass one of the theoretical knowledge examination papers within four attempts or have failed to pass all papers within the period mentioned in point (b)(2), they shall retake the complete set of the …"
+ },
+ {
+  "id": "FCL-05",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je bent geslaagd voor alle theorie-examenvakken van de PPL(A). Hoe lang blijft dat resultaat geldig voor de afgifte van je vergunning?",
+  "o": [
+   "24 maanden, gerekend vanaf de dag waarop je het theorie-examen volledig hebt afgerond",
+   "18 maanden, gerekend vanaf de dag waarop je het theorie-examen volledig hebt afgerond",
+   "36 maanden, gerekend vanaf de dag waarop je het theorie-examen volledig hebt afgerond",
+   "Onbeperkt, zolang je de opleiding niet onderbreekt"
+  ],
+  "c": 0,
+  "e": "Je geslaagde theorie-examen blijft 24 maanden geldig voor de afgifte van een LAPL of PPL, gerekend vanaf de dag waarop je alle vereiste vakken hebt behaald.\n\n**Wat zegt de regel?**\nVoor een CPL, MPL of instrumentbevoegdverklaring (IR) is dat 36 maanden; voor de BIR is de geldigheid onbeperkt.\n\n**In de praktijk:**\nPlan je praktijkexamen en je aanvraag zo dat je vergunning binnen die 24 maanden wordt afgegeven. Anders moet je de theorie opnieuw afleggen.\n\n**Valkuil:**\n36 maanden geldt voor beroepsvergunningen, niet voor de PPL.",
+  "src": "fcl",
+  "ref": "FCL.025 – Theorie-examens voor de afgifte van vergunningen en bevoegdverklaringen",
+  "doc": "aircrew",
+  "art": "FCL.025",
+  "citaat": "for the issue of a light aircraft pilot licence, a private pilot licence or a gyroplane pilot licence, for a period of 24 months;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "for the issue of a light aircraft pilot licence, a private pilot licence or a gyroplane pilot licence, for a period of 24 months;\n[applicable from 18 February 2026 - Regulation (EU) 2025/134]\n(ii) for the issue of a commercial pilot licence, a multi-crew pilot licence or an instrument rating (IR), for a period of 36 months;\n(iii) for the issue of a basic instrument rating (BIR), for an unlimited duration."
+ },
+ {
+  "id": "FCL-06",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je volgt een gewone (niet-geïntegreerde) PPL(A)-opleiding en je vlieguren zijn rond. Wat moet in orde zijn voordat je het praktijkexamen (skill test) mag afleggen?",
+  "o": [
+   "Je moet geslaagd zijn voor het theorie-examen en door je opleiding aanbevolen zijn voor het praktijkexamen",
+   "Je mag het praktijkexamen afleggen zodra je vlieguren rond zijn, het theorie-examen mag erna",
+   "Je moet alleen je medisch certificaat kunnen voorleggen; de opleiding hoeft je niet aan te bevelen",
+   "Je moet minstens één theorievak geslaagd zijn; de rest mag binnen 6 maanden na het praktijkexamen"
+  ],
+  "c": 0,
+  "e": "Je moet geslaagd zijn voor het vereiste theorie-examen en je opleiding moet je aanbevelen voor het praktijkexamen. Alleen in een geïntegreerde opleiding mag het theorie-examen later komen.\n\n**Wat zegt de regel?**\nDe theorie-opleiding moet in elk geval afgerond zijn vóór het praktijkexamen. De organisatie of persoon die je opleidde, beveelt je aan zodra de opleiding klaar is, en je opleidingsdossier gaat naar de examinator.\n\n**Valkuil:**\nGenoeg vlieguren alleen volstaan niet: zonder geslaagd theorie-examen mag je niet op examen.",
+  "src": "fcl",
+  "ref": "FCL.030 – Praktijkexamen (skill test)",
+  "doc": "aircrew",
+  "art": "FCL.030",
+  "citaat": "Before a skill test for the issue of a licence, rating or certificate is taken, the applicant shall have passed the required theoretical knowledge examination, except in the case of applicants undergoing a course of integrated flying training.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) Before a skill test for the issue of a licence, rating or certificate is taken, the applicant shall have passed the required theoretical knowledge examination, except in the case of applicants undergoing a course of integrated flying training."
+ },
+ {
+  "id": "FCL-07",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je PPL(A) en je bevoegdverklaring voor klasse eenmotorige zuigermotorvliegtuigen (SEP) zijn in orde, maar je medisch certificaat klasse 2 is gisteren verlopen. Mag je vandaag alleen een vlucht uitvoeren als gezagvoerder?",
+  "o": [
+   "Nee, je mag de voorrechten van je vergunning pas weer uitoefenen met een geldig medisch certificaat",
+   "Ja, want je vergunning en je klassebevoegdverklaring zijn nog geldig",
+   "Ja, zolang je geen passagiers meeneemt",
+   "Ja, gedurende een overgangsperiode van 30 dagen na de vervaldatum"
+  ],
+  "c": 0,
+  "e": "Nee. Je mag de voorrechten van je vergunning alleen uitoefenen als je bevoegdverklaringen én je medisch certificaat geldig zijn.\n\n**Wat zegt de regel?**\nDe vergunning zelf blijft bestaan, maar ze is pas bruikbaar met een geldige bevoegdverklaring voor de klasse die je vliegt en een medisch certificaat dat past bij de voorrechten die je gebruikt.\n\n**In de praktijk:**\nHoud de vervaldata van je medisch certificaat en je klassebevoegdverklaring bij en plan je keuring op tijd.\n\n**Valkuil:**\nZonder passagiers vliegen verandert niets: ook een solovlucht als gezagvoerder vereist een geldig medisch certificaat. Een overgangsperiode bestaat niet.",
+  "src": "fcl",
+  "ref": "FCL.040 – Uitoefenen van de voorrechten van vergunningen",
+  "doc": "aircrew",
+  "art": "FCL.040",
+  "citaat": "The exercise of the privileges granted by a licence shall be dependent upon the validity of the ratings contained therein, if applicable, and of the medical certificate as appropriate to the privileges exercised.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "The exercise of the privileges granted by a licence shall be dependent upon the validity of the ratings contained therein, if applicable, and of the medical certificate as appropriate to the privileges exercised."
+ },
+ {
+  "id": "FCL-08",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Welke persoonlijke documenten moet je als piloot altijd bij je hebben wanneer je de voorrechten van je PPL(A) uitoefent?",
+  "o": [
+   "Je geldige vergunning, je geldige medisch certificaat en een identiteitsbewijs met foto",
+   "Alleen je geldige vergunning; het medisch certificaat mag thuis blijven",
+   "Je vergunning en je medisch certificaat; een identiteitsbewijs alleen bij internationale vluchten",
+   "Je vergunning, je medisch certificaat en je persoonlijk vlieglogboek, maar geen identiteitsbewijs"
+  ],
+  "c": 0,
+  "e": "Je moet je geldige vergunning, je geldige medisch certificaat en een persoonlijk identiteitsbewijs met foto bij je hebben.\n\n**Wat zegt de regel?**\nDie verplichting geldt telkens je de voorrechten van je vergunning uitoefent, dus ook bij een korte lokale vlucht. Je vlieglogboek moet je zonder onnodige vertraging tonen als een gemachtigde vertegenwoordiger van de bevoegde autoriteit erom vraagt.\n\n**Valkuil:**\nHet identiteitsbewijs met foto is niet beperkt tot internationale vluchten: de regel maakt geen onderscheid.",
+  "src": "fcl",
+  "ref": "FCL.045 – Verplichting om documenten mee te nemen en voor te leggen",
+  "doc": "aircrew",
+  "art": "FCL.045",
+  "citaat": "(a) A valid licence and a valid medical certificate shall always be carried by the pilot when exercising the privileges of the licence.\n(b) The pilot shall also carry a personal identification document containing his/her photo.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) A valid licence and a valid medical certificate shall always be carried by the pilot when exercising the privileges of the licence.\n(b) The pilot shall also carry a personal identification document containing his/her photo."
+ },
+ {
+  "id": "FCL-09",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je oefent op één dag een reeks circuits: telkens land je op je vertrekveld en vertrek je opnieuw. Wanneer mag je die vluchten als één regel in je logboek inschrijven?",
+  "o": [
+   "Als je telkens terugkeert naar dezelfde vertrekplaats en er tussen de opeenvolgende vluchten niet meer dan 30 minuten zit",
+   "Als er tussen de opeenvolgende vluchten niet meer dan 60 minuten zit, ook als je op een ander veld landt",
+   "Altijd, zolang alle vluchten op dezelfde dag plaatsvinden",
+   "Nooit: elke vlucht moet altijd als afzonderlijke regel worden ingeschreven"
+  ],
+  "c": 0,
+  "e": "Een reeks vluchten op dezelfde dag mag als één regel in je logboek, als je telkens terugkeert naar dezelfde vertrekplaats en er tussen de vluchten niet meer dan 30 minuten zit.\n\n**Wat zegt de regel?**\nJe moet een betrouwbaar overzicht bijhouden van alle vluchten die je uitvoert. Per vlucht noteer je onder meer de datum, plaats en tijd van vertrek en aankomst, type en registratie, de naam van de gezagvoerder en de totale vliegtijd.\n\n**Valkuil:**\nDezelfde dag alleen volstaat niet: de pauze tussen de vluchten mag niet langer zijn dan 30 minuten.",
+  "src": "fcl",
+  "ref": "AMC1 FCL.050 – Registratie van vliegtijd (logboek)",
+  "doc": "aircrew",
+  "art": "AMC1 FCL.050",
+  "citaat": "if the holder of a pilot licence carries out a number of flights upon the same day returning on each occasion to the same place of departure and the interval between successive flights does not exceed 30 minutes, such series of flights may be recorded as a single entry;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "… he or she acts as an instructor in an aircraft;\n(iv) the holder of an examiner’s certificate may log as PIC all flight time during which he or she occupies a pilot’s seat and acts as an examiner in an aircraft;\n(v) a co-pilot acting as PICUS on an aircraft on which more than one pilot is required under the type certification of the aircraft or as required by operational requirements provided that such PICUS time is countersigned by the PIC;\n(vi) if the holder of a pilot licence carries out a number of flights upon the same day returning on each occasion to the same place of departure and the interval between successive flights does not exceed 30 minutes, such series of flights may be recorded as a single entry;\n(vii) where Regulation (EU) No 965/2012 requires the pilot to act as PIC under the supervision of another pilot (supervisor), both the pilot and the supervisor may log the flight time as PIC.\n(2) co-pilot flight time: the holder of a pilot licence occupying a pilot seat as co-pilot may log all flight time as co-pilot flight time on an aircraft on which more than one pilot is required under the type certification of the aircraft, the regulations …"
+ },
+ {
+  "id": "FCL-10",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Welk minimumniveau van taalvaardigheid (language proficiency) moet op je vergunning staan om als piloot de radio te mogen gebruiken?",
+  "o": [
+   "Operationeel niveau (niveau 4)",
+   "Elementair niveau (niveau 3)",
+   "Gevorderd niveau (niveau 5)",
+   "Expertniveau (niveau 6)"
+  ],
+  "c": 0,
+  "e": "Het minimum is het operationele niveau, niveau 4. Daaronder mag je de voorrechten van je vergunning niet uitoefenen als je de radio moet gebruiken.\n\n**Wat zegt de regel?**\nDe aantekening op je vergunning vermeldt de taal, het niveau en de geldigheidsdatum. Je toont je taalvaardigheid aan bij een assessor of een taaltestorganisatie die de bevoegde autoriteit heeft aanvaard. Je moet zowel standaardfraseologie als gewone taal beheersen, ook bij een onverwachte wending.\n\n**Valkuil:**\nNiveau 5 en 6 zijn hogere niveaus die je mag halen, maar ze zijn niet vereist.",
+  "src": "fcl",
+  "ref": "FCL.055 – Taalvaardigheid (language proficiency)",
+  "doc": "aircrew",
+  "art": "FCL.055",
+  "citaat": "The minimum acceptable proficiency level is the operational level (Level 4) in accordance with Appendix 2 to this Annex.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) General. Aeroplane, helicopter, powered-lift and airship pilots required to use the radio telephone shall not exercise the privileges of their licences and ratings unless they have a language proficiency endorsement on their licence in either English or the language used for radio communications involved in the flight. The endorsement shall indicate the language, the proficiency level and the validity date, and it shall be obtained in accordance with a procedure established by a competent authority. The minimum acceptable proficiency level is the operational level (Level 4) in accordance with Appendix 2 to this Annex."
+ },
+ {
+  "id": "FCL-11",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je hebt je taalvaardigheid aangetoond op niveau 4 (operationeel). Na hoeveel tijd moet die opnieuw worden beoordeeld?",
+  "o": [
+   "Na 4 jaar",
+   "Na 6 jaar",
+   "Na 2 jaar",
+   "Nooit: niveau 4 blijft onbeperkt geldig"
+  ],
+  "c": 0,
+  "e": "Taalvaardigheid op niveau 4 moet elke 4 jaar opnieuw worden beoordeeld.\n\n**Wat zegt de regel?**\nNiveau 5 (extended level) wordt elke 6 jaar opnieuw beoordeeld. Alleen wie niveau 6 (expertniveau) heeft aangetoond, hoeft niet periodiek opnieuw te worden beoordeeld.\n\n**In de praktijk:**\nControleer de geldigheidsdatum van je taalaantekening op je vergunning. Verloopt ze, dan mag je de radio niet meer gebruiken voor je vlucht en dus je voorrechten niet uitoefenen.\n\n**Valkuil:**\n6 jaar hoort bij niveau 5, en onbeperkte geldigheid alleen bij niveau 6.",
+  "src": "fcl",
+  "ref": "FCL.055 – Taalvaardigheid (language proficiency)",
+  "doc": "aircrew",
+  "art": "FCL.055",
+  "citaat": "(1) 4 years, if the level demonstrated is operational level (level 4); or\n(2) 6 years, if the level demonstrated is extended level (level 5).",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(c) Except for pilots who have demonstrated language proficiency at an expert level (level 6) in accordance with Appendix 2 to this Annex, the language proficiency endorsement shall be re-evaluated every:\n(1) 4 years, if the level demonstrated is operational level (level 4); or\n(2) 6 years, if the level demonstrated is extended level (level 5)."
+ },
+ {
+  "id": "FCL-12",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "In welke taal moet de aantekening voor taalvaardigheid op je vergunning staan om de radio te mogen gebruiken tijdens een vlucht?",
+  "o": [
+   "In het Engels of in de taal die tijdens die vlucht voor de radiocommunicatie wordt gebruikt",
+   "Altijd in het Engels, ongeacht waar je vliegt",
+   "In de officiële taal van de lidstaat die je vergunning heeft afgegeven",
+   "In je moedertaal, aangevuld met de ICAO-fraseologie"
+  ],
+  "c": 0,
+  "e": "Je hebt een aantekening nodig in het Engels of in de taal die tijdens die vlucht voor de radiocommunicatie wordt gebruikt.\n\n**Wat zegt de regel?**\nPiloten die de radio moeten gebruiken, mogen hun voorrechten alleen uitoefenen met zo'n aantekening op hun vergunning, op minstens niveau 4.\n\n**In de praktijk:**\nVlieg je over de grens en spreek je daar in het Engels met de luchtverkeersdienst, dan heb je een Engelse aantekening nodig. Een aantekening alleen in het Nederlands of Frans volstaat dan niet.\n\n**Valkuil:**\nDe verplichting om Engels aan te tonen geldt specifiek voor houders van een instrumentbevoegdverklaring (IR), niet voor elke PPL-houder.",
+  "src": "fcl",
+  "ref": "FCL.055 – Taalvaardigheid (language proficiency)",
+  "doc": "aircrew",
+  "art": "FCL.055",
+  "citaat": "unless they have a language proficiency endorsement on their licence in either in English or the language used for radio communications involved in the flight.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) General. Aeroplane, helicopter, powered-lift aircraft, airship and gyroplane pilots required to use the radio telephone shall not exercise the privileges of their licences and ratings unless they have a language proficiency endorsement on their licence in either in English or the language used for radio communications involved in the flight. The endorsement shall indicate the language, the proficiency level and the validity date, and it shall be obtained in accordance with a procedure established by a competent authority. The minimum acceptable proficiency level is the operational level (Level 4) in accordance with Appendix 2 to this Annex."
+ },
+ {
+  "id": "FCL-13",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je laatste vlucht in een eenmotorig zuigermotorvliegtuig (SEP) was 4 maanden geleden. Je wilt overdag een vriend meenemen. Wat moet je volgens Part-FCL eerst doen?",
+  "o": [
+   "Minstens 3 starts, naderingen en landingen uitvoeren als pilot flying in hetzelfde type of dezelfde klasse (of een FFS daarvan)",
+   "Minstens 1 start, nadering en landing uitvoeren in hetzelfde type of dezelfde klasse",
+   "Minstens 5 starts en landingen uitvoeren binnen de laatste 30 dagen",
+   "Niets, zolang je klassebevoegdverklaring SEP nog geldig is"
+  ],
+  "c": 0,
+  "e": "Je moet eerst minstens 3 starts, naderingen en landingen uitvoeren als pilot flying in hetzelfde type of dezelfde klasse (of een full flight simulator daarvan). Pas daarna mag je passagiers meenemen.\n\n**Wat zegt de regel?**\nDie 3 starts, naderingen en landingen moeten binnen de voorafgaande 90 dagen liggen. Een vlucht van 4 maanden geleden telt dus niet meer.\n\n**In de praktijk:**\nVlieg eerst alleen, of met een instructeur, enkele circuits. Een instructeur aan boord voor die vluchten geldt niet als passagier.\n\n**Valkuil:**\nEen geldige klassebevoegdverklaring zegt niets over je recente ervaring: voor passagiers geldt deze aparte eis.",
+  "src": "fcl",
+  "ref": "FCL.060 – Recente ervaring (recent experience)",
+  "doc": "aircrew",
+  "art": "FCL.060",
+  "citaat": "as PIC or co-pilot unless he or she has carried out, in the preceding 90 days, at least 3 takeoffs, approaches and landings as a pilot flying in an aircraft of the same type or class or an FFS representing that type or class.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(b) Aeroplanes, helicopters, powered-lift aircraft, airships, VTOL-capable aircraft (VCA) and gyroplanes. A pilot shall not operate an aircraft in commercial air transport or for carrying passengers:\n[applicable from 18 February 2026 - Regulation (EU) 2025/134]\n(1) as PIC or co-pilot unless he or she has carried out, in the preceding 90 days, at least 3 takeoffs, approaches and landings as a pilot flying in an aircraft of the same type or class or an FFS representing that type or class. The 3 take-offs and landings shall be performed in either multi-pilot or single-pilot operations, depending on the privileges held by the pilot; and\n(2) as PIC at night unless he/she:"
+ },
+ {
+  "id": "FCL-14",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je hebt een nachtbevoegdverklaring maar geen instrumentbevoegdverklaring (IR). Wat moet je minstens gedaan hebben om 's nachts als gezagvoerder passagiers mee te nemen?",
+  "o": [
+   "Binnen de voorafgaande 90 dagen minstens 1 start, nadering en landing 's nachts als pilot flying in hetzelfde type of dezelfde klasse",
+   "Binnen de voorafgaande 90 dagen minstens 3 starts, naderingen en landingen 's nachts in hetzelfde type of dezelfde klasse",
+   "Binnen de voorafgaande 30 dagen minstens 1 start, nadering en landing 's nachts",
+   "Binnen de voorafgaande 12 maanden minstens 1 uur nachtvliegen met een instructeur"
+  ],
+  "c": 0,
+  "e": "Je moet binnen de voorafgaande 90 dagen minstens 1 start, nadering en landing 's nachts hebben uitgevoerd als pilot flying in hetzelfde type of dezelfde klasse (of een FFS daarvan).\n\n**Wat zegt de regel?**\nDie nachteis komt bovenop de algemene eis van 3 starts, naderingen en landingen in 90 dagen voor het vervoer van passagiers. Wie een IR heeft, is van de nachteis vrijgesteld.\n\n**In de praktijk:**\nPlan voor een nachtvlucht met passagiers zo nodig eerst een circuit 's nachts alleen of met een instructeur.\n\n**Valkuil:**\nVoor de nacht volstaat 1 start, nadering en landing; de 3 hoort bij de algemene eis.",
+  "src": "fcl",
+  "ref": "FCL.060 – Recente ervaring (recent experience)",
+  "doc": "aircrew",
+  "art": "FCL.060",
+  "citaat": "(i) has carried out in the preceding 90 days at least 1 take-off, approach and landing at night as a pilot flying in an aircraft of the same type or class or an FFS representing that type or class; or",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(i) has carried out in the preceding 90 days at least 1 take-off, approach and landing at night as a pilot flying in an aircraft of the same type or class or an FFS representing that type or class; or\n(ii) holds an IR;\n(3) as cruise relief co-pilot unless he or she has completed, within the preceding 90 days, either of the following:"
+ },
+ {
+  "id": "FCL-15",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je bent 67 jaar, hebt een PPL(A), een geldige klassebevoegdverklaring SEP en een geldig medisch certificaat. Mag je volgens Part-FCL nog privé vliegen als gezagvoerder?",
+  "o": [
+   "Ja: de leeftijdsgrenzen van 60 en 65 jaar in Part-FCL gelden alleen voor commercieel luchtvervoer",
+   "Nee: vanaf 65 jaar mag je geen gezagvoerder meer zijn",
+   "Ja, maar alleen met een tweede piloot aan boord",
+   "Ja, maar alleen zonder passagiers"
+  ],
+  "c": 0,
+  "e": "Ja. Part-FCL beperkt piloten vanaf 60 jaar alleen in commercieel luchtvervoer (CAT). Voor niet-commerciële vluchten met je PPL(A) geldt geen maximumleeftijd.\n\n**Wat zegt de regel?**\nVan 60 tot 64 jaar mag je in commercieel luchtvervoer alleen nog vliegen als lid van een bemanning met meerdere piloten. Vanaf 65 jaar mag je helemaal niet meer vliegen in commercieel luchtvervoer.\n\n**In de praktijk:**\nOp hogere leeftijd blijft wel een geldig medisch certificaat nodig, en dat moet je vaker laten vernieuwen.\n\n**Valkuil:**\nDe verplichting om met een tweede piloot te vliegen geldt alleen tussen 60 en 64 jaar, en alleen in commercieel luchtvervoer.",
+  "src": "fcl",
+  "ref": "FCL.065 – Beperking van voorrechten vanaf 60 jaar in commercieel luchtvervoer",
+  "doc": "aircrew",
+  "art": "FCL.065",
+  "citaat": "Holders of a pilot licence who has attained the age of 65 years shall not act as a pilot of an aircraft that is engaged in commercial air transport.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "… Holders of a pilot licence who has attained the age of 65 years shall not act as a pilot of an aircraft that is engaged in commercial air transport."
+ },
+ {
+  "id": "FCL-16",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Wat is de minimumleeftijd om een PPL(A) of een LAPL(A) aan te vragen?",
+  "o": [
+   "17 jaar voor allebei",
+   "17 jaar voor de PPL(A), 16 jaar voor de LAPL(A)",
+   "18 jaar voor de PPL(A), 17 jaar voor de LAPL(A)",
+   "16 jaar voor allebei"
+  ],
+  "c": 0,
+  "e": "Je moet minstens 17 jaar zijn om een PPL(A) aan te vragen, en ook voor een LAPL voor vliegtuigen geldt 17 jaar.\n\n**Wat zegt de regel?**\nDe minimumleeftijd geldt voor de aanvrager van de vergunning. Je opleiding mag je jonger beginnen; voor je eerste solovlucht geldt een aparte, lagere leeftijdsgrens.\n\n**Valkuil:**\nDe LAPL(A) is een lichtere vergunning, maar ze heeft geen lagere minimumleeftijd: de grens ligt voor beide vergunningen op 17 jaar.",
+  "src": "fcl",
+  "ref": "FCL.200 en FCL.100 – Minimumleeftijd PPL en LAPL",
+  "doc": "aircrew",
+  "art": "FCL.200",
+  "citaat": "Applicants for a PPL or a GPL shall be at least 17 years old.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "Applicants for a PPL shall be at least 17 years old.\n[applicable until 17 February 2026 - Regulation (EU) 2020/359]\nApplicants for a PPL or a GPL shall be at least 17 years old.\n[applicable from 18 February 2026 - Regulation (EU) 2025/134]"
+ },
+ {
+  "id": "FCL-17",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Wat is de grootste gecertificeerde maximale startmassa (MTOM) van een eenmotorig zuigermotorvliegtuig (SEP) dat je met een LAPL(A) als gezagvoerder mag besturen?",
+  "o": [
+   "2 000 kg",
+   "1 200 kg",
+   "2 730 kg",
+   "5 700 kg"
+  ],
+  "c": 0,
+  "e": "Met een LAPL(A) mag je als gezagvoerder vliegen op SEP-vliegtuigen (land of water) en reismotorzweefvliegtuigen (TMG) met een gecertificeerde MTOM van ten hoogste 2 000 kg.\n\n**Wat zegt de regel?**\nDaarnaast mag je maximaal drie passagiers meenemen, zodat er nooit meer dan vier personen aan boord zijn.\n\n**In de praktijk:**\nKijk in het vlieghandboek (AFM) naar de gecertificeerde MTOM, niet naar de massa waarmee je vandaag vertrekt.\n\n**Valkuil:**\n5 700 kg is een bekende grens uit andere regelgeving, maar voor de LAPL(A) geldt 2 000 kg.",
+  "src": "fcl",
+  "ref": "FCL.105.A – LAPL(A): voorrechten en voorwaarden",
+  "doc": "aircrew",
+  "art": "FCL.105.A",
+  "citaat": "with a maximum certified take-off mass of 2 000 kg or less, carrying a maximum of three passengers",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) Privileges\nThe privileges of the holder of an LAPL for aeroplanes are to act as PIC on SEP aeroplanes-land (SEP(land)), SEP aeroplanes-sea (SEP(sea)) or TMG with a maximum certified take-off mass of 2 000 kg or less, carrying a maximum of three passengers, such that there are never more than four persons on board the aircraft.\n(b) Conditions\n(1) Holders of a LAPL(A) shall carry passengers only if they have completed 10 hours of flight time as PIC on aeroplanes or TMG after the issuance of the licence.\n(2) Holders of a LAPL(A) who previously held an ATPL(A), an MPL(A), a CPL(A) or a PPL(A), are exempted from the requirements laid down in point (b)(1)."
+ },
+ {
+  "id": "FCL-18",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je hebt een LAPL(A) en huurt een vierzits SEP-vliegtuig. Hoeveel personen mogen er in totaal aan boord zijn?",
+  "o": [
+   "Maximaal vier: jijzelf en ten hoogste drie passagiers",
+   "Maximaal drie: jijzelf en ten hoogste twee passagiers",
+   "Maximaal twee: jijzelf en één passagier",
+   "Zoveel als er zitplaatsen zijn in het vliegtuig"
+  ],
+  "c": 0,
+  "e": "Met een LAPL(A) mag je maximaal drie passagiers meenemen, zodat er nooit meer dan vier personen aan boord zijn.\n\n**Wat zegt de regel?**\nDe voorrechten gelden op SEP-vliegtuigen en TMG's met een gecertificeerde MTOM van 2 000 kg of minder. Passagiers mag je pas meenemen nadat je na de afgifte van je vergunning 10 uur als gezagvoerder hebt gevlogen.\n\n**Valkuil:**\nDe beperking geldt ook als het vliegtuig meer zitplaatsen heeft: het maximum van vier personen is een eis van de vergunning, los van het toestel.",
+  "src": "fcl",
+  "ref": "FCL.105.A – LAPL(A): voorrechten en voorwaarden",
+  "doc": "aircrew",
+  "art": "FCL.105.A",
+  "citaat": "carrying a maximum of three passengers, such that there are never more than four persons on board the aircraft.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) Privileges\nThe privileges of the holder of an LAPL for aeroplanes are to act as PIC on SEP aeroplanes-land (SEP(land)), SEP aeroplanes-sea (SEP(sea)) or TMG with a maximum certified take-off mass of 2 000 kg or less, carrying a maximum of three passengers, such that there are never more than four persons on board the aircraft.\n(b) Conditions\n(1) Holders of a LAPL(A) shall carry passengers only if they have completed 10 hours of flight time as PIC on aeroplanes or TMG after the issuance of the licence.\n(2) Holders of a LAPL(A) who previously held an ATPL(A), an MPL(A), a CPL(A) or a PPL(A), are exempted from the requirements laid down in point (b)(1)."
+ },
+ {
+  "id": "FCL-19",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je hebt net je LAPL(A) behaald. Wanneer mag je voor het eerst passagiers meenemen?",
+  "o": [
+   "Nadat je na de afgifte van je vergunning 10 uur vliegtijd als gezagvoerder op vliegtuigen of TMG's hebt",
+   "Meteen na de afgifte, zolang je in de laatste 90 dagen 3 starts en landingen hebt gedaan",
+   "Nadat je na de afgifte van je vergunning 5 uur vliegtijd als gezagvoerder hebt",
+   "Nadat je een bijkomende proficiency check met een examinator hebt afgelegd"
+  ],
+  "c": 0,
+  "e": "Als houder van een LAPL(A) mag je pas passagiers meenemen nadat je na de afgifte van je vergunning 10 uur vliegtijd als gezagvoerder op vliegtuigen of TMG's hebt gevlogen.\n\n**Wat zegt de regel?**\nWie vroeger een PPL(A), CPL(A), ATPL(A) of MPL(A) had, is van deze eis vrijgesteld.\n\n**In de praktijk:**\nOok na die 10 uur blijft de eis van recente ervaring gelden: 3 starts, naderingen en landingen in de voorafgaande 90 dagen.\n\n**Valkuil:**\nDe 3 landingen in 90 dagen vervangen de 10 uur na afgifte niet: je moet aan beide eisen voldoen.",
+  "src": "fcl",
+  "ref": "FCL.105.A – LAPL(A): voorrechten en voorwaarden",
+  "doc": "aircrew",
+  "art": "FCL.105.A",
+  "citaat": "Holders of a LAPL(A) shall carry passengers only if they have completed 10 hours of flight time as PIC on aeroplanes or TMG after the issuance of the licence.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) Privileges\nThe privileges of the holder of an LAPL for aeroplanes are to act as PIC on SEP aeroplanes-land (SEP(land)), SEP aeroplanes-sea (SEP(sea)) or TMG with a maximum certified take-off mass of 2 000 kg or less, carrying a maximum of three passengers, such that there are never more than four persons on board the aircraft.\n(b) Conditions\n(1) Holders of a LAPL(A) shall carry passengers only if they have completed 10 hours of flight time as PIC on aeroplanes or TMG after the issuance of the licence.\n(2) Holders of a LAPL(A) who previously held an ATPL(A), an MPL(A), a CPL(A) or a PPL(A), are exempted from the requirements laid down in point (b)(1)."
+ },
+ {
+  "id": "FCL-20",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Hoeveel uur vlieginstructie op vliegtuigen of TMG's moet je minstens hebben gevolgd om een LAPL(A) aan te vragen?",
+  "o": [
+   "30 uur, waarvan minstens 15 uur dubbele instructie en 6 uur solo onder toezicht",
+   "45 uur, waarvan minstens 25 uur dubbele instructie en 10 uur solo onder toezicht",
+   "25 uur, waarvan minstens 15 uur dubbele instructie en 6 uur solo onder toezicht",
+   "30 uur, waarvan minstens 25 uur dubbele instructie en 5 uur solo onder toezicht"
+  ],
+  "c": 0,
+  "e": "Voor de LAPL(A) heb je minstens 30 uur vlieginstructie nodig, met minstens 15 uur dubbele instructie in de klasse van het praktijkexamen en 6 uur solo onder toezicht.\n\n**Wat zegt de regel?**\nVan die solotijd moet minstens 3 uur solo-overlandvlucht zijn, met minstens één overlandvlucht van 150 km (80 NM) en een volledige landing (full stop) op een ander vliegveld dan het vertrekveld.\n\n**Valkuil:**\n45 uur met 25 uur dubbele instructie en 10 uur solo zijn de eisen voor de PPL(A), niet voor de LAPL(A).",
+  "src": "fcl",
+  "ref": "FCL.110.A – LAPL(A): ervaringseisen en creditering",
+  "doc": "aircrew",
+  "art": "FCL.110.A",
+  "citaat": "Applicants for an LAPL(A) shall have completed at least 30 hours of flight instruction on aeroplanes or TMGs, including at least:",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) Applicants for an LAPL(A) shall have completed at least 30 hours of flight instruction on aeroplanes or TMGs, including at least:\n(1) 15 hours of dual flight instruction in the class in which the skill test will be taken;\n(2) 6 hours of supervised solo flight time, including at least 3 hours of solo cross-country flight time with at least 1 cross-country flight of at least 150 km (80 NM), during which 1 full stop landing at an aerodrome different from the aerodrome of departure shall be made."
+ },
+ {
+  "id": "FCL-21",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je hebt een LAPL(A). Aan welke eis moet je volgens de recency-eisen voldoen om je voorrechten te mogen uitoefenen, als je geen proficiency check met een examinator aflegt?",
+  "o": [
+   "In de laatste 2 jaar 12 uur als gezagvoerder (of dubbel of solo onder toezicht), met 12 starts en landingen en een opfristraining van 1 uur met een instructeur",
+   "In de laatste 12 maanden 12 uur als gezagvoerder, met 12 starts en landingen en een opfristraining van 1 uur met een instructeur",
+   "In de laatste 2 jaar 6 uur als gezagvoerder, met 6 starts en landingen",
+   "In de laatste 90 dagen 3 starts, naderingen en landingen"
+  ],
+  "c": 0,
+  "e": "In de laatste 2 jaar moet je 12 uur gevlogen hebben als gezagvoerder of dubbel of solo onder toezicht van een instructeur, met 12 starts en landingen en een opfristraining van minstens 1 uur met een instructeur.\n\n**Wat zegt de regel?**\nIn plaats daarvan mag je een LAPL(A)-proficiency check met een examinator afleggen. De dubbele vluchten, de opfristraining en de check worden in je logboek ingeschreven en door de instructeur of examinator ondertekend.\n\n**Valkuil:**\nEen periode van 12 maanden hoort bij de verlenging van een klassebevoegdverklaring SEP op een PPL. De LAPL(A) kijkt naar de laatste 2 jaar, op elk moment dat je vliegt.",
+  "src": "fcl",
+  "ref": "FCL.140.A – LAPL(A): recency-eisen",
+  "doc": "aircrew",
+  "art": "FCL.140.A",
+  "citaat": "(1) they have completed at least 12 hours of flight time as PIC or flying dual or solo under the supervision of an instructor, including:\n(i) 12 take-offs and landings;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) Holders of a LAPL(A) shall exercise the privileges of their licence only if in the last 2 years they have met any of the following conditions as pilots of aeroplanes or TMGs:\n(1) they have completed at least 12 hours of flight time as PIC or flying dual or solo under the supervision of an instructor, including:\n(i) 12 take-offs and landings;\n(ii) refresher training of at least 1 hour of total flight time with and to the satisfaction of an instructor who shall select those flight exercises that allow the applicant to refresh their competence in safely operating the aircraft and applying normal, abnormal and emergency procedures;\n(2) they have passed a LAPL(A) proficiency check with an examiner. The proficiency check programme shall be based on the skill test for the LAPL(A);"
+ },
+ {
+  "id": "FCL-22",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je hebt een PPL(A) met een geldige klassebevoegdverklaring SEP. Je medisch certificaat klasse 2 valt tijdelijk weg, maar je hebt een geldig LAPL-medisch certificaat. Wat mag je nog?",
+  "o": [
+   "SEP-vliegtuigen besturen binnen de voorwaarden van de LAPL(A), zolang je klassebevoegdverklaring SEP geldig blijft",
+   "Niets: zonder medisch certificaat klasse 2 mag je met je PPL(A) niet meer vliegen",
+   "Alle voorrechten van je PPL(A) blijven ongewijzigd gelden",
+   "SEP-vliegtuigen besturen, maar je klassebevoegdverklaring houd je voortaan geldig met de recency-eisen van de LAPL(A)"
+  ],
+  "c": 0,
+  "e": "Je mag nog SEP-vliegtuigen besturen binnen de voorwaarden van de LAPL(A): MTOM tot 2 000 kg en ten hoogste drie passagiers, zolang je klassebevoegdverklaring SEP geldig is.\n\n**Wat zegt de regel?**\nDe voorrechten van een PPL(A) omvatten die van een LAPL(A). Je blijft houder van de PPL en van de klassebevoegdverklaring, dus die moet je verlengen volgens de regels voor klassebevoegdverklaringen.\n\n**Valkuil:**\nDe recency-eisen van de LAPL(A) houden je klassebevoegdverklaring SEP niet geldig. Dat kan pas nadat je PPL echt is omgezet in een LAPL.",
+  "src": "fcl",
+  "ref": "GM1 FCL.205.A(a) – LAPL-voorrechten uitoefenen als PPL-houder",
+  "doc": "aircrew",
+  "art": "GM1 FCL.205.A(a); FCL.205.H(a); FCL.305(a)(1); FCL.505(a)(1)",
+  "citaat": "This pilot could still fly SEP aeroplanes under the conditions specified in point FCL.105.A(a), as long as the class rating is still valid.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(b) As an example, when the holder of a PPL and a SEP aeroplane class rating temporarily loses his or her class 2 medical certificate but keeps an LAPL medical certificate, he or she is still holder of a PPL and of that SEP aeroplane class rating in terms of Part-FCL Subpart H. This pilot could still fly SEP aeroplanes under the conditions specified in point FCL.105.A(a), as long as the class rating is still valid. If the class rating is about to expire, it needs to be revalidated in accordance with point FCL.740.A. Only after the PPL is exchanged for an LAPL, that pilot will fall under Subpart B of Part-FCL and can maintain SEP aeroplane class privileges through compliance with LAPL(A) recency requirements."
+ },
+ {
+  "id": "FCL-23",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Een kennis biedt je een vergoeding aan als je hem als piloot met je PPL(A) naar een zakenafspraak vliegt. Wat zeggen de voorrechten van je PPL(A)?",
+  "o": [
+   "Je mag alleen zonder vergoeding vliegen, als gezagvoerder of copiloot bij niet-commerciële vluchten",
+   "Je mag een vergoeding aanvaarden zolang het vliegtuig niet meer dan vier zitplaatsen heeft",
+   "Je mag een vergoeding aanvaarden zodra je 100 uur als gezagvoerder hebt",
+   "Je mag een vergoeding aanvaarden als je de vlucht vooraf meldt aan de bevoegde autoriteit"
+  ],
+  "c": 0,
+  "e": "De voorrechten van een PPL(A) zijn: zonder vergoeding optreden als gezagvoerder of copiloot van vliegtuigen of TMG's bij niet-commerciële vluchten.\n\n**Wat zegt de regel?**\nDe PPL(A) omvat ook alle voorrechten van de LAPL(A). Betaald vliegen is alleen toegestaan in de uitzonderingen die de regel noemt, zoals vlieginstructie door een PPL-houder met instructeursbevoegdheden.\n\n**Valkuil:**\nEr bestaat geen urengrens of melding waarmee een PPL-houder wel een vergoeding mag aanvaarden voor het vliegen zelf. Daarvoor heb je een beroepsvergunning nodig.",
+  "src": "fcl",
+  "ref": "FCL.205.A – PPL(A): voorrechten",
+  "doc": "aircrew",
+  "art": "FCL.205.A",
+  "citaat": "The privileges of the holders of a PPL(A) are to act without remuneration as PIC or co-pilots of aeroplanes or TMGs engaged in non-commercial operations",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) The privileges of the holders of a PPL(A) are to act without remuneration as PIC or co-pilots of aeroplanes or TMGs engaged in non-commercial operations and to exercise all privileges of holders of an LAPL(A).\n(b) Notwithstanding the paragraph above, the holder of a PPL(A) with instructor or examiner privileges may receive remuneration for:\n(1) the provision of flight instruction for the LAPL(A) or PPL(A);\n(2) the conduct of skill tests and proficiency checks for the licences specified in point (1);\n(3) the training, testing and checking for the ratings or certificates associated with the instructor’s or examiner’s licence, as applicable."
+ },
+ {
+  "id": "FCL-25",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Hoeveel uur vlieginstructie moet je minstens gevolgd hebben voor een PPL(A), en hoeveel daarvan mag in een vluchtnabootsingstoestel (FSTD)?",
+  "o": [
+   "45 uur, waarvan maximaal 5 uur in een FSTD",
+   "45 uur, waarvan maximaal 10 uur in een FSTD",
+   "40 uur, waarvan maximaal 5 uur in een FSTD",
+   "30 uur, waarvan maximaal 5 uur in een FSTD"
+  ],
+  "c": 0,
+  "e": "Voor de PPL(A) heb je minstens 45 uur vlieginstructie op vliegtuigen of TMG's nodig. Maximaal 5 daarvan mogen in een FSTD gevlogen zijn.\n\n**Wat zegt de regel?**\nDie 45 uur moeten minstens 25 uur dubbele instructie en 10 uur solo onder toezicht bevatten. De vliegtijd van een nachtopleiding mag meetellen voor de 45 uur, als je vóór die nachtopleiding de basisopleiding instrumentvliegen hebt gevolgd.\n\n**Valkuil:**\n30 uur is het minimum voor de LAPL(A). Een minimum van 40 uur geldt alleen voor wie al een LAPL(A) heeft en minstens 45 uur totale vliegtijd heeft.",
+  "src": "fcl",
+  "ref": "FCL.210.A – PPL(A): ervaringseisen en creditering",
+  "doc": "aircrew",
+  "art": "FCL.210.A",
+  "citaat": "Applicants for a PPL(A) shall have completed at least 45 hours of flight instruction in aeroplanes or TMGs, of which 5 hours may have been completed in an FSTD",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) Applicants for a PPL(A) shall have completed at least 45 hours of flight instruction in aeroplanes or TMGs, of which 5 hours may have been completed in an FSTD, including at least the following:\n(1) 25 hours of dual flight instruction;\n(2) 10 hours of supervised solo flight time, including at least 5 hours of solo cross-country flight time with at least one cross-country flight of at least 270 km (150 NM), during which full-stop landings at two aerodromes different from the aerodrome of departure shall be made."
+ },
+ {
+  "id": "FCL-26",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Welke minimale verdeling tussen dubbele instructie en solovliegtijd onder toezicht moet de vlieginstructie voor de PPL(A) bevatten?",
+  "o": [
+   "Minstens 25 uur dubbele instructie en minstens 10 uur solo onder toezicht",
+   "Minstens 15 uur dubbele instructie en minstens 6 uur solo onder toezicht",
+   "Minstens 35 uur dubbele instructie en minstens 5 uur solo onder toezicht",
+   "Minstens 25 uur dubbele instructie en minstens 20 uur solo onder toezicht"
+  ],
+  "c": 0,
+  "e": "Van de 45 uur moet minstens 25 uur dubbele instructie zijn en minstens 10 uur solo onder toezicht.\n\n**Wat zegt de regel?**\nVan die 10 uur solo moet minstens 5 uur solo-overlandvlucht zijn, met daarin een lange overlandvlucht met volledige landingen op andere vliegvelden.\n\n**In de praktijk:**\nDit zijn minima. De meeste leerlingen hebben meer uren nodig voor ze klaar zijn voor het praktijkexamen.\n\n**Valkuil:**\n15 uur dubbel en 6 uur solo zijn de minima voor de LAPL(A).",
+  "src": "fcl",
+  "ref": "FCL.210.A – PPL(A): ervaringseisen en creditering",
+  "doc": "aircrew",
+  "art": "FCL.210.A",
+  "citaat": "(1) 25 hours of dual flight instruction;\n(2) 10 hours of supervised solo flight time,",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) Applicants for a PPL(A) shall have completed at least 45 hours of flight instruction in aeroplanes or TMGs, of which 5 hours may have been completed in an FSTD, including at least the following:\n(1) 25 hours of dual flight instruction;\n(2) 10 hours of supervised solo flight time, including at least 5 hours of solo cross-country flight time with at least one cross-country flight of at least 270 km (150 NM), during which full-stop landings at two aerodromes different from the aerodrome of departure shall be made."
+ },
+ {
+  "id": "FCL-27",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Aan welke eis moet je lange solo-overlandvlucht (solo cross-country) voor de PPL(A) minstens voldoen?",
+  "o": [
+   "Minstens 270 km (150 NM), met volledige landingen op twee vliegvelden die verschillen van het vertrekveld",
+   "Minstens 150 km (80 NM), met een volledige landing op één ander vliegveld",
+   "Minstens 270 km (150 NM), met een touch-and-go op twee andere vliegvelden",
+   "Minstens 370 km (200 NM), met volledige landingen op drie andere vliegvelden"
+  ],
+  "c": 0,
+  "e": "De solo-overlandvlucht moet minstens 270 km (150 NM) lang zijn, met volledige landingen (full stop) op twee vliegvelden die verschillen van het vertrekveld.\n\n**Wat zegt de regel?**\nDie vlucht maakt deel uit van minstens 5 uur solo-overlandvlucht binnen de 10 uur solo onder toezicht.\n\n**Valkuil:**\nEen touch-and-go volstaat niet: de regel eist een volledige landing tot stilstand. 150 km met één landing elders is de eis voor de LAPL(A).",
+  "src": "fcl",
+  "ref": "FCL.210.A – PPL(A): ervaringseisen en creditering",
+  "doc": "aircrew",
+  "art": "FCL.210.A",
+  "citaat": "with at least one cross-country flight of at least 270 km (150 NM), during which full-stop landings at two aerodromes different from the aerodrome of departure shall be made.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) Applicants for a PPL(A) shall have completed at least 45 hours of flight instruction in aeroplanes or TMGs, of which 5 hours may have been completed in an FSTD, including at least the following:\n(1) 25 hours of dual flight instruction;\n(2) 10 hours of supervised solo flight time, including at least 5 hours of solo cross-country flight time with at least one cross-country flight of at least 270 km (150 NM), during which full-stop landings at two aerodromes different from the aerodrome of departure shall be made."
+ },
+ {
+  "id": "FCL-28",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Het theorie-examen PPL(A) bestaat uit gemeenschappelijke vakken en vakken die specifiek zijn voor de categorie luchtvaartuig. Welke reeks bevat de categoriespecifieke vakken?",
+  "o": [
+   "Vliegprincipes, operationele procedures, vluchtprestaties en -planning, algemene kennis van het luchtvaartuig",
+   "Luchtvaartwetgeving, meteorologie, navigatie, communicatie",
+   "Vliegprincipes, meteorologie, navigatie, menselijke prestaties",
+   "Operationele procedures, luchtvaartwetgeving, communicatie, menselijke prestaties"
+  ],
+  "c": 0,
+  "e": "De categoriespecifieke vakken zijn vliegprincipes, operationele procedures, vluchtprestaties en -planning en algemene kennis van het luchtvaartuig.\n\n**Wat zegt de regel?**\nDe gemeenschappelijke vakken zijn luchtvaartwetgeving, menselijke prestaties, meteorologie, communicatie en navigatie. Samen zijn dat negen vakken, voor de PPL en voor de LAPL.\n\n**Valkuil:**\nMeteorologie en navigatie zijn geen categoriespecifieke vakken: ze horen bij de gemeenschappelijke vakken, ook al verschilt de toepassing per luchtvaartuig.",
+  "src": "fcl",
+  "ref": "FCL.215 – PPL: theorie-examen",
+  "doc": "aircrew",
+  "art": "FCL.215",
+  "citaat": "(b) specific subjects concerning the different aircraft categories:\nPrinciples of flight,\nOperational procedures,\nFlight performance and planning, and\nAircraft general knowledge.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "Navigation.\n(b) specific subjects concerning the different aircraft categories:\nPrinciples of flight,\nOperational procedures,\nFlight performance and planning, and\nAircraft general knowledge."
+ },
+ {
+  "id": "FCL-29",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Hoe lang is je bevoegdverklaring voor klasse eenmotorige zuigermotorvliegtuigen (SEP) geldig?",
+  "o": [
+   "2 jaar",
+   "1 jaar",
+   "3 jaar",
+   "Even lang als je vergunning, zonder vervaldatum"
+  ],
+  "c": 0,
+  "e": "Een klassebevoegdverklaring voor eenmotorige vliegtuigen met één piloot, zoals de SEP, is 2 jaar geldig, tenzij de operationele geschiktheidsgegevens (OSD) iets anders bepalen.\n\n**Wat zegt de regel?**\nAndere klasse- en typebevoegdverklaringen zijn in principe 1 jaar geldig. Je verlengt de SEP via een proficiency check of via vliegervaring met een opfristraining.\n\n**Valkuil:**\nJe vergunning heeft geen vervaldatum, maar je klassebevoegdverklaring wel. Zonder geldige SEP mag je met je PPL(A) niet als piloot vliegen.",
+  "src": "fcl",
+  "ref": "FCL.740 – Geldigheid en hernieuwing van klasse- en typebevoegdverklaringen",
+  "doc": "aircrew",
+  "art": "FCL.740",
+  "citaat": "The validity period of class and type ratings shall be 1 year, except for single-pilot single-engine class ratings for which the validity period shall be 2 years, unless otherwise determined in the OSD.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) Validity\n(1) The validity period of class and type ratings shall be 1 year, except for single-pilot single-engine class ratings for which the validity period shall be 2 years, unless otherwise determined in the OSD. If pilots choose to fulfil the revalidation requirements earlier than prescribed in points FCL.740.A, FCL.740.H, FCL.740.PL and FCL.740.As, the new validity period shall commence from the date of the proficiency check.\n(2) Applicants for the revalidation of a class or type rating shall receive full credits for the proficiency check as required in this Subpart when they complete EBT practical assessment in accordance with Appendix 10 at an operator that has implemented EBT for the relevant class or type rating."
+ },
+ {
+  "id": "FCL-30",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je wilt je klassebevoegdverklaring SEP verlengen zonder proficiency check. Welke ervaring heb je nodig binnen de 12 maanden voor de vervaldatum?",
+  "o": [
+   "12 uur vliegtijd in de klasse, waarvan 6 uur als gezagvoerder, 12 starts en 12 landingen, en een opfristraining van minstens 1 uur met een instructeur",
+   "12 uur vliegtijd in de klasse, waarvan 6 uur als gezagvoerder, en 6 starts en 6 landingen; geen opfristraining nodig",
+   "6 uur vliegtijd als gezagvoerder in de klasse, 12 starts en 12 landingen en een opfristraining van minstens 1 uur",
+   "12 uur vliegtijd als gezagvoerder in de klasse en 3 starts en landingen in de laatste 90 dagen"
+  ],
+  "c": 0,
+  "e": "Binnen de 12 maanden voor de vervaldatum heb je nodig: 12 uur vliegtijd in de klasse, waarvan 6 uur als gezagvoerder, 12 starts en 12 landingen, en een opfristraining van minstens 1 uur met een vlieginstructeur (FI) of klasse-instructeur (CRI).\n\n**Wat zegt de regel?**\nDe opfristraining valt weg als je in die periode in een willekeurige klasse of type een proficiency check, praktijkexamen, EBT-beoordeling of assessment of competence hebt afgelegd.\n\n**Valkuil:**\nDe 12 uur zijn de totale vliegtijd in de klasse; slechts 6 daarvan moeten als gezagvoerder zijn.",
+  "src": "fcl",
+  "ref": "FCL.740.A – Verlenging van klasse- en typebevoegdverklaringen (vliegtuigen)",
+  "doc": "aircrew",
+  "art": "FCL.740.A",
+  "citaat": "within the 12 months preceding the expiry date of the rating, complete 12 hours of flight time in the relevant class, including the following:\n(A) 6 hours as PIC;\n(B) 12 take-offs and 12 landings;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "… For the revalidation of SEP aeroplane class ratings or TMG class ratings, applicants shall:\n(i) within the 3 months preceding the expiry date of the rating, pass a proficiency check in the relevant class in accordance with Appendix 9 to this Part with an examiner; or\n(ii) within the 12 months preceding the expiry date of the rating, complete 12 hours of flight time in the relevant class, including the following:\n(A) 6 hours as PIC;\n(B) 12 take-offs and 12 landings;\n(C) refresher training of at least 1 hour of total flight time with and to the satisfaction of a flight instructor (FI) or a class rating instructor (CRI) who shall select those flight exercises that allow the applicant to refresh their competence in safely operating the aircraft and applying normal, abnormal and emergency procedures. …"
+ },
+ {
+  "id": "FCL-31",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je klassebevoegdverklaring SEP vervalt over 5 maanden. Je legt nu al de proficiency check voor de verlenging af en slaagt. Vanaf wanneer loopt de nieuwe geldigheidsperiode?",
+  "o": [
+   "Vanaf de datum van de proficiency check",
+   "Vanaf de oude vervaldatum, zodat je de resterende 5 maanden behoudt",
+   "Vanaf de eerste dag van de maand volgend op de proficiency check",
+   "De check telt niet: een proficiency check voor verlenging mag alleen binnen de 3 maanden voor de vervaldatum"
+  ],
+  "c": 0,
+  "e": "De nieuwe geldigheidsperiode loopt vanaf de datum van de proficiency check. Je hebt de check immers eerder afgelegd dan de regel voorschrijft.\n\n**Wat zegt de regel?**\nVoor de verlenging van een SEP via een proficiency check leg je die check af met een examinator binnen de 3 maanden voor de vervaldatum.\n\n**In de praktijk:**\nPlan je check binnen die 3 maanden. Doe je hem eerder, dan begint je nieuwe periode op de dag van de check en verlies je de resterende maanden.\n\n**Valkuil:**\nEen vroege check is niet ongeldig, maar de geldigheid wordt niet vanaf de oude vervaldatum verlengd.",
+  "src": "fcl",
+  "ref": "FCL.740 – Geldigheid en hernieuwing van klasse- en typebevoegdverklaringen",
+  "doc": "aircrew",
+  "art": "FCL.740",
+  "citaat": "If pilots choose to fulfil the revalidation requirements earlier than prescribed in points FCL.740.A, FCL.740.H, FCL.740.PL and FCL.740.As, the new validity period shall commence from the date of the proficiency check.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) Validity\n(1) The validity period of class and type ratings shall be 1 year, except for single-pilot single-engine class ratings for which the validity period shall be 2 years, unless otherwise determined in the OSD. If pilots choose to fulfil the revalidation requirements earlier than prescribed in points FCL.740.A, FCL.740.H, FCL.740.PL and FCL.740.As, the new validity period shall commence from the date of the proficiency check.\n(2) Applicants for the revalidation of a class or type rating shall receive full credits for the proficiency check as required in this Subpart when they complete EBT practical assessment in accordance with Appendix 10 at an operator that has implemented EBT for the relevant class or type rating."
+ },
+ {
+  "id": "FCL-32",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je klassebevoegdverklaring SEP (niet hoogwaardig) is 2 jaar geleden verlopen. Wat moet je doen om ze te hernieuwen?",
+  "o": [
+   "Een beoordeling bij een DTO, een ATO of een instructeur, zo nodig opfristraining, en daarna een proficiency check",
+   "Alleen 12 uur vliegen in de klasse met 12 starts en landingen en 1 uur opfristraining",
+   "De volledige PPL(A)-opleiding en het theorie-examen opnieuw afleggen",
+   "Alleen een opfristraining van 1 uur met een instructeur, zonder proficiency check"
+  ],
+  "c": 0,
+  "e": "Je laat je eerst beoordelen bij een DTO, een ATO of een instructeur, je volgt opfristraining als die dat nodig vinden, en daarna leg je een proficiency check af.\n\n**Wat zegt de regel?**\nDe beoordeling bij een instructeur kan alleen als de bevoegdverklaring niet langer dan 3 jaar verlopen is. Is ze langer verlopen, dan moet de beoordeling bij een DTO of ATO gebeuren. Hoeveel opfristraining je nodig hebt, hangt onder meer af van je ervaring en hoe lang je niet gevlogen hebt.\n\n**Valkuil:**\nVliegen op basis van ervaring is een manier om een nog geldige bevoegdverklaring te verlengen. Een verlopen bevoegdverklaring vraagt altijd een proficiency check.",
+  "src": "fcl",
+  "ref": "FCL.740 – Geldigheid en hernieuwing van klasse- en typebevoegdverklaringen",
+  "doc": "aircrew",
+  "art": "FCL.740",
+  "citaat": "at a DTO, at an ATO or with an instructor, if the rating expired no more than 3 years ago and the rating concerned a non-high-performance SEP aeroplane class rating or a TMG class rating;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(i) at an ATO;\n(ii) at a DTO or at an ATO, if the expired rating concerned a non-high-performance SEP aeroplane class rating, a TMG class rating or a single-engine type rating for helicopters referred to in point DTO.GEN.110(a)(2)(c) of Annex VIII;\n(iii) at a DTO, at an ATO or with an instructor, if the rating expired no more than 3 years ago and the rating concerned a non-high-performance SEP aeroplane class rating or a TMG class rating;\n(iv) at an EBT operator that is specifically approved for such refresher training;\n(2) if deemed necessary by the organisation or the instructor providing the assessment as per point (1), they shall complete refresher training at that organisation or with that instructor;\n(3) after complying with point (1) and, as applicable, point (2), they shall pass a proficiency check in accordance with Appendix 9 or complete EBT practical assessment in accordance with Appendix 10. That EBT practical assessment may be combined with the refresher training specified in point (2)."
+ },
+ {
+  "id": "FCL-33",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je legt 2 maanden voor de vervaldatum van je klassebevoegdverklaring SEP een proficiency check af, maar slaagt niet voor alle onderdelen. Mag je tot de vervaldatum nog als gezagvoerder vliegen?",
+  "o": [
+   "Nee, je mag de voorrechten van die bevoegdverklaring niet meer uitoefenen tot je voor de proficiency check geslaagd bent",
+   "Ja, tot de vervaldatum die op je vergunning staat",
+   "Ja, maar alleen zonder passagiers tot de vervaldatum",
+   "Ja, als je binnen 30 dagen een nieuwe poging plant"
+  ],
+  "c": 0,
+  "e": "Nee. Wie vóór de vervaldatum niet voor alle onderdelen van de proficiency check slaagt, mag de voorrechten van die bevoegdverklaring niet uitoefenen tot hij alsnog geslaagd is.\n\n**Wat zegt de regel?**\nDe datum op je vergunning beschermt je dan niet meer: het mislukte examen gaat voor.\n\n**In de praktijk:**\nVolg extra training met een instructeur en plan een nieuwe check. Tot dan vlieg je alleen nog met een instructeur.\n\n**Valkuil:**\nDe vervaldatum op je vergunning lijkt nog geldig, maar na een mislukte check telt die datum niet meer, ook niet voor vluchten zonder passagiers.",
+  "src": "fcl",
+  "ref": "FCL.740.A – Verlenging van klasse- en typebevoegdverklaringen (vliegtuigen)",
+  "doc": "aircrew",
+  "art": "FCL.740.A",
+  "citaat": "Applicants who fail to achieve a pass in all sections of a proficiency check before the expiry date of a class or type rating shall not exercise the privileges of that rating until a pass in the proficiency check has been achieved.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(c) Applicants who fail to achieve a pass in all sections of a proficiency check before the expiry date of a class or type rating shall not exercise the privileges of that rating until a pass in the proficiency check has been achieved."
+ },
+ {
+  "id": "FCL-34",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je wilt met je klassebevoegdverklaring SEP een variant gaan vliegen waarvoor een verschilopleiding (differences training) vereist is. Hoe gaat dat?",
+  "o": [
+   "Je volgt de verschilopleiding, die voor SEP-vliegtuigen door een bevoegde instructeur mag worden gegeven, en die wordt in je logboek ingeschreven en door de instructeur ondertekend",
+   "Je moet een nieuwe klassebevoegdverklaring behalen met een praktijkexamen bij een examinator",
+   "Je leest het vlieghandboek (AFM) van de variant door; een inschrijving in het logboek is niet nodig",
+   "Je volgt de verschilopleiding uitsluitend bij een ATO, en de autoriteit schrijft ze in op je vergunning"
+  ],
+  "c": 0,
+  "e": "Je volgt de verschilopleiding. Voor SEP-vliegtuigen mag een bevoegde instructeur die geven, tenzij de operationele geschiktheidsgegevens (OSD) iets anders bepalen. De opleiding wordt in je logboek ingeschreven en door de instructeur ondertekend.\n\n**Wat zegt de regel?**\nOm je voorrechten uit te breiden naar een andere variant binnen een klasse, volg je verschilopleiding of vertrouwdmakingstraining (familiarisation). Gaat het om een SEP-variant met een ander type motor, bijvoorbeeld elektrisch, dan omvat de verschilopleiding dubbele vlieginstructie en theorie.\n\n**Valkuil:**\nEen variant binnen de klasse vraagt geen nieuwe klassebevoegdverklaring of praktijkexamen.",
+  "src": "fcl",
+  "ref": "FCL.710 – Klasse- en typebevoegdverklaringen: varianten",
+  "doc": "aircrew",
+  "art": "FCL.710",
+  "citaat": "The differences training or the proficiency check in that variant shall be entered in the pilots’ logbook or equivalent record and signed by the instructor or examiner as appropriate.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(e) The differences training or the proficiency check in that variant shall be entered in the pilots’ logbook or equivalent record and signed by the instructor or examiner as appropriate."
+ },
+ {
+  "id": "FCL-35",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Wat is het verschil tussen een verschilopleiding (differences training) en een vertrouwdmakingstraining (familiarisation)?",
+  "o": [
+   "Een verschilopleiding vraagt bijkomende kennis én training op een geschikt trainingstoestel of het vliegtuig; vertrouwdmaking vraagt alleen bijkomende kennis",
+   "Een vertrouwdmakingstraining vraagt bijkomende kennis én vliegtraining; een verschilopleiding vraagt alleen bijkomende kennis",
+   "Een verschilopleiding eindigt met een praktijkexamen bij een examinator; vertrouwdmaking met een theorie-examen",
+   "Er is geen verschil: beide termen betekenen dezelfde training in het vliegtuig"
+  ],
+  "c": 0,
+  "e": "Een verschilopleiding vraagt bijkomende kennis én training op een geschikt trainingstoestel of in het vliegtuig. Vertrouwdmaking vraagt alleen bijkomende kennis.\n\n**Wat zegt de regel?**\nWelke van de twee nodig is voor een bepaalde variant, staat in de EASA-lijsten van klasse- en typebevoegdverklaringen. Een verschilopleiding wordt in je logboek ingeschreven en door de instructeur ondertekend.\n\n**Valkuil:**\nDe begrippen zijn makkelijk om te wisselen. Onthoud dat bij een verschilopleiding altijd praktische training hoort; bij vertrouwdmaking niet.",
+  "src": "fcl",
+  "ref": "GM1 FCL.710 – Verschilopleiding en vertrouwdmakingstraining",
+  "doc": "aircrew",
+  "art": "GM1 FCL.710",
+  "citaat": "(a) Differences training requires the acquisition of additional knowledge and training on an appropriate training device or the aircraft.\n(b) Familiarisation requires the acquisition of additional knowledge.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "ED Decision 2025/002/R\nDIFFERENCES TRAINING AND FAMILIARISATION\n(a) Differences training requires the acquisition of additional knowledge and training on an appropriate training device or the aircraft.\n(b) Familiarisation requires the acquisition of additional knowledge."
+ },
+ {
+  "id": "FCL-36",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Welke eisen gelden om een kunstvliegbevoegdverklaring (aerobatic rating) voor vliegtuigen te behalen?",
+  "o": [
+   "Na de afgifte van je vergunning minstens 30 uur als gezagvoerder, en een opleiding bij een DTO of ATO met minstens 5 uur kunstvlieginstructie",
+   "Na de afgifte van je vergunning minstens 50 uur als gezagvoerder, en een opleiding met minstens 10 uur kunstvlieginstructie",
+   "Minstens 30 uur totale vliegtijd, inclusief de opleidingsuren, en 3 dubbele kunstvluchten met een instructeur",
+   "Geen extra eisen: kunstvliegen hoort bij de voorrechten van de PPL(A)"
+  ],
+  "c": 0,
+  "e": "Je hebt na de afgifte van je vergunning minstens 30 uur als gezagvoerder nodig op vliegtuigen of TMG's, en een opleiding bij een DTO of ATO met theorie en minstens 5 uur kunstvlieginstructie.\n\n**Wat zegt de regel?**\nKunstvluchten mag je alleen uitvoeren met een kunstvliegbevoegdverklaring. De bevoegdverklaring wordt beperkt tot vliegtuigen of TMG's, afhankelijk van waarop je de eisen hebt vervuld. Die beperking valt weg na minstens 3 dubbele opleidingsvluchten op het andere soort toestel.\n\n**Valkuil:**\nDe 30 uur moeten na de afgifte van je vergunning liggen; je opleidingsuren voor de PPL tellen niet mee.",
+  "src": "fcl",
+  "ref": "FCL.800 – Kunstvliegbevoegdverklaring (aerobatic rating)",
+  "doc": "aircrew",
+  "art": "FCL.800",
+  "citaat": "(1) after the issue of the licence, at least 30 hours of flight time as PIC in aeroplanes or TMGs;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(b) Applicants for an aerobatic rating shall have completed:\n(1) after the issue of the licence, at least 30 hours of flight time as PIC in aeroplanes or TMGs;\n(2) a training course at DTO or at an ATO, including:"
+ },
+ {
+  "id": "FCL-37",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Welke ervaring moet je na de afgifte van je vergunning minstens hebben voor een bevoegdverklaring voor het slepen van zweefvliegtuigen (sailplane towing rating) met een vliegtuig?",
+  "o": [
+   "30 uur vliegtijd als gezagvoerder en 60 starts en landingen op vliegtuigen",
+   "100 uur vliegtijd en 200 starts en landingen als gezagvoerder",
+   "30 uur vliegtijd als gezagvoerder en 30 starts en landingen op vliegtuigen",
+   "50 uur vliegtijd als gezagvoerder, waarvan 10 uur met een zweefvliegtuig op sleep"
+  ],
+  "c": 0,
+  "e": "Je hebt na de afgifte van je vergunning minstens 30 uur vliegtijd als gezagvoerder en 60 starts en landingen op vliegtuigen nodig.\n\n**Wat zegt de regel?**\nDaarnaast volg je een opleiding bij een DTO of ATO met theorie over sleepoperaties, minstens 10 sleepvluchten met een zweefvliegtuig, waarvan minstens 5 dubbel, en 5 vertrouwdmakingsvluchten in een gesleept zweefvliegtuig (tenzij je een SPL hebt).\n\n**Valkuil:**\n100 uur en 200 starts en landingen zijn de eisen voor het slepen van spandoeken (banner towing), niet voor zweefvliegtuigen.",
+  "src": "fcl",
+  "ref": "FCL.805 – Bevoegdverklaring voor het slepen van zweefvliegtuigen en spandoeken",
+  "doc": "aircrew",
+  "art": "FCL.805",
+  "citaat": "at least 30 hours of flight time as PIC and 60 take-offs and landings in aeroplanes, if the activity is to be carried out in aeroplanes,",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(b) Applicants for a sailplane towing rating shall have completed:\n(1) at least 30 hours of flight time as PIC and 60 take-offs and landings in aeroplanes, if the activity is to be carried out in aeroplanes, or in TMGs, if the activity is to be carried out in TMGs, completed after the issue of the licence;\n(2) a training course at a DTO or at an ATO, including:"
+ },
+ {
+  "id": "FCL-38",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Je hebt een bevoegdverklaring voor het slepen van zweefvliegtuigen, maar je hebt in de laatste 24 maanden maar 2 slepen uitgevoerd. Wat moet je doen voor je opnieuw alleen mag slepen?",
+  "o": [
+   "De ontbrekende slepen (tot 5 in 24 maanden) uitvoeren met of onder toezicht van een instructeur",
+   "Een proficiency check met een examinator afleggen",
+   "Niets, zolang je klassebevoegdverklaring SEP geldig is",
+   "De volledige sleepopleiding opnieuw volgen bij een DTO of ATO"
+  ],
+  "c": 0,
+  "e": "Je voert de ontbrekende slepen uit met of onder toezicht van een instructeur, zodat je weer aan minstens 5 slepen in de laatste 24 maanden komt.\n\n**Wat zegt de regel?**\nOm de voorrechten van een bevoegdverklaring voor het slepen van zweefvliegtuigen of spandoeken uit te oefenen, moet je minstens 5 slepen hebben uitgevoerd in de laatste 24 maanden. Haal je dat niet, dan vul je het tekort aan met een instructeur.\n\n**Valkuil:**\nEen geldige klassebevoegdverklaring SEP volstaat niet: de sleepbevoegdverklaring heeft haar eigen recency-eis.",
+  "src": "fcl",
+  "ref": "FCL.805 – Bevoegdverklaring voor het slepen van zweefvliegtuigen en spandoeken",
+  "doc": "aircrew",
+  "art": "FCL.805",
+  "citaat": "In order to exercise the privileges of the sailplane or banner towing ratings, the holder of the rating shall have completed a minimum of 5 tows during the last 24 months.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(e) In order to exercise the privileges of the sailplane or banner towing ratings, the holder of the rating shall have completed a minimum of 5 tows during the last 24 months."
+ },
+ {
+  "id": "FCL-39",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Binnen welke periode moet de opleiding voor een nachtbevoegdverklaring (night rating) voor vliegtuigen worden afgerond?",
+  "o": [
+   "Binnen ten hoogste 6 maanden, bij een DTO of ATO",
+   "Binnen ten hoogste 12 maanden, bij een DTO of ATO",
+   "Binnen ten hoogste 3 maanden, bij een DTO of ATO",
+   "Er is geen termijn, zolang de nachtvlieguren in je logboek staan"
+  ],
+  "c": 0,
+  "e": "De opleiding voor de nachtbevoegdverklaring moet binnen ten hoogste 6 maanden worden afgerond, bij een DTO of ATO.\n\n**Wat zegt de regel?**\nMet die bevoegdverklaring mag je de voorrechten van je LAPL of PPL 's nachts uitoefenen onder VFR. De opleiding bestaat uit theorie en vliegopleiding 's nachts. Als LAPL-houder moet je vóór de nachtopleiding eerst de basisopleiding instrumentvliegen hebben gevolgd die voor de PPL vereist is.\n\n**Valkuil:**\nEen termijn van 12 maanden kent de regel niet: de hele opleiding moet in 6 maanden passen.",
+  "src": "fcl",
+  "ref": "FCL.810 – Nachtbevoegdverklaring (night rating)",
+  "doc": "aircrew",
+  "art": "FCL.810",
+  "citaat": "Applicants shall have completed a training course within a period of up to 6 months at a DTO or at an ATO to exercise the privileges of an LAPL or a PPL for aeroplanes, TMGs or airships in VFR conditions at night.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) Aeroplanes, TMGs, airships.\n(1) Applicants shall have completed a training course within a period of up to 6 months at a DTO or at an ATO to exercise the privileges of an LAPL or a PPL for aeroplanes, TMGs or airships in VFR conditions at night. The course shall comprise:"
+ },
+ {
+  "id": "FCL-40",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-FCL",
+  "q": "Wat moet je tijdens de vliegopleiding voor de nachtbevoegdverklaring (vliegtuigen) minstens solo uitvoeren?",
+  "o": [
+   "5 solostarts en 5 sololandingen tot volledige stilstand (full stop)",
+   "3 solostarts en 3 sololandingen tot volledige stilstand",
+   "5 solostarts met touch-and-go-landingen",
+   "Een solo-overlandvlucht 's nachts van minstens 50 km (27 NM)"
+  ],
+  "c": 0,
+  "e": "Je moet 's nachts minstens 5 solostarts en 5 sololandingen tot volledige stilstand (full stop) uitvoeren.\n\n**Wat zegt de regel?**\nDe overlandvlucht 's nachts van minstens 50 km (27 NM) maak je dubbel, met een instructeur, als deel van de dubbele instructie. De solovluchten gebeuren onder de voorwaarden die de ATO of DTO vastlegt, onder meer rekening houdend met snel veranderend weer.\n\n**Valkuil:**\nTouch-and-go's tellen niet: de regel eist uitdrukkelijk landingen tot stilstand. De overlandvlucht van 50 km is dubbel, niet solo.",
+  "src": "fcl",
+  "ref": "FCL.810 – Nachtbevoegdverklaring (night rating)",
+  "doc": "aircrew",
+  "art": "FCL.810",
+  "citaat": "at least one dual cross-country flight of at least 50 km (27 NM) and 5 solo take-offs and 5 solo full-stop landings.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(i) theoretical knowledge instruction;\n(ii) at least 5 hours of flight time in the appropriate aircraft category at night, including at least 3 hours of dual instruction, including at least 1 hour of cross-country navigation with at least one dual cross-country flight of at least 50 km (27 NM) and 5 solo take-offs and 5 solo full-stop landings.\n(2) Before completing the training at night, LAPL holders shall have completed the basic instrument flight training required for the issue of the PPL.\n(3) When applicants hold both an SEP aeroplane-land and a TMG class rating, they may meet the requirements in point (1) in either class or in both classes.\n(4) Applicants for a night rating for aeroplanes or TMGs in accordance with this subparagraph shall receive full credit towards the requirements of subparagraphs (1) and (2) if they hold a TMG night rating in accordance with point SFCL.210 of Annex III (Part-SFCL) to Commission Implementing Regulation (EU) 2018/1976 or if they have fulfilled all the requirements for the issue of that rating."
+ },
+ {
+  "id": "MED-01",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Welk medisch certificaat moet je minstens hebben om de voorrechten van een brevet van privépiloot (PPL(A)) uit te oefenen?",
+  "o": [
+   "Een geldig medisch certificaat klasse 2",
+   "Een geldig medisch certificaat klasse 1",
+   "Een geldig LAPL-medisch certificaat",
+   "Een verklaring van je huisarts dat je gezond bent"
+  ],
+  "c": 0,
+  "e": "Voor de PPL heb je minstens een geldig medisch certificaat klasse 2 nodig.\n\n**Wat zegt de regel?**\nPart-MED koppelt elk brevet aan een minimumklasse: LAPL (en zweefvlieg- en ballonbrevet) vraagt minstens een LAPL-medisch certificaat, PPL minstens klasse 2, en CPL, MPL en ATPL een klasse 1.\n\n**Valkuil:**\nEen LAPL-medisch certificaat volstaat voor het lichte-vliegtuigbrevet (LAPL), niet voor de PPL-voorrechten. Met alleen een LAPL-medisch certificaat kan een PPL-houder hoogstens binnen de voorwaarden van de LAPL vliegen. Klasse 1 mag wel (het is strenger), maar is niet het minimum dat je nodig hebt.\n\n**In de praktijk:**\nPlan je keuring klasse 2 vroeg in je opleiding, zodat je zeker bent dat je medisch geschikt bent voor je veel geld in lessen steekt.",
+  "src": "med",
+  "ref": "MED.A.030 – Medische certificaten (medical certificates)",
+  "doc": "aircrew",
+  "art": "MED.A.030",
+  "citaat": "(2) private pilot licence (PPL), the pilot shall hold at least a valid class 2 medical certificate;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(c) When exercising the privileges of a:\n(1) light aircraft pilot licence (LAPL), a balloon pilot licence (BPL) issued in accordance with Annex III (Part-BFCL) to Commission Regulation (EU 2018/395, or a sailplane pilot licence (SPL) issued in accordance with Annex III (Part-SFCL) to Commission Implementing Regulation (EU) 2018/1976, the pilot shall hold at least a valid LAPL medical certificate;\n(2) private pilot licence (PPL), the pilot shall hold at least a valid class 2 medical certificate;\n[applicable until 17 February 2026 - Regulation (EU) 2024/2076]\n(2) private pilot licence (PPL) or gyroplane pilot licence (GPL), the pilot shall hold at least a valid class 2 medical certificate;\n[applicable from 18 February 2026 - Regulation (EU) 2025/134]\n(3) BPL for the purpose of:"
+ },
+ {
+  "id": "MED-02",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Je hebt een geldig medisch certificaat klasse 1 omdat je later beroepspiloot wilt worden. Je wilt nu met je PPL(A) vliegen. Wat geldt?",
+  "o": [
+   "Je klasse 1 omvat de voorrechten van klasse 2; je hebt geen apart certificaat klasse 2 nodig",
+   "Je moet daarnaast een certificaat klasse 2 aanvragen",
+   "Je mag met klasse 1 alleen commerciële vluchten uitvoeren",
+   "Je klasse 1 geldt voor de PPL alleen als er een instructeur aan boord is"
+  ],
+  "c": 0,
+  "e": "Een medisch certificaat klasse 1 omvat de voorrechten en geldigheden van klasse 2 en van het LAPL-medisch certificaat, dus je vliegt er gewoon mee met je PPL.\n\n**Wat zegt de regel?**\nDe klassen zijn hiërarchisch: klasse 1 dekt klasse 2 en LAPL, klasse 2 dekt LAPL. Je hebt bovendien nooit meer dan één medisch certificaat tegelijk.\n\n**Valkuil:**\nDenken dat je een tweede, apart certificaat klasse 2 nodig hebt. Dat is niet alleen overbodig, het mag ook niet: je kunt maar één Part-MED-certificaat tegelijk hebben.\n\n**In de praktijk:**\nOmdat klasse 1 ook de geldigheden van klasse 2 omvat, kan je certificaat voor je PPL-voorrechten langer bruikbaar blijven dan de klasse 1-termijn. Vraag je AME naar de exacte data.",
+  "src": "med",
+  "ref": "AMC1 MED.A.030 – Medische certificaten",
+  "doc": "aircrew",
+  "art": "AMC1 MED.A.030",
+  "citaat": "(a) A class 1 medical certificate includes the privileges and validities of class 2 and LAPL medical certificates.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "ED Decision 2019/002/R\n(a) A class 1 medical certificate includes the privileges and validities of class 2 and LAPL medical certificates.\n(b) A class 2 medical certificate includes the privileges and validities of a LAPL medical certificate."
+ },
+ {
+  "id": "MED-03",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Hoeveel medische certificaten volgens Part-MED mag je als brevethouder tegelijk in je bezit hebben?",
+  "o": [
+   "Eén",
+   "Twee: één per lidstaat waarin je vliegt",
+   "Eén per klasse (klasse 1, klasse 2 en LAPL)",
+   "Onbeperkt, zolang ze allemaal geldig zijn"
+  ],
+  "c": 0,
+  "e": "Je mag op geen enkel moment meer dan één medisch certificaat volgens Part-MED hebben.\n\n**Wat zegt de regel?**\nEen brevethouder houdt nooit meer dan één medisch certificaat aan. Omdat een hogere klasse de lagere klassen omvat, heb je ook geen tweede nodig.\n\n**Valkuil:**\nEen certificaat per lidstaat lijkt logisch als je in verschillende landen vliegt, maar een Part-MED-certificaat is in heel de EASA-ruimte geldig. Je dossier hoort bij de autoriteit die je brevet heeft afgegeven.\n\n**In de praktijk:**\nGa je naar een andere AME of naar het buitenland, neem dan je huidige certificaat mee: bij verlenging moet je het meest recente certificaat voorleggen.",
+  "src": "med",
+  "ref": "MED.A.030 – Medische certificaten (medical certificates)",
+  "doc": "aircrew",
+  "art": "MED.A.030",
+  "citaat": "(f) A licence holder shall not at any time hold more than one medical certificate issued in accordance with this Annex (Part-MED).",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(e) If an instrument rating or basic instrument rating is added to a PPL, the licence holder shall undergo pure tone audiometry examinations in accordance with the periodicity and the standard required for class 1 medical certificate holders.\n(f) A licence holder shall not at any time hold more than one medical certificate issued in accordance with this Annex (Part-MED)."
+ },
+ {
+  "id": "MED-04",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Je wilt een nachtbevoegdverklaring (night rating) aan je PPL(A) laten toevoegen. Aan welke medische voorwaarde moet je dan voldoen?",
+  "o": [
+   "Je moet kleurveilig (colour safe) zijn",
+   "Je moet een medisch certificaat klasse 1 hebben",
+   "Je moet zonder bril of lenzen de vereiste gezichtsscherpte halen",
+   "Je moet een toonaudiometrie (gehoortest) volgens klasse 1-normen ondergaan"
+  ],
+  "c": 0,
+  "e": "Wie een nachtbevoegdverklaring aan een PPL of LAPL toevoegt, moet kleurveilig zijn.\n\n**Wat zegt de regel?**\nKleurveilig (colour safe) betekent dat je de kleuren die in de luchtvaart gebruikt worden vlot kunt onderscheiden en gekleurde luchtvaartlichten juist kunt herkennen, bv. baan-, naderings- en navigatielichten.\n\n**Valkuil:**\nDe toonaudiometrie volgens klasse 1-normen is een eis bij het toevoegen van een instrumentbevoegdverklaring (IR of BIR), niet van een nachtbevoegdverklaring.\n\n**In de praktijk:**\nHaal je de kleurentest niet, dan kan je klasse 2 de beperking 'alleen geldig overdag' (VCL) krijgen, en dan is nachtvliegen uitgesloten.",
+  "src": "med",
+  "ref": "MED.A.030 – Medische certificaten (medical certificates)",
+  "doc": "aircrew",
+  "art": "MED.A.030",
+  "citaat": "(d) If a night rating is added to a PPL or LAPL, the licence holder shall be colour safe.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(5) a commercial pilot licence (CPL), a multi-crew pilot licence (MPL) or an airline transport pilot licence (ATPL), the pilot shall hold a valid class 1 medical certificate.\n(d) If a night rating is added to a PPL or LAPL, the licence holder shall be colour safe."
+ },
+ {
+  "id": "MED-05",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Bij wie kun je je eerste medisch certificaat klasse 2 laten afgeven?",
+  "o": [
+   "Bij een luchtvaartgeneeskundig centrum (AeMC) of een erkende luchtvaartgeneeskundige (AME)",
+   "Alleen bij een luchtvaartgeneeskundig centrum (AeMC)",
+   "Bij je eigen huisarts (GMP)",
+   "Bij de hoofdinstructeur van je opleidingsorganisatie (ATO)"
+  ],
+  "c": 0,
+  "e": "Een medisch certificaat klasse 2 wordt afgegeven door een AeMC of een AME.\n\n**Wat zegt de regel?**\nKlasse 1 wordt bij de eerste afgifte alleen door een AeMC afgegeven. Klasse 2 mag door een AeMC of een AME. Een LAPL-medisch certificaat mag daarnaast ook door een huisarts (GMP) als het nationale recht dat toestaat.\n\n**Valkuil:**\nDe huisarts-optie bestaat alleen voor het LAPL-medisch certificaat, niet voor klasse 2. Voor je PPL moet je dus naar een AME of AeMC.\n\n**In de praktijk:**\nOok verlengen en hernieuwen van klasse 2 gebeurt bij een AeMC of AME.",
+  "src": "med",
+  "ref": "MED.A.040 – Afgifte, verlenging en hernieuwing van medische certificaten",
+  "doc": "aircrew",
+  "art": "MED.A.040",
+  "citaat": "(2) Class 2 medical certificates shall be issued by an AeMC or an AME.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(b) Initial issuance\n(1) Class 1 medical certificates shall be issued by an AeMC.\n(2) Class 2 medical certificates shall be issued by an AeMC or an AME.\n(3) LAPL medical certificates shall be issued by an AeMC or an AME. They may also be issued by a GMP if so permitted under the national law of the Member State of the licensing authority to which the application for the medical certificate has been made."
+ },
+ {
+  "id": "MED-06",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Onder welke voorwaarde mag een huisarts (GMP) een LAPL-medisch certificaat afgeven?",
+  "o": [
+   "Als het nationale recht van de lidstaat van de brevetautoriteit waar je de aanvraag indient dat toelaat",
+   "Altijd, voor elke aanvrager in de EU",
+   "Alleen als je jonger bent dan 40 jaar",
+   "Nooit: alleen een AeMC mag een LAPL-medisch certificaat afgeven"
+  ],
+  "c": 0,
+  "e": "Een huisarts (GMP) mag een LAPL-medisch certificaat afgeven als het nationale recht van de lidstaat van de brevetautoriteit waar je de aanvraag doet dat toestaat.\n\n**Wat zegt de regel?**\nLAPL-medische certificaten worden afgegeven door een AeMC of AME, en daarnaast eventueel door een GMP als de lidstaat dat toelaat. Hetzelfde geldt voor verlenging en hernieuwing.\n\n**Valkuil:**\nDe huisarts-optie hangt niet af van je leeftijd, maar van de nationale wetgeving. Vindt de GMP dat je niet volledig voldoet, dan verwijst hij je door naar een AeMC of AME, tenzij je alleen een beperking voor brillen/lenzen of voor de geldigheidsduur nodig hebt.\n\n**In de praktijk:**\nVoor een PPL heb je klasse 2 nodig; daar speelt de huisarts geen rol.",
+  "src": "med",
+  "ref": "MED.A.040 – Afgifte, verlenging en hernieuwing van medische certificaten",
+  "doc": "aircrew",
+  "art": "MED.A.040",
+  "citaat": "They may also be issued by a GMP if so permitted under the national law of the Member State of the licensing authority to which the application for the medical certificate has been made.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(b) Initial issuance\n(1) Class 1 medical certificates shall be issued by an AeMC.\n(2) Class 2 medical certificates shall be issued by an AeMC or an AME.\n(3) LAPL medical certificates shall be issued by an AeMC or an AME. They may also be issued by a GMP if so permitted under the national law of the Member State of the licensing authority to which the application for the medical certificate has been made."
+ },
+ {
+  "id": "MED-07",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Je bent 25 jaar en haalt je eerste medisch certificaat klasse 2. Hoe lang is het geldig?",
+  "o": [
+   "60 maanden",
+   "24 maanden",
+   "12 maanden",
+   "36 maanden"
+  ],
+  "c": 0,
+  "e": "Tot je 40 jaar wordt, is een medisch certificaat klasse 2 60 maanden (vijf jaar) geldig.\n\n**Wat zegt de regel?**\nDe geldigheid van klasse 2 hangt af van je leeftijd: 60 maanden tot 40 jaar, 24 maanden tussen 40 en 50 jaar, en daarboven korter. Een certificaat dat je vóór je 40ste krijgt, vervalt in elk geval na je 42ste verjaardag.\n\n**Valkuil:**\n24 maanden is de geldigheid voor piloten tussen 40 en 50 jaar. Op jouw leeftijd geldt de langste termijn.\n\n**In de praktijk:**\nDe termijn loopt vanaf de datum van het onderzoek bij een eerste afgifte. Zet de vervaldatum meteen in je agenda.",
+  "src": "med",
+  "ref": "MED.A.045 – Geldigheid, verlenging en hernieuwing van medische certificaten",
+  "doc": "aircrew",
+  "art": "MED.A.045",
+  "citaat": "(i) 60 months, until the licence holder reaches the age of 40.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(i) 60 months, until the licence holder reaches the age of 40. A medical certificate issued prior to the licence holder reaching the age of 40 shall cease to be valid after the licence holder reaches the age of 42;\n(ii) 24 months, for licence holders aged between 40 and 50. A medical certificate issued prior to the licence holder reaching the age of 50 shall cease to be valid after the licence holder reaches the age of 51;\n(iii) 12 months, for licence holders aged above 50.\n(4) LAPL medical certificates shall be valid for a period of:"
+ },
+ {
+  "id": "MED-08",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Je krijgt je medisch certificaat klasse 2 op de dag dat je 39 jaar wordt. Tot wanneer is het maximaal geldig?",
+  "o": [
+   "Tot je 42 jaar wordt",
+   "Tot je 44 jaar wordt (volle 60 maanden)",
+   "Tot je 41 jaar wordt (24 maanden)",
+   "Tot je 40 jaar wordt"
+  ],
+  "c": 0,
+  "e": "Een certificaat klasse 2 dat je vóór je 40ste krijgt, vervalt nadat je 42 jaar bent geworden, ook al zijn de 60 maanden dan nog niet om.\n\n**Wat zegt de regel?**\nOnder de 40 is klasse 2 in principe 60 maanden geldig, maar met een harde grens: na het bereiken van 42 jaar is het niet meer geldig. Zo blijft niemand tot ver na 40 met een 'jongerencertificaat' vliegen.\n\n**Valkuil:**\nGewoon 60 maanden optellen geeft 44 jaar, maar de leeftijdsgrens van 42 gaat voor.\n\n**In de praktijk:**\nControleer de vervaldatum op je certificaat zelf; de AME vult die in rekening houdend met deze grens.",
+  "src": "med",
+  "ref": "MED.A.045 – Geldigheid, verlenging en hernieuwing van medische certificaten",
+  "doc": "aircrew",
+  "art": "MED.A.045",
+  "citaat": "A medical certificate issued prior to the licence holder reaching the age of 40 shall cease to be valid after the licence holder reaches the age of 42;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(i) 60 months, until the licence holder reaches the age of 40. A medical certificate issued prior to the licence holder reaching the age of 40 shall cease to be valid after the licence holder reaches the age of 42;\n(ii) 24 months, for licence holders aged between 40 and 50. A medical certificate issued prior to the licence holder reaching the age of 50 shall cease to be valid after the licence holder reaches the age of 51;\n(iii) 12 months, for licence holders aged above 50.\n(4) LAPL medical certificates shall be valid for a period of:"
+ },
+ {
+  "id": "MED-09",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Je bent 45 jaar en je medisch certificaat klasse 2 wordt verlengd. Hoe lang is de nieuwe geldigheid?",
+  "o": [
+   "24 maanden",
+   "60 maanden",
+   "12 maanden",
+   "36 maanden"
+  ],
+  "c": 0,
+  "e": "Tussen 40 en 50 jaar is een medisch certificaat klasse 2 24 maanden geldig.\n\n**Wat zegt de regel?**\nKlasse 2: 60 maanden tot 40 jaar, 24 maanden tussen 40 en 50 jaar, en daarboven een kortere termijn. Een certificaat dat je vóór je 50ste krijgt, vervalt na je 51ste verjaardag.\n\n**Valkuil:**\n60 maanden geldt alleen tot 40 jaar. Ook als je eerdere certificaat vijf jaar geldig was, krijg je nu een kortere termijn.\n\n**In de praktijk:**\nBij verlenging binnen de termijn vóór de vervaldatum loopt de nieuwe periode vanaf de vervaldatum van het vorige certificaat, zodat je geen dagen verliest.",
+  "src": "med",
+  "ref": "MED.A.045 – Geldigheid, verlenging en hernieuwing van medische certificaten",
+  "doc": "aircrew",
+  "art": "MED.A.045",
+  "citaat": "(ii) 24 months, for licence holders aged between 40 and 50.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(i) 60 months, until the licence holder reaches the age of 40. A medical certificate issued prior to the licence holder reaching the age of 40 shall cease to be valid after the licence holder reaches the age of 42;\n(ii) 24 months, for licence holders aged between 40 and 50. A medical certificate issued prior to the licence holder reaching the age of 50 shall cease to be valid after the licence holder reaches the age of 51;\n(iii) 12 months, for licence holders aged above 50.\n(4) LAPL medical certificates shall be valid for a period of:"
+ },
+ {
+  "id": "MED-10",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Een 55-jarige piloot heeft een LAPL-medisch certificaat. Hoe lang is dat certificaat geldig?",
+  "o": [
+   "24 maanden",
+   "12 maanden",
+   "60 maanden",
+   "6 maanden"
+  ],
+  "c": 0,
+  "e": "Boven 40 jaar is een LAPL-medisch certificaat 24 maanden geldig, ongeacht hoe oud je verder bent.\n\n**Wat zegt de regel?**\nLAPL-medisch: 60 maanden tot 40 jaar (met vervaldatum uiterlijk na je 42ste), daarna 24 maanden. Er is geen extra verkorting na 50 jaar, zoals bij klasse 2.\n\n**Valkuil:**\n12 maanden is de geldigheid van klasse 2 boven 50 jaar. Wie dat doortrekt naar het LAPL-medisch certificaat, zit fout.\n\n**In de praktijk:**\nDe LAPL-geldigheid helpt je niet voor een PPL: daarvoor heb je klasse 2 nodig, met de strengere termijnen.",
+  "src": "med",
+  "ref": "MED.A.045 – Geldigheid, verlenging en hernieuwing van medische certificaten",
+  "doc": "aircrew",
+  "art": "MED.A.045",
+  "citaat": "(ii) 24 months, for licence holders aged above 40.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(i) 60 months, until the licence holder reaches the age of 40. A medical certificate issued prior to the licence holder reaching the age of 40 shall cease to be valid after the licence holder reaches the age of 42;\n(ii) 24 months, for licence holders aged above 40.\n(5) The validity period of a medical certificate, including any associated examination or special investigation, shall be calculated from the date of the aero-medical examination in the case of initial issue and renewal, and from the expiry date of the previous medical certificate in the case of revalidation."
+ },
+ {
+  "id": "MED-11",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Hoe lang vóór de vervaldatum van je medisch certificaat mag je ten vroegste het onderzoek voor verlenging (revalidation) laten doen?",
+  "o": [
+   "45 dagen",
+   "90 dagen",
+   "30 dagen",
+   "3 maanden"
+  ],
+  "c": 0,
+  "e": "Het onderzoek voor verlenging mag tot 45 dagen vóór de vervaldatum gebeuren.\n\n**Wat zegt de regel?**\nDoe je het onderzoek binnen die 45 dagen, dan is het een verlenging (revalidation) en loopt de nieuwe geldigheid vanaf de vervaldatum van het vorige certificaat. Doe je het niet binnen die termijn, dan is een hernieuwing (renewal) nodig.\n\n**Valkuil:**\n90 dagen klinkt bekend uit andere termijnen in de luchtvaart (bv. recente ervaring met passagiers), maar geldt hier niet.\n\n**In de praktijk:**\nMaak je afspraak bij de AME ruim op tijd en plan het onderzoek in de laatste anderhalve maand vóór de vervaldatum, zo verlies je geen geldigheid.",
+  "src": "med",
+  "ref": "MED.A.045 – Geldigheid, verlenging en hernieuwing van medische certificaten",
+  "doc": "aircrew",
+  "art": "MED.A.045",
+  "citaat": "Aero-medical examinations and assessments, as applicable, for the revalidation of a medical certificate may be undertaken up to 45 days prior to the expiry date of the medical certificate.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(b) Revalidation\nAero-medical examinations and assessments, as applicable, for the revalidation of a medical certificate may be undertaken up to 45 days prior to the expiry date of the medical certificate."
+ },
+ {
+  "id": "MED-12",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Je medisch certificaat klasse 2 vervalt op 30 juni. Je laat het op 1 juni verlengen (revalidation). Vanaf welke datum wordt de geldigheid van het nieuwe certificaat berekend?",
+  "o": [
+   "Vanaf 30 juni, de vervaldatum van het vorige certificaat",
+   "Vanaf 1 juni, de datum van het onderzoek",
+   "Vanaf de datum waarop de autoriteit het dossier ontvangt",
+   "Vanaf je eerstvolgende vlucht"
+  ],
+  "c": 0,
+  "e": "Bij verlenging wordt de geldigheid berekend vanaf de vervaldatum van het vorige certificaat, hier 30 juni.\n\n**Wat zegt de regel?**\nBij eerste afgifte en bij hernieuwing (renewal) telt de datum van het luchtvaartgeneeskundig onderzoek. Bij verlenging (revalidation) telt de vervaldatum van het vorige certificaat.\n\n**Valkuil:**\nDe datum van het onderzoek is wel het startpunt bij een eerste afgifte of hernieuwing. Wie tijdig verlengt, verliest dankzij deze regel geen dagen.\n\n**In de praktijk:**\nLaat je het certificaat eerst vervallen en ga je pas daarna naar de AME, dan telt de onderzoeksdatum en heb je intussen niet mogen vliegen.",
+  "src": "med",
+  "ref": "MED.A.045 – Geldigheid, verlenging en hernieuwing van medische certificaten",
+  "doc": "aircrew",
+  "art": "MED.A.045",
+  "citaat": "and from the expiry date of the previous medical certificate in the case of revalidation.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(i) 60 months, until the licence holder reaches the age of 40. A medical certificate issued prior to the licence holder reaching the age of 40 shall cease to be valid after the licence holder reaches the age of 42;\n(ii) 24 months, for licence holders aged above 40.\n(5) The validity period of a medical certificate, including any associated examination or special investigation, shall be calculated from the date of the aero-medical examination in the case of initial issue and renewal, and from the expiry date of the previous medical certificate in the case of revalidation."
+ },
+ {
+  "id": "MED-13",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Je medisch certificaat klasse 2 is al een jaar vervallen. Je wilt opnieuw vliegen. Welk onderzoek moet je ondergaan?",
+  "o": [
+   "Een gewoon onderzoek zoals bij verlenging (routine revalidation examination)",
+   "Het volledige onderzoek zoals bij een eerste afgifte",
+   "Geen onderzoek: een administratieve aanvraag bij de autoriteit volstaat",
+   "Een onderzoek dat de AME pas doet na beoordeling van je volledige luchtvaartgeneeskundige dossiers"
+  ],
+  "c": 0,
+  "e": "Is een certificaat klasse 1 of 2 minder dan 2 jaar vervallen, dan volstaat bij hernieuwing een gewoon verlengingsonderzoek.\n\n**Wat zegt de regel?**\nVervallen minder dan 2 jaar: routineonderzoek zoals bij verlenging. Tussen 2 en 5 jaar: de AeMC of AME beoordeelt eerst je dossiers. Meer dan 5 jaar: de eisen voor een eerste afgifte gelden.\n\n**Valkuil:**\nHet volledige onderzoek zoals bij eerste afgifte is pas vereist na meer dan 5 jaar.\n\n**In de praktijk:**\nOok al is het onderzoek beperkt, het blijft een hernieuwing: de nieuwe geldigheid loopt vanaf de datum van het onderzoek, en tot dan mag je de voorrechten van je brevet niet uitoefenen.",
+  "src": "med",
+  "ref": "MED.A.045 – Geldigheid, verlenging en hernieuwing van medische certificaten",
+  "doc": "aircrew",
+  "art": "MED.A.045",
+  "citaat": "(i) if the medical certificate has expired for less than 2 years, a routine revalidation aero-medical examination shall be performed;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(i) if the medical certificate has expired for less than 2 years, a routine revalidation aero-medical examination shall be performed;\n(ii) if the medical certificate has expired for more than 2 years but less than 5 years, the AeMC or AME shall only conduct the renewal aero-medical examination after assessment of the aero-medical records of the applicant;\n(iii) if the medical certificate has expired for more than 5 years, the aero-medical examination requirements for initial issue shall apply and the assessment shall be based on the revalidation requirements.\n(3) In the case of LAPL medical certificates, the AeMC, AME or GMP shall assess the medical history of the applicant and perform the aero-medical examinations and assessments, as applicable, in accordance with points MED.B.005 and MED.B.095."
+ },
+ {
+  "id": "MED-14",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Je huisarts schrijft je een bloeddrukverlager voor die je voortaan dagelijks moet nemen. Je voelt je prima. Wat moet je doen voor je weer gaat vliegen met je PPL(A)?",
+  "o": [
+   "Zonder onnodige vertraging en vóór je volgende vlucht luchtvaartgeneeskundig advies vragen",
+   "Niets, zolang je geen bijwerkingen merkt",
+   "Wachten tot je volgende periodieke keuring en het daar melden",
+   "Het alleen melden als je de medicatie langer dan 3 maanden neemt"
+  ],
+  "c": 0,
+  "e": "Begin je met regelmatig gebruik van een geneesmiddel, dan moet je zonder onnodige vertraging en vóór je vliegt luchtvaartgeneeskundig advies vragen.\n\n**Wat zegt de regel?**\nAls houder van klasse 2 vraag je dat advies aan een AeMC of AME. Die beoordeelt of je je voorrechten weer mag uitoefenen.\n\n**Valkuil:**\nJe goed voelen is niet genoeg. De verplichting geldt los van bijwerkingen: de AME moet beoordelen of medicatie en onderliggende aandoening verenigbaar zijn met vliegen.\n\n**In de praktijk:**\nDe meeste bloeddrukverlagers zijn verenigbaar met vliegen, maar de AME wil eerst zeker zijn dat je geen hinderlijke bijwerkingen hebt.",
+  "src": "med",
+  "ref": "MED.A.020 – Vermindering van de medische geschiktheid (decrease in medical fitness)",
+  "doc": "aircrew",
+  "art": "MED.A.020",
+  "citaat": "(2) have commenced the regular use of any medication;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(b) In addition, holders of a medical certificate shall, without undue delay and before exercising the privileges of their licence, seek aero-medical advice from the AeMC, AME or GMP, as applicable, when they:\n(1) have undergone a surgical operation or invasive procedure;\n(2) have commenced the regular use of any medication;\n(3) have suffered any significant personal injury involving incapacity to function as a member of the flight crew;\n(4) have been suffering from any significant illness involving incapacity to function as a member of the flight crew;\n(5) are pregnant;\n(6) have been admitted to hospital or medical clinic;\n(7) first require correcting lenses."
+ },
+ {
+  "id": "MED-15",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Een piloot met een medisch certificaat klasse 2 is zwanger. Ze heeft luchtvaartgeneeskundig advies gevraagd en de AME vindt haar geschikt. Tot wanneer mag ze haar voorrechten blijven uitoefenen?",
+  "o": [
+   "Tot het einde van de 26e week van de zwangerschap",
+   "Tot het einde van de 12e week van de zwangerschap",
+   "Tot het einde van de 36e week van de zwangerschap",
+   "Tot de bevalling, zolang ze zich goed voelt"
+  ],
+  "c": 0,
+  "e": "Een zwangere piloot mag haar voorrechten blijven uitoefenen tot het einde van de 26e zwangerschapsweek, en alleen als de AeMC of AME haar daartoe geschikt vindt.\n\n**Wat zegt de regel?**\nZwangerschap is een van de situaties waarin je zonder onnodige vertraging en vóór je vliegt advies moet vragen aan een AeMC of AME. Na de bevalling mag je na herstel opnieuw vliegen.\n\n**Valkuil:**\nZich goed voelen is geen maatstaf: na week 26 houdt het vliegen op, ongeacht hoe je je voelt.\n\n**In de praktijk:**\nMeld de zwangerschap meteen aan je AME, ook al ben je pas enkele weken ver.",
+  "src": "med",
+  "ref": "MED.B.045 – Verloskunde en gynaecologie",
+  "doc": "aircrew",
+  "art": "MED.B.045",
+  "citaat": "(1) In the event of pregnancy, an applicant may continue to exercise her privileges until the end of the 26th week of gestation only if the AeMC or AME considers that she is fit to do so.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) Applicants who have undergone a major gynaecological operation shall be assessed as unfit. However, they may be assessed as fit after full recovery.\n(b) Pregnancy\n(1) In the event of pregnancy, an applicant may continue to exercise her privileges until the end of the 26th week of gestation only if the AeMC or AME considers that she is fit to do so.\n(2) For holders of a class 1 medical certificate who are pregnant, an OML shall apply. Notwithstanding point MED.B.001, in that case, the OML may be imposed and removed by the AeMC or AME.\n(3) An applicant may resume exercising her privileges after recovery following the end of the pregnancy."
+ },
+ {
+  "id": "MED-16",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Bij de opticien blijkt dat je voor het eerst een bril nodig hebt om veraf scherp te zien. Je medisch certificaat klasse 2 vermeldt nog geen beperking. Wat moet je doen?",
+  "o": [
+   "Vóór je weer vliegt luchtvaartgeneeskundig advies vragen",
+   "Gewoon met je nieuwe bril vliegen; melden is pas nodig bij je volgende keuring",
+   "Zonder bril blijven vliegen tot je volgende keuring",
+   "Je certificaat zelf aanvullen met de code voor bril"
+  ],
+  "c": 0,
+  "e": "Heb je voor het eerst een corrigerende bril of lenzen nodig, dan moet je vóór je vliegt luchtvaartgeneeskundig advies vragen aan een AeMC of AME.\n\n**Wat zegt de regel?**\nDe eerste nood aan corrigerende lenzen staat in de lijst van situaties waarin je zonder onnodige vertraging advies moet inwinnen. De AME beoordeelt je zicht en zet zo nodig een beperking (bv. VDL) op je certificaat.\n\n**Valkuil:**\nMet je nieuwe bril vliegen voelt veilig, maar de bril moet geschikt zijn voor de luchtvaart en door de AME beoordeeld worden.\n\n**In de praktijk:**\nZonder bril vliegen terwijl je zicht onvoldoende is, mag evenmin: je weet dan van een vermindering van je medische geschiktheid.",
+  "src": "med",
+  "ref": "MED.A.020 – Vermindering van de medische geschiktheid (decrease in medical fitness)",
+  "doc": "aircrew",
+  "art": "MED.A.020",
+  "citaat": "(7) first require correcting lenses.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(b) In addition, holders of a medical certificate shall, without undue delay and before exercising the privileges of their licence, seek aero-medical advice from the AeMC, AME or GMP, as applicable, when they:\n(1) have undergone a surgical operation or invasive procedure;\n(2) have commenced the regular use of any medication;\n(3) have suffered any significant personal injury involving incapacity to function as a member of the flight crew;\n(4) have been suffering from any significant illness involving incapacity to function as a member of the flight crew;\n(5) are pregnant;\n(6) have been admitted to hospital or medical clinic;\n(7) first require correcting lenses."
+ },
+ {
+  "id": "MED-17",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Je hebt een knieoperatie ondergaan en hebt een medisch certificaat klasse 2. Bij wie moet je luchtvaartgeneeskundig advies vragen voor je weer vliegt?",
+  "o": [
+   "Bij een AeMC of AME",
+   "Bij de chirurg die je geopereerd heeft",
+   "Bij je eigen huisarts (GMP)",
+   "Bij de hoofdinstructeur van je vliegschool"
+  ],
+  "c": 0,
+  "e": "Na een operatie moet je als houder van klasse 2 advies vragen aan een AeMC of AME, die beslist of je je voorrechten weer mag uitoefenen.\n\n**Wat zegt de regel?**\nNa een chirurgische ingreep of invasieve procedure vraag je zonder onnodige vertraging en vóór je vliegt luchtvaartgeneeskundig advies. Houders van klasse 1 of 2 gaan naar een AeMC of AME; houders van een LAPL-medisch certificaat mogen ook naar de GMP die hun certificaat ondertekend heeft.\n\n**Valkuil:**\nDe huisarts mag dit advies alleen geven aan LAPL-houders, en dan enkel als hij hun certificaat ondertekend heeft.\n\n**In de praktijk:**\nNeem het verslag van de operatie mee naar je AME.",
+  "src": "med",
+  "ref": "MED.A.020 – Vermindering van de medische geschiktheid (decrease in medical fitness)",
+  "doc": "aircrew",
+  "art": "MED.A.020",
+  "citaat": "(1) holders of class 1 and class 2 medical certificates shall seek the aero-medical advice of an AeMC or AME.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(c) In the cases referred to in point (b):\n(1) holders of class 1 and class 2 medical certificates shall seek the aero-medical advice of an AeMC or AME. In that case, the AeMC or AME shall assess their medical fitness and decide whether they are fit to resume the exercise of their privileges;\n(2) holders of light aircraft pilot licence medical certificates shall seek the aero-medical advice of an AeMC, an AME or the GMP who signed the medical certificate. In that case, the AeMC, AME or GMP shall assess their medical fitness and decide whether they are fit to resume the exercise of their privileges."
+ },
+ {
+  "id": "MED-18",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Je medisch certificaat vereist een correctie voor het zicht. Wat moet je tijdens het vliegen bij je hebben naast de bril of lenzen die je draagt?",
+  "o": [
+   "Een reservebril met dezelfde correctie, direct bruikbaar",
+   "Niets extra, zolang je bril goed past",
+   "Een recept van je oogarts",
+   "Een zonnebril op sterkte in plaats van een reservebril"
+  ],
+  "c": 0,
+  "e": "Als je voorrechten uitoefent met correctie, moet je een reservebril met dezelfde correctie meteen bij de hand hebben.\n\n**Wat zegt de regel?**\nDe reservebril moet voor afstand of voor dichtbij corrigeren, naargelang wat jij nodig hebt, en meteen bruikbaar zijn. Dat geldt ook als je contactlenzen draagt.\n\n**Valkuil:**\nEen zonnebril op sterkte is geen vervanging als hij niet dezelfde correctie geeft of niet bruikbaar is bij slecht licht, zoals in de schemering of in wolken.\n\n**In de praktijk:**\nBewaar de reservebril in een stevig etui op een vaste, bereikbare plek in de cockpit, niet in je bagage achterin.",
+  "src": "med",
+  "ref": "MED.B.070 – Gezichtsvermogen (visual system)",
+  "doc": "aircrew",
+  "art": "MED.B.070",
+  "citaat": "(5) A spare set of similarly correcting spectacles, for distant or near vision as applicable, shall be readily available for immediate use when exercising the privileges of the applicable licence(s).",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(g) Spectacles and contact lenses\n(1) If satisfactory visual function is achieved only with the use of correction, the spectacles or contact lenses shall provide optimal visual function, be well-tolerated and suitable for aviation purposes.\n(2) No more than one pair of spectacles shall be used to meet the visual requirements when exercising the privileges of the applicable licence(s).\n(3) For distant vision, spectacles or contact lenses shall be worn when exercising the privileges of the applicable licence(s).\n(4) For near vision, a pair of spectacles shall be kept available when exercising the privileges of the applicable licence(s).\n(5) A spare set of similarly correcting spectacles, for distant or near vision as applicable, shall be readily available for immediate use when exercising the privileges of the applicable licence(s).\n(6) If contact lenses are worn when exercising the privileges of the applicable licence(s), they shall be for distant vision, monofocal, and non-tinted and well-tolerated.\n(7) Applicants with a large refractive error shall use contact lenses or high-index spectacle lenses.\n(8) Orthokeratological lenses shall not be used."
+ },
+ {
+  "id": "MED-19",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Op je medisch certificaat staat de beperking VNL. Wat betekent dat?",
+  "o": [
+   "Alleen geldig met correctie voor slecht zicht dichtbij",
+   "Alleen geldig met correctie voor slecht zicht veraf",
+   "Alleen geldig met correctie voor veraf, tussenafstand en dichtbij",
+   "Alleen geldig overdag"
+  ],
+  "c": 0,
+  "e": "VNL betekent dat het certificaat alleen geldig is met correctie voor slecht zicht dichtbij (near vision).\n\n**Wat zegt de regel?**\nDe brilcodes: VDL = correctie voor afstand (distant), VML = correctie voor afstand, tussenafstand en dichtbij (multifocaal), VNL = correctie voor dichtbij. Bij VNL moet je een leesbril meteen beschikbaar hebben en een reservebril meenemen.\n\n**Valkuil:**\nVDL en VNL verschillen maar één letter: D staat voor distant, N voor near. 'Alleen geldig overdag' is de code VCL.\n\n**In de praktijk:**\nBij VNL mag je geen contactlenzen of volledige brilmonturen dragen die alleen voor dichtbij corrigeren, omdat je dan veraf slecht ziet. Gebruik dus een halve leesbril of een multifocale bril.",
+  "src": "med",
+  "ref": "AMC2 MED.B.001 – Codes voor beperkingen op het medisch certificaat",
+  "doc": "aircrew",
+  "art": "AMC2 MED.B.001",
+  "citaat": "VNL | Valid only with correction for defective near vision",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "VML | Valid only with correction for defective distant, intermediate and near vision\nVNL | Valid only with correction for defective near vision"
+ },
+ {
+  "id": "MED-20",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MED",
+  "q": "Aan welke eisen moeten contactlenzen voldoen als je ze draagt tijdens het vliegen?",
+  "o": [
+   "Voor zicht veraf, monofocaal, niet getint en goed verdragen",
+   "Multifocaal, zodat je zowel veraf als dichtbij scherp ziet",
+   "Getint, om verblinding door de zon te beperken",
+   "Voor zicht dichtbij, zodat je de instrumenten goed kunt lezen"
+  ],
+  "c": 0,
+  "e": "Contactlenzen die je tijdens het vliegen draagt, moeten voor zicht veraf zijn, monofocaal, niet getint en goed verdragen.\n\n**Wat zegt de regel?**\nMultifocale lenzen zijn dus niet toegelaten, en orthokeratologische lenzen (die 's nachts het hoornvlies omvormen) evenmin. Daarnaast moet je ook met lenzen een reservebril met dezelfde correctie bij de hand hebben.\n\n**Valkuil:**\nMultifocale lenzen lijken handig, maar ze geven een compromis in scherpte en worden niet aanvaard.\n\n**In de praktijk:**\nDraag je lenzen voor veraf en heb je ook een leesbril nodig, dan houd je die leesbril beschikbaar in de cockpit.",
+  "src": "med",
+  "ref": "MED.B.070 – Gezichtsvermogen (visual system)",
+  "doc": "aircrew",
+  "art": "MED.B.070",
+  "citaat": "(6) If contact lenses are worn when exercising the privileges of the applicable licence(s), they shall be for distant vision, monofocal, and non-tinted and well-tolerated.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(g) Spectacles and contact lenses\n(1) If satisfactory visual function is achieved only with the use of correction, the spectacles or contact lenses shall provide optimal visual function, be well-tolerated and suitable for aviation purposes.\n(2) No more than one pair of spectacles shall be used to meet the visual requirements when exercising the privileges of the applicable licence(s).\n(3) For distant vision, spectacles or contact lenses shall be worn when exercising the privileges of the applicable licence(s).\n(4) For near vision, a pair of spectacles shall be kept available when exercising the privileges of the applicable licence(s).\n(5) A spare set of similarly correcting spectacles, for distant or near vision as applicable, shall be readily available for immediate use when exercising the privileges of the applicable licence(s).\n(6) If contact lenses are worn when exercising the privileges of the applicable licence(s), they shall be for distant vision, monofocal, and non-tinted and well-tolerated.\n(7) Applicants with a large refractive error shall use contact lenses or high-index spectacle lenses.\n(8) Orthokeratological lenses shall not be used."
+ },
+ {
+  "id": "LW-01",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-ML",
+  "q": "Je maakt een privévlucht met een vliegtuig van je vliegclub. Wie is verantwoordelijk voor het naar behoren uitvoeren van de vooraf-vluchtinspectie (preflight inspection)?",
+  "o": [
+   "De gezagvoerder (pilot-in-command)",
+   "De eigenaar van het vliegtuig",
+   "Een erkende onderhoudsorganisatie",
+   "Het personeel dat het luchtwaardigheidsbeoordelingsbewijs (ARC) heeft afgegeven"
+  ],
+  "c": 0,
+  "e": "De gezagvoerder is verantwoordelijk voor het naar behoren uitvoeren van de vooraf-vluchtinspectie. Dat is jouw taak als je de vlucht uitvoert, ook als het vliegtuig niet van jou is.\n\n**Wat zegt de regel?**\nDe inspectie mag worden uitgevoerd door de piloot of door een andere bekwame persoon. Een erkende onderhoudsorganisatie of certificerend personeel is daarvoor niet nodig.\n\n**In de praktijk:**\nOok als een clublid het vliegtuig al heeft nagekeken, blijf jij als gezagvoerder verantwoordelijk voor het resultaat. Loop de checklist uit het vlieghandboek daarom zelf na.\n\n**Valkuil:**\nDe eigenaar is verantwoordelijk voor de permanente luchtwaardigheid in het algemeen, maar de verantwoordelijkheid voor de vooraf-vluchtinspectie ligt uitdrukkelijk bij de gezagvoerder.",
+  "src": "ml",
+  "ref": "ML.A.201 – Verantwoordelijkheden (responsibilities)",
+  "doc": "ml",
+  "art": "ML.A.201",
+  "citaat": "The pilot-in-command of the aircraft shall be responsible for the satisfactory accomplishment of the preflight inspection.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(d) The pilot-in-command of the aircraft shall be responsible for the satisfactory accomplishment of the preflight inspection. That inspection shall be carried out by the pilot or another qualified person but need not be carried out by an approved maintenance organisation or by certifying staff."
+ },
+ {
+  "id": "LW-02",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-ML",
+  "q": "Je leaset een vliegtuig voor langere tijd en je staat als lessee vermeld in het leasecontract. Wie is dan verantwoordelijk voor de permanente luchtwaardigheid (continuing airworthiness) van het vliegtuig?",
+  "o": [
+   "Jij als lessee",
+   "De eigenaar die het vliegtuig aan jou verhuurt",
+   "De bevoegde autoriteit van de lidstaat van inschrijving",
+   "De houder van het typecertificaat"
+  ],
+  "c": 0,
+  "e": "Jij als lessee bent verantwoordelijk, omdat je in het leasecontract (of in het inschrijvingsdocument) als lessee vermeld staat. In dat geval gaan de verantwoordelijkheden van de eigenaar over op de lessee.\n\n**Wat zegt de regel?**\nNormaal is de eigenaar verantwoordelijk en zorgt hij dat er niet wordt gevlogen tenzij het vliegtuig luchtwaardig wordt onderhouden, de uitrusting in orde is, het bewijs van luchtwaardigheid geldig is en het onderhoud volgens het onderhoudsprogramma (AMP) gebeurt.\n\n**Valkuil:**\nDat je het vliegtuig niet bezit, betekent niet dat de eigenaar verantwoordelijk blijft. Ben je als lessee geïdentificeerd, dan draag jij die verantwoordelijkheid.",
+  "src": "ml",
+  "ref": "ML.A.201 – Verantwoordelijkheden (responsibilities)",
+  "doc": "ml",
+  "art": "ML.A.201",
+  "citaat": "where the aircraft is leased, the responsibilities set out in point (a) shall apply to the lessee, if the lessee is identified either in the registration document of the aircraft or in the leasing contract.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(b) By derogation from point (a), where the aircraft is leased, the responsibilities set out in point (a) shall apply to the lessee, if the lessee is identified either in the registration document of the aircraft or in the leasing contract."
+ },
+ {
+  "id": "LW-03",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-ML",
+  "q": "Het onderhoud van je vliegtuig volgt het minimale inspectieprogramma (MIP) van Part-ML. Met welk interval moet de periodieke inspectie worden uitgevoerd?",
+  "o": [
+   "Jaarlijks of elke 100 vlieguren, wat het eerst bereikt wordt",
+   "Jaarlijks of elke 50 vlieguren, wat het eerst bereikt wordt",
+   "Om de 2 jaar of elke 200 vlieguren, wat het eerst bereikt wordt",
+   "Alleen elke 100 vlieguren, ongeacht hoeveel tijd er verstreken is"
+  ],
+  "c": 0,
+  "e": "Voor vliegtuigen geldt in het MIP een inspectie jaarlijks of elke 100 uur, wat het eerst komt. Er mag een tolerantie van 1 maand of 10 uur worden toegepast.\n\n**Wat zegt de regel?**\nHet volgende interval wordt berekend vanaf het moment waarop de inspectie werkelijk plaatsvond. Gebruik je de tolerantie, dan schuift het volgende interval dus niet mee naar het oorspronkelijke tijdstip.\n\n**In de praktijk:**\nKijk vóór de vlucht in het logboek hoeveel uren en maanden er sinds de laatste inspectie zijn verstreken.\n\n**Valkuil:**\nWie weinig vliegt, haalt de 100 uur misschien nooit, maar de jaarlijkse grens blijft gelden. Het is niet alleen een urentelling.",
+  "src": "ml",
+  "ref": "ML.A.302 – Onderhoudsprogramma (aircraft maintenance programme)",
+  "doc": "ml",
+  "art": "ML.A.302",
+  "citaat": "for aeroplanes, touring motor gliders (‘TMGs’) and balloons, every annual or 100-h interval, whichever comes first, to which a tolerance of 1 month or 10 h may be applied.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) for aeroplanes, touring motor gliders (‘TMGs’) and balloons, every annual or 100-h interval, whichever comes first, to which a tolerance of 1 month or 10 h may be applied. The next interval shall be calculated as from the time the inspection takes place;"
+ },
+ {
+  "id": "LW-04",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-ML",
+  "q": "Je voert vóór de vlucht de vooraf-vluchtinspectie uit zoals beschreven in het vlieghandboek. Moet daarvoor een bewijs van vrijgave na onderhoud (certificate of release to service, CRS) worden afgegeven?",
+  "o": [
+   "Nee, een taak uit het vlieghandboek zoals de vooraf-vluchtinspectie is geen onderhoud en vereist geen CRS",
+   "Ja, elke inspectie aan het vliegtuig vereist een CRS in het logboek",
+   "Ja, maar alleen als iemand anders dan de gezagvoerder de inspectie uitvoert",
+   "Nee, maar je moet de inspectie binnen 30 dagen in het motorlogboek inschrijven"
+  ],
+  "c": 0,
+  "e": "Een vooraf-vluchtinspectie is geen onderhoudstaak en vereist dus geen CRS. Dat geldt voor elke taak die in het vlieghandboek (of een ander operationeel handboek) beschreven staat om het vliegtuig klaar te maken voor de vlucht.\n\n**Wat zegt de regel?**\nWie zulke voorbereidingen uitvoert, blijft wel verantwoordelijk dat de betrokken onderdelen geschikt zijn voor installatie en in bruikbare staat verkeren.\n\n**Valkuil:**\nDe termijn van 30 dagen bestaat wel, maar die geldt voor het inschrijven van een CRS na echt onderhoud, niet voor een vooraf-vluchtinspectie.",
+  "src": "ml",
+  "ref": "Part-ML Appendix II – Beperkt onderhoud door de piloot-eigenaar (limited pilot-owner maintenance)",
+  "doc": "ml",
+  "art": "Appendix II",
+  "citaat": "is not considered a maintenance task and, therefore, does not require a CRS.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "Any task described in the aircraft flight manual (or other operational manuals), for example preparing the aircraft for flight (assembling the sailplane wings, or performing a preflight inspection, or assembling a basket, burner, fuel cylinders and an envelope combination for a balloon, etc.), is not considered a maintenance task and, therefore, does not require a CRS. Nevertheless, the person assembling those parts is responsible for ensuring that those parts are eligible for installation and in a serviceable condition."
+ },
+ {
+  "id": "LW-05",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-ML",
+  "q": "Na onderhoud aan je vliegtuig wordt een bewijs van vrijgave na onderhoud (CRS) afgegeven. Binnen welke termijn moet dit uiterlijk worden ingeschreven in het registratiesysteem voor permanente luchtwaardigheid (de logboeken)?",
+  "o": [
+   "Zo snel mogelijk, maar uiterlijk 30 dagen na de dag waarop het onderhoud voltooid werd",
+   "Uiterlijk 72 uur na voltooiing van het onderhoud",
+   "Uiterlijk 7 dagen na voltooiing van het onderhoud",
+   "Bij de volgende luchtwaardigheidsbeoordeling (airworthiness review)"
+  ],
+  "c": 0,
+  "e": "De CRS moet zo snel mogelijk, en uiterlijk 30 dagen na de dag van voltooiing van het onderhoud, worden ingeschreven.\n\n**Wat zegt de regel?**\nHet registratiesysteem bestaat uit het vliegtuiglogboek, het motorlogboek, het propellerlogboek en de logkaarten van onderdelen met een beperkte levensduur. In het vliegtuiglogboek staan onder meer het type, de inschrijving, de datum, de totale vliegtijd en het aantal landingen.\n\n**In de praktijk:**\nCorrecties moeten zo gebeuren dat de oorspronkelijke inschrijving zichtbaar blijft. Doorhalen mag dus, uitwissen of overschrijven niet.\n\n**Valkuil:**\n72 uur is de termijn voor het melden van voorvallen, niet voor het inschrijven van onderhoud.",
+  "src": "ml",
+  "ref": "ML.A.305 – Registratiesysteem voor permanente luchtwaardigheid (record system)",
+  "doc": "ml",
+  "art": "ML.A.305",
+  "citaat": "Each entry shall be made as soon as possible but not later than 30 days after the day of the completion of the maintenance task.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) At the completion of any maintenance, the certificate of release to service (CRS) required by point ML.A.801 shall be entered in the aircraft continuing airworthiness record system. Each entry shall be made as soon as possible but not later than 30 days after the day of the completion of the maintenance task."
+ },
+ {
+  "id": "LW-06",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-ML",
+  "q": "Een defect aan je vliegtuig wordt niet vóór de volgende vlucht hersteld, omdat het volgens de regels mocht worden uitgesteld. Wat moet er met dat defect gebeuren?",
+  "o": [
+   "Het moet worden vastgelegd in het registratiesysteem voor permanente luchtwaardigheid, en de piloot moet daar inzage in hebben",
+   "Het volstaat het mondeling door te geven aan de volgende piloot",
+   "Het moet binnen 72 uur aan de veiligheidsonderzoeksinstantie worden gemeld",
+   "Er hoeft niets te worden vastgelegd zolang het defect binnen 30 dagen hersteld wordt"
+  ],
+  "c": 0,
+  "e": "Elk defect dat niet vóór de vlucht hersteld wordt, moet in het registratiesysteem voor permanente luchtwaardigheid worden vastgelegd, en de piloot moet die vastlegging kunnen raadplegen.\n\n**Wat zegt de regel?**\nEen defect dat de vliegveiligheid ernstig in gevaar brengt, moet vóór de volgende vlucht worden hersteld. Een defect dat dat niet doet, moet zo snel als praktisch mogelijk worden hersteld, binnen de grenzen van de onderhoudsgegevens. Als piloot mag je onder meer zelf beslissen een defect uit te stellen aan uitrusting die niet verplicht is.\n\n**Valkuil:**\nEen mondelinge overdracht is niet genoeg. De volgende piloot moet het uitgestelde defect op papier (of digitaal) kunnen terugvinden.",
+  "src": "ml",
+  "ref": "ML.A.403 – Defecten aan het luchtvaartuig (aircraft defects)",
+  "doc": "ml",
+  "art": "ML.A.403",
+  "citaat": "Any defect not rectified before flight shall be recorded in the aircraft continuing airworthiness record system referred to in point ML.A.305 and a record shall be available to the pilot.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(d) Any defect not rectified before flight shall be recorded in the aircraft continuing airworthiness record system referred to in point ML.A.305 and a record shall be available to the pilot."
+ },
+ {
+  "id": "LW-07",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-ML",
+  "q": "Door een onvoorziene storing sta je met je privé gebruikte vliegtuig aan de grond op een veld zonder erkende onderhoudsorganisatie en zonder certificerend personeel. Wie mag je als eigenaar machtigen om het onderhoud uit te voeren en het vliegtuig vrij te geven?",
+  "o": [
+   "Iemand met minstens 3 jaar passende onderhoudservaring en de juiste kwalificaties",
+   "Iedere houder van een geldig vliegbrevet met de juiste klassebevoegdverklaring",
+   "Iemand met minstens 1 jaar onderhoudservaring",
+   "Niemand: het vliegtuig mag pas weer vliegen na herstel door een erkende onderhoudsorganisatie ter plaatse"
+  ],
+  "c": 0,
+  "e": "Je mag als eigenaar iemand machtigen die minstens 3 jaar passende onderhoudservaring heeft en de juiste kwalificaties bezit. Dat geldt alleen bij onvoorziene omstandigheden, als er ter plaatse geen erkende organisatie of certificerend personeel beschikbaar is.\n\n**Wat zegt de regel?**\nJe bewaart in de vliegtuigdocumenten de details van het werk en de kwalificaties van die persoon. Het werk moet zo snel mogelijk opnieuw worden gecontroleerd en normaal worden vrijgegeven. Bij een vliegtuig onder Part-NCO moet dat binnen 30 dagen gebeuren. Je meldt de machtiging binnen 7 dagen aan je CAMO/CAO of, als je geen contract hebt, aan de autoriteit.\n\n**Valkuil:**\nEen vliegbrevet maakt je niet bevoegd voor dit onderhoud. Het gaat om onderhoudservaring.",
+  "src": "ml",
+  "ref": "ML.A.801 – Bewijs van vrijgave na onderhoud (aircraft certificate of release to service)",
+  "doc": "ml",
+  "art": "ML.A.801",
+  "citaat": "the owner may authorise any person, with no less than 3 years of appropriate maintenance experience and holding the proper qualifications, to maintain the aircraft",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(c) By derogation from point (b), in the case of unforeseen circumstances, when an aircraft is grounded at a location where no appropriately approved maintenance organisation and no appropriate certifying staff are available, the owner may authorise any person, with no less than 3 years of appropriate maintenance experience and holding the proper qualifications, to maintain the aircraft according to the standards set out in Subpart D of this Annex and release the aircraft. The owner shall in that case:\n(1) obtain and keep in the aircraft records, details of all the work carried out and of the qualifications held by the person issuing the certification;\n(2) ensure that any such maintenance is rechecked and released in accordance with point (b) of point ML.A.801 at the earliest opportunity and within a period not exceeding 7 days or, in the case of aircraft operated under Annex VII to Regulation (EU) No 965/2012 (Part-NCO) or, in the case of balloons, not operated under Subpart-ADD of Annex II (Part-BOP) to Regulation (EU) 2018/395 or, in the case of sailplanes not following Subpart DEC of Annex II (Part-SAO) to Regulation (EU) 2018/1976, within a period not exceeding 30 days;\n(3) notify the contracted CAMO or CAO, or the competent authority in the absence of such a contract, within 7 days of the issuance of such authorisation."
+ },
+ {
+  "id": "LW-08",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-ML",
+  "q": "Je bent piloot-eigenaar (pilot-owner) van een vliegtuig dat je privé gebruikt. Welke onderhoudstaak mag je NIET zelf vrijgeven?",
+  "o": [
+   "Een taak ter naleving van een luchtwaardigheidsaanwijzing (AD), tenzij de AD dat uitdrukkelijk toestaat",
+   "Een eenvoudige visuele inspectie van het casco op algemene staat en duidelijke schade",
+   "Een taak waarvoor je als enig speciaal gereedschap een momentsleutel nodig hebt",
+   "Een taak waarvoor je als enig speciaal gereedschap een krimptang nodig hebt"
+  ],
+  "c": 0,
+  "e": "Een taak ter naleving van een AD mag je als piloot-eigenaar niet vrijgeven, tenzij de AD het uitdrukkelijk toestaat. Hetzelfde geldt voor taken op basis van een luchtwaardigheidsbeperking (ALI).\n\n**Wat zegt de regel?**\nAls piloot-eigenaar mag je eenvoudige visuele inspecties en handelingen uitvoeren om de algemene staat, zichtbare schade en de normale werking te controleren. Je mag ook taken vrijgeven waarvoor alleen een momentsleutel of krimptang nodig is. Uitgesloten zijn onder meer kritieke taken, taken met speciaal of gekalibreerd gereedschap en taken die deel uitmaken van de 100-uurs- of jaarlijkse inspectie.\n\n**In de praktijk:**\nTijdens je onderhoud moeten de toepasselijke onderhoudsgegevens beschikbaar zijn, en je moet ze volgen.\n\n**Valkuil:**\nMomentsleutel en krimptang zijn uitdrukkelijk uitgezonderd van het verbod op speciaal gereedschap.",
+  "src": "ml",
+  "ref": "Part-ML Appendix II – Beperkt onderhoud door de piloot-eigenaar (limited pilot-owner maintenance)",
+  "doc": "ml",
+  "art": "Appendix II",
+  "citaat": "it is carried out in compliance with an AD or an airworthiness limitation item (ALI) unless specifically allowed in the AD or the ALI;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "A maintenance task shall not be released by the pilot-owner if any of the following conditions occurs:\n(1) it is a critical maintenance task;\n(2) it requires the removal of major components o r a major assembly;\n(3) it is carried out in compliance with an AD or an airworthiness limitation item (ALI) unless specifically allowed in the AD or the ALI;\n(4) it requires the use of special tools or calibrated tools (except for torque wrench and crimping tool);\n(5) it requires the use of test equipment or special testing (e.g. non-destructive testing (NDT), system tests or operational checks for avionics equipment);\n(6) it is composed of any unscheduled special inspections (e.g. heavy-landing check);\n(7) it affects systems essential for the instrumental flight rules (IFR) operations;\n(8) it is a complex maintenance task in accordance with Appendix III, or it is a component maintenance task in accordance with point (a) or (b) of point ML.A.502;\n(9) it is part of the 100-h/annual check (for those cases the maintenance task is combined with the airworthiness review performed by maintenance organisations or independent certifying staff)."
+ },
+ {
+  "id": "LW-09",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-ML",
+  "q": "Na een bevredigende luchtwaardigheidsbeoordeling (airworthiness review) wordt een luchtwaardigheidsbeoordelingsbewijs (ARC) afgegeven. Hoe lang is dat bewijs geldig?",
+  "o": [
+   "1 jaar",
+   "2 jaar",
+   "3 jaar",
+   "Onbeperkt, zolang het vliegtuig volgens het onderhoudsprogramma onderhouden wordt"
+  ],
+  "c": 0,
+  "e": "Een ARC is 1 jaar geldig. De luchtwaardigheidsbeoordeling moet dus periodiek worden herhaald om het bewijs van luchtwaardigheid geldig te houden.\n\n**Wat zegt de regel?**\nEen erkende CAMO of CAO kan de geldigheid maximaal twee keer na elkaar met telkens 1 jaar verlengen, als het vliegtuig de voorbije 12 maanden door die organisatie werd beheerd en door erkende organisaties werd onderhouden. Een beoordeling mag tot 90 dagen vervroegd worden zonder het ritme te verliezen.\n\n**In de praktijk:**\nControleer vóór elke vlucht de vervaldatum van het ARC. Met een verlopen ARC mag het vliegtuig niet vliegen.\n\n**Valkuil:**\nDe verlengingen van telkens 1 jaar maken het ARC zelf niet langer geldig dan 1 jaar per keer.",
+  "src": "ml",
+  "ref": "ML.A.901 – Luchtwaardigheidsbeoordeling (aircraft airworthiness review)",
+  "doc": "ml",
+  "art": "ML.A.901",
+  "citaat": "The ARC shall be valid for 1 year;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) An ARC is issued in accordance with Appendix IV (EASA Form 15c) to this Annex upon completion of a satisfactory airworthiness review. The ARC shall be valid for 1 year;"
+ },
+ {
+  "id": "LW-10",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-ML",
+  "q": "Het ARC van je vliegtuig is nog geldig, maar het vliegtuig was betrokken bij een incident dat de luchtwaardigheid heeft aangetast. Mag je ermee vliegen?",
+  "o": [
+   "Nee, pas nadat passende maatregelen zijn genomen om de luchtwaardigheid te herstellen",
+   "Ja, zolang het ARC nog geldig is",
+   "Ja, maar alleen zonder passagiers",
+   "Ja, tot de volgende geplande jaarlijkse inspectie"
+  ],
+  "c": 0,
+  "e": "Nee. Na een ongeval of incident dat de luchtwaardigheid aantast, mag het vliegtuig niet vliegen tot er passende maatregelen zijn genomen om de luchtwaardigheid te herstellen, ook al is het ARC nog geldig.\n\n**Wat zegt de regel?**\nEen vliegtuig mag ook niet vliegen als het niet meer overeenstemt met het goedgekeurde typeontwerp, als het buiten de grenzen van het vlieghandboek werd gebruikt zonder passende actie, of als een wijziging of herstelling niet aan Part 21 voldoet.\n\n**Valkuil:**\nEen geldig ARC zegt alleen dat het vliegtuig op het moment van de beoordeling in orde was. Het is geen vrijbrief na schade.",
+  "src": "ml",
+  "ref": "ML.A.902 – Geldigheid van het ARC (validity of the airworthiness review certificate)",
+  "doc": "ml",
+  "art": "ML.A.902",
+  "citaat": "the aircraft has been involved in an accident or incident that affects the airworthiness of the aircraft, without subsequent appropriate action to restore airworthiness;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(b) An aircraft shall not fly if the ARC is invalid or if any of the following circumstances are present:\n(1) the continuing airworthiness of the aircraft or any component fitted to the aircraft does not meet the requirements of this Annex;\n(2) the aircraft does not remain in conformity with the type design approved by the Agency;\n(3) the aircraft has been operated beyond the limitations of the approved flight manual or airworthiness certificate, without appropriate action being taken;\n(4) the aircraft has been involved in an accident or incident that affects the airworthiness of the aircraft, without subsequent appropriate action to restore airworthiness;\n(5) a modification or repair to the aircraft or any component fitted to the aircraft is not in compliance with Annex I (Part 21) or, as applicable, Annex Ib (Part 21 Light) to Regulation (EU) No 748/2012."
+ },
+ {
+  "id": "LW-11",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part 21",
+  "q": "Welke gebeurtenis zorgt ervoor dat het bewijs van luchtwaardigheid (certificate of airworthiness, CofA) van je vliegtuig niet geldig blijft?",
+  "o": [
+   "Het vliegtuig wordt ingeschreven in het register van een andere lidstaat",
+   "Het vliegtuig wordt verkocht en blijft in hetzelfde register ingeschreven",
+   "De jaarlijkse inspectie wordt door een andere onderhoudsorganisatie uitgevoerd",
+   "Het vliegtuig heeft meer dan 12 maanden niet gevlogen"
+  ],
+  "c": 0,
+  "e": "Het bewijs van luchtwaardigheid blijft alleen geldig zolang het vliegtuig in hetzelfde register ingeschreven blijft. Bij overschrijving naar een andere lidstaat wordt daar een nieuw bewijs afgegeven.\n\n**Wat zegt de regel?**\nHet bewijs blijft geldig zolang het vliegtuig aan het typeontwerp en de eisen voor permanente luchtwaardigheid voldoet, in hetzelfde register blijft, het typecertificaat niet ongeldig is en het bewijs niet is ingetrokken of ingeleverd. Na inlevering of intrekking stuur je het terug naar de autoriteit van de lidstaat van inschrijving.\n\n**Valkuil:**\nBij een verkoop binnen hetzelfde register gaat het bewijs gewoon met het vliegtuig mee naar de nieuwe eigenaar.",
+  "src": "part21",
+  "ref": "21.A.181 – Duur en blijvende geldigheid (duration and continued validity)",
+  "doc": "part21",
+  "art": "21.A.181",
+  "citaat": "the aircraft remaining on the same register; and",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "2.the aircraft remaining on the same register; and\n3.the type-certificate or restricted type-certificate under which it is issued not being previously invalidated under point 21.A.51;\n4.the certificate has not been revoked by the competent authority under point 21.B.65, or surrendered by the certificate holder."
+ },
+ {
+  "id": "LW-12",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part 21",
+  "q": "Aan welk luchtvaartuig wordt een beperkt bewijs van luchtwaardigheid (restricted certificate of airworthiness) afgegeven?",
+  "o": [
+   "Aan een luchtvaartuig dat voldoet aan een beperkt typecertificaat (restricted type-certificate)",
+   "Aan een luchtvaartuig waarvan het ARC verlopen is",
+   "Aan een luchtvaartuig dat naar een onderhoudsbedrijf moet worden overgevlogen",
+   "Aan een luchtvaartuig dat uitsluitend voor lesvluchten wordt gebruikt"
+  ],
+  "c": 0,
+  "e": "Een beperkt bewijs van luchtwaardigheid wordt afgegeven aan een luchtvaartuig dat voldoet aan een beperkt typecertificaat, of waarvan aan het EASA is aangetoond dat het voldoet aan specifieke luchtwaardigheidsspecificaties die voldoende veiligheid garanderen.\n\n**Wat zegt de regel?**\nEen gewoon bewijs van luchtwaardigheid krijgt een luchtvaartuig dat voldoet aan een (volledig) typecertificaat.\n\n**In de praktijk:**\nVlieg je met een vliegtuig met een beperkt bewijs, kijk dan welke beperkingen erbij horen.\n\n**Valkuil:**\nVoor een overvlucht van een vliegtuig dat tijdelijk niet aan de luchtwaardigheidseisen voldoet, gebruik je geen beperkt bewijs maar een vliegvergunning (permit to fly).",
+  "src": "part21",
+  "ref": "21.A.173 – Indeling van bewijzen van luchtwaardigheid (classification)",
+  "doc": "part21",
+  "art": "21.A.173",
+  "citaat": "restricted certificates of airworthiness shall be issued to aircraft:",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "Regulation (EU) No 748/2012\nAirworthiness certificates shall be classified as follows:\n(a) certificates of airworthiness shall be issued to aircraft which conform to a type-certificate that has been issued in accordance with this Annex I (Part 21);\n(b) restricted certificates of airworthiness shall be issued to aircraft:\n1.which conform to a restricted type-certificate that has been issued in accordance with this Annex I (Part 21); or\n2.which have been shown to the Agency to comply with specific airworthiness specifications ensuring adequate safety."
+ },
+ {
+  "id": "LW-13",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part 21",
+  "q": "Je vliegtuig voldoet tijdelijk niet aan de toepasselijke luchtwaardigheidseisen, maar kan onder bepaalde voorwaarden veilig vliegen. Je wilt het naar een onderhoudsbedrijf overvliegen. Welk document heb je daarvoor nodig?",
+  "o": [
+   "Een vliegvergunning (permit to fly)",
+   "Een geluidscertificaat (noise certificate)",
+   "Een nieuw luchtwaardigheidsbeoordelingsbewijs (ARC)",
+   "Een bewijs van vrijgave na onderhoud (CRS)"
+  ],
+  "c": 0,
+  "e": "Je hebt een vliegvergunning (permit to fly) nodig. Die wordt afgegeven aan luchtvaartuigen die niet aan de luchtwaardigheidseisen voldoen, of waarvan dat niet is aangetoond, maar die onder vastgelegde voorwaarden veilig kunnen vliegen.\n\n**Wat zegt de regel?**\nEen van de doelen is een vlucht naar een plaats waar onderhoud of een luchtwaardigheidsbeoordeling wordt uitgevoerd, of naar een stallingsplaats. Andere doelen zijn onder meer testvluchten, levering, tentoonstellingen en vluchten om systemen na onderhoud te controleren.\n\n**In de praktijk:**\nAls houder moet je zorgen dat alle voorwaarden en beperkingen van de vergunning tijdens de vlucht worden nageleefd.\n\n**Valkuil:**\nEen CRS bevestigt dat onderhoud correct is uitgevoerd. Het maakt een niet-luchtwaardig vliegtuig niet vliegklaar.",
+  "src": "part21",
+  "ref": "21.A.701 – Toepassingsgebied vliegvergunning (permit to fly – scope)",
+  "doc": "part21",
+  "art": "21.A.701",
+  "citaat": "flying the aircraft to a location where maintenance or airworthiness review are to be performed, or to a place of storage;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "11.flying the aircraft to a location where maintenance or airworthiness review are to be performed, or to a place of storage;\n12.flying an aircraft at a weight in excess of its maximum certificated takeoff weight for flight beyond the normal range over water, or over land areas where adequate landing facilities or appropriate fuel is not available;\n13.record breaking, air racing or similar competition;\n14.flying aircraft meeting the applicable airworthiness requirements before conformity to the applicable environmental protection requirements has been demonstrated;\n15.for non-commercial flying activity on individual non-complex aircraft or types for which a certificate of airworthiness or restricted certificate of airworthiness is not appropriate."
+ },
+ {
+  "id": "LW-14",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part 21",
+  "q": "Voor welke periode wordt een vliegvergunning (permit to fly) in de regel maximaal afgegeven?",
+  "o": [
+   "Maximaal 12 maanden",
+   "Maximaal 30 dagen",
+   "Maximaal 6 maanden",
+   "Voor onbeperkte tijd"
+  ],
+  "c": 0,
+  "e": "Een vliegvergunning wordt afgegeven voor maximaal 12 maanden. Ze blijft alleen geldig zolang de voorwaarden en beperkingen worden nageleefd, ze niet is ingetrokken of ingeleverd en het vliegtuig in hetzelfde register blijft.\n\n**Wat zegt de regel?**\nAlleen een vliegvergunning voor niet-commerciële vluchten met individuele niet-complexe luchtvaartuigen waarvoor een (beperkt) bewijs van luchtwaardigheid niet geschikt is, mag voor onbeperkte duur worden afgegeven. Bij inlevering of intrekking gaat de vergunning terug naar de autoriteit.\n\n**Valkuil:**\nEen vergunning voor een overvlucht naar onderhoud is per definitie tijdelijk. Een onbeperkte duur geldt alleen voor die bijzondere categorie.",
+  "src": "part21",
+  "ref": "21.A.723 – Duur en blijvende geldigheid vliegvergunning (duration and continued validity)",
+  "doc": "part21",
+  "art": "21.A.723",
+  "citaat": "A permit to fly shall be issued for a maximum period of 12 months",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) A permit to fly shall be issued for a maximum period of 12 months and shall remain valid subject to compliance with all the following conditions:\n1.the organisation continues to comply with the conditions and restrictions associated with the permit to fly as set out in point 21.A.711(e);\n2.the holder or any of its partners, suppliers or subcontractors acknowledge that the competent authority may carry out investigations in accordance with point 21.A.9;\n3.the permit to fly has not been revoked by the competent authority under point 21.B.65, or surrendered by its holder;\n4.the aircraft remains on the same register."
+ },
+ {
+  "id": "LW-15",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part 21",
+  "q": "Hoe lang is het geluidscertificaat (noise certificate) van je vliegtuig geldig?",
+  "o": [
+   "Voor onbeperkte tijd, zolang aan de geldigheidsvoorwaarden voldaan blijft",
+   "1 jaar, net als het ARC",
+   "3 jaar, daarna is een nieuwe geluidsmeting nodig",
+   "Tot het vliegtuig van eigenaar verandert"
+  ],
+  "c": 0,
+  "e": "Een geluidscertificaat wordt voor onbeperkte tijd afgegeven. Het blijft geldig zolang het vliegtuig aan het typeontwerp en de eisen voor permanente luchtwaardigheid voldoet, in hetzelfde register blijft, het typecertificaat niet ongeldig is en het certificaat niet is ingetrokken of ingeleverd.\n\n**Wat zegt de regel?**\nBij een verkoop binnen hetzelfde register gaat het geluidscertificaat met het vliegtuig mee naar de nieuwe eigenaar.\n\n**In de praktijk:**\nBij de luchtwaardigheidsbeoordeling wordt nagegaan of het vliegtuig, indien vereist, een geluidscertificaat heeft dat past bij de huidige configuratie.\n\n**Valkuil:**\nEen wisseling van eigenaar maakt het certificaat niet ongeldig. Overschrijving naar het register van een andere lidstaat wel.",
+  "src": "part21",
+  "ref": "21.A.211 – Duur en blijvende geldigheid geluidscertificaat (duration and continued validity)",
+  "doc": "part21",
+  "art": "21.A.211",
+  "citaat": "A noise certificate shall be issued for an unlimited period of time.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) A noise certificate shall be issued for an unlimited period of time. It shall remain valid subject to compliance with all the following conditions:\n1.the aircraft continues to comply with the applicable type design and continued airworthiness requirements; and\n2.the aircraft remaining on the same register; and\n3.the type-certificate or restricted type-certificate under which it is issued not being previously invalidated under point 21.A.51;\n4.the certificate has not been revoked by the competent authority under point 21.B.65, or surrendered by the certificate holder."
+ },
+ {
+  "id": "LW-16",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Verordening (EU) 996/2010",
+  "q": "Bij een ongeval raakt je passagier gewond. Welk letsel valt onder de definitie van \"ernstig letsel\"?",
+  "o": [
+   "Letsel waarvoor meer dan 48 uur behandeling in een ziekenhuis nodig is, te beginnen binnen 7 dagen na het oplopen van het letsel",
+   "Letsel waarvoor meer dan 24 uur behandeling in een ziekenhuis nodig is, te beginnen binnen 3 dagen",
+   "Een enkelvoudige breuk van een vinger",
+   "Een eerstegraads brandwonde aan een hand"
+  ],
+  "c": 0,
+  "e": "Letsel waarvoor meer dan 48 uur behandeling in een ziekenhuis nodig is, te beginnen binnen 7 dagen na het oplopen ervan, is ernstig letsel.\n\n**Wat zegt de regel?**\nOok ernstig letsel zijn: botbreuken (behalve enkelvoudige breuken van vingers, tenen of neus), snijwonden met ernstige bloedingen of schade aan zenuwen, spieren of pezen, letsel aan een inwendig orgaan, tweede- of derdegraads brandwonden of brandwonden over meer dan 5 % van het lichaam, en blootstelling aan besmettelijke stoffen of schadelijke straling.\n\n**In de praktijk:**\nErnstig letsel maakt van een voorval een ongeval, met de bijbehorende meldingsplicht.\n\n**Valkuil:**\nEen enkelvoudige vingerbreuk is uitdrukkelijk uitgezonderd.",
+  "src": "acc",
+  "ref": "Artikel 2 Verordening 996/2010 – Definities (ernstig letsel)",
+  "doc": "acc996",
+  "art": "Artikel 2",
+  "citaat": "behandeling in een ziekenhuis gedurende meer dan 48 uur vereist, te beginnen binnen zeven dagen vanaf de dag dat het letsel werd opgelopen;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "17. „ernstig letsel”: een door een bij een ongeval betrokken persoon opgelopen letsel dat:\na) behandeling in een ziekenhuis gedurende meer dan 48 uur vereist, te beginnen binnen zeven dagen vanaf de dag dat het letsel werd opgelopen;\nb) leidt tot één of meer botbreuken (uitgezonderd enkelvoudige fracturen van vingers, tenen of neus);\nc) gepaard gaat met snijwonden welke ernstige bloedingen of beschadiging van zenuwen, spieren of pezen tot gevolg hebben;\nd) gepaard gaat met letsel aan een inwendig orgaan;\ne) gepaard gaat met tweede- of derdegraads brandwonden, of met brandwonden die meer dan 5 % van het lichaamsoppervlak beslaan;\nf) gepaard gaat met geconstateerde blootstelling aan besmettelijke stoffen of schadelijke straling."
+ },
+ {
+  "id": "LW-17",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Verordening (EU) 996/2010",
+  "q": "Binnen welke periode moet een voorval met een bemand luchtvaartuig plaatsvinden om een ongeval te kunnen zijn?",
+  "o": [
+   "Vanaf het moment dat iemand aan boord gaat met de bedoeling te vliegen tot alle personen die met die bedoeling aan boord gingen, zijn uitgestapt",
+   "Vanaf het starten van de motor tot het afzetten van de motor",
+   "Vanaf het begin van de startrol tot het einde van de landingsuitloop",
+   "Vanaf het loskomen van de grond tot het neerkomen van de wielen bij de landing"
+  ],
+  "c": 0,
+  "e": "Een ongeval kan plaatsvinden vanaf het moment dat iemand aan boord gaat met de bedoeling een vlucht uit te voeren tot alle personen die met die bedoeling aan boord gingen, zijn uitgestapt.\n\n**Wat zegt de regel?**\nIn die periode is er een ongeval als iemand dodelijk of ernstig gewond raakt, als het luchtvaartuig schade of een structureel defect oploopt waarvoor normaal ingrijpend herstel of vervanging nodig is, of als het luchtvaartuig vermist wordt of volledig onbereikbaar is.\n\n**In de praktijk:**\nOok een voorval tijdens het taxiën, of terwijl je passagiers nog aan boord zijn met draaiende of stilstaande motor, valt binnen die periode.\n\n**Valkuil:**\nHet gaat niet om de vlucht in de lucht of de werking van de motor, maar om de periode waarin personen aan boord zijn met de bedoeling te vliegen.",
+  "src": "acc",
+  "ref": "Artikel 2 Verordening 996/2010 – Definities (ongeval)",
+  "doc": "acc996",
+  "art": "Artikel 2",
+  "citaat": "plaatsvindt tussen het tijdstip waarop een persoon zich aan boord begeeft met het voornemen een vlucht uit te voeren en het tijdstip waarop alle personen die zich met dit voornemen aan boord hebben begeven, zijn uitgestapt",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "… „ongeval”: een met het gebruik van een luchtvaartuig verband houdend voorval dat, in het geval van een bemand luchtvaartuig, plaatsvindt tussen het tijdstip waarop een persoon zich aan boord begeeft met het voornemen een vlucht uit te voeren en het tijdstip waarop alle personen die zich met dit voornemen aan boord hebben begeven, zijn uitgestapt, of, in het geval van een onbemand luchtvaartuig, tussen het tijdstip waarop het luchtvaartuig klaar is om zich in beweging te zetten met het oog op het uitvoeren van een vlucht tot het tijdstip waarop het tot stilstand komt na het beëindigen van een vlucht en de hoofdaandrijving is stopgezet, waarbij:\na) een persoon dodelijk of ernstig gewond raakt omdat hij:\n— zich in het luchtvaartuig bevond,\n— direct in contact is gekomen met een onderdeel v …"
+ },
+ {
+  "id": "LW-18",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Verordening (EU) 996/2010",
+  "q": "Je bent als gezagvoerder betrokken bij een ernstig incident in een andere EU-lidstaat dan die waar je vliegtuig ingeschreven is. Wie moet je volgens Verordening 996/2010 op de hoogte brengen, en wanneer?",
+  "o": [
+   "Onverwijld de veiligheidsonderzoeksinstantie van de lidstaat waar het voorval plaatsvond",
+   "Binnen 7 dagen de veiligheidsonderzoeksinstantie van de lidstaat van inschrijving",
+   "Binnen 30 dagen het EASA",
+   "Onverwijld alleen de eigenaar van het vliegtuig, die de melding verder afhandelt"
+  ],
+  "c": 0,
+  "e": "Je brengt onverwijld de veiligheidsonderzoeksinstantie op de hoogte van de lidstaat op wiens grondgebied het ongeval of ernstig incident plaatsvond.\n\n**Wat zegt de regel?**\nDe plicht geldt voor alle betrokken personen, onder wie de eigenaar, de bemanningsleden en de exploitant. De onderzoeksinstantie licht daarna zelf de Europese Commissie, het EASA, de ICAO en de betrokken staten in.\n\n**In de praktijk:**\nDaarnaast geldt ook de verplichte melding van voorvallen volgens Verordening 376/2014. Je kunt dus tweemaal moeten melden.\n\n**Valkuil:**\nHet gaat om de staat waar het voorval plaatsvond, niet om de staat waar het vliegtuig ingeschreven is. En het moet onverwijld gebeuren, niet binnen een aantal dagen.",
+  "src": "acc",
+  "ref": "Artikel 9 Verordening 996/2010 – Meldingsplicht voor ongevallen en ernstige incidenten",
+  "doc": "acc996",
+  "art": "Artikel 9",
+  "citaat": "Alle betrokken personen die weten dat zich een ongeval of een ernstig incident heeft voorgedaan, stellen de bevoegde veiligheidsonderzoeksinstantie van de lidstaat op wiens grondgebied het ongeval of incident heeft plaatsgevonden daarvan onverwijld in kennis.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "1. Alle betrokken personen die weten dat zich een ongeval of een ernstig incident heeft voorgedaan, stellen de bevoegde veiligheidsonderzoeksinstantie van de lidstaat op wiens grondgebied het ongeval of incident heeft plaatsgevonden daarvan onverwijld in kennis. 2. De veiligheidsonderzoeksinstantie stelt de Commissie, het EASA, de Internationale Burgerluchtvaartorganisatie (ICAO), de betrokken lidstaten en derde staten overeenkomstig de internationale normen en aanbevolen werkwijzen in kennis van alle ongevallen en ernstige incidenten die haar zijn gemeld."
+ },
+ {
+  "id": "LW-19",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Verordening (EU) 996/2010",
+  "q": "Na een ongeval met je vliegtuig wacht je op de veiligheidsonderzoekers. In welk geval mag het wrak voor hun aankomst al worden verplaatst?",
+  "o": [
+   "Als dat nodig is om veiligheidsredenen, om gewonden bij te staan of met uitdrukkelijke toestemming van de instanties die de plaats beheren",
+   "Zodra de eigenaar van het vliegtuig daarvoor toestemming geeft",
+   "Zodra de verzekeraar de schade heeft vastgesteld",
+   "Zodra de gezagvoerder het wrak heeft gefotografeerd"
+  ],
+  "c": 0,
+  "e": "Het wrak mag alleen worden verplaatst als dat nodig is om veiligheidsredenen, om gewonden bij te staan, of met uitdrukkelijke toestemming van de instanties die de plaats beheren, waar mogelijk in overleg met de veiligheidsonderzoeksinstantie.\n\n**Wat zegt de regel?**\nNiemand mag vóór de aankomst van de onderzoekers de plaats van het ongeval wijzigen, monsters nemen of het luchtvaartuig, de inhoud of de wrakstukken verplaatsen. Alle betrokkenen moeten ook documenten, materiaal en opgeslagen gegevens bewaren en voorkomen dat opnames worden gewist.\n\n**In de praktijk:**\nHulp aan gewonden en veiligheid gaan altijd voor. Laat verder alles liggen.\n\n**Valkuil:**\nDe eigenaar of de verzekeraar kan geen toestemming geven. Foto's maken is nuttig, maar geeft je geen recht om iets te verplaatsen.",
+  "src": "acc",
+  "ref": "Artikel 13 Verordening 996/2010 – Bewaring van bewijsmateriaal",
+  "doc": "acc996",
+  "art": "Artikel 13",
+  "citaat": "In afwachting van de aankomst van de veiligheidsonderzoekers mag niemand de staat van de plaats van het ongeval wijzigen",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "… In afwachting van de aankomst van de veiligheidsonderzoekers mag niemand de staat van de plaats van het ongeval wijzigen, monsters nemen, het luchtvaartuig, de inhoud of de wrakstukken ervan verplaatsen, verwijderen of er monsters van nemen, behalve als dit nodig is om veiligheidsredenen, om bijstand te verlenen aan gewonden of met de uitdrukkelijke toestemming van de instanties die de plaats beheren en, waar mogelijk, in overleg met de veiligheidsonderzoeksinstantie. …"
+ },
+ {
+  "id": "LW-20",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Verordening (EU) 996/2010",
+  "q": "Wat is volgens Verordening 996/2010 het doel van een veiligheidsonderzoek naar een luchtvaartongeval?",
+  "o": [
+   "Toekomstige ongevallen en incidenten voorkomen, zonder schuld of aansprakelijkheid vast te stellen",
+   "De schuldige aanwijzen, zodat er sancties kunnen worden opgelegd",
+   "Bepalen welke verzekeraar de schade moet vergoeden",
+   "Nagaan of het brevet van de gezagvoerder moet worden ingetrokken"
+  ],
+  "c": 0,
+  "e": "Een veiligheidsonderzoek heeft uitsluitend tot doel toekomstige ongevallen en incidenten te voorkomen. Het stelt geen schuld of aansprakelijkheid vast.\n\n**Wat zegt de regel?**\nHet veiligheidsonderzoek is onafhankelijk en staat los van eventuele gerechtelijke of administratieve procedures om schuld of aansprakelijkheid vast te stellen. Het resultaat kan uitmonden in veiligheidsaanbevelingen.\n\n**In de praktijk:**\nWerk open mee aan het onderzoek. Hoe vollediger de informatie, hoe beter anderen uit jouw ervaring kunnen leren.\n\n**Valkuil:**\nEen gerechtelijk onderzoek naar schuld kan parallel lopen, maar dat is een andere procedure dan het veiligheidsonderzoek.",
+  "src": "acc",
+  "ref": "Artikel 1 Verordening 996/2010 – Onderwerp (doel van het veiligheidsonderzoek)",
+  "doc": "acc996",
+  "art": "Artikel 1",
+  "citaat": "hetgeen uitsluitend tot doel heeft toekomstige ongevallen en incidenten te voorkomen, zonder schuld of aansprakelijkheid vast te stellen",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "… Deze verordening is erop gericht de veiligheid van de luchtvaart te verbeteren door te garanderen dat de efficiëntie, de snelle uitvoering en kwaliteit van Europese veiligheidsonderzoeken in de burgerluchtvaart van hoog niveau zijn, hetgeen uitsluitend tot doel heeft toekomstige ongevallen en incidenten te voorkomen, zonder schuld of aansprakelijkheid vast te stellen, onder meer door de instelling van een Europees netwerk van veiligheidsonderzoeksinstanties in de burgerluchtvaart. …"
+ },
+ {
+  "id": "LW-21",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Verordening (EU) 376/2014",
+  "q": "Als gezagvoerder van een in de EU ingeschreven vliegtuig maak je een voorval mee dat verplicht gemeld moet worden. Binnen welke termijn moet je het melden?",
+  "o": [
+   "Binnen 72 uur nadat je er kennis van kreeg",
+   "Binnen 24 uur na de landing",
+   "Binnen 7 dagen na het voorval",
+   "Binnen 30 dagen na het voorval"
+  ],
+  "c": 0,
+  "e": "Je meldt het voorval binnen 72 uur nadat je er kennis van kreeg, tenzij uitzonderlijke omstandigheden dat verhinderen.\n\n**Wat zegt de regel?**\nDe gezagvoerder staat als eerste in de lijst van personen met een meldingsplicht. Kan hij niet melden, dan doet het volgende bemanningslid in de bevelslijn dat. Je meldt via het systeem van je organisatie, of anders via de lidstaat van je organisatie, de staat die je brevet afgaf of het EASA.\n\n**In de praktijk:**\nDe 72 uur lopen vanaf het moment dat je het voorval meemaakt of ervan hoort. Uitzonderlijke omstandigheden zijn bijvoorbeeld situaties waarin je geen middel hebt om te melden.\n\n**Valkuil:**\nDe termijn telt niet vanaf de landing, maar vanaf het moment waarop je van het voorval op de hoogte bent.",
+  "src": "occ",
+  "ref": "Article 4 Verordening 376/2014 – Verplichte melding (mandatory reporting)",
+  "doc": "occ",
+  "art": "Article 4",
+  "citaat": "The persons listed in paragraph 6 shall report occurrences within 72 hours of becoming aware of the occurrence, unless exceptional circumstances prevent this.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "7.The persons listed in paragraph 6 shall report occurrences within 72 hours of becoming aware of the occurrence, unless exceptional circumstances prevent this."
+ },
+ {
+  "id": "LW-22",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Verordening (EU) 376/2014",
+  "q": "Tijdens een privévlucht met een eenmotorig zuigermotorvliegtuig vlieg je per vergissing een luchtruim binnen waarvoor je een klaring nodig had. Er gebeurt verder niets. Is dit een meldingsplichtig voorval?",
+  "o": [
+   "Ja, een luchtruimschending (airspace infringement) staat op de lijst van verplicht te melden voorvallen",
+   "Nee, alleen voorvallen met schade of letsel zijn meldingsplichtig",
+   "Nee, alleen als de luchtverkeersleiding je uitdrukkelijk om een melding vraagt",
+   "Ja, maar alleen als je met een vluchtplan vloog"
+  ],
+  "c": 0,
+  "e": "Ja. Een luchtruimschending staat uitdrukkelijk op de lijst van verplicht te melden voorvallen voor luchtvaartuigen die geen complexe motorluchtvaartuigen zijn, zoals een eenmotorig lesvliegtuig.\n\n**Wat zegt de regel?**\nDie lijst bevat onder meer ook onbedoeld controleverlies, een landing buiten het beoogde landingsterrein, het onbedoeld binnenvliegen van IMC zonder IFR-bevoegdheid, elk voorval dat tot een noodoproep leidt, en een bijna-botsing die een uitwijkmanoeuvre vereiste.\n\n**In de praktijk:**\nMeld de schending binnen 72 uur. Je melding helpt om hotspots van luchtruimschendingen in kaart te brengen.\n\n**Valkuil:**\nEen voorval hoeft geen schade of letsel te veroorzaken om meldingsplichtig te zijn.",
+  "src": "occ",
+  "ref": "Verordening 2015/1018 Bijlage V – Voorvallen met andere dan complexe motorluchtvaartuigen",
+  "doc": "occ",
+  "art": "ANNEX V— OCCURRENCES RELATED TO AIRCRAFT OTHER THAN COMPLEX MOTOR-POWERED AIRCRA",
+  "citaat": "(2) Airspace infringement.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "1.3.Interaction with air navigation services and air traffic management\n(1) Interaction with air navigation services (for example: incorrect services provided, conflicting communications or deviation from clearance) which has or could have endangered the aircraft, its occupants or any other person.\n(2) Airspace infringement."
+ },
+ {
+  "id": "LW-23",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Verordening (EU) 376/2014",
+  "q": "Tijdens je vlucht begint de motor door carburateurijs onregelmatig te lopen en verlies je vermogen, waardoor het vliegtuig in gevaar kwam. Na het inschakelen van de carburateurverwarming loopt de motor weer normaal. Is dit meldingsplichtig?",
+  "o": [
+   "Ja, ijsvorming, ook carburateurijs, die het vliegtuig in gevaar heeft gebracht of had kunnen brengen, moet worden gemeld",
+   "Nee, carburateurijs is een normaal bedrijfsverschijnsel en nooit meldingsplichtig",
+   "Alleen als de motor volledig uitvalt",
+   "Alleen als het vliegtuig daarna onderhoud nodig heeft"
+  ],
+  "c": 0,
+  "e": "Ja. IJsvorming, uitdrukkelijk ook carburateurijs, die het vliegtuig, de inzittenden of anderen in gevaar heeft gebracht of had kunnen brengen, staat op de lijst van verplicht te melden voorvallen.\n\n**Wat zegt de regel?**\nIn dezelfde categorie (externe omgeving en meteorologie) staan onder meer een vogelaanvaring met schade, een blikseminslag met schade of functieverlies en ernstige turbulentie met letsel of een nodige schade-inspectie.\n\n**In de praktijk:**\nMeld binnen 72 uur. Zulke meldingen tonen hoe vaak carburateurijs in de praktijk een rol speelt.\n\n**Valkuil:**\nHet criterium is het (mogelijke) gevaar, niet of de motor echt uitviel of er schade ontstond.",
+  "src": "occ",
+  "ref": "Verordening 2015/1018 Bijlage V – Voorvallen met andere dan complexe motorluchtvaartuigen",
+  "doc": "occ",
+  "art": "ANNEX V— OCCURRENCES RELATED TO AIRCRAFT OTHER THAN COMPLEX MOTOR-POWERED AIRCRA",
+  "citaat": "(7) Icing including carburettor icing which has or could have endangered the aircraft, its occupants or any other person.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "1.5.External environment and meteorology\n(1) A collision on the ground or in the air, with another aircraft, terrain or obstacle ().\n(2) A near collision, on the ground or in the air, with another aircraft, terrain or obstacle (1) requiring an emergency avoidance manoeuvre to avoid a collision.\n(3) Wildlife strike including bird strike which resulted in damage to the aircraft or loss or malfunction of any essential service.\n(4) Interference with the aircraft by firearms, fireworks, flying kites, laser illumination, high powered lights lasers, Remotely Piloted Aircraft Systems, model aircraft or by similar means.\n(5) A lightning strike resulting in damage to or loss of functions of the aircraft.\n(6) Severe turbulence encounter which resulted in injury to aircraft occupants or in the need for a post-flight turbulence damage check of the aircraft.\n(7) Icing including carburettor icing which has or could have endangered the aircraft, its occupants or any other person."
+ },
+ {
+  "id": "LW-24",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Verordening (EU) 376/2014",
+  "q": "Je merkt op een vliegveld een situatie op die volgens jou een gevaar voor de luchtvaartveiligheid vormt, maar die niet onder de verplichte melding valt. Hoe kun je dit melden?",
+  "o": [
+   "Via een systeem voor vrijwillige melding (voluntary reporting)",
+   "Nergens: wat niet verplicht gemeld moet worden, wordt niet verzameld",
+   "Alleen als ernstig incident bij de veiligheidsonderzoeksinstantie",
+   "Alleen via een klacht bij de luchtverkeersleiding"
+  ],
+  "c": 0,
+  "e": "Je kunt het melden via een systeem voor vrijwillige melding. Dat systeem is bedoeld voor voorvallen en veiligheidsinformatie die niet onder de verplichte melding vallen, of die worden gemeld door personen zonder meldingsplicht.\n\n**Wat zegt de regel?**\nElke organisatie, elke lidstaat en het EASA moeten een systeem voor vrijwillige melding hebben. Daarmee verzamelen ze voorvallen die het verplichte systeem mogelijk mist, en andere informatie die de melder als een werkelijk of mogelijk gevaar ziet.\n\n**In de praktijk:**\nMeld ook wat je als gevaarlijk ervaart als het niet op de verplichte lijst staat. Vrijwillige meldingen genieten dezelfde bescherming van de melder.\n\n**Valkuil:**\nDe veiligheidsonderzoeksinstantie is er voor ongevallen en ernstige incidenten, niet voor gewone veiligheidsmeldingen.",
+  "src": "occ",
+  "ref": "Article 5 Verordening 376/2014 – Vrijwillige melding (voluntary reporting)",
+  "doc": "occ",
+  "art": "Article 5",
+  "citaat": "(a) not subject to mandatory reporting pursuant to Article 4(1);",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "4.The voluntary reporting systems shall be used to facilitate the collection of details of occurrences and safety-related information:\n(a) not subject to mandatory reporting pursuant to Article 4(1);"
+ },
+ {
+  "id": "LW-25",
+  "status": "pending",
+  "subject": "air_law",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Verordening (EU) 376/2014",
+  "q": "Je meldt een voorval waarbij je onopzettelijk een regel hebt overtreden. In welk geval geldt de bescherming van de melder (just culture) NIET?",
+  "o": [
+   "Bij opzettelijk wangedrag of een flagrante, ernstige veronachtzaming van een duidelijk risico",
+   "Bij elke overtreding van de luchtverkeersregels",
+   "Als de melding via een systeem voor vrijwillige melding werd gedaan",
+   "Als je zelf de gezagvoerder van het betrokken vliegtuig was"
+  ],
+  "c": 0,
+  "e": "De bescherming geldt niet bij opzettelijk wangedrag, of bij een flagrante, ernstige veronachtzaming van een duidelijk risico met een ernstig tekortschieten in professionele verantwoordelijkheid.\n\n**Wat zegt de regel?**\nLidstaten stellen geen vervolging in voor onopzettelijke of onbedoelde overtredingen waarvan ze alleen door de melding weet hebben, onverminderd het nationale strafrecht. In tuchtrechtelijke of administratieve procedures mag de informatie uit een melding niet worden gebruikt tegen de melder of tegen personen die in de melding genoemd worden.\n\n**In de praktijk:**\nEerlijk melden van een vergissing wordt beschermd. Zo kan iedereen ervan leren.\n\n**Valkuil:**\nEen gewone, onopzettelijke overtreding valt wel onder de bescherming. De uitzondering geldt alleen voor opzet en grove nalatigheid.",
+  "src": "occ",
+  "ref": "Article 16 Verordening 376/2014 – Bescherming van de informatiebron (just culture)",
+  "doc": "occ",
+  "art": "Article 16",
+  "citaat": "in cases of wilful misconduct;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) in cases of wilful misconduct;"
+ },
+ {
+  "id": "NCO-02",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Wat moet je als gezagvoerder volgens Part-NCO tijdens de vlucht doen met je veiligheidsgordel?",
+  "o": [
+   "Vastgemaakt houden zolang je op je plaats zit",
+   "Alleen vastmaken tijdens het opstijgen en de landing",
+   "Alleen vastmaken bij turbulentie of op aanwijzing van de luchtverkeersdienst",
+   "Alleen vastmaken onder 1 000 ft boven de grond"
+  ],
+  "c": 0,
+  "e": "Je houdt je veiligheidsgordel vastgemaakt zolang je op je plaats zit, gedurende de hele vlucht.\n\n**Wat zegt de regel?**\nTijdens de vlucht moet de gezagvoerder zijn gordel vast houden zolang hij op zijn plaats zit, en moet hij altijd aan de bediening blijven, behalve als een andere piloot de besturing overneemt.\n\n**In de praktijk:**\nOnverwachte turbulentie of een plotse uitwijkmanoeuvre kan je uit je stoel tillen en je de controle over het vliegtuig doen verliezen. Een vastgemaakte gordel houdt je op je plaats en aan de stuurorganen.\n\n**Valkuil:**\nDe gordel alleen bij opstijgen en landing dragen is een gewoonte uit de lijnvaart voor passagiers; voor jou als gezagvoerder geldt de verplichting voor de hele vlucht.",
+  "src": "nco",
+  "ref": "NCO.GEN.105 – Verantwoordelijkheden en bevoegdheid van de gezagvoerder",
+  "doc": "airops",
+  "art": "NCO.GEN.105",
+  "citaat": "keep his/her safety belt fastened while at his/her station",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(f) During flight, the pilot-in-command shall:\n(1) keep his/her safety belt fastened while at his/her station; and\n(2) remain at the controls of the aircraft at all times except if another pilot is taking the controls."
+ },
+ {
+  "id": "NCO-04",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Een passagier gebruikt tijdens de vlucht een elektronisch toestel. Je merkt dat je radio en kompas daardoor storingen vertonen. Wat zegt Part-NCO hierover?",
+  "o": [
+   "Je mag het gebruik niet toestaan, omdat het toestel de werking van de systemen van het vliegtuig nadelig kan beïnvloeden",
+   "Het gebruik mag, zolang het toestel in vliegtuigmodus staat",
+   "Het gebruik mag, want toestellen van passagiers vallen niet onder Part-NCO",
+   "Het gebruik mag, maar alleen boven 1 000 ft boven de grond"
+  ],
+  "c": 0,
+  "e": "Je mag het gebruik niet toestaan. Een draagbaar elektronisch toestel (portable electronic device, PED) dat de systemen of de uitrusting van het vliegtuig kan storen, hoort niet aan te staan.\n\n**Wat zegt de regel?**\nDe gezagvoerder laat niemand een PED gebruiken, ook geen elektronische flight bag (EFB), dat de werking van de systemen en uitrusting van het vliegtuig of het vermogen van de piloot om te vliegen nadelig kan beïnvloeden.\n\n**In de praktijk:**\nVraag de passagier het toestel uit te schakelen en controleer of de storing verdwijnt.\n\n**Valkuil:**\nVliegtuigmodus is geen vrijbrief: het criterium is of het toestel de systemen kan storen, niet in welke stand het staat. Merk je storing, dan grijp je in.",
+  "src": "nco",
+  "ref": "NCO.GEN.125 – Draagbare elektronische toestellen (PED)",
+  "doc": "airops",
+  "art": "NCO.GEN.125",
+  "citaat": "shall not permit any person to use a portable electronic device (PED) on board an aircraft, including an electronic flight bag (EFB), that could adversely affect the performance of the aircraft systems and equipment",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "The pilot-in-command shall not permit any person to use a portable electronic device (PED) on board an aircraft, including an electronic flight bag (EFB), that could adversely affect the performance of the aircraft systems and equipment or the ability of the flight crew member to operate the aircraft."
+ },
+ {
+  "id": "NCO-05",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Welke documenten moet je volgens Part-NCO als origineel, en dus niet als kopie, aan boord hebben?",
+  "o": [
+   "Het bewijs van inschrijving en het bewijs van luchtwaardigheid (CofA)",
+   "Het vlieghandboek (AFM) en het journey log",
+   "Het verzekeringsbewijs en de radiovergunning",
+   "Het geluidscertificaat en de luchtvaartkaarten"
+  ],
+  "c": 0,
+  "e": "Het bewijs van inschrijving en het bewijs van luchtwaardigheid (certificate of airworthiness, CofA) moeten als origineel aan boord zijn.\n\n**Wat zegt de regel?**\nDe documenten die je moet meevoeren, mogen in principe originelen of kopieën zijn, tenzij anders vermeld. Alleen bij het bewijs van inschrijving en het bewijs van luchtwaardigheid staat uitdrukkelijk dat het om het origineel gaat.\n\n**In de praktijk:**\nControleer vóór je vertrekt of die twee originelen in de documentenmap van het vliegtuig zitten. Een kopie in je tas volstaat niet.\n\n**Valkuil:**\nHet vlieghandboek (AFM) en het journey log moeten ook aan boord zijn, maar daarvoor eist de regel geen origineel: een kopie of gelijkwaardige vorm is toegestaan.",
+  "src": "nco",
+  "ref": "NCO.GEN.135 – Mee te voeren documenten, handboeken en informatie",
+  "doc": "airops",
+  "art": "NCO.GEN.135",
+  "citaat": "(2) the original certificate of registration;\n(3) the original certificate of airworthiness (CofA);",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) The following documents, manuals and information shall be carried on each flight as originals or copies unless otherwise specified:\n(1) the AFM, or equivalent document(s);\n(2) the original certificate of registration;\n(3) the original certificate of airworthiness (CofA);\n(4) the noise certificate, if applicable;\n(5) the list of specific approvals, if applicable;\n(6) the aircraft radio licence, if applicable;\n(7) the third party liability insurance certificate(s);\n(8) the journey log, or equivalent, for the aircraft;\n(9) details of the filed ATS flight plan, if applicable;\n(10) current and suitable aeronautical charts for the route area of the proposed flight and all routes along which it is reasonable to expect that the flight may be diverted;\n(11) procedures and visual signals information for use by intercepting and intercepted aircraft;\n(12) the MEL or CDL, if applicable; and\n(13) any other documentation that may be pertinent to the flight or is required by the States concerned with the flight."
+ },
+ {
+  "id": "NCO-06",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Je maakt een plaatselijke vlucht waarbij je opstijgt en landt op hetzelfde vliegveld. Welk document moet je ook op zo'n vlucht aan boord hebben?",
+  "o": [
+   "Het vlieghandboek (AFM) of een gelijkwaardig document",
+   "Het bewijs van inschrijving",
+   "Het verzekeringsbewijs voor aansprakelijkheid tegenover derden",
+   "Het journey log van het vliegtuig"
+  ],
+  "c": 0,
+  "e": "Het vlieghandboek (aircraft flight manual, AFM) moet altijd aan boord zijn, ook op een plaatselijke vlucht.\n\n**Wat zegt de regel?**\nBij vluchten die opstijgen en landen op hetzelfde vliegveld (of binnen een door de autoriteit vastgelegd gebied blijven) mogen het bewijs van inschrijving, het bewijs van luchtwaardigheid, het geluidscertificaat, de lijst van specifieke goedkeuringen, de radiovergunning, het verzekeringsbewijs en het journey log op het vliegveld blijven. Het AFM valt niet onder die uitzondering.\n\n**Valkuil:**\nHet journey log moet je na de vlucht wel invullen, maar het mag bij zo'n plaatselijke vlucht op de grond blijven. Het AFM heb je in de lucht nodig voor beperkingen en noodprocedures.",
+  "src": "nco",
+  "ref": "NCO.GEN.135 – Mee te voeren documenten, handboeken en informatie",
+  "doc": "airops",
+  "art": "NCO.GEN.135",
+  "citaat": "the documents and information in (a)(2) to (a)(8) may be retained at the aerodrome or operating site.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(2) remaining within a distance or area determined by the competent authority,\nthe documents and information in (a)(2) to (a)(8) may be retained at the aerodrome or operating site."
+ },
+ {
+  "id": "NCO-07",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Je neemt een luchtvaartkaart en een navigatie-app mee. Aan welke eis moeten de luchtvaartgegevens daarin volgens de AMC bij Part-NCO voldoen?",
+  "o": [
+   "Ze moeten overeenstemmen met de geldende AIRAC-cyclus",
+   "Ze mogen hoogstens twee jaar oud zijn",
+   "Ze moeten op papier staan; elektronische kaarten volstaan niet",
+   "Ze hoeven alleen de geplande route te dekken, niet de mogelijke uitwijkroutes"
+  ],
+  "c": 0,
+  "e": "De luchtvaartgegevens moeten overeenstemmen met de geldende AIRAC-cyclus (aeronautical information regulation and control). Luchtruimstructuur, frequenties en verboden of gevaarlijke zones veranderen regelmatig.\n\n**Wat zegt de regel?**\nJe moet actuele en geschikte luchtvaartkaarten meevoeren voor het routegebied en voor alle routes waarlangs je redelijkerwijs kunt moeten uitwijken. De AMC preciseert dat de luchtvaartgegevens bij de huidige AIRAC-cyclus horen; topografische gegevens moeten redelijk recent zijn.\n\n**In de praktijk:**\nControleer de editiedatum van je papieren kaart en update je app vóór de vlucht.\n\n**Valkuil:**\nElektronische kaarten zijn toegestaan, op voorwaarde dat ze toegankelijk, bruikbaar en betrouwbaar zijn; het gaat om de actualiteit, niet om papier.",
+  "src": "nco",
+  "ref": "AMC1 NCO.GEN.135(a)(10) – Actuele en geschikte luchtvaartkaarten",
+  "doc": "airops",
+  "art": "AMC1 NCO.GEN.135(a)(10)",
+  "citaat": "The aeronautical data should be appropriate for the current aeronautical information regulation and control (AIRAC) cycle.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(c) The aeronautical data should be appropriate for the current aeronautical information regulation and control (AIRAC) cycle."
+ },
+ {
+  "id": "NCO-08",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Tijdens een meerdaagse vliegreis wordt het bewijs van luchtwaardigheid uit het vliegtuig gestolen. Wat geldt volgens de richtlijnen bij Part-NCO?",
+  "o": [
+   "Je mag verder vliegen tot je de thuisbasis bereikt of een plaats waar een vervangend document kan worden bezorgd",
+   "Je mag niet meer opstijgen tot je een nieuw origineel document hebt ontvangen",
+   "Je mag nog hoogstens 3 dagen verder vliegen",
+   "Je mag alleen nog vliegen met een speciale toelating van de luchtverkeersdienst"
+  ],
+  "c": 0,
+  "e": "Je mag verder vliegen tot je de thuisbasis bereikt of een plaats waar een vervangend document kan worden bezorgd.\n\n**Wat zegt de regel?**\nDe richtlijn (GM) bij de regel over mee te voeren documenten bepaalt dat de operatie bij verlies of diefstal van een verplicht document kan doorgaan tot de vlucht de basis bereikt of een plaats waar een vervangend document beschikbaar is.\n\n**In de praktijk:**\nDoe aangifte van de diefstal, verwittig de eigenaar of de club en vraag zo snel mogelijk een vervangend document aan.\n\n**Valkuil:**\nEr geldt geen vast aantal dagen. Bepalend is dat je naar de basis of naar een plaats met een vervangend document vliegt, niet dat je nog willekeurig rondvliegt.",
+  "src": "nco",
+  "ref": "GM1 NCO.GEN.135 – Mee te voeren documenten (algemeen)",
+  "doc": "airops",
+  "art": "GM1 NCO.GEN.135",
+  "citaat": "In case of loss or theft of documents specified in NCO.GEN.135, the operation may continue until the flight reaches the base or a place where a replacement document can be provided.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "ED Decision 2014/016/R\nGENERAL\n(a) In case of loss or theft of documents specified in NCO.GEN.135, the operation may continue until the flight reaches the base or a place where a replacement document can be provided.\n(b) The documents, manuals and information may be available in a form other than on printed paper. An electronic storage medium is acceptable if accessibility, usability and reliability can be assured."
+ },
+ {
+  "id": "NCO-09",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Je neemt passagiers met bagage mee. Welke plicht heb je volgens Part-NCO als gezagvoerder met betrekking tot gevaarlijke goederen (dangerous goods)?",
+  "o": [
+   "Ervoor zorgen dat de passagiers informatie krijgen over gevaarlijke goederen",
+   "Elk bagagestuk persoonlijk openen en doorzoeken",
+   "Voor elke passagier met bagage vooraf toestemming vragen aan de bevoegde autoriteit",
+   "Geen: de regels over gevaarlijke goederen gelden alleen voor commerciële vluchten"
+  ],
+  "c": 0,
+  "e": "Je zorgt ervoor dat de passagiers informatie krijgen over gevaarlijke goederen, volgens de technische instructies van de ICAO.\n\n**Wat zegt de regel?**\nOok bij niet-commerciële vluchten gebeurt het vervoer van gevaarlijke goederen volgens ICAO Annex 18 en de technische instructies. De gezagvoerder neemt alle redelijke maatregelen om te voorkomen dat gevaarlijke goederen onbedoeld aan boord komen en informeert de passagiers.\n\n**In de praktijk:**\nVraag je passagiers vóór het instappen of ze bijvoorbeeld gasflessen, brandbare vloeistoffen, reservebatterijen of spuitbussen bij zich hebben, en leg uit wat niet mag.\n\n**Valkuil:**\nDe regel staat in Part-NCO zelf: ze geldt dus wel voor jouw privévlucht.",
+  "src": "nco",
+  "ref": "NCO.GEN.140 – Vervoer van gevaarlijke goederen",
+  "doc": "airops",
+  "art": "NCO.GEN.140",
+  "citaat": "The pilot-in-command shall ensure that passengers are provided with information about dangerous goods in accordance with the Technical Instructions.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(e) The pilot-in-command shall ensure that passengers are provided with information about dangerous goods in accordance with the Technical Instructions."
+ },
+ {
+  "id": "NCO-10",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Welk gegeven hoort volgens de AMC bij Part-NCO thuis in het journey log (reisdagboek) van het vliegtuig?",
+  "o": [
+   "De handtekening van de gezagvoerder",
+   "De namen van alle passagiers",
+   "De getankte hoeveelheid brandstof per tank",
+   "Het gewicht van de meegenomen bagage"
+  ],
+  "c": 0,
+  "e": "De handtekening van de gezagvoerder hoort in het journey log. Daarmee bevestig je de gegevens van de vlucht.\n\n**Wat zegt de regel?**\nVoor elke vlucht of reeks vluchten worden de gegevens van het vliegtuig, de bemanning en elke reis bijgehouden in een journey log of gelijkwaardig document. Volgens de AMC bevat het onder meer: nationaliteit en registratie, datum, namen van de bemanningsleden, plaats en tijd van vertrek en aankomst, vliegtijd, aard van de vlucht, incidenten en waarnemingen, en de handtekening van de gezagvoerder.\n\n**Valkuil:**\nDe namen van de bemanning staan erin, die van de passagiers niet. Ook brandstof- en bagagegegevens zijn geen verplichte rubrieken.",
+  "src": "nco",
+  "ref": "AMC1 NCO.GEN.150 – Journey log (reisdagboek)",
+  "doc": "airops",
+  "art": "AMC1 NCO.GEN.150",
+  "citaat": "signature of the pilot-in-command",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "ED Decision 2014/016/R\nGENERAL\n(a) The aircraft journey log, or equivalent, should include the following items, where applicable:\n(1) aircraft nationality and registration;\n(2) date;\n(3) name of crew member(s);\n(4) duty assignments of crew members, if applicable;\n(5) place of departure;\n(6) place of arrival;\n(7) time of departure;\n(8) time of arrival;\n(9) hours of flight;\n(10) nature of flight;\n(11) incidents and observations (if any); and\n(12) signature of the pilot-in-command.\n(b) The information or parts thereof may be recorded in a form other than on printed paper. Accessibility, usability and reliability should be assured."
+ },
+ {
+  "id": "NCO-11",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Je plant een VFR-vlucht overdag naar een ander vliegveld. Hoeveel eindreservebrandstof (final reserve fuel) plan je volgens de AMC bij Part-NCO minstens?",
+  "o": [
+   "Genoeg om 30 minuten te vliegen met wachtsnelheid (holding speed) op 1 500 ft boven de bestemming",
+   "Genoeg om 45 minuten te vliegen met wachtsnelheid op 1 500 ft boven de bestemming",
+   "Genoeg om 10 minuten te vliegen op maximaal continu kruisvermogen boven de bestemming",
+   "Genoeg om 20 minuten te vliegen met de snelheid voor maximaal bereik"
+  ],
+  "c": 0,
+  "e": "Je plant minstens 30 minuten vliegen met wachtsnelheid (holding speed) op 1 500 ft (450 m) boven de bestemming. Dat is de eindreserve voor een gewone VFR-vlucht overdag met een vliegtuig.\n\n**Wat zegt de regel?**\nDe gezagvoerder plant een hoeveelheid eindreservebrandstof (final reserve fuel, FRF) die beschermd blijft om veilig te kunnen landen. De AMC legt de minimumwaarden vast; voor VFR overdag is dat 30 minuten.\n\n**In de praktijk:**\nReken die 30 minuten om naar liters met het verbruik bij wachtsnelheid uit je vlieghandboek.\n\n**Valkuil:**\n45 minuten geldt voor VFR-vluchten 's nachts (en IFR), 20 minuten aan de snelheid voor maximaal bereik is een waarde voor hefschroefvliegtuigen.",
+  "src": "nco",
+  "ref": "AMC1 NCO.OP.125(b) – Planningscriteria eindreservebrandstof",
+  "doc": "airops",
+  "art": "AMC1 NCO.OP.125(b)",
+  "citaat": "for 30 minutes at holding speed at 1 500 ft (450 m) above the destination under VFR by day",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) for aeroplanes:\n(1) for 10 minutes at maximum continuous cruise power at 1 500 ft (450 m) above the destination under VFR by day, taking off and landing at the same aerodrome/landing site, and always remaining within sight of that aerodrome/landing site;\n(2) for 30 minutes at holding speed at 1 500 ft (450 m) above the destination under VFR by day; and\n(3) for 45 minutes at holding speed at 1 500 ft (450 m) above the destination or destination alternate aerodrome under VFR flights by night and IFR; and"
+ },
+ {
+  "id": "NCO-12",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Je plant een VFR-vlucht 's nachts naar een ander vliegveld. Welke eindreservebrandstof plan je volgens de AMC bij Part-NCO minstens?",
+  "o": [
+   "Genoeg om 45 minuten te vliegen met wachtsnelheid op 1 500 ft boven de bestemming",
+   "Genoeg om 30 minuten te vliegen met wachtsnelheid op 1 500 ft boven de bestemming",
+   "Genoeg om 60 minuten te vliegen met wachtsnelheid op 1 500 ft boven de bestemming",
+   "Genoeg om 20 minuten te vliegen met wachtsnelheid op 1 000 ft boven de bestemming"
+  ],
+  "c": 0,
+  "e": "Je plant minstens 45 minuten vliegen met wachtsnelheid op 1 500 ft (450 m) boven de bestemming. 's Nachts is dezelfde reserve vereist als bij IFR.\n\n**Wat zegt de regel?**\nVoor vliegtuigen schrijft de AMC als eindreservebrandstof voor: 30 minuten bij VFR overdag, 45 minuten bij VFR 's nachts en bij IFR, telkens met wachtsnelheid op 1 500 ft boven de bestemming (of het uitwijkvliegveld).\n\n**In de praktijk:**\n's Nachts zijn noodlandingsterreinen nauwelijks te zien en het weer is moeilijker te beoordelen. De extra reserve geeft je tijd om uit te wijken of te wachten.\n\n**Valkuil:**\nDe 30 minuten van een dagvlucht volstaan 's nachts niet.",
+  "src": "nco",
+  "ref": "AMC1 NCO.OP.125(b) – Planningscriteria eindreservebrandstof",
+  "doc": "airops",
+  "art": "AMC1 NCO.OP.125(b)",
+  "citaat": "for 45 minutes at holding speed at 1 500 ft (450 m) above the destination or destination alternate aerodrome under VFR flights by night and IFR",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) for aeroplanes:\n(1) for 10 minutes at maximum continuous cruise power at 1 500 ft (450 m) above the destination under VFR by day, taking off and landing at the same aerodrome/landing site, and always remaining within sight of that aerodrome/landing site;\n(2) for 30 minutes at holding speed at 1 500 ft (450 m) above the destination under VFR by day; and\n(3) for 45 minutes at holding speed at 1 500 ft (450 m) above the destination or destination alternate aerodrome under VFR flights by night and IFR; and"
+ },
+ {
+  "id": "NCO-13",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Overdag maak je een korte VFR-vlucht waarbij je opstijgt en landt op hetzelfde vliegveld en het veld voortdurend in zicht houdt. Welke minimale eindreservebrandstof geldt dan volgens de AMC bij Part-NCO?",
+  "o": [
+   "Genoeg voor 10 minuten op maximaal continu kruisvermogen op 1 500 ft boven het vliegveld",
+   "Genoeg voor 30 minuten met wachtsnelheid op 1 500 ft boven het vliegveld",
+   "Geen eindreserve, omdat je het vliegveld voortdurend in zicht houdt",
+   "Genoeg voor 20 minuten met de snelheid voor maximaal bereik"
+  ],
+  "c": 0,
+  "e": "Je hebt minstens genoeg voor 10 minuten op maximaal continu kruisvermogen op 1 500 ft (450 m) boven het vliegveld.\n\n**Wat zegt de regel?**\nDe AMC laat een kleinere eindreserve toe voor vluchten overdag onder VFR die opstijgen en landen op hetzelfde vliegveld en altijd binnen zicht van dat vliegveld blijven, zoals circuitvluchten.\n\n**In de praktijk:**\nVlieg je even weg van het veld, buiten zicht, dan geldt opnieuw de gewone dagreserve van 30 minuten.\n\n**Valkuil:**\nOok bij een vlucht in het circuit blijft een eindreserve verplicht: een geblokkeerde baan of verkeer kan je altijd laten wachten.",
+  "src": "nco",
+  "ref": "AMC1 NCO.OP.125(b) – Planningscriteria eindreservebrandstof",
+  "doc": "airops",
+  "art": "AMC1 NCO.OP.125(b)",
+  "citaat": "for 10 minutes at maximum continuous cruise power at 1 500 ft (450 m) above the destination under VFR by day, taking off and landing at the same aerodrome/landing site, and always remaining within sight of that aerodrome/landing site",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) for aeroplanes:\n(1) for 10 minutes at maximum continuous cruise power at 1 500 ft (450 m) above the destination under VFR by day, taking off and landing at the same aerodrome/landing site, and always remaining within sight of that aerodrome/landing site;\n(2) for 30 minutes at holding speed at 1 500 ft (450 m) above the destination under VFR by day; and\n(3) for 45 minutes at holding speed at 1 500 ft (450 m) above the destination or destination alternate aerodrome under VFR flights by night and IFR; and"
+ },
+ {
+  "id": "NCO-14",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Je plant een VFR-vlucht waarvoor geen uitwijkvliegveld vereist is. Wanneer mag je volgens Part-NCO de vlucht aanvangen?",
+  "o": [
+   "Als je genoeg brandstof en olie hebt om naar het geplande landingsvliegveld te vliegen, plus de eindreservebrandstof",
+   "Als je genoeg brandstof hebt om naar de bestemming te vliegen; een eindreserve is alleen bij IFR vereist",
+   "Als de tanks voor minstens drie kwart gevuld zijn",
+   "Als je genoeg brandstof hebt om naar de bestemming en terug naar je vertrekveld te vliegen"
+  ],
+  "c": 0,
+  "e": "Je mag vertrekken als je genoeg brandstof en olie hebt om naar het geplande landingsvliegveld te vliegen, plus de eindreservebrandstof.\n\n**Wat zegt de regel?**\nDe gezagvoerder begint een vlucht alleen met voldoende brandstof en olie: zonder vereist uitwijkvliegveld tot de bestemming plus de eindreserve; met een vereist uitwijkvliegveld tot de bestemming, daarna tot het uitwijkvliegveld, plus de eindreserve. Daarbij houd je rekening met het weer, de prestaties, verwachte vertragingen en redelijkerwijs te verwachten onvoorziene omstandigheden.\n\n**Valkuil:**\nDe eindreserve geldt ook voor VFR. Ze is bedoeld om veilig te landen, niet om onderweg op te gebruiken.",
+  "src": "nco",
+  "ref": "NCO.OP.125 – Brandstof/energie en olie",
+  "doc": "airops",
+  "art": "NCO.OP.125",
+  "citaat": "when no destination alternate is required, to fly to the aerodrome or operating site of intended landing, plus the final reserve fuel/energy",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(c) The pilot-in-command shall commence a flight only if the aircraft carries sufficient fuel/energy and oil:\n(1) when no destination alternate is required, to fly to the aerodrome or operating site of intended landing, plus the final reserve fuel/energy; or\n(2) when a destination alternate is required, to fly to the aerodrome or operating site of intended landing, and thereafter, to an alternate aerodrome, plus the final reserve fuel/energy."
+ },
+ {
+  "id": "NCO-16",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Wanneer moet je volgens Part-NCO als gezagvoerder van een gecontroleerde vlucht een brandstofnoodtoestand (fuel emergency) verklaren?",
+  "o": [
+   "Wanneer de bruikbare brandstof die je bij de landing op het dichtstbijzijnde geschikte vliegveld verwacht over te hebben, minder is dan de geplande eindreservebrandstof",
+   "Zodra de brandstofmeter in de gele zone komt",
+   "Wanneer je minder dan 45 minuten brandstof over hebt",
+   "Pas wanneer de motor door brandstofgebrek begint te haperen"
+  ],
+  "c": 0,
+  "e": "Je verklaart een brandstofnoodtoestand wanneer je verwacht bij de landing op het dichtstbijzijnde geschikte vliegveld minder bruikbare brandstof over te hebben dan je geplande eindreserve.\n\n**Wat zegt de regel?**\nDe eindreserve is beschermd: dreigt ze aangesproken te worden, dan is dat een noodsituatie. Je zendt dan 'MAYDAY MAYDAY MAYDAY FUEL' uit. Tijdens de vlucht houd je de bruikbare brandstof voortdurend in het oog.\n\n**In de praktijk:**\nDe verplichting geldt voor gecontroleerde vluchten, maar ook bij een ongecontroleerde vlucht mag je deze melding doen als je dat nodig vindt.\n\n**Valkuil:**\nWachten tot de motor hapert is veel te laat: het criterium is je berekende brandstof bij de landing, niet een technisch symptoom.",
+  "src": "nco",
+  "ref": "NCO.OP.185 – Brandstofbeheer tijdens de vlucht",
+  "doc": "airops",
+  "art": "NCO.OP.185",
+  "citaat": "when the usable fuel/energy estimated to be available upon landing at the nearest aerodrome or operating site where a safe landing can be made is less than the planned final reserve fuel/energy",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(c) The pilot-in-command of a controlled flight shall declare a situation of ‘fuel/energy emergency’ by broadcasting ‘MAYDAY MAYDAY MAYDAY FUEL’ when the usable fuel/energy estimated to be available upon landing at the nearest aerodrome or operating site where a safe landing can be made is less than the planned final reserve fuel/energy."
+ },
+ {
+  "id": "NCO-17",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Je neemt een passagier mee in een eenvoudig tweezitsvliegtuig zonder reddingsvesten of zuurstof aan boord. Wat moet de veiligheidsbriefing volgens de AMC bij Part-NCO in elk geval bevatten?",
+  "o": [
+   "De plaats en het gebruik van de veiligheidsgordels",
+   "Een uitleg van de radioprocedures",
+   "De geplande route en vlieghoogtes",
+   "De werking van de motor en de brandstofkraan"
+  ],
+  "c": 0,
+  "e": "De briefing bevat in elk geval de plaats en het gebruik van de veiligheidsgordels.\n\n**Wat zegt de regel?**\nDe gezagvoerder zorgt ervoor dat passagiers vóór of, waar gepast, tijdens de vlucht een briefing krijgen over de noodvoorzieningen en noodprocedures. De AMC vult aan: de gordels altijd, en waar van toepassing ook nooduitgangen, veiligheidskaarten, reddingsvesten, zuurstofuitrusting, reddingsvlotten en andere noodvoorzieningen, plus de plaats en het gebruik van de belangrijkste gemeenschappelijke noodvoorzieningen (zoals de brandblusser).\n\n**Valkuil:**\nRoute en hoogtes zijn nuttige informatie, maar geen onderdeel van de veiligheidsbriefing. Ook in een eenvoudig toestel moet je passagier de gordel snel kunnen vastmaken en openen.",
+  "src": "nco",
+  "ref": "AMC1 NCO.OP.130 – Briefing van de passagiers",
+  "doc": "airops",
+  "art": "AMC1 NCO.OP.130",
+  "citaat": "The briefing should include the locations and use of seat belts",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "ED Decision 2019/008/R\nGENERAL\n(a) The briefing should include the locations and use of seat belts and if applicable:\n(1) emergency exits;\n(2) passenger emergency briefing cards;\n(3) life-jackets;\n(4) oxygen dispensing equipment;\n(5) life rafts; and\n(6) other emergency equipment provided for individual passenger use.\n(b) The briefing should also include the location and general manner of use of the principal emergency equipment carried for collective use."
+ },
+ {
+  "id": "NCO-18",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Je passagier zit al in het vliegtuig wanneer je merkt dat je nog AVGAS moet tanken. Wat zegt Part-NCO?",
+  "o": [
+   "Je mag niet tanken zolang de passagier aan boord is, instapt of uitstapt",
+   "Je mag tanken als jij bij het vliegtuig blijft, klaar om een evacuatie te leiden",
+   "Je mag tanken als de passagier zijn gordel los heeft en de deur openstaat",
+   "Je mag tanken als er een brandblusser naast het vliegtuig klaarstaat"
+  ],
+  "c": 0,
+  "e": "Je mag niet tanken zolang de passagier aan boord is, instapt of uitstapt. Met AVGAS geldt dat verbod zonder uitzondering.\n\n**Wat zegt de regel?**\nTanken met AVGAS, wide-cut brandstof of een mengsel daarvan is verboden terwijl passagiers instappen, aan boord zijn of uitstappen. Voor andere brandstoffen mag het wel, op voorwaarde dat de gezagvoerder of ander bevoegd personeel klaarstaat om een evacuatie te leiden.\n\n**In de praktijk:**\nLaat je passagier uitstappen en op veilige afstand wachten tot het tanken klaar is.\n\n**Valkuil:**\nDe uitzondering met toezicht en evacuatie geldt niet voor AVGAS, de brandstof die je zuigermotorvliegtuig gebruikt.",
+  "src": "nco",
+  "ref": "NCO.OP.145 – Tanken terwijl passagiers instappen, aan boord zijn of uitstappen",
+  "doc": "airops",
+  "art": "NCO.OP.145",
+  "citaat": "The aircraft shall not be refuelled with aviation gasoline (AVGAS) or wide-cut type fuel or a mixture of these types of fuel, when passengers are embarking, on board or disembarking.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) The aircraft shall not be refuelled with aviation gasoline (AVGAS) or wide-cut type fuel or a mixture of these types of fuel, when passengers are embarking, on board or disembarking.\n(b) For all other types of fuel/energy, the aircraft shall not be refuelled when passengers are embarking, on board or disembarking, unless it is attended by the pilot-in-command or other qualified personnel ready to initiate and direct an evacuation of the aircraft by the most practical and expeditious means available."
+ },
+ {
+  "id": "NCO-19",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Onderweg hoor je dat het weer op je bestemming verslechtert. Onder welke voorwaarde mag je je VFR-vlucht volgens Part-NCO voortzetten?",
+  "o": [
+   "Als de meest recente weerinformatie aangeeft dat het weer langs de route en op de bestemming op het verwachte tijdstip minstens aan de VFR-minima voldoet",
+   "Als het weer op je vertrekveld nog aan de VFR-minima voldoet",
+   "Als het weer bij je vertrek aan de VFR-minima voldeed",
+   "Als er binnen 50 NM van je bestemming een vliegveld met verkeersleiding ligt"
+  ],
+  "c": 0,
+  "e": "Je mag verder vliegen als de meest recente weerinformatie aangeeft dat het weer langs de route en op de bestemming, op het moment dat je er bent, minstens aan de VFR-minima voldoet.\n\n**Wat zegt de regel?**\nDie voorwaarde geldt zowel om een VFR-vlucht te beginnen als om ze voort te zetten. Je moet dus onderweg nieuwe informatie blijven opvolgen.\n\n**In de praktijk:**\nVraag tijdens de vlucht actuele METAR's en TAF's op via de vluchtinformatiedienst of ATIS en voer je alternatief plan uit als de minima niet meer gehaald worden.\n\n**Valkuil:**\nDe toestand bij vertrek is achterhaald zodra er nieuwere informatie is: de regel spreekt van de meest recente informatie en het verwachte tijdstip van gebruik.",
+  "src": "nco",
+  "ref": "NCO.OP.160 – Meteorologische omstandigheden",
+  "doc": "airops",
+  "art": "NCO.OP.160",
+  "citaat": "only commence or continue a VFR flight if the latest available meteorological information indicates that the meteorological conditions along the route and at the intended destination at the estimated time of use will be at or above the applicable VFR operating minima",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) The pilot-in-command shall only commence or continue a VFR flight if the latest available meteorological information indicates that the meteorological conditions along the route and at the intended destination at the estimated time of use will be at or above the applicable VFR operating minima."
+ },
+ {
+  "id": "NCO-20",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "De TAF van je bestemming vermeldt in een TEMPO-periode rond je aankomsttijd mist met een zicht onder de VFR-minima. Hoe houd je hier volgens de AMC bij Part-NCO rekening mee bij je planning?",
+  "o": [
+   "Je past de verslechtering toe, omdat mist een aanhoudend verschijnsel is",
+   "Je mag de verslechtering negeren, omdat TEMPO alleen tijdelijke veranderingen aangeeft",
+   "Je past de verslechtering pas toe vanaf het einde van de TEMPO-periode",
+   "Je mag de verslechtering negeren zolang de TAF geen BECMG-groep bevat"
+  ],
+  "c": 0,
+  "e": "Je past de verslechtering toe, omdat mist een aanhoudend verschijnsel is.\n\n**Wat zegt de regel?**\nIn een TEMPO-periode (of PROB30/40) pas je verslechteringen door aanhoudende verschijnselen zoals nevel, mist, stof- of zandstorm en aanhoudende neerslag toe. Verslechteringen door kortstondige verschijnselen zoals buien en onweer mag je negeren; verbeteringen negeer je altijd.\n\n**In de praktijk:**\nKomt mist in een TEMPO-groep onder de minima rond je aankomsttijd, dan plan je alsof die mist er is: kies een ander tijdstip of een andere bestemming.\n\n**Valkuil:**\nTEMPO betekent tijdelijk, maar dat maakt mist niet onschuldig. Alleen voor kortstondige buien of onweer mag je de verslechtering in de planning negeren.",
+  "src": "nco",
+  "ref": "AMC1 NCO.OP.160 – Toepassing van vliegveldverwachtingen (TAF en TREND)",
+  "doc": "airops",
+  "art": "AMC1 NCO.OP.160",
+  "citaat": "deteriorations associated with persistent conditions in connection with e.g. haze, mist, fog, dust/sandstorm, continuous precipitation should be applied",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(e) In a period indicated by TEMPO (alone), TEMPO FM, TEMPO TL, TEMPO FM TL, PROB30/40 (alone):\n(1) deteriorations associated with persistent conditions in connection with e.g. haze, mist, fog, dust/sandstorm, continuous precipitation should be applied;\n(2) deteriorations associated with transient/showery conditions in connection with short-lived weather phenomena, e.g. thunderstorms, showers may be ignored; and\n(3) improvements should in all cases be disregarded."
+ },
+ {
+  "id": "NCO-21",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Op een koude ochtend ligt er een dunne laag rijp op de vleugels van je vliegtuig. Het vlieghandboek (AFM) staat opstijgen met rijp niet toe. Wat doe je?",
+  "o": [
+   "Je start pas als het vliegtuig vrij is van elke afzetting die de prestaties of bestuurbaarheid nadelig kan beïnvloeden",
+   "Je mag starten, want een dunne laag rijp waait tijdens de startrol vanzelf weg",
+   "Je mag starten als je rekening houdt met een 10 % langere startrol",
+   "Je mag starten als de rijp alleen op de bovenkant van de vleugels ligt"
+  ],
+  "c": 0,
+  "e": "Je start pas als het vliegtuig vrij is van elke afzetting die de prestaties of de bestuurbaarheid nadelig kan beïnvloeden.\n\n**Wat zegt de regel?**\nDe gezagvoerder begint alleen aan de start als het vliegtuig vrij is van zulke afzettingen (ijs, rijp, sneeuw en andere verontreinigingen), tenzij het vlieghandboek iets anders toelaat.\n\n**In de praktijk:**\nZet het vliegtuig in een hangar of verwijder de rijp volledig met een geschikt middel vóór de start, en controleer ook de staartvlakken en roeren.\n\n**Valkuil:**\nJuist de bovenkant van de vleugel is het gevoeligst: zelfs een dunne, ruwe laag rijp verstoort de luchtstroming, verhoogt de overtreksnelheid en vermindert de lift. Wegwaaien tijdens de startrol is een gevaarlijke mythe.",
+  "src": "nco",
+  "ref": "NCO.OP.165 – IJs en andere verontreinigingen – procedures op de grond",
+  "doc": "airops",
+  "art": "NCO.OP.165",
+  "citaat": "The pilot-in-command shall only commence take-off if the aircraft is clear of any deposit that might adversely affect the performance or controllability of the aircraft, except as permitted in the AFM.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "Regulation (EU) No 800/2013\nThe pilot-in-command shall only commence take-off if the aircraft is clear of any deposit that might adversely affect the performance or controllability of the aircraft, except as permitted in the AFM."
+ },
+ {
+  "id": "NCO-22",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Je neemt een vriend mee als passagier en wil onderweg een motorstoring simuleren om je noodprocedure te oefenen. Mag dat volgens Part-NCO?",
+  "o": [
+   "Nee, met passagiers of vracht aan boord mag je geen situaties simuleren die abnormale of noodprocedures vereisen",
+   "Ja, zolang je boven 2 000 ft boven de grond blijft",
+   "Ja, als je de passagier vooraf inlicht en hij ermee instemt",
+   "Ja, maar alleen boven of vlak bij een vliegveld"
+  ],
+  "c": 0,
+  "e": "Nee: met passagiers of vracht aan boord mag je geen situaties simuleren die abnormale of noodprocedures vereisen.\n\n**Wat zegt de regel?**\nWie passagiers of vracht vervoert, simuleert geen noodsituaties en ook geen vlucht in instrumentweersomstandigheden (IMC). Uitzondering: bij opleidingsvluchten van een opleidingsorganisatie mogen zulke situaties gesimuleerd worden met leerling-piloten aan boord.\n\n**In de praktijk:**\nOefen noodprocedures alleen, of met een instructeur tijdens een opleidingsvlucht.\n\n**Valkuil:**\nToestemming van je passagier verandert niets: de regel beschermt de inzittenden, en een geoefende noodsituatie kan bij een fout een echte worden.",
+  "src": "nco",
+  "ref": "NCO.OP.180 – Gesimuleerde situaties tijdens de vlucht",
+  "doc": "airops",
+  "art": "NCO.OP.180",
+  "citaat": "The pilot-in-command shall, when carrying passengers or cargo, not simulate:",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) The pilot-in-command shall, when carrying passengers or cargo, not simulate:\n(1) situations that require the application of abnormal or emergency procedures; or\n(2) flight in instrument meteorological conditions (IMC).\n(b) Notwithstanding (a), when training flights are conducted by a training organisation referred to in Article 10a of Commission Regulation (EU) No 1178/2011, such situations may be simulated with student pilots on-board."
+ },
+ {
+  "id": "NCO-23",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Je kunt niet goed inschatten hoe zuurstofgebrek de inzittenden zal beïnvloeden. Je plant een kruisvlucht van 50 minuten op een cabinedrukhoogte van 11 500 ft in een vliegtuig zonder drukcabine. Wat geldt volgens Part-NCO?",
+  "o": [
+   "Jij als piloot moet extra zuurstof gebruiken voor de tijd die je langer dan 30 minuten op die hoogte vliegt",
+   "Alle inzittenden moeten vanaf 10 000 ft voortdurend extra zuurstof gebruiken",
+   "Er is geen extra zuurstof nodig, want je blijft onder 13 000 ft",
+   "Je moet pas extra zuurstof gebruiken na 60 minuten op die hoogte"
+  ],
+  "c": 0,
+  "e": "Jij als piloot moet extra zuurstof gebruiken voor de tijd die je langer dan 30 minuten op die hoogte vliegt.\n\n**Wat zegt de regel?**\nKan de gezagvoerder niet bepalen hoe zuurstofgebrek de inzittenden zal beïnvloeden, dan gebruiken de bemanningsleden met taken die essentieel zijn voor de veilige uitvoering van de vlucht extra zuurstof voor elke periode van meer dan 30 minuten op een cabinedrukhoogte tussen 10 000 ft en 13 000 ft.\n\n**In de praktijk:**\nBij 50 minuten op 11 500 ft heb je dus zuurstof aan boord nodig en gebruik je die zeker na de eerste 30 minuten.\n\n**Valkuil:**\nDe verplichting voor alle inzittenden geldt pas boven 13 000 ft; tussen 10 000 en 13 000 ft gaat het om de piloot.",
+  "src": "nco",
+  "ref": "NCO.OP.190 – Gebruik van extra zuurstof",
+  "doc": "airops",
+  "art": "NCO.OP.190",
+  "citaat": "all crew members engaged in performing duties essential to the safe operation of an aircraft in flight use supplemental oxygen for any period in excess of 30 minutes when the pressure altitude in the the passenger compartment will be between 10 000 ft and 13 000 ft",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(b) In any other case when the pilot-in-command cannot determine how the lack of oxygen might affect all occupants on board, he/she shall ensure that:\n(1) all crew members engaged in performing duties essential to the safe operation of an aircraft in flight use supplemental oxygen for any period in excess of 30 minutes when the pressure altitude in the the passenger compartment will be between 10 000 ft and 13 000 ft; and\n(2) all occupants use supplemental oxygen for any period that the pressure altitude in the the passenger compartment will be above 13 000 ft."
+ },
+ {
+  "id": "NCO-24",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Boven welke cabinedrukhoogte moeten volgens Part-NCO alle inzittenden, ook de passagiers, extra zuurstof gebruiken als de gezagvoerder niet kan bepalen hoe zuurstofgebrek hen zal beïnvloeden?",
+  "o": [
+   "13 000 ft",
+   "10 000 ft",
+   "12 000 ft",
+   "15 000 ft"
+  ],
+  "c": 0,
+  "e": "Boven 13 000 ft cabinedrukhoogte gebruiken alle inzittenden extra zuurstof, zolang de vlucht op die hoogte duurt.\n\n**Wat zegt de regel?**\nAls de gezagvoerder de nood aan zuurstof niet zelf kan bepalen, gelden vaste grenzen: tussen 10 000 en 13 000 ft gebruiken de bemanningsleden met essentiële taken zuurstof na 30 minuten; boven 13 000 ft gebruiken alle inzittenden zuurstof, zonder tijdsmarge.\n\n**In de praktijk:**\nOnder die hoogtes ben je niet altijd veilig: rokers, mensen met een medische aandoening of passagiers die niet aan hoogte gewend zijn, kunnen al eerder hypoxie krijgen.\n\n**Valkuil:**\n10 000 ft is de grens waarboven de piloot na 30 minuten zuurstof moet gebruiken, niet de grens voor alle inzittenden.",
+  "src": "nco",
+  "ref": "NCO.OP.190 – Gebruik van extra zuurstof",
+  "doc": "airops",
+  "art": "NCO.OP.190",
+  "citaat": "all occupants use supplemental oxygen for any period that the pressure altitude in the the passenger compartment will be above 13 000 ft",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(b) In any other case when the pilot-in-command cannot determine how the lack of oxygen might affect all occupants on board, he/she shall ensure that:\n(1) all crew members engaged in performing duties essential to the safe operation of an aircraft in flight use supplemental oxygen for any period in excess of 30 minutes when the pressure altitude in the the passenger compartment will be between 10 000 ft and 13 000 ft; and\n(2) all occupants use supplemental oxygen for any period that the pressure altitude in the the passenger compartment will be above 13 000 ft."
+ },
+ {
+  "id": "NCO-25",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Welk gegeven moet een vliegtuig volgens Part-NCO al voor een VFR-vlucht overdag kunnen meten en weergeven?",
+  "o": [
+   "De tijd, in uren, minuten en seconden",
+   "De vliegstand (attitude)",
+   "De verticale snelheid",
+   "De gestabiliseerde koers (stabilised heading)"
+  ],
+  "c": 0,
+  "e": "De tijd, in uren, minuten en seconden, hoort bij de minimale uitrusting voor VFR overdag.\n\n**Wat zegt de regel?**\nEen vliegtuig dat overdag onder VFR vliegt, moet de magnetische koers, de tijd (uren, minuten, seconden), de barometrische hoogte en de aangewezen luchtsnelheid kunnen meten en weergeven, en het machgetal als snelheidsbeperkingen in mach zijn uitgedrukt.\n\n**In de praktijk:**\nEen nauwkeurig uurwerk heeft geen uitrustingsgoedkeuring nodig; een betrouwbaar polshorloge met secondeaanduiding kan dus volstaan.\n\n**Valkuil:**\nVliegstand, verticale snelheid en gestabiliseerde koers zijn pas vereist bij VMC 's nachts of wanneer je het vliegtuig niet zonder extra instrumenten op koers kunt houden.",
+  "src": "nco",
+  "ref": "NCO.IDE.A.120 – VFR-vluchten: vlieg- en navigatie-instrumenten",
+  "doc": "airops",
+  "art": "NCO.IDE.A.120",
+  "citaat": "time, in hours, minutes and seconds",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) Aeroplanes operated under VFR by day shall be equipped with a means of measuring and displaying the following:\n(1) magnetic heading;\n(2) time, in hours, minutes and seconds;\n(3) barometric altitude;\n(4) indicated airspeed; and\n(5) Mach number, whenever speed limitations are expressed in terms of Mach number."
+ },
+ {
+  "id": "NCO-26",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Je wilt met een vliegtuig 's nachts in VMC vliegen. Wat moet het volgens Part-NCO bovenop de instrumenten voor VFR overdag kunnen meten en weergeven?",
+  "o": [
+   "Bocht en slip, vliegstand, verticale snelheid en gestabiliseerde koers, plus een aanduiding van onvoldoende voeding van de gyro-instrumenten",
+   "Alleen een verwarmde pitotbuis en een tweede hoogtemeter",
+   "Een radiohoogtemeter en een GNSS-ontvanger",
+   "Niets extra: de uitrusting voor overdag volstaat zolang het weer VMC is"
+  ],
+  "c": 0,
+  "e": "Bocht en slip, vliegstand, verticale snelheid en gestabiliseerde koers, plus een aanduiding wanneer de voeding van de gyro-instrumenten onvoldoende is.\n\n**Wat zegt de regel?**\n's Nachts mis je vaak een natuurlijke horizon. Daarom vereist Part-NCO bij VMC 's nachts (of als je het vliegtuig niet zonder extra instrumenten op de gewenste baan kunt houden) deze bijkomende instrumenten.\n\n**In de praktijk:**\nControleer vóór een nachtvlucht ook de vacuüm- of elektrische voeding van je gyro's en de verlichting van alle instrumenten.\n\n**Valkuil:**\nEen voorziening tegen condensatie of ijs in het snelheidssysteem, zoals pitotverwarming, wordt pas bijkomend vereist als je het vliegtuig niet zonder extra instrumenten op de gewenste baan kunt houden.",
+  "src": "nco",
+  "ref": "NCO.IDE.A.120 – VFR-vluchten: vlieg- en navigatie-instrumenten",
+  "doc": "airops",
+  "art": "NCO.IDE.A.120",
+  "citaat": "(i) turn and slip;\n(ii) attitude;\n(iii) vertical speed; and\n(iv) stabilised heading;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(i) turn and slip;\n(ii) attitude;\n(iii) vertical speed; and\n(iv) stabilised heading;\nand\n(2) a means of indicating when the supply of power to the gyroscopic instruments is not adequate."
+ },
+ {
+  "id": "NCO-27",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Volgens de AMC bij Part-NCO mag een bochtcoördinator (turn co-ordinator) bij bepaalde plaatselijke vluchten dienen als gelijkwaardig middel voor sommige verplichte instrumenten. Welke voorwaarden gelden voor zo'n vlucht?",
+  "o": [
+   "Hoogstens 60 minuten, opstijgen en landen op hetzelfde vliegveld en binnen 50 NM ervan blijven",
+   "Hoogstens 30 minuten, opstijgen en landen op hetzelfde vliegveld en binnen 25 NM ervan blijven",
+   "Hoogstens 90 minuten en binnen 100 NM van het vertrekveld blijven",
+   "Hoogstens 60 minuten en het vliegveld voortdurend in zicht houden"
+  ],
+  "c": 0,
+  "e": "De vlucht duurt hoogstens 60 minuten, je stijgt op en landt op hetzelfde vliegveld en je blijft binnen 50 NM ervan.\n\n**Wat zegt de regel?**\nVoor zulke plaatselijke vluchten aanvaardt de AMC als gelijkwaardig middel voor de bocht- en slipaanwijzer en de vliegstandaanwijzer: een bocht- en slipaanwijzer, een bochtcoördinator, of een vliegstandaanwijzer samen met een slipaanwijzer.\n\n**In de praktijk:**\nOok een eenvoudiger uitgerust vliegtuig kan zo binnen die grenzen gebruikt worden, bijvoorbeeld voor een korte plaatselijke vlucht 's nachts in VMC.\n\n**Valkuil:**\nAlle drie de voorwaarden moeten samen vervuld zijn; het veld in zicht houden is een criterium uit de brandstofregels, niet uit deze AMC.",
+  "src": "nco",
+  "ref": "AMC2 NCO.IDE.A.120 – Plaatselijke vluchten",
+  "doc": "airops",
+  "art": "AMC2 NCO.IDE.A.120",
+  "citaat": "For flights that do not exceed 60 minutes duration, that take off and land at the same aerodrome, and that remain within 50 NM of that aerodrome",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "ED Decision 2014/016/R\nLOCAL FLIGHTS\nFor flights that do not exceed 60 minutes duration, that take off and land at the same aerodrome, and that remain within 50 NM of that aerodrome, an equivalent means of complying with NCO.IDE.A.120(b)(1)(i), (b)(1)(ii) may be:\n(a) a turn and slip indicator;\n(b) a turn co-ordinator; or\n(c) both an attitude indicator and a slip indicator."
+ },
+ {
+  "id": "NCO-28",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Je vliegtuig wordt 's nachts gebruikt. Welke van de volgende verlichting is volgens Part-NCO verplicht?",
+  "o": [
+   "Een onafhankelijke draagbare lamp voor elke bemanningsplaats",
+   "Een zoeklicht onder de romp",
+   "Verlichting van de registratieletters",
+   "Noodverlichting in de cabine op een afzonderlijke batterij"
+  ],
+  "c": 0,
+  "e": "Een onafhankelijke draagbare lamp voor elke bemanningsplaats is verplicht. Valt de elektrische verlichting uit, dan kun je je instrumenten en kaarten nog lezen.\n\n**Wat zegt de regel?**\nEen vliegtuig dat 's nachts vliegt, heeft onder meer anti-botsingslichten, navigatielichten, een landingslicht, verlichting van alle essentiële instrumenten en van de passagierscabine vanuit het elektrische systeem van het vliegtuig, en een onafhankelijke draagbare lamp voor elke bemanningsplaats.\n\n**In de praktijk:**\nNeem een zaklamp met rood licht en verse batterijen mee, binnen handbereik.\n\n**Valkuil:**\nEen noodbatterij voor de cabineverlichting is geen eis; de regel vraagt een draagbare, onafhankelijke lamp per bemanningsplaats.",
+  "src": "nco",
+  "ref": "NCO.IDE.A.115 – Verlichting",
+  "doc": "airops",
+  "art": "NCO.IDE.A.115",
+  "citaat": "an independent portable light for each crew member station",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "Regulation (EU) No 800/2013\nAeroplanes operated at night shall be equipped with:\n(a) an anti-collision light system;\n(b) navigation/position lights;\n(c) a landing light;\n(d) lighting supplied from the aeroplane’s electrical system to provide adequate illumination for all instruments and equipment essential to the safe operation of the aeroplane;\n(e) lighting supplied from the aeroplane’s electrical system to provide illumination in all passenger compartments;\n(f) an independent portable light for each crew member station; and\n(g) lights to conform with the International Regulations for Preventing Collisions at Sea if the aeroplane is operated as a seaplane."
+ },
+ {
+  "id": "NCO-29",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Je neemt je dochter van 18 maanden mee op een vlucht. Wat vereist Part-NCO voor haar?",
+  "o": [
+   "Een kinderbeveiligingssysteem (child restraint device, CRD)",
+   "Ze mag op de schoot van een volwassene zitten, met diens gordel om beiden heen",
+   "Een eigen stoel met een gewone veiligheidsgordel",
+   "Niets bijzonders: kinderen jonger dan 2 jaar tellen niet als persoon aan boord"
+  ],
+  "c": 0,
+  "e": "Voor een kind jonger dan 24 maanden is een kinderbeveiligingssysteem (child restraint device, CRD) vereist.\n\n**Wat zegt de regel?**\nHet vliegtuig moet uitgerust zijn met een stoel of ligplaats voor elke persoon van 24 maanden of ouder, een gordel op elke stoel, een CRD voor elke persoon jonger dan 24 maanden en, voor vliegtuigen met een eerste CofA vanaf 25 augustus 2016, een gordel met schouderriem en één sluiting op elke stoel van de bemanning.\n\n**In de praktijk:**\nGa na of het kinderzitje geschikt is voor gebruik in een vliegtuig en goed kan worden bevestigd op de stoel.\n\n**Valkuil:**\nEen gordel rond volwassene en kind samen kan het kind bij een harde landing ernstig verwonden.",
+  "src": "nco",
+  "ref": "NCO.IDE.A.140 – Stoelen, veiligheidsgordels en kinderbeveiligingssystemen",
+  "doc": "airops",
+  "art": "NCO.IDE.A.140",
+  "citaat": "a child restraint device (CRD) for each person on board younger than 24 months",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) Aeroplanes shall be equipped with:\n(1) a seat or berth for each person on board who is aged 24 months or more;\n(2) a seat belt on each seat and restraining belts for each berth;\n(3) a child restraint device (CRD) for each person on board younger than 24 months; and\n(4) a seat belt with upper torso restraint system on each flight crew seat, having a single point release for aeroplanes having a CofA first issued on or after 25 August 2016."
+ },
+ {
+  "id": "NCO-30",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Tijdens een vlucht heb je verbandmiddelen uit de EHBO-kit (first-aid kit) gebruikt. Wat moet je volgens Part-NCO en de bijbehorende AMC doen?",
+  "o": [
+   "De kit bij de eerste gelegenheid aanvullen, want ze moet up-to-date en vlot bereikbaar zijn",
+   "Niets: een EHBO-kit is alleen aanbevolen, niet verplicht",
+   "De kit pas aanvullen bij de volgende jaarlijkse onderhoudsbeurt",
+   "De kit vóór de volgende vlucht laten vervangen door een erkende onderhoudsorganisatie"
+  ],
+  "c": 0,
+  "e": "Je vult de kit bij de eerste gelegenheid aan. De regel eist dat de EHBO-kit up-to-date en vlot bereikbaar is.\n\n**Wat zegt de regel?**\nElk vliegtuig moet een EHBO-kit aan boord hebben. Om ze up-to-date te houden, wordt ze volgens de AMC periodiek gecontroleerd, regelmatig aangevuld volgens de vervaldata op de etiketten en na gebruik tijdens de vlucht bij de eerste gelegenheid aangevuld waar vervangmiddelen beschikbaar zijn.\n\n**In de praktijk:**\nControleer bij je controle vóór de vlucht of de kit aanwezig, volledig en niet vervallen is.\n\n**Valkuil:**\nEen EHBO-kit heeft geen uitrustingsgoedkeuring nodig: je hoeft geen onderhoudsorganisatie in te schakelen om ze aan te vullen.",
+  "src": "nco",
+  "ref": "AMC2 NCO.IDE.A.145 – Onderhoud van de EHBO-kit",
+  "doc": "airops",
+  "art": "AMC2 NCO.IDE.A.145",
+  "citaat": "replenished after use in-flight at the first opportunity where replacement items are available",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "ED Decision 2014/016/R\nMAINTENANCE OF FIRST-AID KIT\nTo be kept up-to-date, the first-aid kit should be:\n(a) inspected periodically to confirm, to the extent possible, that contents are maintained in the condition necessary for their intended use;\n(b) replenished at regular intervals, in accordance with instructions contained on their labels, or as circumstances warrant; and\n(c) replenished after use in-flight at the first opportunity where replacement items are available."
+ },
+ {
+  "id": "NCO-31",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Moet een eenmotorig vliegtuig van de categorie ELA1 volgens Part-NCO een handbrandblusser aan boord hebben?",
+  "o": [
+   "Nee, ELA1-vliegtuigen zijn uitgezonderd van deze verplichting",
+   "Ja, minstens één in de cockpit",
+   "Ja, één in de cockpit en één in de bagageruimte",
+   "Alleen bij vluchten met passagiers aan boord"
+  ],
+  "c": 0,
+  "e": "Nee: ELA1-vliegtuigen zijn uitgezonderd van de verplichting om een handbrandblusser mee te voeren.\n\n**Wat zegt de regel?**\nAndere vliegtuigen moeten minstens één handbrandblusser hebben in de cockpit en één in elke passagierscabine die gescheiden is van de cockpit en niet vlot bereikbaar is voor de bemanning. Type en hoeveelheid blusmiddel moeten passen bij het brandtype en het risico op giftige gassen beperken.\n\n**In de praktijk:**\nELA1 is de categorie van lichte, niet-complexe vliegtuigen (tot 1 200 kg maximale startmassa). Veel van zulke toestellen hebben toch een blusser aan boord; neem die dan op in je passagiersbriefing.\n\n**Valkuil:**\nDe uitzondering hangt af van de vliegtuigcategorie, niet van het al dan niet meenemen van passagiers.",
+  "src": "nco",
+  "ref": "NCO.IDE.A.160 – Handbrandblussers",
+  "doc": "airops",
+  "art": "NCO.IDE.A.160",
+  "citaat": "Aeroplanes, except ELA1 aeroplanes, shall be equipped with at least one hand fire extinguisher",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) Aeroplanes, except ELA1 aeroplanes, shall be equipped with at least one hand fire extinguisher:\n(1) in the flight crew compartment; and\n(2) in each passenger compartment that is separate from the flight crew compartment, except if the compartment is readily accessible to the flight crew.\n(b) The type and quantity of extinguishing agent for the required fire extinguishers shall be suitable for the type of fire likely to occur in the compartment where the extinguisher is intended to be used and to minimise the hazard of toxic gas concentration in compartments occupied by persons."
+ },
+ {
+  "id": "NCO-32",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Je vliegtuig is gecertificeerd voor hoogstens vier passagierszitplaatsen. Op welke manier mag je volgens Part-NCO voldoen aan de verplichting om een noodbaken mee te voeren?",
+  "o": [
+   "Met een overlevings-ELT (ELT(S)) of een persoonlijk noodbaken (PLB) dat een bemanningslid of passagier bij zich draagt",
+   "Alleen met een vast ingebouwde automatische ELT",
+   "Met een mobiele telefoon met gps-functie",
+   "Niet: onder zes passagierszitplaatsen is geen noodbaken vereist"
+  ],
+  "c": 0,
+  "e": "Je mag een overlevings-ELT (ELT(S)) of een persoonlijk noodbaken (personal locator beacon, PLB) gebruiken dat een bemanningslid of passagier bij zich draagt.\n\n**Wat zegt de regel?**\nElk vliegtuig heeft een noodbaken nodig: een ELT van om het even welk type bij een eerste CofA tot 1 juli 2008, een automatische ELT bij een eerste CofA daarna, of een ELT(S) of PLB bij een maximale configuratie van zes passagierszitplaatsen of minder.\n\n**In de praktijk:**\nDraag de PLB op je lichaam, zodat je ze na een noodlanding of ditching bij je hebt, en controleer de batterij.\n\n**Valkuil:**\nEen kleine configuratie betekent niet dat je geen baken nodig hebt; je mag alleen voor een draagbaar baken kiezen.",
+  "src": "nco",
+  "ref": "NCO.IDE.A.170 – Noodzender (ELT)",
+  "doc": "airops",
+  "art": "NCO.IDE.A.170",
+  "citaat": "a survival ELT (ELT(S)) or a personal locator beacon (PLB), carried by a crew member or a passenger, when certified for a maximum passenger seating configuration of six or less",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "Regulation (EU) No 800/2013\n(a) Aeroplanes shall be equipped with:\n(1) an ELT of any type, when first issued with an individual CofA on or before 1 July 2008;\n(2) an automatic ELT, when first issued with an individual CofA after 1 July 2008; or\n(3) a survival ELT (ELT(S)) or a personal locator beacon (PLB), carried by a crew member or a passenger, when certified for a maximum passenger seating configuration of six or less.\n(b) ELTs of any type and PLBs shall be capable of transmitting simultaneously on 121,5 MHz and 406 MHz."
+ },
+ {
+  "id": "NCO-33",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Op welke frequenties moet een ELT of PLB volgens Part-NCO gelijktijdig kunnen uitzenden?",
+  "o": [
+   "121,5 MHz en 406 MHz",
+   "121,5 MHz en 243 MHz",
+   "123,45 MHz en 406 MHz",
+   "243 MHz en 406 MHz"
+  ],
+  "c": 0,
+  "e": "Een ELT of PLB moet gelijktijdig op 121,5 MHz en 406 MHz kunnen uitzenden.\n\n**Wat zegt de regel?**\nDie verplichting geldt voor alle types ELT en voor PLB's aan boord van vliegtuigen onder Part-NCO.\n\n**In de praktijk:**\nHet signaal op 406 MHz wordt door satellieten opgevangen en bevat een identificatie van het baken; het signaal op 121,5 MHz dient vooral om het baken ter plaatse te lokaliseren (homing) door reddingsdiensten. Registreer je 406 MHz-baken zodat reddingsdiensten weten van wie het signaal komt.\n\n**Valkuil:**\n243 MHz is de militaire noodfrequentie en 123,45 MHz een frequentie voor onderling verkeer tussen piloten; geen van beide is de vereiste combinatie.",
+  "src": "nco",
+  "ref": "NCO.IDE.A.170 – Noodzender (ELT)",
+  "doc": "airops",
+  "art": "NCO.IDE.A.170",
+  "citaat": "ELTs of any type and PLBs shall be capable of transmitting simultaneously on 121,5 MHz and 406 MHz.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "Regulation (EU) No 800/2013\n(a) Aeroplanes shall be equipped with:\n(1) an ELT of any type, when first issued with an individual CofA on or before 1 July 2008;\n(2) an automatic ELT, when first issued with an individual CofA after 1 July 2008; or\n(3) a survival ELT (ELT(S)) or a personal locator beacon (PLB), carried by a crew member or a passenger, when certified for a maximum passenger seating configuration of six or less.\n(b) ELTs of any type and PLBs shall be capable of transmitting simultaneously on 121,5 MHz and 406 MHz."
+ },
+ {
+  "id": "NCO-34",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Je vliegt met een eenmotorig landvliegtuig langs de kust. Vanaf wanneer moet er volgens Part-NCO voor iedere persoon aan boord een reddingsvest zijn?",
+  "o": [
+   "Zodra je boven water vliegt buiten glijafstand van het land",
+   "Pas als je meer dan 100 NM van het land bent",
+   "Pas als je meer dan 10 NM van de kust bent, ongeacht je hoogte",
+   "Alleen boven open zee bij een watertemperatuur onder 10 °C"
+  ],
+  "c": 0,
+  "e": "Zodra je boven water vliegt buiten glijafstand van het land, moet er voor iedereen aan boord een reddingsvest zijn.\n\n**Wat zegt de regel?**\nVoor eenmotorige landvliegtuigen is de grens de glijafstand: bij een motorstoring moet je het land in een glijvlucht kunnen bereiken. Lukt dat niet, dan is een reddingsvest per persoon verplicht (of een gelijkwaardig drijfmiddel voor kinderen jonger dan 24 maanden), gedragen of vlot bereikbaar vanaf de zitplaats.\n\n**In de praktijk:**\nDe glijafstand hangt af van je hoogte: hoger vliegen vergroot de afstand tot de kust die je veilig kunt aanhouden.\n\n**Valkuil:**\nVoor een eenmotorig landvliegtuig is de glijafstand het criterium. De grens van 30 minuten of 50 NM (de kleinste) geldt voor alle vliegtuigen, maar die ligt voor een eenmotorig toestel altijd verder dan de glijafstand.",
+  "src": "nco",
+  "ref": "NCO.IDE.A.175 – Vliegen boven water",
+  "doc": "airops",
+  "art": "NCO.IDE.A.175",
+  "citaat": "flying over water beyond gliding distance from land",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(i) flying over water beyond gliding distance from land; or\n(ii) taking off or landing at an aerodrome or operating site where, in the opinion of the pilot-in-command, the take-off or approach path is so disposed over water that there would be a likelihood of a ditching;\n(2) seaplanes operated over water; and\n(3) aeroplanes operated at a distance away from land where an emergency landing is possible greater than that corresponding to 30 minutes at normal cruising speed or 50 NM, whichever is less."
+ },
+ {
+  "id": "NCO-35",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Je kruissnelheid is 120 kt. Vanaf welke afstand van land waar een noodlanding mogelijk is, moet je volgens Part-NCO de overlevingsrisico's bij een noodlanding op water (ditching) beoordelen en beslissen over reddingsvlotten en noodsignalering?",
+  "o": [
+   "50 NM",
+   "60 NM",
+   "30 NM",
+   "100 NM"
+  ],
+  "c": 0,
+  "e": "Vanaf 50 NM. De grens is 30 minuten op normale kruissnelheid of 50 NM, de kleinste van beide; 30 minuten aan 120 kt is 60 NM, dus 50 NM geldt.\n\n**Wat zegt de regel?**\nBoven die afstand beoordeelt de gezagvoerder de overlevingsrisico's bij een ditching en beslist hij over het meenemen van middelen voor noodsignalen, reddingsvlotten voor alle inzittenden en overlevingsmateriaal. Daarbij houd je rekening met de zeegang, de water- en luchttemperatuur, de afstand tot land en de beschikbaarheid van opsporing en redding.\n\n**Valkuil:**\n60 NM krijg je als je alleen de tijdsgrens omrekent; de regel neemt altijd de kleinste waarde.",
+  "src": "nco",
+  "ref": "NCO.IDE.A.175 – Vliegen boven water",
+  "doc": "airops",
+  "art": "NCO.IDE.A.175",
+  "citaat": "greater than that corresponding to 30 minutes at normal cruising speed or 50 NM, whichever is the lesser, shall determine the risks to survival of the occupants of the aeroplane in the event of a ditching",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(c) The pilot-in-command of an aeroplane operated at a distance away from land where an emergency landing is possible greater than that corresponding to 30 minutes at normal cruising speed or 50 NM, whichever is the lesser, shall determine the risks to survival of the occupants of the aeroplane in the event of a ditching, based on which he/she shall determine the carriage of:\n(1) equipment for making the distress signals;\n(2) life-rafts in sufficient numbers to carry all persons on board, stowed so as to facilitate their ready use in emergency; and\n(3) life-saving equipment, to provide the means of sustaining life, as appropriate to the flight to be undertaken."
+ },
+ {
+  "id": "NCO-36",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Je vertrekt met een eenmotorig landvliegtuig van een kustvliegveld waarvan de startbaan uitkomt boven zee. Bij een motorstoring kort na het opstijgen zou je waarschijnlijk in het water terechtkomen. Wat geldt volgens Part-NCO?",
+  "o": [
+   "Er moet voor iedere persoon aan boord een reddingsvest zijn, gedragen of vlot bereikbaar vanaf de zitplaats",
+   "Er zijn geen reddingsvesten nodig, omdat je maar enkele minuten boven water vliegt",
+   "Er moet een reddingsvlot aan boord zijn, maar reddingsvesten zijn niet vereist",
+   "Je mag alleen vertrekken als er een reddingsboot van het vliegveld paraat staat"
+  ],
+  "c": 0,
+  "e": "Er moet voor iedere persoon aan boord een reddingsvest zijn, gedragen of vlot bereikbaar vanaf de zitplaats.\n\n**Wat zegt de regel?**\nVoor eenmotorige landvliegtuigen gelden reddingsvesten ook bij opstijgen of landen op een vliegveld waar het start- of naderingspad volgens de gezagvoerder zo boven water ligt dat een ditching waarschijnlijk is. Het is jouw inschatting als gezagvoerder.\n\n**In de praktijk:**\nHet vest moet bereikbaar zijn terwijl de gordel vastzit; laat passagiers het bij voorkeur dragen tijdens de start.\n\n**Valkuil:**\nDe korte tijd boven water maakt niet uit: juist kort na de start is een motorstoring met ditching het grootste risico.",
+  "src": "nco",
+  "ref": "NCO.IDE.A.175 – Vliegen boven water",
+  "doc": "airops",
+  "art": "NCO.IDE.A.175",
+  "citaat": "taking off or landing at an aerodrome or operating site where, in the opinion of the pilot-in-command, the take-off or approach path is so disposed over water that there would be a likelihood of a ditching",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(i) flying over water beyond gliding distance from land; or\n(ii) taking off or landing at an aerodrome or operating site where, in the opinion of the pilot-in-command, the take-off or approach path is so disposed over water that there would be a likelihood of a ditching;\n(2) seaplanes operated over water; and\n(3) aeroplanes operated at a distance away from land where an emergency landing is possible greater than that corresponding to 30 minutes at normal cruising speed or 50 NM, whichever is less."
+ },
+ {
+  "id": "NCO-37",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Een passagier stelt voor om bij een vlucht over water zijn zitkussen als drijfmiddel te gebruiken in plaats van een reddingsvest. Wat zegt de richtlijn bij Part-NCO?",
+  "o": [
+   "Zitkussens worden niet als drijfmiddel beschouwd",
+   "Zitkussens zijn toegelaten voor passagiers, maar niet voor de piloot",
+   "Zitkussens zijn toegelaten als ze een goedkeuringslabel dragen",
+   "Zitkussens zijn toegelaten voor kinderen jonger dan 24 maanden"
+  ],
+  "c": 0,
+  "e": "Zitkussens worden niet als drijfmiddel beschouwd. Ze tellen dus niet als vervanging voor een reddingsvest.\n\n**Wat zegt de regel?**\nWaar reddingsvesten vereist zijn, moet er een per persoon aan boord zijn; voor kinderen jonger dan 24 maanden mag dat een gelijkwaardig individueel drijfmiddel zijn. De richtlijn (GM) verduidelijkt dat een zitkussen daar niet onder valt. Volgens de AMC heeft elk reddingsvest ook een elektrisch lampje om personen in het water te kunnen terugvinden.\n\n**Valkuil:**\nOok voor baby's is een zitkussen geen gelijkwaardig drijfmiddel: daar is een echt drijfmiddel voor zuigelingen voor nodig.",
+  "src": "nco",
+  "ref": "GM1 NCO.IDE.A.175 – Zitkussens",
+  "doc": "airops",
+  "art": "GM1 NCO.IDE.A.175",
+  "citaat": "Seat cushions are not considered to be flotation devices.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "ED Decision 2014/016/R\nSEAT CUSHIONS\nSeat cushions are not considered to be flotation devices."
+ },
+ {
+  "id": "NCO-38",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Het luchtruim waarin je gaat vliegen, vereist radioverbinding. Aan welke eis moet je radio volgens Part-NCO dan in elk geval voldoen?",
+  "o": [
+   "Ze moet ook communicatie op de noodfrequentie 121,5 MHz mogelijk maken",
+   "Ze moet een bereik van minstens 100 NM hebben",
+   "Ze moet altijd dubbel uitgevoerd zijn",
+   "Ze moet bij een noodoproep automatisch de transponder op 7700 zetten"
+  ],
+  "c": 0,
+  "e": "Ze moet ook communicatie op de noodfrequentie 121,5 MHz mogelijk maken.\n\n**Wat zegt de regel?**\nWaar het luchtruim het vereist, moet het vliegtuig een radio hebben voor tweezijdige verbinding met de vereiste stations en frequenties. Zo'n radio moet ook op 121,5 MHz kunnen werken. Zijn er meerdere radio's vereist, dan moeten ze onafhankelijk van elkaar zijn. Ook een transponder is verplicht waar het luchtruim dat vereist.\n\n**In de praktijk:**\nControleer in de luchtvaartgids (AIP) welke radio- en transponderuitrusting het luchtruim op je route vraagt.\n\n**Valkuil:**\nTwee radio's zijn niet altijd vereist; alleen als er meer dan één nodig is, moeten ze onafhankelijk zijn.",
+  "src": "nco",
+  "ref": "NCO.IDE.A.190 – Radiocommunicatie-uitrusting",
+  "doc": "airops",
+  "art": "NCO.IDE.A.190",
+  "citaat": "Radio communication equipment, if required by (a), shall provide for communication on the aeronautical emergency frequency 121,5 MHz.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "Regulation (EU) No 800/2013\n(a) Where required by the airspace being flown aeroplanes shall be equipped with radio communication equipment capable of conducting two-way communication with those aeronautical stations and on those frequencies to meet airspace requirements.\n(b) Radio communication equipment, if required by (a), shall provide for communication on the aeronautical emergency frequency 121,5 MHz.\n(c) When more than one communication equipment unit is required, each shall be independent of the other or others to the extent that a failure in any one will not result in failure of any other."
+ },
+ {
+  "id": "NCO-39",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Bij je controle vóór de vlucht stel je vast dat een instrument dat voor je geplande vlucht vereist is, niet werkt. Voor het vliegtuig is geen minimumuitrustingslijst (MEL) opgesteld en het heeft geen vliegvergunning (permit to fly). Wat doe je?",
+  "o": [
+   "Je vertrekt niet",
+   "Je vertrekt en noteert het defect na de vlucht in het journey log",
+   "Je vertrekt als een andere piloot van de club het defect mondeling goedkeurt",
+   "Je vertrekt als de vlucht korter dan een uur duurt"
+  ],
+  "c": 0,
+  "e": "Je vertrekt niet. Zonder MEL of vliegvergunning mag een vlucht niet beginnen als vereiste uitrusting ontbreekt of defect is.\n\n**Wat zegt de regel?**\nEen vlucht wordt niet aangevangen als instrumenten, uitrusting of functies die voor de geplande vlucht vereist zijn, niet werken of ontbreken, tenzij het vliegtuig volgens een MEL wordt gebruikt of onder een vliegvergunning valt.\n\n**In de praktijk:**\nMeld het defect, laat het herstellen en noteer het in het journey log of technisch logboek.\n\n**Valkuil:**\nWie de vlucht toch wil maken, moet een oplossing hebben die de regels toelaten (een MEL, een vliegvergunning of herstelling). Een mondelinge goedkeuring van een andere piloot verandert niets aan de uitrustingseisen.",
+  "src": "nco",
+  "ref": "NCO.IDE.A.105 – Minimumuitrusting voor de vlucht",
+  "doc": "airops",
+  "art": "NCO.IDE.A.105",
+  "citaat": "A flight shall not be commenced when any of the aeroplane instruments, items of equipment or functions required for the intended flight are inoperative or missing, unless:",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "Regulation (EU) No 800/2013\nA flight shall not be commenced when any of the aeroplane instruments, items of equipment or functions required for the intended flight are inoperative or missing, unless:\n(a) the aeroplane is operated in accordance with the MEL, if established; or\n(b) the aeroplane is subject to a permit to fly issued in accordance with the applicable airworthiness requirements."
+ },
+ {
+  "id": "NCO-40",
+  "status": "pending",
+  "subject": "operational_procedures",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-NCO",
+  "q": "Je plant een vlucht waarvoor extra zuurstof vereist is, met een vliegtuig zonder drukcabine en zonder ingebouwd zuurstofsysteem. Hoe kun je volgens Part-NCO en de bijbehorende AMC aan de zuurstofeis voldoen?",
+  "o": [
+   "Met draagbare zuurstofuitrusting die de vereiste hoeveelheid kan opslaan en toedienen",
+   "Niet: zonder ingebouwd systeem moet je de vlucht annuleren",
+   "Alleen met een ingebouwd systeem dat vooraf door de autoriteit is goedgekeurd",
+   "Door dieper te ademen en de vlucht op die hoogte kort te houden"
+  ],
+  "c": 0,
+  "e": "Met draagbare zuurstofuitrusting die de vereiste hoeveelheid zuurstof kan opslaan en toedienen.\n\n**Wat zegt de regel?**\nEen vliegtuig zonder drukcabine moet, als zuurstof vereist is, uitrusting hebben om de nodige zuurstof op te slaan en toe te dienen. Volgens de AMC mag dat ingebouwde of draagbare uitrusting zijn. De hoeveelheid bepaal je op basis van de cabinedrukhoogte en de vliegduur.\n\n**In de praktijk:**\nControleer vóór vertrek de vulling van de flessen, de maskers of canules en breef je passagiers over het gebruik.\n\n**Valkuil:**\nDieper ademen helpt niet tegen hypoxie op hoogte en kan hyperventilatie veroorzaken; het vervangt geen extra zuurstof.",
+  "src": "nco",
+  "ref": "AMC2 NCO.IDE.A.155 – Zuurstofvoorziening in vliegtuigen zonder drukcabine",
+  "doc": "airops",
+  "art": "AMC2 NCO.IDE.A.155",
+  "citaat": "The need for oxygen supply, when required by NCO.OP.190, may be met either by means of installed equipment or portable equipment.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "ED Decision 2016/018/R\nOXYGEN SUPPLY\nThe need for oxygen supply, when required by NCO.OP.190, may be met either by means of installed equipment or portable equipment."
+ },
+ {
+  "id": "MET-01",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "Over welke periode wordt de oppervlaktewind (richting en snelheid) die in een METAR staat normaal gemiddeld?",
+  "o": [
+   "10 minuten",
+   "2 minuten",
+   "1 minuut",
+   "30 minuten"
+  ],
+  "c": 0,
+  "e": "De wind in een METAR of SPECI is een gemiddelde over de laatste 10 minuten. Alleen bij een duidelijke breuk (marked discontinuity) in richting of snelheid binnen die 10 minuten wordt enkel de periode na die breuk gebruikt.\n\n**Wat zegt de regel?**\nVoor lokale rapporten en voor de windmeters in de verkeerstoren geldt een middeling over 2 minuten; voor METAR en SPECI is dat 10 minuten.\n\n**In de praktijk:**\nDe wind die de toren of AFIS je bij de landingsklaring geeft, is actueler dan de METAR-wind. Gebruik de METAR voor je planning, maar de opgegeven wind voor je beslissing over de baan en de zijwind.\n\n**Valkuil:**\n2 minuten is de middeling voor de windweergave in de toren en de lokale rapporten, niet voor de METAR.",
+  "src": "met",
+  "ref": "MET.TR.210 – Waarnemen van meteorologische elementen (observing meteorological elements)",
+  "doc": "atmans",
+  "art": "MET.TR.210",
+  "citaat": "10 minutes for METAR and SPECI, except that when the 10-minute period includes a marked discontinuity in the wind direction and/or speed",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(i) 2 minutes for local routine report and local special report and for wind displays in ATS units;\n(ii) 10 minutes for METAR and SPECI, except that when the 10-minute period includes a marked discontinuity in the wind direction and/or speed; only data occurring after the discontinuity shall be used for obtaining mean values; hence, the time interval in these circumstances shall be correspondingly reduced."
+ },
+ {
+  "id": "MET-02",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "Wanneer wordt in een METAR een windstoot (gust, aangeduid met G) vermeld?",
+  "o": [
+   "Wanneer de maximale windsnelheid in de laatste 10 minuten het gemiddelde met 10 kt of meer overschrijdt",
+   "Wanneer de maximale windsnelheid in de laatste 10 minuten het gemiddelde met 5 kt of meer overschrijdt",
+   "Wanneer de gemiddelde windsnelheid 15 kt of meer bedraagt, ongeacht de schommelingen",
+   "Wanneer de maximale windsnelheid in het laatste uur 25 kt of meer bedraagt"
+  ],
+  "c": 0,
+  "e": "Een windstoot wordt in een METAR alleen vermeld als de maximale snelheid in de voorbije 10 minuten minstens 10 kt boven de gemiddelde snelheid lag. Dan staat de bereikte maximale snelheid erbij, bv. 24012G25KT.\n\n**Wat zegt de regel?**\nDe drempel van 5 kt geldt alleen voor lokale rapporten wanneer geluidsbeperkende procedures (noise abatement) worden toegepast. In alle andere gevallen is het 10 kt.\n\n**In de praktijk:**\nStaat er geen G in de METAR, dan kunnen er toch vlagen tot bijna 10 kt boven het gemiddelde zijn. Hou daar rekening mee bij je naderingssnelheid en zijwindlimiet.\n\n**Valkuil:**\n5 kt is de uitzonderingsdrempel voor lokale rapporten bij noise abatement, niet de drempel voor de METAR.",
+  "src": "met",
+  "ref": "MET.TR.205 – Rapportering van meteorologische elementen (reporting of meteorological elements)",
+  "doc": "atmans",
+  "art": "MET.TR.205",
+  "citaat": "(A) 5 kt or more in local routine report and local special report when noise abatement procedures are applied;\n(B) 10 kt or more otherwise;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(C) when the total variation is 180° or more, the wind direction shall be reported as variable with no mean wind direction;\n(iii) variations from the mean wind speed (gusts), during the past 10 minutes shall be reported when the maximum wind speed exceeds the mean speed by, alternatively:\n(A) 5 kt or more in local routine report and local special report when noise abatement procedures are applied;\n(B) 10 kt or more otherwise;\n(iv) when a wind speed of less than 1 kt is reported, it shall be indicated as calm;"
+ },
+ {
+  "id": "MET-03",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "Een luchtvaartterrein meldt een zicht van 8 km, geen wolken van operationeel belang en geen weer dat significant is voor de luchtvaart. Mag de METAR \"CAVOK\" vermelden?",
+  "o": [
+   "Nee, voor CAVOK moet het zicht 10 km of meer bedragen",
+   "Ja, want voor CAVOK volstaat een zicht van 5 km of meer",
+   "Ja, want CAVOK hangt alleen af van de bewolking en het weer",
+   "Nee, voor CAVOK moet het zicht minstens 15 km bedragen"
+  ],
+  "c": 0,
+  "e": "Nee. CAVOK vervangt zicht, RVR, weer en bewolking alleen als alle voorwaarden tegelijk vervuld zijn, en daarbij hoort een zicht van 10 km of meer (zonder gerapporteerd minimumzicht).\n\n**Wat zegt de regel?**\nCAVOK vereist tegelijk: zicht 10 km of meer, geen wolken van operationeel belang en geen weer dat significant is voor de luchtvaart.\n\n**In de praktijk:**\nIn dit geval meldt de METAR het zicht (8000) en, omdat er geen relevante bewolking is, NSC (nil significant cloud). Uit het ontbreken van CAVOK kun je dus niet afleiden dat het weer slecht is.\n\n**Valkuil:**\n5 km is een belangrijke VFR-zichtwaarde, maar heeft niets met CAVOK te maken.",
+  "src": "met",
+  "ref": "MET.TR.200 – Meteorologische rapporten (meteorological reports and other information)",
+  "doc": "atmans",
+  "art": "MET.TR.200",
+  "citaat": "when the following conditions occur simultaneously at the time of observation:\n(1) visibility, 10 km or more, and the lowest visibility is not reported;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(d) Information on visibility, runway visual range, present weather and cloud amount, cloud type and height of cloud base shall be replaced in all meteorological reports by the term ‘CAVOK’ when the following conditions occur simultaneously at the time of observation:\n(1) visibility, 10 km or more, and the lowest visibility is not reported;\n(2) no cloud of operational significance;\n(3) no weather of significance to aviation."
+ },
+ {
+  "id": "MET-04",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "Bij een vliegveld waar de hoogste minimum sectorhoogte (MSA) 2 500 ft is, worden alleen torenhoge cumuluswolken (TCU) met basis op 7 000 ft waargenomen. Het zicht is 20 km en er is geen significant weer. Waarom kan de METAR geen CAVOK vermelden?",
+  "o": [
+   "Omdat een cumulonimbus of torenhoge cumulus op elke hoogte een wolk van operationeel belang is",
+   "Omdat elke wolk onder 10 000 ft een wolk van operationeel belang is",
+   "Omdat elke wolk boven de hoogste minimum sectorhoogte een wolk van operationeel belang is",
+   "Omdat CAVOK alleen mag bij volledig onbewolkte hemel"
+  ],
+  "c": 0,
+  "e": "Een CB of TCU telt altijd als wolk van operationeel belang, ongeacht de hoogte van de basis. Daardoor is niet voldaan aan de voorwaarde \"geen wolken van operationeel belang\" en vervalt CAVOK.\n\n**Wat zegt de regel?**\nEen wolk van operationeel belang heeft een basis onder 5 000 ft of onder de hoogste minimum sectorhoogte (de grootste van de twee), of is een cumulonimbus of torenhoge cumulus op eender welke hoogte.\n\n**In de praktijk:**\nCAVOK kan dus samengaan met hogere wolken, bv. stratocumulus op 6 000 ft. De METAR meldt hier de TCU-laag (BKN070TCU of vergelijkbaar), een signaal van convectie in de buurt.\n\n**Valkuil:**\nCAVOK betekent niet \"geen wolken\": een gewone wolkenlaag boven 5 000 ft (en boven de MSA) verhindert CAVOK niet.",
+  "src": "met",
+  "ref": "Bijlage I – Definities: wolk van operationeel belang (cloud of operational significance)",
+  "doc": "atmans",
+  "art": "Annex I",
+  "citaat": "‘cloud of operational significance’ means a cloud with the height of cloud base below 5 000 ft or below the highest minimum sector altitude, whichever is greater, or a cumulonimbus cloud or a towering cumulus cloud at any height;",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "… ;\n(34a) ‘boundary’ means a lateral or vertical plane delineating the airspace in which an ATC unit provides air traffic services;\n(35) ‘break’ means a period of time within the duty period when an air traffic controller is not required to perform duties, for recuperation purposes;\n(36) ‘certified aircraft application’ means a software application approved by the Agency as part of aircraft subject to Article 4 of Regulation (EC) No 216/2008;\n(37) ‘cloud of operational significance’ means a cloud with the height of cloud base below 5 000 ft or below the highest minimum sector altitude, whichever is greater, or a cumulonimbus cloud or a towering cumulus cloud at any height;\n(38) ‘commercial air transport’ means any aircraft operation involving the transport of passengers, cargo or mail for remuneration or other valuable consideration;\n(38a) ‘conventional navigation route’ means an ATS route established by reference to ground navigation aids;\n(39) ‘control area’ means a controlled airspace extending upwards from a specified limit above the earth;\n(39a) ‘coordination data’ means data of interest to operational staff …"
+ },
+ {
+  "id": "MET-05",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "Het overheersende zicht (prevailing visibility) is 6 000 m, maar in noordoostelijke richting is het zicht slechts 2 500 m door mist. Wordt dat laagste zicht ook in de METAR vermeld?",
+  "o": [
+   "Ja, want het is minder dan 50 % van het overheersende zicht en minder dan 5 000 m",
+   "Nee, een laagste zicht wordt alleen vermeld als het minder dan 1 500 m is",
+   "Nee, in een METAR staat alleen het overheersende zicht",
+   "Ja, een afwijkend laagste zicht wordt altijd vermeld, hoe klein het verschil ook is"
+  ],
+  "c": 0,
+  "e": "Ja. 2 500 m is minder dan de helft van 6 000 m en ligt onder 5 000 m, dus het laagste zicht wordt naast het overheersende zicht gemeld, met de richting: 6000 2500NE.\n\n**Wat zegt de regel?**\nHet laagste zicht wordt bijkomend gerapporteerd wanneer het minder dan 1 500 m is, of wanneer het minder dan 50 % van het overheersende zicht is en tegelijk minder dan 5 000 m. De richting wordt aangegeven met een van de acht windstreken.\n\n**In de praktijk:**\nLet op de richting: ligt het slechte zicht net in je vertrek- of naderingssector, dan is het overheersende zicht weinig waard.\n\n**Valkuil:**\nDe grens van 1 500 m is maar een van de twee voorwaarden; de 50 %-regel geldt ook.",
+  "src": "met",
+  "ref": "AMC1 MET.TR.205(b)(1) – Zicht (visibility)",
+  "doc": "atmans",
+  "art": "AMC1 MET.TR.205(b)(1)",
+  "citaat": "when the lowest visibility is different from the prevailing visibility, and (1) less than 1 500 m or (2) less than 50 % of the prevailing visibility, and less than 5 000 m, the lowest visibility observed should also be reported",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) when the lowest visibility is different from the prevailing visibility, and (1) less than 1 500 m or (2) less than 50 % of the prevailing visibility, and less than 5 000 m, the lowest visibility observed should also be reported and, when possible, its general direction in relation to the aerodrome reference point indicated by reference to one of the eight points of the compass;"
+ },
+ {
+  "id": "MET-06",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "De berekende QNH is 1 013,8 hPa. Welke waarde verschijnt in de METAR?",
+  "o": [
+   "Q1013",
+   "Q1014",
+   "Q1013,8",
+   "Q1015"
+  ],
+  "c": 0,
+  "e": "Q1013. De QNH wordt in tienden van een hectopascal berekend, maar in hele hectopascal gerapporteerd en altijd naar beneden afgerond, met vier cijfers.\n\n**Wat zegt de regel?**\nEen waarde die niet op de rapportageschaal past, wordt afgerond naar de eerstvolgende lagere hele hectopascal. In een METAR of SPECI wordt alleen de QNH opgenomen, geen QFE.\n\n**In de praktijk:**\nDoor naar beneden af te ronden staat je hoogtemeter eerder iets te laag dan te hoog ingesteld: hij wijst dan hoogstens zo'n 25 à 30 ft te weinig aan (minder dan 1 hPa), wat de veilige kant is.\n\n**Valkuil:**\nWiskundig zou 1 013,8 naar 1 014 afronden, maar voor de QNH geldt geen gewone afronding: er wordt altijd naar beneden afgerond.",
+  "src": "met",
+  "ref": "MET.TR.205 – Rapportering van meteorologische elementen (reporting of meteorological elements)",
+  "doc": "atmans",
+  "art": "MET.TR.205",
+  "citaat": "Any observed value which does not fit the reporting scale in use shall be rounded down to the nearest lower whole hectopascal.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(g) Atmospheric pressure\n(1) In local routine report, local special report, METAR and SPECI, the QNH and QFE shall be computed in tenths of hectopascals and reported therein in steps of whole hectopascals, using four digits.\n(2) Any observed value which does not fit the reporting scale in use shall be rounded down to the nearest lower whole hectopascal.\n(3) In local routine report and local special report:"
+ },
+ {
+  "id": "MET-07",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "Een luchtvaartterrein ligt op 600 ft hoogte (elevation). De METAR meldt BKN015. Op welke hoogte boven zeeniveau ligt de basis van die wolkenlaag ongeveer?",
+  "o": [
+   "2 100 ft",
+   "1 500 ft",
+   "900 ft",
+   "15 000 ft"
+  ],
+  "c": 0,
+  "e": "Ongeveer 2 100 ft. De wolkenbasis in een METAR wordt opgegeven boven de hoogte van het luchtvaartterrein: 1 500 ft boven het terrein plus 600 ft terreinhoogte.\n\n**Wat zegt de regel?**\nDe hoogte van de wolkenbasis wordt gerapporteerd boven de hoogte van het luchtvaartterrein (aerodrome elevation), in voet en in stappen van 100 ft tot 10 000 ft.\n\n**In de praktijk:**\nJe hoogtemeter op QNH toont hoogte boven zeeniveau. Om te weten hoeveel ruimte je onder de wolken hebt bij een vliegveld in heuvelachtig gebied, tel je de terreinhoogte op bij de gemelde basis.\n\n**Valkuil:**\n1 500 ft is de hoogte boven het vliegveld, niet boven zeeniveau; dat verschil is groot op hoger gelegen terreinen.",
+  "src": "met",
+  "ref": "MET.TR.210 – Waarnemen van meteorologische elementen (observing meteorological elements)",
+  "doc": "atmans",
+  "art": "MET.TR.210",
+  "citaat": "(i) The height of cloud base shall be reported above aerodrome elevation.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(i) The height of cloud base shall be reported above aerodrome elevation.\n(ii) When a precision approach runway in use has a threshold elevation of 50 ft (15 m) or more below the aerodrome elevation, local arrangements shall be made in order that the height of cloud bases reported to arriving aircraft shall refer to the threshold elevation.\n(iii) In the case of reports from offshore structures, the height of cloud base shall be given above mean sea level."
+ },
+ {
+  "id": "MET-08",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "Het zicht op je bestemming verbetert plots boven een SPECI-drempel. Wanneer wordt een SPECI die deze verbetering meldt verspreid?",
+  "o": [
+   "Pas nadat de verbetering 10 minuten heeft aangehouden",
+   "Onmiddellijk na de waarneming",
+   "Pas bij de volgende routine-METAR",
+   "Pas nadat de verbetering 30 minuten heeft aangehouden"
+  ],
+  "c": 0,
+  "e": "Een SPECI die een verbetering meldt, wordt pas verspreid als de verbetering 10 minuten heeft aangehouden, eventueel aangepast aan de toestand aan het einde van die 10 minuten.\n\n**Wat zegt de richtlijn?**\nEen SPECI die een verslechtering meldt, wordt onmiddellijk na de waarneming verspreid. Verslechtert een element terwijl een ander verbetert, dan wordt de SPECI ook meteen verspreid en als verslechtering behandeld.\n\n**In de praktijk:**\nSlecht nieuws krijg je dus zo snel mogelijk, goed nieuws pas als het bevestigd is. Wacht je op een opklaring, dan zit er altijd minstens 10 minuten vertraging op de melding.\n\n**Valkuil:**\nOnmiddellijke verspreiding geldt voor verslechteringen, niet voor verbeteringen.",
+  "src": "met",
+  "ref": "GM2 MET.OR.200(b) – Verspreiding van SPECI (dissemination of SPECI)",
+  "doc": "atmans",
+  "art": "GM2 MET.OR.200(b)",
+  "citaat": "A SPECI representing an improvement in conditions should be disseminated only after the improvement has been maintained for 10 minutes",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "ED Decision 2022/004/R\nDISSEMINATION OF SPECI\nA SPECI representing an improvement in conditions should be disseminated only after the improvement has been maintained for 10 minutes; it should be amended before dissemination, if necessary, to indicate the conditions prevailing at the end of that 10-minute period."
+ },
+ {
+  "id": "MET-09",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "Welke verandering in de bewolking is een criterium om een SPECI uit te geven?",
+  "o": [
+   "Een wolkenlaag onder 1 500 ft gaat van SCT of minder naar BKN of OVC",
+   "Een wolkenlaag onder 5 000 ft gaat van FEW naar SCT",
+   "Een wolkenlaag boven 1 500 ft gaat van BKN naar OVC",
+   "De wolkenbasis van een SCT-laag daalt met meer dan 500 ft"
+  ],
+  "c": 0,
+  "e": "Een SPECI wordt uitgegeven wanneer de hoeveelheid van een wolkenlaag onder 1 500 ft verandert van SCT of minder naar BKN of OVC, of omgekeerd van BKN of OVC naar SCT of minder.\n\n**Wat zegt de regel?**\nNaast deze bewolkingsregel zijn er onder meer criteria voor windveranderingen en voor het begin, het einde of een wijziging in intensiteit van bv. onderkoelde neerslag, matige of zware neerslag en onweer.\n\n**In de praktijk:**\nEen laag BKN of OVC onder 1 500 ft vormt een plafond dat een VFR-circuit (doorgaans 1 000 ft boven het terrein) vrijwel onmogelijk maakt. Daarom wil men dat snel melden, zonder te wachten op de volgende METAR.\n\n**Valkuil:**\nVeranderingen van FEW naar SCT of tussen BKN en OVC veranderen niets aan het al dan niet bestaan van een plafond en zijn geen SPECI-criterium.",
+  "src": "met",
+  "ref": "AMC1 MET.OR.200(b) – SPECI-criteria (SPECI)",
+  "doc": "atmans",
+  "art": "AMC1 MET.OR.200(b)",
+  "citaat": "(f) when the amount of a cloud layer below 1 500 ft (450 m) changes:\n(1) from scattered (SCT) or less to broken (BKN) or overcast (OVC); or",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(f) when the amount of a cloud layer below 1 500 ft (450 m) changes:\n(1) from scattered (SCT) or less to broken (BKN) or overcast (OVC); or\n(2) from BKN or OVC to SCT or less."
+ },
+ {
+  "id": "MET-10",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "Een METAR van 1420 UTC eindigt met een TREND-verwachting (bv. NOSIG). Tot wanneer geldt die TREND?",
+  "o": [
+   "Tot 1620 UTC",
+   "Tot 1520 UTC",
+   "Tot 1450 UTC",
+   "Tot 1820 UTC"
+  ],
+  "c": 0,
+  "e": "Tot 1620 UTC. Een TREND-verwachting (landingsverwachting) geldt 2 uur vanaf het tijdstip van het rapport waaraan ze is toegevoegd.\n\n**Wat zegt de regel?**\nDe landingsverwachting wordt uitgegeven als TREND en is 2 uur geldig, gerekend vanaf de waarnemingstijd van de METAR of SPECI. Ze is bedoeld voor vliegtuigen tot ongeveer een uur vliegen van het luchtvaartterrein.\n\n**In de praktijk:**\nNOSIG in een METAR van 1420 UTC betekent dus: tot 1620 UTC geen significante verandering verwacht. Kom je later aan, dan heb je de TAF nodig.\n\n**Valkuil:**\nDe TREND loopt niet tot de volgende METAR (vaak 30 minuten of een uur later), maar 2 uur.",
+  "src": "met",
+  "ref": "MET.OR.225 – Landingsverwachtingen (forecasts for landing)",
+  "doc": "atmans",
+  "art": "MET.OR.225",
+  "citaat": "The period of validity of a TREND forecast shall be 2 hours from the time of the report which forms part of the landing forecast.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) An aerodrome meteorological office shall prepare forecasts for landing as determined by the competent authority.\n(b) This forecast for landing shall be issued in the form of a TREND forecast.\n(c) The period of validity of a TREND forecast shall be 2 hours from the time of the report which forms part of the landing forecast."
+ },
+ {
+  "id": "MET-11",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "Een METAR van 0950 UTC eindigt met de TREND \"BECMG TL1030 9999 NSW\". Hoe lees je dat?",
+  "o": [
+   "De verbetering begint bij het begin van de TREND-periode en is uiterlijk om 1030 UTC voltooid",
+   "De verbetering begint pas om 1030 UTC en duurt tot het einde van de TREND-periode",
+   "De verbetering doet zich precies om 1030 UTC voor en is tijdelijk",
+   "De verbetering is onzeker en heeft 30 % kans om tegen 1030 UTC op te treden"
+  ],
+  "c": 0,
+  "e": "TL (until) zonder FM betekent dat de verandering begint bij het begin van de TREND-periode en voltooid is tegen het genoemde tijdstip, hier 1030 UTC.\n\n**Wat zegt de regel?**\nBij BECMG gebruikt men FM en TL als de verandering volledig binnen de periode valt, alleen TL als ze bij het begin start, alleen FM als ze tot het einde loopt, en AT voor een precies tijdstip. Zonder tijdgroep loopt de verandering over de hele periode of is het tijdstip onzeker.\n\n**In de praktijk:**\nWie om 1045 UTC wil landen, mag hier volgens de verwachting een zicht van 10 km of meer zonder significant weer verwachten.\n\n**Valkuil:**\n\"Vanaf 1030\" zou FM1030 zijn; kansuitdrukkingen (PROB) worden in een TREND nooit gebruikt.",
+  "src": "met",
+  "ref": "AMC1 MET.TR.225(c)(7)(ii) – Gebruik van veranderingsgroepen in TREND: BECMG",
+  "doc": "atmans",
+  "art": "AMC1 MET.TR.225(c)(7)(ii)",
+  "citaat": "When the change is forecast to commence at the beginning of the trend forecast period but be completed before the end of that period, the abbreviation ‘FM’ and its associated time group should be omitted and only ‘TL’ and its associated time group should be used.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(b) When the change is forecast to commence at the beginning of the trend forecast period but be completed before the end of that period, the abbreviation ‘FM’ and its associated time group should be omitted and only ‘TL’ and its associated time group should be used."
+ },
+ {
+  "id": "MET-12",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "Welke geldigheidsduur kan een routine-TAF hebben?",
+  "o": [
+   "9, 24 of 30 uur",
+   "6, 12 of 18 uur",
+   "2, 9 of 24 uur",
+   "12, 24 of 48 uur"
+  ],
+  "c": 0,
+  "e": "Een routine-TAF is 9, 24 of 30 uur geldig, tenzij de bevoegde autoriteit voor een vliegveld dat minder dan 9 uur open is iets anders bepaalt.\n\n**Wat zegt de regel?**\nEen TAF van 9 uur wordt normaal elke 3 uur uitgegeven, een TAF van 24 of 30 uur elke 6 uur. De geldigheid staat in de TAF als dag/uur-groep, bv. 1006/1106 (24 uur).\n\n**In de praktijk:**\nKleinere vliegvelden hebben vaak een korte TAF van 9 uur. Controleer bij een lange vlucht of terugvlucht altijd of je aankomsttijd nog binnen de geldigheid valt.\n\n**Valkuil:**\n2 uur is de geldigheid van de TREND bij een METAR, niet van een TAF.",
+  "src": "met",
+  "ref": "MET.TR.220 – Luchtvaartterreinverwachtingen (aerodrome forecasts, TAF)",
+  "doc": "atmans",
+  "art": "MET.TR.220",
+  "citaat": "The period of validity of a routine TAF shall be either 9 or 24 or 30 hours",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(c) The period of validity of a routine TAF shall be either 9 or 24 or 30 hours, unless otherwise prescribed by the competent authority taking into account the traffic requirements for aerodromes which operate for less than 9 hours."
+ },
+ {
+  "id": "MET-13",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "In een TAF staat \"BECMG 1012/1014 BKN008\". Hoe lang mag de periode na BECMG in een TAF maximaal zijn?",
+  "o": [
+   "4 uur",
+   "1 uur",
+   "2 uur",
+   "6 uur"
+  ],
+  "c": 0,
+  "e": "Maximaal 4 uur. BECMG beschrijft een blijvende verandering die op een niet nader bepaald moment binnen de opgegeven periode optreedt, en die periode mag niet langer zijn dan 4 uur.\n\n**Wat zegt de regel?**\nBECMG wordt gebruikt wanneer de omstandigheden drempelwaarden bereiken of overschrijden in een regelmatig of onregelmatig tempo. Volgens de richtlijnen is de periode normaal korter dan 2 uur, maar nooit meer dan 4 uur.\n\n**In de praktijk:**\nBij BECMG 1012/1014 kan de lage bewolking er al om 1200 UTC zijn. Plan voorzichtig met de slechtste waarde vanaf het begin van de periode; pas na het einde geldt de nieuwe toestand zeker.\n\n**Valkuil:**\n2 uur is de gebruikelijke lengte, niet het wettelijke maximum.",
+  "src": "met",
+  "ref": "MET.TR.220 – Luchtvaartterreinverwachtingen (aerodrome forecasts, TAF)",
+  "doc": "atmans",
+  "art": "MET.TR.220",
+  "citaat": "at an unspecified time during the time period. The time period shall not exceed 4 hours.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "… However, in the case of significant changes in respect of cloud, all cloud groups, including layers or masses not expected to change, shall be indicated.\n(3) The change indicator ‘BECMG’ and the associated time group shall be used to describe changes where the meteorological conditions are expected to reach or pass through specified threshold values at a regular or irregular rate and at an unspecified time during the time period. The time period shall not exceed 4 hours.\n(4) The change indicator ‘TEMPO’ and the associated time group shall be used to describe expected frequent or infrequent temporary fluctuations in the meteorological conditions which reach or pass specified threshold values and last for a period of less than 1 hour in each instance and, in the aggregate, cover less than one half of the forecast period during which the fluctuations are expected to occur. …"
+ },
+ {
+  "id": "MET-14",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "Een TAF bevat \"TEMPO 1412/1418 4000 TSRA BKN030CB\". Wat mag je volgens de regels van TEMPO verwachten?",
+  "o": [
+   "Onweersbuien die telkens korter dan 1 uur duren en samen minder dan de helft van de periode 1200–1800 UTC beslaan",
+   "Onweersbuien die telkens korter dan 2 uur duren en samen minder dan de helft van de periode beslaan",
+   "Onweersbuien die telkens korter dan 1 uur duren, maar samen het grootste deel van de periode kunnen beslaan",
+   "Een blijvende overgang naar onweer die uiterlijk om 1800 UTC voltooid is"
+  ],
+  "c": 0,
+  "e": "TEMPO staat voor tijdelijke schommelingen die telkens minder dan 1 uur duren en samen minder dan de helft van de opgegeven periode beslaan, hier dus minder dan 3 van de 6 uur.\n\n**Wat zegt de regel?**\nDuurt een tijdelijke schommeling naar verwachting 1 uur of langer, dan moet BECMG gebruikt worden of wordt de geldigheidsperiode opgesplitst met FM.\n\n**In de praktijk:**\nTussen de buien door kan het prima vliegweer zijn, maar je weet niet wanneer een bui komt. Plan een uitwijkmogelijkheid en voldoende brandstof om een bui af te wachten.\n\n**Valkuil:**\nEen blijvende overgang tegen een bepaald tijdstip is BECMG, geen TEMPO.",
+  "src": "met",
+  "ref": "MET.TR.220 – Luchtvaartterreinverwachtingen (aerodrome forecasts, TAF)",
+  "doc": "atmans",
+  "art": "MET.TR.220",
+  "citaat": "last for a period of less than 1 hour in each instance and, in the aggregate, cover less than one half of the forecast period during which the fluctuations are expected to occur.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "… The time period shall not exceed 4 hours.\n(4) The change indicator ‘TEMPO’ and the associated time group shall be used to describe expected frequent or infrequent temporary fluctuations in the meteorological conditions which reach or pass specified threshold values and last for a period of less than 1 hour in each instance and, in the aggregate, cover less than one half of the forecast period during which the fluctuations are expected to occur. If the temporary fluctuation is expected to last 1 hour or longer, the change group ‘BECMG’ shall be used in accordance with point (3), or the validity period should be subdivided in accordance with point (5).\n(5) Where one set of prevailing weather conditions is expected to change significantly and more or less completely to a different set of conditions, the period of validity shall be subdivided into self-contained periods using the abbreviat …"
+ },
+ {
+  "id": "MET-15",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "Een TAF bevat vóór de groep \"FM101400\" nog een TEMPO-groep met regenbuien die tot 1600 UTC loopt. Na FM101400 staat \"27012KT 9999 SCT030\". Wat geldt er vanaf 1400 UTC?",
+  "o": [
+   "Alleen de voorwaarden na FM: alle eerdere voorspellingen, ook de TEMPO-groep, vervallen",
+   "De voorwaarden na FM, aangevuld met de TEMPO-groep tot 1600 UTC",
+   "De voorwaarden na FM worden geleidelijk bereikt tussen 1400 en 1600 UTC",
+   "De voorwaarden na FM gelden alleen voor de elementen die erin vermeld staan; de rest blijft zoals ervoor"
+  ],
+  "c": 0,
+  "e": "Vanaf 1400 UTC geldt alleen wat na FM staat. FM start een zelfstandige deelperiode, en alle voorwaarden die ervoor voorspeld werden, worden vervangen.\n\n**Wat zegt de regel?**\nFM wordt gebruikt wanneer de heersende toestand min of meer volledig overgaat in een andere toestand. FM wordt gevolgd door een tijdgroep van zes cijfers (dag, uur en minuten UTC) voor het tijdstip van de verandering.\n\n**In de praktijk:**\nLees een TAF met FM-groepen als blokken: zoek het blok waarin je aankomsttijd valt en lees daarbinnen de BECMG- en TEMPO-groepen.\n\n**Valkuil:**\nNa BECMG staan alleen de veranderende elementen; na FM is de verwachting volledig en vervalt alles wat ervoor stond.",
+  "src": "met",
+  "ref": "MET.TR.220 – Luchtvaartterreinverwachtingen (aerodrome forecasts, TAF)",
+  "doc": "atmans",
+  "art": "MET.TR.220",
+  "citaat": "all forecasted conditions given before the abbreviation shall be superseded by those following the abbreviation.",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "… The subdivided period following the abbreviation ‘FM’ shall be self-contained and all forecasted conditions given before the abbreviation shall be superseded by those following the abbreviation.\n(g) The probability of occurrence of an alternative value of a forecast element or elements shall be included when:\n(1) a 30 % or 40 % probability of alternative meteorological conditions exists during a specific forecast time period; or\n(2) a 30 % or 40 % probability of temporary fluctuations in meteorological conditions exists during a specific forecast time period.\nThis shall be indicated in the TAF by using the abbreviation ‘PROB’ followed b …"
+ },
+ {
+  "id": "MET-16",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "Welke kanswaarden mogen na PROB in een TAF worden gebruikt?",
+  "o": [
+   "Alleen 30 of 40 %",
+   "10, 20, 30 of 40 %",
+   "30, 40, 50 of 60 %",
+   "Elke waarde tussen 10 en 90 %"
+  ],
+  "c": 0,
+  "e": "Alleen 30 of 40 %. PROB30 of PROB40 geeft de kans aan op alternatieve omstandigheden of op tijdelijke schommelingen (PROB30 TEMPO) in een bepaalde periode.\n\n**Wat zegt de regel?**\nVolgens de richtlijnen is een kans onder 30 % niet belangrijk genoeg om te vermelden. Een kans van 50 % of meer wordt niet als kans weergegeven, maar met BECMG, TEMPO of FM. PROB wordt ook nooit gebruikt in een TREND bij een METAR.\n\n**In de praktijk:**\nPROB40 TEMPO TSRA betekent een reële kans op onweer. Een kans van 40 % op onweer op je bestemming rechtvaardigt een goed uitgewerkt alternatief.\n\n**Valkuil:**\nPROB50 bestaat niet: vanaf 50 % gaat de verwachting uit van de verandering zelf.",
+  "src": "met",
+  "ref": "MET.TR.220 – Luchtvaartterreinverwachtingen (aerodrome forecasts, TAF)",
+  "doc": "atmans",
+  "art": "MET.TR.220",
+  "citaat": "a 30 % or 40 % probability of alternative meteorological conditions exists during a specific forecast time period",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(g) The probability of occurrence of an alternative value of a forecast element or elements shall be included when:\n(1) a 30 % or 40 % probability of alternative meteorological conditions exists during a specific forecast time period; or\n(2) a 30 % or 40 % probability of temporary fluctuations in meteorological conditions exists during a specific forecast time period."
+ },
+ {
+  "id": "MET-17",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "Hoe lang is een SIGMET voor bv. zware turbulentie of ingebedde onweersbuien maximaal geldig?",
+  "o": [
+   "4 uur",
+   "2 uur",
+   "6 uur",
+   "12 uur"
+  ],
+  "c": 0,
+  "e": "Maximaal 4 uur. Alleen een SIGMET voor een vulkanische aswolk of een tropische cycloon mag tot 6 uur geldig zijn.\n\n**Wat zegt de regel?**\nEen SIGMET wordt niet meer dan 4 uur voor het begin van zijn geldigheid uitgegeven, en wordt ingetrokken (CNL SIGMET) zodra het verschijnsel niet langer optreedt of verwacht wordt. Ook een AIRMET is maximaal 4 uur geldig.\n\n**In de praktijk:**\nKijk bij je voorbereiding naar de VALID-groep. Duurt je vlucht langer dan de resterende geldigheid, vraag dan onderweg bij de vluchtinformatiedienst (FIS) naar nieuwe SIGMET's.\n\n**Valkuil:**\n6 uur geldt alleen voor vulkanische as en tropische cyclonen, niet voor gewone SIGMET's.",
+  "src": "met",
+  "ref": "MET.OR.250 – SIGMET",
+  "doc": "atmans",
+  "art": "MET.OR.250",
+  "citaat": "ensure that the period of validity of a SIGMET is not more than 4 hours",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(c) ensure that the period of validity of a SIGMET is not more than 4 hours, and in the special case of SIGMET for volcanic ash cloud and tropical cyclones, it shall be extended up to 6 hours;"
+ },
+ {
+  "id": "MET-18",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "Voor welk van de volgende verschijnselen wordt een AIRMET uitgegeven en geen SIGMET?",
+  "o": [
+   "Matige ijsafzetting (MOD ICE)",
+   "Zware ijsafzetting (SEV ICE)",
+   "Zware turbulentie (SEV TURB)",
+   "Ingebedde onweersbuien (EMBD TS)"
+  ],
+  "c": 0,
+  "e": "Matige ijsafzetting (MOD ICE) is een AIRMET-verschijnsel. De zware varianten (SEV ICE, SEV TURB, SEV MTW) en verborgen, ingebedde, frequente of in een buienlijn optredende onweersbuien zijn SIGMET-verschijnselen.\n\n**Wat zegt de regel?**\nAIRMET is bedoeld voor laagvliegend verkeer en meldt verschijnselen zoals matige turbulentie, matige ijsafzetting, matige berggolven, geïsoleerde of occasionele onweersbuien en bergen in de wolken (MT OBSC).\n\n**In de praktijk:**\nVoor een licht, niet-gecertificeerd toestel zonder ijsbescherming is een AIRMET voor MOD ICE al een reden om de route of hoogte aan te passen.\n\n**Valkuil:**\nIngebedde onweersbuien (EMBD TS) zijn verborgen in andere bewolking en dus extra gevaarlijk; daarvoor komt altijd een SIGMET.",
+  "src": "met",
+  "ref": "Aanhangsel 5 – Sjabloon voor SIGMET en AIRMET (template for SIGMET and AIRMET)",
+  "doc": "atmans",
+  "art": "Appendix 5",
+  "citaat": "ISOL CB / OCNL CB / FRQ CB / ISOL TCU / OCNL TCU / FRQ TCU / MOD TURB / MOD ICE / MOD MTW",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "… PSN Nnn[nn] or Snn[nn] Wnnn[nn] or Ennn[nn] CB / SEV TURB / SEV ICE / SEV ICE (FZRA) / SEV MTW / HVY DS / HVY SS / [VA ERUPTION] [MT nnnnnnnnnn] / [PSN Nnn[nn] or Snn[nn] Ennn[nn] or Wnnn[nn]] / VA CLD / RDOACT CLD | SFC WIND nnn/nn[n]KT / SFC VIS [n][n]nnM (nn) / ISOL TS[GR] / OCNL TS[GR] / MT OBSC / BKN CLD / BKN CLD [n]nnn/[ABV][n]nnnnFT / or / BKN CLD SFC/[ABV][n]nnnnFT / or / OVC CLD [n]nnn/[ABV][n]nnnnFT / or / OVC CLD SFC/[ABV][n]nnnnFT / ISOL CB / OCNL CB / FRQ CB / ISOL TCU / OCNL TCU / FRQ TCU / MOD TURB / MOD ICE / MOD MTW\n11 | Observed or forecast phenomenon (M) (),() | Indication whether the information is observed and expected to continue, or forecast | OBS [AT nnnnZ] or / FCST [AT nnnnZ]\n12 | Location (C) (),(),() | Location (referring to latitude and longitude (in degrees and minutes)) | Nnn[nn] Wnnn[nn] or / Nnn[nn] Ennn[nn] or / Snn[nn] Wnnn[nn] or / Snn[nn] Ennn[nn] / or / N OF Nnn[nn] or / S OF Nnn[nn] or / N OF Snn[nn] or / S OF Snn[nn] or / [AND] / W OF …"
+ },
+ {
+  "id": "MET-19",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "Vanaf welke bewolking wordt een AIRMET uitgegeven voor lage bewolking (BKN CLD of OVC CLD)?",
+  "o": [
+   "Uitgestrekte gebieden met BKN of OVC bewolking met een basis lager dan 1 000 ft boven de grond",
+   "Uitgestrekte gebieden met BKN of OVC bewolking met een basis lager dan 1 500 ft boven de grond",
+   "Uitgestrekte gebieden met SCT of meer bewolking met een basis lager dan 3 000 ft boven de grond",
+   "Elke OVC laag met een basis lager dan 5 000 ft boven zeeniveau"
+  ],
+  "c": 0,
+  "e": "Een AIRMET voor bewolking volgt bij uitgestrekte gebieden met BKN of OVC bewolking met een basis lager dan 1 000 ft boven de grond (AGL), onder FL100 (FL150 in bergachtig gebied).\n\n**Wat zegt de regel?**\nAndere AIRMET-drempels zijn: uitgestrekte oppervlaktewind van meer dan 30 kt, en uitgestrekte gebieden met een zicht lager dan 5 000 m, met vermelding van het verschijnsel dat het zicht beperkt.\n\n**In de praktijk:**\nEen AIRMET BKN CLD op je route betekent dat VFR-vliegen daar met voldoende afstand tot de wolken en het terrein vrijwel onmogelijk wordt.\n\n**Valkuil:**\n1 500 ft is een drempel voor SPECI en TAF-veranderingsgroepen, niet voor een AIRMET; die hoogte is ook boven de grond, niet boven zeeniveau.",
+  "src": "met",
+  "ref": "MET.TR.255 – AIRMET",
+  "doc": "atmans",
+  "art": "MET.TR.255",
+  "citaat": "(3) widespread areas of broken or overcast cloud with height of base less than 1 000 ft above ground level",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(c) Only one of the phenomena in Appendix 5 shall be included in an AIRMET, using the appropriate abbreviations and the following threshold values, when the phenomenon is below flight level 100, or below flight level 150 in mountainous areas, or higher, where necessary:\n(1) widespread surface wind speed above 30 kt with relevant direction and units;\n(2) widespread areas affected by reduction of visibility to less than 5 000 m, including the weather phenomenon causing the reduction of visibility;\n(3) widespread areas of broken or overcast cloud with height of base less than 1 000 ft above ground level’."
+ },
+ {
+  "id": "MET-20",
+  "status": "pending",
+  "subject": "meteorology",
+  "lic": [
+   "PPL",
+   "ULM"
+  ],
+  "lo": "AI",
+  "loText": "",
+  "basis": "Part-MET",
+  "q": "Waar AIRMET's samen met gebiedsverwachtingen voor lage vluchten (area forecasts for low-level flights) worden uitgegeven: hoe vaak verschijnt zo'n gebiedsverwachting en hoe lang is ze geldig?",
+  "o": [
+   "Elke 6 uur, met een geldigheid van 6 uur",
+   "Elke 3 uur, met een geldigheid van 9 uur",
+   "Elk uur, met een geldigheid van 2 uur",
+   "Elke 12 uur, met een geldigheid van 24 uur"
+  ],
+  "c": 0,
+  "e": "Elke 6 uur, met een geldigheid van 6 uur. De verwachting moet uiterlijk 1 uur voor het begin van de geldigheid bij de betrokken meteorologische waakkantoren zijn.\n\n**Wat zegt de regel?**\nDe gebiedsverwachting beslaat de laag van de grond tot FL100 (FL150 in bergachtig gebied of hoger indien nodig) en bevat de weersverschijnselen die gevaarlijk zijn voor lage vluchten: onder meer wind, zicht, bewolking, ijsafzetting, turbulentie, bergen in de wolken en de hoogte van de nulgradenisotherm.\n\n**In de praktijk:**\nVoor een VFR-overlandvlucht is dit naast METAR en TAF je belangrijkste routeverwachting. Controleer of je vlucht binnen de geldigheid valt.\n\n**Valkuil:**\n9 uur en elke 3 uur horen bij de korte TAF, niet bij de gebiedsverwachting.",
+  "src": "met",
+  "ref": "MET.OR.260 – Gebiedsverwachtingen voor lage vluchten (area forecasts for low-level flights)",
+  "doc": "atmans",
+  "art": "MET.OR.260",
+  "citaat": "area forecasts for low-level flights are issued every 6 hours for a period of validity of 6 hours",
+  "opgesteld": "AI (Claude), op basis van de wettekst",
+  "fragment": "(a) in the case of AIRMET being issued in combination with area forecasts for low-level flights in accordance with point MET.OR.255(a), area forecasts for low-level flights are issued every 6 hours for a period of validity of 6 hours and transmitted to the meteorological watch offices concerned not later than 1 hour prior to the beginning of their validity period;"
  }
 ];
