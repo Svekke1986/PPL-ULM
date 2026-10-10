@@ -396,7 +396,7 @@ window.METAR = (function () {
         const o = opts(`QNH ${w.qnh} hPa`, shuffle([`QFE ${w.qnh} hPa`, `Standaardinstelling (QNE) ${w.qnh} hPa`, `Hoogte van het vliegveld: ${w.qnh} ft`]));
         const e = [
           sec('Q = QNH in hPa:', `${m} = QNH ${w.qnh} hPa: de luchtdruk herleid naar zeeniveau. Stel je hoogtemeter hierop in, dan toont hij op de grond de hoogte van het vliegveld boven zeeniveau.`),
-          sec('Niet verwarren:', 'QFE = druk op de hoogte van het vliegveld (hoogtemeter toont dan 0 ft op de grond). QNE/1013 hPa = standaardinstelling voor vliegniveaus. In de VS staat de druk als A2992 (inch kwik).'),
+          sec('Niet verwarren:', 'QFE = druk op de hoogte van het vliegveld (hoogtemeter toont dan 0 ft op de grond). QNE/1013 hPa = standaardinstelling voor vliegniveaus.'),
           decode(w)
         ].join('\n');
         return Q({ q: qText(m), o, e, code: metarText(w), mark: m, lo: LO, loText: LOTXT });
