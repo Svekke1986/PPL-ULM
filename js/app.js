@@ -5,7 +5,9 @@
   // Aanvullende vragen (js/extra.js, beheerd via beheer.html): alleen goedgekeurde vragen komen in de oefenvragen.
   (window.EXTRA_QUESTIONS || []).filter(q => q.status === 'approved' && BANK[q.subject]).forEach(q => {
     const ai = /^AI\b/.test(q.opgesteld || '');  // door AI opgesteld (en door een mens nagekeken): eigen categorie
-    BANK[q.subject].push({ ...q, extra: true, ai, lo: ai ? 'AI' : q.lo, img: q.img || [], loText: q.loText || '' });
+    // Met een ECQB-leerdoelcode verschijnt de vraag ook in haar onderwerphoofdstuk (naast "AI-gegenereerde vragen").
+    const lo = /^\d+(\.\d+)+$/.test(q.lo || '') ? q.lo : (ai ? 'AI' : q.lo || '');
+    BANK[q.subject].push({ ...q, extra: true, ai, lo, img: q.img || [], loText: q.loText || '' });
   });
   const SUBJECTS = window.SUBJECTS;
   const LICENCES = window.LICENCES;
@@ -70,10 +72,15 @@
 
   // Antwoord van een AI-vraag: de bron en het stuk tekst waarop de vraag gebaseerd is.
   function aiSourceHtml(q) {
+    const loLine = /^\d/.test(q.lo || '') ? `<div class="small">ECQB-leerdoel ${esc(q.lo)}${q.loText ? ': ' + esc(q.loText) : ''}</div>` : '';
+    if (!q.doc) {  // AI-vraag zonder wettekst (bv. Beginselen van het vliegen): bron = de ECQB-leerdoelen
+      const s = window.resolveSource(q.src || 'syl');
+      return `<div class="source">📘 Bron: <strong>${esc(s.org)}</strong> – <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>${loLine}</div>`;
+    }
     const s = window.resolveSource(q.src || aiDoc(q).src);
     return `<div class="source">📘 Bron: <strong>${esc(s.org)}</strong> – <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>${q.ref ? ` — <em>${esc(q.ref)}</em>` : ''}
       ${q.citaat ? `<div class="small ai-quote-label">Tekst uit het document${EN_DOCS.has(q.doc) ? ' (geldende tekst, enkel in het Engels)' : ''}; het gemarkeerde deel is waar het antwoord op steunt:</div>
-      <blockquote class="ai-quote">${fragmentHtml(q.fragment || q.citaat, q.citaat)}</blockquote>` : ''}</div>`;
+      <blockquote class="ai-quote">${fragmentHtml(q.fragment || q.citaat, q.citaat)}</blockquote>` : ''}${loLine}</div>`;
   }
 
   // Stuk wettekst rond het citaat: tabellen als tabel, het citaat gemarkeerd.
@@ -160,7 +167,7 @@
       return `<button class="${cls}" data-i="${i}" ${opts.locked ? 'disabled' : ''}>
         <span class="letter">${LETTERS[i]}</span><span>${esc(text)}</span></button>`;
     }).join('');
-    const tag = q.extra ? (q.ai ? `🤖 AI-gegenereerde vraag, gebaseerd op ${esc(aiDoc(q).name)}` : `Aanvullende vraag · ${esc(q.basis || 'aanvullend')}`) : q.auteur ? `Aanvullende vraag · auteur: ${esc(q.auteur)}` : (q.lo ? 'ECQB ' + esc(q.lo) : '');
+    const tag = q.extra ? (q.ai ? (q.doc ? `🤖 AI-gegenereerde vraag, gebaseerd op ${esc(aiDoc(q).name)}` : '🤖 AI-gegenereerde vraag') : `Aanvullende vraag · ${esc(q.basis || 'aanvullend')}`) : q.auteur ? `Aanvullende vraag · auteur: ${esc(q.auteur)}` : (q.lo ? 'ECQB ' + esc(q.lo) : '');
     return `<div class="q-meta"><span>${opts.counter || ''}</span><span>${tag}</span></div>
       ${q.code ? codeHtml(q.code, q.mark) : ''}
       <p class="q-text">${esc(q.q)}</p>
@@ -254,17 +261,20 @@
   // ---------- practice ----------
   let practice = null;
 
+  // Hoort een vraag bij een hoofdstuk? AI-vragen: in "AI-gegenereerde vragen" én (met leerdoelcode) in hun onderwerp.
+  const inChapter = (subject, q, ch) => ch.id === 'ai' ? !!q.ai : window.chapterOf(subject, q.lo) === ch;
+
   function chaptersFor(licence, subject) {
     const all = questionsFor(licence, subject);
     return (window.CHAPTERS[subject] || []).map(ch => ({
-      ch, count: all.filter(q => window.chapterOf(subject, q.lo) === ch).length
+      ch, count: all.filter(q => inChapter(subject, q, ch)).length
     }));
   }
 
   function viewPractice(licence, subject, chapterId) {
     const all = questionsFor(licence, subject);
     const chapter = (window.CHAPTERS[subject] || []).find(c => c.id === chapterId) || null;
-    const pool = chapter ? all.filter(q => window.chapterOf(subject, q.lo) === chapter) : all;
+    const pool = chapter ? all.filter(q => inChapter(subject, q, chapter)) : all;
     if (!pool.length) {
       location.hash = chapter ? `#/${licence.toLowerCase()}/${subject}/oefenen` : '#/' + licence.toLowerCase();
       return;
@@ -312,7 +322,7 @@
   }
 
   function aiBannerHtml() {
-    return `<div class="ai-notice ai-banner">🤖 <strong>Deze vragen zijn gegenereerd door AI</strong> op basis van officiële documenten. Lees altijd het officiële document na: bij elk antwoord staan de bron en de tekst waarop de vraag gebaseerd is.</div>`;
+    return `<div class="ai-notice ai-banner">🤖 <strong>Deze vragen zijn gegenereerd door AI</strong> op basis van officiële documenten en de ECQB-leerdoelen. Lees altijd het officiële document na: bij elk antwoord staan de bron en de tekst waarop de vraag gebaseerd is.</div>`;
   }
 
   function bindChapterSelect() {

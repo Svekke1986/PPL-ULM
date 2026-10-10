@@ -148,6 +148,8 @@ window.CHAPTERS = {
     { id: 'misc', name: 'Belastingen, propeller & vliegmechanica', prefixes: ['51.4', '51.5', '51.6'] }
   ],
   operational_procedures: [
+    { id: 'gen', name: 'Algemene vereisten, documenten & uitrusting', prefixes: ['61.1'] },
+    { id: 'ops', name: 'Grond- & vluchtoperaties', prefixes: ['61.2.1', '61.2.2', '61.2.4', '61.2.8', '61.2.11'] },
     { id: 'noise', name: 'Geluidsbeperking', prefixes: ['61.2.3'] },
     { id: 'fire', name: 'Brand & rook', prefixes: ['61.2.5'] },
     { id: 'shear', name: 'Windschering', prefixes: ['61.2.6'] },
