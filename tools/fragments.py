@@ -98,7 +98,7 @@ def main():
             q["fragment"] = f; n += 1
         else:
             missing.append(q["id"])
-    open(p, "w", encoding="utf-8").write(head + " " + json.dumps(ex, ensure_ascii=False, indent=1) + ";\n")
+    open(p, "w", encoding="utf-8").write(head + " [\n" + ",\n".join(json.dumps(q, ensure_ascii=False, separators=(",", ":")) for q in ex) + "\n];\n")
     print(f"{n} fragmenten; zonder: {missing}")
     # Elke AI-vraag hoort een ECQB-leerdoelcode te hebben (veld "lo"). "AI" of "KB" = bewust geen passend leerdoel.
     nolo = [q["id"] for q in ex if str(q.get("opgesteld", "")).startswith("AI") and not re.match(r"^\d+(\.\d+)+$", q.get("lo") or "") and q.get("lo") not in ("AI", "KB")]

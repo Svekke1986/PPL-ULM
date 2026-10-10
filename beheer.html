@@ -87,12 +87,6 @@
 
     // ---------- GitHub ----------
     const b64decode = b64 => new TextDecoder().decode(Uint8Array.from(atob(b64.replace(/\s/g, '')), c => c.charCodeAt(0)));
-    const b64encode = str => {
-      const bytes = new TextEncoder().encode(str);
-      let bin = '';
-      for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
-      return btoa(bin);
-    };
     async function gh(method, body) {
       const res = await fetch(API + (method === 'GET' ? `?ref=${BRANCH}&t=${Date.now()}` : ''), {
         method,
@@ -106,21 +100,46 @@
     }
     const parse = text => JSON.parse(text.slice(text.indexOf('=') + 1, text.lastIndexOf(';')));
     const serialize = arr => "// Aanvullende vragen – beheerd via beheer.html. Alleen vragen met status 'approved' verschijnen op de site.\n" +
-      'window.EXTRA_QUESTIONS = ' + JSON.stringify(arr, null, 1) + ';\n';
+      'window.EXTRA_QUESTIONS = [\n' + arr.map(q => JSON.stringify(q)).join(',\n') + '\n];\n'; // één vraag per regel: klein en leesbare wijzigingen
+
+    // Bestanden groter dan 1 MB: de GitHub-API geeft dan geen inhoud mee (encoding "none"); haal de ruwe tekst apart op.
+    async function getRaw() {
+      const res = await fetch(`${API}?ref=${BRANCH}&t=${Date.now()}`, {
+        headers: { Authorization: `Bearer ${auth.token}`, Accept: 'application/vnd.github.raw+json' }, cache: 'no-store'
+      });
+      if (!res.ok) { const err = new Error(res.statusText); err.status = res.status; throw err; }
+      return res.text();
+    }
 
     async function load() {
       const data = await gh('GET');
       sha = data.sha;
-      list = parse(b64decode(data.content));
+      const text = data.content && data.encoding === 'base64' ? b64decode(data.content) : await getRaw();
+      list = parse(text);
       original = JSON.stringify(list);
+    }
+    // Opslaan via de Git Data API (blob → tree → commit → ref): werkt ook voor bestanden groter dan 1 MB.
+    async function git(method, path, body) {
+      const res = await fetch(`https://api.github.com/repos/${REPO}/git/${path}`, {
+        method, cache: 'no-store',
+        headers: { Authorization: `Bearer ${auth.token}`, Accept: 'application/vnd.github+json', ...(body ? { 'Content-Type': 'application/json' } : {}) },
+        body: body ? JSON.stringify(body) : undefined
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) { const err = new Error(data.message || res.statusText); err.status = res.status; throw err; }
+      return data;
     }
     async function save() {
       const n = changedCount();
-      const data = await gh('PUT', {
-        message: `Vragenbeheer: ${n} vraag/vragen bijgewerkt door ${auth.name}`,
-        content: b64encode(serialize(list)), sha, branch: BRANCH
-      });
-      sha = data.content.sha;
+      const current = await gh('GET');  // is het bestand intussen elders gewijzigd?
+      if (current.sha !== sha) { const err = new Error('conflict'); err.status = 409; throw err; }
+      const ref = await git('GET', `ref/heads/${BRANCH}`);
+      const parent = await git('GET', `commits/${ref.object.sha}`);
+      const blob = await git('POST', 'blobs', { content: serialize(list), encoding: 'utf-8' });
+      const tree = await git('POST', 'trees', { base_tree: parent.tree.sha, tree: [{ path: FILE, mode: '100644', type: 'blob', sha: blob.sha }] });
+      const commit = await git('POST', 'commits', { message: `Vragenbeheer: ${n} vraag/vragen bijgewerkt door ${auth.name}`, tree: tree.sha, parents: [ref.object.sha] });
+      await git('PATCH', `refs/heads/${BRANCH}`, { sha: commit.sha });  // geen force: mislukt als main intussen verschoven is
+      sha = blob.sha;
       original = JSON.stringify(list);
     }
     const changedCount = () => {
