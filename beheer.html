@@ -232,6 +232,8 @@
         <div class="grid2">
           <label class="field"><span>Bron (verwijzing)</span><input type="text" data-f="ref" value="${esc(q.ref)}"></label>
           <label class="field"><span>Vak</span><select data-f="subject">${subjects}</select></label>
+          <label class="field"><span>ECQB-leerdoel (code, bv. 10.5.1.2.3)</span><input type="text" data-f="lo" value="${esc(/^\d/.test(q.lo || '') ? q.lo : '')}"></label>
+          <label class="field"><span>Leerdoel (tekst)</span><input type="text" data-f="loText" value="${esc(q.loText || '')}"></label>
         </div>
         <div class="field"><span>Zichtbaar voor</span>
           ${['PPL', 'ULM'].map(l => `<label class="inline"><input type="checkbox" data-f="lic" value="${l}" ${q.lic.includes(l) ? 'checked' : ''}> ${l}</label>`).join('')}</div>

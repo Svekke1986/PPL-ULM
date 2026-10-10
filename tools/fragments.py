@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Vul bij de aanvullende vragen (js/extra.js) het veld "fragment" in: het stuk wettekst rond het citaat
+"""Vul bij de aanvullende vragen (js/extra.js) het veld "fragment" in (en meld AI-vragen zonder leerdoelcode): het stuk wettekst rond het citaat
 (de inleidende zin met alle onderdelen), zodat de leerling bij het antwoord genoeg context ziet.
 
     python3 tools/fragments.py
@@ -100,6 +100,10 @@ def main():
             missing.append(q["id"])
     open(p, "w", encoding="utf-8").write(head + " " + json.dumps(ex, ensure_ascii=False, indent=1) + ";\n")
     print(f"{n} fragmenten; zonder: {missing}")
+    # Elke AI-vraag hoort een ECQB-leerdoelcode te hebben (veld "lo"), behalve vragen over het Belgische KB ULM.
+    nolo = [q["id"] for q in ex if str(q.get("opgesteld", "")).startswith("AI") and not re.match(r"^\d+(\.\d+)+$", q.get("lo") or "") and q.get("doc") != "kb"]
+    if nolo:
+        print(f"LET OP: {len(nolo)} AI-vragen zonder leerdoelcode: {nolo[:20]}")
 
 
 if __name__ == "__main__":
