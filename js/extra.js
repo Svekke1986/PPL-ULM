@@ -10642,5 +10642,902 @@ window.EXTRA_QUESTIONS = [
   "fragment": "(a) in the case of AIRMET being issued in combination with area forecasts for low-level flights in accordance with point MET.OR.255(a), area forecasts for low-level flights are issued every 6 hours for a period of validity of 6 hours and transmitted to the meteorological watch offices concerned not later than 1 hour prior to the beginning of their validity period;",
   "nagekeken": "Sven",
   "bijgewerkt": "2026-10-09"
+ },
+ {
+  "id": "PFA-01",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.4.2.1.7",
+  "loText": "Uitleggen waarom een vliegtuig na een bruuske stuurbeweging onder vA de maximaal toegelaten belastingsfactor niet overschrijdt",
+  "basis": "Leerdoelen PoF",
+  "q": "Je vliegt met maximale massa iets onder de manoeuvreersnelheid (VA) en trekt het hoogteroer in één beweging volledig naar achteren. Wat gebeurt er normaal gezien eerst?",
+  "o": [
+   "De vleugel overtrekt voordat de limiet-belastingsfactor bereikt wordt",
+   "De limiet-belastingsfactor wordt overschreden voordat de vleugel overtrekt",
+   "De belastingsfactor blijft 1, omdat de snelheid onder VA ligt",
+   "Het hoogteroer verliest zijn werking, zodat de neusstand niet verandert"
+  ],
+  "c": 0,
+  "e": "Onder VA overtrekt de vleugel voordat de limiet-belastingsfactor bereikt wordt. Bij die snelheid kan de vleugel simpelweg niet genoeg lift maken om de structuur te overbelasten.\n\n**Hoe werkt het?**\nDe maximale lift is CLmax × dynamische druk × oppervlak. Bij lage snelheid is de dynamische druk klein, dus ook de maximale lift. VA is precies de snelheid waarbij de overtreklijn de limiet-belastingsfactor raakt: n max = (V/VS)².\n\n**Rekenvoorbeeld:**\nMet VS = 50 kt en een limiet van +3,8 g ligt VA rond 50 × √3,8 ≈ 97 kt.\n\n**Valkuil:**\nDit geldt voor één volle uitslag in één richting. Afwisselende of gecombineerde uitslagen kunnen de structuur ook onder VA beschadigen.",
+  "src": "syl",
+  "ref": "ECQB 51.4.2 – Manoeuvring envelope",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-02",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.4.2.2.1",
+  "loText": "Het verband noemen tussen de massa en de grenzen van de belastingsfactor",
+  "basis": "Leerdoelen PoF",
+  "q": "In het handboek staat de manoeuvreersnelheid (VA) voor de maximale startmassa. Je vliegt alleen, met weinig brandstof. Hoe verhoudt de werkelijke VA zich tot die waarde?",
+  "o": [
+   "Ze is lager dan de waarde in het handboek",
+   "Ze is hoger dan de waarde in het handboek",
+   "Ze is precies gelijk, want VA hangt alleen van de structuur af",
+   "Ze is hoger op lage hoogte en lager op grote hoogte"
+  ],
+  "c": 0,
+  "e": "De werkelijke VA is lager. Bij een lagere massa ligt de overtreksnelheid lager, en VA schuift mee naar beneden.\n\n**Hoe werkt het?**\nVA ≈ VS × √n limiet. Een lichter vliegtuig overtrekt pas bij een lagere snelheid. Bij dezelfde snelheid kan de vleugel dus een grotere belastingsfactor opbouwen voordat hij overtrekt: dezelfde maximale lift geeft een lichtere massa meer g.\n\n**Vuistregel:**\nVA daalt ongeveer met de vierkantswortel van de massaverhouding. Op 81 % van de maximale massa is VA ongeveer 90 % van de handboekwaarde.\n\n**Valkuil:**\nDenk niet dat 'licht' veiliger is in turbulentie bij dezelfde snelheid: een licht vliegtuig krijgt meer g van dezelfde windstoot.",
+  "src": "syl",
+  "ref": "ECQB 51.4.2 – Manoeuvring envelope",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-03",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.4.2.1.11",
+  "loText": "De verschillende certificeringscategorieën van vliegtuigen (kunstvlucht / normaal / utility) met hun verschillende eisen voor de maximale belastingsfactor opsommen en beschrijven",
+  "basis": "Leerdoelen PoF",
+  "q": "Welke limiet-belastingsfactoren gelden voor een vliegtuig in de categorie normal?",
+  "o": [
+   "+3,8 g en −1,52 g",
+   "+4,4 g en −1,76 g",
+   "+6,0 g en −3,0 g",
+   "+2,0 g en 0 g"
+  ],
+  "c": 0,
+  "e": "In de categorie normal gelden +3,8 g en −1,52 g. Dat zijn limiet-belastingsfactoren: tot daar mag de structuur geen blijvende vervorming oplopen.\n\n**Overzicht:**\nNormal: +3,8 g / −1,52 g\nUtility: +4,4 g / −1,76 g\nAerobatic: +6,0 g / −3,0 g\n\n**Positief en negatief:**\nBij een positieve belastingsfactor word je in je stoel gedrukt, bijvoorbeeld bij optrekken of in een bocht. Bij een negatieve belastingsfactor kom je los uit je stoel, bijvoorbeeld als je de stuurknuppel krachtig naar voren duwt. De negatieve limiet is telkens kleiner dan de positieve.\n\n**Valkuil:**\n+2 g is ongeveer de limiet met uitgezette flaps, niet de limiet van een categorie.",
+  "src": "syl",
+  "ref": "ECQB 51.4.2 – Manoeuvring envelope",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-04",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.4.2.1.2",
+  "loText": "Uitleggen waarom andere operationele grenzen (bv. belastingsfactor) beïnvloed worden bij het uitschuiven/intrekken van hoogliftvoorzieningen",
+  "basis": "Leerdoelen PoF",
+  "q": "Waarom is de toegelaten positieve belastingsfactor met uitgezette flaps meestal lager dan met ingetrokken flaps?",
+  "o": [
+   "De flaps en hun ophanging zijn alleen ontworpen voor de lagere belastingen bij lage snelheid",
+   "Met uitgezette flaps ligt de overtreksnelheid hoger, waardoor de vleugel sneller overbelast wordt",
+   "Uitgezette flaps verkleinen het vleugeloppervlak, waardoor de vleugelbelasting stijgt",
+   "Met uitgezette flaps vlieg je altijd sneller dan VA, zodat elke stuurbeweging de limiet overschrijdt"
+  ],
+  "c": 0,
+  "e": "De flaps en hun ophanging zijn alleen berekend op de belastingen bij lage snelheid. Daarom ligt de limiet met uitgezette flaps lager, vaak rond +2 g.\n\n**Hoe werkt het?**\nUitgezette flaps verhogen de lift sterk op het binnenste deel van de vleugel en belasten de flapscharnieren en het bedieningsmechanisme. De vleugel krijgt ook een groter wringend (torsie)moment. De bouwer dimensioneert dat alleen voor de start- en naderingsfase, niet voor hevige manoeuvres.\n\n**In de praktijk:**\nHaal de precieze waarde en VFE uit het handboek. Vermijd met uitgezette flaps steile bochten, harde optrekmanoeuvres en zware turbulentie.\n\n**Valkuil:**\nDe overtreksnelheid ligt met flaps juist lager, niet hoger.",
+  "src": "syl",
+  "ref": "ECQB 51.4.2 – Manoeuvring envelope",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-05",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.4.2.1.6",
+  "loText": "Uitleggen hoe een overtrek ook mogelijk is bij snelheden boven de overtreksnelheid, bv. bij windstoten of na bruuske stuurbewegingen",
+  "basis": "Leerdoelen PoF",
+  "q": "Je vliegt ruim boven de overtreksnelheid (VS) en trekt plots krachtig aan het hoogteroer. Kan de vleugel overtrekken?",
+  "o": [
+   "Ja, want de kritieke aanvalshoek kan bij elke snelheid overschreden worden",
+   "Nee, boven VS kan de vleugel nooit overtrekken",
+   "Alleen als de flaps uitgezet zijn",
+   "Alleen als het zwaartepunt achter de achterste grens ligt"
+  ],
+  "c": 0,
+  "e": "Ja. Een overtrek hangt af van de aanvalshoek, niet van de snelheid. Een krachtige stuurbeweging of een sterke opwaartse windstoot kan de kritieke aanvalshoek ook bij hoge snelheid overschrijden.\n\n**Hoe werkt het?**\nDe overtreksnelheid stijgt met de vierkantswortel van de belastingsfactor: VS(n) = VS × √n. Trek je bijvoorbeeld 4 g, dan ligt de overtreksnelheid op twee keer de normale VS. Dat heet een versnelde overtrek (accelerated stall).\n\n**Kenmerken:**\nDe overtrek komt vaak plots, en een vleugel kan wegvallen. Bij een asymmetrische overtrek kan zo een snap roll of een spin ontstaan.\n\n**Valkuil:**\nDe groene en witte boog op de snelheidsmeter gelden alleen bij 1 g en maximale massa.",
+  "src": "syl",
+  "ref": "ECQB 51.4.2 – Manoeuvring envelope",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-06",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.4.2.1.1",
+  "loText": "Het manoeuvre-envelop (manoeuvring envelope) herkennen en beschrijven",
+  "basis": "Leerdoelen PoF",
+  "q": "In het belastingsdiagram (V-n diagram, manoeuvring envelope) staat de snelheid horizontaal en de belastingsfactor verticaal. Wat stelt de gebogen lijn aan de linkerkant van de envelop voor?",
+  "o": [
+   "De grootste belastingsfactor die de vleugel bij die snelheid kan opwekken voordat hij overtrekt",
+   "De belastingsfactor waarbij de structuur breekt",
+   "De grens waarboven flutter optreedt",
+   "De extra belastingsfactor door een verticale windstoot"
+  ],
+  "c": 0,
+  "e": "De gebogen lijn links is de overtreklijn: de grootste belastingsfactor die de vleugel bij elke snelheid kan opwekken voordat hij overtrekt. Ze volgt n = (V/VS)², een parabool.\n\n**Opbouw van de envelop:**\nLinks begrenst de overtrek (positief en negatief). Boven en onder liggen de horizontale lijnen van de limiet-belastingsfactoren. Rechts sluit een verticale lijn bij de maximale (duik)snelheid de envelop af.\n\n**Waar ligt VA?**\nVA ligt waar de positieve overtreklijn de positieve limiet-belastingsfactor snijdt. Links daarvan overtrekt de vleugel eerst, rechts ervan kan je de structuur overbelasten.\n\n**Valkuil:**\nDe breukbelasting (ultimate load) is geen grens van de envelop: ze ligt nog 1,5 keer hoger.",
+  "src": "syl",
+  "ref": "ECQB 51.4.2 – Manoeuvring envelope",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-07",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.4.2.1.1",
+  "loText": "Het manoeuvre-envelop (manoeuvring envelope) herkennen en beschrijven",
+  "basis": "Leerdoelen PoF",
+  "q": "Een vliegtuig heeft een limiet-belastingsfactor (limit load factor) van +3,8 g. Welke uitspraak over de breukbelasting (ultimate load factor) is juist?",
+  "o": [
+   "Ze ligt 1,5 keer hoger, rond +5,7 g; daartussen kan blijvende vervorming optreden",
+   "Ze is gelijk aan +3,8 g; boven die waarde breekt de structuur meteen",
+   "Ze ligt 1,5 keer lager, rond +2,5 g; daarboven ontstaat blijvende vervorming",
+   "Ze ligt 2 keer hoger, rond +7,6 g, en mag bij noodmanoeuvres gebruikt worden"
+  ],
+  "c": 0,
+  "e": "De breukbelasting ligt 1,5 keer hoger dan de limiet-belastingsfactor: 3,8 × 1,5 ≈ 5,7 g. Tussen limit en ultimate mag de structuur blijvend vervormen, maar ze mag nog niet bezwijken.\n\n**Hoe werkt het?**\nTot de limiet-belastingsfactor moet het vliegtuig alles verdragen zonder blijvende schade. De veiligheidsfactor 1,5 vangt onzekerheden op: materiaalspreiding, slijtage, corrosie en rekenfouten.\n\n**In de praktijk:**\nDie marge is geen reserve om te gebruiken. Werd het vliegtuig boven de limiet belast, laat het dan nakijken vóór de volgende vlucht, ook als je niets ziet.\n\n**Valkuil:**\nEen eerder overbelaste structuur kan later bezwijken bij een belasting onder de limiet.",
+  "src": "syl",
+  "ref": "ECQB 51.4.2 – Manoeuvring envelope",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-08",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.4.3.2.2",
+  "loText": "Factoren noemen die de belasting door windstoten mee bepalen, zoals slankheid, snelheid en vleugelbelasting",
+  "basis": "Leerdoelen PoF",
+  "q": "Twee vliegtuigen vliegen met dezelfde snelheid door dezelfde opwaartse windstoot. Welk vliegtuig krijgt de grootste extra belastingsfactor?",
+  "o": [
+   "Een licht vliegtuig met een grote, slanke vleugel (lage vleugelbelasting)",
+   "Een zwaar vliegtuig met een kleine vleugel (hoge vleugelbelasting)",
+   "Het vliegtuig met het zwaartepunt het verst naar voren",
+   "Beide krijgen precies dezelfde extra belastingsfactor"
+  ],
+  "c": 0,
+  "e": "Het lichte vliegtuig met de grote, slanke vleugel krijgt de grootste extra belastingsfactor. Een lage vleugelbelasting en een grote slankheid maken een vliegtuig gevoeliger voor windstoten.\n\n**Hoe werkt het?**\nEen opwaartse windstoot vergroot de aanvalshoek, dus de lift. Een slanke vleugel heeft een steilere CL-α-curve: dezelfde extra aanvalshoek geeft meer extra lift. Die extra lift deel je door het gewicht. Bij weinig gewicht per m² vleugel wordt de extra belastingsfactor dus groter.\n\n**Andere factor:**\nHoe sneller je vliegt, hoe groter de extra lift door dezelfde windstoot. Daarom blijf je in turbulentie onder VNO, en in zware turbulentie op de snelheid uit het handboek.\n\n**Valkuil:**\nEen zwaar vliegtuig voelt rustiger aan in turbulentie, juist door zijn hoge vleugelbelasting.",
+  "src": "syl",
+  "ref": "ECQB 51.4.3 – Gust envelope",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-09",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.5.2.1.1",
+  "loText": "De term 'windmolenen' (windmilling) beschrijven en de invloed ervan op de glijprestaties uitleggen",
+  "basis": "Leerdoelen PoF",
+  "q": "Je vaste propeller blijft na een motorpanne meedraaien door de luchtstroom (windmilling). Wat is het gevolg voor je glijvlucht, vergeleken met een stilstaande propeller?",
+  "o": [
+   "Meer weerstand: een steilere glijhoek en een kortere glijafstand",
+   "Minder weerstand: een vlakkere glijhoek en een langere glijafstand",
+   "Geen verschil, want een propeller zonder motorvermogen geeft geen kracht",
+   "Extra trekkracht, omdat de meedraaiende propeller lucht naar achteren blaast"
+  ],
+  "c": 0,
+  "e": "Een meedraaiende propeller geeft meer weerstand dan een stilstaande. Je glijhoek wordt steiler en je glijafstand korter.\n\n**Hoe werkt het?**\nBij windmilling drijft de luchtstroom de propeller aan, zoals bij een windmolen. De bladen krijgen een negatieve aanvalshoek en hun luchtkracht wijst naar achteren. Bovendien moet de propeller de motor (compressie, wrijving) blijven ronddraaien, en die energie komt uit de luchtstroom.\n\n**In de praktijk:**\nVlieg na een motorpanne op de beste glijsnelheid uit het handboek. Probeer de propeller niet te stoppen door sterk te vertragen: daarbij verlies je veel hoogte en riskeer je een overtrek.\n\n**Valkuil:**\nEen draaiende propeller betekent niet dat hij trekkracht levert.",
+  "src": "syl",
+  "ref": "ECQB 51.5.2 – Engine failure or engine stop",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-10",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.5.2.1.1",
+  "loText": "De term 'windmolenen' (windmilling) beschrijven en de invloed ervan op de glijprestaties uitleggen",
+  "basis": "Leerdoelen PoF",
+  "q": "Je motor valt uit in een vliegtuig met een constant-speed-propeller zonder vaanstand (feathering). Wat doe je met de propellerhendel om de weerstand van de meedraaiende propeller te beperken, tenzij het handboek iets anders zegt?",
+  "o": [
+   "Volledig naar achteren: laag toerental, grove spoed",
+   "Volledig naar voren: hoog toerental, fijne spoed",
+   "In de middenstand, zodat de regelaar het toerental constant houdt",
+   "Niets: bij een motorpanne heeft de propellerhendel nooit effect"
+  ],
+  "c": 0,
+  "e": "Zet de propellerhendel volledig naar achteren. De bladen gaan dan naar grove spoed (grote bladhoek), de propeller draait trager en de windmilling-weerstand daalt.\n\n**Hoe werkt het?**\nBij fijne spoed staan de bladen bijna plat in het draaivlak. De luchtstroom raakt ze dan onder een grote negatieve aanvalshoek en drijft ze snel aan: veel weerstand. Bij grove spoed staan de bladen meer in de stroomrichting.\n\n**Vaanstand:**\nIn vaanstand (feathering) staan de bladen evenwijdig aan de luchtstroom en stopt de propeller: de minste weerstand. Dat vind je vooral op tweemotorige vliegtuigen.\n\n**Valkuil:**\nDe regelaar werkt met motorolie. Draait de motor helemaal niet meer, dan kan de spoed vaak niet meer veranderen. Volg altijd het handboek.",
+  "src": "syl",
+  "ref": "ECQB 51.5.2 – Engine failure or engine stop",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-11",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.5.3.1.1",
+  "loText": "De effecten beschrijven van het koppel (torque) van de propeller",
+  "basis": "Leerdoelen PoF",
+  "q": "Een propeller draait rechtsom, gezien vanuit de cockpit. Welk effect heeft de reactie op het motorkoppel (torque) tijdens de startaanloop?",
+  "o": [
+   "Het vliegtuig wil naar links rollen, waardoor het linkerwiel meer belast wordt",
+   "Het vliegtuig wil naar rechts rollen, waardoor het rechterwiel meer belast wordt",
+   "De neus wil omhoog, waardoor het neuswiel ontlast wordt",
+   "Er is geen effect, want het motorkoppel werkt alleen in de lucht"
+  ],
+  "c": 0,
+  "e": "Het vliegtuig wil naar links rollen en drukt het linkerwiel harder op de baan. Dat is de reactie op het motorkoppel (torque): actie = reactie.\n\n**Hoe werkt het?**\nDe motor draait de propeller rechtsom. Volgens de derde wet van Newton duwt de propeller het vliegtuig even hard in de andere richting: linksom rond de langsas.\n\n**Op de grond:**\nHet linkerwiel krijgt meer gewicht en dus meer rolweerstand. Daardoor wil het vliegtuig ook licht naar links draaien. Je houdt de richting met rechts richtingsroer.\n\n**Valkuil:**\nTorque is een rolbeweging rond de langsas. Het gieren naar links bij de start komt vooral van de slipstream en de P-factor.",
+  "src": "syl",
+  "ref": "ECQB 51.5.3 – Moments due to propeller operation",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-12",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.5.3.2.2",
+  "loText": "De effecten van de schroefwind (slipstream) van de propeller uitleggen",
+  "basis": "Leerdoelen PoF",
+  "q": "Waardoor giert een eenmotorig vliegtuig met een rechtsom draaiende propeller (gezien vanuit de cockpit) bij de start naar links door het slipstreameffect?",
+  "o": [
+   "De spiraalvormige slipstream raakt het kielvlak aan de linkerkant",
+   "De spiraalvormige slipstream raakt het kielvlak aan de rechterkant",
+   "De slipstream vergroot de lift van de rechtervleugel",
+   "De slipstream verkleint de aanvalshoek van het stabilo"
+  ],
+  "c": 0,
+  "e": "De spiraalvormige slipstream draait mee met de propeller, gaat rond de romp en raakt het kielvlak aan de linkerkant. Die zijwaartse kracht duwt de staart naar rechts, dus de neus gaat naar links.\n\n**Hoe werkt het?**\nDe propeller blaast de lucht niet recht naar achteren, maar in een schroefbeweging rond de romp. Bij een rechtsom draaiende propeller stroomt de spiraal bovenaan van links naar rechts. Het kielvlak zit bovenaan de romp, dus de stroming raakt het van links.\n\n**Tegengaan:**\nRechts richtingsroer, richtingsroertrim, of een kielvlak dat de constructeur licht scheef zet.\n\n**Valkuil:**\nNeem je het gas terug, dan wordt het effect veel kleiner en heb je minder rechts richtingsroer nodig.",
+  "src": "syl",
+  "ref": "ECQB 51.5.3 – Moments due to propeller operation",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-13",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.5.3.2.3",
+  "loText": "De vluchtfasen noemen waarin het schroefwindeffect het sterkst is",
+  "basis": "Leerdoelen PoF",
+  "q": "In welke situatie zijn de slipstream- en propellereffecten het sterkst merkbaar?",
+  "o": [
+   "Bij veel vermogen en lage snelheid, zoals bij de start en de klim",
+   "Bij weinig vermogen en hoge snelheid, zoals in een snelle daling",
+   "In kruisvlucht met kruisvermogen en kruissnelheid",
+   "In een glijvlucht met stationair vermogen"
+  ],
+  "c": 0,
+  "e": "De effecten zijn het sterkst bij veel vermogen en lage snelheid: bij de start, in de klim en bij een doorstart.\n\n**Hoe werkt het?**\nBij veel vermogen draait de slipstream krachtig rond de romp. Bij lage snelheid is de vrije luchtstroom zwak, dus de spiraal is steil en raakt het kielvlak onder een grote hoek. Tegelijk is het richtingsroer minder doeltreffend, omdat de dynamische druk laag is.\n\n**In de praktijk:**\nBij een rechtsom draaiende propeller geef je bij de start en de klim rechts richtingsroer om de bal in het midden te houden. Geef je bij een doorstart plots vol gas, dan komt de giertendens heel snel.\n\n**Valkuil:**\nIn kruisvlucht is het kielvlak zo afgesteld dat je weinig of geen correctie nodig hebt.",
+  "src": "syl",
+  "ref": "ECQB 51.5.3 – Moments due to propeller operation",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-14",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.5.3.3.1",
+  "loText": "Het 'asymmetrisch bladeffect' (P-factor) en de invloed ervan op de beweging van het vliegtuig beschrijven",
+  "basis": "Leerdoelen PoF",
+  "q": "Een vliegtuig met een rechtsom draaiende propeller (gezien vanuit de cockpit) klimt met een hoge neusstand. Waarom ontstaat er dan een giertendens naar links door de P-factor (asymmetrisch bladeffect)?",
+  "o": [
+   "Het neergaande blad aan de rechterkant krijgt een grotere aanvalshoek en levert meer trekkracht",
+   "Het opgaande blad aan de linkerkant krijgt een grotere aanvalshoek en levert meer trekkracht",
+   "De propeller duwt het vliegtuig door actie en reactie linksom rond de langsas",
+   "De slipstream raakt het stabilo aan de onderkant"
+  ],
+  "c": 0,
+  "e": "Bij een hoge neusstand stroomt de lucht schuin van onderen tegen de propellerschijf. Het neergaande blad rechts krijgt daardoor een grotere aanvalshoek en meer trekkracht dan het opgaande blad links. De trekkracht verschuift naar rechts en de neus giert naar links.\n\n**Hoe werkt het?**\nHet neergaande blad beweegt tegen de schuine aanstroming in en ziet een grotere aanvalshoek. Het opgaande blad beweegt met die aanstroming mee en ziet een kleinere aanvalshoek.\n\n**Tegengaan:**\nRechts richtingsroer of richtingsroertrim, zodat de bal in het midden blijft.\n\n**Valkuil:**\nDe P-factor is een gierbeweging. Het rollen naar links door de propeller komt van het motorkoppel (torque).",
+  "src": "syl",
+  "ref": "ECQB 51.5.3 – Moments due to propeller operation",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-15",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.5.3.2.1",
+  "loText": "De richting van het effect bepalen bij een gegeven draairichting van de propeller",
+  "basis": "Leerdoelen PoF",
+  "q": "Bij een staartwielvliegtuig met een rechtsom draaiende propeller (gezien vanuit de cockpit) til je tijdens de startaanloop de staart op. Welke kant wil de neus op door het gyroscopisch effect van de propeller?",
+  "o": [
+   "Naar links",
+   "Naar rechts",
+   "Omhoog",
+   "Omlaag"
+  ],
+  "c": 0,
+  "e": "De neus wil naar links. De draaiende propeller is een gyroscoop: een kracht op de propellerschijf werkt pas 90° verder in de draairichting.\n\n**Hoe werkt het?**\nAls je de staart optilt, kantelt de propellerschijf naar voren: het is alsof je bovenaan de schijf naar voren duwt. Die kracht werkt 90° verder in de draairichting. Bij een rechtsom draaiende propeller komt het bovenste punt 90° later aan de rechterkant. Daar gaat de schijf naar voren, dus de neus draait naar links.\n\n**In de praktijk:**\nTil de staart rustig op en houd rechts richtingsroer klaar: slipstream en gyroscopisch effect werken op dat moment allebei naar links.\n\n**Valkuil:**\nBij een linksom draaiende propeller is alles gespiegeld.",
+  "src": "syl",
+  "ref": "ECQB 51.5.3 – Moments due to propeller operation",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-16",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.5.3.2.1",
+  "loText": "De richting van het effect bepalen bij een gegeven draairichting van de propeller",
+  "basis": "Leerdoelen PoF",
+  "q": "Je stapt over naar een vliegtuig waarvan de propeller linksom draait, gezien vanuit de cockpit. Welk richtingsroer heb je dan nodig om bij de start en de klim de bal in het midden te houden?",
+  "o": [
+   "Links richtingsroer, want de propellereffecten werken naar rechts",
+   "Rechts richtingsroer, net zoals bij een rechtsom draaiende propeller",
+   "Geen richtingsroer, want een linksom draaiende propeller heft de effecten op",
+   "Links richtingsroer, maar alleen in de daling met stationair vermogen"
+  ],
+  "c": 0,
+  "e": "Je hebt links richtingsroer nodig. Bij een linksom draaiende propeller zijn torque, slipstream, P-factor en gyroscopisch effect gespiegeld: het vliegtuig wil naar rechts gieren en rollen.\n\n**Hoe werkt het?**\nDe slipstream raakt het kielvlak nu aan de rechterkant, het neergaande blad zit links en het motorkoppel duwt het vliegtuig rechtsom. Alle effecten wijzen dus de andere kant op.\n\n**In de praktijk:**\nNiet elke motor laat de propeller dezelfde kant op draaien. Ga bij een nieuw type na hoe de propeller draait en welke kant je richtingsroer nodig hebt, voordat je vertrekt.\n\n**Valkuil:**\nDe vuistregel 'rechts richtingsroer bij de start' geldt alleen voor een rechtsom draaiende propeller.",
+  "src": "syl",
+  "ref": "ECQB 51.5.3 – Moments due to propeller operation",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-17",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.2.3.1.2",
+  "loText": "'Dynamische stabiliteit' uitleggen",
+  "basis": "Leerdoelen PoF",
+  "q": "Na een windstoot gaat de neus van een vliegtuig omhoog. Het vliegtuig beweegt meteen terug richting de oorspronkelijke stand, maar schiet telkens verder door, met steeds grotere slingeringen. Hoe beschrijf je dit gedrag?",
+  "o": [
+   "Statisch stabiel, dynamisch instabiel",
+   "Statisch instabiel, dynamisch stabiel",
+   "Statisch en dynamisch stabiel",
+   "Statisch en dynamisch neutraal"
+  ],
+  "c": 0,
+  "e": "Dit is statisch stabiel en dynamisch instabiel. De eerste reactie is terug naar het evenwicht (statisch stabiel), maar de slingeringen worden in de tijd groter (dynamisch instabiel).\n\n**Hoe werkt het?**\nStatische stabiliteit kijkt alleen naar de eerste reactie na een verstoring: terug, blijven of verder weg. Dynamische stabiliteit kijkt naar het verloop in de tijd: dempen de slingeringen uit, blijven ze gelijk of groeien ze?\n\n**Overzicht:**\nDynamisch stabiel: slingering dempt uit.\nDynamisch neutraal: slingering blijft even groot.\nDynamisch instabiel: slingering wordt groter.\n\n**Valkuil:**\nStatische stabiliteit alleen garandeert niet dat het vliegtuig vanzelf rustig terug in evenwicht komt.",
+  "src": "syl",
+  "ref": "ECQB 51.2.3 – Static and dynamic longitudinal stability",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-18",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.2.3.1.3",
+  "loText": "Beschrijven waarom statische stabiliteit een voorwaarde is voor dynamische stabiliteit",
+  "basis": "Leerdoelen PoF",
+  "q": "Kan een vliegtuig dat statisch instabiel is, dynamisch stabiel zijn?",
+  "o": [
+   "Nee, dynamische stabiliteit vereist statische stabiliteit",
+   "Ja, als de slingeringen snel genoeg uitdempen",
+   "Ja, als de piloot het vliegtuig goed uittrimt",
+   "Nee, want een dynamisch stabiel vliegtuig is altijd statisch neutraal"
+  ],
+  "c": 0,
+  "e": "Nee. Een statisch instabiel vliegtuig beweegt na een verstoring meteen verder weg van het evenwicht. Dan kan er geen uitdempende slingering rond dat evenwicht ontstaan: dynamische stabiliteit vereist statische stabiliteit.\n\n**Hoe werkt het?**\nOm te kunnen uitdempen moet het vliegtuig eerst terug willen naar zijn evenwicht. Dat is precies statische stabiliteit. Andersom geldt het niet: een statisch stabiel vliegtuig kan nog altijd dynamisch instabiel zijn, met groeiende slingeringen.\n\n**In de praktijk:**\nTrim verandert de evenwichtsstand, maar niet de stabiliteit zelf. Die hangt vooral af van de ligging van het zwaartepunt en de grootte van het stabilo.\n\n**Valkuil:**\nStatisch stabiel is nodig, maar niet voldoende voor dynamische stabiliteit.",
+  "src": "syl",
+  "ref": "ECQB 51.2.3 – Static and dynamic longitudinal stability",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-19",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.2.3.2.2",
+  "loText": "Het effect van de ligging van het zwaartepunt op de wendbaarheid rond de dwarsas en de langsstabiliteit uitleggen",
+  "basis": "Leerdoelen PoF",
+  "q": "Welke ligging van het zwaartepunt is nodig voor statische langsstabiliteit?",
+  "o": [
+   "Het zwaartepunt ligt vóór het neutraal punt",
+   "Het zwaartepunt ligt achter het neutraal punt",
+   "Het zwaartepunt valt precies samen met het neutraal punt",
+   "Het zwaartepunt ligt achter het drukpunt van het stabilo"
+  ],
+  "c": 0,
+  "e": "Het zwaartepunt moet vóór het neutraal punt liggen. Het neutraal punt is het punt waar de extra lift van vleugel en stabilo samen aangrijpt als de aanvalshoek verandert.\n\n**Hoe werkt het?**\nGaat de neus door een windstoot omhoog, dan stijgt de lift van vleugel én stabilo. Ligt het zwaartepunt vóór het neutraal punt, dan geeft die extra lift een moment dat de neus terug omlaag duwt: stabiel. De afstand tussen zwaartepunt en neutraal punt heet de stabiliteitsmarge (static margin).\n\n**Gevolgen:**\nSchuift het zwaartepunt naar achteren, dan krimpt die marge: lichtere stuurkrachten, minder stabiliteit. Valt het samen met het neutraal punt, dan is het vliegtuig neutraal; ligt het erachter, dan is het instabiel.\n\n**Valkuil:**\nDe achterste zwaartepuntsgrens in het handboek ligt met een marge vóór het neutraal punt.",
+  "src": "syl",
+  "ref": "ECQB 51.2.3 – Static and dynamic longitudinal stability",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-20",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.2.4.1.3",
+  "loText": "De term 'windhaaneffect' (weather vaning) uitleggen",
+  "basis": "Leerdoelen PoF",
+  "q": "Je taxiet met een sterke zijwind van rechts. Welke neiging heeft het vliegtuig door het weerhaaneffect (weather vaning)?",
+  "o": [
+   "De neus wil naar rechts draaien, in de wind",
+   "De neus wil naar links draaien, van de wind weg",
+   "Het vliegtuig wil naar rechts rollen",
+   "Er is geen neiging, want het kielvlak werkt alleen in de lucht"
+  ],
+  "c": 0,
+  "e": "De neus wil naar rechts, in de wind. De wind duwt op het grote zijoppervlak achter het hoofdlandingsgestel, vooral het kielvlak, en draait het vliegtuig als een windvaan.\n\n**Hoe werkt het?**\nIn de lucht zorgt het kielvlak voor richtingsstabiliteit: bij een slip krijgt het een zijdelingse aanstroming en duwt het de neus terug in de relatieve wind. Op de grond kan het vliegtuig niet met de wind meedrijven, zodat dezelfde kracht de neus naar de wind toe draait.\n\n**In de praktijk:**\nBij zijwind tijdens het taxiën, de startaanloop en de uitloop houd je de richting met het richtingsroer en de neuswielbesturing. Staartwielvliegtuigen zijn hier extra gevoelig voor.\n\n**Valkuil:**\nHet weerhaaneffect is geen defect, maar het gevolg van de richtingsstabiliteit.",
+  "src": "syl",
+  "ref": "ECQB 51.2.4 – Dynamic lateral or directional stability",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-21",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.2.4.1.1",
+  "loText": "De invloed van de V-stand van de vleugels op de rolstabiliteit uitleggen",
+  "basis": "Leerdoelen PoF",
+  "q": "Een vliegtuig heeft een sterke richtingsstabiliteit (groot kielvlak) en een zwakke rolstabiliteit (weinig V-stelling). Wat gebeurt er als het in een lichte helling komt en je de besturing loslaat?",
+  "o": [
+   "De helling neemt langzaam toe en het vliegtuig gaat over in een spiraalduik",
+   "De vleugels komen vanzelf snel horizontaal",
+   "Het vliegtuig gaat over in een spin",
+   "Het vliegtuig gaat in een slingerende gier-rolbeweging (Dutch roll)"
+  ],
+  "c": 0,
+  "e": "De helling neemt langzaam toe en het vliegtuig gaat over in een spiraalduik. Dat heet spiraalinstabiliteit.\n\n**Hoe werkt het?**\nIn een helling begint het vliegtuig licht te slippen. Het grote kielvlak draait de neus snel mee in de bocht. Daarbij gaat de buitenvleugel sneller en levert meer lift, waardoor de helling groter wordt. De zwakke V-stelling is te weinig om terug te rollen. De neus zakt, de snelheid en de belastingsfactor stijgen.\n\n**Herstel:**\nGas dicht, vleugels horizontaal rollen, dan rustig optrekken.\n\n**Valkuil:**\nEen spiraalduik is geen spin: de vleugel is niet overtrokken en de snelheid is hoog en stijgt.",
+  "src": "syl",
+  "ref": "ECQB 51.2.4 – Dynamic lateral or directional stability",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-22",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.2.2.1.2",
+  "loText": "Uitleggen waarom het hoogteroer van een vliegtuig (behalve bij canards) meestal een neerwaartse kracht levert",
+  "basis": "Leerdoelen PoF",
+  "q": "Waarom levert het horizontale staartvlak van een klassiek vliegtuig (geen canard) in kruisvlucht meestal een neerwaartse kracht?",
+  "o": [
+   "Het zwaartepunt ligt vóór het drukpunt, waardoor lift en gewicht een neus-omlaagmoment geven",
+   "Het zwaartepunt ligt achter het drukpunt, waardoor lift en gewicht een neus-omhoogmoment geven",
+   "Om de geïnduceerde weerstand van de vleugel te verkleinen",
+   "Om flutter van het hoogteroer bij hoge snelheid te voorkomen"
+  ],
+  "c": 0,
+  "e": "Het zwaartepunt ligt meestal vóór het drukpunt van de vleugel. Lift en gewicht vormen dan een koppel dat de neus omlaag duwt, en het stabilo compenseert dat met een neerwaartse kracht.\n\n**Hoe werkt het?**\nDenk aan een wip: het gewicht hangt net vóór het steunpunt (de lift). Om de neus niet te laten zakken, geeft de staart, ver achteraan op een lange arm, een kleine kracht naar beneden. Zo ontstaat een momentenevenwicht rond het zwaartepunt.\n\n**Gevolg:**\nDe vleugel moet iets meer lift leveren dan het gewicht, want hij draagt ook de neerwaartse staartlast. Een canard vooraan levert wel een opwaartse kracht.\n\n**Valkuil:**\nDie opstelling is gewild: ze maakt het vliegtuig stabiel in pitch.",
+  "src": "syl",
+  "ref": "ECQB 51.2.2 – Methods of achieving balance",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-23",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.1.3.1.2",
+  "loText": "De liftformule kwalitatief weergeven (factoren, afhankelijkheden, geen berekeningen)",
+  "basis": "Leerdoelen PoF",
+  "q": "Een vliegtuig vliegt met een constante aanvalshoek. De snelheid verdubbelt, terwijl luchtdichtheid en configuratie gelijk blijven. Hoe verandert de lift?",
+  "o": [
+   "Ze wordt vier keer zo groot",
+   "Ze wordt twee keer zo groot",
+   "Ze blijft gelijk",
+   "Ze wordt de helft"
+  ],
+  "c": 0,
+  "e": "De lift wordt vier keer zo groot. Lift is evenredig met het kwadraat van de snelheid, dus 2² = 4.\n\n**De liftformule (kwalitatief):**\nLift = CL × ½ρV² × S\nCL: liftcoëfficiënt (aanvalshoek, profiel, flaps)\nρ: luchtdichtheid\nV: snelheid ten opzichte van de lucht\nS: vleugeloppervlak\n\n**In de praktijk:**\nIn horizontale vlucht moet de lift gelijk blijven aan het gewicht. Vlieg je sneller, dan moet je de aanvalshoek (en dus CL) verkleinen. Bij dubbele snelheid is nog maar een kwart van de CL nodig.\n\n**Valkuil:**\nDe snelheid staat in het kwadraat; denk niet lineair.",
+  "src": "syl",
+  "ref": "ECQB 51.1.3 – The coefficients",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-24",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.1.3.1.1",
+  "loText": "De betekenis van de liftcoëfficiënt cL en het gebruik ervan in de liftformule uitleggen",
+  "basis": "Leerdoelen PoF",
+  "q": "Waarvan hangt de liftcoëfficiënt (CL) van een vleugel vooral af?",
+  "o": [
+   "Van de aanvalshoek en de vorm van het profiel, bijvoorbeeld de stand van de flaps",
+   "Van de snelheid en de luchtdichtheid",
+   "Van de massa van het vliegtuig en de belastingsfactor",
+   "Van het vleugeloppervlak en de buitentemperatuur"
+  ],
+  "c": 0,
+  "e": "CL hangt vooral af van de aanvalshoek en de vorm van het profiel, zoals welving, dikte en de stand van flaps of slats. Het is een getal zonder eenheid dat zegt hoe 'goed' de vleugel lift maakt bij die aanvalshoek.\n\n**Hoe werkt het?**\nIn de liftformule staan snelheid, dichtheid en oppervlak apart: Lift = CL × ½ρV² × S. CL vat alles samen wat over de vorm en de stand van de vleugel gaat. Tot aan de kritieke aanvalshoek stijgt CL ongeveer lineair met de aanvalshoek, daarna daalt hij.\n\n**Voorbeelden:**\nFlaps uitzetten verhoogt CL bij dezelfde aanvalshoek. IJs of vuil verlaagt de maximale CL.\n\n**Valkuil:**\nMassa en snelheid bepalen welke CL je nodig hebt, maar niet welke CL de vleugel bij een bepaalde aanvalshoek levert.",
+  "src": "syl",
+  "ref": "ECQB 51.1.3 – The coefficients",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-25",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.1.3.3.1",
+  "loText": "Het verband tussen cL en cD in de verschillende vluchtfasen uitleggen aan de hand van het cL-cD-diagram (polaire)",
+  "basis": "Leerdoelen PoF",
+  "q": "Op de polaire (CL uitgezet tegen CD) van een vliegtuig trek je een raaklijn vanuit de oorsprong. Welke vliegtoestand hoort bij het raakpunt?",
+  "o": [
+   "De grootste lift-weerstandverhouding (L/D max), dus het beste glijgetal",
+   "De grootste liftcoëfficiënt (CLmax), dus de overtrek",
+   "De kleinste weerstandscoëfficiënt, dus de snelle kruisvlucht",
+   "De kleinste daalsnelheid (minimum sink)"
+  ],
+  "c": 0,
+  "e": "Het raakpunt is het punt met de grootste verhouding CL/CD, dus de grootste lift-weerstandverhouding (L/D max). Daar haal je het beste glijgetal.\n\n**Hoe werkt het?**\nElk punt op de polaire hoort bij één aanvalshoek. Een lijn vanuit de oorsprong naar een punt heeft als helling CL/CD. De steilste lijn die de polaire nog raakt, geeft de grootste CL/CD.\n\n**Andere punten:**\nKleine CL en kleine CD: kleine aanvalshoek, snelle kruisvlucht.\nBovenaan: CLmax, de overtrek. Daarna daalt CL en stijgt CD sterk.\n\n**Valkuil:**\nDe kleinste daalsnelheid ligt bij een iets grotere aanvalshoek, dus een lagere snelheid, dan het beste glijgetal.",
+  "src": "syl",
+  "ref": "ECQB 51.1.3 – The coefficients",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-26",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.1.3.2.2",
+  "loText": "De weerstandsformule kwalitatief weergeven (factoren, afhankelijkheden, geen berekeningen)",
+  "basis": "Leerdoelen PoF",
+  "q": "Van welke factoren hangt de weerstand van een vliegtuig af volgens de weerstandsformule?",
+  "o": [
+   "Van de weerstandscoëfficiënt, de luchtdichtheid, het kwadraat van de snelheid en het oppervlak",
+   "Van de weerstandscoëfficiënt, de massa, de snelheid en de hoogte",
+   "Van de liftcoëfficiënt, de luchtdruk en de derde macht van de snelheid",
+   "Van het motorvermogen, de luchtdichtheid en de snelheid"
+  ],
+  "c": 0,
+  "e": "De weerstand hangt af van de weerstandscoëfficiënt (CD), de luchtdichtheid, het kwadraat van de snelheid en het referentieoppervlak. De formule is net zo opgebouwd als die van de lift: Weerstand = CD × ½ρV² × S.\n\n**Wat zit er in CD?**\nCD vat de vorm samen: aanvalshoek, profiel, flaps, landingsgestel, oppervlakteruwheid. Bij een grotere aanvalshoek stijgt CD, vooral door de geïnduceerde weerstand.\n\n**In de praktijk:**\nBij gelijke CD geeft dubbele snelheid vier keer zoveel weerstand.\n\n**Valkuil:**\nDe massa staat niet rechtstreeks in de formule. Ze werkt onrechtstreeks: een zwaarder vliegtuig vliegt bij dezelfde snelheid met een grotere aanvalshoek, dus met een hogere CD.",
+  "src": "syl",
+  "ref": "ECQB 51.1.3 – The coefficients",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-27",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.1.10.1.1",
+  "loText": "Het effect beschrijven van ijs of andere vervuiling op een vleugel op lift, weerstand en overtreksnelheid",
+  "basis": "Leerdoelen PoF",
+  "q": "Bij de preflight zie je een dunne laag rijp op de bovenkant van de vleugels. Wat is het effect als je zo vertrekt?",
+  "o": [
+   "Minder lift, meer weerstand en een hogere overtreksnelheid",
+   "Geen merkbaar effect, want rijp is te dun om de stroming te storen",
+   "Meer lift, omdat de ruwe laag de grenslaag energie geeft",
+   "Alleen een hoger gewicht, dus een iets langere startafstand"
+  ],
+  "c": 0,
+  "e": "Rijp geeft minder lift, meer weerstand en een hogere overtreksnelheid. Ook een dunne, ruwe laag verstoort de grenslaag zo sterk dat de stroming vroeger loslaat.\n\n**Hoe werkt het?**\nDe ruwheid maakt de grenslaag dikker, met meer wrijvingsweerstand. Vooral op de voorrand en de bovenkant laat de stroming vroeger los: de maximale CL en de kritieke aanvalshoek dalen. Het vliegtuig kan overtrekken voordat de overtrekwaarschuwing iets meldt.\n\n**In de praktijk:**\nVertrek nooit met ijs, rijp of sneeuw op het toestel. Verwijder alles volledig, ook een dunne laag, vóór de start.\n\n**Valkuil:**\nHet probleem is niet het gewicht van de rijp, maar de verstoorde stroming.",
+  "src": "syl",
+  "ref": "ECQB 51.1.10 – Special circumstances",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-28",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.1.10.1.2",
+  "loText": "Weten dat ijs of andere vervuiling op de vleugel leidt tot onbepaalde operationele grenzen (bv. onbekende overtreksnelheid)",
+  "basis": "Leerdoelen PoF",
+  "q": "Je vliegt onbedoeld in ijsafzetting en er hecht ijs op de voorrand van de vleugel. Wat geldt dan voor de overtreksnelheid?",
+  "o": [
+   "Ze ligt hoger en is onbekend; de markeringen op de snelheidsmeter gelden niet meer",
+   "Ze blijft gelijk, want de overtreksnelheid in IAS hangt alleen van de massa af",
+   "Ze ligt lager, omdat het ijs de welving van het profiel vergroot",
+   "Ze ligt precies 10 % hoger, zoals vermeld in elk handboek"
+  ],
+  "c": 0,
+  "e": "De overtreksnelheid ligt hoger en is onbekend. De markeringen op de snelheidsmeter en de waarden in het handboek gelden alleen voor een schone vleugel.\n\n**Hoe werkt het?**\nIJs vervormt het profiel en maakt het oppervlak ruw. De maximale CL en de kritieke aanvalshoek dalen, en hoeveel hangt af van de vorm en de plaats van het ijs. Het overtrekgedrag kan abnormaal zijn: plots, met een wegvallende vleugel.\n\n**Overtrekwaarschuwing:**\nIJs of veel regen kan de flapper switch of zuigopening blokkeren. Bovendien kan de vleugel overtrekken voordat de waarschuwing reageert.\n\n**In de praktijk:**\nVerlaat de ijsafzetting meteen, vlieg met extra snelheid en vermijd bruuske manoeuvres.",
+  "src": "syl",
+  "ref": "ECQB 51.1.10 – Special circumstances",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-29",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.1.10.1.3",
+  "loText": "Weten dat ijs dat bij de inspectie vóór de vlucht niet opgemerkt wordt, roeren kan blokkeren",
+  "basis": "Leerdoelen PoF",
+  "q": "Waarom is het gevaarlijk als je bij de preflight ijs in de spleten rond de stuurvlakken over het hoofd ziet?",
+  "o": [
+   "Het ijs kan de roeren blokkeren of hun uitslag beperken",
+   "Het ijs verlaagt alleen de motorprestaties door koudere inlaatlucht",
+   "Het ijs smelt tijdens de startaanloop altijd volledig weg en verandert niets",
+   "Het ijs verschuift het zwaartepunt van het vliegtuig buiten de grenzen"
+  ],
+  "c": 0,
+  "e": "IJs in de spleten en scharnieren kan de roeren blokkeren of hun uitslag beperken. Dan kan je het vliegtuig na het loskomen niet meer normaal besturen.\n\n**Hoe werkt het?**\nSmeltwater, bijvoorbeeld van sneeuw op de vleugel of na een wasbeurt, loopt in de spleet tussen vast vlak en roer en bevriest opnieuw. Ook rond kabels en scharnieren kan water bevriezen. Vaak merk je dat pas in de lucht, als een roer stroef gaat of vastzit.\n\n**In de praktijk:**\nControleer bij koud weer elk roer op volle, vrije uitslag, zowel bij de walk-around als bij de besturingscontrole vóór de start. Verwijder alle sneeuw, rijp en ijs.\n\n**Valkuil:**\nIJs in of op een roer kan ook de massabalans verstoren, met kans op flutter.",
+  "src": "syl",
+  "ref": "ECQB 51.1.10 – Special circumstances",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-30",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.1.10.1.4",
+  "loText": "Uitleggen hoe ijs of andere vervuiling tot een plotselinge overtrek kan leiden bij het uitschuiven van de flaps",
+  "basis": "Leerdoelen PoF",
+  "q": "Je nadert met ijs op het toestel en zet de flaps uit. Plots valt de neus sterk naar beneden en reageert het hoogteroer nauwelijks. Wat is de meest waarschijnlijke oorzaak?",
+  "o": [
+   "Het stabilo is overtrokken door de grotere downwash van de vleugel met flaps",
+   "De vleugel is overtrokken doordat flaps de kritieke aanvalshoek vergroten",
+   "De flaps zijn door het ijs asymmetrisch uitgeslagen",
+   "Het zwaartepunt is door het uitzetten van de flaps naar voren geschoven"
+  ],
+  "c": 0,
+  "e": "Hier is het stabilo overtrokken. Flaps vergroten de downwash achter de vleugel, waardoor de (negatieve) aanvalshoek van het stabilo toeneemt. Met ijs op de voorrand van het stabilo overtrekt dat vlak dan plots.\n\n**Hoe werkt het?**\nHet stabilo levert normaal een neerwaartse kracht. Overtrekt het, dan valt die kracht weg en duwt het momentenevenwicht de neus hard naar beneden. Het hoogteroer zit in loslatende stroming en verliest zijn werking.\n\n**In de praktijk:**\nMet ijs op het toestel gebruik je bij voorkeur weinig of geen flaps en vlieg je met extra snelheid. Gebeurt het toch, zet de flaps dan terug naar de vorige stand en volg het handboek.\n\n**Valkuil:**\nHet kleine, dunne stabilo verzamelt vaak sneller ijs dan de vleugel.",
+  "src": "syl",
+  "ref": "ECQB 51.1.10 – Special circumstances",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-31",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.3.6.1.1",
+  "loText": "Het effect beschrijven van de aerodynamische balancering door gebruik van massabalancering",
+  "basis": "Leerdoelen PoF",
+  "q": "Waarom zit er bij veel roeren een gewicht vóór de scharnierlijn (massabalans)?",
+  "o": [
+   "Om het zwaartepunt van het roer op of vóór de scharnierlijn te brengen en zo flutter te voorkomen",
+   "Om de stuurkrachten bij hoge snelheid aerodynamisch te verlagen",
+   "Om het zwaartepunt van het vliegtuig binnen de grenzen te houden",
+   "Om het roer bij een kabelbreuk automatisch in de neutrale stand te zetten"
+  ],
+  "c": 0,
+  "e": "Het gewicht brengt het zwaartepunt van het roer op of vóór de scharnierlijn. Zo kan een trilling van vleugel of staartvlak het roer niet in een zichzelf versterkende slingering brengen: flutter.\n\n**Hoe werkt het?**\nLigt het zwaartepunt van het roer achter het scharnier, dan blijft het roer door zijn traagheid achter als het vaste vlak beweegt. Het slaat dan uit in de richting die de trilling versterkt. Bij hoge snelheid kan dat binnen enkele seconden de structuur vernielen.\n\n**Verschil met aerodynamische balans:**\nEen hoorn of balansvlak verlaagt de stuurkracht. Een massabalans verandert de stuurkracht in rechte vlucht nauwelijks, maar beschermt tegen flutter.\n\n**Valkuil:**\nMassabalans is geen trimmiddel.",
+  "src": "syl",
+  "ref": "ECQB 51.3.6 – Mass balance",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-33",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.3.1.2.1",
+  "loText": "De invloed uitleggen van de plaatselijke verandering van de aanvalshoek (AOA) door het uitslaan van een roer",
+  "basis": "Leerdoelen PoF",
+  "q": "Wat gebeurt er aerodynamisch als een rolroer naar beneden uitslaat?",
+  "o": [
+   "De welving en de lokale aanvalshoek van dat vleugeldeel nemen toe, waardoor die vleugel omhoog gaat",
+   "De welving en de lokale aanvalshoek van dat vleugeldeel nemen af, waardoor die vleugel zakt",
+   "De lokale aanvalshoek blijft gelijk; alleen de weerstand stijgt, waardoor die vleugel zakt",
+   "Het drukpunt van de hele vleugel schuift naar voren, waardoor het vliegtuig stampt"
+  ],
+  "c": 0,
+  "e": "Een neergaand rolroer vergroot de welving en de lokale aanvalshoek van dat vleugeldeel. De lift stijgt en die vleugel gaat omhoog.\n\n**Hoe werkt het?**\nDe koorde van een vleugeldeel loopt van voorrand tot achterrand. Slaat de achterrand (het roer) naar beneden, dan kantelt die koorde en wordt de aanvalshoek groter. Elk roer werkt zo: het verandert de lift van zijn vlak en dus het moment rond het zwaartepunt.\n\n**Bijwerking:**\nHet neergaande rolroer geeft ook meer geïnduceerde weerstand. De neus draait daardoor eerst weg van de bocht: het haakeffect (adverse yaw).\n\n**Valkuil:**\nDicht bij de overtrek kan die grotere lokale aanvalshoek het vleugeldeel juist doen overtrekken.",
+  "src": "syl",
+  "ref": "ECQB 51.3.1 – General",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-34",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.3.2.3.2",
+  "loText": "Uitleggen hoe de manoeuvreerstabiliteit verandert met de langspositie van het zwaartepunt (CG)",
+  "basis": "Leerdoelen PoF",
+  "q": "Het zwaartepunt ligt dicht bij de achterste grens. Wat merk je in pitch?",
+  "o": [
+   "Lichte stuurkrachten, grote wendbaarheid en weinig langsstabiliteit",
+   "Zware stuurkrachten, kleine wendbaarheid en veel langsstabiliteit",
+   "Een hogere overtreksnelheid en zware stuurkrachten",
+   "Geen verschil, zolang het zwaartepunt binnen de grenzen ligt"
+  ],
+  "c": 0,
+  "e": "Bij een achterlijk zwaartepunt zijn de stuurkrachten licht, reageert het vliegtuig snel op het hoogteroer en is de langsstabiliteit klein.\n\n**Hoe werkt het?**\nHoe dichter het zwaartepunt bij het neutraal punt komt, hoe kleiner de stabiliteitsmarge en dus het terugstellend moment na een verstoring. Een kleine roeruitslag geeft dan al een grote verandering van de neusstand en de belastingsfactor, en er is weinig stuurkracht per g nodig. Je kan het vliegtuig dan makkelijk oversturen.\n\n**Gevolgen:**\nDe overtreksnelheid ligt iets lager dan bij een voorlijk zwaartepunt. Buiten de achterste grens wordt het vliegtuig instabiel en kan een spin overgaan in een vlakke spin.\n\n**Valkuil:**\nBinnen de grenzen is het vliegtuig veilig, maar het gedrag verschilt duidelijk tussen voorste en achterste grens.",
+  "src": "syl",
+  "ref": "ECQB 51.3.2 – Pitch control",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-35",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.3.4.1.5",
+  "loText": "Het omkeren van de rolroer-/roerwerking (control reversal) bij lage vliegsnelheden beschrijven",
+  "basis": "Leerdoelen PoF",
+  "q": "Je vliegt vlak bij de overtrek en probeert een zakkende linkervleugel op te tillen met een grote rolroeruitslag naar rechts. Wat kan er gebeuren?",
+  "o": [
+   "Het neergaande linkerrolroer duwt die vleugel over de kritieke aanvalshoek, waardoor ze nog verder zakt",
+   "De linkervleugel komt sneller omhoog dan bij normale snelheid",
+   "Het opgaande rechterrolroer overtrekt, waardoor de rechtervleugel omhoog gaat",
+   "Er gebeurt niets, want rolroeren werken niet bij lage snelheid"
+  ],
+  "c": 0,
+  "e": "Het neergaande linkerrolroer vergroot de lokale aanvalshoek van de linkervleugel. Ligt die al dicht bij de kritieke aanvalshoek, dan overtrekt ze en zakt ze nog verder: de rolroerwerking keert om.\n\n**Hoe werkt het?**\nEen rolroer werkt door de lokale aanvalshoek en welving te veranderen. Bij normale snelheid geeft dat meer lift. Vlak bij de overtrek is er geen marge meer: meer aanvalshoek betekent loslating, minder lift en veel meer weerstand. De vleugel valt verder weg en het vliegtuig kan in een spin gaan.\n\n**In de praktijk:**\nVerklein eerst de aanvalshoek (stuurknuppel naar voren). Houd de vleugels horizontaal met het richtingsroer en vermijd grote rolroeruitslagen tot de stroming weer aanligt.\n\n**Valkuil:**\nWashout houdt de rolroeren langer werkzaam, maar voorkomt dit effect niet volledig.",
+  "src": "syl",
+  "ref": "ECQB 51.3.4 – Roll control",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-36",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.6.1.2.2",
+  "loText": "Het krachtenevenwicht uitleggen (gewicht, lift, stuwkracht, weerstand, met de invloed van het gewicht op stuwkracht en lift) en de krachten weergeven op een bijhorende schets",
+  "basis": "Leerdoelen PoF",
+  "q": "Welke uitspraak over de krachten in een stationaire, rechtlijnige klim is juist?",
+  "o": [
+   "De lift is iets kleiner dan het gewicht en de trekkracht is groter dan de weerstand",
+   "De lift is groter dan het gewicht en de trekkracht is gelijk aan de weerstand",
+   "De lift is gelijk aan het gewicht en de trekkracht is gelijk aan de weerstand",
+   "De lift is groter dan het gewicht en de trekkracht is kleiner dan de weerstand"
+  ],
+  "c": 0,
+  "e": "In een stationaire klim is de lift iets kleiner dan het gewicht en de trekkracht groter dan de weerstand. Een deel van het gewicht werkt langs de baan naar achteren, en ook dat moet de trekkracht overwinnen.\n\n**Hoe werkt het?**\nSplits het gewicht in twee componenten. Loodrecht op de baan: W × cos γ, die de lift draagt. Langs de baan naar achteren: W × sin γ, die bij de weerstand komt. Dus Lift = W × cos γ en Trekkracht = Weerstand + W × sin γ.\n\n**Gevolg:**\nBij dezelfde snelheid vlieg je in de klim met een iets kleinere aanvalshoek dan in horizontale vlucht. Een zwaarder vliegtuig heeft meer overtollige trekkracht nodig voor dezelfde klimhoek.\n\n**Valkuil:**\nAlleen bij het inzetten van de klim is de lift even groter dan het gewicht, om de baan omhoog te buigen.",
+  "src": "syl",
+  "ref": "ECQB 51.6.1 – Forces acting on an aeroplane",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-37",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.6.1.4.2",
+  "loText": "Beschrijven hoe een component van de gewichtskracht de ontbrekende stuwkracht vervangt",
+  "basis": "Leerdoelen PoF",
+  "q": "In een stationaire glijvlucht zonder motorvermogen blijft de snelheid constant. Welke kracht houdt het vliegtuig in beweging tegen de weerstand in?",
+  "o": [
+   "Een component van het gewicht langs de glijbaan",
+   "De trekkracht van de meedraaiende propeller",
+   "Alleen de traagheid van het vliegtuig, zonder enige kracht",
+   "De opwaartse luchtstroming onder de vleugel"
+  ],
+  "c": 0,
+  "e": "Een component van het gewicht langs de glijbaan vervangt de trekkracht. Ze is precies even groot als de weerstand, zodat de snelheid constant blijft.\n\n**Hoe werkt het?**\nZonder trekkracht werken er nog drie krachten: lift, weerstand en gewicht. Kantel je het assenstelsel mee met de glijbaan, dan splitst het gewicht zich in W × cos γ loodrecht op de baan (gedragen door de lift) en W × sin γ langs de baan naar voren (in evenwicht met de weerstand).\n\n**Gevolg:**\nHoe kleiner de weerstand bij een bepaalde lift, hoe kleiner de glijhoek. Het beste glijgetal vind je dus bij de grootste L/D.\n\n**Valkuil:**\nHet vliegtuig 'valt' niet: het ruilt voortdurend hoogte (potentiële energie) in om de weerstand te overwinnen.",
+  "src": "syl",
+  "ref": "ECQB 51.6.1 – Forces acting on an aeroplane",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-38",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.6.1.4.5",
+  "loText": "Het verschil uitleggen tussen de snelheden voor het beste glijgetal en voor de kleinste daalsnelheid",
+  "basis": "Leerdoelen PoF",
+  "q": "Je zweeft zonder motorvermogen boven je landingsplaats en wil zo lang mogelijk in de lucht blijven, dus zo traag mogelijk hoogte verliezen. Welke snelheid kies je?",
+  "o": [
+   "De snelheid voor minimale daalsnelheid, die lager ligt dan de beste glijsnelheid",
+   "De snelheid voor minimale daalsnelheid, die hoger ligt dan de beste glijsnelheid",
+   "De beste glijsnelheid, want die geeft ook de langste tijd in de lucht",
+   "De overtreksnelheid, want daar daal je het traagst"
+  ],
+  "c": 0,
+  "e": "Kies de snelheid voor minimale daalsnelheid (minimum sink). Die ligt lager dan de beste glijsnelheid en geeft de langste tijd in de lucht, maar niet de grootste afstand.\n\n**Hoe werkt het?**\nDe daalsnelheid hangt af van de snelheid en de glijhoek. Bij de beste glijsnelheid is de glijhoek het kleinst. Vlieg je iets trager, dan wordt de glijhoek nauwelijks steiler, maar de snelheid daalt duidelijk, zodat je minder meter per seconde verliest.\n\n**In de praktijk:**\nWil je een veld bereiken, vlieg dan de beste glijsnelheid: die geeft de grootste afstand. Minimum sink ligt dichter bij de overtreksnelheid, dus je marge is kleiner.\n\n**Valkuil:**\nTrager dan minimum sink daal je weer sneller, en je nadert de overtrek.",
+  "src": "syl",
+  "ref": "ECQB 51.6.1 – Forces acting on an aeroplane",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-39",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.6.1.4.6",
+  "loText": "Uitleggen hoe de snelheid voor de beste glijvlucht verandert met de massa",
+  "basis": "Leerdoelen PoF",
+  "q": "Hoe veranderen de beste glijsnelheid en het glijgetal (bij windstilte) als de massa van het vliegtuig toeneemt?",
+  "o": [
+   "De beste glijsnelheid stijgt, het glijgetal blijft gelijk",
+   "De beste glijsnelheid daalt, het glijgetal blijft gelijk",
+   "De beste glijsnelheid blijft gelijk, het glijgetal daalt",
+   "De beste glijsnelheid stijgt, het glijgetal stijgt ook"
+  ],
+  "c": 0,
+  "e": "Bij een hogere massa stijgt de beste glijsnelheid, maar het glijgetal blijft gelijk. Je komt even ver, alleen sneller en met een hogere daalsnelheid.\n\n**Hoe werkt het?**\nHet glijgetal is gelijk aan L/D en hangt van de aanvalshoek af, niet van de massa. Het beste glijgetal haal je altijd bij dezelfde aanvalshoek. Om bij die aanvalshoek meer gewicht te dragen, heb je meer dynamische druk nodig, dus een hogere snelheid.\n\n**Rekenvoorbeeld:**\nDe snelheid stijgt met de vierkantswortel van de massa. 21 % meer massa geeft ongeveer 10 % hogere beste glijsnelheid (√1,21 = 1,1).\n\n**Valkuil:**\nMet wind is het anders: bij tegenwind vlieg je wat sneller dan de beste glijsnelheid.",
+  "src": "syl",
+  "ref": "ECQB 51.6.1 – Forces acting on an aeroplane",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
+ },
+ {
+  "id": "PFA-40",
+  "status": "pending",
+  "subject": "principles_of_flight",
+  "lic": [
+   "PPL"
+  ],
+  "lo": "51.6.1.5.6",
+  "loText": "Beschrijven hoe de bochtstraal verandert met de TAS en de rolhoek",
+  "basis": "Leerdoelen PoF",
+  "q": "Je vliegt een horizontale, gecoördineerde bocht met een constante hellingshoek. Je ware luchtsnelheid (TAS) verdubbelt. Hoe verandert de bochtstraal?",
+  "o": [
+   "Ze wordt vier keer zo groot",
+   "Ze wordt twee keer zo groot",
+   "Ze blijft gelijk",
+   "Ze wordt de helft"
+  ],
+  "c": 0,
+  "e": "De bochtstraal wordt vier keer zo groot. Bij een vaste hellingshoek groeit de straal met het kwadraat van de TAS.\n\n**Hoe werkt het?**\nDe horizontale component van de lift levert de middelpuntzoekende kracht. Bij een vaste helling is die per kilogram vliegtuig steeds even groot (g × tan φ). Een dubbele snelheid vraagt bij dezelfde straal vier keer meer middelpuntzoekende kracht, dus moet de straal vier keer groter worden: r = V² / (g × tan φ).\n\n**Andere factor:**\nMeer helling geeft een kleinere straal.\n\n**Valkuil:**\nHet gaat om de TAS, niet om de IAS. Op grote hoogte is de bochtstraal bij dezelfde IAS dus groter.",
+  "src": "syl",
+  "ref": "ECQB 51.6.1 – Forces acting on an aeroplane",
+  "opgesteld": "AI (Claude), op basis van de ECQB-leerdoelen"
  }
 ];
