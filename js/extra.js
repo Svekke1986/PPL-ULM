@@ -148,7 +148,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.4.1.1.1",
-  "loText": "Define the following: Category, class and type of aircraft, cross-country, flight time, night, private pilot, renewal, revalidation, skill test, solo flight time",
+  "loText": "De volgende begrippen definiëren: categorie, klasse en type van luchtvaartuig, overlandvlucht (cross-country), vliegtijd, nacht, privépiloot, hernieuwing (renewal), verlenging (revalidation), vaardigheidstest (skill test), solovliegtijd",
   "basis": "KB ULM",
   "q": "Vanaf welke afstand tussen twee punten spreekt het KB van een overlandvlucht?",
   "o": [
@@ -176,7 +176,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.4.1.1.7",
-  "loText": "Explain for given examples, which kinds of flights (e.g. introductory flights, cost-sharing flights, aerial work/SPO operation) a private pilot is allowed to perform",
+  "loText": "Aan de hand van gegeven voorbeelden uitleggen welke soorten vluchten (bv. initiatievluchten, vluchten met kostendeling, luchtwerk/SPO-operaties) een privépiloot mag uitvoeren",
   "basis": "KB ULM",
   "q": "Hoe lang mag een initiatievlucht met een ULM volgens het KB ten hoogste duren?",
   "o": [
@@ -204,7 +204,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.3.1.3.2",
-  "loText": "Identify a certificate of registration as such and should be able to explain the reasons for issuing such certificates",
+  "loText": "Een inschrijvingsbewijs als zodanig herkennen en kunnen uitleggen waarom zulke bewijzen afgegeven worden",
   "basis": "KB ULM",
   "q": "Je bent houder van het registratiebewijs van een ULM en je verhuist. Binnen welke termijn moet je deze wijziging schriftelijk melden aan de minister of zijn gemachtigde?",
   "o": [
@@ -232,7 +232,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.3.1.2.2",
-  "loText": "State that National registration markings must be installed and that they include: registration, possible flag, fireproof registration plate",
+  "loText": "Weten dat nationale inschrijvingskenmerken aangebracht moeten zijn en dat ze bestaan uit: inschrijving, eventueel vlag, brandwerend identificatieplaatje",
   "basis": "KB ULM",
   "q": "Een in België geregistreerd ULM voert de letters OO. Waaruit bestaat het registratiekenmerk dat daarop volgt?",
   "o": [
@@ -260,7 +260,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.2.1.2.4",
-  "loText": "Identify a certificate of airworthiness, and explain the reasons for issuing such certificates",
+  "loText": "Een bewijs van luchtwaardigheid (CofA) herkennen en uitleggen waarom zulke bewijzen afgegeven worden",
   "basis": "KB ULM",
   "q": "Waar geldt de toelating tot het luchtverkeer van een ULM met een BTTL?",
   "o": [
@@ -344,7 +344,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.4.2.1.7",
-  "loText": "State which documents may be kept at the airfield during local flights",
+  "loText": "Noemen welke documenten tijdens lokale vluchten op het vliegveld mogen blijven",
   "basis": "KB ULM",
   "q": "Welk boorddocument hoef je volgens het KB niet mee te voeren tijdens een lokale vlucht?",
   "o": [
@@ -372,7 +372,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.4.2.2.2",
-  "loText": "Name the class of medical certificate required when exercising the privileges of a LAPL, PPL, SPL or BPL",
+  "loText": "De klasse van medisch certificaat noemen die vereist is om de rechten van een LAPL, PPL, SPL of BPL uit te oefenen",
   "basis": "KB ULM",
   "q": "Welk medisch certificaat heb je nodig om een in België geregistreerd ULM te besturen?",
   "o": [
@@ -512,7 +512,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.4.2.3.3",
-  "loText": "State the requirements for class ratings, their validity and privileges",
+  "loText": "De voorwaarden voor klassebevoegdverklaringen noemen, met hun geldigheid en rechten",
   "basis": "KB ULM",
   "q": "Hoeveel uur vlieginstructie met ULA's moet je minstens gevolgd hebben voor de klassebevoegdverklaring ULA?",
   "o": [
@@ -540,7 +540,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.4.2.3.3",
-  "loText": "State the requirements for class ratings, their validity and privileges",
+  "loText": "De voorwaarden voor klassebevoegdverklaringen noemen, met hun geldigheid en rechten",
   "basis": "KB ULM",
   "q": "Je ULM vergunning met klassebevoegdverklaring blijft geldig als je, binnen 24 maanden na je praktische proef of je laatste positieve herhalingstraining, onder meer hoeveel vlieguren als enige piloot in de relevante klasse hebt uitgevoerd?",
   "o": [
@@ -568,7 +568,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.4.2.3.3",
-  "loText": "State the requirements for class ratings, their validity and privileges",
+  "loText": "De voorwaarden voor klassebevoegdverklaringen noemen, met hun geldigheid en rechten",
   "basis": "KB ULM",
   "q": "Je haalt de ervaringseisen voor je klassebevoegdverklaring niet. Hoe lang moet de herhalingstraining met een instructeur dan minstens duren?",
   "o": [
@@ -596,7 +596,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.4.2.3.4",
-  "loText": "State the requirements for other ratings, their validity and privileges according to Part-FCL (e.g. Aerobatic rating, Sailplane towing and banner towing rating, Night rating, thetered balloon etc.)",
+  "loText": "De voorwaarden voor andere bevoegdverklaringen volgens Part-FCL noemen, met hun geldigheid en rechten (bv. kunstvliegen, slepen van zweefvliegtuigen en banners, nachtvliegen, kabelballon enz.)",
   "basis": "KB ULM",
   "q": "Wanneer kan een instructeur een voorrecht binnen een klasse (bijvoorbeeld staartwiel) samen met je klassebevoegdverklaring verlengen?",
   "o": [
@@ -624,7 +624,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.4.2.3.14",
-  "loText": "State the flight experience required for a pilot to carry passengers",
+  "loText": "De vliegervaring noemen die een piloot nodig heeft om passagiers te vervoeren",
   "basis": "KB ULM",
   "q": "Je hebt net je ULM vergunning met klassebevoegdverklaring ULA behaald. Wat heb je volgens het KB nog nodig om passagiers mee te nemen?",
   "o": [
@@ -652,7 +652,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.4.2.3.4",
-  "loText": "State the requirements for other ratings, their validity and privileges according to Part-FCL (e.g. Aerobatic rating, Sailplane towing and banner towing rating, Night rating, thetered balloon etc.)",
+  "loText": "De voorwaarden voor andere bevoegdverklaringen volgens Part-FCL noemen, met hun geldigheid en rechten (bv. kunstvliegen, slepen van zweefvliegtuigen en banners, nachtvliegen, kabelballon enz.)",
   "basis": "KB ULM",
   "q": "Welk voorrecht kan volgens het KB niet verkregen worden voor de klasse autogiro?",
   "o": [
@@ -680,7 +680,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.4.2.3.4",
-  "loText": "State the requirements for other ratings, their validity and privileges according to Part-FCL (e.g. Aerobatic rating, Sailplane towing and banner towing rating, Night rating, thetered balloon etc.)",
+  "loText": "De voorwaarden voor andere bevoegdverklaringen volgens Part-FCL noemen, met hun geldigheid en rechten (bv. kunstvliegen, slepen van zweefvliegtuigen en banners, nachtvliegen, kabelballon enz.)",
   "basis": "KB ULM",
   "q": "Welke ervaring moet je na het behalen van je vergunning minstens hebben om het voorrecht voor het slepen van zweefvliegtuigen te verkrijgen?",
   "o": [
@@ -848,7 +848,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.4.1.1.5",
-  "loText": "List the duties and responsibilities of the PIC with regard to NCO.GEN.105",
+  "loText": "De taken en verantwoordelijkheden van de gezagvoerder (PIC) volgens NCO.GEN.105 opsommen",
   "basis": "KB ULM",
   "q": "Waarvan moet de gezagvoerder zich volgens het KB onder meer vergewissen voordat een vlucht wordt aangevat?",
   "o": [
@@ -876,7 +876,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.4.1.1.5",
-  "loText": "List the duties and responsibilities of the PIC with regard to NCO.GEN.105",
+  "loText": "De taken en verantwoordelijkheden van de gezagvoerder (PIC) volgens NCO.GEN.105 opsommen",
   "basis": "KB ULM",
   "q": "Tijdens een overlandvlucht merk je dat je geschiktheid door vermoeidheid aanzienlijk verminderd is. Wat legt het KB op?",
   "o": [
@@ -904,7 +904,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.4.1.1.6",
-  "loText": "Explain the difference between a 'commercial' and 'non-commercial' flight",
+  "loText": "Het verschil uitleggen tussen een 'commerciële' en een 'niet-commerciële' vlucht",
   "basis": "KB ULM",
   "q": "Voor welke commerciële activiteit mag een ULM gebruikt worden, mits voorafgaande toelating tot commerciële vluchtuitvoering?",
   "o": [
@@ -933,7 +933,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.2.1.2",
-  "loText": "State the responsibilities of the PIC, and identify under what circumstances departure from the Rules of the Air may be allowed",
+  "loText": "De verantwoordelijkheden van de gezagvoerder (PIC) noemen en aangeven in welke omstandigheden afgeweken mag worden van de luchtverkeersregels",
   "basis": "SERA",
   "q": "Je bent gezagvoerder (pilot-in-command) en laat tijdens een navigatievlucht een andere piloot aan boord de besturing overnemen. Wie is verantwoordelijk voor de uitvoering van de vlucht volgens de luchtverkeersregels?",
   "o": [
@@ -963,7 +963,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.2.1.2",
-  "loText": "State the responsibilities of the PIC, and identify under what circumstances departure from the Rules of the Air may be allowed",
+  "loText": "De verantwoordelijkheden van de gezagvoerder (PIC) noemen en aangeven in welke omstandigheden afgeweken mag worden van de luchtverkeersregels",
   "basis": "SERA",
   "q": "Wanneer mag een gezagvoerder volgens SERA afwijken van de luchtverkeersregels?",
   "o": [
@@ -993,7 +993,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.2.1.2",
-  "loText": "State the responsibilities of the PIC, and identify under what circumstances departure from the Rules of the Air may be allowed",
+  "loText": "De verantwoordelijkheden van de gezagvoerder (PIC) noemen en aangeven in welke omstandigheden afgeweken mag worden van de luchtverkeersregels",
   "basis": "SERA",
   "q": "Je plant een VFR-navigatievlucht weg van je thuisbasis. Wat moet je vluchtvoorbereiding volgens SERA minstens omvatten, naast het vertrouwd raken met alle beschikbare informatie?",
   "o": [
@@ -1023,7 +1023,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.2.1.2",
-  "loText": "State the responsibilities of the PIC, and identify under what circumstances departure from the Rules of the Air may be allowed",
+  "loText": "De verantwoordelijkheden van de gezagvoerder (PIC) noemen en aangeven in welke omstandigheden afgeweken mag worden van de luchtverkeersregels",
   "basis": "SERA",
   "q": "Je hebt de avond voor een geplande vlucht medicatie genomen die je nog duidelijk suf maakt. Wat zegt SERA hierover?",
   "o": [
@@ -1053,7 +1053,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.2.1.2",
-  "loText": "State the responsibilities of the PIC, and identify under what circumstances departure from the Rules of the Air may be allowed",
+  "loText": "De verantwoordelijkheden van de gezagvoerder (PIC) noemen en aangeven in welke omstandigheden afgeweken mag worden van de luchtverkeersregels",
   "basis": "SERA",
   "q": "Een piloot vliegt laag en met steile bochten boven het huis van een vriend om indruk te maken, waarbij mensen in de tuin gevaar lopen. Welke regel overtreedt hij in de eerste plaats?",
   "o": [
@@ -1113,7 +1113,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1.3",
-  "loText": "Explain when the cruising levels shall be expressed in terms of altitude (ALT) or flight levels (FLs)",
+  "loText": "Uitleggen wanneer kruisniveaus uitgedrukt worden als hoogte (ALT) of als vliegniveau (FL)",
   "basis": "SERA",
   "q": "Je vliegt VFR op kruishoogte, onder de overgangshoogte (transition altitude). Hoe wordt je kruisniveau dan uitgedrukt?",
   "o": [
@@ -1143,7 +1143,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.6.1.2.4",
-  "loText": "State the correct flight altitude with regard to semi-circular rules for a given routing",
+  "loText": "De juiste vlieghoogte volgens de semicirculaire regels noemen voor een gegeven route",
   "basis": "SERA",
   "q": "Je vliegt VFR in kruisvlucht hoger dan 3 000 ft boven de grond, waar de tabel van kruisniveaus geldt, met een magnetische grondkoers (track) van 270°. Welk van deze niveaus is een correct VFR-kruisniveau?",
   "o": [
@@ -1173,7 +1173,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1",
-  "loText": "Rules - SERA",
+  "loText": "Regels - SERA",
   "basis": "SERA",
   "q": "Tijdens een vlucht zie je een clubtoestel en je wil spontaan in formatie naast hem gaan vliegen. Wat is volgens SERA de basisvoorwaarde voor een formatievlucht?",
   "o": [
@@ -1203,7 +1203,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1",
-  "loText": "Rules - SERA",
+  "loText": "Regels - SERA",
   "basis": "SERA",
   "q": "Binnen welke afstand van de vluchtleider moet elk toestel van een formatie (geen staatsluchtvaartuigen) blijven in gecontroleerd luchtruim?",
   "o": [
@@ -1233,7 +1233,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.3.7",
-  "loText": "Explain the implications of danger-, restricted- and prohibited areas to the planned routing",
+  "loText": "De gevolgen van gevaarlijke, beperkte en verboden gebieden voor de geplande route uitleggen",
   "basis": "SERA",
   "q": "Je route loopt door een gepubliceerd gebied met beperkingen (restricted area). Wanneer mag je erdoor vliegen?",
   "o": [
@@ -1263,7 +1263,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1.1",
-  "loText": "Describe the rules for the avoidance of collisions",
+  "loText": "De regels om botsingen te vermijden beschrijven",
   "basis": "SERA",
   "q": "Je hebt voorrang volgens de regels, maar je ziet dat het andere toestel niet uitwijkt en een botsing dreigt. Wat geldt volgens SERA?",
   "o": [
@@ -1293,7 +1293,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1.1",
-  "loText": "Describe the rules for the avoidance of collisions",
+  "loText": "De regels om botsingen te vermijden beschrijven",
   "basis": "SERA",
   "q": "Een ander toestel moet jou voorrang verlenen. Wat moet jij volgens SERA doen?",
   "o": [
@@ -1353,7 +1353,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1.1",
-  "loText": "Describe the rules for the avoidance of collisions",
+  "loText": "De regels om botsingen te vermijden beschrijven",
   "basis": "SERA",
   "q": "Je moet voorrang verlenen aan een ander toestel. Hoe mag je bij voorkeur NIET passeren?",
   "o": [
@@ -1383,7 +1383,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.4.1.4",
-  "loText": "Determine the right of way when other categories of aircraft (gliders, hang-gliders, balloons, etc.) are involved",
+  "loText": "De voorrang bepalen wanneer andere categorieën luchtvaartuigen (zweefvliegtuigen, hangglijders, ballonnen enz.) betrokken zijn",
   "basis": "SERA",
   "q": "Je vliegt met een motorvliegtuig. Een zweeftoestel nadert van links op ongeveer dezelfde hoogte, op kruisende koers. Wie moet voorrang verlenen?",
   "o": [
@@ -1413,7 +1413,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.4.1.4",
-  "loText": "Determine the right of way when other categories of aircraft (gliders, hang-gliders, balloons, etc.) are involved",
+  "loText": "De voorrang bepalen wanneer andere categorieën luchtvaartuigen (zweefvliegtuigen, hangglijders, ballonnen enz.) betrokken zijn",
   "basis": "SERA",
   "q": "Je vliegt met een motorvliegtuig en ziet rechts van je een sleeptoestel dat een zweeftoestel sleept, op kruisende koers en ongeveer dezelfde hoogte. Het sleeptoestel heeft jou aan zijn linkerzijde. Wie verleent voorrang?",
   "o": [
@@ -1443,7 +1443,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1.1",
-  "loText": "Describe the rules for the avoidance of collisions",
+  "loText": "De regels om botsingen te vermijden beschrijven",
   "basis": "SERA",
   "q": "Wanneer is een luchtvaartuig volgens SERA een inhalend luchtvaartuig?",
   "o": [
@@ -1503,7 +1503,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.4.1.4",
-  "loText": "Determine the right of way when other categories of aircraft (gliders, hang-gliders, balloons, etc.) are involved",
+  "loText": "De voorrang bepalen wanneer andere categorieën luchtvaartuigen (zweefvliegtuigen, hangglijders, ballonnen enz.) betrokken zijn",
   "basis": "SERA",
   "q": "Een zweefvlieger haalt een ander zweeftoestel in. Naar welke kant mag hij uitwijken?",
   "o": [
@@ -1593,7 +1593,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.4.1.4",
-  "loText": "Determine the right of way when other categories of aircraft (gliders, hang-gliders, balloons, etc.) are involved",
+  "loText": "De voorrang bepalen wanneer andere categorieën luchtvaartuigen (zweefvliegtuigen, hangglijders, ballonnen enz.) betrokken zijn",
   "basis": "SERA",
   "q": "Je vliegt met een motorvliegtuig lager in het circuit dan een zweeftoestel dat ook wil landen. Wie heeft voorrang?",
   "o": [
@@ -1713,7 +1713,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.2.2",
-  "loText": "Explain the pilot's responsibilities in respect of ATC-communication, especially the obligation to 'read-back', follow ATC instructions, the right to request a changed clearance or rejection of a given clearance",
+  "loText": "De verantwoordelijkheden van de piloot bij de communicatie met ATC uitleggen, in het bijzonder de verplichting tot 'read-back' (teruglezen), het opvolgen van ATC-instructies en het recht om een gewijzigde klaring te vragen of een gegeven klaring te weigeren",
   "basis": "SERA",
   "q": "Je taxiet op een gecontroleerd vliegveld en je taxiklaring brengt je over een baan. Je hebt geen klaring gekregen om die baan te betreden of te kruisen. Wat doe je bij de wachtpositie (runway-holding position)?",
   "o": [
@@ -1743,7 +1743,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.9.3.3.4",
-  "loText": "Explain the characteristics (color and fixed/flashing) of: RWY-edge lights; RWY-THR and wing-bar lights, RWY-end lights, RWY-centre-line lights, RWY-lead-in lights, RWY-TDZ lights, TWY-centre-line lights, TWY-edge lights, stop bars",
+  "loText": "De kenmerken (kleur en vast/knipperend) uitleggen van: baanrandlichten; drempellichten en drempelvleugellichten (wing bars), baaneindlichten, baanaslichten, aanvliegrichtingslichten (lead-in), lichten van de landingszone (TDZ), taxibaanaslichten, taxibaanrandlichten, stopbalken (stop bars)",
   "basis": "SERA",
   "q": "Je hebt van de toren klaring gekregen om een baan te kruisen, maar de stopstreep (stop bar) vóór de baan brandt nog. Wat doe je?",
   "o": [
@@ -1773,7 +1773,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1",
-  "loText": "Rules - SERA",
+  "loText": "Regels - SERA",
   "basis": "SERA",
   "q": "Je taxiet op een groot vliegveld met luchtverkeersdiensten en weet niet meer precies waar je bent op het manoeuvreerterrein. Je staat niet op een baan. Wat doe je?",
   "o": [
@@ -1803,7 +1803,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1",
-  "loText": "Rules - SERA",
+  "loText": "Regels - SERA",
   "basis": "SERA",
   "q": "Je bent op een vliegveld met luchtverkeersdiensten je positie kwijt en merkt dat je op een baan staat. Wat doe je volgens SERA?",
   "o": [
@@ -1833,7 +1833,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1.2",
-  "loText": "Describe the lights, including their angles, to be displayed by aircraft",
+  "loText": "De lichten beschrijven, met hun stralingshoeken, die luchtvaartuigen moeten voeren",
   "basis": "SERA",
   "q": "Welke lichten moet een vliegtuig 's nachts tijdens de vlucht voeren?",
   "o": [
@@ -1863,7 +1863,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1.2",
-  "loText": "Describe the lights, including their angles, to be displayed by aircraft",
+  "loText": "De lichten beschrijven, met hun stralingshoeken, die luchtvaartuigen moeten voeren",
   "basis": "SERA",
   "q": "Je vliegt overdag met een vliegtuig dat uitgerust is met anti-botsingslichten. Moet je die aanzetten?",
   "o": [
@@ -1893,7 +1893,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1",
-  "loText": "Rules - SERA",
+  "loText": "Regels - SERA",
   "basis": "SERA",
   "q": "Je wil met een vriend oefenen in gesimuleerde instrumentvliegomstandigheden (onder de kap/foggles). Aan welke voorwaarden moet volgens SERA zijn voldaan?",
   "o": [
@@ -1923,7 +1923,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1",
-  "loText": "Rules - SERA",
+  "loText": "Regels - SERA",
   "basis": "SERA",
   "q": "Je nadert een vliegveld om te landen. Er zijn geen afwijkende aanduidingen en de luchtverkeersleiding geeft geen instructies. In welke richting maak je je bochten bij het aanvliegen voor de landing en na het opstijgen?",
   "o": [
@@ -1953,7 +1953,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1.1",
-  "loText": "Describe the rules for the avoidance of collisions",
+  "loText": "De regels om botsingen te vermijden beschrijven",
   "basis": "SERA",
   "q": "Je taxiet met een watervliegtuig op het water. Een schip nadert van rechts op kruisende koers en er is botsingsgevaar. Wat doe je?",
   "o": [
@@ -1983,7 +1983,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1",
-  "loText": "Rules - SERA",
+  "loText": "Regels - SERA",
   "basis": "SERA",
   "q": "Wanneer moet een piloot volgens SERA minstens een tijdcontrole (time check) verkrijgen?",
   "o": [
@@ -2133,7 +2133,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.3.2",
-  "loText": "Describe the general structure of the airspace with classes of airspace A-G and their lower/upper horizontal limits",
+  "loText": "De algemene indeling van het luchtruim beschrijven, met de luchtruimklassen A-G en hun onder- en bovengrenzen",
   "basis": "SERA",
   "q": "De VMC-tabel van SERA (minimumzicht en afstand tot de wolken per luchtruimklasse en hoogte) vermeldt ook VMC-minima voor klasse A. Wat betekent dat voor een VFR-vlucht?",
   "o": [
@@ -2193,7 +2193,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.3.6",
-  "loText": "Describe the dimension and significance of Control Zones (CTR) and the pilot's obigations before/at entering a CTR",
+  "loText": "De afmetingen en het belang van controlezones (CTR) beschrijven, en de verplichtingen van de piloot voor/bij het binnenvliegen van een CTR",
   "basis": "SERA",
   "q": "Je wilt zonder bijzondere klaring VFR opstijgen van een luchtvaartterrein in een plaatselijk luchtverkeersleidingsgebied (CTR). Onder welke gerapporteerde wolkenbasis (ceiling) mag dat niet zonder klaring van de luchtverkeersleiding?",
   "o": [
@@ -2223,7 +2223,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.3.6",
-  "loText": "Describe the dimension and significance of Control Zones (CTR) and the pilot's obigations before/at entering a CTR",
+  "loText": "De afmetingen en het belang van controlezones (CTR) beschrijven, en de verplichtingen van de piloot voor/bij het binnenvliegen van een CTR",
   "basis": "SERA",
   "q": "De METAR van een luchtvaartterrein in een CTR meldt een grondzicht (ground visibility) van 4 000 m en een wolkenbasis van 2 500 ft. Wat geldt er voor jouw VFR-vertrek?",
   "o": [
@@ -2253,7 +2253,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.3.6",
-  "loText": "Describe the dimension and significance of Control Zones (CTR) and the pilot's obigations before/at entering a CTR",
+  "loText": "De afmetingen en het belang van controlezones (CTR) beschrijven, en de verplichtingen van de piloot voor/bij het binnenvliegen van een CTR",
   "basis": "SERA",
   "q": "Op een luchtvaartterrein in een CTR liggen de gemelde wolkenbasis en het grondzicht onder de VFR-minima voor een CTR. Je hebt geen klaring. Wat mag je als VFR-vlucht NIET doen?",
   "o": [
@@ -2283,7 +2283,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.4.3.1",
-  "loText": "State under which conditions a VFR flight may be conducted during night time",
+  "loText": "Noemen onder welke voorwaarden een VFR-vlucht 's nachts uitgevoerd mag worden",
   "basis": "SERA",
   "q": "Wat is volgens SERA de minimale wolkenbasis (ceiling) voor een VFR-vlucht 's nachts?",
   "o": [
@@ -2313,7 +2313,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.4.3.1",
-  "loText": "State under which conditions a VFR flight may be conducted during night time",
+  "loText": "Noemen onder welke voorwaarden een VFR-vlucht 's nachts uitgevoerd mag worden",
   "basis": "SERA",
   "q": "Je vliegt 's nachts VFR in klasse G op 1 500 ft AMSL, aan 100 kt IAS. Wat is het minimale vliegzicht?",
   "o": [
@@ -2343,7 +2343,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.4.3.1",
-  "loText": "State under which conditions a VFR flight may be conducted during night time",
+  "loText": "Noemen onder welke voorwaarden een VFR-vlucht 's nachts uitgevoerd mag worden",
   "basis": "SERA",
   "q": "Je vliegt 's nachts VFR in een CTR van klasse D op 2 000 ft AMSL boven vlak terrein. Welke extra eis geldt er, naast de afstand tot de wolken?",
   "o": [
@@ -2373,7 +2373,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.4.3.1",
-  "loText": "State under which conditions a VFR flight may be conducted during night time",
+  "loText": "Noemen onder welke voorwaarden een VFR-vlucht 's nachts uitgevoerd mag worden",
   "basis": "SERA",
   "q": "Welke eis stelt SERA aan de radioverbinding tijdens een VFR-vlucht bij nacht?",
   "o": [
@@ -2403,7 +2403,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.4.3.1",
-  "loText": "State under which conditions a VFR flight may be conducted during night time",
+  "loText": "Noemen onder welke voorwaarden een VFR-vlucht 's nachts uitgevoerd mag worden",
   "basis": "SERA",
   "q": "Je vliegt 's nachts VFR boven vlak terrein waarvoor de staat geen minimumvlieghoogte heeft vastgesteld. Hoe hoog moet je minstens vliegen (behalve bij opstijgen en landen)?",
   "o": [
@@ -2433,7 +2433,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.4.3.1",
-  "loText": "State under which conditions a VFR flight may be conducted during night time",
+  "loText": "Noemen onder welke voorwaarden een VFR-vlucht 's nachts uitgevoerd mag worden",
   "basis": "SERA",
   "q": "Mag je 's nachts VFR boven een wolkenlaag vliegen (VFR on top)?",
   "o": [
@@ -2463,7 +2463,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.3.3",
-  "loText": "State that VFR flights can only be executed up to FL195, and that an approval is required for higher VFR flights",
+  "loText": "Weten dat VFR-vluchten alleen tot FL195 uitgevoerd mogen worden, en dat voor hogere VFR-vluchten een toelating vereist is",
   "basis": "SERA",
   "q": "Wat is in principe het hoogste vliegniveau waarop je VFR mag vliegen?",
   "o": [
@@ -2553,7 +2553,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1.5",
-  "loText": "Explain the difference between 'populated' and 'unpopulated areas'",
+  "loText": "Het verschil uitleggen tussen 'bewoonde' en 'onbewoonde gebieden'",
   "basis": "SERA",
   "q": "Je vliegt VFR over een muziekfestival in een weiland, ver buiten de bebouwde kom. Welke minimumhoogte geldt boven die mensenmassa?",
   "o": [
@@ -2613,7 +2613,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1.7",
-  "loText": "State for which flights an air traffic control (ATC) clearance shall be obtained",
+  "loText": "Noemen voor welke vluchten een klaring van de luchtverkeersleiding (ATC-klaring) verkregen moet worden",
   "basis": "SERA",
   "q": "Je vliegt VFR zonder vliegplan in gecontroleerd luchtruim. De wolken zakken en je wilt (met de juiste bevoegdheid) verder als IFR-vlucht. Wat moet je doen?",
   "o": [
@@ -2643,7 +2643,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1.7",
-  "loText": "State for which flights an air traffic control (ATC) clearance shall be obtained",
+  "loText": "Noemen voor welke vluchten een klaring van de luchtverkeersleiding (ATC-klaring) verkregen moet worden",
   "basis": "SERA",
   "q": "In welke luchtruimklassen moet een VFR-vlucht de regels voor luchtverkeersleidingsdienst (Section 8) volgen, en is ze dus een gecontroleerde vlucht?",
   "o": [
@@ -2673,7 +2673,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.4.2.3",
-  "loText": "Explain that the possibility to execute SVFR flights exists only within CTRs, and that this restriction has to be linked to the minimum weather conditions for VFR flights in airspace GOLF",
+  "loText": "Uitleggen dat SVFR-vluchten alleen binnen CTR's mogelijk zijn, en dat die beperking gekoppeld moet worden aan de minimale weersomstandigheden voor VFR-vluchten in luchtruim G (GOLF)",
   "basis": "SERA",
   "q": "Waar en onder welke voorwaarde mag een bijzondere VFR-vlucht (special VFR) worden uitgevoerd?",
   "o": [
@@ -2853,7 +2853,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.3.5",
-  "loText": "List the available air traffic services for different types of airspace",
+  "loText": "De beschikbare luchtverkeersdiensten opsommen voor de verschillende soorten luchtruim",
   "basis": "SERA",
   "q": "Welke dienst krijgt een VFR-vlucht in luchtruim klasse C?",
   "o": [
@@ -2883,7 +2883,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.3.5",
-  "loText": "List the available air traffic services for different types of airspace",
+  "loText": "De beschikbare luchtverkeersdiensten opsommen voor de verschillende soorten luchtruim",
   "basis": "SERA",
   "q": "Je vliegt VFR in een CTR van klasse D. Wat kun je van de luchtverkeersleiding verwachten over ander verkeer?",
   "o": [
@@ -2943,7 +2943,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.3.6",
-  "loText": "Describe the dimension and significance of Control Zones (CTR) and the pilot's obigations before/at entering a CTR",
+  "loText": "De afmetingen en het belang van controlezones (CTR) beschrijven, en de verplichtingen van de piloot voor/bij het binnenvliegen van een CTR",
   "basis": "SERA",
   "q": "Welke luchtruimklasse mag volgens SERA NIET worden gebruikt voor een plaatselijk luchtverkeersleidingsgebied (CTR)?",
   "o": [
@@ -2973,7 +2973,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.3.5",
-  "loText": "List the available air traffic services for different types of airspace",
+  "loText": "De beschikbare luchtverkeersdiensten opsommen voor de verschillende soorten luchtruim",
   "basis": "SERA",
   "q": "Welke luchtverkeersdienst kun je als VFR-vlucht krijgen in luchtruim klasse G?",
   "o": [
@@ -3003,7 +3003,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.3.5",
-  "loText": "List the available air traffic services for different types of airspace",
+  "loText": "De beschikbare luchtverkeersdiensten opsommen voor de verschillende soorten luchtruim",
   "basis": "SERA",
   "q": "In welke luchtruimklasse worden VFR-vluchten door de luchtverkeersleiding ook van andere VFR-vluchten gesepareerd?",
   "o": [
@@ -3033,7 +3033,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.3.2",
-  "loText": "Describe the general structure of the airspace with classes of airspace A-G and their lower/upper horizontal limits",
+  "loText": "De algemene indeling van het luchtruim beschrijven, met de luchtruimklassen A-G en hun onder- en bovengrenzen",
   "basis": "SERA",
   "q": "In welke luchtruimklasse geldt voor VFR-vluchten GEEN snelheidsbeperking van 250 kt IAS onder 10 000 ft AMSL?",
   "o": [
@@ -3063,7 +3063,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.3.2",
-  "loText": "Describe the general structure of the airspace with classes of airspace A-G and their lower/upper horizontal limits",
+  "loText": "De algemene indeling van het luchtruim beschrijven, met de luchtruimklassen A-G en hun onder- en bovengrenzen",
   "basis": "SERA",
   "q": "Welke klasse heeft al het luchtruim boven FL 195 volgens SERA?",
   "o": [
@@ -3093,7 +3093,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.3.2",
-  "loText": "Describe the general structure of the airspace with classes of airspace A-G and their lower/upper horizontal limits",
+  "loText": "De algemene indeling van het luchtruim beschrijven, met de luchtruimklassen A-G en hun onder- en bovengrenzen",
   "basis": "SERA",
   "q": "Een TMA van klasse D begint op 2 500 ft AMSL; daaronder ligt klasse G. Je vliegt VFR op precies 2 500 ft. Welke regels gelden er?",
   "o": [
@@ -3273,7 +3273,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "40.1.1.4.2",
-  "loText": "Name the correct priority of radio messages",
+  "loText": "De juiste voorrangsvolgorde van radioberichten noemen",
   "basis": "SERA",
   "q": "Welke categorie berichten heeft de laagste prioriteit in het luchtvaartmobiele radioverkeer?",
   "o": [
@@ -3333,7 +3333,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "40.1.2",
-  "loText": "General operating procedures",
+  "loText": "Algemene procedures",
   "basis": "SERA",
   "q": "In welke taal moet het radioverkeer tussen luchtvaartuig en grondstation gevoerd worden?",
   "o": [
@@ -3363,7 +3363,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "40.1.2.1.2",
-  "loText": "Explain which names are transmitted phonetically (e.g. VOR, NDB, QNH) and which have to be spelled",
+  "loText": "Uitleggen welke namen als woord uitgesproken worden (bv. VOR, NDB, QNH) en welke gespeld moeten worden",
   "basis": "SERA",
   "q": "Wanneer gebruik je volgens SERA het radiotelefonische spellingsalfabet (Alfa, Bravo, Charlie, ...)?",
   "o": [
@@ -3423,7 +3423,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "40.1.2.2.6",
-  "loText": "State how to transmit QNH correctly",
+  "loText": "Noemen hoe de QNH correct uitgezonden wordt",
   "basis": "SERA",
   "q": "De verkeersleider moet je een QNH van 1000 hPa doorgeven. Hoe wordt die waarde correct uitgezonden?",
   "o": [
@@ -3453,7 +3453,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "40.1.2.2.1",
-  "loText": "Describe the method of transmission of numbers: pronunciation, single digits, whole hundreds and whole thousands",
+  "loText": "De manier beschrijven waarop getallen uitgezonden worden: uitspraak, afzonderlijke cijfers, ronde honderdtallen en ronde duizendtallen",
   "basis": "SERA",
   "q": "Hoe wordt de transpondercode 7000 correct uitgesproken in het radioverkeer?",
   "o": [
@@ -3513,7 +3513,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "40.1.2.2.1",
-  "loText": "Describe the method of transmission of numbers: pronunciation, single digits, whole hundreds and whole thousands",
+  "loText": "De manier beschrijven waarop getallen uitgezonden worden: uitspraak, afzonderlijke cijfers, ronde honderdtallen en ronde duizendtallen",
   "basis": "SERA",
   "q": "De toren meldt een wind van 160 graden, 18 knopen, met windstoten tot 30 knopen. Hoe wordt dit correct uitgezonden?",
   "o": [
@@ -3633,7 +3633,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "40.1.2.8.1",
-  "loText": "Describe the procedure for transfer of communication: by ground station, or by aircraft",
+  "loText": "De procedure voor het overdragen van de communicatie beschrijven: door het grondstation of door het luchtvaartuig",
   "basis": "SERA",
   "q": "Je krijgt de instructie MONITOR TOWER 118.7. Wat doe je?",
   "o": [
@@ -3723,7 +3723,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "40.1.2.7.2",
-  "loText": "Describe the abbreviated forms for aircraft call signs",
+  "loText": "De verkorte vormen van roepnamen van luchtvaartuigen beschrijven",
   "basis": "SERA",
   "q": "Je vliegt met de OO-PJV. Welke verkorte roepnaam is correct volgens SERA, zodra je die mag gebruiken?",
   "o": [
@@ -3753,7 +3753,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "40.1.2.4",
-  "loText": "Transmission technique",
+  "loText": "Zendtechniek",
   "basis": "SERA",
   "q": "Tijdens welke fasen wordt er, behalve om veiligheidsredenen, geen uitzending gericht aan een luchtvaartuig?",
   "o": [
@@ -3873,7 +3873,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "40.1.2.5.4",
-  "loText": "State how to make use of radio phraseology to correct errors",
+  "loText": "Noemen hoe je radiofraseologie gebruikt om fouten te verbeteren",
   "basis": "SERA",
   "q": "Je meldt: OO-ABC, POSITION OVER ALFA, CORRECTION... Je merkte dat je een verkeerd meldpunt noemde. Hoe ga je volgens SERA verder?",
   "o": [
@@ -3903,7 +3903,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "40.1.2.5.5",
-  "loText": "State how to request the repetition of a certain part of a message",
+  "loText": "Noemen hoe je vraagt om een bepaald deel van een bericht te herhalen",
   "basis": "SERA",
   "q": "Je ontvangt van de toren: OO-ABC, JOIN RIGHT DOWNWIND RUNWAY 24, QNH... maar alles na QNH is onleesbaar. Wat vraag je?",
   "o": [
@@ -3933,7 +3933,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "40.1.2.5.4",
-  "loText": "State how to make use of radio phraseology to correct errors",
+  "loText": "Noemen hoe je radiofraseologie gebruikt om fouten te verbeteren",
   "basis": "SERA",
   "q": "Na je readback antwoordt de verkeersleider: NEGATIVE, I SAY AGAIN, QNH 1009. Wat betekent dit?",
   "o": [
@@ -3963,7 +3963,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "40.1.5.1",
-  "loText": "Distress (definition, frequencies, watch of distress frequencies, distress signal and distress message)",
+  "loText": "Nood (definitie, frequenties, uitluisteren van noodfrequenties, noodsein en noodbericht)",
   "basis": "SERA",
   "q": "Je maakt een gewone VFR-vlucht boven land. Wat beveelt SERA aan over het uitluisteren van de noodfrequentie?",
   "o": [
@@ -3993,7 +3993,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "40.1.4.1.3",
-  "loText": "Identify frequencies to be used in attempt to establish communication",
+  "loText": "De frequenties noemen die gebruikt moeten worden bij een poging om verbinding te maken",
   "basis": "SERA",
   "q": "Je krijgt na een frequentiewissel geen antwoord op de nieuwe frequentie en je vermoedt een verbindingsprobleem. Wat probeer je volgens SERA eerst?",
   "o": [
@@ -4113,7 +4113,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "40.1.5.1.7",
-  "loText": "List the correctly sequenced elements of a DISTRESS signal/message and describe the message content",
+  "loText": "De elementen van een noodsein/noodbericht (DISTRESS) in de juiste volgorde opsommen en de inhoud van het bericht beschrijven",
   "basis": "SERA",
   "q": "Wat is, na MAYDAY MAYDAY MAYDAY, de juiste volgorde van de elementen van een noodbericht?",
   "o": [
@@ -4143,7 +4143,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "40.1.5.1.5",
-  "loText": "Describe the action to be taken by the station which receives a DISTRESS message",
+  "loText": "De handelingen beschrijven van het station dat een noodbericht (DISTRESS) ontvangt",
   "basis": "SERA",
   "q": "Tijdens noodverkeer stoort een station voortdurend op de frequentie. Welke uitdrukking gebruikt het luchtvaartuig in nood of de ATS-eenheid die het noodverkeer leidt om radiostilte op te leggen?",
   "o": [
@@ -4173,7 +4173,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "40.1.5.1",
-  "loText": "Distress (definition, frequencies, watch of distress frequencies, distress signal and distress message)",
+  "loText": "Nood (definitie, frequenties, uitluisteren van noodfrequenties, noodsein en noodbericht)",
   "basis": "SERA",
   "q": "Je motorprobleem is opgelost en je bent niet langer in nood. Hoe wordt het noodverkeer beëindigd?",
   "o": [
@@ -4203,7 +4203,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "40.1.5.1.6",
-  "loText": "Describe the action to be taken by all other stations when a DISTRESS procedure is in progress",
+  "loText": "De handelingen beschrijven van alle andere stations terwijl een noodprocedure (DISTRESS) aan de gang is",
   "basis": "SERA",
   "q": "Je hoort op de frequentie een MAYDAY-oproep van een ander luchtvaartuig. De toren bevestigt de oproep meteen. Je kunt zelf niet helpen. Wat doe je?",
   "o": [
@@ -4383,7 +4383,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "40.1.2.10.2",
-  "loText": "Describe the requirement to read back other data such as runway, secondary surveillance radar (SSR) codes, etc.",
+  "loText": "De verplichting beschrijven om andere gegevens terug te lezen, zoals de baan, transpondercodes (SSR-codes) enz.",
   "basis": "SERA",
   "q": "Welk gegeven moet je volgens SERA altijd terugherhalen, ook als het in een ATIS-uitzending vermeld wordt?",
   "o": [
@@ -4413,7 +4413,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.8",
-  "loText": "Procedures related to emergencies, communication failure and contingencies",
+  "loText": "Procedures bij noodsituaties, radioverbindingsverlies en onvoorziene omstandigheden",
   "basis": "SERA",
   "q": "Je ziet een luchtvaartuig dat één voor één, met korte tussenpozen, rode vuurpijlen of lichtkogels afschiet. Wat betekent dit sein?",
   "o": [
@@ -4443,7 +4443,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.8",
-  "loText": "Procedures related to emergencies, communication failure and contingencies",
+  "loText": "Procedures bij noodsituaties, radioverbindingsverlies en onvoorziene omstandigheden",
   "basis": "SERA",
   "q": "Wat betekent het herhaaldelijk in- en uitschakelen van de landingslichten door een luchtvaartuig in de vlucht?",
   "o": [
@@ -4473,7 +4473,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.5",
-  "loText": "Signals and interception of civil aircraft",
+  "loText": "Seinen en onderschepping van burgerluchtvaartuigen",
   "basis": "SERA",
   "q": "Tijdens een VFR-vlucht zie je vanaf de grond met tussenpozen van 10 seconden een reeks projectielen opstijgen die telkens rode en groene lichten of sterren verspreiden. Wat betekent dit?",
   "o": [
@@ -4713,7 +4713,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.9.3.1.4",
-  "loText": "Describe how lights from a signalling lamp should be confirmed by aircraft on ground and in flight",
+  "loText": "Beschrijven hoe een luchtvaartuig lichtseinen van een seinlamp bevestigt, op de grond en in de lucht",
   "basis": "SERA",
   "q": "Overdag bevestig je een lichtsein van de toren in de vlucht door met de vleugels op en neer te bewegen. Wanneer geldt deze manier van bevestigen NIET?",
   "o": [
@@ -4743,7 +4743,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.9.3.1.4",
-  "loText": "Describe how lights from a signalling lamp should be confirmed by aircraft on ground and in flight",
+  "loText": "Beschrijven hoe een luchtvaartuig lichtseinen van een seinlamp bevestigt, op de grond en in de lucht",
   "basis": "SERA",
   "q": "Je vliegt 's nachts VFR en krijgt een lichtsein van de toren. Hoe bevestig je dat je het sein hebt ontvangen?",
   "o": [
@@ -4773,7 +4773,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.9.3.1.4",
-  "loText": "Describe how lights from a signalling lamp should be confirmed by aircraft on ground and in flight",
+  "loText": "Beschrijven hoe een luchtvaartuig lichtseinen van een seinlamp bevestigt, op de grond en in de lucht",
   "basis": "SERA",
   "q": "Je taxiet overdag zonder werkende radio en ontvangt een groen knipperlicht van de toren. Hoe bevestig je het sein volgens SERA?",
   "o": [
@@ -4863,7 +4863,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.9.5.1.1",
-  "loText": "Describe the colours and meaning of 'closed markings' on RWYs and TWYs",
+  "loText": "De kleuren en betekenis beschrijven van markeringen voor gesloten banen en taxibanen ('closed markings')",
   "basis": "SERA",
   "q": "Op een deel van een taxibaan ligt een groot wit kruis in één kleur. Wat betekent dit?",
   "o": [
@@ -4893,7 +4893,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.9.3.1.2",
-  "loText": "Describe a landing-direction indicator",
+  "loText": "Een landingsrichtingaanwijzer beschrijven",
   "basis": "SERA",
   "q": "Hoe lees je de richting voor landen en opstijgen af uit een witte of oranje landings-T op een luchtvaartterrein?",
   "o": [
@@ -4953,7 +4953,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.9.3.4.4",
-  "loText": "Describe the meaning of a sign 'C' as a reporting point for air traffic services",
+  "loText": "De betekenis beschrijven van een bord 'C' als meldpunt voor de luchtverkeersdiensten",
   "basis": "SERA",
   "q": "Je ziet op een luchtvaartterrein een bord met een zwarte letter C op een gele achtergrond. Wat geeft dit aan?",
   "o": [
@@ -4983,7 +4983,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.5",
-  "loText": "Signals and interception of civil aircraft",
+  "loText": "Seinen en onderschepping van burgerluchtvaartuigen",
   "basis": "SERA",
   "q": "Een seingever (marshaller) strekt zijn arm voor het lichaam op schouderhoogte, brengt zijn hand naar de linkerschouder en maakt dan een snijbeweging langs de keel naar de rechterschouder. Wat betekent dit sein?",
   "o": [
@@ -5043,7 +5043,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.8",
-  "loText": "Procedures related to emergencies, communication failure and contingencies",
+  "loText": "Procedures bij noodsituaties, radioverbindingsverlies en onvoorziene omstandigheden",
   "basis": "SERA",
   "q": "Wat moet de gezagvoerder volgens SERA proberen te doen wanneer zijn luchtvaartuig het voorwerp is van onrechtmatige inmenging?",
   "o": [
@@ -5073,7 +5073,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.5.1.2",
-  "loText": "State which frequency should primarily be tried in order to contact an intercepting aircraft",
+  "loText": "Noemen welke frequentie in de eerste plaats geprobeerd moet worden om contact te leggen met een onderscheppend luchtvaartuig",
   "basis": "SERA",
   "q": "Je wordt onderschept door een militair vliegtuig. Op welke frequentie probeer je radiocontact te leggen met het onderscheppende vliegtuig of de onderscheppingsleiding, en wat meld je?",
   "o": [
@@ -5103,7 +5103,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.5.1.3",
-  "loText": "State on which mode and code a transponder on board the intercepted aircraft should be operated",
+  "loText": "Noemen in welke modus en met welke code de transponder aan boord van het onderschepte luchtvaartuig gebruikt moet worden",
   "basis": "SERA",
   "q": "Je wordt tijdens een VFR-vlucht onderschept. Welke transpondercode stel je in, als de luchtverkeersdienst niets anders heeft opgedragen?",
   "o": [
@@ -5313,7 +5313,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.8",
-  "loText": "Procedures related to emergencies, communication failure and contingencies",
+  "loText": "Procedures bij noodsituaties, radioverbindingsverlies en onvoorziene omstandigheden",
   "basis": "SERA",
   "q": "Je meldt aan de verkeersleiding 'MINIMUM FUEL'. Wat betekent deze melding?",
   "o": [
@@ -5343,7 +5343,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.8",
-  "loText": "Procedures related to emergencies, communication failure and contingencies",
+  "loText": "Procedures bij noodsituaties, radioverbindingsverlies en onvoorziene omstandigheden",
   "basis": "SERA",
   "q": "Je brandstofvoorraad is zo laag geworden dat je een noodsituatie moet verklaren. Hoe doe je dat volgens SERA?",
   "o": [
@@ -5373,7 +5373,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.6.2.1.1",
-  "loText": "State when and where the pilot shall operate the transponder",
+  "loText": "Noemen wanneer en waar de piloot de transponder moet gebruiken",
   "basis": "SERA",
   "q": "Je ULM heeft een werkende transponder. Je vliegt in luchtruim klasse G, buiten elke TMZ en zonder contact met een luchtverkeersdienst. Moet de transponder aanstaan?",
   "o": [
@@ -5403,7 +5403,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.6.2.1.4",
-  "loText": "State when the pilot shall 'SQUAWK IDENT'",
+  "loText": "Noemen wanneer de piloot 'SQUAWK IDENT' moet uitvoeren",
   "basis": "SERA",
   "q": "Wanneer mag je de IDENT-knop van je transponder gebruiken?",
   "o": [
@@ -5433,7 +5433,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.6.2.1.1",
-  "loText": "State when and where the pilot shall operate the transponder",
+  "loText": "Noemen wanneer en waar de piloot de transponder moet gebruiken",
   "basis": "SERA",
   "q": "Een zweefvliegtuig heeft een transponder, maar de batterij volstaat niet om die de hele vlucht te laten werken. Wat geldt volgens SERA?",
   "o": [
@@ -5463,7 +5463,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.6.2.1.2",
-  "loText": "State the standard squawk to be used by VFR flights is 7000 and 2000 and their use",
+  "loText": "Weten dat de standaard transpondercodes (squawk) voor VFR-vluchten 7000 en 2000 zijn, en hun gebruik noemen",
   "basis": "SERA",
   "q": "Je vliegt VFR in luchtruim klasse G en je ontvangt geen luchtverkeersdiensten. De bevoegde autoriteit heeft niets anders voorgeschreven. Welke code stel je op je transponder in?",
   "o": [
@@ -5553,7 +5553,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.6.2.1.7",
-  "loText": "State the primary action in case of an unserviceable transponder before departure when no repair or replacement is possible",
+  "loText": "De eerste handeling noemen bij een defecte transponder vóór vertrek, als herstelling of vervanging niet mogelijk is",
   "basis": "SERA",
   "q": "Voor het vertrek stel je vast dat je transponder defect is en niet hersteld kan worden. Je geplande route loopt door luchtruim waar een werkende transponder verplicht is. Wat moet je volgens SERA doen?",
   "o": [
@@ -5583,7 +5583,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.4.3.1",
-  "loText": "State under which conditions a VFR flight may be conducted during night time",
+  "loText": "Noemen onder welke voorwaarden een VFR-vlucht 's nachts uitgevoerd mag worden",
   "basis": "SERA",
   "q": "Je plant een binnenlandse VFR-nachtvlucht in klasse G van je thuisveld naar een ander veld, zonder gecontroleerd luchtruim te raken. Moet je een vluchtplan indienen?",
   "o": [
@@ -5613,7 +5613,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.3.6",
-  "loText": "Describe the dimension and significance of Control Zones (CTR) and the pilot's obigations before/at entering a CTR",
+  "loText": "De afmetingen en het belang van controlezones (CTR) beschrijven, en de verplichtingen van de piloot voor/bij het binnenvliegen van een CTR",
   "basis": "SERA",
   "q": "Voor elke vlucht of elk deel van een vlucht waaraan luchtverkeersleiding wordt verleend, is een vluchtplan vereist. Wat houdt dat in voor een VFR-piloot die alleen een CTR wil doorkruisen?",
   "o": [
@@ -5643,7 +5643,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1",
-  "loText": "Rules - SERA",
+  "loText": "Regels - SERA",
   "basis": "SERA",
   "q": "Waarom kan een vluchtplan verplicht zijn voor een vlucht in of naar een door de autoriteit aangewezen gebied, zoals een identificatiezone voor de luchtverdediging (ADIZ)?",
   "o": [
@@ -5673,7 +5673,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1",
-  "loText": "Rules - SERA",
+  "loText": "Regels - SERA",
   "basis": "SERA",
   "q": "Je plant een VFR-vlucht van Antwerpen naar Lille en dient vóór vertrek een vluchtplan in. Uiterlijk wanneer moet het zijn ingediend (tenzij de autoriteit voor binnenlandse VFR-vluchten een kortere termijn heeft vastgesteld)?",
   "o": [
@@ -5703,7 +5703,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1",
-  "loText": "Rules - SERA",
+  "loText": "Regels - SERA",
   "basis": "SERA",
   "q": "Je dient tijdens de vlucht een vluchtplan in om een controlegebied (CTA) binnen te vliegen. Wanneer moet de bevoegde luchtverkeersdienst het uiterlijk ontvangen hebben?",
   "o": [
@@ -5733,7 +5733,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1",
-  "loText": "Rules - SERA",
+  "loText": "Regels - SERA",
   "basis": "SERA",
   "q": "Je hebt een vluchtplan ingediend voor een grensoverschrijdende VFR-vlucht die volledig in ongecontroleerd luchtruim blijft. Vanaf welke vertraging ten opzichte van de geschatte off-blocktijd moet je het vluchtplan wijzigen of een nieuw indienen en het oude annuleren?",
   "o": [
@@ -5763,7 +5763,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1",
-  "loText": "Rules - SERA",
+  "loText": "Regels - SERA",
   "basis": "SERA",
   "q": "Je VFR-vlucht vertrekt vanaf een gecontroleerd luchtvaartterrein en verloopt als gecontroleerde vlucht. Door een technisch probleem loop je vertraging op. Vanaf welke vertraging ten opzichte van de geschatte off-blocktijd moet je het vluchtplan wijzigen of vervangen?",
   "o": [
@@ -5793,7 +5793,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1",
-  "loText": "Rules - SERA",
+  "loText": "Regels - SERA",
   "basis": "SERA",
   "q": "Je hebt in je vluchtplan 2 personen aan boord opgegeven, maar je vertrekt uiteindelijk met 3. Wat zegt SERA hierover?",
   "o": [
@@ -5823,7 +5823,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.10.1.1.3",
-  "loText": "Describe the consequences in case of forgetting to close a flight plan, resulting in an unjustified SAR search mission",
+  "loText": "De gevolgen beschrijven als je vergeet een vliegplan af te sluiten, met een onterechte opsporings- en reddingsactie (SAR) als gevolg",
   "basis": "SERA",
   "q": "Je hebt een vluchtplan voor de hele vlucht ingediend. Wanneer en aan wie moet je de aankomstmelding (arrival report) doen?",
   "o": [
@@ -5853,7 +5853,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.10.1.1.3",
-  "loText": "Describe the consequences in case of forgetting to close a flight plan, resulting in an unjustified SAR search mission",
+  "loText": "De gevolgen beschrijven als je vergeet een vliegplan af te sluiten, met een onterechte opsporings- en reddingsactie (SAR) als gevolg",
   "basis": "SERA",
   "q": "Je landt met een vluchtplan op een luchtvaartterrein met een verkeerstoren, en je bent tot de landing in radiocontact met de toren. Moet je nog afzonderlijk een aankomstmelding doen?",
   "o": [
@@ -5883,7 +5883,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.10.1.1.3",
-  "loText": "Describe the consequences in case of forgetting to close a flight plan, resulting in an unjustified SAR search mission",
+  "loText": "De gevolgen beschrijven als je vergeet een vliegplan af te sluiten, met een onterechte opsporings- en reddingsactie (SAR) als gevolg",
   "basis": "SERA",
   "q": "Je landt met een vluchtplan op een ULM-veld zonder luchtverkeersdienst. Hoe doe je de aankomstmelding?",
   "o": [
@@ -5913,7 +5913,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.10.1.1.3",
-  "loText": "Describe the consequences in case of forgetting to close a flight plan, resulting in an unjustified SAR search mission",
+  "loText": "De gevolgen beschrijven als je vergeet een vliegplan af te sluiten, met een onterechte opsporings- en reddingsactie (SAR) als gevolg",
   "basis": "SERA",
   "q": "Welk element neem je alleen in je aankomstmelding op als je een uitwijklanding hebt gemaakt?",
   "o": [
@@ -5943,7 +5943,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1",
-  "loText": "Rules - SERA",
+  "loText": "Regels - SERA",
   "basis": "SERA",
   "q": "Je vlucht begint VFR en gaat onderweg over op IFR. Welke letter vul je in vak 8 (vliegregels) van het vluchtplan in?",
   "o": [
@@ -5973,7 +5973,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1",
-  "loText": "Rules - SERA",
+  "loText": "Regels - SERA",
   "basis": "SERA",
   "q": "Welke letter gebruik je in vak 8 van het vluchtplan voor de soort vlucht (type of flight) bij een privévlucht met je clubvliegtuig, als de autoriteit dat vak vereist?",
   "o": [
@@ -6003,7 +6003,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1",
-  "loText": "Rules - SERA",
+  "loText": "Regels - SERA",
   "basis": "SERA",
   "q": "Je vertrekt vanaf een ULM-veld dat geen ICAO-locatie-indicator (vierlettercode) heeft. Wat vul je in vak 13 (vertrekluchtvaartterrein) van het vluchtplan in?",
   "o": [
@@ -6033,7 +6033,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.3.1.7",
-  "loText": "State for which flights an air traffic control (ATC) clearance shall be obtained",
+  "loText": "Noemen voor welke vluchten een klaring van de luchtverkeersleiding (ATC-klaring) verkregen moet worden",
   "basis": "SERA",
   "q": "Je vertrekt vanaf een ongecontroleerd veld en je vluchtplan vermeldt dat je later een CTR van klasse D doorkruist. Wanneer moet je de klaring verkrijgen?",
   "o": [
@@ -6063,7 +6063,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.2",
-  "loText": "General provisions for air traffic services",
+  "loText": "Algemene bepalingen voor luchtverkeersdiensten",
   "basis": "SERA",
   "q": "Welk element moet een luchtverkeersleidingsklaring volgens SERA bevatten?",
   "o": [
@@ -6093,7 +6093,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.5",
-  "loText": "Procedures for aerodrome control services",
+  "loText": "Procedures voor de vliegveldverkeersleiding",
   "basis": "SERA",
   "q": "In welke klaring neemt de verkeersleiding volgens SERA de QNH op, tenzij bekend is dat je die al hebt ontvangen?",
   "o": [
@@ -6123,7 +6123,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.4.2.3",
-  "loText": "Explain that the possibility to execute SVFR flights exists only within CTRs, and that this restriction has to be linked to the minimum weather conditions for VFR flights in airspace GOLF",
+  "loText": "Uitleggen dat SVFR-vluchten alleen binnen CTR's mogelijk zijn, en dat die beperking gekoppeld moet worden aan de minimale weersomstandigheden voor VFR-vluchten in luchtruim G (GOLF)",
   "basis": "SERA",
   "q": "Je vliegt als gecontroleerde VFR-vlucht in een CTR en het wordt duidelijk dat je volgens je vluchtplan niet in VMC kunt blijven. Welke mogelijkheid voorziet SERA specifiek binnen een CTR?",
   "o": [
@@ -6153,7 +6153,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.2.2",
-  "loText": "Explain the pilot's responsibilities in respect of ATC-communication, especially the obligation to 'read-back', follow ATC instructions, the right to request a changed clearance or rejection of a given clearance",
+  "loText": "De verantwoordelijkheden van de piloot bij de communicatie met ATC uitleggen, in het bijzonder de verplichting tot 'read-back' (teruglezen), het opvolgen van ATC-instructies en het recht om een gewijzigde klaring te vragen of een gegeven klaring te weigeren",
   "basis": "SERA",
   "q": "Als gecontroleerde VFR-vlucht in klasse D zie je slecht weer opdoemen. Je vraagt een gewijzigde klaring om in VMC te blijven, maar die kan niet gegeven worden. Wat doe je volgens SERA?",
   "o": [
@@ -6183,7 +6183,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.8",
-  "loText": "Procedures related to emergencies, communication failure and contingencies",
+  "loText": "Procedures bij noodsituaties, radioverbindingsverlies en onvoorziene omstandigheden",
   "basis": "SERA",
   "q": "Een noodsituatie dwingt je tijdens een gecontroleerde vlucht om onmiddellijk van je vluchtplan af te wijken, zonder vooraf klaring te vragen. Wat moet je daarna doen?",
   "o": [
@@ -6213,7 +6213,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.2.2",
-  "loText": "Explain the pilot's responsibilities in respect of ATC-communication, especially the obligation to 'read-back', follow ATC instructions, the right to request a changed clearance or rejection of a given clearance",
+  "loText": "De verantwoordelijkheden van de piloot bij de communicatie met ATC uitleggen, in het bijzonder de verplichting tot 'read-back' (teruglezen), het opvolgen van ATC-instructies en het recht om een gewijzigde klaring te vragen of een gegeven klaring te weigeren",
   "basis": "SERA",
   "q": "Tijdens een gecontroleerde VFR-vlucht merk je dat je onbedoeld van je geklaarde route bent afgeweken. Wat schrijft SERA voor?",
   "o": [
@@ -6243,7 +6243,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.2.2",
-  "loText": "Explain the pilot's responsibilities in respect of ATC-communication, especially the obligation to 'read-back', follow ATC instructions, the right to request a changed clearance or rejection of a given clearance",
+  "loText": "De verantwoordelijkheden van de piloot bij de communicatie met ATC uitleggen, in het bijzonder de verplichting tot 'read-back' (teruglezen), het opvolgen van ATC-instructies en het recht om een gewijzigde klaring te vragen of een gegeven klaring te weigeren",
   "basis": "SERA",
   "q": "Je verlaat als gecontroleerde VFR-vlucht een CTR om verder in klasse G te vliegen. Wat moet je volgens SERA doen?",
   "o": [
@@ -6273,7 +6273,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.5.2.1.3",
-  "loText": "State that the PIC of an aircraft has final authority as to the disposition of the aircraft while in command",
+  "loText": "Weten dat de gezagvoerder (PIC) zolang hij het bevel voert de eindbeslissing heeft over het gebruik van het luchtvaartuig",
   "basis": "SERA",
   "q": "De vluchtinformatiedienst (FIS) suggereert je een routewijziging vanwege onweer verderop. Wie neemt de uiteindelijke beslissing?",
   "o": [
@@ -6303,7 +6303,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.7",
-  "loText": "Flight information service and alerting service",
+  "loText": "Vluchtinformatiedienst en alarmeringsdienst",
   "basis": "SERA",
   "q": "Welke informatie levert de vluchtinformatiedienst (FIS) specifiek aan VFR-vluchten, naast de algemene vluchtinformatie?",
   "o": [
@@ -6333,7 +6333,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.7",
-  "loText": "Flight information service and alerting service",
+  "loText": "Vluchtinformatiedienst en alarmeringsdienst",
   "basis": "SERA",
   "q": "Je hebt de ATIS van je bestemming beluisterd. Wanneer bevestig je dat je de ATIS hebt ontvangen?",
   "o": [
@@ -6363,7 +6363,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.7",
-  "loText": "Flight information service and alerting service",
+  "loText": "Vluchtinformatiedienst en alarmeringsdienst",
   "basis": "SERA",
   "q": "Je hebt de ontvangst van de actuele ATIS bevestigd. Welke informatie uit die ATIS geeft de luchtverkeersdienst je toch nog rechtstreeks door?",
   "o": [
@@ -6393,7 +6393,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.7",
-  "loText": "Flight information service and alerting service",
+  "loText": "Vluchtinformatiedienst en alarmeringsdienst",
   "basis": "SERA",
   "q": "Je vliegt VFR in klasse G, dus zonder luchtverkeersleiding. Wanneer verleent de luchtverkeersdienst je dan alarmeringsdienst?",
   "o": [
@@ -6423,7 +6423,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.2.2",
-  "loText": "Explain the pilot's responsibilities in respect of ATC-communication, especially the obligation to 'read-back', follow ATC instructions, the right to request a changed clearance or rejection of a given clearance",
+  "loText": "De verantwoordelijkheden van de piloot bij de communicatie met ATC uitleggen, in het bijzonder de verplichting tot 'read-back' (teruglezen), het opvolgen van ATC-instructies en het recht om een gewijzigde klaring te vragen of een gegeven klaring te weigeren",
   "basis": "SERA",
   "q": "Je vliegt lang zonder dat er een reden is om de luchtverkeersdienst op te roepen. Wanneer moet je, tenzij de autoriteit anders voorschrijft, een 'operations normal'-melding doen?",
   "o": [
@@ -6453,7 +6453,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.2",
-  "loText": "General provisions for air traffic services",
+  "loText": "Algemene bepalingen voor luchtverkeersdiensten",
   "basis": "SERA",
   "q": "Vanaf welke sterkte van turbulentie moet je volgens SERA een speciale waarneming (special air-report) melden?",
   "o": [
@@ -6483,7 +6483,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.2",
-  "loText": "General provisions for air traffic services",
+  "loText": "Algemene bepalingen voor luchtverkeersdiensten",
   "basis": "SERA",
   "q": "Welke van de volgende waarnemingen moet je volgens SERA melden als speciale waarneming?",
   "o": [
@@ -6513,7 +6513,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "10.7.1.2",
-  "loText": "General provisions for air traffic services",
+  "loText": "Algemene bepalingen voor luchtverkeersdiensten",
   "basis": "SERA",
   "q": "In de eindnadering krijg je te maken met duidelijke windschering, die niet in de lijst van speciale waarnemingen staat. Wat schrijft SERA voor?",
   "o": [
@@ -6716,7 +6716,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.1.3",
-  "loText": "List the factors that are relevant to the exercise of the privileges of a licence",
+  "loText": "De factoren opsommen die van belang zijn voor het uitoefenen van de rechten van een brevet",
   "basis": "Part-FCL",
   "q": "Je PPL(A) en je bevoegdverklaring voor klasse eenmotorige zuigermotorvliegtuigen (SEP) zijn in orde, maar je medisch certificaat klasse 2 is gisteren verlopen. Mag je vandaag alleen een vlucht uitvoeren als gezagvoerder?",
   "o": [
@@ -6745,7 +6745,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.1.6",
-  "loText": "Name and identify personal documents required to be carried on board",
+  "loText": "De persoonlijke documenten noemen en herkennen die aan boord meegenomen moeten worden",
   "basis": "Part-FCL",
   "q": "Welke persoonlijke documenten moet je als piloot altijd bij je hebben wanneer je de voorrechten van je PPL(A) uitoefent?",
   "o": [
@@ -6774,7 +6774,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.1.1.2",
-  "loText": "Define 'block time', and state that this time is to be recorded in a pilot's personal flight logbook",
+  "loText": "De term 'blocktijd' (block time) definiëren en weten dat deze tijd in het persoonlijke vlieglogboek van de piloot ingeschreven moet worden",
   "basis": "Part-FCL",
   "q": "Je oefent op één dag een reeks circuits: telkens land je op je vertrekveld en vertrek je opnieuw. Wanneer mag je die vluchten als één regel in je logboek inschrijven?",
   "o": [
@@ -6803,7 +6803,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.1.4",
-  "loText": "State the circumstances in which a language proficiency endorsement is required",
+  "loText": "Noemen in welke omstandigheden een aantekening voor taalvaardigheid (language proficiency) vereist is",
   "basis": "Part-FCL",
   "q": "Welk minimumniveau van taalvaardigheid (language proficiency) moet op je vergunning staan om als piloot de radio te mogen gebruiken?",
   "o": [
@@ -6832,7 +6832,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.1.4",
-  "loText": "State the circumstances in which a language proficiency endorsement is required",
+  "loText": "Noemen in welke omstandigheden een aantekening voor taalvaardigheid (language proficiency) vereist is",
   "basis": "Part-FCL",
   "q": "Je hebt je taalvaardigheid aangetoond op niveau 4 (operationeel). Na hoeveel tijd moet die opnieuw worden beoordeeld?",
   "o": [
@@ -6861,7 +6861,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.1.4",
-  "loText": "State the circumstances in which a language proficiency endorsement is required",
+  "loText": "Noemen in welke omstandigheden een aantekening voor taalvaardigheid (language proficiency) vereist is",
   "basis": "Part-FCL",
   "q": "In welke taal moet de aantekening voor taalvaardigheid op je vergunning staan om de radio te mogen gebruiken tijdens een vlucht?",
   "o": [
@@ -6890,7 +6890,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.3.14",
-  "loText": "State the flight experience required for a pilot to carry passengers",
+  "loText": "De vliegervaring noemen die een piloot nodig heeft om passagiers te vervoeren",
   "basis": "Part-FCL",
   "q": "Je laatste vlucht in een eenmotorig zuigermotorvliegtuig (SEP) was 4 maanden geleden. Je wilt overdag een vriend meenemen. Wat moet je volgens Part-FCL eerst doen?",
   "o": [
@@ -6919,7 +6919,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.3.14",
-  "loText": "State the flight experience required for a pilot to carry passengers",
+  "loText": "De vliegervaring noemen die een piloot nodig heeft om passagiers te vervoeren",
   "basis": "Part-FCL",
   "q": "Je hebt een nachtbevoegdverklaring maar geen instrumentbevoegdverklaring (IR). Wat moet je minstens gedaan hebben om 's nachts als gezagvoerder passagiers mee te nemen?",
   "o": [
@@ -6948,7 +6948,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.1.3",
-  "loText": "List the factors that are relevant to the exercise of the privileges of a licence",
+  "loText": "De factoren opsommen die van belang zijn voor het uitoefenen van de rechten van een brevet",
   "basis": "Part-FCL",
   "q": "Je bent 67 jaar, hebt een PPL(A), een geldige klassebevoegdverklaring SEP en een geldig medisch certificaat. Mag je volgens Part-FCL nog privé vliegen als gezagvoerder?",
   "o": [
@@ -7006,7 +7006,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.1.2",
-  "loText": "Describe the general principles of the licensing system (Light Aircraft Pilot Licence (LAPL) and Private Pilot Licence (PPL)",
+  "loText": "De algemene principes van het brevettensysteem beschrijven (Light Aircraft Pilot Licence (LAPL) en Private Pilot Licence (PPL))",
   "basis": "Part-FCL",
   "q": "Wat is de grootste gecertificeerde maximale startmassa (MTOM) van een eenmotorig zuigermotorvliegtuig (SEP) dat je met een LAPL(A) als gezagvoerder mag besturen?",
   "o": [
@@ -7035,7 +7035,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.1.2",
-  "loText": "Describe the general principles of the licensing system (Light Aircraft Pilot Licence (LAPL) and Private Pilot Licence (PPL)",
+  "loText": "De algemene principes van het brevettensysteem beschrijven (Light Aircraft Pilot Licence (LAPL) en Private Pilot Licence (PPL))",
   "basis": "Part-FCL",
   "q": "Je hebt een LAPL(A) en huurt een vierzits SEP-vliegtuig. Hoeveel personen mogen er in totaal aan boord zijn?",
   "o": [
@@ -7064,7 +7064,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.3.14",
-  "loText": "State the flight experience required for a pilot to carry passengers",
+  "loText": "De vliegervaring noemen die een piloot nodig heeft om passagiers te vervoeren",
   "basis": "Part-FCL",
   "q": "Je hebt net je LAPL(A) behaald. Wanneer mag je voor het eerst passagiers meenemen?",
   "o": [
@@ -7093,7 +7093,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.1.2",
-  "loText": "Describe the general principles of the licensing system (Light Aircraft Pilot Licence (LAPL) and Private Pilot Licence (PPL)",
+  "loText": "De algemene principes van het brevettensysteem beschrijven (Light Aircraft Pilot Licence (LAPL) en Private Pilot Licence (PPL))",
   "basis": "Part-FCL",
   "q": "Hoeveel uur vlieginstructie op vliegtuigen of TMG's moet je minstens hebben gevolgd om een LAPL(A) aan te vragen?",
   "o": [
@@ -7122,7 +7122,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.1.2",
-  "loText": "Describe the general principles of the licensing system (Light Aircraft Pilot Licence (LAPL) and Private Pilot Licence (PPL)",
+  "loText": "De algemene principes van het brevettensysteem beschrijven (Light Aircraft Pilot Licence (LAPL) en Private Pilot Licence (PPL))",
   "basis": "Part-FCL",
   "q": "Je hebt een LAPL(A). Aan welke eis moet je volgens de recency-eisen voldoen om je voorrechten te mogen uitoefenen, als je geen proficiency check met een examinator aflegt?",
   "o": [
@@ -7151,7 +7151,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.1.2",
-  "loText": "Describe the general principles of the licensing system (Light Aircraft Pilot Licence (LAPL) and Private Pilot Licence (PPL)",
+  "loText": "De algemene principes van het brevettensysteem beschrijven (Light Aircraft Pilot Licence (LAPL) en Private Pilot Licence (PPL))",
   "basis": "Part-FCL",
   "q": "Je hebt een PPL(A) met een geldige klassebevoegdverklaring SEP. Je medisch certificaat klasse 2 valt tijdelijk weg, maar je hebt een geldig LAPL-medisch certificaat. Wat mag je nog?",
   "o": [
@@ -7180,7 +7180,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.3.2",
-  "loText": "State the privileges of a PPL, SPL or BPL",
+  "loText": "De rechten van een PPL, SPL of BPL noemen",
   "basis": "Part-FCL",
   "q": "Een kennis biedt je een vergoeding aan als je hem als piloot met je PPL(A) naar een zakenafspraak vliegt. Wat zeggen de voorrechten van je PPL(A)?",
   "o": [
@@ -7325,7 +7325,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.3.7",
-  "loText": "State the period of validity of a SEP(land) / TMG class rating or or helicopter type rating",
+  "loText": "De geldigheidsduur noemen van een klassebevoegdverklaring SEP(land)/TMG of een typebevoegdverklaring helikopter",
   "basis": "Part-FCL",
   "q": "Hoe lang is je bevoegdverklaring voor klasse eenmotorige zuigermotorvliegtuigen (SEP) geldig?",
   "o": [
@@ -7354,7 +7354,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.3.8",
-  "loText": "State the requirements how revalidate a SEP(land) / TMG class rating or or helicopter type rating",
+  "loText": "De voorwaarden noemen om een klassebevoegdverklaring SEP(land)/TMG of een typebevoegdverklaring helikopter te verlengen (revalidation)",
   "basis": "Part-FCL",
   "q": "Je wilt je klassebevoegdverklaring SEP verlengen zonder proficiency check. Welke ervaring heb je nodig binnen de 12 maanden voor de vervaldatum?",
   "o": [
@@ -7383,7 +7383,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.3.8",
-  "loText": "State the requirements how revalidate a SEP(land) / TMG class rating or or helicopter type rating",
+  "loText": "De voorwaarden noemen om een klassebevoegdverklaring SEP(land)/TMG of een typebevoegdverklaring helikopter te verlengen (revalidation)",
   "basis": "Part-FCL",
   "q": "Je klassebevoegdverklaring SEP vervalt over 5 maanden. Je legt nu al de proficiency check voor de verlenging af en slaagt. Vanaf wanneer loopt de nieuwe geldigheidsperiode?",
   "o": [
@@ -7412,7 +7412,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.3.9",
-  "loText": "State the requirements how to renew a SEP(land), TMG class rating or or helicopter type rating",
+  "loText": "De voorwaarden noemen om een klassebevoegdverklaring SEP(land)/TMG of een typebevoegdverklaring helikopter te hernieuwen (renewal)",
   "basis": "Part-FCL",
   "q": "Je klassebevoegdverklaring SEP (niet hoogwaardig) is 2 jaar geleden verlopen. Wat moet je doen om ze te hernieuwen?",
   "o": [
@@ -7441,7 +7441,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.3.8",
-  "loText": "State the requirements how revalidate a SEP(land) / TMG class rating or or helicopter type rating",
+  "loText": "De voorwaarden noemen om een klassebevoegdverklaring SEP(land)/TMG of een typebevoegdverklaring helikopter te verlengen (revalidation)",
   "basis": "Part-FCL",
   "q": "Je legt 2 maanden voor de vervaldatum van je klassebevoegdverklaring SEP een proficiency check af, maar slaagt niet voor alle onderdelen. Mag je tot de vervaldatum nog als gezagvoerder vliegen?",
   "o": [
@@ -7470,7 +7470,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.3.11",
-  "loText": "Explain for which variants within the SEP(land) class rating or helicopter type rating a differences training is required",
+  "loText": "Uitleggen voor welke varianten binnen de klassebevoegdverklaring SEP(land) of de typebevoegdverklaring helikopter een verschilopleiding vereist is",
   "basis": "Part-FCL",
   "q": "Je wilt met je klassebevoegdverklaring SEP een variant gaan vliegen waarvoor een verschilopleiding (differences training) vereist is. Hoe gaat dat?",
   "o": [
@@ -7499,7 +7499,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.3.10",
-  "loText": "Explain the terms 'differences training' and 'familiarization'",
+  "loText": "De termen 'verschilopleiding' (differences training) en 'vertrouwdmaking' (familiarisation) uitleggen",
   "basis": "Part-FCL",
   "q": "Wat is het verschil tussen een verschilopleiding (differences training) en een vertrouwdmakingstraining (familiarisation)?",
   "o": [
@@ -7528,7 +7528,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.3.4",
-  "loText": "State the requirements for other ratings, their validity and privileges according to Part-FCL (e.g. Aerobatic rating, Sailplane towing and banner towing rating, Night rating, thetered balloon etc.)",
+  "loText": "De voorwaarden voor andere bevoegdverklaringen volgens Part-FCL noemen, met hun geldigheid en rechten (bv. kunstvliegen, slepen van zweefvliegtuigen en banners, nachtvliegen, kabelballon enz.)",
   "basis": "Part-FCL",
   "q": "Welke eisen gelden om een kunstvliegbevoegdverklaring (aerobatic rating) voor vliegtuigen te behalen?",
   "o": [
@@ -7557,7 +7557,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.3.4",
-  "loText": "State the requirements for other ratings, their validity and privileges according to Part-FCL (e.g. Aerobatic rating, Sailplane towing and banner towing rating, Night rating, thetered balloon etc.)",
+  "loText": "De voorwaarden voor andere bevoegdverklaringen volgens Part-FCL noemen, met hun geldigheid en rechten (bv. kunstvliegen, slepen van zweefvliegtuigen en banners, nachtvliegen, kabelballon enz.)",
   "basis": "Part-FCL",
   "q": "Welke ervaring moet je na de afgifte van je vergunning minstens hebben voor een bevoegdverklaring voor het slepen van zweefvliegtuigen (sailplane towing rating) met een vliegtuig?",
   "o": [
@@ -7586,7 +7586,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.3.4",
-  "loText": "State the requirements for other ratings, their validity and privileges according to Part-FCL (e.g. Aerobatic rating, Sailplane towing and banner towing rating, Night rating, thetered balloon etc.)",
+  "loText": "De voorwaarden voor andere bevoegdverklaringen volgens Part-FCL noemen, met hun geldigheid en rechten (bv. kunstvliegen, slepen van zweefvliegtuigen en banners, nachtvliegen, kabelballon enz.)",
   "basis": "Part-FCL",
   "q": "Je hebt een bevoegdverklaring voor het slepen van zweefvliegtuigen, maar je hebt in de laatste 24 maanden maar 2 slepen uitgevoerd. Wat moet je doen voor je opnieuw alleen mag slepen?",
   "o": [
@@ -7673,7 +7673,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.2.2",
-  "loText": "Name the class of medical certificate required when exercising the privileges of a LAPL, PPL, SPL or BPL",
+  "loText": "De klasse van medisch certificaat noemen die vereist is om de rechten van een LAPL, PPL, SPL of BPL uit te oefenen",
   "basis": "Part-MED",
   "q": "Welk medisch certificaat moet je minstens hebben om de voorrechten van een brevet van privépiloot (PPL(A)) uit te oefenen?",
   "o": [
@@ -7702,7 +7702,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.2.2",
-  "loText": "Name the class of medical certificate required when exercising the privileges of a LAPL, PPL, SPL or BPL",
+  "loText": "De klasse van medisch certificaat noemen die vereist is om de rechten van een LAPL, PPL, SPL of BPL uit te oefenen",
   "basis": "Part-MED",
   "q": "Je hebt een geldig medisch certificaat klasse 1 omdat je later beroepspiloot wilt worden. Je wilt nu met je PPL(A) vliegen. Wat geldt?",
   "o": [
@@ -7731,7 +7731,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.2.1",
-  "loText": "State the requirements for the issue of a medical certificate",
+  "loText": "De voorwaarden noemen voor de afgifte van een medisch certificaat",
   "basis": "Part-MED",
   "q": "Hoeveel medische certificaten volgens Part-MED mag je als brevethouder tegelijk in je bezit hebben?",
   "o": [
@@ -7760,7 +7760,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.2.1",
-  "loText": "State the requirements for the issue of a medical certificate",
+  "loText": "De voorwaarden noemen voor de afgifte van een medisch certificaat",
   "basis": "Part-MED",
   "q": "Je wilt een nachtbevoegdverklaring (night rating) aan je PPL(A) laten toevoegen. Aan welke medische voorwaarde moet je dan voldoen?",
   "o": [
@@ -7789,7 +7789,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.2.1",
-  "loText": "State the requirements for the issue of a medical certificate",
+  "loText": "De voorwaarden noemen voor de afgifte van een medisch certificaat",
   "basis": "Part-MED",
   "q": "Bij wie kun je je eerste medisch certificaat klasse 2 laten afgeven?",
   "o": [
@@ -7818,7 +7818,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.2.1",
-  "loText": "State the requirements for the issue of a medical certificate",
+  "loText": "De voorwaarden noemen voor de afgifte van een medisch certificaat",
   "basis": "Part-MED",
   "q": "Onder welke voorwaarde mag een huisarts (GMP) een LAPL-medisch certificaat afgeven?",
   "o": [
@@ -8021,7 +8021,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.2.1",
-  "loText": "State the requirements for the issue of a medical certificate",
+  "loText": "De voorwaarden noemen voor de afgifte van een medisch certificaat",
   "basis": "Part-MED",
   "q": "Je medisch certificaat klasse 2 is al een jaar vervallen. Je wilt opnieuw vliegen. Welk onderzoek moet je ondergaan?",
   "o": [
@@ -8050,7 +8050,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.1.3",
-  "loText": "List the factors that are relevant to the exercise of the privileges of a licence",
+  "loText": "De factoren opsommen die van belang zijn voor het uitoefenen van de rechten van een brevet",
   "basis": "Part-MED",
   "q": "Je huisarts schrijft je een bloeddrukverlager voor die je voortaan dagelijks moet nemen. Je voelt je prima. Wat moet je doen voor je weer gaat vliegen met je PPL(A)?",
   "o": [
@@ -8079,7 +8079,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.1.3",
-  "loText": "List the factors that are relevant to the exercise of the privileges of a licence",
+  "loText": "De factoren opsommen die van belang zijn voor het uitoefenen van de rechten van een brevet",
   "basis": "Part-MED",
   "q": "Een piloot met een medisch certificaat klasse 2 is zwanger. Ze heeft luchtvaartgeneeskundig advies gevraagd en de AME vindt haar geschikt. Tot wanneer mag ze haar voorrechten blijven uitoefenen?",
   "o": [
@@ -8108,7 +8108,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.1.3",
-  "loText": "List the factors that are relevant to the exercise of the privileges of a licence",
+  "loText": "De factoren opsommen die van belang zijn voor het uitoefenen van de rechten van een brevet",
   "basis": "Part-MED",
   "q": "Bij de opticien blijkt dat je voor het eerst een bril nodig hebt om veraf scherp te zien. Je medisch certificaat klasse 2 vermeldt nog geen beperking. Wat moet je doen?",
   "o": [
@@ -8137,7 +8137,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.1.3",
-  "loText": "List the factors that are relevant to the exercise of the privileges of a licence",
+  "loText": "De factoren opsommen die van belang zijn voor het uitoefenen van de rechten van een brevet",
   "basis": "Part-MED",
   "q": "Je hebt een knieoperatie ondergaan en hebt een medisch certificaat klasse 2. Bij wie moet je luchtvaartgeneeskundig advies vragen voor je weer vliegt?",
   "o": [
@@ -8166,7 +8166,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.1.3",
-  "loText": "List the factors that are relevant to the exercise of the privileges of a licence",
+  "loText": "De factoren opsommen die van belang zijn voor het uitoefenen van de rechten van een brevet",
   "basis": "Part-MED",
   "q": "Je medisch certificaat vereist een correctie voor het zicht. Wat moet je tijdens het vliegen bij je hebben naast de bril of lenzen die je draagt?",
   "o": [
@@ -8195,7 +8195,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.1.3",
-  "loText": "List the factors that are relevant to the exercise of the privileges of a licence",
+  "loText": "De factoren opsommen die van belang zijn voor het uitoefenen van de rechten van een brevet",
   "basis": "Part-MED",
   "q": "Op je medisch certificaat staat de beperking VNL. Wat betekent dat?",
   "o": [
@@ -8224,7 +8224,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.2.1.3",
-  "loText": "List the factors that are relevant to the exercise of the privileges of a licence",
+  "loText": "De factoren opsommen die van belang zijn voor het uitoefenen van de rechten van een brevet",
   "basis": "Part-MED",
   "q": "Aan welke eisen moeten contactlenzen voldoen als je ze draagt tijdens het vliegen?",
   "o": [
@@ -8253,7 +8253,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.4.1.1.5",
-  "loText": "List the duties and responsibilities of the PIC with regard to NCO.GEN.105",
+  "loText": "De taken en verantwoordelijkheden van de gezagvoerder (PIC) volgens NCO.GEN.105 opsommen",
   "basis": "Part-ML",
   "q": "Je maakt een privévlucht met een vliegtuig van je vliegclub. Wie is verantwoordelijk voor het naar behoren uitvoeren van de vooraf-vluchtinspectie (preflight inspection)?",
   "o": [
@@ -8282,7 +8282,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.2.1.2.2",
-  "loText": "State who shall determine an aircraft's continuing airworthiness",
+  "loText": "Noemen wie de permanente luchtwaardigheid (continuing airworthiness) van een luchtvaartuig moet vaststellen",
   "basis": "Part-ML",
   "q": "Je leaset een vliegtuig voor langere tijd en je staat als lessee vermeld in het leasecontract. Wie is dan verantwoordelijk voor de permanente luchtwaardigheid (continuing airworthiness) van het vliegtuig?",
   "o": [
@@ -8369,7 +8369,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.2.3.2.1",
-  "loText": "State that defects and their rectification have to be entered into the aircraft logbook and can be traced using the aircraft logbook",
+  "loText": "Weten dat gebreken en hun herstelling in het technisch logboek van het luchtvaartuig ingeschreven moeten worden en daarmee te traceren zijn",
   "basis": "Part-ML",
   "q": "Na onderhoud aan je vliegtuig wordt een bewijs van vrijgave na onderhoud (CRS) afgegeven. Binnen welke termijn moet dit uiterlijk worden ingeschreven in het registratiesysteem voor permanente luchtwaardigheid (de logboeken)?",
   "o": [
@@ -8398,7 +8398,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.2.3.2.1",
-  "loText": "State that defects and their rectification have to be entered into the aircraft logbook and can be traced using the aircraft logbook",
+  "loText": "Weten dat gebreken en hun herstelling in het technisch logboek van het luchtvaartuig ingeschreven moeten worden en daarmee te traceren zijn",
   "basis": "Part-ML",
   "q": "Een defect aan je vliegtuig wordt niet vóór de volgende vlucht hersteld, omdat het volgens de regels mocht worden uitgesteld. Wat moet er met dat defect gebeuren?",
   "o": [
@@ -8485,7 +8485,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.2.1.2.5",
-  "loText": "Identify an airworthiness review certificate (ARC) and assess its validity",
+  "loText": "Een bewijs van beoordeling van de luchtwaardigheid (ARC) herkennen en de geldigheid ervan beoordelen",
   "basis": "Part-ML",
   "q": "Na een bevredigende luchtwaardigheidsbeoordeling (airworthiness review) wordt een luchtwaardigheidsbeoordelingsbewijs (ARC) afgegeven. Hoe lang is dat bewijs geldig?",
   "o": [
@@ -8514,7 +8514,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.2.1.2.5",
-  "loText": "Identify an airworthiness review certificate (ARC) and assess its validity",
+  "loText": "Een bewijs van beoordeling van de luchtwaardigheid (ARC) herkennen en de geldigheid ervan beoordelen",
   "basis": "Part-ML",
   "q": "Het ARC van je vliegtuig is nog geldig, maar het vliegtuig was betrokken bij een incident dat de luchtwaardigheid heeft aangetast. Mag je ermee vliegen?",
   "o": [
@@ -8572,7 +8572,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.2.1.2.4",
-  "loText": "Identify a certificate of airworthiness, and explain the reasons for issuing such certificates",
+  "loText": "Een bewijs van luchtwaardigheid (CofA) herkennen en uitleggen waarom zulke bewijzen afgegeven worden",
   "basis": "Part 21",
   "q": "Aan welk luchtvaartuig wordt een beperkt bewijs van luchtwaardigheid (restricted certificate of airworthiness) afgegeven?",
   "o": [
@@ -8746,7 +8746,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.12.1.3.2",
-  "loText": "Describe the general procedures for the investigation of an accident or incident",
+  "loText": "De algemene procedures beschrijven voor het onderzoek naar een ongeval of incident",
   "basis": "Verordening (EU) 996/2010",
   "q": "Je bent als gezagvoerder betrokken bij een ernstig incident in een andere EU-lidstaat dan die waar je vliegtuig ingeschreven is. Wie moet je volgens Verordening 996/2010 op de hoogte brengen, en wanneer?",
   "o": [
@@ -8775,7 +8775,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.12.1.3.2",
-  "loText": "Describe the general procedures for the investigation of an accident or incident",
+  "loText": "De algemene procedures beschrijven voor het onderzoek naar een ongeval of incident",
   "basis": "Verordening (EU) 996/2010",
   "q": "Na een ongeval met je vliegtuig wacht je op de veiligheidsonderzoekers. In welk geval mag het wrak voor hun aankomst al worden verplaatst?",
   "o": [
@@ -8804,7 +8804,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "10.12.1.3.1",
-  "loText": "State the objective(s) of the investigation of an accident or incident",
+  "loText": "De doelstelling(en) noemen van het onderzoek naar een ongeval of incident",
   "basis": "Verordening (EU) 996/2010",
   "q": "Wat is volgens Verordening 996/2010 het doel van een veiligheidsonderzoek naar een luchtvaartongeval?",
   "o": [
@@ -8978,7 +8978,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Wat moet je als gezagvoerder volgens Part-NCO tijdens de vlucht doen met je veiligheidsgordel?",
   "o": [
@@ -9007,7 +9007,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Een passagier gebruikt tijdens de vlucht een elektronisch toestel. Je merkt dat je radio en kompas daardoor storingen vertonen. Wat zegt Part-NCO hierover?",
   "o": [
@@ -9036,7 +9036,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Welke documenten moet je volgens Part-NCO als origineel, en dus niet als kopie, aan boord hebben?",
   "o": [
@@ -9065,7 +9065,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Je maakt een plaatselijke vlucht waarbij je opstijgt en landt op hetzelfde vliegveld. Welk document moet je ook op zo'n vlucht aan boord hebben?",
   "o": [
@@ -9094,7 +9094,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1.2.1",
-  "loText": "Describe the pilot's legal obligation to plan and prepare a flight",
+  "loText": "De wettelijke verplichting van de piloot beschrijven om een vlucht te plannen en voor te bereiden",
   "basis": "Part-NCO",
   "q": "Je neemt een luchtvaartkaart en een navigatie-app mee. Aan welke eis moeten de luchtvaartgegevens daarin volgens de AMC bij Part-NCO voldoen?",
   "o": [
@@ -9123,7 +9123,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Tijdens een meerdaagse vliegreis wordt het bewijs van luchtwaardigheid uit het vliegtuig gestolen. Wat geldt volgens de richtlijnen bij Part-NCO?",
   "o": [
@@ -9152,7 +9152,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Je neemt passagiers met bagage mee. Welke plicht heb je volgens Part-NCO als gezagvoerder met betrekking tot gevaarlijke goederen (dangerous goods)?",
   "o": [
@@ -9181,7 +9181,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.2.1.4.1",
-  "loText": "Explain the reason and the procedure to record every flight in the aircraft logbook",
+  "loText": "De reden en de procedure uitleggen om elke vlucht in het technisch logboek van het luchtvaartuig in te schrijven",
   "basis": "Part-NCO",
   "q": "Welk gegeven hoort volgens de AMC bij Part-NCO thuis in het journey log (reisdagboek) van het vliegtuig?",
   "o": [
@@ -9210,7 +9210,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1.2.1",
-  "loText": "Describe the pilot's legal obligation to plan and prepare a flight",
+  "loText": "De wettelijke verplichting van de piloot beschrijven om een vlucht te plannen en voor te bereiden",
   "basis": "Part-NCO",
   "q": "Je plant een VFR-vlucht overdag naar een ander vliegveld. Hoeveel eindreservebrandstof (final reserve fuel) plan je volgens de AMC bij Part-NCO minstens?",
   "o": [
@@ -9239,7 +9239,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1.2.1",
-  "loText": "Describe the pilot's legal obligation to plan and prepare a flight",
+  "loText": "De wettelijke verplichting van de piloot beschrijven om een vlucht te plannen en voor te bereiden",
   "basis": "Part-NCO",
   "q": "Je plant een VFR-vlucht 's nachts naar een ander vliegveld. Welke eindreservebrandstof plan je volgens de AMC bij Part-NCO minstens?",
   "o": [
@@ -9268,7 +9268,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1.2.1",
-  "loText": "Describe the pilot's legal obligation to plan and prepare a flight",
+  "loText": "De wettelijke verplichting van de piloot beschrijven om een vlucht te plannen en voor te bereiden",
   "basis": "Part-NCO",
   "q": "Overdag maak je een korte VFR-vlucht waarbij je opstijgt en landt op hetzelfde vliegveld en het veld voortdurend in zicht houdt. Welke minimale eindreservebrandstof geldt dan volgens de AMC bij Part-NCO?",
   "o": [
@@ -9297,7 +9297,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1.2.1",
-  "loText": "Describe the pilot's legal obligation to plan and prepare a flight",
+  "loText": "De wettelijke verplichting van de piloot beschrijven om een vlucht te plannen en voor te bereiden",
   "basis": "Part-NCO",
   "q": "Je plant een VFR-vlucht waarvoor geen uitwijkvliegveld vereist is. Wanneer mag je volgens Part-NCO de vlucht aanvangen?",
   "o": [
@@ -9326,7 +9326,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Wanneer moet je volgens Part-NCO als gezagvoerder van een gecontroleerde vlucht een brandstofnoodtoestand (fuel emergency) verklaren?",
   "o": [
@@ -9355,7 +9355,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Je neemt een passagier mee in een eenvoudig tweezitsvliegtuig zonder reddingsvesten of zuurstof aan boord. Wat moet de veiligheidsbriefing volgens de AMC bij Part-NCO in elk geval bevatten?",
   "o": [
@@ -9384,7 +9384,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.2.1.2.4",
-  "loText": "State that refuelling shall not be commenced with passengers on board",
+  "loText": "Weten dat met tanken niet begonnen mag worden met passagiers aan boord",
   "basis": "Part-NCO",
   "q": "Je passagier zit al in het vliegtuig wanneer je merkt dat je nog AVGAS moet tanken. Wat zegt Part-NCO?",
   "o": [
@@ -9413,7 +9413,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.2.11.1",
-  "loText": "Maintaining VMC",
+  "loText": "VMC behouden",
   "basis": "Part-NCO",
   "q": "Onderweg hoor je dat het weer op je bestemming verslechtert. Onder welke voorwaarde mag je je VFR-vlucht volgens Part-NCO voortzetten?",
   "o": [
@@ -9442,7 +9442,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1.2.1",
-  "loText": "Describe the pilot's legal obligation to plan and prepare a flight",
+  "loText": "De wettelijke verplichting van de piloot beschrijven om een vlucht te plannen en voor te bereiden",
   "basis": "Part-NCO",
   "q": "De TAF van je bestemming vermeldt in een TEMPO-periode rond je aankomsttijd mist met een zicht onder de VFR-minima. Hoe houd je hier volgens de AMC bij Part-NCO rekening mee bij je planning?",
   "o": [
@@ -9471,7 +9471,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.2.1.1",
-  "loText": "Preflight",
+  "loText": "Vóór de vlucht",
   "basis": "Part-NCO",
   "q": "Op een koude ochtend ligt er een dunne laag rijp op de vleugels van je vliegtuig. Het vlieghandboek (AFM) staat opstijgen met rijp niet toe. Wat doe je?",
   "o": [
@@ -9500,7 +9500,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Je neemt een vriend mee als passagier en wil onderweg een motorstoring simuleren om je noodprocedure te oefenen. Mag dat volgens Part-NCO?",
   "o": [
@@ -9529,7 +9529,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Je kunt niet goed inschatten hoe zuurstofgebrek de inzittenden zal beïnvloeden. Je plant een kruisvlucht van 50 minuten op een cabinedrukhoogte van 11 500 ft in een vliegtuig zonder drukcabine. Wat geldt volgens Part-NCO?",
   "o": [
@@ -9558,7 +9558,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Boven welke cabinedrukhoogte moeten volgens Part-NCO alle inzittenden, ook de passagiers, extra zuurstof gebruiken als de gezagvoerder niet kan bepalen hoe zuurstofgebrek hen zal beïnvloeden?",
   "o": [
@@ -9587,7 +9587,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Welk gegeven moet een vliegtuig volgens Part-NCO al voor een VFR-vlucht overdag kunnen meten en weergeven?",
   "o": [
@@ -9616,7 +9616,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Je wilt met een vliegtuig 's nachts in VMC vliegen. Wat moet het volgens Part-NCO bovenop de instrumenten voor VFR overdag kunnen meten en weergeven?",
   "o": [
@@ -9645,7 +9645,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Volgens de AMC bij Part-NCO mag een bochtcoördinator (turn co-ordinator) bij bepaalde plaatselijke vluchten dienen als gelijkwaardig middel voor sommige verplichte instrumenten. Welke voorwaarden gelden voor zo'n vlucht?",
   "o": [
@@ -9674,7 +9674,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Je vliegtuig wordt 's nachts gebruikt. Welke van de volgende verlichting is volgens Part-NCO verplicht?",
   "o": [
@@ -9703,7 +9703,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Je neemt je dochter van 18 maanden mee op een vlucht. Wat vereist Part-NCO voor haar?",
   "o": [
@@ -9732,7 +9732,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Tijdens een vlucht heb je verbandmiddelen uit de EHBO-kit (first-aid kit) gebruikt. Wat moet je volgens Part-NCO en de bijbehorende AMC doen?",
   "o": [
@@ -9761,7 +9761,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Moet een eenmotorig vliegtuig van de categorie ELA1 volgens Part-NCO een handbrandblusser aan boord hebben?",
   "o": [
@@ -9790,7 +9790,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Je vliegtuig is gecertificeerd voor hoogstens vier passagierszitplaatsen. Op welke manier mag je volgens Part-NCO voldoen aan de verplichting om een noodbaken mee te voeren?",
   "o": [
@@ -9819,7 +9819,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Op welke frequenties moet een ELT of PLB volgens Part-NCO gelijktijdig kunnen uitzenden?",
   "o": [
@@ -9877,7 +9877,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1.2.1",
-  "loText": "Describe the pilot's legal obligation to plan and prepare a flight",
+  "loText": "De wettelijke verplichting van de piloot beschrijven om een vlucht te plannen en voor te bereiden",
   "basis": "Part-NCO",
   "q": "Je kruissnelheid is 120 kt. Vanaf welke afstand van land waar een noodlanding mogelijk is, moet je volgens Part-NCO de overlevingsrisico's bij een noodlanding op water (ditching) beoordelen en beslissen over reddingsvlotten en noodsignalering?",
   "o": [
@@ -9964,7 +9964,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Het luchtruim waarin je gaat vliegen, vereist radioverbinding. Aan welke eis moet je radio volgens Part-NCO dan in elk geval voldoen?",
   "o": [
@@ -9993,7 +9993,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.2.1.1.3",
-  "loText": "Describe the procedure to be followed in case of defects discovered during the pre-flight check",
+  "loText": "De te volgen procedure beschrijven bij gebreken die tijdens de controle vóór de vlucht ontdekt worden",
   "basis": "Part-NCO",
   "q": "Bij je controle vóór de vlucht stel je vast dat een instrument dat voor je geplande vlucht vereist is, niet werkt. Voor het vliegtuig is geen minimumuitrustingslijst (MEL) opgesteld en het heeft geen vliegvergunning (permit to fly). Wat doe je?",
   "o": [
@@ -10022,7 +10022,7 @@ window.EXTRA_QUESTIONS = [
    "PPL"
   ],
   "lo": "61.1.1",
-  "loText": "Operation of aircraft: ICAO Annex 6, General requirements",
+  "loText": "Gebruik van luchtvaartuigen: ICAO Annex 6, algemene vereisten",
   "basis": "Part-NCO",
   "q": "Je plant een vlucht waarvoor extra zuurstof vereist is, met een vliegtuig zonder drukcabine en zonder ingebouwd zuurstofsysteem. Hoe kun je volgens Part-NCO en de bijbehorende AMC aan de zuurstofeis voldoen?",
   "o": [
@@ -10052,7 +10052,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "30.2.1.1.1",
-  "loText": "Describe how wind is measured for flight meteorological purposes",
+  "loText": "Beschrijven hoe de wind gemeten wordt voor luchtvaartmeteorologische doeleinden",
   "basis": "Part-MET",
   "q": "Over welke periode wordt de oppervlaktewind (richting en snelheid) die in een METAR staat normaal gemiddeld?",
   "o": [
@@ -10172,7 +10172,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "30.10.3.1.1",
-  "loText": "Define METAR and describe content with structure, time of issue and validity period",
+  "loText": "METAR definiëren en de inhoud beschrijven, met opbouw, tijdstip van uitgifte en geldigheidsduur",
   "basis": "Part-MET",
   "q": "Het overheersende zicht (prevailing visibility) is 6 000 m, maar in noordoostelijke richting is het zicht slechts 2 500 m door mist. Wordt dat laagste zicht ook in de METAR vermeld?",
   "o": [
@@ -10202,7 +10202,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "30.10.3.1.1",
-  "loText": "Define METAR and describe content with structure, time of issue and validity period",
+  "loText": "METAR definiëren en de inhoud beschrijven, met opbouw, tijdstip van uitgifte en geldigheidsduur",
   "basis": "Part-MET",
   "q": "De berekende QNH is 1 013,8 hPa. Welke waarde verschijnt in de METAR?",
   "o": [
@@ -10262,7 +10262,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "30.10.3.1.1",
-  "loText": "Define METAR and describe content with structure, time of issue and validity period",
+  "loText": "METAR definiëren en de inhoud beschrijven, met opbouw, tijdstip van uitgifte en geldigheidsduur",
   "basis": "Part-MET",
   "q": "Het zicht op je bestemming verbetert plots boven een SPECI-drempel. Wanneer wordt een SPECI die deze verbetering meldt verspreid?",
   "o": [
@@ -10292,7 +10292,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "30.10.3.1.1",
-  "loText": "Define METAR and describe content with structure, time of issue and validity period",
+  "loText": "METAR definiëren en de inhoud beschrijven, met opbouw, tijdstip van uitgifte en geldigheidsduur",
   "basis": "Part-MET",
   "q": "Welke verandering in de bewolking is een criterium om een SPECI uit te geven?",
   "o": [
@@ -10322,7 +10322,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "30.10.3.1.1",
-  "loText": "Define METAR and describe content with structure, time of issue and validity period",
+  "loText": "METAR definiëren en de inhoud beschrijven, met opbouw, tijdstip van uitgifte en geldigheidsduur",
   "basis": "Part-MET",
   "q": "Een METAR van 1420 UTC eindigt met een TREND-verwachting (bv. NOSIG). Tot wanneer geldt die TREND?",
   "o": [
@@ -10382,7 +10382,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "30.10.3.1.2",
-  "loText": "Define TAF and describe content with structure, time of issue and validity period",
+  "loText": "TAF definiëren en de inhoud beschrijven, met opbouw, tijdstip van uitgifte en geldigheidsduur",
   "basis": "Part-MET",
   "q": "Welke geldigheidsduur kan een routine-TAF hebben?",
   "o": [
@@ -10562,7 +10562,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "30.10.3.4",
-  "loText": "Meteorological warnings",
+  "loText": "Meteorologische waarschuwingen",
   "basis": "Part-MET",
   "q": "Voor welk van de volgende verschijnselen wordt een AIRMET uitgegeven en geen SIGMET?",
   "o": [
@@ -10592,7 +10592,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "30.10.3.4",
-  "loText": "Meteorological warnings",
+  "loText": "Meteorologische waarschuwingen",
   "basis": "Part-MET",
   "q": "Vanaf welke bewolking wordt een AIRMET uitgegeven voor lage bewolking (BKN CLD of OVC CLD)?",
   "o": [
@@ -10622,7 +10622,7 @@ window.EXTRA_QUESTIONS = [
    "ULM"
   ],
   "lo": "30.10.3.3.1",
-  "loText": "List type of weather charts and reports suitable for pre-flight (flight planning) and and enroute phases of flight",
+  "loText": "De soorten weerkaarten en -berichten opsommen die geschikt zijn voor de vluchtvoorbereiding en voor de fase onderweg (en route)",
   "basis": "Part-MET",
   "q": "Waar AIRMET's samen met gebiedsverwachtingen voor lage vluchten (area forecasts for low-level flights) worden uitgegeven: hoe vaak verschijnt zo'n gebiedsverwachting en hoe lang is ze geldig?",
   "o": [
