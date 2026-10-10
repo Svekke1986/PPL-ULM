@@ -545,5 +545,63 @@
 "options": {
 "0": "De luchtvaartinlichtingendienst (Aeronautical Information Service, AIS)"
 }
+},
+"665611": {
+"question": "Wat betekent \"WATER PATCHES\" als het gaat over de conditie van de landingsbaan?"
+},
+"665886": {
+"question": "Wat is de betekenis van de term \"APPROVED\" in het radioverkeer?"
+},
+"665912": {
+"question": "Met welke zin begint een piloot een blinde uitzending?"
+},
+"666164": {
+"question": "Wat is de functie van de kleine sprieten aan de achterranden van de vleugels en stuurvlakken van een vliegtuig?"
+},
+"666136": {
+"question": "Wat zijn de voornaamste onderdelen van de staart van een vliegtuig?",
+"options": {
+"0": "Stabilo en kielvlak",
+"1": "Stuurwiel en pedalen"
+}
+},
+"666132": {
+"question": "De dikte van een vleugelprofiel is de afstand tussen de onderkant en de bovenkant van de vleugel, gemeten ter hoogte van…",
+"options": {
+"0": "Waar het profiel het hoogst is"
+}
+},
+"665735": {
+"question": "De gegevens die nodig zijn om de ligging van het zwaartepunt van het vliegtuig te berekenen, zoals het leeggewicht en de hefboomarmen, vind je in:"
+},
+"665737": {
+"question": "In welke sectie van het vlieghandboek vind je de gegevens van het lege vliegtuig zoals bepaald bij de weging?"
+},
+"666295": {
+"question": "Het begrip \"TT\" is gedefinieerd als..."
+},
+"666333": {
+"question": "Een VDF-station op de grond kan ___ bepalen."
+},
+"666362": {
+"question": "Wat wordt bedoeld met zichtnavigatie?"
+},
+"665855": {
+"question": "De RGB-satellietbeelden tonen..."
+},
+"666062": {
+"question": "Welk fenomeen is te verwachten bij punt 3 van de microburst? Zie afbeelding (OPR-001)"
+},
+"665725": {
+"question": "Het leeggewicht (empty weight) en het corresponderende zwaartepunt (center of gravity) van een vliegtuig zijn initieel bepaald door:"
+},
+"665769": {
+"question": "Boven de wrijvingsgrenslaag, met een heersende drukgradiënt, is de windrichting..."
+},
+"665783": {
+"question": "Hoe veranderen het temperatuurverschil en de relatieve vochtigheid bij stijgende temperatuur?"
+},
+"JH2-21": {
+"question": "Tijdens kruisvlucht met constant motorvermogen heeft een vliegtuig voortdurend de neiging om te klimmen. Hoe kan deze neiging tenietgedaan worden?"
 }
 }
