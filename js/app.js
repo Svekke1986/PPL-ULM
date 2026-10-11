@@ -293,6 +293,8 @@
     if (!deck.length) {  // nieuwe ronde
       deck = shuffle([...ids]);
       store.set(P.deckKey + '.ronde', { answered: 0, correct: 0, per: {} });
+      P.session = { answered: 0, correct: 0 };  // sessiescore en teller beginnen opnieuw
+      P.count = 1;
     }
     const id = deck.shift();
     store.set(P.deckKey, deck);
