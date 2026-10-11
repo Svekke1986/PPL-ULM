@@ -43,17 +43,19 @@ for sid in order:
     tekst = "\n\n".join(s["tekst"])
     t = re.search(re.escape(sid) + r" +([^\n]+(?:\n {3,}[A-Z][^\n]*)?)", tekst)
     titel = re.sub(r"\s+", " ", t.group(1)).strip() if t else ""
-    out.append({"id": sid, "titel": titel, "paginas": [s["paginas"][0], s["paginas"][-1]], "tekst": tekst})
+    # JSON: witruimte binnen een regel samengevoegd (citeerbaar); Markdown: opmaak van de PDF behouden.
+    plat = re.sub(r"\n{3,}", "\n\n", "\n".join(re.sub(r"\s+", " ", l).strip() for l in tekst.split("\n"))).strip()
+    out.append({"id": sid, "titel": titel, "paginas": [s["paginas"][0], s["paginas"][-1]], "tekst": plat, "_layout": tekst})
 
 def key(a):
     return [int(x) for x in re.findall(r"\d+", a.split("/")[1] + " " + a.split("/")[0])]
 nieuwste = max(amdts, key=key) if amdts else ""
 json.dump({"bron": "AIP Belgium and Luxembourg (AIM Belgium / skeyes) – " + pdf.rsplit("/", 1)[-1],
-           "amdt": "AIRAC AMDT " + nieuwste, "subsecties": out},
+           "amdt": "AIRAC AMDT " + nieuwste, "subsecties": [{k: v for k, v in s.items() if k != "_layout"} for s in out]},
           open(uit + ".json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 with open(uit + ".md", "w", encoding="utf-8") as f:
     f.write(f"# AIP Belgium and Luxembourg – {pdf.rsplit('/', 1)[-1]}\n\nNieuwste wijziging in dit deel: AIRAC AMDT {nieuwste}. "
             "Tekst automatisch uit de PDF gehaald (pdftotext -layout); tabellen en kaarten: zie de PDF.\n\n")
     for s in out:
-        f.write(f"## {s['id']} – {s['titel']}\n\n_PDF-pagina's {s['paginas'][0]}–{s['paginas'][1]}_\n\n```\n{s['tekst']}\n```\n\n")
+        f.write(f"## {s['id']} – {s['titel']}\n\n_PDF-pagina's {s['paginas'][0]}–{s['paginas'][1]}_\n\n```\n{s['_layout']}\n```\n\n")
 print(len(out), "subsecties; nieuwste", nieuwste)

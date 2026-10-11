@@ -65,7 +65,7 @@ Taal: Engels. Auteursrecht: © AIM Belgium — citeer kort en met bronvermelding
 | `aip/GEN.pdf`, `aip/gen.json` / `.md` | Deel 1 – General: o.a. GEN 1.1 autoriteiten, GEN 1.5 boorduitrusting en documenten, GEN 1.6 nationale regelgeving, **GEN 1.7 verschillen met ICAO**, GEN 2 eenheden/afkortingen, GEN 3 diensten (AIS, ATS, MET, SAR) — 28 subsecties |
 | `aip/ENR.pdf`, `aip/enr.json` / `.md` | Deel 2 – En-route: **ENR 1.1 algemene regels**, **ENR 1.2 VFR**, ENR 1.4 luchtruimklassen, ENR 1.7 hoogtemeterinstelling, ENR 1.10 vluchtplannen, ENR 1.12 onderschepping, ENR 2 luchtruim (TMA/CTR, TMZ/RMZ), **ENR 5** verboden/beperkte/gevaarlijke gebieden, sport- en recreatiegebieden, vogeltrek — 37 subsecties (kaarten ENR 6 alleen in de PDF) |
 
-Elke subsectie: `{"id": "ENR 1.2", "titel": "Visual Flight Rules", "paginas": [63, 68], "tekst": "..."}` (PDF-paginanummers).
+Elke subsectie: `{"id": "ENR 1.2", "titel": "Visual Flight Rules", "paginas": [63, 68], "tekst": "..."}` (PDF-paginanummers). In de JSON is de witruimte binnen een regel samengevoegd (zodat je er letterlijk uit kunt citeren); de `.md` behoudt de opmaak van de PDF (kolommen van tabellen).
 Opnieuw aanmaken na een nieuwe AIRAC-cyclus (PDF's vervangen door die uit eAIP_Main):
 ```bash
 python3 tools/extract_aip.py sources/aip/GEN.pdf sources/aip/gen
