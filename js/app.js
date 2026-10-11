@@ -284,30 +284,42 @@
     nextPractice();
   }
 
-  // Elke vraag komt één keer aan bod per ronde (stapel per vak/hoofdstuk, bewaard tussen bezoeken).
+  // Elke vraag komt één keer aan bod per ronde (stapel per vak of hoofdstuk, bewaard tussen bezoeken).
   function drawFromDeck() {
     const P = practice;
     const ids = new Set(P.pool.map(q => q.id));
     let deck = store.get(P.deckKey, []).filter(id => ids.has(id));
     if (!deck.length) {  // nieuwe ronde
       deck = shuffle([...ids]);
-      store.set(P.deckKey + '.ronde', { answered: 0, correct: 0 });
+      store.set(P.deckKey + '.ronde', { answered: 0, correct: 0, per: {} });
     }
     const id = deck.shift();
     store.set(P.deckKey, deck);
     P.roundPos = ids.size - deck.length;  // de hoeveelste vraag van deze ronde
     P.roundSize = ids.size;
-    P.lastOfRound = deck.length === 0;
+    P.lastOfRound = deck.length === 0 && !P.chapter;  // ronde en score enkel per vak, niet per hoofdstuk
     return P.pool.find(q => q.id === id);
   }
 
+  // Deel (hoofdstuk) van een vraag voor de uitsplitsing van de score.
+  function partOf(q) {
+    const ch = window.chapterOf(practice.subject, q.lo || '');
+    return ch ? ch.name : q.ai ? 'AI-gegenereerde vragen (zonder leerdoel)' : 'Overige';
+  }
+
+  // Ronde afgerond (alleen bij oefenen op het hele vak): totaalscore + per deel van het vak.
   function roundDoneHtml() {
-    const P = practice, r = store.get(P.deckKey + '.ronde', { answered: 0, correct: 0 });
-    const what = P.chapter ? `van het hoofdstuk "${esc(P.chapter.name)}"` : `van ${esc(SUBJECTS[P.subject].name)}`;
-    const pct = r.answered ? Math.round(100 * r.correct / r.answered) : 0;
-    return `<div class="round-done">🎉 <strong>Ronde voltooid!</strong> Je hebt alle ${P.roundSize} vragen ${what} gehad.
-      ${r.answered ? `In deze ronde had je er <strong>${r.correct} van ${r.answered}</strong> juist (${pct} %).` : ''}
-      Met “Volgende vraag” begint een nieuwe ronde, in een andere volgorde.</div>`;
+    const P = practice, r = store.get(P.deckKey + '.ronde', { answered: 0, correct: 0, per: {} });
+    const pct = (c, n) => n ? Math.round(100 * c / n) : 0;
+    const order = (window.CHAPTERS[P.subject] || []).map(c => c.name);
+    const rows = Object.entries(r.per || {}).sort((x, y) => (order.indexOf(x[0]) + 1 || 99) - (order.indexOf(y[0]) + 1 || 99))
+      .map(([name, [n, c]]) => `<tr><td>${esc(name)}</td><td>${c}/${n}</td><td><strong>${pct(c, n)} %</strong></td></tr>`).join('');
+    return `<div class="round-done">
+      <h3>🎉 Alle ${P.roundSize} vragen van ${esc(SUBJECTS[P.subject].name)} gehad</h3>
+      <p class="round-total">Totaalscore: <strong>${r.correct} van ${r.answered}</strong> juist (<strong>${pct(r.correct, r.answered)} %</strong>)${r.answered < P.roundSize ? ` · ${P.roundSize - r.answered} overgeslagen` : ''}</p>
+      ${rows ? `<table class="round-table"><thead><tr><th>Deel</th><th>Juist</th><th>Score</th></tr></thead><tbody>${rows}</tbody></table>` : ''}
+      <p class="small">Met “Nieuwe ronde” begin je opnieuw met alle vragen, in een andere volgorde.</p>
+    </div>`;
   }
 
   // Geschiedenis van deze sessie: terug naar vorige vragen en weer vooruit.
@@ -375,14 +387,14 @@
     const answered = P.chosen !== null;
     app.innerHTML = practiceHeader() + withCompassCalc(`
       <div class="card">
-        ${questionHtml(P.q, { chosen: P.chosen, reveal: answered, locked: answered, counter: `Vraag ${P.roundPos} van ${P.roundSize}` })}
+        ${questionHtml(P.q, { chosen: P.chosen, reveal: answered, locked: answered, counter: P.chapter ? `Vraag ${P.count}` : `Vraag ${P.roundPos} van ${P.roundSize}` })}
         ${answered ? feedbackHtml(P.q, P.chosen) : ''}
         ${answered && P.lastOfRound ? roundDoneHtml() : ''}
         <div class="quiz-actions">
           <a class="btn" href="#/${P.licence.toLowerCase()}">← Vakken</a>
           <div class="btn-row">
             <button class="btn" id="prev" ${P.pos > 0 ? '' : 'disabled'}>← Vorige</button>
-            <button class="btn btn-primary" id="next">${answered || P.pos < P.hist.length - 1 ? 'Volgende vraag →' : 'Overslaan →'}</button>
+            <button class="btn btn-primary" id="next">${answered && P.lastOfRound && P.pos === P.hist.length - 1 ? 'Nieuwe ronde →' : answered || P.pos < P.hist.length - 1 ? 'Volgende vraag →' : 'Overslaan →'}</button>
           </div>
         </div>
       </div>`, P.q, P.subject);
@@ -393,9 +405,15 @@
       const ok = P.chosen === P.q.c;
       P.session.answered++; if (ok) P.session.correct++;
       addStat(P.licence, P.subject, ok);
-      const r = store.get(P.deckKey + '.ronde', { answered: 0, correct: 0 });
-      r.answered++; if (ok) r.correct++;
-      store.set(P.deckKey + '.ronde', r);
+      if (!P.chapter) {  // score van de ronde over het hele vak, ook per deel
+        const r = store.get(P.deckKey + '.ronde', { answered: 0, correct: 0, per: {} });
+        r.per = r.per || {};
+        const part = partOf(P.q), t = r.per[part] || [0, 0];
+        r.answered++; t[0]++;
+        if (ok) { r.correct++; t[1]++; }
+        r.per[part] = t;
+        store.set(P.deckKey + '.ronde', r);
+      }
       renderPractice();
       if (P.lastOfRound) { app.querySelector('.round-done')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); return; }
       app.querySelector('.feedback')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });

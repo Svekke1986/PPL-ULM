@@ -160,7 +160,12 @@ h2 { font-size: 1.3rem; margin: 0 0 12px; }
 .feedback p { margin: 6px 0; }
 .feedback .source { margin-top: 10px; padding-top: 10px; border-top: 1px dashed currentColor; font-size: .9rem; }
 .feedback .source a { color: inherit; font-weight: 700; }
-.round-done { margin-top: 14px; padding: 12px 14px; border-radius: 10px; background: var(--ok-bg); border: 1px solid var(--ok-border); color: var(--ok-text); }
+.round-done { margin-top: 14px; padding: 14px 16px; border-radius: 10px; background: var(--ok-bg); border: 1px solid var(--ok-border); color: var(--ok-text); }
+.round-done h3 { margin: 0 0 6px; }
+.round-total { font-size: 1.05rem; margin: 0 0 10px; }
+.round-table { width: 100%; border-collapse: collapse; font-size: .9rem; margin-bottom: 8px; }
+.round-table th, .round-table td { text-align: left; padding: 4px 6px; border-bottom: 1px solid var(--ok-border); }
+.round-table td:nth-child(2), .round-table td:nth-child(3), .round-table th:nth-child(2), .round-table th:nth-child(3) { text-align: right; white-space: nowrap; }
 .ai-notice { margin-top: 12px; padding: 10px 12px; border-radius: 8px; background: var(--surface-2); border: 1px solid var(--border); border-left: 4px solid var(--primary); color: var(--text); font-size: .92rem; }
 .ai-notice p { margin: 0 0 6px; }
 .ai-notice p:last-child { margin-bottom: 0; }
