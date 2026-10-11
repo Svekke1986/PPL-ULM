@@ -26,6 +26,7 @@ def licences(subject, topic):
 def main():
     patches = json.load(open(os.path.join(ROOT, "content", "_patches.json"), encoding="utf-8"))
     replacements = patches.get("_replace", {})
+    hidden = patches.get("_hide", {})  # id -> reden (bv. "dubbel met 665761"): niet op de site
 
     def fix(text):
         for old, new in replacements.items():
@@ -42,6 +43,8 @@ def main():
         content = json.load(open(cpath, encoding="utf-8")) if os.path.exists(cpath) else {}
         out = []
         for q in questions:
+            if q["id"] in hidden:
+                continue
             p = patches.get(q["id"], {})
             options = list(q["options"])
             for i, text in p.get("options", {}).items():
