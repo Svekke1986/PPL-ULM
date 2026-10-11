@@ -280,7 +280,7 @@
       return;
     }
     const deckKey = `deck.${licence}.${subject}${chapter ? '.' + chapter.id : ''}`;
-    practice = { licence, subject, chapter, pool, deckKey, q: null, chosen: null, session: { answered: 0, correct: 0 }, count: 0 };
+    practice = { licence, subject, chapter, pool, deckKey, q: null, chosen: null, session: { answered: 0, correct: 0 }, count: 0, hist: [], pos: -1 };
     nextPractice();
   }
 
@@ -310,12 +310,25 @@
       Met “Volgende vraag” begint een nieuwe ronde, in een andere volgorde.</div>`;
   }
 
+  // Geschiedenis van deze sessie: terug naar vorige vragen en weer vooruit.
+  function showEntry(i) {
+    const P = practice, e = P.hist[i];
+    P.pos = i;
+    Object.assign(P, { q: e.q, chosen: e.chosen, roundPos: e.roundPos, roundSize: e.roundSize, lastOfRound: e.lastOfRound });
+    renderPractice();
+  }
+
   function nextPractice() {
     const P = practice;
-    P.chosen = null;
+    if (P.pos < P.hist.length - 1) return showEntry(P.pos + 1);  // vooruit in de geschiedenis
     P.count++;
-    P.q = present(drawFromDeck());
-    renderPractice();
+    const q = present(drawFromDeck());
+    P.hist.push({ q, chosen: null, roundPos: P.roundPos, roundSize: P.roundSize, lastOfRound: P.lastOfRound });
+    showEntry(P.hist.length - 1);
+  }
+
+  function prevPractice() {
+    if (practice.pos > 0) showEntry(practice.pos - 1);
   }
 
   function practiceHeader() {
@@ -367,12 +380,16 @@
         ${answered && P.lastOfRound ? roundDoneHtml() : ''}
         <div class="quiz-actions">
           <a class="btn" href="#/${P.licence.toLowerCase()}">← Vakken</a>
-          <div class="btn-row"><button class="btn btn-primary" id="next">${answered ? 'Volgende vraag →' : 'Overslaan →'}</button></div>
+          <div class="btn-row">
+            <button class="btn" id="prev" ${P.pos > 0 ? '' : 'disabled'}>← Vorige</button>
+            <button class="btn btn-primary" id="next">${answered || P.pos < P.hist.length - 1 ? 'Volgende vraag →' : 'Overslaan →'}</button>
+          </div>
         </div>
       </div>`, P.q, P.subject);
     app.querySelectorAll('.option').forEach(b => b.onclick = () => {
       if (P.chosen !== null) return;
       P.chosen = +b.dataset.i;
+      P.hist[P.pos].chosen = P.chosen;
       const ok = P.chosen === P.q.c;
       P.session.answered++; if (ok) P.session.correct++;
       addStat(P.licence, P.subject, ok);
@@ -384,6 +401,7 @@
       app.querySelector('.feedback')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
     document.getElementById('next').onclick = () => nextPractice();
+    document.getElementById('prev').onclick = () => prevPractice();
     bindChapterSelect();
     if (window.COMPASSCALC) window.COMPASSCALC.bind(app);
     bindImages();
