@@ -54,10 +54,11 @@ def main():
                 problems.append(f"{subject}/{q['id']}: geen uitleg")
                 c = [""]
             lo = q["topic"].split(" ", 1)
+            code = p.get("lo", lo[0])  # patch "lo": verkeerd toegekende leerdoelcode rechtzetten
             out.append({
                 "id": q["id"],
-                "lo": lo[0],
-                "loText": lo_nl.get(lo[0], lo[1] if len(lo) > 1 else ""),
+                "lo": code,
+                "loText": lo_nl.get(code, lo[1] if len(lo) > 1 and code == lo[0] else ""),
                 "q": fix(p.get("question", q["question"])),
                 "o": [fix(o) for o in options],
                 "c": q["correct"],
