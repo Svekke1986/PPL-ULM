@@ -654,5 +654,26 @@
 "options": {
 "2": "Ware peiling vanaf het station"
 }
+},
+"JH2-02": {
+"options": {
+"0": "het horizontale staartvlak",
+"1": "de rolroeren"
+}
+},
+"JH1-05": {
+"options": {
+"2": "aanvalshoek",
+"3": "neusradius"
+}
+},
+"JH1-06": {
+"question": "De aanvalshoek is de hoek tussen…"
+},
+"JH1-09": {
+"options": {
+"1": "Aan de rolroeren",
+"2": "Nabij de vleugeltips"
+}
 }
 }
