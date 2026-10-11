@@ -18,6 +18,8 @@ DOCS = {
     "occ": ("sources/easa/occurrence-reporting.json", "bepalingen", lambda a: a["id"]),
     "atmans": ("sources/easa/atm-ans.json", "bepalingen", lambda a: a["id"]),
     "acc996": ("sources/eu/ongevalsonderzoek-996-2010-oorspronkelijk.json", "bepalingen", lambda a: a["id"]),
+    "aipgen": ("sources/aip/gen.json", "subsecties", lambda a: a["id"]),
+    "aipenr": ("sources/aip/enr.json", "subsecties", lambda a: a["id"]),
 }
 SUB = re.compile(r"^\s*(\(\d+\)|\([ivx]+\)|\d+°|[a-z]\)|\(\w\)\s*\(\d+\)|-\s)")       # onderdeel van een opsomming
 TOP = re.compile(r"^\s*(\([a-z]\)|[a-z]\)\S|§\s*\d+|\d+\.\s)")                      # (a), a), § 1, 1.
