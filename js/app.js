@@ -284,30 +284,65 @@
     nextPractice();
   }
 
-  // Elke vraag komt één keer aan bod per ronde (stapel per vak/hoofdstuk, bewaard tussen bezoeken).
+  // Elke vraag komt één keer aan bod per ronde (stapel per vak of hoofdstuk, bewaard tussen bezoeken).
   function drawFromDeck() {
     const P = practice;
     const ids = new Set(P.pool.map(q => q.id));
     let deck = store.get(P.deckKey, []).filter(id => ids.has(id));
     if (!deck.length) {  // nieuwe ronde
       deck = shuffle([...ids]);
-      store.set(P.deckKey + '.ronde', { answered: 0, correct: 0 });
+      store.set(P.deckKey + '.ronde', { answered: 0, correct: 0, per: {} });
     }
     const id = deck.shift();
     store.set(P.deckKey, deck);
     P.roundPos = ids.size - deck.length;  // de hoeveelste vraag van deze ronde
     P.roundSize = ids.size;
-    P.lastOfRound = deck.length === 0;
+    P.lastOfRound = deck.length === 0 && !P.chapter;  // ronde en score enkel per vak, niet per hoofdstuk
     return P.pool.find(q => q.id === id);
   }
 
-  function roundDoneHtml() {
-    const P = practice, r = store.get(P.deckKey + '.ronde', { answered: 0, correct: 0 });
-    const what = P.chapter ? `van het hoofdstuk "${esc(P.chapter.name)}"` : `van ${esc(SUBJECTS[P.subject].name)}`;
-    const pct = r.answered ? Math.round(100 * r.correct / r.answered) : 0;
-    return `<div class="round-done">🎉 <strong>Ronde voltooid!</strong> Je hebt alle ${P.roundSize} vragen ${what} gehad.
-      ${r.answered ? `In deze ronde had je er <strong>${r.correct} van ${r.answered}</strong> juist (${pct} %).` : ''}
-      Met “Volgende vraag” begint een nieuwe ronde, in een andere volgorde.</div>`;
+  // Deel (hoofdstuk) van een vraag voor de uitsplitsing van de score.
+  function partOf(q) {
+    const ch = window.chapterOf(practice.subject, q.lo || '');
+    return ch ? ch.name : q.ai ? 'AI-gegenereerde vragen (zonder leerdoel)' : 'Overige';
+  }
+
+  // Ronde afgerond (alleen bij oefenen op het hele vak): totaalscore + per deel van het vak.
+  function roundDoneHtml(ended) {
+    const P = practice, r = store.get(P.deckKey + '.ronde', { answered: 0, correct: 0, per: {} });
+    const pct = (c, n) => n ? Math.round(100 * c / n) : 0;
+    const order = (window.CHAPTERS[P.subject] || []).map(c => c.name);
+    const rows = Object.entries(r.per || {}).sort((x, y) => (order.indexOf(x[0]) + 1 || 99) - (order.indexOf(y[0]) + 1 || 99))
+      .map(([name, [n, c]]) => `<tr><td>${esc(name)}</td><td>${c}/${n}</td><td><strong>${pct(c, n)} %</strong></td></tr>`).join('');
+    return `<div class="round-done">
+      <h3>${ended ? `Sessie beëindigd: ${r.answered} van ${P.roundSize} vragen van ${esc(SUBJECTS[P.subject].name)} beantwoord` : `🎉 Alle ${P.roundSize} vragen van ${esc(SUBJECTS[P.subject].name)} gehad`}</h3>
+      <p class="round-total">Totaalscore: <strong>${r.correct} van ${r.answered}</strong> juist (<strong>${pct(r.correct, r.answered)} %</strong>)${!ended && r.answered < P.roundSize ? ` · ${P.roundSize - r.answered} overgeslagen` : ''}</p>
+      ${rows ? `<table class="round-table"><thead><tr><th>Deel</th><th>Juist</th><th>Score</th></tr></thead><tbody>${rows}</tbody></table>` : ''}
+      <p class="small">${ended ? '' : 'Met “Nieuwe ronde” begin je opnieuw met alle vragen, in een andere volgorde.'}</p>
+    </div>`;
+  }
+
+  // Sessie beëindigen: (bij een heel vak) eerst de score tonen, daarna opnieuw beginnen met alle vragen.
+  function restartPractice() {
+    const P = practice;
+    const reset = () => {
+      // Hoofdstuk: alleen die stapel. Heel vak: stapels van het vak én van alle hoofdstukken, plus de rondescore.
+      const prefix = `pplulm.${P.deckKey}`;
+      Object.keys(localStorage).filter(k => k === prefix || (!P.chapter && k.startsWith(prefix + '.'))).forEach(k => localStorage.removeItem(k));
+      viewPractice(P.licence, P.subject, P.chapter && P.chapter.id);
+    };
+    const r = store.get(P.deckKey + '.ronde', { answered: 0 });
+    if (P.chapter || !r.answered) {
+      if (confirm('Deze sessie beëindigen en opnieuw beginnen met alle vragen?')) reset();
+      return;
+    }
+    app.innerHTML = practiceHeader() + `<div class="card">${roundDoneHtml(true)}
+      <div class="quiz-actions"><button class="btn" id="cancel">← Verder oefenen</button>
+        <button class="btn btn-primary" id="again">Opnieuw beginnen →</button></div></div>`;
+    document.getElementById('cancel').onclick = () => renderPractice();
+    document.getElementById('again').onclick = reset;
+    document.getElementById('restart').disabled = true;
+    bindChapterSelect();
   }
 
   // Geschiedenis van deze sessie: terug naar vorige vragen en weer vooruit.
@@ -341,7 +376,8 @@
     return `<div class="crumbs"><a href="#/">Home</a> › <a href="#/${P.licence.toLowerCase()}">${esc(LICENCES[P.licence].name)}</a> › ${esc(S.name)}</div>
       <div class="quiz-head">
         <div><h1>${S.icon} ${esc(S.name)}</h1><div class="muted small">Oefenmodus · ${P.pool.length} vragen${P.chapter ? ' in dit hoofdstuk' : ''}</div></div>
-        <span class="score-pill">Sessie: ${P.session.correct}/${P.session.answered}</span>
+        <div class="head-actions"><span class="score-pill">Sessie: ${P.session.correct}/${P.session.answered}</span>
+          <button class="btn btn-small" id="restart" title="Sessie beëindigen en opnieuw beginnen">⟲ Opnieuw beginnen</button></div>
       </div>
       ${chapterOpts ? `<div class="chapter-filter">
         <label for="chapter">Hoofdstuk</label>
@@ -375,14 +411,14 @@
     const answered = P.chosen !== null;
     app.innerHTML = practiceHeader() + withCompassCalc(`
       <div class="card">
-        ${questionHtml(P.q, { chosen: P.chosen, reveal: answered, locked: answered, counter: `Vraag ${P.roundPos} van ${P.roundSize}` })}
+        ${questionHtml(P.q, { chosen: P.chosen, reveal: answered, locked: answered, counter: P.chapter ? `Vraag ${P.count}` : `Vraag ${P.roundPos} van ${P.roundSize}` })}
         ${answered ? feedbackHtml(P.q, P.chosen) : ''}
         ${answered && P.lastOfRound ? roundDoneHtml() : ''}
         <div class="quiz-actions">
           <a class="btn" href="#/${P.licence.toLowerCase()}">← Vakken</a>
           <div class="btn-row">
             <button class="btn" id="prev" ${P.pos > 0 ? '' : 'disabled'}>← Vorige</button>
-            <button class="btn btn-primary" id="next">${answered || P.pos < P.hist.length - 1 ? 'Volgende vraag →' : 'Overslaan →'}</button>
+            <button class="btn btn-primary" id="next">${answered && P.lastOfRound && P.pos === P.hist.length - 1 ? 'Nieuwe ronde →' : answered || P.pos < P.hist.length - 1 ? 'Volgende vraag →' : 'Overslaan →'}</button>
           </div>
         </div>
       </div>`, P.q, P.subject);
@@ -393,15 +429,22 @@
       const ok = P.chosen === P.q.c;
       P.session.answered++; if (ok) P.session.correct++;
       addStat(P.licence, P.subject, ok);
-      const r = store.get(P.deckKey + '.ronde', { answered: 0, correct: 0 });
-      r.answered++; if (ok) r.correct++;
-      store.set(P.deckKey + '.ronde', r);
+      if (!P.chapter) {  // score van de ronde over het hele vak, ook per deel
+        const r = store.get(P.deckKey + '.ronde', { answered: 0, correct: 0, per: {} });
+        r.per = r.per || {};
+        const part = partOf(P.q), t = r.per[part] || [0, 0];
+        r.answered++; t[0]++;
+        if (ok) { r.correct++; t[1]++; }
+        r.per[part] = t;
+        store.set(P.deckKey + '.ronde', r);
+      }
       renderPractice();
       if (P.lastOfRound) { app.querySelector('.round-done')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); return; }
       app.querySelector('.feedback')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
     document.getElementById('next').onclick = () => nextPractice();
     document.getElementById('prev').onclick = () => prevPractice();
+    document.getElementById('restart').onclick = () => restartPractice();
     bindChapterSelect();
     if (window.COMPASSCALC) window.COMPASSCALC.bind(app);
     bindImages();
@@ -639,64 +682,16 @@
 
   // ---------- settings ----------
   // Elke rij is een vak (of instrument) met de localStorage-sleutels die bij die voortgang horen.
-  function progressRows() {
-    const keys = () => Object.keys(localStorage).filter(k => k.startsWith('pplulm.'));
-    const rows = [];
-    Object.keys(LICENCES).forEach(lic => {
-      licenceSubjects(lic).forEach(sub => {
-        const S = SUBJECTS[sub];
-        const own = k => k === `pplulm.stats.${lic}.${sub}` || k === `pplulm.exams.${lic}.${sub}`
-          || k === `pplulm.deck.${lic}.${sub}` || k.startsWith(`pplulm.deck.${lic}.${sub}.`);
-        rows.push({ section: LICENCES[lic].name, id: `${lic}.${sub}`, label: `${S.icon} ${S.name}`,
-          st: stats(lic, sub), exams: store.get(`exams.${lic}.${sub}`, []).length, keys: () => keys().filter(own) });
-      });
-    });
-    Object.keys(SETS).forEach(setKey => {
-      const SET = SETS[setKey], API = SET.api();
-      if (!API) return;
-      SET.order.filter(k => API.GENERATORS[k]).forEach(key => {
-        const G = SET.group(key), full = `pplulm.${SET.statsKey}.${key}`;
-        rows.push({ section: SET.title, id: `${setKey}.${key}`, label: `${G.icon} ${G.name}`,
-          st: store.get(`${SET.statsKey}.${key}`, { answered: 0, correct: 0 }), exams: 0, keys: () => keys().filter(k => k === full) });
-      });
-    });
-    return rows;
-  }
-
   function viewSettings() {
-    const rows = progressRows();
-    const sections = [...new Set(rows.map(r => r.section))].map(sec => {
-      const list = rows.filter(r => r.section === sec).map(r => {
-        const has = r.keys().length > 0;
-        const pct = r.st.answered ? Math.round(100 * r.st.correct / r.st.answered) : 0;
-        const info = r.st.answered
-          ? `${r.st.correct}/${r.st.answered} juist (${pct}%)${r.exams ? ` · ${r.exams} proefexamen${r.exams > 1 ? 's' : ''}` : ''}`
-          : (has ? 'Alleen oefenvolgorde of proefexamens bewaard' : 'Nog geen voortgang');
-        return `<li class="progress-row">
-          <div><div>${esc(r.label)}</div><div class="muted small">${info}</div></div>
-          <button class="btn btn-small" data-reset="${esc(r.id)}" ${has ? '' : 'disabled'}>Wissen</button>
-        </li>`;
-      }).join('');
-      return `<h3 class="progress-section">${esc(sec)}</h3><ul class="progress-list">${list}</ul>`;
-    }).join('');
     app.innerHTML = `
       <div class="crumbs"><a href="#/">Home</a> › Instellingen</div>
       <div class="card">
         <h1>Instellingen</h1>
         <h2 style="margin-top:16px">Voortgang</h2>
-        <p class="muted">Je scores worden alleen lokaal in deze browser bewaard. Je kunt de voortgang per vak wissen (score, oefenvolgorde en proefexamens van dat vak) of alles in één keer.</p>
-        ${sections}
-        <h3 class="progress-section">Alles</h3>
+        <p class="muted">Je scores worden alleen lokaal in deze browser bewaard. Opnieuw beginnen met een vak doe je in het vak zelf, met “⟲ Opnieuw beginnen”. Hier kun je alles in één keer wissen.</p>
         <button class="btn" id="reset">Alle voortgang wissen</button>
         <p id="msg" class="small"></p>
       </div>`;
-    app.querySelectorAll('[data-reset]').forEach(btn => btn.onclick = () => {
-      const r = rows.find(x => x.id === btn.dataset.reset);
-      if (!r || !confirm(`Voortgang van "${r.label.replace(/^\S+\s/, '')}" (${r.section}) wissen?`)) return;
-      r.keys().forEach(k => localStorage.removeItem(k));
-      viewSettings();
-      document.getElementById('msg').textContent = `Voortgang van ${r.label.replace(/^\S+\s/, '')} (${r.section}) gewist.`;
-    });
     document.getElementById('reset').onclick = () => {
       if (!confirm('Alle lokale scores en voortgang wissen?')) return;
       Object.keys(localStorage).filter(k => k.startsWith('pplulm.')).forEach(k => localStorage.removeItem(k));
