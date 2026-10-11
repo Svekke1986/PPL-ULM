@@ -308,18 +308,41 @@
   }
 
   // Ronde afgerond (alleen bij oefenen op het hele vak): totaalscore + per deel van het vak.
-  function roundDoneHtml() {
+  function roundDoneHtml(ended) {
     const P = practice, r = store.get(P.deckKey + '.ronde', { answered: 0, correct: 0, per: {} });
     const pct = (c, n) => n ? Math.round(100 * c / n) : 0;
     const order = (window.CHAPTERS[P.subject] || []).map(c => c.name);
     const rows = Object.entries(r.per || {}).sort((x, y) => (order.indexOf(x[0]) + 1 || 99) - (order.indexOf(y[0]) + 1 || 99))
       .map(([name, [n, c]]) => `<tr><td>${esc(name)}</td><td>${c}/${n}</td><td><strong>${pct(c, n)} %</strong></td></tr>`).join('');
     return `<div class="round-done">
-      <h3>🎉 Alle ${P.roundSize} vragen van ${esc(SUBJECTS[P.subject].name)} gehad</h3>
-      <p class="round-total">Totaalscore: <strong>${r.correct} van ${r.answered}</strong> juist (<strong>${pct(r.correct, r.answered)} %</strong>)${r.answered < P.roundSize ? ` · ${P.roundSize - r.answered} overgeslagen` : ''}</p>
+      <h3>${ended ? `Sessie beëindigd: ${r.answered} van ${P.roundSize} vragen van ${esc(SUBJECTS[P.subject].name)} beantwoord` : `🎉 Alle ${P.roundSize} vragen van ${esc(SUBJECTS[P.subject].name)} gehad`}</h3>
+      <p class="round-total">Totaalscore: <strong>${r.correct} van ${r.answered}</strong> juist (<strong>${pct(r.correct, r.answered)} %</strong>)${!ended && r.answered < P.roundSize ? ` · ${P.roundSize - r.answered} overgeslagen` : ''}</p>
       ${rows ? `<table class="round-table"><thead><tr><th>Deel</th><th>Juist</th><th>Score</th></tr></thead><tbody>${rows}</tbody></table>` : ''}
-      <p class="small">Met “Nieuwe ronde” begin je opnieuw met alle vragen, in een andere volgorde.</p>
+      <p class="small">${ended ? '' : 'Met “Nieuwe ronde” begin je opnieuw met alle vragen, in een andere volgorde.'}</p>
     </div>`;
+  }
+
+  // Sessie beëindigen: (bij een heel vak) eerst de score tonen, daarna opnieuw beginnen met alle vragen.
+  function restartPractice() {
+    const P = practice;
+    const reset = () => {
+      // Hoofdstuk: alleen die stapel. Heel vak: stapels van het vak én van alle hoofdstukken, plus de rondescore.
+      const prefix = `pplulm.${P.deckKey}`;
+      Object.keys(localStorage).filter(k => k === prefix || (!P.chapter && k.startsWith(prefix + '.'))).forEach(k => localStorage.removeItem(k));
+      viewPractice(P.licence, P.subject, P.chapter && P.chapter.id);
+    };
+    const r = store.get(P.deckKey + '.ronde', { answered: 0 });
+    if (P.chapter || !r.answered) {
+      if (confirm('Deze sessie beëindigen en opnieuw beginnen met alle vragen?')) reset();
+      return;
+    }
+    app.innerHTML = practiceHeader() + `<div class="card">${roundDoneHtml(true)}
+      <div class="quiz-actions"><button class="btn" id="cancel">← Verder oefenen</button>
+        <button class="btn btn-primary" id="again">Opnieuw beginnen →</button></div></div>`;
+    document.getElementById('cancel').onclick = () => renderPractice();
+    document.getElementById('again').onclick = reset;
+    document.getElementById('restart').disabled = true;
+    bindChapterSelect();
   }
 
   // Geschiedenis van deze sessie: terug naar vorige vragen en weer vooruit.
@@ -353,7 +376,8 @@
     return `<div class="crumbs"><a href="#/">Home</a> › <a href="#/${P.licence.toLowerCase()}">${esc(LICENCES[P.licence].name)}</a> › ${esc(S.name)}</div>
       <div class="quiz-head">
         <div><h1>${S.icon} ${esc(S.name)}</h1><div class="muted small">Oefenmodus · ${P.pool.length} vragen${P.chapter ? ' in dit hoofdstuk' : ''}</div></div>
-        <span class="score-pill">Sessie: ${P.session.correct}/${P.session.answered}</span>
+        <div class="head-actions"><span class="score-pill">Sessie: ${P.session.correct}/${P.session.answered}</span>
+          <button class="btn btn-small" id="restart" title="Sessie beëindigen en opnieuw beginnen">⟲ Opnieuw beginnen</button></div>
       </div>
       ${chapterOpts ? `<div class="chapter-filter">
         <label for="chapter">Hoofdstuk</label>
@@ -420,6 +444,7 @@
     });
     document.getElementById('next').onclick = () => nextPractice();
     document.getElementById('prev').onclick = () => prevPractice();
+    document.getElementById('restart').onclick = () => restartPractice();
     bindChapterSelect();
     if (window.COMPASSCALC) window.COMPASSCALC.bind(app);
     bindImages();
@@ -657,64 +682,16 @@
 
   // ---------- settings ----------
   // Elke rij is een vak (of instrument) met de localStorage-sleutels die bij die voortgang horen.
-  function progressRows() {
-    const keys = () => Object.keys(localStorage).filter(k => k.startsWith('pplulm.'));
-    const rows = [];
-    Object.keys(LICENCES).forEach(lic => {
-      licenceSubjects(lic).forEach(sub => {
-        const S = SUBJECTS[sub];
-        const own = k => k === `pplulm.stats.${lic}.${sub}` || k === `pplulm.exams.${lic}.${sub}`
-          || k === `pplulm.deck.${lic}.${sub}` || k.startsWith(`pplulm.deck.${lic}.${sub}.`);
-        rows.push({ section: LICENCES[lic].name, id: `${lic}.${sub}`, label: `${S.icon} ${S.name}`,
-          st: stats(lic, sub), exams: store.get(`exams.${lic}.${sub}`, []).length, keys: () => keys().filter(own) });
-      });
-    });
-    Object.keys(SETS).forEach(setKey => {
-      const SET = SETS[setKey], API = SET.api();
-      if (!API) return;
-      SET.order.filter(k => API.GENERATORS[k]).forEach(key => {
-        const G = SET.group(key), full = `pplulm.${SET.statsKey}.${key}`;
-        rows.push({ section: SET.title, id: `${setKey}.${key}`, label: `${G.icon} ${G.name}`,
-          st: store.get(`${SET.statsKey}.${key}`, { answered: 0, correct: 0 }), exams: 0, keys: () => keys().filter(k => k === full) });
-      });
-    });
-    return rows;
-  }
-
   function viewSettings() {
-    const rows = progressRows();
-    const sections = [...new Set(rows.map(r => r.section))].map(sec => {
-      const list = rows.filter(r => r.section === sec).map(r => {
-        const has = r.keys().length > 0;
-        const pct = r.st.answered ? Math.round(100 * r.st.correct / r.st.answered) : 0;
-        const info = r.st.answered
-          ? `${r.st.correct}/${r.st.answered} juist (${pct}%)${r.exams ? ` · ${r.exams} proefexamen${r.exams > 1 ? 's' : ''}` : ''}`
-          : (has ? 'Alleen oefenvolgorde of proefexamens bewaard' : 'Nog geen voortgang');
-        return `<li class="progress-row">
-          <div><div>${esc(r.label)}</div><div class="muted small">${info}</div></div>
-          <button class="btn btn-small" data-reset="${esc(r.id)}" ${has ? '' : 'disabled'}>Wissen</button>
-        </li>`;
-      }).join('');
-      return `<h3 class="progress-section">${esc(sec)}</h3><ul class="progress-list">${list}</ul>`;
-    }).join('');
     app.innerHTML = `
       <div class="crumbs"><a href="#/">Home</a> › Instellingen</div>
       <div class="card">
         <h1>Instellingen</h1>
         <h2 style="margin-top:16px">Voortgang</h2>
-        <p class="muted">Je scores worden alleen lokaal in deze browser bewaard. Je kunt de voortgang per vak wissen (score, oefenvolgorde en proefexamens van dat vak) of alles in één keer.</p>
-        ${sections}
-        <h3 class="progress-section">Alles</h3>
+        <p class="muted">Je scores worden alleen lokaal in deze browser bewaard. Opnieuw beginnen met een vak doe je in het vak zelf, met “⟲ Opnieuw beginnen”. Hier kun je alles in één keer wissen.</p>
         <button class="btn" id="reset">Alle voortgang wissen</button>
         <p id="msg" class="small"></p>
       </div>`;
-    app.querySelectorAll('[data-reset]').forEach(btn => btn.onclick = () => {
-      const r = rows.find(x => x.id === btn.dataset.reset);
-      if (!r || !confirm(`Voortgang van "${r.label.replace(/^\S+\s/, '')}" (${r.section}) wissen?`)) return;
-      r.keys().forEach(k => localStorage.removeItem(k));
-      viewSettings();
-      document.getElementById('msg').textContent = `Voortgang van ${r.label.replace(/^\S+\s/, '')} (${r.section}) gewist.`;
-    });
     document.getElementById('reset').onclick = () => {
       if (!confirm('Alle lokale scores en voortgang wissen?')) return;
       Object.keys(localStorage).filter(k => k.startsWith('pplulm.')).forEach(k => localStorage.removeItem(k));

@@ -282,3 +282,5 @@ select {
 .home-section { margin-top: 28px; }
 .home-section .section-title { margin: 0; font-size: 1.35rem; padding-bottom: 6px; border-bottom: 2px solid var(--border); }
 .home-section .section-sub { margin: 8px 0 14px; }
+
+.head-actions { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
