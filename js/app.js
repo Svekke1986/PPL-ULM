@@ -289,15 +289,25 @@
     const P = practice;
     const ids = new Set(P.pool.map(q => q.id));
     let deck = store.get(P.deckKey, []).filter(id => ids.has(id));
+    // Vragen die deze ronde al aan bod kwamen (oudere stapels zonder lijst: alles wat niet meer in de stapel zit).
+    let seen = store.get(P.deckKey + '.gezien', null);
+    if (!Array.isArray(seen)) seen = [...ids].filter(id => !deck.includes(id));
+    seen = seen.filter(id => ids.has(id));
     if (!deck.length) {  // nieuwe ronde
       deck = shuffle([...ids]);
+      seen = [];
       store.set(P.deckKey + '.ronde', { answered: 0, correct: 0, per: {} });
       P.session = { answered: 0, correct: 0 };  // sessiescore en teller beginnen opnieuw
       P.count = 1;
+    } else {  // vragen die sinds het begin van de ronde zijn toegevoegd: alsnog op een willekeurige plaats in de stapel
+      const known = new Set([...deck, ...seen]);
+      [...ids].filter(id => !known.has(id)).forEach(id => deck.splice(Math.floor(Math.random() * (deck.length + 1)), 0, id));
     }
     const id = deck.shift();
+    seen.push(id);
     store.set(P.deckKey, deck);
-    P.roundPos = ids.size - deck.length;  // de hoeveelste vraag van deze ronde
+    store.set(P.deckKey + '.gezien', seen);
+    P.roundPos = seen.length;  // de hoeveelste vraag van deze ronde
     P.roundSize = ids.size;
     P.lastOfRound = deck.length === 0 && !P.chapter;  // ronde en score enkel per vak, niet per hoofdstuk
     return P.pool.find(q => q.id === id);
@@ -329,8 +339,9 @@
     const P = practice;
     const reset = () => {
       // Hoofdstuk: alleen die stapel. Heel vak: stapels van het vak én van alle hoofdstukken, plus de rondescore.
+      // (De sleutels van een hoofdstuk beginnen met die van het vak; omgekeerd niet.)
       const prefix = `pplulm.${P.deckKey}`;
-      Object.keys(localStorage).filter(k => k === prefix || (!P.chapter && k.startsWith(prefix + '.'))).forEach(k => localStorage.removeItem(k));
+      Object.keys(localStorage).filter(k => k === prefix || k.startsWith(prefix + '.')).forEach(k => localStorage.removeItem(k));
       viewPractice(P.licence, P.subject, P.chapter && P.chapter.id);
     };
     const r = store.get(P.deckKey + '.ronde', { answered: 0 });
