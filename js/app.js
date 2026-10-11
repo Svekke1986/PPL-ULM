@@ -284,14 +284,30 @@
     nextPractice();
   }
 
+  // Elke vraag komt één keer aan bod per ronde (stapel per vak/hoofdstuk, bewaard tussen bezoeken).
   function drawFromDeck() {
     const P = practice;
     const ids = new Set(P.pool.map(q => q.id));
     let deck = store.get(P.deckKey, []).filter(id => ids.has(id));
-    if (!deck.length) deck = shuffle([...ids]);
+    if (!deck.length) {  // nieuwe ronde
+      deck = shuffle([...ids]);
+      store.set(P.deckKey + '.ronde', { answered: 0, correct: 0 });
+    }
     const id = deck.shift();
     store.set(P.deckKey, deck);
+    P.roundPos = ids.size - deck.length;  // de hoeveelste vraag van deze ronde
+    P.roundSize = ids.size;
+    P.lastOfRound = deck.length === 0;
     return P.pool.find(q => q.id === id);
+  }
+
+  function roundDoneHtml() {
+    const P = practice, r = store.get(P.deckKey + '.ronde', { answered: 0, correct: 0 });
+    const what = P.chapter ? `van het hoofdstuk "${esc(P.chapter.name)}"` : `van ${esc(SUBJECTS[P.subject].name)}`;
+    const pct = r.answered ? Math.round(100 * r.correct / r.answered) : 0;
+    return `<div class="round-done">🎉 <strong>Ronde voltooid!</strong> Je hebt alle ${P.roundSize} vragen ${what} gehad.
+      ${r.answered ? `In deze ronde had je er <strong>${r.correct} van ${r.answered}</strong> juist (${pct} %).` : ''}
+      Met “Volgende vraag” begint een nieuwe ronde, in een andere volgorde.</div>`;
   }
 
   function nextPractice() {
@@ -346,8 +362,9 @@
     const answered = P.chosen !== null;
     app.innerHTML = practiceHeader() + withCompassCalc(`
       <div class="card">
-        ${questionHtml(P.q, { chosen: P.chosen, reveal: answered, locked: answered, counter: `Vraag ${P.count}` })}
+        ${questionHtml(P.q, { chosen: P.chosen, reveal: answered, locked: answered, counter: `Vraag ${P.roundPos} van ${P.roundSize}` })}
         ${answered ? feedbackHtml(P.q, P.chosen) : ''}
+        ${answered && P.lastOfRound ? roundDoneHtml() : ''}
         <div class="quiz-actions">
           <a class="btn" href="#/${P.licence.toLowerCase()}">← Vakken</a>
           <div class="btn-row"><button class="btn btn-primary" id="next">${answered ? 'Volgende vraag →' : 'Overslaan →'}</button></div>
@@ -359,7 +376,11 @@
       const ok = P.chosen === P.q.c;
       P.session.answered++; if (ok) P.session.correct++;
       addStat(P.licence, P.subject, ok);
+      const r = store.get(P.deckKey + '.ronde', { answered: 0, correct: 0 });
+      r.answered++; if (ok) r.correct++;
+      store.set(P.deckKey + '.ronde', r);
       renderPractice();
+      if (P.lastOfRound) { app.querySelector('.round-done')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); return; }
       app.querySelector('.feedback')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
     document.getElementById('next').onclick = () => nextPractice();
