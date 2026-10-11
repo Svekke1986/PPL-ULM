@@ -478,7 +478,7 @@
   function startExam(licence, subject, n, minutes) {
     stopTimer();
     const questions = shuffle(questionsFor(licence, subject)).slice(0, n).map(present);
-    exam = { licence, subject, questions, answers: Array(n).fill(null), flags: Array(n).fill(false), i: 0, remaining: minutes * 60, done: false };
+    exam = { licence, subject, n, minutes, questions, answers: Array(n).fill(null), flags: Array(n).fill(false), i: 0, remaining: minutes * 60, done: false };
     exam.timer = setInterval(() => {
       exam.remaining--;
       const t = document.getElementById('timer');
@@ -500,7 +500,8 @@
     app.innerHTML = `
       <div class="quiz-head">
         <div><h1>${S.icon} Proefexamen ${esc(S.name)}</h1><div class="muted small">${esc(LICENCES[E.licence].name)} · ${answeredCount}/${E.questions.length} beantwoord</div></div>
-        <div class="timer ${E.remaining <= 60 ? 'low' : ''}" id="timer" aria-label="Resterende tijd">${fmtTime(E.remaining)}</div>
+        <div class="head-actions"><div class="timer ${E.remaining <= 60 ? 'low' : ''}" id="timer" aria-label="Resterende tijd">${fmtTime(E.remaining)}</div>
+          <button class="btn btn-small" id="restart" title="Dit examen stoppen en een nieuw proefexamen beginnen">⟲ Opnieuw beginnen</button></div>
       </div>
       <div class="card">
         ${questionHtml(q, { chosen: E.answers[E.i], reveal: false, locked: false, counter: `Vraag ${E.i + 1} van ${E.questions.length}` })}
@@ -522,6 +523,9 @@
     const next = document.getElementById('next');
     if (next) next.onclick = () => { E.i++; renderExam(); };
     document.getElementById('flag').onclick = () => { E.flags[E.i] = !E.flags[E.i]; renderExam(); };
+    document.getElementById('restart').onclick = () => {
+      if (confirm('Dit proefexamen stoppen en een nieuw beginnen, met andere vragen en de volle tijd? Je antwoorden van dit examen worden niet bewaard.')) startExam(E.licence, E.subject, E.n, E.minutes);
+    };
     document.getElementById('submit').onclick = () => {
       const open = E.answers.filter(a => a === null).length;
       if (confirm(open ? `Je hebt nog ${open} vraag/vragen niet beantwoord. Toch inleveren?` : 'Examen inleveren?')) finishExam(false);
