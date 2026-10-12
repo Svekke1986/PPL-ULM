@@ -20,7 +20,12 @@
 "666354": 90
 },
 "665564": {
-"question": "Welke van de volgende documenten moeten aan boord zijn tijdens een internationale vlucht? a) Bewijs van inschrijving b) Bewijs van luchtwaardigheid c) Airworthiness review certificate (ARC) d) EASA Formulier-1 e) Vliegtuiglogboek f) Benodigde vergunningen van de bemanning g) … (tekst afgebroken in de bron)"
+"question": "Welke van de volgende documenten moeten aan boord zijn tijdens een internationale vlucht? a) Bewijs van inschrijving b) Bewijs van luchtwaardigheid c) Airworthiness review certificate (ARC) d) EASA Formulier-1 e) Vliegtuiglogboek f) Benodigde vergunningen van de bemanning",
+"options": {
+"0": "b, c, d, e, f",
+"2": "d, f",
+"3": "a, b, e"
+}
 },
 "665595": {
 "question": "U bent overdag onderschept door een militair luchtvaartuig. Wat betekent het volgende signaal: Een plotselinge bocht van 90 graden of meer en een optrekkende klim van het luchtvaartuig, zonder hierbij door de koers van het onderschepte luchtvaartuig te kruisen?",
@@ -39,7 +44,7 @@
 }
 },
 "666095": {
-"question": "Hoeveel taxibrandstof (100LL, AVGAS) moet je verbruiken voor het opstijgen om het gewicht van het vliegtuig te reduceren tot het maximum opstijggewicht? Maximum taxigewicht (Maximum Ramp Mass): 1150 kg, Actueel taxigewicht: 1145 kg, Maximum opstijggewicht: 1140 kg (laatste waarde gereconstrueerd, tekst afgebroken in de bron)."
+"question": "Hoeveel taxibrandstof (100LL, AVGAS) moet je verbruiken voor het opstijgen om het gewicht van het vliegtuig te reduceren tot het maximum opstijggewicht? Maximum taxigewicht (Maximum Ramp Mass): 1150 kg, Actueel taxigewicht: 1145 kg, Maximum opstijggewicht: 1140 kg."
 },
 "666213": {
 "options": {
