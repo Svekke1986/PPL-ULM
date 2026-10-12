@@ -41,13 +41,9 @@
   function licenceSubjects(licence) {
     return Object.keys(LICENCES[licence].exams);
   }
-  function stats(licence, subject) {
-    return store.get(`stats.${licence}.${subject}`, { answered: 0, correct: 0 });
-  }
-  function addStat(licence, subject, ok) {
-    const s = stats(licence, subject);
-    s.answered++; if (ok) s.correct++;
-    store.set(`stats.${licence}.${subject}`, s);
+  // Score van de lopende oefenronde van een vak (begint opnieuw bij een nieuwe ronde of "Opnieuw beginnen").
+  function roundStats(licence, subject) {
+    return store.get(`deck.${licence}.${subject}.ronde`, { answered: 0, correct: 0 });
   }
 
   // Present options in random order (like the real exam) while remembering the correct one.
@@ -228,15 +224,16 @@
       const S = SUBJECTS[key];
       const n = questionsFor(licence, key).length;
       const ex = L.exams[key];
-      const st = stats(licence, key);
+      const st = roundStats(licence, key);
       const pct = st.answered ? Math.round(100 * st.correct / st.answered) : 0;
+      const done = n ? Math.min(100, Math.round(100 * st.answered / n)) : 0;
       return `<div class="card subject-card">
         <div class="subject-head">
           <div class="subject-icon">${S.icon}</div>
           <div><h3>${esc(S.code)} · ${esc(S.name)}</h3><div class="subject-meta">${esc(S.en)}</div></div>
         </div>
         <div class="subject-meta">${n} oefenvragen · examen: ${ex.questions} vragen / ${ex.minutes} min</div>
-        ${st.answered ? `<div class="subject-meta">Jouw score: ${st.correct}/${st.answered} (${pct}%)</div><div class="progress"><span style="width:${pct}%"></span></div>` : ''}
+        ${st.answered ? `<div class="subject-meta">Huidige ronde: ${st.correct}/${st.answered} juist (${pct}%) · ${st.answered} van ${n} vragen gehad</div><div class="progress" title="Voortgang in deze ronde"><span style="width:${done}%"></span></div>` : ''}
         ${n === 0 ? '<div class="subject-meta">Nog geen oefenvragen voor dit vak.</div>' : ''}
         <div class="btn-row">
           <a class="btn btn-primary" href="#/${licence.toLowerCase()}/${key}/oefenen" ${n ? '' : 'aria-disabled="true" onclick="return false" style="opacity:.5;pointer-events:none"'}>Oefenen</a>
@@ -441,7 +438,6 @@
       P.hist[P.pos].chosen = P.chosen;
       const ok = P.chosen === P.q.c;
       P.session.answered++; if (ok) P.session.correct++;
-      addStat(P.licence, P.subject, ok);
       if (!P.chapter) {  // score van de ronde over het hele vak, ook per deel
         const r = store.get(P.deckKey + '.ronde', { answered: 0, correct: 0, per: {} });
         r.per = r.per || {};
@@ -555,7 +551,6 @@
     const correct = E.questions.reduce((n, q, k) => n + (E.answers[k] === q.c ? 1 : 0), 0);
     const pct = Math.round(100 * correct / E.questions.length);
     const passed = pct >= L.passMark;
-    E.questions.forEach((q, k) => { if (E.answers[k] !== null) addStat(E.licence, E.subject, E.answers[k] === q.c); });
     const history = store.get(`exams.${E.licence}.${E.subject}`, []);
     history.unshift({ date: new Date().toISOString(), correct, total: E.questions.length });
     store.set(`exams.${E.licence}.${E.subject}`, history.slice(0, 20));
