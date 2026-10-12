@@ -43,8 +43,10 @@ def main():
         content = json.load(open(cpath, encoding="utf-8")) if os.path.exists(cpath) else {}
         out = []
         for q in questions:
-            if q["id"] in hidden:
-                continue
+            if q["id"] in hidden and q.get("author"):
+                continue  # verborgen aanvullende vraag
+            # Verborgen ECQB-voorbeeldvraag (dubbel): blijft in de bank, maar de site toont ze alleen in
+            # "Enkel de originele ECQB-voorbeeldvragen", zodat die selectie de volledige set bevat.
             p = patches.get(q["id"], {})
             options = list(q["options"])
             for i, text in p.get("options", {}).items():
@@ -68,7 +70,8 @@ def main():
                 "ref": c[2] if len(c) > 2 else "",
                 "review": len(c) > 3 and c[3] == "review",
                 "lic": licences(subject, q["topic"]),
-                **({"auteur": q["author"]} if q.get("author") else {}),  # aanvullende vraag van een auteur, geen ECQB-voorbeeldvraag
+                **({"auteur": q["author"]} if q.get("author") else {}),
+                **({"dubbel": hidden[q["id"]]} if q["id"] in hidden else {}),  # aanvullende vraag van een auteur, geen ECQB-voorbeeldvraag
             })
         bank[subject] = out
     with open(os.path.join(ROOT, "js", "bank.js"), "w", encoding="utf-8") as fh:

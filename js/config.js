@@ -184,9 +184,13 @@ window.CHAPTERS = {
   ]
 };
 
-// Door AI opgestelde (en nagekeken) aanvullende vragen krijgen in elk vak een eigen categorie.
+// Door AI opgestelde (en nagekeken) aanvullende vragen krijgen in elk vak een eigen categorie;
+// daarnaast een selectie met enkel de originele ECQB-voorbeeldvragen (zonder AI- en instructeursvragen).
+// Beide hebben een eigen selectieregel in app.js (inChapter), niet via leerdoelprefixen.
 Object.keys(window.SUBJECTS).forEach(subject => {
-  (window.CHAPTERS[subject] = window.CHAPTERS[subject] || []).push({ id: 'ai', name: '🤖 AI-gegenereerde vragen', prefixes: ['AI'] });
+  const list = (window.CHAPTERS[subject] = window.CHAPTERS[subject] || []);
+  list.unshift({ id: 'ecqb', name: '📄 Enkel de originele ECQB-voorbeeldvragen', prefixes: [] });
+  list.push({ id: 'ai', name: '🤖 AI-gegenereerde vragen', prefixes: ['AI'] });
 });
 
 window.chapterOf = function (subject, lo) {
