@@ -86,6 +86,7 @@ window.SOURCES = {
   bcaa_ulm:{ org: 'DGLV', title: 'ULM – examens', url: 'https://mobilit.belgium.be/nl/luchtvaart/vliegen-met/ultralichte-motorluchtvaartuigen-ulm/piloot/examens' },
   aip:     { org: 'skeyes / BCAA', title: 'AIP België & Luxemburg', url: 'https://ops.skeyes.be/services-aip' },
   kbulm:   { org: 'FOD Mobiliteit en Vervoer', title: 'KB van 20 december 2024 betreffende de ultralichte motorluchtvaartuigen (BS 18/02/2025)', url: 'https://www.ejustice.just.fgov.be/cgi/article_body.pl?language=nl&caller=summary&pub_date=25-02-18&numac=2025000168' },
+  atmans:  { org: 'EU', title: 'Uitvoeringsverordening (EU) 2017/373 – ATM/ANS (o.a. Part-AIS, Part-ATS)', url: 'https://eur-lex.europa.eu/eli/reg_impl/2017/373/oj' },
   met:     { org: 'EU / ICAO', title: 'Uitvoeringsverordening (EU) 2017/373 – Part-MET (METAR/TAF), gebaseerd op ICAO Annex 3', url: 'https://eur-lex.europa.eu/eli/reg_impl/2017/373/oj' }
 };
 
