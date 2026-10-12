@@ -63,7 +63,7 @@
 
   // Brondocument van een AI-vraag (veld "doc"; zonder doc = KB ULM).
   const AI_DOCS = { kb: { name: 'het KB ULM', src: 'kbulm' }, sera: { name: 'SERA', src: 'sera' }, sera2012: { name: 'SERA', src: 'sera' } };
-  const EN_DOCS = new Set(['sera', 'aircrew', 'airops', 'ml', 'part21', 'occ', 'atmans']); // geconsolideerde EASA-teksten (Engels)
+  const EN_DOCS = new Set(['sera', 'aircrew', 'airops', 'ml', 'part21', 'occ', 'atmans', 'adr', 'br']); // geconsolideerde EASA-teksten (Engels)
   const aiDoc = q => AI_DOCS[q.doc || 'kb'] || { name: q.basis || 'de wettekst', src: q.src };
 
   // Antwoord van een AI-vraag: de bron en het stuk tekst waarop de vraag gebaseerd is.
