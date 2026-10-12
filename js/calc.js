@@ -629,9 +629,13 @@ window.CALC = (function () {
     {
       id: 'rateone', name: 'Hellingshoek voor een rate-one-bocht', lo: '51.6.1.5.8',
       gen() {
-        const tas = rnd(70, 150, 5), bank = tas / 10 + 7;
-        return Q({ q: `Welke hellingshoek heb je ongeveer nodig voor een rate-one-bocht bij ${tas} kt TAS?`, o: options(Math.round(bank), [Math.round(tas / 10), Math.round(tas / 10 + 15), Math.round(tas / 5)], v => `${v}°`, 3),
-          e: `Een rate-one-bocht is een bocht van 3° per seconde: 360° in 2 minuten.\nVuistregel: helling ≈ TAS/10 + 7 = ${tas}/10 + 7 ≈ ${Math.round(bank)}°.\nDe helling hangt af van de TAS: hoe sneller, hoe meer helling nodig.`, lo: this.lo, loText: 'Hellingshoek voor een rate-one-bocht' });
+        const tas = rnd(70, 150, 5);
+        // Exact: tan(helling) = V·ω/g met ω = 3°/s; vuistregels: TAS/10 + 5 à 7, of 15 % van de TAS.
+        const bank = Math.round(Math.atan(tas * 0.514444 * (3 * Math.PI / 180) / 9.80665) * 180 / Math.PI);
+        const rules = [tas / 10 + 5, tas / 10 + 7, 0.15 * tas, bank];
+        const wrong = [tas / 10, tas / 4, tas / 10 + 15, 30, 45].map(Math.round).filter(w => rules.every(r => Math.abs(w - r) >= 3));
+        return Q({ q: `Welke hellingshoek heb je ongeveer nodig voor een rate-one-bocht bij ${tas} kt TAS?`, o: options(bank, wrong, v => `${v}°`, 3),
+          e: `Ongeveer ${bank}°. Een rate-one-bocht is een bocht van 3° per seconde: 360° in 2 minuten.\n\n**Exact:**\ntan(helling) = V × ω / g, met V = ${tas} kt = ${num(tas * 0.514444, 1)} m/s, ω = 3°/s = 0,0524 rad/s en g = 9,81 m/s² → helling ≈ ${bank}°.\n\n**Vuistregels:**\n15 % van de TAS: 0,15 × ${tas} ≈ ${num(0.15 * tas, 1)}°.\nTAS/10 + 5 à 7: ${num(tas / 10 + 5, 1)} à ${num(tas / 10 + 7, 1)}°. De klassieke regel "+7" klopt rond 140–150 kt, maar geeft bij lagere snelheden 2 à 4° te veel; "+5" en 15 % van de TAS zitten bij de snelheden van een lesvliegtuig dichter bij de exacte waarde.\n\nDe helling hangt af van de TAS: hoe sneller, hoe meer helling nodig.`, lo: this.lo, loText: 'Hellingshoek voor een rate-one-bocht' });
       }
     },
     {
