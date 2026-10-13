@@ -217,7 +217,7 @@ h2 { font-size: 1.3rem; margin: 0 0 12px; }
 .chapter-filter { display: flex; align-items: center; gap: 10px; margin: -4px 0 16px; flex-wrap: wrap; }
 .chapter-filter label { font-weight: 600; }
 .chapter-filter select { width: auto; max-width: 100%; flex: 1 1 260px; }
-.feedback .explain { white-space: pre-line; }
+.feedback .explain, .wrong-body .explain { white-space: pre-line; }
 select {
   padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border);
   background: var(--surface); color: var(--text); font: inherit;
@@ -297,3 +297,16 @@ select {
 .timer.over { color: #fff; background: var(--bad-border); }
 .overtime-note { margin: 12px auto; max-width: 560px; text-align: left; color: var(--bad-text); background: var(--bad-bg); border: 1px solid var(--bad-border); border-radius: 10px; padding: 10px 14px; }
 .overtime-note p { margin: 4px 0; }
+
+/* Foute antwoorden in het rondeoverzicht */
+.wrong-list { margin-top: 14px; }
+.wrong-list h3 { margin: 0 0 4px; }
+.wrong-none { margin-top: 10px; font-weight: 600; }
+.wrong-item { border: 1px solid var(--border); border-radius: 10px; margin: 8px 0; background: var(--surface); }
+.wrong-item summary { cursor: pointer; padding: 10px 12px; display: flex; flex-direction: column; gap: 3px; }
+.wrong-item[open] summary { border-bottom: 1px solid var(--border); }
+.wrong-q { font-weight: 700; }
+.wrong-a { font-size: .9rem; }
+.wrong-mine { color: var(--bad-border); text-decoration: line-through; }
+.wrong-right { color: var(--ok-border); }
+.wrong-body { padding: 10px 12px; }
