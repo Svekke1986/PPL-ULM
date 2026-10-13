@@ -1,7 +1,8 @@
 {
 "_note": "Correcties op tekst die in de bron-PDF afgebroken of beschadigd is. Formaat: id -> {question?, options?: {index: tekst}} '_replace' = tekstvervanging in alle vragen en antwoorden (van -> naar). '_rotate' = afbeeldingen die in de bron-PDF gedraaid staan: graden tegen de klok in (id -> graden).",
 "_replace": {
-"overlandvlieguur": "uur cross-country"
+"overlandvlieguur": "uur cross-country",
+"gecontrolleerd": "gecontroleerd"
 },
 "_rotate": {
 "665623": 90,
