@@ -34,6 +34,32 @@
     }
   };
   const fmtTime = s => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
+  // Examentimer: resterende tijd, of na het einde van de tijd de overtijd met een plusteken.
+  const fmtExamTime = r => r >= 0 ? fmtTime(r) : '+' + fmtTime(-r);
+
+  // Bevestiging in een eigen venster van de site (geen browsermelding). Geeft een Promise<boolean>.
+  // "text" is HTML die de site zelf opbouwt (dynamische waarden worden vooraf ge-escaped).
+  function ask({ title, text = '', ok = 'OK', cancel = 'Annuleren', danger = false }) {
+    return new Promise(resolve => {
+      document.querySelector('.modal-backdrop')?.remove();
+      const wrap = document.createElement('div');
+      wrap.className = 'modal-backdrop';
+      wrap.innerHTML = `<div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <h2 id="modal-title">${esc(title)}</h2>${text}
+        <div class="btn-row modal-actions">${cancel ? `<button class="btn" data-a="0">${esc(cancel)}</button>` : ''}
+          <button class="btn ${danger ? 'btn-danger' : 'btn-accent'}" data-a="1">${esc(ok)}</button></div></div>`;
+      const onKey = e => { if (e.key === 'Escape') close(false); };
+      const close = v => { wrap.remove(); document.removeEventListener('keydown', onKey); resolve(v); };
+      wrap.addEventListener('click', e => {
+        if (e.target === wrap) return close(false);
+        const b = e.target.closest('[data-a]');
+        if (b) close(b.dataset.a === '1');
+      });
+      document.addEventListener('keydown', onKey);
+      document.body.appendChild(wrap);
+      wrap.querySelector('[data-a="1"]').focus();
+    });
+  }
 
   // Verborgen dubbele ECQB-voorbeeldvragen tellen alleen mee in de selectie met enkel de originele voorbeeldvragen.
   function questionsFor(licence, subject, withDuplicates = false) {
@@ -344,7 +370,7 @@
     };
     const r = store.get(P.deckKey + '.ronde', { answered: 0 });
     if (P.chapter || !r.answered) {
-      if (confirm('Deze sessie beëindigen en opnieuw beginnen met alle vragen?')) reset();
+      ask({ title: 'Opnieuw beginnen?', text: '<p>Deze sessie beëindigen en opnieuw beginnen met alle vragen?</p>', ok: 'Opnieuw beginnen' }).then(ok => ok && reset());
       return;
     }
     app.innerHTML = practiceHeader() + `<div class="card">${roundDoneHtml(true)}
@@ -478,7 +504,8 @@
         <ul class="muted">
           <li>Tijdens het examen zie je nog niet of je antwoord juist is, net zoals op het echte examen.</li>
           <li>Je kunt vragen markeren en terugkeren tot je inlevert.</li>
-          <li>Na het inleveren of als de tijd om is, krijg je je score en de uitleg bij elke vraag.</li>
+          <li>Na het inleveren krijg je je score en de uitleg bij elke vraag.</li>
+          <li>Is de tijd om, dan kun je nog verder werken en later inleveren. Je resultaat vermeldt dan de overtijd en je score op het moment dat de tijd om was.</li>
         </ul>
         <div class="btn-row"><a class="btn" href="#/${licence.toLowerCase()}">Annuleren</a><button class="btn btn-accent" id="start">▶ Start proefexamen</button></div>
       </div>`;
@@ -490,10 +517,16 @@
     const questions = shuffle(questionsFor(licence, subject)).slice(0, n).map(present);
     exam = { licence, subject, n, minutes, questions, answers: Array(n).fill(null), flags: Array(n).fill(false), i: 0, remaining: minutes * 60, done: false };
     exam.timer = setInterval(() => {
-      exam.remaining--;
+      const E = exam;
+      E.remaining--;
       const t = document.getElementById('timer');
-      if (t) { t.textContent = fmtTime(Math.max(0, exam.remaining)); t.classList.toggle('low', exam.remaining <= 60); }
-      if (exam.remaining <= 0) finishExam(true);
+      if (t) { t.textContent = fmtExamTime(E.remaining); t.classList.toggle('low', E.remaining <= 60 && E.remaining >= 0); t.classList.toggle('over', E.remaining < 0); }
+      if (E.remaining === 0) {  // tijd om: niet automatisch inleveren, maar de stand van dat moment bewaren
+        E.answersAtTime = E.answers.slice();
+        ask({ title: '⏰ De tijd is om', ok: 'Nu inleveren', cancel: 'Verder werken',
+          text: '<p>Op het echte examen wordt je examen nu automatisch ingeleverd.</p><p>Hier kun je nog verder werken en later inleveren. In je resultaat staat dan hoeveel overtijd je gebruikte en wat je score was op het moment dat de tijd om was.</p>'
+        }).then(ok => { if (ok && exam === E) finishExam(); });
+      }
     }, 1000);
     renderExam();
   }
@@ -510,7 +543,7 @@
     app.innerHTML = `
       <div class="quiz-head">
         <div><h1>${S.icon} Proefexamen ${esc(S.name)}</h1><div class="muted small">${esc(LICENCES[E.licence].name)} · ${answeredCount}/${E.questions.length} beantwoord</div></div>
-        <div class="head-actions"><div class="timer ${E.remaining <= 60 ? 'low' : ''}" id="timer" aria-label="Resterende tijd">${fmtTime(E.remaining)}</div>
+        <div class="head-actions"><div class="timer ${E.remaining < 0 ? 'over' : E.remaining <= 60 ? 'low' : ''}" id="timer" aria-label="${E.remaining < 0 ? 'Overtijd' : 'Resterende tijd'}">${fmtExamTime(E.remaining)}</div>
           <button class="btn btn-small" id="restart" title="Dit examen stoppen en een nieuw proefexamen beginnen">⟲ Opnieuw beginnen</button></div>
       </div>
       <div class="card">
@@ -533,27 +566,44 @@
     const next = document.getElementById('next');
     if (next) next.onclick = () => { E.i++; renderExam(); };
     document.getElementById('flag').onclick = () => { E.flags[E.i] = !E.flags[E.i]; renderExam(); };
-    document.getElementById('restart').onclick = () => {
-      if (confirm('Dit proefexamen stoppen en een nieuw beginnen, met andere vragen en de volle tijd? Je antwoorden van dit examen worden niet bewaard.')) startExam(E.licence, E.subject, E.n, E.minutes);
-    };
+    document.getElementById('restart').onclick = () => ask({
+      title: 'Opnieuw beginnen?', ok: 'Nieuw proefexamen', cancel: 'Verder met dit examen',
+      text: '<p>Dit proefexamen stoppen en een nieuw beginnen, met andere vragen en de volle tijd? Je antwoorden van dit examen worden niet bewaard.</p>'
+    }).then(ok => { if (ok && exam === E && !E.done) startExam(E.licence, E.subject, E.n, E.minutes); });
     document.getElementById('submit').onclick = () => {
-      const open = E.answers.filter(a => a === null).length;
-      if (confirm(open ? `Je hebt nog ${open} vraag/vragen niet beantwoord. Toch inleveren?` : 'Examen inleveren?')) finishExam(false);
+      const open = E.answers.map((a, k) => a === null ? k + 1 : 0).filter(Boolean);
+      const flagged = E.flags.map((f, k) => f ? k + 1 : 0).filter(Boolean);
+      const time = E.remaining >= 0 ? `Je hebt nog <strong>${fmtTime(E.remaining)}</strong> tijd.` : `<strong>De tijd is om</strong> (${fmtExamTime(E.remaining)} overtijd); dat komt in je resultaat.`;
+      ask({
+        title: 'Examen inleveren?', ok: 'Inleveren', cancel: 'Verder werken',
+        text: `<p>${E.questions.length - open.length} van ${E.questions.length} vragen beantwoord. ${time}</p>
+          ${open.length ? `<p class="modal-warn">⚠️ Nog niet beantwoord: vraag ${open.join(', ')}.</p>` : ''}
+          ${flagged.length ? `<p>🚩 Gemarkeerd: vraag ${flagged.join(', ')}.</p>` : ''}
+          <p class="small muted">Na het inleveren kun je je antwoorden niet meer wijzigen.</p>`
+      }).then(ok => { if (ok && exam === E) finishExam(); });
     };
     bindImages();
   }
 
-  function finishExam(timeUp) {
+  function finishExam() {
     const E = exam;
     if (!E || E.done) return;
     E.done = true;
     stopTimer();
+    document.querySelector('.modal-backdrop')?.remove();
     const L = LICENCES[E.licence];
-    const correct = E.questions.reduce((n, q, k) => n + (E.answers[k] === q.c ? 1 : 0), 0);
+    const score = answers => E.questions.reduce((n, q, k) => n + (answers[k] === q.c ? 1 : 0), 0);
+    const correct = score(E.answers);
     const pct = Math.round(100 * correct / E.questions.length);
     const passed = pct >= L.passMark;
+    // Ingeleverd na het einde van de tijd: overtijd en de score op het moment dat de tijd om was.
+    const overtime = Math.max(0, -E.remaining);
+    const late = E.answersAtTime ? (() => {
+      const c = score(E.answersAtTime), p = Math.round(100 * c / E.questions.length);
+      return { c, p, passed: p >= L.passMark };
+    })() : null;
     const history = store.get(`exams.${E.licence}.${E.subject}`, []);
-    history.unshift({ date: new Date().toISOString(), correct, total: E.questions.length });
+    history.unshift({ date: new Date().toISOString(), correct, total: E.questions.length, ...(late ? { overtime, correctAtTime: late.c } : {}) });
     store.set(`exams.${E.licence}.${E.subject}`, history.slice(0, 20));
 
     const reviews = E.questions.map((q, k) => {
@@ -568,9 +618,10 @@
     app.innerHTML = `
       <div class="crumbs"><a href="#/">Home</a> › <a href="#/${E.licence.toLowerCase()}">${esc(L.name)}</a> › ${esc(S.name)} › Resultaat</div>
       <div class="card result-hero ${passed ? 'pass' : 'fail'}">
-        ${timeUp ? '<p><strong>⏰ De tijd is om.</strong></p>' : ''}
         <div class="pct">${pct}%</div>
         <p><strong>${correct} van ${E.questions.length} juist</strong> – ${passed ? `geslaagd (≥ ${L.passMark}%)` : `niet geslaagd (minimum ${L.passMark}%)`}</p>
+        ${late ? `<div class="overtime-note"><p><strong>⏰ Ingeleverd ${fmtTime(overtime)} na het einde van de tijd</strong> (examentijd ${E.minutes} min).</p>
+          <p>Op het moment dat de tijd om was, had je <strong>${late.c} van ${E.questions.length} juist (${late.p}%)</strong> – ${late.passed ? 'geslaagd' : 'niet geslaagd'}. Op het echte examen telt alleen dat resultaat.</p></div>` : ''}
         <p class="small">Een proefexamen geeft geen garantie op het resultaat van het echte examen.</p>
         <div class="btn-row" style="justify-content:center">
           <a class="btn" href="#/${E.licence.toLowerCase()}">Terug naar vakken</a>
@@ -706,10 +757,12 @@
         <p id="msg" class="small"></p>
       </div>`;
     document.getElementById('reset').onclick = () => {
-      if (!confirm('Alle lokale scores en voortgang wissen?')) return;
-      Object.keys(localStorage).filter(k => k.startsWith('pplulm.')).forEach(k => localStorage.removeItem(k));
-      viewSettings();
-      document.getElementById('msg').textContent = 'Alle voortgang gewist.';
+      ask({ title: 'Alle voortgang wissen?', text: '<p>Alle lokale scores en voortgang in deze browser worden gewist. Dat kan niet ongedaan gemaakt worden.</p>', ok: 'Alles wissen', danger: true }).then(ok => {
+        if (!ok) return;
+        Object.keys(localStorage).filter(k => k.startsWith('pplulm.')).forEach(k => localStorage.removeItem(k));
+        viewSettings();
+        document.getElementById('msg').textContent = 'Alle voortgang gewist.';
+      });
     };
   }
 
