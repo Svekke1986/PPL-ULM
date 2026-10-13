@@ -355,6 +355,27 @@
       <p class="round-total">Totaalscore: <strong>${r.correct} van ${r.answered}</strong> juist (<strong>${pct(r.correct, r.answered)} %</strong>)${!ended && r.answered < P.roundSize ? ` · ${P.roundSize - r.answered} overgeslagen` : ''}</p>
       ${rows ? `<table class="round-table"><thead><tr><th>Deel</th><th>Juist</th><th>Score</th></tr></thead><tbody>${rows}</tbody></table>` : ''}
       <p class="small">${ended ? '' : 'Met “Nieuwe ronde” begin je opnieuw met alle vragen, in een andere volgorde.'}</p>
+    </div>${wrongListHtml(r)}`;
+  }
+
+  // Foute antwoorden van de ronde: per vraag je antwoord en het juiste, open te klappen voor de uitleg en de bron.
+  function wrongListHtml(r) {
+    const P = practice;
+    const wrong = (r.fout || []).map(f => ({ f, q: P.pool.find(q => q.id === f.id) })).filter(x => x.q);
+    if (!wrong.length) return r.answered ? '<p class="wrong-none">Geen enkele fout in deze ronde. 👏</p>' : '';
+    return `<div class="wrong-list">
+      <h3>❌ Foute antwoorden in deze ronde (${wrong.length})</h3>
+      <p class="small muted">Tik op een vraag voor de uitleg.</p>
+      ${wrong.map(({ f, q }, k) => {
+        const imgs = (q.img || []).map(src => `<img src="${esc(src)}" alt="Bijlage bij de vraag" loading="lazy">`).join('');
+        return `<details class="wrong-item">
+          <summary><span class="wrong-q">${k + 1}. ${esc(q.q)}</span>
+            <span class="wrong-a">Jouw antwoord: <span class="wrong-mine">${f.keuze === null ? 'niet beantwoord' : esc(f.keuze)}</span></span>
+            <span class="wrong-a">Juist: <strong class="wrong-right">${esc(q.o[q.c])}</strong></span></summary>
+          <div class="wrong-body">${imgs ? `<div class="q-images">${imgs}</div>` : ''}
+            <p class="explain">${esc(q.e || 'Geen uitleg beschikbaar.').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')}</p>${glossaryHtml(q)}${sourceHtml(q)}</div>
+        </details>`;
+      }).join('')}
     </div>`;
   }
 
@@ -380,6 +401,7 @@
     document.getElementById('again').onclick = reset;
     document.getElementById('restart').disabled = true;
     bindChapterSelect();
+    bindImages();
   }
 
   // Geschiedenis van deze sessie: terug naar vorige vragen en weer vooruit.
@@ -471,6 +493,7 @@
         const part = partOf(P.q), t = r.per[part] || [0, 0];
         r.answered++; t[0]++;
         if (ok) { r.correct++; t[1]++; }
+        else (r.fout = r.fout || []).push({ id: P.q.id, keuze: P.q.o[P.chosen] });
         r.per[part] = t;
         store.set(P.deckKey + '.ronde', r);
       }
