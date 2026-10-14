@@ -70,8 +70,14 @@
     return Object.keys(LICENCES[licence].exams);
   }
   // Score van de lopende oefenronde van een vak (begint opnieuw bij een nieuwe ronde of "Opnieuw beginnen").
-  function roundStats(licence, subject) {
-    return store.get(`deck.${licence}.${subject}.ronde`, { answered: 0, correct: 0 });
+  function roundStats(licence, subject, chapterId = null) {
+    return store.get(`deck.${licence}.${subject}${chapterId ? '.' + chapterId : ''}.ronde`, { answered: 0, correct: 0 });
+  }
+  // Voortgangsregel op de vakkaart: score en aantal gehad in de lopende ronde, met balk.
+  function roundProgressHtml(label, st, n) {
+    if (!st.answered) return '';
+    const pct = Math.round(100 * st.correct / st.answered), done = n ? Math.min(100, Math.round(100 * st.answered / n)) : 0;
+    return `<div class="subject-meta">${label}: ${st.correct}/${st.answered} juist (${pct}%) · ${st.answered} van ${n} vragen gehad</div><div class="progress" title="Voortgang in deze ronde"><span style="width:${done}%"></span></div>`;
   }
 
   // Present options in random order (like the real exam) while remembering the correct one.
@@ -253,16 +259,16 @@
       const S = SUBJECTS[key];
       const n = questionsFor(licence, key).length;
       const ex = L.exams[key];
-      const st = roundStats(licence, key);
-      const pct = st.answered ? Math.round(100 * st.correct / st.answered) : 0;
-      const done = n ? Math.min(100, Math.round(100 * st.answered / n)) : 0;
+      // Categorieën met een eigen sessie (oefenexamens) krijgen een eigen voortgangsregel.
+      const own = (window.CHAPTERS[key] || []).filter(c => c.eigenSessie).map(c =>
+        roundProgressHtml(esc(c.name), roundStats(licence, key, c.id), questionsFor(licence, key, c.id).filter(q => inChapter(key, q, c)).length)).join('');
       return `<div class="card subject-card">
         <div class="subject-head">
           <div class="subject-icon">${S.icon}</div>
           <div><h3>${esc(S.code)} · ${esc(S.name)}</h3><div class="subject-meta">${esc(S.en)}</div></div>
         </div>
         <div class="subject-meta">${n} oefenvragen · examen: ${ex.questions} vragen / ${ex.minutes} min</div>
-        ${st.answered ? `<div class="subject-meta">Huidige ronde: ${st.correct}/${st.answered} juist (${pct}%) · ${st.answered} van ${n} vragen gehad</div><div class="progress" title="Voortgang in deze ronde"><span style="width:${done}%"></span></div>` : ''}
+        ${roundProgressHtml('Huidige ronde', roundStats(licence, key), n)}${own}
         ${n === 0 ? '<div class="subject-meta">Nog geen oefenvragen voor dit vak.</div>' : ''}
         <div class="btn-row">
           <a class="btn btn-primary" href="#/${licence.toLowerCase()}/${key}/oefenen" ${n ? '' : 'aria-disabled="true" onclick="return false" style="opacity:.5;pointer-events:none"'}>Oefenen</a>
