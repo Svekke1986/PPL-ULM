@@ -62,8 +62,9 @@
   }
 
   // Verborgen dubbele ECQB-voorbeeldvragen tellen alleen mee in de selectie met enkel de originele voorbeeldvragen.
-  function questionsFor(licence, subject, withDuplicates = false) {
-    return (BANK[subject] || []).filter(q => q.lic.includes(licence) && (withDuplicates || !q.dubbel));
+  // Oefenexamenvragen van een instructeur alleen in hun eigen categorie (ze overlappen grotendeels met bestaande vragen).
+  function questionsFor(licence, subject, chapterId = null) {
+    return (BANK[subject] || []).filter(q => q.lic.includes(licence) && (!q.dubbel || chapterId === 'ecqb') && (!q.oefenexamen || chapterId === 'jh'));
   }
   function licenceSubjects(licence) {
     return Object.keys(LICENCES[licence].exams);
@@ -75,6 +76,7 @@
 
   // Present options in random order (like the real exam) while remembering the correct one.
   function present(q) {
+    if (q.vast) return Object.assign({}, q);  // vaste volgorde (opties verwijzen naar elkaar, bv. "A en B zijn juist")
     const order = shuffle([0, 1, 2, 3]);
     return Object.assign({}, q, { o: order.map(i => q.o[i]), c: order.indexOf(q.c) });
   }
@@ -190,7 +192,7 @@
       return `<button class="${cls}" data-i="${i}" ${opts.locked ? 'disabled' : ''}>
         <span class="letter">${LETTERS[i]}</span><span>${esc(text)}</span></button>`;
     }).join('');
-    const tag = q.extra ? (q.ai ? (q.doc ? `🤖 AI-gegenereerde vraag, gebaseerd op ${esc(aiDoc(q).name)}` : '🤖 AI-gegenereerde vraag') : `Aanvullende vraag · ${esc(q.basis || 'aanvullend')}`) : q.auteur ? `Aanvullende vraag · auteur: ${esc(q.auteur)}` : (q.lo ? 'ECQB ' + esc(q.lo) : '');
+    const tag = q.oefenexamen ? `📝 ${esc(q.oefenexamen)} · ${esc(q.auteur)}` : q.extra ? (q.ai ? (q.doc ? `🤖 AI-gegenereerde vraag, gebaseerd op ${esc(aiDoc(q).name)}` : '🤖 AI-gegenereerde vraag') : `Aanvullende vraag · ${esc(q.basis || 'aanvullend')}`) : q.auteur ? `Aanvullende vraag · auteur: ${esc(q.auteur)}` : (q.lo ? 'ECQB ' + esc(q.lo) : '');
     return `<div class="q-meta"><span>${opts.counter || ''}</span><span>${tag}</span></div>
       ${q.code ? codeHtml(q.code, q.mark) : ''}
       <p class="q-text">${esc(q.q)}</p>
@@ -286,18 +288,17 @@
   let practice = null;
 
   // Hoort een vraag bij een hoofdstuk? AI-vragen: in "AI-gegenereerde vragen" én (met leerdoelcode) in hun onderwerp.
-  const inChapter = (subject, q, ch) => ch.id === 'ai' ? !!q.ai : ch.id === 'ecqb' ? !q.extra && !q.auteur : window.chapterOf(subject, q.lo) === ch;
+  const inChapter = (subject, q, ch) => ch.id === 'ai' ? !!q.ai : ch.id === 'ecqb' ? !q.extra && !q.auteur : ch.id === 'jh' ? !!q.oefenexamen : window.chapterOf(subject, q.lo) === ch;
 
   function chaptersFor(licence, subject) {
-    const all = questionsFor(licence, subject), full = questionsFor(licence, subject, true);
     return (window.CHAPTERS[subject] || []).map(ch => ({
-      ch, count: (ch.id === 'ecqb' ? full : all).filter(q => inChapter(subject, q, ch)).length
+      ch, count: questionsFor(licence, subject, ch.id).filter(q => inChapter(subject, q, ch)).length
     }));
   }
 
   function viewPractice(licence, subject, chapterId) {
     const chapter = (window.CHAPTERS[subject] || []).find(c => c.id === chapterId) || null;
-    const all = questionsFor(licence, subject, chapter && chapter.id === 'ecqb');
+    const all = questionsFor(licence, subject, chapter && chapter.id);
     const pool = chapter ? all.filter(q => inChapter(subject, q, chapter)) : all;
     if (!pool.length) {
       location.hash = chapter ? `#/${licence.toLowerCase()}/${subject}/oefenen` : '#/' + licence.toLowerCase();
@@ -434,7 +435,7 @@
       .map(c => `<option value="${esc(c.ch.id)}" ${P.chapter === c.ch ? 'selected' : ''}>${esc(c.ch.name)} (${c.count})</option>`).join('');
     return `<div class="crumbs"><a href="#/">Home</a> › <a href="#/${P.licence.toLowerCase()}">${esc(LICENCES[P.licence].name)}</a> › ${esc(S.name)}</div>
       <div class="quiz-head">
-        <div><h1>${S.icon} ${esc(S.name)}</h1><div class="muted small">Oefenmodus · ${P.pool.length} vragen${P.chapter ? (P.chapter.id === 'ecqb' ? ' (originele ECQB-voorbeeldvragen)' : ' in dit hoofdstuk') : ''}</div></div>
+        <div><h1>${S.icon} ${esc(S.name)}</h1><div class="muted small">Oefenmodus · ${P.pool.length} vragen${P.chapter ? ({ ecqb: ' (originele ECQB-voorbeeldvragen)', jh: ' (oefenexamens, vaste antwoordvolgorde)' }[P.chapter.id] || ' in dit hoofdstuk') : ''}</div></div>
         <div class="head-actions"><span class="score-pill">Sessie: ${P.session.correct}/${P.session.answered}</span>
           <button class="btn btn-small" id="restart" title="Sessie beëindigen en opnieuw beginnen">⟲ Opnieuw beginnen</button></div>
       </div>

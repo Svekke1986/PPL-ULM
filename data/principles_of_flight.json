@@ -1162,5 +1162,1920 @@
   "correct": 0,
   "images": [],
   "author": "Jeroen Huygen"
+ },
+ {
+  "id": "JHE1-01",
+  "topic": "51.1.1 Basic concepts, laws and definitions",
+  "question": "De standaard atmosfeer mag omschreven worden als volgt:",
+  "options": [
+   "Op MSL een temperatuur van 15°C en een druk van 1013,25 hPa. Een afname van 0,65°C per 100m en dit tot op +/- 11.000 ft waar de temperatuur constant -71,5°C blijft.",
+   "Op 0 ft QFE met een temperatuur van 15°C en een druk van 1013,25 hPa, gepaard gaande met een temperatuur afname van 2°C per 1000 ft.",
+   "Op MSL bij 15°C een druk van 1013 hPa. Een drukafname van 1 hPa per 30 ft en een temperatuur afname van 2°F per 1000 voet.",
+   "Op zeeniveau een druk van 1013,25 hPa en een temperatuur van 15°C. De temperatuur neemt 2°C af per 1000 ft en dit tot +/- 11.000 m waar ze de waarde van -56,5°C bereikt."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-02",
+  "topic": "51.1.1.1.2 Describe the relationship of total, static and dynamic pressure with airflow through a narrowed cross section (Bernoulli' law)",
+  "question": "In een stroming (stroombuis) van niet samendrukbare lucht is volgens de continuïteitswet:",
+  "options": [
+   "De som van de snelheid en doorsnede constant.",
+   "Het product van statische druk en stuwdruk constant.",
+   "Het product van snelheid en doorsnede constant.",
+   "De luchtdichtheid constant."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-03",
+  "topic": "51.1.5.1.6 Describe the formation of friction drag",
+  "question": "Onder wrijvingsweerstand verstaat men:",
+  "options": [
+   "Weerstand, ontstaan t.g.v. het vergroten van de aanvalshoek.",
+   "Weerstand, ontstaan door het neerlaten van de flaps.",
+   "Weerstand t.g.v. de oppervlakteafwerking van de diverse vliegtuigdelen.",
+   "Extra weerstand die ontstaat bij toename van de lift."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-04",
+  "topic": "51.1.1.4.2 Name and identify geometric properties of an airfoil (nose radius, chord, chamber, location of max. thickness, angle of attack etc.)",
+  "question": "Bij een asymmetrisch profiel is:",
+  "options": [
+   "De koorde gelijk aan de vleugeldikte.",
+   "De welvingslijn gelijk aan de vleugeldikte.",
+   "De koorde niet gelijk aan de welvingslijn.",
+   "De koorde gelijk aan de welvingslijn."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-05",
+  "topic": "51.1.1.3.6 Describe how lift and drag change with changing AOA or modifications of the airfoil (e.g. when extending high-lift devices)",
+  "question": "Indien aan constante snelheid (beneden de kritieke aanvalshoek), de aanvalshoek toeneemt, volgt daaruit:",
+  "options": [
+   "Een toename van de draagkracht en de weerstand.",
+   "Een toename van de draagkracht en een afname van de weerstand.",
+   "Een afname van de draagkracht en een toename van de weerstand.",
+   "Een afname van de draagkracht en een afname van de weerstand."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-06",
+  "topic": "51.1.4.2.1 Explain the formation of induced drag and tip vortices",
+  "question": "Tipwervels ontstaan bij vliegtuigen:",
+  "options": [
+   "Van grote afmetingen waarbij lucht bij de vleugeltip van de boven- naar de onderzijde van de vleugel stroomt.",
+   "Van kleine afmetingen waarbij de vleugeltippen t.o.v. de wortel zijn verdraaid.",
+   "Waarbij lucht van de vleugeltip van de onder- naar de bovenzijde stroomt.",
+   "Uitsluitend bij grote aanvalshoeken."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-07",
+  "topic": "51.1.4.2.3 Explain how the shape of a wing can affect the formation of induced drag",
+  "question": "Een slanke vleugel zal in vergelijking met een korte, brede vleugel met eenzelfde oppervlak:",
+  "options": [
+   "Minder geïnduceerde weerstand produceren.",
+   "Meer geïnduceerde weerstand produceren.",
+   "Evenveel geïnduceerde weerstand produceren.",
+   "Helemaal geen geïnduceerde weerstand produceren."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-08",
+  "topic": "51.1.7.3.1 Describe the influence of washout on an aircraft's stall characteristics",
+  "question": "Om te voorkomen dat de vleugeltip eerder overtrekt dan de rest van de vleugel kan de constructeur:",
+  "options": [
+   "De instelhoek van de vleugeltip vergroten.",
+   "De instelhoek van de vleugeltip verkleinen.",
+   "De vleugel slanker maken.",
+   "Slats aanbrengen."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-09",
+  "topic": "51.1.6.1.1 Explain the effects of entering and leaving ground effect.",
+  "question": "Het grondeffect is:",
+  "options": [
+   "Het gevolg van een beïnvloeding van de luchtstromingen rond een vliegtuig, door het aardoppervlak.",
+   "Het gevolg van een verandering van de luchtstromingen welke de geïnduceerde weerstand rond de vleugels laat toenemen.",
+   "Het negatief beïnvloeden van de luchtstromingen rond een vleugel tot aan het punt waarop de vleugel stopt met het produceren van lift.",
+   "A en B zijn juist."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-10",
+  "topic": "51.1.2.3.2 Describe lift generation in terms of pressure distribution",
+  "question": "Draagkracht wordt verkregen door:",
+  "options": [
+   "Onderdruk onder en overdruk boven de vleugel.",
+   "Onderdruk onder en onderdruk boven de vleugel.",
+   "Overdruk onder en overdruk boven de vleugel.",
+   "Overdruk onder en onderdruk boven de vleugel."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-11",
+  "topic": "51.1.2.5.1 Describe the change in lift coefficient (cL) with angle of attack",
+  "question": "Bij gelijkblijvende snelheid neemt de lift van een vleugel toe bij vergroting van de aanvalshoek:",
+  "options": [
+   "Dit is juist, ook wanneer de kritieke aanvalshoek wordt overschreden.",
+   "Dit is niet juist.",
+   "Dit is juist, zolang de kritieke aanvalshoek niet wordt overschreden.",
+   "Dit is niet juist, lift neemt alleen toe bij toename van de snelheid."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-12",
+  "topic": "51.1.3.1.1 Explain the meaning of the coefficients of lift cL and its usage in the lift formula",
+  "question": "De CL-waarde van een vleugel is een functie van de:",
+  "options": [
+   "Snelheid",
+   "Aanvalshoek",
+   "Luchtdichtheid",
+   "Weerstand"
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-13",
+  "topic": "51.3.4.1.2 Explain the aerodynamic basics of aileron / roll control",
+  "question": "Op de vleugel waar tijdens het uitvoeren van een  bocht het rolroer omhoog gaat:",
+  "options": [
+   "Neemt de draagkracht toe.",
+   "Blijft de draagkracht gelijk.",
+   "Neemt de draagkracht af.",
+   "Hangt af van de wind."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-14",
+  "topic": "51.3.1.1.1 Name the axis (Lon/Lat/V) and the corresponding movements (roll, yaw, pitch) of an aircraft",
+  "question": "Een vliegtuig kan bewegen rond drie denkbeeldige assen. Het snijpunt van deze assen ligt in:",
+  "options": [
+   "Midden tussen de twee vleugelwortels.",
+   "Op de bestuurdersplaats.",
+   "In het zwaartepunt van het vliegtuig.",
+   "In het drukpunt."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-15",
+  "topic": "51.3.3.1.2 Explain the aerodynamic basics of yaw control",
+  "question": "Geef het secundaire effect van een gierbeweging.",
+  "options": [
+   "De rolbeweging.",
+   "Het windhaaneffect.",
+   "De geïnduceerde gierbeweging.",
+   "Er is geen secundair effect bij de gierbeweging."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-16",
+  "topic": "51.3.4.2.4 Describe technical (aerodynamic) means to reduce adverse yaw by differential aileron deflection",
+  "question": "Toepassing van zogenaamde differentiaal rolroeren heeft tot gevolg dat ten opzichte van normale rolroeren:",
+  "options": [
+   "Bij het naar boven uitslaande rolroer, de lift groter is.",
+   "Bij het naar beneden uitslaande rolroer, de lift kleiner is.",
+   "Bij het naar boven uitslaande rolroer, de weerstand groter is.",
+   "Bij het naar beneden uitslaande rolroer, de weerstand groter is."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-17",
+  "topic": "51.1.8.1.6 Explain the usage of flaps for take-off and landing",
+  "question": "Wanneer heeft men de beste stijgmaat?",
+  "options": [
+   "Zonder flaps.",
+   "Met 15° flaps.",
+   "Met 40° flaps.",
+   "Bij opstijgen geen flaps en bij klim 15° flaps."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-18",
+  "topic": "51.1.8.2.1 Explain the general working principles of leading edge high-lift devices, e.g. refreshing the boundary layer",
+  "question": "Waarvoor dienen slats?",
+  "options": [
+   "Om bij grote aanvalshoeken de grenslaag minder snel los te laten en een betere draagkracht te creëren door de extra luchtstroomversnelling langsheen de ontstane opening.",
+   "Om bij grote aanvalshoeken een grotere draagkracht te krijgen door een hogere onderdruk onder de vleugel.",
+   "Ze dienen als afremming voor de landing.",
+   "Om bij ijsaanzetting op de aanvalsboord van het vliegtuig dit ijs los te rukken."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-19",
+  "topic": "51.1.7.2.6 Explain why the stall speed (IAS) is independent of altitude",
+  "question": "Bij toename van de vlieghoogte zal:",
+  "options": [
+   "De luchtdichtheid afnemen.",
+   "Bij constante ware luchtsnelheid (TAS) de aanvalshoek kleiner worden.",
+   "De overtreksnelheid niet veranderen.",
+   "A en C zijn juist."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-20",
+  "topic": "51.1.7.4.4 Describe the general procedures for preventing imminant stall, if not stated other in AFM/POH",
+  "question": "Om te herstellen uit een draagkrachtverlies moet men:",
+  "options": [
+   "De draagkracht vergroten.",
+   "Het vermogen vergroten.",
+   "De weerstand vergroten.",
+   "De aanvalshoek verkleinen."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-21",
+  "topic": "51.1.7.5.2 List flight situations that might lead to a spin",
+  "question": "Tijdens een dalende bocht zal de binnenvleugel:",
+  "options": [
+   "In het geheel niet willen overtrekken.",
+   "Gelijk met de buitenvleugel overtrekken.",
+   "Later overtrekken dan de buitenvleugel.",
+   "Eerder overtrekken dan de buitenvleugel."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-22",
+  "topic": "51.3.2.1.5 Explain the functions of a horizontal stabilizer in terms of longitudinal stability.",
+  "question": "Zelfherstel van een vliegtuig uit een overtrek wordt onder meer veroorzaakt doordat:",
+  "options": [
+   "De instelhoek van de vleugel groter is dan de instelhoek van het stabilo.",
+   "De vleugel een groter oppervlak heeft dan het stabilo.",
+   "De instelhoek van de vleugel kleiner is dan de instelhoek van het stabilo.",
+   "De aanvalshoek van het stabilo groter is dan van de vleugel."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-23",
+  "topic": "51.1.7.5.9 Describe the general procedures for spin recovery, if not stated other in AFM/POH",
+  "question": "Hoe dien je te reageren, indien je met een erg lage snelheid naar final draait en merkt dat de binnenvleugel wegvalt?",
+  "options": [
+   "Direct een rol input naar rechts en vol gas geven.",
+   "Rustig afwachten wat het vliegtuig doet en proberen te landen.",
+   "Rechts voet en vol gas geven.",
+   "Vol flaps selecteren en vol gas geven."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-24",
+  "topic": "51.1.7.5.5 Describe the difference between a fully developed spin and a stall",
+  "question": "Tijdens een linkerspin:",
+  "options": [
+   "Zijn beide vleugels overtrokken.",
+   "Is geen van beide vleugels overtrokken.",
+   "Is alleen de linkervleugel overtrokken.",
+   "Is alleen de rechtervleugel overtrokken."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-25",
+  "topic": "51.2.3.2.2 Explain the effect of the CG location on pitch manoeuvrability and longitudinal stability",
+  "question": "Wanneer het zwaartepunt van een vliegtuig naar achter verplaatst wordt:",
+  "options": [
+   "Neemt de stabiliteit en de wendbaarheid toe.",
+   "Neemt de stabiliteit af en de wendbaarheid toe.",
+   "Neemt de stabiliteit en de wendbaarheid af.",
+   "Neemt de stabiliteit toe en de wendbaarheid af."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-26",
+  "topic": "51.2.4.1.1 Explain the influence of wing dihedral on roll stability",
+  "question": "Bij laagdekkers zijn de vleugels vaak in een V-vorm aan de romp geplaatst. Dit is gedaan om:",
+  "options": [
+   "De totale weerstand van het vliegtuig te verminderen.",
+   "Een sterkere constructie te krijgen.",
+   "Meer lift te produceren.",
+   "Het vliegtuig een goede dwarsstabiliteit te geven."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-27",
+  "topic": "51.5.3.2.1 Determine the direction of effect, given the propeller’s sense of rotation",
+  "question": "Een éénmotorig vliegtuig heeft een, vanuit de cockpit gezien, rechts draaiende propeller. Wat zal de reactie van het vliegtuig zijn als het motorvermogen wordt verhoogd?",
+  "options": [
+   "De neus van het vliegtuig gaat naar links en omhoog.",
+   "De neus van het vliegtuig gaat naar rechts en omhoog.",
+   "De neus van het vliegtuig gaat naar links en omlaag.",
+   "De neus van het vliegtuig gaat naar rechts en omlaag."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-28",
+  "topic": "51.3.2.1.3 Define the term 'longitudinal stability'",
+  "question": "Langsstabiliteit is stabiliteit om de:",
+  "options": [
+   "Langsas.",
+   "Dwarsas.",
+   "Dwarsas en langsas.",
+   "Topas."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE1-29",
+  "topic": "51.1.7.2.7 Define 'load factor (n)'",
+  "question": "De loadfactor van een vliegtuig is:",
+  "options": [
+   "De maximum draagkracht van de vleugel.",
+   "De verhouding tussen lift en gewicht.",
+   "Het maximum beladingsgewicht.",
+   "De verhouding tussen vermogen en gewicht."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 1"
+ },
+ {
+  "id": "JHE2-01",
+  "topic": "51.1.9.1.1 Describe a laminar boundary layer and identify it on a streamline pattern",
+  "question": "Onder een laminaire stroming verstaat men:",
+  "options": [
+   "Een stroming waarin de luchtdeeltjes de grenslaag doorsnijden.",
+   "Een stroming waarin de banen van de luchtdeeltjes elkaar niet kruisen.",
+   "De roterende luchtstroom om de romp als gevolg van de draaiing van de propeller.",
+   "Een luchtstroom met een gelijkmatige temperatuuropbouw."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-02",
+  "topic": "51.1.4.2.1 Explain the formation of induced drag and tip vortices",
+  "question": "Indien een profiel in een luchtstroom geen lift produceert, zal er:",
+  "options": [
+   "Wel geïnduceerde weerstand zijn.",
+   "Geen geïnduceerde weerstand, maar wel profielweerstand zijn.",
+   "In het geheel geen weerstand zijn.",
+   "Bij een positieve instelhoek toch geïnduceerde weerstand zijn."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-03",
+  "topic": "51.1.1.3.5 Define the term 'angle of attack (AOA)'",
+  "question": "De aanvalshoek is de hoek tussen:",
+  "options": [
+   "De vleugelkoorde en de langsas van het vliegtuig.",
+   "De langsas van het vliegtuig en de relatieve wind.",
+   "De vleugelkoorde en de relatieve wind.",
+   "De langsas van het vliegtuig en het horizontale vlak."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-04",
+  "topic": "51.1.2.4.2 Explain the longitudinal movement of center of pressure with changing angle of attack",
+  "question": "Bij toename van de aanvalshoek bij een asymmetrisch profiel, waarbij de kritieke aanvalshoek niet wordt overschreden, zal:",
+  "options": [
+   "Het drukpunt naar voren verlopen.",
+   "Het drukpunt niet van plaats veranderen.",
+   "Het drukpunt naar achteren verlopen.",
+   "Het zwaartepunt naar voren verlopen."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-05",
+  "topic": "51.1.1.5.1 Define 'aspect ratio'",
+  "question": "De slankheid van de vleugel is:",
+  "options": [
+   "De verhouding tussen de spanwijdte en de oppervlakte van de vleugel.",
+   "De verhouding tussen de totale massa en de oppervlakte van de vleugel.",
+   "De verhouding tussen de oppervlakte van de vleugel en de spanwijdte.",
+   "De verhouding tussen de spanwijdte en de gemiddelde koorde."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-06",
+  "topic": "51.1.2.1.2 Describe the changes in air flow velocity around an airplane’s wing",
+  "question": "De afvloeiing van de lucht rond een vleugel verloopt als volgt:",
+  "options": [
+   "Boven de vleugel is de druk en de snelheid lager dan onder de vleugel, achter de vleugel versnelt de lucht en wordt naar onder afgeweken.",
+   "Boven de vleugel is de snelheid hoger en de druk lager, voor de vleugel wijkt de lucht af naar boven, achter de vleugel naar onder.",
+   "Boven de vleugel is de snelheid en de druk hoger, voor de vleugel vertraagt de lucht en wijkt af naar boven.",
+   "Boven de vleugel heerst een onderdruk, onder de vleugel neemt de druk toe, daardoor wijkt de lucht achter de vleugel af naar boven."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-07",
+  "topic": "51.1.5.1.4 State reasons for aerodynamic fairing of airframe parts, e.g. wheels",
+  "question": "Interferentieweerstand kan worden verminderd door:",
+  "options": [
+   "Vermeerderen van vermogen.",
+   "Aanbrengen van vloeistukken tussen bijvoorbeeld vleugel en romp.",
+   "Verhoging van de vliegsnelheid.",
+   "Verdraaiing van de vleugeltips."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-08",
+  "topic": "51.1.1.3.4 State that the drag force acts opposite to the direction of the flight path",
+  "question": "Hoe wordt de weerstand van de vleugel gemeten?",
+  "options": [
+   "Horizontaal en loodrecht op de relatieve wind.",
+   "Evenwijdig aan de koorde.",
+   "Evenwijdig aan de relatieve wind.",
+   "De richting is afhankelijk van de aanvalshoek."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-09",
+  "topic": "51.1.6.1.1 Explain the effects of entering and leaving ground effect.",
+  "question": "Je moet als piloot in verband met het grondeffect rekening houden met:",
+  "options": [
+   "Een toename van zogenaamde wing tip vortex voor zowel vertrekkende als voor landende vliegtuigen.",
+   "Een afname van de geïnduceerde weerstand, als gevolg waarvan een teveel aan snelheid bij het flaren moeilijker is kwijt te raken.",
+   "Het feit dat een volledige overtreksituatie minder hoogteroer omhoog uitslag nodig heeft dan een volledige overtreksituatie in de lucht.",
+   "Een toename van de geïnduceerde weerstand."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-10",
+  "topic": "51.3.4.1.4 Describe the effects of slip / skid during turns.",
+  "question": "Het doel van een gecontroleerd slipmanoeuvre in final kan zijn:",
+  "options": [
+   "Om met een lagere snelheid sneller te kunnen dalen.",
+   "Om sneller dan normaal te kunnen dalen, zonder dat de voorwaartse snelheid toeneemt.",
+   "Om een beter zicht te  verkrijgen op de landingsbaan.",
+   "B en C zijn juist."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-11",
+  "topic": "51.1.7.1.9 Describe the 'critical angle of attack' and factors affecting it",
+  "question": "De max. aanvalshoek bedraagt ongeveer:",
+  "options": [
+   "25°",
+   "10°",
+   "16°",
+   "35°"
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-12",
+  "topic": "51.6.1.1.2 Describe the equilibrium of forces (weight, lift, drag, thrust) and depict the forces from a corresponding sketch",
+  "question": "Wat is de verhouding tussen de krachten op een vliegtuig in rechtlijnig horizontale vlucht?",
+  "options": [
+   "Draagkracht is gelijk aan gewicht en trekkracht is gelijk aan weerstand.",
+   "Draagkracht, gewicht en weerstand zijn gelijk aan trekkracht.",
+   "Draagkracht en gewicht zijn gelijk aan trekkracht en weerstand.",
+   "Draagkracht is gelijk aan weerstand en trekkracht is gelijk aan gewicht."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-13",
+  "topic": "51.3.1.1.1 Name the axis (Lon/Lat/V) and the corresponding movements (roll, yaw, pitch) of an aircraft",
+  "question": "Een beweging van het vliegtuig rond zijn langsas noemen we:",
+  "options": [
+   "Stampen.",
+   "Rollen.",
+   "Gieren.",
+   "Slippen."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-14",
+  "topic": "51.3.1.2.1 Explain the influence of local AOA change by movement of a control surface",
+  "question": "Als je tijdens het vliegen de stick/yoke naar links beweegt, heeft dit tot gevolg dat:",
+  "options": [
+   "De welving van de rechtervleugel afneemt, waardoor ook de liftproductie van deze vleugel afneemt.",
+   "De welving van de rechtervleugel toeneemt, waardoor ook de liftproductie van die vleugel toeneemt.",
+   "De welving van de rechtervleugel afneemt, waardoor de liftproductie van die vleugel toeneemt.",
+   "De welving van de rechtervleugel toeneemt, waardoor de liftproductie van die vleugel afneemt."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-15",
+  "topic": "51.3.7.2.1 Name and describe the function of the most common types of trim",
+  "question": "Wanneer tijdens de vlucht de stuurknuppel steeds naar voren moet worden geduwd, dient de trim als volgt te worden versteld:",
+  "options": [
+   "Het trimwiel naar voren verdraaien. Het trimvlak gaat dan omlaag.",
+   "Het trimwiel naar achteren verdraaien. Het trimvlak gaat dan omlaag.",
+   "Het trimwiel naar achteren verdraaien. Het trimvlak gaat dan omhoog.",
+   "Het trimwiel naar voren verdraaien. Het trimvlak gaat dan omhoog."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-16",
+  "topic": "51.1.8.1.6 Explain the usage of flaps for take-off and landing",
+  "question": "Wat is het effect van gebruik van flaps bij take-off (bv. 10°).",
+  "options": [
+   "Langere grondrol nodig.",
+   "Grotere weerstand waardoor hogere snelheid nodig is om op te stijgen.",
+   "Vermindering van de stallsnelheid waardoor we op kortere afstand kunnen opstijgen.",
+   "Bij kopwind zullen we moeilijk kunnen opstijgen door de weerstand."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-17",
+  "topic": "51.1.2.4.1 Define and interpret 'center of pressure' as a point the resulting aeordynamic force acts on",
+  "question": "Onder het drukpunt wordt verstaan:",
+  "options": [
+   "Een punt op de vleugelkoorde waar de resulterende luchtkracht aangrijpt.",
+   "Een punt op de vleugelkoorde waar de vliegtuigmassa aangrijpt.",
+   "Een punt op de langsas van het vliegtuig waar de totale lift van het vliegtuig aangrijpt.",
+   "Een punt op de dwarsas van het vliegtuig waar het totale gewicht van het vliegtuig aangrijpt."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-18",
+  "topic": "51.1.7.2.6 Explain why the stall speed (IAS) is independent of altitude",
+  "question": "Ten opzichte van het vliegen op een lage hoogte, zal bij het vliegen op een grote  hoogte:",
+  "options": [
+   "Het vliegtuig overtrekken bij eenzelfde IAS.",
+   "Het vliegtuig overtrekken bij een hogere TAS.",
+   "Het vliegtuig overtrekken bij een lagere TAS.",
+   "A en B zijn juist."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-19",
+  "topic": "51.1.7.1.9 Describe the 'critical angle of attack' and factors affecting it",
+  "question": "De aanvalshoek waarbij een vliegtuig overtrekt zal:",
+  "options": [
+   "Toenemen wanneer het zwaartepunt naar voor verplaatst wordt.",
+   "Veranderen wanneer het gewicht verandert.",
+   "Niet veranderen onder invloed van gewichtsveranderingen.",
+   "Toenemen in een bocht."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-20",
+  "topic": "51.1.7.1.9 Describe the 'critical angle of attack' and factors affecting it",
+  "question": "Een van de volgende vaststellingen over het ‘overtrekken’ is fout:",
+  "options": [
+   "Het gebruik van motorvermogen vermindert de overtreksnelheid.",
+   "Bij een toename van het gewicht wordt de aanvalshoek waarbij het overtrekken optreedt groter.",
+   "De overtreksnelheid neemt toe wanneer het gewicht toeneemt.",
+   "De overtreksnelheid neemt toe wanneer de helling in een bocht toeneemt."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-21",
+  "topic": "51.1.7.2.10 Explain the increase in stall speeds during turns",
+  "question": "De overtreksnelheid in een bocht ligt:",
+  "options": [
+   "Hoger dan in een rechtlijnige horizontale vlucht.",
+   "Lager dan in een rechtlijnige horizontale vlucht.",
+   "Gelijk aan die in een rechtlijnige horizontale vlucht.",
+   "Tot 30 graden helling gelijk aan die in een rechtlijnige horizontale vlucht."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-22",
+  "topic": "51.1.7.4.3 Describe typical stall warning systems commonly used on piston engine aeroplanes (e.g. via movement of stagnation point with flapper switch, suction hole)",
+  "question": "Wat wordt verstaan onder een kunstmatige overtrekwaarschuwing?",
+  "options": [
+   "Het vliegtuig begint te schudden.",
+   "De snelheid neemt plotseling af.",
+   "De stall warning in de cockpit geeft een signaal.",
+   "De druk op het hoogteroer wordt plotseling minder."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-23",
+  "topic": "51.1.7.5.1 Describe the 'spin' and 'spiral dive' flight states",
+  "question": "Wat is het zichtbare verschil tussen een spin en een spiraalduik?",
+  "options": [
+   "De rolhoek van een spin is groter dan die van een spiraalduik.",
+   "Bij een spin blijft de snelheid gelijk terwijl bij een spiraalduik de snelheid toeneemt.",
+   "Bij een spin draait het vliegtuig één kant op terwijl bij een spiraalduik het vliegtuig beide kanten op draait.",
+   "A en B zijn juist."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-24",
+  "topic": "51.2.3.1.1 Explain 'static stability'",
+  "question": "Een vliegtuig is indifferent (neutraal) stabiel als het na een verstoring:",
+  "options": [
+   "Zelf naar zijn oorspronkelijke stand terugkeert.",
+   "Een nieuwe evenwichtstoestand vindt.",
+   "Steeds verder van zijn oorspronkelijke stand afwijkt.",
+   "Uit zijn evenwicht blijft en voortdurend om de assen beweegt."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-25",
+  "topic": "51.2.3.2.2 Explain the effect of the CG location on pitch manoeuvrability and longitudinal stability",
+  "question": "Indien je bagage toevoegt achterin het vliegtuig, heeft dit tot gevolg dat tijdens het vliegen:",
+  "options": [
+   "De CL-waarde van de vleugels toeneemt.",
+   "De CL-waarde van de vleugels afneemt.",
+   "Het vliegtuig stabieler wordt.",
+   "Het vliegtuig onstabieler wordt."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-26",
+  "topic": "51.2.3.2.1 State the importance for keeping CG in limits to maintain controllability",
+  "question": "Direct na take-off merk je dat je de stuurknuppel bijna geheel naar voren moet duwen om te voorkomen dat de neus omhoog beweegt en het vliegtuig in een stall terechtkomt:",
+  "options": [
+   "Er is in de belading iets niet goed gegaan. Het zwaartepunt ligt te ver naar achteren.",
+   "Het vliegtuig is gevaarlijk onstabiel rond de dwarsas.",
+   "Je hebt het trimwiel niet in de neutraalstand staan.",
+   "A en B zijn juist."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-27",
+  "topic": "51.4.2.1.11 List and describe different aircraft certification categories (aerobatic / normal / utility) with different maximum load factor requirements",
+  "question": "Welk is de max. positieve load factor dat een vliegtuig in de utility category moet kunnen verdragen zonder structurele schade?",
+  "options": [
+   "6.0",
+   "3.8",
+   "4.0",
+   "4.4"
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE2-28",
+  "topic": "51.1.7.2.9 List situations during which the load factor increases, e.g. during stall recovery, aerobatics, turns or gusts",
+  "question": "De belastingsfactor is groter dan 1:",
+  "options": [
+   "In een bocht.",
+   "Bij turbulent weer.",
+   "Bij gebruik van flaps.",
+   "Zowel in een bocht als bij turbulent weer."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 2"
+ },
+ {
+  "id": "JHE3-01",
+  "topic": "51.3.2.1.5 Explain the functions of a horizontal stabilizer in terms of longitudinal stability.",
+  "question": "Stabilisatie rond de dwarsas tijdens de kruisvlucht wordt bereikt door het…",
+  "options": [
+   "Horizontaal stabilo.",
+   "Rolroeren.",
+   "Vleugelkleppen.",
+   "Verticaal richtingsroer."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 3"
+ },
+ {
+  "id": "JHE3-02",
+  "topic": "51.4.1.3.2 List possible consequences of exceeding vNE",
+  "question": "Vliegen met snelheden hoger dan de never exceed speed (Vne) kan resulteren in…",
+  "options": [
+   "Een te hoge totale druk met als gevolg een onbruikbare snelheidsmeter.",
+   "Flutter en mechanische beschadiging van de vleugels.",
+   "Een verhoogde lift-to-drag ratio en een betere glijhoek.",
+   "Verminderde luchtweerstand met verhoogde stuurkrachten."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 3"
+ },
+ {
+  "id": "JHE3-03",
+  "topic": "51.5.1.3.1 Explain the effect of ice accretion on the propeller blade",
+  "question": "Wat zijn de typische gevolgen van propellerijsvorming?",
+  "options": [
+   "Verminderd vermogen, afnemend toerental.",
+   "Toenemend vermogen, afnemend toerental.",
+   "Toenemend vermogen, toenemend toerental.",
+   "Verminderd vermogen, toenemend toerental."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 3"
+ },
+ {
+  "id": "JHE3-04",
+  "topic": "51.1.1.1.1 Define 'static pressure', 'dynamic pressure' and 'total pressure'",
+  "question": "De statische druk van gassen werkt…",
+  "options": [
+   "Alleen verticaal ten opzichte van de stromingsrichting.",
+   "Alleen in de richting van de totale druk.",
+   "In alle richtingen.",
+   "Alleen in de stromingsrichting."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 3"
+ },
+ {
+  "id": "JHE3-05",
+  "topic": "51.1.1.3.5 Define the term 'angle of attack (AOA)'",
+  "question": "De aanvalshoek is de hoek tussen…",
+  "options": [
+   "De ongestoorde luchtstroom en de lengteas van een vliegtuig.",
+   "De koordelijn en de lengteas van een vliegtuig.",
+   "De koorde en de tegemoetkomende luchtstroom.",
+   "De vleugel en de romp van een vliegtuig."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 3"
+ },
+ {
+  "id": "JHE3-06",
+  "topic": "51.1.4.2.1 Explain the formation of induced drag and tip vortices",
+  "question": "De ontwikkeling van de vleugeltipwerveling begint tijdens welke fase van de vlucht?",
+  "options": [
+   "Zodra het vliegtuig in beweging komt.",
+   "Tijdens het instellen van het startvermogen tijdens de aanloop.",
+   "Terwijl de kleppen in de onderste stand worden gezet.",
+   "Wanneer lift wordt gegenereerd tijdens de rotatie."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 3"
+ },
+ {
+  "id": "JHE3-07",
+  "topic": "51.1.2.3.2 Describe lift generation in terms of pressure distribution",
+  "question": "Welk drukpatroon kan worden waargenomen bij een liftgenererend vleugelprofiel bij een positieve aanvalshoek?",
+  "options": [
+   "Boven ontstaat lage druk, onder het profiel hogere druk.",
+   "Hoge druk ontstaat boven, lagere druk onder het profiel.",
+   "Bovendruk blijft onveranderd, onder het profiel ontstaat hogere druk.",
+   "Druk blijft onveranderd, lagere druk ontstaat boven het profiel."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 3"
+ },
+ {
+  "id": "JHE3-08",
+  "topic": "51.1.2.4.2 Explain the longitudinal movement of center of pressure with changing angle of attack",
+  "question": "Welke uitspraak over de luchtstroming rond een vleugelprofiel is juist als de aanvalshoek afneemt?",
+  "options": [
+   "Het drukpunt beweegt naar achteren.",
+   "Het stagnatiepunt blijft constant.",
+   "Het stagnatiepunt beweegt naar beneden.",
+   "Het drukpunt beweegt naar voren."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 3"
+ },
+ {
+  "id": "JHE3-09",
+  "topic": "51.1.5.1.3 Describe the formation of interference drag",
+  "question": "Waar wordt interferentieweerstand gegenereerd?",
+  "options": [
+   "Bij de vleugelwortel.",
+   "Bij de rolroeren.",
+   "Bij het landingsgestel.",
+   "Bij de vleugeltips."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 3"
+ },
+ {
+  "id": "JHE3-10",
+  "topic": "51.1.7.4.4 Describe the general procedures for preventing imminant stall, if not stated other in AFM/POH",
+  "question": "In geval van een overtrek is het belangrijk om…",
+  "options": [
+   "De hellingshoek te vergroten en de snelheid te verminderen.",
+   "De aanvalshoek te vergroten en de snelheid te verhogen.",
+   "De aanvalshoek te verkleinen en de snelheid te vergroten.",
+   "De aanvalshoek te vergroten en de snelheid te verkleinen."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 3"
+ },
+ {
+  "id": "JHE3-11",
+  "topic": "51.1.7.2.2 Describe the change in stall speed with varying mass",
+  "question": "Wat leidt tot een lagere overtreksnelheid Vs (IAS)?",
+  "options": [
+   "Lagere hoogte.",
+   "Lagere dichtheid.",
+   "Hogere belastingsfactor.",
+   "Afnemend gewicht."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 3"
+ },
+ {
+  "id": "JHE3-12",
+  "topic": "51.1.8.1.6 Explain the usage of flaps for take-off and landing",
+  "question": "Een start met flaps in de take-off positie veroorzaakt…",
+  "options": [
+   "Een verhoogde klimsnelheid.",
+   "Een verhoogde acceleratie.",
+   "Een verkorting van de take-off run.",
+   "Een afname van de luchtweerstand."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 3"
+ },
+ {
+  "id": "JHE3-13",
+  "topic": "51.3.2.1.3 Define the term 'longitudinal stability'",
+  "question": "Langsstabiliteit wordt stabiliteit rond welke as genoemd?",
+  "options": [
+   "Propelleras.",
+   "Verticale as.",
+   "Lengteas.",
+   "Dwarsas."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 3"
+ },
+ {
+  "id": "JHE3-14",
+  "topic": "51.6.1.2.3 Describe the difference in angle of attack in climb when compared to straight and level flight",
+  "question": "In een rechte en horizontale vlucht met constant motorvermogen is de aanvalshoek bij de vleugel…",
+  "options": [
+   "Groter dan tijdens een klim.",
+   "Groter dan bij de start.",
+   "Kleiner dan bij een daling.",
+   "Kleiner dan bij een klim."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Oefenexamen Aerodynamica 3"
+ },
+ {
+  "id": "JHT1-01",
+  "topic": "51.1.1.1.1 Define 'static pressure', 'dynamic pressure' and 'total pressure'",
+  "question": "De statische druk van een gas werkt…",
+  "options": [
+   "Alleen in de richting evenwijdig aan de luchtstroom.",
+   "Alleen in de richting van de totale druk.",
+   "In alle richtingen.",
+   "Alleen in de stromingsrichting."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 1"
+ },
+ {
+  "id": "JHT1-02",
+  "topic": "51.1.1.1.2 Describe the relationship of total, static and dynamic pressure with airflow through a narrowed cross section (Bernoulli' law)",
+  "question": "De wet van Bernoulli zegt dat…",
+  "options": [
+   "Statische druk = totale druk + dynamische druk",
+   "Totale druk = dynamische druk – statische druk",
+   "Dynamische druk = totale druk + statische druk",
+   "Totale druk = dynamische druk + statische druk"
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 1"
+ },
+ {
+  "id": "JHT1-03",
+  "topic": "51.1.1.3.1 Describe the total aerodynamic force on a wing as a vectorized sum of drag and lift force",
+  "question": "Elk voorwerp in een luchtstroom produceert…",
+  "options": [
+   "Lift, maar geen weerstand.",
+   "Weerstand en lift.",
+   "Dezelfde weerstand ongeacht de snelheid.",
+   "Weerstand."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 1"
+ },
+ {
+  "id": "JHT1-04",
+  "topic": "51.1.5.3.1 Describe the change in induced drag with increasing air speed",
+  "question": "Hoe gedragen geïnduceerde en parasitaire weerstand zich als de vliegsnelheid toeneemt tijdens een horizontale rechtlijnige vlucht?",
+  "options": [
+   "Geïnduceerde weerstand neemt af, parasitaire weerstand stijgt.",
+   "Parasitaire weerstand neemt af, geïnduceerde weerstand stijgt.",
+   "Parasitaire weerstand neemt af, geïnduceerde weerstand neemt af.",
+   "Geïnduceerde weerstand stijgt, parasitaire weerstand stijgt."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 1"
+ },
+ {
+  "id": "JHT1-05",
+  "topic": "51.1.1.4.2 Name and identify geometric properties of an airfoil (nose radius, chord, chamber, location of max. thickness, angle of attack etc.)",
+  "question": "De denkbeeldige rechte lijn die de voorkant van het vleugelprofiel verbindt met de achterkant is de:",
+  "options": [
+   "Welvingslijn",
+   "Koorde",
+   "Angle of attack",
+   "Camber line"
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 1"
+ },
+ {
+  "id": "JHT1-06",
+  "topic": "51.1.1.3.5 Define the term 'angle of attack (AOA)'",
+  "question": "De Angle of Attack is de hoek tussen…",
+  "options": [
+   "De ongestoorde luchtstroom en de langsas van het vliegtuig.",
+   "De koorde en de langsas van het vliegtuig.",
+   "De koorde en de relatieve luchtstroom.",
+   "De vleugel en de langsas van het vliegtuig."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 1"
+ },
+ {
+  "id": "JHT1-07",
+  "topic": "51.1.4.1.1 Describe the pressure equalization between upper and lower side of the wing",
+  "question": "Op welke plaats vindt er drukcompensatie plaats aan de vleugel?",
+  "options": [
+   "Vleugelwortel.",
+   "Wingtips.",
+   "Vleugelachterrand.",
+   "Vleugelvoorrand."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 1"
+ },
+ {
+  "id": "JHT1-08",
+  "topic": "51.1.4.2.3 Explain how the shape of a wing can affect the formation of induced drag",
+  "question": "Bij welke van volgende opties wordt er de meeste geïnduceerde weerstand geproduceerd?",
+  "options": [
+   "Grote aspect ratio.",
+   "Kleine aspect ratio.",
+   "Lage liftcoëfficiënt.",
+   "Bij een vleugel met winglets."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 1"
+ },
+ {
+  "id": "JHT1-09",
+  "topic": "51.1.5.1.3 Describe the formation of interference drag",
+  "question": "Op welke plaats is er sprake van interferentieweerstand?",
+  "options": [
+   "Aan de vleugelwortel.",
+   "Aan de ailerons.",
+   "Nabij de wingtips.",
+   "Bij het landingsgestel."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 1"
+ },
+ {
+  "id": "JHT1-10",
+  "topic": "51.1.1 Basic concepts, laws and definitions",
+  "question": "De standaardatmosfeer mag omschreven worden als volgt:",
+  "options": [
+   "Op MSL een temperatuur van 15°C en een druk van 1013,25hPa. Een afname van 0,65°C per 100 meter en dit tot op +/- 11.000ft waar de temperatuur constant -71,5°C blijft.",
+   "Op 0ft QFE met een temperatuur van 15°C en een druk van 1013,25hPa, gepaard gaande met een temperatuurafname van 2°C per 1000ft.",
+   "Op MSL bij 15°C een druk van 1013hPa. Een drukafname van 1hPa per 30ft en een temperatuurafname van 2°F per 1000ft.",
+   "Op zeeniveau een druk van 1013,25hPa en een temperatuur van 15°C. De temperatuur neemt af met 2°C per 1000ft en dit tot +/- 11.000m waar ze de waarde van -56,5°C bereikt."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 1"
+ },
+ {
+  "id": "JHT1-11",
+  "topic": "51.1.6.1.1 Explain the effects of entering and leaving ground effect.",
+  "question": "Het grondeffect is:",
+  "options": [
+   "Het gevolg van een beïnvloeding van de luchtstromingen rond een vliegtuig, door het aardoppervlak.",
+   "Het gevolg van een verandering van de luchtstromingen welke de geïnduceerde weerstand rond de vleugels laat toenemen.",
+   "Het negatief beïnvloeden van de luchtstromingen rond een vleugel tot aan het punt waarop de vleugel stopt met het produceren van lift.",
+   "A en B zijn juist."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 1"
+ },
+ {
+  "id": "JHT1-12",
+  "topic": "51.1.5.4.3 Identify curves for parasite drag, induced drag and total drag in drag vs. airspeed plots",
+  "question": "Welke curve beschrijft de geïnduceerde weerstand?",
+  "options": [
+   "1",
+   "4",
+   "2",
+   "3"
+  ],
+  "correct": 0,
+  "images": [
+   "img/principles_of_flight/jh1-12_0.jpeg"
+  ],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 1"
+ },
+ {
+  "id": "JHT1-13",
+  "topic": "51.1.5.4.2 Explain why total drag is lowest at a certain airspeed",
+  "question": "Wanneer is de totale weerstand het kleinst?",
+  "options": [
+   "Geïnduceerde weerstand is twee keer groter dan de parasitaire weerstand.",
+   "Parasitaire weerstand is twee keer groter dan de geïnduceerde weerstand.",
+   "Parasitaire weerstand is gelijk aan de geïnduceerde weerstand.",
+   "Geïnduceerde weerstand is kleiner dan de parasitaire weerstand."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 1"
+ },
+ {
+  "id": "JHT1-14",
+  "topic": "51.1.1.4.2 Name and identify geometric properties of an airfoil (nose radius, chord, chamber, location of max. thickness, angle of attack etc.)",
+  "question": "Bij een asymmetrisch profiel is:",
+  "options": [
+   "De koorde gelijk aan de vleugeldikte.",
+   "De welvingslijn gelijk aan de vleugeldikte.",
+   "De koorde niet gelijk aan de welvingslijn.",
+   "De koorde gelijk aan de welvingslijn."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 1"
+ },
+ {
+  "id": "JHT1-15",
+  "topic": "51.1.3.1.2 State the formula for lift qualitatively (factors, dependencies, no calculations)",
+  "question": "In een eenparig rechtlijnige horizontale vlucht laat de piloot de snelheid zakken van 100kt naar 80kt. Om op dezelfde hoogte te blijven moet de:",
+  "options": [
+   "Aanvalshoek verminderen.",
+   "Aanvalshoek toenemen.",
+   "Aanvalshoek gelijk blijven.",
+   "De instelhoek van de vleugel t.o.v. de romp toenemen."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 1"
+ },
+ {
+  "id": "JHT2-01",
+  "topic": "51.1.8.2.2 Describe the differences between leading- and trailing edge high-lift devices with regard to critical angle of attack and drag",
+  "question": "Vergeleken met flaps (vleugelachterrandkleppen), zorgen vleugelvoorrandkleppen (slats) voor…",
+  "options": [
+   "Een kleinere kritische angle of attack bij een bepaalde snelheid.",
+   "Hogere snelheden bij take-off en landing.",
+   "Minder weerstand en een grotere kritische angle of attack.",
+   "Een vergroting van het camber en een lagere kritische angle of attack."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-02",
+  "topic": "51.3.2.1.5 Explain the functions of a horizontal stabilizer in terms of longitudinal stability.",
+  "question": "Stabilisatie rond de dwarsas gebeurt door…",
+  "options": [
+   "Het horizontale staartvlak",
+   "De ailerons",
+   "De flaps",
+   "Het richtingsroer"
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-03",
+  "topic": "51.1.2.4.1 Define and interpret 'center of pressure' as a point the resulting aeordynamic force acts on",
+  "question": "Alle aerodynamische krachten grijpen aan op hetzelfde punt:",
+  "options": [
+   "Het zwaartepunt",
+   "Het drukpunt",
+   "Het stagnatiepunt",
+   "Het loslatingspunt"
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-04",
+  "topic": "51.3.1.1.1 Name the axis (Lon/Lat/V) and the corresponding movements (roll, yaw, pitch) of an aircraft",
+  "question": "De drie assen van een vliegtuig kruisen elkaar in…",
+  "options": [
+   "Het zwaartepunt",
+   "Het drukpunt",
+   "Het stagnatiepunt",
+   "Het separatiepunt"
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-05",
+  "topic": "51.1.2.2.1 Define and identify the stagnation point (from depictions)",
+  "question": "Wat gebeurt er bij het stagnatiepunt?",
+  "options": [
+   "Aan de bovenzijde van de vleugel begint de grenslaag los te laten.",
+   "De laminaire grenslaag gaat over in een turbulente grenslaag.",
+   "Alle aerodynamische krachten grijpen aan op dit punt.",
+   "Stroomlijnen worden verdeeld naar de boven- of onderkant van het profiel."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-06",
+  "topic": "51.1.2.4.2 Explain the longitudinal movement of center of pressure with changing angle of attack",
+  "question": "Hoe beweegt het drukpunt bij een asymmetrisch profiel?",
+  "options": [
+   "Beweegt naar de vleugelvoorrand (leading edge) als de aanvalshoek afneemt.",
+   "Bevindt zich op ongeveer 25% van de koorde, gemeten vanaf de leading edge.",
+   "Beweegt naar de vleugelachterrand (trailing edge) als de aanvalshoek afneemt.",
+   "Beweegt nooit onder invloed van een veranderende angle of attack."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-07",
+  "topic": "51.1.7.3.3 Explain the effect of washout on the effectiveness of ailerons at low speed",
+  "question": "Welk van onderstaande antwoorden beschrijft het voordeel van vleugelverdraaiing?",
+  "options": [
+   "De vleugel is sterker en beter bestand tegen verdraaiingen.",
+   "Dankzij de vleugelverdraaiing zal de vormweerstand verkleinen als de snelheid toeneemt.",
+   "Bij grote aanvalshoeken zullen de ailerons langer effectief blijven.",
+   "Bij grote aanvalshoeken zullen de ailerons als eerste hun effectiviteit verliezen."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-08",
+  "topic": "51.1.5.4.1 State that total drag is composed from parasite drag and induced drag",
+  "question": "Welke weerstandsvorm maakt niet deel uit van de parasitaire weerstand?",
+  "options": [
+   "Interferentieweerstand.",
+   "Wrijvingsweerstand",
+   "Geïnduceerde weerstand",
+   "Vormweerstand"
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-09",
+  "topic": "51.1.7.1.8 Explain the reduction in lift / cL at increasing AOA using the cL-alpha graph",
+  "question": "Wat gebeurt er met lift en weerstand als we een stall benaderen?",
+  "options": [
+   "Lift en weerstand nemen af",
+   "Lift en weerstand nemen toe",
+   "Lift neemt af en weerstand neemt toe",
+   "Lift neemt toe en weerstand neemt af"
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-10",
+  "topic": "51.1.7.4.4 Describe the general procedures for preventing imminant stall, if not stated other in AFM/POH",
+  "question": "In geval van een stall is het belangrijk om…",
+  "options": [
+   "De hellingshoek te vergroten en de snelheid te verminderen.",
+   "De aanvalshoek te vergroten en de snelheid te vergroten.",
+   "De aanvalshoek te verkleinen en de snelheid te vergroten.",
+   "De aanvalshoek te vergroten en de snelheid te verminderen."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-11",
+  "topic": "51.1.7.1.9 Describe the 'critical angle of attack' and factors affecting it",
+  "question": "De kritische aanvalshoek…",
+  "options": [
+   "Verandert met een toenemend gewicht.",
+   "Vermindert met een voorwaarts zwaartepunt.",
+   "Is onafhankelijk van het gewicht.",
+   "Vergroot met een achterlijk zwaartepunt."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-12",
+  "topic": "51.1.7.4.3 Describe typical stall warning systems commonly used on piston engine aeroplanes (e.g. via movement of stagnation point with flapper switch, suction hole)",
+  "question": "De kunstmatige overtrekwaarschuwing wordt veelal geactiveerd door een verandering van…",
+  "options": [
+   "Het zwaartepunt",
+   "Het transitiepunt",
+   "Het drukpunt",
+   "Het stagnatiepunt"
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-13",
+  "topic": "51.1.7.5.10 Explain the possible negative influences / uselessness of ailerons during spin recovery, and that the rudder is still effective",
+  "question": "Welk statement over een spin is correct?",
+  "options": [
+   "Tijdens het herstel moeten de ailerons neutraal blijven.",
+   "Alleen oude vliegtuigen vertonen het risico om te spinnen.",
+   "Tijdens het herstel moeten de ailerons in tegenovergestelde richting aan de draairichting uitgeslagen worden.",
+   "Tijdens een spin gaat de snelheid voortdurend omhoog."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-14",
+  "topic": "51.1.8.1.3 Explain the general working principles of high-lift devices, e.g. increase of chamber, increase of wing area",
+  "question": "Met betrekking tot het gebruik van flaps, welke van de volgende opties verklaart het vergroten van de liftproductie?",
+  "options": [
+   "De aanvalshoek verkleint.",
+   "De welving van het profiel vergroot.",
+   "De vormweerstand verkleint.",
+   "De geïnduceerde weerstand vermindert."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-15",
+  "topic": "51.1.8.1.6 Explain the usage of flaps for take-off and landing",
+  "question": "Opstijgen met de flaps in de take-off positie veroorzaakt…",
+  "options": [
+   "Een grote klimsnelheid",
+   "Een grotere acceleratie",
+   "Een kortere take-off roll.",
+   "Verminderde weerstand"
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-16",
+  "topic": "51.1.7.1.2 Describe a laminar boundary layer and identify it on a streamline pattern",
+  "question": "De laminaire grenslaag bevindt zich tussen…",
+  "options": [
+   "Het transitiepunt en het separatiepunt (loslatingspunt).",
+   "Het stagnatiepunt en het transitiepunt.",
+   "Het transitiepunt en het drukpunt.",
+   "Het stagnatiepunt en het drukpunt."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-17",
+  "topic": "51.1.7.1.5 Describe the transition point and locate it in streamline pattern",
+  "question": "Welke soorten grenslaag kunnen teruggevonden worden bij een vleugelprofiel?",
+  "options": [
+   "Laminaire grenslaag bij de vleugelvoorrand, turbulente grenslaag bij de vleugelachterrand.",
+   "Turbulente grenslaag over de hele bovenzijde van de vleugel met een loslatende luchtstroom.",
+   "Turbulente grenslaag bij de vleugelvoorrand en laminaire grenslaag bij de vleugelachterrand.",
+   "Laminaire grenslaag over de hele bovenzijde van de vleugel met een niet-loslatende luchtstroom."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-18",
+  "topic": "51.1.7.1.4 Explain the different behaviour on flow separation with laminar or turbulent boundary layers",
+  "question": "Hoe verschillen een laminaire en een turbulente grenslaag?",
+  "options": [
+   "De laminaire grenslaag produceert lift, de turbulente produceert weerstand.",
+   "De turbulente grenslaag is dikker, maar produceert minder wrijvingsweerstand.",
+   "De laminaire grenslaag is dunner, maar produceert meer wrijvingsweerstand.",
+   "De turbulente grenslaag kan het vleugelprofiel beter volgen bij grotere aanvalshoeken."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-19",
+  "topic": "51.3.1.1.1 Name the axis (Lon/Lat/V) and the corresponding movements (roll, yaw, pitch) of an aircraft",
+  "question": "Een rotatie rond de topas is…",
+  "options": [
+   "Rollen",
+   "Stampen (pitch)",
+   "Gieren (yaw)",
+   "Slippen"
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-20",
+  "topic": "51.3.4.2.4 Describe technical (aerodynamic) means to reduce adverse yaw by differential aileron deflection",
+  "question": "Wat is het voordeel van aileron differentieel?",
+  "options": [
+   "De verhouding tussen de weerstandscoëfficiënt en de liftcoëfficiënt vergroot.",
+   "De adverse yaw (haakeffect) is groter.",
+   "De weerstand van de aileron die neerwaarts beweegt is lager en daardoor verkleint het haakeffect.",
+   "De totale lift blijft constant tijdens aileronuitslagen."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT2-21",
+  "topic": "51.3.7.2.1 Name and describe the function of the most common types of trim",
+  "question": "Tijdens kruisvlucht met constant motorvermogen heeft een vliegtuig voortdurend de neiging om te klimmen. Hoe kan deze neiging teniet gedaan worden?",
+  "options": [
+   "Het trimvlak naar boven te bewegen.",
+   "Het zwaartepunt naar achter te verplaatsen.",
+   "Het hoogteroer omhoog te bewegen.",
+   "Het trimvlak naar beneden te bewegen."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 2"
+ },
+ {
+  "id": "JHT3-01",
+  "topic": "51.6.1.5.3 Explain the equilibrium of forces (weight, lift, drag including the influence of weight on thrust and lift) and depict the forces from a corresponding sketch",
+  "question": "De totale lift die door de vleugels van een vliegtuig wordt gegenereerd kan opgedeeld worden in een verticale en een horizontale component. Voor een vliegtuig in een horizontale, gecoördineerde bocht moet…",
+  "options": [
+   "De totale lift gelijk zijn aan het gewicht.",
+   "De horizontale component van lift gelijk zijn aan het gewicht.",
+   "De verticale component van lift er voor zorgen dat het vliegtuig draait.",
+   "De verticale component van lift gelijk zijn aan het gewicht."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
+ },
+ {
+  "id": "JHT3-02",
+  "topic": "51.1.1.4.2 Name and identify geometric properties of an airfoil (nose radius, chord, chamber, location of max. thickness, angle of attack etc.)",
+  "question": "Nummer 2 op bijgevoegde tekening is de…",
+  "options": [
+   "Koordelijn",
+   "Koorde",
+   "Angle of Attack",
+   "Profieldikte"
+  ],
+  "correct": 1,
+  "images": [
+   "img/principles_of_flight/665936_0.jpeg"
+  ],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
+ },
+ {
+  "id": "JHT3-03",
+  "topic": "51.1.1.4.2 Name and identify geometric properties of an airfoil (nose radius, chord, chamber, location of max. thickness, angle of attack etc.)",
+  "question": "Op dezelfde tekening is nummer 3 gelijk aan…",
+  "options": [
+   "De koorde",
+   "De welvingslijn",
+   "De gemiddelde koorde",
+   "De profieldikte"
+  ],
+  "correct": 1,
+  "images": [
+   "img/principles_of_flight/665936_0.jpeg"
+  ],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
+ },
+ {
+  "id": "JHT3-04",
+  "topic": "51.1.2.2.1 Define and identify the stagnation point (from depictions)",
+  "question": "Nummer 1 op bijgevoegde tekening is het…",
+  "options": [
+   "Drukpunt",
+   "Separatiepunt",
+   "Omslagpunt",
+   "Stagnatiepunt"
+  ],
+  "correct": 3,
+  "images": [
+   "img/principles_of_flight/665938_0.jpeg"
+  ],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
+ },
+ {
+  "id": "JHT3-05",
+  "topic": "51.1.2.4.2 Explain the longitudinal movement of center of pressure with changing angle of attack",
+  "question": "Op welke manier beweegt het drukpunt bij een asymmetrisch profiel bij toenemende aanvalshoek?",
+  "options": [
+   "Beweegt naar achter tot de kritische aanvalshoek bereikt is.",
+   "Beweegt naar voor en dan naar achter.",
+   "Beweegt naar voor tot de kritische aanvalshoek bereikt is.",
+   "Beweegt richting de wingtips."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
+ },
+ {
+  "id": "JHT3-06",
+  "topic": "51.1.5.4.3 Identify curves for parasite drag, induced drag and total drag in drag vs. airspeed plots",
+  "question": "Welke curve is een representatie van de parasitaire weerstand?",
+  "options": [
+   "1",
+   "2",
+   "4",
+   "3"
+  ],
+  "correct": 1,
+  "images": [
+   "img/principles_of_flight/jh1-12_0.jpeg"
+  ],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
+ },
+ {
+  "id": "JHT3-07",
+  "topic": "51.1.5.3.1 Describe the change in induced drag with increasing air speed",
+  "question": "Welk effect heeft een afnemende snelheid op de geïnduceerde weerstand in horizontale rechtlijnige vlucht?",
+  "options": [
+   "De geïnduceerde weerstand neemt toe.",
+   "De geïnduceerde weerstand verdwijnt.",
+   "De geïnduceerde weerstand blijft constant.",
+   "De geïnduceerde weerstand neemt een beetje af."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
+ },
+ {
+  "id": "JHT3-08",
+  "topic": "51.1.8.1.10 Explain the 'ballooning' effect when deploying flaps, and describe how to counteract",
+  "question": "Wat kan er veranderen als de piloot de flaps in de landingsstand plaatst?",
+  "options": [
+   "De ligging van het zwaartepunt.",
+   "De effectiviteit van de ailerons.",
+   "Het effect van het koppel van de motor.",
+   "De trimconditie."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
+ },
+ {
+  "id": "JHT3-09",
+  "topic": "51.3.1.1.1 Name the axis (Lon/Lat/V) and the corresponding movements (roll, yaw, pitch) of an aircraft",
+  "question": "Rotatie rond de dwarsas is…",
+  "options": [
+   "Rollen",
+   "Stallen",
+   "Gieren (yaw)",
+   "Pitch (stampen)"
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
+ },
+ {
+  "id": "JHT3-10",
+  "topic": "51.3.2.1.4 Describe how the elevator influences flight attitude / flight path",
+  "question": "Het hoogteroer beweegt het vliegtuig rond de…",
+  "options": [
+   "Dwarsas.",
+   "Topas.",
+   "Langsas.",
+   "Verticale as."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
+ },
+ {
+  "id": "JHT3-11",
+  "topic": "51.3.4.2.4 Describe technical (aerodynamic) means to reduce adverse yaw by differential aileron deflection",
+  "question": "Aileron differentieel wordt gebruikt om…",
+  "options": [
+   "Het haakeffect te verminderen.",
+   "Een stall bij kleine aanvalshoeken te voorkomen.",
+   "De daalsnelheid te vergroten.",
+   "Zogturbulentie te verminderen."
+  ],
+  "correct": 0,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
+ },
+ {
+  "id": "JHT3-12",
+  "topic": "51.3.4.2.1 Explain the effect of 'adverse yaw'",
+  "question": "De rechtse aileron beweegt omhoog, de linkse omlaag. Het vliegtuig zal…",
+  "options": [
+   "Naar links rollen, niet gieren.",
+   "Naar rechts rollen en gieren.",
+   "Naar rechts rollen en links gieren.",
+   "Naar links rollen en rechts gieren."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
+ },
+ {
+  "id": "JHT3-13",
+  "topic": "51.3.7.2.1 Name and describe the function of the most common types of trim",
+  "question": "De piloot beweegt het trimvlak naar boven. Het hoogteroer van het vliegtuig zal…",
+  "options": [
+   "Neutraal blijven.",
+   "Omhoog uitslaan.",
+   "Omlaag uitslaan.",
+   "Hangt af van de aanvalshoek."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
+ },
+ {
+  "id": "JHT3-14",
+  "topic": "51.5.1.2.1 Describe the 'blade twist' and explain why it is used",
+  "question": "Het verloop van de spoed van een propeller van wortel tot tip zorgt er voor dat…",
+  "options": [
+   "De meeste trekkracht aan de tip geproduceerd wordt.",
+   "De meeste trekkracht aan de wortel geproduceerd wordt.",
+   "Een gelijkmatige verdeling van de trekkracht over de hele lengte van het blad.",
+   "De tip van de propeller de grootst mogelijke aanvalshoek heeft."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
+ },
+ {
+  "id": "JHT3-15",
+  "topic": "51.5.2.1.1 Describe the term 'windmilling' and explain its influence on gliding performance",
+  "question": "Na een engine fail zal een propeller die aan het windmillen is…",
+  "options": [
+   "Geen trekkracht en geen weerstand produceren.",
+   "Heeft meer pitch in vaanstand (feather).",
+   "Weerstand produceren maar geen trekkracht.",
+   "Het vliegtuig verder laten zweven."
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
+ },
+ {
+  "id": "JHT3-16",
+  "topic": "51.6.1.5.8 Describe how the correct bank for a 'rate-one-turn' changes with TAS",
+  "question": "De bankangle in een rate one turn (standaardbocht) is afhankelijk van…",
+  "options": [
+   "Het gewicht.",
+   "De wind.",
+   "De belastingsfactor.",
+   "De TAS."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
+ },
+ {
+  "id": "JHT3-17",
+  "topic": "51.4.2.1.11 List and describe different aircraft certification categories (aerobatic / normal / utility) with different maximum load factor requirements",
+  "question": "De limit loadfactor van een vliegtuig in de Utility categorie is…",
+  "options": [
+   "+3,8G, -1,52G",
+   "+6G, -3G",
+   "+4,4G, -1,76G",
+   "+4,4G, -1,52G"
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
+ },
+ {
+  "id": "JHT3-18",
+  "topic": "51.5.1.1.7 Explain the change of RPM of a fixed pitch propeller at constant throttle when varying air speed",
+  "question": "Bij een fixed pitch prop zal, bij een constante powersetting, bij toenemende hoogte en/of snelheid…",
+  "options": [
+   "Het toerental oplopen.",
+   "Het toerental afnemen.",
+   "De aanvalshoek van de propeller verkleinen.",
+   "A en C zijn correct."
+  ],
+  "correct": 3,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
+ },
+ {
+  "id": "JHT3-19",
+  "topic": "51.5.3.2.1 Determine the direction of effect, given the propeller’s sense of rotation",
+  "question": "Bij een propeller die, van achter gezien, tegenwijzerzin draait, zal het vliegtuig de neiging hebben om:",
+  "options": [
+   "Naar links te trekken.",
+   "Naar rechts te trekken.",
+   "Dit heeft geen effect.",
+   "De richting waarin het vliegtuig trekt hangt af van de neusstand."
+  ],
+  "correct": 1,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
+ },
+ {
+  "id": "JHT3-20",
+  "topic": "51.6.1.5.5 Determine or state approximately the load factor during turns at 30°, 45° or 60° bank angle",
+  "question": "Wat is de belastingsfactor tijdens een horizontale bocht van 45°?",
+  "options": [
+   "N = 1,15",
+   "N = 2",
+   "N = 1,4",
+   "N = 1"
+  ],
+  "correct": 2,
+  "images": [],
+  "author": "Jeroen Huygen",
+  "exam": "Test Aerodynamica 3"
  }
 ]
