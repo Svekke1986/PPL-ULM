@@ -334,12 +334,17 @@
     store.set(P.deckKey + '.gezien', seen);
     P.roundPos = seen.length;  // de hoeveelste vraag van deze ronde
     P.roundSize = ids.size;
-    P.lastOfRound = deck.length === 0 && !P.chapter;  // ronde en score enkel per vak, niet per hoofdstuk
+    P.lastOfRound = deck.length === 0 && ownRound(P);  // ronde en score per vak (of categorie met eigen sessie), niet per hoofdstuk
     return P.pool.find(q => q.id === id);
   }
 
-  // Deel (hoofdstuk) van een vraag voor de uitsplitsing van de score.
+  // Eigen ronde met score en overzicht: het hele vak, of een categorie met een eigen sessie (bv. de oefenexamens).
+  const ownRound = P => !P.chapter || !!P.chapter.eigenSessie;
+  const roundName = P => P.chapter ? P.chapter.name.replace(/^\S+\s/, '') : SUBJECTS[P.subject].name;
+
+  // Deel (hoofdstuk, of het oefenexamen) van een vraag voor de uitsplitsing van de score.
   function partOf(q) {
+    if (practice.chapter && practice.chapter.eigenSessie && q.oefenexamen) return q.oefenexamen;
     const ch = window.chapterOf(practice.subject, q.lo || '');
     return ch ? ch.name : q.ai ? 'AI-gegenereerde vragen (zonder leerdoel)' : 'Overige';
   }
@@ -349,10 +354,11 @@
     const P = practice, r = store.get(P.deckKey + '.ronde', { answered: 0, correct: 0, per: {} });
     const pct = (c, n) => n ? Math.round(100 * c / n) : 0;
     const order = (window.CHAPTERS[P.subject] || []).map(c => c.name);
-    const rows = Object.entries(r.per || {}).sort((x, y) => (order.indexOf(x[0]) + 1 || 99) - (order.indexOf(y[0]) + 1 || 99))
+    const rank = name => order.indexOf(name) + 1 || 99;
+    const rows = Object.entries(r.per || {}).sort((x, y) => rank(x[0]) - rank(y[0]) || x[0].localeCompare(y[0]))
       .map(([name, [n, c]]) => `<tr><td>${esc(name)}</td><td>${c}/${n}</td><td><strong>${pct(c, n)} %</strong></td></tr>`).join('');
     return `<div class="round-done">
-      <h3>${ended ? `Sessie beëindigd: ${r.answered} van ${P.roundSize} vragen van ${esc(SUBJECTS[P.subject].name)} beantwoord` : `🎉 Alle ${P.roundSize} vragen van ${esc(SUBJECTS[P.subject].name)} gehad`}</h3>
+      <h3>${ended ? `Sessie beëindigd: ${r.answered} van ${P.roundSize} vragen van ${esc(roundName(P))} beantwoord` : `🎉 Alle ${P.roundSize} vragen van ${esc(roundName(P))} gehad`}</h3>
       <p class="round-total">Totaalscore: <strong>${r.correct} van ${r.answered}</strong> juist (<strong>${pct(r.correct, r.answered)} %</strong>)${!ended && r.answered < P.roundSize ? ` · ${P.roundSize - r.answered} overgeslagen` : ''}</p>
       ${rows ? `<table class="round-table"><thead><tr><th>Deel</th><th>Juist</th><th>Score</th></tr></thead><tbody>${rows}</tbody></table>` : ''}
       <p class="small">${ended ? '' : 'Met “Nieuwe ronde” begin je opnieuw met alle vragen, in een andere volgorde.'}</p>
@@ -386,12 +392,15 @@
     const reset = () => {
       // Hoofdstuk: alleen die stapel. Heel vak: stapels van het vak én van alle hoofdstukken, plus de rondescore.
       // (De sleutels van een hoofdstuk beginnen met die van het vak; omgekeerd niet.)
+      // Categorieën met een eigen sessie (oefenexamens) blijven staan als je het hele vak opnieuw begint.
       const prefix = `pplulm.${P.deckKey}`;
-      Object.keys(localStorage).filter(k => k === prefix || k.startsWith(prefix + '.')).forEach(k => localStorage.removeItem(k));
+      const own = P.chapter ? [] : (window.CHAPTERS[P.subject] || []).filter(c => c.eigenSessie).map(c => `${prefix}.${c.id}`);
+      const keep = k => own.some(o => k === o || k.startsWith(o + '.'));
+      Object.keys(localStorage).filter(k => (k === prefix || k.startsWith(prefix + '.')) && !keep(k)).forEach(k => localStorage.removeItem(k));
       viewPractice(P.licence, P.subject, P.chapter && P.chapter.id);
     };
     const r = store.get(P.deckKey + '.ronde', { answered: 0 });
-    if (P.chapter || !r.answered) {
+    if (!ownRound(P) || !r.answered) {
       ask({ title: 'Opnieuw beginnen?', text: '<p>Deze sessie beëindigen en opnieuw beginnen met alle vragen?</p>', ok: 'Opnieuw beginnen' }).then(ok => ok && reset());
       return;
     }
@@ -471,7 +480,7 @@
     const answered = P.chosen !== null;
     app.innerHTML = practiceHeader() + withCompassCalc(`
       <div class="card">
-        ${questionHtml(P.q, { chosen: P.chosen, reveal: answered, locked: answered, counter: P.chapter ? `Vraag ${P.count}` : `Vraag ${P.roundPos} van ${P.roundSize}` })}
+        ${questionHtml(P.q, { chosen: P.chosen, reveal: answered, locked: answered, counter: ownRound(P) ? `Vraag ${P.roundPos} van ${P.roundSize}` : `Vraag ${P.count}` })}
         ${answered ? feedbackHtml(P.q, P.chosen) : ''}
         ${answered && P.lastOfRound ? roundDoneHtml() : ''}
         <div class="quiz-actions">
@@ -488,7 +497,7 @@
       P.hist[P.pos].chosen = P.chosen;
       const ok = P.chosen === P.q.c;
       P.session.answered++; if (ok) P.session.correct++;
-      if (!P.chapter) {  // score van de ronde over het hele vak, ook per deel
+      if (ownRound(P)) {  // score van de ronde (hele vak of categorie met eigen sessie), ook per deel
         const r = store.get(P.deckKey + '.ronde', { answered: 0, correct: 0, per: {} });
         r.per = r.per || {};
         const part = partOf(P.q), t = r.per[part] || [0, 0];

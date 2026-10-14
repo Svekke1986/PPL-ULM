@@ -190,7 +190,7 @@ window.CHAPTERS = {
 Object.keys(window.SUBJECTS).forEach(subject => {
   const list = (window.CHAPTERS[subject] = window.CHAPTERS[subject] || []);
   list.unshift({ id: 'ecqb', name: '📄 Enkel de originele ECQB-voorbeeldvragen', prefixes: [] });
-  if (subject === 'principles_of_flight') list.splice(1, 0, { id: 'jh', name: '📝 Oefenexamens Jeroen Huygen', prefixes: [] });
+  if (subject === 'principles_of_flight') list.splice(1, 0, { id: 'jh', name: '📝 Oefenexamens Jeroen Huygen', prefixes: [], eigenSessie: true });
   list.push({ id: 'ai', name: '🤖 AI-gegenereerde vragen', prefixes: ['AI'] });
 });
 
