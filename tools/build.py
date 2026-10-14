@@ -71,7 +71,9 @@ def main():
                 "review": len(c) > 3 and c[3] == "review",
                 "lic": licences(subject, q["topic"]),
                 **({"auteur": q["author"]} if q.get("author") else {}),
-                **({"dubbel": hidden[q["id"]]} if q["id"] in hidden else {}),  # aanvullende vraag van een auteur, geen ECQB-voorbeeldvraag
+                **({"dubbel": hidden[q["id"]]} if q["id"] in hidden else {}),
+                # Oefenexamen van een instructeur: alleen in die categorie, met de antwoorden in de originele volgorde.
+                **({"oefenexamen": q["exam"], "vast": True} if q.get("exam") else {}),  # aanvullende vraag van een auteur, geen ECQB-voorbeeldvraag
             })
         bank[subject] = out
     with open(os.path.join(ROOT, "js", "bank.js"), "w", encoding="utf-8") as fh:
