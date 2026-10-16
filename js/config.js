@@ -106,7 +106,7 @@ window.resolveSource = function (key) {
 // Een vraag hoort bij het hoofdstuk met het langste overeenkomende prefix.
 window.CHAPTERS = {
   air_law: [
-    { id: 'eu', name: 'Internationale regelgeving & luchtwaardigheid', prefixes: ['10.1', '10.2', '10.3'] },
+    { id: 'eu', name: 'Internationale & nationale regelgeving, luchtwaardigheid', prefixes: ['10.1', '10.2', '10.3', '10.13'] },
     { id: 'lic', name: 'Vergunningen & medische keuring', prefixes: ['10.4', '10.5.4.3'] },
     { id: 'sera', name: 'Luchtverkeersregels (SERA) & VFR-minima', prefixes: ['10.5'] },
     { id: 'alt', name: 'Hoogtemeterprocedures & transponder', prefixes: ['10.6'] },
@@ -143,7 +143,7 @@ window.CHAPTERS = {
   principles_of_flight: [
     { id: 'aero', name: 'Aerodynamica: druk, profiel & lift', prefixes: ['51.1.1', '51.1.2', '51.1.3'] },
     { id: 'drag', name: 'Weerstand & grondeffect', prefixes: ['51.1.4', '51.1.5', '51.1.6'] },
-    { id: 'stall', name: 'Overtrek, kleppen & grenslaag', prefixes: ['51.1.7', '51.1.8', '51.1.9'] },
+    { id: 'stall', name: 'Overtrek, kleppen, grenslaag & ijsvorming', prefixes: ['51.1.7', '51.1.8', '51.1.9', '51.1.10'] },
     { id: 'stab', name: 'Stabiliteit', prefixes: ['51.2'] },
     { id: 'ctrl', name: 'Besturing & trim', prefixes: ['51.3'] },
     { id: 'misc', name: 'Belastingen, propeller & vliegmechanica', prefixes: ['51.4', '51.5', '51.6'] }
@@ -155,7 +155,7 @@ window.CHAPTERS = {
     { id: 'fire', name: 'Brand & rook', prefixes: ['61.2.5'] },
     { id: 'shear', name: 'Windschering', prefixes: ['61.2.6'] },
     { id: 'wake', name: 'Zogturbulentie', prefixes: ['61.2.7'] },
-    { id: 'emerg', name: 'Noodlandingen & vluchten boven water', prefixes: ['61.2.9'] },
+    { id: 'emerg', name: 'Noodlandingen, reddingsparachute & vluchten boven water', prefixes: ['61.2.9', '61.2.12'] },
     { id: 'rwy', name: 'Besmette banen', prefixes: ['61.2.10'] }
   ],
   flight_performance: [
@@ -172,7 +172,7 @@ window.CHAPTERS = {
     { id: 'engine', name: 'Motor', prefixes: ['81.9', '81.10'] },
     { id: 'pitot', name: 'Pitot-statische instrumenten', prefixes: ['82.1', '82.2'] },
     { id: 'compass', name: 'Magnetisch kompas', prefixes: ['82.3'] },
-    { id: 'gyro', name: 'Gyro-instrumenten & waarschuwingen', prefixes: ['82.4', '82.5', '82.6'] }
+    { id: 'gyro', name: 'Gyro-instrumenten, waarschuwingen & displays', prefixes: ['82.4', '82.5', '82.6', '82.7'] }
   ],
   navigation: [
     { id: 'earth', name: 'Aarde, tijd & richtingen', prefixes: ['91.1'] },
