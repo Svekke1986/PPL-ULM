@@ -71,7 +71,9 @@
       atmans: easa('sources/easa/atm-ans.json', 'ATM/ANS: Part-MET'),
       acc996: easa('sources/eu/ongevalsonderzoek-996-2010-oorspronkelijk.json', 'Verordening 996/2010'),
       adr: easa('sources/easa/aerodromes.json', 'Aerodromes: ADR / CS-ADR-DSN'),
-      br: easa('sources/easa/basic-regulation.json', 'Basisverordening 2018/1139')
+      br: easa('sources/easa/basic-regulation.json', 'Basisverordening 2018/1139'),
+      aipgen: { url: 'sources/aip/gen.json', list: d => d.subsecties, key: a => a.id, label: a => `${a.id} ${a.titel || ''} (AIP België)` },
+      aipenr: { url: 'sources/aip/enr.json', list: d => d.subsecties, key: a => a.id, label: a => `${a.id} ${a.titel || ''} (AIP België)` }
     });
     const SUBJECTS = window.SUBJECTS;
     const app = document.getElementById('app'), bar = document.getElementById('savebar');

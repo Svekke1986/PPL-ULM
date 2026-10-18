@@ -7,7 +7,8 @@
     const ai = /^AI\b/.test(q.opgesteld || '');  // door AI opgesteld (en door een mens nagekeken): eigen categorie
     // Met een ECQB-leerdoelcode verschijnt de vraag ook in haar onderwerphoofdstuk (naast "AI-gegenereerde vragen").
     const lo = /^\d+(\.\d+)+$/.test(q.lo || '') ? q.lo : (ai ? 'AI' : q.lo || '');
-    BANK[q.subject].push({ ...q, extra: true, ai, lo, img: q.img || [], loText: q.loText || '' });
+    const aipBE = /^aip/.test(q.doc || '');  // Belgische AIP: alleen in de categorie "AIP België" (geen examenstof)
+    BANK[q.subject].push({ ...q, extra: true, ai, lo, aipBE, img: q.img || [], loText: q.loText || '' });
   });
   const SUBJECTS = window.SUBJECTS;
   const LICENCES = window.LICENCES;
@@ -64,7 +65,7 @@
   // Verborgen dubbele ECQB-voorbeeldvragen tellen alleen mee in de selectie met enkel de originele voorbeeldvragen.
   // Oefenexamenvragen van een instructeur alleen in hun eigen categorie (ze overlappen grotendeels met bestaande vragen).
   function questionsFor(licence, subject, chapterId = null) {
-    return (BANK[subject] || []).filter(q => q.lic.includes(licence) && (!q.dubbel || chapterId === 'ecqb') && (!q.oefenexamen || chapterId === 'jh'));
+    return (BANK[subject] || []).filter(q => q.lic.includes(licence) && (!q.dubbel || chapterId === 'ecqb') && (!q.oefenexamen || chapterId === 'jh') && (!q.aipBE || chapterId === 'aip'));
   }
   function licenceSubjects(licence) {
     return Object.keys(LICENCES[licence].exams);
@@ -97,8 +98,9 @@
   }
 
   // Brondocument van een AI-vraag (veld "doc"; zonder doc = KB ULM).
-  const AI_DOCS = { kb: { name: 'het KB ULM', src: 'kbulm' }, sera: { name: 'SERA', src: 'sera' }, sera2012: { name: 'SERA', src: 'sera' } };
-  const EN_DOCS = new Set(['sera', 'aircrew', 'airops', 'ml', 'part21', 'occ', 'atmans', 'adr', 'br']); // geconsolideerde EASA-teksten (Engels)
+  const AI_DOCS = { kb: { name: 'het KB ULM', src: 'kbulm' }, sera: { name: 'SERA', src: 'sera' }, sera2012: { name: 'SERA', src: 'sera' },
+    aipgen: { name: 'de AIP België', src: 'aip' }, aipenr: { name: 'de AIP België', src: 'aip' } };
+  const EN_DOCS = new Set(['sera', 'aircrew', 'airops', 'ml', 'part21', 'occ', 'atmans', 'adr', 'br', 'aipgen', 'aipenr']); // geldende teksten die enkel in het Engels bestaan (EASA, AIP)
   const aiDoc = q => AI_DOCS[q.doc || 'kb'] || { name: q.basis || 'de wettekst', src: q.src };
 
   // Antwoord van een AI-vraag: de bron en het stuk tekst waarop de vraag gebaseerd is.
@@ -294,7 +296,7 @@
   let practice = null;
 
   // Hoort een vraag bij een hoofdstuk? AI-vragen: in "AI-gegenereerde vragen" én (met leerdoelcode) in hun onderwerp.
-  const inChapter = (subject, q, ch) => ch.id === 'ai' ? !!q.ai : ch.id === 'ecqb' ? !q.extra && !q.auteur : ch.id === 'jh' ? !!q.oefenexamen : window.chapterOf(subject, q.lo) === ch;
+  const inChapter = (subject, q, ch) => ch.id === 'ai' ? !!q.ai : ch.id === 'ecqb' ? !q.extra && !q.auteur : ch.id === 'jh' ? !!q.oefenexamen : ch.id === 'aip' ? !!q.aipBE : window.chapterOf(subject, q.lo) === ch;
 
   function chaptersFor(licence, subject) {
     return (window.CHAPTERS[subject] || []).map(ch => ({
@@ -450,7 +452,7 @@
       .map(c => `<option value="${esc(c.ch.id)}" ${P.chapter === c.ch ? 'selected' : ''}>${esc(c.ch.name)} (${c.count})</option>`).join('');
     return `<div class="crumbs"><a href="#/">Home</a> › <a href="#/${P.licence.toLowerCase()}">${esc(LICENCES[P.licence].name)}</a> › ${esc(S.name)}</div>
       <div class="quiz-head">
-        <div><h1>${S.icon} ${esc(S.name)}</h1><div class="muted small">Oefenmodus · ${P.pool.length} vragen${P.chapter ? ({ ecqb: ' (originele ECQB-voorbeeldvragen)', jh: ' (oefenexamens, vaste antwoordvolgorde)' }[P.chapter.id] || ' in dit hoofdstuk') : ''}</div></div>
+        <div><h1>${S.icon} ${esc(S.name)}</h1><div class="muted small">Oefenmodus · ${P.pool.length} vragen${P.chapter ? ({ ecqb: ' (originele ECQB-voorbeeldvragen)', jh: ' (oefenexamens, vaste antwoordvolgorde)', aip: ' (AIP België, geen ECQB-examenstof)' }[P.chapter.id] || ' in dit hoofdstuk') : ''}</div></div>
         <div class="head-actions"><span class="score-pill">Sessie: ${P.session.correct}/${P.session.answered}</span>
           <button class="btn btn-small" id="restart" title="Sessie beëindigen en opnieuw beginnen">⟲ Opnieuw beginnen</button></div>
       </div>
