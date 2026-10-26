@@ -313,7 +313,7 @@
       return;
     }
     const deckKey = `deck.${licence}.${subject}${chapter ? '.' + chapter.id : ''}`;
-    practice = { licence, subject, chapter, pool, deckKey, q: null, chosen: null, session: { answered: 0, correct: 0 }, count: 0, hist: [], pos: -1 };
+    practice = { licence, subject, chapter, pool, deckKey, q: null, chosen: null, hist: [], pos: -1 };
     nextPractice();
   }
 
@@ -321,6 +321,17 @@
   function drawFromDeck() {
     const P = practice;
     const ids = new Set(P.pool.map(q => q.id));
+    // Bij een nieuw bezoek: de vraag die vorige keer open stond (getrokken, nog niet beantwoord) opnieuw tonen,
+    // in plaats van een nieuwe te trekken. Zo gaat er geen vraag verloren als je de pagina verlaat.
+    const open = store.get(P.deckKey + '.open', null);
+    const seenNow = store.get(P.deckKey + '.gezien', null);
+    if (!P.hist.length && open && ids.has(open) && Array.isArray(seenNow) && seenNow.includes(open)) {
+      const deckNow = store.get(P.deckKey, []).filter(id => ids.has(id));
+      P.roundPos = seenNow.filter(id => ids.has(id)).indexOf(open) + 1;
+      P.roundSize = ids.size;
+      P.lastOfRound = deckNow.length === 0;
+      return P.pool.find(q => q.id === open);
+    }
     let deck = store.get(P.deckKey, []).filter(id => ids.has(id));
     // Vragen die deze ronde al aan bod kwamen (oudere stapels zonder lijst: alles wat niet meer in de stapel zit).
     let seen = store.get(P.deckKey + '.gezien', null);
@@ -330,8 +341,6 @@
       deck = shuffle([...ids]);
       seen = [];
       store.set(P.deckKey + '.ronde', { answered: 0, correct: 0, per: {} });
-      P.session = { answered: 0, correct: 0 };  // sessiescore en teller beginnen opnieuw
-      P.count = 1;
     } else {  // vragen die sinds het begin van de ronde zijn toegevoegd: alsnog op een willekeurige plaats in de stapel
       const known = new Set([...deck, ...seen]);
       [...ids].filter(id => !known.has(id)).forEach(id => deck.splice(Math.floor(Math.random() * (deck.length + 1)), 0, id));
@@ -340,15 +349,17 @@
     seen.push(id);
     store.set(P.deckKey, deck);
     store.set(P.deckKey + '.gezien', seen);
+    store.set(P.deckKey + '.open', id);
     P.roundPos = seen.length;  // de hoeveelste vraag van deze ronde
     P.roundSize = ids.size;
-    P.lastOfRound = deck.length === 0 && ownRound(P);  // ronde en score per vak (of categorie met eigen sessie), niet per hoofdstuk
+    P.lastOfRound = deck.length === 0;
     return P.pool.find(q => q.id === id);
   }
 
   // Eigen ronde met score en overzicht: het hele vak, of een categorie met een eigen sessie (bv. de oefenexamens).
-  const ownRound = P => !P.chapter || !!P.chapter.eigenSessie;
-  const roundName = P => P.chapter ? P.chapter.name.replace(/^\S+\s/, '') : SUBJECTS[P.subject].name;
+  // Elke selectie (heel vak, hoofdstuk of categorie) heeft een eigen ronde met teller, score en eindoverzicht.
+  const roundName = P => P.chapter ? P.chapter.name.replace(/^[^\p{L}\p{N}]+\s/u, '') : SUBJECTS[P.subject].name;
+  const roundScore = P => store.get(P.deckKey + '.ronde', { answered: 0, correct: 0, per: {} });
 
   // Deel (hoofdstuk, of het oefenexamen) van een vraag voor de uitsplitsing van de score.
   function partOf(q) {
@@ -357,7 +368,7 @@
     return ch ? ch.name : q.ai ? 'AI-gegenereerde vragen (zonder leerdoel)' : 'Overige';
   }
 
-  // Ronde afgerond (alleen bij oefenen op het hele vak): totaalscore + per deel van het vak.
+  // Ronde afgerond (vak, hoofdstuk of categorie): totaalscore + per deel.
   function roundDoneHtml(ended) {
     const P = practice, r = store.get(P.deckKey + '.ronde', { answered: 0, correct: 0, per: {} });
     const pct = (c, n) => n ? Math.round(100 * c / n) : 0;
@@ -408,7 +419,7 @@
       viewPractice(P.licence, P.subject, P.chapter && P.chapter.id);
     };
     const r = store.get(P.deckKey + '.ronde', { answered: 0 });
-    if (!ownRound(P) || !r.answered) {
+    if (!r.answered) {
       ask({ title: 'Opnieuw beginnen?', text: '<p>Deze sessie beëindigen en opnieuw beginnen met alle vragen?</p>', ok: 'Opnieuw beginnen' }).then(ok => ok && reset());
       return;
     }
@@ -433,7 +444,6 @@
   function nextPractice() {
     const P = practice;
     if (P.pos < P.hist.length - 1) return showEntry(P.pos + 1);  // vooruit in de geschiedenis
-    P.count++;
     const q = present(drawFromDeck());
     P.hist.push({ q, chosen: null, roundPos: P.roundPos, roundSize: P.roundSize, lastOfRound: P.lastOfRound });
     showEntry(P.hist.length - 1);
@@ -453,7 +463,7 @@
     return `<div class="crumbs"><a href="#/">Home</a> › <a href="#/${P.licence.toLowerCase()}">${esc(LICENCES[P.licence].name)}</a> › ${esc(S.name)}</div>
       <div class="quiz-head">
         <div><h1>${S.icon} ${esc(S.name)}</h1><div class="muted small">Oefenmodus · ${P.pool.length} vragen${P.chapter ? ({ ecqb: ' (originele ECQB-voorbeeldvragen)', jh: ' (oefenexamens, vaste antwoordvolgorde)', aip: ' (AIP België, geen ECQB-examenstof)' }[P.chapter.id] || ' in dit hoofdstuk') : ''}</div></div>
-        <div class="head-actions"><span class="score-pill">Sessie: ${P.session.correct}/${P.session.answered}</span>
+        <div class="head-actions"><span class="score-pill" title="Score in deze ronde">Ronde: ${roundScore(P).correct}/${roundScore(P).answered}</span>
           <button class="btn btn-small" id="restart" title="Sessie beëindigen en opnieuw beginnen">⟲ Opnieuw beginnen</button></div>
       </div>
       ${chapterOpts ? `<div class="chapter-filter">
@@ -488,7 +498,7 @@
     const answered = P.chosen !== null;
     app.innerHTML = practiceHeader() + withCompassCalc(`
       <div class="card">
-        ${questionHtml(P.q, { chosen: P.chosen, reveal: answered, locked: answered, counter: ownRound(P) ? `Vraag ${P.roundPos} van ${P.roundSize}` : `Vraag ${P.count}` })}
+        ${questionHtml(P.q, { chosen: P.chosen, reveal: answered, locked: answered, counter: `Vraag ${P.roundPos} van ${P.roundSize}` })}
         ${answered ? feedbackHtml(P.q, P.chosen) : ''}
         ${answered && P.lastOfRound ? roundDoneHtml() : ''}
         <div class="quiz-actions">
@@ -504,8 +514,8 @@
       P.chosen = +b.dataset.i;
       P.hist[P.pos].chosen = P.chosen;
       const ok = P.chosen === P.q.c;
-      P.session.answered++; if (ok) P.session.correct++;
-      if (ownRound(P)) {  // score van de ronde (hele vak of categorie met eigen sessie), ook per deel
+      store.set(P.deckKey + '.open', null);  // beantwoord: niet meer openstaand
+      {  // score van de ronde, ook per deel
         const r = store.get(P.deckKey + '.ronde', { answered: 0, correct: 0, per: {} });
         r.per = r.per || {};
         const part = partOf(P.q), t = r.per[part] || [0, 0];
@@ -718,7 +728,7 @@
         </div>
         ${G.desc ? `<div class="subject-meta">${esc(G.desc)}</div>` : ''}
         <div class="subject-meta">${gens.map(g => esc(g.name)).join(' · ')}</div>
-        ${st.answered ? `<div class="subject-meta">Jouw score: ${st.correct}/${st.answered} (${pct}%)</div><div class="progress"><span style="width:${pct}%"></span></div>` : ''}
+        ${st.answered ? `<div class="subject-meta">Huidige sessie: ${st.correct}/${st.answered} juist (${pct}%)</div><div class="progress" title="Percentage juist in deze sessie"><span style="width:${pct}%"></span></div>` : ''}
       </a>`;
     }).join('');
     app.innerHTML = `
@@ -731,7 +741,7 @@
   function viewSet(setKey, group, typeId) {
     const gens = SETS[setKey].api().GENERATORS[group];
     const type = gens.find(g => g.id === typeId) || null;
-    calc = { setKey, group, type, q: null, chosen: null, count: 0, session: { answered: 0, correct: 0 } };
+    calc = { setKey, group, type, q: null, chosen: null, count: 0 };
     nextCalc();
   }
 
@@ -746,12 +756,15 @@
   function renderCalc() {
     const C = calc, SET = SETS[C.setKey], G = SET.group(C.group), gens = SET.api().GENERATORS[C.group];
     const answered = C.chosen !== null;
+    // Sessiescore per groep, bewaard tussen bezoeken; "Opnieuw beginnen" zet ze op nul.
+    const key = `${SET.statsKey}.${C.group}`, st = store.get(key, { answered: 0, correct: 0 });
     const opts = gens.map(g => `<option value="${esc(g.id)}" ${C.type === g ? 'selected' : ''}>${esc(g.name)}</option>`).join('');
     app.innerHTML = `
       <div class="crumbs"><a href="#/">Home</a> › <a href="#/${C.setKey}">${esc(SET.title)}</a> › ${esc(G.name)}</div>
       <div class="quiz-head">
         <div><h1>${SET.icon} ${esc(G.name)}</h1><div class="muted small">${esc(SET.sub)}</div></div>
-        <span class="score-pill">Sessie: ${C.session.correct}/${C.session.answered}</span>
+        <div class="head-actions"><span class="score-pill" title="Score sinds je deze sessie begon">Sessie: ${st.correct}/${st.answered}</span>
+          <button class="btn btn-small" id="restart" title="Sessiescore op nul zetten">⟲ Opnieuw beginnen</button></div>
       </div>
       <div class="chapter-filter">
         <label for="calctype">Soort oefening</label>
@@ -769,15 +782,16 @@
       if (C.chosen !== null) return;
       C.chosen = +b.dataset.i;
       const ok = C.chosen === C.q.c;
-      C.session.answered++; if (ok) C.session.correct++;
-      const key = `${SET.statsKey}.${C.group}`;
-      const st = store.get(key, { answered: 0, correct: 0 });
       st.answered++; if (ok) st.correct++;
       store.set(key, st);
       renderCalc();
       app.querySelector('.feedback')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
     document.getElementById('next').onclick = () => nextCalc();
+    document.getElementById('restart').onclick = () => ask({
+      title: 'Opnieuw beginnen?', ok: 'Opnieuw beginnen',
+      text: `<p>Je sessiescore voor ${esc(G.name)} (${st.correct}/${st.answered}) wordt op nul gezet.</p>`
+    }).then(ok => { if (ok) { store.set(key, { answered: 0, correct: 0 }); renderCalc(); } });
     document.getElementById('calctype').onchange = e => {
       location.hash = `#/${C.setKey}/${C.group}${e.target.value ? '/' + e.target.value : ''}`;
     };
