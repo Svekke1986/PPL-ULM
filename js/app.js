@@ -378,10 +378,16 @@
       .map(([name, [n, c]]) => `<tr><td>${esc(name)}</td><td>${c}/${n}</td><td><strong>${pct(c, n)} %</strong></td></tr>`).join('');
     return `<div class="round-done">
       <h3>${ended ? `Sessie beëindigd: ${r.answered} van ${P.roundSize} vragen van ${esc(roundName(P))} beantwoord` : `🎉 Alle ${P.roundSize} vragen van ${esc(roundName(P))} gehad`}</h3>
-      <p class="round-total">Totaalscore: <strong>${r.correct} van ${r.answered}</strong> juist (<strong>${pct(r.correct, r.answered)} %</strong>)${!ended && r.answered < P.roundSize ? ` · ${P.roundSize - r.answered} overgeslagen` : ''}</p>
+      <p class="round-total">Totaalscore: <strong>${r.correct} van ${r.answered}</strong> juist (<strong>${pct(r.correct, r.answered)} %</strong>)${ended ? '' : restHtml(r)}</p>
       ${rows ? `<table class="round-table"><thead><tr><th>Deel</th><th>Juist</th><th>Score</th></tr></thead><tbody>${rows}</tbody></table>` : ''}
       <p class="small">${ended ? '' : 'Met “Nieuwe ronde” begin je opnieuw met alle vragen, in een andere volgorde.'}</p>
     </div>${wrongListHtml(r)}`;
+  }
+
+  // Wat er naast de beantwoorde vragen in de ronde zat: echt overgeslagen, of nog uit een sessie van vóór de score werd bijgehouden.
+  function restHtml(r) {
+    const skipped = (r.overgeslagen || []).length, earlier = Math.max(0, practice.roundSize - r.answered - skipped);
+    return (skipped ? ` · ${skipped} overgeslagen` : '') + (earlier ? ` · ${earlier} uit een eerdere sessie (niet in de score)` : '');
   }
 
   // Foute antwoorden van de ronde: per vraag je antwoord en het juiste, open te klappen voor de uitleg en de bron.
@@ -444,6 +450,11 @@
   function nextPractice() {
     const P = practice;
     if (P.pos < P.hist.length - 1) return showEntry(P.pos + 1);  // vooruit in de geschiedenis
+    if (P.q && P.chosen === null) {  // "Overslaan": de vraag als overgeslagen noteren in de ronde
+      const r = roundScore(P);
+      r.overgeslagen = [...new Set([...(r.overgeslagen || []), P.q.id])];
+      store.set(P.deckKey + '.ronde', r);
+    }
     const q = present(drawFromDeck());
     P.hist.push({ q, chosen: null, roundPos: P.roundPos, roundSize: P.roundSize, lastOfRound: P.lastOfRound });
     showEntry(P.hist.length - 1);
@@ -522,6 +533,7 @@
         r.answered++; t[0]++;
         if (ok) { r.correct++; t[1]++; }
         else (r.fout = r.fout || []).push({ id: P.q.id, keuze: P.q.o[P.chosen] });
+        r.overgeslagen = (r.overgeslagen || []).filter(id => id !== P.q.id);  // later toch beantwoord
         r.per[part] = t;
         store.set(P.deckKey + '.ronde', r);
       }
