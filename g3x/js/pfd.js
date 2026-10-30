@@ -212,7 +212,7 @@ window.G3X = window.G3X || {};
       D.text(ctx, st.lat, x + 10, Y + 13, { size: 17, color: '#28e02c', weight: 'bold' });
       if (st.latArm) D.text(ctx, st.latArm, x + col3 - 8, Y + 13, { size: 14, color: '#fff', align: 'right' });
       D.text(ctx, st.vert, x + 2 * col3 + 8, Y + 13, { size: 17, color: '#28e02c', weight: 'bold' });
-      if (st.vertRef) D.text(ctx, st.vertRef, x + 2 * col3 + 60, Y + 13, { size: 13, color: '#28e02c' });
+      if (st.vertRef && (!st.vertArm || w > 520)) D.text(ctx, st.vertRef, x + 2 * col3 + 60, Y + 13, { size: 13, color: '#28e02c' });
       if (st.vertArm) D.text(ctx, st.vertArm, x + w - 8, Y + 13, { size: 14, color: '#fff', align: 'right' });
     }
     // AP/FD midden
