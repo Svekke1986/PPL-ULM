@@ -252,6 +252,17 @@
           <p class="muted">Telkens een nieuw weerbericht: wat betekent dit deel, en wat doe je ermee?<br>${Object.keys(window.METAR.GENERATORS).length} onderdelen · ${Object.values(window.METAR.GENERATORS).reduce((n, l) => n + l.length, 0)} soorten oefeningen</p>
         </a>
       </div>
+      </section>
+      <section class="home-section">
+      <h2 class="section-title">Simulator</h2>
+      <p class="muted section-sub">Oefen de bediening van de glass cockpit, met scenario's die telkens andere gegevens krijgen</p>
+      <div class="grid grid-3">
+        <a class="card licence-card" href="g3x/index.html">
+          <div class="big">🧭</div>
+          <h2>G3X Touch Trainer</h2>
+          <p class="muted">Simulator in de stijl van de Garmin G3X Touch voor een Tecnam P2008 JC vanaf EBZH: PFD, kaart, motor, radio's, transponder, vluchtplan, naderingen en autopilot<br>50+ scenario's met willekeurige gegevens</p>
+        </a>
+      </div>
       </section>`;
   }
 

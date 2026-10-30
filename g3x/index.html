@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G3X Touch Trainer — Tecnam P2008 JC (EBZH)</title>
+  <meta name="description" content="Oefensimulator in de stijl van de Garmin G3X Touch voor een Tecnam P2008 JC MkII vanaf Hasselt-Kiewit. Willekeurige scenario's, geen officieel product.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/g3x.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="../index.html" class="brand"><span>✈️</span><span>PPL &amp; ULM Oefenplatform</span><span class="muted">· G3X Touch Trainer</span></a>
+    <nav class="links">
+      <a href="../index.html">← Terug naar het platform</a>
+      <button id="btn-help" type="button">Help &amp; toetsen (H)</button>
+    </nav>
+  </header>
+  <div class="disclaimer">Onofficiële trainer, geen Garmin-product. Navigatiedata, frequenties, luchtruimen en vliegtuigwaarden zijn vereenvoudigd en <strong>niet voor echte navigatie of vluchtvoorbereiding</strong>. Oefenuren tellen niet mee voor een vergunning.</div>
+
+  <main class="layout">
+    <section class="left">
+      <div id="g3x-wrap">
+        <div id="g3x-unit">
+          <div id="g3x-screen">
+            <canvas id="g3x-canvas" width="1280" height="768" aria-label="G3X Touch scherm"></canvas>
+            <div id="g3x-overlay"></div>
+          </div>
+          <div class="knob" id="knob-L"></div>
+          <div class="knob" id="knob-R"></div>
+          <div class="bezel-logo">G3X TRAINER <small>GDU 460-stijl · 10,6"</small></div>
+        </div>
+      </div>
+      <div class="under">
+        <div id="gmc" aria-label="Autopilot bedieningspaneel"></div>
+        <div id="acpanel" aria-label="Vliegtuigbediening"></div>
+      </div>
+      <div id="statusline"></div>
+    </section>
+
+    <aside class="trainer" aria-label="Trainer">
+      <h2>Scenario's</h2>
+      <div class="sc-controls">
+        <select id="scenario-cats" aria-label="Categorie"></select>
+        <button id="btn-random" class="primary" type="button">🎲 Willekeurig</button>
+        <button id="btn-restart" type="button" title="Zelfde scenario, nieuwe willekeurige gegevens">↻ Opnieuw</button>
+      </div>
+      <div id="scenario-list" class="sc-list"></div>
+      <div id="trainer-current"></div>
+    </aside>
+  </main>
+
+  <div id="help" class="hidden" role="dialog" aria-modal="true">
+    <div class="help-box">
+      <h2>G3X Touch Trainer — help</h2>
+      <p>Een oefensimulator in de stijl van de Garmin G3X Touch (één scherm, GDU 460-indeling) met een eenvoudig model van een <b>Tecnam P2008 JC MkII</b> (Rotax 912 S) en een GFC 500-achtige autopilot (GMC 507-paneel). Thuisbasis <b>EBZH Hasselt-Kiewit</b>. Elk scenario krijgt bij het starten nieuwe willekeurige gegevens.</p>
+      <h3>Het scherm bedienen</h3>
+      <ul>
+        <li><b>Tikken</b> op velden: baro, hoogte (cyaan vak), heading (HSI), CRS/DTK, bearing pointers, wind, NAV/COM-frequenties (bovenbalk), transponder, AP-balk (bovenaan PFD), CAS-meldingen (bevestigen), EIS-strook (motorpagina), kaart (features / cursor).</li>
+        <li><b>Knoppenbalk</b> onderaan: Back · Direct-To · Nearest · Menu (contextopties) · MSG · Home · PFD / Split / MFD · SUSP/OBS wanneer van toepassing.</li>
+        <li><b>Linkerknop</b>: buiten = HDG, binnen = ALT. Indrukken wisselt naar BARO/CRS en naar COM1-afstemming. <b>Rechterknop</b>: buiten = kaartbereik of scrollen, binnen = pannen/selecteren; indrukken = cursor aan/uit of Enter.</li>
+        <li>Op de kaart: slepen = pannen, scrollwiel = bereik, tik op een symbool = info met Direct-To.</li>
+      </ul>
+      <h3>Toetsen</h3>
+      <table>
+        <tr><td>↑ ↓ ← →</td><td>Pitch (↑ = neus omlaag, omkeerbaar in het paneel) en rol</td></tr>
+        <tr><td>Q / E</td><td>Richtingsroer / grondsturing</td></tr>
+        <tr><td>PgUp / PgDn, Home / End</td><td>Gas meer/minder, vol/idle</td></tr>
+        <tr><td>F / V</td><td>Flaps een stand neer / op</td></tr>
+        <tr><td>B</td><td>Wielremmen (ingedrukt houden)</td></tr>
+        <tr><td>A of spatie</td><td>Autopilot ontkoppelen</td></tr>
+        <tr><td>L · G</td><td>LVL · TO/GA</td></tr>
+        <tr><td>, . · K M</td><td>Linkerknop buiten (HDG) · binnen (ALT)</td></tr>
+        <tr><td>[ ] · Enter · Esc</td><td>Rechterknop buiten (bereik) · indrukken · Back</td></tr>
+        <tr><td>P · 1 2 4 · H</td><td>Pauze · simulatiesnelheid · deze help</td></tr>
+      </table>
+      <p>Een gamepad/joystick werkt ook (assen 0/1 rol/pitch, as 3 gas; knop 0 AP uit, 1/2 flaps, 3 LVL). Op een tablet gebruik je de virtuele stuurknuppel in het paneel.</p>
+      <h3>Wat is vereenvoudigd</h3>
+      <ul>
+        <li>Navigatiedatabase: beperkte set vliegvelden, VOR/NDB, VFR-punten, luchtruimen en naderingen in België en de grensstreek, deels fictief gemarkeerd. Frequenties en coördinaten zijn bij benadering. Geen magnetische variatie.</li>
+        <li>Vluchtmodel en motorgrenzen zijn indicatief; gebruik altijd de POH van het toestel.</li>
+        <li>Geen weerdatalink, verkeer (ADS-B) alleen gesimuleerd in scenario's, geen kaartabonnementen.</li>
+      </ul>
+      <p><button id="help-close" class="sb" type="button">Sluiten</button></p>
+    </div>
+  </div>
+
+  <script src="js/util.js"></script>
+  <script src="js/navdata.js"></script>
+  <script src="js/sim.js"></script>
+  <script src="js/avionics.js"></script>
+  <script src="js/autopilot.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/display.js"></script>
+  <script src="js/pfd.js"></script>
+  <script src="js/eis.js"></script>
+  <script src="js/mfd.js"></script>
+  <script src="js/bars.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/scenarios.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
