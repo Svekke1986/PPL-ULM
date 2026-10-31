@@ -162,6 +162,21 @@ window.G3X = window.G3X || {};
       el.querySelectorAll('.ka').forEach(b => { b.onclick = e => { e.stopPropagation(); UI.activeScreen = unit; UI.knob(unit, side, b.dataset.r, +b.dataset.d); if (G3X.audio) { G3X.audio.ensure(); G3X.audio.play('click'); } }; });
       el.querySelector('.knob-push').onclick = e => { e.stopPropagation(); UI.activeScreen = unit; UI.knobPress(unit, side); };
       el.querySelector('.outer').addEventListener('wheel', e => { e.preventDefault(); e.stopPropagation(); UI.activeScreen = unit; const inner = e.target.closest('.inner'); UI.knob(unit, side, inner ? 'inner' : 'outer', e.deltaY > 0 ? 1 : -1); }, { passive: false });
+      // echt draaien: slepen rond het middelpunt van de knop (muis of vinger); elke 18° is één stap
+      const outer = el.querySelector('.outer'), inner = el.querySelector('.inner');
+      const marks = { outer: document.createElement('span'), inner: document.createElement('span') };
+      marks.outer.className = 'knob-mark'; marks.inner.className = 'knob-mark'; outer.appendChild(marks.outer); inner.appendChild(marks.inner);
+      const rot = { outer: 0, inner: 0 };
+      let drag = null;
+      const angleOf = e => { const r = outer.getBoundingClientRect(); return Math.atan2(e.clientY - (r.top + r.height / 2), e.clientX - (r.left + r.width / 2)) * 180 / Math.PI; };
+      outer.addEventListener('pointerdown', e => { if (e.target.closest('.ka, .knob-push')) return; e.preventDefault(); UI.activeScreen = unit; drag = { ring: e.target.closest('.inner') ? 'inner' : 'outer', last: angleOf(e), acc: 0 }; outer.setPointerCapture(e.pointerId); });
+      outer.addEventListener('pointermove', e => {
+        if (!drag) return; const a = angleOf(e); let d = a - drag.last; if (d > 180) d -= 360; if (d < -180) d += 360; drag.last = a; drag.acc += d;
+        rot[drag.ring] += d; marks[drag.ring].style.transform = `rotate(${rot[drag.ring]}deg)`;
+        while (Math.abs(drag.acc) >= 18) { const dir = drag.acc > 0 ? 1 : -1; drag.acc -= dir * 18; UI.knob(unit, side, drag.ring, dir); if (G3X.audio) G3X.audio.play('click'); }
+      });
+      const endDrag = () => { drag = null; };
+      outer.addEventListener('pointerup', endDrag); outer.addEventListener('pointercancel', endDrag);
     });
     document.querySelectorAll('.hardkey').forEach(b => {
       b.onclick = () => {

@@ -262,7 +262,7 @@ window.G3X = window.G3X || {};
     const start = R.airborne(HOME); const range = U.pick([8, 10, 15, 20]); const orient = U.pick(['NORTH', 'HDGUP']); const asp = NAV.AIRSPACES.find(s => s.id === 'EBBL-CTR');
     return { title: 'Kaartinstellingen', start, intro: '<p>Stel de kaart in zoals gevraagd en lees het luchtruim af.</p>',
       steps: [
-        mk(`Zet het kaartbereik op <b>${range} NM</b>.`, 'MFD-scherm: buitenring rechterknop (Range) of binnenknop linkerknop (Zoom Map), of −/+ rechtsonder op de kaart.', (S, A) => A.map.range === range && A.mfdPage === 'MAP'),
+        mk(`Zet het kaartbereik op <b>${range} NM</b>.`, 'MFD-scherm: buitenring rechterknop (Range) of binnenknop linkerknop (Zoom Map), of −/+ rechtsonder op de kaart (+ = inzoomen).', (S, A) => A.map.range === range && A.mfdPage === 'MAP'),
         mk(`Zet de oriëntatie op <b>${orient === 'NORTH' ? 'North up' : 'Heading up'}</b>.`, 'MENU op de kaart → Orientation.', (S, A) => A.map.orient === orient),
         mk('Zet <b>declutter niveau 2</b> (minder tekst) en daarna terug naar <b>alles</b>.', 'MENU → Declutter.', (() => { let was2 = false; return (S, A) => { if (A.map.declutter === 2) was2 = true; return was2 && A.map.declutter === 0; }; })()),
         q(`Wat is het plafond van de <b>${asp.name}</b> (zie kaartlabel of Nearest → Airspace)?`, U.shuffle([`${asp.ceil} ft`, `${asp.ceil + 1000} ft`, `${asp.ceil - 1000} ft`, 'FL 95']), null, `${asp.name}: ${asp.floor === 0 ? 'GND' : asp.floor} – ${asp.ceil} ft, klasse ${asp.cls}.`),
