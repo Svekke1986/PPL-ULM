@@ -26,7 +26,15 @@ button { font-family: inherit; }
 #g3x-canvas { position: absolute; left: 0; top: 0; width: 1280px; height: 768px; display: block; touch-action: none; cursor: pointer; }
 #g3x-overlay { position: absolute; left: 0; top: 0; width: 1280px; height: 768px; pointer-events: none; }
 #g3x-overlay > * { pointer-events: auto; }
-.bezel-logo { position: absolute; left: 50%; transform: translateX(-50%); bottom: 8px; color: #8d94a0; font-size: 15px; letter-spacing: 3px; font-weight: 700; }
+.bezel-logo { position: absolute; left: 50%; transform: translateX(-50%); top: 10px; color: #c9ced6; font-size: 15px; letter-spacing: 4px; font-weight: 700; }
+.bezel-logo small { letter-spacing: 1px; font-weight: 400; margin-left: 10px; color: #6a717c; font-size: 11px; }
+/* harde toetsen op de bezel (zoals de GDU 460: NRST · D→ links, MENU · BACK rechts) */
+.hardkeys { position: absolute; bottom: 7px; display: flex; gap: 14px; }
+.hardkeys.left { left: 118px; } .hardkeys.right { right: 118px; }
+.hardkey { width: 74px; height: 26px; border-radius: 6px; border: 1px solid #0a0c10; background: linear-gradient(#3d424b, #1c1f25); color: #e8edf4; font-size: 12px; font-weight: 700; letter-spacing: 1px; cursor: pointer; box-shadow: 0 2px 3px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.12); display: flex; align-items: center; justify-content: center; gap: 2px; }
+.hardkey:active { background: linear-gradient(#1c1f25, #3d424b); }
+.hardkey.dto { color: #ff6bff; font-size: 14px; }
+.hardkey.dto::after { content: '→'; font-size: 13px; }
 .bezel-logo small { letter-spacing: 1px; font-weight: 400; margin-left: 10px; color: #6a717c; }
 
 /* knoppen op de bezel */
@@ -41,7 +49,7 @@ button { font-family: inherit; }
 .knob-ring.inner > .ka { color: #fff; font-size: 9px; width: 14px; }
 .knob-push { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 20px; height: 20px; border-radius: 50%; border: 1px solid #000; background: #0f1115; color: #9aa3ad; font-size: 6px; cursor: pointer; padding: 0; }
 .knob .ka:hover, .knob-push:hover { color: var(--accent); }
-.knob-label { margin-top: 4px; font-size: 10px; color: #aab3bf; display: flex; flex-direction: column; line-height: 1.2; }
+.knob-label { display: none; } /* knopfuncties staan, zoals op het toestel, op het scherm zelf */
 .knob-label span:first-child { color: var(--accent); }
 
 /* ---------- DOM-pagina over het MFD ---------- */
@@ -50,10 +58,25 @@ button { font-family: inherit; }
 .page-right { font-weight: 400; color: #8c9bb0; font-size: 13px; }
 .page-body { flex: 1; overflow: auto; }
 .pad { padding: 10px 12px; }
-.tiles { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px 12px; padding: 12px 16px; align-content: start; background: #0a0f1a; }
-.tile { background: transparent; border: 0; color: #fff; padding: 2px; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 5px; font-size: 12px; }
-.tile .ico { width: 64px; height: 56px; border-radius: 9px; background: linear-gradient(#3b6fd1, #1e3f8f); border: 1px solid #6a9bff; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 1px 0 rgba(255,255,255,.25); }
-.tile:hover .ico, .tile.sel .ico { background: linear-gradient(#5f8ff0, #2a56b8); border-color: #fff; }
+.tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px 10px; padding: 12px 18px; align-content: start; background: #000; }
+.tile { background: transparent; border: 0; color: #fff; padding: 2px; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 5px; font-size: 12px; line-height: 1.15; }
+.tile .ico { width: 84px; height: 66px; border-radius: 8px; background: linear-gradient(#4a5058, #22262c 60%, #15181c); border: 1px solid #70767e; display: flex; align-items: center; justify-content: center; box-shadow: inset 0 1px 0 rgba(255,255,255,.18), 0 2px 4px rgba(0,0,0,.6); }
+.tile:hover .ico, .tile.sel .ico { background: linear-gradient(#5d6670, #2c3238 60%, #1a1e23); border-color: #fff; }
+.page-head svg { vertical-align: -5px; margin-right: 6px; }
+/* Direct To */
+.dto .dlg-body { padding: 0 0 8px; }
+.dto-tabs { padding: 6px 8px; }
+.dto-card { padding: 8px 12px; }
+.dto-id { display: block; width: 100%; text-align: left; background: #000; border: 1px solid #3a4656; border-radius: 6px; color: #fff; font-size: 26px; font-weight: 700; padding: 8px 12px; letter-spacing: 2px; cursor: pointer; }
+.dto-id small { font-size: 11px; font-weight: 400; letter-spacing: 0; color: #8c9bb0; margin-left: 10px; }
+.dto-info { display: grid; grid-template-columns: 150px 1fr; gap: 12px; margin-top: 10px; font-size: 14px; color: #cfd6de; }
+.dto-thumb { width: 150px; height: 110px; border: 1px solid #3a4656; border-radius: 4px; overflow: hidden; }
+.dto-kind { color: #8fc1ff; font-weight: 700; } .dto-name { font-size: 15px; color: #fff; } .dto-reg { color: #8c9bb0; font-size: 12px; margin-bottom: 6px; } .dto-brg b { color: #fff; margin-left: 4px; }
+.dto-course { display: block; width: 100%; margin-top: 10px; background: #141a22; border: 1px solid #3a4656; border-radius: 6px; color: #cfd6de; font-size: 15px; padding: 8px 12px; text-align: left; cursor: pointer; }
+.dto-course b { color: var(--accent); font-size: 18px; } .dto-course small { color: #8c9bb0; }
+.dto-list { max-height: 300px; overflow: auto; }
+.dto-row { width: 100%; background: transparent; border: 0; border-bottom: 1px solid #1f2733; text-align: left; font-family: inherit; }
+.audio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; } .audio-grid h4 { margin: 0 0 6px; font-size: 12px; color: #8c9bb0; text-transform: uppercase; } .audio-grid .xp-mode { display: block; width: 100%; margin-bottom: 6px; }
 .row { display: flex; align-items: center; gap: 6px; padding: 7px 10px; border-bottom: 1px solid #1f2733; font-size: 15px; cursor: pointer; color: #fff; }
 .row:hover, .row.sel { background: #1f3a5f; }
 .row.active { color: var(--magenta); }

@@ -79,9 +79,12 @@ window.G3X = window.G3X || {};
         case 'Comma': UI.knob('L', 'outer', -1); break;
         case 'Period': UI.knob('L', 'outer', 1); break;
         case 'KeyK': UI.knob('L', 'inner', -1); break;
-        case 'KeyM': UI.knob('L', 'inner', 1); break;
         case 'Enter': UI.knobPress('R'); break;
         case 'Escape': UI.button('BACK'); break;
+        case 'KeyN': UI.button('NRST'); break;
+        case 'KeyD': UI.button('DTO'); break;
+        case 'KeyM': if (!e.shiftKey) { UI.knob('L', 'inner', 1); break; } UI.button('MENU'); break;
+        case 'Backquote': UI.button('HOME'); break;
         case 'KeyH': toggleHelp(); break;
         case 'Digit1': S.rate = 1; break; case 'Digit2': S.rate = 2; break; case 'Digit4': S.rate = 4; break;
       }
@@ -132,6 +135,15 @@ window.G3X = window.G3X || {};
       el.querySelector('.outer').addEventListener('wheel', e => { e.preventDefault(); e.stopPropagation(); const inner = e.target.closest('.inner'); UI.knob(side, inner ? 'inner' : 'outer', e.deltaY > 0 ? 1 : -1); }, { passive: false });
     };
     mk('L'); mk('R');
+    // harde toetsen: NRST, D→, MENU (twee keer snel = Main Menu), BACK
+    document.querySelectorAll('.hardkey').forEach(b => {
+      b.onclick = () => {
+        if (G3X.audio) { G3X.audio.ensure(); }
+        const k = b.dataset.k;
+        if (k === 'MENU') { const now = performance.now(); if (now - (M.lastMenu || 0) < 700) { UI.closeDialog(); UI.button('HOME'); M.lastMenu = 0; return; } M.lastMenu = now; }
+        UI.button(k);
+      };
+    });
   }
   function refreshKnobLabels() {
     const kl = UI.knobLabels();

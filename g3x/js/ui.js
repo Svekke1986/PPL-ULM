@@ -263,7 +263,13 @@ window.G3X = window.G3X || {};
     if (page === 'MAP' || page === 'TERRAIN') return UI.openMapOptions();
     if (page === 'FPL') return UI.openFplMenu();
     if (page === 'ENG') { UI.openFuelOnBoard(); return; }
-    UI.openDialog({ title: 'Menu', html: '<div class="menu-list"><button class="item" data-a="pfd">PFD Options</button><button class="item" data-a="map">Map Options</button><button class="item" data-a="setup">Setup</button><button class="item" data-a="layout">Toggle Screen Layout</button></div>', width: 400, buttons: [{ label: 'Close' }], onOpen: d => { d.el.querySelectorAll('.item').forEach(b => { b.onclick = () => { const act = b.dataset.a; if (act === 'pfd') UI.openPfdOptions(); else if (act === 'map') UI.openMapOptions(); else if (act === 'setup') { UI.closeDialog(); UI.showPage('SETUP'); } else { a.layout = a.layout === 'SPLIT' ? 'MFD' : a.layout === 'MFD' ? 'PFD' : 'SPLIT'; UI.closeDialog(); } }; }); } });
+    if (page === 'HOME') return UI.openGeneralMenu();
+    UI.openGeneralMenu();
+  };
+  // algemeen menu (ook de schermindeling: op de G3X via MENU → Full Screen / Split Screen)
+  UI.openGeneralMenu = extra => {
+    const a = A();
+    UI.openDialog({ title: 'Menu', html: `<div class="menu-list">${extra || ''}<button class="item" data-a="full-pfd">Full Screen PFD</button><button class="item" data-a="split">Split Screen</button><button class="item" data-a="full-mfd">Full Screen MFD</button><button class="item" data-a="pfd">PFD Options</button><button class="item" data-a="map">Map Options</button><button class="item" data-a="setup">Setup</button><button class="item" data-a="home">Main Menu</button></div>`, width: 400, buttons: [{ label: 'Close' }], onOpen: d => { d.el.querySelectorAll('.item').forEach(b => { b.onclick = () => { const act = b.dataset.a; if (act === 'pfd') UI.openPfdOptions(); else if (act === 'map') UI.openMapOptions(); else if (act === 'setup') { UI.closeDialog(); UI.showPage('SETUP'); } else if (act === 'home') { UI.closeDialog(); UI.showPage('HOME'); } else if (act === 'full-pfd') { UI.closeDialog(); UI.button('PFD'); } else if (act === 'split') { UI.closeDialog(); UI.button('SPLIT'); } else if (act === 'full-mfd') { UI.closeDialog(); UI.button('MFD'); } }; }); } });
   };
   UI.openMapOptions = () => {
     const a = A(), m = a.map;
@@ -330,17 +336,60 @@ window.G3X = window.G3X || {};
   };
 
   // ---------- Direct-To ----------
-  UI.openDirectTo = () => {
+  // Direct To-venster zoals op de G3X Touch: tabbladen Waypoint / Flight Plan / Nearest Airports / Recent,
+  // infokaart met kaartje, Course To, knoppen Info · Stop Navigation · Activate
+  UI.openDirectTo = (presetId) => {
     const a = A(), pos = SIM.S.ac;
-    const near = NAV.nearest(pos, 'ALL', 8).map(x => x.item);
-    const fpl = a.fpl.wpts;
-    const extra = `<div class="dto-lists"><div class="freq-col"><h4>Flight Plan</h4>${fpl.map(w => `<button class="ap-res" data-id="${esc(w.id)}"><b>${esc(w.id)}</b></button>`).join('') || '<div class="muted">empty</div>'}</div><div class="freq-col"><h4>Nearest</h4>${near.map(w => `<button class="ap-res" data-id="${esc(w.id)}"><b>${esc(w.id)}</b> <span>${esc(w.type)}</span></button>`).join('')}</div></div>`;
-    const d = alphaPad({ title: 'Direct-To', value: '', enterLabel: 'Activate', extra, search: q => q ? NAV.search(q, 8) : [],
-      onEnter: v => { const w = AV.findWpt(v); if (!w) { UI.toast('Unknown waypoint'); return false; } AV.directTo(w); bus.emit('dto', w.id); } });
-    d.el.querySelectorAll('.dto-lists .ap-res').forEach(b => { b.onclick = () => { const w = AV.findWpt(b.dataset.id) || fpl.find(x => x.id === b.dataset.id); if (w) { AV.directTo(w); bus.emit('dto', w.id); UI.closeDialog(); } }; });
-    const bar = d.el.querySelector('.dlg-buttons');
-    if (a.fpl.directTo) { const c = document.createElement('button'); c.className = 'dlg-btn danger'; c.textContent = 'Cancel Direct-To'; c.onclick = () => { AV.cancelDirectTo(); bus.emit('dtocancel'); UI.closeDialog(); }; bar.insertBefore(c, bar.firstChild); }
-    const crsB = document.createElement('button'); crsB.className = 'dlg-btn'; crsB.textContent = 'Course…'; crsB.onclick = () => { const id = d.el.querySelector('.np-val').textContent; const w = AV.findWpt(id); if (!w) { UI.toast('Select a waypoint first'); return; } numpad({ title: `Course to ${w.id}`, maxLen: 3, unit: '°', width: 380, display: v => v || U.fmtHdg(U.bearing(pos, w)), onEnter: v => { AV.directTo(w, v ? U.norm360(parseInt(v, 10)) : null); bus.emit('dto', w.id); } }); }; bar.insertBefore(crsB, bar.firstChild);
+    a.recentDto = a.recentDto || [];
+    const st = { tab: 'WPT', id: presetId || (a.fpl.directTo ? a.fpl.directTo.to.id : (a.nav && a.nav.valid ? a.nav.legTo.id : '')), crs: null };
+    const render = () => {
+      const w = st.id ? (AV.findWpt(st.id) || a.fpl.wpts.find(x => x.id === st.id)) : null;
+      const tabs = [['WPT', 'Waypoint'], ['FPL', 'Flight Plan'], ['NRST', 'Nearest Airports'], ['RECENT', 'Recent']];
+      let body = `<div class="tabs dto-tabs">${tabs.map(t => `<button class="tab ${st.tab === t[0] ? 'on' : ''}" data-t="${t[0]}">${t[1]}</button>`).join('')}</div>`;
+      if (st.tab === 'WPT') {
+        body += `<div class="dto-card"><button class="dto-id">${w ? esc(w.id) : '______'} <small>▸ touch to enter identifier</small></button>`;
+        if (w) {
+          const kind = w.type === 'APT' ? ({ intl: 'Towered Airport', civil: 'Public Airport', mil: 'Military Airport', ulm: 'Ultralight Field' }[w.kind] || 'Airport') : w.type === 'VOR' ? 'VOR' + (w.dme ? '/DME' : '') : w.type === 'NDB' ? 'NDB' : w.type === 'VRP' ? 'VFR Reporting Point' : w.type === 'USER' ? 'User Waypoint' : 'Intersection';
+          body += `<div class="dto-info"><div class="dto-thumb" id="dto-thumb"></div><div><div class="dto-kind">${esc(kind)}</div><div class="dto-name">${esc(w.name || '')}</div><div class="dto-reg">Belgium / Benelux</div><div class="dto-brg">Brg <b>${U.fmtHdg(U.bearing(pos, w))}°</b></div><div class="dto-brg">Dist <b>${U.fmtDis(D.distVal(U.distNm(pos, w)))} ${D.distUnit().toLowerCase()}</b></div></div></div>`;
+          body += `<button class="dto-course">Course To <b>${st.crs != null ? U.fmtHdg(st.crs) : U.fmtHdg(U.bearing(pos, w))}°</b>${st.crs == null ? ' <small>(direct)</small>' : ''}</button>`;
+        }
+        body += '</div>';
+      } else {
+        let list = [];
+        if (st.tab === 'FPL') list = a.fpl.wpts;
+        else if (st.tab === 'NRST') list = NAV.nearest(pos, 'APT', 10).map(x => x.item);
+        else list = a.recentDto.map(id => AV.findWpt(id)).filter(Boolean);
+        body += `<div class="dto-list">${list.map(x => `<button class="row dto-row" data-id="${esc(x.id)}"><span class="c-id"><b>${esc(x.id)}</b></span><span class="c-name">${esc(x.name || '')}</span><span class="c-dtk">${U.fmtHdg(U.bearing(pos, x))}°</span><span class="c-dis">${U.fmtDis(D.distVal(U.distNm(pos, x)))}</span></button>`).join('') || '<p class="muted pad">Nothing to show.</p>'}</div>`;
+      }
+      return body;
+    };
+    const d = UI.openDialog({ title: 'Direct To', cls: 'dto', width: 560, html: render(), buttons: [{ label: 'Info', onClick: () => { const w = st.id && AV.findWpt(st.id); if (w) { UI.openFeatureInfo(w); } return true; } }, { label: 'Stop Navigation', cls: 'danger', onClick: () => { AV.cancelDirectTo(); bus.emit('dtocancel'); } }, { label: 'Activate', cls: 'primary', onClick: () => { const w = st.id && (AV.findWpt(st.id) || a.fpl.wpts.find(x => x.id === st.id)); if (!w) { UI.toast('Select a waypoint'); return true; } AV.directTo(w, st.crs); a.recentDto = [w.id, ...a.recentDto.filter(x => x !== w.id)].slice(0, 8); bus.emit('dto', w.id); } }],
+      knobLabels: { left: { outer: '—', inner: '—' }, right: { outer: 'SELECT', inner: 'SELECT', push: 'Activate' } }, onEnter: () => d.el.querySelector('.dlg-btn.primary').click() });
+    const bind = () => {
+      d.body.querySelectorAll('.tab').forEach(b => { b.onclick = () => { st.tab = b.dataset.t; refresh(); }; });
+      const idb = d.body.querySelector('.dto-id'); if (idb) idb.onclick = () => alphaPad({ title: 'Waypoint Identifier', value: '', enterLabel: 'Select', search: q => q ? NAV.search(q, 8) : [], onEnter: v => { const w = AV.findWpt(v); if (!w) { UI.toast('Unknown waypoint'); return false; } UI.openDirectTo(w.id); } });
+      const cb = d.body.querySelector('.dto-course'); if (cb) cb.onclick = () => { const w = AV.findWpt(st.id); numpad({ title: `Course To ${st.id}`, maxLen: 3, unit: '°', width: 380, display: v => v || U.fmtHdg(st.crs ?? U.bearing(pos, w)), extra: '<div class="xp-modes"><button class="xp-mode direct">Direct (no course)</button></div>', onEnter: v => { const c = v ? U.norm360(parseInt(v, 10)) : null; UI.openDirectTo(st.id); UI.dialog.setCourse(c); }, onOpen: dd => { dd.el.querySelector('.direct').onclick = () => { UI.openDirectTo(st.id); }; } }); };
+      d.body.querySelectorAll('.dto-row').forEach(b => { b.onclick = () => { st.id = b.dataset.id; st.tab = 'WPT'; st.crs = null; refresh(); }; });
+      drawThumb();
+    };
+    const refresh = () => { d.body.innerHTML = render(); bind(); };
+    d.setCourse = c => { st.crs = c; refresh(); };
+    // miniatuurkaartje met het waypoint, noord boven
+    const drawThumb = () => {
+      const el = d.body.querySelector('#dto-thumb'); const w = st.id && (AV.findWpt(st.id) || a.fpl.wpts.find(x => x.id === st.id)); if (!el || !w) return;
+      const cv = document.createElement('canvas'); cv.width = 150; cv.height = 110; el.appendChild(cv); const ctx = cv.getContext('2d');
+      ctx.fillStyle = '#17331f'; ctx.fillRect(0, 0, 150, 110);
+      const scale = 150 / 16; // 16 nm breed
+      const toS = p => { const xy = U.toXY(w, p); return [75 + xy.x * scale, 55 - xy.y * scale]; };
+      ctx.strokeStyle = '#49a3ff'; ctx.lineWidth = 1;
+      for (const s of NAV.AIRSPACES) { if (s.type === 'ATZ') continue; ctx.beginPath(); if (s.shape.circle) { const c = toS(s.shape.circle); ctx.arc(c[0], c[1], s.shape.r * scale, 0, Math.PI * 2); } else s.shape.poly.forEach((p, i) => { const q = toS({ lat: p[0], lon: p[1] }); i ? ctx.lineTo(q[0], q[1]) : ctx.moveTo(q[0], q[1]); }); ctx.closePath(); ctx.stroke(); }
+      for (const apt of NAV.AIRPORTS) { const s = toS(apt); if (s[0] < 0 || s[0] > 150 || s[1] < 0 || s[1] > 110) continue; ctx.fillStyle = apt.kind === 'intl' ? '#4aa3ff' : '#e85dff'; ctx.beginPath(); ctx.arc(s[0], s[1], 3, 0, Math.PI * 2); ctx.fill(); }
+      if (w.type === 'APT') { ctx.save(); ctx.translate(75, 55); ctx.rotate(w.rwys[0].hdg * U.DEG); ctx.fillStyle = '#fff'; ctx.fillRect(-2, -10, 4, 20); ctx.restore(); } else { ctx.strokeStyle = '#fff'; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(75, 48); ctx.lineTo(81, 60); ctx.lineTo(69, 60); ctx.closePath(); ctx.stroke(); }
+      ctx.fillStyle = '#fff'; ctx.font = 'bold 11px sans-serif'; ctx.fillText(w.id, 80, 46);
+      const ac = toS(pos); if (ac[0] > 0 && ac[0] < 150 && ac[1] > 0 && ac[1] < 110) { ctx.save(); ctx.translate(ac[0], ac[1]); ctx.rotate(pos.hdg * U.DEG); ctx.fillStyle = '#ffd21a'; ctx.beginPath(); ctx.moveTo(0, -6); ctx.lineTo(5, 5); ctx.lineTo(0, 2); ctx.lineTo(-5, 5); ctx.closePath(); ctx.fill(); ctx.restore(); }
+      ctx.fillStyle = '#9fb3c8'; ctx.font = '9px sans-serif'; ctx.fillText('N ↑  16 nm', 4, 106);
+    };
+    bind();
   };
 
   // ---------- brandstof ----------
@@ -400,10 +449,10 @@ window.G3X = window.G3X || {};
     const head = (title, right = '') => `<div class="page-head"><span>${esc(title)}</span><span class="page-right">${right}</span></div>`;
     switch (page) {
       case 'HOME': {
-        // volgorde zoals het hoofdmenu van de G3X Touch (rijen van vijf)
-        const tiles = [['MAP', 'Map'], ['CHARTS', 'Charts'], ['FPL', 'Active Flight Plan'], ['WPT', 'Waypoint Info'], ['NRST', 'Nearest'], ['WX', 'Weather'], ['TRAFFIC', 'Traffic'], ['TERRAIN', 'Terrain'], ['ENG', 'Engine'], ['TIMER', 'Timer'], ['CHK', 'Checklists'], ['FPLLIST', 'Flight Plan List'], ['TRIP', 'Info'], ['USER', 'User Waypoints'], ['PROC', 'Procedures'], ['PFD', 'PFD'], ['MSG', 'Messages'], ['SETUP', 'Setup']];
-        h = head('Main Menu') + `<div class="page-body tiles">${tiles.map(t => `<button class="tile" data-p="${t[0]}"><span class="ico">${G3X.icons[t[0]] || ''}</span><span>${t[1]}</span></button>`).join('')}</div>`;
-        P.innerHTML = h; P.querySelectorAll('.tile').forEach(b => { b.onclick = () => UI.showPage(b.dataset.p); }); return;
+        // tegels en volgorde zoals het hoofdmenu van de G3X Touch (vier kolommen, scrollbaar)
+        const tiles = [['MAP', 'Map'], ['CHARTS', 'Charts'], ['FPL', 'Active Flight Plan'], ['WPT', 'Waypoint Info'], ['WX', 'Weather'], ['TRAFFIC', 'Traffic'], ['TERRAIN', 'Terrain'], ['ENG', 'Engine'], ['TRIP', 'Info'], ['CHK', 'Checklists'], ['PFD', 'PFD'], ['COM1', 'COM 1 Radio'], ['COM2', 'COM 2 Radio'], ['XPDR', 'XPDR'], ['AUDIO', 'Audio Panel'], ['FLIGHTLOG', 'Flight Log'], ['FPLLIST', 'Flight Plan List'], ['VNAV', 'VNAV'], ['TRACKLOG', 'Track Log'], ['USERTIMER', 'User Timer'], ['USER', 'User Waypoints'], ['WB', 'Weight & Balance'], ['DATALINK', 'Data Link'], ['MUSIC', 'Music'], ['TOOLS', 'Tools'], ['SETUP', 'Setup'], ['BACKLIGHT', 'Backlight Intensity']];
+        h = `<div class="page-head"><span>${G3X.icons.HOME} Main Menu</span></div><div class="page-body tiles">${tiles.map(t => `<button class="tile" data-p="${t[0]}"><span class="ico">${G3X.icons[t[0]] || ''}</span><span>${t[1]}</span></button>`).join('')}</div>`;
+        P.innerHTML = h; P.querySelectorAll('.tile').forEach(b => { b.onclick = () => UI.openTile(b.dataset.p); }); return;
       }
       case 'FPL': {
         const f = a.fpl, n = a.nav;
@@ -562,8 +611,62 @@ window.G3X = window.G3X || {};
         P.querySelector('.storecur').onclick = () => { AV.fplStore(); bus.emit('fplstore'); };
         return;
       }
+      case 'VNAV': {
+        const n = a.nav; const v = n && n.vnav; const p = a.ap;
+        const cons = a.fpl.wpts.filter(w => w.alt != null && !w.missed);
+        h = head('VNAV') + `<div class="page-body opts"><div class="info-grid">
+          <div>Next constraint<b>${v ? v.wpt + ' at ' + v.alt + ' FT' : '—'}</b></div><div>Distance to TOD<b>${v ? (v.todDis > 0 ? U.fmtDis(v.todDis) + ' NM · ' + U.fmtEte(v.todEte) : 'PAST TOD') : '—'}</b></div><div>Required vertical speed<b>${v ? Math.round(v.reqFpm) + ' FPM' : '—'}</b></div><div>Vertical deviation<b>${v ? (v.vdev > 0 ? '+' : '') + Math.round(v.vdev) + ' FT' : '—'}</b></div><div>Descent angle<b>3.0°</b></div><div>AP VNV<b>${p.vert === 'VNV' ? 'ACTIVE (VPTH)' : p.vertArm.includes('VNV') ? 'ARMED' : 'OFF'}</b></div></div>
+          <h4>Altitude constraints in the flight plan</h4>${cons.length ? cons.map(w => `<div class="opt-row"><span>${esc(w.id)}</span><b>${w.alt} FT</b></div>`).join('') : '<p class="muted">None. Touch a waypoint in the Active Flight Plan → Set Altitude (VNAV).</p>'}
+          <div class="btns"><button class="pbtn gofpl">Active Flight Plan</button><button class="pbtn vnv">${p.vert === 'VNV' || p.vertArm.includes('VNV') ? 'Disarm VNV' : 'Arm VNV on autopilot'}</button></div></div>`;
+        P.innerHTML = h; P.querySelector('.gofpl').onclick = () => UI.showPage('FPL'); P.querySelector('.vnv').onclick = () => { UI.apButton('VNV'); UI.pageBuilt = null; };
+        return;
+      }
+      case 'WB': {
+        const wb = a.wb || (a.wb = { empty: 390, pilot: 85, pax: 0, bag: 5 });
+        const fuelKg = Math.round((S.ac.fuelL + S.ac.fuelR) * 0.72);
+        const total = wb.empty + wb.pilot + wb.pax + wb.bag + fuelKg; const mtow = 600;
+        const row = (k, label, val, editable = true) => `<div class="opt-row"><span>${label}</span><div class="opt-vals"><button class="opt-val ${editable ? 'wbe' : ''}" data-k="${k}">${val} kg</button></div></div>`;
+        h = head('Weight & Balance') + `<div class="page-body opts">${row('empty', 'Empty weight', wb.empty)}${row('pilot', 'Pilot', wb.pilot)}${row('pax', 'Passenger', wb.pax)}${row('bag', 'Baggage (max 20 kg)', wb.bag)}${row('fuel', 'Fuel (from tanks, 0.72 kg/L)', fuelKg, false)}
+          <div class="opt-row"><span><b>Take-off weight</b></span><b class="${total > mtow ? 'y' : 'g'}">${total} kg / MTOW ${mtow} kg${total > mtow ? ' — OVERWEIGHT' : ''}</b></div>
+          <p class="muted">Trainer: weights are indicative; no arm/CG data loaded. Use the aircraft's weighing report and POH.</p></div>`;
+        P.innerHTML = h;
+        P.querySelectorAll('.wbe').forEach(b => { b.onclick = () => numpad({ title: b.closest('.opt-row').querySelector('span').textContent, maxLen: 3, unit: 'kg', display: v => v || String(wb[b.dataset.k]), onEnter: v => { if (v) { wb[b.dataset.k] = parseInt(v, 10); UI.pageBuilt = null; } } }); });
+        return;
+      }
+      case 'TRACKLOG': { P.innerHTML = head('Track Log') + `<div class="page-body pad"><p>Track logging is not available in this trainer.</p><p class="muted">On the real G3X Touch the track log records your flight path for review or export to a data card.</p></div>`; return; }
+      case 'DATALINK': { P.innerHTML = head('Data Link') + `<div class="page-body pad"><p>No data link (Connext / GDL) connected in this trainer.</p><p class="muted">Used for weather, traffic and Flight Stream connectivity with a tablet.</p></div>`; return; }
+      case 'MUSIC': { P.innerHTML = head('Music') + `<div class="page-body pad"><p>No audio source connected.</p></div>`; return; }
+      case 'TOOLS': {
+        P.innerHTML = head('Tools') + `<div class="page-body"><div class="menu-list pad"><button class="item" data-p="PROC">Approach / Procedures</button><button class="item" data-p="TRIP">Trip Computer</button><button class="item" data-p="WB">Weight &amp; Balance</button><button class="item" data-p="USER">User Waypoints</button></div></div>`;
+        P.querySelectorAll('.item').forEach(b => { b.onclick = () => UI.showPage(b.dataset.p); }); return;
+      }
       default: P.innerHTML = head(page) + '<div class="page-body pad muted">Page not available.</div>';
     }
+  };
+  // tegel uit het hoofdmenu: pagina of dialoogvenster
+  UI.openTile = p => {
+    bus.emit('tile', p);
+    switch (p) {
+      case 'COM1': UI.openFreq('COM', 1); break;
+      case 'COM2': UI.openFreq('COM', 2); break;
+      case 'XPDR': UI.openXpdr(); break;
+      case 'AUDIO': UI.openAudio(); break;
+      case 'FLIGHTLOG': UI.showPage('TRIP'); break;
+      case 'USERTIMER': UI.showPage('TIMER'); break;
+      case 'BACKLIGHT': UI.openBacklight(); break;
+      default: UI.showPage(p);
+    }
+  };
+  UI.openAudio = () => {
+    const a = A();
+    const html = () => `<div class="audio-grid"><div><h4>MIC</h4><button class="xp-mode ${a.com1.mic ? 'on' : ''}" data-mic="1">COM1</button><button class="xp-mode ${a.com2.mic ? 'on' : ''}" data-mic="2">COM2</button></div><div><h4>MON (monitor)</h4><button class="xp-mode ${a.com1.mon ? 'on' : ''}" data-mon="1">COM1</button><button class="xp-mode ${a.com2.mon ? 'on' : ''}" data-mon="2">COM2</button></div><div><h4>NAV audio (ident)</h4><button class="xp-mode ${a.nav1.audio ? 'on' : ''}" data-nav="1">NAV1</button><button class="xp-mode ${a.nav2.audio ? 'on' : ''}" data-nav="2">NAV2</button></div></div><p class="muted">Simplified GMA 245 audio panel: MIC selects the transmit radio, MON adds the other COM to the headset, NAV audio plays the Morse ident.</p>`;
+    const d = UI.openDialog({ title: 'Audio Panel', width: 520, html: html(), buttons: [{ label: 'Close' }] });
+    const bind = () => { d.body.querySelectorAll('[data-mic]').forEach(b => { b.onclick = () => { AV.setMic(+b.dataset.mic); bus.emit('mic', +b.dataset.mic); d.body.innerHTML = html(); bind(); }; }); d.body.querySelectorAll('[data-mon]').forEach(b => { b.onclick = () => { const r = a['com' + b.dataset.mon]; if (!r.mic) r.mon = !r.mon; d.body.innerHTML = html(); bind(); }; }); d.body.querySelectorAll('[data-nav]').forEach(b => { b.onclick = () => { const r = a['nav' + b.dataset.nav]; r.audio = !r.audio; bus.emit('navaudio', +b.dataset.nav); d.body.innerHTML = html(); bind(); }; }); };
+    bind();
+  };
+  UI.openBacklight = () => {
+    const a = A();
+    UI.openDialog({ title: 'Backlight Intensity', width: 420, html: `<div class="xp-modes">${[100, 85, 70, 55, 40].map(v => `<button class="xp-mode bl ${a.brightness === v ? 'on' : ''}" data-v="${v}">${v}%</button>`).join('')}</div><p class="muted">Lower the intensity at night or to reduce electrical load (alternator failure).</p>`, buttons: [{ label: 'Close' }], onOpen: d => { d.el.querySelectorAll('.bl').forEach(b => { b.onclick = () => { a.brightness = +b.dataset.v; bus.emit('setup', { k: 'brightness', v: a.brightness }); d.el.querySelectorAll('.bl').forEach(c => c.classList.toggle('on', c === b)); }; }); } });
   };
   UI.openFplRowMenu = i => {
     const f = A().fpl, w = f.wpts[i];

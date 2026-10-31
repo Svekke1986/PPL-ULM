@@ -407,8 +407,8 @@ window.G3X = window.G3X || {};
     D.text(ctx, src === 'GPS' ? (S.fail.gps ? 'LOI' : (n && n.valid ? n.scaleLabel : '')) : (A[src.toLowerCase()].data.ident || '---'), lx - 26, ly + 30, { size: 13, color: src === 'GPS' && S.fail.gps ? C.yellow : srcColor, align: 'center' });
     D.zone(lx - 54, ly, 56, 42, () => G3X.ui.cycleNavSource(), 'navsrc');
     if (src === 'GPS' && S.fail.gps) D.textOutline(ctx, 'LOI', hx, hy + 40, { size: 16, color: C.yellow, align: 'center' });
-    if (src === 'GPS' && A.fpl.susp) { D.box(ctx, hx + 20, hy - R + 4, 46, 20, '#000', '#fff', 1); D.text(ctx, 'SUSP', hx + 43, hy - R + 14, { size: 13, color: '#fff', align: 'center', weight: 'bold' }); }
-    if (src === 'GPS' && A.fpl.obs) D.text(ctx, 'OBS', hx + 43, hy - R + 38, { size: 13, color: C.magenta, align: 'center', weight: 'bold' });
+    if (src === 'GPS' && A.fpl.susp) { D.box(ctx, hx + 20, hy - R + 4, 46, 20, '#000', '#fff', 1); D.text(ctx, 'SUSP', hx + 43, hy - R + 14, { size: 13, color: '#fff', align: 'center', weight: 'bold' }); D.zone(hx + 20, hy - R + 4, 46, 20, () => G3X.ui.button('SUSP'), 'susp'); }
+    if (src === 'GPS' && A.fpl.obs) { D.text(ctx, 'OBS', hx + 43, hy - R + 38, { size: 13, color: C.magenta, align: 'center', weight: 'bold' }); D.zone(hx + 20, hy - R + 28, 46, 20, () => G3X.ui.button('OBS'), 'obs'); }
     // CRS-veld (rechtsonder HSI) en XTK
     const cx2 = hx + R + 6;
     D.box(ctx, cx2, hy - R + 4, 70, 36, 'rgba(0,0,0,0.6)');
@@ -455,13 +455,19 @@ window.G3X = window.G3X || {};
 
   // ---------- hoeken ----------
   function drawCorners(ctx, X, Y, W, H, A, S) {
-    const now = new Date();
-    // linksonder: OAT, timer, tijd
-    D.box(ctx, X + 4, Y + H - 58, 100, 54, 'rgba(0,0,0,0.6)');
-    D.text(ctx, 'OAT', X + 8, Y + H - 48, { size: 11, color: '#9fb3c8' }); D.text(ctx, D.tempVal(G3X.sim.oat()), X + 100, Y + H - 48, { size: 14, color: '#fff', align: 'right', weight: 'bold' });
-    D.text(ctx, 'TMR', X + 8, Y + H - 31, { size: 11, color: '#9fb3c8' }); D.text(ctx, U.fmtTimer(A.timer.value), X + 100, Y + H - 31, { size: 14, color: A.timer.expired && D.blink(2) ? C.yellow : '#fff', align: 'right', weight: 'bold' });
-    D.text(ctx, A.clockUtc ? 'UTC' : 'LCL', X + 8, Y + H - 14, { size: 11, color: '#9fb3c8' }); D.text(ctx, U.fmtTime(now, A.clockUtc), X + 100, Y + H - 14, { size: 14, color: '#fff', align: 'right', weight: 'bold' });
-    D.zone(X + 4, Y + H - 58, 100, 54, () => G3X.ui.showPage('TIMER'), 'tmr');
+    // linksonder: NAV1/NAV2 (actief · standby · ident) en OAT — zoals op de G3X staan de NAV-frequenties op de PFD
+    const nb = { x: X + 4, y: Y + H - 76, w: 150, h: 72 };
+    D.box(ctx, nb.x, nb.y, nb.w, nb.h, 'rgba(0,0,0,0.65)', '#3a4350', 1);
+    [1, 2].forEach((n, i) => {
+      const rd = A['nav' + n], yy = nb.y + 12 + i * 22;
+      D.text(ctx, 'NAV' + n, nb.x + 4, yy, { size: 10, color: '#9fb3c8' });
+      D.text(ctx, U.fmtNav(rd.active), nb.x + 36, yy, { size: 15, color: S.fail['nav' + n] ? C.red : (A.navSource === 'NAV' + n ? C.green : '#fff'), weight: 'bold' });
+      D.text(ctx, U.fmtNav(rd.standby), nb.x + nb.w - 4, yy, { size: 13, color: C.cyan, align: 'right' });
+      D.zone(nb.x, yy - 11, 90, 22, () => G3X.avionics.swapNav(n), 'nav' + n + 'act');
+      D.zone(nb.x + 90, yy - 11, nb.w - 90, 22, () => G3X.ui.openFreq('NAV', n), 'nav' + n + 'stby');
+    });
+    D.text(ctx, (A.nav1.ident ? 'NAV1 ' + A.nav1.ident : '') + (A.nav2.ident ? '  NAV2 ' + A.nav2.ident : ''), nb.x + 4, nb.y + 58, { size: 11, color: C.green });
+    D.text(ctx, 'OAT ' + D.tempVal(G3X.sim.oat()), nb.x + nb.w - 4, nb.y + 58, { size: 11, color: '#fff', align: 'right' });
     // rechtsonder: transponder
     const x = A.xpdr;
     D.box(ctx, X + W - 112, Y + H - 58, 108, 54, 'rgba(0,0,0,0.6)');

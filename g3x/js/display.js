@@ -3,7 +3,7 @@ window.G3X = window.G3X || {};
 (function () {
   const U = G3X.util;
   const D = {
-    W: 1280, H: 768, BAR_H: 64, EIS_W: 150, TOP_H: 40,
+    W: 1280, H: 768, BAR_H: 28, EIS_W: 150, TOP_H: 48,
     canvas: null, ctx: null, zones: [], scale: 1, hover: null,
     C: {
       sky: '#1f63c9', sky2: '#0f3d8a', ground: '#9a5b25', ground2: '#5c3512', magenta: '#ff2bff', cyan: '#19e6ff', green: '#28e02c', white: '#ffffff', yellow: '#ffd21a', red: '#ff3131', grey: '#9aa3ad', dark: '#0b0e12', panel: 'rgba(0,0,0,0.65)', amber: '#ffb000', blue: '#2f7bff'

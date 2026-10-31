@@ -3,7 +3,7 @@ window.G3X = window.G3X || {};
 (function () {
   const U = G3X.util, D = G3X.display, NAV = G3X.nav, C = D.C;
   const M = { feats: [], RANGES: [0.5, 0.8, 1.2, 2, 3, 5, 8, 10, 15, 20, 30, 50, 80, 120, 200] };
-  const DOM_PAGES = ['HOME', 'FPL', 'NRST', 'WPT', 'SETUP', 'CHK', 'TIMER', 'INFO', 'MSG', 'TRAFFIC', 'WX', 'CHARTS', 'USER', 'FPLLIST', 'PROC', 'AUX', 'TRIP'];
+  const DOM_PAGES = ['HOME', 'FPL', 'NRST', 'WPT', 'SETUP', 'CHK', 'TIMER', 'INFO', 'MSG', 'TRAFFIC', 'WX', 'CHARTS', 'USER', 'FPLLIST', 'PROC', 'AUX', 'TRIP', 'VNAV', 'WB', 'TRACKLOG', 'DATALINK', 'MUSIC', 'TOOLS'];
   M.isDomPage = p => DOM_PAGES.includes(p);
 
   M.render = (ctx, r) => {
