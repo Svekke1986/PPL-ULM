@@ -229,3 +229,6 @@ button { font-family: inherit; }
 .help-box h2 { margin-top: 0; } .help-box h3 { margin: 16px 0 6px; font-size: 1rem; color: var(--accent); }
 .help-box table { border-collapse: collapse; width: 100%; } .help-box td { padding: 3px 8px; border-bottom: 1px solid #1f2733; vertical-align: top; } .help-box td:first-child { white-space: nowrap; color: var(--yellow); font-family: monospace; }
 .help-box kbd { background: #0f1216; border: 1px solid #3a4046; border-radius: 4px; padding: 0 5px; font-family: monospace; }
+
+/* verkenmodus: toestel stilstaand, geen stuurknuppel of vliegtoetsen */
+body.explore .stick, body.explore .acp-row.small, body.explore #pbrake, body.explore #brake { display: none; }

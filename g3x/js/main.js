@@ -213,6 +213,7 @@ window.G3X = window.G3X || {};
     renderScenarioList();
   }
   M.setMode = mode => {
+    document.body.classList.toggle('explore', mode === 'explore');
     $('#explore-pane').classList.toggle('hidden', mode !== 'explore');
     $('#scenario-pane').classList.toggle('hidden', mode !== 'scenario');
     $('#mode-explore').classList.toggle('on', mode === 'explore');
@@ -234,7 +235,7 @@ window.G3X = window.G3X || {};
   M.onTrainerUpdate = () => {
     const el = $('#trainer-current'); const sc = T.current; if (!sc) { el.innerHTML = ''; return; }
     let html = `<div class="tc-head"><div><span class="tc-cat">${esc(T.mode === 'explore' ? 'Verkennen' : sc.cat)}</span><h3>${esc(sc.title)}</h3></div><span class="tc-time" id="trainer-time">00:00:00</span></div><div class="tc-intro">${sc.intro || ''}</div>`;
-    if (T.mode === 'explore') { html += '<p class="muted small">Tips: alle velden op het scherm zijn aanraakbaar, MENU geeft de opties van de huidige pagina, en in het paneel Vliegtuig kun je storingen inschakelen. Zet een scenario op via het tabblad <b>Scenario</b>.</p>'; el.innerHTML = html; return; }
+    if (T.mode === 'explore') { html += '<p class="muted small">Het toestel staat stil; hier leer je de G3X kennen zonder te vliegen. Tips: alle velden op het scherm zijn aanraakbaar, MENU geeft de opties van de huidige pagina (MENU 2× = Main Menu), en in het paneel Vliegtuig kun je gas geven voor de motorinstrumenten of storingen inschakelen. Wil je vliegen, kies dan een scenario via het tabblad <b>Scenario</b>.</p>'; el.innerHTML = html; return; }
     html += '<ol class="steps">';
     T.steps.forEach((s, i) => {
       const cls = s.status; const cur = i === T.stepIndex && !T.done;

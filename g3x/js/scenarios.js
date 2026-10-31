@@ -557,21 +557,13 @@ window.G3X = window.G3X || {};
         mk('In de hold (SUSP): zet een 1-minuten-timer en vlieg een outbound leg (heading bug op de reciproke van de inbound koers).', 'Timer → Set… 01:00 (Count Down); heading bug via de linkerknop.', (S, A) => A.fpl.susp && A.timer.running && A.timer.dir === 'DOWN'),
       ] };
   });
-  add('free', 'Vrij vliegen', 'In de lucht bij EBZH (2000 ft, kruisvlucht)', () => {
-    const start = R.airborne(HOME, { alt: 2000, dist: U.rnd(2, 6) });
-    return { title: 'Verkennen — in de lucht bij EBZH', start, intro: '<p>Geen opdrachten: verken en verander alles wat je wilt. Met <b>Reset</b> keer je terug naar deze startsituatie.</p>', steps: [] };
+  add('free', 'Vrij vliegen', 'Stilstaand op EBZH, motor draait', () => {
+    const start = R.onRunway(HOME); start.engineRunning = true; start.parked = true;
+    return { title: 'Verkennen — stilstaand op EBZH', start, intro: '<p>Het toestel staat stil op Kiewit met draaiende motor. Verken alle functies van de G3X: pagina’s, menu’s, radio’s, transponder, vluchtplan, naderingen, instellingen. Met <b>Reset</b> begin je opnieuw.</p>', steps: [] };
   });
-  add('free_ground', 'Vrij vliegen', 'Op de baan van EBZH, koud en donker', () => {
-    const start = R.onRunway(HOME); start.engineRunning = false;
-    return { title: 'Verkennen — op de grond op EBZH', start, intro: '<p>Koud en donker op de baan van Kiewit. Paneel Vliegtuig: Master → Start → gas.</p>', steps: [] };
-  });
-  add('free_ground_run', 'Vrij vliegen', 'Op de baan van EBZH, motor draait', () => {
-    const start = R.onRunway(HOME); start.engineRunning = true;
-    return { title: 'Verkennen — klaar voor vertrek op EBZH', start, intro: '<p>Motor loopt, parkeerrem staat aan. Parkeerrem los, vol gas, roteren bij 50 kt.</p>', steps: [] };
-  });
-  add('free_apr', 'Vrij vliegen', 'In de lucht bij een vliegveld met naderingen', () => {
-    const apt = R.apt({ withApr: true, max: 60 }); const start = R.airborne(apt, { alt: apt.elev + 2500, dist: U.rnd(8, 14) });
-    return { title: `Verkennen — bij ${apt.id}`, start, intro: `<p>Je bent in de buurt van <b>${esc(apt.name)}</b>. Probeer PROC → een nadering laden en vlieg ze handmatig op de CDI en het glijpad.</p>`, steps: [] };
+  add('free_cold', 'Vrij vliegen', 'Stilstaand op EBZH, koud en donker', () => {
+    const start = R.onRunway(HOME); start.engineRunning = false; start.parked = true;
+    return { title: 'Verkennen — koud en donker op EBZH', start, intro: '<p>Master uit, motor uit. Zet in het paneel Vliegtuig de master aan en start de motor om de motorinstrumenten te zien; het toestel blijft stilstaan.</p>', steps: [] };
   });
 
   // ---------- scenario-motor ----------
