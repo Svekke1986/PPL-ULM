@@ -1,7 +1,7 @@
-/* Hoofdlus, invoer (toetsenbord, muis/aanraking, gamepad), bezel-knoppen, GMC 507-paneel, vliegtuigpaneel en trainerpaneel. */
+/* Hoofdlus, invoer (toetsenbord, muis/aanraking, gamepad), bezel-knoppen, vliegtuigpaneel en trainerpaneel. */
 window.G3X = window.G3X || {};
 (function () {
-  const U = G3X.util, D = G3X.display, SIM = G3X.sim, AV = G3X.avionics, UI = G3X.ui, T = G3X.trainer, AP = G3X.autopilot, esc = U.esc;
+  const U = G3X.util, D = G3X.display, SIM = G3X.sim, AV = G3X.avionics, UI = G3X.ui, T = G3X.trainer, esc = U.esc;
   const M = { keys: {}, lastRender: 0, panelT: 0, cat: null, lastT: performance.now(), invertPitch: false, stick: { x: 0, y: 0 } };
   const $ = s => document.querySelector(s);
 
@@ -10,7 +10,7 @@ window.G3X = window.G3X || {};
     D.init($('#g3x-canvas'));
     UI.init($('#g3x-overlay'));
     try { M.invertPitch = localStorage.getItem('g3x.invertPitch') === '1'; } catch (e) { /* */ }
-    buildKnobs(); buildApPanel(); buildAircraftPanel(); buildTrainerPanel(); bindCanvas(); bindKeyboard();
+    buildKnobs(); buildAircraftPanel(); buildTrainerPanel(); bindCanvas(); bindKeyboard();
     window.addEventListener('resize', M.fit); M.fit();
     // scenario uit URL (#s=id) of standaard
     const m = location.hash.match(/s=([a-z_0-9]+)/i);
@@ -45,15 +45,12 @@ window.G3X = window.G3X || {};
   // ---------- besturing ----------
   function applyControls() {
     const S = SIM.S, c = S.cmds, k = M.keys;
-    const apFlying = AV.A.ap.on && !S.ac.onGround;
     let pitch = 0, roll = 0, yaw = 0;
     if (k.ArrowUp) pitch -= 1; if (k.ArrowDown) pitch += 1; if (k.ArrowLeft) roll -= 1; if (k.ArrowRight) roll += 1; if (k.KeyQ) yaw -= 1; if (k.KeyE) yaw += 1;
     if (M.invertPitch) pitch = -pitch;
     pitch += -M.stick.y; roll += M.stick.x;
     if (M.gp) { pitch += M.gp.pitch; roll += M.gp.roll; yaw += M.gp.yaw; }
     pitch = U.clamp(pitch, -1, 1); roll = U.clamp(roll, -1, 1); yaw = U.clamp(yaw, -1, 1);
-    const manual = Math.abs(pitch) > 0.05 || Math.abs(roll) > 0.05;
-    if (apFlying) { if (manual && !M.apWarned) { UI.toast('Autopilot engaged — disconnect first (A or AP DISC)'); M.apWarned = true; setTimeout(() => M.apWarned = false, 4000); } c.yaw = yaw; return; }
     c.pitchRate = pitch * 4; c.rollRate = roll * 28; c.yaw = yaw;
     if (k.PageUp) SIM.setThrottle(S.ac.throttle + 0.012); if (k.PageDown) SIM.setThrottle(S.ac.throttle - 0.012);
     S.ac.brakes = !!k.KeyB;
@@ -68,9 +65,6 @@ window.G3X = window.G3X || {};
       switch (k) {
         case 'KeyF': SIM.setFlaps(S.ac.flaps + 1); G3X.bus.emit('flaps', S.ac.flaps); break;
         case 'KeyV': SIM.setFlaps(S.ac.flaps - 1); G3X.bus.emit('flaps', S.ac.flaps); break;
-        case 'KeyA': case 'Space': UI.apButton('DISC'); break;
-        case 'KeyL': UI.apButton('LVL'); break;
-        case 'KeyG': UI.apButton('GA'); break;
         case 'KeyP': S.paused = !S.paused; break;
         case 'Home': SIM.setThrottle(1); break;
         case 'End': SIM.setThrottle(0); break;
@@ -103,7 +97,7 @@ window.G3X = window.G3X || {};
     const btn = i => gp.buttons[i] && gp.buttons[i].pressed;
     M.gpPrev = M.gpPrev || {};
     const edge = (i, fn) => { const p = btn(i); if (p && !M.gpPrev[i]) fn(); M.gpPrev[i] = p; };
-    edge(0, () => UI.apButton('DISC')); edge(1, () => SIM.setFlaps(SIM.S.ac.flaps + 1)); edge(2, () => SIM.setFlaps(SIM.S.ac.flaps - 1)); edge(3, () => UI.apButton('LVL'));
+    edge(1, () => SIM.setFlaps(SIM.S.ac.flaps + 1)); edge(2, () => SIM.setFlaps(SIM.S.ac.flaps - 1)); edge(0, () => { SIM.S.ac.brakes = true; });
   }
 
   // ---------- canvas-aanraking ----------
@@ -151,18 +145,6 @@ window.G3X = window.G3X || {};
     $('#knob-R .knob-label').innerHTML = `<span>${esc(kl.right.outer)}</span><span>${esc(kl.right.inner)}</span>`;
   }
 
-  // ---------- GMC 507 ----------
-  function buildApPanel() {
-    const el = $('#gmc');
-    const btns = [['HDG', 'HDG'], ['APR', 'APR'], ['NAV', 'NAV'], ['AP', 'AP'], ['FD', 'FD'], ['ALT', 'ALT'], ['VS', 'VS'], ['IAS', 'IAS'], ['VNV', 'VNV'], ['LVL', 'LVL'], ['GA', 'TO/GA'], ['DISC', 'AP DISC']];
-    el.innerHTML = `<div class="gmc-title">GMC 507</div><div class="gmc-knob"><span>HDG</span><button data-k="hdg-">−</button><button data-k="hdgsync" title="SYNC">●</button><button data-k="hdg+">+</button></div><div class="gmc-btns">${btns.map(b => `<button class="gmc-btn" data-b="${b[0]}">${b[1]}</button>`).join('')}</div><div class="gmc-wheel"><span>NOSE</span><button data-k="UP">▲ UP</button><button data-k="DN">▼ DN</button></div><div class="gmc-knob"><span>ALT</span><button data-k="alt-">−</button><button data-k="altsync" title="Huidige hoogte">●</button><button data-k="alt+">+</button></div>`;
-    el.querySelectorAll('.gmc-btn').forEach(b => { b.onclick = () => { if (G3X.audio) G3X.audio.ensure(); UI.apButton(b.dataset.b); }; });
-    el.querySelectorAll('[data-k]').forEach(b => { b.onclick = () => { const A = AV.A; const k = b.dataset.k; if (k === 'hdg-') A.hdgBug = U.norm360(A.hdgBug - 1); else if (k === 'hdg+') A.hdgBug = U.norm360(A.hdgBug + 1); else if (k === 'hdgsync') A.hdgBug = Math.round(SIM.S.ac.hdg); else if (k === 'alt-') A.altSel = U.clamp(A.altSel - 100, -1000, 20000); else if (k === 'alt+') A.altSel = U.clamp(A.altSel + 100, -1000, 20000); else if (k === 'altsync') A.altSel = Math.round(AV.indAlt() / 100) * 100; else UI.apButton(k); if (k.startsWith('hdg')) G3X.bus.emit('hdgbug', A.hdgBug); if (k.startsWith('alt')) G3X.bus.emit('altsel', A.altSel); }; const hold = (fn) => { let t; b.addEventListener('pointerdown', () => { t = setInterval(fn, 120); }); const stop = () => clearInterval(t); b.addEventListener('pointerup', stop); b.addEventListener('pointerleave', stop); }; if (['hdg-', 'hdg+', 'alt-', 'alt+'].includes(b.dataset.k)) hold(() => b.onclick()); });
-  }
-  M.refreshApPanel = () => {
-    const p = AV.A.ap;
-    document.querySelectorAll('#gmc .gmc-btn').forEach(b => { const id = b.dataset.b; const on = (id === 'AP' && p.on) || (id === 'FD' && p.fd) || p.lat === id || p.vert === id || (id === 'NAV' && (p.lat === 'NAV' || p.latArm === 'NAV')) || (id === 'APR' && (p.lat === 'APR' || p.latArm === 'APR')) || (id === 'VNV' && (p.vert === 'VNV' || p.vertArm.includes('VNV'))) || (id === 'LVL' && p.lat === 'LVL') || (id === 'GA' && p.lat === 'GA'); b.classList.toggle('on', !!on); b.classList.toggle('arm', (id === 'NAV' && p.latArm === 'NAV') || (id === 'APR' && p.latArm === 'APR') || (id === 'VNV' && p.vertArm.includes('VNV'))); });
-  };
 
   // ---------- vliegtuigpaneel ----------
   function buildAircraftPanel() {
@@ -174,7 +156,7 @@ window.G3X = window.G3X || {};
       <div class="acp-row btns"><button class="acb" id="master">Master</button><button class="acb" id="start">Start</button><button class="acb" id="pbrake">Parkeerrem</button><button class="acb" id="brake" title="Houd ingedrukt (of toets B)">Rem</button></div>
       <div class="acp-row btns"><button class="acb" id="pause">Pauze</button><button class="acb rate" data-r="1">1×</button><button class="acb rate" data-r="2">2×</button><button class="acb rate" data-r="4">4×</button><button class="acb" id="revers" title="Reversionary: herstelt het scherm (PFD+EIS)">Reversionary</button><button class="acb" id="sound">🔊</button></div>
       <div class="acp-row btns"><span>Storing</span><select id="failsel"><option value="">— kies —</option><option value="ahrs">AHRS</option><option value="adc">ADC (air data)</option><option value="gps">GPS (LOI)</option><option value="alternator">Alternator</option><option value="oilPress">Oliedruk</option><option value="chtHigh">CHT hoog</option><option value="engine">Motor stopt</option><option value="engineRough">Motor loopt ruw</option><option value="com1">COM1</option><option value="nav1">NAV1</option><option value="pitot">Pitot (snelheid)</option><option value="fuelLeak">Brandstoflek</option><option value="display">Scherm</option></select><button class="acb" id="failon">Aan</button><button class="acb" id="failoff">Uit</button><button class="acb" id="failclear">Alles herstellen</button></div>
-      <div class="acp-row small"><label><input type="checkbox" id="invpitch"> ↑ = neus omhoog (omgekeerd)</label> <span class="muted">Toetsen: ↑↓ pitch · ←→ rol · Q/E richting · PgUp/PgDn gas · F/V flaps · B rem · A AP uit · L LVL · G GA · P pauze · H help</span></div>
+      <div class="acp-row small"><label><input type="checkbox" id="invpitch"> ↑ = neus omhoog (omgekeerd)</label> <span class="muted">Toetsen: ↑↓ pitch · ←→ rol · Q/E richting · PgUp/PgDn gas · F/V flaps · B rem · P pauze · H help</span></div>
       <div class="stick" id="stick" title="Virtuele stuurknuppel: sleep"><div class="stick-dot"></div></div>`;
     const thr = $('#thr'); thr.oninput = () => SIM.setThrottle(thr.value / 100);
     el.querySelectorAll('.flap').forEach(b => { b.onclick = () => { SIM.setFlaps(+b.dataset.f); G3X.bus.emit('flaps', SIM.S.ac.flaps); }; });
@@ -209,7 +191,7 @@ window.G3X = window.G3X || {};
     $('#pause').classList.toggle('on', S.paused); document.querySelectorAll('#acpanel .rate').forEach(b => b.classList.toggle('on', +b.dataset.r === S.rate));
     $('#sound').textContent = AV.A.sound ? '🔊' : '🔇';
     $('#start').classList.toggle('on', S.eng.running);
-    M.refreshApPanel(); refreshKnobLabels();
+    refreshKnobLabels();
     const st = $('#statusline'); if (st) st.textContent = `${a.onGround ? 'Op de grond' : 'In de lucht'} · ${Math.round(a.ias)} kt · ${Math.round(AV.indAlt())} ft · HDG ${U.fmtHdg(a.hdg)}° · ${Math.round(S.eng.rpm)} rpm · brandstof ${Math.round(a.fuelL)}/${Math.round(a.fuelR)} L · wind ${U.fmtHdg(S.env.windDir)}/${Math.round(S.env.windSpd)} · QNH ${S.env.qnh}${S.rate > 1 ? ' · ' + S.rate + '×' : ''}`;
     if (T.current && !T.done) { const stp = T.steps[T.stepIndex]; const bar = $('#step-progress'); if (bar && stp) bar.style.width = Math.round((stp.ctx.progress || 0) * 100) + '%'; const tm = $('#trainer-time'); if (tm) tm.textContent = U.fmtTimer(S.t - T.started); }
   }

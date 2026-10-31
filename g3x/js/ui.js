@@ -3,7 +3,7 @@
    Alle tekst op het scherm is Engels, zoals op het echte toestel. */
 window.G3X = window.G3X || {};
 (function () {
-  const U = G3X.util, NAV = G3X.nav, D = G3X.display, SIM = G3X.sim, AV = G3X.avionics, AP = G3X.autopilot, esc = U.esc;
+  const U = G3X.util, NAV = G3X.nav, D = G3X.display, SIM = G3X.sim, AV = G3X.avionics, esc = U.esc;
   const A = () => AV.A;
 
   // gebeurtenissenbus voor de scenario-controle
@@ -226,15 +226,6 @@ window.G3X = window.G3X || {};
       onOpen: d => { const b = d.el.querySelector('.obs'); if (b) b.onclick = () => { if (!a.nav || !a.nav.valid) { UI.toast('No active waypoint'); return; } a.fpl.obs = !a.fpl.obs; if (a.fpl.obs) a.crs1 = Math.round(a.nav.dtk); bus.emit('obs', a.fpl.obs); UI.closeDialog(); }; } });
   };
 
-  // ---------- autopilot-paneel ----------
-  UI.openApPanel = () => {
-    const html = `<div class="ap-panel">${['HDG', 'TRK', 'NAV', 'APR', 'AP', 'FD', 'ALT', 'VS', 'IAS', 'VNV', 'LVL', 'GA'].map(b => `<button class="ap-btn" data-b="${b}">${b}</button>`).join('')}<button class="ap-btn" data-b="UP">▲ NOSE UP</button><button class="ap-btn" data-b="DN">▼ NOSE DN</button><button class="ap-btn danger" data-b="DISC">AP DISC</button></div><div class="ap-status"></div>`;
-    const d = UI.openDialog({ title: 'Autopilot (GMC 507)', html, width: 520, buttons: [{ label: 'Close' }] });
-    const refresh = () => { const st = AP.status(); d.el.querySelector('.ap-status').innerHTML = `AP <b class="${st.on ? 'g' : ''}">${st.on ? 'ON' : 'OFF'}</b> · FD <b>${st.fd ? 'ON' : 'OFF'}</b> · ${esc(st.lat)}${st.latArm ? ' <i>(' + esc(st.latArm) + ')</i>' : ''} / ${esc(st.vert)} ${esc(st.vertRef)}${st.vertArm ? ' <i>(' + esc(st.vertArm) + ')</i>' : ''}`; d.el.querySelectorAll('.ap-btn').forEach(b => { const id = b.dataset.b; const p = A().ap; b.classList.toggle('on', (id === 'AP' && p.on) || (id === 'FD' && p.fd) || p.lat === id || p.vert === id || (id === 'NAV' && (p.lat === 'NAV' || p.latArm === 'NAV')) || (id === 'APR' && (p.lat === 'APR' || p.latArm === 'APR')) || (id === 'VNV' && (p.vert === 'VNV' || p.vertArm.includes('VNV')))); }); };
-    d.el.querySelectorAll('.ap-btn').forEach(b => { b.onclick = () => { UI.apButton(b.dataset.b); refresh(); }; });
-    d.refresh = refresh; refresh();
-  };
-  UI.apButton = id => { AP.press(id); bus.emit('ap', id); if (G3X.audio) G3X.audio.play('click'); if (UI.dialog && UI.dialog.refresh) UI.dialog.refresh(); if (G3X.main) G3X.main.refreshApPanel(); };
 
   // ---------- PFD-opties / menu ----------
   UI.openPfdOptions = () => {
@@ -612,13 +603,13 @@ window.G3X = window.G3X || {};
         return;
       }
       case 'VNAV': {
-        const n = a.nav; const v = n && n.vnav; const p = a.ap;
+        const n = a.nav; const v = n && n.vnav;
         const cons = a.fpl.wpts.filter(w => w.alt != null && !w.missed);
         h = head('VNAV') + `<div class="page-body opts"><div class="info-grid">
-          <div>Next constraint<b>${v ? v.wpt + ' at ' + v.alt + ' FT' : '—'}</b></div><div>Distance to TOD<b>${v ? (v.todDis > 0 ? U.fmtDis(v.todDis) + ' NM · ' + U.fmtEte(v.todEte) : 'PAST TOD') : '—'}</b></div><div>Required vertical speed<b>${v ? Math.round(v.reqFpm) + ' FPM' : '—'}</b></div><div>Vertical deviation<b>${v ? (v.vdev > 0 ? '+' : '') + Math.round(v.vdev) + ' FT' : '—'}</b></div><div>Descent angle<b>3.0°</b></div><div>AP VNV<b>${p.vert === 'VNV' ? 'ACTIVE (VPTH)' : p.vertArm.includes('VNV') ? 'ARMED' : 'OFF'}</b></div></div>
+          <div>Next constraint<b>${v ? v.wpt + ' at ' + v.alt + ' FT' : '—'}</b></div><div>Distance to TOD<b>${v ? (v.todDis > 0 ? U.fmtDis(v.todDis) + ' NM · ' + U.fmtEte(v.todEte) : 'PAST TOD') : '—'}</b></div><div>Required vertical speed<b>${v ? Math.round(v.reqFpm) + ' FPM' : '—'}</b></div><div>Vertical deviation<b>${v ? (v.vdev > 0 ? '+' : '') + Math.round(v.vdev) + ' FT' : '—'}</b></div><div>Descent angle<b>3.0°</b></div><div>Deviation indicator<b>${v && v.todDis < 5 ? 'SHOWN ON PFD (V)' : 'OFF'}</b></div></div>
           <h4>Altitude constraints in the flight plan</h4>${cons.length ? cons.map(w => `<div class="opt-row"><span>${esc(w.id)}</span><b>${w.alt} FT</b></div>`).join('') : '<p class="muted">None. Touch a waypoint in the Active Flight Plan → Set Altitude (VNAV).</p>'}
-          <div class="btns"><button class="pbtn gofpl">Active Flight Plan</button><button class="pbtn vnv">${p.vert === 'VNV' || p.vertArm.includes('VNV') ? 'Disarm VNV' : 'Arm VNV on autopilot'}</button></div></div>`;
-        P.innerHTML = h; P.querySelector('.gofpl').onclick = () => UI.showPage('FPL'); P.querySelector('.vnv').onclick = () => { UI.apButton('VNV'); UI.pageBuilt = null; };
+          <p class="muted">Fly the descent manually: keep the magenta V chevron centred (≈ 3°, about 300 ft per NM).</p><div class="btns"><button class="pbtn gofpl">Active Flight Plan</button></div></div>`;
+        P.innerHTML = h; P.querySelector('.gofpl').onclick = () => UI.showPage('FPL');
         return;
       }
       case 'WB': {

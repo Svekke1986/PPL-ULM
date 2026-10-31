@@ -93,7 +93,7 @@ window.G3X = window.G3X || {};
     const turbP = a.onGround ? 0 : env.gustV * 1.5 * Math.sin(S.t * 1.7) + env.turb * 0.6 * Math.sin(S.t * 3.1 + 1);
     const turbR = a.onGround ? 0 : env.gustV * 3 * Math.cos(S.t * 1.3) + env.turb * 1.2 * Math.sin(S.t * 2.3);
 
-    // stuurcommando's (pilot of autopilot) -> pitch- en rolsnelheden
+    // stuurcommando's -> pitch- en rolsnelheden
     const pr = S.cmds.pitchRate, rr = S.cmds.rollRate;
     if (!a.onGround) {
       a.pitch = U.clamp(a.pitch + (pr + turbP * 0.3) * dt, -60, 60);

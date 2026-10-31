@@ -50,7 +50,7 @@ window.G3X = window.G3X || {};
         mk(`Stel de baro in op <b>${qnh} hPa</b>.`, 'Tik op het baro-veld onder de hoogtetape, of draai de buitenring van de linkerknop na één keer drukken (BARO/CRS).', (S, A) => !A.baroStd && A.baro === qnh),
         mk(`Zet de heading bug op <b>${U.fmtHdg(hdg)}°</b>.`, 'Buitenring van de linkerknop (HDG), of tik op de HSI en voer de waarde in.', (S, A) => A.hdgBug === hdg),
         mk(`Zet de geselecteerde hoogte op <b>${alt} ft</b>.`, 'Binnenring van de linkerknop (ALT) of tik op het cyaan hoogtevak boven de hoogtetape.', (S, A) => A.altSel === alt),
-        mk('Vlieg zelf naar de ingestelde heading (±5°) en hoogte (±100 ft) en houd dat 15 s vast. Je mag de autopilot gebruiken.', 'AP-balk aantikken → HDG en ALT/VS. Of handmatig met de pijltjestoetsen.', hold((S, A) => hdgNear(S.ac.hdg, hdg, 5) && near(AV.indAlt(), alt, 100), 15)),
+        mk('Vlieg naar de ingestelde heading (±5°) en hoogte (±100 ft) en houd dat 15 s vast.', 'Pijltjestoetsen of stuurknuppel; kleine correcties. De heading bug en de hoogtebug op de tapes helpen je.', hold((S, A) => hdgNear(S.ac.hdg, hdg, 5) && near(AV.indAlt(), alt, 100), 15)),
       ] };
   });
   add('pfd_std', 'Basis & PFD', 'Transitiehoogte: STD en terug naar QNH', () => {
@@ -58,7 +58,7 @@ window.G3X = window.G3X || {};
     return { title: 'STD boven de transitiehoogte', start, intro: chatter('Brussels Information', `OO-XYZ, klim naar FL 55, transitiehoogte 4500 ft. Bij de daling: QNH ${qnh}.`),
       steps: [
         mk('Klim door de transitiehoogte (4500 ft) en zet de hoogtemeter op <b>STD</b> (1013).', 'Tik op het baro-veld → STD.', (S, A) => A.baroStd && AV.indAlt() > 4500),
-        mk('Bereik FL 55 (±150 ft op STD) en houd 10 s.', 'Zet 5500 in het hoogtevak en gebruik ALT/VS op de AP.', hold((S, A) => A.baroStd && near(AV.indAlt(), 5500, 150), 10)),
+        mk('Bereik FL 55 (±150 ft op STD) en houd 10 s.', 'Zet 5500 in het hoogtevak: de hoogtebug toont dan je doel op de tape.', hold((S, A) => A.baroStd && near(AV.indAlt(), 5500, 150), 10)),
         mk(`Daal en zet bij het passeren van het transitieniveau weer <b>QNH ${qnh}</b>.`, 'Baro-veld → cijfers invoeren → Enter.', (S, A) => !A.baroStd && A.baro === qnh && AV.indAlt() < 5300),
         q('Waarom gebruik je STD boven de transitiehoogte?', ['Zodat alle toestellen dezelfde referentie gebruiken voor verticale separatie', 'Omdat de QNH daar niet meer geldt', 'Omdat de hoogtemeter anders te snel verandert', 'Omdat de GPS-hoogte dan nauwkeuriger is'], 0, 'Boven de transitiehoogte vliegt iedereen op flight levels (1013,25 hPa), zodat verticale separatie klopt ongeacht de lokale QNH.'),
       ] };
@@ -69,7 +69,7 @@ window.G3X = window.G3X || {};
       steps: [
         mk(`Stel de minimums in op <b>${mins} ft</b> en schakel ze in.`, 'Tik op de snelheidstape → PFD Options → Minimums Altitude.', (S, A) => A.minimumsOn && A.minimums === mins),
         mk('Daal tot de melding MINIMUMS verschijnt (de minimums-bug op de hoogtetape wordt geel).', 'Daal met VS −500 of handmatig.', (S, A) => A.minFlag === true),
-        mk(`Vlieg een go-around: klim tot minstens <b>${mins + 800} ft</b>.`, 'Vol gas, neus omhoog, of AP → GA (TO/GA).', (S, A) => AV.indAlt() > mins + 800),
+        mk(`Vlieg een go-around: klim tot minstens <b>${mins + 800} ft</b>.`, 'Vol gas, neus omhoog (Vy 69 kt), flaps op.', (S, A) => AV.indAlt() > mins + 800),
         q('Wat doe je bij een circling/visuele nadering als je op minimums de baan niet ziet?', ['Doorstarten (missed approach)', 'Nog 100 ft verder dalen', 'Op dezelfde hoogte doorvliegen tot je de baan ziet', 'De snelheid verlagen'], 0, 'Zonder visuele referentie op de beslissingshoogte voer je de missed approach uit.'),
       ] };
   });
@@ -93,7 +93,7 @@ window.G3X = window.G3X || {};
         mkQ('Wat is de <b>OAT</b>?', () => SIM.oat(), 2, v => v + ' °C'),
         mkQ('Wat is je <b>ware luchtsnelheid</b> (TAS, onder de snelheidstape)?', S => S.ac.tas, 5, v => v + ' kt'),
         mkQ('Wat is je <b>geïndiceerde hoogte</b> (afgerond op 100 ft)?', () => AV.indAlt(), 100, v => v + ' ft'),
-        q('Wat betekent de magenta lijn naast de snelheidstape?', ['Trendvector: de snelheid over ±6 s als de versnelling gelijk blijft', 'De geselecteerde snelheid van de autopilot', 'De maximale structurele snelheid', 'De snelheid van de wind'], 0, 'De trendvector toont waar de snelheid (of hoogte) over 6 seconden zal zijn.'),
+        q('Wat betekent de magenta lijn naast de snelheidstape?', ['Trendvector: de snelheid over ±6 s als de versnelling gelijk blijft', 'De geselecteerde snelheid', 'De maximale structurele snelheid', 'De snelheid van de wind'], 0, 'De trendvector toont waar de snelheid (of hoogte) over 6 seconden zal zijn.'),
       ] };
   });
   add('pfd_settings', 'Basis & PFD', 'PFD-opties: SVT, bearing pointers, V-snelheden', () => {
@@ -160,7 +160,7 @@ window.G3X = window.G3X || {};
         q(`Welke morse-ident hoort bij ${vor.id}? (De G3X toont de gedecodeerde ident onder NAV1.)`, U.shuffle([U.morse(vor.id), U.morse(vor.id.split('').reverse().join('')), U.morse(vor.id.slice(1) + vor.id[0]), U.morse('XYZ')]).map(x => x), null, `Ident ${vor.id} = ${U.morse(vor.id)}.`),
         mk('Zet de CDI-bron op <b>NAV1</b> (VOR1).', 'Tik op het bronlabel links boven de HSI (GPS → NAV1).', (S, A) => A.navSource === 'NAV1'),
         mk(`Zet CRS op <b>${U.fmtHdg(inbound)}°</b> (TO).`, 'CRS-veld rechts naast de HSI of binnenring linkerknop (BARO/CRS).', (S, A) => hdgNear(A.nav1.obs, inbound, 2)),
-        mk('Onderschep de koers: naald gecentreerd (binnen ½ dot) met TO-vlag, 15 s lang.', 'Vlieg naar de naald toe met een onderscheppingshoek van ca. 30–45°. AP: NAV-modus werkt ook met VOR.', hold((S, A) => A.nav1.data.valid && Math.abs(A.nav1.data.dev) < 0.5 && A.nav1.data.toFrom === 'TO', 15)),
+        mk('Onderschep de koers: naald gecentreerd (binnen ½ dot) met TO-vlag, 15 s lang.', 'Vlieg naar de naald toe met een onderscheppingshoek van ca. 30–45°.', hold((S, A) => A.nav1.data.valid && Math.abs(A.nav1.data.dev) < 0.5 && A.nav1.data.toFrom === 'TO', 15)),
       ] };
   });
   // corrigeer: voor de morse-vraag zetten we correct dynamisch
@@ -174,8 +174,8 @@ window.G3X = window.G3X || {};
         mk(`Stem NAV1 af op <b>${U.fmtNav(freq)}</b> (actief).`, 'NAV1-standby (PFD linksonder) → frequentie → XFER. Tip: de ILS-frequentie staat ook in de waypoint-info van het vliegveld.', (S, A) => near(A.nav1.active, freq, 0.001)),
         mk('CDI-bron op <b>NAV1</b>; de ident verschijnt als de localizer wordt ontvangen.', 'Bronlabel boven de HSI.', (S, A) => A.navSource === 'NAV1' && A.nav1.data.loc),
         mk(`Zet CRS op de eindkoers <b>${U.fmtHdg(re.hdg)}°</b>.`, 'CRS-veld naast de HSI.', (S, A) => hdgNear(A.nav1.obs, re.hdg, 2)),
-        mk('Onderschep de localizer: naald binnen ½ dot gedurende 10 s.', 'AP → APR met NAV1 als bron, of handmatig.', hold((S, A) => A.nav1.data.loc && Math.abs(A.nav1.data.dev) < 0.5, 10)),
-        mk('Volg de glideslope: verticale afwijking binnen 1 dot gedurende 15 s (onder 1500 ft AGL).', 'Daal met ca. 300–400 fpm bij 70–80 kt; AP: APR vangt GS.', hold((S, A) => A.nav1.data.gsValid && Math.abs(A.nav1.data.gsDev) < 1 && S.ac.agl < 1500, 15)),
+        mk('Onderschep de localizer: naald binnen ½ dot gedurende 10 s.', 'Onderschep met max. 30° hoek; verklein de correctie naarmate de naald centreert.', hold((S, A) => A.nav1.data.loc && Math.abs(A.nav1.data.dev) < 0.5, 10)),
+        mk('Volg de glideslope: verticale afwijking binnen 1 dot gedurende 15 s (onder 1500 ft AGL).', 'Daal met ca. 300–400 fpm bij 70–80 kt: naald omhoog = jij zit te laag.', hold((S, A) => A.nav1.data.gsValid && Math.abs(A.nav1.data.gsDev) < 1 && S.ac.agl < 1500, 15)),
       ] };
   });
   add('com_8_33', 'Radio & transponder', 'Nauwkeurig 8,33-kanaal invoeren en MIC wisselen', () => {
@@ -196,7 +196,7 @@ window.G3X = window.G3X || {};
     return { title: `Direct-To ${apt.id}`, start, intro: `<p>Vlieg rechtstreeks naar <b>${esc(apt.name)} (${apt.id})</b>.</p>`,
       steps: [
         mk(`Activeer <b>Direct-To ${apt.id}</b>.`, 'Toets D→ op de bezel → typ de ID (of tabblad Nearest Airports) → Activate.', (S, A) => A.fpl.directTo && A.fpl.directTo.to.id === apt.id),
-        mk('Draai naar de DTK en houd de CDI gecentreerd (XTK < 0,3 nm) gedurende 20 s.', 'Lees DTK af in de databalk; stuur tot de magenta naald in het midden staat. AP: NAV.', hold((S, A) => A.nav && A.nav.valid && Math.abs(A.nav.xtk) < 0.3 && hdgNear(S.ac.trk, A.nav.dtk, 15), 20)),
+        mk('Draai naar de DTK en houd de CDI gecentreerd (XTK < 0,3 nm) gedurende 20 s.', 'Lees DTK af in de databalk; stuur tot de magenta naald in het midden staat.', hold((S, A) => A.nav && A.nav.valid && Math.abs(A.nav.xtk) < 0.3 && hdgNear(S.ac.trk, A.nav.dtk, 15), 20)),
         (() => ({ text: 'Wat is de ETE naar het waypoint (minuten, afgerond)?', makeQuestion: (S, A) => { const m = Math.round(A.nav.ete); const o = numOpts(m, 3, v => Math.max(0, v) + ' min'); return { options: o.options, correct: o.correct, explain: `DIS ${A.nav.dis.toFixed(1)} nm ÷ GS ${Math.round(S.ac.gs)} kt × 60 = ${m} min.` }; } }))(),
         mk('Zet het bereik van de kaart zo dat het waypoint zichtbaar is (bereik ≥ afstand) en op <b>Track up</b>.', 'Rechterknop (buiten) = bereik; Menu op de kaart = Orientation.', (S, A) => A.map.range >= A.nav.dis * 0.9 && A.map.orient === 'TRKUP'),
       ] };
@@ -241,7 +241,7 @@ window.G3X = window.G3X || {};
     return { title: `Direct-To ${vor.id} met koers ${U.fmtHdg(crs)}`, start, intro: chatter('Liège Approach', `OO-XYZ, route direct ${vor.id}, intercept inbound course ${U.fmtHdg(crs)}.`),
       steps: [
         mk(`Activeer Direct-To <b>${vor.id}</b> met koers <b>${U.fmtHdg(crs)}°</b>.`, 'D→ → Waypoint → ID ' + vor.id + ' → “Course To” → voer de koers in.', (S, A) => A.fpl.directTo && A.fpl.directTo.to.id === vor.id && A.fpl.directTo.crs != null && hdgNear(A.fpl.directTo.crs, crs, 2)),
-        mk('Onderschep de koers: XTK < 0,2 nm gedurende 15 s.', 'Vlieg met 30–45° onderschepping naar de magenta lijn. AP: NAV (eerst gewapend, dan gevangen).', hold((S, A) => A.nav && A.nav.valid && Math.abs(A.nav.xtk) < 0.2, 15)),
+        mk('Onderschep de koers: XTK < 0,2 nm gedurende 15 s.', 'Vlieg met 30–45° onderschepping naar de magenta lijn.', hold((S, A) => A.nav && A.nav.valid && Math.abs(A.nav.xtk) < 0.2, 15)),
         q('Wat is het verschil tussen een gewone Direct-To en Direct-To met koers?', ['Met koers vlieg je eerst naar een vastgelegde lijn door het waypoint, i.p.v. een rechte lijn vanaf je huidige positie', 'Met koers is sneller', 'Met koers gebruikt de VOR in plaats van GPS', 'Er is geen verschil'], 0, 'Met een koers legt de G3X een lijn door het waypoint; handig voor een inbound radiaal of een verlengde baanas.'),
       ] };
   });
@@ -299,9 +299,9 @@ window.G3X = window.G3X || {};
     return { title: `VNAV naar ${vrp.id}`, start, av, intro: `<p>Je nadert <b>${vrp.id}</b> op 4000 ft en wilt daar op <b>${target} ft</b> aankomen met een VNAV-daling.</p>`,
       steps: [
         mk(`Stel bij <b>${vrp.id}</b> in het vluchtplan de hoogte <b>${target} ft</b> in.`, 'FPL → rij ' + vrp.id + ' → Set Altitude (VNAV).', (S, A) => A.fpl.wpts.some(w => w.id === vrp.id && w.alt === target)),
-        mk(`Zet de geselecteerde hoogte op <b>${target} ft</b>, schakel de AP in met NAV + ALT en <b>arm VNV</b>.`, 'AP-balk → AP, NAV, ALT, VNV. Hoogtevak → ' + target + '.', (S, A) => A.ap.on && A.altSel === target && (A.ap.vertArm.includes('VNV') || A.ap.vert === 'VNV')),
-        mk('Wacht op het top-of-descent (TOD): de AP gaat naar VPTH en daalt op het 3°-profiel.', 'Let op de verticale afwijkingsindicator (V) naast de hoogtetape.', (S, A) => A.ap.vert === 'VNV' || (A.ap.vert === 'ALT' && near(A.ap.altRef, target, 50) && AV.indAlt() < target + 200)),
-        mk(`Bereik ${vrp.id} binnen 2 nm op ${target} ±150 ft.`, 'Laat de AP het werk doen; controleer snelheid en vermogen.', (S, A) => U.distNm(S.ac, vrp) < 2 && near(AV.indAlt(), target, 150)),
+        mk(`Zet de geselecteerde hoogte op <b>${target} ft</b> en open de pagina <b>VNAV</b> (Main Menu): lees de afstand tot het top-of-descent (TOD) af.`, 'Hoogtevak → ' + target + '. Main Menu (MENU 2×) → VNAV.', (S, A) => A.altSel === target && A.mfdPage === 'VNAV'),
+        mk('Begin de daling bij het TOD en houd de magenta <b>V</b>-indicator naast de hoogtetape gecentreerd (afwijking < 150 ft) gedurende 20 s.', 'Ongeveer 500 fpm bij 100 kt GS; chevron boven het midden = je zit te laag.', hold((S, A) => A.nav && A.nav.vnav && A.nav.vnav.todDis <= 0 && Math.abs(A.nav.vnav.vdev) < 150 && S.ac.vs < -200, 20)),
+        mk(`Bereik ${vrp.id} binnen 2 nm op ${target} ±150 ft.`, 'Vlak tijdig uit; de hoogtealert waarschuwt 200 ft vóór de geselecteerde hoogte.', (S, A) => U.distNm(S.ac, vrp) < 2 && near(AV.indAlt(), target, 150)),
       ] };
   });
   add('nrst_airspace', 'Navigatie (GPS)', 'Luchtruim in de buurt opzoeken', () => {
@@ -315,98 +315,29 @@ window.G3X = window.G3X || {};
       ] };
   });
 
-  // === Autopilot ===
-  add('ap_hdg_alt', 'Autopilot', 'AP: HDG en hoogte houden, klimmen met VS', () => {
-    const hdg = R.hdg(); const start = R.airborne(HOME, { alt: 2000 }); const alt2 = 2000 + U.pick([1000, 1500]);
-    return { title: 'AP HDG / ALT / VS', start, intro: `<p>Oefen de basismodi van de GFC 500. Bedieningspaneel: tik op de AP-statusbalk of gebruik het paneel onder het scherm.</p>`,
-      steps: [
-        mk(`Zet de heading bug op <b>${U.fmtHdg(hdg)}°</b>, schakel de <b>AP</b> in met <b>HDG</b> en <b>ALT</b>.`, 'AP-balk → AP → HDG → ALT. Groene modi: HDG / ALT.', (S, A) => A.ap.on && A.ap.lat === 'HDG' && A.ap.vert === 'ALT' && A.hdgBug === hdg),
-        mk('Wacht tot het toestel op heading is (±3°) en de hoogte binnen 50 ft wordt gehouden, 10 s.', 'Geduld: de AP draait met max. 25° bank.', hold((S, A) => hdgNear(S.ac.hdg, hdg, 3) && near(AV.indAlt(), A.ap.altRef, 50), 10)),
-        mk(`Zet de geselecteerde hoogte op <b>${alt2} ft</b> en klim met <b>VS +500 fpm</b>. Verhoog het vermogen!`, 'Hoogtevak → ' + alt2 + '. AP → VS, dan NOSE UP tot +500. ALTS wordt wit gewapend.', (S, A) => A.altSel === alt2 && A.ap.vert === 'VS' && A.ap.vsRef >= 400 && A.ap.vsRef <= 700, { fail: S => S.ac.ias < 60 ? 'Snelheid te laag in de klim: meer vermogen of minder VS.' : null }),
-        mk('Laat de AP de hoogte vangen (ALTS → ALT) en houd ze 10 s binnen 50 ft.', 'Bij nadering van de hoogte schakelt de AP automatisch naar ALT.', hold((S, A) => A.ap.vert === 'ALT' && near(AV.indAlt(), alt2, 50), 10)),
-        q('Wat betekent een witte “ALTS” in de AP-balk?', ['De hoogtevangst is gewapend: bij de geselecteerde hoogte gaat de AP over naar ALT', 'De hoogte wordt nu gehouden', 'De AP is uitgeschakeld', 'De hoogtemeter is defect'], 0, 'Wit = gewapend (armed), groen = actief.'),
-      ] };
-  });
-  add('ap_ias', 'Autopilot', 'AP: klimmen in IAS-modus (beste klimsnelheid)', () => {
-    const start = R.airborne(HOME, { alt: 1500, ias: 85 }); const alt2 = U.pick([3000, 3500, 4000]);
-    return { title: 'AP IAS-klim', start, intro: '<p>Klim met constante snelheid (Vy ≈ 69 kt) naar de opgegeven hoogte. De AP regelt de pitch, jij het vermogen.</p>',
-      steps: [
-        mk(`Hoogte <b>${alt2} ft</b> selecteren, AP aan (HDG of ROL), verticaal <b>IAS 69 kt</b> (±2), vol gas.`, 'AP → IAS; met NOSE UP/DN pas je de referentiesnelheid aan (1 kt per stap).', (S, A) => A.ap.on && A.altSel === alt2 && A.ap.vert === 'IAS' && near(A.ap.iasRef, 69, 2) && S.ac.throttle > 0.9),
-        mk('Houd de klim: snelheid 69 ±5 kt en VS > +300 fpm gedurende 15 s.', 'Controleer de motorinstrumenten (CHT) tijdens de klim.', hold((S, A) => near(S.ac.ias, 69, 5) && S.ac.vs > 300, 15)),
-        mk(`Laat de hoogte vangen op ${alt2} ft en verminder het vermogen naar kruisvermogen (4800–5200 rpm).`, 'ALTS → ALT. Daarna gas terug.', hold((S, A) => A.ap.vert === 'ALT' && near(AV.indAlt(), alt2, 60) && S.eng.rpm >= 4700 && S.eng.rpm <= 5300, 6)),
-        q('Waarom IAS-modus in plaats van VS in een lange klim?', ['De snelheid blijft veilig; met VS kan de snelheid wegzakken als het vermogen afneemt op hoogte', 'IAS klimt altijd sneller', 'VS werkt niet boven 3000 ft', 'IAS gebruikt minder brandstof'], 0, 'VS houdt de stijgsnelheid vast ongeacht de luchtsnelheid — gevaarlijk bij afnemend vermogen.'),
-      ] };
-  });
-  add('ap_nav', 'Autopilot', 'AP: GPS-koers onderscheppen (NAV)', () => {
-    const vrp = R.vrp({ min: 10, max: 25 }); const start = R.airborne(vrp, { dist: 12, alt: 2500 });
-    const av = () => { AV.fplClear(); AV.fplAdd(HOME); AV.fplAdd(vrp); const from = U.dest(vrp, U.norm360(U.bearing(vrp, SIM.S.ac) + U.pick([-35, 35])), 20); AV.A.fpl.directTo = { from: Object.assign(from, { id: 'PPOS' }), to: AV.A.fpl.wpts[1], crs: U.bearing(from, vrp), inFpl: true }; };
-    return { title: `NAV-onderschepping ${vrp.id}`, start, av, intro: `<p>Er ligt een magenta koerslijn naar <b>${vrp.id}</b>; je zit er naast. Onderschep met de AP.</p>`,
-      steps: [
-        mk('Zet een heading bug met 30–45° onderscheppingshoek naar de koerslijn en schakel AP + HDG in.', 'Kijk op de HSI aan welke kant de naald staat; draai die kant op.', (S, A) => A.ap.on && A.ap.lat === 'HDG' && A.nav && Math.abs(U.norm180(A.hdgBug - A.nav.dtk)) >= 20 && Math.sign(U.norm180(A.hdgBug - A.nav.dtk)) === Math.sign(A.nav.xtk) * -1),
-        mk('Arm <b>NAV</b> (wit) en wacht tot de koers gevangen is (groen GPS).', 'AP → NAV. Zolang je ver van de lijn bent blijft NAV gewapend.', (S, A) => A.ap.lat === 'NAV'),
-        mk('Volg de koers met XTK < 0,15 nm gedurende 20 s.', 'De AP corrigeert zelf voor wind.', hold((S, A) => A.ap.lat === 'NAV' && Math.abs(A.nav.xtk) < 0.15, 20)),
-        q('De AP staat in NAV, maar je ziet dat de CDI naar GPS LOI gaat. Wat gebeurt er?', ['De AP valt terug naar ROL (koers houden); je moet zelf navigeren', 'De AP volgt de laatste koers tot het waypoint', 'De AP schakelt automatisch naar VOR', 'Niets, GPS LOI is alleen informatief'], 0, 'Zonder geldige navigatiebron kan NAV niet sturen; de modus wordt gewapend/ROL.'),
-      ] };
-  });
-  add('ap_lvl', 'Autopilot', 'Ongewone stand: LVL-herstel', () => {
-    const start = R.airborne(HOME, { alt: 3200, ias: 110 }); const bank = U.pick([-50, 50]), pitch = U.pick([-18, 22]);
-    start.extra = { bank, pitch };
-    return { title: 'LVL-herstel', start, intro: '<p>Je raakte gedesoriënteerd in slecht zicht. Het toestel zit in een ongewone stand. Gebruik de <b>LVL</b>-knop.</p>',
-      steps: [
-        mk('Druk op <b>LVL</b>.', 'AP-paneel → LVL (of toets L).', (S, A) => A.ap.lat === 'LVL' && A.ap.on, { fail: S => S.ac.stall ? 'Overtrek! Druk zo snel mogelijk op LVL en verminder de aanvalshoek.' : null }),
-        mk('Wacht tot bank < 5° en VS binnen ±200 fpm, 8 s lang.', 'LVL brengt vleugels horizontaal en stopt klimmen/dalen.', hold(S => Math.abs(S.ac.bank) < 5 && Math.abs(S.ac.vs) < 200, 8)),
-        mk('Schakel over naar <b>HDG</b> en <b>ALT</b> en zet een veilige hoogte (≥ 2500 ft) als referentie.', 'AP → HDG, ALT; hoogtevak → bv. 3000.', (S, A) => A.ap.lat === 'HDG' && A.ap.vert === 'ALT' && A.altSel >= 2500),
-        q('Wanneer is LVL vooral bedoeld?', ['Als noodknop bij desoriëntatie of verlies van controle: vleugels recht, nul VS', 'Om preciezer op hoogte te vliegen dan ALT', 'Voor de landing', 'Om het toestel te trimmen'], 0, 'LVL (Level Mode) is een veiligheidsfunctie van de GFC 500.'),
-      ] };
-  });
-  add('ap_disc', 'Autopilot', 'AP ontkoppelen en handmatig overnemen', () => {
-    const hdg = R.hdg(); const alt = R.alt(2000, 3500); const start = R.airborne(HOME, { alt, hdg });
-    const av = A => { A.ap.on = true; A.ap.fd = true; A.ap.lat = 'HDG'; A.ap.vert = 'ALT'; A.ap.altRef = alt; A.hdgBug = hdg; };
-    return { title: 'AP ontkoppelen', start, av, intro: `<p>De AP vliegt HDG ${U.fmtHdg(hdg)}° op ${alt} ft. Neem over en vlieg handmatig verder.</p>`,
-      steps: [
-        mk('Ontkoppel de AP (AP DISC). Bevestig de gele “AP”-melding door nogmaals te drukken of te wachten.', 'AP-paneel → AP DISC, of toets A / spatie. De ontkoppeltoon klinkt.', (S, A) => !A.ap.on),
-        mk(`Houd handmatig heading ${U.fmtHdg(hdg)}° ±8° en hoogte ${alt} ±100 ft gedurende 25 s.`, 'Pijltjes: ↑ neus omlaag, ↓ neus omhoog, ←→ rol. Kleine correcties!', hold(S => hdgNear(S.ac.hdg, hdg, 8) && near(AV.indAlt(), alt, 100), 25)),
-        mk('Schakel de <b>flight director</b> in zonder AP (FD) en volg de magenta commandobalk 10 s binnen 50 ft/5°.', 'AP-paneel → FD → HDG/ALT. De balk toont wat de AP zou doen.', hold((S, A) => A.ap.fd && !A.ap.on && Math.abs(A.ap.pitchCmd - S.ac.pitch) < 2 && Math.abs(A.ap.bankCmd - S.ac.bank) < 6, 10)),
-      ] };
-  });
-  add('ap_apr_rnp', 'Autopilot', 'RNP-nadering met APR en glijpad', () => {
+  add('apr_rnp', 'Navigatie (GPS)', 'RNP-nadering handmatig vliegen (CDI en glijpad)', () => {
     const apts = Object.keys(NAV.APPROACHES).filter(id => NAV.APPROACHES[id].some(p => p.type === 'RNP')); const aptId = U.pick(apts); const apt = NAV.find(aptId);
-    const idx = NAV.APPROACHES[aptId].findIndex(p => p.type === 'RNP'); const ap = NAV.APPROACHES[aptId][idx]; const iaf = ap.legs[0];
+    const idx = NAV.APPROACHES[aptId].findIndex(p => p.type === 'RNP'); const ap = NAV.APPROACHES[aptId][idx]; const iaf = ap.legs[0]; const faf = ap.legs.find(l => l.faf);
     const start = { airborne: true, ...U.dest(iaf, U.norm360(U.bearing(ap.legs[1], iaf) + U.rnd(-30, 30)), 8), alt: iaf.alt + 500, hdg: Math.round(U.bearing(U.dest(iaf, U.bearing(ap.legs[1], iaf), 8), iaf)), ias: 90, env: R.env(), fuelL: 35, fuelR: 35, fuelSel: 'R' };
     const av = () => { AV.fplClear(); AV.fplAdd(HOME); AV.fplAdd(apt); };
-    return { title: `RNP ${ap.rwy} ${aptId}`, start, av, intro: chatter(`${apt.name}`, `OO-XYZ, cleared ${ap.name} approach via ${iaf.id}. Report established.`),
+    return { title: `RNP ${ap.rwy} ${aptId} handmatig`, start, av, intro: chatter(`${apt.name}`, `OO-XYZ, cleared ${ap.name} approach via ${iaf.id}. Report established.`),
       steps: [
-        mk(`Laad de <b>${ap.name}</b> op ${aptId} met transitie <b>${iaf.id}</b> en activeer ze.`, 'FPL → PROC (of Main Menu (MENU 2×) → Procedures) → vliegveld, nadering, transitie → Load & Activate.', (S, A) => A.fpl.approach && A.fpl.approach.apt === aptId && A.fpl.approach.name === ap.name && A.fpl.approach.transition === iaf.id && A.fpl.approach.active),
-        mk(`Zet de hoogte van de FAF (<b>${ap.legs.find(l => l.faf).alt} ft</b>) als geselecteerde hoogte, AP aan met <b>NAV</b> en ALT/VS.`, 'Daal tijdig naar de FAF-hoogte.', (S, A) => A.ap.on && (A.ap.lat === 'NAV' || A.ap.latArm === 'NAV' || A.ap.lat === 'APR' || A.ap.latArm === 'APR') && A.altSel === ap.legs.find(l => l.faf).alt),
-        mk('Druk vóór de FAF op <b>APR</b>: GP wordt gewapend (wit).', 'AP → APR. De CDI-schaal gaat naar APR/LNAV+V.', (S, A) => (A.ap.lat === 'APR' || A.ap.latArm === 'APR') && (A.ap.vertArm.includes('GP') || A.ap.vert === 'GP')),
-        mk('Glijpad gevangen (GP groen) en gevolgd: verticale afwijking < 100 ft gedurende 15 s. Snelheid 70–85 kt, flaps T/O.', 'Vermogen terug tot ca. 3800–4200 rpm voor 3° bij 75 kt.', hold((S, A) => A.ap.vert === 'GP' && A.nav && Math.abs(A.nav.vdev || 0) < 100, 15), { fail: S => S.ac.ias > 95 ? 'Te snel op de eindnadering (> 95 kt).' : null }),
-        mk(`Op het MAP (${ap.legs.find(l => l.map).id}): druk op <b>GA</b> en volg de missed approach (SUSP opgeheven, klim).`, 'Bij SUSP: knop GA in het AP-paneel of toets G. Vol gas!', (S, A) => A.ap.lat === 'GA' || (A.fpl.wpts[A.fpl.active] && A.fpl.wpts[A.fpl.active].missed)),
-        mk(`Klim naar de missed-approach-hoogte (${ap.missed[0].alt} ft) ±150 ft.`, 'Zet de hoogte in het hoogtevak; ALTS vangt ze.', (S, A) => near(AV.indAlt(), ap.missed[0].alt, 150) && A.altSel === ap.missed[0].alt),
+        mk(`Laad de <b>${ap.name}</b> op ${aptId} met transitie <b>${iaf.id}</b> en activeer ze.`, 'FPL → PROC (of Main Menu → Procedures) → vliegveld, nadering, transitie → Load & Activate.', (S, A) => A.fpl.approach && A.fpl.approach.apt === aptId && A.fpl.approach.name === ap.name && A.fpl.approach.transition === iaf.id && A.fpl.approach.active),
+        mk(`Selecteer de FAF-hoogte (<b>${faf.alt} ft</b>) en daal ernaartoe (±150 ft) met de CDI gecentreerd (XTK < 0,3 nm), 15 s.`, 'Hoogtevak; CDI-schaal wordt TERM en daarna APR.', hold((S, A) => A.altSel === faf.alt && near(AV.indAlt(), faf.alt, 150) && A.nav && Math.abs(A.nav.xtk) < 0.3, 15)),
+        mk('Na de FAF: volg het glijpad (magenta diamant naast de hoogtetape) met afwijking < 100 ft gedurende 15 s. Snelheid 70–85 kt, flaps T/O.', 'Vermogen 3800–4200 rpm voor 3° bij 75 kt; diamant boven het midden = je zit te laag.', hold((S, A) => A.nav && A.nav.gpValid && Math.abs(A.nav.vdev || 0) < 100, 15), { fail: S => S.ac.ias > 95 ? 'Te snel op de eindnadering (> 95 kt).' : null }),
+        mk(`Op het MAP (${ap.legs.find(l => l.map).id}) verschijnt <b>SUSP</b>: ga door (vol gas, klimmen) en druk op SUSP voor de missed approach.`, 'SUSP onderaan of op de HSI.', (S, A) => A.fpl.wpts[A.fpl.active] && A.fpl.wpts[A.fpl.active].missed && S.ac.throttle > 0.8),
+        mk(`Klim naar de missed-approach-hoogte (${ap.missed[0].alt} ft ±150) met die hoogte geselecteerd.`, 'Hoogtevak; Vy 69 kt.', (S, A) => near(AV.indAlt(), ap.missed[0].alt, 150) && A.altSel === ap.missed[0].alt),
       ] };
   });
-  add('ap_apr_ils', 'Autopilot', 'ILS-nadering met APR (LOC/GS)', () => {
-    const cands = NAV.AIRPORTS.filter(a => a.rwys.some(r => r.ils) && NAV.APPROACHES[a.id] && NAV.APPROACHES[a.id].some(p => p.type === 'ILS')); const apt = U.pick(cands);
-    const idx = NAV.APPROACHES[apt.id].findIndex(p => p.type === 'ILS'); const ap = NAV.APPROACHES[apt.id][idx]; const re = NAV.runwayEnds(apt, ap.rwy);
-    const start = { airborne: true, ...U.dest(re.thr, U.norm360(re.hdg + 180 + U.pick([-30, 30])), 11), alt: apt.elev + 2500, hdg: U.norm360(re.hdg + U.pick([-45, 45])), ias: 90, env: R.env(), fuelL: 35, fuelR: 35, fuelSel: 'L' };
-    const av = () => { AV.fplClear(); AV.fplAdd(HOME); AV.fplAdd(apt); };
-    return { title: `ILS ${ap.rwy} ${apt.id} met AP`, start, av, intro: chatter(`${apt.name} Approach`, `OO-XYZ, turn heading ${U.fmtHdg(re.hdg + (U.norm180(start.hdg - re.hdg) > 0 ? 30 : -30))}, cleared ILS ${ap.rwy}, localizer ${U.fmtNav(ap.freq)}.`),
-      steps: [
-        mk(`NAV1 op <b>${U.fmtNav(ap.freq)}</b> actief, CDI-bron <b>NAV1</b>, CRS <b>${U.fmtHdg(re.hdg)}°</b>.`, 'NAV1-vak linksonder op de PFD → frequentie → XFER; bronlabel; CRS-veld.', (S, A) => near(A.nav1.active, ap.freq, 0.001) && A.navSource === 'NAV1' && hdgNear(A.nav1.obs, re.hdg, 2)),
-        mk('AP aan in HDG met een onderscheppingskoers (≤ 45° op de eindkoers) en druk op <b>APR</b> (LOC/GS gewapend).', 'AP → AP, HDG, APR.', (S, A) => A.ap.on && (A.ap.lat === 'APR' || A.ap.latArm === 'APR') && A.ap.vertArm.includes('GS')),
-        mk('Localizer gevangen (LOC1 groen).', 'Wachten tot de naald binnenkomt.', (S, A) => A.ap.lat === 'APR'),
-        mk('Glideslope gevangen (GS groen) en gevolgd gedurende 15 s binnen 1 dot.', 'Vermogen verminderen, flaps T/O, 75 kt.', hold((S, A) => A.ap.vert === 'GS' && Math.abs(A.nav1.data.gsDev) < 1, 15)),
-        mk('Op 500 ft AGL: ontkoppel de AP en land/doorstart handmatig (daal tot < 300 ft AGL of druk GA).', 'AP DISC; of GA voor de missed approach.', (S, A) => (!A.ap.on && S.ac.agl < 300) || A.ap.lat === 'GA'),
-      ] };
-  });
-  add('ap_ga', 'Autopilot', 'Go-around vanaf korte final', () => {
+  add('go_around', 'Volledige vluchten', 'Go-around vanaf korte final', () => {
     const apt = U.pick([HOME, NAV.find('EBST'), NAV.find('EBZW')]); const rwId = U.pick(apt.rwys[0].id.split('/')); const re = NAV.runwayEnds(apt, rwId);
     const start = { airborne: true, ...U.dest(re.thr, U.norm360(re.hdg + 180), 1.8), alt: apt.elev + 550, hdg: re.hdg, ias: 65, env: R.env(), fuelL: 30, fuelR: 30, fuelSel: 'L', flaps: 2, throttle: 0.35 };
     return { title: `Go-around ${apt.id} ${rwId}`, start, intro: chatter(`${apt.name} Radio`, `OO-XYZ, go around, I say again go around, traffic on the runway.`),
       steps: [
-        mk('Druk op <b>GA</b> (TO/GA): FD commandeert 7° neus omhoog, vleugels recht. Vol gas!', 'AP-paneel → GA, of toets G. Gas: PageUp / schuifregelaar.', (S, A) => A.ap.lat === 'GA' && S.ac.throttle > 0.9),
-        mk('Flaps naar <b>T/O</b> zodra je positief klimt, dan <b>UP</b> boven 60 kt en 300 ft AGL.', 'Toets F/V of knoppen in het paneel.', (S, A) => S.ac.vs > 200 && S.ac.flaps === 0 && S.ac.agl > 250, { fail: S => S.ac.ias > 80 && S.ac.flaps === 2 ? 'VFE overschreden met volle flaps!' : null }),
-        mk(`Klim naar circuit-hoogte (${apt.elev + 1000} ft ±100) en selecteer die hoogte; AP mag met HDG/ALT.`, 'Hoogtevak → ' + (apt.elev + 1000) + '.', (S, A) => near(AV.indAlt(), apt.elev + 1000, 100) && near(A.altSel, apt.elev + 1000, 60)),
-        q('Wat doet TO/GA met een gewapende nadering (SUSP op het MAP)?', ['De sequencing wordt hervat en de missed approach wordt actief', 'Het vluchtplan wordt gewist', 'De AP koppelt af', 'Niets, GA is enkel een FD-stand'], 0, 'GA heft SUSP op en activeert de missed-approach-legs.'),
+        mk('Vol gas, neus omhoog naar ca. 7°: positieve klim (VS > 200 fpm).', 'PageUp of schuifregelaar; ↓ voor neus omhoog.', S => S.ac.throttle > 0.9 && S.ac.vs > 200),
+        mk('Flaps naar <b>T/O</b>, dan <b>UP</b> boven 60 kt en 300 ft AGL.', 'Toets F/V of knoppen in het paneel.', (S, A) => S.ac.vs > 200 && S.ac.flaps === 0 && S.ac.agl > 250, { fail: S => S.ac.ias > 80 && S.ac.flaps === 2 ? 'VFE overschreden met volle flaps!' : null }),
+        mk(`Klim naar circuit-hoogte (${apt.elev + 1000} ft ±100) en selecteer die hoogte; heading bug op de baanrichting ${U.fmtHdg(re.hdg)}°.`, 'Hoogtevak; linkerknop buitenring.', (S, A) => near(AV.indAlt(), apt.elev + 1000, 100) && near(A.altSel, apt.elev + 1000, 60) && hdgNear(A.hdgBug, re.hdg, 5)),
+        q('Wat doe je met de transponder tijdens een go-around en nieuw circuit?', ['Niets: hij blijft op ALT', 'Op STBY zetten', 'IDENT drukken', 'Code 7700 instellen'], 0, 'De transponder blijft gewoon in ALT staan zolang je vliegt.'),
       ] };
   });
 
@@ -487,13 +418,13 @@ window.G3X = window.G3X || {};
   // === Noodgevallen & storingen ===
   add('fail_ahrs', 'Noodgevallen & storingen', 'AHRS-storing: rode X over de horizon', () => {
     const start = R.airborne(HOME, { alt: 3000 });
-    return { title: 'AHRS FAIL', start, fail: {}, intro: '<p>Na 10 seconden valt de AHRS uit. De attitude verdwijnt; de AP koppelt af. Vlieg op track en VS.</p>',
+    return { title: 'AHRS FAIL', start, fail: {}, intro: '<p>Na 10 seconden valt de AHRS uit. De attitude verdwijnt. Vlieg op track en VS.</p>',
       onTick: (S, A, ctx) => { if (ctx.t > 10 && !S.fail.ahrs && !ctx.recovered) S.fail.ahrs = true; if (ctx.stepIndex >= 3 && !ctx.recovered) { S.fail.ahrs = false; ctx.recovered = true; } },
       steps: [
-        mk('Herken de storing (rode X, ATTITUDE FAIL) en bevestig de AP-ontkoppeling.', 'De HSI toont nu de GPS-track in plaats van de heading.', (S, A) => S.fail.ahrs && A.cas.some(c => c.id === 'AHRS') && A.acked.AHRS && A.acked.AHRS.seen),
+        mk('Herken de storing (rode X, ATTITUDE FAIL) en bevestig de melding.', 'De HSI toont nu de GPS-track in plaats van de heading.', (S, A) => S.fail.ahrs && A.cas.some(c => c.id === 'AHRS') && A.acked.AHRS && A.acked.AHRS.seen),
         mk('Houd het toestel 30 s recht: track-verandering < 15° en VS binnen ±300 fpm.', 'Gebruik de track op de HSI en de VSI: kleine inputs.', hold((S, A, ctx) => { if (ctx.ref == null) ctx.ref = S.ac.trk; return Math.abs(U.norm180(S.ac.trk - ctx.ref)) < 15 && Math.abs(S.ac.vs) < 300; }, 30)),
         mk('Werk de checklist <b>EMERG: AHRS / ADC Failure</b> af.', 'Main Menu (MENU 2×) → Checklist.', (S, A, ctx) => ctx.has('chkdone', g => /AHRS/.test(g))),
-        mk('De AHRS herstelt. Schakel de AP weer in met HDG en ALT.', 'AP-paneel.', (S, A) => !S.fail.ahrs && A.ap.on && A.ap.lat === 'HDG' && A.ap.vert === 'ALT'),
+        mk('De AHRS herstelt. Controleer de attitude tegen de VSI en houd 15 s bank < 5° en VS binnen ±200 fpm.', 'Kruiscontrole: horizon, VSI, snelheid.', hold(S => !S.fail.ahrs && Math.abs(S.ac.bank) < 5 && Math.abs(S.ac.vs) < 200, 15)),
       ] };
   });
   add('fail_adc', 'Noodgevallen & storingen', 'ADC-storing: geen snelheid en hoogte', () => {
@@ -592,24 +523,24 @@ window.G3X = window.G3X || {};
       steps: [
         mk(`Vertrekvoorbereiding: baro ${qnh}, heading bug ${U.fmtHdg(start.hdg)}°, hoogte 2000, squawk ${code} ALT, COM1 ${R.fmtF(mainFreq(HOME))}, flaps T/O.`, 'Alle velden op de PFD.', (S, A) => A.baro === qnh && hdgNear(A.hdgBug, start.hdg, 3) && A.altSel === 2000 && A.xpdr.code === code && A.xpdr.mode === 'ALT' && near(A.com1.active, mainFreq(HOME), 0.001) && S.ac.flaps === 1),
         mk('Stijg op en klim naar 2000 ft (±100), flaps UP.', 'Parkeerrem los, vol gas, roteren bij 50 kt.', (S, A) => !S.ac.onGround && near(AV.indAlt(), 2000, 100) && S.ac.flaps === 0),
-        mk(`Direct-To <b>${vrp.id}</b> en vlieg ernaartoe (binnen 1 nm).`, 'D→ → ID → Activate. AP toegestaan (NAV + ALT).', (S, A) => U.distNm(S.ac, vrp) < 1),
+        mk(`Direct-To <b>${vrp.id}</b> en vlieg ernaartoe (binnen 1 nm).`, 'D→ → ID → Activate. Houd de CDI gecentreerd.', (S, A) => U.distNm(S.ac, vrp) < 1),
         mk(`Direct-To <b>${HOME.id}</b>; stel COM1 op Hasselt Radio (al goed) en selecteer circuithoogte ${circ} ft.`, 'D→ → EBZH → Activate; hoogtevak.', (S, A) => A.fpl.directTo && A.fpl.directTo.to.id === HOME.id && A.altSel === circ),
         mk(`Kom aan boven het veld (< 1,5 nm) op ${circ} ±150 ft.`, 'Daal tijdig; 3° ≈ 300 ft/nm.', (S, A) => U.distNm(S.ac, HOME) < 1.5 && near(AV.indAlt(), circ, 150)),
         mk('Squawk 7000 en zet de transponder op GND of STBY ná de landing (of blijf ALT in het circuit): hier volstaat code 7000.', 'XPDR-veld → VFR.', (S, A) => A.xpdr.code === '7000'),
       ] };
   });
-  add('flight_cross', 'Volledige vluchten', 'Overlandvlucht met vluchtplan en AP', () => {
+  add('flight_cross', 'Volledige vluchten', 'Overlandvlucht met vluchtplan', () => {
     const dest = R.apt({ min: 20, max: 45, kinds: ['civil', 'intl'] }); const via = R.vrp({ from: HOME, min: 5, max: 15 }); const cruise = U.pick([2500, 3000, 3500]);
     const start = R.airborne(HOME, { dist: 2, alt: 1500, hdg: Math.round(U.bearing(HOME, via)) });
     return { title: `${HOME.id} → ${via.id} → ${dest.id}`, start, intro: `<p>Net opgestegen van ${HOME.id}. Vlieg via <b>${via.id}</b> naar <b>${dest.id}</b> (${esc(dest.name)}) op ${cruise} ft.</p>`,
       steps: [
         mk(`Maak het vluchtplan <b>${HOME.id} → ${via.id} → ${dest.id}</b> en activeer de leg naar ${via.id}.`, 'FPL → + Waypoint ×3 → rij ' + via.id + ' → Activate Leg.', (S, A) => A.fpl.wpts.map(w => w.id).join(',') === [HOME.id, via.id, dest.id].join(',') && A.fpl.active === 1),
-        mk(`AP: NAV + klim naar ${cruise} ft (VS of IAS), hoogte geselecteerd.`, 'AP-paneel.', (S, A) => A.ap.on && (A.ap.lat === 'NAV' || A.ap.latArm === 'NAV') && A.altSel === cruise),
+        mk(`Selecteer ${cruise} ft, klim ernaartoe (±150 ft) en volg de actieve leg (XTK < 0,3 nm) gedurende 15 s.`, 'Hoogtevak; Vy 69 kt in de klim; CDI gecentreerd houden.', hold((S, A) => A.altSel === cruise && near(AV.indAlt(), cruise, 150) && A.nav && Math.abs(A.nav.xtk) < 0.3, 15)),
         mk(`Passeer ${via.id} (automatische sequencing naar ${dest.id}) op kruishoogte ±150 ft.`, 'De leg naar ' + dest.id + ' wordt magenta.', (S, A) => A.fpl.active === 2 && near(AV.indAlt(), cruise, 150)),
         mk(`Zet de frequentie van ${dest.id} (${R.fmtF(mainFreq(dest))}) in COM1 standby en de ATIS/info indien aanwezig in COM2.`, 'Waypoint Info → frequenties.', (S, A) => near(A.com1.standby, mainFreq(dest), 0.0005) || near(A.com1.active, mainFreq(dest), 0.0005)),
         (() => ({ text: `Welke baan verwacht je op ${dest.id} (meeste tegenwind)?`, makeQuestion: () => { const w = SIM.windAt(); const ends = dest.rwys.flatMap(r => r.id.split('/').map((id, i) => ({ id, hdg: i ? U.norm360(r.hdg + 180) : r.hdg }))); const best = ends.map(e => ({ e, hw: w.spd * Math.cos((w.dir - e.hdg) * U.DEG) })).sort((a, b) => b.hw - a.hw)[0].e.id; let opts = U.shuffle(ends.map(e => e.id)).slice(0, 4); if (!opts.includes(best)) opts[0] = best; while (opts.length < 4) opts.push(['09', '18', '27', '36'].find(x => !opts.includes(x))); return { options: opts, correct: opts.indexOf(best), explain: `Wind ${U.fmtHdg(w.dir)}°/${Math.round(w.spd)} kt.` }; } }))(),
         mk(`Daal zodat je binnen 5 nm van ${dest.id} op circuithoogte (${dest.elev + 1000} ±200 ft) bent; TOD ≈ 3 nm per 1000 ft.`, 'Hoogtevak → circuithoogte, VS −500.', (S, A) => U.distNm(S.ac, dest) < 5 && near(AV.indAlt(), dest.elev + 1000, 200)),
-        mk('Ontkoppel de AP voor de visuele nadering en maak COM1 actief op de veldfrequentie.', 'AP DISC; COM1 wisselen.', (S, A) => !A.ap.on && near(A.com1.active, mainFreq(dest), 0.0005)),
+        mk('Maak COM1 actief op de veldfrequentie en zet flaps T/O voor de visuele nadering.', 'COM1 wisselen (XFER); toets F.', (S, A) => near(A.com1.active, mainFreq(dest), 0.0005) && S.ac.flaps >= 1),
       ] };
   });
   add('flight_ifr', 'Volledige vluchten', 'Complete RNP-nadering met hold op de missed', () => {
@@ -618,12 +549,12 @@ window.G3X = window.G3X || {};
     const av = () => { AV.fplClear(); AV.fplAdd(HOME); AV.fplAdd(apt); };
     return { title: `${ap.name} ${aptId} compleet`, start, av, intro: chatter(`${apt.name} Approach`, `OO-XYZ, cleared ${ap.name} via ${iaf.id}, descend ${iaf.alt} ft, QNH ${start.env.qnh}. After the missed approach, hold at ${ap.missed[ap.missed.length - 1].id}.`),
       steps: [
-        mk(`Baro ${start.env.qnh}; laad en activeer <b>${ap.name}</b> via <b>${iaf.id}</b>; AP NAV; daal naar ${iaf.alt} ft.`, 'PROC-pagina; AP-paneel; hoogtevak.', (S, A) => A.baro === start.env.qnh && A.fpl.approach && A.fpl.approach.active && A.fpl.approach.transition === iaf.id && A.ap.on && (A.ap.lat === 'NAV' || A.ap.latArm === 'NAV' || A.ap.lat === 'APR' || A.ap.latArm === 'APR') && A.altSel === iaf.alt),
-        mk(`Vóór de FAF: APR gewapend, hoogte FAF (${ap.legs.find(l => l.faf).alt} ft) geselecteerd, minimums ${apt.elev + 400} ft ingesteld.`, 'APR; hoogtevak; PFD Options → Minimums.', (S, A) => (A.ap.lat === 'APR' || A.ap.latArm === 'APR') && A.altSel === ap.legs.find(l => l.faf).alt && A.minimumsOn && A.minimums === apt.elev + 400),
-        mk('GP gevangen en gevolgd (< 100 ft afwijking) gedurende 20 s; snelheid 70–85 kt.', 'Vermogen 3800–4200 rpm, flaps T/O.', hold((S, A) => A.ap.vert === 'GP' && Math.abs(A.nav.vdev || 0) < 100 && S.ac.ias >= 68 && S.ac.ias <= 88, 20)),
-        mk('Bij MINIMUMS zonder zicht: <b>GA</b>, vol gas, flaps UP boven 60 kt, missed approach actief.', 'GA-knop; F.', (S, A) => A.ap.lat === 'GA' && S.ac.throttle > 0.9 && (A.fpl.wpts[A.fpl.active] && A.fpl.wpts[A.fpl.active].missed)),
-        mk(`Klim naar ${ap.missed[0].alt} ft en volg de missed approach met NAV tot het holdingfix ${ap.missed[ap.missed.length - 1].id} (< 1 nm).`, 'Na GA: NAV opnieuw selecteren; hoogtevak.', (S, A) => (A.ap.lat === 'NAV' || A.ap.lat === 'GA') && U.distNm(S.ac, ap.missed[ap.missed.length - 1]) < 1 && AV.indAlt() > ap.missed[0].alt - 200),
-        mk('In de hold (SUSP): zet een 1-minuten-timer en vlieg 60 s een outbound leg (heading bug op de reciproke van de inbound koers, HDG-modus).', 'Timer → Set… 01:00 (Count Down); HDG op tegengestelde koers.', (S, A) => A.fpl.susp && A.timer.running && A.timer.dir === 'DOWN' && A.ap.lat === 'HDG'),
+        mk(`Baro ${start.env.qnh}; laad en activeer <b>${ap.name}</b> via <b>${iaf.id}</b>; daal naar ${iaf.alt} ft (geselecteerd).`, 'PROC-pagina; hoogtevak.', (S, A) => A.baro === start.env.qnh && A.fpl.approach && A.fpl.approach.active && A.fpl.approach.transition === iaf.id && A.altSel === iaf.alt),
+        mk(`Vóór de FAF: hoogte FAF (${ap.legs.find(l => l.faf).alt} ft) geselecteerd en minimums ${apt.elev + 400} ft ingesteld; CDI gecentreerd (XTK < 0,3).`, 'Hoogtevak; PFD Options → Minimums.', (S, A) => A.altSel === ap.legs.find(l => l.faf).alt && A.minimumsOn && A.minimums === apt.elev + 400 && A.nav && Math.abs(A.nav.xtk) < 0.3),
+        mk('Eindnadering: volg het glijpad (magenta diamant, afwijking < 100 ft) gedurende 20 s; snelheid 70–85 kt, flaps T/O.', 'Vermogen 3800–4200 rpm; diamant boven het midden = jij zit te laag.', hold((S, A) => A.nav && A.nav.gpValid && Math.abs(A.nav.vdev || 0) < 100 && S.ac.ias >= 68 && S.ac.ias <= 88, 20)),
+        mk('Bij MINIMUMS zonder zicht: go-around — vol gas, klimmen, flaps UP boven 60 kt; op het MAP verschijnt SUSP: druk erop om de missed approach te activeren.', 'SUSP-knop onderaan of op de HSI; F.', (S, A) => S.ac.throttle > 0.9 && S.ac.vs > 200 && (A.fpl.wpts[A.fpl.active] && A.fpl.wpts[A.fpl.active].missed)),
+        mk(`Klim naar ${ap.missed[0].alt} ft en volg de missed approach tot het holdingfix ${ap.missed[ap.missed.length - 1].id} (< 1 nm).`, 'CDI gecentreerd houden; hoogtevak.', (S, A) => U.distNm(S.ac, ap.missed[ap.missed.length - 1]) < 1 && AV.indAlt() > ap.missed[0].alt - 200),
+        mk('In de hold (SUSP): zet een 1-minuten-timer en vlieg een outbound leg (heading bug op de reciproke van de inbound koers).', 'Timer → Set… 01:00 (Count Down); heading bug via de linkerknop.', (S, A) => A.fpl.susp && A.timer.running && A.timer.dir === 'DOWN'),
       ] };
   });
   add('free', 'Vrij vliegen', 'In de lucht bij EBZH (2000 ft, kruisvlucht)', () => {
@@ -640,7 +571,7 @@ window.G3X = window.G3X || {};
   });
   add('free_apr', 'Vrij vliegen', 'In de lucht bij een vliegveld met naderingen', () => {
     const apt = R.apt({ withApr: true, max: 60 }); const start = R.airborne(apt, { alt: apt.elev + 2500, dist: U.rnd(8, 14) });
-    return { title: `Verkennen — bij ${apt.id}`, start, intro: `<p>Je bent in de buurt van <b>${esc(apt.name)}</b>. Probeer PROC → een nadering laden en de autopilot in APR.</p>`, steps: [] };
+    return { title: `Verkennen — bij ${apt.id}`, start, intro: `<p>Je bent in de buurt van <b>${esc(apt.name)}</b>. Probeer PROC → een nadering laden en vlieg ze handmatig op de CDI en het glijpad.</p>`, steps: [] };
   });
 
   // ---------- scenario-motor ----------

@@ -30,8 +30,8 @@ window.G3X = window.G3X || {};
       userWpts: [],
       // berichten
       msgs: [], msgNew: false, cas: [],
-      // autopilot (zie autopilot.js)
-      ap: { on: false, fd: false, lat: 'ROL', latArm: null, vert: 'PIT', vertArm: [], vsRef: 0, iasRef: 90, pitRef: 2, altRef: 2000, bankCmd: 0, pitchCmd: 0, disc: 0, discReason: '', gaTime: 0, yd: false, trkMode: false, altAlert: 0, altAlertArmed: false, lvl: false },
+      // hoogte-alert (geen autopilot in dit toestel)
+      altAlert: { t: 0, armed: false, captured: false, devFlag: false },
       // checklists
       checklist: { group: 0, item: 0, done: {} },
       // CAS-bevestigingen
@@ -277,11 +277,12 @@ window.G3X = window.G3X || {};
       if (!flyOver && next) { const dc = Math.abs(U.norm180(U.bearing(to, next) - dtk)); anticipate = Math.min(turnRadiusNm * Math.tan(Math.min(dc, 120) / 2 * U.DEG), 2); }
       const passed = xt.along >= out.legLen - anticipate - 0.02 || (dis < 0.25) || (Math.abs(U.norm180(brg - dtk)) > 95 && dis < 1.5);
       if (passed) {
-        if (to.map && f.approach && f.approach.active) { f.susp = true; AV.msg('Missed approach point — SUSP. Press SUSP or GA for the missed approach', 'ADV', 'susp'); }
+        // zonder volgend waypoint alleen 'aangekomen' melden als we er echt dichtbij zijn (niet als we ver dwars van de lijn af staan)
+        if (to.map && f.approach && f.approach.active) { f.susp = true; AV.msg('Missed approach point — SUSP. Press SUSP for the missed approach', 'ADV', 'susp'); }
         else if (to.hold) { f.susp = true; AV.msg(`Holding at ${to.id} — SUSP`, 'ADV', 'hold'); }
-        else if (f.directTo && !f.directTo.inFpl) { f.susp = true; AV.msg(`Arriving at ${to.id}`, 'ADV', 'arrive'); }
+        else if (f.directTo && !f.directTo.inFpl) { if (dis < 2.5) { f.susp = true; AV.msg(`Arriving at ${to.id}`, 'ADV', 'arrive'); } }
         else if (next) { f.active = toIdx + 1; f.directTo = null; out.seq = true; }
-        else { f.susp = true; AV.msg(`Arriving at destination ${to.id}`, 'ADV', 'arrive'); }
+        else if (dis < 2.5) { f.susp = true; AV.msg(`Arriving at destination ${to.id}`, 'ADV', 'arrive'); }
       } else if (out.ete < 0.25 && out.ete > 0 && dis > 0.3) AV.msg(`Approaching ${to.id}`, 'ADV', 'appr-' + to.id);
     }
     out.nextId = to.id;
@@ -358,7 +359,6 @@ window.G3X = window.G3X || {};
     if (a.stall) warn('STALL', 'STALL');
     if (!a.onGround && a.ias > SIM.AC.vne) warn('VNE', 'OVERSPEED');
     if (a.flaps > 0 && a.ias > (a.flaps === 2 ? SIM.AC.vfe : SIM.AC.vfeTo) + 2) caut('VFE', 'FLAPS OVERSPEED');
-    if (A.ap.disc > 0) warn('APDISC', 'AP DISCONNECT');
     if (a.parkBrake && (E.running && a.throttle > 0.4)) caut('PBRK', 'PARK BRAKE');
     if (A.timer.expired) adv('TIMER', 'TIMER EXPIRED');
     // terrein
@@ -381,16 +381,16 @@ window.G3X = window.G3X || {};
       for (const s of NAV.AIRSPACES) if (s.type !== 'ATZ' && !now.includes(s) && a.alt >= s.floor - 200 && a.alt <= s.ceil + 200 && NAV.distToAirspace(s, a) < 1.0) { adv('ASPCN', `${s.type} NEAR`); break; }
     }
     // hoogte-alert (1000 ft / 200 ft)
-    const ap = A.ap, indAlt = SIM.indicatedAlt(A.baroStd ? 1013.25 : A.baro);
+    const al = A.altAlert, indAlt = SIM.indicatedAlt(A.baroStd ? 1013.25 : A.baro);
     const diff = Math.abs(indAlt - A.altSel);
     if (!a.onGround) {
-      if (diff <= 1000 && !ap.altAlertArmed && diff > 200) { ap.altAlertArmed = true; ap.altAlert = 5; if (G3X.audio) G3X.audio.play('altalert'); }
-      if (diff <= 200) { ap.altCaptured = true; }
-      if (ap.altCaptured && diff > 200 && diff < 1000) { if (!ap.altDevFlag) { ap.altDevFlag = true; ap.altAlert = 5; if (G3X.audio) G3X.audio.play('altalert'); } }
-      if (diff <= 200) ap.altDevFlag = false;
-      if (diff > 1000) { ap.altAlertArmed = false; ap.altCaptured = false; ap.altDevFlag = false; }
+      if (diff <= 1000 && !al.armed && diff > 200) { al.armed = true; al.t = 5; if (G3X.audio) G3X.audio.play('altalert'); }
+      if (diff <= 200) { al.captured = true; }
+      if (al.captured && diff > 200 && diff < 1000) { if (!al.devFlag) { al.devFlag = true; al.t = 5; if (G3X.audio) G3X.audio.play('altalert'); } }
+      if (diff <= 200) al.devFlag = false;
+      if (diff > 1000) { al.armed = false; al.captured = false; al.devFlag = false; }
     }
-    if (ap.altAlert > 0) ap.altAlert -= dt;
+    if (al.t > 0) al.t -= dt;
     // minimums
     if (A.minimumsOn && A.minimums != null && !a.onGround) {
       if (indAlt <= A.minimums && !A.minFlag && a.vs < 0) { A.minFlag = true; AV.msg('MINIMUMS', 'ADV', 'mins'); if (G3X.audio) G3X.audio.play('minimums'); }
@@ -424,7 +424,6 @@ window.G3X = window.G3X || {};
     updateRadios(S);
     AV.A.nav = navCompute(S);
     updateAlerts(S, dt);
-    if (G3X.autopilot) G3X.autopilot.step(S, dt);
     // verkeer (gesimuleerd, optioneel)
     for (const t of AV.A.traffic) { const p = U.dest(t, t.trk, t.gs * dt / 3600); t.lat = p.lat; t.lon = p.lon; t.alt += t.vs * dt / 60; }
   };

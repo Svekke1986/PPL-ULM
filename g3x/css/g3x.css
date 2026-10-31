@@ -155,10 +155,6 @@ button { font-family: inherit; }
 .ap-res b { color: var(--accent); width: 60px; } .ap-res em { margin-left: auto; color: #8c9bb0; font-style: normal; font-size: 11px; }
 .ap-keys { margin-top: 10px; } .ap-row { display: flex; gap: 5px; margin-bottom: 5px; } .ap-row .np-key { flex: 1; font-size: 17px; padding: 9px 0; }
 .dto-lists { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
-.ap-panel { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; }
-.ap-btn { background: #1b2330; border: 1px solid #3a4656; color: #fff; padding: 12px 4px; border-radius: 8px; font-weight: 700; cursor: pointer; font-size: 13px; }
-.ap-btn.on { background: #123a1a; border-color: var(--green); color: var(--green); } .ap-btn.danger { border-color: #a33; color: #ffb0b0; grid-column: span 2; }
-.ap-status { margin-top: 10px; font-size: 14px; color: #cfd6de; } .ap-status b.g { color: var(--green); }
 .menu-list .item { font-size: 15px; }
 .wi-head { display: flex; gap: 8px; align-items: baseline; font-size: 18px; } .wi-head b { color: var(--accent); font-size: 22px; } .wi-head em { margin-left: auto; color: #8c9bb0; font-style: normal; font-size: 12px; }
 .wi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin: 8px 0; font-size: 14px; color: #cfd6de; }
@@ -167,16 +163,8 @@ button { font-family: inherit; }
 .g3x-toast { position: absolute; left: 50%; bottom: 76px; transform: translateX(-50%); background: rgba(20,26,34,.95); border: 1px solid var(--accent); color: #fff; padding: 8px 14px; border-radius: 8px; font-size: 15px; max-width: 80%; text-align: center; }
 
 /* ---------- panelen onder het scherm ---------- */
-.under { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+.under { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 12px; }
 @media (max-width: 900px) { .under { grid-template-columns: 1fr; } }
-#gmc { background: linear-gradient(#262b33, #15181d); border: 1px solid #3a3f49; border-radius: 10px; padding: 10px; display: grid; grid-template-columns: auto 1fr auto auto; gap: 10px; align-items: center; }
-.gmc-title { grid-column: 1 / -1; font-size: 11px; letter-spacing: 2px; color: #8c9bb0; }
-.gmc-btns { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; }
-.gmc-btn { background: #0f1216; border: 1px solid #3a4046; color: #cfd6de; border-radius: 6px; padding: 10px 4px; font-weight: 700; font-size: 12px; cursor: pointer; }
-.gmc-btn.on { color: var(--green); border-color: var(--green); box-shadow: inset 0 0 8px rgba(40,224,44,.3); } .gmc-btn.arm { color: #fff; border-color: #fff; }
-.gmc-knob, .gmc-wheel { display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 10px; color: #8c9bb0; }
-.gmc-knob button, .gmc-wheel button { background: #0f1216; border: 1px solid #3a4046; color: #fff; border-radius: 6px; padding: 6px 8px; cursor: pointer; font-size: 12px; min-width: 34px; }
-.gmc-knob { flex-direction: row; flex-wrap: wrap; justify-content: center; max-width: 130px; } .gmc-knob span { width: 100%; text-align: center; }
 #acpanel { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 10px; position: relative; }
 .acp-title { font-size: 11px; letter-spacing: 1px; color: var(--muted); margin-bottom: 6px; text-transform: uppercase; }
 .acp-row { display: flex; align-items: center; gap: 6px; margin: 6px 0; flex-wrap: wrap; font-size: 13px; }

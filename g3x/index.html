@@ -36,7 +36,6 @@
         </div>
       </div>
       <div class="under">
-        <div id="gmc" aria-label="Autopilot bedieningspaneel"></div>
         <div id="acpanel" aria-label="Vliegtuigbediening"></div>
       </div>
       <div id="statusline"></div>
@@ -73,7 +72,7 @@
   <div id="help" class="hidden" role="dialog" aria-modal="true">
     <div class="help-box">
       <h2>G3X Touch Trainer — help</h2>
-      <p>Een oefensimulator in de stijl van de Garmin G3X Touch (één scherm, GDU 460-indeling) met een eenvoudig model van een <b>Tecnam P2008 JC MkII</b> (Rotax 912 S) en een GFC 500-achtige autopilot (GMC 507-paneel). Thuisbasis <b>EBZH Hasselt-Kiewit</b>. Het scherm is, zoals op het echte toestel, Engelstalig. In <b>Verkennen</b> mag je alles aanpassen en zet <b>Reset</b> de startsituatie terug; in <b>Scenario</b> volg je stappen (<b>Reset scenario</b> = zelfde gegevens opnieuw, <b>Nieuwe gegevens</b> = nieuwe willekeurige waarden).</p>
+      <p>Een oefensimulator in de stijl van de Garmin G3X Touch (één scherm, GDU 460-indeling) met een eenvoudig model van een <b>Tecnam P2008 JC MkII</b> (Rotax 912 S). Thuisbasis <b>EBZH Hasselt-Kiewit</b>. Het scherm is, zoals op het echte toestel, Engelstalig. In <b>Verkennen</b> mag je alles aanpassen en zet <b>Reset</b> de startsituatie terug; in <b>Scenario</b> volg je stappen (<b>Reset scenario</b> = zelfde gegevens opnieuw, <b>Nieuwe gegevens</b> = nieuwe willekeurige waarden).</p>
       <h3>Het scherm bedienen</h3>
       <ul>
         <li><b>Tikken</b> op velden: baro, hoogte (cyaan vak), heading (HSI), CRS/DTK, bearing pointers, wind, NAV/COM-frequenties (bovenbalk), transponder, AP-balk (bovenaan PFD), CAS-meldingen (bevestigen), EIS-strook (motorpagina), kaart (features / cursor).</li>
@@ -93,14 +92,13 @@
         <tr><td>Nadering</td><td><b>Main Menu → Procedures</b> (of Tools) (of FPL → PROC) → vliegveld, nadering, transitie → Load / Load &amp; Activate. In de FPL-balk: Activate Approach, Vectors-to-Final, Missed, Remove.</td></tr>
         <tr><td>Nearest</td><td>Toets <b>NRST</b> op de bezel → tabs Airports / VOR / NDB / VRP / User / Airspace → tik op een rij voor info, Direct-To en frequenties.</td></tr>
         <tr><td>Kaart</td><td>Rechterknop buitenring = bereik; <b>Menu</b> op de kaart = Orientation, Declutter, Topo, Airspace…; slepen of knop indrukken = cursor (Direct-To, user waypoint, luchtruiminfo).</td></tr>
-        <tr><td>Autopilot</td><td>GMC 507-paneel onder het scherm, of tik op de <b>AP-statusbalk</b> bovenaan de PFD. NAV/APR worden wit (gewapend) en dan groen (actief).</td></tr>
         <tr><td>CDI-bron, bearing pointers, wind, SVT, minimums</td><td>Tik op het <b>bronlabel</b> links boven de HSI (GPS → NAV1 → NAV2), op <b>BRG1/BRG2</b> en op het <b>windvak</b>; of <b>Menu</b> op een volledig PFD = PFD Options.</td></tr>
         <tr><td>Motor &amp; brandstof</td><td>Tik op de <b>EIS-strook</b> (of Home → Engine): Fuel on Board, Reset Fuel Used, Fuel Selector.</td></tr>
         <tr><td>Timer, checklist, instellingen, berichten</td><td><b>Main Menu</b> → Timer / Checklists / Setup / Messages (ook COM 1 Radio, COM 2 Radio, XPDR, Audio Panel, VNAV, Weight &amp; Balance, Backlight Intensity). De knop <b>Messages</b> onderaan knippert bij een nieuw bericht.</td></tr>
         <tr><td>Scherm­indeling</td><td><b>MENU</b> → Full Screen PFD / Split Screen / Full Screen MFD. <b>BACK</b> sluit een venster of gaat een pagina terug; <b>MENU 2×</b> opent het Main Menu.</td></tr>
         <tr><td>SUSP / OBS</td><td>Verschijnen op de HSI en in de onderste strook wanneer van toepassing (bij het MAP of in een hold; OBS via CRS-veld of FPL-menu).</td></tr>
       </table>
-      <p class="muted">Let op: de exacte labels en knopposities kunnen per G3X-softwareversie en per installatie (configuratie door de installateur, één of twee schermen, met of zonder GMC 507) verschillen.</p>
+      <p class="muted">Let op: de exacte labels en knopposities kunnen per G3X-softwareversie en per installatie (configuratie door de installateur, één of twee schermen, met of zonder autopilot) verschillen.</p>
       <h3>Toetsen</h3>
       <table>
         <tr><td>↑ ↓ ← →</td><td>Pitch (↑ = neus omlaag, omkeerbaar in het paneel) en rol</td></tr>
@@ -108,14 +106,12 @@
         <tr><td>PgUp / PgDn, Home / End</td><td>Gas meer/minder, vol/idle</td></tr>
         <tr><td>F / V</td><td>Flaps een stand neer / op</td></tr>
         <tr><td>B</td><td>Wielremmen (ingedrukt houden)</td></tr>
-        <tr><td>A of spatie</td><td>Autopilot ontkoppelen</td></tr>
-        <tr><td>L · G</td><td>LVL · TO/GA</td></tr>
-        <tr><td>, . · K M</td><td>Linkerknop buiten (HDG) · binnen (ALT)</td></tr>
+                        <tr><td>, . · K M</td><td>Linkerknop buiten (HDG) · binnen (ALT)</td></tr>
         <tr><td>[ ] · Enter · Esc</td><td>Rechterknop buiten (bereik) · indrukken · BACK</td></tr>
         <tr><td>N · D · Shift+M · `</td><td>NRST · Direct-To · MENU · Main Menu</td></tr>
         <tr><td>P · 1 2 4 · H</td><td>Pauze · simulatiesnelheid · deze help</td></tr>
       </table>
-      <p>Een gamepad/joystick werkt ook (assen 0/1 rol/pitch, as 3 gas; knop 0 AP uit, 1/2 flaps, 3 LVL). Op een tablet gebruik je de virtuele stuurknuppel in het paneel.</p>
+      <p>Een gamepad/joystick werkt ook (assen 0/1 rol/pitch, as 3 gas; knop 0 rem, 1/2 flaps). Op een tablet gebruik je de virtuele stuurknuppel in het paneel.</p>
       <h3>Wat is vereenvoudigd</h3>
       <ul>
         <li>Navigatiedatabase: beperkte set vliegvelden, VOR/NDB, VFR-punten, luchtruimen en naderingen in België en de grensstreek, deels fictief gemarkeerd. Frequenties en coördinaten zijn bij benadering. Geen magnetische variatie.</li>
@@ -130,7 +126,6 @@
   <script src="js/navdata.js"></script>
   <script src="js/sim.js"></script>
   <script src="js/avionics.js"></script>
-  <script src="js/autopilot.js"></script>
   <script src="js/audio.js"></script>
   <script src="js/display.js"></script>
   <script src="js/pfd.js"></script>
