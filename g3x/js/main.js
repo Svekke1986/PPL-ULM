@@ -158,8 +158,8 @@ window.G3X = window.G3X || {};
   function buildKnobs() {
     document.querySelectorAll('.knob').forEach(el => {
       const unit = el.dataset.u, side = el.dataset.s;
-      el.innerHTML = `<div class="knob-ring outer" title="Buitenring"><button class="ka l" data-r="outer" data-d="-1">◀</button><button class="ka r" data-r="outer" data-d="1">▶</button><div class="knob-ring inner" title="Binnenknop"><button class="ka l" data-r="inner" data-d="-1">◀</button><button class="ka r" data-r="inner" data-d="1">▶</button><button class="knob-push" title="Indrukken">PUSH</button></div></div>`;
-      el.querySelectorAll('.ka').forEach(b => { b.onclick = e => { e.stopPropagation(); UI.activeScreen = unit; UI.knob(unit, side, b.dataset.r, +b.dataset.d); if (G3X.audio) { G3X.audio.ensure(); G3X.audio.play('click'); } }; });
+      // dubbele draaiknop zoals op het toestel: slepen = draaien (buitenring of binnenknop), midden = indrukken; scrollwiel werkt ook
+      el.innerHTML = `<div class="knob-ring outer" title="Buitenring: sleep om te draaien"><div class="knob-ring inner" title="Binnenknop: sleep om te draaien"><button class="knob-push" title="Indrukken"></button></div></div>`;
       el.querySelector('.knob-push').onclick = e => { e.stopPropagation(); UI.activeScreen = unit; UI.knobPress(unit, side); };
       el.querySelector('.outer').addEventListener('wheel', e => { e.preventDefault(); e.stopPropagation(); UI.activeScreen = unit; const inner = e.target.closest('.inner'); UI.knob(unit, side, inner ? 'inner' : 'outer', e.deltaY > 0 ? 1 : -1); }, { passive: false });
       // echt draaien: slepen rond het middelpunt van de knop (muis of vinger); elke 18° is één stap
@@ -169,7 +169,7 @@ window.G3X = window.G3X || {};
       const rot = { outer: 0, inner: 0 };
       let drag = null;
       const angleOf = e => { const r = outer.getBoundingClientRect(); return Math.atan2(e.clientY - (r.top + r.height / 2), e.clientX - (r.left + r.width / 2)) * 180 / Math.PI; };
-      outer.addEventListener('pointerdown', e => { if (e.target.closest('.ka, .knob-push')) return; e.preventDefault(); UI.activeScreen = unit; drag = { ring: e.target.closest('.inner') ? 'inner' : 'outer', last: angleOf(e), acc: 0 }; outer.setPointerCapture(e.pointerId); });
+      outer.addEventListener('pointerdown', e => { if (e.target.closest('.knob-push')) return; e.preventDefault(); UI.activeScreen = unit; drag = { ring: e.target.closest('.inner') ? 'inner' : 'outer', last: angleOf(e), acc: 0 }; outer.setPointerCapture(e.pointerId); });
       outer.addEventListener('pointermove', e => {
         if (!drag) return; const a = angleOf(e); let d = a - drag.last; if (d > 180) d -= 360; if (d < -180) d += 360; drag.last = a; drag.acc += d;
         rot[drag.ring] += d; marks[drag.ring].style.transform = `rotate(${rot[drag.ring]}deg)`;
