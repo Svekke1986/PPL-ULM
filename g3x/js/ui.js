@@ -174,20 +174,6 @@ window.G3X = window.G3X || {};
     if (isCom) { const em = document.createElement('button'); em.className = 'dlg-btn danger'; em.textContent = '121.500'; em.onclick = () => { AV.setComStandby(n, 121.5); bus.emit('freq', { kind, n, f: 121.5 }); UI.closeDialog(); }; bar.insertBefore(em, bar.firstChild); }
   };
 
-  // ---------- transponder ----------
-  UI.openXpdr = () => {
-    const a = A(), x = a.xpdr;
-    const d = numpad({
-      title: 'Transponder', value: '', maxLen: 4, keys: ['1', '2', '3', '4', '5', '6', '7', '', '0', '⌫'], width: 520,
-      display: v => (v + '____').slice(0, 4),
-      extra: `<div class="xp-modes">${['STBY', 'GND', 'ON', 'ALT'].map(m => `<button class="xp-mode ${x.mode === m ? 'on' : ''}" data-m="${m}">${m}</button>`).join('')}<button class="xp-mode ident">IDENT</button><button class="xp-mode vfr">VFR</button></div><div class="xp-cur">Current code: <b>${x.code}</b> · mode <b>${x.mode}</b><br><span class="muted">7700 emergency · 7600 radio failure · 7500 hijack · VFR = 7000</span></div>`,
-      onEnter: v => { if (v.length !== 4) { UI.toast('Enter 4 digits (0–7)'); return false; } AV.setSquawk(v); bus.emit('squawk', v); },
-      onKnob: (v, ring, dir) => { let code = parseInt((v.length === 4 ? v : x.code), 8); code = (code + dir * (ring === 'outer' ? 64 : 1) + 4096) % 4096; return code.toString(8).padStart(4, '0'); },
-    });
-    d.el.querySelectorAll('.xp-mode[data-m]').forEach(b => { b.onclick = () => { AV.setXpdrMode(b.dataset.m); bus.emit('xpdrmode', b.dataset.m); d.el.querySelectorAll('.xp-mode[data-m]').forEach(c => c.classList.toggle('on', c.dataset.m === b.dataset.m)); }; });
-    d.el.querySelector('.xp-mode.ident').onclick = () => { AV.ident(); bus.emit('ident'); UI.toast('IDENT'); };
-    d.el.querySelector('.xp-mode.vfr').onclick = () => { AV.setSquawk('7000'); bus.emit('squawk', '7000'); UI.closeDialog(); };
-  };
 
   // ---------- baro / hoogte / heading / koers ----------
   UI.openBaro = () => {
@@ -253,7 +239,6 @@ window.G3X = window.G3X || {};
     if (page === 'PFD') return UI.openPfdOptions();
     if (page === 'MAP' || page === 'TERRAIN') return UI.openMapOptions();
     if (page === 'FPL') return UI.openFplMenu();
-    if (page === 'ENG') { UI.openFuelOnBoard(); return; }
     if (page === 'HOME') return UI.openGeneralMenu();
     UI.openGeneralMenu();
   };
@@ -383,17 +368,6 @@ window.G3X = window.G3X || {};
     bind();
   };
 
-  // ---------- brandstof ----------
-  UI.openFuelOnBoard = () => {
-    const ac = SIM.S.ac;
-    numpad({ title: 'Fuel on Board (total)', value: '', maxLen: 3, unit: 'L', width: 420, display: v => v || String(Math.round(ac.fuelL + ac.fuelR)), extra: `<div class="xp-modes"><button class="xp-mode full">Full (2×60 L)</button><button class="xp-mode half">Half</button></div><div class="xp-cur muted">Fuel computer: tell the system how much fuel is on board after refuelling. In the real G3X this only changes the calculation; in this trainer it also sets the tanks.</div>`,
-      onEnter: v => { if (!v) return; const tot = U.clamp(parseInt(v, 10), 0, 120); ac.fuelL = tot / 2; ac.fuelR = tot / 2; bus.emit('fob', tot); },
-      onOpen: d => { d.el.querySelector('.full').onclick = () => { ac.fuelL = 60; ac.fuelR = 60; bus.emit('fob', 120); UI.closeDialog(); }; d.el.querySelector('.half').onclick = () => { ac.fuelL = 30; ac.fuelR = 30; bus.emit('fob', 60); UI.closeDialog(); }; } });
-  };
-  UI.openFuelSelector = () => {
-    const ac = SIM.S.ac;
-    UI.openDialog({ title: 'Fuel Selector (cockpit valve)', width: 380, html: `<div class="xp-modes">${['L', 'R', 'OFF'].map(s => `<button class="xp-mode fs ${ac.fuelSel === s ? 'on' : ''}" data-s="${s}">${s === 'L' ? 'LEFT' : s === 'R' ? 'RIGHT' : 'OFF'}</button>`).join('')}</div><p class="muted">The P2008 has an L / R / OFF fuel valve. Switch tanks regularly to keep the aircraft balanced.</p>`, buttons: [{ label: 'Close' }], onOpen: d => { d.el.querySelectorAll('.fs').forEach(b => { b.onclick = () => { SIM.setFuelSel(b.dataset.s); bus.emit('fuelsel', b.dataset.s); d.el.querySelectorAll('.fs').forEach(c => c.classList.toggle('on', c === b)); }; }); } });
-  };
 
   // ---------- vluchtplan-menu ----------
   UI.openFplMenu = () => {
@@ -441,7 +415,7 @@ window.G3X = window.G3X || {};
     switch (page) {
       case 'HOME': {
         // tegels en volgorde zoals het hoofdmenu van de G3X Touch (vier kolommen, scrollbaar)
-        const tiles = [['MAP', 'Map'], ['CHARTS', 'Charts'], ['FPL', 'Active Flight Plan'], ['WPT', 'Waypoint Info'], ['WX', 'Weather'], ['TRAFFIC', 'Traffic'], ['TERRAIN', 'Terrain'], ['ENG', 'Engine'], ['TRIP', 'Info'], ['CHK', 'Checklists'], ['PFD', 'PFD'], ['COM1', 'COM 1 Radio'], ['COM2', 'COM 2 Radio'], ['XPDR', 'XPDR'], ['AUDIO', 'Audio Panel'], ['FLIGHTLOG', 'Flight Log'], ['FPLLIST', 'Flight Plan List'], ['VNAV', 'VNAV'], ['TRACKLOG', 'Track Log'], ['USERTIMER', 'User Timer'], ['USER', 'User Waypoints'], ['WB', 'Weight & Balance'], ['DATALINK', 'Data Link'], ['MUSIC', 'Music'], ['TOOLS', 'Tools'], ['SETUP', 'Setup'], ['BACKLIGHT', 'Backlight Intensity']];
+        const tiles = [['MAP', 'Map'], ['CHARTS', 'Charts'], ['FPL', 'Active Flight Plan'], ['WPT', 'Waypoint Info'], ['WX', 'Weather'], ['TRAFFIC', 'Traffic'], ['TERRAIN', 'Terrain'], ['ENG', 'Engine'], ['TRIP', 'Info'], ['CHK', 'Checklists'], ['PFD', 'PFD'], ['FLIGHTLOG', 'Flight Log'], ['FPLLIST', 'Flight Plan List'], ['VNAV', 'VNAV'], ['TRACKLOG', 'Track Log'], ['USERTIMER', 'User Timer'], ['USER', 'User Waypoints'], ['WB', 'Weight & Balance'], ['DATALINK', 'Data Link'], ['MUSIC', 'Music'], ['TOOLS', 'Tools'], ['SETUP', 'Setup'], ['BACKLIGHT', 'Backlight Intensity']];
         h = `<div class="page-head"><span>${G3X.icons.HOME} Main Menu</span></div><div class="page-body tiles">${tiles.map(t => `<button class="tile" data-p="${t[0]}"><span class="ico">${G3X.icons[t[0]] || ''}</span><span>${t[1]}</span></button>`).join('')}</div>`;
         P.innerHTML = h; P.querySelectorAll('.tile').forEach(b => { b.onclick = () => UI.openTile(b.dataset.p); }); return;
       }
@@ -638,26 +612,34 @@ window.G3X = window.G3X || {};
   UI.openTile = p => {
     bus.emit('tile', p);
     switch (p) {
-      case 'COM1': UI.openFreq('COM', 1); break;
-      case 'COM2': UI.openFreq('COM', 2); break;
-      case 'XPDR': UI.openXpdr(); break;
-      case 'AUDIO': UI.openAudio(); break;
       case 'FLIGHTLOG': UI.showPage('TRIP'); break;
       case 'USERTIMER': UI.showPage('TIMER'); break;
       case 'BACKLIGHT': UI.openBacklight(); break;
       default: UI.showPage(p);
     }
   };
-  UI.openAudio = () => {
-    const a = A();
-    const html = () => `<div class="audio-grid"><div><h4>MIC</h4><button class="xp-mode ${a.com1.mic ? 'on' : ''}" data-mic="1">COM1</button><button class="xp-mode ${a.com2.mic ? 'on' : ''}" data-mic="2">COM2</button></div><div><h4>MON (monitor)</h4><button class="xp-mode ${a.com1.mon ? 'on' : ''}" data-mon="1">COM1</button><button class="xp-mode ${a.com2.mon ? 'on' : ''}" data-mon="2">COM2</button></div><div><h4>NAV audio (ident)</h4><button class="xp-mode ${a.nav1.audio ? 'on' : ''}" data-nav="1">NAV1</button><button class="xp-mode ${a.nav2.audio ? 'on' : ''}" data-nav="2">NAV2</button></div></div><p class="muted">Simplified GMA 245 audio panel: MIC selects the transmit radio, MON adds the other COM to the headset, NAV audio plays the Morse ident.</p>`;
-    const d = UI.openDialog({ title: 'Audio Panel', width: 520, html: html(), buttons: [{ label: 'Close' }] });
-    const bind = () => { d.body.querySelectorAll('[data-mic]').forEach(b => { b.onclick = () => { AV.setMic(+b.dataset.mic); bus.emit('mic', +b.dataset.mic); d.body.innerHTML = html(); bind(); }; }); d.body.querySelectorAll('[data-mon]').forEach(b => { b.onclick = () => { const r = a['com' + b.dataset.mon]; if (!r.mic) r.mon = !r.mon; d.body.innerHTML = html(); bind(); }; }); d.body.querySelectorAll('[data-nav]').forEach(b => { b.onclick = () => { const r = a['nav' + b.dataset.nav]; r.audio = !r.audio; bus.emit('navaudio', +b.dataset.nav); d.body.innerHTML = html(); bind(); }; }); };
-    bind();
-  };
   UI.openBacklight = () => {
     const a = A();
     UI.openDialog({ title: 'Backlight Intensity', width: 420, html: `<div class="xp-modes">${[100, 85, 70, 55, 40].map(v => `<button class="xp-mode bl ${a.brightness === v ? 'on' : ''}" data-v="${v}">${v}%</button>`).join('')}</div><p class="muted">Lower the intensity at night or to reduce electrical load (alternator failure).</p>`, buttons: [{ label: 'Close' }], onOpen: d => { d.el.querySelectorAll('.bl').forEach(b => { b.onclick = () => { a.brightness = +b.dataset.v; bus.emit('setup', { k: 'brightness', v: a.brightness }); d.el.querySelectorAll('.bl').forEach(c => c.classList.toggle('on', c === b)); }; }); } });
+  };
+  // HSI-opties: aantikken van de HSI geeft de CDI-bron (GPS / VOR), heading bug, bearing pointers en OBS
+  UI.openHsiOptions = () => {
+    const a = A();
+    const opt = (label, key, values, fmt) => `<div class="opt-row"><span>${label}</span><div class="opt-vals">${values.map(v => `<button class="opt-val ${a[key] === v ? 'on' : ''}" data-k="${key}" data-v="${v}">${fmt ? fmt(v) : v}</button>`).join('')}</div></div>`;
+    const srcName = v => v === 'GPS' ? 'GPS' : (a[v.toLowerCase()].data.loc ? 'LOC' + v.slice(-1) : 'VOR' + v.slice(-1));
+    const html = `<div class="opts">
+      ${opt('CDI Source', 'navSource', ['GPS', 'NAV1', 'NAV2'], srcName)}
+      ${opt('Bearing Pointer 1', 'brg1', ['OFF', 'GPS', 'NAV1', 'NAV2'])}
+      ${opt('Bearing Pointer 2', 'brg2', ['OFF', 'GPS', 'NAV1', 'NAV2'])}
+      <div class="opt-row"><span>Heading Bug</span><div class="opt-vals"><button class="opt-val hdg">${U.fmtHdg(a.hdgBug)}°</button><button class="opt-val sync">SYNC</button></div></div>
+      <div class="opt-row"><span>Course</span><div class="opt-vals"><button class="opt-val crs">${U.fmtHdg(a.navSource === 'GPS' ? a.crs1 : a[a.navSource.toLowerCase()].obs)}°</button><button class="opt-val obs ${a.fpl.obs ? 'on' : ''}">OBS</button></div></div>
+    </div>`;
+    const d = UI.openDialog({ title: 'HSI Options', html, width: 520, buttons: [{ label: 'Close' }] });
+    d.el.querySelectorAll('.opt-val[data-k]').forEach(b => { b.onclick = () => { const k = b.dataset.k; a[k] = b.dataset.v; bus.emit(k === 'navSource' ? 'navsrc' : k, a[k]); d.el.querySelectorAll(`.opt-val[data-k="${k}"]`).forEach(c => c.classList.toggle('on', c === b)); if (k === 'navSource') UI.toast('CDI source: ' + srcName(a.navSource)); }; });
+    d.el.querySelector('.hdg').onclick = () => UI.openHdgSel();
+    d.el.querySelector('.sync').onclick = () => { a.hdgBug = Math.round(SIM.S.ac.hdg); bus.emit('hdgbug', a.hdgBug); UI.closeDialog(); };
+    d.el.querySelector('.crs').onclick = () => UI.openCrs();
+    d.el.querySelector('.obs').onclick = () => { if (!a.nav || !a.nav.valid) { UI.toast('No active waypoint'); return; } a.fpl.obs = !a.fpl.obs; if (a.fpl.obs) a.crs1 = Math.round(a.nav.dtk); bus.emit('obs', a.fpl.obs); UI.closeDialog(); };
   };
   UI.openFplRowMenu = i => {
     const f = A().fpl, w = f.wpts[i];

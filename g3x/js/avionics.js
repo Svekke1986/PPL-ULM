@@ -15,7 +15,7 @@ window.G3X = window.G3X || {};
       map: { range: 10, orient: 'TRKUP', declutter: 0, airspace: true, topo: true, trackVector: true, rangeRing: true, obstacles: true, cities: true, water: true, panning: false, pan: null, cursor: null },
       units: { dist: 'NM', alt: 'FT', speed: 'KT', temp: 'C', baro: 'HPA', fuel: 'L' },
       // radio's
-      com1: { active: 118.955, standby: 121.500, mic: true, mon: true, vol: 70 },
+      com1: { active: 118.955, standby: 121.500, mic: true, mon: true, monStby: false, vol: 70 },
       com2: { active: 121.500, standby: 123.405, mic: false, mon: false, vol: 70 },
       nav1: { active: 114.60, standby: 113.10, obs: 60, ident: '' },
       nav2: { active: 117.55, standby: 116.95, obs: 60, ident: '' },
@@ -340,26 +340,15 @@ window.G3X = window.G3X || {};
     if (E.running || E.rpm > 500) {
       if (E.oilP < (E.rpm > 3500 ? 2 : 0.8)) warn('OILP', 'OIL PRESS LO');
       else if (E.oilP > 5.2) caut('OILPH', 'OIL PRESS HI');
-      if (E.oilT > 130) warn('OILT', 'OIL TEMP HI'); else if (E.oilT > 110) caut('OILTC', 'OIL TEMP');
-      if (E.cht > 135) warn('CHT', 'CHT HI'); else if (E.cht > 120) caut('CHTC', 'CHT');
-      if (E.rpm > 5800) warn('RPM', 'RPM HI');
       if (E.fuelP < 0.15) caut('FUELP', 'FUEL PRESS LO');
     }
     if (E.master && E.volts < 12.5) caut('VOLT', 'LOW VOLTS');
     if (E.master && E.amps < -1 && (E.running)) caut('ALTN', 'ALTERNATOR');
-    const totalFuel = a.fuelL + a.fuelR;
-    if (totalFuel < 12) warn('FUELQ', 'FUEL QTY LO'); else if (totalFuel < 20) caut('FUELQC', 'FUEL LOW');
-    if (Math.abs(a.fuelL - a.fuelR) > 20) adv('FUELIMB', 'FUEL IMBALANCE');
-    if (a.fuelSel === 'L' && a.fuelL < 2 && E.running) warn('TANK', 'SWITCH TANK');
-    if (a.fuelSel === 'R' && a.fuelR < 2 && E.running) warn('TANK', 'SWITCH TANK');
     if (S.fail.ahrs) warn('AHRS', 'AHRS FAIL');
     if (S.fail.adc) warn('ADC', 'ADC FAIL');
     if (S.fail.gps) caut('GPS', 'GPS LOI');
     if (S.fail.pitot) caut('PITOT', 'AIRSPEED MISCOMPARE');
-    if (a.stall) warn('STALL', 'STALL');
     if (!a.onGround && a.ias > SIM.AC.vne) warn('VNE', 'OVERSPEED');
-    if (a.flaps > 0 && a.ias > (a.flaps === 2 ? SIM.AC.vfe : SIM.AC.vfeTo) + 2) caut('VFE', 'FLAPS OVERSPEED');
-    if (a.parkBrake && (E.running && a.throttle > 0.4)) caut('PBRK', 'PARK BRAKE');
     if (A.timer.expired) adv('TIMER', 'TIMER EXPIRED');
     // terrein
     if (!a.onGround) {

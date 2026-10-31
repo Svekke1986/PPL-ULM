@@ -3,7 +3,7 @@ window.G3X = window.G3X || {};
 (function () {
   const U = G3X.util;
   const D = {
-    W: 1280, H: 768, BAR_H: 28, EIS_W: 150, TOP_H: 48,
+    W: 1280, H: 768, BAR_H: 28, EIS_W: 120, TOP_H: 48,
     canvas: null, ctx: null, zones: [], scale: 1, hover: null,
     C: {
       sky: '#1f63c9', sky2: '#0f3d8a', ground: '#9a5b25', ground2: '#5c3512', magenta: '#ff2bff', cyan: '#19e6ff', green: '#28e02c', white: '#ffffff', yellow: '#ffd21a', red: '#ff3131', grey: '#9aa3ad', dark: '#0b0e12', panel: 'rgba(0,0,0,0.65)', amber: '#ffb000', blue: '#2f7bff'
@@ -20,7 +20,8 @@ window.G3X = window.G3X || {};
   D.layout = () => {
     const A = G3X.avionics.A;
     const top = D.TOP_H, h = D.H - D.BAR_H - top;
-    const eisVisible = !(A.layout === 'MFD' && A.mfdPage === 'ENG') && !(A.layout === 'SPLIT' && A.mfdPage === 'ENG') && !(A.layout === 'PFD' && A.pfdPage === 'ENG');
+    // EIS-strook alleen op de MFD-kant (zoals in deze installatie geconfigureerd), niet bij een volledig PFD
+    const eisVisible = A.layout !== 'PFD' && A.mfdPage !== 'ENG';
     const eis = eisVisible ? { x: 0, y: top, w: D.EIS_W, h } : null;
     const x0 = eisVisible ? D.EIS_W : 0, ww = D.W - x0;
     let pfd = null, mfd = null;

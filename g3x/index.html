@@ -35,6 +35,7 @@
           <div class="bezel-logo">G3X TRAINER <small>GDU 460-stijl · 10,6"</small></div>
         </div>
       </div>
+      <div id="cockpit" aria-label="Cockpitinstrumenten, radio en transponder"></div>
       <div class="under">
         <div id="acpanel" aria-label="Vliegtuigbediening"></div>
       </div>
@@ -75,7 +76,8 @@
       <p>Een oefensimulator in de stijl van de Garmin G3X Touch (één scherm, GDU 460-indeling) met een eenvoudig model van een <b>Tecnam P2008 JC MkII</b> (Rotax 912 S). Thuisbasis <b>EBZH Hasselt-Kiewit</b>. Het scherm is, zoals op het echte toestel, Engelstalig. In <b>Verkennen</b> staat het toestel stil op de grond en leer je alle functies kennen (<b>Reset</b> zet de startsituatie terug); in <b>Scenario</b> volg je stappen (<b>Reset scenario</b> = zelfde gegevens opnieuw, <b>Nieuwe gegevens</b> = nieuwe willekeurige waarden).</p>
       <h3>Het scherm bedienen</h3>
       <ul>
-        <li><b>Tikken</b> op velden: baro, hoogte (cyaan vak), heading (HSI), CRS/DTK, bearing pointers, wind, NAV/COM-frequenties (bovenbalk), transponder, AP-balk (bovenaan PFD), CAS-meldingen (bevestigen), EIS-strook (motorpagina), kaart (features / cursor).</li>
+        <li><b>Tikken</b> op velden: baro, hoogte (cyaan vak), <b>HSI</b> (CDI-bron GPS/VOR, heading bug, bearing pointers, OBS), CRS/DTK, wind, NAV-frequenties (linksonder op de PFD), CAS-meldingen (bevestigen), EIS-strook (motorpagina), kaart (features / cursor).</li>
+        <li><b>Buiten de G3X</b> (zoals in deze P2008): de <b>COM-radio</b> en de <b>transponder</b> zijn aparte toestellen onder het scherm; RPM, CT, olietemperatuur en brandstof zijn analoge meters; de flaps hebben lampjes bij de schakelaar. De G3X toont als motorinformatie alleen oliedruk, brandstofdruk, volts en ampères, en alleen aan de MFD-kant.</li>
         <li><b>Harde toetsen op de bezel</b> (zoals op de GDU 460): <b>NRST</b> en <b>D→</b> links, <b>MENU</b> en <b>BACK</b> rechts. <b>MENU twee keer</b> opent het Main Menu; <b>MENU</b> één keer geeft de opties van de huidige pagina (en Full Screen PFD / Split Screen / Full Screen MFD). <b>BACK</b> sluit een venster of gaat een pagina terug. Onderaan het scherm: knopfuncties, de knop <b>Messages</b> en de klok; SUSP/OBS verschijnen daar en op de HSI.</li>
         <li><b>Linkerknop</b>: buiten = HDG, binnen = ALT. Indrukken wisselt naar BARO/CRS en naar COM1-afstemming. <b>Rechterknop</b>: buiten = kaartbereik of scrollen, binnen = pannen/selecteren; indrukken = cursor aan/uit of Enter.</li>
         <li>Op de kaart: slepen = pannen, scrollwiel = bereik, tik op een symbool = info met Direct-To.</li>
@@ -85,16 +87,17 @@
         <tr><td>QNH / baro</td><td>Tik op het <b>baro-veld</b> onder de hoogtetape → cijfers → Enter (of STD). Ook: linkerknop indrukken tot BARO, dan buitenring draaien.</td></tr>
         <tr><td>Heading bug</td><td>Buitenring linkerknop, of tik op de <b>HSI</b> → waarde → Enter / SYNC.</td></tr>
         <tr><td>Hoogte selecteren</td><td>Binnenring linkerknop, of tik op het <b>cyaan hoogtevak</b> boven de hoogtetape.</td></tr>
-        <tr><td>COM / NAV afstemmen</td><td>Tik op de <b>standby-frequentie</b> (cyaan, bovenbalk) → toetsenbord of lijst Recent/Nearest → Enter. Tik op de <b>actieve</b> frequentie om te wisselen (XFER). Tik op het label COM1/COM2 voor MIC.</td></tr>
-        <tr><td>Transponder</td><td>Tik op het <b>XPDR-veld</b> (bovenbalk of rechtsonder op de PFD) → code 0–7 → Enter; modus STBY/GND/ON/ALT, IDENT, VFR.</td></tr>
+        <tr><td>COM afstemmen</td><td>Aparte radio onder het scherm: knoppen MHz/kHz zetten de standby, <b>⇄</b> wisselt actief en standby (ingedrukt houden = 121.500), <b>MON</b> luistert de standby mee.</td></tr>
+        <tr><td>NAV afstemmen</td><td>Tik op de <b>NAV-standbyfrequentie</b> linksonder op de PFD → toetsenbord of lijst → Enter; tik op de actieve frequentie om te wisselen.</td></tr>
+        <tr><td>Transponder</td><td>Apart toestel onder het scherm: cijfers 0–7 (vier cijfers = nieuwe code), modus SBY/GND/ON/ALT, <b>VFR</b> (7000), <b>IDENT</b>, CLR.</td></tr>
         <tr><td>Direct-To</td><td>Toets <b>D→</b> op de bezel → tabblad Waypoint (ID aantikken en typen), Flight Plan, Nearest Airports of Recent → <b>Activate</b>. “Course To” voor een inbound koers; “Stop Navigation” annuleert.</td></tr>
         <tr><td>Vluchtplan</td><td><b>Main Menu → Active Flight Plan</b> → + Waypoint. Tik op een rij: Activate Leg, Direct-To, Insert Before/After, Set Altitude (VNAV), Remove. <b>Menu</b>: Invert, Store, Delete, OBS.</td></tr>
         <tr><td>Nadering</td><td><b>Main Menu → Procedures</b> (of Tools) (of FPL → PROC) → vliegveld, nadering, transitie → Load / Load &amp; Activate. In de FPL-balk: Activate Approach, Vectors-to-Final, Missed, Remove.</td></tr>
         <tr><td>Nearest</td><td>Toets <b>NRST</b> op de bezel → tabs Airports / VOR / NDB / VRP / User / Airspace → tik op een rij voor info, Direct-To en frequenties.</td></tr>
         <tr><td>Kaart</td><td>Rechterknop buitenring = bereik; <b>Menu</b> op de kaart = Orientation, Declutter, Topo, Airspace…; slepen of knop indrukken = cursor (Direct-To, user waypoint, luchtruiminfo).</td></tr>
-        <tr><td>CDI-bron, bearing pointers, wind, SVT, minimums</td><td>Tik op het <b>bronlabel</b> links boven de HSI (GPS → NAV1 → NAV2), op <b>BRG1/BRG2</b> en op het <b>windvak</b>; of <b>Menu</b> op een volledig PFD = PFD Options.</td></tr>
-        <tr><td>Motor &amp; brandstof</td><td>Tik op de <b>EIS-strook</b> (of Home → Engine): Fuel on Board, Reset Fuel Used, Fuel Selector.</td></tr>
-        <tr><td>Timer, checklist, instellingen, berichten</td><td><b>Main Menu</b> → Timer / Checklists / Setup / Messages (ook COM 1 Radio, COM 2 Radio, XPDR, Audio Panel, VNAV, Weight &amp; Balance, Backlight Intensity). De knop <b>Messages</b> onderaan knippert bij een nieuw bericht.</td></tr>
+        <tr><td>CDI-bron, bearing pointers, wind, SVT, minimums</td><td>Tik op de <b>HSI</b> → HSI Options (CDI Source GPS / VOR1 / VOR2); ook via het bronlabel links boven de HSI, <b>BRG1/BRG2</b> en het <b>windvak</b>; <b>Menu</b> op een volledig PFD = PFD Options.</td></tr>
+        <tr><td>Motor</td><td>EIS-strook aan de MFD-kant (oliedruk, brandstofdruk, volts, ampères); tik erop voor de motorpagina. Toerental, temperaturen en brandstof: analoge meters in het paneel.</td></tr>
+        <tr><td>Timer, checklist, instellingen, berichten</td><td><b>Main Menu</b> → Timer / Checklists / Setup / Messages (ook VNAV, Weight &amp; Balance, Backlight Intensity). De knop <b>Messages</b> onderaan knippert bij een nieuw bericht.</td></tr>
         <tr><td>Scherm­indeling</td><td><b>MENU</b> → Full Screen PFD / Split Screen / Full Screen MFD. <b>BACK</b> sluit een venster of gaat een pagina terug; <b>MENU 2×</b> opent het Main Menu.</td></tr>
         <tr><td>SUSP / OBS</td><td>Verschijnen op de HSI en in de onderste strook wanneer van toepassing (bij het MAP of in een hold; OBS via CRS-veld of FPL-menu).</td></tr>
       </table>
@@ -132,6 +135,7 @@
   <script src="js/eis.js"></script>
   <script src="js/mfd.js"></script>
   <script src="js/bars.js"></script>
+  <script src="js/cockpit.js"></script>
   <script src="js/icons.js"></script>
   <script src="js/ui.js"></script>
   <script src="js/scenarios.js"></script>

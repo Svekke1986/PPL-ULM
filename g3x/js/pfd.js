@@ -402,7 +402,7 @@ window.G3X = window.G3X || {};
       D.text(ctx, U.fmtDis(D.distVal(n.dis)), lx - 26, hy + 71, { size: 14, color: '#fff', align: 'center', weight: 'bold' });
     }
     ctx.restore();
-    D.zone(hx - R, hy - R, 2 * R, 2 * R, () => G3X.ui.openHdgSel(), 'hsi');
+    D.zone(hx - R, hy - R, 2 * R, 2 * R, () => G3X.ui.openHsiOptions(), 'hsi');
   }
   function drawWind(ctx, x, y, A, S) {
     const a = S.ac, w = G3X.sim.windAt();
@@ -435,23 +435,12 @@ window.G3X = window.G3X || {};
     });
     D.text(ctx, (A.nav1.ident ? 'NAV1 ' + A.nav1.ident : '') + (A.nav2.ident ? '  NAV2 ' + A.nav2.ident : ''), nb.x + 4, nb.y + 58, { size: 11, color: C.green });
     D.text(ctx, 'OAT ' + D.tempVal(G3X.sim.oat()), nb.x + nb.w - 4, nb.y + 58, { size: 11, color: '#fff', align: 'right' });
-    // rechtsonder: transponder
-    const x = A.xpdr;
-    D.box(ctx, X + W - 112, Y + H - 58, 108, 54, 'rgba(0,0,0,0.6)');
-    D.text(ctx, 'XPDR', X + W - 108, Y + H - 46, { size: 11, color: '#9fb3c8' });
-    D.text(ctx, x.code, X + W - 60, Y + H - 44, { size: 20, color: x.mode === 'STBY' ? '#fff' : C.green, weight: 'bold' });
-    const modeTxt = x.ident > 0 ? 'IDNT' : x.mode === 'ALT' && S.ac.onGround ? 'GND' : x.mode;
-    D.text(ctx, modeTxt, X + W - 108, Y + H - 18, { size: 15, color: x.ident > 0 ? C.green : '#fff', weight: 'bold' });
-    if (x.reply) D.text(ctx, 'R', X + W - 12, Y + H - 18, { size: 15, color: C.green, align: 'right', weight: 'bold' });
-    if (x.code === '7700' || x.code === '7600' || x.code === '7500') D.text(ctx, 'EMERG', X + W - 40, Y + H - 18, { size: 12, color: C.yellow, align: 'center' });
-    D.zone(X + W - 112, Y + H - 58, 108, 54, () => G3X.ui.openXpdr(), 'xpdr');
     // minimums
     if (A.minimumsOn && A.minimums != null) { D.text(ctx, 'MINS ' + A.minimums, X + W - 140, Y + H - 90, { size: 13, color: C.cyan, align: 'right' }); }
   }
 
   function drawAnnunciations(ctx, cx, cy, A, S) {
     const a = S.ac;
-    if (a.stall && !a.onGround) D.textOutline(ctx, 'STALL', cx, cy - 70, { size: 28, color: C.red, align: 'center' });
     if (A.minFlag && D.blink(2)) D.textOutline(ctx, 'MINIMUMS', cx, cy + 70, { size: 24, color: C.yellow, align: 'center' });
     if (a.crashed) { D.box(ctx, cx - 160, cy - 40, 320, 80, 'rgba(0,0,0,0.8)', C.red, 2); D.text(ctx, 'HARD LANDING / CRASH', cx, cy - 12, { size: 20, color: C.red, align: 'center', weight: 'bold' }); D.text(ctx, 'Reset the scenario in the trainer panel', cx, cy + 14, { size: 14, color: '#fff', align: 'center' }); }
     if (S.paused && !a.crashed) D.textOutline(ctx, 'SIM PAUSED', cx, cy - 130, { size: 22, color: C.yellow, align: 'center' });

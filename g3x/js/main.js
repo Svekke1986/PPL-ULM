@@ -10,7 +10,7 @@ window.G3X = window.G3X || {};
     D.init($('#g3x-canvas'));
     UI.init($('#g3x-overlay'));
     try { M.invertPitch = localStorage.getItem('g3x.invertPitch') === '1'; } catch (e) { /* */ }
-    buildKnobs(); buildAircraftPanel(); buildTrainerPanel(); bindCanvas(); bindKeyboard();
+    buildKnobs(); G3X.cockpit.init(); buildAircraftPanel(); buildTrainerPanel(); bindCanvas(); bindKeyboard();
     window.addEventListener('resize', M.fit); M.fit();
     // scenario uit URL (#s=id) of standaard
     const m = location.hash.match(/s=([a-z_0-9]+)/i);
@@ -36,8 +36,8 @@ window.G3X = window.G3X || {};
     SIM.step(dtReal);
     if (!S.paused) { const dtSim = dtReal * S.rate; AV.step(S, dtSim); T.tick(dtSim); }
     else AV.step(S, 0);
-    if (now - M.lastRender > 33) { D.render(); UI.tick(); M.lastRender = now; }
-    if (now - M.panelT > 250) { refreshPanels(); M.panelT = now; }
+    if (now - M.lastRender > 33) { D.render(); UI.tick(); G3X.cockpit.drawGauges(); M.lastRender = now; }
+    if (now - M.panelT > 250) { refreshPanels(); G3X.cockpit.refresh(); M.panelT = now; }
     pollGamepad();
     requestAnimationFrame(M.loop);
   };
@@ -151,7 +151,6 @@ window.G3X = window.G3X || {};
     const el = $('#acpanel');
     el.innerHTML = `<div class="acp-title">Vliegtuig — ${esc(SIM.AC.name)}</div>
       <div class="acp-row"><label>Gas <output id="thr-out">0 %</output></label><input id="thr" type="range" min="0" max="100" value="0"></div>
-      <div class="acp-row btns"><span>Flaps</span>${SIM.AC.flapNames.map((n, i) => `<button class="acb flap" data-f="${i}">${n}</button>`).join('')}</div>
       <div class="acp-row btns"><span>Tank</span><button class="acb fuel" data-s="L">L</button><button class="acb fuel" data-s="R">R</button><button class="acb fuel" data-s="OFF">OFF</button><span class="sep"></span><button class="acb" id="pump">Fuel pump</button></div>
       <div class="acp-row btns"><button class="acb" id="master">Master</button><button class="acb" id="start">Start</button><button class="acb" id="pbrake">Parkeerrem</button><button class="acb" id="brake" title="Houd ingedrukt (of toets B)">Rem</button></div>
       <div class="acp-row btns"><button class="acb" id="pause">Pauze</button><button class="acb rate" data-r="1">1×</button><button class="acb rate" data-r="2">2×</button><button class="acb rate" data-r="4">4×</button><button class="acb" id="revers" title="Reversionary: herstelt het scherm (PFD+EIS)">Reversionary</button><button class="acb" id="sound">🔊</button></div>
@@ -159,7 +158,6 @@ window.G3X = window.G3X || {};
       <div class="acp-row small"><label><input type="checkbox" id="invpitch"> ↑ = neus omhoog (omgekeerd)</label> <span class="muted">Toetsen: ↑↓ pitch · ←→ rol · Q/E richting · PgUp/PgDn gas · F/V flaps · B rem · P pauze · H help</span></div>
       <div class="stick" id="stick" title="Virtuele stuurknuppel: sleep"><div class="stick-dot"></div></div>`;
     const thr = $('#thr'); thr.oninput = () => SIM.setThrottle(thr.value / 100);
-    el.querySelectorAll('.flap').forEach(b => { b.onclick = () => { SIM.setFlaps(+b.dataset.f); G3X.bus.emit('flaps', SIM.S.ac.flaps); }; });
     el.querySelectorAll('.fuel').forEach(b => { b.onclick = () => { SIM.setFuelSel(b.dataset.s); G3X.bus.emit('fuelsel', b.dataset.s); }; });
     $('#pump').onclick = () => { M.pump = !M.pump; G3X.bus.emit('pump', M.pump); };
     $('#master').onclick = () => { SIM.toggleMaster(); G3X.bus.emit('master', SIM.S.eng.master); };
@@ -185,7 +183,6 @@ window.G3X = window.G3X || {};
   function refreshPanels() {
     const S = SIM.S, a = S.ac;
     const thr = $('#thr'); if (document.activeElement !== thr) thr.value = Math.round(a.throttle * 100); $('#thr-out').textContent = Math.round(a.throttle * 100) + ' %';
-    document.querySelectorAll('#acpanel .flap').forEach(b => b.classList.toggle('on', +b.dataset.f === a.flaps));
     document.querySelectorAll('#acpanel .fuel').forEach(b => b.classList.toggle('on', b.dataset.s === a.fuelSel));
     $('#master').classList.toggle('on', S.eng.master); $('#pbrake').classList.toggle('on', a.parkBrake); $('#pump').classList.toggle('on', !!M.pump);
     $('#pause').classList.toggle('on', S.paused); document.querySelectorAll('#acpanel .rate').forEach(b => b.classList.toggle('on', +b.dataset.r === S.rate));
