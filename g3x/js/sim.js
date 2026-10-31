@@ -215,6 +215,8 @@ window.G3X = window.G3X || {};
       }
       if (opts.fail) Object.assign(S.fail, opts.fail);
       S.parked = !!opts.parked;
+      // motor laten stabiliseren bij de ingestelde gasstand, zodat meters en vragen bij de start kloppen
+      if (S.eng.running) for (let i = 0; i < 400; i++) stepEngine(S, 0.5);
       return S;
     },
     airData,

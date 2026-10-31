@@ -33,7 +33,10 @@ window.G3X = window.G3X || {};
   const hdgNear = (v, t, tol) => Math.abs(U.norm180(v - t)) <= tol;
   const q = (text, options, correct, explain) => ({ text, question: { options, correct, explain } });
   // meerkeuzeopties rond een numerieke waarde
-  const numOpts = (val, step, fmt = v => String(v)) => { const base = val; const offs = U.shuffle([0, -step, step, 2 * step]); const correctIdx = offs.indexOf(0); return { options: offs.map(o => fmt(base + o)), correct: correctIdx }; };
+  // meerkeuzeopties rond een numerieke waarde; 'values' maakt live beoordeling mogelijk (zie T.answer)
+  const numOpts = (val, step, fmt = v => String(v)) => { const base = val; const offs = U.shuffle([0, -step, step, 2 * step]); const correctIdx = offs.indexOf(0); return { options: offs.map(o => fmt(base + o)), values: offs.map(o => base + o), step, correct: correctIdx }; };
+  // afleesvraag: de opties worden bij het tonen gemaakt, maar het juiste antwoord is wat de meter toont op het moment van antwoorden
+  const liveQ = (text, getter, step, fmt, explain) => ({ text, makeQuestion: (S, A) => { const v = getter(S, A); const o = numOpts(Math.round(v / step) * step, step, fmt); return { options: o.options, values: o.values, step, correct: o.correct, get: () => getter(SIM.S, AV.A), fmt, explain }; } });
   const mk = (text, hint, check, extra = {}) => Object.assign({ text, hint, check }, extra);
   const chatter = (who, text) => `<div class="atc"><b>${esc(who)}</b> ${esc(text)}</div>`;
 
@@ -85,7 +88,7 @@ window.G3X = window.G3X || {};
   });
   add('pfd_read', 'Basis & PFD', 'Instrumenten aflezen (quiz)', () => {
     const start = R.airborne(HOME);
-    const mkQ = (label, getter, step, fmt) => Object.assign({ dynamic: true }, { text: label, makeQuestion: (S, A) => { const v = getter(S, A); const o = numOpts(Math.round(v / step) * step, step, fmt); return { options: o.options, correct: o.correct, explain: `Afgelezen: ${fmt(Math.round(v / step) * step)}.` }; } });
+    const mkQ = (label, getter, step, fmt) => liveQ(label, getter, step, fmt);
     return { title: 'Aflezen van de PFD', start, intro: '<p>Lees de gevraagde waarden af op de PFD. Antwoord binnen de tolerantie.</p>',
       steps: [
         mkQ('Wat is je <b>grondsnelheid</b> (GS, databalk bovenaan)?', S => S.ac.gs, 5, v => v + ' kt'),
@@ -136,7 +139,7 @@ window.G3X = window.G3X || {};
       steps: [
         mk('Open de pagina <b>Nearest</b> (Airports).', 'Toets NRST op de bezel, tab Vliegvelden.', (S, A, ctx) => ctx.has('page', p => p === 'NRST')),
         mk('Zet de hoofdfrequentie van het <b>dichtstbijzijnde vliegveld</b> actief op de GNC 255.', 'Tik op de rij → Waypoint Info → lees de frequentie af; zet ze met de TUNE-knop van de GNC 255 in standby en wissel (⇄).', (S, A) => { const n = NAV.nearest(S.ac, 'APT', 1)[0].item; return near(A.com1.active, mainFreq(n), 0.0005); }),
-        (() => ({ text: 'Hoe ver is dat vliegveld ongeveer (nm)?', makeQuestion: S => { const n = NAV.nearest(S.ac, 'APT', 1)[0]; const d = Math.round(n.dist); const o = numOpts(d, 3, v => Math.max(0, v) + ' NM'); return { options: o.options, correct: o.correct, explain: `${n.item.id} op ${n.dist.toFixed(1)} nm, peiling ${U.fmtHdg(n.brg)}°.` }; } }))(),
+        liveQ('Hoe ver is dat vliegveld ongeveer (nm)?', S => NAV.nearest(S.ac, 'APT', 1)[0].dist, 3, v => Math.max(0, v) + ' NM', 'Afstand staat in de Nearest-lijst.'),
       ] };
   });
   add('xpdr_code', 'Radio & transponder', 'Transponder: code, modus, IDENT, VFR', () => {
@@ -195,7 +198,7 @@ window.G3X = window.G3X || {};
       steps: [
         mk(`Activeer <b>Direct-To ${apt.id}</b>.`, 'Toets D→ op de bezel → typ de ID (of tabblad Nearest Airports) → Activate.', (S, A) => A.fpl.directTo && A.fpl.directTo.to.id === apt.id),
         mk('Draai naar de DTK en houd de CDI gecentreerd (XTK < 0,3 nm) gedurende 20 s.', 'Lees DTK af in de databalk; stuur tot de magenta naald in het midden staat.', hold((S, A) => A.nav && A.nav.valid && Math.abs(A.nav.xtk) < 0.3 && hdgNear(S.ac.trk, A.nav.dtk, 15), 20)),
-        (() => ({ text: 'Wat is de ETE naar het waypoint (minuten, afgerond)?', makeQuestion: (S, A) => { const m = Math.round(A.nav.ete); const o = numOpts(m, 3, v => Math.max(0, v) + ' min'); return { options: o.options, correct: o.correct, explain: `DIS ${A.nav.dis.toFixed(1)} nm ÷ GS ${Math.round(S.ac.gs)} kt × 60 = ${m} min.` }; } }))(),
+        liveQ('Wat is de ETE naar het waypoint (minuten, afgerond)?', (S, A) => A.nav && A.nav.valid ? A.nav.ete : 0, 3, v => Math.max(0, v) + ' min', 'ETE = DIS ÷ GS × 60; lees ze af in de bovenbalk van het MFD.'),
         mk('Zet het bereik van de kaart zo dat het waypoint zichtbaar is (bereik ≥ afstand) en op <b>Track up</b>.', 'MFD-scherm: rechterknop buiten = Range; MENU op de kaart → Orientation.', (S, A) => A.map.range >= A.nav.dis * 0.9 && A.map.orient === 'TRKUP'),
       ] };
   });
@@ -272,7 +275,7 @@ window.G3X = window.G3X || {};
     return { title: 'Kaartcursor', start, intro: `<p>Gebruik de kaartcursor (tik of sleep op de kaart, of druk de rechterknop in) om te meten.</p>`,
       steps: [
         mk('Activeer de cursor op de kaart (tik op een lege plek of druk de rechterknop van het MFD-scherm in).', 'Linksonder verschijnt peiling en afstand vanaf het vliegtuig.', (S, A) => A.map.panning && A.mfdPage === 'MAP'),
-        (() => ({ text: `Wat is ongeveer de <b>afstand</b> van je positie tot <b>${esc(city[0])}</b>? (Zet de cursor op de stad.)`, makeQuestion: S => { const d = Math.round(U.distNm(S.ac, { lat: city[1], lon: city[2] })); const o = numOpts(d, 3, v => Math.max(0, v) + ' NM'); return { options: o.options, correct: o.correct, explain: `Peiling ${U.fmtHdg(U.bearing(S.ac, { lat: city[1], lon: city[2] }))}°, ${d} nm.` }; } }))(),
+        liveQ(`Wat is ongeveer de <b>afstand</b> van je positie tot <b>${esc(city[0])}</b>? (Zet de cursor op de stad.)`, S => U.distNm(S.ac, { lat: city[1], lon: city[2] }), 3, v => Math.max(0, v) + ' NM', 'Met de cursor op de stad staat de afstand linksonder op de kaart.'),
         mk('Maak een <b>gebruikerswaypoint</b> op de cursorpositie.', 'Cursormenu → Create User Waypoint (of de MFD-rechterknop indrukken → menu).', ev('userwpt')),
         mk('Activeer een Direct-To naar dat nieuwe waypoint.', 'D→ → Waypoint → typ de USR-ID (of tabblad Recent).', (S, A) => A.fpl.directTo && A.fpl.directTo.to.user),
         mk('Zet de cursor uit (Back).', 'Toets BACK.', (S, A) => !A.map.panning),
@@ -391,7 +394,7 @@ window.G3X = window.G3X || {};
   });
   add('gauges_read', 'Motor & systemen (EIS)', 'Analoge meters aflezen', () => {
     const start = R.airborne(HOME, { fuelL: U.rndInt(15, 55), fuelR: U.rndInt(15, 55) }); start.throttle = U.pick([0.6, 0.72, 0.85]);
-    const mkQ = (label, getter, step, fmt) => ({ text: label, makeQuestion: S => { const v = getter(S); const o = numOpts(Math.round(v / step) * step, step, fmt); return { options: o.options, correct: o.correct, explain: `Afgelezen: ${fmt(Math.round(v / step) * step)}.` }; } });
+    const mkQ = (label, getter, step, fmt) => liveQ(label, getter, step, fmt);
     return { title: 'Analoge meters', start, intro: '<p>Lees de analoge meters onder de schermen af; de G3X toont deze waarden niet.</p>',
       steps: [
         mkQ('Wat is het <b>toerental</b> (afgerond op 100)?', S => S.eng.rpm, 100, v => v + ' rpm'),
@@ -431,7 +434,7 @@ window.G3X = window.G3X || {};
     return { title: 'Brandstofbeheer', start, intro: '<p>Je vliegt al een tijdje op de linkertank. Kijk naar de analoge brandstofmeters in het paneel.</p>',
       steps: [
         mk('De tanks zijn uit balans. Wissel naar de <b>rechtertank</b>.', 'Rode brandstofkraan → RIGHT.', S => S.ac.fuelSel === 'R'),
-        (() => ({ text: 'Hoeveel vliegtijd heb je nog ongeveer, bij 17 L/h en 4 L onbruikbaar? (Lees de analoge meters af.)', makeQuestion: S => { const m = Math.round((S.ac.fuelL + S.ac.fuelR - 4) / 17 * 60 / 10) * 10; const o = numOpts(m, 30, v => U.fmtEte(Math.max(0, v))); return { options: o.options, correct: o.correct, explain: `Bruikbaar ≈ ${Math.round(S.ac.fuelL + S.ac.fuelR - 4)} L ÷ 17 L/h. Zonder fuel-flow-sensor reken je zelf.` }; } }))(),
+        liveQ('Hoeveel vliegtijd heb je nog ongeveer, bij 17 L/h en 4 L onbruikbaar? (Lees de analoge meters af.)', S => (S.ac.fuelL + S.ac.fuelR - 4) / 17 * 60, 30, v => U.fmtEte(Math.max(0, v)), 'Bruikbaar (totaal − 4 L) ÷ 17 L/h. Zonder fuel-flow-sensor reken je zelf.'),
         mk('Stel een <b>timer van 30 minuten</b> in (aftellend, gestart) als herinnering om opnieuw te wisselen.', 'Main Menu (MENU 2×) → Timer → Set… 30:00 → Start.', (S, A) => A.timer.running && A.timer.dir === 'DOWN' && near(A.timer.preset, 1800, 60)),
         q('Waarom wissel je regelmatig van tank in de P2008?', ['Om de massabalans (laterale trim) en gelijke brandstofverdeling te bewaren', 'Omdat de motor anders te heet wordt', 'Omdat de kraan anders vastloopt', 'Dat is niet nodig'], 0, 'De P2008 heeft een L/R/OFF-kraan: wissel elke ~30 minuten.'),
       ] };
@@ -493,7 +496,7 @@ window.G3X = window.G3X || {};
       onTick: (S, A, ctx) => { if (ctx.t > 5 && !S.fail.adc && !ctx.rec) S.fail.adc = true; },
       steps: [
         mk('Bevestig <b>ADC FAIL</b>.', 'CAS-venster.', (S, A) => S.fail.adc && A.acked.ADC && A.acked.ADC.seen),
-        (() => ({ text: 'Wat is je <b>GPS-hoogte</b> (Trip Computer) afgerond op 100 ft?', makeQuestion: S => { const v = Math.round(S.ac.alt / 100) * 100; const o = numOpts(v, 100, x => x + ' ft'); return { options: o.options, correct: o.correct, explain: 'Main Menu (MENU 2×) → Trip Computer → GPS altitude. GPS-hoogte ≠ barometrische hoogte, maar bruikbaar als back-up.' }; } }))(),
+        liveQ('Wat is je <b>GPS-hoogte</b> (Trip Computer) afgerond op 100 ft?', S => S.ac.alt, 100, x => x + ' ft', 'Main Menu (MENU 2×) → Info/Trip Computer → GPS altitude. GPS-hoogte ≠ barometrische hoogte, maar bruikbaar als back-up.'),
         mk('Houd de grondsnelheid (GS, databalk) tussen <b>85 en 105 kt</b> gedurende 20 s met een gezond toerental (4500–5300).', 'Zonder IAS: vlieg op vermogen + houding (pitch) en GS.', hold(S => S.ac.gs >= 85 && S.ac.gs <= 105 && S.eng.rpm >= 4500 && S.eng.rpm <= 5300, 20)),
         q('Waarom is GS geen vervanging voor IAS bij de landing?', ['Wind en dichtheid beïnvloeden GS; overtrek hangt af van IAS', 'GS is altijd lager dan IAS', 'GPS werkt niet laag bij de grond', 'GS wordt in km/h gemeten'], 0, 'Met tegenwind kan je GS laag zijn terwijl je IAS prima is — en omgekeerd.'),
       ] };
@@ -694,6 +697,14 @@ window.G3X = window.G3X || {};
   T.answer = i => {
     const st = T.steps[T.stepIndex]; if (!st || !st.question || st.answered != null) return;
     st.answered = i;
+    const q = st.question;
+    if (q.get && q.values) {
+      // afleesvraag: vergelijk het gekozen antwoord met de waarde die de meter nu toont
+      const cur = q.get(); const tol = q.step * 0.75;
+      const dists = q.values.map(v => Math.abs(v - cur)); const nearest = dists.indexOf(Math.min(...dists));
+      q.correct = dists[i] <= tol ? i : nearest;
+      q.explain = `Nu afgelezen: ${q.fmt(Math.round(cur / q.step) * q.step)}.` + (q.explain ? ' ' + q.explain : '');
+    }
     if (i === st.question.correct) { st.feedback = { ok: true, text: st.question.explain }; setTimeout(() => { if (T.steps[T.stepIndex] === st) T.completeStep(); }, 1200); }
     else {
       st.feedback = { ok: false, text: st.question.explain };
