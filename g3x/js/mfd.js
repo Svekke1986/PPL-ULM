@@ -147,8 +147,9 @@ window.G3X = window.G3X || {};
       // range rechtsonder
       D.box(ctx, r.x + r.w - 92, r.y + r.h - 28, 88, 24, 'rgba(0,0,0,0.65)', '#3a4350', 1);
       D.text(ctx, (D.distVal(range) < 10 ? D.distVal(range).toFixed(1) : Math.round(D.distVal(range))) + ' ' + D.distUnit(), r.x + r.w - 48, r.y + r.h - 16, { size: 14, color: '#fff', align: 'center', weight: 'bold' });
-      D.zone(r.x + r.w - 92, r.y + r.h - 28, 44, 24, () => M.rangeStep(-1), 'rng-');
-      D.zone(r.x + r.w - 48, r.y + r.h - 28, 44, 24, () => M.rangeStep(1), 'rng+');
+      // − = uitzoomen (groter bereik), + = inzoomen (kleiner bereik), zoals op het toestel
+      D.zone(r.x + r.w - 92, r.y + r.h - 28, 44, 24, () => M.rangeStep(1), 'rng-');
+      D.zone(r.x + r.w - 48, r.y + r.h - 28, 44, 24, () => M.rangeStep(-1), 'rng+');
       D.text(ctx, '−', r.x + r.w - 86, r.y + r.h - 16, { size: 14, color: '#9fb3c8' }); D.text(ctx, '+', r.x + r.w - 12, r.y + r.h - 16, { size: 14, color: '#9fb3c8', align: 'right' });
       // datavelden
       if (n && n.valid && mode === 'MAP') {
