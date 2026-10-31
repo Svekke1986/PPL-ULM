@@ -8,10 +8,10 @@ window.G3X = window.G3X || {};
     return {
       // PFD
       baro: 1013, baroStd: false, hdgBug: 60, altSel: 2000, crs1: 60, crs2: 60, minimums: null, minimumsOn: false,
-      navSource: 'GPS', brg1: 'OFF', brg2: 'OFF', windMode: 2, svt: true, inset: 'OFF', vspeeds: true, pfdPage: 'PFD',
+      navSource: 'GPS', brg1: 'OFF', brg2: 'OFF', windMode: 2, svt: true, inset: 'OFF', vspeeds: true,
       hsiMap: false, attIndFull: true,
       // scherm
-      layout: 'SPLIT', mfdPage: 'MAP', prevPage: 'MAP', brightness: 100,
+      mfdPage: 'MAP', prevPage: 'MAP', brightness: 100, reversion: false,
       map: { range: 10, orient: 'TRKUP', declutter: 0, airspace: true, topo: true, trackVector: true, rangeRing: true, obstacles: true, cities: true, water: true, panning: false, pan: null, cursor: null },
       units: { dist: 'NM', alt: 'FT', speed: 'KT', temp: 'C', baro: 'HPA', fuel: 'L' },
       // radio's

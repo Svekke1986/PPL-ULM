@@ -9,7 +9,7 @@ window.G3X = window.G3X || {};
   P.render = (ctx, r) => {
     const A = G3X.avionics.A, S = G3X.sim.S, a = S.ac, SIM = G3X.sim;
     const X = r.x, Y = r.y, W = r.w, H = r.h;
-    const tapeTop = Y + 54, tapeBot = Y + H - 238, tapeH = tapeBot - tapeTop, cy = tapeTop + tapeH / 2, cx = X + W / 2;
+    const tapeTop = Y + 36, tapeBot = Y + H - 238, tapeH = tapeBot - tapeTop, cy = tapeTop + tapeH / 2, cx = X + W / 2;
     const hsiR = W > 800 ? 125 : 104, hx = cx, hy = Y + H - 116;
     const ias = a.iasShown ?? a.ias, indAlt = G3X.avionics.indAlt();
     // trend (6 s)
@@ -21,7 +21,6 @@ window.G3X = window.G3X || {};
     drawAttitude(ctx, X, Y, W, H, cx, cy, A, S);
     ctx.restore();
 
-    drawDataBar(ctx, X, Y, W, A, S);
     drawAirspeed(ctx, X + 6, tapeTop, 84, tapeH, cy, ias, A, S);
     drawAltitude(ctx, X + W - 128, tapeTop, 86, tapeH, cy, indAlt, A, S);
     drawVsi(ctx, X + W - 40, tapeTop + 20, 34, tapeH - 40, cy, a.vs, A);

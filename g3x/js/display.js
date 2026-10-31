@@ -1,45 +1,47 @@
-/* Weergave: canvas van 1280×768 (GDU 460-verhouding), lay-out van PFD/MFD/EIS, tekenhulpjes en aanraakzones. */
+/* Weergave: twee G3X-schermen (links PFD, rechts MFD met EIS-strook), elk een canvas van 1280×768,
+   lay-out per scherm, tekenhulpjes en aanraakzones. */
 window.G3X = window.G3X || {};
 (function () {
   const U = G3X.util;
   const D = {
     W: 1280, H: 768, BAR_H: 28, EIS_W: 120, TOP_H: 48,
-    canvas: null, ctx: null, zones: [], scale: 1, hover: null,
+    screens: {}, cur: null, ctx: null, zones: [], scale: 1,
     C: {
       sky: '#1f63c9', sky2: '#0f3d8a', ground: '#9a5b25', ground2: '#5c3512', magenta: '#ff2bff', cyan: '#19e6ff', green: '#28e02c', white: '#ffffff', yellow: '#ffd21a', red: '#ff3131', grey: '#9aa3ad', dark: '#0b0e12', panel: 'rgba(0,0,0,0.65)', amber: '#ffb000', blue: '#2f7bff'
     },
     FONT: '"Roboto Condensed", "Arial Narrow", "Segoe UI", Arial, sans-serif',
   };
 
-  D.init = canvas => {
-    D.canvas = canvas; D.ctx = canvas.getContext('2d');
-    canvas.width = D.W; canvas.height = D.H;
+  D.init = (canvasL, canvasR) => {
+    for (const [id, cv] of [['L', canvasL], ['R', canvasR]]) { cv.width = D.W; cv.height = D.H; D.screens[id] = { id, canvas: cv, ctx: cv.getContext('2d'), zones: [], layout: null }; }
+    D.cur = D.screens.L; D.ctx = D.cur.ctx; D.zones = D.cur.zones;
   };
 
-  // lay-out rechthoeken
-  D.layout = () => {
-    const A = G3X.avionics.A;
+  // lay-out per scherm: L = PFD, R = MFD (+ EIS-strook); bij reversionary toont R de PFD met EIS
+  D.layoutFor = id => {
+    const A = G3X.avionics.A, S = G3X.sim.S;
     const top = D.TOP_H, h = D.H - D.BAR_H - top;
-    // EIS-strook alleen op de MFD-kant (zoals in deze installatie geconfigureerd), niet bij een volledig PFD
-    const eisVisible = A.layout !== 'PFD' && A.mfdPage !== 'ENG';
-    const eis = eisVisible ? { x: 0, y: top, w: D.EIS_W, h } : null;
-    const x0 = eisVisible ? D.EIS_W : 0, ww = D.W - x0;
-    let pfd = null, mfd = null;
-    if (A.layout === 'SPLIT') { pfd = { x: x0, y: top, w: Math.floor(ww / 2), h }; mfd = { x: x0 + Math.floor(ww / 2), y: top, w: ww - Math.floor(ww / 2), h }; }
-    else if (A.layout === 'PFD') pfd = { x: x0, y: top, w: ww, h };
-    else mfd = { x: x0, y: top, w: ww, h };
-    return { eis, pfd, mfd, top: { x: 0, y: 0, w: D.W, h: top }, bar: { x: 0, y: D.H - D.BAR_H, w: D.W, h: D.BAR_H } };
+    const base = { top: { x: 0, y: 0, w: D.W, h: top }, bar: { x: 0, y: D.H - D.BAR_H, w: D.W, h: D.BAR_H }, eis: null, pfd: null, mfd: null, dead: false };
+    if (id === 'L') { if (S.fail.display) base.dead = true; else base.pfd = { x: 0, y: top, w: D.W, h }; return base; }
+    if (A.reversion) { base.eis = { x: 0, y: top, w: D.EIS_W, h }; base.pfd = { x: D.EIS_W, y: top, w: D.W - D.EIS_W, h }; return base; }
+    const eisVisible = A.mfdPage !== 'ENG';
+    if (eisVisible) base.eis = { x: 0, y: top, w: D.EIS_W, h };
+    const x0 = eisVisible ? D.EIS_W : 0;
+    base.mfd = { x: x0, y: top, w: D.W - x0, h };
+    return base;
   };
 
   // ---------- aanraakzones ----------
   D.zone = (x, y, w, h, fn, id) => { D.zones.push({ x, y, w, h, fn, id }); };
-  D.tap = (px, py) => {
-    for (let i = D.zones.length - 1; i >= 0; i--) {
-      const z = D.zones[i];
+  D.tap = (screenId, px, py) => {
+    const sc = D.screens[screenId]; if (!sc) return null;
+    for (let i = sc.zones.length - 1; i >= 0; i--) {
+      const z = sc.zones[i];
       if (px >= z.x && px <= z.x + z.w && py >= z.y && py <= z.y + z.h) { z.fn(px - z.x, py - z.y, z); return z; }
     }
     return null;
   };
+  D.findZone = (screenId, id) => { const sc = D.screens[screenId]; return sc && sc.zones.find(z => z.id === id); };
 
   // ---------- tekenhulpjes ----------
   D.font = (size, weight = 'normal') => `${weight} ${size}px ${D.FONT}`;
@@ -72,21 +74,17 @@ window.G3X = window.G3X || {};
     ctx.save(); ctx.translate(x, y); ctx.rotate(dirDeg * U.DEG);
     D.poly(ctx, [[0, -size], [size * 0.8, size * 0.6], [-size * 0.8, size * 0.6]], fill, stroke, 1); ctx.restore();
   };
-  // veldje met label en waarde (datablokjes)
   D.field = (ctx, x, y, w, h, label, value, { valueColor = '#fff', labelColor = '#bfc7d1', size = 18, bg = 'rgba(0,0,0,0.55)', border = '#3a4350', align = 'center' } = {}) => {
     D.box(ctx, x, y, w, h, bg, border, 1, 3);
     if (label) D.text(ctx, label, x + 6, y + 11, { size: 12, color: labelColor, align: 'left' });
     D.text(ctx, value, align === 'center' ? x + w / 2 : x + w - 6, y + h / 2 + (label ? 5 : 0), { size, color: valueColor, align: align === 'center' ? 'center' : 'right', weight: 'bold' });
   };
-  // rode X bij storing
   D.redX = (ctx, x, y, w, h, label) => {
     D.box(ctx, x, y, w, h, 'rgba(40,40,40,0.85)');
     D.line(ctx, x, y, x + w, y + h, D.C.red, 5); D.line(ctx, x + w, y, x, y + h, D.C.red, 5);
     if (label) D.textOutline(ctx, label, x + w / 2, y + h / 2, { size: 22, color: D.C.red, align: 'center', weight: 'bold' });
   };
   D.clip = (ctx, x, y, w, h) => { ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip(); };
-
-  // knipperen
   D.blink = (hz = 2) => Math.floor(performance.now() / (1000 / hz)) % 2 === 0;
 
   // eenheden
@@ -101,24 +99,24 @@ window.G3X = window.G3X || {};
   D.fuelVal = l => (G3X.avionics.A.units.fuel === 'GAL' ? (l / 3.785).toFixed(1) : l.toFixed(0));
   D.fuelUnit = () => (G3X.avionics.A.units.fuel === 'GAL' ? 'GAL' : 'L');
 
-  // ---------- hoofdrender ----------
-  D.render = () => {
-    const ctx = D.ctx, A = G3X.avionics.A, S = G3X.sim.S;
-    D.zones = [];
-    ctx.fillStyle = '#000'; ctx.fillRect(0, 0, D.W, D.H);
-    const L = D.layout(); D.L = L;
-    if (S.fail.display) {
-      // scherm uitgevallen: alleen een donkere achtergrond met tekst (reversionary gebeurt via de knop)
-      D.text(ctx, 'DISPLAY FAIL', D.W / 2, D.H / 2, { size: 40, color: '#444', align: 'center' });
-      return;
+  // ---------- hoofdrender: beide schermen ----------
+  D.render = (visible = { L: true, R: true }) => {
+    const A = G3X.avionics.A;
+    for (const id of ['L', 'R']) {
+      const sc = D.screens[id]; if (!sc) continue;
+      sc.layout = D.layoutFor(id); if (id === 'L') D.LL = sc.layout; else D.LR = sc.layout;
+      if (!visible[id]) continue;
+      D.cur = sc; D.ctx = sc.ctx; sc.zones.length = 0; D.zones = sc.zones;
+      const ctx = sc.ctx, L = sc.layout;
+      ctx.fillStyle = '#000'; ctx.fillRect(0, 0, D.W, D.H);
+      if (L.dead) { D.text(ctx, '', D.W / 2, D.H / 2); continue; }
+      G3X.topbar.render(ctx, L.top, id);
+      if (L.eis) G3X.eis.renderStrip(ctx, L.eis);
+      if (L.pfd) G3X.pfd.render(ctx, L.pfd);
+      if (L.mfd) G3X.mfd.render(ctx, L.mfd);
+      G3X.buttonbar.render(ctx, L.bar, id);
+      if (A.brightness < 100) { ctx.fillStyle = `rgba(0,0,0,${(100 - A.brightness) / 120})`; ctx.fillRect(0, 0, D.W, D.H); }
     }
-    G3X.topbar.render(ctx, L.top);
-    if (L.eis) G3X.eis.renderStrip(ctx, L.eis);
-    if (L.pfd) { if (A.pfdPage === 'ENG') G3X.eis.renderPage(ctx, L.pfd); else G3X.pfd.render(ctx, L.pfd); }
-    if (L.mfd) G3X.mfd.render(ctx, L.mfd);
-    G3X.buttonbar.render(ctx, L.bar);
-    // helderheid
-    if (A.brightness < 100) { ctx.fillStyle = `rgba(0,0,0,${(100 - A.brightness) / 120})`; ctx.fillRect(0, 0, D.W, D.H); }
   };
 
   G3X.display = D;

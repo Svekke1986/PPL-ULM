@@ -22,19 +22,8 @@
 
   <main class="layout">
     <section class="left">
-      <div id="g3x-wrap">
-        <div id="g3x-unit">
-          <div id="g3x-screen">
-            <canvas id="g3x-canvas" width="1280" height="768" aria-label="G3X Touch scherm"></canvas>
-            <div id="g3x-overlay"></div>
-          </div>
-          <div class="knob" id="knob-L"></div>
-          <div class="knob" id="knob-R"></div>
-          <div class="hardkeys left"><button class="hardkey" data-k="NRST" type="button" title="Nearest">NRST</button><button class="hardkey dto" data-k="DTO" type="button" title="Direct To">D</button></div>
-          <div class="hardkeys right"><button class="hardkey" data-k="MENU" type="button" title="Menu (twee keer = Main Menu)">MENU</button><button class="hardkey" data-k="BACK" type="button" title="Back">BACK</button></div>
-          <div class="bezel-logo">G3X TRAINER <small>GDU 460-stijl · 10,6"</small></div>
-        </div>
-      </div>
+      <div id="view-toggle" class="view-toggle" aria-label="Weergave"></div>
+      <div id="g3x-wrap"></div>
       <div id="cockpit" aria-label="Cockpitinstrumenten, radio en transponder"></div>
       <div class="under">
         <div id="acpanel" aria-label="Vliegtuigbediening"></div>
@@ -77,9 +66,9 @@
       <h3>Het scherm bedienen</h3>
       <ul>
         <li><b>Tikken</b> op velden: baro, hoogte (cyaan vak), <b>HSI</b> (CDI-bron GPS/VOR, heading bug, bearing pointers, OBS), CRS/DTK, wind, NAV-frequenties (linksonder op de PFD), CAS-meldingen (bevestigen), EIS-strook (motorpagina), kaart (features / cursor).</li>
-        <li><b>Buiten de G3X</b> (zoals in deze P2008): de <b>COM-radio</b> en de <b>transponder</b> zijn aparte toestellen onder het scherm; RPM, CT, olietemperatuur en brandstof zijn analoge meters; de flaps hebben lampjes bij de schakelaar. De G3X toont als motorinformatie alleen oliedruk, brandstofdruk, volts en ampères, en alleen aan de MFD-kant.</li>
-        <li><b>Harde toetsen op de bezel</b> (zoals op de GDU 460): <b>NRST</b> en <b>D→</b> links, <b>MENU</b> en <b>BACK</b> rechts. <b>MENU twee keer</b> opent het Main Menu; <b>MENU</b> één keer geeft de opties van de huidige pagina (en Full Screen PFD / Split Screen / Full Screen MFD). <b>BACK</b> sluit een venster of gaat een pagina terug. Onderaan het scherm: knopfuncties, de knop <b>Messages</b> en de klok; SUSP/OBS verschijnen daar en op de HSI.</li>
-        <li><b>Linkerknop</b>: buiten = HDG, binnen = ALT. Indrukken wisselt naar BARO/CRS en naar COM1-afstemming. <b>Rechterknop</b>: buiten = kaartbereik of scrollen, binnen = pannen/selecteren; indrukken = cursor aan/uit of Enter.</li>
+        <li><b>Buiten de G3X</b>, zoals in OO-KWO: <b>GMA 245</b>-audiopaneel (COM1/COM2/NAV1/NAV2 meeluisteren, COM1 MIC/COM2 MIC, PILOT/CREW), <b>GNC 255</b> (COM én NAV: C/N wisselt, TUNE-knop zet de standby, ⇄ wisselt, vasthouden = 121.500, MON, OBS/T/F voor de VOR), <b>GTX 335</b>-transponder (ON/SBY/ALT/OFF, cijfers, VFR, IDNT, Flight ID OOKWO), rode <b>LEFT/RIGHT</b>-brandstofkraan, flapschakelaar met lampjes 0 / T / L. RPM, CT, olietemperatuur en brandstof zijn analoge meters. De G3X toont als motorinformatie alleen oliedruk, brandstofdruk, volts en ampères, op de MFD.</li>
+        <li><b>Twee schermen</b>, zoals in OO-KWO: links de PFD, rechts de MFD met de EIS-strook. Elk scherm heeft zijn eigen knoppen en harde toetsen <b>NRST</b>, <b>D→</b>, <b>MENU</b> en <b>BACK</b>. Met de knoppen boven de schermen (of ⤢ op een bezel) vergroot je één scherm; op een laptop is dat het handigst. <b>MENU twee keer</b> opent het Main Menu; <b>MENU</b> één keer geeft de opties van de huidige pagina. <b>BACK</b> sluit een venster of gaat een pagina terug. Onderaan elk scherm: knopfuncties, de knop <b>Messages</b> en de klok; SUSP/OBS verschijnen daar en op de HSI.</li>
+        <li><b>PFD-scherm</b>: linkerknop Heading (buiten) / Altitude (binnen), indrukken = heading bug sync; rechterknop Course (buiten) / Baro (binnen), indrukken = STD. <b>MFD-scherm</b>: linkerknop Select Page (buiten) / Zoom Map (binnen), indrukken = Main Menu; rechterknop Range/Pan op de kaart of Scroll/List in lijsten, indrukken = cursor of selecteren.</li>
         <li>Op de kaart: slepen = pannen, scrollwiel = bereik, tik op een symbool = info met Direct-To.</li>
       </ul>
       <h3>Waar vind ik wat? (knoppenpaden zoals op de G3X Touch)</h3>
@@ -87,18 +76,18 @@
         <tr><td>QNH / baro</td><td>Tik op het <b>baro-veld</b> onder de hoogtetape → cijfers → Enter (of STD). Ook: linkerknop indrukken tot BARO, dan buitenring draaien.</td></tr>
         <tr><td>Heading bug</td><td>Buitenring linkerknop, of tik op de <b>HSI</b> → waarde → Enter / SYNC.</td></tr>
         <tr><td>Hoogte selecteren</td><td>Binnenring linkerknop, of tik op het <b>cyaan hoogtevak</b> boven de hoogtetape.</td></tr>
-        <tr><td>COM afstemmen</td><td>Aparte radio onder het scherm: knoppen MHz/kHz zetten de standby, <b>⇄</b> wisselt actief en standby (ingedrukt houden = 121.500), <b>MON</b> luistert de standby mee.</td></tr>
-        <tr><td>NAV afstemmen</td><td>Tik op de <b>NAV-standbyfrequentie</b> linksonder op de PFD → toetsenbord of lijst → Enter; tik op de actieve frequentie om te wisselen.</td></tr>
-        <tr><td>Transponder</td><td>Apart toestel onder het scherm: cijfers 0–7 (vier cijfers = nieuwe code), modus SBY/GND/ON/ALT, <b>VFR</b> (7000), <b>IDENT</b>, CLR.</td></tr>
+        <tr><td>COM afstemmen</td><td>GNC 255 (C/N op COM): TUNE-knop buiten = MHz, binnen = kHz (8,33-stappen) zet de standby; <b>⇄</b> wisselt actief en standby (1,5 s ingedrukt houden = 121.500); <b>MON</b> luistert de standby mee.</td></tr>
+        <tr><td>NAV afstemmen</td><td>GNC 255: <b>C/N</b> naar NAV, TUNE → standby, ⇄ wisselt; <b>OBS</b> toont/zet de koers met de TUNE-knop, <b>T/F</b> toont TO/FROM. Ook via de NAV1-standbyfrequentie linksonder op de PFD.</td></tr>
+        <tr><td>Transponder</td><td>GTX 335: cijfers 0–7 (vier cijfers = nieuwe code), modus ON/SBY/ALT/OFF (GND automatisch op de grond), <b>VFR</b> (7000), <b>IDNT</b>, CLR.</td></tr>
         <tr><td>Direct-To</td><td>Toets <b>D→</b> op de bezel → tabblad Waypoint (ID aantikken en typen), Flight Plan, Nearest Airports of Recent → <b>Activate</b>. “Course To” voor een inbound koers; “Stop Navigation” annuleert.</td></tr>
         <tr><td>Vluchtplan</td><td><b>Main Menu → Active Flight Plan</b> → + Waypoint. Tik op een rij: Activate Leg, Direct-To, Insert Before/After, Set Altitude (VNAV), Remove. <b>Menu</b>: Invert, Store, Delete, OBS.</td></tr>
         <tr><td>Nadering</td><td><b>Main Menu → Procedures</b> (of Tools) (of FPL → PROC) → vliegveld, nadering, transitie → Load / Load &amp; Activate. In de FPL-balk: Activate Approach, Vectors-to-Final, Missed, Remove.</td></tr>
         <tr><td>Nearest</td><td>Toets <b>NRST</b> op de bezel → tabs Airports / VOR / NDB / VRP / User / Airspace → tik op een rij voor info, Direct-To en frequenties.</td></tr>
         <tr><td>Kaart</td><td>Rechterknop buitenring = bereik; <b>Menu</b> op de kaart = Orientation, Declutter, Topo, Airspace…; slepen of knop indrukken = cursor (Direct-To, user waypoint, luchtruiminfo).</td></tr>
         <tr><td>CDI-bron, bearing pointers, wind, SVT, minimums</td><td>Tik op de <b>HSI</b> → HSI Options (CDI Source GPS / VOR1 / VOR2); ook via het bronlabel links boven de HSI, <b>BRG1/BRG2</b> en het <b>windvak</b>; <b>Menu</b> op een volledig PFD = PFD Options.</td></tr>
-        <tr><td>Motor</td><td>EIS-strook aan de MFD-kant (oliedruk, brandstofdruk, volts, ampères); tik erop voor de motorpagina. Toerental, temperaturen en brandstof: analoge meters in het paneel.</td></tr>
+        <tr><td>Motor</td><td>EIS-strook op de MFD (oliedruk, brandstofdruk, volts, ampères); tik erop voor de motorpagina. Toerental, temperaturen en brandstof: analoge meters in het paneel.</td></tr>
         <tr><td>Timer, checklist, instellingen, berichten</td><td><b>Main Menu</b> → Timer / Checklists / Setup / Messages (ook VNAV, Weight &amp; Balance, Backlight Intensity). De knop <b>Messages</b> onderaan knippert bij een nieuw bericht.</td></tr>
-        <tr><td>Scherm­indeling</td><td><b>MENU</b> → Full Screen PFD / Split Screen / Full Screen MFD. <b>BACK</b> sluit een venster of gaat een pagina terug; <b>MENU 2×</b> opent het Main Menu.</td></tr>
+        <tr><td>Scherm­indeling</td><td>Knoppen <b>Beide schermen / PFD / MFD</b> boven de schermen (of ⤢ op een bezel). <b>BACK</b> sluit een venster of gaat een pagina terug; <b>MENU 2×</b> opent het Main Menu.</td></tr>
         <tr><td>SUSP / OBS</td><td>Verschijnen op de HSI en in de onderste strook wanneer van toepassing (bij het MAP of in een hold; OBS via CRS-veld of FPL-menu).</td></tr>
       </table>
       <p class="muted">Let op: de exacte labels en knopposities kunnen per G3X-softwareversie en per installatie (configuratie door de installateur, één of twee schermen, met of zonder autopilot) verschillen.</p>
@@ -109,9 +98,9 @@
         <tr><td>PgUp / PgDn, Home / End</td><td>Gas meer/minder, vol/idle</td></tr>
         <tr><td>F / V</td><td>Flaps een stand neer / op</td></tr>
         <tr><td>B</td><td>Wielremmen (ingedrukt houden)</td></tr>
-                        <tr><td>, . · K M</td><td>Linkerknop buiten (HDG) · binnen (ALT)</td></tr>
-        <tr><td>[ ] · Enter · Esc</td><td>Rechterknop buiten (bereik) · indrukken · BACK</td></tr>
-        <tr><td>N · D · Shift+M · `</td><td>NRST · Direct-To · MENU · Main Menu</td></tr>
+                        <tr><td>, . · K M</td><td>PFD-linkerknop buiten (HDG) · binnen (ALT)</td></tr>
+        <tr><td>[ ] · Enter · Esc</td><td>MFD-rechterknop buiten (bereik) · indrukken · BACK</td></tr>
+        <tr><td>N · D · Shift+M · `</td><td>NRST · Direct-To · MENU (actieve scherm) · Main Menu</td></tr>
         <tr><td>P · 1 2 4 · H</td><td>Pauze · simulatiesnelheid · deze help</td></tr>
       </table>
       <p>Een gamepad/joystick werkt ook (assen 0/1 rol/pitch, as 3 gas; knop 0 rem, 1/2 flaps). Op een tablet gebruik je de virtuele stuurknuppel in het paneel.</p>

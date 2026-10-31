@@ -19,15 +19,19 @@ button { font-family: inherit; }
 @media (max-width: 1250px) { .layout { grid-template-columns: 1fr; } }
 .left { min-width: 0; }
 
-/* ---------- de G3X-eenheid ---------- */
+/* ---------- de G3X-eenheden (twee schermen) ---------- */
+.view-toggle { display: flex; gap: 6px; margin-bottom: 8px; }
+.view-toggle button { background: var(--panel); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px; font-size: .85rem; cursor: pointer; }
+.view-toggle button.on { background: #1f3a5f; border-color: var(--accent); color: #fff; }
 #g3x-wrap { position: relative; width: 100%; }
-#g3x-unit { position: absolute; left: 0; top: 0; width: 1460px; height: 844px; transform-origin: 0 0; background: linear-gradient(#2d313a, #1a1d23); border-radius: 22px; box-shadow: 0 10px 40px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.08); }
-#g3x-screen { position: absolute; left: 90px; top: 38px; width: 1280px; height: 768px; background: #000; border-radius: 6px; overflow: hidden; box-shadow: inset 0 0 0 2px #000, 0 0 0 4px #0b0d10; }
-#g3x-canvas { position: absolute; left: 0; top: 0; width: 1280px; height: 768px; display: block; touch-action: none; cursor: pointer; }
-#g3x-overlay { position: absolute; left: 0; top: 0; width: 1280px; height: 768px; pointer-events: none; }
-#g3x-overlay > * { pointer-events: auto; }
+.g3x-unit { position: absolute; left: 0; top: 0; width: 1460px; height: 844px; transform-origin: 0 0; background: linear-gradient(#2d313a, #1a1d23); border-radius: 22px; box-shadow: 0 10px 40px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.08); }
+.g3x-screen { position: absolute; left: 90px; top: 38px; width: 1280px; height: 768px; background: #000; border-radius: 6px; overflow: hidden; box-shadow: inset 0 0 0 2px #000, 0 0 0 4px #0b0d10; }
+.g3x-screen canvas { position: absolute; left: 0; top: 0; width: 1280px; height: 768px; display: block; touch-action: none; cursor: pointer; }
+.g3x-overlay { position: absolute; left: 0; top: 0; width: 1280px; height: 768px; pointer-events: none; }
+.g3x-overlay > * { pointer-events: auto; }
 .bezel-logo { position: absolute; left: 50%; transform: translateX(-50%); top: 10px; color: #c9ced6; font-size: 15px; letter-spacing: 4px; font-weight: 700; }
 .bezel-logo small { letter-spacing: 1px; font-weight: 400; margin-left: 10px; color: #6a717c; font-size: 11px; }
+.zoom-unit { position: absolute; right: 14px; top: 8px; width: 30px; height: 24px; border-radius: 6px; border: 1px solid #0a0c10; background: #2a2e36; color: #cfd6de; cursor: pointer; font-size: 14px; }
 /* harde toetsen op de bezel (zoals de GDU 460: NRST · D→ links, MENU · BACK rechts) */
 .hardkeys { position: absolute; bottom: 7px; display: flex; gap: 14px; }
 .hardkeys.left { left: 118px; } .hardkeys.right { right: 118px; }
@@ -35,11 +39,9 @@ button { font-family: inherit; }
 .hardkey:active { background: linear-gradient(#1c1f25, #3d424b); }
 .hardkey.dto { color: #ff6bff; font-size: 14px; }
 .hardkey.dto::after { content: '→'; font-size: 13px; }
-.bezel-logo small { letter-spacing: 1px; font-weight: 400; margin-left: 10px; color: #6a717c; }
-
 /* knoppen op de bezel */
 .knob { position: absolute; bottom: 12px; width: 82px; text-align: center; }
-#knob-L { left: 4px; } #knob-R { right: 4px; }
+.knob[data-s="L"] { left: 4px; } .knob[data-s="R"] { right: 4px; }
 .knob-ring { position: relative; margin: 0 auto; border-radius: 50%; }
 .knob-ring.outer { width: 78px; height: 78px; background: radial-gradient(circle at 40% 35%, #5b6270, #262a31 70%); box-shadow: 0 3px 8px rgba(0,0,0,.6); }
 .knob-ring.inner { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 46px; height: 46px; background: radial-gradient(circle at 40% 35%, #4b515d, #1c1f25 70%); box-shadow: 0 2px 5px rgba(0,0,0,.7); }
@@ -233,29 +235,53 @@ button { font-family: inherit; }
 /* verkenmodus: toestel stilstaand, geen stuurknuppel of vliegtoetsen */
 body.explore .stick, body.explore .acp-row.small, body.explore #pbrake, body.explore #brake { display: none; }
 
-/* ---------- cockpit buiten de G3X: analoge meters, flaps, radio, transponder ---------- */
-#cockpit { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 12px; }
-.ck-gauges { background: linear-gradient(#2a2e36, #15181d); border: 1px solid #3a3f49; border-radius: 10px; padding: 8px 12px 4px; display: flex; gap: 14px; align-items: flex-start; flex-wrap: wrap; position: relative; }
-.ck-title { font-size: 10px; letter-spacing: 1px; color: var(--muted); text-transform: uppercase; margin-bottom: 4px; width: 100%; }
-.ck-gauges canvas { max-width: 100%; height: auto; }
-.flapsw { margin-left: auto; text-align: center; min-width: 120px; }
-.flapsw .ck-title { width: auto; }
-.lamps { display: flex; flex-direction: column; gap: 6px; align-items: center; margin: 6px 0; }
-.lamp { width: 64px; padding: 4px 0; border-radius: 4px; background: #1b1f26; border: 1px solid #3a3f49; color: #555; font-size: 12px; font-weight: 700; }
-.lamp.on { background: #2f8a3a; color: #fff; box-shadow: 0 0 10px rgba(40,224,44,.6); border-color: #28e02c; }
-.flapbtns { display: flex; gap: 6px; justify-content: center; }
-.ck-units { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-@media (max-width: 900px) { .ck-units { grid-template-columns: 1fr; } }
+/* ---------- cockpit buiten de G3X: analoge meters, brandstofkraan, flaps, GMA 245, GNC 255, GTX 335 ---------- */
+#cockpit { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; margin-top: 12px; }
+@media (max-width: 1100px) { #cockpit { grid-template-columns: 1fr; } }
+.ck-left { display: flex; flex-direction: column; gap: 12px; }
+.ck-gauges { background: linear-gradient(#2a2e36, #15181d); border: 1px solid #3a3f49; border-radius: 10px; padding: 8px 12px 4px; }
+.ck-title { font-size: 10px; letter-spacing: 1px; color: var(--muted); text-transform: uppercase; margin-bottom: 4px; }
+.ck-gauges canvas { max-width: 100%; height: auto; display: block; }
+.ck-lower { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.fuelsel, .flapsw { background: linear-gradient(#2a2e36, #15181d); border: 1px solid #3a3f49; border-radius: 10px; padding: 8px 12px 10px; text-align: center; }
+.fuel-dial { position: relative; width: 120px; height: 120px; margin: 4px auto; border-radius: 50%; background: radial-gradient(#9aa0a8, #5a6068); border: 3px solid #3a3f49; }
+.fuel-dial .fl, .fuel-dial .fr { position: absolute; top: 18px; font-size: 11px; font-weight: 700; color: #1a2a5a; } .fuel-dial .fl { left: 10px; } .fuel-dial .fr { right: 6px; }
+.lever { position: absolute; left: 50%; top: 50%; width: 22px; height: 70px; margin-left: -11px; margin-top: -60px; background: linear-gradient(#ff5a5a, #c01818); border-radius: 8px 8px 4px 4px; transform-origin: 50% 60px; transform: rotate(-40deg); box-shadow: 0 2px 6px rgba(0,0,0,.6); transition: transform .3s; }
+.lever::after { content: ''; position: absolute; left: 50%; top: 52px; width: 26px; height: 26px; margin-left: -13px; border-radius: 50%; background: radial-gradient(#ff7a7a, #a01010); }
+.lamprow { display: flex; align-items: center; gap: 8px; justify-content: center; margin: 5px 0; }
+.lamp { width: 28px; height: 28px; border-radius: 50%; background: #1b1f26; border: 2px solid #3a3f49; color: #555; font-size: 12px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; }
+.lamp.on { background: #ffb020; color: #000; box-shadow: 0 0 12px rgba(255,176,32,.8); border-color: #ffd080; }
+.lampcap { width: 60px; text-align: left; font-size: 11px; color: #cfd6de; font-weight: 700; }
+.flapbtns { display: flex; gap: 6px; justify-content: center; margin-top: 6px; }
+.ck-stack { display: flex; flex-direction: column; gap: 10px; }
 .unit { background: linear-gradient(#2a2e36, #15181d); border: 1px solid #3a3f49; border-radius: 10px; padding: 8px 12px 10px; }
 .unit-brand { font-size: 11px; letter-spacing: 2px; color: #c9ced6; font-weight: 700; margin-bottom: 6px; } .unit-brand small { color: var(--muted); letter-spacing: 0; font-weight: 400; margin-left: 6px; }
-.rd-disp, .xp-disp { background: #050a06; border: 2px solid #0a0c10; border-radius: 6px; padding: 6px 10px; font-family: "Roboto Condensed", "Arial Narrow", monospace; color: #ffb84d; min-height: 58px; box-shadow: inset 0 0 12px rgba(0,0,0,.8); }
-.rd-row { display: flex; align-items: baseline; gap: 10px; } .rd-row.stby { opacity: .85; }
-.rd-lbl { width: 36px; font-size: 11px; color: #d29b3f; } .rd-freq { font-size: 26px; font-weight: 700; letter-spacing: 1px; } .rd-row.stby .rd-freq { font-size: 20px; } .rd-name { font-size: 11px; color: #d29b3f; margin-left: auto; }
-.rd-ctrls, .xp-ctrls { display: flex; gap: 10px; align-items: center; margin-top: 8px; flex-wrap: wrap; }
 .ub { background: #0f1216; border: 1px solid #3a4046; color: #cfd6de; border-radius: 6px; padding: 7px 10px; cursor: pointer; font-size: 12px; font-weight: 700; min-width: 34px; }
-.ub.on { color: var(--green); border-color: var(--green); } .ub.flip { font-size: 18px; padding: 4px 14px; }
-.uknob { display: flex; align-items: center; gap: 4px; font-size: 10px; color: var(--muted); }
-.xp-disp { display: flex; align-items: baseline; gap: 14px; }
-.xp-code { font-size: 30px; font-weight: 700; letter-spacing: 4px; } .xp-code.pending { color: #ffe9b0; } .xp-mode { font-size: 16px; font-weight: 700; } .xp-r { width: 14px; font-size: 16px; color: #ffb84d; } .xp-fl { margin-left: auto; font-size: 13px; color: #d29b3f; }
-.xp-modes { display: flex; gap: 4px; } .xp-keys { display: flex; gap: 4px; flex-wrap: wrap; }
-#xp-ident.on { color: var(--green); border-color: var(--green); }
+.ub.on { color: var(--green); border-color: var(--green); } .ub.flip { font-size: 18px; padding: 4px 14px; } .ub.dim { opacity: .5; }
+/* GMA 245 */
+.gma-grid { display: grid; grid-template-columns: repeat(8, 1fr); gap: 5px; align-items: center; }
+.gb { position: relative; background: #0f1216; border: 1px solid #3a4046; color: #cfd6de; border-radius: 6px; padding: 12px 2px 6px; font-size: 10px; font-weight: 700; line-height: 1.1; cursor: pointer; }
+.gb::before { content: ''; position: absolute; left: 50%; top: 4px; width: 14px; height: 4px; margin-left: -7px; border-radius: 2px; background: #233; }
+.gb.lit::before { background: #28e02c; box-shadow: 0 0 6px #28e02c; }
+.gb-note { grid-column: span 1; font-size: 8px; color: var(--muted); text-align: center; } .gb-spacer { }
+/* GNC 255 */
+.gnc-row { display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: center; }
+.gnc-knobs { display: flex; flex-direction: column; gap: 6px; align-items: center; }
+.gknob { display: flex; flex-direction: column; align-items: center; font-size: 9px; color: var(--muted); } .gknob span { font-weight: 700; color: #cfd6de; } .gknob small { font-size: 7px; }
+.kn { width: 26px; height: 26px; border-radius: 50%; background: radial-gradient(circle at 40% 35%, #5b6270, #262a31 70%); margin: 2px 0; }
+.gnc-disp, .gtx-disp { background: #050a06; border: 2px solid #0a0c10; border-radius: 6px; padding: 6px 10px; font-family: "Roboto Condensed", "Arial Narrow", monospace; color: #e9f2ff; min-height: 64px; box-shadow: inset 0 0 12px rgba(0,0,0,.8); }
+.gnc-top { display: grid; grid-template-columns: auto 1fr auto auto 1fr; gap: 8px; align-items: baseline; } .gnc-top .lbl, .gtx-top .lbl, .gtx-bot .lbl { font-size: 10px; color: #9ab; } .gnc-top .freq { font-size: 28px; font-weight: 700; letter-spacing: 1px; } .gnc-top .mode { font-size: 11px; color: #9ab; } .gnc-top .stb { color: #bcd; }
+.gnc-bot { display: flex; justify-content: space-between; font-size: 12px; color: #ffd27a; margin-top: 2px; min-height: 14px; }
+.gnc-right { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.tune { display: flex; flex-direction: column; align-items: center; font-size: 9px; color: var(--muted); gap: 2px; } .tune span { font-weight: 700; color: #cfd6de; } .tunebtns { display: flex; gap: 3px; } .tunebtns .ub { padding: 4px 8px; } .tunebtns.small .ub { padding: 2px 7px; font-size: 10px; } .tune small { font-size: 7px; }
+.gnc-keys { display: flex; gap: 6px; margin-top: 8px; justify-content: space-between; } .gnc-keys .ub { flex: 1; }
+/* GTX 335 */
+.gtx-row { display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: center; }
+.gtx-cluster { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; width: 120px; }
+.gtx-cluster .ub { padding: 6px 2px; font-size: 10px; } .gtx-cluster .on-top { grid-column: 2; } .gtx-cluster .sby { grid-column: 1; grid-row: 2; } .gtx-cluster .alt { grid-column: 3; grid-row: 2; } .gtx-cluster .idnt { grid-column: 2; grid-row: 2; } .gtx-cluster .offb { grid-column: 1; grid-row: 3; } .gtx-cluster .vfr { grid-column: 3; grid-row: 3; }
+.gtx-top { display: grid; grid-template-columns: auto 1fr auto auto auto; gap: 8px; align-items: baseline; } .gtx-top .code { font-size: 30px; font-weight: 700; letter-spacing: 4px; } .gtx-top .code.pending { color: #ffe9b0; } .gtx-top .r { width: 14px; font-size: 14px; } .gtx-top .fidl { font-size: 10px; color: #9ab; } .gtx-top .fid { font-size: 18px; font-weight: 700; }
+.gtx-bot { font-size: 12px; color: #ffd27a; display: flex; gap: 8px; min-height: 14px; }
+.gtx-fkeys { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; } .gtx-fkeys .ub { padding: 5px 6px; font-size: 10px; }
+.gtx-keys { display: flex; gap: 5px; margin-top: 8px; } .gtx-keys .ub { flex: 1; padding: 6px 2px; }
+#gtx-idnt.on, #gtx-vfr:active { color: var(--green); border-color: var(--green); }
+body.explore .stick, body.explore .acp-row.small, body.explore #pbrake, body.explore #brake { display: none; }

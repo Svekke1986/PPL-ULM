@@ -12,77 +12,77 @@ window.G3X = window.G3X || {};
 
   const UI = { pane: null, dialogLayer: null, dialog: null, pageBuilt: null, lastPaneRefresh: 0, menuOpen: false, knobLeftSet: 0, sel: 0 };
 
-  UI.init = overlay => {
-    UI.overlay = overlay;
-    overlay.innerHTML = '<div id="g3x-pane" class="g3x-pane hidden"></div><div id="g3x-dialogs" class="g3x-dialogs"></div><div id="g3x-toast" class="g3x-toast hidden"></div>';
-    UI.pane = overlay.querySelector('#g3x-pane');
-    UI.dialogLayer = overlay.querySelector('#g3x-dialogs');
-    UI.toastEl = overlay.querySelector('#g3x-toast');
-    overlay.addEventListener('pointerdown', () => { if (G3X.audio) G3X.audio.ensure(); }, { passive: true });
+  // overlays: één per scherm (L = PFD, R = MFD); de DOM-pagina's liggen op het MFD, dialoogvensters op het actieve scherm
+  UI.activeScreen = 'L';
+  UI.init = overlays => {
+    UI.overlays = overlays; UI.dialogLayers = {}; UI.toastEls = {};
+    for (const id of ['L', 'R']) {
+      const ov = overlays[id];
+      ov.innerHTML = (id === 'R' ? '<div id="g3x-pane" class="g3x-pane hidden"></div>' : '') + `<div class="g3x-dialogs" id="g3x-dialogs-${id}"></div><div class="g3x-toast hidden" id="g3x-toast-${id}"></div>`;
+      UI.dialogLayers[id] = ov.querySelector(`#g3x-dialogs-${id}`); UI.toastEls[id] = ov.querySelector(`#g3x-toast-${id}`);
+      ov.addEventListener('pointerdown', () => { UI.activeScreen = id; if (G3X.audio) G3X.audio.ensure(); }, { passive: true });
+    }
+    UI.pane = overlays.R.querySelector('#g3x-pane');
   };
 
-  UI.toast = (text, ms = 2500) => { const t = UI.toastEl; t.textContent = text; t.classList.remove('hidden'); clearTimeout(UI.toastT); UI.toastT = setTimeout(() => t.classList.add('hidden'), ms); };
+  UI.toast = (text, screen, ms = 2500) => { const t = UI.toastEls[screen || UI.activeScreen || 'L']; t.textContent = text; t.classList.remove('hidden'); clearTimeout(t._t); t._t = setTimeout(() => t.classList.add('hidden'), ms); };
 
   // ---------- pagina's / lay-out ----------
+  UI.PAGE_CYCLE = ['MAP', 'FPL', 'WPT', 'NRST', 'ENG', 'TERRAIN', 'CHK', 'TIMER', 'TRIP', 'SETUP'];
   UI.showPage = page => {
     const a = A();
-    if (page === 'PFD') { a.layout = a.layout === 'MFD' ? 'SPLIT' : a.layout; a.pfdPage = 'PFD'; bus.emit('page', 'PFD'); return; }
-    if (a.layout === 'PFD') { if (page === 'ENG') { a.pfdPage = 'ENG'; bus.emit('page', page); return; } a.layout = 'SPLIT'; }
-    if (a.pfdPage === 'ENG') a.pfdPage = 'PFD';
+    if (page === 'PFD') { if (G3X.main) G3X.main.setView('PFD'); bus.emit('page', 'PFD'); return; }
     if (a.mfdPage !== page) { a.prevPage = a.mfdPage; a.mfdPage = page; }
+    if (G3X.main && G3X.main.view === 'PFD') G3X.main.setView('MFD');
     UI.sel = 0; UI.menuOpen = false;
     bus.emit('page', page);
   };
-  UI.button = id => {
-    const a = A();
+  UI.button = (id, screen) => {
+    const a = A(); if (screen) UI.activeScreen = screen;
     if (G3X.audio) G3X.audio.play('click');
     bus.emit('button', id);
     switch (id) {
-      case 'BACK': if (UI.dialog) { UI.closeDialog(); break; } if (a.map.panning && a.mfdPage === 'MAP') { G3X.mfd.stopPan(); break; } if (a.layout === 'PFD' && a.pfdPage === 'ENG') { a.pfdPage = 'PFD'; break; } if (a.mfdPage === 'HOME') a.mfdPage = 'MAP'; else if (G3X.mfd.isDomPage(a.mfdPage)) a.mfdPage = 'MAP'; else a.mfdPage = 'HOME'; break;
+      case 'BACK': if (UI.dialog) { UI.closeDialog(); break; } if (a.map.panning && a.mfdPage === 'MAP') { G3X.mfd.stopPan(); break; } if (a.mfdPage === 'HOME') a.mfdPage = 'MAP'; else if (G3X.mfd.isDomPage(a.mfdPage)) a.mfdPage = 'MAP'; else a.mfdPage = 'HOME'; break;
       case 'DTO': UI.openDirectTo(); break;
       case 'NRST': UI.showPage('NRST'); break;
       case 'MENU': UI.openMenu(); break;
       case 'MSG': UI.showPage('MSG'); a.msgNew = false; break;
       case 'HOME': UI.showPage('HOME'); break;
-      case 'PFD': a.layout = 'PFD'; a.pfdPage = 'PFD'; bus.emit('layout', 'PFD'); break;
-      case 'SPLIT': a.layout = 'SPLIT'; a.pfdPage = 'PFD'; bus.emit('layout', 'SPLIT'); break;
-      case 'MFD': a.layout = 'MFD'; bus.emit('layout', 'MFD'); break;
+      case 'PFD': case 'SPLIT': case 'MFD': if (G3X.main) G3X.main.setView(id === 'SPLIT' ? 'BOTH' : id); break;
       case 'SUSP': AV.unsuspend(); bus.emit('unsusp'); break;
       case 'OBS': a.fpl.obs = false; break;
     }
   };
 
   // ---------- draaiknoppen ----------
-  UI.knobLabels = () => {
+  // knopfuncties per scherm: PFD-scherm = Heading/Altitude en Course/Baro; MFD-scherm = Select Page/Zoom Map en Scroll/List of Range/Pan
+  UI.knobLabels = screen => {
     const a = A();
-    if (UI.dialog && UI.dialog.knobLabels) return UI.dialog.knobLabels;
-    const left = UI.knobLeftSet === 0 ? { outer: 'HDG', inner: 'ALT' } : UI.knobLeftSet === 1 ? { outer: 'BARO', inner: 'CRS' } : { outer: 'COM1 MHz', inner: 'COM1 kHz' };
-    let right;
-    if (a.layout === 'PFD') right = { outer: 'BARO', inner: 'CRS' };
-    else if (a.mfdPage === 'MAP' || a.mfdPage === 'TERRAIN') right = { outer: 'RANGE', inner: a.map.panning ? 'PAN ↕' : 'PAN' };
-    else if (['FPL', 'NRST', 'CHK', 'MSG', 'FPLLIST', 'USER', 'HOME', 'PROC'].includes(a.mfdPage)) right = { outer: 'SCROLL', inner: 'SELECT' };
-    else right = { outer: 'RANGE', inner: '—' };
+    if (UI.dialog && UI.dialog.knobLabels && UI.dialog.screen === screen) return UI.dialog.knobLabels;
+    if (screen === 'L') return { left: { outer: 'HDG', inner: 'ALT', push: 'Sync HDG' }, right: { outer: 'CRS', inner: 'BARO', push: 'STD' } };
+    const listPage = ['FPL', 'NRST', 'CHK', 'MSG', 'FPLLIST', 'USER', 'HOME', 'PROC'].includes(a.mfdPage);
+    const left = { outer: 'PAGE', inner: 'ZOOM', push: 'Main Menu' };
+    const right = (a.mfdPage === 'MAP' || a.mfdPage === 'TERRAIN') ? { outer: 'RANGE', inner: a.map.panning ? 'PAN ↕' : 'PAN', push: 'Cursor' } : listPage ? { outer: 'SCROLL', inner: 'SELECT', push: 'Select' } : { outer: 'RANGE', inner: '—' };
     return { left, right };
   };
-  // side 'L'|'R', ring 'outer'|'inner', dir ±1
-  UI.knob = (side, ring, dir) => {
-    const a = A();
+  // screen 'L'|'R', side 'L'|'R', ring 'outer'|'inner', dir ±1
+  UI.knob = (screen, side, ring, dir) => {
+    const a = A(); UI.activeScreen = screen;
     if (UI.dialog && UI.dialog.onKnob) { UI.dialog.onKnob(side, ring, dir); return; }
-    if (side === 'L') {
-      if (UI.knobLeftSet === 0) { if (ring === 'outer') { a.hdgBug = U.norm360(a.hdgBug + dir); bus.emit('hdgbug', a.hdgBug); } else { a.altSel = U.clamp(a.altSel + dir * 100, -1000, 20000); bus.emit('altsel', a.altSel); } }
-      else if (UI.knobLeftSet === 1) { if (ring === 'outer') { if (a.baroStd) { a.baroStd = false; } a.baro = U.clamp(a.baro + dir, 940, 1060); bus.emit('baro', a.baro); } else { UI.adjustCrs(dir); } }
-      else { a.com1.standby = U.nextCom(a.com1.standby, dir, ring === 'outer'); }
+    if (screen === 'L') {
+      if (side === 'L') { if (ring === 'outer') { a.hdgBug = U.norm360(a.hdgBug + dir); bus.emit('hdgbug', a.hdgBug); } else { a.altSel = U.clamp(a.altSel + dir * 100, -1000, 20000); bus.emit('altsel', a.altSel); } }
+      else { if (ring === 'outer') UI.adjustCrs(dir); else { a.baroStd = false; a.baro = U.clamp(a.baro + dir, 940, 1060); bus.emit('baro', a.baro); } }
       return;
     }
-    // rechts
-    if (a.layout === 'PFD') { if (ring === 'outer') { a.baroStd = false; a.baro = U.clamp(a.baro + dir, 940, 1060); bus.emit('baro', a.baro); } else UI.adjustCrs(dir); return; }
+    if (side === 'L') { if (ring === 'outer') { const i = UI.PAGE_CYCLE.indexOf(a.mfdPage); UI.showPage(UI.PAGE_CYCLE[(i < 0 ? 0 : i + dir + UI.PAGE_CYCLE.length) % UI.PAGE_CYCLE.length]); } else { G3X.mfd.rangeStep(dir); bus.emit('range', a.map.range); } return; }
     if (a.mfdPage === 'MAP' || a.mfdPage === 'TERRAIN') { if (ring === 'outer') { G3X.mfd.rangeStep(dir); bus.emit('range', a.map.range); } else { if (!a.map.panning) { a.map.pan = { lat: SIM.S.ac.lat, lon: SIM.S.ac.lon }; a.map.panning = true; } G3X.mfd.panBy(0, dir * -30); } return; }
     if (['FPL', 'NRST', 'CHK', 'MSG', 'FPLLIST', 'USER', 'HOME', 'PROC'].includes(a.mfdPage)) { UI.moveSel(dir); return; }
   };
-  UI.knobPress = side => {
-    const a = A();
+  UI.knobPress = (screen, side) => {
+    const a = A(); UI.activeScreen = screen;
     if (UI.dialog && UI.dialog.onEnter) { UI.dialog.onEnter(); return; }
-    if (side === 'L') { UI.knobLeftSet = (UI.knobLeftSet + 1) % 3; UI.toast(['Left knob: HDG (outer) / ALT (inner)', 'Left knob: BARO (outer) / CRS (inner)', 'Left knob: COM1 standby MHz / kHz'][UI.knobLeftSet]); return; }
+    if (screen === 'L') { if (side === 'L') { a.hdgBug = Math.round(SIM.S.ac.hdg); bus.emit('hdgbug', a.hdgBug); UI.toast('Heading bug synced', 'L'); } else { a.baroStd = !a.baroStd; bus.emit('baro', a.baroStd ? 'STD' : a.baro); } return; }
+    if (side === 'L') { UI.showPage('HOME'); return; }
     if (a.mfdPage === 'MAP' || a.mfdPage === 'TERRAIN') { if (a.map.panning) G3X.mfd.stopPan(); else { a.map.pan = { lat: SIM.S.ac.lat, lon: SIM.S.ac.lon }; a.map.panning = true; UI.showMapCursorMenu(); } return; }
     const sel = UI.pane.querySelector('.row.sel, .tile.sel, .item.sel'); if (sel) sel.click();
   };
@@ -93,16 +93,17 @@ window.G3X = window.G3X || {};
   UI.cycleBrg = which => { const a = A(); const order = ['OFF', 'GPS', 'NAV1', 'NAV2']; const k = 'brg' + which; a[k] = order[(order.indexOf(a[k]) + 1) % 4]; bus.emit('brg' + which, a[k]); };
 
   // ---------- dialoogvenster-raamwerk ----------
-  UI.closeDialog = () => { if (UI.dialog && UI.dialog.el) UI.dialog.el.remove(); UI.dialog = null; UI.dialogLayer.classList.remove('open'); };
+  UI.closeDialog = () => { if (UI.dialog && UI.dialog.el) UI.dialog.el.remove(); UI.dialog = null; Object.values(UI.dialogLayers).forEach(l => l.classList.remove('open')); };
   UI.openDialog = cfg => {
     UI.closeDialog();
+    const screen = cfg.screen || UI.activeScreen || 'L'; UI.dialogLayer = UI.dialogLayers[screen];
     const el = document.createElement('div'); el.className = 'g3x-dialog ' + (cfg.cls || '');
     if (cfg.width) el.style.width = cfg.width + 'px';
     el.innerHTML = `<div class="dlg-title"><span>${esc(cfg.title)}</span><button class="dlg-close" aria-label="Close">✕</button></div><div class="dlg-body">${cfg.html || ''}</div>${cfg.buttons ? `<div class="dlg-buttons">${cfg.buttons.map((b, i) => `<button class="dlg-btn ${b.cls || ''}" data-i="${i}">${esc(b.label)}</button>`).join('')}</div>` : ''}`;
     el.querySelector('.dlg-close').onclick = () => UI.closeDialog();
     if (cfg.buttons) el.querySelectorAll('.dlg-btn').forEach(b => { b.onclick = () => { const c = cfg.buttons[+b.dataset.i]; if (c.onClick) { const keep = c.onClick(); if (keep !== true) UI.closeDialog(); } else UI.closeDialog(); }; });
     UI.dialogLayer.appendChild(el); UI.dialogLayer.classList.add('open');
-    UI.dialog = Object.assign({ el, body: el.querySelector('.dlg-body') }, cfg);
+    UI.dialog = Object.assign({ el, body: el.querySelector('.dlg-body'), screen }, cfg);
     if (cfg.onOpen) cfg.onOpen(UI.dialog);
     return UI.dialog;
   };
@@ -235,7 +236,7 @@ window.G3X = window.G3X || {};
   UI.openMenu = () => {
     const a = A();
     if (UI.dialog) { UI.closeDialog(); return; }
-    const page = a.layout === 'PFD' ? 'PFD' : a.mfdPage;
+    const page = UI.activeScreen === 'L' ? 'PFD' : a.mfdPage;
     if (page === 'PFD') return UI.openPfdOptions();
     if (page === 'MAP' || page === 'TERRAIN') return UI.openMapOptions();
     if (page === 'FPL') return UI.openFplMenu();
@@ -245,7 +246,7 @@ window.G3X = window.G3X || {};
   // algemeen menu (ook de schermindeling: op de G3X via MENU → Full Screen / Split Screen)
   UI.openGeneralMenu = extra => {
     const a = A();
-    UI.openDialog({ title: 'Menu', html: `<div class="menu-list">${extra || ''}<button class="item" data-a="full-pfd">Full Screen PFD</button><button class="item" data-a="split">Split Screen</button><button class="item" data-a="full-mfd">Full Screen MFD</button><button class="item" data-a="pfd">PFD Options</button><button class="item" data-a="map">Map Options</button><button class="item" data-a="setup">Setup</button><button class="item" data-a="home">Main Menu</button></div>`, width: 400, buttons: [{ label: 'Close' }], onOpen: d => { d.el.querySelectorAll('.item').forEach(b => { b.onclick = () => { const act = b.dataset.a; if (act === 'pfd') UI.openPfdOptions(); else if (act === 'map') UI.openMapOptions(); else if (act === 'setup') { UI.closeDialog(); UI.showPage('SETUP'); } else if (act === 'home') { UI.closeDialog(); UI.showPage('HOME'); } else if (act === 'full-pfd') { UI.closeDialog(); UI.button('PFD'); } else if (act === 'split') { UI.closeDialog(); UI.button('SPLIT'); } else if (act === 'full-mfd') { UI.closeDialog(); UI.button('MFD'); } }; }); } });
+    UI.openDialog({ title: 'Menu', html: `<div class="menu-list">${extra || ''}<button class="item" data-a="pfd">PFD Options</button><button class="item" data-a="map">Map Options</button><button class="item" data-a="setup">Setup</button><button class="item" data-a="home">Main Menu</button></div>`, width: 400, buttons: [{ label: 'Close' }], onOpen: d => { d.el.querySelectorAll('.item').forEach(b => { b.onclick = () => { const act = b.dataset.a; if (act === 'pfd') UI.openPfdOptions(); else if (act === 'map') UI.openMapOptions(); else if (act === 'setup') { UI.closeDialog(); UI.showPage('SETUP'); } else if (act === 'home') { UI.closeDialog(); UI.showPage('HOME'); } }; }); } });
   };
   UI.openMapOptions = () => {
     const a = A(), m = a.map;
@@ -389,9 +390,9 @@ window.G3X = window.G3X || {};
 
   // ---------- DOM-pagina's ----------
   UI.tick = () => {
-    const a = A(), L = D.L; if (!L) return;
-    const page = a.layout === 'PFD' ? null : a.mfdPage;
-    const show = page && G3X.mfd.isDomPage(page) && L.mfd && !SIM.S.fail.display;
+    const a = A(), L = D.LR; if (!L) return;
+    const page = a.reversion ? null : a.mfdPage;
+    const show = page && G3X.mfd.isDomPage(page) && L.mfd;
     UI.pane.classList.toggle('hidden', !show);
     if (!show) { UI.pageBuilt = null; return; }
     const r = L.mfd; Object.assign(UI.pane.style, { left: r.x + 'px', top: r.y + 'px', width: r.w + 'px', height: r.h + 'px' });
@@ -415,7 +416,7 @@ window.G3X = window.G3X || {};
     switch (page) {
       case 'HOME': {
         // tegels en volgorde zoals het hoofdmenu van de G3X Touch (vier kolommen, scrollbaar)
-        const tiles = [['MAP', 'Map'], ['CHARTS', 'Charts'], ['FPL', 'Active Flight Plan'], ['WPT', 'Waypoint Info'], ['WX', 'Weather'], ['TRAFFIC', 'Traffic'], ['TERRAIN', 'Terrain'], ['ENG', 'Engine'], ['TRIP', 'Info'], ['CHK', 'Checklists'], ['PFD', 'PFD'], ['FLIGHTLOG', 'Flight Log'], ['FPLLIST', 'Flight Plan List'], ['VNAV', 'VNAV'], ['TRACKLOG', 'Track Log'], ['USERTIMER', 'User Timer'], ['USER', 'User Waypoints'], ['WB', 'Weight & Balance'], ['DATALINK', 'Data Link'], ['MUSIC', 'Music'], ['TOOLS', 'Tools'], ['SETUP', 'Setup'], ['BACKLIGHT', 'Backlight Intensity']];
+        const tiles = [['MAP', 'Map'], ['CHARTS', 'Charts'], ['FPL', 'Active Flight Plan'], ['WPT', 'Waypoint Info'], ['WX', 'Weather'], ['TRAFFIC', 'Traffic'], ['TERRAIN', 'Terrain'], ['ENG', 'Engine'], ['TRIP', 'Info'], ['CHK', 'Checklists'], ['FLIGHTLOG', 'Flight Log'], ['FPLLIST', 'Flight Plan List'], ['VNAV', 'VNAV'], ['TRACKLOG', 'Track Log'], ['USERTIMER', 'User Timer'], ['USER', 'User Waypoints'], ['WB', 'Weight & Balance'], ['DATALINK', 'Data Link'], ['MUSIC', 'Music'], ['TOOLS', 'Tools'], ['SETUP', 'Setup'], ['BACKLIGHT', 'Backlight Intensity']];
         h = `<div class="page-head"><span>${G3X.icons.HOME} Main Menu</span></div><div class="page-body tiles">${tiles.map(t => `<button class="tile" data-p="${t[0]}"><span class="ico">${G3X.icons[t[0]] || ''}</span><span>${t[1]}</span></button>`).join('')}</div>`;
         P.innerHTML = h; P.querySelectorAll('.tile').forEach(b => { b.onclick = () => UI.openTile(b.dataset.p); }); return;
       }
