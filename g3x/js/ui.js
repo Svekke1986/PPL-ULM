@@ -400,8 +400,9 @@ window.G3X = window.G3X || {};
     const head = (title, right = '') => `<div class="page-head"><span>${esc(title)}</span><span class="page-right">${right}</span></div>`;
     switch (page) {
       case 'HOME': {
-        const tiles = [['MAP', '🗺️', 'Map'], ['PFD', '🧭', 'PFD'], ['FPL', '📋', 'Active FPL'], ['WPT', '📍', 'Waypoint Info'], ['NRST', '📡', 'Nearest'], ['PROC', '🛬', 'Procedures'], ['ENG', '⚙️', 'Engine'], ['TERRAIN', '⛰️', 'Terrain'], ['TRAFFIC', '✈️', 'Traffic'], ['WX', '🌦️', 'Weather'], ['CHARTS', '📑', 'Charts'], ['TIMER', '⏱️', 'Timer'], ['CHK', '✅', 'Checklist'], ['FPLLIST', '🗂️', 'FPL List'], ['USER', '⭐', 'User WPT'], ['TRIP', '🧮', 'Trip Computer'], ['MSG', '💬', 'Messages'], ['SETUP', '🔧', 'Setup']];
-        h = head('Main Menu') + `<div class="page-body tiles">${tiles.map(t => `<button class="tile" data-p="${t[0]}"><span class="ico">${t[1]}</span><span>${t[2]}</span></button>`).join('')}</div>`;
+        // volgorde zoals het hoofdmenu van de G3X Touch (rijen van vijf)
+        const tiles = [['MAP', 'Map'], ['CHARTS', 'Charts'], ['FPL', 'Active Flight Plan'], ['WPT', 'Waypoint Info'], ['NRST', 'Nearest'], ['WX', 'Weather'], ['TRAFFIC', 'Traffic'], ['TERRAIN', 'Terrain'], ['ENG', 'Engine'], ['TIMER', 'Timer'], ['CHK', 'Checklists'], ['FPLLIST', 'Flight Plan List'], ['TRIP', 'Info'], ['USER', 'User Waypoints'], ['PROC', 'Procedures'], ['PFD', 'PFD'], ['MSG', 'Messages'], ['SETUP', 'Setup']];
+        h = head('Main Menu') + `<div class="page-body tiles">${tiles.map(t => `<button class="tile" data-p="${t[0]}"><span class="ico">${G3X.icons[t[0]] || ''}</span><span>${t[1]}</span></button>`).join('')}</div>`;
         P.innerHTML = h; P.querySelectorAll('.tile').forEach(b => { b.onclick = () => UI.showPage(b.dataset.p); }); return;
       }
       case 'FPL': {

@@ -70,7 +70,7 @@ window.G3X = window.G3X || {};
     // knoppen
     const btns = [
       { id: 'BACK', label: '◀ Back' },
-      { id: 'DTO', label: 'Direct-To', glyph: 'D➔' },
+      { id: 'DTO', label: 'Direct-To', glyph: 'D' },
       { id: 'NRST', label: 'Nearest' },
       { id: 'MENU', label: 'Menu' },
       { id: 'MSG', label: 'MSG', flash: A.msgNew },
@@ -86,7 +86,13 @@ window.G3X = window.G3X || {};
       const x = bx0 + i * bw + 3, y = r.y + 8, w = bw - 6, h = r.h - 16;
       const flash = b.flash && D.blink(2);
       D.box(ctx, x, y, w, h, b.on ? '#1f3a5f' : flash ? C.yellow : b.warn ? '#5a3a00' : '#141a22', b.on ? C.cyan : '#3a4350', 1, 8);
-      if (b.glyph) { D.text(ctx, b.glyph, x + w / 2, y + h / 2 - 9, { size: 16, color: flash ? '#000' : C.magenta, align: 'center', weight: 'bold' }); D.text(ctx, b.label, x + w / 2, y + h / 2 + 11, { size: 11, color: flash ? '#000' : '#cfd6de', align: 'center' }); }
+      if (b.glyph) {
+        // Direct-To-symbool: een D met een pijl erdoor (zoals op de G3X)
+        const gx = x + w / 2 - 6, gy = y + h / 2 - 9;
+        D.text(ctx, 'D', gx, gy, { size: 20, color: C.magenta, align: 'center', weight: 'bold' });
+        D.line(ctx, gx - 12, gy, gx + 14, gy, C.magenta, 2.5); D.poly(ctx, [[gx + 14, gy - 5], [gx + 20, gy], [gx + 14, gy + 5]], C.magenta);
+        D.text(ctx, b.label, x + w / 2, y + h / 2 + 12, { size: 11, color: flash ? '#000' : '#cfd6de', align: 'center' });
+      }
       else D.text(ctx, b.label, x + w / 2, y + h / 2, { size: 14, color: flash ? '#000' : '#fff', align: 'center', weight: 'bold' });
       D.zone(x, y, w, h, () => G3X.ui.button(b.id), 'btn-' + b.id);
     });
