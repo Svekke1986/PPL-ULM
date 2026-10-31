@@ -53,7 +53,7 @@ window.G3X = window.G3X || {};
     if (M.gp) { pitch += M.gp.pitch; roll += M.gp.roll; yaw += M.gp.yaw; }
     pitch = U.clamp(pitch, -1, 1); roll = U.clamp(roll, -1, 1); yaw = U.clamp(yaw, -1, 1);
     const manual = Math.abs(pitch) > 0.05 || Math.abs(roll) > 0.05;
-    if (apFlying) { if (manual && !M.apWarned) { UI.toast('Autopilot actief — ontkoppel eerst (A of AP DISC)'); M.apWarned = true; setTimeout(() => M.apWarned = false, 4000); } c.yaw = yaw; return; }
+    if (apFlying) { if (manual && !M.apWarned) { UI.toast('Autopilot engaged — disconnect first (A or AP DISC)'); M.apWarned = true; setTimeout(() => M.apWarned = false, 4000); } c.yaw = yaw; return; }
     c.pitchRate = pitch * 4; c.rollRate = roll * 28; c.yaw = yaw;
     if (k.PageUp) SIM.setThrottle(S.ac.throttle + 0.012); if (k.PageDown) SIM.setThrottle(S.ac.throttle - 0.012);
     S.ac.brakes = !!k.KeyB;
@@ -169,16 +169,16 @@ window.G3X = window.G3X || {};
     el.querySelectorAll('.fuel').forEach(b => { b.onclick = () => { SIM.setFuelSel(b.dataset.s); G3X.bus.emit('fuelsel', b.dataset.s); }; });
     $('#pump').onclick = () => { M.pump = !M.pump; G3X.bus.emit('pump', M.pump); };
     $('#master').onclick = () => { SIM.toggleMaster(); G3X.bus.emit('master', SIM.S.eng.master); };
-    $('#start').onclick = () => { const r = SIM.startEngine(); if (r) UI.toast(r); else G3X.bus.emit('start'); };
+    $('#start').onclick = () => { const r = SIM.startEngine(); if (r) alert(r); else G3X.bus.emit('start'); };
     $('#pbrake').onclick = () => { SIM.S.ac.parkBrake = !SIM.S.ac.parkBrake; G3X.bus.emit('pbrake', SIM.S.ac.parkBrake); };
     const br = $('#brake'); br.onpointerdown = () => { SIM.S.ac.brakes = true; M.keys.KeyB = true; }; br.onpointerup = br.onpointerleave = () => { M.keys.KeyB = false; SIM.S.ac.brakes = false; };
     $('#pause').onclick = () => { SIM.S.paused = !SIM.S.paused; };
     el.querySelectorAll('.rate').forEach(b => { b.onclick = () => { SIM.S.rate = +b.dataset.r; }; });
-    $('#revers').onclick = () => { SIM.S.fail.display = false; AV.A.layout = 'SPLIT'; AV.A.pfdPage = 'PFD'; G3X.bus.emit('reversionary'); UI.toast('Reversionary: PFD + EIS op het resterende scherm'); };
+    $('#revers').onclick = () => { SIM.S.fail.display = false; AV.A.layout = 'SPLIT'; AV.A.pfdPage = 'PFD'; G3X.bus.emit('reversionary'); UI.toast('REVERSIONARY MODE — PFD + EIS on remaining display'); };
     $('#sound').onclick = () => { AV.A.sound = !AV.A.sound; AV.save(); if (G3X.audio) G3X.audio.ensure(); };
-    $('#failon').onclick = () => { const v = $('#failsel').value; if (v) { SIM.setFail(v, true); UI.toast('Storing ingeschakeld: ' + v); } };
+    $('#failon').onclick = () => { const v = $('#failsel').value; if (v) SIM.setFail(v, true); };
     $('#failoff').onclick = () => { const v = $('#failsel').value; if (v) SIM.setFail(v, false); };
-    $('#failclear').onclick = () => { Object.keys(SIM.S.fail).forEach(k => { if (typeof SIM.S.fail[k] === 'boolean') SIM.S.fail[k] = false; }); SIM.S.fail.oilPressT = 0; UI.toast('Alle storingen hersteld'); };
+    $('#failclear').onclick = () => { Object.keys(SIM.S.fail).forEach(k => { if (typeof SIM.S.fail[k] === 'boolean') SIM.S.fail[k] = false; }); SIM.S.fail.oilPressT = 0; };
     const inv = $('#invpitch'); inv.checked = M.invertPitch; inv.onchange = () => { M.invertPitch = inv.checked; try { localStorage.setItem('g3x.invertPitch', inv.checked ? '1' : '0'); } catch (e) { /* */ } };
     // virtuele stick
     const st = $('#stick'), dot = st.querySelector('.stick-dot'); let sid = null;
@@ -207,11 +207,23 @@ window.G3X = window.G3X || {};
     const cats = T.categories();
     $('#scenario-cats').innerHTML = `<option value="">Alle categorieën</option>` + cats.map(c => `<option>${esc(c)}</option>`).join('');
     $('#scenario-cats').onchange = renderScenarioList;
-    $('#btn-random').onclick = () => { const cat = $('#scenario-cats').value; const pool = T.GEN.filter(g => g.cat !== 'Vrij vliegen' && (!cat || g.cat === cat)); T.start(U.pick(pool).id); };
-    $('#btn-restart').onclick = () => { if (T.current) T.start(T.current.id); };
+    $('#btn-random').onclick = () => { const cat = $('#scenario-cats').value; const pool = T.GEN.filter(g => g.cat !== 'Vrij vliegen' && (!cat || g.cat === cat)); T.start(U.pick(pool).id); location.hash = 's=' + T.current.id; };
+    $('#btn-restart').onclick = () => { if (T.current) T.reset(); };
+    $('#btn-new').onclick = () => { if (T.current) T.start(T.current.id); };
+    $('#explore-start').innerHTML = T.exploreOptions().map(g => `<option value="${g.id}">${esc(g.name)}</option>`).join('');
+    $('#btn-explore-start').onclick = () => { T.startExplore($('#explore-start').value); location.hash = 's=' + T.current.id; };
+    $('#btn-explore-reset').onclick = () => { if (T.mode === 'explore' && T.current) T.reset(); else T.startExplore($('#explore-start').value); };
+    $('#mode-explore').onclick = () => { if (T.mode !== 'explore') T.startExplore($('#explore-start').value); M.setMode('explore'); };
+    $('#mode-scenario').onclick = () => { M.setMode('scenario'); };
     $('#btn-help').onclick = toggleHelp; $('#help-close').onclick = toggleHelp;
     renderScenarioList();
   }
+  M.setMode = mode => {
+    $('#explore-pane').classList.toggle('hidden', mode !== 'explore');
+    $('#scenario-pane').classList.toggle('hidden', mode !== 'scenario');
+    $('#mode-explore').classList.toggle('on', mode === 'explore');
+    $('#mode-scenario').classList.toggle('on', mode === 'scenario');
+  };
   function renderScenarioList() {
     const cat = $('#scenario-cats').value; const el = $('#scenario-list');
     const list = T.GEN.filter(g => !cat || g.cat === cat);
@@ -224,11 +236,11 @@ window.G3X = window.G3X || {};
     el.innerHTML = html;
     el.querySelectorAll('.sc-item').forEach(b => { b.onclick = () => { T.start(b.dataset.id); location.hash = 's=' + b.dataset.id; }; });
   }
-  M.onScenarioStart = () => { renderScenarioList(); M.onTrainerUpdate(); $('#trainer-current').scrollIntoView({ block: 'nearest' }); };
+  M.onScenarioStart = () => { M.setMode(T.mode); if (T.mode === 'explore') $('#explore-start').value = T.current.id; renderScenarioList(); M.onTrainerUpdate(); $('#trainer-current').scrollIntoView({ block: 'nearest' }); };
   M.onTrainerUpdate = () => {
     const el = $('#trainer-current'); const sc = T.current; if (!sc) { el.innerHTML = ''; return; }
-    let html = `<div class="tc-head"><div><span class="tc-cat">${esc(sc.cat)}</span><h3>${esc(sc.title)}</h3></div><span class="tc-time" id="trainer-time">00:00:00</span></div><div class="tc-intro">${sc.intro || ''}</div>`;
-    if (!T.steps.length) html += '<p class="muted">Vrij vliegen — geen stappen. Kies een scenario in de lijst om te oefenen.</p>';
+    let html = `<div class="tc-head"><div><span class="tc-cat">${esc(T.mode === 'explore' ? 'Verkennen' : sc.cat)}</span><h3>${esc(sc.title)}</h3></div><span class="tc-time" id="trainer-time">00:00:00</span></div><div class="tc-intro">${sc.intro || ''}</div>`;
+    if (T.mode === 'explore') { html += '<p class="muted small">Tips: alle velden op het scherm zijn aanraakbaar, MENU geeft de opties van de huidige pagina, en in het paneel Vliegtuig kun je storingen inschakelen. Zet een scenario op via het tabblad <b>Scenario</b>.</p>'; el.innerHTML = html; return; }
     html += '<ol class="steps">';
     T.steps.forEach((s, i) => {
       const cls = s.status; const cur = i === T.stepIndex && !T.done;
@@ -245,13 +257,14 @@ window.G3X = window.G3X || {};
       html += '</li>';
     });
     html += '</ol>';
-    if (T.done && T.result) { const r = T.result; html += `<div class="result ${T.failed ? 'failed' : ''}"><div class="stars">${'★'.repeat(r.stars)}${'☆'.repeat(3 - r.stars)}</div><div><b>${T.failed ? 'Scenario mislukt' : 'Scenario voltooid'}</b> · score ${r.score}/100 · ${U.fmtTimer(r.dur)} · ${r.hints} hint(s)</div>${r.errors.length ? `<ul class="errs">${r.errors.map(e => `<li>${esc(e)}</li>`).join('')}</ul>` : '<div class="muted">Geen fouten.</div>'}<div class="step-actions"><button class="sb again">Opnieuw (nieuwe waarden)</button><button class="sb next">Volgend willekeurig scenario</button></div></div>`; }
+    if (T.done && T.result) { const r = T.result; html += `<div class="result ${T.failed ? 'failed' : ''}"><div class="stars">${'★'.repeat(r.stars)}${'☆'.repeat(3 - r.stars)}</div><div><b>${T.failed ? 'Scenario mislukt' : 'Scenario voltooid'}</b> · score ${r.score}/100 · ${U.fmtTimer(r.dur)} · ${r.hints} hint(s)</div>${r.errors.length ? `<ul class="errs">${r.errors.map(e => `<li>${esc(e)}</li>`).join('')}</ul>` : '<div class="muted">Geen fouten.</div>'}<div class="step-actions"><button class="sb reset">↺ Reset (zelfde gegevens)</button><button class="sb again">🎲 Nieuwe gegevens</button><button class="sb next">Volgend willekeurig scenario</button></div></div>`; }
     if (T.errors.length && !T.done) html += `<div class="tc-errs">Fouten: ${T.errors.length}</div>`;
     el.innerHTML = html;
     el.querySelectorAll('.q-opt').forEach(b => { b.onclick = () => T.answer(+b.dataset.k); });
     const hb = el.querySelector('.hint-btn'); if (hb) hb.onclick = () => T.hint();
     const sk = el.querySelector('.skip-btn'); if (sk) sk.onclick = () => T.skip();
     const ag = el.querySelector('.again'); if (ag) ag.onclick = () => T.start(T.current.id);
+    const rs = el.querySelector('.reset'); if (rs) rs.onclick = () => T.reset();
     const nx = el.querySelector('.next'); if (nx) nx.onclick = () => $('#btn-random').click();
     renderScenarioList();
   };

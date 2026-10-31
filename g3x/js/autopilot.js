@@ -49,7 +49,7 @@ window.G3X = window.G3X || {};
       case 'VNV':
         ensureFd(); if (p.vert === 'VNV' || p.vertArm.includes('VNV')) { p.vert = p.vert === 'VNV' ? 'PIT' : p.vert; p.vertArm = p.vertArm.filter(x => x !== 'VNV'); } else { if (!p.vertArm.includes('VNV')) p.vertArm.push('VNV'); } break;
       case 'LVL':
-        p.on = true; p.fd = true; p.lat = 'LVL'; p.vert = 'LVL'; p.latArm = null; p.vertArm = []; p.disc = 0; p.lvl = true; AV.msg('LVL-modus actief', 'ADV', 'lvl'); break;
+        p.on = true; p.fd = true; p.lat = 'LVL'; p.vert = 'LVL'; p.latArm = null; p.vertArm = []; p.disc = 0; p.lvl = true; AV.msg('LVL mode engaged', 'ADV', 'lvl'); break;
       case 'GA':
         p.fd = true; p.lat = 'GA'; p.vert = 'GA'; p.latArm = null; p.vertArm = ['ALTS']; p.gaTime = SIM.S.t;
         if (AV.A.fpl.susp) AV.unsuspend();
@@ -86,9 +86,9 @@ window.G3X = window.G3X || {};
     const p = ap(), A = AV.A, a = S.ac;
     if (p.disc > 0) p.disc -= dt;
     if (!p.fd && !p.on) { p.bankCmd = 0; p.pitchCmd = 0; return; }
-    if (p.on && (S.fail.ahrs || S.fail.adc)) { AP.disconnect(S.fail.ahrs ? 'AHRS' : 'ADC'); AV.msg('AP ontkoppeld: AHRS/ADC-storing', 'WARN', 'apfail'); }
+    if (p.on && (S.fail.ahrs || S.fail.adc)) { AP.disconnect(S.fail.ahrs ? 'AHRS' : 'ADC'); AV.msg('AP disconnected: AHRS/ADC failure', 'WARN', 'apfail'); }
     // --- bewapende modi ---
-    if (p.latArm && navCapturable(S)) { p.lat = p.latArm; p.latArm = null; AV.msg(`${p.lat} gevangen`, 'ADV', 'capt' + p.lat); }
+    if (p.latArm && navCapturable(S)) { p.lat = p.latArm; p.latArm = null; AV.msg(`${p.lat} captured`, 'ADV', 'capt' + p.lat); }
     if (p.lat === 'NAV' || p.lat === 'APR') {
       const src = A.navSource; const ok = src === 'GPS' ? (A.nav && A.nav.valid) : A[src.toLowerCase()].data.valid;
       if (!ok) { p.latArm = p.lat; p.lat = 'ROL'; p.rollRef = 0; }
@@ -99,18 +99,18 @@ window.G3X = window.G3X || {};
       const diff = A.altSel - indAlt;
       const closing = Math.sign(diff) === Math.sign(a.vs) || Math.abs(diff) < 50;
       const capDist = Math.max(60, Math.abs(a.vs) / 6);
-      if (closing && Math.abs(diff) < capDist && !(p.vert === 'GP' || p.vert === 'GS')) { p.vert = 'ALT'; p.altRef = A.altSel; p.vertArm = p.vertArm.filter(x => x !== 'ALTS'); AV.msg(`Hoogte ${A.altSel} ft gevangen (ALTS)`, 'ADV', 'alts'); }
+      if (closing && Math.abs(diff) < capDist && !(p.vert === 'GP' || p.vert === 'GS')) { p.vert = 'ALT'; p.altRef = A.altSel; p.vertArm = p.vertArm.filter(x => x !== 'ALTS'); AV.msg(`Altitude ${A.altSel} ft captured (ALTS)`, 'ADV', 'alts'); }
     }
     // GP/GS-capture
     if (p.vertArm.includes('GP') && A.navSource === 'GPS' && A.nav && A.nav.gpValid && (p.lat === 'APR')) {
-      if (A.nav.vdev != null && Math.abs(A.nav.vdev) < 100 && A.nav.vdev >= -60) { p.vert = 'GP'; p.vertArm = p.vertArm.filter(x => x !== 'GP' && x !== 'ALTS'); AV.msg('Glijpad gevangen (GP)', 'ADV', 'gp'); }
+      if (A.nav.vdev != null && Math.abs(A.nav.vdev) < 100 && A.nav.vdev >= -60) { p.vert = 'GP'; p.vertArm = p.vertArm.filter(x => x !== 'GP' && x !== 'ALTS'); AV.msg('Glidepath captured (GP)', 'ADV', 'gp'); }
     }
     if (p.vertArm.includes('GS') && A.navSource !== 'GPS' && p.lat === 'APR') {
       const d = A[A.navSource.toLowerCase()].data;
-      if (d.gsValid && Math.abs(d.gsDev) < 0.5) { p.vert = 'GS'; p.vertArm = p.vertArm.filter(x => x !== 'GS' && x !== 'ALTS'); AV.msg('Glideslope gevangen (GS)', 'ADV', 'gs'); }
+      if (d.gsValid && Math.abs(d.gsDev) < 0.5) { p.vert = 'GS'; p.vertArm = p.vertArm.filter(x => x !== 'GS' && x !== 'ALTS'); AV.msg('Glideslope captured (GS)', 'ADV', 'gs'); }
     }
     // VNV-capture
-    if (p.vertArm.includes('VNV') && A.nav && A.nav.vnav && A.nav.vnav.todDis <= 0 && A.altSel < a.alt - 150) { p.vert = 'VNV'; p.vertArm = p.vertArm.filter(x => x !== 'VNV'); armAlts(); AV.msg('VNAV-daling gestart', 'ADV', 'vnv'); }
+    if (p.vertArm.includes('VNV') && A.nav && A.nav.vnav && A.nav.vnav.todDis <= 0 && A.altSel < a.alt - 150) { p.vert = 'VNV'; p.vertArm = p.vertArm.filter(x => x !== 'VNV'); armAlts(); AV.msg('VNAV descent started', 'ADV', 'vnv'); }
     if (p.vert === 'VNV' && (!A.nav || !A.nav.vnav)) { p.vert = 'ALT'; p.altRef = Math.round(indAlt / 10) * 10; }
     // GA eindigt na 400 ft of op ALT capture
     if (p.vert === 'GA' && S.t - p.gaTime > 45) { p.vert = 'PIT'; p.pitRef = 7; }

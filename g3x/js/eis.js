@@ -128,7 +128,7 @@ window.G3X = window.G3X || {};
     D.box(ctx, col2, iy - 10, c2w, items.length * 30 + 20, 'rgba(255,255,255,0.03)', '#2a3340', 1);
     items.forEach(([l, v]) => { D.text(ctx, l, col2 + 12, iy + 8, { size: 13, color: '#9fb3c8' }); D.text(ctx, v, col2 + c2w - 12, iy + 8, { size: 17, color: v.startsWith('⚠') ? C.yellow : '#fff', align: 'right', weight: 'bold' }); iy += 30; });
     // knoppen
-    const btns = [['Brandstof aan boord', () => G3X.ui.openFuelOnBoard()], ['Reset verbruik', () => { a.fuelUsed = 0; }], ['Tankkeuze', () => G3X.ui.openFuelSelector()]];
+    const btns = [['Fuel on Board', () => G3X.ui.openFuelOnBoard()], ['Reset Fuel Used', () => { a.fuelUsed = 0; }], ['Fuel Selector', () => G3X.ui.openFuelSelector()]];
     let bx = col2; const by = y + h - 56;
     btns.forEach(([l, fn]) => { const bw = (c2w - 16) / 3; D.box(ctx, bx, by, bw, 40, '#1b2330', '#4a5568', 1, 6); D.text(ctx, l, bx + bw / 2, by + 20, { size: 13, color: '#fff', align: 'center', weight: 'bold' }); D.zone(bx, by, bw, 40, fn, 'engbtn'); bx += bw + 8; });
   };

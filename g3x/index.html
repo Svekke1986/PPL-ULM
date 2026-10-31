@@ -41,13 +41,29 @@
     </section>
 
     <aside class="trainer" aria-label="Trainer">
-      <h2>Scenario's</h2>
-      <div class="sc-controls">
-        <select id="scenario-cats" aria-label="Categorie"></select>
-        <button id="btn-random" class="primary" type="button">🎲 Willekeurig</button>
-        <button id="btn-restart" type="button" title="Zelfde scenario, nieuwe willekeurige gegevens">↻ Opnieuw</button>
+      <div class="mode-tabs" role="tablist">
+        <button id="mode-explore" type="button" role="tab">🔍 Verkennen</button>
+        <button id="mode-scenario" type="button" role="tab">🎯 Scenario</button>
       </div>
-      <div id="scenario-list" class="sc-list"></div>
+      <div id="explore-pane" class="hidden">
+        <p class="muted small">Verken en verander alles wat je wilt. <b>Reset</b> zet de startsituatie terug.</p>
+        <div class="sc-controls">
+          <select id="explore-start" aria-label="Startsituatie"></select>
+          <button id="btn-explore-start" class="primary" type="button">Start</button>
+          <button id="btn-explore-reset" type="button" title="Terug naar de startsituatie">↺ Reset</button>
+        </div>
+      </div>
+      <div id="scenario-pane">
+        <div class="sc-controls">
+          <select id="scenario-cats" aria-label="Categorie"></select>
+          <button id="btn-random" class="primary" type="button">🎲 Willekeurig</button>
+        </div>
+        <div id="scenario-list" class="sc-list"></div>
+        <div class="sc-controls">
+          <button id="btn-restart" type="button" title="Zelfde scenario, zelfde gegevens, vanaf het begin">↺ Reset scenario</button>
+          <button id="btn-new" type="button" title="Zelfde scenario met nieuwe willekeurige gegevens">🎲 Nieuwe gegevens</button>
+        </div>
+      </div>
       <div id="trainer-current"></div>
     </aside>
   </main>
@@ -55,7 +71,7 @@
   <div id="help" class="hidden" role="dialog" aria-modal="true">
     <div class="help-box">
       <h2>G3X Touch Trainer — help</h2>
-      <p>Een oefensimulator in de stijl van de Garmin G3X Touch (één scherm, GDU 460-indeling) met een eenvoudig model van een <b>Tecnam P2008 JC MkII</b> (Rotax 912 S) en een GFC 500-achtige autopilot (GMC 507-paneel). Thuisbasis <b>EBZH Hasselt-Kiewit</b>. Elk scenario krijgt bij het starten nieuwe willekeurige gegevens.</p>
+      <p>Een oefensimulator in de stijl van de Garmin G3X Touch (één scherm, GDU 460-indeling) met een eenvoudig model van een <b>Tecnam P2008 JC MkII</b> (Rotax 912 S) en een GFC 500-achtige autopilot (GMC 507-paneel). Thuisbasis <b>EBZH Hasselt-Kiewit</b>. Het scherm is, zoals op het echte toestel, Engelstalig. In <b>Verkennen</b> mag je alles aanpassen en zet <b>Reset</b> de startsituatie terug; in <b>Scenario</b> volg je stappen (<b>Reset scenario</b> = zelfde gegevens opnieuw, <b>Nieuwe gegevens</b> = nieuwe willekeurige waarden).</p>
       <h3>Het scherm bedienen</h3>
       <ul>
         <li><b>Tikken</b> op velden: baro, hoogte (cyaan vak), heading (HSI), CRS/DTK, bearing pointers, wind, NAV/COM-frequenties (bovenbalk), transponder, AP-balk (bovenaan PFD), CAS-meldingen (bevestigen), EIS-strook (motorpagina), kaart (features / cursor).</li>

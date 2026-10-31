@@ -66,11 +66,15 @@ window.G3X = window.G3X || {};
   });
 
   // ---------- willekeur ----------
-  U.rnd = (a, b) => a + Math.random() * (b - a);
+  // willekeur, met optioneel zaad zodat een scenario exact herhaald kan worden (mulberry32)
+  U.random = Math.random;
+  U.seeded = seed => { let t = seed >>> 0; return () => { t = (t + 0x6D2B79F5) >>> 0; let r = Math.imul(t ^ (t >>> 15), 1 | t); r ^= r + Math.imul(r ^ (r >>> 7), 61 | r); return ((r ^ (r >>> 14)) >>> 0) / 4294967296; }; };
+  U.withSeed = (seed, fn) => { const prev = U.random; U.random = U.seeded(seed); try { return fn(); } finally { U.random = prev; } };
+  U.rnd = (a, b) => a + U.random() * (b - a);
   U.rndInt = (a, b) => Math.floor(U.rnd(a, b + 1));
-  U.pick = arr => arr[Math.floor(Math.random() * arr.length)];
-  U.shuffle = arr => { const a = arr.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
-  U.chance = p => Math.random() < p;
+  U.pick = arr => arr[Math.floor(U.random() * arr.length)];
+  U.shuffle = arr => { const a = arr.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(U.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+  U.chance = p => U.random() < p;
 
   // ---------- opmaak ----------
   U.fmtFreq = f => f.toFixed(3);

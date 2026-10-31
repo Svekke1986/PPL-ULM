@@ -47,8 +47,8 @@ window.G3X = window.G3X || {};
     D.line(ctx, x - 4, r.y + 6, x - 4, r.y + r.h - 6, '#2a3340');
   };
   function pageTitle(A) {
-    const names = { MAP: 'Kaart', FPL: 'Actief vluchtplan', NRST: 'Dichtstbijzijnde', WPT: 'Waypoint-info', SETUP: 'Instellingen', CHK: 'Checklist', TIMER: 'Timers', INFO: 'Info', ENG: 'Motor', TERRAIN: 'Terrein', HOME: 'Hoofdmenu', MSG: 'Berichten', TRAFFIC: 'Verkeer', WX: 'Weer', CHARTS: 'Kaarten', USER: 'Gebruikerswaypoints', FPLLIST: 'Vluchtplannen', PROC: 'Procedures', AUX: 'Extra', TRIP: 'Tripcomputer' };
-    const t = A.layout === 'PFD' ? (A.pfdPage === 'ENG' ? 'Motor' : 'PFD') : names[A.mfdPage] || A.mfdPage;
+    const names = { MAP: 'Map', FPL: 'Active Flight Plan', NRST: 'Nearest', WPT: 'Waypoint Info', SETUP: 'Setup', CHK: 'Checklist', TIMER: 'Timer', INFO: 'Info', ENG: 'Engine', TERRAIN: 'Terrain', HOME: 'Main Menu', MSG: 'Messages', TRAFFIC: 'Traffic', WX: 'Weather', CHARTS: 'Charts', USER: 'User Waypoints', FPLLIST: 'Flight Plan List', PROC: 'Procedures', AUX: 'Aux', TRIP: 'Trip Computer' };
+    const t = A.layout === 'PFD' ? (A.pfdPage === 'ENG' ? 'Engine' : 'PFD') : names[A.mfdPage] || A.mfdPage;
     return A.layout === 'SPLIT' ? 'PFD  |  ' + t : t;
   }
   G3X.topbar = TB;
@@ -63,10 +63,10 @@ window.G3X = window.G3X || {};
     const kl = G3X.ui.knobLabels();
     D.text(ctx, kl.left.outer, r.x + 8, r.y + 20, { size: 12, color: C.cyan, weight: 'bold' });
     D.text(ctx, kl.left.inner, r.x + 8, r.y + 42, { size: 12, color: '#fff', weight: 'bold' });
-    D.text(ctx, 'buiten ▸', r.x + 90, r.y + 20, { size: 10, color: '#6b7a8c' }); D.text(ctx, 'binnen ▸', r.x + 90, r.y + 42, { size: 10, color: '#6b7a8c' });
+    D.text(ctx, 'outer ▸', r.x + 90, r.y + 20, { size: 10, color: '#6b7a8c' }); D.text(ctx, 'inner ▸', r.x + 90, r.y + 42, { size: 10, color: '#6b7a8c' });
     D.text(ctx, kl.right.outer, r.x + r.w - 8, r.y + 20, { size: 12, color: C.cyan, align: 'right', weight: 'bold' });
     D.text(ctx, kl.right.inner, r.x + r.w - 8, r.y + 42, { size: 12, color: '#fff', align: 'right', weight: 'bold' });
-    D.text(ctx, '◂ buiten', r.x + r.w - 92, r.y + 20, { size: 10, color: '#6b7a8c', align: 'right' }); D.text(ctx, '◂ binnen', r.x + r.w - 92, r.y + 42, { size: 10, color: '#6b7a8c', align: 'right' });
+    D.text(ctx, '◂ outer', r.x + r.w - 92, r.y + 20, { size: 10, color: '#6b7a8c', align: 'right' }); D.text(ctx, '◂ inner', r.x + r.w - 92, r.y + 42, { size: 10, color: '#6b7a8c', align: 'right' });
     // knoppen
     const btns = [
       { id: 'BACK', label: '◀ Back' },

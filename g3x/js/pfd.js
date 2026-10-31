@@ -481,8 +481,8 @@ window.G3X = window.G3X || {};
     if (a.stall && !a.onGround) D.textOutline(ctx, 'STALL', cx, cy - 70, { size: 28, color: C.red, align: 'center' });
     if (A.minFlag && D.blink(2)) D.textOutline(ctx, 'MINIMUMS', cx, cy + 70, { size: 24, color: C.yellow, align: 'center' });
     if (A.ap.lat === 'LVL' && A.ap.on) D.textOutline(ctx, 'LVL', cx, cy - 100, { size: 20, color: C.green, align: 'center' });
-    if (a.crashed) { D.box(ctx, cx - 160, cy - 40, 320, 80, 'rgba(0,0,0,0.8)', C.red, 2); D.text(ctx, 'HARDE LANDING / CRASH', cx, cy - 12, { size: 20, color: C.red, align: 'center', weight: 'bold' }); D.text(ctx, 'Herstart het scenario in het paneel', cx, cy + 14, { size: 14, color: '#fff', align: 'center' }); }
-    if (S.paused && !a.crashed) D.textOutline(ctx, 'PAUZE', cx, cy - 130, { size: 22, color: C.yellow, align: 'center' });
+    if (a.crashed) { D.box(ctx, cx - 160, cy - 40, 320, 80, 'rgba(0,0,0,0.8)', C.red, 2); D.text(ctx, 'HARD LANDING / CRASH', cx, cy - 12, { size: 20, color: C.red, align: 'center', weight: 'bold' }); D.text(ctx, 'Reset the scenario in the trainer panel', cx, cy + 14, { size: 14, color: '#fff', align: 'center' }); }
+    if (S.paused && !a.crashed) D.textOutline(ctx, 'SIM PAUSED', cx, cy - 130, { size: 22, color: C.yellow, align: 'center' });
   }
 
   G3X.pfd = P;

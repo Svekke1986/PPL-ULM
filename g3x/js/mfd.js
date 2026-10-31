@@ -142,8 +142,8 @@ window.G3X = window.G3X || {};
       D.text(ctx, mode === 'TERRAIN' ? 'TERRAIN' : 'MAP', r.x + r.w / 2, r.y + 11, { size: 13, color: '#9fb3c8', align: 'center', weight: 'bold' });
       D.text(ctx, orient === 'NORTH' ? 'NORTH UP' : orient === 'HDGUP' ? 'HDG UP' : 'TRK UP', r.x + 6, r.y + 11, { size: 12, color: '#fff' });
       if (mp.declutter) D.text(ctx, 'DCLTR ' + mp.declutter, r.x + 90, r.y + 11, { size: 12, color: C.yellow });
-      if (terrInhibited) D.text(ctx, 'TER INHB (op de grond)', r.x + r.w / 2, r.y + 40, { size: 14, color: C.yellow, align: 'center', weight: 'bold' });
-      if (mode === 'TERRAIN') { D.box(ctx, r.x + r.w - 150, r.y + 26, 144, 46, 'rgba(0,0,0,0.6)'); D.box(ctx, r.x + r.w - 144, r.y + 31, 12, 12, '#d8232a'); D.text(ctx, '< 100 ft onder', r.x + r.w - 128, r.y + 37, { size: 11 }); D.box(ctx, r.x + r.w - 144, r.y + 50, 12, 12, '#d9b31a'); D.text(ctx, '< 1000 ft onder', r.x + r.w - 128, r.y + 56, { size: 11 }); }
+      if (terrInhibited) D.text(ctx, 'TER INHB (ON GROUND)', r.x + r.w / 2, r.y + 40, { size: 14, color: C.yellow, align: 'center', weight: 'bold' });
+      if (mode === 'TERRAIN') { D.box(ctx, r.x + r.w - 150, r.y + 26, 144, 46, 'rgba(0,0,0,0.6)'); D.box(ctx, r.x + r.w - 144, r.y + 31, 12, 12, '#d8232a'); D.text(ctx, '< 100 FT BELOW', r.x + r.w - 128, r.y + 37, { size: 11 }); D.box(ctx, r.x + r.w - 144, r.y + 50, 12, 12, '#d9b31a'); D.text(ctx, '< 1000 FT BELOW', r.x + r.w - 128, r.y + 56, { size: 11 }); }
       // range rechtsonder
       D.box(ctx, r.x + r.w - 92, r.y + r.h - 28, 88, 24, 'rgba(0,0,0,0.65)', '#3a4350', 1);
       D.text(ctx, (D.distVal(range) < 10 ? D.distVal(range).toFixed(1) : Math.round(D.distVal(range))) + ' ' + D.distUnit(), r.x + r.w - 48, r.y + r.h - 16, { size: 14, color: '#fff', align: 'center', weight: 'bold' });
@@ -161,7 +161,7 @@ window.G3X = window.G3X || {};
         D.box(ctx, r.x + 4, r.y + r.h - 62, 190, 58, 'rgba(0,0,0,0.75)', C.cyan, 1);
         D.text(ctx, `${U.fmtLat(c.lat)}  ${U.fmtLon(c.lon)}`, r.x + 10, r.y + r.h - 48, { size: 12, color: '#fff' });
         D.text(ctx, `BRG ${U.fmtHdg(brg)}°  DIS ${U.fmtDis(dist)} NM`, r.x + 10, r.y + r.h - 30, { size: 13, color: C.cyan, weight: 'bold' });
-        D.text(ctx, `Terrein ${Math.round(NAV.terrainFt(c.lat, c.lon))} ft`, r.x + 10, r.y + r.h - 13, { size: 12, color: '#bbb' });
+        D.text(ctx, `ELEV ${Math.round(NAV.terrainFt(c.lat, c.lon))} FT`, r.x + 10, r.y + r.h - 13, { size: 12, color: '#bbb' });
       }
       // tikken op kaart => feature of cursor
       D.zone(r.x, r.y + 22, r.w, r.h - 50, (px, py) => M.tap(r.x + px, r.y + 22 + py), 'map');

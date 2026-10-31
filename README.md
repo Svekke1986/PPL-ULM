@@ -19,7 +19,9 @@ Onofficieel oefenplatform voor de theorie-examens **PPL(A)** (EASA Part-FCL, BCA
 - **G3X Touch Trainer** (`g3x/`): een aparte simulatorpagina in de stijl van de Garmin G3X Touch (één GDU 460-scherm) met een eenvoudig model van een Tecnam P2008 JC MkII (Rotax 912 S) en een GFC 500-achtige autopilot, thuisbasis EBZH Hasselt-Kiewit. Zie hieronder.
 
 ## G3X Touch Trainer
-Open `g3x/index.html` (of de knop **G3X** in de navigatie). Onofficieel, geen Garmin-product; navigatiedata en vliegtuigwaarden zijn vereenvoudigd en **niet voor echte navigatie**.
+Open `g3x/index.html` (of de knop **G3X** in de navigatie). Onofficieel, geen Garmin-product; navigatiedata en vliegtuigwaarden zijn vereenvoudigd en **niet voor echte navigatie**. Het scherm van het toestel is, zoals het echte, volledig Engelstalig; het trainerpaneel is Nederlands.
+
+- **Twee modi**: *Verkennen* (vrij alles bekijken en veranderen, met een startsituatie naar keuze en een **Reset**-knop die de startsituatie terugzet) en *Scenario* (stappen volgen; **Reset scenario** begint hetzelfde scenario met dezelfde gegevens opnieuw, **Nieuwe gegevens** genereert nieuwe willekeurige waarden).
 
 - **Scherm**: PFD (attitude met synthetic vision, snelheids- en hoogtetape, VSI, HSI met CDI/bearing pointers/windvector, AP-statusbalk, CAS-meldingen), EIS-strook en motorpagina met brandstofcomputer, bewegende kaart (topografie, luchtruimen, vliegvelden, navaids, VRP's, obstakels, verkeer), terreinpagina, Home-menu met alle pagina's (vluchtplan, waypoint-info, Nearest, naderingen, timers, checklists, instellingen, berichten, tripcomputer, gebruikerswaypoints, opgeslagen vluchtplannen).
 - **Bediening zoals op het toestel**: aanraakvelden op het scherm (baro, hoogte, heading, CRS, frequenties, transponder, AP-balk …), knoppenbalk onderaan (Back, Direct-To, Nearest, Menu, MSG, Home, PFD/Split/MFD, SUSP/OBS), twee dubbele draaiknoppen op de bezel, toetsenbord, muis/aanraking en gamepad. Autopilot via een GMC 507-achtig paneel (HDG, TRK, NAV, APR, AP, FD, ALT, VS, IAS, VNV, LVL, TO/GA, NOSE UP/DN).

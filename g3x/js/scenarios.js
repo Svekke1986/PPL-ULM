@@ -67,7 +67,7 @@ window.G3X = window.G3X || {};
     const apt = R.apt({ withApr: true, max: 40 }); const mins = apt.elev + U.pick([400, 500, 600]); const start = R.airborne(apt, { alt: apt.elev + 2500, dist: 8 });
     return { title: `Minimums ${apt.id}`, start, intro: `<p>Briefing voor een nadering op <b>${esc(apt.name)}</b> (hoogte ${apt.elev} ft). De beslissingshoogte is <b>${mins} ft</b>.</p>`,
       steps: [
-        mk(`Stel de minimums in op <b>${mins} ft</b> en schakel ze in.`, 'Tik op de snelheidstape → PFD-opties → Minimums-hoogte.', (S, A) => A.minimumsOn && A.minimums === mins),
+        mk(`Stel de minimums in op <b>${mins} ft</b> en schakel ze in.`, 'Tik op de snelheidstape → PFD Options → Minimums Altitude.', (S, A) => A.minimumsOn && A.minimums === mins),
         mk('Daal tot de melding MINIMUMS verschijnt (de minimums-bug op de hoogtetape wordt geel).', 'Daal met VS −500 of handmatig.', (S, A) => A.minFlag === true),
         mk(`Vlieg een go-around: klim tot minstens <b>${mins + 800} ft</b>.`, 'Vol gas, neus omhoog, of AP → GA (TO/GA).', (S, A) => AV.indAlt() > mins + 800),
         q('Wat doe je bij een circling/visuele nadering als je op minimums de baan niet ziet?', ['Doorstarten (missed approach)', 'Nog 100 ft verder dalen', 'Op dezelfde hoogte doorvliegen tot je de baan ziet', 'De snelheid verlagen'], 0, 'Zonder visuele referentie op de beslissingshoogte voer je de missed approach uit.'),
@@ -77,7 +77,7 @@ window.G3X = window.G3X || {};
     const start = R.airborne(HOME); const w = start.env;
     return { title: 'Windvector', start, intro: '<p>De windvector staat linksonder in de HSI. Tik erop om van weergave te wisselen.</p>',
       steps: [
-        mk('Zet de windweergave op <b>componenten</b> (tegen-/zijwind, modus 1).', 'Tik op het windvak tot je twee pijltjes met getallen ziet, of via PFD-opties → Windvector.', (S, A) => A.windMode === 1),
+        mk('Zet de windweergave op <b>componenten</b> (tegen-/zijwind, modus 1).', 'Tik op het windvak tot je twee pijltjes met getallen ziet, of via PFD Options → Wind Vector.', (S, A) => A.windMode === 1),
         (() => { const rel = U.norm180(w.windDir - start.hdg); const cross = Math.abs(Math.round(w.windSpd * Math.sin(rel * U.DEG))); const o = numOpts(cross, 4, v => Math.max(0, v) + ' kt'); return q(`Hoe groot is de dwarswindcomponent ongeveer bij je huidige heading (${U.fmtHdg(start.hdg)}°)?`, o.options, o.correct, `Wind ${U.fmtHdg(w.windDir)}°/${w.windSpd} kt. Zijwind ≈ snelheid × sin(hoek) = ${cross} kt.`); })(),
         mk('Zet de windweergave op <b>richting/snelheid</b> (modus 3).', 'Nog twee keer tikken op het windvak.', (S, A) => A.windMode === 3),
         q('Van welke kant komt de wind t.o.v. je neus?', [(() => { const rel = U.norm180(w.windDir - start.hdg); return Math.abs(rel) < 45 ? 'Van voren' : Math.abs(rel) > 135 ? 'Van achteren' : rel > 0 ? 'Van rechts' : 'Van links'; })(), 'Van de andere kant', 'Precies van opzij, geen tegen- of rugwind', 'De wind is nul'], 0, 'De pijl in het windvak wijst in de richting waarin de wind waait, gezien vanaf je heading.'),
@@ -101,21 +101,21 @@ window.G3X = window.G3X || {};
     const svtOff = U.chance(0.5);
     return { title: 'PFD-opties', start, intro: '<p>Pas de PFD aan via het optiemenu (tik op de snelheidstape of druk op MENU bij een volledig PFD).</p>',
       steps: [
-        mk(`Zet Synthetic Vision <b>${svtOff ? 'UIT' : 'AAN'}</b>.`, 'PFD-opties → Synthetic Vision.', (S, A) => A.svt === !svtOff),
+        mk(`Zet Synthetic Vision <b>${svtOff ? 'UIT' : 'AAN'}</b>.`, 'PFD Options → Synthetic Vision.', (S, A) => A.svt === !svtOff),
         mk(`Stem NAV1 af op <b>${vor.id} ${U.fmtNav(vor.freq)}</b> en maak actief.`, 'Tik op het NAV1-standbyveld linksboven, voer de frequentie in, tik dan op het actieve veld om te wisselen (XFER).', (S, A) => near(A.nav1.active, vor.freq, 0.001)),
-        mk('Zet <b>bearing pointer 1</b> op NAV1.', 'Tik rechts naast de HSI op BRG1 (of PFD-opties).', (S, A) => A.brg1 === 'NAV1' && A.nav1.data.valid),
+        mk('Zet <b>bearing pointer 1</b> op NAV1.', 'Tik rechts naast de HSI op BRG1 (of PFD Options).', (S, A) => A.brg1 === 'NAV1' && A.nav1.data.valid),
         (() => ({ text: `Op welke <b>radiaal</b> van ${vor.id} bevind je je ongeveer? (De staart van bearing pointer 1 wijst de radiaal aan.)`, makeQuestion: S => { const r = Math.round(U.bearing(vor, S.ac) / 10) * 10; const o = numOpts(r, 20, v => U.fmtHdg(v) + '°'); return { options: o.options, correct: o.correct, explain: `Peiling naar het station ${U.fmtHdg(U.bearing(S.ac, vor))}° → radiaal ${U.fmtHdg(r)}° (tegenovergestelde).` }; } }))(),
-        mk('Zet bearing pointer 2 op <b>GPS</b> en schakel de V-snelheden <b>uit</b>.', 'BRG2-vak naast de HSI; V-snelheden via PFD-opties.', (S, A) => A.brg2 === 'GPS' && A.vspeeds === false),
+        mk('Zet bearing pointer 2 op <b>GPS</b> en schakel de V-snelheden <b>uit</b>.', 'BRG2-vak naast de HSI; V-snelheden via PFD Options.', (S, A) => A.brg2 === 'GPS' && A.vspeeds === false),
       ] };
   });
   add('pfd_units', 'Basis & PFD', 'Eenheden omschakelen', () => {
     const start = R.airborne(HOME); const toKm = U.chance(0.5);
-    return { title: 'Eenheden', start, intro: '<p>Een collega vliegt liever metrisch. Pas de eenheden aan via Home → Instellingen.</p>',
+    return { title: 'Eenheden', start, intro: '<p>Een collega vliegt liever metrisch. Pas de eenheden aan via Home → Setup.</p>',
       steps: [
-        mk(`Zet afstand op <b>${toKm ? 'KM' : 'NM'}</b> en snelheid op <b>${toKm ? 'KM/H' : 'KT'}</b>.`, 'Home → Instellingen → Eenheden.', (S, A) => A.units.dist === (toKm ? 'KM' : 'NM') && A.units.speed === (toKm ? 'KMH' : 'KT')),
-        mk('Zet de baro-eenheid op <b>inHg</b>.', 'Instellingen → Baro → INHG. Het baro-veld toont nu bv. 29.92 IN.', (S, A) => A.units.baro === 'INHG'),
+        mk(`Zet afstand op <b>${toKm ? 'KM' : 'NM'}</b> en snelheid op <b>${toKm ? 'KM/H' : 'KT'}</b>.`, 'Home → Setup → Units.', (S, A) => A.units.dist === (toKm ? 'KM' : 'NM') && A.units.speed === (toKm ? 'KMH' : 'KT')),
+        mk('Zet de baro-eenheid op <b>inHg</b>.', 'Setup → Baro → inHg. Het baro-veld toont nu bv. 29.92 IN.', (S, A) => A.units.baro === 'INHG'),
         (() => ({ text: 'Welke baro-instelling in inHg komt overeen met de huidige QNH in hPa?', makeQuestion: S => { const v = U.hpaToInhg(S.env.qnh); const o = numOpts(Math.round(v * 100) / 100, 0.1, x => x.toFixed(2) + ' inHg'); return { options: o.options, correct: o.correct, explain: `${S.env.qnh} hPa ÷ 33,86 = ${v.toFixed(2)} inHg.` }; } }))(),
-        mk('Zet alle eenheden terug: NM, KT, FT, °C, hPa, liter.', 'Instellingen → Eenheden.', (S, A) => A.units.dist === 'NM' && A.units.speed === 'KT' && A.units.alt === 'FT' && A.units.temp === 'C' && A.units.baro === 'HPA' && A.units.fuel === 'L'),
+        mk('Zet alle eenheden terug: NM, KT, FT, °C, hPa, liter.', 'Setup → Units.', (S, A) => A.units.dist === 'NM' && A.units.speed === 'KT' && A.units.alt === 'FT' && A.units.temp === 'C' && A.units.baro === 'HPA' && A.units.fuel === 'L'),
       ] };
   });
 
@@ -124,7 +124,7 @@ window.G3X = window.G3X || {};
     const apt = R.apt(); const f = mainFreq(apt); const start = R.airborne(HOME);
     return { title: `COM: ${apt.id}`, start, intro: chatter('Brussels Information', `OO-XYZ, contact ${apt.name} ${R.fmtF(f)}. Monitor 121.500 op COM2.`),
       steps: [
-        mk(`Zet <b>${R.fmtF(f)}</b> in COM1 standby.`, 'Tik op het cyaan COM1-standbyveld rechtsboven → toetsenbord. Je kunt ook “Nabij” gebruiken.', (S, A) => near(A.com1.standby, f, 0.0005)),
+        mk(`Zet <b>${R.fmtF(f)}</b> in COM1 standby.`, 'Tik op het cyaan COM1-standbyveld rechtsboven → toetsenbord. Je kunt ook de lijst “Nearest” gebruiken.', (S, A) => near(A.com1.standby, f, 0.0005)),
         mk('Maak de frequentie actief (XFER / wissel).', 'Tik op de actieve COM1-frequentie om te wisselen met standby.', (S, A) => near(A.com1.active, f, 0.0005)),
         mk('Zet <b>121.500</b> actief op COM2.', 'COM2-standby → 121.500 (snelknop) → wisselen.', (S, A) => near(A.com2.active, 121.5, 0.0005)),
         mk('Selecteer COM1 als zendradio (MIC).', 'Tik op het label COM1 in de bovenbalk.', (S, A) => A.com1.mic),
@@ -135,8 +135,8 @@ window.G3X = window.G3X || {};
     const start = R.airborne(R.apt({ max: 25 }), { dist: U.rnd(2, 5) });
     return { title: 'Nearest → frequentie', start, intro: '<p>Je wilt het dichtstbijzijnde vliegveld oproepen maar kent de frequentie niet uit het hoofd.</p>',
       steps: [
-        mk('Open de pagina <b>Nearest</b> (vliegvelden).', 'Knop NRST onderaan, tab Vliegvelden.', (S, A, ctx) => ctx.has('page', p => p === 'NRST')),
-        mk('Zet de hoofdfrequentie van het <b>dichtstbijzijnde vliegveld</b> actief in COM1.', 'Tik op de rij → waypoint-info → tik op de frequentie (gaat naar COM1 standby) → wissel.', (S, A) => { const n = NAV.nearest(S.ac, 'APT', 1)[0].item; return near(A.com1.active, mainFreq(n), 0.0005); }),
+        mk('Open de pagina <b>Nearest</b> (Airports).', 'Knop NRST onderaan, tab Vliegvelden.', (S, A, ctx) => ctx.has('page', p => p === 'NRST')),
+        mk('Zet de hoofdfrequentie van het <b>dichtstbijzijnde vliegveld</b> actief in COM1.', 'Tik op de rij → Waypoint Info → tik op de frequentie (gaat naar COM1 standby) → wissel.', (S, A) => { const n = NAV.nearest(S.ac, 'APT', 1)[0].item; return near(A.com1.active, mainFreq(n), 0.0005); }),
         (() => ({ text: 'Hoe ver is dat vliegveld ongeveer (nm)?', makeQuestion: S => { const n = NAV.nearest(S.ac, 'APT', 1)[0]; const d = Math.round(n.dist); const o = numOpts(d, 3, v => Math.max(0, v) + ' NM'); return { options: o.options, correct: o.correct, explain: `${n.item.id} op ${n.dist.toFixed(1)} nm, peiling ${U.fmtHdg(n.brg)}°.` }; } }))(),
       ] };
   });
@@ -147,7 +147,7 @@ window.G3X = window.G3X || {};
         mk(`Stel code <b>${code}</b> in.`, 'Tik op het XPDR-veld (rechtsboven of rechtsonder op de PFD) → cijfers 0–7 → Enter.', (S, A) => A.xpdr.code === code),
         mk('Zorg dat de transponder in <b>ALT</b> staat (mode C).', 'In het transponderdialoog: ALT.', (S, A) => A.xpdr.mode === 'ALT', { fail: (S, A) => A.xpdr.mode === 'STBY' ? 'Transponder op STBY tijdens de vlucht: ATC ziet je niet.' : null }),
         mk('ATC vraagt: <i>“squawk ident”</i>. Druk op <b>IDENT</b>.', 'Transponderdialoog → IDENT.', ev('ident')),
-        mk('Je verlaat de gecontroleerde zone: zet de <b>VFR-code 7000</b>.', 'Transponderdialoog → knop VFR 7000.', (S, A) => A.xpdr.code === '7000'),
+        mk('Je verlaat de gecontroleerde zone: zet de <b>VFR-code 7000</b>.', 'Transponderdialoog → knop VFR.', (S, A) => A.xpdr.code === '7000'),
         q('Welke code gebruik je bij radio-uitval?', ['7600', '7700', '7500', '7000'], 0, '7500 kaping, 7600 radio-uitval, 7700 noodgeval.'),
       ] };
   });
@@ -195,18 +195,18 @@ window.G3X = window.G3X || {};
     const apt = R.apt({ min: 10, max: 35 }); const start = R.airborne(HOME);
     return { title: `Direct-To ${apt.id}`, start, intro: `<p>Vlieg rechtstreeks naar <b>${esc(apt.name)} (${apt.id})</b>.</p>`,
       steps: [
-        mk(`Activeer <b>Direct-To ${apt.id}</b>.`, 'Knop Direct-To onderaan → typ de ID (of kies uit Dichtstbij) → Activeer.', (S, A) => A.fpl.directTo && A.fpl.directTo.to.id === apt.id),
+        mk(`Activeer <b>Direct-To ${apt.id}</b>.`, 'Knop Direct-To onderaan → typ de ID (of kies uit Nearest) → Activate.', (S, A) => A.fpl.directTo && A.fpl.directTo.to.id === apt.id),
         mk('Draai naar de DTK en houd de CDI gecentreerd (XTK < 0,3 nm) gedurende 20 s.', 'Lees DTK af in de databalk; stuur tot de magenta naald in het midden staat. AP: NAV.', hold((S, A) => A.nav && A.nav.valid && Math.abs(A.nav.xtk) < 0.3 && hdgNear(S.ac.trk, A.nav.dtk, 15), 20)),
         (() => ({ text: 'Wat is de ETE naar het waypoint (minuten, afgerond)?', makeQuestion: (S, A) => { const m = Math.round(A.nav.ete); const o = numOpts(m, 3, v => Math.max(0, v) + ' min'); return { options: o.options, correct: o.correct, explain: `DIS ${A.nav.dis.toFixed(1)} nm ÷ GS ${Math.round(S.ac.gs)} kt × 60 = ${m} min.` }; } }))(),
-        mk('Zet het bereik van de kaart zo dat het waypoint zichtbaar is (bereik ≥ afstand) en op <b>Track up</b>.', 'Rechterknop (buiten) = bereik; Menu op de kaart = oriëntatie.', (S, A) => A.map.range >= A.nav.dis * 0.9 && A.map.orient === 'TRKUP'),
+        mk('Zet het bereik van de kaart zo dat het waypoint zichtbaar is (bereik ≥ afstand) en op <b>Track up</b>.', 'Rechterknop (buiten) = bereik; Menu op de kaart = Orientation.', (S, A) => A.map.range >= A.nav.dis * 0.9 && A.map.orient === 'TRKUP'),
       ] };
   });
   add('dto_nrst', 'Navigatie (GPS)', 'Nearest → Direct-To (uitwijkhaven)', () => {
     const start = R.airborne(R.apt({ max: 30 }), { dist: U.rnd(3, 7) });
     return { title: 'Uitwijken naar het dichtstbijzijnde veld', start, intro: '<p>Het weer verslechtert snel. Vlieg naar het dichtstbijzijnde vliegveld.</p>',
       steps: [
-        mk('Open <b>Nearest → Vliegvelden</b> en activeer een <b>Direct-To naar het dichtstbijzijnde</b> vliegveld.', 'NRST → tik op de eerste rij → Direct-To.', (S, A) => { const n = NAV.nearest(S.ac, 'APT', 1)[0].item; return A.fpl.directTo && A.fpl.directTo.to.id === n.id; }),
-        mk('Zet de hoofdfrequentie van dat veld in COM1 (actief) en de hoogte van het circuit (veldhoogte + 1000 ft, afgerond op 100) als geselecteerde hoogte.', 'Waypoint-info → frequentie; hoogtevak → waarde.', (S, A) => { const n = A.fpl.directTo && NAV.find(A.fpl.directTo.to.id); if (!n) return false; return near(A.com1.active, mainFreq(n), 0.0005) && near(A.altSel, Math.round((n.elev + 1000) / 100) * 100, 60); }),
+        mk('Open <b>Nearest → Airports</b> en activeer een <b>Direct-To naar het dichtstbijzijnde</b> vliegveld.', 'NRST → tik op de eerste rij → Direct-To.', (S, A) => { const n = NAV.nearest(S.ac, 'APT', 1)[0].item; return A.fpl.directTo && A.fpl.directTo.to.id === n.id; }),
+        mk('Zet de hoofdfrequentie van dat veld in COM1 (actief) en de hoogte van het circuit (veldhoogte + 1000 ft, afgerond op 100) als geselecteerde hoogte.', 'Waypoint Info → frequentie; hoogtevak → waarde.', (S, A) => { const n = A.fpl.directTo && NAV.find(A.fpl.directTo.to.id); if (!n) return false; return near(A.com1.active, mainFreq(n), 0.0005) && near(A.altSel, Math.round((n.elev + 1000) / 100) * 100, 60); }),
         (() => ({ text: 'Welke baan is in gebruik (meeste tegenwind)?', makeQuestion: (S, A) => { const n = NAV.find(A.fpl.directTo.to.id); const w = SIM.windAt(); const ends = n.rwys.flatMap(r => r.id.split('/').map((id, i) => ({ id, hdg: i ? U.norm360(r.hdg + 180) : r.hdg }))); const best = ends.map(e => ({ e, hw: w.spd * Math.cos((w.dir - e.hdg) * U.DEG) })).sort((a, b) => b.hw - a.hw); const opts = U.shuffle(ends.map(e => e.id)).slice(0, 4); while (opts.length < 4) opts.push(['00', '18', '27', '36'][opts.length]); if (!opts.includes(best[0].e.id)) opts[0] = best[0].e.id; return { options: opts, correct: opts.indexOf(best[0].e.id), explain: `Wind ${U.fmtHdg(w.dir)}°/${Math.round(w.spd)} kt → baan ${best[0].e.id}.` }; } }))(),
         mk('Kom binnen 2 nm van het veld op circuit-hoogte ±200 ft.', 'Daal tijdig: 3° ≈ 300 ft per nm.', (S, A) => { const n = NAV.find(A.fpl.directTo ? A.fpl.directTo.to.id : ''); return n && U.distNm(S.ac, n) < 2 && near(AV.indAlt(), n.elev + 1000, 200); }),
       ] };
@@ -216,11 +216,11 @@ window.G3X = window.G3X || {};
     const start = R.onRunway(HOME); start.engineRunning = true;
     return { title: `Vluchtplan ${HOME.id} → ${a1.id} → ${b.id}`, start, intro: `<p>Je plant een vlucht van <b>${HOME.id}</b> via <b>${a1.id}</b> (${esc(a1.name)}) naar <b>${b.id}</b> (${esc(b.name)}). Je staat op de baan met draaiende motor.</p>`,
       steps: [
-        mk(`Maak het vluchtplan <b>${HOME.id} → ${a1.id} → ${b.id}</b> (in die volgorde).`, 'Home → Actief vluchtplan → + Waypoint, drie keer.', (S, A) => A.fpl.wpts.map(w => w.id).join(',') === [HOME.id, a1.id, b.id].join(',')),
-        mk(`Voeg <b>${c.id}</b> in <b>vóór</b> ${b.id}.`, 'Tik op de rij van ' + b.id + ' → Waypoint invoegen vóór.', (S, A) => A.fpl.wpts.map(w => w.id).join(',') === [HOME.id, a1.id, c.id, b.id].join(',')),
-        mk(`Activeer de leg naar <b>${c.id}</b>.`, 'Tik op de rij → Activeer leg.', (S, A) => A.fpl.active === 2 && !A.fpl.directTo),
-        mk(`Verwijder <b>${a1.id}</b> uit het plan.`, 'Rij → Verwijderen.', (S, A) => A.fpl.wpts.map(w => w.id).join(',') === [HOME.id, c.id, b.id].join(',')),
-        mk('Sla het vluchtplan op.', 'FPL → Menu → Vluchtplan opslaan.', ev('fplstore')),
+        mk(`Maak het vluchtplan <b>${HOME.id} → ${a1.id} → ${b.id}</b> (in die volgorde).`, 'Home → Active FPL → + Waypoint, drie keer.', (S, A) => A.fpl.wpts.map(w => w.id).join(',') === [HOME.id, a1.id, b.id].join(',')),
+        mk(`Voeg <b>${c.id}</b> in <b>vóór</b> ${b.id}.`, 'Tik op de rij van ' + b.id + ' → Insert Before.', (S, A) => A.fpl.wpts.map(w => w.id).join(',') === [HOME.id, a1.id, c.id, b.id].join(',')),
+        mk(`Activeer de leg naar <b>${c.id}</b>.`, 'Tik op de rij → Activate Leg.', (S, A) => A.fpl.active === 2 && !A.fpl.directTo),
+        mk(`Verwijder <b>${a1.id}</b> uit het plan.`, 'Rij → Remove.', (S, A) => A.fpl.wpts.map(w => w.id).join(',') === [HOME.id, c.id, b.id].join(',')),
+        mk('Sla het vluchtplan op (Store Flight Plan).', 'FPL → Menu → Store Flight Plan.', ev('fplstore')),
         (() => ({ text: 'Hoe lang is de totale route nu (nm)?', makeQuestion: (S, A) => { const w = A.fpl.wpts; const d = Math.round(w.reduce((t, x, i) => i ? t + U.distNm(w[i - 1], x) : 0, 0)); const o = numOpts(d, 5, v => v + ' NM'); return { options: o.options, correct: o.correct, explain: 'De totale afstand staat rechtsboven op de vluchtplanpagina.' }; } }))(),
       ] };
   });
@@ -229,10 +229,10 @@ window.G3X = window.G3X || {};
     const av = A => { AV.fplClear(); AV.fplAdd(HOME); AV.fplAdd(a1); AV.fplAdd(b); A.storedFpls = A.storedFpls.filter(s => s.name !== [HOME.id, a1.id, b.id].join('-')); };
     return { title: 'Vluchtplannen beheren', start, av, intro: `<p>Er staat al een vluchtplan ${HOME.id} → ${a1.id} → ${b.id} in het toestel.</p>`,
       steps: [
-        mk('Sla het actieve vluchtplan op.', 'FPL → Menu → Opslaan.', ev('fplstore')),
-        mk('Wis het actieve vluchtplan.', 'FPL → Menu → Vluchtplan wissen.', (S, A) => A.fpl.wpts.length === 0),
-        mk('Laad het opgeslagen plan opnieuw uit de lijst.', 'Home → Vluchtplannen → tik op het plan.', (S, A) => A.fpl.wpts.map(w => w.id).join(',') === [HOME.id, a1.id, b.id].join(',')),
-        mk('Keer het vluchtplan om (terugvlucht).', 'FPL → Menu → Omkeren.', (S, A) => A.fpl.wpts.map(w => w.id).join(',') === [b.id, a1.id, HOME.id].join(',')),
+        mk('Sla het actieve vluchtplan op.', 'FPL → Menu → Store Flight Plan.', ev('fplstore')),
+        mk('Wis het actieve vluchtplan.', 'FPL → Menu → Delete Flight Plan.', (S, A) => A.fpl.wpts.length === 0),
+        mk('Laad het opgeslagen plan opnieuw uit de lijst.', 'Home → FPL List → tik op het plan.', (S, A) => A.fpl.wpts.map(w => w.id).join(',') === [HOME.id, a1.id, b.id].join(',')),
+        mk('Keer het vluchtplan om (terugvlucht).', 'FPL → Menu → Invert Flight Plan.', (S, A) => A.fpl.wpts.map(w => w.id).join(',') === [b.id, a1.id, HOME.id].join(',')),
       ] };
   });
   add('fpl_dto_crs', 'Navigatie (GPS)', 'Direct-To met koers (inbound radiaal)', () => {
@@ -240,7 +240,7 @@ window.G3X = window.G3X || {};
     const crs = U.norm360(Math.round(U.bearing(start, vor) / 10) * 10 + U.pick([-30, 30]));
     return { title: `Direct-To ${vor.id} met koers ${U.fmtHdg(crs)}`, start, intro: chatter('Liège Approach', `OO-XYZ, route direct ${vor.id}, intercept inbound course ${U.fmtHdg(crs)}.`),
       steps: [
-        mk(`Activeer Direct-To <b>${vor.id}</b> met koers <b>${U.fmtHdg(crs)}°</b>.`, 'Direct-To → typ ' + vor.id + ' → knop “Met koers…” → voer de koers in.', (S, A) => A.fpl.directTo && A.fpl.directTo.to.id === vor.id && A.fpl.directTo.crs != null && hdgNear(A.fpl.directTo.crs, crs, 2)),
+        mk(`Activeer Direct-To <b>${vor.id}</b> met koers <b>${U.fmtHdg(crs)}°</b>.`, 'Direct-To → typ ' + vor.id + ' → knop “Course…” → voer de koers in.', (S, A) => A.fpl.directTo && A.fpl.directTo.to.id === vor.id && A.fpl.directTo.crs != null && hdgNear(A.fpl.directTo.crs, crs, 2)),
         mk('Onderschep de koers: XTK < 0,2 nm gedurende 15 s.', 'Vlieg met 30–45° onderschepping naar de magenta lijn. AP: NAV (eerst gewapend, dan gevangen).', hold((S, A) => A.nav && A.nav.valid && Math.abs(A.nav.xtk) < 0.2, 15)),
         q('Wat is het verschil tussen een gewone Direct-To en Direct-To met koers?', ['Met koers vlieg je eerst naar een vastgelegde lijn door het waypoint, i.p.v. een rechte lijn vanaf je huidige positie', 'Met koers is sneller', 'Met koers gebruikt de VOR in plaats van GPS', 'Er is geen verschil'], 0, 'Met een koers legt de G3X een lijn door het waypoint; handig voor een inbound radiaal of een verlengde baanas.'),
       ] };
@@ -251,10 +251,10 @@ window.G3X = window.G3X || {};
     const av = () => { AV.fplClear(); AV.fplAdd(HOME); AV.fplAdd(vrp); };
     return { title: `OBS ${vrp.id}`, start, av, intro: `<p>Je wilt <b>${vrp.id}</b> naderen via koers <b>${U.fmtHdg(crs)}°</b> (zoals een VOR-radiaal) en daar niet automatisch doorsequencen.</p>`,
       steps: [
-        mk('Schakel <b>OBS</b> in op het actieve waypoint.', 'Tik op het DTK/CRS-veld naast de HSI → OBS aan. Of FPL → Menu → OBS-modus.', (S, A) => A.fpl.obs),
+        mk('Schakel <b>OBS</b> in op het actieve waypoint.', 'Tik op het DTK/CRS-veld naast de HSI → OBS On. Of FPL → Menu → OBS Mode.', (S, A) => A.fpl.obs),
         mk(`Zet de koers op <b>${U.fmtHdg(crs)}°</b>.`, 'CRS-veld of binnenring linkerknop (BARO/CRS).', (S, A) => A.fpl.obs && hdgNear(A.crs1, crs, 2)),
         mk('Centreer de CDI (XTK < 0,3 nm) gedurende 10 s.', 'Vlieg naar de lijn toe.', hold((S, A) => A.fpl.obs && A.nav && Math.abs(A.nav.xtk) < 0.3, 10)),
-        mk('Schakel OBS weer uit (normaal sequencen).', 'OBS-knop in de knoppenbalk of CRS-veld → OBS uit.', (S, A) => !A.fpl.obs),
+        mk('Schakel OBS weer uit (normaal sequencen).', 'OBS-knop in de knoppenbalk of CRS-veld → OBS Off.', (S, A) => !A.fpl.obs),
       ] };
   });
   add('map_opts', 'Navigatie (GPS)', 'Kaart: bereik, oriëntatie, declutter en luchtruim', () => {
@@ -262,10 +262,10 @@ window.G3X = window.G3X || {};
     return { title: 'Kaartinstellingen', start, intro: '<p>Stel de kaart in zoals gevraagd en lees het luchtruim af.</p>',
       steps: [
         mk(`Zet het kaartbereik op <b>${range} NM</b>.`, 'Buitenring rechterknop, of −/+ rechtsonder op de kaart.', (S, A) => A.map.range === range && A.mfdPage === 'MAP'),
-        mk(`Zet de oriëntatie op <b>${orient === 'NORTH' ? 'North up' : 'Heading up'}</b>.`, 'MENU op de kaart → Oriëntatie.', (S, A) => A.map.orient === orient),
+        mk(`Zet de oriëntatie op <b>${orient === 'NORTH' ? 'North up' : 'Heading up'}</b>.`, 'MENU op de kaart → Orientation.', (S, A) => A.map.orient === orient),
         mk('Zet <b>declutter niveau 2</b> (minder tekst) en daarna terug naar <b>alles</b>.', 'MENU → Declutter.', (() => { let was2 = false; return (S, A) => { if (A.map.declutter === 2) was2 = true; return was2 && A.map.declutter === 0; }; })()),
-        q(`Wat is het plafond van de <b>${asp.name}</b> (zie kaartlabel of Nearest → Luchtruim)?`, U.shuffle([`${asp.ceil} ft`, `${asp.ceil + 1000} ft`, `${asp.ceil - 1000} ft`, 'FL 95']), null, `${asp.name}: ${asp.floor === 0 ? 'GND' : asp.floor} – ${asp.ceil} ft, klasse ${asp.cls}.`),
-        mk('Schakel de <b>topografie uit</b> en weer <b>aan</b>.', 'MENU → Topografie.', (() => { let off = false; return (S, A) => { if (!A.map.topo) off = true; return off && A.map.topo; }; })()),
+        q(`Wat is het plafond van de <b>${asp.name}</b> (zie kaartlabel of Nearest → Airspace)?`, U.shuffle([`${asp.ceil} ft`, `${asp.ceil + 1000} ft`, `${asp.ceil - 1000} ft`, 'FL 95']), null, `${asp.name}: ${asp.floor === 0 ? 'GND' : asp.floor} – ${asp.ceil} ft, klasse ${asp.cls}.`),
+        mk('Schakel de <b>topografie uit</b> en weer <b>aan</b>.', 'MENU → Topo.', (() => { let off = false; return (S, A) => { if (!A.map.topo) off = true; return off && A.map.topo; }; })()),
       ] };
   });
   GEN.find(g => g.id === 'map_opts').post = sc => { const st = sc.steps[3]; const asp = NAV.AIRSPACES.find(s => s.id === 'EBBL-CTR'); st.question.correct = st.question.options.indexOf(`${asp.ceil} ft`); };
@@ -275,8 +275,8 @@ window.G3X = window.G3X || {};
       steps: [
         mk('Activeer de cursor op de kaart (tik op een lege plek of druk op de rechterknop).', 'Linksonder verschijnt peiling en afstand vanaf het vliegtuig.', (S, A) => A.map.panning && A.mfdPage === 'MAP'),
         (() => ({ text: `Wat is ongeveer de <b>afstand</b> van je positie tot <b>${esc(city[0])}</b>? (Zet de cursor op de stad.)`, makeQuestion: S => { const d = Math.round(U.distNm(S.ac, { lat: city[1], lon: city[2] })); const o = numOpts(d, 3, v => Math.max(0, v) + ' NM'); return { options: o.options, correct: o.correct, explain: `Peiling ${U.fmtHdg(U.bearing(S.ac, { lat: city[1], lon: city[2] }))}°, ${d} nm.` }; } }))(),
-        mk('Maak een <b>gebruikerswaypoint</b> op de cursorpositie.', 'Cursormenu → Gebruikerswaypoint hier (of rechterknop indrukken → menu).', ev('userwpt')),
-        mk('Activeer een Direct-To naar dat nieuwe waypoint.', 'Direct-To → kies het USR-waypoint uit de lijst.', (S, A) => A.fpl.directTo && A.fpl.directTo.to.user),
+        mk('Maak een <b>gebruikerswaypoint</b> op de cursorpositie.', 'Cursormenu → Create User Waypoint (of rechterknop indrukken → menu).', ev('userwpt')),
+        mk('Activeer een Direct-To naar dat nieuwe waypoint.', 'Direct-To → kies het USR-waypoint uit de lijst Nearest.', (S, A) => A.fpl.directTo && A.fpl.directTo.to.user),
         mk('Zet de cursor uit (Back).', 'Knop Back.', (S, A) => !A.map.panning),
       ] };
   });
@@ -285,7 +285,7 @@ window.G3X = window.G3X || {};
     const rw = apt.rwys[0];
     return { title: `Info ${apt.id}`, start, intro: `<p>Zoek de gegevens van <b>${apt.id}</b> op in het toestel.</p>`,
       steps: [
-        mk(`Open de waypoint-informatie van <b>${apt.id}</b>.`, 'Home → Waypoint-info → zoeken → typ de ID. Of tik het veld aan op de kaart.', (S, A, ctx) => ctx.has('wptinfo', id => id === apt.id)),
+        mk(`Open de waypoint-informatie van <b>${apt.id}</b>.`, 'Home → Waypoint Info → Search Waypoint → typ de ID. Of tik het veld aan op de kaart.', (S, A, ctx) => ctx.has('wptinfo', id => id === apt.id)),
         q(`Wat is de veldhoogte van ${apt.id}?`, (() => { const o = numOpts(apt.elev, 150, v => Math.max(0, v) + ' ft'); return o.options; })(), null, `${apt.name}: ${apt.elev} ft.`),
         q(`Hoe lang is baan ${rw.id}?`, U.shuffle([`${rw.len} m`, `${rw.len + 300} m`, `${Math.max(300, rw.len - 300)} m`, `${rw.len + 700} m`]), null, `${rw.id}: ${rw.len} m ${rw.surf}.`),
         mk(`Zet de hoofdfrequentie van ${apt.id} in COM1 standby.`, 'In het infovenster: tik op de frequentie.', (S, A) => near(A.com1.standby, mainFreq(apt), 0.0005)),
@@ -298,7 +298,7 @@ window.G3X = window.G3X || {};
     const av = () => { AV.fplClear(); AV.fplAdd(HOME); AV.fplAdd(vrp); AV.directTo(vrp); };
     return { title: `VNAV naar ${vrp.id}`, start, av, intro: `<p>Je nadert <b>${vrp.id}</b> op 4000 ft en wilt daar op <b>${target} ft</b> aankomen met een VNAV-daling.</p>`,
       steps: [
-        mk(`Stel bij <b>${vrp.id}</b> in het vluchtplan de hoogte <b>${target} ft</b> in.`, 'FPL → rij ' + vrp.id + ' → Hoogte instellen (VNAV).', (S, A) => A.fpl.wpts.some(w => w.id === vrp.id && w.alt === target)),
+        mk(`Stel bij <b>${vrp.id}</b> in het vluchtplan de hoogte <b>${target} ft</b> in.`, 'FPL → rij ' + vrp.id + ' → Set Altitude (VNAV).', (S, A) => A.fpl.wpts.some(w => w.id === vrp.id && w.alt === target)),
         mk(`Zet de geselecteerde hoogte op <b>${target} ft</b>, schakel de AP in met NAV + ALT en <b>arm VNV</b>.`, 'AP-balk → AP, NAV, ALT, VNV. Hoogtevak → ' + target + '.', (S, A) => A.ap.on && A.altSel === target && (A.ap.vertArm.includes('VNV') || A.ap.vert === 'VNV')),
         mk('Wacht op het top-of-descent (TOD): de AP gaat naar VPTH en daalt op het 3°-profiel.', 'Let op de verticale afwijkingsindicator (V) naast de hoogtetape.', (S, A) => A.ap.vert === 'VNV' || (A.ap.vert === 'ALT' && near(A.ap.altRef, target, 50) && AV.indAlt() < target + 200)),
         mk(`Bereik ${vrp.id} binnen 2 nm op ${target} ±150 ft.`, 'Laat de AP het werk doen; controleer snelheid en vermogen.', (S, A) => U.distNm(S.ac, vrp) < 2 && near(AV.indAlt(), target, 150)),
@@ -306,9 +306,9 @@ window.G3X = window.G3X || {};
   });
   add('nrst_airspace', 'Navigatie (GPS)', 'Luchtruim in de buurt opzoeken', () => {
     const start = R.airborne(HOME, { alt: 2000 });
-    return { title: 'Nearest → Luchtruim', start, intro: '<p>Je wilt weten welk gecontroleerd luchtruim het dichtst bij is en wat de grenzen zijn.</p>',
+    return { title: 'Nearest → Airspace', start, intro: '<p>Je wilt weten welk gecontroleerd luchtruim het dichtst bij is en wat de grenzen zijn.</p>',
       steps: [
-        mk('Open <b>Nearest → Luchtruim</b>.', 'NRST → tab Luchtruim.', (S, A, ctx) => ctx.has('nrsttab', t => t === 'ASPC')),
+        mk('Open <b>Nearest → Airspace</b>.', 'NRST → tab Airspace.', (S, A, ctx) => ctx.has('nrsttab', t => t === 'ASPC')),
         (() => ({ text: 'Welk luchtruim (niet-ATZ) is het dichtst bij of ben je al in?', makeQuestion: S => { const list = NAV.AIRSPACES.filter(s => s.type !== 'ATZ').map(s => ({ s, d: NAV.inside(s, S.ac) ? 0 : NAV.distToAirspace(s, S.ac) })).sort((x, y) => x.d - y.d); const opts = list.slice(0, 4).map(x => x.s.name); const sh = U.shuffle(opts); return { options: sh, correct: sh.indexOf(list[0].s.name), explain: `${list[0].s.name}: ${list[0].d === 0 ? 'je bent erin' : list[0].d.toFixed(1) + ' nm'}.` }; } }))(),
         (() => ({ text: 'Wat is de ondergrens (vloer) van dat luchtruim?', makeQuestion: S => { const list = NAV.AIRSPACES.filter(s => s.type !== 'ATZ').map(s => ({ s, d: NAV.inside(s, S.ac) ? 0 : NAV.distToAirspace(s, S.ac) })).sort((x, y) => x.d - y.d); const s = list[0].s; const corr = s.floor === 0 ? 'GND' : s.floor + ' ft'; const opts = U.shuffle([corr, s.floor === 0 ? '1500 ft' : 'GND', `${s.floor + 1000} ft`, `${s.ceil} ft`]); return { options: opts, correct: opts.indexOf(corr), explain: `${s.name}: ${corr} – ${s.ceil} ft.` }; } }))(),
         q('Wat moet je doen vóór je een CTR (klasse D) binnenvliegt?', ['Tweezijdig radiocontact en klaring van de toren krijgen', 'Alleen luisteren op de frequentie', 'Niets, VFR mag altijd onder 1500 ft', 'Transponder op STBY zetten'], 0, 'Klasse D: ATC-klaring vereist voor alle vluchten; VFR krijgt verkeersinformatie.'),
@@ -376,7 +376,7 @@ window.G3X = window.G3X || {};
     const av = () => { AV.fplClear(); AV.fplAdd(HOME); AV.fplAdd(apt); };
     return { title: `RNP ${ap.rwy} ${aptId}`, start, av, intro: chatter(`${apt.name}`, `OO-XYZ, cleared ${ap.name} approach via ${iaf.id}. Report established.`),
       steps: [
-        mk(`Laad de <b>${ap.name}</b> op ${aptId} met transitie <b>${iaf.id}</b> en activeer ze.`, 'FPL → PROC (of Home → Naderingen) → vliegveld, nadering, transitie → Laden & activeren.', (S, A) => A.fpl.approach && A.fpl.approach.apt === aptId && A.fpl.approach.name === ap.name && A.fpl.approach.transition === iaf.id && A.fpl.approach.active),
+        mk(`Laad de <b>${ap.name}</b> op ${aptId} met transitie <b>${iaf.id}</b> en activeer ze.`, 'FPL → PROC (of Home → Procedures) → vliegveld, nadering, transitie → Load & Activate.', (S, A) => A.fpl.approach && A.fpl.approach.apt === aptId && A.fpl.approach.name === ap.name && A.fpl.approach.transition === iaf.id && A.fpl.approach.active),
         mk(`Zet de hoogte van de FAF (<b>${ap.legs.find(l => l.faf).alt} ft</b>) als geselecteerde hoogte, AP aan met <b>NAV</b> en ALT/VS.`, 'Daal tijdig naar de FAF-hoogte.', (S, A) => A.ap.on && (A.ap.lat === 'NAV' || A.ap.latArm === 'NAV' || A.ap.lat === 'APR' || A.ap.latArm === 'APR') && A.altSel === ap.legs.find(l => l.faf).alt),
         mk('Druk vóór de FAF op <b>APR</b>: GP wordt gewapend (wit).', 'AP → APR. De CDI-schaal gaat naar APR/LNAV+V.', (S, A) => (A.ap.lat === 'APR' || A.ap.latArm === 'APR') && (A.ap.vertArm.includes('GP') || A.ap.vert === 'GP')),
         mk('Glijpad gevangen (GP groen) en gevolgd: verticale afwijking < 100 ft gedurende 15 s. Snelheid 70–85 kt, flaps T/O.', 'Vermogen terug tot ca. 3800–4200 rpm voor 3° bij 75 kt.', hold((S, A) => A.ap.vert === 'GP' && A.nav && Math.abs(A.nav.vdev || 0) < 100, 15), { fail: S => S.ac.ias > 95 ? 'Te snel op de eindnadering (> 95 kt).' : null }),
@@ -417,7 +417,7 @@ window.G3X = window.G3X || {};
       steps: [
         mk('Wacht op de CAS-melding <b>CHT</b> (geel) en bevestig ze (tik op het meldingenvenster).', 'De melding stopt met knipperen na bevestiging.', (S, A) => A.cas.some(c => c.id === 'CHTC' || c.id === 'CHT') && Object.values(A.acked).some(x => x.seen)),
         mk('Verminder het vermogen (<b>&lt; 4600 rpm</b>) en verhoog de snelheid (<b>&gt; 85 kt</b>) voor betere koeling; 15 s.', 'Gas terug (PageDown), neus omlaag.', hold(S => S.eng.rpm < 4600 && S.ac.ias > 85, 15)),
-        mk('Open de checklist <b>EMERG: High CHT / Oil Temp</b> en werk ze af.', 'Home → Checklist → kies de noodchecklist → tik elk item aan.', (S, A, ctx) => ctx.has('chkdone', g => /High CHT/.test(g))),
+        mk('Open de checklist <b>EMERG: High CHT / Oil Temp</b> en werk ze af.', 'Home → Checklist → kies de EMERG-checklist → tik elk item aan.', (S, A, ctx) => ctx.has('chkdone', g => /High CHT/.test(g))),
         mk('Wacht tot de CHT weer onder <b>120 °C</b> is (melding verdwijnt).', 'Het duurt even; houd de snelheid hoog.', S => S.eng.cht < 120),
         q('Waarom helpt een hogere snelheid tegen hoge cilinderkoptemperatuur?', ['Meer luchtstroom door de koelers/koelribben', 'De motor draait trager', 'Het mengsel wordt rijker', 'De olie wordt dunner'], 0, 'Koeling van de Rotax hangt af van luchtstroom door de radiator en koelribben.'),
       ], onTick: (S, A, ctx) => { if (ctx.stepIndex >= 1 && S.eng.rpm < 4600 && S.ac.ias > 85 && !ctx.flag) { S.fail.chtHigh = false; ctx.flag = true; } } };
@@ -437,10 +437,10 @@ window.G3X = window.G3X || {};
     const start = R.airborne(HOME, { fuelL: U.rndInt(6, 12), fuelR: U.rndInt(38, 55), fuelSel: 'L' });
     return { title: 'Brandstofbeheer', start, intro: '<p>Je vliegt al een tijdje op de linkertank. Kijk naar de brandstofmeters in de EIS-strook.</p>',
       steps: [
-        mk('Er is een <b>FUEL IMBALANCE</b>. Wissel naar de <b>rechtertank</b>.', 'Paneel “Vliegtuig” → tankkraan R, of Motorpagina → Tankkeuze.', S => S.ac.fuelSel === 'R'),
+        mk('Er is een <b>FUEL IMBALANCE</b>. Wissel naar de <b>rechtertank</b>.', 'Paneel “Vliegtuig” → tankkraan R, of Engine-pagina → Fuel Selector.', S => S.ac.fuelSel === 'R'),
         (() => ({ text: 'Hoeveel vliegtijd heb je nog (endurance) bij het huidige verbruik, ongeveer?', makeQuestion: S => { const e = G3X.eis.endurance(S); const m = Math.round(e * 60 / 10) * 10; const o = numOpts(m, 30, v => U.fmtEte(Math.max(0, v))); return { options: o.options, correct: o.correct, explain: `Bruikbaar ≈ ${Math.round(S.ac.fuelL + S.ac.fuelR - 4)} L ÷ ${S.eng.ff.toFixed(1)} L/h.` }; } }))(),
-        mk('Open de <b>motorpagina</b> (volledig) en lees de brandstofcomputer.', 'Tik op de EIS-strook of Home → Motor.', (S, A) => A.mfdPage === 'ENG' || A.pfdPage === 'ENG'),
-        mk('Stel een <b>timer van 30 minuten</b> in (aftellend, gestart) als herinnering om opnieuw te wisselen.', 'Home → Timers → Instellen 30:00 → Start.', (S, A) => A.timer.running && A.timer.dir === 'DOWN' && near(A.timer.preset, 1800, 60)),
+        mk('Open de <b>Engine</b>-pagina (volledig) en lees de brandstofcomputer.', 'Tik op de EIS-strook of Home → Engine.', (S, A) => A.mfdPage === 'ENG' || A.pfdPage === 'ENG'),
+        mk('Stel een <b>timer van 30 minuten</b> in (aftellend, gestart) als herinnering om opnieuw te wisselen.', 'Home → Timer → Set… 30:00 → Start.', (S, A) => A.timer.running && A.timer.dir === 'DOWN' && near(A.timer.preset, 1800, 60)),
         q('Waarom wissel je regelmatig van tank in de P2008?', ['Om de massabalans (laterale trim) en gelijke brandstofverdeling te bewaren', 'Omdat de motor anders te heet wordt', 'Omdat de kraan anders vastloopt', 'Dat is niet nodig'], 0, 'De P2008 heeft een L/R/OFF-kraan: wissel elke ~30 minuten.'),
       ] };
   });
@@ -450,7 +450,7 @@ window.G3X = window.G3X || {};
       steps: [
         mk('Herken de melding <b>ALTERNATOR</b> / <b>LOW VOLTS</b> en bevestig ze.', 'CAS-venster aantikken.', (S, A) => A.cas.some(c => c.id === 'ALTN' || c.id === 'VOLT') && Object.values(A.acked).some(x => x.seen)),
         mk('Werk de checklist <b>EMERG: Alternator Failure</b> af.', 'Home → Checklist.', (S, A, ctx) => ctx.has('chkdone', g => /Alternator/.test(g))),
-        mk('Load shedding: zet de schermhelderheid op <b>40 %</b>.', 'Instellingen → Helderheid (of MENU).', (S, A) => A.brightness === 40),
+        mk('Load shedding: zet de schermhelderheid op <b>40 %</b>.', 'Setup → Brightness.', (S, A) => A.brightness === 40),
         mk('Vlieg naar het dichtstbijzijnde geschikte vliegveld (Direct-To binnen 15 nm) en zet zijn frequentie actief.', 'NRST → Direct-To; frequentie via info.', (S, A) => A.fpl.directTo && U.distNm(S.ac, A.fpl.directTo.to) < 15 && NAV.find(A.fpl.directTo.to.id) && near(A.com1.active, mainFreq(NAV.find(A.fpl.directTo.to.id)), 0.001)),
         q('Hoe lang werkt de avionica ongeveer nog op de batterij na een alternatorstoring?', ['Ongeveer 30 minuten (afhankelijk van load shedding)', 'Onbeperkt', 'Ongeveer 2 minuten', 'Tot de motor stopt'], 0, 'Een typische batterij geeft ~30 min; verminder de belasting om tijd te winnen.'),
       ] };
@@ -467,8 +467,8 @@ window.G3X = window.G3X || {};
         mk('Warmdraaien op <b>2000–2500 rpm</b>, 10 s.', 'Gas iets open.', hold(S => S.eng.rpm >= 1950 && S.eng.rpm <= 2550, 10)),
         mk(`Baro op <b>${qnh}</b>, hoogtevak op circuit-hoogte <b>${HOME.elev + 1000 - (HOME.elev + 1000) % 100 + 100} ft</b>, heading bug op de baanrichting (${U.fmtHdg(start.hdg)}°).`, 'Baro-veld, hoogtevak, HSI.', (S, A) => A.baro === qnh && !A.baroStd && A.altSel === HOME.elev + 1000 - (HOME.elev + 1000) % 100 + 100 && hdgNear(A.hdgBug, start.hdg, 3)),
         mk(`Transponder code <b>${code}</b>, modus <b>ALT</b>.`, 'XPDR-veld.', (S, A) => A.xpdr.code === code && A.xpdr.mode === 'ALT'),
-        mk('Brandstofcomputer: stel <b>brandstof aan boord</b> in op de werkelijke hoeveelheid (totaal beide tanks, ±3 L).', 'Motorpagina → Brandstof aan boord. De werkelijke inhoud zie je op de meters.', (S, A, ctx) => ctx.has('fob', v => near(v, S.ac.fuelL + S.ac.fuelR, 3))),
-        mk(`Zet Hasselt Radio <b>${R.fmtF(mainFreq(HOME))}</b> actief op COM1 en start de vluchttimer (algemene timer omhoog).`, 'COM1-veld; Home → Timers → Start.', (S, A) => near(A.com1.active, mainFreq(HOME), 0.001) && A.timer.running && A.timer.dir === 'UP'),
+        mk('Brandstofcomputer: stel <b>brandstof aan boord</b> in op de werkelijke hoeveelheid (totaal beide tanks, ±3 L).', 'Engine-pagina → Fuel on Board. De werkelijke inhoud zie je op de meters.', (S, A, ctx) => ctx.has('fob', v => near(v, S.ac.fuelL + S.ac.fuelR, 3))),
+        mk(`Zet Hasselt Radio <b>${R.fmtF(mainFreq(HOME))}</b> actief op COM1 en start de vluchttimer (algemene timer omhoog).`, 'COM1-veld; Home → Timer → Start.', (S, A) => near(A.com1.active, mainFreq(HOME), 0.001) && A.timer.running && A.timer.dir === 'UP'),
       ] };
   });
   add('eis_runup', 'Motor & systemen (EIS)', 'Run-up en before-takeoff checks', () => {
@@ -502,7 +502,7 @@ window.G3X = window.G3X || {};
       onTick: (S, A, ctx) => { if (ctx.t > 5 && !S.fail.adc && !ctx.rec) S.fail.adc = true; },
       steps: [
         mk('Bevestig <b>ADC FAIL</b>.', 'CAS-venster.', (S, A) => S.fail.adc && A.acked.ADC && A.acked.ADC.seen),
-        (() => ({ text: 'Wat is je <b>GPS-hoogte</b> (Tripcomputer) afgerond op 100 ft?', makeQuestion: S => { const v = Math.round(S.ac.alt / 100) * 100; const o = numOpts(v, 100, x => x + ' ft'); return { options: o.options, correct: o.correct, explain: 'Home → Tripcomputer → GPS-hoogte. GPS-hoogte ≠ barometrische hoogte, maar bruikbaar als back-up.' }; } }))(),
+        (() => ({ text: 'Wat is je <b>GPS-hoogte</b> (Trip Computer) afgerond op 100 ft?', makeQuestion: S => { const v = Math.round(S.ac.alt / 100) * 100; const o = numOpts(v, 100, x => x + ' ft'); return { options: o.options, correct: o.correct, explain: 'Home → Trip Computer → GPS altitude. GPS-hoogte ≠ barometrische hoogte, maar bruikbaar als back-up.' }; } }))(),
         mk('Houd de grondsnelheid (GS, databalk) tussen <b>85 en 105 kt</b> gedurende 20 s met een gezond toerental (4500–5300).', 'Zonder IAS: vlieg op vermogen + houding (pitch) en GS.', hold(S => S.ac.gs >= 85 && S.ac.gs <= 105 && S.eng.rpm >= 4500 && S.eng.rpm <= 5300, 20)),
         q('Waarom is GS geen vervanging voor IAS bij de landing?', ['Wind en dichtheid beïnvloeden GS; overtrek hangt af van IAS', 'GS is altijd lager dan IAS', 'GPS werkt niet laag bij de grond', 'GS wordt in km/h gemeten'], 0, 'Met tegenwind kan je GS laag zijn terwijl je IAS prima is — en omgekeerd.'),
       ] };
@@ -559,7 +559,7 @@ window.G3X = window.G3X || {};
       steps: [
         mk('Wacht op de melding <b>CTR AHEAD</b> (binnen 2 minuten) en lees het luchtruim op de kaart.', 'MSG-knop knippert; kaartlabel toont vloer/plafond.', (S, A) => A.msgs.some(m => m.key && m.key.startsWith('aspc-' + ctr.id))),
         mk('Blijf 3 minuten buiten de CTR: wijk uit (koerswijziging) of klim boven het plafond (+300 ft).', 'Draai 45° weg of klim. Controleer de positie op de kaart.', hold(S => true, 180), { fail: S => NAV.inside(ctr, S.ac) && S.ac.alt < ctr.ceil ? `Je bent de ${ctr.name} binnengevlogen zonder klaring (luchtruimschending).` : null }),
-        q(`Op welke frequentie vraag je klaring voor de ${ctr.name}?`, U.shuffle([R.fmtF(ctr.freq || 122.105), '121.500', R.fmtF(mainFreq(HOME)), '123.405']), null, `Zie Nearest → Luchtruim of de kaartinfo: ${R.fmtF(ctr.freq || 122.105)}.`),
+        q(`Op welke frequentie vraag je klaring voor de ${ctr.name}?`, U.shuffle([R.fmtF(ctr.freq || 122.105), '121.500', R.fmtF(mainFreq(HOME)), '123.405']), null, `Zie Nearest → Airspace of de kaartinfo: ${R.fmtF(ctr.freq || 122.105)}.`),
       ] };
   });
   GEN.find(g => g.id === 'airspace_avoid').post = sc => { const ctr = NAV.AIRSPACES.find(s => sc.title.startsWith(s.name)); const f = R.fmtF(ctr.freq || 122.105); const st = sc.steps[2]; st.question.correct = st.question.options.indexOf(f); };
@@ -567,7 +567,7 @@ window.G3X = window.G3X || {};
     const spa = NAV.find('EBSP'); const start = R.airborne(spa, { dist: 10, brg: U.rnd(120, 240), alt: spa.elev + 700, hdg: U.rnd(0, 360) }); start.hdg = Math.round(U.bearing(start, { lat: 50.30, lon: 6.0 }));
     return { title: 'TERRAIN', start, intro: '<p>Laaghangende bewolking dwingt je laag over de Ardennen. Het terrein stijgt voor je uit.</p>',
       steps: [
-        mk('Open de <b>Terrein</b>-pagina (Home → Terrein) en bekijk de kleuren (rood = < 100 ft onder je, geel = < 1000 ft).', 'Home → Terrein.', (S, A) => A.mfdPage === 'TERRAIN'),
+        mk('Open de <b>Terrain</b>-pagina (Home → Terrain) en bekijk de kleuren (rood = < 100 ft onder je, geel = < 1000 ft).', 'Home → Terrain.', (S, A) => A.mfdPage === 'TERRAIN'),
         mk('Reageer op de terreinwaarschuwing: klim tot er geen gele/rode TERRAIN-melding meer is en AGL > 1000 ft.', 'Vol gas, Vy 69 kt, eventueel wegdraaien naar lager terrein.', (S, A) => !A.cas.some(c => c.id === 'TERR' || c.id === 'TERRC') && S.ac.agl > 1000 && S.t > 20),
         q('Wat is de minimale VFR-hoogte boven onbewoond gebied volgens SERA.5005(f)?', ['500 ft boven grond of water (en 150 m van obstakels/personen)', '1000 ft boven het hoogste obstakel binnen 600 m', '300 ft', 'Er is geen minimum'], 0, 'SERA.5005(f)(2): 150 m (500 ft) boven grond/water buiten bebouwing; (f)(1): 300 m boven bebouwing/mensenmassa.'),
       ] };
@@ -578,7 +578,7 @@ window.G3X = window.G3X || {};
     return { title: 'Verkeer', start, av, intro: '<p>Er is verkeer gesimuleerd (zoals ADS-B-in zou tonen). Zoek het op de kaart en wijk uit.</p>',
       steps: [
         (() => ({ text: 'Aan welke kant zit het verkeer t.o.v. je neus?', makeQuestion: (S, A) => { const t = A.traffic[0]; const rel = U.norm180(U.bearing(S.ac, t) - S.ac.hdg); const corr = rel > 0 ? 'Rechts (richting 1–3 uur)' : 'Links (richting 9–11 uur)'; const opts = ['Links (richting 9–11 uur)', 'Rechts (richting 1–3 uur)', 'Recht vooruit (12 uur)', 'Achter je (6 uur)']; return { options: opts, correct: opts.indexOf(corr), explain: `Relatieve peiling ${Math.round(rel)}°; ${t.alt > S.ac.alt ? 'boven' : t.alt < S.ac.alt ? 'onder' : 'op gelijke hoogte'} (${Math.round((t.alt - S.ac.alt) / 100)}00 ft).` }; } }))(),
-        mk('Open de pagina <b>Verkeer</b> (Home → Verkeer) voor afstand en hoogteverschil.', 'Home → Verkeer.', (S, A) => A.mfdPage === 'TRAFFIC'),
+        mk('Open de pagina <b>Traffic</b> (Home → Traffic) voor afstand en hoogteverschil.', 'Home → Traffic.', (S, A) => A.mfdPage === 'TRAFFIC'),
         mk('Wijk uit: wijzig je heading minstens <b>30°</b> t.o.v. de startheading (bij voorkeur naar rechts) en houd > 1 nm afstand.', 'Zie het gele symbool op de kaart als het dichtbij komt.', (S, A, ctx) => { if (ctx.h0 == null) ctx.h0 = start.hdg; return Math.abs(U.norm180(S.ac.hdg - ctx.h0)) >= 30; }, { fail: (S, A) => A.traffic.length && U.distNm(S.ac, A.traffic[0]) < 0.3 && Math.abs(A.traffic[0].alt - S.ac.alt) < 200 ? 'Bijna-botsing!' : null }),
         q('Bij convergerende koersen op gelijke hoogte: wie wijkt uit (SERA.3210)?', ['Het toestel dat het andere aan zijn rechterkant heeft, wijkt uit', 'Het snelste toestel', 'Het toestel dat het hoogst vliegt', 'Beide draaien naar links'], 0, 'Convergeren: wie het andere rechts van zich heeft, wijkt. Frontaal: beiden naar rechts.'),
       ] };
@@ -592,7 +592,7 @@ window.G3X = window.G3X || {};
       steps: [
         mk(`Vertrekvoorbereiding: baro ${qnh}, heading bug ${U.fmtHdg(start.hdg)}°, hoogte 2000, squawk ${code} ALT, COM1 ${R.fmtF(mainFreq(HOME))}, flaps T/O.`, 'Alle velden op de PFD.', (S, A) => A.baro === qnh && hdgNear(A.hdgBug, start.hdg, 3) && A.altSel === 2000 && A.xpdr.code === code && A.xpdr.mode === 'ALT' && near(A.com1.active, mainFreq(HOME), 0.001) && S.ac.flaps === 1),
         mk('Stijg op en klim naar 2000 ft (±100), flaps UP.', 'Parkeerrem los, vol gas, roteren bij 50 kt.', (S, A) => !S.ac.onGround && near(AV.indAlt(), 2000, 100) && S.ac.flaps === 0),
-        mk(`Direct-To <b>${vrp.id}</b> en vlieg ernaartoe (binnen 1 nm).`, 'Direct-To → ID. AP toegestaan (NAV + ALT).', (S, A) => U.distNm(S.ac, vrp) < 1),
+        mk(`Direct-To <b>${vrp.id}</b> en vlieg ernaartoe (binnen 1 nm).`, 'Direct-To → ID → Activate. AP toegestaan (NAV + ALT).', (S, A) => U.distNm(S.ac, vrp) < 1),
         mk(`Direct-To <b>${HOME.id}</b>; stel COM1 op Hasselt Radio (al goed) en selecteer circuithoogte ${circ} ft.`, 'Direct-To → EBZH; hoogtevak.', (S, A) => A.fpl.directTo && A.fpl.directTo.to.id === HOME.id && A.altSel === circ),
         mk(`Kom aan boven het veld (< 1,5 nm) op ${circ} ±150 ft.`, 'Daal tijdig; 3° ≈ 300 ft/nm.', (S, A) => U.distNm(S.ac, HOME) < 1.5 && near(AV.indAlt(), circ, 150)),
         mk('Squawk 7000 en zet de transponder op GND of STBY ná de landing (of blijf ALT in het circuit): hier volstaat code 7000.', 'XPDR-veld → VFR.', (S, A) => A.xpdr.code === '7000'),
@@ -603,10 +603,10 @@ window.G3X = window.G3X || {};
     const start = R.airborne(HOME, { dist: 2, alt: 1500, hdg: Math.round(U.bearing(HOME, via)) });
     return { title: `${HOME.id} → ${via.id} → ${dest.id}`, start, intro: `<p>Net opgestegen van ${HOME.id}. Vlieg via <b>${via.id}</b> naar <b>${dest.id}</b> (${esc(dest.name)}) op ${cruise} ft.</p>`,
       steps: [
-        mk(`Maak het vluchtplan <b>${HOME.id} → ${via.id} → ${dest.id}</b> en activeer de leg naar ${via.id}.`, 'FPL → + Waypoint ×3 → rij ' + via.id + ' → Activeer leg.', (S, A) => A.fpl.wpts.map(w => w.id).join(',') === [HOME.id, via.id, dest.id].join(',') && A.fpl.active === 1),
+        mk(`Maak het vluchtplan <b>${HOME.id} → ${via.id} → ${dest.id}</b> en activeer de leg naar ${via.id}.`, 'FPL → + Waypoint ×3 → rij ' + via.id + ' → Activate Leg.', (S, A) => A.fpl.wpts.map(w => w.id).join(',') === [HOME.id, via.id, dest.id].join(',') && A.fpl.active === 1),
         mk(`AP: NAV + klim naar ${cruise} ft (VS of IAS), hoogte geselecteerd.`, 'AP-paneel.', (S, A) => A.ap.on && (A.ap.lat === 'NAV' || A.ap.latArm === 'NAV') && A.altSel === cruise),
         mk(`Passeer ${via.id} (automatische sequencing naar ${dest.id}) op kruishoogte ±150 ft.`, 'De leg naar ' + dest.id + ' wordt magenta.', (S, A) => A.fpl.active === 2 && near(AV.indAlt(), cruise, 150)),
-        mk(`Zet de frequentie van ${dest.id} (${R.fmtF(mainFreq(dest))}) in COM1 standby en de ATIS/info indien aanwezig in COM2.`, 'Waypoint-info → frequenties.', (S, A) => near(A.com1.standby, mainFreq(dest), 0.0005) || near(A.com1.active, mainFreq(dest), 0.0005)),
+        mk(`Zet de frequentie van ${dest.id} (${R.fmtF(mainFreq(dest))}) in COM1 standby en de ATIS/info indien aanwezig in COM2.`, 'Waypoint Info → frequenties.', (S, A) => near(A.com1.standby, mainFreq(dest), 0.0005) || near(A.com1.active, mainFreq(dest), 0.0005)),
         (() => ({ text: `Welke baan verwacht je op ${dest.id} (meeste tegenwind)?`, makeQuestion: () => { const w = SIM.windAt(); const ends = dest.rwys.flatMap(r => r.id.split('/').map((id, i) => ({ id, hdg: i ? U.norm360(r.hdg + 180) : r.hdg }))); const best = ends.map(e => ({ e, hw: w.spd * Math.cos((w.dir - e.hdg) * U.DEG) })).sort((a, b) => b.hw - a.hw)[0].e.id; let opts = U.shuffle(ends.map(e => e.id)).slice(0, 4); if (!opts.includes(best)) opts[0] = best; while (opts.length < 4) opts.push(['09', '18', '27', '36'].find(x => !opts.includes(x))); return { options: opts, correct: opts.indexOf(best), explain: `Wind ${U.fmtHdg(w.dir)}°/${Math.round(w.spd)} kt.` }; } }))(),
         mk(`Daal zodat je binnen 5 nm van ${dest.id} op circuithoogte (${dest.elev + 1000} ±200 ft) bent; TOD ≈ 3 nm per 1000 ft.`, 'Hoogtevak → circuithoogte, VS −500.', (S, A) => U.distNm(S.ac, dest) < 5 && near(AV.indAlt(), dest.elev + 1000, 200)),
         mk('Ontkoppel de AP voor de visuele nadering en maak COM1 actief op de veldfrequentie.', 'AP DISC; COM1 wisselen.', (S, A) => !A.ap.on && near(A.com1.active, mainFreq(dest), 0.0005)),
@@ -619,30 +619,47 @@ window.G3X = window.G3X || {};
     return { title: `${ap.name} ${aptId} compleet`, start, av, intro: chatter(`${apt.name} Approach`, `OO-XYZ, cleared ${ap.name} via ${iaf.id}, descend ${iaf.alt} ft, QNH ${start.env.qnh}. After the missed approach, hold at ${ap.missed[ap.missed.length - 1].id}.`),
       steps: [
         mk(`Baro ${start.env.qnh}; laad en activeer <b>${ap.name}</b> via <b>${iaf.id}</b>; AP NAV; daal naar ${iaf.alt} ft.`, 'PROC-pagina; AP-paneel; hoogtevak.', (S, A) => A.baro === start.env.qnh && A.fpl.approach && A.fpl.approach.active && A.fpl.approach.transition === iaf.id && A.ap.on && (A.ap.lat === 'NAV' || A.ap.latArm === 'NAV' || A.ap.lat === 'APR' || A.ap.latArm === 'APR') && A.altSel === iaf.alt),
-        mk(`Vóór de FAF: APR gewapend, hoogte FAF (${ap.legs.find(l => l.faf).alt} ft) geselecteerd, minimums ${apt.elev + 400} ft ingesteld.`, 'APR; hoogtevak; PFD-opties → Minimums.', (S, A) => (A.ap.lat === 'APR' || A.ap.latArm === 'APR') && A.altSel === ap.legs.find(l => l.faf).alt && A.minimumsOn && A.minimums === apt.elev + 400),
+        mk(`Vóór de FAF: APR gewapend, hoogte FAF (${ap.legs.find(l => l.faf).alt} ft) geselecteerd, minimums ${apt.elev + 400} ft ingesteld.`, 'APR; hoogtevak; PFD Options → Minimums.', (S, A) => (A.ap.lat === 'APR' || A.ap.latArm === 'APR') && A.altSel === ap.legs.find(l => l.faf).alt && A.minimumsOn && A.minimums === apt.elev + 400),
         mk('GP gevangen en gevolgd (< 100 ft afwijking) gedurende 20 s; snelheid 70–85 kt.', 'Vermogen 3800–4200 rpm, flaps T/O.', hold((S, A) => A.ap.vert === 'GP' && Math.abs(A.nav.vdev || 0) < 100 && S.ac.ias >= 68 && S.ac.ias <= 88, 20)),
         mk('Bij MINIMUMS zonder zicht: <b>GA</b>, vol gas, flaps UP boven 60 kt, missed approach actief.', 'GA-knop; F.', (S, A) => A.ap.lat === 'GA' && S.ac.throttle > 0.9 && (A.fpl.wpts[A.fpl.active] && A.fpl.wpts[A.fpl.active].missed)),
         mk(`Klim naar ${ap.missed[0].alt} ft en volg de missed approach met NAV tot het holdingfix ${ap.missed[ap.missed.length - 1].id} (< 1 nm).`, 'Na GA: NAV opnieuw selecteren; hoogtevak.', (S, A) => (A.ap.lat === 'NAV' || A.ap.lat === 'GA') && U.distNm(S.ac, ap.missed[ap.missed.length - 1]) < 1 && AV.indAlt() > ap.missed[0].alt - 200),
-        mk('In de hold (SUSP): zet een 1-minuten-timer en vlieg 60 s een outbound leg (heading bug op de reciproke van de inbound koers, HDG-modus).', 'Timer 01:00 aftellend; HDG op tegengestelde koers.', (S, A) => A.fpl.susp && A.timer.running && A.timer.dir === 'DOWN' && A.ap.lat === 'HDG'),
+        mk('In de hold (SUSP): zet een 1-minuten-timer en vlieg 60 s een outbound leg (heading bug op de reciproke van de inbound koers, HDG-modus).', 'Timer → Set… 01:00 (Count Down); HDG op tegengestelde koers.', (S, A) => A.fpl.susp && A.timer.running && A.timer.dir === 'DOWN' && A.ap.lat === 'HDG'),
       ] };
   });
-  add('free', 'Vrij vliegen', 'Vrij vliegen (geen opdrachten)', () => {
-    const start = R.airborne(HOME, { alt: 2000 });
-    return { title: 'Vrij vliegen', start, intro: '<p>Geen opdrachten: verken de G3X. Gebruik het paneel om storingen in te schakelen of op de grond te beginnen.</p>', steps: [] };
+  add('free', 'Vrij vliegen', 'In de lucht bij EBZH (2000 ft, kruisvlucht)', () => {
+    const start = R.airborne(HOME, { alt: 2000, dist: U.rnd(2, 6) });
+    return { title: 'Verkennen — in de lucht bij EBZH', start, intro: '<p>Geen opdrachten: verken en verander alles wat je wilt. Met <b>Reset</b> keer je terug naar deze startsituatie.</p>', steps: [] };
   });
-  add('free_ground', 'Vrij vliegen', 'Vrij vliegen vanaf de grond (koude start)', () => {
+  add('free_ground', 'Vrij vliegen', 'Op de baan van EBZH, koud en donker', () => {
     const start = R.onRunway(HOME); start.engineRunning = false;
-    return { title: 'Vrij vliegen vanaf EBZH', start, intro: '<p>Koud en donker op de baan van Kiewit. Master → start → gas.</p>', steps: [] };
+    return { title: 'Verkennen — op de grond op EBZH', start, intro: '<p>Koud en donker op de baan van Kiewit. Paneel Vliegtuig: Master → Start → gas.</p>', steps: [] };
+  });
+  add('free_ground_run', 'Vrij vliegen', 'Op de baan van EBZH, motor draait', () => {
+    const start = R.onRunway(HOME); start.engineRunning = true;
+    return { title: 'Verkennen — klaar voor vertrek op EBZH', start, intro: '<p>Motor loopt, parkeerrem staat aan. Parkeerrem los, vol gas, roteren bij 50 kt.</p>', steps: [] };
+  });
+  add('free_apr', 'Vrij vliegen', 'In de lucht bij een vliegveld met naderingen', () => {
+    const apt = R.apt({ withApr: true, max: 60 }); const start = R.airborne(apt, { alt: apt.elev + 2500, dist: U.rnd(8, 14) });
+    return { title: `Verkennen — bij ${apt.id}`, start, intro: `<p>Je bent in de buurt van <b>${esc(apt.name)}</b>. Probeer PROC → een nadering laden en de autopilot in APR.</p>`, steps: [] };
   });
 
   // ---------- scenario-motor ----------
   const T = { GEN, current: null, stepIndex: 0, steps: [], stepStart: 0, started: 0, hints: 0, errors: [], done: false, failed: false, lastRunKey: null, best: {} };
   try { T.best = JSON.parse(localStorage.getItem('g3x.scores') || '{}'); } catch (e) { T.best = {}; }
-  T.categories = () => { const out = []; GEN.forEach(g => { if (!out.includes(g.cat)) out.push(g.cat); }); return out; };
+  T.categories = () => { const out = []; GEN.forEach(g => { if (g.cat !== 'Vrij vliegen' && !out.includes(g.cat)) out.push(g.cat); }); return out; };
+  T.exploreOptions = () => GEN.filter(g => g.cat === 'Vrij vliegen');
 
-  T.start = id => {
+  // modus: 'scenario' (stappen volgen) of 'explore' (vrij verkennen); explore gebruikt de 'free*'-generatoren
+  T.mode = 'scenario';
+  T.exploreStart = 'free';
+  T.startExplore = (which, seed) => { T.mode = 'explore'; T.exploreStart = which || T.exploreStart; return T.start(T.exploreStart, seed); };
+  // reset: zelfde scenario met exact dezelfde gegevens (zelfde zaad)
+  T.reset = () => { if (T.current) T.start(T.current.id, T.seed); };
+  T.start = (id, seed) => {
     const gen = GEN.find(g => g.id === id) || U.pick(GEN.filter(g => g.cat !== 'Vrij vliegen'));
-    const sc = gen.fn(); if (gen.post) gen.post(sc);
+    if (gen.cat === 'Vrij vliegen') T.mode = 'explore'; else T.mode = 'scenario';
+    T.seed = seed ?? Math.floor(Math.random() * 2 ** 31);
+    const sc = U.withSeed(T.seed, () => { const s = gen.fn(); if (gen.post) gen.post(s); return s; });
     sc.id = gen.id; sc.cat = gen.cat; sc.genName = gen.name;
     // simulator en avionica terugzetten
     const S = SIM.reset(Object.assign({}, sc.start, { fail: sc.fail || {} }));

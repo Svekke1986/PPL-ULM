@@ -171,6 +171,11 @@ button { font-family: inherit; }
 /* ---------- trainerpaneel ---------- */
 .trainer { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px; position: sticky; top: 10px; max-height: calc(100vh - 20px); overflow: auto; }
 .trainer h2 { margin: 0 0 8px; font-size: 1.1rem; }
+.mode-tabs { display: flex; gap: 6px; margin-bottom: 10px; }
+.mode-tabs button { flex: 1; background: var(--panel-2); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 9px 8px; font-size: .95rem; font-weight: 600; cursor: pointer; }
+.mode-tabs button.on { background: #1f3a5f; border-color: var(--accent); color: #fff; }
+.small { font-size: .85rem; }
+#explore-pane select { flex: 1; min-width: 160px; }
 .sc-controls { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
 .sc-controls select, .sc-controls button { background: var(--panel-2); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 7px 10px; font-size: .9rem; cursor: pointer; }
 .sc-controls button.primary { border-color: var(--accent); color: var(--accent); }

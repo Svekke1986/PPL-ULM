@@ -146,7 +146,7 @@ window.G3X = window.G3X || {};
     ap.missed.forEach(l => f.wpts.push(Object.assign(wpCopy(l), { proc: true, missed: true, name: `${aptId} ${ap.name} missed` })));
     f.approach = { apt: aptId, index: apIndex, name: ap.name, type: ap.type, rwy: ap.rwy, freq: ap.freq || null, finalCrs: ap.finalCrs, transition, vtf, active: false, loaded: true };
     if (f.active < 1 && f.wpts.length >= 2) f.active = 1;
-    AV.msg(`${ap.name} ${aptId} geladen`, 'ADV', 'apr');
+    AV.msg(`${ap.name} ${aptId} loaded`, 'ADV', 'apr');
     return true;
   };
   AV.activateApproach = () => {
@@ -170,7 +170,7 @@ window.G3X = window.G3X || {};
     const crs = U.bearing(faf, mapw);
     f.directTo = { from: Object.assign(U.dest(faf, U.norm360(crs + 180), 25), { id: 'VTF' }), to: mapw, crs, inFpl: true, vtf: true };
     f.susp = false;
-    AV.msg('Vectors-to-final geactiveerd', 'ADV', 'vtf');
+    AV.msg('Vectors-to-final activated', 'ADV', 'vtf');
   };
   AV.removeApproach = () => { const f = F(); f.wpts = f.wpts.filter(w => !w.proc); f.approach = null; if (f.active >= f.wpts.length) f.active = f.wpts.length - 1; if (f.wpts.length < 2) f.active = -1; if (f.directTo && f.directTo.to.proc) f.directTo = null; };
   AV.activateMissed = () => {
@@ -178,7 +178,7 @@ window.G3X = window.G3X || {};
     const mi = f.wpts.findIndex(w => w.missed);
     if (mi < 0) return false;
     f.susp = false; f.directTo = null; f.active = mi;
-    AV.msg('Missed approach geactiveerd', 'ADV', 'missed');
+    AV.msg('Missed approach activated', 'ADV', 'missed');
     return true;
   };
   AV.unsuspend = () => { const f = F(); if (f.susp) { if (f.wpts[f.active] && f.wpts[f.active].map) AV.activateMissed(); else { f.susp = false; if (f.active < f.wpts.length - 1) f.active++; } } };
@@ -187,7 +187,7 @@ window.G3X = window.G3X || {};
   AV.addUserWaypoint = (lat, lon, id) => {
     const A = AV.A;
     id = (id || ('USR' + U.pad(A.userWpts.length + 1, 3))).toUpperCase();
-    const w = { id, name: 'Gebruikerswaypoint', type: 'USER', lat, lon, user: true };
+    const w = { id, name: 'User waypoint', type: 'USER', lat, lon, user: true };
     A.userWpts.push(w); NAV.ALL.push(w); AV.save();
     return w;
   };
@@ -277,12 +277,12 @@ window.G3X = window.G3X || {};
       if (!flyOver && next) { const dc = Math.abs(U.norm180(U.bearing(to, next) - dtk)); anticipate = Math.min(turnRadiusNm * Math.tan(Math.min(dc, 120) / 2 * U.DEG), 2); }
       const passed = xt.along >= out.legLen - anticipate - 0.02 || (dis < 0.25) || (Math.abs(U.norm180(brg - dtk)) > 95 && dis < 1.5);
       if (passed) {
-        if (to.map && f.approach && f.approach.active) { f.susp = true; AV.msg('Missed approach point — SUSP. Druk op SUSP/GA voor de missed approach', 'ADV', 'susp'); }
-        else if (to.hold) { f.susp = true; AV.msg(`Holding bij ${to.id} — SUSP`, 'ADV', 'hold'); }
-        else if (f.directTo && !f.directTo.inFpl) { f.susp = true; AV.msg(`Aangekomen bij ${to.id}`, 'ADV', 'arrive'); }
+        if (to.map && f.approach && f.approach.active) { f.susp = true; AV.msg('Missed approach point — SUSP. Press SUSP or GA for the missed approach', 'ADV', 'susp'); }
+        else if (to.hold) { f.susp = true; AV.msg(`Holding at ${to.id} — SUSP`, 'ADV', 'hold'); }
+        else if (f.directTo && !f.directTo.inFpl) { f.susp = true; AV.msg(`Arriving at ${to.id}`, 'ADV', 'arrive'); }
         else if (next) { f.active = toIdx + 1; f.directTo = null; out.seq = true; }
-        else { f.susp = true; AV.msg(`Aangekomen op bestemming ${to.id}`, 'ADV', 'arrive'); }
-      } else if (out.ete < 0.25 && out.ete > 0 && dis > 0.3) AV.msg(`Nadert ${to.id}`, 'ADV', 'appr-' + to.id);
+        else { f.susp = true; AV.msg(`Arriving at destination ${to.id}`, 'ADV', 'arrive'); }
+      } else if (out.ete < 0.25 && out.ete > 0 && dis > 0.3) AV.msg(`Approaching ${to.id}`, 'ADV', 'appr-' + to.id);
     }
     out.nextId = to.id;
     if (out.ete > 60 * 100) out.ete = Infinity;
@@ -377,7 +377,7 @@ window.G3X = window.G3X || {};
       if (now.length) adv('ASPC', `IN ${now[0].name.split(' ')[0]} ${now[0].type}`);
       const ahead = U.dest(a, a.trk, Math.max(a.gs, 40) / 60 * 2);
       const soon = NAV.airspacesAt(ahead, a.alt + a.vs * 2).filter(s => s.type !== 'ATZ' && !now.includes(s));
-      if (soon.length) { adv('ASPCA', `${soon[0].type} AHEAD`); AV.msg(`Luchtruim binnen 2 min: ${soon[0].name} (${soon[0].floor}–${soon[0].ceil} ft)`, 'ADV', 'aspc-' + soon[0].id); }
+      if (soon.length) { adv('ASPCA', `${soon[0].type} AHEAD`); AV.msg(`Airspace ahead within 2 min: ${soon[0].name} (${soon[0].floor}–${soon[0].ceil} ft)`, 'ADV', 'aspc-' + soon[0].id); }
       for (const s of NAV.AIRSPACES) if (s.type !== 'ATZ' && !now.includes(s) && a.alt >= s.floor - 200 && a.alt <= s.ceil + 200 && NAV.distToAirspace(s, a) < 1.0) { adv('ASPCN', `${s.type} NEAR`); break; }
     }
     // hoogte-alert (1000 ft / 200 ft)
@@ -402,7 +402,7 @@ window.G3X = window.G3X || {};
     x.reply = (x.mode === 'ALT' || x.mode === 'ON') && !a.onGround && Math.floor(S.t * 1.5) % 4 === 0 ? 1 : 0;
     // timers
     const tm = A.timer;
-    if (tm.running) { tm.value += tm.dir === 'UP' ? dt : -dt; if (tm.dir === 'DOWN' && tm.value <= 0) { tm.value = 0; tm.running = false; tm.expired = true; AV.msg('Timer afgelopen', 'ADV', 'timer'); if (G3X.audio) G3X.audio.play('timer'); } }
+    if (tm.running) { tm.value += tm.dir === 'UP' ? dt : -dt; if (tm.dir === 'DOWN' && tm.value <= 0) { tm.value = 0; tm.running = false; tm.expired = true; AV.msg('Timer expired', 'ADV', 'timer'); if (G3X.audio) G3X.audio.play('timer'); } }
     if (!a.onGround || a.gs > 30) A.flightTimer += dt;
     // nieuwe CAS-meldingen => bericht + geluid
     for (const c of cas) {
