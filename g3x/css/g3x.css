@@ -52,8 +52,8 @@ button { font-family: inherit; }
 .knob-ring.outer > .ka.l { left: -2px; } .knob-ring.outer > .ka.r { right: -2px; }
 .knob-ring.inner > .ka.l { left: -4px; } .knob-ring.inner > .ka.r { right: -4px; }
 .knob-ring.inner > .ka { color: #fff; font-size: 9px; width: 14px; }
-.knob-push { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 20px; height: 20px; border-radius: 50%; border: 1px solid #000; background: #0f1115; color: #9aa3ad; font-size: 6px; cursor: pointer; padding: 0; }
-.knob .ka:hover, .knob-push:hover { color: var(--accent); }
+.knob-push { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 22px; height: 22px; border-radius: 50%; border: 1px solid #000; background: radial-gradient(circle at 40% 35%, #3a4049, #15181c 70%); cursor: pointer; padding: 0; }
+.knob-push:hover { box-shadow: 0 0 0 2px var(--accent); }
 .knob-label { display: none; } /* knopfuncties staan, zoals op het toestel, op het scherm zelf */
 .knob-label span:first-child { color: var(--accent); }
 
