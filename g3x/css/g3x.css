@@ -233,7 +233,8 @@ button { font-family: inherit; }
 .help-box kbd { background: #0f1216; border: 1px solid #3a4046; border-radius: 4px; padding: 0 5px; font-family: monospace; }
 
 /* verkenmodus: toestel stilstaand, geen stuurknuppel of vliegtoetsen */
-body.explore .stick, body.explore .acp-row.small, body.explore #pbrake, body.explore #brake { display: none; }
+/* verkenmodus: alleen wat je nodig hebt om de G3X te leren kennen; vliegen en simulatiebediening verborgen */
+body.explore .stick, body.explore .flight, body.explore #statusline { display: none; }
 
 /* ---------- cockpit buiten de G3X: analoge meters, brandstofkraan, flaps, GMA 245, GNC 255, GTX 335 ---------- */
 #cockpit { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; margin-top: 12px; }
@@ -284,4 +285,5 @@ body.explore .stick, body.explore .acp-row.small, body.explore #pbrake, body.exp
 .gtx-fkeys { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; } .gtx-fkeys .ub { padding: 5px 6px; font-size: 10px; }
 .gtx-keys { display: flex; gap: 5px; margin-top: 8px; } .gtx-keys .ub { flex: 1; padding: 6px 2px; }
 #gtx-idnt.on, #gtx-vfr:active { color: var(--green); border-color: var(--green); }
-body.explore .stick, body.explore .acp-row.small, body.explore #pbrake, body.explore #brake { display: none; }
+/* verkenmodus: alleen wat je nodig hebt om de G3X te leren kennen; vliegen en simulatiebediening verborgen */
+body.explore .stick, body.explore .flight, body.explore #statusline { display: none; }
