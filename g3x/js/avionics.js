@@ -8,14 +8,14 @@ window.G3X = window.G3X || {};
     return {
       // PFD
       baro: 1013, baroStd: false, hdgBug: 60, altSel: 2000, crs1: 60, crs2: 60, minimums: null, minimumsOn: false,
-      navSource: 'GPS', brg1: 'OFF', brg2: 'OFF', windMode: 2, svt: true, inset: 'OFF', vspeeds: true, pfdPage: 'PFD',
+      navSource: 'GPS', brg1: 'OFF', brg2: 'OFF', windMode: 2, svt: true, inset: 'OFF', vspeeds: true,
       hsiMap: false, attIndFull: true,
       // scherm
-      layout: 'SPLIT', mfdPage: 'MAP', prevPage: 'MAP', brightness: 100,
+      mfdPage: 'MAP', prevPage: 'MAP', brightness: 100, reversion: false,
       map: { range: 10, orient: 'TRKUP', declutter: 0, airspace: true, topo: true, trackVector: true, rangeRing: true, obstacles: true, cities: true, water: true, panning: false, pan: null, cursor: null },
       units: { dist: 'NM', alt: 'FT', speed: 'KT', temp: 'C', baro: 'HPA', fuel: 'L' },
       // radio's
-      com1: { active: 118.955, standby: 121.500, mic: true, mon: true, vol: 70 },
+      com1: { active: 118.955, standby: 121.500, mic: true, mon: true, monStby: false, vol: 70 },
       com2: { active: 121.500, standby: 123.405, mic: false, mon: false, vol: 70 },
       nav1: { active: 114.60, standby: 113.10, obs: 60, ident: '' },
       nav2: { active: 117.55, standby: 116.95, obs: 60, ident: '' },
@@ -30,8 +30,8 @@ window.G3X = window.G3X || {};
       userWpts: [],
       // berichten
       msgs: [], msgNew: false, cas: [],
-      // autopilot (zie autopilot.js)
-      ap: { on: false, fd: false, lat: 'ROL', latArm: null, vert: 'PIT', vertArm: [], vsRef: 0, iasRef: 90, pitRef: 2, altRef: 2000, bankCmd: 0, pitchCmd: 0, disc: 0, discReason: '', gaTime: 0, yd: false, trkMode: false, altAlert: 0, altAlertArmed: false, lvl: false },
+      // hoogte-alert (geen autopilot in dit toestel)
+      altAlert: { t: 0, armed: false, captured: false, devFlag: false },
       // checklists
       checklist: { group: 0, item: 0, done: {} },
       // CAS-bevestigingen
@@ -277,11 +277,12 @@ window.G3X = window.G3X || {};
       if (!flyOver && next) { const dc = Math.abs(U.norm180(U.bearing(to, next) - dtk)); anticipate = Math.min(turnRadiusNm * Math.tan(Math.min(dc, 120) / 2 * U.DEG), 2); }
       const passed = xt.along >= out.legLen - anticipate - 0.02 || (dis < 0.25) || (Math.abs(U.norm180(brg - dtk)) > 95 && dis < 1.5);
       if (passed) {
-        if (to.map && f.approach && f.approach.active) { f.susp = true; AV.msg('Missed approach point — SUSP. Press SUSP or GA for the missed approach', 'ADV', 'susp'); }
+        // zonder volgend waypoint alleen 'aangekomen' melden als we er echt dichtbij zijn (niet als we ver dwars van de lijn af staan)
+        if (to.map && f.approach && f.approach.active) { f.susp = true; AV.msg('Missed approach point — SUSP. Press SUSP for the missed approach', 'ADV', 'susp'); }
         else if (to.hold) { f.susp = true; AV.msg(`Holding at ${to.id} — SUSP`, 'ADV', 'hold'); }
-        else if (f.directTo && !f.directTo.inFpl) { f.susp = true; AV.msg(`Arriving at ${to.id}`, 'ADV', 'arrive'); }
+        else if (f.directTo && !f.directTo.inFpl) { if (dis < 2.5) { f.susp = true; AV.msg(`Arriving at ${to.id}`, 'ADV', 'arrive'); } }
         else if (next) { f.active = toIdx + 1; f.directTo = null; out.seq = true; }
-        else { f.susp = true; AV.msg(`Arriving at destination ${to.id}`, 'ADV', 'arrive'); }
+        else if (dis < 2.5) { f.susp = true; AV.msg(`Arriving at destination ${to.id}`, 'ADV', 'arrive'); }
       } else if (out.ete < 0.25 && out.ete > 0 && dis > 0.3) AV.msg(`Approaching ${to.id}`, 'ADV', 'appr-' + to.id);
     }
     out.nextId = to.id;
@@ -339,27 +340,15 @@ window.G3X = window.G3X || {};
     if (E.running || E.rpm > 500) {
       if (E.oilP < (E.rpm > 3500 ? 2 : 0.8)) warn('OILP', 'OIL PRESS LO');
       else if (E.oilP > 5.2) caut('OILPH', 'OIL PRESS HI');
-      if (E.oilT > 130) warn('OILT', 'OIL TEMP HI'); else if (E.oilT > 110) caut('OILTC', 'OIL TEMP');
-      if (E.cht > 135) warn('CHT', 'CHT HI'); else if (E.cht > 120) caut('CHTC', 'CHT');
-      if (E.rpm > 5800) warn('RPM', 'RPM HI');
       if (E.fuelP < 0.15) caut('FUELP', 'FUEL PRESS LO');
     }
     if (E.master && E.volts < 12.5) caut('VOLT', 'LOW VOLTS');
     if (E.master && E.amps < -1 && (E.running)) caut('ALTN', 'ALTERNATOR');
-    const totalFuel = a.fuelL + a.fuelR;
-    if (totalFuel < 12) warn('FUELQ', 'FUEL QTY LO'); else if (totalFuel < 20) caut('FUELQC', 'FUEL LOW');
-    if (Math.abs(a.fuelL - a.fuelR) > 20) adv('FUELIMB', 'FUEL IMBALANCE');
-    if (a.fuelSel === 'L' && a.fuelL < 2 && E.running) warn('TANK', 'SWITCH TANK');
-    if (a.fuelSel === 'R' && a.fuelR < 2 && E.running) warn('TANK', 'SWITCH TANK');
     if (S.fail.ahrs) warn('AHRS', 'AHRS FAIL');
     if (S.fail.adc) warn('ADC', 'ADC FAIL');
     if (S.fail.gps) caut('GPS', 'GPS LOI');
     if (S.fail.pitot) caut('PITOT', 'AIRSPEED MISCOMPARE');
-    if (a.stall) warn('STALL', 'STALL');
     if (!a.onGround && a.ias > SIM.AC.vne) warn('VNE', 'OVERSPEED');
-    if (a.flaps > 0 && a.ias > (a.flaps === 2 ? SIM.AC.vfe : SIM.AC.vfeTo) + 2) caut('VFE', 'FLAPS OVERSPEED');
-    if (A.ap.disc > 0) warn('APDISC', 'AP DISCONNECT');
-    if (a.parkBrake && (E.running && a.throttle > 0.4)) caut('PBRK', 'PARK BRAKE');
     if (A.timer.expired) adv('TIMER', 'TIMER EXPIRED');
     // terrein
     if (!a.onGround) {
@@ -381,16 +370,16 @@ window.G3X = window.G3X || {};
       for (const s of NAV.AIRSPACES) if (s.type !== 'ATZ' && !now.includes(s) && a.alt >= s.floor - 200 && a.alt <= s.ceil + 200 && NAV.distToAirspace(s, a) < 1.0) { adv('ASPCN', `${s.type} NEAR`); break; }
     }
     // hoogte-alert (1000 ft / 200 ft)
-    const ap = A.ap, indAlt = SIM.indicatedAlt(A.baroStd ? 1013.25 : A.baro);
+    const al = A.altAlert, indAlt = SIM.indicatedAlt(A.baroStd ? 1013.25 : A.baro);
     const diff = Math.abs(indAlt - A.altSel);
     if (!a.onGround) {
-      if (diff <= 1000 && !ap.altAlertArmed && diff > 200) { ap.altAlertArmed = true; ap.altAlert = 5; if (G3X.audio) G3X.audio.play('altalert'); }
-      if (diff <= 200) { ap.altCaptured = true; }
-      if (ap.altCaptured && diff > 200 && diff < 1000) { if (!ap.altDevFlag) { ap.altDevFlag = true; ap.altAlert = 5; if (G3X.audio) G3X.audio.play('altalert'); } }
-      if (diff <= 200) ap.altDevFlag = false;
-      if (diff > 1000) { ap.altAlertArmed = false; ap.altCaptured = false; ap.altDevFlag = false; }
+      if (diff <= 1000 && !al.armed && diff > 200) { al.armed = true; al.t = 5; if (G3X.audio) G3X.audio.play('altalert'); }
+      if (diff <= 200) { al.captured = true; }
+      if (al.captured && diff > 200 && diff < 1000) { if (!al.devFlag) { al.devFlag = true; al.t = 5; if (G3X.audio) G3X.audio.play('altalert'); } }
+      if (diff <= 200) al.devFlag = false;
+      if (diff > 1000) { al.armed = false; al.captured = false; al.devFlag = false; }
     }
-    if (ap.altAlert > 0) ap.altAlert -= dt;
+    if (al.t > 0) al.t -= dt;
     // minimums
     if (A.minimumsOn && A.minimums != null && !a.onGround) {
       if (indAlt <= A.minimums && !A.minFlag && a.vs < 0) { A.minFlag = true; AV.msg('MINIMUMS', 'ADV', 'mins'); if (G3X.audio) G3X.audio.play('minimums'); }
@@ -424,7 +413,6 @@ window.G3X = window.G3X || {};
     updateRadios(S);
     AV.A.nav = navCompute(S);
     updateAlerts(S, dt);
-    if (G3X.autopilot) G3X.autopilot.step(S, dt);
     // verkeer (gesimuleerd, optioneel)
     for (const t of AV.A.traffic) { const p = U.dest(t, t.trk, t.gs * dt / 3600); t.lat = p.lat; t.lon = p.lon; t.alt += t.vs * dt / 60; }
   };

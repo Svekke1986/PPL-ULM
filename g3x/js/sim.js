@@ -93,7 +93,7 @@ window.G3X = window.G3X || {};
     const turbP = a.onGround ? 0 : env.gustV * 1.5 * Math.sin(S.t * 1.7) + env.turb * 0.6 * Math.sin(S.t * 3.1 + 1);
     const turbR = a.onGround ? 0 : env.gustV * 3 * Math.cos(S.t * 1.3) + env.turb * 1.2 * Math.sin(S.t * 2.3);
 
-    // stuurcommando's (pilot of autopilot) -> pitch- en rolsnelheden
+    // stuurcommando's -> pitch- en rolsnelheden
     const pr = S.cmds.pitchRate, rr = S.cmds.rollRate;
     if (!a.onGround) {
       a.pitch = U.clamp(a.pitch + (pr + turbP * 0.3) * dt, -60, 60);
@@ -130,10 +130,11 @@ window.G3X = window.G3X || {};
       let acc = (T - D - (Vms > 0.2 ? roll : Math.min(roll, Math.max(0, T - D)))) / m;
       let v = Math.max(0, Vms + acc * dt);
       if (Vms < 0.2 && T - D < roll) v = 0;
+      if (S.parked) v = 0; // verkenmodus: het toestel blijft stilstaan (wielblokken)
       a.tas = v / U.KT_MS;
       // rotatie
       const liftOk = 0.5 * rho * v * v * Sw * clMax * 0.92 > W;
-      if (S.cmds.pitchRate > 0 && a.tas > AC.vr - 6) a.pitch = U.clamp(a.pitch + 4 * dt, 0, 10);
+      if (!S.parked && S.cmds.pitchRate > 0 && a.tas > AC.vr - 6) a.pitch = U.clamp(a.pitch + 4 * dt, 0, 10);
       else a.pitch = U.approach(a.pitch, 0, 6, dt);
       a.bank = U.approach(a.bank, 0, 20, dt);
       // grondsturing
@@ -213,6 +214,7 @@ window.G3X = window.G3X || {};
         if (opts.engineRunning) { Object.assign(S.eng, { running: true, master: true, rpm: 1500, oilT: 60, oilP: 2.4, cht: 55, egt1: 540, egt2: 530, volts: 14.0, amps: 5, ff: 3 }); }
       }
       if (opts.fail) Object.assign(S.fail, opts.fail);
+      S.parked = !!opts.parked;
       return S;
     },
     airData,

@@ -9,7 +9,7 @@ window.G3X = window.G3X || {};
   P.render = (ctx, r) => {
     const A = G3X.avionics.A, S = G3X.sim.S, a = S.ac, SIM = G3X.sim;
     const X = r.x, Y = r.y, W = r.w, H = r.h;
-    const tapeTop = Y + 54, tapeBot = Y + H - 238, tapeH = tapeBot - tapeTop, cy = tapeTop + tapeH / 2, cx = X + W / 2;
+    const tapeTop = Y + 36, tapeBot = Y + H - 238, tapeH = tapeBot - tapeTop, cy = tapeTop + tapeH / 2, cx = X + W / 2;
     const hsiR = W > 800 ? 125 : 104, hx = cx, hy = Y + H - 116;
     const ias = a.iasShown ?? a.ias, indAlt = G3X.avionics.indAlt();
     // trend (6 s)
@@ -21,8 +21,6 @@ window.G3X = window.G3X || {};
     drawAttitude(ctx, X, Y, W, H, cx, cy, A, S);
     ctx.restore();
 
-    drawDataBar(ctx, X, Y, W, A, S);
-    drawApBar(ctx, X, Y + 26, W, A);
     drawAirspeed(ctx, X + 6, tapeTop, 84, tapeH, cy, ias, A, S);
     drawAltitude(ctx, X + W - 128, tapeTop, 86, tapeH, cy, indAlt, A, S);
     drawVsi(ctx, X + W - 40, tapeTop + 20, 34, tapeH - 40, cy, a.vs, A);
@@ -109,14 +107,6 @@ window.G3X = window.G3X || {};
     ctx.fillStyle = '#ffd21a'; ctx.strokeStyle = '#000'; ctx.lineWidth = 1;
     ctx.fillRect(-4, -4, 8, 8); ctx.strokeRect(-4, -4, 8, 8);
     for (const s of [-1, 1]) { D.poly(ctx, [[s * 30, -3], [s * 95, -3], [s * 95, 3], [s * 38, 3], [s * 38, 14], [s * 30, 14]], '#ffd21a', '#000', 1); }
-    // flight director
-    const ap = A.ap;
-    if ((ap.fd || ap.on) && !a.onGround) {
-      const dy = -(ap.pitchCmd - pitch) * PPD, dr = (ap.bankCmd - bank) * U.DEG;
-      ctx.save(); ctx.translate(0, U.clamp(dy, -120, 120)); ctx.rotate(U.clamp(dr, -0.6, 0.6));
-      D.poly(ctx, [[0, 0], [-70, 20], [-70, 28], [0, 8], [70, 28], [70, 20]], C.magenta, '#000', 1);
-      ctx.restore();
-    }
     ctx.restore();
   }
 
@@ -203,27 +193,6 @@ window.G3X = window.G3X || {};
       if (i) D.line(ctx, x, Y + 3, x, Y + 21, '#3a4350');
     });
   }
-  function drawApBar(ctx, X, Y, W, A) {
-    const st = G3X.autopilot.status();
-    const x = X + 96, w = W - 230, h = 26;
-    D.box(ctx, x, Y, w, h, 'rgba(0,0,0,0.75)');
-    const col3 = w / 3;
-    if (st.on || st.fd) {
-      D.text(ctx, st.lat, x + 10, Y + 13, { size: 17, color: '#28e02c', weight: 'bold' });
-      if (st.latArm) D.text(ctx, st.latArm, x + col3 - 8, Y + 13, { size: 14, color: '#fff', align: 'right' });
-      D.text(ctx, st.vert, x + 2 * col3 + 8, Y + 13, { size: 17, color: '#28e02c', weight: 'bold' });
-      if (st.vertRef && (!st.vertArm || w > 520)) D.text(ctx, st.vertRef, x + 2 * col3 + 60, Y + 13, { size: 13, color: '#28e02c' });
-      if (st.vertArm) D.text(ctx, st.vertArm, x + w - 8, Y + 13, { size: 14, color: '#fff', align: 'right' });
-    }
-    // AP/FD midden
-    const mid = x + col3 + col3 / 2;
-    if (st.disc) { if (D.blink(3)) { D.box(ctx, mid - 28, Y + 2, 56, 22, '#000', C.yellow, 2); D.text(ctx, 'AP', mid, Y + 13, { size: 18, color: C.yellow, align: 'center', weight: 'bold' }); } }
-    else if (st.on) D.text(ctx, 'AP', mid - 16, Y + 13, { size: 18, color: '#28e02c', align: 'center', weight: 'bold' });
-    if (st.fd && !st.on) D.text(ctx, 'FD', mid + 16, Y + 13, { size: 16, color: '#28e02c', align: 'center' });
-    if (st.uspd) D.text(ctx, 'UNDERSPEED PROTECT', mid, Y + 40, { size: 13, color: C.yellow, align: 'center', weight: 'bold' });
-    if (st.ospd) D.text(ctx, 'OVERSPEED PROTECT', mid, Y + 40, { size: 13, color: C.yellow, align: 'center', weight: 'bold' });
-    D.zone(x, Y, w, h, () => G3X.ui.openApPanel(), 'apbar');
-  }
 
   // ---------- snelheidstape ----------
   function drawAirspeed(ctx, x, y, w, h, cy, ias, A, S) {
@@ -249,8 +218,6 @@ window.G3X = window.G3X || {};
       const vs = [[AC.vr, 'R'], [AC.vx, 'X'], [AC.vy, 'Y'], [AC.vglide, 'G']];
       for (const [v, l] of vs) { const yy = cy - (v - ias) * pk; if (yy < y + 10 || yy > y + h - 10) continue; D.box(ctx, x + w - 2, yy - 8, 14, 16, '#000', C.cyan, 1); D.text(ctx, l, x + w + 5, yy, { size: 11, color: C.cyan, align: 'center', weight: 'bold' }); }
     }
-    // IAS-bug (AP IAS)
-    if (A.ap.vert === 'IAS') { const yy = U.clamp(cy - (A.ap.iasRef - ias) * pk, y + 8, y + h - 8); D.poly(ctx, [[x + w - 10, yy], [x + w - 2, yy - 7], [x + w + 4, yy - 7], [x + w + 4, yy + 7], [x + w - 2, yy + 7]], C.cyan); }
     ctx.restore();
     // uitlezing
     const low = !a.onGround && ias < AC.vs1 * 1.1 && ias > 20, over = ias > AC.vne;
@@ -269,7 +236,7 @@ window.G3X = window.G3X || {};
     const pf = 0.56, a = S.ac;
     D.box(ctx, x, y, w, h, 'rgba(0,0,0,0.55)');
     // geselecteerde hoogte boven
-    const selFlash = A.ap.altAlert > 0 && D.blink(2);
+    const selFlash = A.altAlert.t > 0 && D.blink(2);
     D.box(ctx, x, y - 30, w, 28, selFlash ? '#3a3a00' : '#000', C.cyan, 1);
     D.text(ctx, String(D.altVal(A.altSel)), x + w - 6, y - 16, { size: 22, color: C.cyan, align: 'right', weight: 'bold' });
     D.zone(x, y - 30, w, 28, () => G3X.ui.openAltSel(), 'altsel');
@@ -307,7 +274,6 @@ window.G3X = window.G3X || {};
     D.box(ctx, x, y, w, h, 'rgba(0,0,0,0.45)');
     const map = v => { v = U.clamp(v, -2200, 2200); const s = Math.sign(v), m = Math.abs(v); const px = m <= 1000 ? m * 0.09 : 90 + (m - 1000) * 0.045; return cy - s * px; };
     for (const v of [-2000, -1000, -500, 0, 500, 1000, 2000]) { const yy = map(v); D.line(ctx, x, yy, x + (v % 1000 === 0 ? 10 : 6), yy, '#fff', 1.5); if (v % 1000 === 0 && v) D.text(ctx, String(Math.abs(v) / 1000), x + 14, yy, { size: 13, color: '#fff' }); }
-    if (A.ap.vert === 'VS') { const yy = map(A.ap.vsRef); D.poly(ctx, [[x, yy - 6], [x + 7, yy], [x, yy + 6]], C.cyan); }
     const py = map(vs);
     D.poly(ctx, [[x, py], [x + 10, py - 9], [x + w, py - 9], [x + w, py + 9], [x + 10, py + 9]], '#000', '#fff', 1.5);
     if (Math.abs(vs) >= 100) D.text(ctx, String(Math.round(vs / 50) * 50 / 100 * 100 | 0).replace(/-/, '-'), x + w - 2, py, { size: 12, color: '#fff', align: 'right', weight: 'bold' });
@@ -321,7 +287,7 @@ window.G3X = window.G3X || {};
       const distFt = Math.max(0.3, U.distNm(S.ac, n.legTo)) * 6076; const full = Math.max(150, Math.tan(0.7 * U.DEG) * distFt);
       dots = U.clamp(-n.vdev / (full / 2), -2.2, 2.2);
     } else if (src !== 'GPS') { const d = A[src.toLowerCase()].data; if (d.gsValid) { dots = U.clamp(d.gsDev, -2.2, 2.2); color = C.green; } }
-    else if (n && n.vnav && (A.ap.vert === 'VNV' || A.ap.vertArm.includes('VNV'))) { dots = U.clamp(-n.vnav.vdev / 500, -2.2, 2.2); label = 'V'; }
+    else if (n && n.vnav && n.vnav.todDis < 5) { dots = U.clamp(-n.vnav.vdev / 500, -2.2, 2.2); label = 'V'; } // VNAV-afwijking vanaf 5 nm vóór TOD
     if (dots == null) return;
     const sp = 32;
     D.box(ctx, x - 12, cy - 2.5 * sp - 16, 24, 5 * sp + 32, 'rgba(0,0,0,0.5)');
@@ -435,7 +401,7 @@ window.G3X = window.G3X || {};
       D.text(ctx, U.fmtDis(D.distVal(n.dis)), lx - 26, hy + 71, { size: 14, color: '#fff', align: 'center', weight: 'bold' });
     }
     ctx.restore();
-    D.zone(hx - R, hy - R, 2 * R, 2 * R, () => G3X.ui.openHdgSel(), 'hsi');
+    D.zone(hx - R, hy - R, 2 * R, 2 * R, () => G3X.ui.openHsiOptions(), 'hsi');
   }
   function drawWind(ctx, x, y, A, S) {
     const a = S.ac, w = G3X.sim.windAt();
@@ -468,25 +434,13 @@ window.G3X = window.G3X || {};
     });
     D.text(ctx, (A.nav1.ident ? 'NAV1 ' + A.nav1.ident : '') + (A.nav2.ident ? '  NAV2 ' + A.nav2.ident : ''), nb.x + 4, nb.y + 58, { size: 11, color: C.green });
     D.text(ctx, 'OAT ' + D.tempVal(G3X.sim.oat()), nb.x + nb.w - 4, nb.y + 58, { size: 11, color: '#fff', align: 'right' });
-    // rechtsonder: transponder
-    const x = A.xpdr;
-    D.box(ctx, X + W - 112, Y + H - 58, 108, 54, 'rgba(0,0,0,0.6)');
-    D.text(ctx, 'XPDR', X + W - 108, Y + H - 46, { size: 11, color: '#9fb3c8' });
-    D.text(ctx, x.code, X + W - 60, Y + H - 44, { size: 20, color: x.mode === 'STBY' ? '#fff' : C.green, weight: 'bold' });
-    const modeTxt = x.ident > 0 ? 'IDNT' : x.mode === 'ALT' && S.ac.onGround ? 'GND' : x.mode;
-    D.text(ctx, modeTxt, X + W - 108, Y + H - 18, { size: 15, color: x.ident > 0 ? C.green : '#fff', weight: 'bold' });
-    if (x.reply) D.text(ctx, 'R', X + W - 12, Y + H - 18, { size: 15, color: C.green, align: 'right', weight: 'bold' });
-    if (x.code === '7700' || x.code === '7600' || x.code === '7500') D.text(ctx, 'EMERG', X + W - 40, Y + H - 18, { size: 12, color: C.yellow, align: 'center' });
-    D.zone(X + W - 112, Y + H - 58, 108, 54, () => G3X.ui.openXpdr(), 'xpdr');
     // minimums
     if (A.minimumsOn && A.minimums != null) { D.text(ctx, 'MINS ' + A.minimums, X + W - 140, Y + H - 90, { size: 13, color: C.cyan, align: 'right' }); }
   }
 
   function drawAnnunciations(ctx, cx, cy, A, S) {
     const a = S.ac;
-    if (a.stall && !a.onGround) D.textOutline(ctx, 'STALL', cx, cy - 70, { size: 28, color: C.red, align: 'center' });
     if (A.minFlag && D.blink(2)) D.textOutline(ctx, 'MINIMUMS', cx, cy + 70, { size: 24, color: C.yellow, align: 'center' });
-    if (A.ap.lat === 'LVL' && A.ap.on) D.textOutline(ctx, 'LVL', cx, cy - 100, { size: 20, color: C.green, align: 'center' });
     if (a.crashed) { D.box(ctx, cx - 160, cy - 40, 320, 80, 'rgba(0,0,0,0.8)', C.red, 2); D.text(ctx, 'HARD LANDING / CRASH', cx, cy - 12, { size: 20, color: C.red, align: 'center', weight: 'bold' }); D.text(ctx, 'Reset the scenario in the trainer panel', cx, cy + 14, { size: 14, color: '#fff', align: 'center' }); }
     if (S.paused && !a.crashed) D.textOutline(ctx, 'SIM PAUSED', cx, cy - 130, { size: 22, color: C.yellow, align: 'center' });
   }
