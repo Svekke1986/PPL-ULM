@@ -343,18 +343,6 @@ window.G3X = window.G3X || {};
   });
 
   // === Apparatuur van OO-KWO ===
-  add('gma_audio', 'Radio & transponder', 'GMA 245: zendradio, meeluisteren en VOR-ident', () => {
-    const vor = R.vor({ min: 8, max: 35 }); const start = R.airborne(HOME);
-    return { title: 'Audiopaneel GMA 245', start, intro: '<p>Op de GMA 245 kies je welke radio zendt (COM1 MIC / COM2 MIC) en wat je meeluistert (COM1, COM2, NAV1, NAV2). De groene lampjes tonen de stand.</p>',
-      steps: [
-        mk('Druk op <b>COM2 MIC</b> en daarna weer op <b>COM1 MIC</b>: de GNC 255 is COM1 en moet de zendradio zijn.', 'GMA 245: knoppen COM1 MIC / COM2 MIC; het lampje boven de knop toont de keuze.', (S, A, ctx) => ctx.has('mic', v => v === 2) && ctx.has('mic', v => v === 1) && G3X.cockpit.gma.mic === 1),
-        mk(`Stem NAV1 af op <b>${vor.id} ${U.fmtNav(vor.freq)}</b> (GNC 255: C/N → NAV → TUNE → ⇄).`, 'C/N schakelt het display tussen COM en NAV; de TUNE-knop zet de standby; ⇄ wisselt.', (S, A) => near(A.nav1.active, vor.freq, 0.001)),
-        mk('Druk op <b>NAV1</b> op de GMA 245 om de morse-ident mee te luisteren.', 'Lampje NAV1 gaat branden; de G3X toont de gedecodeerde ident onder NAV1.', (S, A, ctx) => ctx.has('navaudio') && G3X.cockpit.gma.nav1),
-        q(`Welke morse-ident hoor je nu voor ${vor.id}?`, U.shuffle([U.morse(vor.id), U.morse(vor.id.split('').reverse().join('')), U.morse(vor.id.slice(1) + vor.id[0]), U.morse('XYZ')]), null, `Ident ${vor.id} = ${U.morse(vor.id)}. Zet NAV1 daarna weer uit, anders blijft de morse door je koptelefoon piepen.`),
-        mk('Zet <b>NAV1</b> weer uit op de GMA 245.', 'Nogmaals op NAV1 drukken.', (S, A, ctx) => ctx.has('navaudio') && !G3X.cockpit.gma.nav1),
-      ] };
-  });
-  GEN.find(g => g.id === 'gma_audio').post = sc => { const id = sc.steps[1].text.match(/<b>([A-Z]+) /)[1]; const st = sc.steps[3]; st.question.correct = st.question.options.indexOf(U.morse(id)); };
   add('gnc_nav', 'Radio & transponder', 'GNC 255: VOR op het NAV-deel, OBS en T/F', () => {
     const vor = R.vor({ min: 8, max: 30 }); const start = R.airborne(vor, { dist: U.rnd(10, 16), alt: 3000 });
     return { title: `GNC 255 NAV naar ${vor.id}`, start, intro: `<p>Gebruik het NAV-deel van de GNC 255 voor <b>${esc(vor.name)}</b> (${vor.id}) en laat de HSI de VOR tonen.</p>`,
@@ -460,7 +448,7 @@ window.G3X = window.G3X || {};
         mk('Werk de checklist <b>Before Engine Start</b> af.', 'Main Menu (MENU 2×) → Checklist.', (S, A, ctx) => ctx.has('chkdone', g => /Before Engine Start/.test(g))),
         mk('Start de motor (gas op idle).', 'Paneel → Start. Oliedruk (EIS op de MFD) moet binnen 10 s stijgen.', S => S.eng.running, { fail: S => S.ac.throttle > 0.3 && !S.eng.running ? 'Starten met te veel gas.' : null }),
         mk('Warmdraaien op <b>2000–2500 rpm</b>, 10 s.', 'Gas iets open.', hold(S => S.eng.rpm >= 1950 && S.eng.rpm <= 2550, 10)),
-        mk('Zet de <b>avionics master</b> aan: de G3X-schermen, GNC 255, GTX 335 en GMA 245 starten op.', 'Paneel Vliegtuig → Avionics. Pas na de start inschakelen, zodat de startpiek de avionica niet belast.', S => S.eng.avionics),
+        mk('Zet de <b>avionics master</b> aan: de G3X-schermen, GNC 255 en GTX 335 starten op.', 'Paneel Vliegtuig → Avionics. Pas na de start inschakelen, zodat de startpiek de avionica niet belast.', S => S.eng.avionics),
         mk(`Baro op <b>${qnh}</b>, hoogtevak op circuit-hoogte <b>${HOME.elev + 1000 - (HOME.elev + 1000) % 100 + 100} ft</b>, heading bug op de baanrichting (${U.fmtHdg(start.hdg)}°).`, 'Baro-veld, hoogtevak, HSI.', (S, A) => A.baro === qnh && !A.baroStd && A.altSel === HOME.elev + 1000 - (HOME.elev + 1000) % 100 + 100 && hdgNear(A.hdgBug, start.hdg, 3)),
         mk(`Transponder code <b>${code}</b>, modus <b>ALT</b>.`, 'Transponder onder het scherm.', (S, A) => A.xpdr.code === code && A.xpdr.mode === 'ALT'),
         mk(`Zet Hasselt Radio <b>${R.fmtF(mainFreq(HOME))}</b> actief op COM1 en start de vluchttimer (algemene timer omhoog).`, 'GNC 255: standby instellen en ⇄; Main Menu (MENU 2×) → Timer → Start.', (S, A) => near(A.com1.active, mainFreq(HOME), 0.001) && A.timer.running && A.timer.dir === 'UP'),
@@ -620,13 +608,9 @@ window.G3X = window.G3X || {};
         mk('In de hold (SUSP): zet een 1-minuten-timer en vlieg een outbound leg (heading bug op de reciproke van de inbound koers).', 'Timer → Set… 01:00 (Count Down); heading bug via de PFD-linkerknop.', (S, A) => A.fpl.susp && A.timer.running && A.timer.dir === 'DOWN'),
       ] };
   });
-  add('free', 'Vrij vliegen', 'Stilstaand op EBZH, motor draait', () => {
+  add('free', 'Vrij vliegen', 'Verkennen op EBZH', () => {
     const start = R.onRunway(HOME); start.engineRunning = true; start.parked = true;
-    return { title: 'Verkennen — stilstaand op EBZH', start, intro: '<p>Het toestel staat stil op Kiewit met draaiende motor. Verken alle functies van de G3X: pagina’s, menu’s, radio’s, transponder, vluchtplan, naderingen, instellingen. Met <b>Reset</b> begin je opnieuw.</p>', steps: [] };
-  });
-  add('free_cold', 'Vrij vliegen', 'Stilstaand op EBZH, koud en donker', () => {
-    const start = R.onRunway(HOME); start.engineRunning = false; start.parked = true;
-    return { title: 'Verkennen — koud en donker op EBZH', start, intro: '<p>Master uit, motor uit. Zet in het paneel Vliegtuig de master aan, start de motor en schakel daarna de avionics master in om de schermen en radio\u2019s te zien; het toestel blijft stilstaan.</p>', steps: [] };
+    return { title: 'Verkennen', start, intro: '<p>Het toestel staat stil op Kiewit, motor en avionica aan. Verken alle functies van de G3X: pagina’s, menu’s, radio’s, transponder, vluchtplan, naderingen, instellingen. Met <b>Reset</b> begin je opnieuw.</p>', steps: [] };
   });
 
   // ---------- scenario-motor ----------
