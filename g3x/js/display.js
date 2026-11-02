@@ -22,6 +22,7 @@ window.G3X = window.G3X || {};
     const A = G3X.avionics.A, S = G3X.sim.S;
     const top = D.TOP_H, h = D.H - D.BAR_H - top;
     const base = { top: { x: 0, y: 0, w: D.W, h: top }, bar: { x: 0, y: D.H - D.BAR_H, w: D.W, h: D.BAR_H }, eis: null, pfd: null, mfd: null, dead: false };
+    if (!S.eng.master || !S.eng.avionics) { base.dead = true; return base; } // avionics master uit: schermen donker
     if (id === 'L') { if (S.fail.display) base.dead = true; else base.pfd = { x: 0, y: top, w: D.W, h }; return base; }
     if (A.reversion) { base.eis = { x: 0, y: top, w: D.EIS_W, h }; base.pfd = { x: D.EIS_W, y: top, w: D.W - D.EIS_W, h }; return base; }
     const eisVisible = A.mfdPage !== 'ENG';

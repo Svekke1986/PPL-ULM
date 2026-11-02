@@ -42,7 +42,7 @@ window.G3X = window.G3X || {};
     return '';
   }
   CK.refreshGnc = () => {
-    const A = AV.A, S = SIM.S, off = !S.eng.master || S.fail.com1;
+    const A = AV.A, S = SIM.S, off = !S.eng.master || !S.eng.avionics || S.fail.com1;
     const com = CK.gnc.mode === 'COM', r = com ? A.com1 : A.nav1;
     const fmt = com ? U.fmtFreq : U.fmtNav;
     $('#gnc-act').textContent = off ? '' : fmt(r.active); $('#gnc-stb').textContent = off ? '' : fmt(r.standby);
@@ -67,20 +67,20 @@ window.G3X = window.G3X || {};
 
   // ---------- GTX 335 ----------
   CK.refreshGtx = () => {
-    const x = AV.A.xpdr, S = SIM.S; const off = !S.eng.master || x.mode === 'OFF';
+    const x = AV.A.xpdr, S = SIM.S; const off = !S.eng.master || !S.eng.avionics || x.mode === 'OFF';
     $('#gtx-code').textContent = off ? '' : (x.pending ? (x.pending + '____').slice(0, 4) : x.code);
     $('#gtx-code').classList.toggle('pending', !!x.pending);
     const mode = x.mode === 'ALT' && S.ac.onGround ? 'GND' : x.mode === 'STBY' ? 'SBY' : x.mode;
     $('#gtx-mode').textContent = off ? '' : mode; $('#gtx-r').textContent = !off && x.reply ? 'R' : '';
     $('#gtx-fid').textContent = off ? '' : 'OOKWO'; $('#gtx-fidl').textContent = off ? '' : 'FLIGHT ID';
     $('#gtx-msg').textContent = off ? '' : (x.ident > 0 ? 'IDENT' : 'PRESS ALT FL' + U.pad(Math.max(0, Math.round(SIM.pressureAlt() / 100)), 3));
-    document.querySelectorAll('#gtx .gtx-m').forEach(b => b.classList.toggle('on', b.dataset.m === x.mode && !(!S.eng.master)));
+    document.querySelectorAll('#gtx .gtx-m').forEach(b => b.classList.toggle('on', b.dataset.m === x.mode && S.eng.master && S.eng.avionics));
     $('#gtx-idnt').classList.toggle('on', x.ident > 0);
   };
 
   // ---------- GMA 245 ----------
   CK.refreshGma = () => {
-    const g = CK.gma, S = SIM.S, off = !S.eng.master;
+    const g = CK.gma, S = SIM.S, off = !S.eng.master || !S.eng.avionics;
     document.querySelectorAll('#gma .gb[data-k]').forEach(b => { const k = b.dataset.k; let on = false; if (k === 'com1') on = g.com1; else if (k === 'com2') on = g.com2; else if (k === 'nav1') on = g.nav1; else if (k === 'nav2') on = g.nav2; else if (k === 'mic1') on = g.mic === 1; else if (k === 'mic2') on = g.mic === 2; else if (k === 'pilot') on = g.isol === 'PILOT'; else if (k === 'crew') on = g.isol === 'CREW'; b.classList.toggle('lit', on && !off); });
   };
 

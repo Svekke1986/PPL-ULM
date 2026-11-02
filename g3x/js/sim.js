@@ -26,7 +26,7 @@ window.G3X = window.G3X || {};
         fuelL: 45, fuelR: 45, fuelSel: 'L', stall: false, crashed: false, gLoad: 1, slip: 0,
         fuelUsed: 0, odo: 0, maxGs: 0, flightTime: 0, airborneTime: 0,
       },
-      eng: { running: false, rpm: 0, oilT: 20, oilP: 0, cht: 20, egt1: 20, egt2: 20, ff: 0, fuelP: 0, volts: 12.4, amps: 0, master: false, hobbs: 1234.5, starterT: 0 },
+      eng: { running: false, rpm: 0, oilT: 20, oilP: 0, cht: 20, egt1: 20, egt2: 20, ff: 0, fuelP: 0, volts: 12.4, amps: 0, master: false, avionics: false, hobbs: 1234.5, starterT: 0 },
       env: { qnh: 1018, oatSea: 15, windDir: 240, windSpd: 8, turb: 0.3, gustT: 0, gustV: 0, utcOffset: 2 },
       fail: { ahrs: false, adc: false, gps: false, alternator: false, oilPress: false, chtHigh: false, engine: false, com1: false, nav1: false, pitot: false, fuelLeak: false, engineRough: false, display: false, vacuum: false },
       cmds: { pitchRate: 0, rollRate: 0, yaw: 0 },
@@ -70,7 +70,7 @@ window.G3X = window.G3X || {};
     const altOk = E.running && E.rpm > 1300 && !F.alternator && E.master;
     E.volts = U.approach(E.volts, altOk ? 14.1 : (E.master ? Math.max(10.5, 12.4 - (S.t - (S.batT || 0)) * 0.0005) : 0), 1.5, dt);
     if (altOk) S.batT = S.t;
-    E.amps = U.approach(E.amps, altOk ? 6 + (S.loadAmps || 0) : (E.master ? -(9 + (S.loadAmps || 0)) : 0), 10, dt);
+    E.amps = U.approach(E.amps, altOk ? 6 + (E.avionics ? 4 : 0) : (E.master ? -(5 + (E.avionics ? 4 : 0)) : 0), 10, dt);
     // brandstofverbruik
     if (E.running) {
       const litres = E.ff / 3600 * dt;
@@ -205,13 +205,13 @@ window.G3X = window.G3X || {};
       if (opts.airborne) {
         const a = S.ac;
         Object.assign(a, { lat: opts.lat, lon: opts.lon, alt: opts.alt, hdg: opts.hdg, trk: opts.hdg, ias: opts.ias || 95, tas: opts.ias || 95, onGround: false, parkBrake: false, throttle: opts.throttle ?? 0.72, fuelL: opts.fuelL ?? 40, fuelR: opts.fuelR ?? 40, fuelSel: opts.fuelSel || 'L', pitch: 2 });
-        Object.assign(S.eng, { running: true, master: true, rpm: 4900, oilT: 95, oilP: 3.8, cht: 88, egt1: 760, egt2: 750, volts: 14.1, amps: 7, ff: 17 });
+        Object.assign(S.eng, { running: true, master: true, avionics: true, rpm: 4900, oilT: 95, oilP: 3.8, cht: 88, egt1: 760, egt2: 750, volts: 14.1, amps: 7, ff: 17 });
         if (opts.flaps != null) a.flaps = opts.flaps;
       } else {
         const a = S.ac;
         if (opts.lat != null) { a.lat = opts.lat; a.lon = opts.lon; a.alt = opts.alt ?? a.alt; a.hdg = opts.hdg ?? a.hdg; a.trk = a.hdg; }
         if (opts.fuelL != null) { a.fuelL = opts.fuelL; a.fuelR = opts.fuelR; }
-        if (opts.engineRunning) { Object.assign(S.eng, { running: true, master: true, rpm: 1500, oilT: 60, oilP: 2.4, cht: 55, egt1: 540, egt2: 530, volts: 14.0, amps: 5, ff: 3 }); }
+        if (opts.engineRunning) { Object.assign(S.eng, { running: true, master: true, avionics: true, rpm: 1500, oilT: 60, oilP: 2.4, cht: 55, egt1: 540, egt2: 530, volts: 14.0, amps: 5, ff: 3 }); }
       }
       if (opts.fail) Object.assign(S.fail, opts.fail);
       S.parked = !!opts.parked;
@@ -237,7 +237,8 @@ window.G3X = window.G3X || {};
     setFlaps(i) { SIM.S.ac.flaps = U.clamp(i, 0, 2); },
     startEngine() { const S = SIM.S; if (!S.eng.master) return 'Master schakelaar staat uit'; if (S.eng.running) return 'Motor loopt al'; S.eng.starterT = 1.6; return null; },
     stopEngine() { SIM.S.eng.running = false; },
-    toggleMaster() { const S = SIM.S; S.eng.master = !S.eng.master; if (!S.eng.master) S.eng.running = false; },
+    toggleMaster() { const S = SIM.S; S.eng.master = !S.eng.master; if (!S.eng.master) { S.eng.running = false; S.eng.avionics = false; } },
+    toggleAvionics() { const S = SIM.S; if (!S.eng.master) return 'Master schakelaar staat uit'; S.eng.avionics = !S.eng.avionics; return null; },
     setFuelSel(sel) { SIM.S.ac.fuelSel = sel; },
     // geïndiceerde hoogte bij de gekozen baro-instelling
     indicatedAlt(baroHpa) { const S = SIM.S; return S.ac.alt + (baroHpa - S.env.qnh) * 27; },

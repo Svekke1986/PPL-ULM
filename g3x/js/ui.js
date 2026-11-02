@@ -392,7 +392,7 @@ window.G3X = window.G3X || {};
   UI.tick = () => {
     const a = A(), L = D.LR; if (!L) return;
     const page = a.reversion ? null : a.mfdPage;
-    const show = page && G3X.mfd.isDomPage(page) && L.mfd;
+    const show = page && G3X.mfd.isDomPage(page) && L.mfd && !L.dead;
     UI.pane.classList.toggle('hidden', !show);
     if (!show) { UI.pageBuilt = null; return; }
     const r = L.mfd; Object.assign(UI.pane.style, { left: r.x + 'px', top: r.y + 'px', width: r.w + 'px', height: r.h + 'px' });
