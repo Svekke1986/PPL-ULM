@@ -1,9 +1,9 @@
-/* Cockpit buiten de G3X, zoals in OO-KWO: GMA 245-audiopaneel, GNC 255 (COM/NAV), GTX 335-transponder,
+/* Cockpit buiten de G3X, zoals in OO-KWO: GNC 255 (COM/NAV), GTX 335-transponder,
    analoge motormeters, rode LEFT/RIGHT-brandstofkraan en flapschakelaar met lampjes 0 / T / L. */
 window.G3X = window.G3X || {};
 (function () {
   const U = G3X.util, SIM = G3X.sim, AV = G3X.avionics, esc = U.esc;
-  const CK = { gnc: { mode: 'COM', cursor: false }, gma: { com1: true, com2: false, nav1: false, nav2: false, mic: 1, isol: 'PILOT' } };
+  const CK = { gnc: { mode: 'COM', cursor: false } };
   const $ = s => document.querySelector(s);
 
   // ---------- analoge meters ----------
@@ -78,11 +78,6 @@ window.G3X = window.G3X || {};
     $('#gtx-idnt').classList.toggle('on', x.ident > 0);
   };
 
-  // ---------- GMA 245 ----------
-  CK.refreshGma = () => {
-    const g = CK.gma, S = SIM.S, off = !S.eng.master || !S.eng.avionics;
-    document.querySelectorAll('#gma .gb[data-k]').forEach(b => { const k = b.dataset.k; let on = false; if (k === 'com1') on = g.com1; else if (k === 'com2') on = g.com2; else if (k === 'nav1') on = g.nav1; else if (k === 'nav2') on = g.nav2; else if (k === 'mic1') on = g.mic === 1; else if (k === 'mic2') on = g.mic === 2; else if (k === 'pilot') on = g.isol === 'PILOT'; else if (k === 'crew') on = g.isol === 'CREW'; b.classList.toggle('lit', on && !off); });
-  };
 
   CK.init = () => {
     const el = $('#cockpit');
@@ -95,11 +90,6 @@ window.G3X = window.G3X || {};
         </div>
       </div>
       <div class="ck-stack">
-        <div class="unit gma" id="gma"><div class="unit-brand">GARMIN <small>GMA 245</small></div>
-          <div class="gma-grid">
-            <button class="gb" data-k="com1">COM1</button><button class="gb" data-k="com2">COM2</button><button class="gb" data-k="nav1">NAV1</button><button class="gb" data-k="nav2">NAV2</button><button class="gb" data-k="music">MUSIC</button><button class="gb" data-k="aux1">AUX1</button><button class="gb" data-k="aux2">AUX2</button><button class="gb" data-k="mkr">MKR<br>MUTE</button>
-            <button class="gb" data-k="mic1">COM1<br>MIC</button><button class="gb" data-k="mic2">COM2<br>MIC</button><button class="gb" data-k="spkr">SPKR</button><button class="gb" data-k="tel">TEL</button><span class="gb-spacer"></span><button class="gb" data-k="pilot">PILOT</button><button class="gb" data-k="crew">CREW</button><span class="gb-note">ICS ISOLATION</span>
-          </div></div>
         <div class="unit gnc" id="gnc"><div class="unit-brand">GARMIN <small>GNC 255</small></div>
           <div class="gnc-row">
             <div class="gnc-knobs"><div class="gknob"><span>COM</span><div class="kn"></div><small>PWR/VOL · PUSH SQ</small></div><button class="ub" id="gnc-mon">MON</button><div class="gknob"><span>NAV</span><div class="kn"></div><small>VOL · PUSH ID</small></div></div>
@@ -122,8 +112,6 @@ window.G3X = window.G3X || {};
     $('#flap-up').onclick = () => { SIM.setFlaps(SIM.S.ac.flaps - 1); G3X.bus.emit('flaps', SIM.S.ac.flaps); };
     $('#flap-dn').onclick = () => { SIM.setFlaps(SIM.S.ac.flaps + 1); G3X.bus.emit('flaps', SIM.S.ac.flaps); };
     el.querySelectorAll('.fuel').forEach(b => { b.onclick = () => { SIM.setFuelSel(b.dataset.s); G3X.bus.emit('fuelsel', b.dataset.s); }; });
-    // GMA 245
-    el.querySelectorAll('#gma .gb').forEach(b => { b.onclick = () => { const k = b.dataset.k, g = CK.gma; if (k === 'com1' || k === 'com2' || k === 'nav1' || k === 'nav2') { g[k] = !g[k]; if (k === 'nav1') { AV.A.nav1.audio = g.nav1; G3X.bus.emit('navaudio', 1); } if (k === 'com1') AV.A.com1.mon = g.com1; } else if (k === 'mic1') { g.mic = 1; g.com1 = true; AV.setMic(1); G3X.bus.emit('mic', 1); } else if (k === 'mic2') { g.mic = 2; g.com2 = true; G3X.bus.emit('mic', 2); } else if (k === 'pilot' || k === 'crew') { g.isol = g.isol === k.toUpperCase() ? 'ALL' : k.toUpperCase(); } CK.refreshGma(); }; });
     // GNC 255
     let holdT = null; const flip = $('#gnc-flip');
     flip.addEventListener('pointerdown', () => { holdT = setTimeout(() => { holdT = null; if (CK.gnc.mode === 'COM') { AV.A.com1.active = 121.5; AV.noteRecent(121.5); G3X.bus.emit('freq', { kind: 'COM', n: 1, f: 121.5 }); G3X.bus.emit('swap', 1); CK.refreshGnc(); } }, 1500); });
@@ -151,7 +139,7 @@ window.G3X = window.G3X || {};
     document.querySelectorAll('#cockpit .lamp').forEach(l => l.classList.toggle('on', +l.dataset.f === S.ac.flaps && S.eng.master));
     const lever = $('#fuel-lever'); if (lever) lever.style.transform = `rotate(${S.ac.fuelSel === 'R' ? 40 : -40}deg)`;
     document.querySelectorAll('#cockpit .fuel').forEach(b => b.classList.toggle('on', b.dataset.s === S.ac.fuelSel));
-    CK.refreshGnc(); CK.refreshGtx(); CK.refreshGma();
+    CK.refreshGnc(); CK.refreshGtx();
   };
   G3X.cockpit = CK;
 })();
