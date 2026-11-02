@@ -288,7 +288,7 @@ window.G3X = window.G3X || {};
       html += '</li>';
     });
     html += '</ol>';
-    if (T.done && T.result) { const r = T.result; html += `<div class="result ${T.failed ? 'failed' : ''}"><div class="stars">${'★'.repeat(r.stars)}${'☆'.repeat(3 - r.stars)}</div><div><b>${T.failed ? 'Scenario mislukt' : 'Scenario voltooid'}</b> · score ${r.score}/100 · ${U.fmtTimer(r.dur)} · ${r.hints} hint(s)</div>${r.errors.length ? `<ul class="errs">${r.errors.map(e => `<li>${esc(e)}</li>`).join('')}</ul>` : '<div class="muted">Geen fouten.</div>'}<div class="step-actions"><button class="sb reset">↺ Reset (zelfde gegevens)</button><button class="sb again">🎲 Nieuwe gegevens</button><button class="sb next">Volgend willekeurig scenario</button></div></div>`; }
+    if (T.done && T.result) { const r = T.result; html += `<div class="result ${T.failed ? 'failed' : ''}"><div class="stars">${'★'.repeat(r.stars)}${'☆'.repeat(3 - r.stars)}</div><div><b>${T.failed ? 'Scenario mislukt' : 'Scenario voltooid'}</b> · score ${r.score}/100 · ${U.fmtTimer(r.dur)} · ${r.hints} hint(s)</div><div class="muted small">De simulatie staat stil (SIM PAUSED); met de knop Pauze vlieg je verder.</div>${r.errors.length ? `<ul class="errs">${r.errors.map(e => `<li>${esc(e)}</li>`).join('')}</ul>` : '<div class="muted">Geen fouten.</div>'}<div class="step-actions"><button class="sb reset">↺ Reset (zelfde gegevens)</button><button class="sb again">🎲 Nieuwe gegevens</button><button class="sb next">Volgend willekeurig scenario</button></div></div>`; }
     if (T.errors.length && !T.done) html += `<div class="tc-errs">Fouten: ${T.errors.length}</div>`;
     el.innerHTML = html;
     el.querySelectorAll('.q-opt').forEach(b => { b.onclick = () => T.answer(+b.dataset.k); });
