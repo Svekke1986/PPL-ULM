@@ -146,11 +146,11 @@ window.G3X = window.G3X || {};
     { id: 'EHBD-ATZ', name: 'BUDEL ATZ', cls: 'G', type: 'ATZ', floor: 0, ceil: 1500, shape: { circle: { lat: 51.2553, lon: 5.6014 }, r: 2.5 } },
     { id: 'EBST-ATZ', name: 'SINT-TRUIDEN ATZ', cls: 'G', type: 'ATZ', floor: 0, ceil: 1500, shape: { circle: { lat: 50.7917, lon: 5.2017 }, r: 2.5 } },
     { id: 'EBZH-ATZ', name: 'HASSELT ATZ', cls: 'G', type: 'ATZ', floor: 0, ceil: 1500, shape: { circle: { lat: 50.9700, lon: 5.3750 }, r: 2 } },
-    { id: 'EB-R24', name: 'EB R24 LEOPOLDSBURG (schietterrein)', cls: 'R', type: 'R', floor: 0, ceil: 3500, shape: { poly: [[51.16, 5.22], [51.16, 5.36], [51.09, 5.36], [51.09, 5.22]] } },
-    { id: 'EB-R34', name: 'EB R34 ELSENBORN', cls: 'R', type: 'R', floor: 0, ceil: 6000, shape: { poly: [[50.50, 6.15], [50.50, 6.40], [50.38, 6.40], [50.38, 6.15]] } },
-    { id: 'EB-P10', name: 'EB P10 DOEL (kerncentrale)', cls: 'P', type: 'P', floor: 0, ceil: 2000, shape: { circle: { lat: 51.3250, lon: 4.2600 }, r: 1.5 } },
-    { id: 'EB-P12', name: 'EB P12 TIHANGE (kerncentrale)', cls: 'P', type: 'P', floor: 0, ceil: 2000, shape: { circle: { lat: 50.5342, lon: 5.2733 }, r: 1.5 } },
-    { id: 'EB-D29', name: 'EB D29 HELCHTEREN (schietterrein)', cls: 'D', type: 'D', floor: 0, ceil: 4500, shape: { poly: [[51.11, 5.33], [51.11, 5.45], [51.03, 5.45], [51.03, 5.33]] } },
+    { id: 'EB-R24', name: 'EB R24 LEOPOLDSBURG', desc: 'Restricted area: militair schietterrein', cls: 'R', type: 'R', floor: 0, ceil: 3500, shape: { poly: [[51.16, 5.22], [51.16, 5.36], [51.09, 5.36], [51.09, 5.22]] } },
+    { id: 'EB-R34', name: 'EB R34 ELSENBORN', desc: 'Restricted area: militair oefenterrein', cls: 'R', type: 'R', floor: 0, ceil: 6000, shape: { poly: [[50.50, 6.15], [50.50, 6.40], [50.38, 6.40], [50.38, 6.15]] } },
+    { id: 'EB-P10', name: 'EB P10 DOEL', desc: 'Prohibited area: kerncentrale', cls: 'P', type: 'P', floor: 0, ceil: 2000, shape: { circle: { lat: 51.3250, lon: 4.2600 }, r: 1.5 } },
+    { id: 'EB-P12', name: 'EB P12 TIHANGE', desc: 'Prohibited area: kerncentrale', cls: 'P', type: 'P', floor: 0, ceil: 2000, shape: { circle: { lat: 50.5342, lon: 5.2733 }, r: 1.5 } },
+    { id: 'EB-D29', name: 'EB D29 HELCHTEREN', desc: 'Danger area: militair schietterrein', cls: 'D', type: 'D', floor: 0, ceil: 4500, shape: { poly: [[51.11, 5.33], [51.11, 5.45], [51.03, 5.45], [51.03, 5.33]] } },
     { id: 'EBLG-NORTH', name: 'LIÈGE TMA 3 (noord)', cls: 'D', type: 'TMA', floor: 3500, ceil: 4500, shape: { poly: [[51.05, 5.05], [51.05, 5.85], [50.90, 5.85], [50.90, 5.05]] } },
   ];
 

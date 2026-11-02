@@ -460,6 +460,7 @@ window.G3X = window.G3X || {};
         mk('Werk de checklist <b>Before Engine Start</b> af.', 'Main Menu (MENU 2×) → Checklist.', (S, A, ctx) => ctx.has('chkdone', g => /Before Engine Start/.test(g))),
         mk('Start de motor (gas op idle).', 'Paneel → Start. Oliedruk (EIS op de MFD) moet binnen 10 s stijgen.', S => S.eng.running, { fail: S => S.ac.throttle > 0.3 && !S.eng.running ? 'Starten met te veel gas.' : null }),
         mk('Warmdraaien op <b>2000–2500 rpm</b>, 10 s.', 'Gas iets open.', hold(S => S.eng.rpm >= 1950 && S.eng.rpm <= 2550, 10)),
+        mk('Zet de <b>avionics master</b> aan: de G3X-schermen, GNC 255, GTX 335 en GMA 245 starten op.', 'Paneel Vliegtuig → Avionics. Pas na de start inschakelen, zodat de startpiek de avionica niet belast.', S => S.eng.avionics),
         mk(`Baro op <b>${qnh}</b>, hoogtevak op circuit-hoogte <b>${HOME.elev + 1000 - (HOME.elev + 1000) % 100 + 100} ft</b>, heading bug op de baanrichting (${U.fmtHdg(start.hdg)}°).`, 'Baro-veld, hoogtevak, HSI.', (S, A) => A.baro === qnh && !A.baroStd && A.altSel === HOME.elev + 1000 - (HOME.elev + 1000) % 100 + 100 && hdgNear(A.hdgBug, start.hdg, 3)),
         mk(`Transponder code <b>${code}</b>, modus <b>ALT</b>.`, 'Transponder onder het scherm.', (S, A) => A.xpdr.code === code && A.xpdr.mode === 'ALT'),
         mk(`Zet Hasselt Radio <b>${R.fmtF(mainFreq(HOME))}</b> actief op COM1 en start de vluchttimer (algemene timer omhoog).`, 'GNC 255: standby instellen en ⇄; Main Menu (MENU 2×) → Timer → Start.', (S, A) => near(A.com1.active, mainFreq(HOME), 0.001) && A.timer.running && A.timer.dir === 'UP'),
@@ -625,7 +626,7 @@ window.G3X = window.G3X || {};
   });
   add('free_cold', 'Vrij vliegen', 'Stilstaand op EBZH, koud en donker', () => {
     const start = R.onRunway(HOME); start.engineRunning = false; start.parked = true;
-    return { title: 'Verkennen — koud en donker op EBZH', start, intro: '<p>Master uit, motor uit. Zet in het paneel Vliegtuig de master aan en start de motor om de motorinstrumenten te zien; het toestel blijft stilstaan.</p>', steps: [] };
+    return { title: 'Verkennen — koud en donker op EBZH', start, intro: '<p>Master uit, motor uit. Zet in het paneel Vliegtuig de master aan, start de motor en schakel daarna de avionics master in om de schermen en radio\u2019s te zien; het toestel blijft stilstaan.</p>', steps: [] };
   });
 
   // ---------- scenario-motor ----------

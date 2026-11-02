@@ -202,7 +202,7 @@ window.G3X = window.G3X || {};
     const thr = $('#thr'); thr.oninput = () => SIM.setThrottle(thr.value / 100);
     $('#pump').onclick = () => { M.pump = !M.pump; G3X.bus.emit('pump', M.pump); };
     $('#master').onclick = () => { SIM.toggleMaster(); G3X.bus.emit('master', SIM.S.eng.master); };
-    $('#avmaster').onclick = () => { M.avMaster = !M.avMaster; G3X.bus.emit('avmaster', M.avMaster); };
+    $('#avmaster').onclick = () => { const r = SIM.toggleAvionics(); if (r) alert(r); else G3X.bus.emit('avmaster', SIM.S.eng.avionics); };
     $('#start').onclick = () => { const r = SIM.startEngine(); if (r) alert(r); else G3X.bus.emit('start'); };
     $('#pbrake').onclick = () => { SIM.S.ac.parkBrake = !SIM.S.ac.parkBrake; G3X.bus.emit('pbrake', SIM.S.ac.parkBrake); };
     const br = $('#brake'); br.onpointerdown = () => { SIM.S.ac.brakes = true; M.keys.KeyB = true; }; br.onpointerup = br.onpointerleave = () => { M.keys.KeyB = false; SIM.S.ac.brakes = false; };
@@ -224,7 +224,7 @@ window.G3X = window.G3X || {};
   function refreshPanels() {
     const S = SIM.S, a = S.ac;
     const thr = $('#thr'); if (document.activeElement !== thr) thr.value = Math.round(a.throttle * 100); $('#thr-out').textContent = Math.round(a.throttle * 100) + ' %';
-    $('#master').classList.toggle('on', S.eng.master); $('#avmaster').classList.toggle('on', !!M.avMaster); $('#pbrake').classList.toggle('on', a.parkBrake); $('#pump').classList.toggle('on', !!M.pump);
+    $('#master').classList.toggle('on', S.eng.master); $('#avmaster').classList.toggle('on', !!S.eng.avionics); $('#pbrake').classList.toggle('on', a.parkBrake); $('#pump').classList.toggle('on', !!M.pump);
     $('#pause').classList.toggle('on', S.paused); document.querySelectorAll('#acpanel .rate').forEach(b => b.classList.toggle('on', +b.dataset.r === S.rate));
     $('#sound').textContent = AV.A.sound ? '🔊' : '🔇';
     $('#start').classList.toggle('on', S.eng.running); $('#revers').classList.toggle('on', !!AV.A.reversion);
