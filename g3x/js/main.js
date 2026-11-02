@@ -194,7 +194,7 @@ window.G3X = window.G3X || {};
     const el = $('#acpanel');
     el.innerHTML = `<div class="acp-title">Vliegtuig — ${esc(SIM.AC.name)}</div>
       <div class="acp-row"><label>Gas <output id="thr-out">0 %</output></label><input id="thr" type="range" min="0" max="100" value="0"></div>
-      <div class="acp-row btns"><button class="acb" id="master">Master</button><button class="acb" id="avmaster">Avionics</button><button class="acb" id="start">Start</button><button class="acb" id="pump">Fuel pump</button><button class="acb" id="sound">🔊</button><button class="acb flight" id="pbrake">Parkeerrem</button><button class="acb flight" id="brake" title="Houd ingedrukt (of toets B)">Rem</button></div>
+      <div class="acp-row btns"><button class="acb flight" id="master">Master</button><button class="acb flight" id="avmaster">Avionics</button><button class="acb flight" id="start">Start</button><button class="acb flight" id="pump">Fuel pump</button><button class="acb" id="sound">🔊</button><button class="acb flight" id="pbrake">Parkeerrem</button><button class="acb flight" id="brake" title="Houd ingedrukt (of toets B)">Rem</button></div>
       <div class="acp-row btns flight"><button class="acb" id="pause">Pauze</button><button class="acb rate" data-r="1">1×</button><button class="acb rate" data-r="2">2×</button><button class="acb rate" data-r="4">4×</button><button class="acb" id="revers" title="Reversionary: PFD + EIS op het rechterscherm">Reversionary</button></div>
       <div class="acp-row btns flight"><span>Storing</span><select id="failsel"><option value="">— kies —</option><option value="ahrs">AHRS</option><option value="adc">ADC (air data)</option><option value="gps">GPS (LOI)</option><option value="alternator">Alternator</option><option value="oilPress">Oliedruk</option><option value="chtHigh">CT hoog</option><option value="engine">Motor stopt</option><option value="engineRough">Motor loopt ruw</option><option value="com1">COM/NAV (GNC 255)</option><option value="nav1">NAV-ontvanger</option><option value="pitot">Pitot (snelheid)</option><option value="fuelLeak">Brandstoflek</option><option value="display">PFD-scherm</option></select><button class="acb" id="failon">Aan</button><button class="acb" id="failoff">Uit</button><button class="acb" id="failclear">Alles herstellen</button></div>
       <div class="acp-row small flight"><label><input type="checkbox" id="invpitch"> ↑ = neus omhoog (omgekeerd)</label> <span class="muted">Toetsen: ↑↓ pitch · ←→ rol · A/E richting (AZERTY) · PgUp/PgDn gas · F/V flaps · B rem · P pauze · H help</span></div>
@@ -241,9 +241,8 @@ window.G3X = window.G3X || {};
     $('#btn-restart').onclick = () => { if (T.current) T.reset(); };
     $('#btn-new').onclick = () => { if (T.current) T.start(T.current.id); };
     $('#explore-start').innerHTML = T.exploreOptions().map(g => `<option value="${g.id}">${esc(g.name)}</option>`).join('');
-    $('#btn-explore-start').onclick = () => { T.startExplore($('#explore-start').value); location.hash = 's=' + T.current.id; };
-    $('#btn-explore-reset').onclick = () => { if (T.mode === 'explore' && T.current) T.reset(); else T.startExplore($('#explore-start').value); };
-    $('#mode-explore').onclick = () => { if (T.mode !== 'explore') T.startExplore($('#explore-start').value); M.setMode('explore'); };
+    $('#btn-explore-reset').onclick = () => { if (T.mode === 'explore' && T.current) T.reset(); else T.startExplore('free'); };
+    $('#mode-explore').onclick = () => { if (T.mode !== 'explore') T.startExplore('free'); M.setMode('explore'); };
     $('#mode-scenario').onclick = () => { M.setMode('scenario'); };
     $('#btn-help').onclick = toggleHelp; $('#help-close').onclick = toggleHelp;
     renderScenarioList();
@@ -271,7 +270,7 @@ window.G3X = window.G3X || {};
   M.onTrainerUpdate = () => {
     const el = $('#trainer-current'); const sc = T.current; if (!sc) { el.innerHTML = ''; return; }
     let html = `<div class="tc-head"><div><span class="tc-cat">${esc(T.mode === 'explore' ? 'Verkennen' : sc.cat)}</span><h3>${esc(sc.title)}</h3></div><span class="tc-time" id="trainer-time">00:00:00</span></div><div class="tc-intro">${sc.intro || ''}</div>`;
-    if (T.mode === 'explore') { html += '<p class="muted small">Het toestel staat stil; hier leer je de G3X kennen zonder te vliegen. Tips: alle velden op het scherm zijn aanraakbaar, MENU geeft de opties van de huidige pagina (MENU 2× = Main Menu), en in het paneel Vliegtuig kun je gas geven voor de motorinstrumenten of storingen inschakelen. Wil je vliegen, kies dan een scenario via het tabblad <b>Scenario</b>.</p>'; el.innerHTML = html; return; }
+    if (T.mode === 'explore') { html += '<p class="muted small">Tips: alle velden op het scherm zijn aanraakbaar, MENU geeft de opties van de huidige pagina (MENU 2× = Main Menu), de knoppen draai je door te slepen. Met de gasschuif zie je de motorinstrumenten bewegen. Wil je vliegen of storingen oefenen, kies dan een scenario via het tabblad <b>Scenario</b>.</p>'; el.innerHTML = html; return; }
     html += '<ol class="steps">';
     T.steps.forEach((s, i) => {
       const cls = s.status; const cur = i === T.stepIndex && !T.done;

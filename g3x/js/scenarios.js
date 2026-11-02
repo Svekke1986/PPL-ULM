@@ -620,13 +620,9 @@ window.G3X = window.G3X || {};
         mk('In de hold (SUSP): zet een 1-minuten-timer en vlieg een outbound leg (heading bug op de reciproke van de inbound koers).', 'Timer → Set… 01:00 (Count Down); heading bug via de PFD-linkerknop.', (S, A) => A.fpl.susp && A.timer.running && A.timer.dir === 'DOWN'),
       ] };
   });
-  add('free', 'Vrij vliegen', 'Stilstaand op EBZH, motor draait', () => {
+  add('free', 'Vrij vliegen', 'Verkennen op EBZH', () => {
     const start = R.onRunway(HOME); start.engineRunning = true; start.parked = true;
-    return { title: 'Verkennen — stilstaand op EBZH', start, intro: '<p>Het toestel staat stil op Kiewit met draaiende motor. Verken alle functies van de G3X: pagina’s, menu’s, radio’s, transponder, vluchtplan, naderingen, instellingen. Met <b>Reset</b> begin je opnieuw.</p>', steps: [] };
-  });
-  add('free_cold', 'Vrij vliegen', 'Stilstaand op EBZH, koud en donker', () => {
-    const start = R.onRunway(HOME); start.engineRunning = false; start.parked = true;
-    return { title: 'Verkennen — koud en donker op EBZH', start, intro: '<p>Master uit, motor uit. Zet in het paneel Vliegtuig de master aan, start de motor en schakel daarna de avionics master in om de schermen en radio\u2019s te zien; het toestel blijft stilstaan.</p>', steps: [] };
+    return { title: 'Verkennen', start, intro: '<p>Het toestel staat stil op Kiewit, motor en avionica aan. Verken alle functies van de G3X: pagina’s, menu’s, radio’s, transponder, vluchtplan, naderingen, instellingen. Met <b>Reset</b> begin je opnieuw.</p>', steps: [] };
   });
 
   // ---------- scenario-motor ----------
