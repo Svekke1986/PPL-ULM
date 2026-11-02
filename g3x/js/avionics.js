@@ -275,7 +275,9 @@ window.G3X = window.G3X || {};
       const flyOver = to.map || to.hold || !next || (f.directTo && !f.directTo.inFpl);
       let anticipate = 0;
       if (!flyOver && next) { const dc = Math.abs(U.norm180(U.bearing(to, next) - dtk)); anticipate = Math.min(turnRadiusNm * Math.tan(Math.min(dc, 120) / 2 * U.DEG), 2); }
-      const passed = xt.along >= out.legLen - anticipate - 0.02 || (dis < 0.25) || (Math.abs(U.norm180(brg - dtk)) > 95 && dis < 1.5);
+      // doorschakelen alleen als we het waypoint echt naderen/passeren (binnen 3 nm), niet omdat we ver weg 'voorbij' de lijn staan;
+      // op de grond (stilstaand of taxiënd) wordt niet gesequencet
+      const passed = a.gs > 15 && ((xt.along >= out.legLen - anticipate - 0.02 && dis < 3) || (dis < 0.25) || (Math.abs(U.norm180(brg - dtk)) > 95 && dis < 1.5));
       if (passed) {
         // zonder volgend waypoint alleen 'aangekomen' melden als we er echt dichtbij zijn (niet als we ver dwars van de lijn af staan)
         if (to.map && f.approach && f.approach.active) { f.susp = true; AV.msg('Missed approach point — SUSP. Press SUSP for the missed approach', 'ADV', 'susp'); }
