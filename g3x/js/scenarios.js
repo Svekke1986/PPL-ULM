@@ -658,6 +658,8 @@ window.G3X = window.G3X || {};
     if (sc.av) sc.av(A);
     G3X.bus.log.length = 0;
     T.current = sc; T.steps = sc.steps.map(s => Object.assign({ status: 'todo', errors: [] }, s)); T.stepIndex = 0; T.stepStart = S.t; T.started = S.t; T.hints = 0; T.errors = []; T.done = false; T.failed = false; T.ctx = { flag: false }; T.msg = null;
+    // eerst een paar simulatiestappen, zodat afgeleide waarden (GS, track, navigatie) bestaan vóór de eerste vraag
+    for (let i = 0; i < 4; i++) { SIM.step(0.05); AV.step(S, 0.05); }
     T.enterStep();
     if (G3X.main) G3X.main.onScenarioStart();
     return sc;
@@ -680,7 +682,12 @@ window.G3X = window.G3X || {};
     const st = T.steps[T.stepIndex]; if (!st) return;
     const c = st.ctx; c.dt = dt; c.t = S.t - st.t0;
     if (st.fail) { const m = st.fail(S, A, c); if (m) T.flagError(m, 30, st); }
-    if (st.question) return; // wacht op antwoord
+    if (st.question) {
+      // afleesvraag: als de meterstand intussen buiten de getoonde opties is geraakt, opties vernieuwen
+      const q = st.question;
+      if (q.get && q.values && st.answered == null) { const cur = q.get(); const base = q.values[q.correct]; if (Math.abs(cur - base) > q.step * 1.5) { st.question = st.makeQuestion(S, A); if (G3X.main) G3X.main.onTrainerUpdate(); } }
+      return; // wacht op antwoord
+    }
     let ok = false;
     try { ok = st.check(S, A, c); } catch (e) { console.error('check', e); }
     if (ok) T.completeStep();
