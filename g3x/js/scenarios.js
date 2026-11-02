@@ -96,10 +96,10 @@ window.G3X = window.G3X || {};
         mkQ('Wat is de <b>OAT</b>?', () => SIM.oat(), 2, v => v + ' °C'),
         mkQ('Wat is je <b>ware luchtsnelheid</b> (TAS, onder de snelheidstape)?', S => S.ac.tas, 5, v => v + ' kt'),
         mkQ('Wat is je <b>geïndiceerde hoogte</b> (afgerond op 100 ft)?', () => AV.indAlt(), 100, v => v + ' ft'),
-        q('Wat betekent de magenta lijn naast de snelheidstape?', ['Trendvector: de snelheid over ±6 s als de versnelling gelijk blijft', 'De geselecteerde snelheid', 'De maximale structurele snelheid', 'De snelheid van de wind'], 0, 'De trendvector toont waar de snelheid (of hoogte) over 6 seconden zal zijn.'),
+        q('Wat betekent de magenta lijn naast de snelheidstape?', ['Trendvector: de snelheid over ±6 s als de versnelling gelijk blijft', 'De beste klimsnelheid Vy', 'De maximale structurele snelheid', 'De snelheid van de wind'], 0, 'De trendvector toont waar de snelheid (of hoogte) over 6 seconden zal zijn.'),
       ] };
   });
-  add('pfd_settings', 'Basis & PFD', 'PFD-opties: SVT, bearing pointers, V-snelheden', () => {
+  add('pfd_settings', 'Basis & PFD', 'PFD-opties: SVT, bearing pointers, V-snelheidsmarkeringen', () => {
     const vor = R.vor(); const start = R.airborne(HOME);
     const svtOff = U.chance(0.5);
     return { title: 'PFD-opties', start, intro: '<p>Pas de PFD aan via het optiemenu (tik op de snelheidstape of druk op MENU bij een volledig PFD).</p>',
@@ -108,7 +108,7 @@ window.G3X = window.G3X || {};
         mk(`Stem NAV1 af op <b>${vor.id} ${U.fmtNav(vor.freq)}</b> en maak actief.`, 'GNC 255: C/N naar NAV, TUNE-knop → frequentie, ⇄. (Ook via het NAV1-vak linksonder op de PFD.)', (S, A) => near(A.nav1.active, vor.freq, 0.001)),
         mk('Zet <b>bearing pointer 1</b> op NAV1.', 'Tik op de HSI → Bearing Pointer 1, of op het BRG1-vak rechts naast de HSI.', (S, A) => A.brg1 === 'NAV1' && A.nav1.data.valid),
         (() => ({ text: `Op welke <b>radiaal</b> van ${vor.id} bevind je je ongeveer? (De staart van bearing pointer 1 wijst de radiaal aan.)`, makeQuestion: S => { const r = Math.round(U.bearing(vor, S.ac) / 10) * 10; const o = numOpts(r, 20, v => U.fmtHdg(v) + '°'); return { options: o.options, correct: o.correct, explain: `Peiling naar het station ${U.fmtHdg(U.bearing(S.ac, vor))}° → radiaal ${U.fmtHdg(r)}° (tegenovergestelde).` }; } }))(),
-        mk('Zet bearing pointer 2 op <b>GPS</b> en schakel de V-snelheden <b>uit</b>.', 'HSI → Bearing Pointer 2; V-snelheden via MENU op het PFD-scherm.', (S, A) => A.brg2 === 'GPS' && A.vspeeds === false),
+        mk('Zet bearing pointer 2 op <b>GPS</b> en verberg de <b>V-snelheidsmarkeringen</b> (de labels R, X, Y en G naast de snelheidstape; dit zijn alleen referenties, geen instelling van het toestel).', 'HSI → Bearing Pointer 2; V-Speeds via MENU op het PFD-scherm → PFD Options.', (S, A) => A.brg2 === 'GPS' && A.vspeeds === false),
       ] };
   });
   add('pfd_units', 'Basis & PFD', 'Eenheden omschakelen', () => {
