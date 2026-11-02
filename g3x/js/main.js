@@ -17,7 +17,8 @@ window.G3X = window.G3X || {};
     buildKnobs(); G3X.cockpit.init(); buildAircraftPanel(); buildTrainerPanel(); bindCanvases(); bindKeyboard(); buildViewToggle();
     window.addEventListener('resize', M.fit); M.setView(M.view);
     const m = location.hash.match(/s=([a-z_0-9]+)/i);
-    T.start(m ? m[1] : 'pfd_baro');
+    // standaard in Verkennen (stilstaand op EBZH); een scenario alleen als de URL er een noemt (#s=…)
+    if (m) T.start(m[1]); else T.startExplore('free');
     requestAnimationFrame(M.loop);
   };
 
@@ -75,7 +76,7 @@ window.G3X = window.G3X || {};
   function applyControls() {
     const S = SIM.S, c = S.cmds, k = M.keys;
     let pitch = 0, roll = 0, yaw = 0;
-    if (k.ArrowUp) pitch -= 1; if (k.ArrowDown) pitch += 1; if (k.ArrowLeft) roll -= 1; if (k.ArrowRight) roll += 1; if (k.KeyQ) yaw -= 1; if (k.KeyE) yaw += 1;
+    if (k.ArrowUp) pitch -= 1; if (k.ArrowDown) pitch += 1; if (k.ArrowLeft) roll -= 1; if (k.ArrowRight) roll += 1; if (k.KeyQ || k.KeyA) yaw -= 1; if (k.KeyE) yaw += 1; // A/E op AZERTY (Q/E op QWERTY)
     if (M.invertPitch) pitch = -pitch;
     pitch += -M.stick.y; roll += M.stick.x;
     if (M.gp) { pitch += M.gp.pitch; roll += M.gp.roll; yaw += M.gp.yaw; }
@@ -196,7 +197,7 @@ window.G3X = window.G3X || {};
       <div class="acp-row btns"><button class="acb" id="master">Master</button><button class="acb" id="avmaster">Avionics</button><button class="acb" id="start">Start</button><button class="acb" id="pump">Fuel pump</button><button class="acb" id="sound">🔊</button><button class="acb flight" id="pbrake">Parkeerrem</button><button class="acb flight" id="brake" title="Houd ingedrukt (of toets B)">Rem</button></div>
       <div class="acp-row btns flight"><button class="acb" id="pause">Pauze</button><button class="acb rate" data-r="1">1×</button><button class="acb rate" data-r="2">2×</button><button class="acb rate" data-r="4">4×</button><button class="acb" id="revers" title="Reversionary: PFD + EIS op het rechterscherm">Reversionary</button></div>
       <div class="acp-row btns flight"><span>Storing</span><select id="failsel"><option value="">— kies —</option><option value="ahrs">AHRS</option><option value="adc">ADC (air data)</option><option value="gps">GPS (LOI)</option><option value="alternator">Alternator</option><option value="oilPress">Oliedruk</option><option value="chtHigh">CT hoog</option><option value="engine">Motor stopt</option><option value="engineRough">Motor loopt ruw</option><option value="com1">COM/NAV (GNC 255)</option><option value="nav1">NAV-ontvanger</option><option value="pitot">Pitot (snelheid)</option><option value="fuelLeak">Brandstoflek</option><option value="display">PFD-scherm</option></select><button class="acb" id="failon">Aan</button><button class="acb" id="failoff">Uit</button><button class="acb" id="failclear">Alles herstellen</button></div>
-      <div class="acp-row small flight"><label><input type="checkbox" id="invpitch"> ↑ = neus omhoog (omgekeerd)</label> <span class="muted">Toetsen: ↑↓ pitch · ←→ rol · Q/E richting · PgUp/PgDn gas · F/V flaps · B rem · P pauze · H help</span></div>
+      <div class="acp-row small flight"><label><input type="checkbox" id="invpitch"> ↑ = neus omhoog (omgekeerd)</label> <span class="muted">Toetsen: ↑↓ pitch · ←→ rol · A/E richting (AZERTY) · PgUp/PgDn gas · F/V flaps · B rem · P pauze · H help</span></div>
       <div class="stick" id="stick" title="Virtuele stuurknuppel: sleep"><div class="stick-dot"></div></div>`;
     const thr = $('#thr'); thr.oninput = () => SIM.setThrottle(thr.value / 100);
     $('#pump').onclick = () => { M.pump = !M.pump; G3X.bus.emit('pump', M.pump); };
@@ -287,7 +288,7 @@ window.G3X = window.G3X || {};
       html += '</li>';
     });
     html += '</ol>';
-    if (T.done && T.result) { const r = T.result; html += `<div class="result ${T.failed ? 'failed' : ''}"><div class="stars">${'★'.repeat(r.stars)}${'☆'.repeat(3 - r.stars)}</div><div><b>${T.failed ? 'Scenario mislukt' : 'Scenario voltooid'}</b> · score ${r.score}/100 · ${U.fmtTimer(r.dur)} · ${r.hints} hint(s)</div>${r.errors.length ? `<ul class="errs">${r.errors.map(e => `<li>${esc(e)}</li>`).join('')}</ul>` : '<div class="muted">Geen fouten.</div>'}<div class="step-actions"><button class="sb reset">↺ Reset (zelfde gegevens)</button><button class="sb again">🎲 Nieuwe gegevens</button><button class="sb next">Volgend willekeurig scenario</button></div></div>`; }
+    if (T.done && T.result) { const r = T.result; html += `<div class="result ${T.failed ? 'failed' : ''}"><div class="stars">${'★'.repeat(r.stars)}${'☆'.repeat(3 - r.stars)}</div><div><b>${T.failed ? 'Scenario mislukt' : 'Scenario voltooid'}</b> · score ${r.score}/100 · ${U.fmtTimer(r.dur)} · ${r.hints} hint(s)</div><div class="muted small">De simulatie staat stil (SIM PAUSED); met de knop Pauze vlieg je verder.</div>${r.errors.length ? `<ul class="errs">${r.errors.map(e => `<li>${esc(e)}</li>`).join('')}</ul>` : '<div class="muted">Geen fouten.</div>'}<div class="step-actions"><button class="sb reset">↺ Reset (zelfde gegevens)</button><button class="sb again">🎲 Nieuwe gegevens</button><button class="sb next">Volgend willekeurig scenario</button></div></div>`; }
     if (T.errors.length && !T.done) html += `<div class="tc-errs">Fouten: ${T.errors.length}</div>`;
     el.innerHTML = html;
     el.querySelectorAll('.q-opt').forEach(b => { b.onclick = () => T.answer(+b.dataset.k); });

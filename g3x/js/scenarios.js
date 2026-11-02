@@ -728,6 +728,7 @@ window.G3X = window.G3X || {};
     const dur = SIM.S.t - T.started; const score = Math.max(0, 100 - T.errors.length * 12 - T.hints * 5 - (T.failed ? 50 : 0));
     const stars = T.failed ? 0 : score >= 90 ? 3 : score >= 65 ? 2 : 1;
     T.result = { dur, score, stars, errors: T.errors.slice(), hints: T.hints };
+    SIM.S.paused = true; // scenario klaar: simulatie stilzetten (knop Pauze zet ze weer aan)
     const key = T.current.id; const b = T.best[key]; if (!b || score > b.score) T.best[key] = { score, stars, dur, date: Date.now() };
     T.best[key].runs = (b && b.runs ? b.runs : 0) + 1;
     try { localStorage.setItem('g3x.scores', JSON.stringify(T.best)); } catch (e) { /* geen opslag */ }
