@@ -17,7 +17,8 @@ window.G3X = window.G3X || {};
     buildKnobs(); G3X.cockpit.init(); buildAircraftPanel(); buildTrainerPanel(); bindCanvases(); bindKeyboard(); buildViewToggle();
     window.addEventListener('resize', M.fit); M.setView(M.view);
     const m = location.hash.match(/s=([a-z_0-9]+)/i);
-    T.start(m ? m[1] : 'pfd_baro');
+    // standaard in Verkennen (stilstaand op EBZH); een scenario alleen als de URL er een noemt (#s=…)
+    if (m) T.start(m[1]); else T.startExplore('free');
     requestAnimationFrame(M.loop);
   };
 
