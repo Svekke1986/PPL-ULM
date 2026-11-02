@@ -59,10 +59,11 @@ window.G3X = window.G3X || {};
   UI.knobLabels = screen => {
     const a = A();
     if (UI.dialog && UI.dialog.knobLabels && UI.dialog.screen === screen) return UI.dialog.knobLabels;
-    if (screen === 'L') return { left: { outer: 'HDG', inner: 'ALT', push: 'Sync HDG' }, right: { outer: 'CRS', inner: 'BARO', push: 'STD' } };
+    // Garmin-standaardconfiguratie: binnenknop Heading / buitenring Altitude, binnenknop Course / buitenring Baro
+    if (screen === 'L') return { left: { outer: 'ALT', inner: 'HDG', push: 'Sync HDG' }, right: { outer: 'BARO', inner: 'CRS', push: 'STD' } };
     const listPage = ['FPL', 'NRST', 'CHK', 'MSG', 'FPLLIST', 'USER', 'HOME', 'PROC'].includes(a.mfdPage);
-    const left = { outer: 'PAGE', inner: 'ZOOM', push: 'Main Menu' };
-    const right = (a.mfdPage === 'MAP' || a.mfdPage === 'TERRAIN') ? { outer: 'RANGE', inner: a.map.panning ? 'PAN ↕' : 'PAN', push: 'Cursor' } : listPage ? { outer: 'SCROLL', inner: 'SELECT', push: 'Select' } : { outer: 'RANGE', inner: '—' };
+    const left = { outer: 'ZOOM', inner: 'PAGE', push: 'Main Menu' };
+    const right = (a.mfdPage === 'MAP' || a.mfdPage === 'TERRAIN') ? { outer: a.map.panning ? 'PAN ↕' : 'PAN', inner: 'RANGE', push: 'Cursor' } : listPage ? { outer: 'SELECT', inner: 'SCROLL', push: 'Select' } : { outer: '—', inner: 'RANGE' };
     return { left, right };
   };
   // screen 'L'|'R', side 'L'|'R', ring 'outer'|'inner', dir ±1
@@ -70,12 +71,12 @@ window.G3X = window.G3X || {};
     const a = A(); UI.activeScreen = screen;
     if (UI.dialog && UI.dialog.onKnob) { UI.dialog.onKnob(side, ring, dir); return; }
     if (screen === 'L') {
-      if (side === 'L') { if (ring === 'outer') { a.hdgBug = U.norm360(a.hdgBug + dir); bus.emit('hdgbug', a.hdgBug); } else { a.altSel = U.clamp(a.altSel + dir * 100, -1000, 20000); bus.emit('altsel', a.altSel); } }
-      else { if (ring === 'outer') UI.adjustCrs(dir); else { a.baroStd = false; a.baro = U.clamp(a.baro + dir, 940, 1060); bus.emit('baro', a.baro); } }
+      if (side === 'L') { if (ring === 'inner') { a.hdgBug = U.norm360(a.hdgBug + dir); bus.emit('hdgbug', a.hdgBug); } else { a.altSel = U.clamp(a.altSel + dir * 100, -1000, 20000); bus.emit('altsel', a.altSel); } }
+      else { if (ring === 'inner') UI.adjustCrs(dir); else { a.baroStd = false; a.baro = U.clamp(a.baro + dir, 940, 1060); bus.emit('baro', a.baro); } }
       return;
     }
-    if (side === 'L') { if (ring === 'outer') { const i = UI.PAGE_CYCLE.indexOf(a.mfdPage); UI.showPage(UI.PAGE_CYCLE[(i < 0 ? 0 : i + dir + UI.PAGE_CYCLE.length) % UI.PAGE_CYCLE.length]); } else { G3X.mfd.rangeStep(dir); bus.emit('range', a.map.range); } return; }
-    if (a.mfdPage === 'MAP' || a.mfdPage === 'TERRAIN') { if (ring === 'outer') { G3X.mfd.rangeStep(dir); bus.emit('range', a.map.range); } else { if (!a.map.panning) { a.map.pan = { lat: SIM.S.ac.lat, lon: SIM.S.ac.lon }; a.map.panning = true; } G3X.mfd.panBy(0, dir * -30); } return; }
+    if (side === 'L') { if (ring === 'inner') { const i = UI.PAGE_CYCLE.indexOf(a.mfdPage); UI.showPage(UI.PAGE_CYCLE[(i < 0 ? 0 : i + dir + UI.PAGE_CYCLE.length) % UI.PAGE_CYCLE.length]); } else { G3X.mfd.rangeStep(dir); bus.emit('range', a.map.range); } return; }
+    if (a.mfdPage === 'MAP' || a.mfdPage === 'TERRAIN') { if (ring === 'inner') { G3X.mfd.rangeStep(dir); bus.emit('range', a.map.range); } else { if (!a.map.panning) { a.map.pan = { lat: SIM.S.ac.lat, lon: SIM.S.ac.lon }; a.map.panning = true; } G3X.mfd.panBy(0, dir * -30); } return; }
     if (['FPL', 'NRST', 'CHK', 'MSG', 'FPLLIST', 'USER', 'HOME', 'PROC'].includes(a.mfdPage)) { UI.moveSel(dir); return; }
   };
   UI.knobPress = (screen, side) => {
@@ -192,7 +193,7 @@ window.G3X = window.G3X || {};
   };
   UI.openAltSel = () => {
     const a = A();
-    numpad({ title: 'Selected Altitude', value: '', maxLen: 5, unit: D.fmtAltUnit(), width: 400, display: v => v || String(a.altSel), extra: `<div class="xp-modes"><button class="xp-mode sync">Current Altitude</button></div>`,
+    numpad({ title: 'Selected Altitude', value: '', maxLen: 5, unit: D.fmtAltUnit(), width: 400, display: v => v || String(D.altVal(a.altSel)), extra: `<div class="xp-modes"><button class="xp-mode sync">Current Altitude</button></div>`,
       onEnter: v => { if (!v) return; let ft = parseInt(v, 10); if (a.units.alt === 'M') ft = ft / U.FT_M; a.altSel = Math.round(ft / 10) * 10; bus.emit('altsel', a.altSel); },
       onKnob: (v, ring, dir) => { a.altSel = U.clamp(a.altSel + dir * (ring === 'outer' ? 1000 : 100), -1000, 20000); bus.emit('altsel', a.altSel); return ''; },
       onOpen: d => { d.el.querySelector('.sync').onclick = () => { a.altSel = Math.round(AV.indAlt() / 100) * 100; bus.emit('altsel', a.altSel); UI.closeDialog(); }; } });
@@ -228,11 +229,11 @@ window.G3X = window.G3X || {};
       ${opt('V-Speed References (R, X, Y, G)', 'vspeeds', [true, false], v => v ? 'SHOW' : 'HIDE')}
       ${opt('Map Inset (full PFD)', 'inset', ['OFF', 'MAP'])}
       ${opt('Minimums', 'minimumsOn', [true, false], v => v ? 'ON' : 'OFF')}
-      <div class="opt-row"><span>Minimums Altitude</span><div class="opt-vals"><button class="opt-val setmins">${a.minimums != null ? a.minimums + ' FT' : 'Set…'}</button></div></div>
+      <div class="opt-row"><span>Minimums Altitude</span><div class="opt-vals"><button class="opt-val setmins">${a.minimums != null ? D.altVal(a.minimums) + ' ' + D.fmtAltUnit() : 'Set…'}</button></div></div>
     </div>`;
     const d = UI.openDialog({ title: 'PFD Options', html, width: 560, buttons: [{ label: 'Close' }] });
     d.el.querySelectorAll('.opt-val[data-k]').forEach(b => { b.onclick = () => { const k = b.dataset.k; let v = b.dataset.v; if (v === 'true') v = true; else if (v === 'false') v = false; else if (/^\d+$/.test(v)) v = +v; a[k] = v; bus.emit('pfdopt', { k, v }); if (k === 'svt') AV.save(); d.el.querySelectorAll(`.opt-val[data-k="${k}"]`).forEach(c => c.classList.toggle('on', c === b)); }; });
-    d.el.querySelector('.setmins').onclick = () => { numpad({ title: 'Minimums (Baro)', value: '', maxLen: 5, unit: 'FT', width: 380, display: v => v || String(a.minimums ?? ''), onEnter: v => { if (!v) return; a.minimums = parseInt(v, 10); a.minimumsOn = true; bus.emit('minimums', a.minimums); } }); };
+    d.el.querySelector('.setmins').onclick = () => { numpad({ title: 'Minimums (Baro)', value: '', maxLen: 5, unit: D.fmtAltUnit(), width: 380, display: v => v || String(a.minimums != null ? D.altVal(a.minimums) : ''), onEnter: v => { if (!v) return; let ft = parseInt(v, 10); if (a.units.alt === 'M') ft = Math.round(ft / U.FT_M); a.minimums = ft; a.minimumsOn = true; bus.emit('minimums', a.minimums); } }); };
   };
   UI.openMenu = () => {
     const a = A();
@@ -429,7 +430,7 @@ window.G3X = window.G3X || {};
           const isActive = i === f.active && !f.directTo; const isDto = f.directTo && f.directTo.to === w;
           const dtk = i > 0 ? U.bearing(f.wpts[i - 1], w) : null; const legDis = i > 0 ? U.distNm(f.wpts[i - 1], w) : 0;
           let dis = '', ete = '';
-          if (i >= f.active && f.active >= 0) { if (i === f.active || isDto) cum = n && n.valid ? n.dis : U.distNm(pos, w); else if (i > f.active) cum += legDis; dis = U.fmtDis(D.distVal(cum)); ete = U.fmtEte(cum / Math.max(pos.gs, 1) * 60); }
+          if (i >= f.active && f.active >= 0) { if (i === f.active || isDto) cum = n && n.valid ? n.dis : U.distNm(pos, w); else if (i > f.active) cum += legDis; dis = U.fmtDis(D.distVal(cum)); ete = pos.gs >= 5 ? U.fmtEte(cum / pos.gs * 60) : '__:__'; }
           rows += `<div class="row fplrow ${isActive || isDto ? 'active' : ''} ${w.missed ? 'missed' : ''} ${w.proc ? 'proc' : ''}" data-i="${i}">
             <span class="c-idx">${isActive || isDto ? '▶' : i + 1}</span><span class="c-id">${esc(w.id)}${w.faf ? ' <em>FAF</em>' : ''}${w.map ? ' <em>MAP</em>' : ''}${w.iaf ? ' <em>IAF</em>' : ''}${w.hold ? ' <em>HOLD</em>' : ''}</span>
             <span class="c-type">${esc(w.proc ? (w.missed ? 'missed' : 'apr') : w.type)}</span><span class="c-dtk">${dtk != null ? U.fmtHdg(dtk) + '°' : ''}</span><span class="c-dis">${i > 0 ? U.fmtDis(D.distVal(legDis)) : ''}</span><span class="c-cum">${dis}</span><span class="c-ete">${ete}</span><span class="c-alt">${w.alt != null ? D.altVal(w.alt) : '____'}</span></div>`;

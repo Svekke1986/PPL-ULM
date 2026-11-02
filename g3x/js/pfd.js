@@ -243,9 +243,12 @@ window.G3X = window.G3X || {};
     if (S.fail.adc) { D.redX(ctx, x, y, w, h, 'ALTITUDE FAIL'); }
     else {
       ctx.save(); D.clip(ctx, x, y, w, h);
-      const a0 = Math.floor((alt - 400) / 100) * 100;
-      for (let v = a0; v <= alt + 420; v += 20) {
-        const yy = cy - (v - alt) * pf; const major = v % 100 === 0;
+      // schaal, streepjes en labels in de gekozen eenheid (ft: 20/100, m: 10/50); pixels per voet blijven gelijk
+      const metric = A.units.alt === 'M', k = metric ? 1 / U.FT_M : 1, minorStep = metric ? 10 : 20, majorStep = metric ? 50 : 100;
+      const altD = alt / k;
+      const a0 = Math.floor((altD - 400 / k) / majorStep) * majorStep;
+      for (let v = a0; v <= altD + 420 / k; v += minorStep) {
+        const yy = cy - (v * k - alt) * pf; const major = v % majorStep === 0;
         D.line(ctx, x + 2, yy, x + 2 + (major ? 12 : 6), yy, '#fff', major ? 2 : 1);
         if (major) { const th = Math.floor(Math.abs(v) / 1000), rest = Math.abs(v) % 1000; const s = (v < 0 ? '-' : '') + (th ? th : '') ; ctx.font = D.font(14); ctx.textAlign = 'left'; ctx.fillStyle = '#fff'; ctx.textBaseline = 'middle'; ctx.font = D.font(18, 'bold'); ctx.fillText(s, x + 18, yy); const sw = ctx.measureText(s).width; ctx.font = D.font(14); ctx.fillText(U.pad(rest, 3), x + 18 + sw, yy); }
       }
@@ -259,7 +262,7 @@ window.G3X = window.G3X || {};
       ctx.restore();
       // uitlezing
       D.poly(ctx, [[x + 2, cy], [x + 14, cy - 9], [x + 14, cy - 22], [x + w - 2, cy - 22], [x + w - 2, cy + 22], [x + 14, cy + 22], [x + 14, cy + 9]], '#000', '#fff', 2);
-      const shown = Math.round(D.altVal(alt) / 10) * 10;
+      const shown = A.units.alt === 'M' ? Math.round(D.altVal(alt) / 5) * 5 : Math.round(D.altVal(alt) / 10) * 10;
       D.text(ctx, String(shown), x + w - 8, cy, { size: 28, color: '#fff', align: 'right', weight: 'bold' });
     }
     // baro

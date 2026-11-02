@@ -103,14 +103,14 @@ window.G3X = window.G3X || {};
         case 'End': SIM.setThrottle(0); break;
         // Toetsen gekozen op fysieke positie (e.code) zodat ze op AZERTY én QWERTY dezelfde letter dragen:
         // de letters A/Q, Z/W en M wisselen tussen beide indelingen, alle andere letters staan op dezelfde plek.
-        case 'KeyJ': UI.knob('L', 'L', 'outer', -1); break;   // PFD-linkerknop buiten: Heading
-        case 'KeyL': UI.knob('L', 'L', 'outer', 1); break;
-        case 'KeyK': UI.knob('L', 'L', 'inner', -1); break;   // PFD-linkerknop binnen: Altitude
-        case 'KeyI': UI.knob('L', 'L', 'inner', 1); break;
-        case 'KeyU': UI.knob('L', 'R', 'outer', -1); break;   // PFD-rechterknop buiten: Course
-        case 'KeyO': UI.knob('L', 'R', 'outer', 1); break;
-        case 'KeyX': case 'BracketLeft': UI.knob('R', 'R', 'outer', -1); break;   // MFD-rechterknop buiten: bereik
-        case 'KeyC': case 'BracketRight': UI.knob('R', 'R', 'outer', 1); break;
+        case 'KeyJ': UI.knob('L', 'L', 'inner', -1); break;   // PFD-linkerknop binnen: Heading (Garmin-standaard)
+        case 'KeyL': UI.knob('L', 'L', 'inner', 1); break;
+        case 'KeyK': UI.knob('L', 'L', 'outer', -1); break;   // PFD-linkerknop buiten: Altitude
+        case 'KeyI': UI.knob('L', 'L', 'outer', 1); break;
+        case 'KeyU': UI.knob('L', 'R', 'inner', -1); break;   // PFD-rechterknop binnen: Course
+        case 'KeyO': UI.knob('L', 'R', 'inner', 1); break;
+        case 'KeyX': case 'BracketLeft': UI.knob('R', 'R', 'inner', -1); break;   // MFD-rechterknop binnen: bereik
+        case 'KeyC': case 'BracketRight': UI.knob('R', 'R', 'inner', 1); break;
         case 'Enter': case 'NumpadEnter': UI.knobPress(sc, 'R'); break;
         case 'Escape': UI.button('BACK', sc); break;
         case 'KeyN': UI.button('NRST', sc); break;

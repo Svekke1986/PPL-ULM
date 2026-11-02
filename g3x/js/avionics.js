@@ -46,7 +46,8 @@ window.G3X = window.G3X || {};
   const AV = { A: defaultAvionics(), defaultAvionics };
 
   AV.reset = () => {
-    const keep = AV.A ? { units: AV.A.units, sound: AV.A.sound, svt: AV.A.svt, storedFpls: AV.A.storedFpls, userWpts: AV.A.userWpts } : null;
+    // bewaard over een reset: eenheden, geluid, opgeslagen vluchtplannen en user waypoints (voorkeuren/data); de rest gaat terug naar standaard
+    const keep = AV.A ? { units: AV.A.units, sound: AV.A.sound, storedFpls: AV.A.storedFpls, userWpts: AV.A.userWpts } : null;
     AV.A = defaultAvionics();
     if (keep) Object.assign(AV.A, keep);
     AV.A.hdgBug = Math.round(SIM.S.ac.hdg);
@@ -209,8 +210,9 @@ window.G3X = window.G3X || {};
     const xt = U.xtk(from, to, pos);
     out.dtk = dtk; out.brg = brg; out.dis = dis; out.xtk = xt.xtk; out.alongLeg = xt.along; out.legLen = U.distNm(from, to);
     if (f.obs) { const rel = U.norm180(brg - A.crs1); out.xtk = Math.sin(rel * U.DEG) * dis; out.toFrom = Math.abs(rel) < 90 ? 'TO' : 'FROM'; }
-    const gsKt = Math.max(a.gs, 1);
-    out.ete = dis / gsKt * 60;
+    // actuele ETE op basis van de huidige grondsnelheid; bij stilstand geen tijd (__:__), zoals op het toestel
+    const moving = a.gs >= 5, gsKt = Math.max(a.gs, 1);
+    out.ete = moving ? dis / gsKt * 60 : Infinity;
     // CDI-schaal
     const dest = f.wpts.filter(w => !w.proc).slice(-1)[0] || to;
     const dep = f.wpts[0];
@@ -251,7 +253,7 @@ window.G3X = window.G3X || {};
         if (i <= (f.wpts.indexOf(f.directTo ? f.directTo.to : f.wpts[f.active]))) continue;
         d += U.distNm(p, w); p = w;
       }
-      out.destDis = d; out.destEte = d / gsKt * 60; out.destId = dest.id;
+      out.destDis = d; out.destEte = moving ? d / gsKt * 60 : Infinity; out.destId = dest.id;
     }
     // VNAV: volgende hoogtebeperking (benadering: naderingswaypoints en handmatige alts)
     const tIdx = f.wpts.indexOf(to);

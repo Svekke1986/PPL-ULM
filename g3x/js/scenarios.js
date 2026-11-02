@@ -50,9 +50,9 @@ window.G3X = window.G3X || {};
     const start = R.airborne(HOME); start.env.qnh = qnh;
     return { title: 'QNH, heading bug en hoogte', start, intro: chatter('Brussels Information', `Tecnam OO-XYZ, QNH ${qnh}. Vlieg heading ${U.fmtHdg(hdg)}, hoogte ${alt} ft.`),
       steps: [
-        mk(`Stel de baro in op <b>${qnh} hPa</b>.`, 'Tik op het baro-veld onder de hoogtetape, of draai de binnenknop van de rechterknop op het PFD-scherm (Baro).', (S, A) => !A.baroStd && A.baro === qnh),
-        mk(`Zet de heading bug op <b>${U.fmtHdg(hdg)}°</b>.`, 'Buitenring van de linkerknop op het PFD-scherm (Heading), of tik op de HSI → Heading Bug.', (S, A) => A.hdgBug === hdg),
-        mk(`Zet de geselecteerde hoogte op <b>${alt} ft</b>.`, 'Binnenknop van de linkerknop op het PFD-scherm (Altitude), of tik op het cyaan hoogtevak boven de hoogtetape.', (S, A) => A.altSel === alt),
+        mk(`Stel de baro in op <b>${qnh} hPa</b>.`, 'Tik op het baro-veld onder de hoogtetape, of draai de buitenring van de rechterknop op het PFD-scherm (Baro).', (S, A) => !A.baroStd && A.baro === qnh),
+        mk(`Zet de heading bug op <b>${U.fmtHdg(hdg)}°</b>.`, 'Binnenknop van de linkerknop op het PFD-scherm (Heading), of tik op de HSI → Heading Bug.', (S, A) => A.hdgBug === hdg),
+        mk(`Zet de geselecteerde hoogte op <b>${alt} ft</b>.`, 'Buitenring van de linkerknop op het PFD-scherm (Altitude), of tik op het cyaan hoogtevak boven de hoogtetape.', (S, A) => A.altSel === alt),
         mk('Vlieg naar de ingestelde heading (±5°) en hoogte (±100 ft) en houd dat 15 s vast.', 'Pijltjestoetsen of stuurknuppel; kleine correcties. De heading bug en de hoogtebug op de tapes helpen je.', hold((S, A) => hdgNear(S.ac.hdg, hdg, 5) && near(AV.indAlt(), alt, 100), 15)),
       ] };
   });
@@ -161,7 +161,7 @@ window.G3X = window.G3X || {};
         mk(`Stem NAV1 af op <b>${U.fmtNav(vor.freq)}</b> en maak actief.`, 'GNC 255: C/N naar NAV → TUNE → ⇄ (of NAV1-veld linksonder op de PFD).', (S, A) => near(A.nav1.active, vor.freq, 0.001)),
         q(`Controleer het station: welke ident decodeert de G3X onder <b>NAV1</b> (linksonder op de PFD, ook op de GNC 255)? Dit duurt enkele seconden na het afstemmen.`, U.shuffle([vor.id, ...U.shuffle(NAV.NAVAIDS.filter(n => n.type === 'VOR' && n.id !== vor.id).map(n => n.id)).slice(0, 3)]), null, `${vor.name} zendt de ident ${vor.id} uit (morse ${U.morse(vor.id)}). De G3X en de GNC 255 decoderen de morse en tonen de letters; controleer altijd dat die overeenkomen met het station dat je wilt gebruiken.`),
         mk('Zet de CDI-bron op <b>VOR1</b> (NAV1).', 'Tik op de HSI → HSI Options → CDI Source VOR1 (of op het bronlabel links boven de HSI).', (S, A) => A.navSource === 'NAV1'),
-        mk(`Zet CRS op <b>${U.fmtHdg(inbound)}°</b> (TO).`, 'Buitenring van de rechterknop op het PFD-scherm (Course), het CRS-veld naast de HSI, of OBS op de GNC 255.', (S, A) => hdgNear(A.nav1.obs, inbound, 2)),
+        mk(`Zet CRS op <b>${U.fmtHdg(inbound)}°</b> (TO).`, 'Binnenknop van de rechterknop op het PFD-scherm (Course), het CRS-veld naast de HSI, of OBS op de GNC 255.', (S, A) => hdgNear(A.nav1.obs, inbound, 2)),
         mk('Onderschep de koers: naald gecentreerd (binnen ½ dot) met TO-vlag, 15 s lang.', 'Vlieg naar de naald toe met een onderscheppingshoek van ca. 30–45°.', hold((S, A) => A.nav1.data.valid && Math.abs(A.nav1.data.dev) < 0.5 && A.nav1.data.toFrom === 'TO', 15)),
       ] };
   });
@@ -253,7 +253,7 @@ window.G3X = window.G3X || {};
     return { title: `OBS ${vrp.id}`, start, av, intro: `<p>Je wilt <b>${vrp.id}</b> naderen via koers <b>${U.fmtHdg(crs)}°</b> (zoals een VOR-radiaal) en daar niet automatisch doorsequencen.</p>`,
       steps: [
         mk('Schakel <b>OBS</b> in op het actieve waypoint.', 'Tik op het DTK/CRS-veld naast de HSI → OBS On. Of FPL → Menu → OBS Mode.', (S, A) => A.fpl.obs),
-        mk(`Zet de koers op <b>${U.fmtHdg(crs)}°</b>.`, 'Buitenring van de rechterknop op het PFD-scherm (Course) of het CRS-veld naast de HSI.', (S, A) => A.fpl.obs && hdgNear(A.crs1, crs, 2)),
+        mk(`Zet de koers op <b>${U.fmtHdg(crs)}°</b>.`, 'Binnenknop van de rechterknop op het PFD-scherm (Course) of het CRS-veld naast de HSI.', (S, A) => A.fpl.obs && hdgNear(A.crs1, crs, 2)),
         mk('Centreer de CDI (XTK < 0,3 nm) gedurende 10 s.', 'Vlieg naar de lijn toe.', hold((S, A) => A.fpl.obs && A.nav && Math.abs(A.nav.xtk) < 0.3, 10)),
         mk('Schakel OBS weer uit (normaal sequencen).', 'OBS-vak op de HSI of CRS-veld → OBS Off.', (S, A) => !A.fpl.obs),
       ] };
@@ -262,7 +262,7 @@ window.G3X = window.G3X || {};
     const start = R.airborne(HOME); const range = U.pick([8, 10, 15, 20]); const orient = U.pick(['NORTH', 'HDGUP']); const asp = NAV.AIRSPACES.find(s => s.id === 'EBBL-CTR');
     return { title: 'Kaartinstellingen', start, intro: '<p>Stel de kaart in zoals gevraagd en lees het luchtruim af.</p>',
       steps: [
-        mk(`Zet het kaartbereik op <b>${range} NM</b>.`, 'MFD-scherm: buitenring rechterknop (Range) of binnenknop linkerknop (Zoom Map), of −/+ rechtsonder op de kaart (+ = inzoomen).', (S, A) => A.map.range === range && A.mfdPage === 'MAP'),
+        mk(`Zet het kaartbereik op <b>${range} NM</b>.`, 'MFD-scherm: binnenknop rechterknop (Range) of buitenring linkerknop (Zoom Map), of −/+ rechtsonder op de kaart (+ = inzoomen).', (S, A) => A.map.range === range && A.mfdPage === 'MAP'),
         mk(`Zet de oriëntatie op <b>${orient === 'NORTH' ? 'North up' : 'Heading up'}</b>.`, 'MENU op de kaart → Orientation.', (S, A) => A.map.orient === orient),
         mk('Zet <b>declutter niveau 2</b> (minder tekst) en daarna terug naar <b>alles</b>.', 'MENU → Declutter.', (() => { let was2 = false; return (S, A) => { if (A.map.declutter === 2) was2 = true; return was2 && A.map.declutter === 0; }; })()),
         q(`Wat is het plafond van de <b>${asp.name}</b> (zie kaartlabel of Nearest → Airspace)?`, U.shuffle([`${asp.ceil} ft`, `${asp.ceil + 1000} ft`, `${asp.ceil - 1000} ft`, 'FL 95']), null, `${asp.name}: ${asp.floor === 0 ? 'GND' : asp.floor} – ${asp.ceil} ft, klasse ${asp.cls}.`),
@@ -370,11 +370,11 @@ window.G3X = window.G3X || {};
   });
   add('mfd_pages', 'Basis & PFD', 'Twee schermen: pagina’s kiezen met de MFD-knoppen', () => {
     const start = R.airborne(HOME);
-    return { title: 'MFD-knoppen en pagina’s', start, intro: '<p>Op het MFD-scherm kies je met de <b>linkerknop</b> de pagina (buitenring: Select Page) en zoom je met de binnenknop (Zoom Map). Indrukken opent het Main Menu.</p>',
+    return { title: 'MFD-knoppen en pagina’s', start, intro: '<p>Op het MFD-scherm kies je met de <b>linkerknop</b> de pagina (binnenknop: Select Page) en zoom je met de buitenring (Zoom Map). Indrukken opent het Main Menu.</p>',
       steps: [
-        mk('Draai met de buitenring van de MFD-linkerknop naar de pagina <b>Active Flight Plan</b>.', 'Select Page: Map → Active Flight Plan → Waypoint Info → Nearest → …', (S, A) => A.mfdPage === 'FPL'),
+        mk('Draai met de binnenknop van de MFD-linkerknop naar de pagina <b>Active Flight Plan</b>.', 'Select Page: Map → Active Flight Plan → Waypoint Info → Nearest → …', (S, A) => A.mfdPage === 'FPL'),
         mk('Draai verder naar <b>Nearest</b> en scrol met de MFD-rechterknop door de lijst.', 'Rechterknop buiten = Scroll, binnen = List; indrukken = selecteren.', (S, A, ctx) => A.mfdPage === 'NRST'),
-        mk('Terug naar de <b>Map</b> en zoom in tot <b>5 NM</b> of minder met de binnenknop van de linkerknop.', 'Zoom Map = binnenknop links; Range = buitenring rechts.', (S, A) => A.mfdPage === 'MAP' && A.map.range <= 5),
+        mk('Terug naar de <b>Map</b> en zoom in tot <b>5 NM</b> of minder met de buitenring van de linkerknop.', 'Zoom Map = buitenring links; Range = binnenknop rechts.', (S, A) => A.mfdPage === 'MAP' && A.map.range <= 5),
         mk('Druk de MFD-linkerknop in: het <b>Main Menu</b> opent. Kies daar <b>Engine</b>.', 'Push: Main Menu (of MENU twee keer).', (S, A) => A.mfdPage === 'ENG'),
         q('Welke motorinformatie toont de G3X in dit toestel op de MFD?', ['Oliedruk, brandstofdruk, volts en ampères', 'Toerental, CT, olietemperatuur en brandstofhoeveelheid', 'Alle motorgegevens inclusief EGT en brandstofverbruik', 'Niets, alles is analoog'], 0, 'Alleen oil PSI, fuel PSI, volts en amps hangen aan de G3X; de rest zijn analoge meters in het paneel.'),
         mk('Druk op <b>BACK</b> tot de kaart weer zichtbaar is.', 'BACK op het MFD-scherm.', (S, A) => A.mfdPage === 'MAP'),
@@ -636,7 +636,7 @@ window.G3X = window.G3X || {};
     if (sc.start.extra) Object.assign(S.ac, sc.start.extra);
     if (sc.start.throttle != null) S.ac.throttle = sc.start.throttle;
     if (sc.start.flaps != null) S.ac.flaps = sc.start.flaps;
-    const A = AV.reset();
+    const A = AV.reset(); if (G3X.cockpit && G3X.cockpit.reset) G3X.cockpit.reset();
     A.baro = sc.start.env && sc.start.env.qnh ? sc.start.env.qnh + U.pick([0, 0, -4, 6]) : 1013;
     A.altSel = Math.round(S.ac.alt / 100) * 100; A.hdgBug = Math.round(S.ac.hdg);
     A.com1.active = NAV.mainFreq(HOME); A.com1.standby = 121.5;
