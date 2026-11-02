@@ -26,7 +26,7 @@ button { font-family: inherit; }
 #g3x-wrap { position: relative; width: 100%; }
 .g3x-unit { position: absolute; left: 0; top: 0; width: 1460px; height: 844px; transform-origin: 0 0; background: linear-gradient(#2d313a, #1a1d23); border-radius: 22px; box-shadow: 0 10px 40px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.08); }
 .g3x-screen { position: absolute; left: 90px; top: 38px; width: 1280px; height: 768px; background: #000; border-radius: 6px; overflow: hidden; box-shadow: inset 0 0 0 2px #000, 0 0 0 4px #0b0d10; }
-.g3x-screen canvas { position: absolute; left: 0; top: 0; width: 1280px; height: 768px; display: block; touch-action: none; cursor: pointer; }
+.g3x-screen > canvas { position: absolute; left: 0; top: 0; width: 1280px; height: 768px; display: block; touch-action: none; cursor: pointer; }
 .g3x-overlay { position: absolute; left: 0; top: 0; width: 1280px; height: 768px; pointer-events: none; }
 .g3x-overlay > * { pointer-events: auto; }
 .bezel-logo { position: absolute; left: 50%; transform: translateX(-50%); top: 10px; color: #c9ced6; font-size: 15px; letter-spacing: 4px; font-weight: 700; }

@@ -4,6 +4,7 @@ window.G3X = window.G3X || {};
 (function () {
   const U = G3X.util, SIM = G3X.sim, AV = G3X.avionics, esc = U.esc;
   const CK = { gnc: { mode: 'COM', cursor: false } };
+  CK.reset = () => { CK.gnc.mode = 'COM'; CK.gnc.cursor = false; CK.gnc.showObs = false; if (CK.refreshGnc) CK.refreshGnc(); };
   const $ = s => document.querySelector(s);
 
   // ---------- analoge meters ----------

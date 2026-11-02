@@ -48,7 +48,7 @@ window.G3X = window.G3X || {};
     const kl = G3X.ui.knobLabels(screenId);
     const knobText = (k, x, align) => {
       const o = lab(k.outer), i = lab(k.inner);
-      const t = o && i ? `${o}  ↕  ${i}` : (o || i);
+      const t = o && i ? `${i}  ↕  ${o}` : (o || i); // binnenknop ↕ buitenring
       D.text(ctx, t, x, r.y + r.h / 2, { size: 13, color: '#dfe6ee', align, weight: 'bold' });
       if (k.push) D.text(ctx, '  |  Push: ' + k.push, x + (align === 'left' ? ctx.measureText(t).width + 4 : -ctx.measureText(t).width - 4), r.y + r.h / 2, { size: 12, color: '#9fb3c8', align });
     };
