@@ -284,3 +284,7 @@ body.explore .stick, body.explore .flight, body.explore #statusline, body.explor
 #gtx-idnt.on, #gtx-vfr:active { color: var(--green); border-color: var(--green); }
 /* verkenmodus: alleen wat je nodig hebt om de G3X te leren kennen; vliegen en simulatiebediening verborgen */
 body.explore .stick, body.explore .flight, body.explore #statusline, body.explore .ck-lower { display: none; } /* flaps en brandstofkraan horen niet bij de G3X */
+
+.wb-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 4px 10px; align-items: center; font-size: 14px; color: #cfd6de; margin-bottom: 8px; }
+.wb-grid .wb-h { font-size: 11px; color: #8c9bb0; text-transform: uppercase; border-bottom: 1px solid #2a3340; padding-bottom: 3px; }
+.wb-grid .opt-val { width: 100%; text-align: left; }

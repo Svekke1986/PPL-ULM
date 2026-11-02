@@ -588,15 +588,30 @@ window.G3X = window.G3X || {};
         return;
       }
       case 'WB': {
-        const wb = a.wb || (a.wb = { empty: 390, pilot: 85, pax: 0, bag: 5 });
-        const fuelKg = Math.round((S.ac.fuelL + S.ac.fuelR) * 0.72);
-        const total = wb.empty + wb.pilot + wb.pax + wb.bag + fuelKg; const mtow = 600;
-        const row = (k, label, val, editable = true) => `<div class="opt-row"><span>${label}</span><div class="opt-vals"><button class="opt-val ${editable ? 'wbe' : ''}" data-k="${k}">${val} kg</button></div></div>`;
-        h = head('Weight & Balance') + `<div class="page-body opts">${row('empty', 'Empty weight', wb.empty)}${row('pilot', 'Pilot', wb.pilot)}${row('pax', 'Passenger', wb.pax)}${row('bag', 'Baggage (max 20 kg)', wb.bag)}${row('fuel', 'Fuel (from tanks, 0.72 kg/L)', fuelKg, false)}
-          <div class="opt-row"><span><b>Take-off weight</b></span><b class="${total > mtow ? 'y' : 'g'}">${total} kg / MTOW ${mtow} kg${total > mtow ? ' — OVERWEIGHT' : ''}</b></div>
-          <p class="muted">Trainer: weights are indicative; no arm/CG data loaded. Use the aircraft's weighing report and POH.</p></div>`;
+        // Weight & Balance Tecnam P2008JC: MTOW/MLW 630 kg (optie 650), bagage max 20 kg op +2,42 m, inzittenden op +1,80 m,
+        // brandstof 124 L totaal / 120 L bruikbaar, CG-bereik 20–30 % MAC. Leeggewicht, lege-gewichtsarm, brandstofarm, LEMAC en MAC
+        // komen uit het weegrapport/AFM van het toestel en zijn hier invulbaar.
+        const wb = a.wb || (a.wb = { empty: 405, emptyArm: 1.70, pilot: 85, pax: 0, bag: 5, fuelArm: 1.80, lemac: 1.60, mac: 1.25, mtow: 630 });
+        const fuelL = S.ac.fuelL + S.ac.fuelR, fuelKg = Math.round(fuelL * 0.72);
+        const rows = [['Empty weight', wb.empty, wb.emptyArm, 'empty', 'emptyArm'], ['Pilot', wb.pilot, 1.80, 'pilot', null], ['Passenger', wb.pax, 1.80, 'pax', null], ['Baggage (max 20 kg)', wb.bag, 2.42, 'bag', null], [`Fuel (${Math.round(fuelL)} L × 0.72)`, fuelKg, wb.fuelArm, null, 'fuelArm']];
+        const total = rows.reduce((t, r) => t + r[1], 0); const moment = rows.reduce((t, r) => t + r[1] * r[2], 0); const cg = total ? moment / total : 0;
+        const macPct = wb.macSet && wb.mac > 0 ? (cg - wb.lemac) / wb.mac * 100 : null; // alleen als LEMAC/MAC uit het AFM zijn ingevuld
+        const over = total > wb.mtow, bagOver = wb.bag > 20, cgOut = macPct != null && (macPct < 20 || macPct > 30);
+        const cell = (v, k, unit) => k ? `<button class="opt-val wbe" data-k="${k}">${v} ${unit}</button>` : `<span>${v} ${unit}</span>`;
+        h = head('Weight & Balance', 'P2008JC') + `<div class="page-body opts">
+          <div class="wb-grid"><span class="wb-h">Item</span><span class="wb-h">Weight</span><span class="wb-h">Arm</span><span class="wb-h">Moment</span>
+          ${rows.map(r => `<span>${esc(r[0])}</span>${cell(r[1], r[3], 'kg')}${cell(r[2].toFixed(2), r[4], 'm')}<span>${(r[1] * r[2]).toFixed(0)} kg·m</span>`).join('')}
+          <span><b>Take-off weight</b></span><span class="${over ? 'y' : 'g'}"><b>${total} kg</b></span><span class="${cgOut ? 'y' : 'g'}"><b>${cg.toFixed(3)} m</b></span><span><b>${moment.toFixed(0)} kg·m</b></span></div>
+          <div class="opt-row"><span>MTOW / MLW</span><div class="opt-vals"><button class="opt-val wbm ${wb.mtow === 630 ? 'on' : ''}" data-v="630">630 kg</button><button class="opt-val wbm ${wb.mtow === 650 ? 'on' : ''}" data-v="650">650 kg</button></div></div>
+          <div class="opt-row"><span>Useful load left</span><b class="${over ? 'y' : 'g'}">${wb.mtow - total} kg${over ? ' — OVERWEIGHT' : ''}</b></div>
+          <div class="opt-row"><span>CG (% MAC, limits 20–30 %)</span><b class="${cgOut ? 'y' : 'g'}">${macPct == null ? 'enter LEMAC and MAC from the AFM' : macPct.toFixed(1) + ' %' + (cgOut ? ' — OUT OF LIMITS' : '')}</b></div>
+          ${bagOver ? '<div class="opt-row"><span class="y">Baggage exceeds 20 kg</span></div>' : ''}
+          <div class="opt-row"><span>LEMAC from datum</span><div class="opt-vals"><button class="opt-val wbe" data-k="lemac">${wb.macSet ? wb.lemac.toFixed(2) + ' m' : 'set…'}</button></div></div>
+          <div class="opt-row"><span>MAC length</span><div class="opt-vals"><button class="opt-val wbe" data-k="mac">${wb.macSet ? wb.mac.toFixed(2) + ' m' : 'set…'}</button></div></div>
+          <p class="muted">Limits per AFM/TCDS: MTOW/MLW 630 kg (650 kg for some certifications), baggage 20 kg at +2.42 m, occupants at +1.80 m, fuel 124 L total / 120 L usable, CG 20–30 % MAC. <b>Empty weight, empty-weight arm and fuel arm are placeholders — enter the values from the aircraft's weighing report; % MAC appears once LEMAC and MAC from the AFM are entered.</b></p></div>`;
         P.innerHTML = h;
-        P.querySelectorAll('.wbe').forEach(b => { b.onclick = () => numpad({ title: b.closest('.opt-row').querySelector('span').textContent, maxLen: 3, unit: 'kg', display: v => v || String(wb[b.dataset.k]), onEnter: v => { if (v) { wb[b.dataset.k] = parseInt(v, 10); UI.pageBuilt = null; } } }); });
+        P.querySelectorAll('.wbe').forEach(b => { b.onclick = () => { const k = b.dataset.k; const isArm = /Arm|lemac|mac/.test(k); numpad({ title: isArm ? `${k} (m)` : b.closest('.wb-grid') ? b.previousElementSibling.textContent : k, maxLen: isArm ? 4 : 3, unit: isArm ? 'm (cm as digits, e.g. 170 = 1.70)' : 'kg', display: v => v || (isArm ? String(Math.round(wb[k] * 100)) : String(wb[k])), onEnter: v => { if (v) { wb[k] = isArm ? parseInt(v, 10) / 100 : parseInt(v, 10); if (k === 'lemac' || k === 'mac') wb.macSet = true; UI.pageBuilt = null; } } }); }; });
+        P.querySelectorAll('.wbm').forEach(b => { b.onclick = () => { wb.mtow = +b.dataset.v; UI.pageBuilt = null; }; });
         return;
       }
       case 'TRACKLOG': { P.innerHTML = head('Track Log') + `<div class="page-body pad"><p>Track logging is not available in this trainer.</p><p class="muted">On the real G3X Touch the track log records your flight path for review or export to a data card.</p></div>`; return; }
