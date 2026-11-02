@@ -237,7 +237,7 @@ button { font-family: inherit; }
 
 /* verkenmodus: toestel stilstaand, geen stuurknuppel of vliegtoetsen */
 /* verkenmodus: alleen wat je nodig hebt om de G3X te leren kennen; vliegen en simulatiebediening verborgen */
-body.explore .stick, body.explore .flight, body.explore #statusline { display: none; }
+body.explore .stick, body.explore .flight, body.explore #statusline, body.explore .ck-lower { display: none; } /* flaps en brandstofkraan horen niet bij de G3X */
 
 /* ---------- cockpit buiten de G3X: analoge meters, brandstofkraan, flaps, GNC 255, GTX 335 ---------- */
 #cockpit { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; margin-top: 12px; }
@@ -283,4 +283,4 @@ body.explore .stick, body.explore .flight, body.explore #statusline { display: n
 .gtx-keys { display: flex; gap: 5px; margin-top: 8px; } .gtx-keys .ub { flex: 1; padding: 6px 2px; }
 #gtx-idnt.on, #gtx-vfr:active { color: var(--green); border-color: var(--green); }
 /* verkenmodus: alleen wat je nodig hebt om de G3X te leren kennen; vliegen en simulatiebediening verborgen */
-body.explore .stick, body.explore .flight, body.explore #statusline { display: none; }
+body.explore .stick, body.explore .flight, body.explore #statusline, body.explore .ck-lower { display: none; } /* flaps en brandstofkraan horen niet bij de G3X */
