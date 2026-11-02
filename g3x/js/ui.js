@@ -101,9 +101,10 @@ window.G3X = window.G3X || {};
     if (cfg.width) el.style.width = cfg.width + 'px';
     el.innerHTML = `<div class="dlg-title"><span>${esc(cfg.title)}</span><button class="dlg-close" aria-label="Close">✕</button></div><div class="dlg-body">${cfg.html || ''}</div>${cfg.buttons ? `<div class="dlg-buttons">${cfg.buttons.map((b, i) => `<button class="dlg-btn ${b.cls || ''}" data-i="${i}">${esc(b.label)}</button>`).join('')}</div>` : ''}`;
     el.querySelector('.dlg-close').onclick = () => UI.closeDialog();
-    if (cfg.buttons) el.querySelectorAll('.dlg-btn').forEach(b => { b.onclick = () => { const c = cfg.buttons[+b.dataset.i]; if (c.onClick) { const keep = c.onClick(); if (keep !== true) UI.closeDialog(); } else UI.closeDialog(); }; });
+    const closeSelf = () => { if (UI.dialog && UI.dialog.el === el) UI.closeDialog(); }; // alleen dit venster sluiten: onClick/onEnter kan intussen een ander venster geopend hebben
+    if (cfg.buttons) el.querySelectorAll('.dlg-btn').forEach(b => { b.onclick = () => { const c = cfg.buttons[+b.dataset.i]; if (c.onClick) { const keep = c.onClick(); if (keep !== true) closeSelf(); } else closeSelf(); }; });
     UI.dialogLayer.appendChild(el); UI.dialogLayer.classList.add('open');
-    UI.dialog = Object.assign({ el, body: el.querySelector('.dlg-body'), screen }, cfg);
+    UI.dialog = Object.assign({ el, body: el.querySelector('.dlg-body'), screen, closeSelf }, cfg);
     if (cfg.onOpen) cfg.onOpen(UI.dialog);
     return UI.dialog;
   };
@@ -118,7 +119,7 @@ window.G3X = window.G3X || {};
       buttons: [{ label: 'Cancel' }, { label: cfg.enterLabel || 'Enter', cls: 'primary', onClick: () => { const r = cfg.onEnter(val); return r === false ? true : undefined; } }],
       knobLabels: { left: { outer: '—', inner: '—' }, right: { outer: cfg.knobOuter || '+/−', inner: cfg.knobInner || '+/−' } },
       onKnob: (side, ring, dir) => { if (cfg.onKnob) { val = cfg.onKnob(val, ring, dir) ?? val; refresh(); } },
-      onEnter: () => { const r = cfg.onEnter(val); if (r !== false) UI.closeDialog(); },
+      onEnter: () => { const r = cfg.onEnter(val); if (r !== false) d.closeSelf(); },
     });
     const refresh = () => { d.body.querySelector('.np-val').textContent = cfg.display ? cfg.display(val) : val; if (cfg.onChange) cfg.onChange(val, d); };
     d.body.querySelectorAll('.np-key').forEach(b => { b.onclick = () => { const k = b.dataset.k; if (!k) return; if (k === '⌫') val = val.slice(0, -1); else if (k === 'C') val = ''; else if (val.length < (cfg.maxLen || 6)) val += k; if (cfg.filter) val = cfg.filter(val); refresh(); }; });
@@ -135,14 +136,14 @@ window.G3X = window.G3X || {};
       buttons: [{ label: 'Cancel' }, { label: cfg.enterLabel || 'Enter', cls: 'primary', onClick: () => { const r = cfg.onEnter(val); return r === false ? true : undefined; } }],
       knobLabels: { left: { outer: '—', inner: '—' }, right: { outer: 'CHAR', inner: 'CHAR' } },
       onKnob: (side, ring, dir) => { const alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'; const last = val.slice(-1) || 'A'; let i = alpha.indexOf(last); if (i < 0) i = 0; i = (i + dir + alpha.length) % alpha.length; val = (val.length ? val.slice(0, -1) : '') + alpha[i]; refresh(); },
-      onEnter: () => { const r = cfg.onEnter(val); if (r !== false) UI.closeDialog(); },
+      onEnter: () => { const r = cfg.onEnter(val); if (r !== false) d.closeSelf(); },
     });
     const results = d.body.querySelector('.ap-results');
     const refresh = () => {
       d.body.querySelector('.np-val').textContent = val;
       const list = cfg.search ? cfg.search(val) : [];
       results.innerHTML = list.map(w => `<button class="ap-res" data-id="${esc(w.id)}"><b>${esc(w.id)}</b> <span>${esc(w.name || '')}</span> <em>${esc(w.type || '')}</em></button>`).join('') || '<div class="muted">No matches</div>';
-      results.querySelectorAll('.ap-res').forEach(b => { b.onclick = () => { val = b.dataset.id; d.body.querySelector('.np-val').textContent = val; const r = cfg.onEnter(val); if (r !== false) UI.closeDialog(); }; });
+      results.querySelectorAll('.ap-res').forEach(b => { b.onclick = () => { val = b.dataset.id; d.body.querySelector('.np-val').textContent = val; const r = cfg.onEnter(val); if (r !== false) d.closeSelf(); }; });
     };
     d.body.querySelectorAll('.np-key').forEach(b => { b.onclick = () => { const k = b.dataset.k; if (k === '⌫') val = val.slice(0, -1); else if (val.length < 6) val += k; refresh(); }; });
     refresh();
