@@ -50,10 +50,12 @@ window.G3X = window.G3X || {};
       E.starterT -= dt;
       if (E.starterT <= 0 && fuelAvail && !F.engine && E.master) E.running = true;
     }
-    const thr = E.running ? a.throttle : 0;
-    const rpmTarget = E.running ? U.clamp(1450 + thr * (3700 + 9 * a.ias) * (F.engineRough ? 0.9 + 0.08 * Math.sin(S.t * 7) : 1), 1400, 5800) : (E.starterT > 0 ? 300 : (a.ias > 60 && !a.onGround ? 1000 : 0));
-    E.rpm = U.approach(E.rpm, rpmTarget, 2500, dt);
-    const sat = E.running ? thr : 0;
+    // gashendel -> effectieve vermogensinstelling: niet rechtlijnig. De eerste helft van de hendel geeft het meeste;
+    // daarna vlakt het af (gasklep/inlaatdruk). Statisch vol gas ≈ 5000 rpm, in de vlucht tot 5500–5800 (propellerbelasting).
+    const te = E.running ? SIM.throttleEff(a.throttle) : 0;
+    const rpmTarget = E.running ? U.clamp(1400 + te * (3600 + 9 * a.ias) * (F.engineRough ? 0.9 + 0.08 * Math.sin(S.t * 7) : 1), 1400, 5800) : (E.starterT > 0 ? 300 : (a.ias > 60 && !a.onGround ? 1000 : 0));
+    E.rpm = U.approach(E.rpm, rpmTarget, rpmTarget > E.rpm ? 900 : 1400, dt); // traagheid van motor en propeller
+    const sat = te;
     const cool = a.ias * (a.onGround ? 0.5 : 1);
     const oilTT = E.running || E.rpm > 500 ? U.clamp(72 + 55 * sat - 0.15 * cool + 0.4 * (oat - 15) + (F.chtHigh ? 15 : 0), 40, 150) : Math.max(oat, E.oilT - 0.02 * dt);
     E.oilT = U.approach(E.oilT, oilTT, 0.35, dt);
@@ -121,7 +123,7 @@ window.G3X = window.G3X || {};
     a.aoa = alpha;
     const cd = AC.cd0 + AC.flapCd0[a.flaps] + AC.kInd * clReq * clReq + (a.brakes && a.onGround ? 0.02 : 0);
     const D = cd * q * Sw;
-    const T = E.running ? Math.min(AC.staticThrustN * sigma, AC.propEta * AC.powerW * a.throttle * sigma / Math.max(Vms, 12)) * (S.fail.engineRough ? 0.75 : 1) : (E.rpm > 500 ? -80 : -120) * (Vms > 1 ? 1 : 0);
+    const T = E.running ? Math.min(AC.staticThrustN * sigma, AC.propEta * AC.powerW * SIM.throttleEff(a.throttle) * sigma / Math.max(Vms, 12)) * (S.fail.engineRough ? 0.75 : 1) : (E.rpm > 500 ? -80 : -120) * (Vms > 1 ? 1 : 0);
 
     let gamma; // baanhoek
     if (a.onGround) {
@@ -199,12 +201,14 @@ window.G3X = window.G3X || {};
   // ---------- publieke API ----------
   const SIM = {
     AC, S: initialState(), initialState,
+    // effectieve vermogensfractie bij een hendelstand (0–1): kromme die vooraan steil is en achteraan afvlakt
+    throttleEff: thr => 1 - Math.pow(1 - U.clamp(thr, 0, 1), 1.8),
     reset(opts = {}) {
       const S = SIM.S = initialState();
       Object.assign(S.env, opts.env || {});
       if (opts.airborne) {
         const a = S.ac;
-        Object.assign(a, { lat: opts.lat, lon: opts.lon, alt: opts.alt, hdg: opts.hdg, trk: opts.hdg, ias: opts.ias || 95, tas: opts.ias || 95, onGround: false, parkBrake: false, throttle: opts.throttle ?? 0.72, fuelL: opts.fuelL ?? 40, fuelR: opts.fuelR ?? 40, fuelSel: opts.fuelSel || 'L', pitch: 2 });
+        Object.assign(a, { lat: opts.lat, lon: opts.lon, alt: opts.alt, hdg: opts.hdg, trk: opts.hdg, ias: opts.ias || 95, tas: opts.ias || 95, onGround: false, parkBrake: false, throttle: opts.throttle ?? 0.6, fuelL: opts.fuelL ?? 40, fuelR: opts.fuelR ?? 40, fuelSel: opts.fuelSel || 'L', pitch: 2 });
         Object.assign(S.eng, { running: true, master: true, avionics: true, rpm: 4900, oilT: 95, oilP: 3.8, cht: 88, egt1: 760, egt2: 750, volts: 14.1, amps: 7, ff: 17 });
         if (opts.flaps != null) a.flaps = opts.flaps;
       } else {
