@@ -340,9 +340,11 @@ window.G3X = window.G3X || {};
     const caut = (id, text) => cas.push({ id, text, level: 'CAUT' });
     const adv = (id, text) => cas.push({ id, text, level: 'ADV' });
     if (E.running || E.rpm > 500) {
+      // AFM: oliedruk min 12 psi (0.8 bar) onder 1440 rpm, normaal >29 psi (2 bar) daarboven, max 102 psi (7.0 bar); brandstofdruk 2.2–7.26 psi
       if (E.oilP < (E.rpm > 3500 ? 2 : 0.8)) warn('OILP', 'OIL PRESS LO');
-      else if (E.oilP > 5.2) caut('OILPH', 'OIL PRESS HI');
-      if (E.fuelP < 0.15) caut('FUELP', 'FUEL PRESS LO');
+      else if (E.oilP > 7.03) warn('OILPH', 'OIL PRESS HI');
+      if (E.fuelP < 0.152) caut('FUELP', 'FUEL PRESS LO');
+      else if (E.fuelP > 0.5) caut('FUELPH', 'FUEL PRESS HI');
     }
     if (E.master && E.volts < 12.5) caut('VOLT', 'LOW VOLTS');
     if (E.master && E.amps < -1 && (E.running)) caut('ALTN', 'ALTERNATOR');
@@ -435,7 +437,7 @@ window.G3X = window.G3X || {};
     { name: 'After Takeoff / Climb', items: ['Flaps — UP above 60 KIAS (300 ft AGL)', 'Fuel pump — OFF above 1000 ft AGL', 'Climb speed — Vy 69 KIAS', 'Engine instruments — GREEN', 'Altimeter — CROSS-CHECK'] },
     { name: 'Cruise', items: ['Power — 4800–5200 RPM', 'Fuel — SWITCH TANK every 30 min, balance', 'Engine instruments — GREEN', 'Fuel quantity & endurance — CHECK', 'Navigation / radios — SET', 'Altimeter — QNH of region'] },
     { name: 'Descent / Approach', items: ['ATIS / field info — OBTAINED', 'Baro — SET QNH', 'Fuel selector — FULLEST TANK', 'Fuel pump — ON', 'Approach briefing — COMPLETE', 'Minimums (if applicable) — SET'] },
-    { name: 'Before Landing', items: ['Fuel pump — ON', 'Flaps — AS REQUIRED (VFE 75 KIAS)', 'Approach speed — 60–65 KIAS', 'Trim — SET', 'Landing light — ON'] },
+    { name: 'Before Landing', items: ['Fuel pump — ON', 'Flaps — AS REQUIRED (VFE 71 KIAS)', 'Approach speed — 60–65 KIAS', 'Trim — SET', 'Landing light — ON'] },
     { name: 'After Landing', items: ['Flaps — UP', 'Fuel pump — OFF', 'Transponder — STBY (per lokale regels)', 'Landing light — OFF'] },
     { name: 'Shutdown', items: ['Parking brake — SET', 'Throttle — IDLE', 'Avionics master — OFF', 'Ignition — OFF', 'Master switch — OFF', 'Fuel selector — OFF'] },
     { name: 'EMERG: Engine Failure in Flight', items: ['Airspeed — BEST GLIDE 65 KIAS', 'Landing field — SELECT (G3X NRST)', 'Fuel selector — SWITCH TANK', 'Fuel pump — ON', 'Ignition — BOTH, check', 'Throttle — CYCLE', 'Restart — ATTEMPT if altitude permits', 'Transponder — 7700', 'Radio — 121.500 MAYDAY', 'Master — OFF before touchdown'] },

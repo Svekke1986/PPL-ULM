@@ -10,7 +10,7 @@ window.G3X = window.G3X || {};
     massKg: 600, wingAreaM2: 14.8, powerW: 73500, propEta: 0.78, staticThrustN: 2300,
     cd0: 0.031, kInd: 0.078, clMaxClean: 1.35, clMaxFlaps: [1.35, 1.6, 1.85], flapCd0: [0, 0.015, 0.045], flapNames: ['UP', 'T/O', 'LDG'],
     // snelheden (KIAS) — bij benadering, raadpleeg de POH
-    vs0: 39, vs1: 45, vfe: 75, vfeTo: 93, vno: 108, vne: 146, va: 100, vx: 60, vy: 69, vr: 50, vapp: 62, vglide: 65,
+    vs0: 40, vs1: 48, vfe: 71, vfeTo: 93, vno: 113, vne: 145, va: 99, vo: 99, vx: 60, vy: 69, vr: 48, vapp: 62, vglide: 65,
     fuelTankL: 62, fuelUsablePerTank: 60, // liter
     bankRateMax: 40, pitchRateMax: 10,
   };

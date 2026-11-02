@@ -6,12 +6,14 @@ window.G3X = window.G3X || {};
   const U = G3X.util, D = G3X.display, C = D.C;
   const E = {};
   const LIM = {
-    oilP: { min: 0, max: 7, bands: [[0, 0.8, 'r'], [0.8, 2, 'y'], [2, 5, 'g'], [5, 7, 'y']], unit: 'BAR', fmt: v => v.toFixed(1) },
-    fuelP: { min: 0, max: 0.6, bands: [[0, 0.15, 'r'], [0.15, 0.5, 'g'], [0.5, 0.6, 'y']], unit: 'BAR', fmt: v => v.toFixed(2) },
+    // AFM P2008JC / Rotax 912 S2: oliedruk min 12 psi (onder 1440 rpm), max 102 psi; normaal 29–73 psi. Brandstofdruk 2.2–7.26 psi.
+    oilP: { min: 0, max: 120, bands: [[0, 12, 'r'], [12, 29, 'y'], [29, 73, 'g'], [73, 102, 'y'], [102, 120, 'r']], unit: 'PSI', fmt: v => String(Math.round(v)) },
+    fuelP: { min: 0, max: 9, bands: [[0, 2.2, 'r'], [2.2, 7.26, 'g'], [7.26, 9, 'r']], unit: 'PSI', fmt: v => v.toFixed(1) },
     volts: { min: 8, max: 16, bands: [[8, 11.5, 'r'], [11.5, 12.6, 'y'], [12.6, 15.0, 'g'], [15.0, 16, 'r']], unit: 'V', fmt: v => v.toFixed(1) },
     amps: { min: -30, max: 30, bands: [[-30, -1, 'y'], [-1, 30, 'g']], unit: 'A', fmt: v => (v >= 0 ? '+' : '') + Math.round(v) },
   };
   const BC = { g: C.green, y: C.yellow, r: C.red };
+  const PSI = 14.504; // sim rekent in bar, de G3X toont psi
   const colorFor = (lim, v) => { for (const [a, b, c] of lim.bands) if (v >= a && v <= b) return c === 'g' ? '#fff' : c === 'y' ? C.yellow : C.red; return '#fff'; };
   E.LIM = LIM;
 
@@ -46,9 +48,9 @@ window.G3X = window.G3X || {};
     const x = r.x, y = r.y, w = r.w;
     D.box(ctx, x, y, w, r.h, '#0d1117');
     D.line(ctx, x + w - 1, y, x + w - 1, y + r.h, '#2a3340', 2);
-    arc(ctx, x + w / 2, y + 56, 40, LIM.oilP, Eg.oilP, 'OIL PSI', true);
+    arc(ctx, x + w / 2, y + 56, 40, LIM.oilP, Eg.oilP * PSI, 'OIL PSI', true);
     const bh = (r.h - 120) / 3;
-    vbar(ctx, x + 4, y + 110, w - 8, bh, 'FUEL PSI', LIM.fuelP, Eg.fuelP, true);
+    vbar(ctx, x + 4, y + 110, w - 8, bh, 'FUEL PSI', LIM.fuelP, Eg.fuelP * PSI, true);
     vbar(ctx, x + 4, y + 110 + bh, w - 8, bh, 'VOLTS', LIM.volts, Eg.volts, true);
     vbar(ctx, x + 4, y + 110 + 2 * bh, w - 8, bh, 'AMPS', LIM.amps, Eg.amps);
     D.zone(x, y, w, r.h, () => G3X.ui.showPage('ENG'), 'eis');
@@ -62,8 +64,8 @@ window.G3X = window.G3X || {};
     const groupW = (w - 60) / 2, g1 = x + 20, g2 = x + 40 + groupW, gy = y + 40, gh = h - 130;
     D.box(ctx, g1, gy, groupW, gh, 'rgba(255,255,255,0.03)', '#2a3340', 1);
     D.text(ctx, 'Engine', g1 + groupW / 2, gy + 14, { size: 13, color: '#9fb3c8', align: 'center' });
-    arc(ctx, g1 + groupW / 4, gy + gh / 2 - 20, Math.min(70, groupW / 5), LIM.oilP, Eg.oilP, 'OIL PSI', true);
-    vbar(ctx, g1 + groupW / 2, gy + 30, groupW / 2, gh - 40, 'FUEL PSI', LIM.fuelP, Eg.fuelP, true);
+    arc(ctx, g1 + groupW / 4, gy + gh / 2 - 20, Math.min(70, groupW / 5), LIM.oilP, Eg.oilP * PSI, 'OIL PSI', true);
+    vbar(ctx, g1 + groupW / 2, gy + 30, groupW / 2, gh - 40, 'FUEL PSI', LIM.fuelP, Eg.fuelP * PSI, true);
     D.box(ctx, g2, gy, groupW, gh, 'rgba(255,255,255,0.03)', '#2a3340', 1);
     D.text(ctx, 'Electrical', g2 + groupW / 2, gy + 14, { size: 13, color: '#9fb3c8', align: 'center' });
     vbar(ctx, g2, gy + 30, groupW / 2, gh - 40, 'VOLTS', LIM.volts, Eg.volts, true);

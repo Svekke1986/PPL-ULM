@@ -29,7 +29,7 @@ window.G3X = window.G3X || {};
     ctx.clearRect(0, 0, cv.width, cv.height);
     const y = 78;
     dial(ctx, 90, y, 72, { min: 0, max: 7000, value: E.rpm, label: 'RPM', unit: '×100', bands: [[1400, 5500, '#28e02c'], [5500, 5800, '#ffd21a'], [5800, 7000, '#ff3131']], ticks: [0, 10, 20, 30, 40, 50, 60, 70].map(v => ({ v: v * 100, major: v % 20 === 0, label: v % 20 === 0 ? v : null })), fmt: v => String(Math.round(v / 10) * 10) });
-    dial(ctx, 225, y, 58, { min: 40, max: 150, value: E.cht, label: 'CT', unit: '°C', bands: [[50, 120, '#28e02c'], [120, 135, '#ffd21a'], [135, 150, '#ff3131']], ticks: [50, 75, 100, 125, 150].map(v => ({ v, major: v % 50 === 0, label: v % 50 === 0 ? v : null })) });
+    dial(ctx, 225, y, 58, { min: 40, max: 150, value: E.cht, label: 'CT', unit: '°C', bands: [[50, 120, '#28e02c'], [120, 150, '#ff3131']], ticks: [50, 75, 100, 125, 150].map(v => ({ v, major: v % 50 === 0, label: v % 50 === 0 ? v : null })) });
     dial(ctx, 345, y, 58, { min: 0, max: 150, value: E.oilT, label: 'OIL T', unit: '°C', bands: [[50, 90, '#ffd21a'], [90, 110, '#28e02c'], [110, 130, '#ffd21a'], [130, 150, '#ff3131']], ticks: [0, 50, 100, 150].map(v => ({ v, major: true, label: v })) });
     dial(ctx, 470, y, 58, { min: 0, max: 60, value: a.fuelL, label: 'FUEL L', unit: 'L', bands: [[0, 5, '#ff3131'], [5, 10, '#ffd21a'], [10, 60, '#28e02c']], ticks: [0, 15, 30, 45, 60].map(v => ({ v, major: true, label: v })) });
     dial(ctx, 595, y, 58, { min: 0, max: 60, value: a.fuelR, label: 'FUEL R', unit: 'L', bands: [[0, 5, '#ff3131'], [5, 10, '#ffd21a'], [10, 60, '#28e02c']], ticks: [0, 15, 30, 45, 60].map(v => ({ v, major: true, label: v })) });
