@@ -86,6 +86,8 @@ window.G3X = window.G3X || {};
     S.ac.brakes = !!k.KeyB;
   }
   function bindKeyboard() {
+    // MENU: één keer = opties van de huidige pagina, twee keer snel na elkaar = Main Menu (hardkey én toets)
+    M.menuKey = unit => { const now = performance.now(); if (now - (M.lastMenu || 0) < 700) { UI.closeDialog(); UI.button('HOME', unit); M.lastMenu = 0; return; } M.lastMenu = now; UI.button('MENU', unit); };
     window.addEventListener('keydown', e => {
       if (e.target && /INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
       const k = e.code; M.keys[k] = true;
@@ -99,19 +101,24 @@ window.G3X = window.G3X || {};
         case 'KeyP': S.paused = !S.paused; break;
         case 'Home': SIM.setThrottle(1); break;
         case 'End': SIM.setThrottle(0); break;
-        case 'BracketLeft': UI.knob('R', 'R', 'outer', -1); break;
-        case 'BracketRight': UI.knob('R', 'R', 'outer', 1); break;
-        case 'Comma': UI.knob('L', 'L', 'outer', -1); break;
-        case 'Period': UI.knob('L', 'L', 'outer', 1); break;
-        case 'KeyK': UI.knob('L', 'L', 'inner', -1); break;
-        case 'KeyM': if (e.shiftKey) { UI.button('MENU', sc); break; } UI.knob('L', 'L', 'inner', 1); break;
-        case 'Enter': UI.knobPress(sc, 'R'); break;
+        // Toetsen gekozen op fysieke positie (e.code) zodat ze op AZERTY én QWERTY dezelfde letter dragen:
+        // de letters A/Q, Z/W en M wisselen tussen beide indelingen, alle andere letters staan op dezelfde plek.
+        case 'KeyJ': UI.knob('L', 'L', 'outer', -1); break;   // PFD-linkerknop buiten: Heading
+        case 'KeyL': UI.knob('L', 'L', 'outer', 1); break;
+        case 'KeyK': UI.knob('L', 'L', 'inner', -1); break;   // PFD-linkerknop binnen: Altitude
+        case 'KeyI': UI.knob('L', 'L', 'inner', 1); break;
+        case 'KeyU': UI.knob('L', 'R', 'outer', -1); break;   // PFD-rechterknop buiten: Course
+        case 'KeyO': UI.knob('L', 'R', 'outer', 1); break;
+        case 'KeyX': case 'BracketLeft': UI.knob('R', 'R', 'outer', -1); break;   // MFD-rechterknop buiten: bereik
+        case 'KeyC': case 'BracketRight': UI.knob('R', 'R', 'outer', 1); break;
+        case 'Enter': case 'NumpadEnter': UI.knobPress(sc, 'R'); break;
         case 'Escape': UI.button('BACK', sc); break;
         case 'KeyN': UI.button('NRST', sc); break;
         case 'KeyD': UI.button('DTO', sc); break;
-        case 'Backquote': UI.button('HOME', 'R'); break;
+        case 'KeyM': case 'Semicolon': M.menuKey(sc); break;   // M: op AZERTY code Semicolon, op QWERTY code KeyM (2× = Main Menu)
+        case 'Backquote': UI.button('HOME', 'R'); break;   // ² op een Belgisch AZERTY-klavier
         case 'KeyH': toggleHelp(); break;
-        case 'Digit1': S.rate = 1; break; case 'Digit2': S.rate = 2; break; case 'Digit4': S.rate = 4; break;
+        case 'Digit1': case 'Numpad1': S.rate = 1; break; case 'Digit2': case 'Numpad2': S.rate = 2; break; case 'Digit4': case 'Numpad4': S.rate = 4; break;   // bovenste rij zonder Shift (AZERTY: & é ') of numeriek blok
       }
     });
     window.addEventListener('keyup', e => { M.keys[e.code] = false; });
@@ -183,7 +190,7 @@ window.G3X = window.G3X || {};
       b.onclick = () => {
         if (G3X.audio) G3X.audio.ensure();
         const k = b.dataset.k, unit = b.dataset.u; UI.activeScreen = unit;
-        if (k === 'MENU') { const now = performance.now(); if (now - (M.lastMenu || 0) < 700) { UI.closeDialog(); UI.button('HOME', unit); M.lastMenu = 0; return; } M.lastMenu = now; }
+        if (k === 'MENU') { M.menuKey(unit); return; }
         UI.button(k, unit);
       };
     });
