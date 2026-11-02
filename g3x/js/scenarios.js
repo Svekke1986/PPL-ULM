@@ -336,7 +336,7 @@ window.G3X = window.G3X || {};
     return { title: `Go-around ${apt.id} ${rwId}`, start, intro: chatter(`${apt.name} Radio`, `OO-XYZ, go around, I say again go around, traffic on the runway.`),
       steps: [
         mk('Vol gas, neus omhoog naar ca. 7°: positieve klim (VS > 200 fpm).', 'PageUp of schuifregelaar; ↓ voor neus omhoog.', S => S.ac.throttle > 0.9 && S.ac.vs > 200),
-        mk('Flaps naar <b>T/O</b>, dan <b>UP</b> boven 60 kt en 300 ft AGL.', 'Toets F/V of de flapschakelaar (lampjes 0 / T / L).', (S, A) => S.ac.vs > 200 && S.ac.flaps === 0 && S.ac.agl > 250, { fail: S => S.ac.ias > 80 && S.ac.flaps === 2 ? 'VFE overschreden met volle flaps!' : null }),
+        mk('Flaps naar <b>T/O</b>, dan <b>UP</b> boven 60 kt en 300 ft AGL.', 'Toets F/V of de flapschakelaar (lampjes 0 / T / L).', (S, A) => S.ac.vs > 200 && S.ac.flaps === 0 && S.ac.agl > 250, { fail: S => S.ac.ias > SIM.AC.vfe + 3 && S.ac.flaps === 2 ? 'VFE (71 KIAS) overschreden met volle flaps!' : null }),
         mk(`Klim naar circuit-hoogte (${apt.elev + 1000} ft ±100) en selecteer die hoogte; heading bug op de baanrichting ${U.fmtHdg(re.hdg)}°.`, 'Hoogtevak; PFD-linkerknop buitenring (Heading).', (S, A) => near(AV.indAlt(), apt.elev + 1000, 100) && near(A.altSel, apt.elev + 1000, 60) && hdgNear(A.hdgBug, re.hdg, 5)),
         q('Wat doe je met de transponder tijdens een go-around en nieuw circuit?', ['Niets: hij blijft op ALT', 'Op STBY zetten', 'IDENT drukken', 'Code 7700 instellen'], 0, 'De transponder blijft gewoon in ALT staan zolang je vliegt.'),
       ] };
