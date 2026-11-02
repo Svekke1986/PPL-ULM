@@ -159,14 +159,14 @@ window.G3X = window.G3X || {};
     return { title: `VOR ${vor.id}`, start, intro: `<p>Navigeer op de VOR <b>${esc(vor.name)}</b> (${vor.id}). Onderschep de inbound koers <b>${U.fmtHdg(inbound)}°</b> (radiaal ${U.fmtHdg(inbound + 180)}).</p>`,
       steps: [
         mk(`Stem NAV1 af op <b>${U.fmtNav(vor.freq)}</b> en maak actief.`, 'GNC 255: C/N naar NAV → TUNE → ⇄ (of NAV1-veld linksonder op de PFD).', (S, A) => near(A.nav1.active, vor.freq, 0.001)),
-        q(`Welke morse-ident hoort bij ${vor.id}? (De G3X toont de gedecodeerde ident onder NAV1.)`, U.shuffle([U.morse(vor.id), U.morse(vor.id.split('').reverse().join('')), U.morse(vor.id.slice(1) + vor.id[0]), U.morse('XYZ')]).map(x => x), null, `Ident ${vor.id} = ${U.morse(vor.id)}.`),
+        q(`Controleer het station: welke ident decodeert de G3X onder <b>NAV1</b> (linksonder op de PFD, ook op de GNC 255)? Dit duurt enkele seconden na het afstemmen.`, U.shuffle([vor.id, ...U.shuffle(NAV.NAVAIDS.filter(n => n.type === 'VOR' && n.id !== vor.id).map(n => n.id)).slice(0, 3)]), null, `${vor.name} zendt de ident ${vor.id} uit (morse ${U.morse(vor.id)}). De G3X en de GNC 255 decoderen de morse en tonen de letters; controleer altijd dat die overeenkomen met het station dat je wilt gebruiken.`),
         mk('Zet de CDI-bron op <b>VOR1</b> (NAV1).', 'Tik op de HSI → HSI Options → CDI Source VOR1 (of op het bronlabel links boven de HSI).', (S, A) => A.navSource === 'NAV1'),
         mk(`Zet CRS op <b>${U.fmtHdg(inbound)}°</b> (TO).`, 'Buitenring van de rechterknop op het PFD-scherm (Course), het CRS-veld naast de HSI, of OBS op de GNC 255.', (S, A) => hdgNear(A.nav1.obs, inbound, 2)),
         mk('Onderschep de koers: naald gecentreerd (binnen ½ dot) met TO-vlag, 15 s lang.', 'Vlieg naar de naald toe met een onderscheppingshoek van ca. 30–45°.', hold((S, A) => A.nav1.data.valid && Math.abs(A.nav1.data.dev) < 0.5 && A.nav1.data.toFrom === 'TO', 15)),
       ] };
   });
-  // corrigeer: voor de morse-vraag zetten we correct dynamisch
-  GEN.find(g => g.id === 'nav_vor').post = sc => { const st = sc.steps[1]; const vorId = sc.title.split(' ')[1]; st.question.correct = st.question.options.indexOf(U.morse(vorId)); };
+  // het juiste antwoord van de ident-vraag hangt af van de gekozen VOR
+  GEN.find(g => g.id === 'nav_vor').post = sc => { const st = sc.steps[1]; const vorId = sc.title.split(' ')[1]; st.question.correct = st.question.options.indexOf(vorId); };
   add('nav_ils', 'Radio & transponder', 'ILS afstemmen en localizer onderscheppen', () => {
     const cands = NAV.AIRPORTS.filter(a => a.rwys.some(r => r.ils) && U.distNm(HOME, a) < 60); const apt = U.pick(cands);
     const rw = apt.rwys.find(r => r.ils); const [rid, freq] = Object.entries(rw.ils)[0]; const re = NAV.runwayEnds(apt, rid);
