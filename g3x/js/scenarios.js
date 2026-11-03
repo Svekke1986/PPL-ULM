@@ -278,7 +278,7 @@ window.G3X = window.G3X || {};
       steps: [
         mk('Activeer de cursor op de kaart (tik op een lege plek of druk de rechterknop van het MFD-scherm in).', 'Linksonder verschijnt peiling en afstand vanaf het vliegtuig.', (S, A) => A.map.panning && A.mfdPage === 'MAP'),
         liveQ(`Wat is ongeveer de <b>afstand</b> van je positie tot <b>${esc(city[0])}</b>? (Zet de cursor op de stad.)`, S => U.distNm(S.ac, { lat: city[1], lon: city[2] }), 3, v => Math.max(0, v) + ' NM', 'Met de cursor op de stad staat de afstand linksonder op de kaart.'),
-        mk('Maak een <b>gebruikerswaypoint</b> op de cursorpositie.', 'Cursormenu → Create User Waypoint (of de MFD-rechterknop indrukken → menu).', ev('userwpt')),
+        mk('Maak een <b>gebruikerswaypoint</b> op de cursorpositie.', 'MFD-rechterknop indrukken (cursor) → Create User Waypoint → Create. Ook: Main Menu → User Waypoints → Create User Waypoint, positie Map Cursor.', ev('userwpt')),
         mk('Activeer een Direct-To naar dat nieuwe waypoint.', 'D→ → Waypoint → typ de USR-ID (of tabblad Recent).', (S, A) => A.fpl.directTo && A.fpl.directTo.to.user),
         mk('Zet de cursor uit (Back).', 'Toets BACK.', (S, A) => !A.map.panning),
       ] };

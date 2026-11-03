@@ -147,7 +147,7 @@ window.G3X = window.G3X || {};
       results.innerHTML = list.map(w => `<button class="ap-res" data-id="${esc(w.id)}"><b>${esc(w.id)}</b> <span>${esc(w.name || '')}</span> <em>${esc(w.type || '')}</em></button>`).join('') || '<div class="muted">No matches</div>';
       results.querySelectorAll('.ap-res').forEach(b => { b.onclick = () => { val = b.dataset.id; d.body.querySelector('.np-val').textContent = val; const r = cfg.onEnter(val); if (r !== false) d.closeSelf(); }; });
     };
-    d.body.querySelectorAll('.np-key').forEach(b => { b.onclick = () => { const k = b.dataset.k; if (k === '⌫') val = val.slice(0, -1); else if (val.length < 6) val += k; refresh(); }; });
+    d.body.querySelectorAll('.np-key').forEach(b => { b.onclick = () => { const k = b.dataset.k; if (k === '⌫') val = val.slice(0, -1); else if (val.length < (cfg.maxLen || 6)) val += k; refresh(); }; });
     refresh();
     return d;
   }
@@ -244,12 +244,13 @@ window.G3X = window.G3X || {};
     if (page === 'MAP' || page === 'TERRAIN') return UI.openMapOptions();
     if (page === 'FPL') return UI.openFplMenu();
     if (page === 'HOME') return UI.openGeneralMenu();
+    if (page === 'USER') return UI.openGeneralMenu('<button class="item" data-a="newusr">Create User Waypoint</button>');
     UI.openGeneralMenu();
   };
   // algemeen menu (ook de schermindeling: op de G3X via MENU → Full Screen / Split Screen)
   UI.openGeneralMenu = extra => {
     const a = A();
-    UI.openDialog({ title: 'Menu', html: `<div class="menu-list">${extra || ''}<button class="item" data-a="pfd">PFD Options</button><button class="item" data-a="map">Map Options</button><button class="item" data-a="setup">Setup</button><button class="item" data-a="home">Main Menu</button></div>`, width: 400, buttons: [{ label: 'Close' }], onOpen: d => { d.el.querySelectorAll('.item').forEach(b => { b.onclick = () => { const act = b.dataset.a; if (act === 'pfd') UI.openPfdOptions(); else if (act === 'map') UI.openMapOptions(); else if (act === 'setup') { UI.closeDialog(); UI.showPage('SETUP'); } else if (act === 'home') { UI.closeDialog(); UI.showPage('HOME'); } }; }); } });
+    UI.openDialog({ title: 'Menu', html: `<div class="menu-list">${extra || ''}<button class="item" data-a="pfd">PFD Options</button><button class="item" data-a="map">Map Options</button><button class="item" data-a="setup">Setup</button><button class="item" data-a="home">Main Menu</button></div>`, width: 400, buttons: [{ label: 'Close' }], onOpen: d => { d.el.querySelectorAll('.item').forEach(b => { b.onclick = () => { const act = b.dataset.a; if (act === 'newusr') { UI.openCreateUserWpt(); return; } if (act === 'pfd') UI.openPfdOptions(); else if (act === 'map') UI.openMapOptions(); else if (act === 'setup') { UI.closeDialog(); UI.showPage('SETUP'); } else if (act === 'home') { UI.closeDialog(); UI.showPage('HOME'); } }; }); } });
   };
   UI.openMapOptions = () => {
     const a = A(), m = a.map;
@@ -275,7 +276,7 @@ window.G3X = window.G3X || {};
   UI.showMapCursorMenu = () => {
     const a = A();
     const d = UI.openDialog({ title: 'Map Cursor', cls: 'mini', width: 330, html: `<div class="menu-list"><button class="item" data-a="dto">Direct-To Cursor</button><button class="item" data-a="usr">Create User Waypoint</button><button class="item" data-a="ins">Insert in Flight Plan</button><button class="item" data-a="info">Airspace at Cursor</button><button class="item" data-a="off">Cursor Off</button></div>`,
-      onOpen: dd => { dd.el.querySelectorAll('.item').forEach(b => { b.onclick = () => { const p = a.map.pan; const act = b.dataset.a; if (act === 'dto') { const w = { id: 'MAPWP', name: 'Map point', type: 'USER', lat: p.lat, lon: p.lon }; AV.directTo(w); bus.emit('dto', w.id); } else if (act === 'usr') { const w = AV.addUserWaypoint(p.lat, p.lon); bus.emit('userwpt', w.id); UI.toast(`${w.id} created`); } else if (act === 'ins') { const w = AV.addUserWaypoint(p.lat, p.lon); AV.fplAdd(w); bus.emit('fpladd', w.id); } else if (act === 'info') { const list = NAV.airspacesAt(p); UI.closeDialog(); UI.openDialog({ title: 'Airspace at Cursor', width: 460, html: list.length ? `<div class="menu-list">${list.map(s => `<div class="item nosel"><b>${esc(s.name)}</b><br><span class="muted">Class ${s.cls} · ${s.floor === 0 ? 'GND' : s.floor + ' FT'} – ${s.ceil} FT${s.freq ? ' · ' + U.fmtFreq(s.freq) : ''}${s.desc ? ' · ' + esc(s.desc) : ''}</span></div>`).join('')}</div>` : '<p class="muted">No controlled airspace at this position (class G).</p>', buttons: [{ label: 'Close' }] }); return; } else if (act === 'off') G3X.mfd.stopPan(); UI.closeDialog(); }; }); } });
+      onOpen: dd => { dd.el.querySelectorAll('.item').forEach(b => { b.onclick = () => { const p = a.map.pan; const act = b.dataset.a; if (act === 'dto') { const w = { id: 'MAPWP', name: 'Map point', type: 'USER', lat: p.lat, lon: p.lon }; AV.directTo(w); bus.emit('dto', w.id); } else if (act === 'usr') { UI.openCreateUserWpt({ mode: 'CURSOR', lat: p.lat, lon: p.lon }); return; } else if (act === 'ins') { const w = AV.addUserWaypoint(p.lat, p.lon); AV.fplAdd(w); bus.emit('fpladd', w.id); } else if (act === 'info') { const list = NAV.airspacesAt(p); UI.closeDialog(); UI.openDialog({ title: 'Airspace at Cursor', width: 460, html: list.length ? `<div class="menu-list">${list.map(s => `<div class="item nosel"><b>${esc(s.name)}</b><br><span class="muted">Class ${s.cls} · ${s.floor === 0 ? 'GND' : s.floor + ' FT'} – ${s.ceil} FT${s.freq ? ' · ' + U.fmtFreq(s.freq) : ''}${s.desc ? ' · ' + esc(s.desc) : ''}</span></div>`).join('')}</div>` : '<p class="muted">No controlled airspace at this position (class G).</p>', buttons: [{ label: 'Close' }] }); return; } else if (act === 'off') G3X.mfd.stopPan(); UI.closeDialog(); }; }); } });
     d.el.classList.add('corner');
   };
 
@@ -567,9 +568,9 @@ window.G3X = window.G3X || {};
       case 'WX': { h = head('Weather') + `<div class="page-body pad"><p>No weather datalink available in this trainer (no SiriusXM / FIS-B in Europe).</p><p>Simulated environment: wind <b>${U.fmtHdg(S.env.windDir)}°/${Math.round(S.env.windSpd)} KT</b>, QNH <b>${S.env.qnh} hPa</b>, OAT <b>${D.tempVal(SIM.oat())}</b>, turbulence <b>${S.env.turb < 0.3 ? 'light' : S.env.turb < 0.8 ? 'moderate' : 'strong'}</b>.</p><p class="muted">Tip: in real life you get the QNH from ATIS/AFIS or the METAR. Set it in the baro field below the altitude tape.</p></div>`; P.innerHTML = h; return; }
       case 'CHARTS': { h = head('Charts') + `<div class="page-body pad"><p>No electronic charts (FliteCharts / ChartView) loaded in this trainer.</p><p class="muted">On the real G3X Touch approach charts are an optional database subscription.</p></div>`; P.innerHTML = h; return; }
       case 'USER': {
-        h = head('User Waypoints', `${a.userWpts.length}`) + `<div class="page-body">${a.userWpts.map(w => `<div class="row urow" data-id="${esc(w.id)}"><span class="c-id"><b>${esc(w.id)}</b></span><span class="c-name">${U.fmtLat(w.lat)} ${U.fmtLon(w.lon)}</span><span class="c-dtk">${U.fmtHdg(U.bearing(pos, w))}°</span><span class="c-dis">${U.fmtDis(U.distNm(pos, w))} NM</span></div>`).join('') || '<p class="muted pad">No user waypoints yet.</p>'}<div class="btns"><button class="pbtn mkhere">Create at Present Position</button></div></div>`;
+        h = head('User Waypoints', `${a.userWpts.length}`) + `<div class="page-body">${a.userWpts.map(w => `<div class="row urow" data-id="${esc(w.id)}"><span class="c-id"><b>${esc(w.id)}</b></span><span class="c-name">${U.fmtLat(w.lat)} ${U.fmtLon(w.lon)}</span><span class="c-dtk">${U.fmtHdg(U.bearing(pos, w))}°</span><span class="c-dis">${U.fmtDis(U.distNm(pos, w))} NM</span></div>`).join('') || '<p class="muted pad">No user waypoints yet.</p>'}<div class="btns"><button class="pbtn mkhere">Create User Waypoint</button></div></div>`;
         P.innerHTML = h;
-        P.querySelector('.mkhere').onclick = () => { const w = AV.addUserWaypoint(pos.lat, pos.lon); bus.emit('userwpt', w.id); UI.toast(`${w.id} created`); };
+        P.querySelector('.mkhere').onclick = () => UI.openCreateUserWpt();
         P.querySelectorAll('.urow').forEach(r => { r.onclick = () => UI.openFeatureInfo(AV.findWpt(r.dataset.id)); });
         return;
       }
@@ -659,6 +660,41 @@ window.G3X = window.G3X || {};
     d.el.querySelector('.sync').onclick = () => { a.hdgBug = Math.round(SIM.S.ac.hdg); bus.emit('hdgbug', a.hdgBug); UI.closeDialog(); };
     d.el.querySelector('.crs').onclick = () => UI.openCrs();
     d.el.querySelector('.obs').onclick = () => { if (!a.nav || !a.nav.valid) { UI.toast('No active waypoint'); return; } a.fpl.obs = !a.fpl.obs; if (a.fpl.obs) a.crs1 = Math.round(a.nav.dtk); bus.emit('obs', a.fpl.obs); UI.closeDialog(); };
+  };
+  // ---------- user waypoint aanmaken (Main Menu → User Waypoints → Create, MENU op die pagina, of kaartcursor) ----------
+  // positie: huidige positie, kaartcursor, breedte/lengte (N/E, graden en decimale minuten) of radiaal/afstand vanaf een waypoint
+  const fmtDm = (v, dd) => { const deg = v.slice(0, dd), min = v.slice(dd, dd + 2), frac = v.slice(dd + 2); return `${deg.padEnd(dd, '_')}°${min.padEnd(2, '_')}.${frac.padEnd(2, '_')}'`; };
+  const parseDm = (v, dd, max) => { if (!v || v.length < dd + 2) return null; const deg = parseInt(v.slice(0, dd), 10), min = parseInt(v.slice(dd, dd + 2), 10), frac = parseInt((v.slice(dd + 2) + '00').slice(0, 2), 10); if (isNaN(deg) || isNaN(min) || min >= 60 || deg > max) return null; return deg + (min + frac / 100) / 60; };
+  UI.openCreateUserWpt = (init = {}) => {
+    const a = A(), pos = SIM.S.ac;
+    const st = Object.assign({ id: AV.nextUserWptId(), name: 'User waypoint', mode: 'PPOS', lat: pos.lat, lon: pos.lon, ref: null, radial: 0, dist: 1 }, init);
+    const posOf = () => st.mode === 'PPOS' ? { lat: pos.lat, lon: pos.lon } : st.mode === 'RADDIS' && st.ref ? U.dest(st.ref, st.radial, st.dist) : { lat: st.lat, lon: st.lon };
+    const modes = [['PPOS', 'Present Position'], ['CURSOR', 'Map Cursor'], ['LATLON', 'Lat / Lon'], ['RADDIS', 'Radial / Distance']].filter(m => m[0] !== 'CURSOR' || a.map.panning || st.mode === 'CURSOR');
+    const render = () => { const p = posOf(); return `<div class="opt-row"><span>Identifier</span><div class="opt-vals"><button class="opt-val uw-id">${esc(st.id)}</button></div></div>
+      <div class="opt-row"><span>Name</span><div class="opt-vals"><button class="opt-val uw-name">${esc(st.name)}</button></div></div>
+      <div class="opt-row"><span>Position</span><div class="opt-vals">${modes.map(m => `<button class="opt-val uw-mode ${st.mode === m[0] ? 'on' : ''}" data-m="${m[0]}">${m[1]}</button>`).join('')}</div></div>
+      ${st.mode === 'LATLON' || st.mode === 'CURSOR' ? `<div class="opt-row"><span>Latitude</span><div class="opt-vals"><button class="opt-val uw-lat">${U.fmtLat(st.lat)}</button></div></div><div class="opt-row"><span>Longitude</span><div class="opt-vals"><button class="opt-val uw-lon">${U.fmtLon(st.lon)}</button></div></div>` : ''}
+      ${st.mode === 'RADDIS' ? `<div class="opt-row"><span>Reference</span><div class="opt-vals"><button class="opt-val uw-ref">${st.ref ? esc(st.ref.id) : '______'}</button></div></div><div class="opt-row"><span>Radial</span><div class="opt-vals"><button class="opt-val uw-rad">${U.fmtHdg(st.radial)}°</button></div></div><div class="opt-row"><span>Distance</span><div class="opt-vals"><button class="opt-val uw-dis">${st.dist.toFixed(1)} NM</button></div></div>` : ''}
+      <p class="muted">${U.fmtLat(p.lat)} ${U.fmtLon(p.lon)} · Brg ${U.fmtHdg(U.bearing(pos, p))}° · ${U.fmtDis(U.distNm(pos, p))} NM from present position</p>`; };
+    const d = UI.openDialog({ title: 'Create User Waypoint', width: 600, html: render(), buttons: [{ label: 'Cancel' }, { label: 'Create', cls: 'primary', onClick: () => {
+      if (st.mode === 'RADDIS' && !st.ref) { UI.toast('Select a reference waypoint'); return true; }
+      if (!/^[A-Z0-9]{1,6}$/.test(st.id)) { UI.toast('Identifier: 1–6 letters/digits'); return true; }
+      if (AV.findWpt(st.id)) { UI.toast(`${st.id} already exists`); return true; }
+      const p = posOf(); const w = AV.addUserWaypoint(p.lat, p.lon, st.id, st.name); bus.emit('userwpt', w.id); UI.toast(`${w.id} created`);
+      if (st.mode === 'CURSOR') G3X.mfd.stopPan(); else if (a.mfdPage !== 'USER') UI.showPage('USER');
+    } }] });
+    const reopen = () => UI.openCreateUserWpt(st);
+    const bind = () => {
+      d.body.querySelector('.uw-id').onclick = () => alphaPad({ title: 'Identifier', value: st.id, maxLen: 6, enterLabel: 'OK', onEnter: v => { if (!v) return false; st.id = v.toUpperCase(); reopen(); } });
+      d.body.querySelector('.uw-name').onclick = () => alphaPad({ title: 'Name', value: st.name === 'User waypoint' ? '' : st.name, maxLen: 12, enterLabel: 'OK', onEnter: v => { st.name = v || 'User waypoint'; reopen(); } });
+      d.body.querySelectorAll('.uw-mode').forEach(b => { b.onclick = () => { st.mode = b.dataset.m; if (st.mode === 'CURSOR' && a.map.pan) { st.lat = a.map.pan.lat; st.lon = a.map.pan.lon; } d.body.innerHTML = render(); bind(); }; });
+      const lat = d.body.querySelector('.uw-lat'); if (lat) lat.onclick = () => numpad({ title: 'Latitude (N)', maxLen: 6, unit: '', width: 380, display: v => v ? 'N' + fmtDm(v, 2) : U.fmtLat(st.lat), extra: '<div class="xp-cur muted">Degrees, minutes and hundredths: 50°47.92\' = 504792</div>', onEnter: v => { const x = parseDm(v, 2, 90); if (x == null) { UI.toast('Invalid latitude'); return false; } st.lat = x; reopen(); } });
+      const lon = d.body.querySelector('.uw-lon'); if (lon) lon.onclick = () => numpad({ title: 'Longitude (E)', maxLen: 7, unit: '', width: 380, display: v => v ? 'E' + fmtDm(v, 3) : U.fmtLon(st.lon), extra: '<div class="xp-cur muted">Degrees, minutes and hundredths: 004°57.50\' = 0045750</div>', onEnter: v => { const x = parseDm(v, 3, 180); if (x == null) { UI.toast('Invalid longitude'); return false; } st.lon = x; reopen(); } });
+      const ref = d.body.querySelector('.uw-ref'); if (ref) ref.onclick = () => alphaPad({ title: 'Reference Waypoint', value: '', enterLabel: 'Select', search: q => q ? NAV.search(q, 8) : [], onEnter: v => { const w = AV.findWpt(v); if (!w) { UI.toast('Unknown waypoint'); return false; } st.ref = w; reopen(); } });
+      const rad = d.body.querySelector('.uw-rad'); if (rad) rad.onclick = () => numpad({ title: 'Radial', maxLen: 3, unit: '°', width: 380, display: v => v || U.fmtHdg(st.radial), onEnter: v => { if (!v) return false; st.radial = U.norm360(parseInt(v, 10)); reopen(); } });
+      const dis = d.body.querySelector('.uw-dis'); if (dis) dis.onclick = () => numpad({ title: 'Distance', maxLen: 5, unit: 'NM', dot: true, width: 380, display: v => v || st.dist.toFixed(1), onEnter: v => { const x = parseFloat(v); if (!(x >= 0)) return false; st.dist = x; reopen(); } });
+    };
+    bind();
   };
   UI.openFplRowMenu = i => {
     const f = A().fpl, w = f.wpts[i];
