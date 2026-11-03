@@ -185,10 +185,11 @@ window.G3X = window.G3X || {};
   AV.unsuspend = () => { const f = F(); if (f.susp) { if (f.wpts[f.active] && f.wpts[f.active].map) AV.activateMissed(); else { f.susp = false; if (f.active < f.wpts.length - 1) f.active++; } } };
 
   // gebruikerswaypoint
-  AV.addUserWaypoint = (lat, lon, id) => {
+  AV.nextUserWptId = () => { let n = AV.A.userWpts.length + 1; while (AV.findWpt('USR' + U.pad(n, 3))) n++; return 'USR' + U.pad(n, 3); };
+  AV.addUserWaypoint = (lat, lon, id, name) => {
     const A = AV.A;
-    id = (id || ('USR' + U.pad(A.userWpts.length + 1, 3))).toUpperCase();
-    const w = { id, name: 'User waypoint', type: 'USER', lat, lon, user: true };
+    id = (id || AV.nextUserWptId()).toUpperCase();
+    const w = { id, name: name || 'User waypoint', type: 'USER', lat, lon, user: true };
     A.userWpts.push(w); NAV.ALL.push(w); AV.save();
     return w;
   };
