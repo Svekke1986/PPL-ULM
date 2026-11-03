@@ -121,6 +121,7 @@ window.G3X = window.G3X || {};
       knobLabels: { left: { outer: '—', inner: '—' }, right: { outer: cfg.knobOuter || '+/−', inner: cfg.knobInner || '+/−' } },
       onKnob: (side, ring, dir) => { if (cfg.onKnob) { val = cfg.onKnob(val, ring, dir) ?? val; refresh(); } },
       onEnter: () => { const r = cfg.onEnter(val); if (r !== false) d.closeSelf(); },
+      onOpen: cfg.onOpen, // extra knoppen in het venster (STD, Current Altitude, OBS On/Off, Direct…) krijgen zo hun handler
     });
     const refresh = () => { d.body.querySelector('.np-val').textContent = cfg.display ? cfg.display(val) : val; if (cfg.onChange) cfg.onChange(val, d); };
     d.body.querySelectorAll('.np-key').forEach(b => { b.onclick = () => { const k = b.dataset.k; if (!k) return; if (k === '⌫') val = val.slice(0, -1); else if (k === 'C') val = ''; else if (val.length < (cfg.maxLen || 6)) val += k; if (cfg.filter) val = cfg.filter(val); refresh(); }; });

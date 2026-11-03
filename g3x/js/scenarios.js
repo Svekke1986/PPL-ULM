@@ -250,11 +250,13 @@ window.G3X = window.G3X || {};
     const vrp = R.vrp({ min: 6, max: 20 }); const start = R.airborne(vrp, { dist: 9 });
     const crs = U.norm360(Math.round(U.bearing(start, vrp) / 10) * 10 + U.pick([-40, 40]));
     const av = () => { AV.fplClear(); AV.fplAdd(HOME); AV.fplAdd(vrp); };
+    // met CDI-bron VOR1/VOR2 stelt de Course-knop de VOR-koers in (groene naald), niet de GPS/OBS-koers
+    const notGps = (S, A) => A.navSource !== 'GPS' ? `De CDI-bron staat op ${A.navSource.replace('NAV', 'VOR')}: de koers die je instelt is dan de VOR-koers. Zet de bron op GPS (tik op de HSI → CDI Source) en stel de koers opnieuw in.` : null;
     return { title: `OBS ${vrp.id}`, start, av, intro: `<p>Je wilt <b>${vrp.id}</b> naderen via koers <b>${U.fmtHdg(crs)}°</b> (zoals een VOR-radiaal) en daar niet automatisch doorsequencen.</p>`,
       steps: [
         mk('Schakel <b>OBS</b> in op het actieve waypoint.', 'Tik op het DTK/CRS-veld naast de HSI → OBS On. Of FPL → Menu → OBS Mode.', (S, A) => A.fpl.obs),
-        mk(`Zet de koers op <b>${U.fmtHdg(crs)}°</b>.`, 'Binnenknop van de rechterknop op het PFD-scherm (Course) of het CRS-veld naast de HSI.', (S, A) => A.fpl.obs && hdgNear(A.crs1, crs, 2)),
-        mk('Centreer de CDI (XTK < 0,3 nm) gedurende 10 s.', 'Vlieg naar de lijn toe.', hold((S, A) => A.fpl.obs && A.nav && Math.abs(A.nav.xtk) < 0.3, 10)),
+        mk(`Zet de koers op <b>${U.fmtHdg(crs)}°</b>.`, 'Binnenknop van de rechterknop op het PFD-scherm (Course) of het CRS-veld naast de HSI. De CDI-bron moet GPS zijn (magenta naald).', (S, A) => A.fpl.obs && hdgNear(A.crs1, crs, 2), { fail: notGps }),
+        mk('Centreer de CDI (XTK < 0,3 nm) gedurende 10 s.', 'Vlieg naar de lijn toe.', hold((S, A) => A.fpl.obs && A.nav && Math.abs(A.nav.xtk) < 0.3, 10), { fail: notGps }),
         mk('Schakel OBS weer uit (normaal sequencen).', 'OBS-vak op de HSI of CRS-veld → OBS Off.', (S, A) => !A.fpl.obs),
       ] };
   });
