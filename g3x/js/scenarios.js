@@ -203,7 +203,10 @@ window.G3X = window.G3X || {};
       ] };
   });
   add('dto_nrst', 'Navigatie (GPS)', 'Nearest → Direct-To (uitwijkhaven)', () => {
-    const start = R.airborne(R.apt({ max: 30 }), { dist: U.rnd(3, 7) });
+    // startpositie zó dat het dichtstbijzijnde veld (welk dat ook is) 6–12 nm weg ligt: ver genoeg om te plannen en te dalen
+    let start = null;
+    for (let i = 0; i < 60 && !start; i++) { const c = R.airborne(R.apt({ max: 30 }), { dist: U.rnd(7, 12), alt: R.alt(2500, 3500) }); const d = NAV.nearest(c, 'APT', 1)[0].dist; if (d >= 6 && d <= 12) start = c; }
+    if (!start) start = R.airborne(R.apt({ max: 30 }), { dist: 9, alt: 3000 });
     return { title: 'Uitwijken naar het dichtstbijzijnde veld', start, intro: '<p>Het weer verslechtert snel. Vlieg naar het dichtstbijzijnde vliegveld.</p>',
       steps: [
         mk('Open <b>Nearest → Airports</b> en activeer een <b>Direct-To naar het dichtstbijzijnde</b> vliegveld.', 'NRST-toets → tik op de eerste rij → Direct-To.', (S, A) => { const n = NAV.nearest(S.ac, 'APT', 1)[0].item; return A.fpl.directTo && A.fpl.directTo.to.id === n.id; }),
