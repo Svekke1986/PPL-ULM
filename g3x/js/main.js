@@ -147,7 +147,7 @@ window.G3X = window.G3X || {};
       cv.addEventListener('pointermove', e => {
         if (!down || id !== 'R') return; const p = pos(e); const dx = p.x - down.x, dy = p.y - down.y;
         const L = D.LR; const inMap = L && L.mfd && (AV.A.mfdPage === 'MAP' || AV.A.mfdPage === 'TERRAIN') && down.x >= L.mfd.x && down.x <= L.mfd.x + L.mfd.w && down.y >= L.mfd.y && down.y <= L.mfd.y + L.mfd.h;
-        if (inMap && (dragged || Math.hypot(dx, dy) > 8)) { if (!dragged) { if (!AV.A.map.panning) { AV.A.map.pan = { lat: SIM.S.ac.lat, lon: SIM.S.ac.lon }; AV.A.map.panning = true; } } dragged = true; G3X.mfd.panBy(dx, dy); down = p; }
+        if (inMap && (dragged || Math.hypot(dx, dy) > 8)) { dragged = true; G3X.mfd.panBy(dx, dy); down = p; }
       });
       cv.addEventListener('pointerup', e => { if (!down) return; const p = pos(e); if (!dragged) D.tap(id, p.x, p.y); down = null; });
       cv.addEventListener('pointercancel', () => { down = null; });

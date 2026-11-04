@@ -132,7 +132,7 @@ window.G3X = window.G3X || {};
     // vliegtuig
     if (!S.fail.gps || panning) { ctx.save(); ctx.translate(acs[0], acs[1]); ctx.rotate((a.hdg - o) * U.DEG); D.poly(ctx, [[0, -12], [3, -4], [13, 0], [3, 2], [2, 9], [6, 12], [-6, 12], [-2, 9], [-3, 2], [-13, 0], [-3, -4]], '#fff', '#000', 1); ctx.restore(); }
     // cursor
-    if (panning) { D.line(ctx, cx - 14, cy, cx + 14, cy, C.cyan, 2); D.line(ctx, cx, cy - 14, cx, cy + 14, C.cyan, 2); D.circle(ctx, cx, cy, 10, null, C.cyan, 1.5); }
+    if (panning) { const cp = toScr(M.cursorPos()); if (inRect(cp[0], cp[1])) { D.line(ctx, cp[0] - 14, cp[1], cp[0] + 14, cp[1], C.cyan, 2); D.line(ctx, cp[0], cp[1] - 14, cp[0], cp[1] + 14, C.cyan, 2); D.circle(ctx, cp[0], cp[1], 10, null, C.cyan, 1.5); } }
     ctx.restore();
     M.feats = feats;
 
@@ -158,7 +158,7 @@ window.G3X = window.G3X || {};
       }
       // cursorinfo
       if (panning) {
-        const c = mp.pan; const dist = U.distNm(a, c), brg = U.bearing(a, c);
+        const c = M.cursorPos(); const dist = U.distNm(a, c), brg = U.bearing(a, c);
         D.box(ctx, r.x + 4, r.y + r.h - 62, 190, 58, 'rgba(0,0,0,0.75)', C.cyan, 1);
         D.text(ctx, `${U.fmtLat(c.lat)}  ${U.fmtLon(c.lon)}`, r.x + 10, r.y + r.h - 48, { size: 12, color: '#fff' });
         D.text(ctx, `BRG ${U.fmtHdg(brg)}°  DIS ${U.fmtDis(dist)} NM`, r.x + 10, r.y + r.h - 30, { size: 13, color: C.cyan, weight: 'bold' });
@@ -175,14 +175,19 @@ window.G3X = window.G3X || {};
     let best = null, bd = 18;
     for (const f of M.feats) { const d = Math.hypot(f.x - sx, f.y - sy); if (d < bd) { bd = d; best = f; } }
     if (best) { G3X.ui.openFeatureInfo(best.item); return; }
-    if (M.last) { A.map.pan = M.last.fromScr(sx, sy); A.map.panning = true; G3X.ui.showMapCursorMenu(); }
+    if (M.last) { M.setCursor(M.last.fromScr(sx, sy)); G3X.ui.showMapCursorMenu(); }
   };
+  // kaartpointer (cursor) los van het kaartmiddelpunt (pan): tikken zet de pointer waar je tikt, slepen verschuift de kaart
+  M.cursorPos = () => { const A = G3X.avionics.A; return A.map.cursor || A.map.pan || { lat: G3X.sim.S.ac.lat, lon: G3X.sim.S.ac.lon }; };
+  M.startCursor = pos => { const A = G3X.avionics.A, ac = { lat: G3X.sim.S.ac.lat, lon: G3X.sim.S.ac.lon }; if (!A.map.panning) { A.map.pan = ac; A.map.panning = true; } A.map.cursor = pos || ac; };
+  M.setCursor = pos => { const A = G3X.avionics.A; if (!A.map.panning) M.startCursor(pos); else A.map.cursor = pos; };
   M.panBy = (dx, dy) => {
     const A = G3X.avionics.A; if (!M.last) return;
-    const c = M.last.toScr(A.map.pan || { lat: G3X.sim.S.ac.lat, lon: G3X.sim.S.ac.lon });
-    A.map.pan = M.last.fromScr(c[0] - dx, c[1] - dy); A.map.panning = true;
+    if (!A.map.panning) M.startCursor();
+    const c = M.last.toScr(A.map.pan);
+    A.map.pan = M.last.fromScr(c[0] - dx, c[1] - dy);
   };
-  M.stopPan = () => { const A = G3X.avionics.A; A.map.panning = false; A.map.pan = null; };
+  M.stopPan = () => { const A = G3X.avionics.A; A.map.panning = false; A.map.pan = null; A.map.cursor = null; };
 
   G3X.mfd = M;
 })();
