@@ -36,7 +36,9 @@ window.G3X = window.G3X || {};
   // meerkeuzeopties rond een numerieke waarde; 'values' maakt live beoordeling mogelijk (zie T.answer)
   const numOpts = (val, step, fmt = v => String(v)) => { const base = val; const offs = U.shuffle([0, -step, step, 2 * step]); const correctIdx = offs.indexOf(0); return { options: offs.map(o => fmt(base + o)), values: offs.map(o => base + o), step, correct: correctIdx }; };
   // afleesvraag: de opties worden bij het tonen gemaakt, maar het juiste antwoord is wat de meter toont op het moment van antwoorden
-  const liveQ = (text, getter, step, fmt, explain) => ({ text, makeQuestion: (S, A) => { const v = getter(S, A); const o = numOpts(Math.round(v / step) * step, step, fmt); return { options: o.options, values: o.values, step, correct: o.correct, get: () => getter(SIM.S, AV.A), fmt, explain }; } });
+  // opts.circular: waarde is een richting (0–360°), verschillen worden over de kortste boog gemeten
+  const liveQ = (text, getter, step, fmt, explain, opts = {}) => ({ text, makeQuestion: (S, A) => { const v = getter(S, A); const o = numOpts(Math.round(v / step) * step, step, fmt); return { options: o.options, values: o.values, step, correct: o.correct, get: () => getter(SIM.S, AV.A), fmt, explain, circular: !!opts.circular }; } });
+  const qDiff = (q, a, b) => q.circular ? Math.abs(U.norm180(a - b)) : Math.abs(a - b);
   const mk = (text, hint, check, extra = {}) => Object.assign({ text, hint, check }, extra);
   const chatter = (who, text) => `<div class="atc"><b>${esc(who)}</b> ${esc(text)}</div>`;
 
@@ -356,8 +358,8 @@ window.G3X = window.G3X || {};
         mk(`Zet <b>${U.fmtNav(vor.freq)}</b> in standby met de TUNE-knop en wissel met <b>⇄</b>.`, 'Buitenknop = MHz, binnenknop = 50 kHz-stappen.', (S, A) => near(A.nav1.active, vor.freq, 0.001)),
         mk('Tik op de <b>HSI</b> en kies CDI Source <b>VOR1</b>.', 'HSI Options → CDI Source.', (S, A) => A.navSource === 'NAV1' && A.nav1.data.valid),
         // live vraag: het toestel vliegt door, dus de peiling verschuift; de opties volgen de actuele waarde en het antwoord wordt tegen de actuele peiling beoordeeld
-        liveQ(`Druk op <b>OBS</b> op de GNC 255 en zet met de TUNE-knop de koers op de peiling naar het station (TO). Welke koers is dat nu ongeveer (dichtstbijzijnde 20°)?`, S => U.bearing(S.ac, vor), 20, v => U.fmtHdg(v) + '°', `Peiling TO = de radiaal op de GNC 255 (R-xxx, FROM) ± 180°. Controle: HSI → Bearing Pointer 1 op NAV1, of de OBS-koers waarbij de naald centreert met TO.`),
-        mk('Zet de OBS-koers met de TUNE-knop op de GNC 255 (binnen 5° van de peiling) zodat de naald centreert met TO.', 'OBS → TUNE draait de koers (buiten 10°, binnen 1°).', (S, A, ctx) => ctx.has('gncobs') && A.nav1.data.valid && A.nav1.data.toFrom === 'TO' && Math.abs(A.nav1.data.dev) < 0.5),
+        liveQ(`Druk op <b>OBS</b> op de GNC 255 en zet met de TUNE-knop de koers op de peiling naar het station (TO). Welke koers is dat nu ongeveer (dichtstbijzijnde 20°)?`, S => U.bearing(S.ac, vor), 20, v => U.fmtHdg(v) + '°', `Peiling TO = de radiaal op de GNC 255 (R-xxx, FROM) ± 180°. Controle: HSI → Bearing Pointer 1 op NAV1, of de OBS-koers waarbij de naald centreert met TO.`, { circular: true }),
+        mk('Zet de OBS-koers met de TUNE-knop op de GNC 255 (binnen 5° van de peiling) zodat de naald centreert met TO.', 'OBS → TUNE draait de koers (buiten 10°, binnen 1°).', (S, A) => A.navSource === 'NAV1' && A.nav1.data.valid && A.nav1.data.toFrom === 'TO' && Math.abs(A.nav1.data.dev) < 0.5), // OBS is meestal al in stap 4 ingedrukt; de gecentreerde naald met TO telt
         mk('Vlieg naar het station: DME < 3 nm.', 'Naald gecentreerd houden.', (S, A) => A.nav1.data.valid && A.nav1.data.dme != null && A.nav1.data.dme < 3),
       ] };
   });
@@ -678,7 +680,7 @@ window.G3X = window.G3X || {};
     if (st.question) {
       // afleesvraag: als de meterstand intussen buiten de getoonde opties is geraakt, opties vernieuwen
       const q = st.question;
-      if (q.get && q.values && st.answered == null) { const cur = q.get(); const base = q.values[q.correct]; if (Math.abs(cur - base) > q.step * 1.5) { st.question = st.makeQuestion(S, A); if (G3X.main) G3X.main.onTrainerUpdate(); } }
+      if (q.get && q.values && st.answered == null) { const cur = q.get(); const base = q.values[q.correct]; if (qDiff(q, cur, base) > q.step * 1.5) { st.question = st.makeQuestion(S, A); if (G3X.main) G3X.main.onTrainerUpdate(); } }
       return; // wacht op antwoord
     }
     let ok = false;
@@ -701,7 +703,7 @@ window.G3X = window.G3X || {};
     if (q.get && q.values) {
       // afleesvraag: vergelijk het gekozen antwoord met de waarde die de meter nu toont
       const cur = q.get(); const tol = q.step * 0.75;
-      const dists = q.values.map(v => Math.abs(v - cur)); const nearest = dists.indexOf(Math.min(...dists));
+      const dists = q.values.map(v => qDiff(q, v, cur)); const nearest = dists.indexOf(Math.min(...dists));
       q.correct = dists[i] <= tol ? i : nearest;
       q.explain = `Nu afgelezen: ${q.fmt(Math.round(cur / q.step) * q.step)}.` + (q.explain ? ' ' + q.explain : '');
     }
