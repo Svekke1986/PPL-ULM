@@ -645,6 +645,8 @@ window.G3X = window.G3X || {};
     const A = AV.reset(); if (G3X.cockpit && G3X.cockpit.reset) G3X.cockpit.reset();
     A.baro = sc.start.env && sc.start.env.qnh ? sc.start.env.qnh + U.pick([0, 0, -4, 6]) : 1013;
     A.altSel = Math.round(S.ac.alt / 100) * 100; A.hdgBug = Math.round(S.ac.hdg);
+    // OBS/koers van de VOR-ontvangers staat zoals een vorige vlucht hem achterliet: hier de startheading (afgerond op 5°), niet altijd 060
+    A.nav1.obs = A.nav2.obs = Math.round(S.ac.hdg / 5) * 5 % 360;
     A.com1.active = NAV.mainFreq(HOME); A.com1.standby = 121.5;
     if (sc.av) sc.av(A);
     G3X.bus.log.length = 0;
