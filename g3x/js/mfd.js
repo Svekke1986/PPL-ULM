@@ -37,7 +37,8 @@ window.G3X = window.G3X || {};
     const orient = inset ? 'TRKUP' : (mode === 'TERRAIN' ? mp.orient : mp.orient);
     const panning = !inset && mp.panning && mp.pan;
     const center = panning ? mp.pan : { lat: a.lat, lon: a.lon };
-    const o = S.fail.gps && !panning ? 0 : orient === 'NORTH' ? 0 : orient === 'HDGUP' ? a.hdg : a.trk;
+    if (!S.fail.gps && !inset) mp.lastFix = { lat: a.lat, lon: a.lon }; // laatste GPS-positie, voor de kaart bij GPS-verlies
+    const o = S.fail.gps ? 0 : orient === 'NORTH' ? 0 : orient === 'HDGUP' ? a.hdg : a.trk;
     const cx = r.x + r.w / 2, cy = panning || orient === 'NORTH' ? r.y + r.h / 2 : r.y + r.h * 0.68;
     const scale = ((orient === 'NORTH' || panning ? 0.5 : 0.68) * r.h - 26) / range;
     const feats = [];
@@ -59,6 +60,7 @@ window.G3X = window.G3X || {};
       }
     }
     if (S.fail.gps && !panning) { ctx.fillStyle = '#111'; ctx.fillRect(r.x, r.y, r.w, r.h); D.text(ctx, 'NO GPS POSITION', cx, cy - 20, { size: 18, color: C.yellow, align: 'center', weight: 'bold' }); D.text(ctx, 'Dead reckoning', cx, cy + 4, { size: 13, color: '#aaa', align: 'center' }); }
+    else if (S.fail.gps) { D.box(ctx, cx - 110, r.y + 26, 220, 24, 'rgba(0,0,0,0.75)', C.yellow, 1); D.text(ctx, 'NO GPS POSITION', cx, r.y + 38, { size: 14, color: C.yellow, align: 'center', weight: 'bold' }); }
     // water & kust
     if (mode === 'MAP' && dec < 2 && mp.water) {
       ctx.lineWidth = range > 50 ? 1.5 : 2.5; ctx.strokeStyle = '#2d7ad6';
@@ -130,7 +132,7 @@ window.G3X = window.G3X || {};
     const acs = toScr({ lat: a.lat, lon: a.lon });
     if (mp.trackVector && a.gs > 5 && !S.fail.gps) { const e = toScr(U.dest(a, a.trk, a.gs / 60)); D.line(ctx, acs[0], acs[1], e[0], e[1], '#fff', 1.5, [6, 4]); }
     // vliegtuig
-    if (!S.fail.gps || panning) { ctx.save(); ctx.translate(acs[0], acs[1]); ctx.rotate((a.hdg - o) * U.DEG); D.poly(ctx, [[0, -12], [3, -4], [13, 0], [3, 2], [2, 9], [6, 12], [-6, 12], [-2, 9], [-3, 2], [-13, 0], [-3, -4]], '#fff', '#000', 1); ctx.restore(); }
+    if (!S.fail.gps) { ctx.save(); ctx.translate(acs[0], acs[1]); ctx.rotate((a.hdg - o) * U.DEG); D.poly(ctx, [[0, -12], [3, -4], [13, 0], [3, 2], [2, 9], [6, 12], [-6, 12], [-2, 9], [-3, 2], [-13, 0], [-3, -4]], '#fff', '#000', 1); ctx.restore(); }
     // cursor
     if (panning) { const cp = toScr(M.cursorPos()); if (inRect(cp[0], cp[1])) { D.line(ctx, cp[0] - 14, cp[1], cp[0] + 14, cp[1], C.cyan, 2); D.line(ctx, cp[0], cp[1] - 14, cp[0], cp[1] + 14, C.cyan, 2); D.circle(ctx, cp[0], cp[1], 10, null, C.cyan, 1.5); } }
     ctx.restore();
@@ -161,7 +163,7 @@ window.G3X = window.G3X || {};
         const c = M.cursorPos(); const dist = U.distNm(a, c), brg = U.bearing(a, c);
         D.box(ctx, r.x + 4, r.y + r.h - 62, 190, 58, 'rgba(0,0,0,0.75)', C.cyan, 1);
         D.text(ctx, `${U.fmtLat(c.lat)}  ${U.fmtLon(c.lon)}`, r.x + 10, r.y + r.h - 48, { size: 12, color: '#fff' });
-        D.text(ctx, `BRG ${U.fmtHdg(brg)}°  DIS ${U.fmtDis(dist)} NM`, r.x + 10, r.y + r.h - 30, { size: 13, color: C.cyan, weight: 'bold' });
+        D.text(ctx, S.fail.gps ? 'BRG ---°  DIS --.- NM' : `BRG ${U.fmtHdg(brg)}°  DIS ${U.fmtDis(dist)} NM`, r.x + 10, r.y + r.h - 30, { size: 13, color: S.fail.gps ? C.yellow : C.cyan, weight: 'bold' });
         D.text(ctx, `ELEV ${Math.round(NAV.terrainFt(c.lat, c.lon))} FT`, r.x + 10, r.y + r.h - 13, { size: 12, color: '#bbb' });
       }
       // tikken op kaart => feature of cursor
@@ -179,7 +181,7 @@ window.G3X = window.G3X || {};
   };
   // kaartpointer (cursor) los van het kaartmiddelpunt (pan): tikken zet de pointer waar je tikt, slepen verschuift de kaart
   M.cursorPos = () => { const A = G3X.avionics.A; return A.map.cursor || A.map.pan || { lat: G3X.sim.S.ac.lat, lon: G3X.sim.S.ac.lon }; };
-  M.startCursor = pos => { const A = G3X.avionics.A, ac = { lat: G3X.sim.S.ac.lat, lon: G3X.sim.S.ac.lon }; if (!A.map.panning) { A.map.pan = ac; A.map.panning = true; } A.map.cursor = pos || ac; };
+  M.startCursor = pos => { const A = G3X.avionics.A, S = G3X.sim.S; const ac = S.fail.gps && A.map.lastFix ? A.map.lastFix : { lat: S.ac.lat, lon: S.ac.lon }; if (!A.map.panning) { A.map.pan = ac; A.map.panning = true; } A.map.cursor = pos || ac; };
   M.setCursor = pos => { const A = G3X.avionics.A; if (!A.map.panning) M.startCursor(pos); else A.map.cursor = pos; };
   M.panBy = (dx, dy) => {
     const A = G3X.avionics.A; if (!M.last) return;
