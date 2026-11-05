@@ -371,9 +371,11 @@ window.G3X = window.G3X || {};
     if (!a.onGround) {
       const now = NAV.airspacesAt(a, a.alt).filter(s => s.type !== 'ATZ');
       if (now.length) adv('ASPC', `IN ${now[0].name.split(' ')[0]} ${now[0].type}`);
+      // luchtruim binnen 2 minuten vooruit, op de huidige én de geprojecteerde hoogte; het meest beperkende type bepaalt de melding
       const ahead = U.dest(a, a.trk, Math.max(a.gs, 40) / 60 * 2);
-      const soon = NAV.airspacesAt(ahead, a.alt + a.vs * 2).filter(s => s.type !== 'ATZ' && !now.includes(s));
-      if (soon.length) { adv('ASPCA', `${soon[0].type} AHEAD`); AV.msg(`Airspace ahead within 2 min: ${soon[0].name} (${soon[0].floor}–${soon[0].ceil} ft)`, 'ADV', 'aspc-' + soon[0].id); }
+      const prio = { P: 0, R: 1, D: 2, CTR: 3, TMA: 4, CTA: 5 };
+      const soon = [...new Set([...NAV.airspacesAt(ahead, a.alt), ...NAV.airspacesAt(ahead, a.alt + a.vs * 2)])].filter(s => s.type !== 'ATZ' && !now.includes(s)).sort((x, y) => (prio[x.type] ?? 9) - (prio[y.type] ?? 9));
+      if (soon.length) { adv('ASPCA', `${soon[0].type} AHEAD`); for (const s of soon) AV.msg(`Airspace ahead within 2 min: ${s.name} (${s.floor === 0 ? 'GND' : s.floor}–${s.ceil} ft)`, 'ADV', 'aspc-' + s.id); }
       for (const s of NAV.AIRSPACES) if (s.type !== 'ATZ' && !now.includes(s) && a.alt >= s.floor - 200 && a.alt <= s.ceil + 200 && NAV.distToAirspace(s, a) < 1.0) { adv('ASPCN', `${s.type} NEAR`); break; }
     }
     // hoogte-alert (1000 ft / 200 ft)

@@ -544,7 +544,7 @@ window.G3X = window.G3X || {};
   add('airspace_avoid', 'Noodgevallen & storingen', 'Luchtruim vermijden zonder klaring', () => {
     const ctr = U.pick(NAV.AIRSPACES.filter(s => s.type === 'CTR' && U.distNm(HOME, s.shape.circle || { lat: s.shape.poly[0][0], lon: s.shape.poly[0][1] }) < 40));
     const c = ctr.shape.circle || { lat: ctr.shape.poly.reduce((t, p) => t + p[0], 0) / ctr.shape.poly.length, lon: ctr.shape.poly.reduce((t, p) => t + p[1], 0) / ctr.shape.poly.length };
-    const brg = U.rnd(0, 360); const p = U.dest(c, brg, (ctr.shape.r || 10) + 6); const start = { airborne: true, lat: p.lat, lon: p.lon, alt: ctr.ceil - 500, hdg: Math.round(U.norm360(brg + 180)), ias: 95, env: R.env(), fuelL: 35, fuelR: 35, fuelSel: 'L' };
+    const brg = U.rnd(0, 360); const p = U.dest(c, brg, (ctr.shape.r || 10) + 4); const start = { airborne: true, lat: p.lat, lon: p.lon, alt: Math.max(1200, ctr.ceil - 800), hdg: Math.round(U.norm360(brg + 180)), ias: 95, env: R.env(), fuelL: 35, fuelR: 35, fuelSel: 'L' };
     return { title: `${ctr.name} vermijden`, start, intro: `<p>Je vliegt richting de <b>${esc(ctr.name)}</b> (${ctr.floor === 0 ? 'GND' : ctr.floor}–${ctr.ceil} ft) zonder klaring. De radio is druk; je krijgt geen antwoord.</p>`,
       steps: [
         mk('Wacht op de melding <b>CTR AHEAD</b> (binnen 2 minuten) en lees het luchtruim op de kaart.', 'De knop Messages onderaan de schermen knippert; het kaartlabel toont vloer/plafond.', (S, A) => A.msgs.some(m => m.key && m.key.startsWith('aspc-' + ctr.id))),
