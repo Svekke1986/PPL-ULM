@@ -220,6 +220,16 @@ window.G3X = window.G3X || {};
     const nearDest = dest && U.distNm(pos, dest) < 30, nearDep = dep && dep !== dest && U.distNm(pos, dep) < 30 && f.wpts.length > 1;
     out.scale = 2; out.scaleLabel = 'ENR';
     if (nearDest || nearDep) { out.scale = 1; out.scaleLabel = 'TERM'; }
+    // adviesglijpad (LNAV+V) van FAF naar drempel, minimaal 2.5°; afwijking in ft t.o.v. het pad op de huidige afstand tot de drempel
+    const glidepath = (faf, mapw) => {
+      if (!faf || !mapw) return;
+      const thrAlt = mapw.alt, fafAlt = faf.alt, total = U.distNm(faf, mapw);
+      const angle = Math.atan((fafAlt - thrAlt) * U.FT_M / (total * U.NM_M)) / U.DEG;
+      out.gpAngle = Math.max(2.5, angle); out.gpValid = true;
+      const distToThr = Math.max(0, U.distNm(pos, mapw));
+      out.pathAlt = thrAlt + Math.tan(out.gpAngle * U.DEG) * distToThr * U.NM_M / U.FT_M;
+      out.vdev = a.alt - out.pathAlt;
+    };
     const apr = f.approach;
     if (apr && apr.active) {
       const fafI = f.wpts.findIndex(w => w.proc && w.faf), mapI = f.wpts.findIndex(w => w.proc && w.map);
@@ -230,19 +240,13 @@ window.G3X = window.G3X || {};
         const faf = f.wpts[fafI], mapw = f.wpts[mapI];
         out.scaleLabel = apr.type === 'ILS' ? 'LNAV+V' : 'LNAV+V';
         out.scale = 0.3; out.approachPhase = 'FINAL';
-        out.gpValid = true;
-        const thrAlt = mapw.alt, fafAlt = faf.alt;
-        const total = U.distNm(faf, mapw);
-        const angle = Math.atan((fafAlt - thrAlt) * U.FT_M / (total * U.NM_M)) / U.DEG;
-        out.gpAngle = Math.max(2.5, angle);
-        const distToThr = Math.max(0, U.distNm(pos, mapw));
-        const pathAlt = thrAlt + Math.tan(out.gpAngle * U.DEG) * distToThr * U.NM_M / U.FT_M;
-        out.vdev = SIM.indicatedAlt(A.baroStd ? 1013.25 : A.baro) - pathAlt - (A.baroStd ? (1013.25 - S.env.qnh) * 27 : (A.baro - S.env.qnh) * 27); // werkelijke afwijking
-        out.vdev = a.alt - pathAlt;
-        out.pathAlt = pathAlt;
+        glidepath(faf, mapw);
       } else if (fafI >= 0 && toIdx === fafI) {
         out.scale = U.clamp(1 - (1 - 0.3) * Math.max(0, (2 - dis)) / 2, 0.3, 1); out.scaleLabel = 'TERM'; out.approachPhase = 'INTER';
         if (dis < 2) out.scaleLabel = 'APR';
+        // zoals op de G3X: het adviesglijpad verschijnt al zodra de FAF het actieve waypoint is (binnen 5 nm), verlengd vóór de FAF;
+        // op FAF-hoogte zit je dan onder het pad tot het onderscheppingspunt
+        if (dis < 5) glidepath(f.wpts[fafI], f.wpts[mapI]);
       } else if (toIdx > 0 && toIdx < fafI) { out.scale = 1; out.scaleLabel = 'TERM'; out.approachPhase = 'INITIAL'; }
     }
     // bestemming
