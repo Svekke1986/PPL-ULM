@@ -228,7 +228,7 @@ window.G3X = window.G3X || {};
       ${opt('Wind Vector', 'windMode', [0, 1, 2, 3], v => ['OFF', 'Components', 'Arrow', 'Dir/Speed'][v])}
       ${opt('CDI Source', 'navSource', ['GPS', 'NAV1', 'NAV2'])}
       ${opt('V-Speed References (R, X, Y, G)', 'vspeeds', [true, false], v => v ? 'SHOW' : 'HIDE')}
-      ${opt('Map Inset (full PFD)', 'inset', ['OFF', 'MAP'])}
+      ${opt('Inset Windows (full PFD)', 'inset', ['OFF', 'MAP', 'FPL', 'BOTH'], v => ({ OFF: 'OFF', MAP: 'Map', FPL: 'Flight Plan', BOTH: 'Map + Flight Plan' })[v])}
       ${opt('Minimums', 'minimumsOn', [true, false], v => v ? 'ON' : 'OFF')}
       <div class="opt-row"><span>Minimums Altitude</span><div class="opt-vals"><button class="opt-val setmins">${a.minimums != null ? D.altVal(a.minimums) + ' ' + D.fmtAltUnit() : 'Set…'}</button></div></div>
     </div>`;

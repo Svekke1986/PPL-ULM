@@ -29,8 +29,38 @@ window.G3X = window.G3X || {};
     drawHsi(ctx, hx, hy, hsiR, A, S);
     drawCorners(ctx, X, Y, W, H, A, S);
     drawAnnunciations(ctx, cx, cy, A, S);
-    if (A.inset === 'MAP' && W > 800) G3X.mfd.renderInset(ctx, { x: X + 100, y: Y + H - 250, w: 220, h: 220 });
+    if ((A.inset === 'MAP' || A.inset === 'BOTH') && W > 800) G3X.mfd.renderInset(ctx, { x: X + 100, y: Y + H - 250, w: 230, h: 220 });
+    if ((A.inset === 'FPL' || A.inset === 'BOTH') && W > 800) drawFplInset(ctx, X + W - 134 - 262, Y + H - 250, 262, 220, A, S);
   };
+
+  // ---------- Active Flight Plan-venster rechtsonder op het PFD (zoals op het toestel: DTK / DIST per waypoint) ----------
+  function drawFplInset(ctx, x, y, w, h, A, S) {
+    const f = A.fpl, n = A.nav, pos = S.ac;
+    D.box(ctx, x, y, w, h, 'rgba(0,0,0,0.78)', '#3a4350', 1);
+    D.text(ctx, 'Active Flight Plan', x + 8, y + 12, { size: 13, color: '#fff', weight: 'bold' });
+    D.text(ctx, 'DTK / DIST', x + w - 8, y + 12, { size: 11, color: '#9fb3c8', align: 'right' });
+    D.line(ctx, x, y + 22, x + w, y + 22, '#3a4350', 1);
+    const start = f.directTo ? f.wpts.indexOf(f.directTo.to) : f.active;
+    const rows = [];
+    if (f.directTo && start < 0) rows.push({ w: f.directTo.to, dtk: n && n.valid ? n.dtk : null, dis: n && n.valid ? n.dis : U.distNm(pos, f.directTo.to), act: true });
+    let cum = n && n.valid ? n.dis : 0;
+    for (let i = Math.max(start, 0); i < f.wpts.length && rows.length < 5; i++) {
+      const w2 = f.wpts[i]; if (w2.missed) break;
+      const act = i === Math.max(start, 0);
+      if (!act) cum += U.distNm(f.wpts[i - 1], w2);
+      rows.push({ w: w2, dtk: act ? (n && n.valid ? n.dtk : null) : U.bearing(f.wpts[i - 1], w2), dis: act ? (n && n.valid ? n.dis : U.distNm(pos, w2)) : cum, act });
+    }
+    if (!rows.length) { D.text(ctx, 'No active flight plan', x + w / 2, y + h / 2, { size: 13, color: '#9fb3c8', align: 'center' }); return; }
+    rows.forEach((r, i) => {
+      const ry = y + 40 + i * 36; const col = r.act ? C.magenta : '#fff';
+      if (r.act) D.poly(ctx, [[x + 8, ry - 6], [x + 18, ry], [x + 8, ry + 6]], C.magenta);
+      else D.poly(ctx, [[x + 13, ry - 6], [x + 19, ry + 5], [x + 7, ry + 5]], null, C.cyan, 1.5);
+      D.text(ctx, r.w.id, x + 26, ry, { size: 15, color: col, weight: 'bold' });
+      D.text(ctx, (r.dtk != null ? U.fmtHdg(r.dtk) : '___') + '°', x + w - 8, ry - 8, { size: 13, color: r.act ? C.magenta : '#fff', align: 'right' });
+      D.text(ctx, U.fmtDis(D.distVal(r.dis)) + ' ' + D.distUnit().toLowerCase(), x + w - 8, ry + 9, { size: 13, color: r.act ? C.magenta : '#fff', align: 'right' });
+    });
+    D.zone(x, y, w, h, () => G3X.ui.showPage('FPL'), 'fplinset');
+  }
 
   // ---------- attitude + SVT ----------
   function drawAttitude(ctx, X, Y, W, H, cx, cy, A, S) {
@@ -223,11 +253,10 @@ window.G3X = window.G3X || {};
     const low = !a.onGround && ias < AC.vs1 * 1.1 && ias > 20, over = ias > AC.vne;
     D.poly(ctx, [[x + 4, cy - 20], [x + w - 16, cy - 20], [x + w - 16, cy - 8], [x + w - 4, cy], [x + w - 16, cy + 8], [x + w - 16, cy + 20], [x + 4, cy + 20]], '#000', over ? C.red : low ? C.yellow : '#fff', 2);
     D.text(ctx, ias < 20 ? '---' : String(Math.round(ias)), x + w - 20, cy, { size: 28, color: over ? C.red : low ? C.yellow : '#fff', align: 'right', weight: 'bold' });
-    D.text(ctx, D.spdUnit(), x + 6, y - 10, { size: 12, color: '#9fb3c8' });
-    // TAS / GS
-    D.box(ctx, x, y + h + 2, w, 22, 'rgba(0,0,0,0.6)');
-    D.text(ctx, 'TAS', x + 4, y + h + 13, { size: 12, color: '#9fb3c8' });
-    D.text(ctx, String(D.spdVal(a.tas)), x + w - 4, y + h + 13, { size: 16, color: '#fff', align: 'right', weight: 'bold' });
+    // zoals op de G3X: TAS in een vak boven de tape, GS in een vak eronder, elk met de eenheid klein erachter
+    const spdBox = (label, v, by) => { D.box(ctx, x, by, w, 24, '#000', '#3a4350', 1); D.text(ctx, label, x + 4, by + 12, { size: 12, color: '#9fb3c8' }); D.text(ctx, String(D.spdVal(v)), x + w - 20, by + 12, { size: 16, color: '#fff', align: 'right', weight: 'bold' }); D.text(ctx, D.spdUnit(), x + w - 3, by + 13, { size: 9, color: '#9fb3c8', align: 'right' }); };
+    spdBox('TAS', a.tas, y - 28);
+    spdBox('GS', a.gs, y + h + 2);
     D.zone(x, y, w, h, () => G3X.ui.openPfdOptions(), 'asi');
   }
 
@@ -369,12 +398,18 @@ window.G3X = window.G3X || {};
     D.text(ctx, U.fmtHdg(hdg) + '°', hx, hy - R - 32, { size: 22, color: '#fff', align: 'center', weight: 'bold' });
     // vliegtuigje
     D.poly(ctx, [[hx, hy - 12], [hx + 3, hy - 4], [hx + 12, hy], [hx + 3, hy + 2], [hx + 2, hy + 9], [hx + 5, hy + 12], [hx - 5, hy + 12], [hx - 2, hy + 9], [hx - 3, hy + 2], [hx - 12, hy], [hx - 3, hy - 4]], '#fff', '#000', 1);
-    // nav-bron en schaal
+    // HDG-vak linksboven de roos (cyaan, zoals op het toestel); tikken = heading bug instellen
     const lx = hx - R - 4, ly = hy - R + 4;
-    D.box(ctx, lx - 54, ly, 56, 42, 'rgba(0,0,0,0.6)');
-    D.text(ctx, src === 'GPS' ? 'GPS' : (A[src.toLowerCase()].data.loc ? 'LOC' + src.slice(-1) : 'VOR' + src.slice(-1)), lx - 26, ly + 12, { size: 15, color: srcColor, align: 'center', weight: 'bold' });
-    D.text(ctx, src === 'GPS' ? (S.fail.gps ? 'LOI' : (n && n.valid ? n.scaleLabel : '')) : (A[src.toLowerCase()].data.ident || '---'), lx - 26, ly + 30, { size: 13, color: src === 'GPS' && S.fail.gps ? C.yellow : srcColor, align: 'center' });
-    D.zone(lx - 54, ly, 56, 42, () => G3X.ui.cycleNavSource(), 'navsrc');
+    D.box(ctx, lx - 66, ly, 68, 36, 'rgba(0,0,0,0.6)');
+    D.text(ctx, 'HDG', lx - 62, ly + 10, { size: 12, color: '#9fb3c8' });
+    D.text(ctx, U.fmtHdg(A.hdgBug) + '°', lx - 2, ly + 24, { size: 17, color: C.cyan, align: 'right', weight: 'bold' });
+    D.zone(lx - 66, ly, 68, 36, () => G3X.ui.openHdgSel(), 'hdgsel');
+    // nav-bron en CDI-schaal ín de roos, links van het midden (zoals op het toestel)
+    const srcName = src === 'GPS' ? 'GPS' : (A[src.toLowerCase()].data.loc ? 'LOC' + src.slice(-1) : 'VOR' + src.slice(-1));
+    const scaleTxt = src === 'GPS' ? (S.fail.gps ? 'LOI' : (n && n.valid ? n.scaleLabel : '')) : (A[src.toLowerCase()].data.ident || '---');
+    D.textOutline(ctx, srcName, hx - R * 0.5, hy + R * 0.3, { size: 15, color: srcColor, align: 'center', weight: 'bold', lw: 3 });
+    D.textOutline(ctx, scaleTxt, hx - R * 0.5, hy + R * 0.3 + 17, { size: 12, color: src === 'GPS' && S.fail.gps ? C.yellow : srcColor, align: 'center', lw: 3 });
+    D.zone(hx - R * 0.5 - 30, hy + R * 0.3 - 12, 60, 36, () => G3X.ui.cycleNavSource(), 'navsrc');
     if (src === 'GPS' && S.fail.gps) D.textOutline(ctx, 'LOI', hx, hy + 40, { size: 16, color: C.yellow, align: 'center' });
     if (src === 'GPS' && A.fpl.susp) { D.box(ctx, hx + 20, hy - R + 4, 46, 20, '#000', '#fff', 1); D.text(ctx, 'SUSP', hx + 43, hy - R + 14, { size: 13, color: '#fff', align: 'center', weight: 'bold' }); D.zone(hx + 20, hy - R + 4, 46, 20, () => G3X.ui.button('SUSP'), 'susp'); }
     if (src === 'GPS' && A.fpl.obs) { D.text(ctx, 'OBS', hx + 43, hy - R + 38, { size: 13, color: C.magenta, align: 'center', weight: 'bold' }); D.zone(hx + 20, hy - R + 28, 46, 20, () => G3X.ui.button('OBS'), 'obs'); }
@@ -395,13 +430,13 @@ window.G3X = window.G3X || {};
       D.zone(cx2, hy + yoff, 70, 30, () => G3X.ui.cycleBrg(which), 'brg' + which);
     };
     bl(1, A.brg1, 10); bl(2, A.brg2, 44);
-    // wind
-    drawWind(ctx, lx - 54, hy + 10, A, S);
-    // afstand/tijd links onder
+    // wind onder het HDG-vak
+    drawWind(ctx, lx - 60, ly + 42, A, S);
+    // actief waypoint en afstand links
     if (n && n.valid) {
-      D.box(ctx, lx - 54, hy + 48, 56, 30, 'rgba(0,0,0,0.6)');
-      D.text(ctx, n.legTo.id, lx - 26, hy + 57, { size: 12, color: C.magenta, align: 'center' });
-      D.text(ctx, U.fmtDis(D.distVal(n.dis)), lx - 26, hy + 71, { size: 14, color: '#fff', align: 'center', weight: 'bold' });
+      D.box(ctx, lx - 60, ly + 82, 62, 30, 'rgba(0,0,0,0.6)');
+      D.text(ctx, n.legTo.id, lx - 29, ly + 91, { size: 12, color: C.magenta, align: 'center' });
+      D.text(ctx, U.fmtDis(D.distVal(n.dis)), lx - 29, ly + 105, { size: 14, color: '#fff', align: 'center', weight: 'bold' });
     }
     ctx.restore();
     D.zone(hx - R, hy - R, 2 * R, 2 * R, () => G3X.ui.openHsiOptions(), 'hsi');
