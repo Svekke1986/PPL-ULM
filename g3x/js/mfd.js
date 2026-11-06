@@ -45,7 +45,7 @@ window.G3X = window.G3X || {};
     const toScr = p => { const xy = U.toXY(center, p); const ex = xy.x * scale, ny = -xy.y * scale; const th = -o * U.DEG; return [cx + ex * Math.cos(th) - ny * Math.sin(th), cy + ex * Math.sin(th) + ny * Math.cos(th)]; };
     const fromScr = (sx, sy) => { const dx = sx - cx, dy = sy - cy; const th = o * U.DEG; const ex = dx * Math.cos(th) - dy * Math.sin(th), ny = dx * Math.sin(th) + dy * Math.cos(th); return U.fromXY(center, ex / scale, -ny / scale); };
     if (!inset) M.last = { toScr, fromScr, r, scale, center, o };
-    const dec = inset ? 3 : mp.declutter;
+    const dec = inset ? 2 : mp.declutter; // inset: iets meer detail (topo, vliegvelden, VRP's), zoals op het toestel
     const inRect = (x, y, m = 30) => x > r.x - m && x < r.x + r.w + m && y > r.y - m && y < r.y + r.h + m;
 
     ctx.save(); D.clip(ctx, r.x, r.y, r.w, r.h);
