@@ -223,11 +223,10 @@ window.G3X = window.G3X || {};
     const low = !a.onGround && ias < AC.vs1 * 1.1 && ias > 20, over = ias > AC.vne;
     D.poly(ctx, [[x + 4, cy - 20], [x + w - 16, cy - 20], [x + w - 16, cy - 8], [x + w - 4, cy], [x + w - 16, cy + 8], [x + w - 16, cy + 20], [x + 4, cy + 20]], '#000', over ? C.red : low ? C.yellow : '#fff', 2);
     D.text(ctx, ias < 20 ? '---' : String(Math.round(ias)), x + w - 20, cy, { size: 28, color: over ? C.red : low ? C.yellow : '#fff', align: 'right', weight: 'bold' });
-    D.text(ctx, D.spdUnit(), x + 6, y - 10, { size: 12, color: '#9fb3c8' });
-    // TAS / GS
-    D.box(ctx, x, y + h + 2, w, 22, 'rgba(0,0,0,0.6)');
-    D.text(ctx, 'TAS', x + 4, y + h + 13, { size: 12, color: '#9fb3c8' });
-    D.text(ctx, String(D.spdVal(a.tas)), x + w - 4, y + h + 13, { size: 16, color: '#fff', align: 'right', weight: 'bold' });
+    // zoals op de G3X: TAS in een vak boven de tape, GS in een vak eronder, elk met de eenheid klein erachter
+    const spdBox = (label, v, by) => { D.box(ctx, x, by, w, 24, '#000', '#3a4350', 1); D.text(ctx, label, x + 4, by + 12, { size: 12, color: '#9fb3c8' }); D.text(ctx, String(D.spdVal(v)), x + w - 20, by + 12, { size: 16, color: '#fff', align: 'right', weight: 'bold' }); D.text(ctx, D.spdUnit(), x + w - 3, by + 13, { size: 9, color: '#9fb3c8', align: 'right' }); };
+    spdBox('TAS', a.tas, y - 28);
+    spdBox('GS', a.gs, y + h + 2);
     D.zone(x, y, w, h, () => G3X.ui.openPfdOptions(), 'asi');
   }
 
